@@ -68,7 +68,9 @@ as best-effort attributes of council history, never a standalone dataset.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
   choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
-  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set.
+  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set; camp
+  `operator`↔`council` coupling (operator=council ⇒ council set; national/other/unknown ⇒
+  council null) — convention-only in the schema, assert in the camp import pipeline.
 - **Published-projection schema for requirement-sets.** `build.py` fail-fast-validates
   current/{councils,territories,merit-badges}.json against `published-current.schema.json`,
   but `current/requirement-sets.json` + `requirement-sets/index.json` have no
