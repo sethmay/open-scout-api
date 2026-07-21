@@ -1,0 +1,29 @@
+{
+  "id": "digital-technology",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Digital Technology",
+      "eagle_required": false,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/digital-technology/",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "OpenScouting/workbooks badges/MANIFEST.md (catalogue facts)"
+          },
+          {
+            "url": "https://www.scouting.org/merit-badges/digital-technology/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "notes": null
+}

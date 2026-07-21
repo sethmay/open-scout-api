@@ -1,0 +1,29 @@
+{
+  "id": "wilderness-survival",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Wilderness Survival",
+      "eagle_required": false,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/wilderness-survival/",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "OpenScouting/workbooks badges/MANIFEST.md (catalogue facts)"
+          },
+          {
+            "url": "https://www.scouting.org/merit-badges/wilderness-survival/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "notes": null
+}

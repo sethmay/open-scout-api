@@ -7,11 +7,11 @@
   "properties": {
     "version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
-    "kind": { "enum": ["council", "territory"] },
+    "kind": { "enum": ["council", "territory", "merit-badge"] },
     "count": { "type": "integer", "minimum": 0 },
     "items": {
       "type": "array",
-      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }] }
+      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }] }
     }
   },
   "required": ["version", "generated_at", "kind", "count", "items"],
@@ -43,6 +43,19 @@
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
       "required": ["id", "number", "name", "division_type", "confidence"],
+      "additionalProperties": false
+    },
+    "CurrentMeritBadge": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "name": { "type": "string", "minLength": 1 },
+        "eagle_required": { "type": "boolean" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["id", "name", "eagle_required", "tags", "url", "confidence"],
       "additionalProperties": false
     }
   }

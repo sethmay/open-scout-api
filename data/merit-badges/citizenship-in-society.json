@@ -1,0 +1,53 @@
+{
+  "id": "citizenship-in-society",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": "2021",
+      "valid_to": "2022-07-01",
+      "name": "Citizenship in Society",
+      "eagle_required": false,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/citizenship-in-society/",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "OpenScouting/workbooks badges/MANIFEST.md (catalogue facts)"
+          },
+          {
+            "url": "https://www.scouting.org/merit-badges/citizenship-in-society/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85,
+        "notes": "Introduced 2021 as an elective; intro month approximate."
+      }
+    },
+    {
+      "valid_from": "2022-07-01",
+      "valid_to": "2026-02-27",
+      "name": "Citizenship in Society",
+      "eagle_required": true,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/citizenship-in-society/",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/skills/merit-badges/eagle-required/"
+          },
+          {
+            "url": "https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Eagle-required 2022-07-01 until discontinuance 2026-02-27."
+      }
+    }
+  ],
+  "notes": "Discontinued 2026-02-27; Eagle-required merit badges went from 14 to 13."
+}

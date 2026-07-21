@@ -1,0 +1,29 @@
+{
+  "id": "reptile-and-amphibian-study",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Reptile and Amphibian Study",
+      "eagle_required": false,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "OpenScouting/workbooks badges/MANIFEST.md (catalogue facts)"
+          },
+          {
+            "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "notes": null
+}

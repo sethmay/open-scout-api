@@ -1,0 +1,29 @@
+{
+  "id": "insect-study",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Insect Study",
+      "eagle_required": false,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/insect-study/",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "OpenScouting/workbooks badges/MANIFEST.md (catalogue facts)"
+          },
+          {
+            "url": "https://www.scouting.org/merit-badges/insect-study/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "notes": null
+}

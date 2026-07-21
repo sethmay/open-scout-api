@@ -1,0 +1,32 @@
+{
+  "id": "lifesaving",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Lifesaving",
+      "eagle_required": true,
+      "tags": [],
+      "description": null,
+      "url": "https://www.scouting.org/merit-badges/lifesaving/",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "OpenScouting/workbooks badges/MANIFEST.md (catalogue facts)"
+          },
+          {
+            "url": "https://www.scouting.org/merit-badges/lifesaving/"
+          },
+          {
+            "url": "https://www.scouting.org/skills/merit-badges/eagle-required/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "notes": null
+}

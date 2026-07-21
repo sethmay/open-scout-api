@@ -21,7 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_DIR = ROOT / "schema" / "v1"
 DATA = ROOT / "data"
 
-DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json"}
+DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json",
+            "merit-badges": "merit-badge.schema.json"}
 
 
 def load_schemas():
@@ -91,7 +92,7 @@ def main() -> int:
         for e in event_validator.iter_errors(obj):
             errs.append(f"{ds}/_events.json: schema: {e.json_path}: {e.message}")
         seen = set()
-        ENDED_AS_PRED = {"merged", "absorbed", "split"}
+        ENDED_AS_PRED = {"merged", "absorbed", "split", "superseded"}
         for ev in obj.get("events", []):
             eid = ev.get("id")
             if eid in seen:

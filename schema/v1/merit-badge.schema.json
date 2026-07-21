@@ -45,6 +45,12 @@
           "type": ["string", "null"],
           "default": null,
           "description": "Short original-prose description. Never verbatim pamphlet text."
+        },
+        "url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "default": null,
+          "description": "Authoritative badge page (e.g. scouting.org/merit-badges/<slug>/)."
         }
       },
       "required": ["name", "eagle_required"],
