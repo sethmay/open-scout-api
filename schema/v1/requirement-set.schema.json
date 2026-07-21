@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "title": "Requirement set (canonical document file)",
+  "description": "One file per published requirement revision: data/requirement-sets/<slug>.json (slug convention: '<subject-slug>-<effective-year>'). Requirement sets are IMMUTABLE dated documents, not versioned entities: a revision is a NEW document whose 'supersedes' points at the previous one. 'subject' targets a merit badge today; ranks and awards reuse this schema unchanged. COPYRIGHT: requirement 'text' is Scouting America's — default policy is paraphrased 'summary' only with includes_official_text=false until the licensing question is resolved (see TODO.md).",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "requirement-set" },
+    "subject": {
+      "$ref": "common.schema.json#/$defs/EntityRef",
+      "description": "The badge/rank/award these requirements belong to, e.g. 'merit-badge:first-aid'."
+    },
+    "effective_from": {
+      "$ref": "common.schema.json#/$defs/HistoricalDate",
+      "description": "When this revision took effect (transition/grandfathering rules go in 'notes')."
+    },
+    "effective_to": {
+      "anyOf": [
+        { "$ref": "common.schema.json#/$defs/HistoricalDate" },
+        { "type": "null" }
+      ],
+      "description": "When a later revision superseded this one; null = current."
+    },
+    "supersedes": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^requirement-set:[a-z0-9][a-z0-9-]*$"
+        },
+        { "type": "null" }
+      ],
+      "default": null,
+      "description": "The immediately previous revision; null = earliest known (not necessarily first ever)."
+    },
+    "source_document": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g. 'Scouts BSA Requirements 2023 (33216)'."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "year": {
+          "type": ["integer", "null"],
+          "minimum": 1910,
+          "default": null
+        }
+      },
+      "required": ["title"],
+      "additionalProperties": false,
+      "description": "The publication this revision was transcribed from."
+    },
+    "includes_official_text": {
+      "type": "boolean",
+      "description": "True iff any requirement node carries verbatim 'text'. Lets a publish step strip or withhold official text wholesale."
+    },
+    "requirements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Requirement" },
+      "minItems": 1
+    },
+    "provenance": { "$ref": "common.schema.json#/$defs/Provenance" },
+    "notes": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "subject",
+    "effective_from",
+    "effective_to",
+    "source_document",
+    "includes_official_text",
+    "requirements",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Requirement": {
+      "title": "Requirement",
+      "description": "One node of the requirement tree. At least one of text/summary/children must be present. 'choose' = complete N of the children (null = all children required). Option groups (e.g. 'do 7a OR 7b') are a parent node with choose=1.",
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official label as printed: '1', '2a', '7b(1)'."
+        },
+        "text": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Verbatim official text. Only when licensing permits; flips includes_official_text."
+        },
+        "summary": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Original-prose paraphrase. The default, copyright-safe content."
+        },
+        "choose": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "default": null,
+          "description": "Complete this many of 'children'; null = all. Meaningful only with children (pipeline rule)."
+        },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Requirement" },
+          "default": []
+        }
+      },
+      "required": ["number"],
+      "additionalProperties": false,
+      "anyOf": [
+        { "properties": { "text": { "type": "string" } }, "required": ["text"] },
+        { "properties": { "summary": { "type": "string" } }, "required": ["summary"] },
+        { "properties": { "children": { "type": "array", "minItems": 1 } }, "required": ["children"] }
+      ]
+    }
+  }
+}

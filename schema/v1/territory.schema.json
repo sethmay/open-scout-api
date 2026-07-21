@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/territory.schema.json",
+  "title": "Territory (canonical entity file)",
+  "description": "One file per national geographic subdivision, across all eras: data/territories/<slug>.json. Covers the 16 National Service Territories (2021-), the four regions (1992-2021), earlier region schemes, and areas within regions — distinguished by division_type on each version. All share the 'territory:' ref namespace. The 2021 regions->NST reorganization is modeled as 'reorganized' events in data/territories/_events.json.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "territory" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TerritoryVersion" },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced)."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "TerritoryVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "e.g. 'Western Region', 'Territory 13'."
+        },
+        "division_type": {
+          "enum": ["national_service_territory", "region", "area"],
+          "description": "What kind of subdivision this was during this window."
+        },
+        "number": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "default": null,
+          "description": "Official number where the scheme is numbered (NSTs, numbered areas)."
+        },
+        "parent": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^territory:[a-z0-9][a-z0-9-]*$"
+            },
+            { "type": "null" }
+          ],
+          "default": null,
+          "description": "Containing subdivision during this window (an area's region). Null for top-level divisions."
+        },
+        "description": {
+          "type": ["string", "null"],
+          "default": null
+        }
+      },
+      "required": ["name", "division_type"],
+      "unevaluatedProperties": false
+    }
+  }
+}
