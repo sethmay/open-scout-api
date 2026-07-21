@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.9.0 (minor) — 2026-07-21
 
-- `PENDING` Add the awards catalog: new `award` entity schema + 52 earned awards &
+- `e986843` Add the awards catalog: new `award` entity schema + 52 earned awards &
   recognitions (religious emblems, training awards, scouting honors / special recognitions)
   extracted from the official Guide to Awards and Insignia (No. 33066). Facts only (name,
   category, audience, square-knot + insignia catalog numbers, wear); no verbatim Guide prose.
