@@ -23,7 +23,7 @@ OUT = DIST / "v1" / "open-scout-api.sqlite"
 
 # dataset dir -> (table name, [(column, sql_type, json_key_in_version)])
 ENTITY_TABLES = {
-    "councils": ("councils", [("number", "INTEGER", "number"), ("state", "TEXT", "state"),
+    "councils": ("councils", [("bsa_number", "INTEGER", "bsa_number"), ("hq_state", "TEXT", "hq_state"),
                               ("hq_city", "TEXT", "hq_city")]),
     "territories": ("territories", [("number", "INTEGER", "number"),
                                     ("division_type", "TEXT", "division_type")]),

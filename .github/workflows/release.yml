@@ -32,7 +32,7 @@ jobs:
         run: |
           tag="${GITHUB_REF_NAME}"
           cp dist/v1/open-scout-api.sqlite "open-scout-api-${tag}.sqlite"
-          tar -czf "open-scout-api-${tag}-json.tar.gz" -C dist .
+          tar -czf "open-scout-api-${tag}-json.tar.gz" --exclude=./v1/open-scout-api.sqlite -C dist .
           python - "$tag" > RELEASE_NOTES.md <<'PY'
           import re, sys
           ver = sys.argv[1].lstrip("v")
