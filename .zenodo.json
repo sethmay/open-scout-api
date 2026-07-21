@@ -1,0 +1,27 @@
+{
+  "title": "Open Scout API — machine-readable Scouting America reference data",
+  "description": "Open, versioned, machine-readable reference datasets for Scouting America (councils, Council Service Territories, merit badges and their requirement sets, camps, advancement ranks and their requirement history, and awards), published as static JSON with JSON Schemas and a queryable SQLite artifact. Unofficial community project; not affiliated with or endorsed by Scouting America. Merit-badge and rank requirement text is (c) Scouting America, reproduced with attribution for non-commercial use and excluded from this dataset's license (see NOTICE.md).",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "CC-BY-NC-SA-4.0",
+  "creators": [
+    { "name": "May, Seth" }
+  ],
+  "keywords": [
+    "Scouting America",
+    "Boy Scouts of America",
+    "BSA",
+    "merit badges",
+    "councils",
+    "advancement",
+    "open data",
+    "JSON Schema"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/sethmay/open-scout-api",
+      "scheme": "url"
+    }
+  ]
+}

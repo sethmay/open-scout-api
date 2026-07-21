@@ -63,8 +63,10 @@ as best-effort attributes of council history, never a standalone dataset.
 - **⚠ One-time manual: enable GitHub Pages.** Repo Settings → Pages → Source = "GitHub
   Actions". Until done, the deploy job has nothing to publish to (build still runs/gates).
 - **Add a README. — DONE (0.3.1).**
-- **Release automation + CDN docs.** Tag releases; ship the JSON tree + a generated
-  SQLite artifact (PLAN §6); document jsDelivr pinning; consider Zenodo DOI.
+- **Release automation + CDN docs. — DONE (0.12.0).** `v*` git tags at CHANGELOG shas;
+  `.github/workflows/release.yml` publishes GitHub Releases with the JSON tree +
+  `tools/build_sqlite.py` SQLite artifact; jsDelivr pinning + SQLite documented in README.
+  ⚠ One-time manual (owner): `git push --tags`, and enable the GitHub↔Zenodo integration for DOIs.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
   choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
