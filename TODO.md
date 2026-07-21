@@ -15,7 +15,7 @@ PLAN.md §1).
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
-| 5 | **Camps (registry + history)** | ✅ `camp` | Import from camp-finder (keep IDs, `method: imported`). Historical/"lost camps" have a passionate community. Sessions/fees stay in camp-finder. | camp-finder dataset; usscouts.org OCD (robots-blocked — ask admin for dump); council sites |
+| 5 | **Camps (registry + history)** | ✅ `camp` (enriched 0.6.0: camp_type / operator / parent) | Import from camp-finder (keep IDs, `method: imported`); classify each on camp_type + operator (most = resident_camp/council). Add national HA bases (Philmont, Sea Base, Northern Tier, Summit — operator=national). Reservation `parent` nesting + historical "lost camps" later. Sessions/fees stay in camp-finder. | camp-finder dataset; scouting.org (national bases); usscouts.org OCD (robots-blocked); council sites |
 | 6 | **Rank requirement history** | ⬜ reuse `requirement-set` (`subject: rank:*`) + new `rank` entity schema | Same machinery as badges. 2016/2022 Scouts BSA revisions; 2024 Cub Scouts overhaul. | Requirements book editions; usscouts.org |
 | 7 | **OA lodges** | ⬜ (council pattern fits: versions + merge events + `council` ref) | Lodge↔council mapping, merges track council merges, totem/name history. Patch-collector community curates this by hand today. | OA/lodge sites; Wikipedia; patch DBs |
 | 8 | **Merit badge earned-counts by year** | ⬜ (simple fact table, not temporal-entity) | BSA publishes annually; longitudinal series exists nowhere machine-readable. Tiny. | Scouting magazine / Bryan on Scouting annual posts |
@@ -68,7 +68,9 @@ as best-effort attributes of council history, never a standalone dataset.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
   choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
-  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set.
+  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set; camp
+  `operator`↔`council` coupling (operator=council ⇒ council set; national/other/unknown ⇒
+  council null) — convention-only in the schema, assert in the camp import pipeline.
 - **Published-projection schema for requirement-sets.** `build.py` fail-fast-validates
   current/{councils,territories,merit-badges}.json against `published-current.schema.json`,
   but `current/requirement-sets.json` + `requirement-sets/index.json` have no

@@ -3,6 +3,12 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+- `PENDING` Enrich the camp schema to handle every kind of scout camp: add `camp_type`
+  (reservation / resident_camp / high_adventure_base / short_term_camp / day_camp /
+  program_center / other), `operator` (council / national / other / unknown — represents
+  national HA bases like Philmont with council=null), and a `parent` camp ref for
+  reservation nesting; broaden `program_types` vocab. Example + negative fixture updated.
+
 ## 0.5.0 (minor) — 2026-07-21
 
 - `36f4896` Seed 141 merit-badge requirement sets from OpenScouting/workbooks: full

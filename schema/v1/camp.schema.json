@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "title": "Camp (canonical entity file)",
-  "description": "One file per camp property: data/camps/<slug>.json. Registry + history layer only — operational data (sessions, fees, availability) stays in camp-finder. Camp identity is independent of council ownership (camps change hands): 'council' is a versioned attribute; sales/transfers are 'transferred' events, closures 'discontinued' events in data/camps/_events.json. Slugs keep camp-finder's state-prefixed convention (e.g. 'or-camp-meriwether') for painless import.",
+  "description": "One file per camp property: data/camps/<slug>.json. Registry + classification + history layer only — operational data (sessions, fees, dates, availability) stays in camp-finder / the council's own site, joined by camp id. A camp is classified on three orthogonal facets: camp_type (what kind of place, single), program_types (what it offers, set), and operator (+council; who runs it). Camp identity is independent of council ownership (camps change hands): council/operator are versioned attributes; sales/transfers are 'transferred' events, closures 'discontinued' events in data/camps/_events.json. Slugs keep camp-finder's state-prefixed convention (e.g. 'or-camp-meriwether').",
   "type": "object",
   "properties": {
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
@@ -29,6 +29,14 @@
           "type": "string",
           "minLength": 1
         },
+        "camp_type": {
+          "$ref": "common.schema.json#/$defs/VocabCode",
+          "description": "Primary structural classification (single; open vocab). Canonical set: reservation (a multi-camp property), resident_camp, high_adventure_base, short_term_camp (weekend/primitive troop use), day_camp, program_center, other. Multi-use is expressed via program_types, not here."
+        },
+        "operator": {
+          "enum": ["council", "national", "other", "unknown"],
+          "description": "Ownership/operation tier. 'council' pairs with the council ref below; 'national' = a National Council property (e.g. Philmont, Florida Sea Base, Northern Tier, Summit Bechtel) with council null. Disambiguates a null council (national base vs genuinely unknown)."
+        },
         "council": {
           "anyOf": [
             {
@@ -38,6 +46,14 @@
             { "type": "null" }
           ],
           "description": "Owning/operating council during this window; null = unknown (common for historical camps)."
+        },
+        "parent": {
+          "anyOf": [
+            { "type": "string", "pattern": "^camp:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+            { "type": "null" }
+          ],
+          "default": null,
+          "description": "The reservation this camp belongs to, as a camp ref (a sub-camp of a scout reservation); null if standalone. Reservation children are populated in a later pass."
         },
         "operating_status": {
           "enum": ["active", "not_operating", "closed"],
@@ -81,7 +97,7 @@
           "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
           "uniqueItems": true,
           "default": [],
-          "description": "Open vocabulary; seeded from camp-finder (scouts_bsa_resident, cub_resident, cub_day, high_adventure, webelos)."
+          "description": "Programs/audiences offered here (open vocab, multi-valued): scouts_bsa_resident, cub_resident, cub_day, webelos, high_adventure, short_term_camping, venturing, sea_scout, family_camping, training. A single property is often multi-use."
         },
         "features": {
           "type": "array",
@@ -91,7 +107,7 @@
           "description": "Open vocabulary; seeded from camp-finder (dining_hall, waterfront, pool, shooting_sports, climbing, horseback, atv, cope, older_scout_program, high_adventure_option, stem, scuba, mountain_biking)."
         }
       },
-      "required": ["name", "council", "operating_status"],
+      "required": ["name", "council", "operating_status", "camp_type", "operator"],
       "unevaluatedProperties": false
     }
   }

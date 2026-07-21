@@ -1,0 +1,18 @@
+{
+  "id": "negative-fixture",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Negative Fixture Camp",
+      "council": "council:example",
+      "operating_status": "active",
+      "provenance": {
+        "sources": [{ "citation": "negative fixture: camp_type + operator are required" }],
+        "method": "curated",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ]
+}
