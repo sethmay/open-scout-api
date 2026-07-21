@@ -63,6 +63,12 @@ noted here because their status shapes what we may redistribute:
   Requirement **text is © Scouting America** (see above), reproduced verbatim with
   attribution for non-commercial Scouting use; only the structure/numbering/metadata are the
   project's contribution. The source PDF is not redistributed (kept in git-ignored `.workbench/`).
+- **U.S. Scouting Service Project (usscouts.org)** — community archive that mirrors the
+  official BSA/Scouts BSA rank requirements by effective year; source for the 26 historical
+  rank `requirement-set` documents (2016-2023 editions). The requirement **text is © Scouting
+  America** (see above), reproduced verbatim with attribution for non-commercial Scouting use;
+  only the structure/numbering/metadata are the project's contribution. USSSP is unaffiliated
+  with BSA; its own page layout/code is separately licensed and is not redistributed here.
 - **Guide to Awards and Insignia (No. 33066)** — the official Scouting America publication;
   source for the `award` catalog. Only **facts** are extracted (award names, catalog item
   numbers, wear location) — uncopyrightable; the Guide's

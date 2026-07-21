@@ -1,0 +1,121 @@
+{
+  "id": "scout-2023",
+  "kind": "requirement-set",
+  "subject": "rank:scout",
+  "effective_from": "2023-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": "requirement-set:scout-2019",
+  "source_document": {
+    "title": "Scout Rank Requirements (2023 Boy Scout/Scouts BSA Requirements)",
+    "url": "http://usscouts.org/advance/ScoutsBSA/old/rank1-23.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Repeat from memory the Scout Oath, Scout Law, Scout motto, and Scout slogan. In your own words, explain their meaning."
+        },
+        {
+          "number": "1b",
+          "text": "Explain what Scout spirit is. Describe some ways you have shown Scout spirit by practicing the Scout Oath, Scout Law, Scout motto, and Scout slogan."
+        },
+        {
+          "number": "1c",
+          "text": "Demonstrate the Scout sign, salute, and handshake. Explain when they should be used."
+        },
+        {
+          "number": "1d",
+          "text": "Describe the First Class Scout badge and tell what each part stands for. Explain the significance of the First Class Scout badge."
+        },
+        {
+          "number": "1e",
+          "text": "Repeat from memory the Outdoor Code. List the seven principles of Leave No Trace. Explain the difference between the two."
+        },
+        {
+          "number": "1f",
+          "text": "Repeat from memory the Pledge of Allegiance. In your own words, explain its meaning."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "After attending at least one Scout troop meeting, do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Describe how the Scouts in the troop provide its leadership."
+        },
+        {
+          "number": "2b",
+          "text": "Describe the four steps of Scout advancement."
+        },
+        {
+          "number": "2c",
+          "text": "Describe what the Scouts BSA ranks are and how they are earned."
+        },
+        {
+          "number": "2d",
+          "text": "Describe what merit badges are and how they are earned."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the patrol method. Describe the types of patrols that are used in your troop."
+        },
+        {
+          "number": "3b",
+          "text": "Become familiar with your patrol name, emblem, flag, and yell. Explain how these items create patrol spirit."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Show how to tie a square knot, two half-hitches, and a taut-line hitch. Explain how each knot is used."
+        },
+        {
+          "number": "4b",
+          "text": "Show the proper care of a rope by learning how to whip and fuse the ends of different kinds of rope."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Tell what you need to know about pocketknife safety and responsibly."
+    },
+    {
+      "number": "6",
+      "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade or view the Personal Safety Awareness videos ( with your parent or Guardian's permission). 1"
+    },
+    {
+      "number": "7",
+      "text": "Since joining the troop and while working on the Scout rank, participate in a Scoutmaster conference."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/ScoutsBSA/old/rank1-23.asp"
+      },
+      {
+        "citation": "U.S. Scouting Service Project archived Scout rank requirements (2023)"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.8,
+    "notes": "Scraped from usscouts.org archived edition; verbatim requirement text © Scouting America, structure/numbering derived; topical section headers omitted."
+  },
+  "notes": null
+}

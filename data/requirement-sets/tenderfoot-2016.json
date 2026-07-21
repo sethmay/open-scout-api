@@ -1,0 +1,171 @@
+{
+  "id": "tenderfoot-2016",
+  "kind": "requirement-set",
+  "subject": "rank:tenderfoot",
+  "effective_from": "2016-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Tenderfoot Rank Requirements (2016 Boy Scout/Scouts BSA Requirements)",
+    "url": "http://usscouts.org/advance/boyscout/old/bsrank2-16.asp",
+    "year": 2016
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Present yourself to your leader prepared for an overnight camping trip. Show the personal and camping gear you will use. Show the right way to pack and carry it."
+        },
+        {
+          "number": "1b",
+          "text": "Spend at least one night on a patrol or troop campout. Sleep in a tent you have helped pitch."
+        },
+        {
+          "number": "1c",
+          "text": "Tell how you practiced the Outdoor Code on a campout or outing."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "children": [
+        {
+          "number": "2a",
+          "text": "On the campout, assist in preparing one of the meals. Tell why it is important for each patrol member to share in meal preparation and cleanup."
+        },
+        {
+          "number": "2b",
+          "text": "While on a campout, demonstrate the appropriate method of safely cleaning items used to prepare, serve, and eat a meal."
+        },
+        {
+          "number": "2c",
+          "text": "Explain the importance of eating together as a patrol."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Demonstrate a practical use of the square knot."
+        },
+        {
+          "number": "3b",
+          "text": "Demonstrate a practical use of two half-hitches."
+        },
+        {
+          "number": "3c",
+          "text": "Demonstrate a practical use of the taut line hitch."
+        },
+        {
+          "number": "3d",
+          "text": "Demonstrate proper care, sharpening, and use of the knife, saw, and ax. Describe when each should be used."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Show first aid for the following: Simple cuts and scrapes Blisters on the hand and foot Minor (thermal/heat) burns or scalds (superficial, or first degree) Bites or stings of insects or ticks Venomous snakebite Nosebleed Frostbite and sunburn Choking"
+        },
+        {
+          "number": "4b",
+          "text": "Describe common poisonous or hazardous plants, identify any that grow in your local area or campsite location. Tell how to treat for exposure to them."
+        },
+        {
+          "number": "4c",
+          "text": "Tell what you can do on a campout or other outdoor activity to prevent or reduce the occurrence of injuries or exposure listed in Tenderfoot requirements 4a and 4b."
+        },
+        {
+          "number": "4d",
+          "text": "Assemble a personal first-aid kit to carry with you on future campouts and hikes. Tell how each item in the kit would be used."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain the importance of the buddy system as it relates to your personal safety on outings and in your neighborhood. Use the buddy system while on a troop or patrol outing."
+        },
+        {
+          "number": "5b",
+          "text": "Explain what to do if you become lost on a hike or campout."
+        },
+        {
+          "number": "5c",
+          "text": "Explain the rules of safe hiking, both on the highway and cross-country, during the day and at night."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Record your best in the following tests: • Pushups ________ (Record the number done correctly in 60 seconds) • Situps or curl-ups ________ (Record the number done correctly in 60 seconds) • Back-saver sit-and-reach ________ (Record the distance stretched) • 1 mile walk/run ________ (Record the time)"
+        },
+        {
+          "number": "6b",
+          "text": "Develop and describe a plan for improvement in each of the activities listed in Tenderfoot requirement 6a. Keep track of your activity for at least 30 days."
+        },
+        {
+          "number": "6c",
+          "text": "Show improvement (of any degree) in each activity listed in Tenderfoot requirement 6a after practicing for 30 days. • Pushups ________ (Record the number done correctly in 60 seconds) • Situps or curl-ups ________ (Record the number done correctly in 60 seconds) • Back-saver sit-and-reach ________ (Record the distance stretched) • 1 mile walk/run ________ (Record the time)"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Demonstrate how to display, raise, lower, and fold the U.S. flag."
+        },
+        {
+          "number": "7b",
+          "text": "Participate in a total of one hour of service in one or more service projects approved by your Scoutmaster. Explain how your service to others relates to the Scout slogan and Scout motto."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Describe the steps in Scouting's Teaching EDGE method. Use the Teaching EDGE method to teach another person how to tie the square knot."
+    },
+    {
+      "number": "9",
+      "text": "Demonstrate Scout spirit by living the Scout Oath and Scout Law. Tell how you have done your duty to God and how you have lived four different points of the Scout Law in your everyday life."
+    },
+    {
+      "number": "10",
+      "text": "While working toward Tenderfoot rank, and after completing Scout rank requirement 7, participate in a Scoutmaster conference."
+    },
+    {
+      "number": "11",
+      "text": "Successfully complete your board of review for the Tenderfoot rank."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/boyscout/old/bsrank2-16.asp"
+      },
+      {
+        "citation": "U.S. Scouting Service Project archived Tenderfoot rank requirements (2016)"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.8,
+    "notes": "Scraped from usscouts.org archived edition; verbatim requirement text © Scouting America, structure/numbering derived; topical section headers omitted."
+  },
+  "notes": null
+}

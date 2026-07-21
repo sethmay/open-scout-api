@@ -193,8 +193,10 @@ open-scout-api/
   policy: **populate summaries, not text** until the licensing question is resolved.
 - **rank** — advancement ranks as versioned entities (like merit-badge): `name`,
   `program` (`scouts_bsa`), `order` (1–7). Requirement CONTENT lives in `requirement-set`
-  docs (`subject: rank:<slug>`), not the entity. Seeded with the 7 Scouts BSA ranks; the
-  same schema will hold Cub/Venturing/Sea Scout ranks and their revision history later.
+  docs (`subject: rank:<slug>`), not the entity. Seeded with the 7 Scouts BSA ranks; their
+  requirement history is populated across editions (2016-2023 from usscouts.org + current
+  2024) with `supersedes` chains + effective windows. The same schema will hold
+  Cub/Venturing/Sea Scout ranks later.
 - **award** — earned awards & recognitions (religious emblems, training awards, scouting
   honors / special recognitions) as versioned entities. FACTS only: `name`, `category`
   (religious_emblem | training_award | scouting_honor | special_recognition), `audience`,

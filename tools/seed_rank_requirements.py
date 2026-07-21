@@ -31,6 +31,11 @@ RANKS = [("scout", "SCOUT"), ("tenderfoot", "TENDERFOOT"), ("second-class", "SEC
          ("first-class", "FIRST CLASS"), ("star", "STAR"), ("life", "LIFE"), ("eagle", "EAGLE")]
 NAME = {"scout": "Scout", "tenderfoot": "Tenderfoot", "second-class": "Second Class",
         "first-class": "First Class", "star": "Star", "life": "Life", "eagle": "Eagle"}
+# Each current (2024) set supersedes the newest historical edition (see seed_rank_history.py).
+SUPERSEDES = {"scout": "requirement-set:scout-2023", "tenderfoot": "requirement-set:tenderfoot-2016",
+              "second-class": "requirement-set:second-class-2023", "first-class": "requirement-set:first-class-2023",
+              "star": "requirement-set:star-2023", "life": "requirement-set:life-2022",
+              "eagle": "requirement-set:eagle-2023"}
 
 HDR = re.compile(r'^(SCOUT|TENDERFOOT|SECOND CLASS|FIRST CLASS|STAR|LIFE|EAGLE) RANK REQUIREMENTS')
 PALM = re.compile(r'^EAGLE PALM')
@@ -200,7 +205,7 @@ def main() -> None:
             "subject": f"rank:{slug}",
             "effective_from": "2024-01-01",
             "effective_to": None,
-            "supersedes": None,
+            "supersedes": SUPERSEDES.get(slug),
             "source_document": {
                 "title": f"{NAME[slug]} Rank Requirements (2024 Scouts BSA Requirements, No. 33216)",
                 "url": ADV_URL,
