@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
-- `PENDING` Add README (repo is public): what it is, unofficial disclaimer, live `v1/` API
+## 0.3.1 (patch) — 2026-07-21
+
+- `82c1ca5` Add README (repo is public): what it is, unofficial disclaimer, live `v1/` API
   endpoints + fetch examples, temporal data model, dataset status, local dev, contributing,
   CC BY-NC-SA/MIT licensing
 
