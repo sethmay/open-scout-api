@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge.schema.json",
   "id": "american-indian-culture",
   "kind": "merit-badge",
   "versions": [

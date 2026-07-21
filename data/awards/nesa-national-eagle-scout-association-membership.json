@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/award.schema.json",
   "id": "nesa-national-eagle-scout-association-membership",
   "kind": "award",
   "versions": [

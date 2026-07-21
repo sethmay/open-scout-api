@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
   "id": "cycling-2026",
   "kind": "requirement-set",
   "subject": "merit-badge:cycling",

@@ -5,6 +5,7 @@
   "description": "One file per merit badge ever offered: data/merit-badges/<slug>.json. Discontinued badges keep their file (identity is permanent); retirement is a 'discontinued' event and a closed final version window. Replacement chains (e.g. computers -> digital-technology) are 'superseded' events in data/merit-badges/_events.json. Requirement content lives in separate requirement-set documents, not here. 'Active vs retired' status is derivable (null-valid_to version exists?) and will be materialized by the published projection.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "merit-badge" },
     "versions": {

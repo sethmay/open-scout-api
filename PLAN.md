@@ -133,7 +133,7 @@ in the ID scheme precludes adding record-time later.
 | Dates (bookkeeping) | full ISO dates (`verified_at`, `accessed`) |
 | File layout | `data/<dataset-plural>/<slug>.json` + `data/<dataset-plural>/_events.json` |
 | Schemas | JSON Schema draft 2020-12 in `schema/v1/`, `$id` base `https://sethmay.github.io/open-scout-api/schema/v1/` (placeholder until publication URL is final — see TODO) |
-| Canonical serialization | UTF-8, LF, 2-space indent, keys as authored (schemas use `additionalProperties`/`unevaluatedProperties: false` to keep canonical files strict) |
+| Canonical serialization | UTF-8, LF, 2-space indent, keys as authored (schemas use `additionalProperties`/`unevaluatedProperties: false` to keep canonical files strict); every file's first key is a `$schema` ref to its schema — stamped by `tools/stamp_schema.py`, enforced by `validate_data` — for editor validation (`build.py` strips it from the joined dist files) |
 | Camp IDs | keep camp-finder's state-prefixed slugs (`or-camp-meriwether`) for painless import |
 
 ## 4. Repository layout

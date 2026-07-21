@@ -5,6 +5,7 @@
   "description": "One file per advancement rank: data/ranks/<slug>.json. Ranks are versioned entities (name/order/program are stable, so typically a single version); the requirement CONTENT for each rank lives in separate requirement-set documents whose subject is 'rank:<slug>' (same schema as merit-badge requirement sets). Programs: scouts_bsa (Scout..Eagle) today; cub_scouts / sea_scouts / venturing reuse this schema.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "rank" },
     "versions": {

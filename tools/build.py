@@ -42,7 +42,10 @@ DISCLAIMER = ("Unofficial community project. Not affiliated with, endorsed by, o
 
 
 def read_json(p: Path):
-    return json.loads(p.read_text("utf-8"))
+    d = json.loads(p.read_text("utf-8"))
+    if isinstance(d, dict):
+        d.pop("$schema", None)   # editor-only ref on canonical files; dist files reference published schemas
+    return d
 
 
 def write_json(p: Path, obj) -> None:
@@ -232,12 +235,14 @@ def main() -> None:
 
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
-    current_council_coll = coll("council", current_councils)
-    current_terr_coll = coll("territory", current_territories)
-    current_badge_coll = coll("merit-badge", current_badges)
-    current_camp_coll = coll("camp", current_camps)
-    current_rank_coll = coll("rank", current_ranks)
-    current_award_coll = coll("award", current_awards)
+    PUB_CURRENT = "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json"
+    cur = lambda kind, items: {"$schema": PUB_CURRENT, **coll(kind, items)}
+    current_council_coll = cur("council", current_councils)
+    current_terr_coll = cur("territory", current_territories)
+    current_badge_coll = cur("merit-badge", current_badges)
+    current_camp_coll = cur("camp", current_camps)
+    current_rank_coll = cur("rank", current_ranks)
+    current_award_coll = cur("award", current_awards)
     # validate the current collections against the published consumer contract (fail-fast)
     for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll),
                      ("merit-badges", current_badge_coll), ("camps", current_camp_coll),
@@ -267,7 +272,7 @@ def main() -> None:
     current_rs = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"]}
                   for d in requirement_sets if d.get("effective_to") is None]
     write_json(DIST / "v1" / "requirement-sets" / "index.json", coll("requirement-set", rs_index))
-    write_json(DIST / "v1" / "current" / "requirement-sets.json", coll("requirement-set", current_rs))
+    write_json(DIST / "v1" / "current" / "requirement-sets.json", cur("requirement-set", current_rs))
 
     write_json(DIST / "v1" / "meta.json", {
         "name": "Open Scout API", "version": version, "generated_at": now,

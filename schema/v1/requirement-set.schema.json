@@ -5,6 +5,7 @@
   "description": "One file per published requirement revision: data/requirement-sets/<slug>.json (slug convention: '<subject-slug>-<effective-year>'). Requirement sets are IMMUTABLE dated documents, not versioned entities: a revision is a NEW document whose 'supersedes' points at the previous one. 'subject' targets a merit badge today; ranks and awards reuse this schema unchanged. COPYRIGHT: requirement 'text' is Scouting America's. When verbatim text is present, set includes_official_text=true AND a 'text_rights' statement (enforced below) — the text is reproduced with attribution for non-commercial use and is NOT covered by this dataset's CC BY-NC-SA license. 'summary' (original paraphrase) is an optional supplement. See NOTICE.md.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "requirement-set" },
     "subject": {

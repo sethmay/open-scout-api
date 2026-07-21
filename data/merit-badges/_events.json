@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/event.schema.json",
   "events": [
     {
       "id": "discontinue-citizenship-in-society-2026",

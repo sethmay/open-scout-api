@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/territory.schema.json",
   "id": "cst-1",
   "kind": "territory",
   "versions": [

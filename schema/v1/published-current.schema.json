@@ -5,6 +5,7 @@
   "description": "Root schema for the denormalized consumer projections emitted by tools/build.py to v1/current/councils.json and v1/current/territories.json. These are NOT the canonical layer — they are flattened, current-only (entities with an open valid_to:null version; retired/defunct excluded), and self-contained (no cross-file $ref). Point a validator at either current/*.json file to validate it. (The lighter v1/{dataset}/index.json listings use a different, unschema'd item shape.)",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
     "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award"] },

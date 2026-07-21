@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
   "id": "second-class-2024",
   "kind": "requirement-set",
   "subject": "rank:second-class",

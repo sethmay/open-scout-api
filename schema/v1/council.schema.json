@@ -5,6 +5,7 @@
   "description": "One file per local council: data/councils/<slug>.json. Identity (id) is permanent; everything mutable — name, BSA council number, HQ, website, states served, territory membership — lives in effective-dated versions. Mergers, absorptions, renames, and dissolutions are events in data/councils/_events.json.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "council" },
     "versions": {

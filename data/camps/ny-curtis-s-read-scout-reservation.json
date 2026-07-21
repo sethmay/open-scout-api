@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "ny-curtis-s-read-scout-reservation",
   "kind": "camp",
   "versions": [

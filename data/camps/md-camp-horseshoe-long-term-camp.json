@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "md-camp-horseshoe-long-term-camp",
   "kind": "camp",
   "versions": [
