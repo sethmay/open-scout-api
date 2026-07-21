@@ -1,0 +1,31 @@
+{
+  "id": "monmouth",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Monmouth Council",
+      "bsa_number": 347,
+      "hq_city": "Morganville",
+      "hq_state": "NJ",
+      "website": "https://www.monmouthcouncilscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-13",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-347 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

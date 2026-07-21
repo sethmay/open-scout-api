@@ -1,0 +1,31 @@
+{
+  "id": "pathway-to-the-rockies",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pathway to the Rockies Council",
+      "bsa_number": 60,
+      "hq_city": "Colorado Springs",
+      "hq_state": "CO",
+      "website": "https://pathwaytotherockies.org/",
+      "states_served": [],
+      "territory": "territory:cst-5",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-060 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

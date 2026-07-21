@@ -1,0 +1,31 @@
+{
+  "id": "twin-valley",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Twin Valley Council",
+      "bsa_number": 283,
+      "hq_city": "Mankato",
+      "hq_state": "MN",
+      "website": "https://www.scoutingtwinvalley.org/",
+      "states_served": [],
+      "territory": "territory:cst-4",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-283 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

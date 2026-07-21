@@ -1,0 +1,27 @@
+{
+  "id": "region-southern",
+  "kind": "territory",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": "2021",
+      "name": "Southern Region",
+      "division_type": "region",
+      "number": null,
+      "parent": null,
+      "description": "One of BSA's four regions until the 2021 reorganization into 16 National Service Territories.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6
+      }
+    }
+  ],
+  "notes": null
+}

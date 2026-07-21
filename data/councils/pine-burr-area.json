@@ -1,0 +1,31 @@
+{
+  "id": "pine-burr-area",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pine Burr Area Council",
+      "bsa_number": 304,
+      "hq_city": "Hattiesburg",
+      "hq_state": "MS",
+      "website": "https://www.pineburrscouts.org/",
+      "states_served": [],
+      "territory": "territory:cst-16",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-304 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

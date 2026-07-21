@@ -1,0 +1,31 @@
+{
+  "id": "daniel-boone",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Daniel Boone Council",
+      "bsa_number": 414,
+      "hq_city": "Asheville",
+      "hq_state": "NC",
+      "website": "https://www.danielboonecouncil.org/",
+      "states_served": [],
+      "territory": "territory:cst-15",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-414 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

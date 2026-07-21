@@ -1,0 +1,31 @@
+{
+  "id": "pacific-crest",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pacific Crest Council",
+      "bsa_number": 697,
+      "hq_city": "Eugene",
+      "hq_state": "OR",
+      "website": "https://www.otcbsa.org/",
+      "states_served": [],
+      "territory": "territory:cst-1",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-697 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

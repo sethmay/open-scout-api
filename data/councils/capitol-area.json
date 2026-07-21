@@ -1,0 +1,31 @@
+{
+  "id": "capitol-area",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Capitol Area Council",
+      "bsa_number": 564,
+      "hq_city": "Austin",
+      "hq_state": "TX",
+      "website": "https://www.bsacac.org/",
+      "states_served": [],
+      "territory": "territory:cst-7",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-564 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 7 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

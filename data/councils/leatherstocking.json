@@ -1,0 +1,31 @@
+{
+  "id": "leatherstocking",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Leatherstocking Council",
+      "bsa_number": 400,
+      "hq_city": "Utica",
+      "hq_state": "NY",
+      "website": "https://leatherstockingcouncil.org/",
+      "states_served": [],
+      "territory": "territory:cst-10",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-400 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

@@ -31,8 +31,8 @@
           "description": "e.g. 'Western Region', 'Territory 13'."
         },
         "division_type": {
-          "enum": ["national_service_territory", "region", "area"],
-          "description": "What kind of subdivision this was during this window."
+          "enum": ["council_service_territory", "national_service_territory", "region", "area"],
+          "description": "What kind of subdivision this was during this window. Lineage of the 16 numbered territories: region (pre-2021) -> national_service_territory (2021-2024) -> council_service_territory (2024-present, current official term per Scouting America maps)."
         },
         "number": {
           "type": ["integer", "null"],

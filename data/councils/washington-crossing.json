@@ -1,0 +1,31 @@
+{
+  "id": "washington-crossing",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Washington Crossing Council",
+      "bsa_number": 777,
+      "hq_city": "Doylestown",
+      "hq_state": "PA",
+      "website": "http://www.wccscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-13",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-777 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

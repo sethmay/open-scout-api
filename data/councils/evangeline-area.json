@@ -1,0 +1,31 @@
+{
+  "id": "evangeline-area",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Evangeline Area Council",
+      "bsa_number": 212,
+      "hq_city": "Lafayette",
+      "hq_state": "LA",
+      "website": "https://www.eacscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-7",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-212 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 7 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

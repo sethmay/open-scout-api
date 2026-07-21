@@ -1,0 +1,53 @@
+{
+  "id": "cst-16",
+  "kind": "territory",
+  "versions": [
+    {
+      "valid_from": "2021",
+      "valid_to": "2024",
+      "name": "National Service Territory 16",
+      "division_type": "national_service_territory",
+      "number": 16,
+      "parent": null,
+      "description": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          },
+          {
+            "citation": "Scouting America Council Service Territory maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85
+      }
+    },
+    {
+      "valid_from": "2024",
+      "valid_to": null,
+      "name": "Council Service Territory 16",
+      "division_type": "council_service_territory",
+      "number": 16,
+      "parent": null,
+      "description": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          },
+          {
+            "citation": "Scouting America Council Service Territory maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,31 @@
+{
+  "id": "greater-los-angeles-area",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Greater Los Angeles Area Council",
+      "bsa_number": 33,
+      "hq_city": "Los Angeles",
+      "hq_state": "CA",
+      "website": "https://www.glaacbsa.org/",
+      "states_served": [],
+      "territory": "territory:cst-3",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-033 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

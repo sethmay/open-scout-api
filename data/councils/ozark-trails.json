@@ -1,0 +1,31 @@
+{
+  "id": "ozark-trails",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ozark Trails Council",
+      "bsa_number": 306,
+      "hq_city": "Springfield",
+      "hq_state": "MO",
+      "website": "https://otcscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-5",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-306 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

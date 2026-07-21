@@ -1,0 +1,31 @@
+{
+  "id": "tidewater",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Tidewater Council",
+      "bsa_number": 596,
+      "hq_city": "Virginia Beach",
+      "hq_state": "VA",
+      "website": "http://www.tidewaterbsa.com/",
+      "states_served": [],
+      "territory": "territory:cst-15",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-596 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

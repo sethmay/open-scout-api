@@ -1,0 +1,31 @@
+{
+  "id": "bay-lakes",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Bay-Lakes Council",
+      "bsa_number": 635,
+      "hq_city": "Appleton",
+      "hq_state": "WI",
+      "website": "https://baylakesbsa.org/",
+      "states_served": [],
+      "territory": "territory:cst-6",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-635 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

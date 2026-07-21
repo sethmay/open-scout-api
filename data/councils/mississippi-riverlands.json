@@ -1,0 +1,31 @@
+{
+  "id": "mississippi-riverlands",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Mississippi Riverlands Council",
+      "bsa_number": 303,
+      "hq_city": "Jackson",
+      "hq_state": "MS",
+      "website": "https://scoutingriverlands.org/",
+      "states_served": [],
+      "territory": "territory:cst-16",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-303 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": "Former name per camp-finder: 'Andrew Jackson Council'."
+}
