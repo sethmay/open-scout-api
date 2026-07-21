@@ -1,0 +1,99 @@
+{
+  "id": "life-2024",
+  "kind": "requirement-set",
+  "subject": "rank:life",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Life Rank Requirements (2024 Scouts BSA Requirements, No. 33216)",
+    "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Be active in your troop for at least six months as a Star Scout.(See page 24.)"
+    },
+    {
+      "number": "2",
+      "text": "As a Star Scout, demonstrate Scout spirit by living the Scout Oath and Scout Law. Tell how you have done your duty to God and how you have lived the Scout Oath and Scout Law in your everyday life.(See pages 11–16 and 23.)"
+    },
+    {
+      "number": "3",
+      "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle. You may choose any of the 18 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list.(See pages 28 and 422–425.)"
+    },
+    {
+      "number": "4",
+      "text": "While a Star Scout, participate in six hours of service through one or more service projects approved by your Scoutmaster. At least three hours of this service must be conservation-related."
+    },
+    {
+      "number": "5",
+      "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following troop positions of responsibility (or carry out a Scoutmaster-approved leadership project to help the troop).(See pages 422-425.) Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide. Venturing crew/Sea Scout ship. President, vice president, secretary, treasurer, den chief, quartermaster, historian, guide, boatswain, boatswain’s mate, yeoman, purser, storekeeper, chaplain aide, outdoor ethics guide, crew leader, media specialist, specialist or webmaster. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+    },
+    {
+      "number": "6",
+      "text": "While a Star Scout, use the Teaching EDGE method to teach another Scout (preferably younger than you) the skills from ONE of the following choices, so that the Scout is prepared to pass those requirements to their Scoutmaster’s satisfaction.(See page 38.)",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Tenderfoot 4a and 4b (first aid)"
+        },
+        {
+          "number": "6b",
+          "text": "Second Class 2b, 2c, and 2d (cooking/tools)"
+        },
+        {
+          "number": "6c",
+          "text": "Second Class 3a and 3d (navigation)"
+        },
+        {
+          "number": "6d",
+          "text": "First Class 3a, 3b, 3c, and 3d (tools)"
+        },
+        {
+          "number": "6e",
+          "text": "First Class 4a and 4b (navigation)"
+        },
+        {
+          "number": "6f",
+          "text": "Second Class 6a and 6b (first aid)"
+        },
+        {
+          "number": "6g",
+          "text": "First Class 7a and 7b (first aid)"
+        },
+        {
+          "number": "6h",
+          "text": "Three requirements from one of the required Eagle merit badges, as approved by your Scoutmaster"
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "While a Star Scout, participate in a Scoutmaster conference.(See page 418.)"
+    },
+    {
+      "number": "8",
+      "text": "Successfully complete your board of review for the Life rank. (See page 414.)"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/"
+      },
+      {
+        "citation": "2024 Scouts BSA Requirements (No. 33216), rank requirements section"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official 2024 Scouts BSA Requirements; structure/numbering derived."
+  },
+  "notes": "Requirement 6's choose-one option list (a-h) was printed in the source as two interleaved columns; de-interleaved here and choose=1 applied. Bullets, topical section headers, and footnotes omitted."
+}
