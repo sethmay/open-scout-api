@@ -19,6 +19,6 @@ __pycache__/
 .venv/
 *.egg-info/
 
-# Node (future site)
+# Node (future site) + build output (tools/build.py -> dist/, deployed to Pages via CI)
 node_modules/
 dist/

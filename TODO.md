@@ -43,24 +43,25 @@ as best-effort attributes of council history, never a standalone dataset.
 - **Council rename/founding history.** Councils currently have a single version
   (valid_from/to = null) — camp-finder is a current snapshot. Add historical versions +
   rename/merger events as sourced (the temporal model already supports it).
-- **Finalize schema `$id` base URL.** Placeholder is
-  `https://sethmay.github.io/open-scout-api/schema/v1/`; confirm when Pages deployment
-  exists, then re-emit schemas (only the `$id`/`$ref` prefixes change).
-- **Pipeline validator (PLAN §7 phase 5 prereq).** Beyond JSON Schema: version windows
-  non-overlapping + ordered, compared **half-open `[valid_from, valid_to)`** (PLAN §3.1);
-  every `EntityRef` resolves; event participants exist; event dates consistent with
-  version boundaries; slug ↔ filename match; `_events.json` ids unique;
-  `includes_official_text` ⇔ any `Requirement.text` present (the copyright lever — the
-  boolean is untrustworthy alone); `HistoricalDate` month/day in range (schema pattern
-  admits `2021-13-45`); `StateCode` in the closed USPS set. Extend
-  `tools/validate_examples.py` or start `pipeline/` (Python 3.11+, camp-finder
-  conventions — see its `validate.py`).
-- **Build step: published projections.** `current/` flat snapshot per dataset (+
-  `index.json`), per-entity history with events projected in. Schemas for published
-  shapes are separate from canonical schemas. Then: GH Pages deploy, jsDelivr docs,
-  release automation w/ SQLite artifact (PLAN §6).
+- **Finalize schema `$id` base URL. — DONE (0.3.0).** Confirmed
+  `https://sethmay.github.io/open-scout-api/schema/v1/` (owner `sethmay`); build serves
+  schemas at that path, no re-emit needed.
+- **Build step: published projections. — DONE (0.3.0).** `tools/build.py` → `dist/`
+  (`v1/meta.json`, per-dataset `index.json` + per-entity `<id>.json` with folded events,
+  `v1/current/*.json`, `schema/v1/*`); validates `current/` against
+  `published-current.schema.json`. `.github/workflows/pages.yml` gates (validators) +
+  builds on push/PR, deploys to Pages on `main`.
+- **⚠ One-time manual: enable GitHub Pages.** Repo Settings → Pages → Source = "GitHub
+  Actions". Until done, the deploy job has nothing to publish to (build still runs/gates).
+- **Add a README.** Repo is now public; PLAN deferred it until publication. Should cover:
+  what it is, the `v1/` API endpoints + example fetch, CC BY-NC-SA, unofficial disclaimer,
+  how to contribute. (Not written yet — was not part of the build slice.)
+- **Release automation + CDN docs.** Tag releases; ship the JSON tree + a generated
+  SQLite artifact (PLAN §6); document jsDelivr pinning; consider Zenodo DOI.
+- **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema +
+  refs + half-open windows + retired-entity + unique event ids. Still TODO when the
+  relevant data lands: event-date ↔ version-boundary consistency; `includes_official_text`
+  ⇔ any `Requirement.text`; `HistoricalDate` month/day range; `StateCode` closed USPS set.
 - **Requirement-text licensing research.** Determine what verbatim requirement text can
   be published (usscouts.org precedent). Until resolved: `includes_official_text: false`,
   summaries only.
-- **CI.** Validate gate on PR (schema + pipeline rules); deploy on merge to main.
-  camp-finder LESSONS: gate must be non-vacuous — nonzero exit, wired, `needs:`-chained.

@@ -1,0 +1,53 @@
+name: Build & Deploy API
+
+# Validate + build on every push/PR (non-vacuous gate); deploy to GitHub Pages only on main.
+# One-time setup: repo Settings -> Pages -> Source = GitHub Actions.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema
+      - name: Validate (gate — fails the run on any error)
+        run: |
+          python tools/validate_examples.py
+          python tools/validate_data.py
+      - name: Build static API
+        run: python tools/build.py
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    # Deploy only from main, and only after the build+validate gate passes.
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
