@@ -1,0 +1,19 @@
+# Agent workspace (reviews, lessons audit trail, scratch) — never committed
+.workbench/
+
+# Feature worktrees (WORKFLOW.md lifecycle)
+.claude/worktrees/
+
+# OS noise
+Thumbs.db
+.DS_Store
+
+# Python (future pipeline)
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node (future site)
+node_modules/
+dist/
