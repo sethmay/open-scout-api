@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.10.0 (minor) — 2026-07-21
 
-- `PENDING` Add historical rank requirement revisions: 26 requirement-sets for the 2016-2023
+- `e8422e7` Add historical rank requirement revisions: 26 requirement-sets for the 2016-2023
   editions of all 7 Scouts BSA ranks, scraped from the U.S. Scouting Service Project archive
   (usscouts.org). One doc per distinct edition (same-year editorial + org-rename-only diffs
   collapsed), with effective windows + `supersedes` chains flowing into the current 2024 sets.
