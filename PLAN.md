@@ -184,13 +184,17 @@ open-scout-api/
   Introduction/discontinuation/supersession (`computers` → `digital-technology`) are
   events; "status" is derivable (published projection will materialize it).
 - **requirement-set** — immutable dated documents, not versioned entities:
-  `subject` ref (merit badge now; ranks later reuse the same schema), `effective_from/to`,
+  `subject` ref (merit badge and rank reuse one schema), `effective_from/to`,
   `supersedes` chain, `source_document`, recursive `requirements[]` tree (`number`,
   optional verbatim `text`, optional paraphrased `summary`, `choose` N-of-children).
   ⚠ **Copyright**: requirement *text* is Scouting America's. Structure, numbering,
   effective dates, and paraphrased summaries are safe; every set carries
   `includes_official_text` so a publish step can strip/withhold verbatim text. Default
   policy: **populate summaries, not text** until the licensing question is resolved.
+- **rank** — advancement ranks as versioned entities (like merit-badge): `name`,
+  `program` (`scouts_bsa`), `order` (1–7). Requirement CONTENT lives in `requirement-set`
+  docs (`subject: rank:<slug>`), not the entity. Seeded with the 7 Scouts BSA ranks; the
+  same schema will hold Cub/Venturing/Sea Scout ranks and their revision history later.
 
 ## 6. Distribution (LIVE as of 0.3.0)
 

@@ -1,0 +1,31 @@
+{
+  "id": "scout",
+  "kind": "rank",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Scout",
+      "program": "scouts_bsa",
+      "order": 1,
+      "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/",
+      "description": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Ranks_in_Scouts_BSA",
+            "accessed": "2026-07-21"
+          },
+          {
+            "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Rank name/order/program; requirement content in requirement-set docs."
+      }
+    }
+  ],
+  "notes": null
+}

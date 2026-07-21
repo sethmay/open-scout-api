@@ -106,12 +106,13 @@ def main() -> None:
     territories, tevents = load_dataset("territories")
     merit_badges, mbevents = load_dataset("merit-badges")
     camps, campevents = load_dataset("camps")
+    ranks, rankevents = load_dataset("ranks")
     rs_dir = DATA / "requirement-sets"
     requirement_sets = sorted((read_json(p) for p in rs_dir.glob("*.json")),
                               key=lambda d: d["id"]) if rs_dir.exists() else []
     rs_by_subject: dict[str, list[str]] = {}
     for d in requirement_sets:
-        rs_by_subject.setdefault(d["subject"].split(":", 1)[1], []).append(d["id"])
+        rs_by_subject.setdefault(d["subject"], []).append(d["id"])   # keyed by full ref (kind:slug)
 
     # --- territories: per-entity + index + current -------------------------
     current_terr_ids: set[str] = set()
@@ -164,7 +165,7 @@ def main() -> None:
         ref = f"merit-badge:{e['id']}"
         write_json(DIST / "v1" / "merit-badges" / f"{e['id']}.json",
                    {**e, "events": events_for(ref, mbevents),
-                    "requirement_sets": rs_by_subject.get(e["id"], [])})
+                    "requirement_sets": rs_by_subject.get(f"merit-badge:{e['id']}", [])})
         ov = open_version(e)
         last = ov or e["versions"][-1]
         mb_index.append({"id": e["id"], "name": last["name"],
@@ -193,15 +194,34 @@ def main() -> None:
                                   "program_types": ov.get("program_types", []),
                                   "confidence": ov["provenance"]["confidence"]})
 
+    # --- ranks: per-entity + index + current -------------------------------
+    rank_index = []
+    current_ranks = []
+    for e in ranks:
+        ref = f"rank:{e['id']}"
+        write_json(DIST / "v1" / "ranks" / f"{e['id']}.json",
+                   {**e, "events": events_for(ref, rankevents),
+                    "requirement_sets": rs_by_subject.get(ref, [])})
+        ov = open_version(e)
+        last = ov or e["versions"][-1]
+        rank_index.append({"id": e["id"], "name": last["name"], "program": last["program"],
+                           "order": last["order"], "current": ov is not None})
+        if ov is not None:
+            current_ranks.append({"id": e["id"], "name": ov["name"], "program": ov["program"],
+                                  "order": ov["order"], "url": ov.get("url"),
+                                  "confidence": ov["provenance"]["confidence"]})
+
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
     current_council_coll = coll("council", current_councils)
     current_terr_coll = coll("territory", current_territories)
     current_badge_coll = coll("merit-badge", current_badges)
     current_camp_coll = coll("camp", current_camps)
+    current_rank_coll = coll("rank", current_ranks)
     # validate the current collections against the published consumer contract (fail-fast)
     for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll),
-                     ("merit-badges", current_badge_coll), ("camps", current_camp_coll)]:
+                     ("merit-badges", current_badge_coll), ("camps", current_camp_coll),
+                     ("ranks", current_rank_coll)]:
         errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
                  for er in collection_validator.iter_errors(c)]
     if errs:
@@ -215,6 +235,8 @@ def main() -> None:
     write_json(DIST / "v1" / "merit-badges" / "index.json", coll("merit-badge", mb_index))
     write_json(DIST / "v1" / "current" / "camps.json", current_camp_coll)
     write_json(DIST / "v1" / "camps" / "index.json", coll("camp", camp_index))
+    write_json(DIST / "v1" / "current" / "ranks.json", current_rank_coll)
+    write_json(DIST / "v1" / "ranks" / "index.json", coll("rank", rank_index))
     for d in requirement_sets:
         write_json(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
     rs_index = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"],
@@ -235,29 +257,31 @@ def main() -> None:
             "merit-badges": {"total": len(merit_badges), "current": len(current_badges)},
             "requirement-sets": {"total": len(requirement_sets), "current": len(current_rs)},
             "camps": {"total": len(camps), "current": len(current_camps)},
+            "ranks": {"total": len(ranks), "current": len(current_ranks)},
         },
-        "text_rights": ("Merit-badge requirement text is \u00a9 Scouting America, reproduced with "
+        "text_rights": ("Merit-badge and rank requirement text is \u00a9 Scouting America, reproduced with "
                         "attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."),
         "endpoints": ["v1/meta.json", "v1/councils/index.json", "v1/councils/{id}.json",
                       "v1/territories/index.json", "v1/territories/{id}.json",
                       "v1/merit-badges/index.json", "v1/merit-badges/{id}.json",
                       "v1/requirement-sets/index.json", "v1/requirement-sets/{id}.json",
                       "v1/camps/index.json", "v1/camps/{id}.json",
+                      "v1/ranks/index.json", "v1/ranks/{id}.json",
                       "v1/current/councils.json", "v1/current/territories.json",
                       "v1/current/merit-badges.json", "v1/current/requirement-sets.json",
-                      "v1/current/camps.json"],
+                      "v1/current/camps.json", "v1/current/ranks.json"],
     })
 
     (DIST / "index.html").write_text(
         _landing(version, now, len(current_councils), len(current_territories), len(current_badges),
-                 len(current_rs), len(current_camps)),
+                 len(current_rs), len(current_camps), len(current_ranks)),
         encoding="utf-8", newline="\n")
     print(f"built dist/ v{version}: {len(councils)} councils, {len(territories)} territories, "
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
-          f"{len(camps)} camps ({len(current_camps)} current)")
+          f"{len(camps)} camps, {len(ranks)} ranks")
 
 
-def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps) -> str:
+def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -273,7 +297,7 @@ def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps) -> str:
 <p><strong>Unofficial community project.</strong> Not affiliated with, endorsed by, or sponsored by
 Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
 <h2>Datasets</h2>
-<p>{ncouncils} current councils across {nterr} Council Service Territories; {ncamps} current camps; {nbadges} current merit badges; {nrs} current requirement sets.</p>
+<p>{ncouncils} current councils across {nterr} Council Service Territories; {ncamps} current camps; {nbadges} current merit badges; {nrs} current requirement sets; {nranks} ranks.</p>
 <h2>Endpoints</h2>
 <ul>
  <li><a href="v1/meta.json"><code>v1/meta.json</code></a> — version, counts, license</li>
@@ -287,9 +311,10 @@ Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by
  <li><a href="v1/requirement-sets/index.json"><code>v1/requirement-sets/index.json</code></a> · <code>v1/requirement-sets/&lt;id&gt;.json</code> — requirement trees</li>
  <li><a href="v1/camps/index.json"><code>v1/camps/index.json</code></a> · <code>v1/camps/&lt;id&gt;.json</code> — resident/HA/day/short-term camps</li>
  <li><a href="v1/current/camps.json"><code>v1/current/camps.json</code></a> — flat current camp list</li>
+ <li><a href="v1/ranks/index.json"><code>v1/ranks/index.json</code></a> · <code>v1/ranks/&lt;id&gt;.json</code> — Scouts BSA ranks</li>
  <li><a href="schema/v1/council.schema.json"><code>schema/v1/</code></a> — JSON Schemas</li>
 </ul>
-<p class="muted">Merit-badge requirement text is © Scouting America, reproduced with attribution for
+<p class="muted">Merit-badge and rank requirement text is © Scouting America, reproduced with attribution for
 non-commercial use and not covered by the dataset license (see NOTICE).</p>
 <p class="muted">Source &amp; issues: <a href="https://github.com/sethmay/open-scout-api">github.com/sethmay/open-scout-api</a></p>
 </body></html>

@@ -11,9 +11,9 @@ projections published from it) is licensed under
 The **pipeline/tooling source code** (`tools/`, any future `pipeline/`) is licensed
 under the **MIT License**.
 
-### Merit badge requirement text (third-party, excluded from the data license)
+### Merit badge & rank requirement text (third-party, excluded from the data license)
 
-`requirement-set` documents reproduce **verbatim merit badge requirement text, which is
+`requirement-set` documents reproduce **verbatim merit badge and rank requirement text, which is
 © Scouting America** (marked per-record with `includes_official_text: true` and a
 `text_rights` statement). That text is **NOT** covered by the CC BY-NC-SA license above and
 is **not ours to relicense** — it is reproduced with attribution, for non-commercial
@@ -58,5 +58,10 @@ noted here because their status shapes what we may redistribute:
   which requirement-set structure + verbatim text were parsed. Their repository licenses its
   own workbook layout/code (CC BY-SA 4.0) and likewise treats the requirement text as
   Scouting America's property.
+- **2024 Scouts BSA Requirements (No. 33216)** — the official Scouting America publication;
+  authoritative source for the 7 rank `requirement-set` documents (`subject: rank:<slug>`).
+  Requirement **text is © Scouting America** (see above), reproduced verbatim with
+  attribution for non-commercial Scouting use; only the structure/numbering/metadata are the
+  project's contribution. The source PDF is not redistributed (kept in git-ignored `.workbench/`).
 
 Nothing here is guaranteed accurate or current; confirm against the council's own site.

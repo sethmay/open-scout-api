@@ -3,6 +3,16 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.8.0 (minor) — 2026-07-21
+
+- `PENDING` Add the advancement-rank layer: new `rank` entity schema + the 7 Scouts BSA
+  ranks (Scout→Eagle, one version each; `program`/`order`, requirement CONTENT kept out of
+  the entity). Plus 7 rank `requirement-set` documents parsed from the official 2024 Scouts
+  BSA Requirements (No. 33216) — full verbatim requirement tree marked © Scouting America
+  (`text_rights`), `subject: rank:<slug>`. Wired through validate_data + build (per-entity /
+  index / `current/ranks.json` + `CurrentRank` published contract; requirement_sets join now
+  keyed by full `kind:slug` ref). 148 requirement-sets, 873 entities validate.
+
 ## 0.7.0 (minor) — 2026-07-21
 
 - `8de3faa` Import 469 camps from camp-finder into the camp dataset: classified by
