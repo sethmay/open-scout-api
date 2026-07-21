@@ -1,0 +1,31 @@
+{
+  "id": "coronado-area",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Coronado Area Council",
+      "bsa_number": 192,
+      "hq_city": "Salina",
+      "hq_state": "KS",
+      "website": "https://www.coronadoscout.org/",
+      "states_served": [],
+      "territory": "territory:cst-5",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-192 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,29 @@
+{
+  "id": "southern-sierra",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Southern Sierra Council",
+      "bsa_number": 30,
+      "hq_city": "Bakersfield",
+      "hq_state": "CA",
+      "website": "https://www.sscbsa.org/",
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-030 (unofficial community dataset)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.5,
+        "notes": "Present in camp-finder but absent from the 2026 official CST maps; likely merged/renamed. End date and successor unverified where no event is recorded."
+      }
+    }
+  ],
+  "notes": null
+}

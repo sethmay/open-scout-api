@@ -1,0 +1,31 @@
+{
+  "id": "grand-teton",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Grand Teton Council",
+      "bsa_number": 107,
+      "hq_city": "Idaho Falls",
+      "hq_state": "ID",
+      "website": "https://tetonscouts.org/",
+      "states_served": [],
+      "territory": "territory:cst-1",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-107 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

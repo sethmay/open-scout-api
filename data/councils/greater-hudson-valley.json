@@ -1,0 +1,31 @@
+{
+  "id": "greater-hudson-valley",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Greater Hudson Valley Council",
+      "bsa_number": 388,
+      "hq_city": "Fishkill",
+      "hq_state": "NY",
+      "website": "https://www.ghvscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-10",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-388 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

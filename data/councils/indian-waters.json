@@ -1,0 +1,31 @@
+{
+  "id": "indian-waters",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Indian Waters Council",
+      "bsa_number": 553,
+      "hq_city": "Columbia",
+      "hq_state": "SC",
+      "website": "https://indianwaters.org/",
+      "states_served": [],
+      "territory": "territory:cst-15",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-553 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

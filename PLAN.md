@@ -165,9 +165,11 @@ open-scout-api/
   not identity), `hq_city`/`hq_state`, `website`, `states_served[]`, `territory` (ref;
   time-varying membership falls out of versioning). Mergers/absorptions/renames are events.
 - **territory** — one dataset for all national geographic subdivisions across eras:
-  `division_type: national_service_territory | region | area` on each version, `parent`
-  ref for areas-within-regions. The 2021 regions→NST reorganization is the model's
-  acceptance test.
+  `division_type: council_service_territory | national_service_territory | region | area`
+  on each version, `parent` ref for areas-within-regions. Lineage of the 16 numbered
+  territories: 4 regions (pre-2021) → 16 National Service Territories (2021) → renamed
+  Council Service Territories with 2 merged into neighbors → 14 CSTs (2024). This full
+  chain is the model's acceptance test.
 - **camp** — versions carry `council` (ref — camps change hands; camp-finder PLAN already
   demanded council-independent camp identity), `operating_status`, location, `website`,
   open-vocab `program_types[]`/`features[]`. **Sessions/fees stay in camp-finder** — this

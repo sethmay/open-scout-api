@@ -11,8 +11,8 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | Foundation everything references. Mergers/renames as events. First population target. | camp-finder `data/councils/*.json` + `data/council-websites.json`; Wikipedia "List of councils (Scouting America)"; council sites |
-| 2 | **Territories / regions / areas** | ✅ `territory` | Small + finite; the 2021 regions→16 NST reorganization is the temporal model's acceptance test. Populate with #1. | Wikipedia; BSA announcements |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0):** 235 councils, 229 assigned to CSTs. Follow-ups (name/HQ reconcile, defunct dispositions, rename/founding history) in Queue. | camp-finder `data/councils/*.json`; official CST maps (territory); Wikipedia council list |
+| 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | Most-wanted dataset. Include 100+ discontinued badges (pure metadata, no copyright risk). Supersession events (computers→digital-technology). Eagle-required is time-varying (Citizenship in Society, 2022-07). | scouting.org badge list; Wikipedia; usscouts.org change logs; The Badge Archive |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | Requirement diffs by effective year — gold for advancement tools. ⚠ summaries only until license decision (see queue). | Scouts BSA Requirements book editions; usscouts.org change logs; Internet Archive |
 | 5 | **Camps (registry + history)** | ✅ `camp` | Import from camp-finder (keep IDs, `method: imported`). Historical/"lost camps" have a passionate community. Sessions/fees stay in camp-finder. | camp-finder dataset; usscouts.org OCD (robots-blocked — ask admin for dump); council sites |
@@ -29,14 +29,20 @@ as best-effort attributes of council history, never a standalone dataset.
 
 ## Queue
 
-- **Populate councils + territories (PLAN §7 phase 2) — hand to data agent (likely Opus).**
-  Brief in PLAN.md §8. Seed from camp-finder; encode known mergers (302/303 →
-  Mississippi Riverlands, 695 → Sioux — details in camp-finder `TODO.md` "Website
-  enrichment" section) as events with sources. Examples in `schema/v1/examples/` are
-  illustrative, NOT importable data.
-- **Decide data license before first data publication.** CC0 (max reuse, standard for
-  open data) vs CC-BY 4.0 (attribution). Code: MIT. Add LICENSE + README when decided.
-  README deferred until repo goes public.
+- **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
+  seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
+  assignment + a few observed name overrides (303 Mississippi Riverlands, 780 Michigan
+  Crossroads). The map is authoritative for name/HQ — do a full reconciliation pass
+  (extractors flagged many HQ granularity diffs, e.g. metro vs suburb). Also populate
+  `states_served` (currently `[]`; camp-finder only gave HQ state).
+- **Verify defunct-council dispositions + 2/11 merge targets.** 6 councils absent from
+  2026 maps (30 Southern Sierra, 41 Redwood Empire, 302 Choctaw→303, 405 Rip Van Winkle,
+  694 South Plains, 695 Black Hills→733 Sioux): confirm successors + dates (302/695 have
+  sourced successors; 30/41/405/694 are `discontinued` with date=null). Territories 2 & 11
+  (merged 2024) need their absorbing-territory targets. Add events once sourced.
+- **Council rename/founding history.** Councils currently have a single version
+  (valid_from/to = null) — camp-finder is a current snapshot. Add historical versions +
+  rename/merger events as sourced (the temporal model already supports it).
 - **Finalize schema `$id` base URL.** Placeholder is
   `https://sethmay.github.io/open-scout-api/schema/v1/`; confirm when Pages deployment
   exists, then re-emit schemas (only the `$id`/`$ref` prefixes change).

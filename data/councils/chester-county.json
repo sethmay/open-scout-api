@@ -1,0 +1,31 @@
+{
+  "id": "chester-county",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Chester County Council",
+      "bsa_number": 539,
+      "hq_city": "Exton",
+      "hq_state": "PA",
+      "website": "http://www.cccscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-13",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-539 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

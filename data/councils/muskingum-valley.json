@@ -1,0 +1,31 @@
+{
+  "id": "muskingum-valley",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Muskingum Valley Council",
+      "bsa_number": 467,
+      "hq_city": "Zanesville",
+      "hq_state": "OH",
+      "website": "https://muskingumvalleycouncil.com/",
+      "states_served": [],
+      "territory": "territory:cst-9",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-467 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

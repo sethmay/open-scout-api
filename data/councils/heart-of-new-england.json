@@ -1,0 +1,31 @@
+{
+  "id": "heart-of-new-england",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Heart of New England Council",
+      "bsa_number": 230,
+      "hq_city": "Rutland",
+      "hq_state": "MA",
+      "website": "http://www.hnescouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-10",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-230 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

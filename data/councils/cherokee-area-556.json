@@ -1,0 +1,31 @@
+{
+  "id": "cherokee-area-556",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cherokee Area Council",
+      "bsa_number": 556,
+      "hq_city": "Chattanooga",
+      "hq_state": "TN",
+      "website": "https://www.cherokeeareabsa.com/",
+      "states_served": [],
+      "territory": "territory:cst-14",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-556 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

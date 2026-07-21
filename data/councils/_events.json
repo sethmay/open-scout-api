@@ -1,0 +1,166 @@
+{
+  "events": [
+    {
+      "id": "absorb-choctaw-area-into-mississippi-riverlands",
+      "type": "absorbed",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:choctaw-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mississippi-riverlands",
+          "role": "continuing"
+        }
+      ],
+      "notes": "camp-finder records councils 302/303 consolidating into Mississippi Riverlands (303). Date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder TODO (302/303 -> Mississippi Riverlands)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.5
+      }
+    },
+    {
+      "id": "absorb-black-hills-area-into-sioux",
+      "type": "absorbed",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:black-hills-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:sioux",
+          "role": "continuing"
+        }
+      ],
+      "notes": "camp-finder records Black Hills Area (695) merging into Sioux Council (733). Date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder TODO (695 -> Sioux)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.5
+      }
+    },
+    {
+      "id": "rename-andrew-jackson-to-mississippi-riverlands",
+      "type": "renamed",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:mississippi-riverlands",
+          "role": "subject"
+        }
+      ],
+      "notes": "Council 303 shown as 'Mississippi Riverlands' on 2026 CST maps; camp-finder lists former name 'Andrew Jackson Council'. Date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America CST map (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6
+      }
+    },
+    {
+      "id": "discontinued-southern-sierra",
+      "type": "discontinued",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:southern-sierra",
+          "role": "subject"
+        }
+      ],
+      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Absent from Scouting America CST maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.4
+      }
+    },
+    {
+      "id": "discontinued-redwood-empire",
+      "type": "discontinued",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:redwood-empire",
+          "role": "subject"
+        }
+      ],
+      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Absent from Scouting America CST maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.4
+      }
+    },
+    {
+      "id": "discontinued-rip-van-winkle",
+      "type": "discontinued",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:rip-van-winkle",
+          "role": "subject"
+        }
+      ],
+      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Absent from Scouting America CST maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.4
+      }
+    },
+    {
+      "id": "discontinued-south-plains",
+      "type": "discontinued",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:south-plains",
+          "role": "subject"
+        }
+      ],
+      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Absent from Scouting America CST maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.4
+      }
+    }
+  ]
+}

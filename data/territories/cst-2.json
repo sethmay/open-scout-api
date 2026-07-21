@@ -1,0 +1,30 @@
+{
+  "id": "cst-2",
+  "kind": "territory",
+  "versions": [
+    {
+      "valid_from": "2021",
+      "valid_to": "2024",
+      "name": "National Service Territory 2",
+      "division_type": "national_service_territory",
+      "number": 2,
+      "parent": null,
+      "description": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          },
+          {
+            "citation": "Scouting America Council Service Territory maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.5
+      }
+    }
+  ],
+  "notes": "One of two NSTs merged into adjacent territories in the 2024 CST reorganization (16 NSTs -> 14 CSTs); absent from 2024+ maps. Merge target unverified."
+}

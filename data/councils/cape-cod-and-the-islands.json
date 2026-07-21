@@ -1,0 +1,31 @@
+{
+  "id": "cape-cod-and-the-islands",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cape Cod and the Islands Council",
+      "bsa_number": 224,
+      "hq_city": "Yarmouth Port",
+      "hq_state": "MA",
+      "website": "https://scoutscapecod.org/",
+      "states_served": [],
+      "territory": "territory:cst-10",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-224 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

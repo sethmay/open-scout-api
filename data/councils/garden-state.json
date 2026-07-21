@@ -1,0 +1,31 @@
+{
+  "id": "garden-state",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Garden State Council",
+      "bsa_number": 690,
+      "hq_city": "Westampton",
+      "hq_state": "NJ",
+      "website": "https://gardenstatescouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-13",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-690 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

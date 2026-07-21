@@ -1,0 +1,31 @@
+{
+  "id": "colonial-virginia",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Colonial Virginia Council",
+      "bsa_number": 595,
+      "hq_city": "Newport News",
+      "hq_state": "VA",
+      "website": "https://www.cvcboyscouts.org/",
+      "states_served": [],
+      "territory": "territory:cst-15",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-595 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

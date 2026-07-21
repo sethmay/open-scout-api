@@ -1,0 +1,214 @@
+{
+  "events": [
+    {
+      "id": "reorganize-2021-regions-to-nst",
+      "type": "reorganized",
+      "date": "2021",
+      "participants": [
+        {
+          "ref": "territory:region-northeast",
+          "role": "predecessor"
+        },
+        {
+          "ref": "territory:region-central",
+          "role": "predecessor"
+        },
+        {
+          "ref": "territory:region-southern",
+          "role": "predecessor"
+        },
+        {
+          "ref": "territory:region-western",
+          "role": "predecessor"
+        },
+        {
+          "ref": "territory:cst-1",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-2",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-3",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-4",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-5",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-6",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-7",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-8",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-9",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-10",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-11",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-12",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-13",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-14",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-15",
+          "role": "successor"
+        },
+        {
+          "ref": "territory:cst-16",
+          "role": "successor"
+        }
+      ],
+      "notes": "In June 2021 BSA replaced its 4 regions and 27 areas with 16 numbered National Service Territories.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          },
+          {
+            "citation": "Scouting America Council Service Territory maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "rename-2024-nst-to-cst",
+      "type": "renamed",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "territory:cst-1",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-3",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-4",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-5",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-6",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-7",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-8",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-9",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-10",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-12",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-13",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-14",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-15",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-16",
+          "role": "subject"
+        }
+      ],
+      "notes": "In 2024 the National Service Territories were renamed Council Service Territories and several boundaries were updated.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          },
+          {
+            "citation": "Scouting America Council Service Territory maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-2024-merged-territories",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "territory:cst-2",
+          "role": "subject"
+        },
+        {
+          "ref": "territory:cst-11",
+          "role": "subject"
+        }
+      ],
+      "notes": "In the 2024 reorganization two territories (numbers 2 and 11) were merged into adjacent territories, reducing 16 NSTs to 14 CSTs. Merge targets unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Council_Service_Territories",
+            "accessed": "2026-07-21"
+          },
+          {
+            "citation": "Scouting America Council Service Territory maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.5
+      }
+    }
+  ]
+}

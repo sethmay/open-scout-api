@@ -1,0 +1,31 @@
+{
+  "id": "new-birth-of-freedom",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "New Birth of Freedom Council",
+      "bsa_number": 544,
+      "hq_city": "Mechanicsburg",
+      "hq_state": "PA",
+      "website": "http://www.newbirthoffreedom.org/",
+      "states_served": [],
+      "territory": "territory:cst-12",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-544 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 12 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,31 @@
+{
+  "id": "daniel-webster",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Daniel Webster Council",
+      "bsa_number": 330,
+      "hq_city": "Manchester",
+      "hq_state": "NH",
+      "website": "https://www.nhscouting.org/",
+      "states_served": [],
+      "territory": "territory:cst-10",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-330 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}

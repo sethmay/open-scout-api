@@ -1,0 +1,31 @@
+{
+  "id": "lincoln-heritage",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Lincoln Heritage Council",
+      "bsa_number": 205,
+      "hq_city": "Louisville",
+      "hq_state": "KY",
+      "website": "http://www.lhcbsa.org/",
+      "states_served": [],
+      "territory": "territory:cst-14",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-205 (unofficial community dataset)"
+          },
+          {
+            "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "notes": null
+}
