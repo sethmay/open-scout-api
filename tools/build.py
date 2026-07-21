@@ -272,7 +272,7 @@ def main() -> None:
     current_rs = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"]}
                   for d in requirement_sets if d.get("effective_to") is None]
     write_json(DIST / "v1" / "requirement-sets" / "index.json", coll("requirement-set", rs_index))
-    write_json(DIST / "v1" / "current" / "requirement-sets.json", cur("requirement-set", current_rs))
+    write_json(DIST / "v1" / "current" / "requirement-sets.json", coll("requirement-set", current_rs))
 
     write_json(DIST / "v1" / "meta.json", {
         "name": "Open Scout API", "version": version, "generated_at": now,
