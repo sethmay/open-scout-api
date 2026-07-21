@@ -65,7 +65,7 @@ noted here because their status shapes what we may redistribute:
   project's contribution. The source PDF is not redistributed (kept in git-ignored `.workbench/`).
 - **Guide to Awards and Insignia (No. 33066)** — the official Scouting America publication;
   source for the `award` catalog. Only **facts** are extracted (award names, catalog item
-  numbers, wear location) — uncopyrightable — plus original one-line summaries; the Guide's
+  numbers, wear location) — uncopyrightable; the Guide's
   descriptive prose is © Scouting America and is not reproduced. The source PDFs are not
   redistributed (kept in git-ignored `.workbench/`).
 

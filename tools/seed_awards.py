@@ -7,7 +7,7 @@ per-faith religious-emblem programs (a separate, larger dataset).
 
 FACTS ONLY: name, category, audience, square-knot + insignia catalog numbers, wear. No
 verbatim Guide to Awards & Insignia prose is reproduced (that text is (c) Scouting
-America); `summary` is original one-line prose. The records below were extracted from the
+America), and `summary` is left null — this dataset is strictly facts. The records below were extracted from the
 official Guide to Awards and Insignia (No. 33066) with LLM assistance and then verified:
 every catalog number was checked to occur in the source, knot->award pairings were
 anchor-checked, and categories/audience/summaries curated. Provenance therefore declares
@@ -37,7 +37,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes Scouting alumni; may include the Alumnus of the Year device."
+    "summary": null
   },
   {
     "slug": "arrow-of-light-rank-knot",
@@ -51,7 +51,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Adult knot for having earned the Arrow of Light rank as a youth."
+    "summary": null
   },
   {
     "slug": "arrowhead-honor",
@@ -65,7 +65,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "left sleeve on long-sleeved shirt",
     "restricted": false,
-    "summary": "Recognizes commissioners for completing training milestones."
+    "summary": null
   },
   {
     "slug": "asian-american-scouting-service-award",
@@ -77,7 +77,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": null,
     "restricted": false,
-    "summary": "Recognizes service developing Scouting opportunities for Asian American youth."
+    "summary": null
   },
   {
     "slug": "commissioner-award-of-excellence-in-unit-service",
@@ -89,7 +89,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes commissioners for excellence in delivering unit service."
+    "summary": null
   },
   {
     "slug": "community-organization-award",
@@ -101,7 +101,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes Scouters for service honored by an approved national organization."
+    "summary": null
   },
   {
     "slug": "council-alumnus-of-the-year",
@@ -117,7 +117,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": null,
     "restricted": false,
-    "summary": "Council recognition of an outstanding Scouting alumnus, worn with acorn device."
+    "summary": null
   },
   {
     "slug": "council-duty-to-god-award",
@@ -129,7 +129,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": null,
     "restricted": false,
-    "summary": "Annual recognition of registered Scouters for transformational leadership supporting the spiritual foundation of Scouting at the council level."
+    "summary": null
   },
   {
     "slug": "den-leader-training-award",
@@ -148,7 +148,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes den leaders for tenure, training, and performance."
+    "summary": null
   },
   {
     "slug": "distinguished-commissioner-service-award",
@@ -167,7 +167,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes commissioners for distinguished, sustained service, with plaque and medallion by level."
+    "summary": null
   },
   {
     "slug": "distinguished-conservation-service-award",
@@ -179,7 +179,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes distinguished service to natural resource conservation, conferred by councils and the National Council."
+    "summary": null
   },
   {
     "slug": "distinguished-eagle-scout-award",
@@ -197,7 +197,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "on Eagle knot",
     "restricted": false,
-    "summary": "Recognizes Eagle Scouts for distinguished achievement over at least 25 years."
+    "summary": null
   },
   {
     "slug": "district-award-of-merit",
@@ -211,7 +211,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "District recognition for service to youth by district Scouters."
+    "summary": null
   },
   {
     "slug": "doctorate-of-commissioner-science-award",
@@ -223,7 +223,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes commissioners who complete advanced commissioner training and a service project."
+    "summary": null
   },
   {
     "slug": "eagle-scout-nesa-life-membership-award",
@@ -237,7 +237,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Eagle Scout knot with silver border for NESA life members."
+    "summary": null
   },
   {
     "slug": "eagle-scout-rank-knot",
@@ -251,7 +251,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Adult knot recognizing having earned the Eagle Scout rank as a youth."
+    "summary": null
   },
   {
     "slug": "heroism-award",
@@ -263,7 +263,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above left pocket",
     "restricted": true,
-    "summary": "Awarded for meritorious action involving risk to save a life."
+    "summary": null
   },
   {
     "slug": "honor-medal",
@@ -275,7 +275,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above left pocket",
     "restricted": true,
-    "summary": "Awarded for saving or attempting to save life at risk to self, with Crossed Palms for extreme risk."
+    "summary": null
   },
   {
     "slug": "international-scouter-award",
@@ -287,7 +287,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": true,
-    "summary": "Recognizes Scouters who contribute to international Scouting."
+    "summary": null
   },
   {
     "slug": "james-e-west-fellowship-award",
@@ -304,7 +304,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes gifts to a council endowment in a member's honor."
+    "summary": null
   },
   {
     "slug": "medal-of-merit",
@@ -318,7 +318,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above left pocket",
     "restricted": true,
-    "summary": "Awarded for outstanding meritorious action not involving risk to self."
+    "summary": null
   },
   {
     "slug": "national-camping-school-emblem",
@@ -334,7 +334,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "right pocket",
     "restricted": false,
-    "summary": "Recognizes Scouters who complete National Camping School training."
+    "summary": null
   },
   {
     "slug": "national-duty-to-god-award",
@@ -346,7 +346,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": null,
     "restricted": false,
-    "summary": "Annual recognition of adult members for exemplary faith-based service and promotion of religious duty in Scouting."
+    "summary": null
   },
   {
     "slug": "nesa-national-eagle-scout-association-membership",
@@ -360,7 +360,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "right pocket",
     "restricted": false,
-    "summary": "Recognizes membership in the National Eagle Scout Association."
+    "summary": null
   },
   {
     "slug": "nesa-outstanding-eagle-scout-award",
@@ -377,7 +377,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above left pocket",
     "restricted": false,
-    "summary": "Recognizes Eagle Scouts for distinguished service at local, state, or regional levels."
+    "summary": null
   },
   {
     "slug": "north-star-award",
@@ -391,7 +391,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "worn around the neck",
     "restricted": false,
-    "summary": "Honors nonregistered Scouting supporters at the level of the Silver Beaver and above."
+    "summary": null
   },
   {
     "slug": "nylt-trained-strip",
@@ -405,7 +405,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "sleeve pocket flap above badge of office, or left sleeve below emblem of office",
     "restricted": false,
-    "summary": "Recognizes youth leaders who completed National Youth Leadership Training."
+    "summary": null
   },
   {
     "slug": "order-of-the-arrow-distinguished-service-award",
@@ -417,7 +417,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "National OA recognition for outstanding service to the Order over time."
+    "summary": null
   },
   {
     "slug": "order-of-the-arrow-founder-s-award",
@@ -432,7 +432,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "right pocket flap",
     "restricted": true,
-    "summary": "Honors Arrowmen who give outstanding service to their lodge."
+    "summary": null
   },
   {
     "slug": "order-of-the-arrow-membership",
@@ -446,7 +446,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "right pocket flap",
     "restricted": false,
-    "summary": "Recognizes membership in the Order of the Arrow, Scouting's honor society."
+    "summary": null
   },
   {
     "slug": "philmont-training-center-masters-track-award",
@@ -458,7 +458,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes completion of the Masters Track program at Philmont Training Center."
+    "summary": null
   },
   {
     "slug": "powder-horn",
@@ -475,7 +475,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "left pocket",
     "restricted": false,
-    "summary": "Recognizes adult leaders who complete a Powder Horn high-adventure resource course."
+    "summary": null
   },
   {
     "slug": "professional-training-award",
@@ -487,7 +487,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": true,
-    "summary": "Recognizes professional Scouters for completing professional development training."
+    "summary": null
   },
   {
     "slug": "quartermaster-award",
@@ -501,7 +501,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": true,
-    "summary": "Highest rank award in Sea Scouts, worn as an adult knot."
+    "summary": null
   },
   {
     "slug": "religious-emblems",
@@ -520,7 +520,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Knot recognizing earning a religious emblem of any faith, with devices by program level."
+    "summary": null
   },
   {
     "slug": "scouter-s-key-skipper-s-key",
@@ -541,7 +541,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes trained leaders for tenure and performance in their program phase."
+    "summary": null
   },
   {
     "slug": "scouter-s-training-award",
@@ -562,7 +562,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes leaders for completing training and tenure requirements."
+    "summary": null
   },
   {
     "slug": "scouting-service-award",
@@ -574,7 +574,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes Scouters for service to an approved underserved market."
+    "summary": null
   },
   {
     "slug": "scouting-vale-la-pena-service-award",
@@ -590,7 +590,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": null,
     "restricted": false,
-    "summary": "Recognizes service developing Scouting opportunities for Hispanic/Latino youth."
+    "summary": null
   },
   {
     "slug": "sea-scout-leadership-award",
@@ -606,7 +606,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes outstanding leadership by Sea Scouts or adult leaders."
+    "summary": null
   },
   {
     "slug": "silver-antelope-award",
@@ -623,7 +623,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above left pocket",
     "restricted": false,
-    "summary": "Territory-level recognition for distinguished service to youth."
+    "summary": null
   },
   {
     "slug": "silver-beaver-award",
@@ -640,7 +640,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above left pocket",
     "restricted": false,
-    "summary": "Council-level recognition for distinguished service to youth."
+    "summary": null
   },
   {
     "slug": "silver-buffalo-award",
@@ -656,7 +656,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above left pocket",
     "restricted": false,
-    "summary": "National-level recognition for distinguished service to youth."
+    "summary": null
   },
   {
     "slug": "special-needs-scouting-service-award",
@@ -671,7 +671,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes Scouters who provide valuable service to youth with special needs or disabilities."
+    "summary": null
   },
   {
     "slug": "spirit-of-whitney-m-young-jr-service-award",
@@ -689,7 +689,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "nonuniform wear",
     "restricted": true,
-    "summary": "Recognizes outstanding contribution through Scouting to low-income urban/rural youth."
+    "summary": null
   },
   {
     "slug": "the-elbert-k-fretwell-outstanding-educator-award",
@@ -703,7 +703,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": null,
     "restricted": false,
-    "summary": "Recognizes educators who exemplify the values of the Scout Oath and Law."
+    "summary": null
   },
   {
     "slug": "unit-leader-award-of-merit",
@@ -721,7 +721,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above left pocket",
     "restricted": false,
-    "summary": "Recognizes unit leaders who deliver an outstanding program in their unit."
+    "summary": null
   },
   {
     "slug": "venturing-leadership-award",
@@ -737,7 +737,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes outstanding leadership by Venturers or adult leaders."
+    "summary": null
   },
   {
     "slug": "venturing-summit-award",
@@ -751,7 +751,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Highest Venturing recognition, worn as an adult knot."
+    "summary": null
   },
   {
     "slug": "vigil-honor",
@@ -765,7 +765,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "nonuniform wear",
     "restricted": false,
-    "summary": "Highest honor of the Order of the Arrow for distinguished service."
+    "summary": null
   },
   {
     "slug": "william-d-boyce-new-unit-organizer-award",
@@ -777,7 +777,7 @@ AWARDS = json.loads(r"""
     "insignia_nos": [],
     "wear": "above the left pocket",
     "restricted": false,
-    "summary": "Recognizes Scouters who organize new Scouting units."
+    "summary": null
   },
   {
     "slug": "wood-badge",
@@ -794,7 +794,7 @@ AWARDS = json.loads(r"""
     ],
     "wear": "worn only with official field uniform",
     "restricted": true,
-    "summary": "Recognizes Scouters who complete all phases of advanced leadership training, shown by beads on a thong."
+    "summary": null
   }
 ]
 """)
