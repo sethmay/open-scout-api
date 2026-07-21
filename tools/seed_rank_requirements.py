@@ -16,13 +16,12 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import date
 from pathlib import Path
 
 import pdfplumber
 
 PDF_NAME = "Scouts-BSA-Rank-Requirements.pdf"
-TODAY = date.today().isoformat()
+TODAY = "2026-07-21"   # pinned so re-running reproduces committed docs byte-for-byte (matches seed_ranks.py)
 ADV_URL = "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/"
 TEXT_RIGHTS = ("Requirement text \u00a9 Scouting America, reproduced with attribution for "
                "non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. "

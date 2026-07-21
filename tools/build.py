@@ -259,7 +259,7 @@ def main() -> None:
             "camps": {"total": len(camps), "current": len(current_camps)},
             "ranks": {"total": len(ranks), "current": len(current_ranks)},
         },
-        "text_rights": ("Merit-badge requirement text is \u00a9 Scouting America, reproduced with "
+        "text_rights": ("Merit-badge and rank requirement text is \u00a9 Scouting America, reproduced with "
                         "attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."),
         "endpoints": ["v1/meta.json", "v1/councils/index.json", "v1/councils/{id}.json",
                       "v1/territories/index.json", "v1/territories/{id}.json",
@@ -314,7 +314,7 @@ Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by
  <li><a href="v1/ranks/index.json"><code>v1/ranks/index.json</code></a> · <code>v1/ranks/&lt;id&gt;.json</code> — Scouts BSA ranks</li>
  <li><a href="schema/v1/council.schema.json"><code>schema/v1/</code></a> — JSON Schemas</li>
 </ul>
-<p class="muted">Merit-badge requirement text is © Scouting America, reproduced with attribution for
+<p class="muted">Merit-badge and rank requirement text is © Scouting America, reproduced with attribution for
 non-commercial use and not covered by the dataset license (see NOTICE).</p>
 <p class="muted">Source &amp; issues: <a href="https://github.com/sethmay/open-scout-api">github.com/sethmay/open-scout-api</a></p>
 </body></html>
