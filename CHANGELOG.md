@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.12.0 (minor) — 2026-07-21
 
-- `PENDING` Release automation + durability: `tools/build_sqlite.py` compiles the data into a
+- `f0a5f29` Release automation + durability: `tools/build_sqlite.py` compiles the data into a
   queryable SQLite artifact (typed tables mirroring the `current` projections + full JSON per
   row for `json_extract`); `.github/workflows/release.yml` publishes a GitHub Release (JSON
   tarball + SQLite) on any `v*` tag; created `v*` git tags for all shipped versions at their
