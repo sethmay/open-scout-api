@@ -187,17 +187,23 @@ open-scout-api/
   `includes_official_text` so a publish step can strip/withhold verbatim text. Default
   policy: **populate summaries, not text** until the licensing question is resolved.
 
-## 6. Distribution (later phase; decisions so far)
+## 6. Distribution (LIVE as of 0.3.0)
 
-- **GitHub repo = database; GitHub Pages = read API.** Path-versioned static JSON:
-  `/v1/councils/index.json`, `/v1/councils/{id}.json`, schemas under `/v1/schema/`.
-- **jsDelivr over git tags** for real CDN + immutable pinning
-  (`cdn.jsdelivr.net/gh/<owner>/open-scout-api@<tag>/...`).
-- **Releases = immutable snapshots**, shipping the JSON tree + a generated SQLite
-  artifact (and optionally Parquet).
-- **Durability upgrade when it matters:** archive tagged releases to Zenodo for a DOI.
-- License: undecided (CC0 vs CC-BY 4.0 for data; code MIT). See TODO — decide before
-  first data publication.
+- **GitHub repo = database; GitHub Pages = read API.** `tools/build.py` denormalizes the
+  canonical `data/` tree into `dist/` (git-ignored; built in CI): `v1/meta.json`,
+  `v1/{councils,territories}/index.json` + per-entity `<id>.json` (canonical entity +
+  folded lifecycle events), `v1/current/{councils,territories}.json` (flat, current-only
+  projections), and `schema/v1/*` (served at the path matching every schema's `$id`,
+  `https://sethmay.github.io/open-scout-api/schema/v1/`). Build validates its `current/`
+  output against `schema/v1/published-current.schema.json` (fail-fast).
+- **CI:** `.github/workflows/pages.yml` runs the validators (gate) + build on every
+  push/PR and deploys to Pages only on `main` (deploy `needs:` the gate). One-time manual
+  step: repo Settings → Pages → Source = GitHub Actions.
+- **jsDelivr over git tags** for a CDN of the raw canonical files + immutable pinning
+  (`cdn.jsdelivr.net/gh/sethmay/open-scout-api@<tag>/...`).
+- **Releases = immutable snapshots** (future): ship the JSON tree + a generated SQLite
+  artifact (and optionally Parquet); archive tagged releases to Zenodo for a DOI.
+- **License: CC BY-NC-SA 4.0** for data (`LICENSE`/`NOTICE.md`); pipeline code MIT.
 
 ## 7. Phases
 

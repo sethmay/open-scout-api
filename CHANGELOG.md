@@ -3,6 +3,11 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+- `PENDING` Publish static API: `tools/build.py` compiles `data/` → `dist/` (path-versioned
+  `v1/` — meta, per-dataset index + per-entity files with folded events, flat `current/`
+  projections, schemas) with a published-projection schema + fail-fast contract check;
+  `.github/workflows/pages.yml` gates (validators) and deploys to GitHub Pages on `main`
+
 ## 0.2.0 (minor) — 2026-07-21
 
 - `8e7ec9b` Populate councils + territories: 235 council entities (229 assigned to

@@ -57,3 +57,26 @@ fold; read before similar work.
   worktree's file; edit the worktree copy. When a doc asserts "X is git-ignored", add/verify
   the `.gitignore` line in the same change (proprietary map images are facts-only sources —
   extract facts, never redistribute the images).
+
+## Build / publish (dist/ + GitHub Pages)
+
+- **Deploy-on-every-push + the semver PENDING→backfill two-step makes the build's version
+  lag one commit.** `build.py` reads the newest `## X.Y.Z` CHANGELOG heading, but at
+  feature-merge time the entry is still `PENDING` (newest heading is the *previous*
+  version). Fix used: if a `PENDING` line exists, stamp `X.Y.Z+unreleased` so the deployed
+  version is honest during the lag; it self-clears when the bump commit lands. For exact
+  version pinning, consumers use git tags / jsDelivr, not `meta.json`.
+- **A published JSON Schema shipped as a consumer contract MUST have a root
+  (`type`/`properties`/`$ref`), not just `$defs`.** A `$defs`-only file validates nothing
+  when a consumer points a validator at it (vacuous pass); it "worked" only via the
+  producer's inline `{**schema,"$ref":"#/$defs/X"}`. Give it a real root and delete/wire
+  every `$def` (`published-current.schema.json`).
+- **`format` (uri/date/date-time) is a silent no-op unless the format extra is installed.**
+  CI must `pip install "jsonschema[format]"` (pulls rfc3987 etc.) for those to bite;
+  patterns/`required`/`additionalProperties`/bounds always bite. (Corollary of the
+  type-scoped-format note above — a `format` keyword that neither applies to the type nor
+  has its checker installed guards nothing.)
+- **Derive a denormalized cross-entity field from the referenced entity, not from a slug
+  regex.** `territory_number` now comes from the referenced territory's canonical `number`,
+  not `cst-(\d+)` on the slug — the regex silently yields null for any future current
+  entity whose slug breaks the convention while the canonical number is right there.
