@@ -1,0 +1,117 @@
+# Open Scout API
+
+Open, versioned, machine-readable reference data for **Scouting America (BSA)** — councils,
+Council Service Territories, and (planned) camps, merit badges, and requirements — published
+as static JSON with JSON Schemas, so anyone can build on it without scraping or running a
+server.
+
+> [!IMPORTANT]
+> **Unofficial community project.** Not affiliated with, endorsed by, or sponsored by
+> Scouting America / Boy Scouts of America. Data is aggregated from public sources with
+> per-fact provenance; always confirm against each council's own site. No trademark claim
+> or endorsement is implied.
+
+## What makes this different
+
+No official machine-readable BSA structural data exists. The hard part is **history** —
+councils merge and rename, regions became territories (2021→2024), badges get retired,
+requirements are revised. This dataset models change as first-class data:
+
+- **Identity is permanent and separate from state.** Each entity has a stable slug id that is
+  never reused; names, numbers, ownership, and status live in effective-dated **versions**.
+- **Change is an explicit event.** Mergers, splits, renames, and reorganizations are records
+  linking predecessor/successor entities — not silent overwrites.
+- **Every fact carries provenance** — source, method, verification date, and a confidence
+  score (unverified inferences are flagged, never fabricated).
+
+See [`PLAN.md`](./PLAN.md) §3 for the full model.
+
+## Live API
+
+Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under `/v1/`).
+
+| Endpoint | What |
+|---|---|
+| [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json) | version, counts, license, endpoint list |
+| [`v1/current/councils.json`](https://sethmay.github.io/open-scout-api/v1/current/councils.json) | flat list of **current** councils (denormalized) |
+| [`v1/current/territories.json`](https://sethmay.github.io/open-scout-api/v1/current/territories.json) | flat list of current Council Service Territories |
+| [`v1/councils/index.json`](https://sethmay.github.io/open-scout-api/v1/councils/index.json) | every council, incl. historical (with a `current` flag) |
+| `v1/councils/{id}.json` | one council: full version history + its lifecycle events |
+| [`v1/territories/index.json`](https://sethmay.github.io/open-scout-api/v1/territories/index.json) | every territory (CSTs, legacy regions, merged NSTs) |
+| `v1/territories/{id}.json` | one territory: version history + events |
+| [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
+
+```bash
+# the current council list
+curl -s https://sethmay.github.io/open-scout-api/v1/current/councils.json | jq '.count, .items[0]'
+
+# one council's history + events (e.g. a merged/renamed council)
+curl -s https://sethmay.github.io/open-scout-api/v1/councils/mississippi-riverlands.json
+```
+
+```js
+const { items } = await (await fetch(
+  "https://sethmay.github.io/open-scout-api/v1/current/councils.json")).json();
+```
+
+**Pinning:** the raw canonical files are also on jsDelivr —
+`https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@main/data/councils/cascade-pacific.json`
+(canonical shape; the denormalized projections above are served from GitHub Pages). Use a
+git tag instead of `@main` for immutable version pinning once releases are tagged.
+
+## Datasets & status
+
+| Dataset | Status |
+|---|---|
+| **Councils** | ✅ 235 entities — 229 current, assigned to the 14 Council Service Territories; 6 historical (merged/renamed) with lifecycle events |
+| **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
+| **Merit badges / requirements** | ⬜ schemas drafted; population planned |
+| **Camps** | ⬜ import from the sibling [camp-finder](https://github.com/sethmay/camp-finder) planned |
+
+Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
+
+## Repository layout
+
+```
+data/                 canonical, normalized JSON (one file per entity + _events.json per dataset)
+  councils/  territories/
+schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current
+tools/                build.py (data/ -> dist/), validate_data.py, validate_examples.py, seed scripts
+dist/                 generated static API (git-ignored; built + deployed by CI)
+PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
+```
+
+The repo **is** the database: writes happen via pull requests, a CI validation gate blocks bad
+merges, and GitHub Pages serves the built API. There is no runtime backend.
+
+## Local development
+
+Requires Python 3.11+.
+
+```bash
+pip install "jsonschema[format]"
+python tools/validate_examples.py   # schemas + example fixtures (positive & negative)
+python tools/validate_data.py       # data/: schema + referential + version-window invariants
+python tools/build.py               # compile data/ -> dist/  (open dist/index.html)
+```
+
+CI ([`.github/workflows/pages.yml`](./.github/workflows/pages.yml)) runs the validators as a
+required gate on every push/PR and deploys `dist/` to GitHub Pages on `main`.
+
+## Contributing
+
+Corrections and additions are welcome as pull requests. Every fact needs a checkable source in
+its `provenance` block (no bare high confidence without a citation). Run the validators above
+before opening a PR — the same gate runs in CI. New entities follow the id/versioning/event
+conventions in [`PLAN.md`](./PLAN.md) §3.
+
+## License & attribution
+
+- **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)** — reuse
+  with attribution, non-commercial, share-alike.
+- **Code** (`tools/`): MIT.
+
+Seed sources and how to attribute are in [`NOTICE.md`](./NOTICE.md). In brief: territory
+assignments come from official Scouting America Council Service Territory maps (facts extracted;
+the proprietary map images are **not** redistributed); council websites/names are cross-checked
+against the unofficial [camp-finder](https://github.com/sethmay/camp-finder) dataset.
