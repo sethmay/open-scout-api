@@ -8,7 +8,7 @@
       "title": "Slug",
       "description": "Permanent, dataset-scoped entity identifier. Never reused, never deleted, never encodes mutable facts (e.g. council number). Disambiguate historical collisions with an era suffix (e.g. 'black-hawk-1935').",
       "type": "string",
-      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
       "minLength": 1,
       "maxLength": 80
     },
@@ -16,7 +16,7 @@
       "title": "EntityRef",
       "description": "Cross-dataset reference: '{kind}:{slug}'. Known kinds: council, territory, camp, merit-badge, requirement-set; future kinds (rank, award, oa-lodge) use the same shape. Referential integrity is a pipeline rule, not a schema rule.",
       "type": "string",
-      "pattern": "^[a-z][a-z-]*:[a-z0-9][a-z0-9-]*$"
+      "pattern": "^[a-z]([a-z-]*[a-z])?:[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
     },
     "HistoricalDate": {
       "title": "HistoricalDate",

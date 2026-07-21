@@ -7,8 +7,7 @@
   "properties": {
     "events": {
       "type": "array",
-      "items": { "$ref": "common.schema.json#/$defs/Event" },
-      "default": []
+      "items": { "$ref": "common.schema.json#/$defs/Event" }
     }
   },
   "required": ["events"],

@@ -1,0 +1,15 @@
+{
+  "id": "negative-fixture-2000",
+  "kind": "requirement-set",
+  "subject": "merit-badge:negative-fixture",
+  "effective_from": "2000",
+  "effective_to": null,
+  "source_document": { "title": "Negative fixture" },
+  "includes_official_text": false,
+  "requirements": [{ "number": "1" }],
+  "provenance": {
+    "sources": [{ "citation": "negative fixture: a requirement with only 'number' (no text/summary/children) must be rejected" }],
+    "method": "curated",
+    "verified_at": "2026-07-21"
+  }
+}

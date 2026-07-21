@@ -41,10 +41,14 @@ as best-effort attributes of council history, never a standalone dataset.
   `https://sethmay.github.io/open-scout-api/schema/v1/`; confirm when Pages deployment
   exists, then re-emit schemas (only the `$id`/`$ref` prefixes change).
 - **Pipeline validator (PLAN §7 phase 5 prereq).** Beyond JSON Schema: version windows
-  non-overlapping + ordered; every `EntityRef` resolves; event participants exist; event
-  dates consistent with version boundaries; slug ↔ filename match; `_events.json` ids
-  unique. Extend `tools/validate_examples.py` or start `pipeline/` (Python 3.11+,
-  camp-finder conventions — see its `validate.py`).
+  non-overlapping + ordered, compared **half-open `[valid_from, valid_to)`** (PLAN §3.1);
+  every `EntityRef` resolves; event participants exist; event dates consistent with
+  version boundaries; slug ↔ filename match; `_events.json` ids unique;
+  `includes_official_text` ⇔ any `Requirement.text` present (the copyright lever — the
+  boolean is untrustworthy alone); `HistoricalDate` month/day in range (schema pattern
+  admits `2021-13-45`); `StateCode` in the closed USPS set. Extend
+  `tools/validate_examples.py` or start `pipeline/` (Python 3.11+, camp-finder
+  conventions — see its `validate.py`).
 - **Build step: published projections.** `current/` flat snapshot per dataset (+
   `index.json`), per-entity history with events projected in. Schemas for published
   shapes are separate from canonical schemas. Then: GH Pages deploy, jsDelivr docs,

@@ -85,6 +85,9 @@ in the ID scheme precludes adding record-time later.
 - **Record-level SCD-2**, not attribute-level: each version is a full snapshot of the
   attributes during its validity window. Changes are rare (a council renames a few times
   per century); full snapshots diff cleanly and are simple to consume.
+- Validity windows are **half-open `[valid_from, valid_to)`**: a successor's `valid_from`
+  equals its predecessor's `valid_to` (see the Citizenship in Society example — the
+  2022-07-01 boundary appears in both windows). Non-overlap checks MUST compare half-open.
 - Non-overlap and ordering of versions is a **pipeline validator** rule (not expressible
   in JSON Schema).
 - "Current" = the version with `valid_to: null`. Retired entities have no null-`valid_to`

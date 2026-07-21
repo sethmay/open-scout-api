@@ -1,0 +1,17 @@
+{
+  "id": "negative-fixture",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": "2000",
+      "valid_to": null,
+      "name": "Negative Fixture Council",
+      "provenance": {
+        "sources": [{ "citation": "negative fixture: llm_extraction MUST declare confidence < 1.0" }],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0
+      }
+    }
+  ]
+}

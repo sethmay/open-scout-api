@@ -26,7 +26,7 @@
       "anyOf": [
         {
           "type": "string",
-          "pattern": "^requirement-set:[a-z0-9][a-z0-9-]*$"
+          "pattern": "^requirement-set:[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
         },
         { "type": "null" }
       ],
@@ -57,7 +57,7 @@
     },
     "includes_official_text": {
       "type": "boolean",
-      "description": "True iff any requirement node carries verbatim 'text'. Lets a publish step strip or withhold official text wholesale."
+      "description": "True iff any requirement node carries verbatim 'text'. Lets a publish step strip or withhold official text wholesale. The flag <-> text-presence correspondence is a PIPELINE-ENFORCED invariant (see TODO.md 'Pipeline validator'); never trust the boolean alone."
     },
     "requirements": {
       "type": "array",
