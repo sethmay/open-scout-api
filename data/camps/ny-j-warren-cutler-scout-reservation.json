@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "ny-j-warren-cutler-scout-reservation",
   "kind": "camp",
   "versions": [

@@ -3,6 +3,16 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.11.0 (minor) — 2026-07-21
+
+- `PENDING` Add a `$schema` reference to every canonical `data/**.json` file (absolute
+  published URL per dataset) so contributors get live editor validation + autocomplete in
+  the PR-based workflow. Permitted `$schema` in the 8 canonical schemas; new
+  `tools/stamp_schema.py` normalizer stamps (and `--check`s) all 1102 files; `validate_data.py`
+  now enforces the ref. `build.py` strips it from the per-entity/doc dist files (they carry
+  `events`/join fields and aren't canonical-shaped) and points `dist/v1/current/*.json` at
+  `published-current.schema.json`. No entity/data content changed.
+
 ## 0.10.0 (minor) — 2026-07-21
 
 - `e8422e7` Add historical rank requirement revisions: 26 requirement-sets for the 2016-2023

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/award.schema.json",
   "id": "scouter-s-key-skipper-s-key",
   "kind": "award",
   "versions": [

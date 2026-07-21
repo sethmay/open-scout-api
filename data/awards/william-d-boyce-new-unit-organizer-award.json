@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/award.schema.json",
   "id": "william-d-boyce-new-unit-organizer-award",
   "kind": "award",
   "versions": [

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json",
   "id": "northwest-texas",
   "kind": "council",
   "versions": [

@@ -5,6 +5,7 @@
   "description": "Schema for data/<dataset>/_events.json — the single, normalized home of every lifecycle event in a dataset (the underscore filename cannot collide with entity slugs). Events are never duplicated into entity files; the build step projects them into published entity JSON. Pipeline rules: ids unique within the file; every participant ref resolves; dates consistent with participant version boundaries.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "events": {
       "type": "array",
       "items": { "$ref": "common.schema.json#/$defs/Event" }

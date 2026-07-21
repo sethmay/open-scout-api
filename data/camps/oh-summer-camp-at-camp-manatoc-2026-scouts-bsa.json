@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "oh-summer-camp-at-camp-manatoc-2026-scouts-bsa",
   "kind": "camp",
   "versions": [

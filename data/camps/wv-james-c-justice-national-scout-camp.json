@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "wv-james-c-justice-national-scout-camp",
   "kind": "camp",
   "versions": [

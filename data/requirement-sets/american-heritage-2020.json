@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
   "id": "american-heritage-2020",
   "kind": "requirement-set",
   "subject": "merit-badge:american-heritage",

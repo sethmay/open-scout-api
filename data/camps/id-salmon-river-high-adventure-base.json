@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "id-salmon-river-high-adventure-base",
   "kind": "camp",
   "versions": [

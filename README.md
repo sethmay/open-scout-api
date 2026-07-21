@@ -91,7 +91,7 @@ Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 data/                 canonical, normalized JSON (one file per entity + _events.json per dataset)
   councils/  territories/
 schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current
-tools/                build.py (data/ -> dist/), validate_data.py, validate_examples.py, seed scripts
+tools/                build.py (data/ -> dist/), validate_data.py, validate_examples.py, stamp_schema.py, seed scripts
 dist/                 generated static API (git-ignored; built + deployed by CI)
 PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
 ```
@@ -108,6 +108,7 @@ pip install "jsonschema[format]"
 python tools/validate_examples.py   # schemas + example fixtures (positive & negative)
 python tools/validate_data.py       # data/: schema + referential + version-window invariants
 python tools/build.py               # compile data/ -> dist/  (open dist/index.html)
+python tools/stamp_schema.py         # (re)stamp data/ $schema refs after regenerating; validate_data enforces them
 ```
 
 CI ([`.github/workflows/pages.yml`](./.github/workflows/pages.yml)) runs the validators as a

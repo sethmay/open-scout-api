@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "ri-adventure-day-camp-at-champlin-adventure-base-camp",
   "kind": "camp",
   "versions": [

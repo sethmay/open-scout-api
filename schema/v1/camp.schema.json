@@ -5,6 +5,7 @@
   "description": "One file per camp property: data/camps/<slug>.json. Registry + classification + history layer only — operational data (sessions, fees, dates, availability) stays in camp-finder / the council's own site, joined by camp id. A camp is classified on three orthogonal facets: camp_type (what kind of place, single), program_types (what it offers, set), and operator (+council; who runs it). Camp identity is independent of council ownership (camps change hands): council/operator are versioned attributes; sales/transfers are 'transferred' events, closures 'discontinued' events in data/camps/_events.json. Slugs keep camp-finder's state-prefixed convention (e.g. 'or-camp-meriwether').",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "camp" },
     "versions": {

@@ -5,6 +5,7 @@
   "description": "One file per national geographic subdivision, across all eras: data/territories/<slug>.json. Covers the 16 National Service Territories (2021-), the four regions (1992-2021), earlier region schemes, and areas within regions — distinguished by division_type on each version. All share the 'territory:' ref namespace. The 2021 regions->NST reorganization is modeled as 'reorganized' events in data/territories/_events.json.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "territory" },
     "versions": {

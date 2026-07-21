@@ -5,6 +5,7 @@
   "description": "One file per earned award/recognition: data/awards/<slug>.json. Versioned entities (record-level SCD-2) so renames/retirements (e.g. NOVA discontinued 2025) are lifecycle events, not edits. Scope: awards members EARN or are RECOGNIZED with \u2014 religious emblems, training awards, and scouting honors / special recognitions \u2014 NOT plain uniform insignia. Only FACTS are stored (name, category, audience, square-knot + insignia item numbers, wear location) plus an optional ORIGINAL-prose summary; verbatim Guide to Awards & Insignia text is \u00a9 Scouting America and is never reproduced here. Any actual earning requirements, when a source exists, live in requirement-set documents (subject: award:<slug>), same as ranks/badges.",
   "type": "object",
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
     "kind": { "const": "award" },
     "versions": {

@@ -17,6 +17,8 @@ from pathlib import Path
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
+from stamp_schema import check_tree
+
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_DIR = ROOT / "schema" / "v1"
 DATA = ROOT / "data"
@@ -156,6 +158,8 @@ def main() -> int:
             for r in obj.get("requirements", []):
                 _walk_choose(r, f"requirement-sets/{name}")
         nrs = len(docs)
+
+    errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
         return len([p for p in (DATA / ds).glob("*.json") if p.name != "_events.json"])

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "va-claytor-lake-aquatics-base",
   "kind": "camp",
   "versions": [

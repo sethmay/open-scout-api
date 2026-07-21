@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "co-jack-nicol-cub-scout-camp",
   "kind": "camp",
   "versions": [

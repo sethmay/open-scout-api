@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/rank.schema.json",
   "id": "first-class",
   "kind": "rank",
   "versions": [
