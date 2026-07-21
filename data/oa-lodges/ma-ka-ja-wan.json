@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "ma-ka-ja-wan",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ma-Ka-Ja-Wan",
+      "number": null,
+      "council": "council:northeast-illinois",
+      "section": "G9",
+      "region": "G",
+      "hq_city": "Vernon Hills",
+      "hq_state": "IL",
+      "lat": 42.2102172,
+      "lon": -87.9449569,
+      "website": "https://oalodge40.blogspot.com",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

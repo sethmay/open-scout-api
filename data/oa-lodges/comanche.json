@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "comanche",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Comanche",
+      "number": null,
+      "council": "council:louisiana-purchase",
+      "section": "G1",
+      "region": "G",
+      "hq_city": "Monroe",
+      "hq_state": "LA",
+      "lat": 32.5380532,
+      "lon": -92.10695790000001,
+      "website": "https://www.louisianapurchasecouncil.org/oa",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

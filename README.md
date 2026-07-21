@@ -51,6 +51,8 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | `v1/ranks/{id}.json` | one rank: version history + events + its `requirement_sets` ids |
 | [`v1/current/awards.json`](https://sethmay.github.io/open-scout-api/v1/current/awards.json) | flat list of current awards & recognitions |
 | [`v1/awards/index.json`](https://sethmay.github.io/open-scout-api/v1/awards/index.json) · `v1/awards/{id}.json` | one award: category, audience, square-knot + insignia numbers |
+| [`v1/current/oa-lodges.json`](https://sethmay.github.io/open-scout-api/v1/current/oa-lodges.json) | flat list of current OA lodges (by council) |
+| [`v1/oa-lodges/index.json`](https://sethmay.github.io/open-scout-api/v1/oa-lodges/index.json) · `v1/oa-lodges/{id}.json` | one OA lodge: chartering council, section, HQ |
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
 
 ```bash
@@ -87,6 +89,7 @@ DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.jso
 | **Camps** | ✅ 469 entities — imported from [camp-finder](https://github.com/sethmay/camp-finder), classified by `camp_type` (361 resident, 68 day, 40 high-adventure) and `operator` (465 council + 4 national bases: Philmont, Florida Sea Base, Northern Tier, Summit/James C. Justice). Sessions/fees stay at the council site. |
 | **Ranks** | ✅ 7 Scouts BSA ranks (Scout→Eagle); requirement content in 33 rank `requirement-set` docs — current from the official 2024 Scouts BSA Requirements (No. 33216) plus 26 historical editions (2016-2023) scraped from usscouts.org, chained by `supersedes`. Full verbatim tree © Scouting America. |
 | **Awards** | ✅ 52 earned awards & recognitions (knots, scouting honors, training awards, religious-emblem knot) from the Guide to Awards and Insignia (No. 33066) — facts only (category, audience, square-knot/insignia numbers, wear); catalog numbers source-verified (`llm_extraction`, conf 0.85). Excludes uniform insignia and per-faith emblems. |
+| **OA lodges** | ✅ 238 entities — Order of the Arrow lodges from the official OA lodge locator feed (oa-bsa.org), each linked to its chartering council, with OA section/region, HQ + coordinates, and website. Officer/contact PII excluded. |
 
 Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 

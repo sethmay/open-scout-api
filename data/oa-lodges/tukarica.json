@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "tukarica",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Tukarica",
+      "number": null,
+      "council": "council:mountain-west",
+      "section": "G14",
+      "region": "G",
+      "hq_city": "Boise",
+      "hq_state": "ID",
+      "lat": 43.604487,
+      "lon": -116.2925665,
+      "website": "http://www.mountainwestcouncil.org/tukaricahomepage",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

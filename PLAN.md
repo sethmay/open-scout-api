@@ -204,6 +204,11 @@ open-scout-api/
   field is left null (strictly facts); no verbatim Guide to Awards & Insignia text (© Scouting America). Excludes plain uniform
   insignia and per-faith religious-emblem programs; earning requirements (where a source
   exists) would reuse `requirement-set` with `subject: award:<slug>`.
+- **oa-lodge** — Order of the Arrow lodges as versioned entities (council pattern): `name`,
+  `council` ref (each council charters one lodge; a few charter more), `section`/`region`
+  (OA admin geography), HQ `hq_city`/`hq_state`/`lat`/`lon`, `website`, `number` (nullable —
+  not in the source feed). Renames/mergers (which track council mergers) will become events.
+  Seeded from the official OA lodge locator feed; officer/contact PII deliberately excluded.
 
 ## 6. Distribution (LIVE as of 0.3.0)
 

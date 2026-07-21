@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "wyona",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Wyona",
+      "number": null,
+      "council": "council:columbia-montour",
+      "section": "E11",
+      "region": "E",
+      "hq_city": "Bloomsburg",
+      "hq_state": "PA",
+      "lat": 41.0284425,
+      "lon": -76.3409206,
+      "website": "http://www.columbiamontourbsa.org/oawyona18",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

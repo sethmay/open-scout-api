@@ -111,6 +111,7 @@ def main() -> None:
     camps, campevents = load_dataset("camps")
     ranks, rankevents = load_dataset("ranks")
     awards, awardevents = load_dataset("awards")
+    oa_lodges, oalodgeevents = load_dataset("oa-lodges")
     rs_dir = DATA / "requirement-sets"
     requirement_sets = sorted((read_json(p) for p in rs_dir.glob("*.json")),
                               key=lambda d: d["id"]) if rs_dir.exists() else []
@@ -233,6 +234,23 @@ def main() -> None:
                                    "square_knot_no": ov.get("square_knot_no"), "url": ov.get("url"),
                                    "confidence": ov["provenance"]["confidence"]})
 
+    # --- oa-lodges: per-entity + index + current ---------------------------
+    lodge_index = []
+    current_lodges = []
+    for e in oa_lodges:
+        ref = f"oa-lodge:{e['id']}"
+        write_json(DIST / "v1" / "oa-lodges" / f"{e['id']}.json",
+                   {**e, "events": events_for(ref, oalodgeevents)})
+        ov = open_version(e)
+        last = ov or e["versions"][-1]
+        lodge_index.append({"id": e["id"], "name": last["name"], "council": last.get("council"),
+                            "section": last.get("section"), "current": ov is not None})
+        if ov is not None:
+            current_lodges.append({"id": e["id"], "name": ov["name"], "council": ov.get("council"),
+                                   "section": ov.get("section"), "hq_state": ov.get("hq_state"),
+                                   "lat": ov.get("lat"), "lon": ov.get("lon"),
+                                   "confidence": ov["provenance"]["confidence"]})
+
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
     PUB_CURRENT = "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json"
@@ -243,10 +261,12 @@ def main() -> None:
     current_camp_coll = cur("camp", current_camps)
     current_rank_coll = cur("rank", current_ranks)
     current_award_coll = cur("award", current_awards)
+    current_lodge_coll = cur("oa-lodge", current_lodges)
     # validate the current collections against the published consumer contract (fail-fast)
     for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll),
                      ("merit-badges", current_badge_coll), ("camps", current_camp_coll),
-                     ("ranks", current_rank_coll), ("awards", current_award_coll)]:
+                     ("ranks", current_rank_coll), ("awards", current_award_coll),
+                     ("oa-lodges", current_lodge_coll)]:
         errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
                  for er in collection_validator.iter_errors(c)]
     if errs:
@@ -264,6 +284,8 @@ def main() -> None:
     write_json(DIST / "v1" / "ranks" / "index.json", coll("rank", rank_index))
     write_json(DIST / "v1" / "current" / "awards.json", current_award_coll)
     write_json(DIST / "v1" / "awards" / "index.json", coll("award", award_index))
+    write_json(DIST / "v1" / "current" / "oa-lodges.json", current_lodge_coll)
+    write_json(DIST / "v1" / "oa-lodges" / "index.json", coll("oa-lodge", lodge_index))
     for d in requirement_sets:
         write_json(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
     rs_index = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"],
@@ -286,6 +308,7 @@ def main() -> None:
             "camps": {"total": len(camps), "current": len(current_camps)},
             "ranks": {"total": len(ranks), "current": len(current_ranks)},
             "awards": {"total": len(awards), "current": len(current_awards)},
+            "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges)},
         },
         "text_rights": ("Merit-badge and rank requirement text is \u00a9 Scouting America, reproduced with "
                         "attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."),
@@ -296,21 +319,23 @@ def main() -> None:
                       "v1/camps/index.json", "v1/camps/{id}.json",
                       "v1/ranks/index.json", "v1/ranks/{id}.json",
                       "v1/awards/index.json", "v1/awards/{id}.json",
+                      "v1/oa-lodges/index.json", "v1/oa-lodges/{id}.json",
                       "v1/current/councils.json", "v1/current/territories.json",
                       "v1/current/merit-badges.json", "v1/current/requirement-sets.json",
-                      "v1/current/camps.json", "v1/current/ranks.json", "v1/current/awards.json"],
+                      "v1/current/camps.json", "v1/current/ranks.json", "v1/current/awards.json",
+                      "v1/current/oa-lodges.json"],
     })
 
     (DIST / "index.html").write_text(
         _landing(version, now, len(current_councils), len(current_territories), len(current_badges),
-                 len(current_rs), len(current_camps), len(current_ranks), len(current_awards)),
+                 len(current_rs), len(current_camps), len(current_ranks), len(current_awards), len(current_lodges)),
         encoding="utf-8", newline="\n")
     print(f"built dist/ v{version}: {len(councils)} councils, {len(territories)} territories, "
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
-          f"{len(camps)} camps, {len(ranks)} ranks, {len(awards)} awards")
+          f"{len(camps)} camps, {len(ranks)} ranks, {len(awards)} awards, {len(oa_lodges)} oa-lodges")
 
 
-def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards) -> str:
+def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -326,7 +351,7 @@ def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawar
 <p><strong>Unofficial community project.</strong> Not affiliated with, endorsed by, or sponsored by
 Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
 <h2>Datasets</h2>
-<p>{ncouncils} current councils across {nterr} Council Service Territories; {ncamps} current camps; {nbadges} current merit badges; {nrs} current requirement sets; {nranks} ranks; {nawards} awards.</p>
+<p>{ncouncils} current councils across {nterr} Council Service Territories; {ncamps} current camps; {nbadges} current merit badges; {nrs} current requirement sets; {nranks} ranks; {nawards} awards; {nlodges} OA lodges.</p>
 <h2>Endpoints</h2>
 <ul>
  <li><a href="v1/meta.json"><code>v1/meta.json</code></a> — version, counts, license</li>
@@ -342,6 +367,7 @@ Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by
  <li><a href="v1/current/camps.json"><code>v1/current/camps.json</code></a> — flat current camp list</li>
  <li><a href="v1/ranks/index.json"><code>v1/ranks/index.json</code></a> · <code>v1/ranks/&lt;id&gt;.json</code> — Scouts BSA ranks</li>
  <li><a href="v1/awards/index.json"><code>v1/awards/index.json</code></a> · <code>v1/awards/&lt;id&gt;.json</code> — awards &amp; recognitions (knots, honors, training)</li>
+ <li><a href="v1/oa-lodges/index.json"><code>v1/oa-lodges/index.json</code></a> · <code>v1/oa-lodges/&lt;id&gt;.json</code> — Order of the Arrow lodges (by council)</li>
  <li><a href="schema/v1/council.schema.json"><code>schema/v1/</code></a> — JSON Schemas</li>
 </ul>
 <p class="muted">Merit-badge and rank requirement text is © Scouting America, reproduced with attribution for

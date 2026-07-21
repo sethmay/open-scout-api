@@ -8,11 +8,11 @@
     "$schema": { "type": "string", "format": "uri" },
     "version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
-    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award"] },
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge"] },
     "count": { "type": "integer", "minimum": 0 },
     "items": {
       "type": "array",
-      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }, { "$ref": "#/$defs/CurrentRank" }, { "$ref": "#/$defs/CurrentAward" }] }
+      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }, { "$ref": "#/$defs/CurrentRank" }, { "$ref": "#/$defs/CurrentAward" }, { "$ref": "#/$defs/CurrentOALodge" }] }
     }
   },
   "required": ["version", "generated_at", "kind", "count", "items"],
@@ -104,6 +104,21 @@
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
       "required": ["id", "name", "category", "audience", "square_knot_no", "confidence"],
+      "additionalProperties": false
+    },
+    "CurrentOALodge": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "name": { "type": "string", "minLength": 1 },
+        "council": { "type": ["string", "null"] },
+        "section": { "type": ["string", "null"] },
+        "hq_state": { "type": ["string", "null"] },
+        "lat": { "type": ["number", "null"] },
+        "lon": { "type": ["number", "null"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["id", "name", "council", "section", "confidence"],
       "additionalProperties": false
     }
   }

@@ -1,0 +1,28 @@
+{
+  "id": "tamegonit",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Tamegonit",
+      "number": 147,
+      "council": "council:heart-of-america",
+      "section": "C6",
+      "region": "C",
+      "hq_city": "Kansas City",
+      "hq_state": "MO",
+      "lat": 39.0,
+      "lon": -94.6,
+      "website": "https://www.tamegonit.org",
+      "provenance": {
+        "sources": [{ "url": "https://oa-bsa.org/app/lodge-map/council_data.json" }],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed; officer/contact PII excluded."
+      }
+    }
+  ],
+  "notes": null
+}

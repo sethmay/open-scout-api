@@ -17,7 +17,7 @@ PLAN.md §1).
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
 | 5 | **Camps (registry + history)** | ✅ `camp` | 🌱 **SEEDED (0.7.0):** 469 camps imported from camp-finder (361 resident / 68 day / 40 high-adventure; 465 council + 4 national). Follow-ups: reclassify/dedupe ~6 session/event-shaped entries (camp-finder LLM artifact, e.g. `*-full-week`/`*-half-week`/`*-2026-new`); reservation `parent` nesting; `camp_type` refinement; historical "lost camps". | camp-finder dataset; scouting.org (national bases) |
 | 6 | **Rank requirement history** | ✅ `rank` + `requirement-set` (`subject: rank:*`) | 🌱 **SEEDED (0.8.0-0.10.0):** 7 rank entities + 33 requirement-sets — current from the 2024 Scouts BSA Requirements (No. 33216) + 26 historical editions (2016-2023, all 7 ranks) scraped from usscouts.org, deduped to distinct revisions with `supersedes` chains + effective windows. Follow-ups: pre-2016 editions (legacy markup); Cub Scout / Venturing / Sea Scout rank entities. | 2024 Scouts BSA Requirements (No. 33216); usscouts.org archive |
-| 7 | **OA lodges** | ⬜ (council pattern fits: versions + merge events + `council` ref) | Lodge↔council mapping, merges track council merges, totem/name history. Patch-collector community curates this by hand today. | OA/lodge sites; Wikipedia; patch DBs |
+| 7 | **OA lodges** | ✅ `oa-lodge` | 🌱 **SEEDED (0.13.0):** 238 lodges from the official OA lodge locator feed (oa-bsa.org), all linked to their chartering `council` + OA section/region + HQ/coords + website; officer/contact PII excluded. Follow-ups: lodge numbers (not in feed), merger/rename history + events (track council mergers), totem. | oa-bsa.org lodge locator feed; ScoutWiki/Fandom (numbers/history) |
 | 8 | **Merit badge earned-counts by year** | ⬜ (simple fact table, not temporal-entity) | BSA publishes annually; longitudinal series exists nowhere machine-readable. Tiny. | Scouting magazine / Bryan on Scouting annual posts |
 | 9 | **High adventure bases + council HA programs** | ⬜ likely `camp` with program tags | camp-finder TODO already wants this vertical. | Council sites; scouting.org |
 | 10 | **Awards catalog** (knots, honors, training awards) | ✅ `award` | 🌱 **SEEDED (0.9.0):** 52 earned awards & recognitions from the Guide to Awards and Insignia (No. 33066) — facts only (category, audience, square-knot + insignia numbers, wear), `method: llm_extraction` conf 0.85, numbers source-verified. Follow-ups: per-faith religious emblems (separate large dataset), NOVA/STEM awards, uniform insignia. | Guide to Awards and Insignia (No. 33066); scouting.org/awards |
@@ -67,6 +67,10 @@ as best-effort attributes of council history, never a standalone dataset.
   `.github/workflows/release.yml` publishes GitHub Releases with the JSON tree +
   `tools/build_sqlite.py` SQLite artifact; jsDelivr pinning + SQLite documented in README.
   ⚠ One-time manual (owner): `git push --tags`, and enable the GitHub↔Zenodo integration for DOIs.
+- **⚠ Zenodo DOI — deferred (owner decision).** Enable the GitHub↔Zenodo integration
+  (zenodo.org account → GitHub → toggle the repo on) so pushed `v*` tags mint a citable DOI
+  using `.zenodo.json`. Deferred until the repo's final/permanent home (org + name) is settled,
+  since the DOI + Zenodo record bind to that GitHub location.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
   choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary

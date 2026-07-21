@@ -1,0 +1,18 @@
+{
+  "id": "negative-lodge-no-name",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "council": "council:heart-of-america",
+      "section": "C6",
+      "provenance": {
+        "sources": [{ "url": "https://oa-bsa.org/app/lodge-map/council_data.json" }],
+        "method": "official_publication",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ],
+  "notes": null
+}

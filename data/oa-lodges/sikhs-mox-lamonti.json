@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "sikhs-mox-lamonti",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Sikhs Mox Lamonti",
+      "number": null,
+      "council": "council:mount-baker",
+      "section": "G15",
+      "region": "G",
+      "hq_city": "Marysville",
+      "hq_state": "WA",
+      "lat": 48.0563616,
+      "lon": -122.1492224,
+      "website": "http://mountbakerbsa.org/camps/order-of-the-arrow",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

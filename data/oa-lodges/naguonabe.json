@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "naguonabe",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Naguonabe",
+      "number": null,
+      "council": "council:central-minnesota",
+      "section": "G11",
+      "region": "G",
+      "hq_city": "Sartell",
+      "hq_state": "MN",
+      "lat": 45.5919436,
+      "lon": -94.22481979999999,
+      "website": "http://www.bsacmc.org/#!order-of-the-arrow/c1ypz",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "nischa-chuppecat",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Nischa Chuppecat",
+      "number": null,
+      "council": "council:hoosier-trails",
+      "section": "E1",
+      "region": "E",
+      "hq_city": "Bloomington",
+      "hq_state": "IN",
+      "lat": 39.173482,
+      "lon": -86.5033508,
+      "website": "https://hoosiertrails.org/programs/#oa",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}
