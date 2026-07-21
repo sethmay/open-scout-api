@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
-- `PENDING` Populate councils + territories: 235 council entities (229 assigned to
+## 0.2.0 (minor) — 2026-07-21
+
+- `8e7ec9b` Populate councils + territories: 235 council entities (229 assigned to
   the 14 Council Service Territories from official Scouting America maps, 6 defunct)
   + 20 territory entities (14 CSTs with 2021 NST→2024 CST history, 4 regions, 2 merged
   NSTs) + lifecycle events; CC BY-NC-SA data license; `tools/seed_councils_territories.py`
