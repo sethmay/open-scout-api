@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
-- `PENDING` Seed 141 merit-badge requirement sets from OpenScouting/workbooks: full
+## 0.5.0 (minor) — 2026-07-21
+
+- `36f4896` Seed 141 merit-badge requirement sets from OpenScouting/workbooks: full
   requirement tree (numbering, nesting, choose-N / option groups) + effective date +
   source links, with verbatim requirement text marked © Scouting America
   (`includes_official_text` + new `text_rights` field, excluded from the data license).
