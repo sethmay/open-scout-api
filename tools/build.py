@@ -51,11 +51,21 @@ def write_json(p: Path, obj) -> None:
 
 
 def current_version() -> str:
-    for line in (ROOT / "CHANGELOG.md").read_text("utf-8").splitlines():
+    text = (ROOT / "CHANGELOG.md").read_text("utf-8")
+    version = None
+    for line in text.splitlines():
         m = re.match(r"##\s+(\d+\.\d+\.\d+)\b", line)
         if m:
-            return m.group(1)
-    raise RuntimeError("no version heading in CHANGELOG.md")
+            version = m.group(1)
+            break
+    if version is None:
+        raise RuntimeError("no version heading in CHANGELOG.md")
+    # Unreleased changes sit above the newest heading as a `PENDING` line until the semver
+    # bump commit backfills them; mark the build so the deployed version stays honest during
+    # the one-commit lag (self-clears once the bump lands).
+    if re.search(r"^-\s+`PENDING`", text, re.M):
+        version += "+unreleased"
+    return version
 
 
 def open_version(entity: dict) -> dict | None:
@@ -90,10 +100,7 @@ def main() -> None:
         shutil.copyfile(p, schema_out / p.name)
 
     pub = read_json(SCHEMA_DIR / "published-current.schema.json")
-    council_item = Draft202012Validator({**pub, "$ref": "#/$defs/CurrentCouncil"},
-                                         format_checker=Draft202012Validator.FORMAT_CHECKER)
-    terr_item = Draft202012Validator({**pub, "$ref": "#/$defs/CurrentTerritory"},
-                                     format_checker=Draft202012Validator.FORMAT_CHECKER)
+    collection_validator = Draft202012Validator(pub, format_checker=Draft202012Validator.FORMAT_CHECKER)
 
     councils, cevents = load_dataset("councils")
     territories, tevents = load_dataset("territories")
@@ -113,6 +120,7 @@ def main() -> None:
             current_territories.append({"id": e["id"], "number": ov.get("number"),
                                         "name": ov["name"], "division_type": ov["division_type"],
                                         "confidence": ov["provenance"]["confidence"]})
+    terr_number = {t["id"]: t["number"] for t in current_territories}
 
     # --- councils: per-entity + index + current ----------------------------
     council_index = []
@@ -135,25 +143,25 @@ def main() -> None:
             tslug = terr_ref.split(":", 1)[1]
             if tslug not in current_terr_ids:
                 errs.append(f"council {e['id']}: territory {terr_ref} is not a current territory")
-            m = re.match(r"cst-(\d+)$", tslug)
-            tnum = int(m.group(1)) if m else None
+            tnum = terr_number.get(tslug)   # canonical number of the referenced territory
         current_councils.append({"id": e["id"], "name": ov["name"], "bsa_number": ov.get("bsa_number"),
                                  "hq_city": ov.get("hq_city"), "hq_state": ov.get("hq_state"),
                                  "website": ov.get("website"), "territory": terr_ref,
                                  "territory_number": tnum, "confidence": ov["provenance"]["confidence"]})
 
-    # validate current projections against the published contract (fail-fast)
-    for c in current_councils:
-        errs += [f"current council {c['id']}: {er.message}" for er in council_item.iter_errors(c)]
-    for t in current_territories:
-        errs += [f"current territory {t['id']}: {er.message}" for er in terr_item.iter_errors(t)]
+    coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
+                                "count": len(items), "items": items}
+    current_council_coll = coll("council", current_councils)
+    current_terr_coll = coll("territory", current_territories)
+    # validate the current collections against the published consumer contract (fail-fast)
+    for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll)]:
+        errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
+                 for er in collection_validator.iter_errors(c)]
     if errs:
         raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
 
-    coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
-                                "count": len(items), "items": items}
-    write_json(DIST / "v1" / "current" / "councils.json", coll("council", current_councils))
-    write_json(DIST / "v1" / "current" / "territories.json", coll("territory", current_territories))
+    write_json(DIST / "v1" / "current" / "councils.json", current_council_coll)
+    write_json(DIST / "v1" / "current" / "territories.json", current_terr_coll)
     write_json(DIST / "v1" / "councils" / "index.json", coll("council", council_index))
     write_json(DIST / "v1" / "territories" / "index.json", coll("territory", terr_index))
 

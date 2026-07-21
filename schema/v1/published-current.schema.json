@@ -1,8 +1,21 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json",
-  "title": "Open Scout API — published 'current' projections",
-  "description": "Schema for the denormalized consumer projections emitted by tools/build.py to v1/current/*.json. These are NOT the canonical layer — they are flattened, current-only (entities with an open valid_to:null version), and self-contained (no cross-file $ref). Retired/defunct entities are excluded. The build validates its output against these to keep the consumer contract honest.",
+  "title": "Open Scout API — published 'current' collection",
+  "description": "Root schema for the denormalized consumer projections emitted by tools/build.py to v1/current/councils.json and v1/current/territories.json. These are NOT the canonical layer — they are flattened, current-only (entities with an open valid_to:null version; retired/defunct excluded), and self-contained (no cross-file $ref). Point a validator at either current/*.json file to validate it. (The lighter v1/{dataset}/index.json listings use a different, unschema'd item shape.)",
+  "type": "object",
+  "properties": {
+    "version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "kind": { "enum": ["council", "territory"] },
+    "count": { "type": "integer", "minimum": 0 },
+    "items": {
+      "type": "array",
+      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }] }
+    }
+  },
+  "required": ["version", "generated_at", "kind", "count", "items"],
+  "additionalProperties": false,
   "$defs": {
     "CurrentCouncil": {
       "type": "object",
@@ -30,18 +43,6 @@
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
       "required": ["id", "number", "name", "division_type", "confidence"],
-      "additionalProperties": false
-    },
-    "Collection": {
-      "type": "object",
-      "properties": {
-        "version": { "type": "string" },
-        "generated_at": { "type": "string", "format": "date-time" },
-        "kind": { "type": "string" },
-        "count": { "type": "integer", "minimum": 0 },
-        "items": { "type": "array" }
-      },
-      "required": ["version", "generated_at", "kind", "count", "items"],
       "additionalProperties": false
     }
   }

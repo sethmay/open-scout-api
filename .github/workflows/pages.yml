@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install jsonschema
+      - run: pip install "jsonschema[format]"   # format extra so uri/date/date-time checks bite
       - name: Validate (gate — fails the run on any error)
         run: |
           python tools/validate_examples.py
