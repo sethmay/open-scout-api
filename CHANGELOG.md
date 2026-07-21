@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.13.0 (minor) — 2026-07-21
 
-- `PENDING` Add the Order of the Arrow lodges dataset: 238 `oa-lodge` entities from the
+- `970ea2c` Add the Order of the Arrow lodges dataset: 238 `oa-lodge` entities from the
   official OA lodge locator feed (oa-bsa.org), each linked to its chartering `council`
   (238/238) with OA section/region, HQ city/state + coordinates, and website. Lodge officer
   names and contact emails from the feed are excluded as PII. New `oa-lodge` schema +
