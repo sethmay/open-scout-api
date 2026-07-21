@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.8.0 (minor) — 2026-07-21
 
-- `PENDING` Add the advancement-rank layer: new `rank` entity schema + the 7 Scouts BSA
+- `73c3363` Add the advancement-rank layer: new `rank` entity schema + the 7 Scouts BSA
   ranks (Scout→Eagle, one version each; `program`/`order`, requirement CONTENT kept out of
   the entity). Plus 7 rank `requirement-set` documents parsed from the official 2024 Scouts
   BSA Requirements (No. 33216) — full verbatim requirement tree marked © Scouting America
