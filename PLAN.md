@@ -170,10 +170,15 @@ open-scout-api/
   territories: 4 regions (pre-2021) → 16 National Service Territories (2021) → renamed
   Council Service Territories with 2 merged into neighbors → 14 CSTs (2024). This full
   chain is the model's acceptance test.
-- **camp** — versions carry `council` (ref — camps change hands; camp-finder PLAN already
-  demanded council-independent camp identity), `operating_status`, location, `website`,
-  open-vocab `program_types[]`/`features[]`. **Sessions/fees stay in camp-finder** — this
-  dataset is the registry + history layer, not the operational layer.
+- **camp** — one entity for every kind of scout camp, classified on three orthogonal
+  facets: `camp_type` (single: reservation / resident_camp / high_adventure_base /
+  short_term_camp / day_camp / program_center / other), `program_types[]` (what it offers,
+  multi), and `operator` (council / national / other / unknown) + `council` ref (national
+  bases like Philmont have operator=national, council=null). `parent` (camp ref) nests a
+  sub-camp under a reservation (children populated later). Plus `operating_status`,
+  location, `website`, `features[]`. **Sessions/fees/dates stay in camp-finder / the
+  council site** — this dataset is the registry + classification + history layer, joined by
+  camp id, not the operational layer.
 - **merit-badge** — versions carry `name`, `eagle_required` (denormalized convenience;
   purist source is the Eagle rank requirement set), `tags[]`, `description`.
   Introduction/discontinuation/supersession (`computers` → `digital-technology`) are
