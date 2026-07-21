@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json",
+  "title": "Council (canonical entity file)",
+  "description": "One file per local council: data/councils/<slug>.json. Identity (id) is permanent; everything mutable — name, BSA council number, HQ, website, states served, territory membership — lives in effective-dated versions. Mergers, absorptions, renames, and dissolutions are events in data/councils/_events.json.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "council" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CouncilVersion" },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced)."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "CouncilVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official council name during this window, without a trailing ', BSA'."
+        },
+        "bsa_number": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "default": null,
+          "description": "BSA council number during this window. An attribute, not identity — numbers can change or collide across history."
+        },
+        "hq_city": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "hq_state": {
+          "anyOf": [
+            { "$ref": "common.schema.json#/$defs/StateCode" },
+            { "type": "null" }
+          ],
+          "default": null
+        },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "default": null,
+          "description": "Official council website during this window."
+        },
+        "states_served": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/StateCode" },
+          "uniqueItems": true,
+          "default": [],
+          "description": "States/territories the council's service area touches. Empty = not yet recorded."
+        },
+        "territory": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^territory:[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+            },
+            { "type": "null" }
+          ],
+          "default": null,
+          "description": "National subdivision membership during this window (National Service Territory since 2021; region/area before). Time-varying membership falls out of versioning."
+        }
+      },
+      "required": ["name"],
+      "unevaluatedProperties": false
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/common.schema.json",
+  "title": "Open Scout API — shared definitions",
+  "description": "Shared $defs for all canonical dataset schemas: identifiers, historical dates, provenance, the temporal version envelope, and lifecycle events. See PLAN.md §3 for the model narrative. Canonical-layer schemas are strict (unevaluatedProperties/additionalProperties: false); published projections get their own, looser schemas later.",
+  "$defs": {
+    "Slug": {
+      "title": "Slug",
+      "description": "Permanent, dataset-scoped entity identifier. Never reused, never deleted, never encodes mutable facts (e.g. council number). Disambiguate historical collisions with an era suffix (e.g. 'black-hawk-1935').",
+      "type": "string",
+      "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "EntityRef": {
+      "title": "EntityRef",
+      "description": "Cross-dataset reference: '{kind}:{slug}'. Known kinds: council, territory, camp, merit-badge, requirement-set; future kinds (rank, award, oa-lodge) use the same shape. Referential integrity is a pipeline rule, not a schema rule.",
+      "type": "string",
+      "pattern": "^[a-z]([a-z-]*[a-z])?:[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+    },
+    "HistoricalDate": {
+      "title": "HistoricalDate",
+      "description": "ISO 8601 date at reduced precision: 'YYYY', 'YYYY-MM', or 'YYYY-MM-DD'. Real history is often only known to the year.",
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+    },
+    "StateCode": {
+      "title": "StateCode",
+      "description": "2-letter USPS state/territory code.",
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "Source": {
+      "title": "Source",
+      "description": "One checkable source for a fact. At least one of url/citation is required; prefer url. 'citation' covers offline sources (books, announcements, requirement pamphlet editions).",
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Authoritative or best-available online source."
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Free-text citation for offline or ephemeral sources."
+        },
+        "accessed": {
+          "type": "string",
+          "format": "date",
+          "description": "Full ISO date the source was last consulted."
+        }
+      },
+      "anyOf": [
+        { "required": ["url"] },
+        { "required": ["citation"] }
+      ],
+      "additionalProperties": false
+    },
+    "Method": {
+      "title": "Method",
+      "description": "How the fact entered the dataset. Merge precedence (pipeline rule): curated/official_publication > community > scraped > llm_extraction. 'imported' = bulk import from a sibling project (e.g. camp-finder) carrying that project's provenance.",
+      "enum": [
+        "curated",
+        "official_publication",
+        "scraped",
+        "llm_extraction",
+        "community",
+        "imported"
+      ]
+    },
+    "Provenance": {
+      "title": "Provenance",
+      "description": "Required on every version record, event, and requirement set. LLM-extracted facts MUST declare confidence < 1.0.",
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Source" },
+          "minItems": 1
+        },
+        "method": { "$ref": "#/$defs/Method" },
+        "verified_at": {
+          "type": "string",
+          "format": "date",
+          "description": "Full ISO date a human/pipeline last confirmed this record against its sources."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1,
+          "description": "Extraction confidence, not source authority."
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "default": null
+        }
+      },
+      "required": ["sources", "method", "verified_at"],
+      "additionalProperties": false,
+      "if": {
+        "properties": { "method": { "const": "llm_extraction" } },
+        "required": ["method"]
+      },
+      "then": {
+        "properties": { "confidence": { "exclusiveMaximum": 1 } },
+        "required": ["confidence"]
+      }
+    },
+    "VersionBase": {
+      "title": "VersionBase",
+      "description": "Envelope for one effective-dated snapshot of an entity's attributes (record-level SCD-2). valid_from null = unknown start; valid_to null = current. Pipeline rules (not schema-expressible): versions within an entity are chronologically ordered and non-overlapping; retired entities have no null-valid_to version.",
+      "type": "object",
+      "properties": {
+        "valid_from": {
+          "anyOf": [
+            { "$ref": "#/$defs/HistoricalDate" },
+            { "type": "null" }
+          ],
+          "description": "When this snapshot became true in the world; null = unknown."
+        },
+        "valid_to": {
+          "anyOf": [
+            { "$ref": "#/$defs/HistoricalDate" },
+            { "type": "null" }
+          ],
+          "description": "When this snapshot stopped being true; null = still current."
+        },
+        "provenance": { "$ref": "#/$defs/Provenance" }
+      },
+      "required": ["valid_from", "valid_to", "provenance"]
+    },
+    "EventType": {
+      "title": "EventType",
+      "description": "Lifecycle event vocabulary, shared across datasets. Domain mapping: council founded / camp opened / badge introduced -> 'established'; camp closed / badge retired / council dissolved -> 'discontinued'; badge replaced by a new badge -> 'superseded'; camp sold or moved between councils -> 'transferred'; 2021 regions->territories -> 'reorganized'; one entity absorbing another (absorber keeps identity) -> 'absorbed'.",
+      "enum": [
+        "established",
+        "renamed",
+        "merged",
+        "split",
+        "absorbed",
+        "transferred",
+        "reorganized",
+        "discontinued",
+        "reinstated",
+        "superseded"
+      ]
+    },
+    "ParticipantRole": {
+      "title": "ParticipantRole",
+      "description": "'subject' for single-entity events (renamed, established, discontinued, reinstated); 'predecessor'/'successor' for identity-changing events (merged, split, superseded, reorganized); 'continuing' for the surviving side of 'absorbed' and the receiving side of 'transferred'.",
+      "enum": ["subject", "predecessor", "successor", "continuing"]
+    },
+    "Participant": {
+      "title": "Participant",
+      "type": "object",
+      "properties": {
+        "ref": { "$ref": "#/$defs/EntityRef" },
+        "role": { "$ref": "#/$defs/ParticipantRole" }
+      },
+      "required": ["ref", "role"],
+      "additionalProperties": false
+    },
+    "Event": {
+      "title": "Event",
+      "description": "One lifecycle event, stored exactly once in the dataset's _events.json (never duplicated into entity files; the build step projects events into published entity JSON). Pipeline rules: event ids unique per dataset; every participant ref resolves; date consistent with participant version boundaries.",
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "#/$defs/Slug" },
+        "type": { "$ref": "#/$defs/EventType" },
+        "date": {
+          "anyOf": [
+            { "$ref": "#/$defs/HistoricalDate" },
+            { "type": "null" }
+          ],
+          "description": "When the event took effect; null = unknown."
+        },
+        "participants": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Participant" },
+          "minItems": 1
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "provenance": { "$ref": "#/$defs/Provenance" }
+      },
+      "required": ["id", "type", "date", "participants", "provenance"],
+      "additionalProperties": false
+    },
+    "VocabCode": {
+      "title": "VocabCode",
+      "description": "Open-vocabulary code (snake_case). New codes are data changes, recorded in a registry file (future: data/vocab/), not schema changes.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "negative-fixture",
+  "kind": "council",
+  "website": "https://example.org/",
+  "versions": [
+    {
+      "valid_from": "2000",
+      "valid_to": null,
+      "name": "Negative Fixture Council",
+      "provenance": {
+        "sources": [{ "citation": "negative fixture: website is a version attribute, not entity-level (additionalProperties)" }],
+        "method": "curated",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ]
+}

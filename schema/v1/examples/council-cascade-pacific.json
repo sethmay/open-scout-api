@@ -1,0 +1,30 @@
+{
+  "id": "cascade-pacific",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": "1993",
+      "valid_to": null,
+      "name": "Cascade Pacific Council",
+      "bsa_number": 492,
+      "hq_city": "Portland",
+      "hq_state": "OR",
+      "website": "https://www.cpcbsa.org/",
+      "states_served": ["OR", "WA"],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_councils_(Scouting_America)",
+            "accessed": "2026-07-21"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "ILLUSTRATIVE EXAMPLE — plausible but unverified; do not import as data."
+      }
+    }
+  ],
+  "notes": "Formed 1993 by merger — see event cascade-pacific-formation-1993 in _events.json."
+}

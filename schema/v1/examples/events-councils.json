@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "id": "cascade-pacific-formation-1993",
+      "type": "merged",
+      "date": "1993",
+      "participants": [
+        { "ref": "council:columbia-pacific", "role": "predecessor" },
+        { "ref": "council:portland-area", "role": "predecessor" },
+        { "ref": "council:cascade-pacific", "role": "successor" }
+      ],
+      "notes": "ILLUSTRATIVE EXAMPLE — predecessor identities unverified; do not import as data.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council",
+            "accessed": "2026-07-21"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.7,
+        "notes": null
+      }
+    },
+    {
+      "id": "crossroads-of-the-west-rename-2020",
+      "type": "renamed",
+      "date": "2020",
+      "participants": [
+        { "ref": "council:crossroads-of-the-west", "role": "subject" }
+      ],
+      "notes": "ILLUSTRATIVE EXAMPLE — Great Salt Lake Council renamed Crossroads of the West Council (date unverified). A rename is one entity: the 'subject' ref points at the entity whose version windows span both names.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Council announcement (locate URL during population)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.7,
+        "notes": null
+      }
+    }
+  ]
+}

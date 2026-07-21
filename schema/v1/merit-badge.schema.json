@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge.schema.json",
+  "title": "Merit badge (canonical entity file)",
+  "description": "One file per merit badge ever offered: data/merit-badges/<slug>.json. Discontinued badges keep their file (identity is permanent); retirement is a 'discontinued' event and a closed final version window. Replacement chains (e.g. computers -> digital-technology) are 'superseded' events in data/merit-badges/_events.json. Requirement content lives in separate requirement-set documents, not here. 'Active vs retired' status is derivable (null-valid_to version exists?) and will be materialized by the published projection.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "merit-badge" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/MeritBadgeVersion" },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced). A new version window is opened by renames AND by eagle_required flips (e.g. Citizenship in Society becoming Eagle-required 2022-07)."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "MeritBadgeVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official badge name during this window."
+        },
+        "eagle_required": {
+          "type": "boolean",
+          "description": "Whether the badge was Eagle-required (including as a listed alternative) during this window. Denormalized convenience — the purist source of truth is the Eagle rank requirement set of the era."
+        },
+        "tags": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
+          "uniqueItems": true,
+          "default": [],
+          "description": "Open vocabulary for grouping (e.g. stem, citizenship, outdoor)."
+        },
+        "description": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Short original-prose description. Never verbatim pamphlet text."
+        }
+      },
+      "required": ["name", "eagle_required"],
+      "unevaluatedProperties": false
+    }
+  }
+}

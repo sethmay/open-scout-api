@@ -1,0 +1,16 @@
+{
+  "id": "negative-fixture",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": "2000",
+      "valid_to": null,
+      "name": "Negative Fixture Council",
+      "provenance": {
+        "sources": [{ "accessed": "2026-07-21" }],
+        "method": "curated",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ]
+}

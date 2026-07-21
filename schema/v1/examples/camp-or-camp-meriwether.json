@@ -1,0 +1,33 @@
+{
+  "id": "or-camp-meriwether",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Meriwether",
+      "council": "council:cascade-pacific",
+      "operating_status": "active",
+      "address": null,
+      "city": null,
+      "state": "OR",
+      "lat": null,
+      "lon": null,
+      "website": null,
+      "program_types": ["scouts_bsa_resident"],
+      "features": ["waterfront", "dining_hall"],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder canonical dataset, council-492 (demo fixture — real record must be re-sourced)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "ILLUSTRATIVE EXAMPLE — plausible but unverified; do not import as data. valid_from null = opening date unknown."
+      }
+    }
+  ],
+  "notes": "Slug keeps camp-finder's state-prefixed convention. A camp sold to another council would close this version window and add a 'transferred' event."
+}

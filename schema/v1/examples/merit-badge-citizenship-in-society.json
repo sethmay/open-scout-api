@@ -1,0 +1,47 @@
+{
+  "id": "citizenship-in-society",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": "2021-11-01",
+      "valid_to": "2022-07-01",
+      "name": "Citizenship in Society",
+      "eagle_required": false,
+      "tags": ["citizenship"],
+      "description": "Elective at introduction; became Eagle-required 2022-07-01.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/merit-badges/citizenship-in-society/",
+            "accessed": "2026-07-21"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.95,
+        "notes": "ILLUSTRATIVE EXAMPLE — dates widely reported but re-verify before import."
+      }
+    },
+    {
+      "valid_from": "2022-07-01",
+      "valid_to": null,
+      "name": "Citizenship in Society",
+      "eagle_required": true,
+      "tags": ["citizenship"],
+      "description": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/merit-badges/citizenship-in-society/",
+            "accessed": "2026-07-21"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.95,
+        "notes": "ILLUSTRATIVE EXAMPLE — the eagle_required flip is why this is two versions."
+      }
+    }
+  ],
+  "notes": "Demonstrates the multi-version pattern: an attribute change (eagle_required) closes one window and opens the next. Its introduction is an 'established' event in data/merit-badges/_events.json."
+}

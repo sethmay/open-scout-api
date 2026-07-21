@@ -1,0 +1,57 @@
+{
+  "id": "camping-2016",
+  "kind": "requirement-set",
+  "subject": "merit-badge:camping",
+  "effective_from": "2016",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Boy Scout Requirements 2016 (33216)",
+    "year": 2016
+  },
+  "includes_official_text": false,
+  "requirements": [
+    {
+      "number": "1",
+      "summary": "Explain hazards you may encounter while camping and what to do about them.",
+      "children": [
+        { "number": "1a", "summary": "Anticipate, mitigate, and respond to camping hazards." },
+        { "number": "1b", "summary": "Discuss prevention and treatment of common camping health concerns." }
+      ]
+    },
+    {
+      "number": "9",
+      "summary": "Camping experience requirements.",
+      "children": [
+        {
+          "number": "9a",
+          "summary": "Camp a total of at least 20 nights at designated Scouting activities or events (details and limits apply)."
+        },
+        {
+          "number": "9b",
+          "choose": 2,
+          "summary": "During the campouts above, do TWO of the following activities.",
+          "children": [
+            { "number": "9b(1)", "summary": "Hike up a mountain, gaining at least 1,000 feet of elevation." },
+            { "number": "9b(2)", "summary": "Backpack, snowshoe, or ski for at least 4 miles." },
+            { "number": "9b(3)", "summary": "Take a bike trip of at least 15 miles or 4 hours." },
+            { "number": "9b(4)", "summary": "Plan and carry out an overnight snow camping experience." }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Boy Scout Requirements 2016, BSA publication 33216",
+        "url": "https://www.scouting.org/merit-badges/camping/"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.7,
+    "notes": "ILLUSTRATIVE EXAMPLE — structure approximates the 2016 revision (subset of requirements, paraphrased); do not import as data."
+  },
+  "notes": "Demonstrates: paraphrased summaries only (includes_official_text=false), nested children, and a choose-N option group (9b). A future revision would be a NEW document with supersedes='requirement-set:camping-2016'."
+}

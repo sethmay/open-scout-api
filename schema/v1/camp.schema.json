@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "title": "Camp (canonical entity file)",
+  "description": "One file per camp property: data/camps/<slug>.json. Registry + history layer only — operational data (sessions, fees, availability) stays in camp-finder. Camp identity is independent of council ownership (camps change hands): 'council' is a versioned attribute; sales/transfers are 'transferred' events, closures 'discontinued' events in data/camps/_events.json. Slugs keep camp-finder's state-prefixed convention (e.g. 'or-camp-meriwether') for painless import.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "camp" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CampVersion" },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced)."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "CampVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "council": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^council:[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+            },
+            { "type": "null" }
+          ],
+          "description": "Owning/operating council during this window; null = unknown (common for historical camps)."
+        },
+        "operating_status": {
+          "enum": ["active", "not_operating", "closed"],
+          "description": "camp-finder semantics: 'not_operating' = property exists but no program; 'closed' = property gone/sold."
+        },
+        "address": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "city": {
+          "type": ["string", "null"],
+          "default": null
+        },
+        "state": {
+          "anyOf": [
+            { "$ref": "common.schema.json#/$defs/StateCode" },
+            { "type": "null" }
+          ],
+          "default": null
+        },
+        "lat": {
+          "type": ["number", "null"],
+          "minimum": -90,
+          "maximum": 90,
+          "default": null
+        },
+        "lon": {
+          "type": ["number", "null"],
+          "minimum": -180,
+          "maximum": 180,
+          "default": null
+        },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "default": null,
+          "description": "Authoritative council/camp page during this window."
+        },
+        "program_types": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
+          "uniqueItems": true,
+          "default": [],
+          "description": "Open vocabulary; seeded from camp-finder (scouts_bsa_resident, cub_resident, cub_day, high_adventure, webelos)."
+        },
+        "features": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
+          "uniqueItems": true,
+          "default": [],
+          "description": "Open vocabulary; seeded from camp-finder (dining_hall, waterfront, pool, shooting_sports, climbing, horseback, atv, cope, older_scout_program, high_adventure_option, stem, scuba, mountain_biking)."
+        }
+      },
+      "required": ["name", "council", "operating_status"],
+      "unevaluatedProperties": false
+    }
+  }
+}

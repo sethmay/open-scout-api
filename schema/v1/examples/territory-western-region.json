@@ -1,0 +1,28 @@
+{
+  "id": "western-region",
+  "kind": "territory",
+  "versions": [
+    {
+      "valid_from": "1992",
+      "valid_to": "2021",
+      "name": "Western Region",
+      "division_type": "region",
+      "number": null,
+      "parent": null,
+      "description": "One of the four BSA regions, 1992 until the 2021 reorganization into 16 National Service Territories.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Western_Region_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-21"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "ILLUSTRATIVE EXAMPLE — plausible but unverified; do not import as data."
+      }
+    }
+  ],
+  "notes": "Retired entity: no version has valid_to null. Its dissolution belongs in data/territories/_events.json as a 'reorganized' event linking the four regions (predecessors) to the 16 NSTs (successors)."
+}
