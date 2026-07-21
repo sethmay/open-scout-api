@@ -42,7 +42,9 @@ def council_num_to_slug() -> dict[int, str]:
         if p.name == "_events.json":
             continue
         d = json.loads(p.read_text("utf-8"))
-        n = d["versions"][0].get("bsa_number")
+        vs = d["versions"]
+        ov = next((v for v in vs if v.get("valid_to") is None), vs[-1])  # current number, not versions[0]
+        n = ov.get("bsa_number")
         if n is not None:
             out[n] = d["id"]
     return out
