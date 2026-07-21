@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
-- `PENDING` Publish static API: `tools/build.py` compiles `data/` → `dist/` (path-versioned
+## 0.3.0 (minor) — 2026-07-21
+
+- `c8dab5d` Publish static API: `tools/build.py` compiles `data/` → `dist/` (path-versioned
   `v1/` — meta, per-dataset index + per-entity files with folded events, flat `current/`
   projections, schemas) with a published-projection schema + fail-fast contract check;
   `.github/workflows/pages.yml` gates (validators) and deploys to GitHub Pages on `main`
