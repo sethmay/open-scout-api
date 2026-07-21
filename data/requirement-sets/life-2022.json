@@ -1,0 +1,98 @@
+{
+  "id": "life-2022",
+  "kind": "requirement-set",
+  "subject": "rank:life",
+  "effective_from": "2022-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": "requirement-set:life-2021",
+  "source_document": {
+    "title": "Life Rank Requirements (2022 Boy Scout/Scouts BSA Requirements)",
+    "url": "http://usscouts.org/advance/ScoutsBSA/changes/rank6-22.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Be active in your troop for at least six months as a Star Scout."
+    },
+    {
+      "number": "2",
+      "text": "As a Star Scout, demonstrate Scout spirit by living the Scout Oath and Scout Law. Tell how you have done your duty to God and how you have lived the Scout Law in your everyday life."
+    },
+    {
+      "number": "3",
+      "text": "Earn five more merit badges (so that you have 11 in all) including any number more from the list for Eagle so that you have a total of seven from the required list of Eagle in that total number of 11 merit badges. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement #3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
+    },
+    {
+      "number": "4",
+      "text": "While a Star Scout, participate in six hours of service through one or more service projects approved by your Scoutmaster. At least 3 hours of this service must be conservation related."
+    },
+    {
+      "number": "5",
+      "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+    },
+    {
+      "number": "6",
+      "text": "While a Star Scout, use the Teaching EDGE method to teach another Scout (preferably younger than you) the skills from ONE of the following choices, so that the Scout is prepared to pass those requirements to their Scoutmaster's satisfaction.",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Tenderfoot - 4a and 4b (first aid)"
+        },
+        {
+          "number": "6b",
+          "text": "Second Class - 2b, 2c, and 2d (cooking/camping)"
+        },
+        {
+          "number": "6c",
+          "text": "Second Class - 3a and 3d (navigation)"
+        },
+        {
+          "number": "6d",
+          "text": "First Class - 3a, 3b, 3c, and 3d (tools)"
+        },
+        {
+          "number": "6e",
+          "text": "First Class - 4a and 4b (navigation)"
+        },
+        {
+          "number": "6f",
+          "text": "Second Class - 6a and 6b (first aid)"
+        },
+        {
+          "number": "6g",
+          "text": "First Class - 7a and 7b (first aid)"
+        },
+        {
+          "number": "6h",
+          "text": "Three requirements from one of the required Eagle merit badges, as approved by your Scoutmaster."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "While a Star Scout, participate in a Scoutmaster conference"
+    },
+    {
+      "number": "8",
+      "text": "Successfully complete your board of review for the Life rank. For Venturers working on Scouts BSA Requirements, replace \"troop\" with \"crew\" and \"Scoutmaster\" with \"Crew Advisor.\" For Sea Scouts working on Scouts BSA Requirements, replace \"troop\" with \"ship\" and \"Scoutmaster\" with \"Skipper.\" Assistant patrol leader is not an approved position of responsibility for the Star, Life, or Eagle rank. If the board of review does not approve the Scout’s advancement, the decision may be appealed in accordance with Guide to Advancement, topic 8.0.4.0. The following additional requirements apply to boys registered in the Venturing Program or as Sea Scouts."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/ScoutsBSA/changes/rank6-22.asp"
+      },
+      {
+        "citation": "U.S. Scouting Service Project archived Life rank requirements (2022)"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.8,
+    "notes": "Scraped from usscouts.org archived edition; verbatim requirement text © Scouting America, structure/numbering derived; topical section headers omitted."
+  },
+  "notes": null
+}

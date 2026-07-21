@@ -3,6 +3,17 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.10.0 (minor) — 2026-07-21
+
+- `PENDING` Add historical rank requirement revisions: 26 requirement-sets for the 2016-2023
+  editions of all 7 Scouts BSA ranks, scraped from the U.S. Scouting Service Project archive
+  (usscouts.org). One doc per distinct edition (same-year editorial + org-rename-only diffs
+  collapsed), with effective windows + `supersedes` chains flowing into the current 2024 sets.
+  Verbatim requirement text © Scouting America (`text_rights`); structure/numbering from the
+  pages' `<ol>` markup (stdlib parser); all 647 requirement texts verified verbatim against
+  source. `method: scraped`, confidence 0.8. Requirement-sets: 148 → 174. Current 2024 rank
+  sets now carry `supersedes`. 925 entities validate.
+
 ## 0.9.0 (minor) — 2026-07-21
 
 - `e986843` Add the awards catalog: new `award` entity schema + 52 earned awards &

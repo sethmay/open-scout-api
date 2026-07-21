@@ -1,0 +1,64 @@
+{
+  "id": "star-2016",
+  "kind": "requirement-set",
+  "subject": "rank:star",
+  "effective_from": "2016-01-01",
+  "effective_to": "2017-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Star Rank Requirements (2016 Boy Scout/Scouts BSA Requirements)",
+    "url": "http://usscouts.org/advance/boyscout/old/bsrank5-16.asp",
+    "year": 2016
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Be active in your troop for at least four months as a First Class Scout."
+    },
+    {
+      "number": "2",
+      "text": "As a First Class Scout, demonstrate Scout spirit by living the Scout Oath and Scout Law. Tell how you have done your duty to God and how you have lived the Scout Oath and Scout Law in your everyday life."
+    },
+    {
+      "number": "3",
+      "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
+    },
+    {
+      "number": "4",
+      "text": "While a First Class Scout, participate in six hours of service through one or more service projects approved by your Scoutmaster."
+    },
+    {
+      "number": "5",
+      "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian, quartermaster, chaplain aide, instructor, den chief, webmaster, or outdoor ethics guide Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, den chief, quartermaster, historian, guide, boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster, Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+    },
+    {
+      "number": "6",
+      "text": "With your parent or guardian, complete the exercises in the pamphlet \"How to Protect Your Children from Child Abuse: A Parents Guide\" and earn the Cyber Chip Award for your grade."
+    },
+    {
+      "number": "7",
+      "text": "While a First Class Scout, participate in a Scoutmaster conference"
+    },
+    {
+      "number": "8",
+      "text": "Successfully complete your board of review for the Star rank."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/boyscout/old/bsrank5-16.asp"
+      },
+      {
+        "citation": "U.S. Scouting Service Project archived Star rank requirements (2016)"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.8,
+    "notes": "Scraped from usscouts.org archived edition; verbatim requirement text © Scouting America, structure/numbering derived; topical section headers omitted."
+  },
+  "notes": null
+}
