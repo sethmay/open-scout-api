@@ -1,0 +1,144 @@
+{
+  "id": "plumbing-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:plumbing",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Plumbing Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/plumbing/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Describe how a properly working plumbing system protects your family's health and safety."
+        },
+        {
+          "number": "1b",
+          "text": "List five important local health regulations related to plumbing and tell how they protect health and safety."
+        },
+        {
+          "number": "1c",
+          "text": "Describe the safety precautions you must take when making home plumbing repairs."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Make a drawing and explain how a home hot- and cold-water supply system works. Tell how you would make it safe from freezing."
+        },
+        {
+          "number": "2b",
+          "text": "Make a drawing and explain the drainage system of the plumbing in a house. Show and explain the use of drains and vents."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Show how to use five important plumber's tools."
+    },
+    {
+      "number": "4",
+      "text": "Identify and explain the following terms: washer, retaining nut, plunger (rubber force cup), solder, flux, elbow, tee, nipple, coupling, plug, union, trap, drainpipe, and water meter."
+    },
+    {
+      "number": "5",
+      "text": "Name the kinds of pipe that are used most often in a plumbing system. Explain why these pipes are used."
+    },
+    {
+      "number": "6",
+      "text": "Do FOUR of the following, each under the supervision of a knowledgeable adult:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Visit the plumbing section of a hardware store or home center and identify:",
+          "children": [
+            {
+              "number": "6a(1)",
+              "text": "PVC pipe and fittings"
+            },
+            {
+              "number": "6a(2)",
+              "text": "CPVC pipe and fittings"
+            },
+            {
+              "number": "6a(3)",
+              "text": "PEX pipe and fittings"
+            },
+            {
+              "number": "6a(4)",
+              "text": "Copper pipe and fittings"
+            },
+            {
+              "number": "6a(5)",
+              "text": "Steel pipe and fittings"
+            },
+            {
+              "number": "6a(6)",
+              "text": "Specialty plumbing tools"
+            }
+          ]
+        },
+        {
+          "number": "6b",
+          "text": "Cut, clean (debur), PVC or CPVC pipe; solvent weld at least three connections to include a coupling, tee, and elbow."
+        },
+        {
+          "number": "6c",
+          "text": "Cut PEX pipe; make at least one connection using either a quick-connect fitting or a crimp fitting (using specialized tools)."
+        },
+        {
+          "number": "6d",
+          "text": "Solder a copper connection using a gas torch."
+        },
+        {
+          "number": "6e",
+          "text": "Replace a kitchen or lavatory faucet."
+        },
+        {
+          "number": "6f",
+          "text": "Remove, clean or replace, and reinstall a sink or lavatory drain trap."
+        },
+        {
+          "number": "6g",
+          "text": "Properly apply pipe thread tape to a pipe or a plumbing connector."
+        }
+      ],
+      "choose": 4
+    },
+    {
+      "number": "7",
+      "text": "Identify three career opportunities that would use skills and knowledge in plumbing. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/plumbing/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Plumbing.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/plumbing/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

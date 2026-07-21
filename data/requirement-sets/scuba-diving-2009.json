@@ -1,0 +1,69 @@
+{
+  "id": "scuba-diving-2009",
+  "kind": "requirement-set",
+  "subject": "merit-badge:scuba-diving",
+  "effective_from": "2009-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Scuba Diving Merit Badge Requirements (2009)",
+    "url": "https://www.scouting.org/merit-badges/scuba-diving/",
+    "year": 2009
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while scuba diving, including hypothermia, hyperventilation, squeezes, decompression illness, nitrogen narcosis, motion sickness, fatigue, overexertion, heat reactions, dehydration, injuries by aquatic life, and cuts and scrapes."
+        },
+        {
+          "number": "1b",
+          "text": "Identify the conditions that must exist before performing CPR on a person, and explain how to recognize such conditions. Demonstrate the proper technique for performing CPR using a training device approved by your counselor."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Before completing requirements 3 through 6, earn the Swimming merit badge."
+    },
+    {
+      "number": "3",
+      "text": "Discuss the Scuba Diver's Code with your counselor, and explain the importance of each guideline to a scuba diver's safety."
+    },
+    {
+      "number": "4",
+      "text": "Earn an Open Water Diver Certification from a scuba organization recognized by the Scouting America scuba policy."
+    },
+    {
+      "number": "5",
+      "text": "Explain what an ecosystem is, and describe four aquatic ecosystems a diver might experience."
+    },
+    {
+      "number": "6",
+      "text": "Find out about three career opportunities in the scuba industry. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/scuba-diving/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scuba%20Diving.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/scuba-diving/2009.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

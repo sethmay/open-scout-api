@@ -1,0 +1,77 @@
+{
+  "id": "surveying-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:surveying",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Surveying Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/surveying/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Show that you know first aid for the types of injuries that could occur while surveying, including cuts, scratches, snakebite, insect stings, tick bites, heat and cold reactions, dehydration. Explain to your counselor why a surveyor should be able to identify the poisonous plants and poisonous animals that are found in your area."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Set an instrument over one of the corners of a five-sided lot laid out by your counselor and sighting one of the other corners for reference and, using radial measurement methods, record the angle turned and the distance measured to each of the remaining corners, as directed by your counselor. Record the angle and distance to five topographic features (trees, shrubs, rocks, etc.) near your work area."
+        },
+        {
+          "number": "2b",
+          "text": "Measure to three of the same points with GPS measurement and compare the distances between the points measured."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "From the field notes gathered for requirement 2, and using a protractor and scale, plot the points you measured and draw to scale a map of your survey which includes a north arrow, scale bar, title, date and a diagram of the lot you measured. Submit a neatly drawn copy."
+    },
+    {
+      "number": "4",
+      "text": "Use one of the corner markers from requirement 2 as a benchmark with an assumed elevation of 100 feet. Using a level and rod, collect and record measurements, and determine the elevation of the other four corner markers."
+    },
+    {
+      "number": "5",
+      "text": "Get a copy of the deed to a piece of property approved by your counselor, from the local courthouse or title agency. Discuss with your counselor the different parts of the deed and their importance."
+    },
+    {
+      "number": "6",
+      "text": "Discuss emerging surveying technology such as drones and laser scanning and the strengths and weaknesses of each."
+    },
+    {
+      "number": "7",
+      "text": "Tell what GPS is; discuss with your counselor the importance of GPS and how it is changing the field of surveying."
+    },
+    {
+      "number": "8",
+      "text": "Identify three career opportunities that would use skills and knowledge in surveying. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/surveying/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Surveying.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/surveying/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

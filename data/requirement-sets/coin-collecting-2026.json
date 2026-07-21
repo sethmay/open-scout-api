@@ -1,0 +1,127 @@
+{
+  "id": "coin-collecting-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:coin-collecting",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Coin Collecting Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/coin-collecting/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Understand how coins are made and where the active U.S. Mint facilities are located."
+    },
+    {
+      "number": "2",
+      "text": "Explain the following terms: obverse, reverse, reeding, clad, type set, and date set."
+    },
+    {
+      "number": "3",
+      "text": "Describe three different ways to store a collection, and the benefits, drawbacks, and cost of each method."
+    },
+    {
+      "number": "4",
+      "text": "Do the following and explain to your counselor the design features, designer name, designer initials, and where to find them for each item:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Collect a one-cent coin from the year group: 1959-2008 (that is, dated between 1959 and 2008) and a one-cent coin from the year group 2010-present. Explain how and why the one-cent coins issued in 2009 were different from either of the other two year groups."
+        },
+        {
+          "number": "4b",
+          "text": "Collect two five-cent coins, one from each of these year groups: 1959-2003 and 2006-present. Explain how and why the five-cent coins issued in 2004-2005 were different from either of the other two year groups."
+        },
+        {
+          "number": "4c",
+          "text": "Collect a ten-cent coin from 1965-present."
+        },
+        {
+          "number": "4d",
+          "text": "Collect a twenty-five-cent coin from 1965-1998, two examples from the 50-State Quarter® /territories Program 1999-2009, two designs from the America the Beautiful® program 2010-2021 and two designs from the American Woman Quarter® program (2022-2024). Explain the purpose of each of those programs."
+        },
+        {
+          "number": "4e",
+          "text": "Collect a half dollar coin from 1965-present."
+        },
+        {
+          "number": "4f",
+          "text": "Collect a dollar coin from the following design groups: Susan B. Anthony 1979-1981, 1999, Sacagawea 2000-2008, U.S. Presidents 2007-2016, 2020."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Describe and discuss with your counselor the special reverse designs of the quarters, half dollar and dollar coin struck in 1975-1976 to honor the U.S. Bicentennial."
+    },
+    {
+      "number": "6",
+      "text": "Identify for your counselor the people depicted on current currency: $1, $2, $5, $10, $20, $50, and $100 notes. Explain where United States currency is printed."
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Collect and identify for your counselor 20 different world coins from at least seven different countries. Identify the country, major design elements, and denomination of each."
+        },
+        {
+          "number": "7b",
+          "text": "Collect and identify for your counselor 20 different world paper money from at least 7 different countries. Identify the country, major design elements, and denomination of each."
+        },
+        {
+          "number": "7c",
+          "text": "Collect and identify for your counselor 20 different tokens and/or medals. Identify the issuer and use of each."
+        },
+        {
+          "number": "7d",
+          "text": "Complete one of the following and report to your counselor what you experienced:",
+          "children": [
+            {
+              "number": "7d(1)",
+              "text": "Attend a coin show."
+            },
+            {
+              "number": "7d(2)",
+              "text": "Attend a coin club meeting."
+            },
+            {
+              "number": "7d(3)",
+              "text": "Tour a U.S. Mint facility or museum."
+            },
+            {
+              "number": "7d(4)",
+              "text": "Tour a virtual exhibit (with your parent or guardian's permission) approved by your counselor."
+            }
+          ],
+          "choose": 1
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/coin-collecting/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Coin%20Collecting.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/coin-collecting/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

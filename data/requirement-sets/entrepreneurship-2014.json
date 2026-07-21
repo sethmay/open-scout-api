@@ -1,0 +1,155 @@
+{
+  "id": "entrepreneurship-2014",
+  "kind": "requirement-set",
+  "subject": "merit-badge:entrepreneurship",
+  "effective_from": "2014-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Entrepreneurship Merit Badge Requirements (2014)",
+    "url": "https://www.scouting.org/merit-badges/entrepreneurship/",
+    "year": 2014
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "In your own words, define entrepreneurship. Explain to your counselor how entrepreneurs impact the U.S. economy."
+    },
+    {
+      "number": "2",
+      "text": "Explain to your counselor why having good skills in the following areas are important for an entrepreneur: communication, planning, organization, problem solving, decision making, basic math, adaptability, technical and social skills, teamwork, and leadership."
+    },
+    {
+      "number": "3",
+      "text": "Identify and interview an individual who has started a business. Learn about this person's educational background, early work experiences, where the idea for the business came from, and what was involved in starting the business. Find out how the entrepreneur raised the capital (money) to start the business, examples of successes and challenges faced, and how the business is currently doing (if applicable). Discuss with your counselor what you have learned."
+    },
+    {
+      "number": "4",
+      "text": "Think of as many ideas for a business as you can, and write them down. From your list, select three ideas you believe represent the best opportunities. Choose one of these and explain to your counselor why you selected it and why you feel it can be successful."
+    },
+    {
+      "number": "5",
+      "text": "Create a written business plan for your idea that includes all of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Product or Service",
+          "children": [
+            {
+              "number": "5a(1)",
+              "text": "Describe the product or service to be offered."
+            },
+            {
+              "number": "5a(2)",
+              "text": "Identify goals for your business."
+            },
+            {
+              "number": "5a(3)",
+              "text": "Explain how you can make enough of the product or perform the service to meet your goals."
+            },
+            {
+              "number": "5a(4)",
+              "text": "Identify and describe the potential liability risks for your product or service."
+            },
+            {
+              "number": "5a(5)",
+              "text": "Determine what type of license, if any, you might need in order to sell or make your product or service."
+            }
+          ]
+        },
+        {
+          "number": "5b",
+          "text": "Market Analysis",
+          "children": [
+            {
+              "number": "5b(1)",
+              "text": "Identify the types of people who would buy your product or service."
+            },
+            {
+              "number": "5b(2)",
+              "text": "Identify your business's competitors, and describe their strengths and weaknesses."
+            },
+            {
+              "number": "5b(3)",
+              "text": "Describe what makes your product or service unique."
+            }
+          ]
+        },
+        {
+          "number": "5c",
+          "text": "Financial",
+          "children": [
+            {
+              "number": "5c(1)",
+              "text": "Determine how much money you will need to start your business, and identify how you will obtain the money."
+            },
+            {
+              "number": "5c(2)",
+              "text": "Determine the cost of offering your product or service and the price you will charge in order to make a profit."
+            },
+            {
+              "number": "5c(3)",
+              "text": "Describe what will happen with the money you make from the sales of your product or service."
+            }
+          ]
+        },
+        {
+          "number": "5d",
+          "text": "Personnel",
+          "children": [
+            {
+              "number": "5d(1)",
+              "text": "Determine what parts of the business you will handle yourself, and describe your qualifications."
+            },
+            {
+              "number": "5d(2)",
+              "text": "Determine whether you will need additional help to operate your business. If you will need help, describe the responsibilities and qualifications needed for the personnel who will fill each role."
+            }
+          ]
+        },
+        {
+          "number": "5e",
+          "text": "Promotion and Marketing",
+          "children": [
+            {
+              "number": "5e(1)",
+              "text": "Describe the methods you will use to promote your business to potential customers."
+            },
+            {
+              "number": "5e(2)",
+              "text": "Explain how you will utilize the internet and social media to increase awareness of your product or service."
+            },
+            {
+              "number": "5e(3)",
+              "text": "Design a promotional flyer or poster for your product or service."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "When you believe your business idea is feasible, imagine your business idea is now up and running. What successes and problems might you experience? How would you overcome any failures? Discuss with your counselor any ethical questions you might face and how you would deal with them."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/entrepreneurship/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Entrepreneurship.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/entrepreneurship/2014.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,101 @@
+{
+  "id": "hiking-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:hiking",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Hiking Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/hiking/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while hiking, and what you should do to anticipate, help prevent, mitigate and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while hiking, including hypothermia, frostbite, dehydration, heat exhaustion, heatstroke, sunburn, hyperventilation, altitude sickness, sprained ankle, blisters, insect stings, tick bites, and snakebite."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain and, where possible, show the points of good hiking practices including proper outdoor ethics, hiking safety in the daytime and at night, courtesy to others, choice of footwear, and proper care of feet and footwear."
+        },
+        {
+          "number": "2b",
+          "text": "Read aloud or recite the Leave No Trace Seven Principles, and discuss why each is important while hiking."
+        },
+        {
+          "number": "2c",
+          "text": "Read aloud or recite the Outdoor Code, and give examples of how to follow it on a hike."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Explain how hiking is an aerobic activity. Develop a plan for conditioning yourself for 10-mile hikes, and describe how you will increase your fitness for longer hikes."
+    },
+    {
+      "number": "4",
+      "text": "Take four 10-mile hikes and one 20-mile hike, each on a different day, and each of continuous miles. Prepare a written hike plan before each hike and share it with your counselor or a designee for approval before starting the hike. Include map routes, a clothing and equipment list, and a list of items for a trail lunch. You may stop for as many short rest periods as needed, as well as one meal, during each hike, but not for an extended period such as overnight.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "10-mile hike #1"
+        },
+        {
+          "number": "4b",
+          "text": "10-mile hike #2"
+        },
+        {
+          "number": "4c",
+          "text": "10-mile hike #3"
+        },
+        {
+          "number": "4d",
+          "text": "10-mile hike #4"
+        },
+        {
+          "number": "4e",
+          "text": "20-mile hike"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "After each of the hikes (or during each hike if on one continuous trek) in requirement 4, write a short report on your hike. For each hike, give the date and description (or map) of the route covered, the weather, any interesting things you saw, and any challenges you had and how you overcame them. It may include something you learned about yourself, about the outdoors, or about others you were hiking with. Share this with your counselor."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/hiking/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Hiking.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/hiking/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,55 @@
+{
+  "id": "public-speaking-2003",
+  "kind": "requirement-set",
+  "subject": "merit-badge:public-speaking",
+  "effective_from": "2003-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Public Speaking Merit Badge Requirements (2003)",
+    "url": "https://www.scouting.org/merit-badges/public-speaking/",
+    "year": 2003
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Give a three- to five-minute introduction of yourself to an audience such as your troop, class at school, or some other group."
+    },
+    {
+      "number": "2",
+      "text": "Prepare a three- to five-minute talk on a topic of your choice that incorporates body language and visual aids."
+    },
+    {
+      "number": "3",
+      "text": "Give an impromptu talk of at least two minutes, either as part of a group discussion or before your counselor. Use a subject selected by your counselor that is interesting to you but that is not known to you in advance and for which you do not have time to prepare."
+    },
+    {
+      "number": "4",
+      "text": "Select a topic of interest to your audience. Collect and organize information about the topic and prepare an outline. Write an eight- to 10-minute speech, practice it, then deliver it in a conversational way."
+    },
+    {
+      "number": "5",
+      "text": "Show you know parliamentary procedure by leading a discussion or meeting according to accepted rules of order; or by answering questions on the rules of order."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/public-speaking/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Public%20Speaking.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/public-speaking/2003.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

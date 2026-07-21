@@ -1,0 +1,120 @@
+{
+  "id": "mammal-study-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:mammal-study",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Mammal Study Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/mammal-study/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain the following terms: animal, invertebrate, vertebrate, and mammal. Name three characteristics that distinguish mammals from all other animals."
+    },
+    {
+      "number": "2",
+      "text": "Explain how the animal kingdom is classified. Explain where mammals fit in the classification of animals. Classify three mammals from phylum through species."
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Spend three hours in two different kinds of natural habitats or at different elevations for a total of 6 hours. List the different mammal species and how many of each you identified by sight or sign. Tell why all mammals do not live in the same kind of habitat."
+        },
+        {
+          "number": "3b",
+          "text": "Spend three hours on five different days in at least a 4-acre area (about the size of 3 football fields) for a total of 15 hours. List the mammal species you identified by sight or sign."
+        },
+        {
+          "number": "3c",
+          "text": "From study and reading, write a simple life history of one nongame mammal that lives in your area. Tell how this mammal lived before its habitat was affected in any way by humans. Tell how it reproduces, what it eats, and its natural habitat. Describe its dependency upon plants and other animals (including humans), and how they depend upon it. Describe how humans have benefited from the mammal you have chosen and whether the mammal has benefited from association with humankind."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Under the guidance of a nature center or natural history museum, make two study skins of rats or mice. Tell the uses of study skins and mounted specimens respectively."
+        },
+        {
+          "number": "4b",
+          "text": "Take good pictures of two kinds of mammals in the wild. Record the date(s), time of day, weather conditions, approximate distance from the animal, habitat conditions, and any other factors you feel may have influenced the animal's activity and behavior."
+        },
+        {
+          "number": "4c",
+          "text": "Write a life history of a native game mammal that lives in your area, covering the points outlined in requirement 3(c). List sources for this information."
+        },
+        {
+          "number": "4d",
+          "text": "Make and bait a tracking pit. Report what mammals and other animals came to the bait."
+        },
+        {
+          "number": "4e",
+          "text": "Visit a natural history museum. Report on how specimens are prepared and cataloged. Explain the purposes of museums."
+        },
+        {
+          "number": "4f",
+          "text": "Write a report of 500 words on a book about a mammal species."
+        },
+        {
+          "number": "4g",
+          "text": "Trace two possible food chains of carnivorous mammals from the soil through four stages to the mammal."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Working with your counselor, select and carry out one project that will influence the numbers of one or more mammals."
+    },
+    {
+      "number": "6",
+      "text": "Discuss the importance of the Leave No Trace Seven Principles and the Outdoor Code as they relate to Mammal Study. Explain how you have followed the Leave No Trace Seven Principles and the Outdoor Code while in natural areas during field observation, specimen collection, and identification."
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+        },
+        {
+          "number": "7b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/mammal-study/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Mammal%20Study.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/mammal-study/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

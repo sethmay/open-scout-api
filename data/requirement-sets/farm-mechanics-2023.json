@@ -1,0 +1,144 @@
+{
+  "id": "farm-mechanics-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:farm-mechanics",
+  "effective_from": "2023-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Farm Mechanics Merit Badge Requirements (2023)",
+    "url": "https://www.scouting.org/merit-badges/farm-mechanics/",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Discuss with your counselor the safety equipment, tools, and clothing used while checking or repairing farm equipment. Use this equipment, tools, and/or clothing (when needed or called for) in meeting the requirements for this merit badge."
+        },
+        {
+          "number": "1b",
+          "text": "Draw a plan showing a well-equipped farm shop. Point out the shop's mandatory safety devices and features."
+        },
+        {
+          "number": "1c",
+          "text": "Find all the universal warning and safety symbols on a piece of equipment and explain what they mean."
+        },
+        {
+          "number": "1d",
+          "text": "Describe what a safety data sheet (SDS) is and tell why it is used. Obtain the SDS for any engine coolant, oil, grease, fuel, hydraulic or transmission fluid, or other flammable or hazardous materials you use in meeting the requirements for this merit badge."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain how power is produced or transferred in a:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Diesel engine"
+        },
+        {
+          "number": "2b",
+          "text": "Hydraulic system"
+        },
+        {
+          "number": "2c",
+          "text": "Transmission or any other power system"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Replace the handle of any tool found on the farm."
+        },
+        {
+          "number": "3b",
+          "text": "Organize a tool rack or a storage system for nails, bolts, nuts, and washers."
+        },
+        {
+          "number": "3c",
+          "text": "Using a hand file, properly dress the mushroomed head of a chisel or punch."
+        },
+        {
+          "number": "3d",
+          "text": "Using a hand file, correctly dress a screwdriver tip."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "On an engine-powered machine: Grease all fittings, change the oil and oil filter, clean the air filter, clean the radiator fins, and replace the fuel filters."
+        },
+        {
+          "number": "4b",
+          "text": "For any engine-powered machine, create a preoperational checklist; include checking the engine coolant, engine oil, hydraulic and/or transmission fluid, and battery voltage (using a voltmeter). Using your checklist, conduct a preoperational check of that machinery or equipment."
+        },
+        {
+          "number": "4c",
+          "text": "Prepare any farm machine for winter storage."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Visit an implement dealer. Interview the dealer technician or service manager for hints on good preventive maintenance. Ask why it is important, the costs, and what causes wear or damage. Report what you learn."
+    },
+    {
+      "number": "6",
+      "text": "Explain each step in ONE of the following maintenance procedures:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Tightening hydraulic fittings."
+        },
+        {
+          "number": "6b",
+          "text": "Checking the air filter."
+        },
+        {
+          "number": "6c",
+          "text": "Cleaning a work piece with a wire-brush wheel."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Find out about three career opportunities in farm mechanics. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/farm-mechanics/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Farm%20Mechanics.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/farm-mechanics/2023.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

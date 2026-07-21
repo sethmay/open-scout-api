@@ -1,0 +1,94 @@
+{
+  "id": "weather-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:weather",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Weather Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/weather/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Define meteorology. Explain what weather is and what climate is. Discuss how the weather affects farmers, sailors, aviators, and the outdoor construction industry. Tell why weather forecasts are important to each of these groups."
+    },
+    {
+      "number": "2",
+      "text": "Name five dangerous weather-related conditions. Give the safety rules for each when outdoors and explain the difference between a severe weather watch and a warning. Discuss the safety rules with your family."
+    },
+    {
+      "number": "3",
+      "text": "Identify at least two sources of weather forecasts that can be used to prepare for hikes, overnight camping, and other outdoor activities. Name two sources of emergency weather warnings both at home and during outdoor Scout functions."
+    },
+    {
+      "number": "4",
+      "text": "Explain the difference between high and low pressure systems in the atmosphere. Tell which is related to good and to poor weather. Draw cross sections of a cold front and a warm front, showing the location and movements of the cold and warm air, the frontal slope, the location and types of clouds associated with each type of front, and the location of precipitation."
+    },
+    {
+      "number": "5",
+      "text": "Tell what causes wind, why it rains, and how lightning and hail are formed."
+    },
+    {
+      "number": "6",
+      "text": "Identify and describe clouds in the low, middle, and upper levels of the atmosphere. Relate these to specific types of weather."
+    },
+    {
+      "number": "7",
+      "text": "Draw a diagram of the water cycle and label its major processes. Explain the water cycle to your counselor."
+    },
+    {
+      "number": "8",
+      "text": "Identify some human activities that can alter the environment, and describe how they affect the climate and people."
+    },
+    {
+      "number": "9",
+      "text": "Describe how the tilt of Earth's axis helps determine the climate of a region near the equator, near the poles, and across the area in between."
+    },
+    {
+      "number": "10",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Make one of the following instruments: wind vane, anemometer, rain gauge, hygrometer. Keep a daily weather log for one week using information from this instrument as well as from other sources such as local radio and television stations, NOAA Weather Radio All Hazards, and internet sources (with your parent or guardian's permission). Record the following information at the same time every day: wind direction and speed, temperature, precipitation, and types of clouds. Be sure to make a note of any morning dew or frost. In the log, also list the weather forecasts from radio or television at the same time each day and show how the weather really turned out."
+        },
+        {
+          "number": "10b",
+          "text": "Visit a National Weather Service office or talk with a local radio or television weathercaster, private meteorologist, local agricultural extension service officer, or university meteorology instructor. Find out what type of weather is most dangerous or damaging to your community. Determine how severe weather and flood warnings reach the homes in your community."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "11",
+      "text": "Give a talk of at least five minutes to a group (such as your unit or a Cub Scout pack) explaining the outdoor safety rules in the event of lightning, flash floods, and tornadoes. Before your talk, share your outline with your counselor for approval."
+    },
+    {
+      "number": "12",
+      "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/weather/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Weather.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/weather/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

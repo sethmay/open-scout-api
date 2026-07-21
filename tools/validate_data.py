@@ -110,15 +110,55 @@ def main() -> int:
                     errs.append(f"{ds}/_events.json event {eid}: {ref} ended by '{etype}' "
                                 f"but still has a valid_to:null (current) version")
 
+    # pass 4: requirement-sets (immutable documents, not versioned entities)
+    rs_dir = DATA / "requirement-sets"
+    nrs = 0
+    if rs_dir.exists():
+        rs_validator = Draft202012Validator(schemas["requirement-set.schema.json"], registry=reg,
+                                             format_checker=Draft202012Validator.FORMAT_CHECKER)
+        docs = []
+        for p in sorted(rs_dir.glob("*.json")):
+            obj = json.loads(p.read_text("utf-8"))
+            for e in rs_validator.iter_errors(obj):
+                errs.append(f"requirement-sets/{p.name}: schema: {e.json_path}: {e.message}")
+            if obj.get("id") != p.stem:
+                errs.append(f"requirement-sets/{p.name}: id {obj.get('id')!r} != filename stem {p.stem!r}")
+            docs.append((p.name, obj))
+        rs_ids = {f"requirement-set:{o['id']}" for _, o in docs}
+
+        def _has_text(node) -> bool:
+            return node.get("text") is not None or any(_has_text(c) for c in node.get("children", []))
+
+        def _walk_choose(node, where):
+            if node.get("choose") is not None and not node.get("children"):
+                errs.append(f"{where}: requirement {node.get('number')!r} has choose but no children")
+            for c in node.get("children", []):
+                _walk_choose(c, where)
+
+        for name, obj in docs:
+            check_ref(obj.get("subject"), f"requirement-sets/{name} subject")
+            sup = obj.get("supersedes")
+            if sup is not None and sup not in rs_ids:
+                errs.append(f"requirement-sets/{name}: dangling supersedes {sup!r}")
+            has_text = any(_has_text(r) for r in obj.get("requirements", []))
+            if bool(obj.get("includes_official_text")) != has_text:
+                errs.append(f"requirement-sets/{name}: includes_official_text={obj.get('includes_official_text')} "
+                            f"but text-present={has_text}")
+            for r in obj.get("requirements", []):
+                _walk_choose(r, f"requirement-sets/{name}")
+        nrs = len(docs)
+
     ncouncils = len(list((DATA / "councils").glob("*.json"))) - 1
     nterr = len(list((DATA / "territories").glob("*.json"))) - 1
+    nmb = len(list((DATA / "merit-badges").glob("*.json"))) - 1
     if errs:
         print(f"{len(errs)} error(s):")
         for e in errs[:100]:
             print("  " + e)
         return 1
-    print(f"OK: {ncouncils} councils + {nterr} territories + events valid "
-          f"(schema + referential + version windows), {len(entities)} entities")
+    print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
+          f"{nrs} requirement-sets valid (schema + referential + version windows + "
+          f"text-rights invariant), {len(entities)} entities")
     return 0
 
 

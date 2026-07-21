@@ -1,0 +1,122 @@
+{
+  "id": "pulp-and-paper-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:pulp-and-paper",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Pulp and Paper Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/pulp-and-paper/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Tell the history of papermaking. Describe the part paper products play in our society and economy."
+    },
+    {
+      "number": "2",
+      "text": "Learn about the pulp and paper industry.",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Describe the ways the industry plants, grows, and harvests trees."
+        },
+        {
+          "number": "2b",
+          "text": "Explain how the industry manages its forests so that the supply of trees keeps pace with the demand."
+        },
+        {
+          "number": "2c",
+          "text": "Tell how the industry has incorporated the concepts of sustainable forest management (SFM)."
+        },
+        {
+          "number": "2d",
+          "text": "Describe two ways the papermaking industry has addressed pollution."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Name at least four types of trees that are major sources of papermaking fibers. Then do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Discuss what other uses are made of the trees and the forestland owned by the pulp and paper industry."
+        },
+        {
+          "number": "3b",
+          "text": "Describe two ways of getting fibers from wood, and explain the major differences between them."
+        },
+        {
+          "number": "3c",
+          "text": "Tell why some pulps are bleached, and describe the process."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Describe how paper is made. Discuss how paper is recycled. Make a sheet of paper by hand."
+    },
+    {
+      "number": "5",
+      "text": "Explain what coated paper is and why it is coated. Describe the major uses for different kinds of coated papers. Describe one other way that paper is changed by chemical or mechanical means to make new uses possible."
+    },
+    {
+      "number": "6",
+      "text": "Make a list of 15 pulp or paper products found in your home. Share examples of 10 such products with your counselor."
+    },
+    {
+      "number": "7",
+      "text": "With your parent or guardian's and counselor's approval, do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Visit a pulp mill. Describe how the mill converts wood to cellulose fibers."
+        },
+        {
+          "number": "7b",
+          "text": "Visit a paper mill and get a sample of the paper made there. Describe the processes used for making this paper. Tell how it will be used."
+        },
+        {
+          "number": "7c",
+          "text": "Visit a container plant or box plant. Describe how the plant's products are made."
+        },
+        {
+          "number": "7d",
+          "text": "Visit a recycled paper collection or sorting facility. Describe the operations there."
+        },
+        {
+          "number": "7e",
+          "text": "Using books, magazines, your local library, the internet (with your parent or guardian's permission), and any other suitable research tool, find out how paper products are developed. Find out what role research and development play in the papermaking industry. Share what you learned with your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Find out about three career opportunities in the papermaking industry that interest you. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/pulp-and-paper/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Pulp-Paper.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/pulp-and-paper/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

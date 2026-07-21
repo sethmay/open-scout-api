@@ -1,0 +1,232 @@
+{
+  "id": "forestry-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:forestry",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Forestry Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/forestry/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare a field notebook, make a collection, and identify 15 species of trees, wild shrubs, or vines in a local forested area. Write a description in which you identify and discuss the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "The characteristics of leaf, twig, cone, or fruiting bodies"
+        },
+        {
+          "number": "1b",
+          "text": "The habitat in which these trees, shrubs, or vines are found."
+        },
+        {
+          "number": "1c",
+          "text": "The important ways each tree, shrub, or vine is used by humans or wildlife and whether the species is native or was introduced to the area. If it is not native, explain whether it is considered invasive or potentially invasive."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Collect and identify wood samples of 10 species of trees. List several ways the wood of each species can be used."
+        },
+        {
+          "number": "2b",
+          "text": "Find and examine three stumps, logs, or core samples that show variations in the growth rate of their ring patterns. In the field notebook you prepared for requirement 1, describe the location or origin of each example (including elevation, aspect, slope, and the position on the slope), and discuss possible reasons for the variations in growth rate. Photograph or sketch each example."
+        },
+        {
+          "number": "2c",
+          "text": "Find and examine two types of animal, insect, or disease damage to trees. In the field notebook you prepared for requirement 1, identify the damage, explain how the damage was caused, and describe the effects of the damage on the trees. Photograph or sketch each example."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Describe the contributions forests make to:",
+          "children": [
+            {
+              "number": "3a(1)",
+              "text": "Our economy in the form of products"
+            },
+            {
+              "number": "3a(2)",
+              "text": "Our social well-being, including recreation"
+            },
+            {
+              "number": "3a(3)",
+              "text": "Soil protection and increased fertility"
+            },
+            {
+              "number": "3a(4)",
+              "text": "Clean water"
+            },
+            {
+              "number": "3a(5)",
+              "text": "Clean air (carbon cycling, sequestration)"
+            },
+            {
+              "number": "3a(6)",
+              "text": "Wildlife habitat"
+            },
+            {
+              "number": "3a(7)",
+              "text": "Fisheries habitat"
+            },
+            {
+              "number": "3a(8)",
+              "text": "Threatened and endangered species of plants and animals"
+            }
+          ]
+        },
+        {
+          "number": "3b",
+          "text": "Tell which watershed or other source your community relies on for its water supply."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Describe what forest management means, including the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Multiple-use management"
+        },
+        {
+          "number": "4b",
+          "text": "Sustainable forest management"
+        },
+        {
+          "number": "4c",
+          "text": "Even-aged and uneven-aged management and the silvicultural systems associated with each"
+        },
+        {
+          "number": "4d",
+          "text": "Intermediate cuttings"
+        },
+        {
+          "number": "4e",
+          "text": "The role of prescribed burning and related forest-management practices"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "With your parent or guardian's and counselor's approval, do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Visit a managed public or private forest area with the manager or a forester who is familiar with it. Write a brief report describing the type of forest, the management objectives, and the forestry techniques used to achieve the objectives."
+        },
+        {
+          "number": "5b",
+          "text": "With a knowledgeable individual, visit a current or past logging operation or wood-using manufacturing plant. Write a brief report describing the following:",
+          "children": [
+            {
+              "number": "5b(1)",
+              "text": "The species and size of trees harvested or used."
+            },
+            {
+              "number": "5b(2)",
+              "text": "The origin of the forest or stands of trees utilized (e.g., planted or natural)"
+            },
+            {
+              "number": "5b(3)",
+              "text": "The forest's successional stage. What is its future? If it is a past logging operation, note the regeneration that is occurring either planted or natural."
+            },
+            {
+              "number": "5b(4)",
+              "text": "Where the trees are coming from (land ownership) or where they are going (type of mill or processing plant)."
+            },
+            {
+              "number": "5b(5)",
+              "text": "The products that are made from the trees."
+            },
+            {
+              "number": "5b(6)",
+              "text": "How the products are made and used."
+            },
+            {
+              "number": "5b(7)",
+              "text": "How waste materials from the logging operation or manufacturing plant are or were disposed of or utilized."
+            }
+          ]
+        },
+        {
+          "number": "5c",
+          "text": "Take part in a forest-fire prevention campaign in cooperation with your local fire warden, state wildfire agency, forester, or counselor. Write a brief report describing the campaign, how it will help prevent wildfires, and your part in it."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "6",
+      "text": "In your camp, local recreation area (park or equivalent), or neighborhood, do ONE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Inventory the trees within a specific area above (campsite, road, trail, street, etc.) that may be a hazard to structures or people. Note the species and hazardous condition, and suggest a remedy (removal or trimming). Make your list available to the proper authority or agency."
+        },
+        {
+          "number": "6b",
+          "text": "Review a hazardous tree report done by a professional for this area and visit those trees and the results of the prescription to prune or remove them."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Describe the consequences to forests that result from FIVE of the following elements: wildfire, absence of fire, destructive insects, loss of pollinating insect population, tree diseases, air pollution, overgrazing, deer or other wildlife overpopulation, improper harvest, and urbanization."
+        },
+        {
+          "number": "7b",
+          "text": "Explain what can be done to reduce the consequences you discussed in 7(a)."
+        },
+        {
+          "number": "7c",
+          "text": "Describe what you should do if you discover a forest fire and how a professional firefighting crew might control it. Name your state or local wildfire control agency."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Visit one or more local foresters and write a brief report about the person (or persons) OR write about a forester's occupation including the education, qualifications, career opportunities, and duties related to forestry."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/forestry/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Forestry.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/forestry/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,182 @@
+{
+  "id": "photography-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:photography",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Photography Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/photography/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Safety. Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while working with photography and what you should do to anticipate, mitigate, prevent, and respond to these hazards. Explain how you would prepare for exposure to environmental situations such as weather, sun, and water."
+        },
+        {
+          "number": "1b",
+          "text": "View the Personal Safety Awareness \"Digital Safety\" video (with your parent or guardian's permission)."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain how the following elements and terms can affect the quality of a picture:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Light—natural light (ambient/existing), low light (such as at night), and artificial light (such as from a flash)"
+        },
+        {
+          "number": "2b",
+          "text": "Exposure—aperture (f-stops), shutter speed, ISO"
+        },
+        {
+          "number": "2c",
+          "text": "Depth of field"
+        },
+        {
+          "number": "2d",
+          "text": "Composition—rule of thirds, leading lines, framing, depth"
+        },
+        {
+          "number": "2e",
+          "text": "Angle of view"
+        },
+        {
+          "number": "2f",
+          "text": "Stop action and blur motion"
+        },
+        {
+          "number": "2g",
+          "text": "Decisive moment (action or expression captured by the photographer)"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Explain the basic parts and operation of a camera. Explain how an exposure is made when you take a picture."
+    },
+    {
+      "number": "4",
+      "text": "Do TWO of the following, then share your work with your counselor.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Photograph one subject from two different angles or perspectives."
+        },
+        {
+          "number": "4b",
+          "text": "Photograph one subject from two different light sources - artificial and natural."
+        },
+        {
+          "number": "4c",
+          "text": "Photograph one subject with two different depth of fields."
+        },
+        {
+          "number": "4d",
+          "text": "Photograph one subject with two different compositional techniques."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "5",
+      "text": "Photograph THREE of the following, then share your work with your counselor.",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Close-up of a person"
+        },
+        {
+          "number": "5b",
+          "text": "Two to three people interacting"
+        },
+        {
+          "number": "5c",
+          "text": "Action shot"
+        },
+        {
+          "number": "5d",
+          "text": "Animal shot"
+        },
+        {
+          "number": "5e",
+          "text": "Nature shot"
+        },
+        {
+          "number": "5f",
+          "text": "Picture of a person - candid, posed, or camera aware"
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "6",
+      "text": "Describe how software allows you to enhance your photograph after it is taken. Select a photo you have taken, then do ONE of the following, and share what you have done with your counselor:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Crop your photograph."
+        },
+        {
+          "number": "6b",
+          "text": "Adjust the exposure or make a color correction."
+        },
+        {
+          "number": "6c",
+          "text": "Show another way you could improve your picture for impact."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Using images other than those created for requirements 4, 5, and 6, produce a visual story to document an event to photograph OR choose a topic that interests you to photograph. Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Plan the images you need to photograph for your photo story."
+        },
+        {
+          "number": "7b",
+          "text": "Share your plan with your counselor, and get your counselor's input and approval before you proceed."
+        },
+        {
+          "number": "7c",
+          "text": "Select eight to 12 images that best tell your story. Arrange your images in order and mount the prints on a poster board, OR create an electronic presentation. Share your visual story with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Identify three career opportunities in photography. Pick one and explain to your counselor how to prepare for such a career. Discuss what education and training are required, and why this profession might interest you."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/photography/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Photography.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/photography/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

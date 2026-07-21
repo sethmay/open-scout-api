@@ -1,0 +1,163 @@
+{
+  "id": "salesmanship-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:salesmanship",
+  "effective_from": "2023-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Salesmanship Merit Badge Requirements (2023)",
+    "url": "https://www.scouting.org/merit-badges/salesmanship/",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain the responsibilities of a salesperson and how a salesperson serves customers and helps stimulate the economy."
+        },
+        {
+          "number": "1b",
+          "text": "Explain the differences between a business-to-business salesperson and a consumer salesperson."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain why it is important for a salesperson to do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Research the market to be sure the product or service meets the needs of customers."
+        },
+        {
+          "number": "2b",
+          "text": "Learn all about the product to be sold."
+        },
+        {
+          "number": "2c",
+          "text": "If possible, visit the location where the product is built and learn how it is constructed. If a service is being sold, learn about the benefits of the service to the customer."
+        },
+        {
+          "number": "2d",
+          "text": "Follow up with customers after their purchase to confirm their satisfaction and discuss their concerns about the product."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Write and present a sales plan for a product and a sales territory assigned by your counselor."
+    },
+    {
+      "number": "4",
+      "text": "Make a sales presentation of a product assigned by your counselor."
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following and keep a record (cost sheet). Use the sales techniques you have learned, and share your experience with your counselor:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Help your unit raise funds through sales of merchandise or of tickets to a Scout event."
+        },
+        {
+          "number": "5b",
+          "text": "Sell your services such as lawn raking or mowing, pet watching, dog walking, show shoveling, and car washing to your neighbors. Follow up after the service has been completed and determine the customer's satisfaction."
+        },
+        {
+          "number": "5c",
+          "text": "Earn money through retail selling."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Interview a salesperson and learn the following:",
+          "children": [
+            {
+              "number": "6a(1)",
+              "text": "What made the person choose sales as a profession?"
+            },
+            {
+              "number": "6a(2)",
+              "text": "What are the most important things to remember when talking to customers?"
+            },
+            {
+              "number": "6a(3)",
+              "text": "How is the product sold?"
+            },
+            {
+              "number": "6a(4)",
+              "text": "Include your own questions."
+            }
+          ]
+        },
+        {
+          "number": "6b",
+          "text": "Interview a retail store owner and learn the following:",
+          "children": [
+            {
+              "number": "6b(1)",
+              "text": "How often is the owner approached by a sales representative?"
+            },
+            {
+              "number": "6b(2)",
+              "text": "What good traits should a sales representative have? What habits should the sales representative avoid?"
+            },
+            {
+              "number": "6b(3)",
+              "text": "What does the owner consider when deciding whether to establish an account with a sales representative?"
+            },
+            {
+              "number": "6b(4)",
+              "text": "Include at least two of your own questions."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Investigate and report on career opportunities in sales, then do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Prepare a written statement of your qualifications and experience. Include relevant classes you have taken in school and merit badges you have earned."
+        },
+        {
+          "number": "7b",
+          "text": "Discuss with your counselor what education, experience, or training you should obtain so you are prepared to serve in a sales position."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/salesmanship/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Salesmanship.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/salesmanship/2023.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

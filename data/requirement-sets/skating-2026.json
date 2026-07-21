@@ -1,0 +1,328 @@
+{
+  "id": "skating-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:skating",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Skating Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/skating/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards associated with skating and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while skating, including hypothermia, frostbite, lacerations, abrasions, fractures, sprains and strains, concussions, blisters, heat-related reactions, and shock."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Working under the supervision of an experienced adult, do ONE of the following options.",
+      "children": [
+        {
+          "number": "2A",
+          "text": "Ice Skating. Do ALL of the following:",
+          "children": [
+            {
+              "number": "2A(1)",
+              "text": "Explain the general safety and courtesy guidelines for ice skating."
+            },
+            {
+              "number": "2A(2)",
+              "text": "Discuss preparations that must be taken when skating outdoors on natural ice. Explain how to make an ice rescue."
+            },
+            {
+              "number": "2A(3)",
+              "text": "Discuss the parts and functions of the different types of ice skates."
+            },
+            {
+              "number": "2A(4)",
+              "text": "Describe the proper way to carry ice skates at the rink and for travel."
+            },
+            {
+              "number": "2A(5)",
+              "text": "Describe how to store ice skates for long periods of time, such as seasonal storage."
+            },
+            {
+              "number": "2A(6)",
+              "text": "Skate forward at least 40 feet and come to a complete stop. Use either a two-foot snowplow stop or a one-foot snowplow stop."
+            },
+            {
+              "number": "2A(7)",
+              "text": "After skating forward, glide forward on two feet, then on one foot, first right and then left."
+            },
+            {
+              "number": "2A(8)",
+              "text": "Starting from a T position, stroke forward around the test area, avoiding the use of toe picks if wearing figure skates."
+            },
+            {
+              "number": "2A(9)",
+              "text": "Glide backward on two feet for at least two times the skater's height."
+            },
+            {
+              "number": "2A(10)",
+              "text": "Skate backward for at least 20 feet on two skates."
+            },
+            {
+              "number": "2A(11)",
+              "text": "After gaining forward speed, glide forward on two feet, making a turn of 180 degrees around a cone, first to the right and then to the left."
+            },
+            {
+              "number": "2A(12)",
+              "text": "Perform forward crossovers in a figure-eight pattern."
+            },
+            {
+              "number": "2A(13)",
+              "text": "Explain to your counselor the safety considerations for participating in an ice-skating race."
+            },
+            {
+              "number": "2A(14)",
+              "text": "Perform a hockey stop."
+            }
+          ]
+        },
+        {
+          "number": "2B",
+          "text": "Roller Skating. Do ALL of the following:",
+          "children": [
+            {
+              "number": "2B(1)",
+              "text": "Explain the general safety rules and etiquette guidelines for roller skating."
+            },
+            {
+              "number": "2B(2)",
+              "text": "Discuss the parts and functions of a roller skate and their functions."
+            },
+            {
+              "number": "2B(3)",
+              "text": "Describe five essential steps to good roller skate care."
+            },
+            {
+              "number": "2B(4)",
+              "text": "Skate forward with smooth, linked strokes on two feet for at least 100 feet in both directions around the rink and demonstrate proper techniques for stopping."
+            },
+            {
+              "number": "2B(5)",
+              "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
+            },
+            {
+              "number": "2B(6)",
+              "text": "Perform a forward crossover."
+            },
+            {
+              "number": "2B(7)",
+              "text": "Skate backward for at least 40 feet on two skates, then for at least 15 feet on one skate."
+            },
+            {
+              "number": "2B(8)",
+              "text": "Skate forward in a slalom pattern for at least 40 feet on two skates, then for at least 20 feet on one skate."
+            },
+            {
+              "number": "2B(9)",
+              "text": "Skate backward in a slalom pattern for at least 15 feet on two skates."
+            },
+            {
+              "number": "2B(10)",
+              "text": "Shuttle skate once around the rink, bending twice along the way, without stopping."
+            },
+            {
+              "number": "2B(11)",
+              "text": "Perform a series of two consecutive spins on skates, OR hop, skip, and jump on skates for at least 10 feet."
+            },
+            {
+              "number": "2B(12)",
+              "text": "Perform a stepover."
+            },
+            {
+              "number": "2B(13)",
+              "text": "While skating, dribble a basketball at least 40 feet, then back to your starting position, OR push a hockey ball with a stick at least 40 feet, then back to your starting position."
+            }
+          ]
+        },
+        {
+          "number": "2C",
+          "text": "In-Line Skating. Do ALL of the following:",
+          "children": [
+            {
+              "number": "2C(1)",
+              "text": "Explain the general safety rules and courtesy guidelines for in-line skating."
+            },
+            {
+              "number": "2C(2)",
+              "text": "Describe the parts of an in-line skate and their functions."
+            },
+            {
+              "number": "2C(3)",
+              "text": "Describe the required and recommended safety equipment for in-line skating."
+            },
+            {
+              "number": "2C(4)",
+              "text": "Explain four essential steps to good in-line skate care."
+            },
+            {
+              "number": "2C(5)",
+              "text": "Skate forward with smooth, linked strokes on two feet for at least 100 feet."
+            },
+            {
+              "number": "2C(6)",
+              "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
+            },
+            {
+              "number": "2C(7)",
+              "text": "Stop on command on flat pavement using the heel brake."
+            },
+            {
+              "number": "2C(8)",
+              "text": "Perform a forward crossover."
+            },
+            {
+              "number": "2C(9)",
+              "text": "Perform a series of forward, linked swizzles for at least 40 feet."
+            },
+            {
+              "number": "2C(10)",
+              "text": "Skate backward for at least 40 feet in a series of linked, backward swizzles."
+            },
+            {
+              "number": "2C(11)",
+              "text": "From a strong pace, perform a lunge turn around an object predetermined by your counselor."
+            },
+            {
+              "number": "2C(12)",
+              "text": "Perform a mohawk."
+            },
+            {
+              "number": "2C(13)",
+              "text": "Perform a series of at least four one-footed downhill slaloms on pavement with a gentle slope."
+            },
+            {
+              "number": "2C(14)",
+              "text": "Describe how to pass a pedestrian or another skater from behind."
+            },
+            {
+              "number": "2C(15)",
+              "text": "Describe at least three ways to avoid an unforeseen obstacle while skating."
+            },
+            {
+              "number": "2C(16)",
+              "text": "Describe two ways to get on and off a curb, and demonstrate at least one of these methods."
+            }
+          ]
+        },
+        {
+          "number": "2D",
+          "text": "Skateboarding. Do ALL of the following:",
+          "children": [
+            {
+              "number": "2D(1)",
+              "text": "Explain the history and evolution of skateboarding."
+            },
+            {
+              "number": "2D(2)",
+              "text": "Describe the benefits of skateboarding (physical fitness, balance, coordination, perseverance, and creativity)"
+            },
+            {
+              "number": "2D(3)",
+              "text": "Explain the safety rules and courtesy guidelines for skateboarding, including right-of-way and communication signals and warnings."
+            },
+            {
+              "number": "2D(4)",
+              "text": "Explain the protective gear needed to skate safely, including helmet, knee pads, elbow pads, and wrist guards, and show how to wear them correctly."
+            },
+            {
+              "number": "2D(5)",
+              "text": "Describe the two main styles of skateboarding (street and vert), and describe common skatepark features (ramps, manual pad, rails, spine, etc.)."
+            },
+            {
+              "number": "2D(6)",
+              "text": "Explain skateboard anatomy (deck, trucks, wheels, hardware, etc.)."
+            },
+            {
+              "number": "2D(7)",
+              "text": "Build a board by assembling all pieces (deck, wheels, trucks, hardware, and grip tape) in the proper order."
+            },
+            {
+              "number": "2D(8)",
+              "text": "Explain skateboard maintenance (cleaning, adjusting bolts, and replacing parts)."
+            },
+            {
+              "number": "2D(9)",
+              "text": "Explain the difference between regular and goofy stance, and demonstrate your preferred stance."
+            },
+            {
+              "number": "2D(10)",
+              "text": "Demonstrate how to push, cruise, and carve on flat ground."
+            },
+            {
+              "number": "2D(11)",
+              "text": "Show at least two braking and stopping techniques."
+            },
+            {
+              "number": "2D(12)",
+              "text": "Do a basic ollie and at least one variation."
+            },
+            {
+              "number": "2D(13)",
+              "text": "Show how to drop-in from coping."
+            },
+            {
+              "number": "2D(14)",
+              "text": "Demonstrate THREE skateboarding tricks from the following types:"
+            },
+            {
+              "number": "2Da",
+              "text": "Flat ground tricks"
+            },
+            {
+              "number": "2Db",
+              "text": "Flip and shove-it tricks"
+            },
+            {
+              "number": "2Dc",
+              "text": "Grind and slide tricks"
+            },
+            {
+              "number": "2Dd",
+              "text": "Air and grab tricks"
+            },
+            {
+              "number": "2De",
+              "text": "Footplant tricks."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/skating/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Skating.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/skating/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,219 @@
+{
+  "id": "home-repairs-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:home-repairs",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Home Repairs Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/home-repairs/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while working on home repairs and what you should do to anticipate, mitigate and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working on home repairs."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss general precautions related to home repairs. Name at least 10 safe practices that every home repairer should exercise."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Under the supervision of your parent, guardian, or counselor, do THREE of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Maintain or recondition a yard tool and show that you know how to clean up and properly store this equipment."
+        },
+        {
+          "number": "2b",
+          "text": "Weather strip a window or door."
+        },
+        {
+          "number": "2c",
+          "text": "Caulk cracks or joints open to the weather."
+        },
+        {
+          "number": "2d",
+          "text": "Repair a break in a concrete or asphalt surface."
+        },
+        {
+          "number": "2e",
+          "text": "Repair or replace the screen in a window or door."
+        },
+        {
+          "number": "2f",
+          "text": "Replace a pane of glass."
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "3",
+      "text": "Under the supervision of your parent, guardian, or counselor, do THREE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Install or build equipment for storing tools."
+        },
+        {
+          "number": "3b",
+          "text": "Build a workbench."
+        },
+        {
+          "number": "3c",
+          "text": "Repair a piece of furniture."
+        },
+        {
+          "number": "3d",
+          "text": "Paint or varnish a piece of furniture, a door, or trim on a house."
+        },
+        {
+          "number": "3e",
+          "text": "Repair a sagging door or gate."
+        },
+        {
+          "number": "3f",
+          "text": "Repair a loose step or railing."
+        },
+        {
+          "number": "3g",
+          "text": "Repair a fence."
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "4",
+      "text": "Under the supervision of your parent, guardian, or counselor, do TWO of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Locate a main electrical switch box and know how to replace a fuse or reset a circuit breaker."
+        },
+        {
+          "number": "4b",
+          "text": "Replace an electrical cord or repair a plug or lamp socket."
+        },
+        {
+          "number": "4c",
+          "text": "Install a single-pole light switch."
+        },
+        {
+          "number": "4d",
+          "text": "Replace an electrical wall outlet."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "5",
+      "text": "Under the supervision of your parent, guardian, or counselor, locate and know how to turn off the main water source, including well pumps, and do TWO of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Clear a clogged drain or trap."
+        },
+        {
+          "number": "5b",
+          "text": "Repair a leaky water faucet."
+        },
+        {
+          "number": "5c",
+          "text": "Repair a flush toilet."
+        },
+        {
+          "number": "5d",
+          "text": "Repair a leaky hose or connector."
+        },
+        {
+          "number": "5e",
+          "text": "Clean or replace a sprinkler head."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "6",
+      "text": "Under the supervision of your parent, guardian, or counselor, do THREE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Paint a wall or ceiling."
+        },
+        {
+          "number": "6b",
+          "text": "Repair or replace damaged tile, linoleum, or vinyl flooring."
+        },
+        {
+          "number": "6c",
+          "text": "Install drapery or curtain rods and then hang drapes or curtains."
+        },
+        {
+          "number": "6d",
+          "text": "Repair a hole in drywall."
+        },
+        {
+          "number": "6e",
+          "text": "Secure a picture, plant hanger, or other object approved by your parent or guardian to drywall using anchors."
+        },
+        {
+          "number": "6f",
+          "text": "Reinforce a picture frame."
+        },
+        {
+          "number": "6g",
+          "text": "Mend an object made of china, glass, or pottery."
+        },
+        {
+          "number": "6h",
+          "text": "Fix a drawer slide or fix/replace cabinet pulls."
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+        },
+        {
+          "number": "7b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/home-repairs/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Home%20Repairs.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/home-repairs/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,184 @@
+{
+  "id": "chess-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:chess",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Chess Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/chess/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Discuss with your counselor the history of the game of chess."
+        },
+        {
+          "number": "1b",
+          "text": "Research a famous chess player and what accomplishments made him or her famous. Discuss with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Discuss with your counselor the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Why chess is considered a game of planning and strategy."
+        },
+        {
+          "number": "2b",
+          "text": "The benefits of playing chess, including developing critical thinking skills, concentration skills, and decision-making skills, and how these skills can help you in other areas of your life."
+        },
+        {
+          "number": "2c",
+          "text": "Sportsmanship and chess etiquette"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Demonstrate to your counselor that you know each of the following. Then, using Scouting EDGE to teach someone who does not know how to play chess:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "The name of each chess piece"
+        },
+        {
+          "number": "3b",
+          "text": "How to set up a chessboard"
+        },
+        {
+          "number": "3c",
+          "text": "How each chess piece moves and captures, including: four rules of castling, en passant captures, pawn promotion, check, ways to get out of check, and checkmate."
+        },
+        {
+          "number": "3d",
+          "text": "The five ways a game can end in a draw"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Demonstrate scorekeeping using the algebraic system of chess notation."
+        },
+        {
+          "number": "4b",
+          "text": "Discuss the differences between the opening, the middle game, and the endgame."
+        },
+        {
+          "number": "4c",
+          "text": "Explain four opening principles. Demonstrate for your counselor the first five moves of the following openings: Ruy Lopez, French Defense, Queen's Gambit Declined, Sicilian Defense."
+        },
+        {
+          "number": "4d",
+          "text": "On a chessboard, demonstrate Scholar's Mate, Fool's Mate, Légal Mate, Fried Liver Attack, and Noah's Ark Trap."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain four of the following elements of chess strategy: exploiting weaknesses, force, king safety, pawn structure, space, tempo, and clock management."
+        },
+        {
+          "number": "5b",
+          "text": "Explain any five of these chess tactics: clearance sacrifice, decoy, discovered attack, double check, double attack, fork, interposing, overloading, overprotecting, pin, skewer, remove the defender, zwischenzug, and zugzwang."
+        },
+        {
+          "number": "5c",
+          "text": "Set up a chessboard as follows and with White to move first, demonstrate how to force checkmate on the Black king:",
+          "children": [
+            {
+              "number": "5c(1)",
+              "text": "White on e1, the White rooks on a1 and h1, and the Black king on e5."
+            },
+            {
+              "number": "5c(2)",
+              "text": "White King on e1, White queen on d1, Black king on e5."
+            },
+            {
+              "number": "5c(3)",
+              "text": "White king on e1, White rook on a1, Black king on e5."
+            }
+          ]
+        },
+        {
+          "number": "5d",
+          "text": "With White king on d4, White pawn on e3, and Black king on e6:",
+          "children": [
+            {
+              "number": "5d(1)",
+              "text": "With White to move, demonstrate how White can force Black to allow his pawn to reach the last rank and be promoted to a queen."
+            },
+            {
+              "number": "5d(2)",
+              "text": "With Black to move, demonstrate how Black can force a draw."
+            }
+          ]
+        },
+        {
+          "number": "5e",
+          "text": "Set up and solve five direct-mate problems provided by your counselor."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Explain to your counselor how chess tournaments are run, including the Swiss system tournament format, the round robin tournament format, pairings for each round, time controls, touch move, scoring, and chess ratings."
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Play at least three games of chess with other Scouts and/or your counselor. Replay the games from your score sheets and discuss with your counselor how you might have played each game differently."
+        },
+        {
+          "number": "7b",
+          "text": "Play in a scholastic (youth) chess tournament and use your score sheets from that tournament to replay your games with your counselor. Discuss with your counselor how you might have played each game differently."
+        },
+        {
+          "number": "7c",
+          "text": "Organize and run a chess tournament with at least four players, plus you. Have each competitor play at least two games."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/chess/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Chess.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/chess/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

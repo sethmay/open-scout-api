@@ -216,10 +216,11 @@ open-scout-api/
    known mergers already surfaced by camp-finder (302/303 → Mississippi Riverlands,
    695 → Sioux) as proper events. Gate: full current council list matches camp-finder's;
    ≥ a handful of historically-verified merger events with sources.
-3. **Population — merit badges + requirement sets.** ✅ Catalog seeded (0.4.0): 142
-   badges incl. retired/historical, Eagle-required flags, CiS + Computers lifecycles.
-   Requirement histories still pending — summaries only until the licensing question is
-   resolved.
+3. **Population — merit badges + requirement sets.** ✅ Seeded: catalog (0.4.0) = 142
+   badges w/ Eagle flags + CiS/Computers lifecycles; requirement sets (0.5.0) = 141 docs
+   with the full requirement tree (numbering/nesting/choose-N/options) + verbatim text
+   marked © Scouting America (`text_rights`, excluded from the data license). Pending:
+   historical requirement revisions + discontinued-badge backfill.
 4. **Camps import.** Transform camp-finder camps into temporal camp records
    (`method: imported`), keeping IDs.
 5. **Build + publish.** Pipeline emitting `current/` + per-entity history projections,

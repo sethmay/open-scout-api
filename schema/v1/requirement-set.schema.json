@@ -59,6 +59,11 @@
       "type": "boolean",
       "description": "True iff any requirement node carries verbatim 'text'. Lets a publish step strip or withhold official text wholesale. The flag <-> text-presence correspondence is a PIPELINE-ENFORCED invariant (see TODO.md 'Pipeline validator'); never trust the boolean alone."
     },
+    "text_rights": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "Rights statement for any verbatim requirement `text` in this set. REQUIRED when includes_official_text is true: requirement text is Scouting America's copyright, reproduced with attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."
+    },
     "requirements": {
       "type": "array",
       "items": { "$ref": "#/$defs/Requirement" },
@@ -82,6 +87,8 @@
     "provenance"
   ],
   "additionalProperties": false,
+  "if": { "properties": { "includes_official_text": { "const": true } }, "required": ["includes_official_text"] },
+  "then": { "properties": { "text_rights": { "type": "string", "minLength": 1 } }, "required": ["text_rights"] },
   "$defs": {
     "Requirement": {
       "title": "Requirement",

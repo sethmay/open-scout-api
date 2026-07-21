@@ -1,0 +1,145 @@
+{
+  "id": "swimming-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:swimming",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Swimming Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/swimming/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Review with your counselor how Scouting America's Safe Swim Defense guidelines anticipates and deals with common drowning situations such as unfenced residential pools, nonswimmers entering deep water, risky behaviors, medical impairment in the water, drop-offs, cold water, murky water, river currents, rip currents, and surf."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss the prevention and treatment of health concerns that could occur while swimming, including hypothermia, dehydration, sunburn, heat exhaustion, heatstroke, muscle cramps, hyperventilation, spinal injury, stings and bites, and cuts and scrapes."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Before doing the following requirements, successfully complete the Scouting America swimmer test, found in the Swimming merit badge pamphlet."
+    },
+    {
+      "number": "3",
+      "text": "Correctly perform the following strokes:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Demonstrate the front crawl or the trudgen using good form."
+        },
+        {
+          "number": "3b",
+          "text": "Demonstrate the back crawl using good form."
+        },
+        {
+          "number": "3c",
+          "text": "Demonstrate the sidestroke using good form."
+        },
+        {
+          "number": "3d",
+          "text": "Demonstrate the breaststroke using good form."
+        },
+        {
+          "number": "3e",
+          "text": "Demonstrate the elementary backstroke using good form."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Swim continuously for 150 yards in a strong manner using each of the following strokes in any order; front crawl or trudgen (25 yards); back crawl (25 yards); sidestroke (25 yards); breaststroke (25 yards); and elementary backstroke (50 yards)."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects. Explain why swimming rescues should not be attempted when a reaching or throwing rescue is possible, and explain why and how a rescue swimmer should avoid contact with the victim."
+        },
+        {
+          "number": "5b",
+          "text": "With a helper and a practice victim, show a line rescue both as tender and as rescuer. The practice victim should be approximately 30 feet from shore in deep water."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Float faceup in a resting position for at least three minutes with minimal movement."
+        },
+        {
+          "number": "6b",
+          "text": "Demonstrate survival floating for at least five minutes."
+        },
+        {
+          "number": "6c",
+          "text": "While wearing a properly fitted U.S. Coast Guard-approved life jacket, demonstrate the HELP and huddle positions. Explain their purposes."
+        },
+        {
+          "number": "6d",
+          "text": "Explain why swimming or survival floating will hasten the onset of hypothermia in cold water."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "In water over your head, but not to exceed 10 feet, do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Use the feetfirst method of surface diving and bring an object up from the bottom."
+        },
+        {
+          "number": "7b",
+          "text": "Do a headfirst surface dive (pike or tuck), and bring the object up again."
+        },
+        {
+          "number": "7c",
+          "text": "Do a headfirst surface dive to a depth of at least 5 feet and swim underwater for three strokes. Come to the surface, take a breath, and repeat the sequence twice."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Following the guidelines set in the Scouting America Safe Swim Defense guidelines, in water at least 7 feet deep, show a standing headfirst dive from a dock or pool deck. Show a long shallow dive, also from the dock or pool deck. Note: If your state, city, or local community requires a water depth greater than 7 feet, it is important to abide by that mandate."
+    },
+    {
+      "number": "9",
+      "text": "Explain the health benefits of regular aerobic exercise, and discuss why swimming is favored as both fitness and therapeutic exercise."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/swimming/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Swimming.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/swimming/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

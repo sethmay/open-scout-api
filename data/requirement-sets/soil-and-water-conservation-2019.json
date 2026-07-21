@@ -1,0 +1,237 @@
+{
+  "id": "soil-and-water-conservation-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:soil-and-water-conservation",
+  "effective_from": "2019-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Soil and Water Conservation Merit Badge Requirements (2019)",
+    "url": "https://www.scouting.org/merit-badges/soil-and-water-conservation/",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Tell what soil is. Tell how it is formed."
+        },
+        {
+          "number": "1b",
+          "text": "Describe three kinds of soil. Tell how they are different."
+        },
+        {
+          "number": "1c",
+          "text": "Name the three main plant nutrients in fertile soil. Tell how they can be put back when used up."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Define soil erosion."
+        },
+        {
+          "number": "2b",
+          "text": "Tell why soil erosion is important and how it affects you."
+        },
+        {
+          "number": "2c",
+          "text": "Name three kinds of soil erosion. Describe each."
+        },
+        {
+          "number": "2d",
+          "text": "Take pictures of or draw two kinds of soil erosion."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Tell what is meant by conservation practices."
+        },
+        {
+          "number": "3b",
+          "text": "Describe the effect of three kinds of erosion-control practices."
+        },
+        {
+          "number": "3c",
+          "text": "Take pictures of or draw three kinds of erosion-control practices."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Explain what a watershed is."
+        },
+        {
+          "number": "4b",
+          "text": "Outline the smallest watershed that you can find on a contour map."
+        },
+        {
+          "number": "4c",
+          "text": "Outline, as far as the map will allow, the next larger watershed that also has the smallest one in it."
+        },
+        {
+          "number": "4d",
+          "text": "Explain what a river basin is. Tell why all people living in a river basin should be concerned about land and water use in the basin."
+        },
+        {
+          "number": "4e",
+          "text": "Explain what an aquifer is and why it can be important to communities."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Make a drawing to show the hydrologic cycle."
+        },
+        {
+          "number": "5b",
+          "text": "Demonstrate at least two of the following actions of water in relation to soil: percolation, capillary action, precipitation, evaporation, and transpiration."
+        },
+        {
+          "number": "5c",
+          "text": "Explain how removal of vegetation will affect the way water runs off a watershed."
+        },
+        {
+          "number": "5d",
+          "text": "Tell how uses of forest, range, and farmland affect usable water supply."
+        },
+        {
+          "number": "5e",
+          "text": "Explain how industrial use affects water supply."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Tell what is meant by water pollution."
+        },
+        {
+          "number": "6b",
+          "text": "Describe common sources of water pollution and explain the effects of each."
+        },
+        {
+          "number": "6c",
+          "text": "Explain the terms: primary water treatment, secondary waste treatment, and biochemical oxygen demand."
+        },
+        {
+          "number": "6d",
+          "text": "Make a drawing showing the principles of complete waste treatment."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Make a trip to TWO of the following places. Write a report of more than 500 words about the soil and water and energy conservation practices you saw.",
+          "children": [
+            {
+              "number": "7a(1)",
+              "text": "An agricultural experiment"
+            },
+            {
+              "number": "7a(2)",
+              "text": "A managed forest or woodlot, range, or pasture"
+            },
+            {
+              "number": "7a(3)",
+              "text": "A wildlife refuge or a fish or game management area"
+            },
+            {
+              "number": "7a(4)",
+              "text": "A conservation-managed farm or ranch"
+            },
+            {
+              "number": "7a(5)",
+              "text": "A managed watershed"
+            },
+            {
+              "number": "7a(6)",
+              "text": "A waste-treatment plant"
+            },
+            {
+              "number": "7a(7)",
+              "text": "A public drinking water treatment plant"
+            },
+            {
+              "number": "7a(8)",
+              "text": "An industry water use installation"
+            },
+            {
+              "number": "7a(9)",
+              "text": "A desalinization plant"
+            }
+          ],
+          "choose": 2
+        },
+        {
+          "number": "7b",
+          "text": "Plant 100 trees, bushes, and/or vines for a good purpose."
+        },
+        {
+          "number": "7c",
+          "text": "Seed an area of at least one-fifth acre for some worthwhile conservation purposes, using suitable grasses or legumes alone or in a mixture."
+        },
+        {
+          "number": "7d",
+          "text": "Study a soil survey report. Describe the things in it. Using tracing paper and a pen, trace over any of the soil maps, and outline an area with three or more different kinds of soil. List each kind of soil by full name and map symbol."
+        },
+        {
+          "number": "7e",
+          "text": "Make a list of places in your neighborhood, camps, school ground, or park that have erosion, sedimentation, or pollution problems. Describe how these could be corrected through individual or group action."
+        },
+        {
+          "number": "7f",
+          "text": "Carry out any other soil and water conservation project approved by your counselor."
+        }
+      ],
+      "choose": 2
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/soil-and-water-conservation/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Soil%20and%20Water%20Conservation.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/soil-and-water-conservation/2019.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

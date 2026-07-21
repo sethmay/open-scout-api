@@ -1,0 +1,211 @@
+{
+  "id": "nature-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:nature",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Nature Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/nature/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Name three ways in which plants are important to animals. Name a plant that is protected in your state or region, and explain why it is at risk."
+    },
+    {
+      "number": "2",
+      "text": "Name three ways in which animals are important to plants. Name an animal that is protected in your state or region, and explain why it is at risk."
+    },
+    {
+      "number": "3",
+      "text": "Explain the term \"food chain.\" Give an example of a four-step land food chain and a four-step water food chain."
+    },
+    {
+      "number": "4",
+      "text": "Do all the requirements in FIVE of the following fields:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Birds. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "In the field, identify eight species of birds."
+            },
+            {
+              "number": "4a(2)",
+              "text": "Make and set out a birdhouse OR a feeding station OR a birdbath. List what birds used it during a period of one month."
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "Mammals. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4b(1)",
+              "text": "In the field, identify three species of wild mammals."
+            },
+            {
+              "number": "4b(2)",
+              "text": "Make plaster casts of the tracks of a wild mammal."
+            }
+          ]
+        },
+        {
+          "number": "4c",
+          "text": "Reptiles and Amphibians. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4c(1)",
+              "text": "Show that you can recognize the venomous snakes in your area."
+            },
+            {
+              "number": "4c(2)",
+              "text": "In the field, identify three species of reptiles or amphibians."
+            },
+            {
+              "number": "4c(3)",
+              "text": "Recognize one species of toad or frog by voice; OR identify one reptile or amphibian by eggs, den, burrow, or other signs."
+            }
+          ]
+        },
+        {
+          "number": "4d",
+          "text": "Insects and Spiders. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4d(1)",
+              "text": "Collect and identify either in the field or through photographs 10 species of insects or spiders. Photos may be taken with your own equipment or gathered from other sources."
+            },
+            {
+              "number": "4d(2)",
+              "text": "Hatch an insect from the pupa or cocoon; OR hatch adults from nymphs; OR keep larvae until they form pupae or cocoons; OR keep a colony of ants or bees through one season."
+            }
+          ]
+        },
+        {
+          "number": "4e",
+          "text": "Fish. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4e(1)",
+              "text": "Identify two species of fish native to your area."
+            },
+            {
+              "number": "4e(2)",
+              "text": "Collect four kinds of animal food eaten by fish in the wild."
+            }
+          ]
+        },
+        {
+          "number": "4f",
+          "text": "Mollusks and Crustaceans. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4f(1)",
+              "text": "Identify five species of mollusks and crustaceans."
+            },
+            {
+              "number": "4f(2)",
+              "text": "Collect, mount, and label six shells."
+            }
+          ]
+        },
+        {
+          "number": "4g",
+          "text": "Plants. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4g(1)",
+              "text": "In the field, identify 15 species of wild plants."
+            },
+            {
+              "number": "4g(2)",
+              "text": "Do ONE of the following:"
+            }
+          ]
+        },
+        {
+          "number": "4a",
+          "text": "Collect and label the seeds of six plants OR the leaves of 12 plants."
+        },
+        {
+          "number": "4b",
+          "text": "Photograph the seeds of six plants OR the leaves of 12 plants and create a catalog of your photos."
+        },
+        {
+          "number": "4h",
+          "text": "Soils and Rocks. Do ALL of the following:",
+          "children": [
+            {
+              "number": "4h(1)",
+              "text": "Collect and identify three different types of soil that represent soils high in sand, clay and humus."
+            },
+            {
+              "number": "4h(2)",
+              "text": "Collect and identify five different types of rocks from your area."
+            }
+          ]
+        }
+      ],
+      "choose": 5
+    },
+    {
+      "number": "5",
+      "text": "Discuss the importance of the Leave No Trace Seven Principles and the Outdoor Code and how they relate to nature. Explain how you have followed the Leave No Trace Seven Principles and the Outdoor Code while in natural areas during field observation, specimen collection, and identification."
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Explain what succession is to your counselor."
+        },
+        {
+          "number": "6b",
+          "text": "Visit a natural area (forest, grassland, meadow, water feature) and explain what stage of succession (both plant and animal) the area is in. Talk about what community/succession stages may have been there before and what community/succession stages may replace what you see now. Discuss what disturbances or changes have taken place in the past to create this landscape and what changes may occur in the future to change the landscape further."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Identify three career opportunities that would use skills and knowledge in Nature. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "number": "7b",
+          "text": "Identify how you might use the skills and knowledge in Nature to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/nature/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Nature.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/nature/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

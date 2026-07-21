@@ -1,0 +1,314 @@
+{
+  "id": "personal-management-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:personal-management",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Personal Management Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/personal-management/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Choose an item that your family might want to purchase that is considered a major expense."
+        },
+        {
+          "number": "1b",
+          "text": "Write a plan that tells how your family would save money for the purchase identified in requirement 1(a).",
+          "children": [
+            {
+              "number": "1b(1)",
+              "text": "Discuss the plan with your counselor."
+            },
+            {
+              "number": "1b(2)",
+              "text": "Discuss the plan with your family."
+            },
+            {
+              "number": "1b(3)",
+              "text": "Discuss how other family needs must be considered in this plan."
+            }
+          ]
+        },
+        {
+          "number": "1c",
+          "text": "Develop a written shopping strategy for the purchase identified in requirement 1(a).",
+          "children": [
+            {
+              "number": "1c(1)",
+              "text": "Determine the quality of the item or service (using consumer publications or rating systems.)"
+            },
+            {
+              "number": "1c(2)",
+              "text": "Comparison shop for the item. Find out where you can buy the item for the best price. (Provide prices from at least two different price sources.) Call around; study ads. Look for a sale or discount coupon. Consider alternatives. Can you buy the item used? Should you wait for a sale?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Prepare a budget reflecting your expected income (allowance, gifts, wages), expenses, and savings for a period of 13 consecutive weeks."
+        },
+        {
+          "number": "2b",
+          "text": "Compare expected income with expected expenses.",
+          "children": [
+            {
+              "number": "2b(1)",
+              "text": "If expenses exceed budget income, determine steps to balance your budget."
+            },
+            {
+              "number": "2b(2)",
+              "text": "If income exceeds budget expenses, state how you would use the excess money (new goal, savings)."
+            }
+          ]
+        },
+        {
+          "number": "2c",
+          "text": "Track and record your actual income, expenses, and savings for 13 consecutive weeks (the same 13-week period for which you budgeted). (You may use the forms provided in the Personal Management merit badge pamphlet, devise your own, or use a computer-generated version). When complete, present the records showing the results to your counselor."
+        },
+        {
+          "number": "2d",
+          "text": "Compare your budget with your actual income and expenses to understand when your budget worked and when it did not work. With your counselor, discuss what you might do differently the next time."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Discuss with your counselor FIVE of the following concepts:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "The emotions you feel when you receive money."
+        },
+        {
+          "number": "3b",
+          "text": "Your understanding of how the amount of money you have with you affects your spending habits."
+        },
+        {
+          "number": "3c",
+          "text": "Your thoughts when you buy something new and your thoughts about the same item three months later. Explain the concept of buyer's remorse."
+        },
+        {
+          "number": "3d",
+          "text": "How hunger affects you when shopping for food items (snacks, groceries)."
+        },
+        {
+          "number": "3e",
+          "text": "Your experience of an item you have purchased after seeing or hearing advertisements for it. Did the item work as well as advertised?"
+        },
+        {
+          "number": "3f",
+          "text": "Your understanding of what happens when you put money into a savings account."
+        },
+        {
+          "number": "3g",
+          "text": "Charitable giving. Explain its purpose and your thoughts about it."
+        },
+        {
+          "number": "3h",
+          "text": "What you can do to better manage your money."
+        }
+      ],
+      "choose": 5
+    },
+    {
+      "number": "4",
+      "text": "Explain the following to your counselor:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "The differences between saving and investing, including reasons for using one over the other."
+        },
+        {
+          "number": "4b",
+          "text": "The concepts of return on investment and risk and how they are related."
+        },
+        {
+          "number": "4c",
+          "text": "The concepts of simple interest and compound interest."
+        },
+        {
+          "number": "4d",
+          "text": "The concept of diversification in investing."
+        },
+        {
+          "number": "4e",
+          "text": "Why it is important to save and invest for retirement."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Explain to your counselor what the following investments are and how each works:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Common stocks"
+        },
+        {
+          "number": "5b",
+          "text": "Mutual funds"
+        },
+        {
+          "number": "5c",
+          "text": "Life insurance"
+        },
+        {
+          "number": "5d",
+          "text": "A certificate of deposit (CD)"
+        },
+        {
+          "number": "5e",
+          "text": "A savings account"
+        },
+        {
+          "number": "5f",
+          "text": "A U.S. savings bond"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Explain to your counselor why people might purchase the following types of insurance and how they work:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Automobile"
+        },
+        {
+          "number": "6b",
+          "text": "Health"
+        },
+        {
+          "number": "6c",
+          "text": "Homeowner's/renter's"
+        },
+        {
+          "number": "6d",
+          "text": "Whole life and term life"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Explain to your counselor the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "What a loan is, what interest is, and how the annual percentage rate (APR) measures the true cost of a loan"
+        },
+        {
+          "number": "7b",
+          "text": "The different ways to borrow money"
+        },
+        {
+          "number": "7c",
+          "text": "The differences between a charge card, debit card, and credit card, including the costs and pitfalls of using these financial tools, and why it is unwise to make only the minimum payment on your credit card"
+        },
+        {
+          "number": "7d",
+          "text": "Credit reports and how personal responsibility can affect your credit report"
+        },
+        {
+          "number": "7e",
+          "text": "Ways to reduce or eliminate debt."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Demonstrate to your counselor your understanding of time management by doing the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Write a \"to do\" list of tasks or activities, such as homework assignments, chores, and personal projects, that must be done in the coming week. List these in order of importance to you."
+        },
+        {
+          "number": "8b",
+          "text": "Make a seven-day calendar or schedule. Put in your set activities, such as school classes, sports practices or games, jobs or chores, and/or Scout or place of worship or club meetings, then plan when you will do all the tasks from your \"to do\" list between your set activities."
+        },
+        {
+          "number": "8c",
+          "text": "Follow the one-week schedule you planned. Keep a daily diary or journal during each of the seven days of this week's activities, writing down when you completed each of the tasks on your \"to do\" list compared to when you scheduled them."
+        },
+        {
+          "number": "8d",
+          "text": "With your counselor, review your \"to do\" list, one-week schedule, and diary/journal to understand when your schedule worked and when it did not work. Discuss what you might do differently the next time."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Prepare a written project plan demonstrating the steps below, including the desired outcome. This is a project on paper, not a real-life project. Examples could include planning a camping trip, developing a community service project or a school or religious event, or creating an annual patrol plan with additional activities not already included in the troop annual plan. Discuss your completed project plan with your counselor.",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Define the project. What is your goal?"
+        },
+        {
+          "number": "9b",
+          "text": "Develop a timeline for your project that shows the steps you must take from beginning to completion."
+        },
+        {
+          "number": "9c",
+          "text": "Describe your project."
+        },
+        {
+          "number": "9d",
+          "text": "Develop a list of resources. Identify how these resources will help you achieve your goal."
+        },
+        {
+          "number": "9e",
+          "text": "Develop a budget for your project."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Choose a career you might want to enter after high school or college graduation. Discuss with your counselor the needed qualifications, education, skills, and experience."
+        },
+        {
+          "number": "10b",
+          "text": "Explain to your counselor what the associated costs might be to pursue this career, such as tuition, school or training supplies, and room and board. Explain how you could prepare for these costs and how you might make up for any shortfall."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/personal-management/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Management.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/personal-management/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

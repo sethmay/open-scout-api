@@ -1,0 +1,132 @@
+{
+  "id": "moviemaking-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:moviemaking",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Moviemaking Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/moviemaking/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss and demonstrate the proper elements of a good motion picture. In your discussion, include visual storytelling, rhythm, the 180-axis rule, camera movement, framing and composition of camera shots, and lens selection."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "In a three- or four-paragraph treatment, tell the story you plan to produce, making sure that the treatment conveys a visual picture."
+        },
+        {
+          "number": "2b",
+          "text": "Prepare a storyboard for your motion picture. Note: This can be done with rough sketches and stick figures."
+        },
+        {
+          "number": "2c",
+          "text": "Demonstrate the following motion picture shooting techniques:",
+          "children": [
+            {
+              "number": "2c(1)",
+              "text": "Using a tripod"
+            },
+            {
+              "number": "2c(2)",
+              "text": "Panning a camera"
+            },
+            {
+              "number": "2c(3)",
+              "text": "Framing a shot"
+            },
+            {
+              "number": "2c(4)",
+              "text": "Selecting an angle"
+            },
+            {
+              "number": "2c(5)",
+              "text": "Selecting proper lighting"
+            },
+            {
+              "number": "2c(6)",
+              "text": "Handheld shooting"
+            }
+          ]
+        },
+        {
+          "number": "2d",
+          "text": "Using motion picture shooting techniques, plan ONE of the following programs. Start with a treatment and complete the requirement by presenting this program to a pack or your troop, patrol, or class.",
+          "children": [
+            {
+              "number": "2d(1)",
+              "text": "Film a court of honor and show it to an audience."
+            },
+            {
+              "number": "2d(2)",
+              "text": "Create a short feature of your own design, using the techniques you learned."
+            },
+            {
+              "number": "2d(3)",
+              "text": "Shoot a vignette that could be used to train a new Scout in a Scouting skill."
+            }
+          ],
+          "choose": 1
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With your parent or guardian's permission and your counselor's approval, visit a film set or television production studio and watch how production work is done."
+        },
+        {
+          "number": "3b",
+          "text": "Explain to your counselor the elements of the zoom lens and three important parts."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+        },
+        {
+          "number": "4b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/moviemaking/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Moviemaking.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/moviemaking/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

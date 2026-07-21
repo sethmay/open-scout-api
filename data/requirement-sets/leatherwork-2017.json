@@ -1,0 +1,137 @@
+{
+  "id": "leatherwork-2017",
+  "kind": "requirement-set",
+  "subject": "merit-badge:leatherwork",
+  "effective_from": "2017-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Leatherwork Merit Badge Requirements (2017)",
+    "url": "https://www.scouting.org/merit-badges/leatherwork/",
+    "year": 2017
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the hazards you are most likely to encounter while using leatherwork tools and materials, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while working with leather, including minor cuts and scratches, puncture wounds, ingested poisoning, and reactions from exposure to chemicals such as dyes, cements, and finishes used in leatherworking."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Where leather comes from"
+        },
+        {
+          "number": "2b",
+          "text": "Kinds of hides that are used to make leather"
+        },
+        {
+          "number": "2c",
+          "text": "Five types of leather"
+        },
+        {
+          "number": "2d",
+          "text": "Best uses for each type of leather"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Make one or more articles of leather that use at least five of the following steps:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Pattern layout and transfer"
+        },
+        {
+          "number": "3b",
+          "text": "Cutting leather"
+        },
+        {
+          "number": "3c",
+          "text": "Punching holes"
+        },
+        {
+          "number": "3d",
+          "text": "Carving or stamping surface designs"
+        },
+        {
+          "number": "3e",
+          "text": "Applying dye or stain and finish to the project"
+        },
+        {
+          "number": "3f",
+          "text": "Assembly by lacing or stitching"
+        },
+        {
+          "number": "3g",
+          "text": "Setting snaps and rivets"
+        },
+        {
+          "number": "3h",
+          "text": "Dressing edges"
+        }
+      ],
+      "choose": 5
+    },
+    {
+      "number": "4",
+      "text": "Braid or plait an article out of leather, vinyl lace, or paracord."
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Learn about the commercial tanning process. Report about it to your counselor."
+        },
+        {
+          "number": "5b",
+          "text": "Tan the skin of a small animal. Describe the safety precautions you will take and the tanning method that you used."
+        },
+        {
+          "number": "5c",
+          "text": "Recondition or show that you can take proper care of your shoes, a baseball glove, a saddle, furniture, or other articles of leather. Discuss with your counselor the advantages or disadvantages of leather vs. synthetic materials."
+        },
+        {
+          "number": "5d",
+          "text": "Visit a leather-related business. This could be a leathercraft supply company, a tannery, a leather goods or shoe factory, or a saddle shop. Report on your visit to your counselor."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/leatherwork/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Leatherwork.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/leatherwork/2017.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,107 @@
+{
+  "id": "scholarship-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:scholarship",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Scholarship Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/scholarship/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Show that you have had an average grade of B or higher (80 percent or higher) for one term or semester."
+        },
+        {
+          "number": "1b",
+          "text": "Show that for one term or semester you have improved your school grades over the previous period."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "2",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Make a list of educational places located where you live (other than schools). Visit one, and report on how you used the place for self-education."
+        },
+        {
+          "number": "2b",
+          "text": "With your counselor's and your parent or guardian's approval, interview two professionals (other than teachers or other professionals at your school) with established careers. Find out where they were educated, what training they received, and how their education and training have helped prepare them for the career they have chosen. Find out how they continue to educate themselves. Discuss what you find out with your counselor."
+        },
+        {
+          "number": "2c",
+          "text": "Using a daily planner, show your counselor how you keep track of assignments and activities, and discuss how you manage your time."
+        },
+        {
+          "number": "2d",
+          "text": "Discuss the advantages and disadvantages of the different methods of research available to you for school assignments, such as the library, books and periodicals, and the internet."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "3",
+      "text": "Get a note from the principal of your school (or another school official named by the principal) that states that during the past year your behavior, leadership, and service have been satisfactory. Note: If you are home-schooled or your school environment does not include a principal, you may obtain a note from a counterpart such as your parent or guardian."
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Show that you have taken part in an extracurricular school activity, and discuss with your counselor the benefits of participation and what you learned about the importance of teamwork."
+        },
+        {
+          "number": "4b",
+          "text": "Discuss your participation in a school project during the past semester where you were a part of a team. Tell about the positive contributions you made to the team and the project."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Write a report of 250 to 300 words about how the education you receive in school will be of value to you in the future and how you will continue to educate yourself in the future."
+        },
+        {
+          "number": "5b",
+          "text": "Write a report of 250 to 300 words about two careers that interest you and how specific classes and good scholarship in general will help you achieve your career goals."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/scholarship/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scholarship.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/scholarship/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}

@@ -1,0 +1,186 @@
+{
+  "id": "insect-study-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:insect-study",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Insect Study Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/insect-study/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Safety. Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards associated with exposure to ants and bees and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss the prevention of and treatment for health concerns that could occur while working with ants and bees, including insect bites and anaphylactic shock."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Anatomy. Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Tell how insects are different from other animals."
+        },
+        {
+          "number": "2b",
+          "text": "Show how insects are different from millipedes and spiders."
+        },
+        {
+          "number": "2c",
+          "text": "Point out and name the main parts of an insect."
+        },
+        {
+          "number": "2d",
+          "text": "Describe the characteristics that distinguish the major orders of insects."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Life Cycles. Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Compare the life histories of a butterfly and a grasshopper. Tell how they are different."
+        },
+        {
+          "number": "3b",
+          "text": "Raise an insect through complete metamorphosis from its larval stage to its adult stage (e.g., raise a butterfly or moth from a caterpillar). (Some insects are endangered species and are protected by federal or state law. Every species is found only in its own special type of habitat. Be sure to check natural resources authorities in advance to be sure that you will not be collecting any species that is known to be protected or endangered, or in any habitat where collecting is prohibited. In most cases, all specimens should be returned at the location of capture after the requirement has been met. Check with your counselor for those instances where the return of these specimens would not be appropriate.)"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Observation and Analysis. Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Discuss the importance of the Leave No Trace Seven Principles and the Outdoor Code as they relate to insect study. Explain how you have followed the Leave No Trace Seven Principles and the Outdoor Code during field observation, specimen collection, and identification."
+        },
+        {
+          "number": "4b",
+          "text": "Observe 20 different live species of insects in their habitat. In your observations, include at least four orders of insects."
+        },
+        {
+          "number": "4c",
+          "text": "Make a scrapbook of the 20 insects you observe in 4(b). Include photographs, sketches, illustrations, and articles. Label each insect with its common and scientific names, where possible. Share your scrapbook with your counselor."
+        },
+        {
+          "number": "4d",
+          "text": "From your scrapbook collection, select eight species of insects and identify what role they play in the ecosystem."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Social Insects. Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Tell things that make social insects different from solitary insects."
+        },
+        {
+          "number": "5b",
+          "text": "Do ONE of the following:"
+        }
+      ]
+    },
+    {
+      "number": "1",
+      "text": "Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony."
+    },
+    {
+      "number": "2",
+      "text": "Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option (1) above.)"
+    },
+    {
+      "number": "6",
+      "text": "Ecology. Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Tell how insects fit in the food web of other insects, fish, birds, and mammals."
+        },
+        {
+          "number": "6b",
+          "text": "Explain the role insects serve as pollinators for plants."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Insects and People. Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Explain the symbiotic relationship between bees and humankind. Explain what colony collapse disorder (CCD) is and some of the possible causes. Discuss how CCD affects our food supply."
+        },
+        {
+          "number": "7b",
+          "text": "Describe three alternatives to insecticides as a way of preventing crop injury and subsequent yield loss. Explain the advantages and disadvantages of these alternatives."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Conservation. Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Tell the migration route of an insect (e.g., monarch butterfly). Discuss the challenges they face and how Scouts can contribute to their success."
+        },
+        {
+          "number": "8b",
+          "text": "Find out about an insect that is a threatened or endangered species. Discuss the challenges they face and how Scouts can contribute to their success."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Careers and Hobbies. Do ONE of the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Identify three career opportunities that would use skills and knowledge in Insect Study. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "number": "9b",
+          "text": "Identify three career opportunities that would use skills and knowledge in Insect Study. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/insect-study/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Insect%20Study.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/insect-study/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived. "
+  },
+  "notes": null
+}
