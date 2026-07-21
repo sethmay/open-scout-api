@@ -1,0 +1,44 @@
+{
+  "id": "oh-cub-world",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cub World",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:dan-beard",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6035 Price Rd",
+      "city": "Loveland",
+      "state": "OH",
+      "lat": 39.2059292,
+      "lon": -84.2733478,
+      "website": "https://scoutingevent.com/438-cubsummercamp",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-438/oh-cub-world (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/438-cubsummercamp"
+          },
+          {
+            "url": "https://scoutingevent.com/438-cubsummercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

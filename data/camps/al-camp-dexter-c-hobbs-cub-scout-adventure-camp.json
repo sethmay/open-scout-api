@@ -1,0 +1,44 @@
+{
+  "id": "al-camp-dexter-c-hobbs-cub-scout-adventure-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Dexter C. Hobbs Cub Scout Adventure Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:tukabatchee-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2109 County Road 59",
+      "city": "Prattville",
+      "state": "AL",
+      "lat": 33.1995092,
+      "lon": -85.381146,
+      "website": "https://www.tukabatcheebsa.org/shop",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-005/al-camp-dexter-c-hobbs-cub-scout-adventure-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.tukabatcheebsa.org/shop"
+          },
+          {
+            "url": "https://www.tukabatcheebsa.org/shop"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

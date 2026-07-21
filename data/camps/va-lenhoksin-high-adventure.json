@@ -1,0 +1,44 @@
+{
+  "id": "va-lenhoksin-high-adventure",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Lenhok'sin High Adventure",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:national-capital-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "340 Millard Burke Memorial Hwy",
+      "city": "Goshen",
+      "state": "VA",
+      "lat": 37.96673652528,
+      "lon": -79.470431570218,
+      "website": "https://www.gotogoshen.org/camps-programs/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-082/va-lenhoksin-high-adventure (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.gotogoshen.org/camps-programs/"
+          },
+          {
+            "url": "https://www.gotogoshen.org/camps-programs/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

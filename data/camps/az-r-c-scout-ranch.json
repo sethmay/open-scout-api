@@ -1,0 +1,44 @@
+{
+  "id": "az-r-c-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "R-C Scout Ranch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:grand-canyon",
+      "parent": null,
+      "operating_status": "active",
+      "address": "7709 S Boy Scout Camp Road",
+      "city": "Parks",
+      "state": "AZ",
+      "lat": 35.1430036,
+      "lon": -111.9686245,
+      "website": "https://scoutingevent.com/010-CubRaymond2026",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-010/az-r-c-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/010-CubRaymond2026"
+          },
+          {
+            "url": "https://scoutingevent.com/010-CubRaymond2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

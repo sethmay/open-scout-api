@@ -1,0 +1,44 @@
+{
+  "id": "ak-alaska-ultimate-high-adventure",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Alaska Ultimate High Adventure",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:great-alaska",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Mile 133 N Parks Highway",
+      "city": "Trapper Creek",
+      "state": "AK",
+      "lat": 32.1043276,
+      "lon": -104.4242689,
+      "website": "https://www.scoutingalaska.org/auha",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-610/ak-alaska-ultimate-high-adventure (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.scoutingalaska.org/auha"
+          },
+          {
+            "url": "https://www.scoutingalaska.org/auha"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

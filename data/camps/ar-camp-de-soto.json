@@ -1,0 +1,44 @@
+{
+  "id": "ar-camp-de-soto",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp De Soto",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:natural-state",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp De Soto, near El Dorado, AR",
+      "city": "El Dorado",
+      "state": "AR",
+      "lat": 33.0533,
+      "lon": -92.6788,
+      "website": "https://www.naturalstatecouncil.org/campdesotosummercamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-018/ar-camp-de-soto (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.naturalstatecouncil.org/campdesotosummercamp"
+          },
+          {
+            "url": "https://www.naturalstatecouncil.org/campdesotosummercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

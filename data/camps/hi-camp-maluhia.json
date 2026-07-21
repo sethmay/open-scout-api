@@ -1,0 +1,44 @@
+{
+  "id": "hi-camp-maluhia",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Maluhia",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:aloha",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3450 Kahekili Highway",
+      "city": "Wailuku",
+      "state": "HI",
+      "lat": 20.9551683,
+      "lon": -156.5251619,
+      "website": "https://www.scoutinghawaii.org/camps/maui/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-104/hi-camp-maluhia (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.scoutinghawaii.org/camps/maui/"
+          },
+          {
+            "url": "https://www.scoutinghawaii.org/camps/maui/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

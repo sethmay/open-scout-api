@@ -1,0 +1,44 @@
+{
+  "id": "wy-yellowstone-anglers-basecamp-half-week",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Yellowstone Anglers' Basecamp (Half Week)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:adventure-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "870 N Fork Hwy Cody, Wyoming 82414",
+      "city": null,
+      "state": "WY",
+      "lat": 44.456806,
+      "lon": -109.844031,
+      "website": "https://scoutingevent.com/062-105499",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-062/wy-yellowstone-anglers-basecamp-half-week (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/062-105499"
+          },
+          {
+            "url": "https://scoutingevent.com/062-105499"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

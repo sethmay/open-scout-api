@@ -1,0 +1,44 @@
+{
+  "id": "ky-camp-crooked-creek",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Crooked Creek",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:lincoln-heritage",
+      "parent": null,
+      "operating_status": "active",
+      "address": "950 Terry Drive, Shepherdsville, KY 40165",
+      "city": "Shepherdsville",
+      "state": "KY",
+      "lat": 37.901621785474,
+      "lon": -85.671197052654,
+      "website": "https://lhcbsa.org/harry-s-frazier-jr-scout-reservation-information/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-205/ky-camp-crooked-creek (unofficial community dataset)"
+          },
+          {
+            "url": "https://lhcbsa.org/harry-s-frazier-jr-scout-reservation-information/"
+          },
+          {
+            "url": "https://lhcbsa.org/harry-s-frazier-jr-scout-reservation-information/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

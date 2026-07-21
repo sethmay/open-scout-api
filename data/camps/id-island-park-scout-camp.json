@@ -1,0 +1,44 @@
+{
+  "id": "id-island-park-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Island Park Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:grand-teton",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4355 Griffel Road Island Park, Idaho 83429",
+      "city": null,
+      "state": "ID",
+      "lat": 44.4243637,
+      "lon": -111.3710645,
+      "website": "https://scoutingevent.com/107-2026IPSC",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-107/id-island-park-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/107-2026IPSC"
+          },
+          {
+            "url": "https://scoutingevent.com/107-2026IPSC"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

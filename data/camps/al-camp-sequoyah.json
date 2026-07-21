@@ -1,0 +1,44 @@
+{
+  "id": "al-camp-sequoyah",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sequoyah",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-alabama",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Sequoyah, Delta, AL (Talladega National Forest)",
+      "city": "Delta",
+      "state": "AL",
+      "lat": 33.5282,
+      "lon": -85.6716,
+      "website": "https://1bsa.org/summer-camp-at-camp-sequoyah/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-001/al-camp-sequoyah (unofficial community dataset)"
+          },
+          {
+            "url": "https://1bsa.org/summer-camp-at-camp-sequoyah/"
+          },
+          {
+            "url": "https://1bsa.org/summer-camp-at-camp-sequoyah/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

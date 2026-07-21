@@ -1,0 +1,44 @@
+{
+  "id": "oh-cricket-holler-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cricket Holler Scout Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:miami-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6675 Brantford Road",
+      "city": "Dayton",
+      "state": "OH",
+      "lat": 39.8444144,
+      "lon": -84.2178525,
+      "website": "https://scoutingevent.com/444-JurassicCamp2026",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-444/oh-cricket-holler-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/444-JurassicCamp2026"
+          },
+          {
+            "url": "https://scoutingevent.com/444-JurassicCamp2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

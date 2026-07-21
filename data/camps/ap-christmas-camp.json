@@ -1,0 +1,44 @@
+{
+  "id": "ap-christmas-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Christmas Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:far-east",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Angeles City, Philippines",
+      "city": "Angeles City, Philippines",
+      "state": "AP",
+      "lat": 15.145,
+      "lon": 120.596,
+      "website": "https://www.fareastcouncil.org/camping/council-resident-camps",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-803/ap-christmas-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.fareastcouncil.org/camping/council-resident-camps"
+          },
+          {
+            "url": "https://www.fareastcouncil.org/camping/council-resident-camps"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

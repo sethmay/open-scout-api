@@ -1,0 +1,44 @@
+{
+  "id": "fl-sand-hill-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Sand Hill Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-tampa-bay-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "11210 Cortez Blvd",
+      "city": "Brooksville",
+      "state": "FL",
+      "lat": 29.8072851,
+      "lon": -81.294934,
+      "website": "https://tampabayscouting.org/camps/sand-hill-scout-reservation",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-089/fl-sand-hill-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://tampabayscouting.org/camps/sand-hill-scout-reservation"
+          },
+          {
+            "url": "https://tampabayscouting.org/camps/sand-hill-scout-reservation"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

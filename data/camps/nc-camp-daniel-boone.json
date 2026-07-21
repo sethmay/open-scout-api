@@ -1,0 +1,44 @@
+{
+  "id": "nc-camp-daniel-boone",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Daniel Boone",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:daniel-boone",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3647 Little East Fork Road, Canton, NC 28716",
+      "city": "Canton",
+      "state": "NC",
+      "lat": 35.385571862893,
+      "lon": -82.896057479862,
+      "website": "https://www.campdanielboone.org/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-414/nc-camp-daniel-boone (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.campdanielboone.org/"
+          },
+          {
+            "url": "https://www.campdanielboone.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

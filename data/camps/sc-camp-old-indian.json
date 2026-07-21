@@ -1,0 +1,44 @@
+{
+  "id": "sc-camp-old-indian",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Old Indian",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:blue-ridge",
+      "parent": null,
+      "operating_status": "active",
+      "address": "601 Callahan Mountain Rd Travelers Rest, South Carolina 29690",
+      "city": null,
+      "state": "SC",
+      "lat": 35.128298,
+      "lon": -82.380166,
+      "website": "https://scoutingevent.com/551-COI26",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-551/sc-camp-old-indian (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/551-COI26"
+          },
+          {
+            "url": "https://scoutingevent.com/551-COI26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "oh-camp-hugh-taylor-birch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Hugh Taylor Birch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:tecumseh",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4057 Swimming Pool Road",
+      "city": "Yellow Springs",
+      "state": "OH",
+      "lat": 39.7966541,
+      "lon": -83.8502866,
+      "website": "https://tecumsehcouncil.org/camping/scouts-bsa-summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_day",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-439/oh-camp-hugh-taylor-birch (unofficial community dataset)"
+          },
+          {
+            "url": "https://tecumsehcouncil.org/camping/scouts-bsa-summer-camp/"
+          },
+          {
+            "url": "https://tecumsehcouncil.org/camping/scouts-bsa-summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "wy-camp-laramie-peak",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Laramie Peak",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:adventure-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "65 Forest Service Road #633",
+      "city": "Wheatland",
+      "state": "WY",
+      "lat": 42.3313,
+      "lon": -105.3423,
+      "website": "https://campreservation.com/062/Camps/718",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-062/wy-camp-laramie-peak (unofficial community dataset)"
+          },
+          {
+            "url": "https://campreservation.com/062/Camps/718"
+          },
+          {
+            "url": "https://campreservation.com/062/Camps/718"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

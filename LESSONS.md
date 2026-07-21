@@ -117,3 +117,8 @@ fold; read before similar work.
 - **Never re-run a SEED generator during a review** when its source is git-ignored/out-of-diff
   — it rewrites tracked data. Review runs only `validate_*`/`build` (read committed data,
   write only git-ignored `dist/`).
+- **When an importer keys off another entity's versioned attribute (e.g. council
+  `bsa_number` -> slug), read it from the OPEN version (`valid_to: null`), not
+  `versions[0]`.** versions[0] is the *earliest* (possibly historical) snapshot; a
+  renumbered/renamed entity would misroute. Harmless today (councils are single-version)
+  but latent — resolve current-value lookups against the current version. (import_camps.py)

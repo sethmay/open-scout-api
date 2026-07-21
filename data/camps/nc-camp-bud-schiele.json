@@ -1,0 +1,45 @@
+{
+  "id": "nc-camp-bud-schiele",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Bud Schiele",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:piedmont-420",
+      "parent": null,
+      "operating_status": "active",
+      "address": "668 Boy Scout Road",
+      "city": "Rutherfordton",
+      "state": "NC",
+      "lat": 35.3,
+      "lon": -81.92,
+      "website": "https://www.campbudschiele.org/campbudschiele",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-420/nc-camp-bud-schiele (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.campbudschiele.org/campbudschiele"
+          },
+          {
+            "url": "https://www.campbudschiele.org/campbudschiele"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "in-camp-belzer",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Belzer",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:crossroads-of-america",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6102 Boy Scout Road",
+      "city": "Indianapolis",
+      "state": "IN",
+      "lat": 39.8656093,
+      "lon": -86.03884,
+      "website": "https://scoutingevent.com/160-108131",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-160/in-camp-belzer (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/160-108131"
+          },
+          {
+            "url": "https://scoutingevent.com/160-108131"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

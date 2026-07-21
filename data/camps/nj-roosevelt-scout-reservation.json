@@ -1,0 +1,44 @@
+{
+  "id": "nj-roosevelt-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Roosevelt Scout Reservation",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:garden-state",
+      "parent": null,
+      "operating_status": "active",
+      "address": "384 Watsons Mill Road",
+      "city": "Elmer",
+      "state": "NJ",
+      "lat": 39.574937866292,
+      "lon": -75.289940849443,
+      "website": "https://gardenstatescouting.org/camping/day-camp/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-690/nj-roosevelt-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://gardenstatescouting.org/camping/day-camp/"
+          },
+          {
+            "url": "https://gardenstatescouting.org/camping/day-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ut-camp-maple-dell-webelos-and-arrow-of-light-overnight-adventure",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Maple Dell Webelos & Arrow of Light Overnight Adventure",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:crossroads-of-the-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Payson",
+      "state": "UT",
+      "lat": 39.9699,
+      "lon": -111.6962,
+      "website": "https://www.utahscouts.org/mapledell",
+      "program_types": [
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-590/ut-camp-maple-dell-webelos-and-arrow-of-light-overnight-adventure (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.utahscouts.org/mapledell"
+          },
+          {
+            "url": "https://www.utahscouts.org/mapledell"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

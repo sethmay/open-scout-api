@@ -1,0 +1,44 @@
+{
+  "id": "me-camp-nutter",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Nutter",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:pine-tree",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Acton",
+      "state": "ME",
+      "lat": 43.5098,
+      "lon": -70.8721,
+      "website": "https://www.pinetreescouting.org/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-218/me-camp-nutter (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.pinetreescouting.org/"
+          },
+          {
+            "url": "https://www.pinetreescouting.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

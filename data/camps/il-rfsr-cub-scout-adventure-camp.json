@@ -1,0 +1,44 @@
+{
+  "id": "il-rfsr-cub-scout-adventure-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "RFSR Cub Scout Adventure Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Rhodes France Scout Reservation",
+      "city": "Pana",
+      "state": "IL",
+      "lat": 39.3,
+      "lon": -89.13,
+      "website": "https://stlbsa.org/camps/cub-scout-overnight-camps/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-312/il-rfsr-cub-scout-adventure-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://stlbsa.org/camps/cub-scout-overnight-camps/"
+          },
+          {
+            "url": "https://stlbsa.org/camps/cub-scout-overnight-camps/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

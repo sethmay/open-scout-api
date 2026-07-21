@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-mcconnell",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp McConnell",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-yosemite",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Livingston",
+      "state": "CA",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-059/ca-camp-mcconnell (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468"
+          },
+          {
+            "url": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

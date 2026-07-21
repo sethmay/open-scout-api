@@ -1,0 +1,44 @@
+{
+  "id": "ok-babbitt-cub-world-at-zink-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Babbitt Cub World at Zink Scout Ranch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:indian-nations",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Skiatook Lake",
+      "city": "Skiatook",
+      "state": "OK",
+      "lat": 36.3425491,
+      "lon": -96.107347,
+      "website": "https://www.okscouts.org/cub-world-at-zink-ranch",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-488/ok-babbitt-cub-world-at-zink-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.okscouts.org/cub-world-at-zink-ranch"
+          },
+          {
+            "url": "https://www.okscouts.org/cub-world-at-zink-ranch"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

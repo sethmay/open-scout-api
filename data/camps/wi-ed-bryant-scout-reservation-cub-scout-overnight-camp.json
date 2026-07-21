@@ -1,0 +1,44 @@
+{
+  "id": "wi-ed-bryant-scout-reservation-cub-scout-overnight-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ed Bryant Scout Reservation - Cub Scout Overnight Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:glaciers-edge",
+      "parent": null,
+      "operating_status": "active",
+      "address": "N6960 County Rd G",
+      "city": "Mauston",
+      "state": "WI",
+      "lat": 43.8943,
+      "lon": -89.9873,
+      "website": "https://scoutingevent.com/620-EBSRCubs",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-620/wi-ed-bryant-scout-reservation-cub-scout-overnight-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/620-EBSRCubs"
+          },
+          {
+            "url": "https://scoutingevent.com/620-EBSRCubs"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

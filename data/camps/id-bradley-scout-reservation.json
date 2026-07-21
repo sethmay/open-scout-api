@@ -1,0 +1,44 @@
+{
+  "id": "id-bradley-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Bradley Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mountain-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Bradley Scout Reservation, near Stanley, ID",
+      "city": "Stanley",
+      "state": "ID",
+      "lat": 44.398,
+      "lon": -115.1482,
+      "website": "https://www.mountainwestcouncil.org/bradley",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-106/id-bradley-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.mountainwestcouncil.org/bradley"
+          },
+          {
+            "url": "https://www.mountainwestcouncil.org/bradley"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

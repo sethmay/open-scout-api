@@ -1,0 +1,44 @@
+{
+  "id": "va-claytor-lake-aquatics-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Claytor Lake Aquatics Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:blue-ridge-mountains",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": null,
+      "state": "VA",
+      "lat": null,
+      "lon": null,
+      "website": "https://scoutingevent.com/599-brsr26",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-599/va-claytor-lake-aquatics-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/599-brsr26"
+          },
+          {
+            "url": "https://scoutingevent.com/599-brsr26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

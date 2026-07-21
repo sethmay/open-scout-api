@@ -1,0 +1,44 @@
+{
+  "id": "tn-camp-buck-toms",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Buck Toms",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:great-smoky-mountain",
+      "parent": null,
+      "operating_status": "active",
+      "address": "373 Camp Buck Toms Rd",
+      "city": "Rockwood",
+      "state": "TN",
+      "lat": 35.7807376,
+      "lon": -84.6847142,
+      "website": "https://easttnscouts.org/summercamp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-557/tn-camp-buck-toms (unofficial community dataset)"
+          },
+          {
+            "url": "https://easttnscouts.org/summercamp/"
+          },
+          {
+            "url": "https://easttnscouts.org/summercamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

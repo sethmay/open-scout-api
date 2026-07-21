@@ -1,0 +1,45 @@
+{
+  "id": "ks-theodore-naish-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Theodore Naish Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:heart-of-america",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1100 Martinek Lane",
+      "city": "Bonner Springs",
+      "state": "KS",
+      "lat": 39.0767158,
+      "lon": -94.8517614,
+      "website": "https://www.hoac-bsa.org/naish",
+      "program_types": [
+        "scouts_bsa_resident",
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-307/ks-theodore-naish-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.hoac-bsa.org/naish"
+          },
+          {
+            "url": "https://www.hoac-bsa.org/naish"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

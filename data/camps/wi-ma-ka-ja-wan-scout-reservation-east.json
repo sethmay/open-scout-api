@@ -1,0 +1,44 @@
+{
+  "id": "wi-ma-ka-ja-wan-scout-reservation-east",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ma-Ka-Ja-Wan Scout Reservation - East",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northeast-illinois",
+      "parent": null,
+      "operating_status": "active",
+      "address": "W6500 Spring Lake Rd Pearson, Wisconsin 54462",
+      "city": null,
+      "state": "WI",
+      "lat": 45.3689328,
+      "lon": -88.9651634,
+      "website": "https://scoutingevent.com/129-2026MSREastCamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-129/wi-ma-ka-ja-wan-scout-reservation-east (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/129-2026MSREastCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/129-2026MSREastCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

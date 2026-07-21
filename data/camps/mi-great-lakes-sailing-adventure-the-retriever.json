@@ -1,0 +1,44 @@
+{
+  "id": "mi-great-lakes-sailing-adventure-the-retriever",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Great Lakes Sailing Adventure (The Retriever)",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:michigan-crossroads",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Mackinaw City",
+      "state": "MI",
+      "lat": null,
+      "lon": null,
+      "website": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-272/mi-great-lakes-sailing-adventure-the-retriever (unofficial community dataset)"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

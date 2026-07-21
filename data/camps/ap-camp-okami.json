@@ -1,0 +1,44 @@
+{
+  "id": "ap-camp-okami",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Okami",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:far-east",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Tama Hills Recreation Center, Tokyo, Japan",
+      "city": "Tama Hills, Tokyo",
+      "state": "AP",
+      "lat": 35.624,
+      "lon": 139.466,
+      "website": "https://scoutingevent.com/803-2026CampOkami",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-803/ap-camp-okami (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/803-2026CampOkami"
+          },
+          {
+            "url": "https://scoutingevent.com/803-2026CampOkami"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

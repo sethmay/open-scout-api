@@ -1,0 +1,44 @@
+{
+  "id": "ca-cabrillo-beach-youth-waterfront-sports-center",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cabrillo Beach Youth Waterfront Sports Center",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-los-angeles-area",
+      "parent": null,
+      "operating_status": "closed",
+      "address": "3000 Shoshonean Rd",
+      "city": "San Pedro",
+      "state": "CA",
+      "lat": 33.717687,
+      "lon": -118.28446,
+      "website": "https://cabrillobeachyouthcenter.org/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-033/ca-cabrillo-beach-youth-waterfront-sports-center (unofficial community dataset)"
+          },
+          {
+            "url": "https://cabrillobeachyouthcenter.org/"
+          },
+          {
+            "url": "https://cabrillobeachyouthcenter.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

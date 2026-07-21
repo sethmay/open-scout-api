@@ -1,0 +1,44 @@
+{
+  "id": "oh-camp-miakonda",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Miakonda",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:erie-shores",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Toledo",
+      "state": "OH",
+      "lat": 41.6947,
+      "lon": -83.679,
+      "website": "https://www.erieshorescouncil.org/cdc",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-460/oh-camp-miakonda (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.erieshorescouncil.org/cdc"
+          },
+          {
+            "url": "https://www.erieshorescouncil.org/cdc"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

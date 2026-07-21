@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-emerald-bay",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Emerald Bay",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:western-los-angeles-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1 Cove Road",
+      "city": "Avalon",
+      "state": "CA",
+      "lat": 33.4487,
+      "lon": -118.4855,
+      "website": "https://www.campemeraldbay.org/scout-programs/summer-camp-prices/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-051/ca-camp-emerald-bay (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.campemeraldbay.org/scout-programs/summer-camp-prices/"
+          },
+          {
+            "url": "https://www.campemeraldbay.org/scout-programs/summer-camp-prices/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

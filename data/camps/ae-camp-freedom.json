@@ -1,0 +1,44 @@
+{
+  "id": "ae-camp-freedom",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Freedom",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:transatlantic",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Frankenkaserne (Camp Freedom), 91613 Marktbergel, Germany",
+      "city": "Marktbergel",
+      "state": "AE",
+      "lat": 49.4268236,
+      "lon": 10.3852889,
+      "website": "https://tacscouting.org/camps/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-802/ae-camp-freedom (unofficial community dataset)"
+          },
+          {
+            "url": "https://tacscouting.org/camps/"
+          },
+          {
+            "url": "https://tacscouting.org/camps/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

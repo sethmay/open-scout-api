@@ -1,0 +1,44 @@
+{
+  "id": "co-ben-delatour-scout-ranch-camp-jeffrey-summer",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ben Delatour Scout Ranch Camp Jeffrey Summer",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:adventure-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2331 County Road 68C Red Feather Lakes, Colorado 80545",
+      "city": null,
+      "state": "CO",
+      "lat": 40.751441955566406,
+      "lon": -105.5020523071289,
+      "website": "https://scoutingevent.com/062-101580",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-062/co-ben-delatour-scout-ranch-camp-jeffrey-summer (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/062-101580"
+          },
+          {
+            "url": "https://scoutingevent.com/062-101580"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

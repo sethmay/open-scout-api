@@ -1,0 +1,44 @@
+{
+  "id": "ca-sea-base-bsa-summer-aquatics-camp-merit-badges",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Sea Base (BSA) Summer Aquatics Camp (Merit Badges)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:long-beach-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "5875 Appian Way Long Beach, California 90803",
+      "city": null,
+      "state": "CA",
+      "lat": 33.7562573,
+      "lon": -118.1172335,
+      "website": "https://scoutingevent.com/032-SummerScoutsMeritBadges2026",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-032/ca-sea-base-bsa-summer-aquatics-camp-merit-badges (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/032-SummerScoutsMeritBadges2026"
+          },
+          {
+            "url": "https://scoutingevent.com/032-SummerScoutsMeritBadges2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

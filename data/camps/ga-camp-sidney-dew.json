@@ -1,0 +1,44 @@
+{
+  "id": "ga-camp-sidney-dew",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sidney Dew",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northwest-georgia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Subligna, GA",
+      "city": "Subligna",
+      "state": "GA",
+      "lat": 34.5601535,
+      "lon": -85.1881791,
+      "website": "https://www.nwgascouting.org/summer-camp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-100/ga-camp-sidney-dew (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.nwgascouting.org/summer-camp"
+          },
+          {
+            "url": "https://www.nwgascouting.org/summer-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

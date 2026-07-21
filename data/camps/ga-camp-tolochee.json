@@ -1,0 +1,44 @@
+{
+  "id": "ga-camp-tolochee",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Tolochee",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:coastal-georgia",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Brunswick",
+      "state": "GA",
+      "lat": 31.192,
+      "lon": -81.5622,
+      "website": "https://scoutingevent.com/099-Twilight",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-099/ga-camp-tolochee (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/099-Twilight"
+          },
+          {
+            "url": "https://scoutingevent.com/099-Twilight"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

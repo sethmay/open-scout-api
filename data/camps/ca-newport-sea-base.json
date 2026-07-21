@@ -1,0 +1,44 @@
+{
+  "id": "ca-newport-sea-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Newport Sea Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:orange-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1931 W Coast Hwy",
+      "city": "Newport Beach",
+      "state": "CA",
+      "lat": 33.615861,
+      "lon": -117.9136662,
+      "website": "https://www.newportseabase.org/summer-camp-youth-sailing-boating-kayaking-fishing-aquatics-stem-merit-badges-activities",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-039/ca-newport-sea-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.newportseabase.org/summer-camp-youth-sailing-boating-kayaking-fishing-aquatics-stem-merit-badges-activities"
+          },
+          {
+            "url": "https://www.newportseabase.org/summer-camp-youth-sailing-boating-kayaking-fishing-aquatics-stem-merit-badges-activities"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -22,7 +22,7 @@ SCHEMA_DIR = ROOT / "schema" / "v1"
 DATA = ROOT / "data"
 
 DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json",
-            "merit-badges": "merit-badge.schema.json"}
+            "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json"}
 
 
 def load_schemas():
@@ -68,6 +68,13 @@ def main() -> int:
             for v in vs[:-1]:
                 if v.get("valid_to") is None:
                     errs.append(f"{p.name}: non-final version has valid_to=null")
+            if ds == "camps":  # operator<->council coupling (schema doesn't enforce cross-field)
+                for v in vs:
+                    op, coun = v.get("operator"), v.get("council")
+                    if op == "council" and coun is None:
+                        errs.append(f"{p.name}: operator=council but council is null")
+                    elif op in ("national", "other", "unknown") and coun is not None:
+                        errs.append(f"{p.name}: operator={op} but council is set ({coun})")
 
     # pass 2: referential integrity
     def check_ref(ref, src):
@@ -82,6 +89,7 @@ def main() -> int:
             for v in obj.get("versions", []):
                 check_ref(v.get("territory"), f"{p.name} territory")
                 check_ref(v.get("parent"), f"{p.name} parent")
+                check_ref(v.get("council"), f"{p.name} council")
 
     # pass 3: event files (schema + participant refs + unique ids)
     for ds in DATASETS:
@@ -148,17 +156,17 @@ def main() -> int:
                 _walk_choose(r, f"requirement-sets/{name}")
         nrs = len(docs)
 
-    ncouncils = len(list((DATA / "councils").glob("*.json"))) - 1
-    nterr = len(list((DATA / "territories").glob("*.json"))) - 1
-    nmb = len(list((DATA / "merit-badges").glob("*.json"))) - 1
+    def _count(ds):
+        return len([p for p in (DATA / ds).glob("*.json") if p.name != "_events.json"])
+    ncouncils, nterr, nmb, ncamps = _count("councils"), _count("territories"), _count("merit-badges"), _count("camps")
     if errs:
         print(f"{len(errs)} error(s):")
         for e in errs[:100]:
             print("  " + e)
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
-          f"{nrs} requirement-sets valid (schema + referential + version windows + "
-          f"text-rights invariant), {len(entities)} entities")
+          f"{nrs} requirement-sets + {ncamps} camps valid (schema + referential + version "
+          f"windows + text-rights + camp coupling), {len(entities)} entities")
     return 0
 
 

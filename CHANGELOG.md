@@ -3,6 +3,14 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+- `PENDING` Import 469 camps from camp-finder into the camp dataset: classified by
+  `camp_type` (361 resident / 68 day / 40 high-adventure) and `operator` (465 council +
+  4 national HA bases — Philmont, Florida Sea Base, Northern Tier, Summit); Michigan
+  Crossroads camps remapped to the kept council; demo councils excluded; description +
+  sessions dropped (operational data stays at the council site). validate_data gains the
+  camps dataset + council-ref + operator↔council coupling checks; build emits camp
+  per-entity/index/current + a `CurrentCamp` published contract.
+
 ## 0.6.0 (minor) — 2026-07-21
 
 - `919c1e8` Enrich the camp schema to handle every kind of scout camp: add `camp_type`

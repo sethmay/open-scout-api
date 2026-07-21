@@ -1,0 +1,44 @@
+{
+  "id": "tx-sid-richardson-scout-ranch-sr2",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Sid Richardson Scout Ranch (SR2)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:longhorn",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Boy Scout Rd",
+      "city": "Runaway Bay",
+      "state": "TX",
+      "lat": 39.8586606,
+      "lon": -86.0327115,
+      "website": "https://www.longhorncouncil.org/sid-richardson-scout-ranch",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-662/tx-sid-richardson-scout-ranch-sr2 (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.longhorncouncil.org/sid-richardson-scout-ranch"
+          },
+          {
+            "url": "https://www.longhorncouncil.org/sid-richardson-scout-ranch"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "oh-camp-lakota",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Lakota",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:black-swamp-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "south of Defiance, Ohio",
+      "city": "Defiance",
+      "state": "OH",
+      "lat": 41.245,
+      "lon": -84.568,
+      "website": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-449/oh-camp-lakota (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247"
+          },
+          {
+            "url": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

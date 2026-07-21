@@ -1,0 +1,44 @@
+{
+  "id": "tx-camp-don-harrington",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Don Harrington",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:golden-spread",
+      "parent": null,
+      "operating_status": "active",
+      "address": "15427 FM 1541",
+      "city": "Canyon",
+      "state": "TX",
+      "lat": 35.037404396783,
+      "lon": -101.845618324589,
+      "website": "https://scoutingevent.com/562-2026CubDayCampDon",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-562/tx-camp-don-harrington (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/562-2026CubDayCampDon"
+          },
+          {
+            "url": "https://scoutingevent.com/562-2026CubDayCampDon"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

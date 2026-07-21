@@ -1,0 +1,45 @@
+{
+  "id": "id-camp-grizzly",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Grizzly",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:inland-northwest",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1101 Palouse River Rd",
+      "city": "Harvard",
+      "state": "ID",
+      "lat": 46.944339416469,
+      "lon": -116.661258661248,
+      "website": "https://scoutingevent.com/611-26GrizzlySummerCamp",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-611/id-camp-grizzly (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/611-26GrizzlySummerCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/611-26GrizzlySummerCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

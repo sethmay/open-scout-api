@@ -1,0 +1,44 @@
+{
+  "id": "nc-camp-bowers",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Bowers",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:cape-fear",
+      "parent": null,
+      "operating_status": "active",
+      "address": "13165 NC Hwy 53 W, White Oak, NC 28399",
+      "city": "White Oak",
+      "state": "NC",
+      "lat": 34.788876632821,
+      "lon": -78.726101489648,
+      "website": "https://www.capefearscouting.org/content/132782/Camp-Bowers",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-425/nc-camp-bowers (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.capefearscouting.org/content/132782/Camp-Bowers"
+          },
+          {
+            "url": "https://www.capefearscouting.org/content/132782/Camp-Bowers"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

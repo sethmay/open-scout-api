@@ -1,0 +1,44 @@
+{
+  "id": "mo-grizzly-day-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Grizzly Day Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Beaumont Scout Reservation",
+      "city": "High Ridge",
+      "state": "MO",
+      "lat": 38.42,
+      "lon": -90.63,
+      "website": "https://stlbsa.org/camps/cub-scout-day-camps/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-312/mo-grizzly-day-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://stlbsa.org/camps/cub-scout-day-camps/"
+          },
+          {
+            "url": "https://stlbsa.org/camps/cub-scout-day-camps/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

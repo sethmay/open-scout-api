@@ -1,0 +1,44 @@
+{
+  "id": "ga-camp-daniel-marshall",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Daniel Marshall",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:georgia-carolina",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2144 Camp Daniel Marshall Rd",
+      "city": "Lincolnton",
+      "state": "GA",
+      "lat": 33.763,
+      "lon": -82.2838,
+      "website": "https://www.gacacouncil.org/summer-camps",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-093/ga-camp-daniel-marshall (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.gacacouncil.org/summer-camps"
+          },
+          {
+            "url": "https://www.gacacouncil.org/summer-camps"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

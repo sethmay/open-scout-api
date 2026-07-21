@@ -1,0 +1,44 @@
+{
+  "id": "az-scouts-bsa-weekend-camp-2026-new",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Scouts BSA Weekend Camp 2026 - New",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:catalina",
+      "parent": null,
+      "operating_status": "active",
+      "address": "12900 E. Organization Ridge Rd Tucson, Arizona 85619",
+      "city": null,
+      "state": "AZ",
+      "lat": 32.4033251,
+      "lon": -110.7214508,
+      "website": "https://scoutingevent.com/011-112973",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-011/az-scouts-bsa-weekend-camp-2026-new (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/011-112973"
+          },
+          {
+            "url": "https://scoutingevent.com/011-112973"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

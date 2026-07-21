@@ -1,0 +1,46 @@
+{
+  "id": "va-camp-william-b-snyder",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp William B. Snyder",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:national-capital-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6100 Antioch Road",
+      "city": "Haymarket",
+      "state": "VA",
+      "lat": 38.8298307,
+      "lon": -77.6645873,
+      "website": "https://www.gotosnyder.org/summer-camp/",
+      "program_types": [
+        "cub_resident",
+        "cub_day",
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-082/va-camp-william-b-snyder (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.gotosnyder.org/summer-camp/"
+          },
+          {
+            "url": "https://www.gotosnyder.org/summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

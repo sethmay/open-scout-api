@@ -1,0 +1,44 @@
+{
+  "id": "ut-camp-tifie",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Tifie",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:crossroads-of-the-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Mount Pleasant",
+      "state": "UT",
+      "lat": 39.5024,
+      "lon": -111.3831,
+      "website": "https://www.utahscouts.org/tifie",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-590/ut-camp-tifie (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.utahscouts.org/tifie"
+          },
+          {
+            "url": "https://www.utahscouts.org/tifie"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

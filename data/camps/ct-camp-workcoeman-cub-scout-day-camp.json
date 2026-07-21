@@ -1,0 +1,44 @@
+{
+  "id": "ct-camp-workcoeman-cub-scout-day-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Workcoeman - Cub Scout Day Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:connecticut-rivers",
+      "parent": null,
+      "operating_status": "active",
+      "address": "169 Camp Workcoeman Road",
+      "city": "New Hartford",
+      "state": "CT",
+      "lat": 41.8914514,
+      "lon": -73.0477717,
+      "website": "https://campworkcoeman.org/cub-scouts/fees/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-066/ct-camp-workcoeman-cub-scout-day-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://campworkcoeman.org/cub-scouts/fees/"
+          },
+          {
+            "url": "https://campworkcoeman.org/cub-scouts/fees/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "va-camp-rock-enon",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Rock Enon",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:shenandoah-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "292 Rock Enon Springs Rd",
+      "city": "Gore",
+      "state": "VA",
+      "lat": 39.219128893027,
+      "lon": -78.386617326488,
+      "website": "https://www.camprockenon.org/cubsummercamp",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-598/va-camp-rock-enon (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.camprockenon.org/cubsummercamp"
+          },
+          {
+            "url": "https://www.camprockenon.org/cubsummercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "pa-camp-conewago",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Conewago",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:new-birth-of-freedom",
+      "parent": null,
+      "operating_status": "active",
+      "address": "450 Boy Scout Road",
+      "city": "New Oxford",
+      "state": "PA",
+      "lat": 39.8927,
+      "lon": -77.0712,
+      "website": "https://newbirthoffreedom.org/camping/summer-camp-adventures/pack-camp/cub-scout-camp/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-544/pa-camp-conewago (unofficial community dataset)"
+          },
+          {
+            "url": "https://newbirthoffreedom.org/camping/summer-camp-adventures/pack-camp/cub-scout-camp/"
+          },
+          {
+            "url": "https://newbirthoffreedom.org/camping/summer-camp-adventures/pack-camp/cub-scout-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

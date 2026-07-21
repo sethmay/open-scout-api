@@ -1,0 +1,44 @@
+{
+  "id": "fl-spanish-trail-scout-reservation-cub-scout-resident-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Spanish Trail Scout Reservation Cub Scout Resident Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:gulf-coast",
+      "parent": null,
+      "operating_status": "active",
+      "address": "315 Pat Covell Rd",
+      "city": "Defuniak Springs",
+      "state": "FL",
+      "lat": 30.731622998752,
+      "lon": -86.208906881908,
+      "website": "https://stsr-gcc.org/cub-scout-resident-camp/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-773/fl-spanish-trail-scout-reservation-cub-scout-resident-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://stsr-gcc.org/cub-scout-resident-camp/"
+          },
+          {
+            "url": "https://stsr-gcc.org/cub-scout-resident-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

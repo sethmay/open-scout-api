@@ -1,0 +1,44 @@
+{
+  "id": "mt-grizzly-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Grizzly Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:montana",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Bigfork",
+      "state": "MT",
+      "lat": null,
+      "lon": null,
+      "website": "https://scoutingmontana.org/camps/grizzly-base/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-315/mt-grizzly-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/grizzly-base/"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/grizzly-base/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

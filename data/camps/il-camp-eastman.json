@@ -1,0 +1,45 @@
+{
+  "id": "il-camp-eastman",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Eastman",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mississippi-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "750 E County Road 1780",
+      "city": "Nauvoo",
+      "state": "IL",
+      "lat": 40.459668716193,
+      "lon": -91.353798627288,
+      "website": "https://mvcscouting.org/camping/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-141/il-camp-eastman (unofficial community dataset)"
+          },
+          {
+            "url": "https://mvcscouting.org/camping/"
+          },
+          {
+            "url": "https://mvcscouting.org/camping/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "pa-camp-minsi",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Minsi",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:minsi-trails",
+      "parent": null,
+      "operating_status": "active",
+      "address": "106 Camp Minsi Rd Pocono Summit, Pennsylvania 18346",
+      "city": null,
+      "state": "PA",
+      "lat": 41.1179048,
+      "lon": -75.4209774,
+      "website": "https://scoutingevent.com/502-2026CampMinsiSummer",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-502/pa-camp-minsi (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/502-2026CampMinsiSummer"
+          },
+          {
+            "url": "https://scoutingevent.com/502-2026CampMinsiSummer"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "fl-tanah-keeta-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Tanah Keeta Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:gulf-stream",
+      "parent": null,
+      "operating_status": "active",
+      "address": "8501 SE Boy Scout Rd, Jupiter, FL 33469",
+      "city": "Jupiter",
+      "state": "FL",
+      "lat": 26.985616303151,
+      "lon": -80.131185508119,
+      "website": "https://www.gulfstreamcouncil.org/summer-camp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-085/fl-tanah-keeta-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.gulfstreamcouncil.org/summer-camp"
+          },
+          {
+            "url": "https://www.gulfstreamcouncil.org/summer-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

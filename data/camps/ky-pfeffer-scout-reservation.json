@@ -1,0 +1,44 @@
+{
+  "id": "ky-pfeffer-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pfeffer Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:lincoln-heritage",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1531 Cross Road, Benton, KY 42025",
+      "city": "Benton",
+      "state": "KY",
+      "lat": 36.822430051936,
+      "lon": -88.183141225673,
+      "website": "https://lhcbsa.org/pfeffer-scout-reservation/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-205/ky-pfeffer-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://lhcbsa.org/pfeffer-scout-reservation/"
+          },
+          {
+            "url": "https://lhcbsa.org/pfeffer-scout-reservation/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

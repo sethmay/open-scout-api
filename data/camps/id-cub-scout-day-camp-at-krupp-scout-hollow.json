@@ -1,0 +1,44 @@
+{
+  "id": "id-cub-scout-day-camp-at-krupp-scout-hollow",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cub Scout Day Camp at Krupp Scout Hollow",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:grand-teton",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Rigby",
+      "state": "ID",
+      "lat": null,
+      "lon": null,
+      "website": "https://tetonscouts.org/summer-camps/cub-scout-day-camp/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-107/id-cub-scout-day-camp-at-krupp-scout-hollow (unofficial community dataset)"
+          },
+          {
+            "url": "https://tetonscouts.org/summer-camps/cub-scout-day-camp/"
+          },
+          {
+            "url": "https://tetonscouts.org/summer-camps/cub-scout-day-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

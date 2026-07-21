@@ -1,0 +1,44 @@
+{
+  "id": "ak-lost-lake-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Lost Lake Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:great-alaska",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Lost Lake Road, Richardson Highway",
+      "city": "Fairbanks",
+      "state": "AK",
+      "lat": 64.2,
+      "lon": -146.4,
+      "website": "https://www.midnightsunbsa.org/lost-lake-scout-camp/lost-lake-scout-camp.html",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-610/ak-lost-lake-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.midnightsunbsa.org/lost-lake-scout-camp/lost-lake-scout-camp.html"
+          },
+          {
+            "url": "https://www.midnightsunbsa.org/lost-lake-scout-camp/lost-lake-scout-camp.html"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

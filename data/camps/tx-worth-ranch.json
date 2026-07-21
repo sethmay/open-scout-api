@@ -1,0 +1,44 @@
+{
+  "id": "tx-worth-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Worth Ranch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:longhorn",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1518 Worth Ranch Road",
+      "city": "Palo Pinto",
+      "state": "TX",
+      "lat": 32.815982,
+      "lon": -98.316739,
+      "website": "https://scoutingevent.com/662-WRSummerCamp2026",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-662/tx-worth-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/662-WRSummerCamp2026"
+          },
+          {
+            "url": "https://scoutingevent.com/662-WRSummerCamp2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

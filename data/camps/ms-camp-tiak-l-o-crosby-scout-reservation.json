@@ -1,0 +1,44 @@
+{
+  "id": "ms-camp-tiak-l-o-crosby-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Tiak (L.O. Crosby Scout Reservation)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pine-burr-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Wiggins",
+      "state": "MS",
+      "lat": 30.9277,
+      "lon": -89.1674,
+      "website": "https://www.pineburrscouts.org/summercamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-304/ms-camp-tiak-l-o-crosby-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.pineburrscouts.org/summercamp"
+          },
+          {
+            "url": "https://www.pineburrscouts.org/summercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

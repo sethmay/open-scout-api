@@ -1,0 +1,44 @@
+{
+  "id": "me-camp-roosevelt",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Roosevelt",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:katahdin-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "45 Camp Roosevelt Rd",
+      "city": "Eddington",
+      "state": "ME",
+      "lat": 44.7708510504,
+      "lon": -68.557342259628,
+      "website": "https://scoutingevent.com/216-26Scoutsbsaresidentcamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-216/me-camp-roosevelt (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/216-26Scoutsbsaresidentcamp"
+          },
+          {
+            "url": "https://scoutingevent.com/216-26Scoutsbsaresidentcamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

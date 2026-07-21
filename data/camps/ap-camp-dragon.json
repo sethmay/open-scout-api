@@ -1,0 +1,44 @@
+{
+  "id": "ap-camp-dragon",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Dragon",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:far-east",
+      "parent": null,
+      "operating_status": "active",
+      "address": "White Beach, Okinawa, Japan",
+      "city": "White Beach, Okinawa",
+      "state": "AP",
+      "lat": 26.312,
+      "lon": 127.929,
+      "website": "https://scoutingevent.com/803-2026CampDragon",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-803/ap-camp-dragon (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/803-2026CampDragon"
+          },
+          {
+            "url": "https://scoutingevent.com/803-2026CampDragon"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

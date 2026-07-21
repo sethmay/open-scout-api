@@ -1,0 +1,44 @@
+{
+  "id": "al-camp-jackson",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Jackson",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-alabama",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Scottsboro",
+      "state": "AL",
+      "lat": null,
+      "lon": null,
+      "website": "https://1bsa.org/camp-jackson/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-001/al-camp-jackson (unofficial community dataset)"
+          },
+          {
+            "url": "https://1bsa.org/camp-jackson/"
+          },
+          {
+            "url": "https://1bsa.org/camp-jackson/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ca-ventura-county-cub-scout-day-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ventura County Cub Scout Day Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:ventura-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": "13950 Peach Hill Road",
+      "city": "Moorpark",
+      "state": "CA",
+      "lat": 34.282,
+      "lon": -118.86,
+      "website": "https://www.scoutingamericavc.org/CSCamp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-057/ca-ventura-county-cub-scout-day-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.scoutingamericavc.org/CSCamp"
+          },
+          {
+            "url": "https://www.scoutingamericavc.org/CSCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

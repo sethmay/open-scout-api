@@ -1,0 +1,46 @@
+{
+  "id": "wv-camp-mountaineer",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Mountaineer",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mountaineer-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "187 Camp Mountaineer Road, Morgantown, WV 26508",
+      "city": "Morgantown",
+      "state": "WV",
+      "lat": 39.678074347657,
+      "lon": -79.957722989274,
+      "website": "https://mountaineerscouting.org/scouts-bsa-resident-camp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident",
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-615/wv-camp-mountaineer (unofficial community dataset)"
+          },
+          {
+            "url": "https://mountaineerscouting.org/scouts-bsa-resident-camp/"
+          },
+          {
+            "url": "https://mountaineerscouting.org/scouts-bsa-resident-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

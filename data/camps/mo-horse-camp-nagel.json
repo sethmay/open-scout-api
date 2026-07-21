@@ -1,0 +1,44 @@
+{
+  "id": "mo-horse-camp-nagel",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Horse Camp-Nagel",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6480 Beaumont Scout Reservation High Ridge, Missouri 63049",
+      "city": null,
+      "state": "MO",
+      "lat": 38.5037155,
+      "lon": -90.554161,
+      "website": "https://scoutingevent.com/312-horse26",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-312/mo-horse-camp-nagel (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/312-horse26"
+          },
+          {
+            "url": "https://scoutingevent.com/312-horse26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

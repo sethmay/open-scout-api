@@ -1,0 +1,44 @@
+{
+  "id": "sd-medicine-mountain",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Medicine Mountain",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:black-hills-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "24201 Bobcat Rd Custer, South Dakota 57730",
+      "city": null,
+      "state": "SD",
+      "lat": 43.8984566,
+      "lon": -103.7240745,
+      "website": "https://scoutingevent.com/695-MMSR2026SummerCamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-695/sd-medicine-mountain (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/695-MMSR2026SummerCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/695-MMSR2026SummerCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

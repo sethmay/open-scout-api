@@ -1,0 +1,44 @@
+{
+  "id": "id-salmon-river-high-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Salmon River High Adventure Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:mountain-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Riggins",
+      "state": "ID",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.mountainwestcouncil.org/srhab",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-106/id-salmon-river-high-adventure-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.mountainwestcouncil.org/srhab"
+          },
+          {
+            "url": "https://www.mountainwestcouncil.org/srhab"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

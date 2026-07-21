@@ -1,0 +1,44 @@
+{
+  "id": "ia-camp-mitigwa-mitigwa-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Mitigwa (Mitigwa Scout Reservation)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mid-iowa",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Woodward",
+      "state": "IA",
+      "lat": 41.9494,
+      "lon": -93.9105,
+      "website": "https://campiowa.org/mitigwa-scout-reservation-3/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-177/ia-camp-mitigwa-mitigwa-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://campiowa.org/mitigwa-scout-reservation-3/"
+          },
+          {
+            "url": "https://campiowa.org/mitigwa-scout-reservation-3/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

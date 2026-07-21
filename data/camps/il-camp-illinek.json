@@ -1,0 +1,44 @@
+{
+  "id": "il-camp-illinek",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Illinek",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:abraham-lincoln",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6610 Iron Bridge Rd",
+      "city": "Chatham",
+      "state": "IL",
+      "lat": 37.4252525,
+      "lon": -77.4987913,
+      "website": "https://scoutingevent.com/144-97467",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-144/il-camp-illinek (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/144-97467"
+          },
+          {
+            "url": "https://scoutingevent.com/144-97467"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

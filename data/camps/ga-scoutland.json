@@ -1,0 +1,44 @@
+{
+  "id": "ga-scoutland",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Scoutland",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:northeast-georgia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3685 Looper Lake Rd",
+      "city": "Gainesville",
+      "state": "GA",
+      "lat": 34.339642,
+      "lon": -83.879691,
+      "website": "https://www.nega-bsa.org/cs-twi-stem-cmp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-101/ga-scoutland (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.nega-bsa.org/cs-twi-stem-cmp"
+          },
+          {
+            "url": "https://www.nega-bsa.org/cs-twi-stem-cmp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

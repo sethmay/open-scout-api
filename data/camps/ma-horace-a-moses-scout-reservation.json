@@ -1,0 +1,44 @@
+{
+  "id": "ma-horace-a-moses-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Horace A. Moses Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:western-massachusetts",
+      "parent": null,
+      "operating_status": "active",
+      "address": "310 Birch Hill Rd, Russell, MA 01071",
+      "city": "Russell",
+      "state": "MA",
+      "lat": 42.157671072603,
+      "lon": -72.86921874759,
+      "website": "https://www.wmascouting.org/SummerCamps",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-234/ma-horace-a-moses-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.wmascouting.org/SummerCamps"
+          },
+          {
+            "url": "https://www.wmascouting.org/SummerCamps"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

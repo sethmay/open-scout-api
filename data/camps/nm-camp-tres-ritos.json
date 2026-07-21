@@ -1,0 +1,44 @@
+{
+  "id": "nm-camp-tres-ritos",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Tres Ritos",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:south-plains",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Vadito",
+      "state": "NM",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.spccamps.org/tres-ritos",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-694/nm-camp-tres-ritos (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.spccamps.org/tres-ritos"
+          },
+          {
+            "url": "https://www.spccamps.org/tres-ritos"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

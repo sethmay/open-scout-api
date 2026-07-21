@@ -1,0 +1,44 @@
+{
+  "id": "nj-quail-hill-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Quail Hill Scout Reservation",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:monmouth",
+      "parent": null,
+      "operating_status": "active",
+      "address": "56 La Valley Drive",
+      "city": "Manalapan",
+      "state": "NJ",
+      "lat": 40.2653,
+      "lon": -74.3924,
+      "website": "https://www.monmouthcouncilscouting.org/quailhill",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-347/nj-quail-hill-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.monmouthcouncilscouting.org/quailhill"
+          },
+          {
+            "url": "https://www.monmouthcouncilscouting.org/quailhill"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

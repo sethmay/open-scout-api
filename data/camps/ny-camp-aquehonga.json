@@ -1,0 +1,44 @@
+{
+  "id": "ny-camp-aquehonga",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Aquehonga",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-new-york",
+      "parent": null,
+      "operating_status": "active",
+      "address": "125 Aquehonga Rd Narrowsburg, New York 12764",
+      "city": null,
+      "state": "NY",
+      "lat": 41.602546,
+      "lon": -75.0581943,
+      "website": "https://scoutingevent.com/640-aq26",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-640/ny-camp-aquehonga (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/640-aq26"
+          },
+          {
+            "url": "https://scoutingevent.com/640-aq26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

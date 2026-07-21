@@ -1,0 +1,44 @@
+{
+  "id": "mi-camp-frank-s-betz",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Frank S. Betz",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pathway-to-adventure",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3858 E Snow Rd",
+      "city": "Berrien Springs",
+      "state": "MI",
+      "lat": 41.9248104,
+      "lon": -86.3642888,
+      "website": "https://pathwaytoadventure.org/cubscoutfamilycamp/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-456/mi-camp-frank-s-betz (unofficial community dataset)"
+          },
+          {
+            "url": "https://pathwaytoadventure.org/cubscoutfamilycamp/"
+          },
+          {
+            "url": "https://pathwaytoadventure.org/cubscoutfamilycamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

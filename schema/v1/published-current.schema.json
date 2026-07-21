@@ -7,11 +7,11 @@
   "properties": {
     "version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
-    "kind": { "enum": ["council", "territory", "merit-badge"] },
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp"] },
     "count": { "type": "integer", "minimum": 0 },
     "items": {
       "type": "array",
-      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }] }
+      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }] }
     }
   },
   "required": ["version", "generated_at", "kind", "count", "items"],
@@ -56,6 +56,25 @@
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
       "required": ["id", "name", "eagle_required", "tags", "url", "confidence"],
+      "additionalProperties": false
+    },
+    "CurrentCamp": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "name": { "type": "string", "minLength": 1 },
+        "camp_type": { "type": "string" },
+        "operator": { "enum": ["council", "national", "other", "unknown"] },
+        "council": { "type": ["string", "null"], "pattern": "^council:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "state": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
+        "city": { "type": ["string", "null"] },
+        "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
+        "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
+        "website": { "type": ["string", "null"], "format": "uri" },
+        "program_types": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["id", "name", "camp_type", "operator", "council", "state", "city", "lat", "lon", "website", "program_types", "confidence"],
       "additionalProperties": false
     }
   }

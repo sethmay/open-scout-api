@@ -1,0 +1,44 @@
+{
+  "id": "il-camp-vandeventer",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Vandeventer",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3463 Trout Camp Road",
+      "city": "Waterloo",
+      "state": "IL",
+      "lat": 38.330168601582,
+      "lon": -90.208147034763,
+      "website": "https://stlbsa.org/find-your-district/cahokia-mounds-district/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-312/il-camp-vandeventer (unofficial community dataset)"
+          },
+          {
+            "url": "https://stlbsa.org/find-your-district/cahokia-mounds-district/"
+          },
+          {
+            "url": "https://stlbsa.org/find-your-district/cahokia-mounds-district/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

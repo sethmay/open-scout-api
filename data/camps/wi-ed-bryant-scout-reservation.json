@@ -1,0 +1,44 @@
+{
+  "id": "wi-ed-bryant-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ed Bryant Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:glaciers-edge",
+      "parent": null,
+      "operating_status": "active",
+      "address": "N6960 County Rd G",
+      "city": "Mauston",
+      "state": "WI",
+      "lat": 43.8943,
+      "lon": -89.9873,
+      "website": "https://www.glaciersedge.org/activiites/ebsr-summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-620/wi-ed-bryant-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.glaciersedge.org/activiites/ebsr-summer-camp/"
+          },
+          {
+            "url": "https://www.glaciersedge.org/activiites/ebsr-summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

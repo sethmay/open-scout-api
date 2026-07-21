@@ -1,0 +1,44 @@
+{
+  "id": "de-akridge-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Akridge Scout Reservation",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:del-mar-va",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1910 Baden Powell Way",
+      "city": "Dover",
+      "state": "DE",
+      "lat": 39.129160237811,
+      "lon": -75.548081443295,
+      "website": "https://scoutingevent.com/081-ASRDayCamp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-081/de-akridge-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/081-ASRDayCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/081-ASRDayCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

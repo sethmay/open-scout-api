@@ -1,0 +1,44 @@
+{
+  "id": "nj-joseph-a-citta-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Joseph A. Citta Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:jersey-shore",
+      "parent": null,
+      "operating_status": "active",
+      "address": "229 Brookville Road, Barnegat, NJ 08005",
+      "city": "Barnegat",
+      "state": "NJ",
+      "lat": 39.780444018546,
+      "lon": -74.308898281813,
+      "website": "https://www.cittascoutreservation.org/bs-summer-camp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-341/nj-joseph-a-citta-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.cittascoutreservation.org/bs-summer-camp"
+          },
+          {
+            "url": "https://www.cittascoutreservation.org/bs-summer-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

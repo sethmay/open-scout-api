@@ -1,0 +1,44 @@
+{
+  "id": "oh-camp-friedlander",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Friedlander",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:dan-beard",
+      "parent": null,
+      "operating_status": "active",
+      "address": "581 Ibold Rd Loveland, Ohio 45140",
+      "city": null,
+      "state": "OH",
+      "lat": 39.21851348876953,
+      "lon": -84.27740478515625,
+      "website": "https://scoutingevent.com/438-summercamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-438/oh-camp-friedlander (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/438-summercamp"
+          },
+          {
+            "url": "https://scoutingevent.com/438-summercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

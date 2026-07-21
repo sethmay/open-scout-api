@@ -1,0 +1,45 @@
+{
+  "id": "mo-camp-arrowhead",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Arrowhead",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:ozark-trails",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4202 State Hwy DD",
+      "city": "Marshfield",
+      "state": "MO",
+      "lat": 37.283,
+      "lon": -92.86,
+      "website": "https://otcscouting.org/camp-arrowhead/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-306/mo-camp-arrowhead (unofficial community dataset)"
+          },
+          {
+            "url": "https://otcscouting.org/camp-arrowhead/"
+          },
+          {
+            "url": "https://otcscouting.org/camp-arrowhead/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

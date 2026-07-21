@@ -1,0 +1,44 @@
+{
+  "id": "nc-camp-raven-knob",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Raven Knob",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:old-hickory",
+      "parent": null,
+      "operating_status": "active",
+      "address": "266 Raven Knob Road, Mount Airy, NC 27030",
+      "city": "Mount Airy",
+      "state": "NC",
+      "lat": 36.479072671786,
+      "lon": -80.843080887322,
+      "website": "https://www.ravenknob.com/summercampdates",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-427/nc-camp-raven-knob (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.ravenknob.com/summercampdates"
+          },
+          {
+            "url": "https://www.ravenknob.com/summercampdates"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

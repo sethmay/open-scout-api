@@ -1,0 +1,44 @@
+{
+  "id": "ak-denali-high-adventure-scout-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Denali High Adventure Scout Base",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:great-alaska",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Mile 133 N Parks Highway",
+      "city": "Trapper Creek",
+      "state": "AK",
+      "lat": 62.5391,
+      "lon": -150.1603,
+      "website": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-610/ak-denali-high-adventure-scout-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/"
+          },
+          {
+            "url": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

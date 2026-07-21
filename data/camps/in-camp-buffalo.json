@@ -1,0 +1,45 @@
+{
+  "id": "in-camp-buffalo",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Buffalo",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:sagamore",
+      "parent": null,
+      "operating_status": "active",
+      "address": "9400 N Boy Scout Rd",
+      "city": "Monticello",
+      "state": "IN",
+      "lat": 40.889457,
+      "lon": -86.727241,
+      "website": "https://scoutingevent.com/162-100977",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-162/in-camp-buffalo (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/162-100977"
+          },
+          {
+            "url": "https://scoutingevent.com/162-100977"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

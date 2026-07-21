@@ -1,0 +1,44 @@
+{
+  "id": "ks-camp-mandan-mandan-scout-camp-and-training-center",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Mandan (Mandan Scout Camp and Training Center)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:quivira",
+      "parent": null,
+      "operating_status": "active",
+      "address": "11639 Garnett Rd",
+      "city": "Wright",
+      "state": "KS",
+      "lat": 37.825879,
+      "lon": -99.9162429,
+      "website": "https://scoutingevent.com/198-Mandan",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-198/ks-camp-mandan-mandan-scout-camp-and-training-center (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/198-Mandan"
+          },
+          {
+            "url": "https://scoutingevent.com/198-Mandan"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "fl-camp-elmore",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Elmore",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:south-florida",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3551 SW 142 Avenue",
+      "city": "Davie",
+      "state": "FL",
+      "lat": 26.0777,
+      "lon": -80.3424,
+      "website": "https://sfcscouting.org/camps/camp-elmore/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-084/fl-camp-elmore (unofficial community dataset)"
+          },
+          {
+            "url": "https://sfcscouting.org/camps/camp-elmore/"
+          },
+          {
+            "url": "https://sfcscouting.org/camps/camp-elmore/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

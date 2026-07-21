@@ -1,0 +1,44 @@
+{
+  "id": "ct-j-n-webster",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "J. N. Webster",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:connecticut-rivers",
+      "parent": null,
+      "operating_status": "active",
+      "address": "231 Ashford Center Road Ashford, Connecticut 06278",
+      "city": null,
+      "state": "CT",
+      "lat": 41.87092590332031,
+      "lon": -72.14141845703125,
+      "website": "https://scoutingevent.com/066-102135",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-066/ct-j-n-webster (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/066-102135"
+          },
+          {
+            "url": "https://scoutingevent.com/066-102135"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

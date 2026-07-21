@@ -1,0 +1,44 @@
+{
+  "id": "co-elkhorn-high-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Elkhorn High Adventure Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:adventure-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Red Feather Lakes",
+      "state": "CO",
+      "lat": null,
+      "lon": null,
+      "website": "https://awbsa.org/ehab/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-062/co-elkhorn-high-adventure-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://awbsa.org/ehab/"
+          },
+          {
+            "url": "https://awbsa.org/ehab/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

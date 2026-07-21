@@ -1,0 +1,41 @@
+{
+  "id": "mn-northern-tier",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Northern Tier National High Adventure Bases",
+      "camp_type": "high_adventure_base",
+      "operator": "national",
+      "council": null,
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Ely",
+      "state": "MN",
+      "lat": 47.9418,
+      "lon": -91.7273,
+      "website": "https://www.ntier.org/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.ntier.org/"
+          },
+          {
+            "url": "https://www.scouting.org/high-adventure/northern-tier/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "National High Adventure base (canoe country, Ely MN + Canada); coordinates approximate (Sommers base)."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ma-camp-norse",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Norse",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:narragansett",
+      "parent": null,
+      "operating_status": "active",
+      "address": "112 Parting Ways Rd",
+      "city": "Kingston",
+      "state": "MA",
+      "lat": 41.944402105916,
+      "lon": -70.742925413311,
+      "website": "https://scoutingevent.com/546-98625",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-546/ma-camp-norse (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/546-98625"
+          },
+          {
+            "url": "https://scoutingevent.com/546-98625"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

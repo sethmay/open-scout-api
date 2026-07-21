@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-emerson-boseker-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Emerson (Boseker Scout Reservation)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:california-inland-empire",
+      "parent": null,
+      "operating_status": "active",
+      "address": "53155 Idyllbrook Dr",
+      "city": "Idyllwild",
+      "state": "CA",
+      "lat": 33.7377247,
+      "lon": -116.7349892,
+      "website": "https://iescouts.org/summercamp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-045/ca-camp-emerson-boseker-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://iescouts.org/summercamp/"
+          },
+          {
+            "url": "https://iescouts.org/summercamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

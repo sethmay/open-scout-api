@@ -1,0 +1,44 @@
+{
+  "id": "pa-camp-sinoquipe-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sinoquipe Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:shenandoah-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "677 Boy Scout Rd",
+      "city": "Fort Littleton",
+      "state": "PA",
+      "lat": 40.0892691,
+      "lon": -77.9680072,
+      "website": "https://www.campsinoquipe.org/summercamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-598/pa-camp-sinoquipe-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.campsinoquipe.org/summercamp"
+          },
+          {
+            "url": "https://www.campsinoquipe.org/summercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

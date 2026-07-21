@@ -1,0 +1,44 @@
+{
+  "id": "mi-adventure-point",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Adventure Point",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:michigan-crossroads",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3213 Walker Ave NW",
+      "city": "Grand Rapids",
+      "state": "MI",
+      "lat": 42.989542,
+      "lon": -85.7118244,
+      "website": "https://michiganscouting.org/adventurepoint/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-272/mi-adventure-point (unofficial community dataset)"
+          },
+          {
+            "url": "https://michiganscouting.org/adventurepoint/"
+          },
+          {
+            "url": "https://michiganscouting.org/adventurepoint/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}
