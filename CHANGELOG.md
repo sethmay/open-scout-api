@@ -3,6 +3,17 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.9.0 (minor) — 2026-07-21
+
+- `PENDING` Add the awards catalog: new `award` entity schema + 52 earned awards &
+  recognitions (religious emblems, training awards, scouting honors / special recognitions)
+  extracted from the official Guide to Awards and Insignia (No. 33066). Facts only (name,
+  category, audience, square-knot + insignia catalog numbers, wear); no verbatim Guide prose.
+  Every catalog number was verified against the source and knot→award pairings anchor-checked
+  (`method: llm_extraction`, confidence 0.85). Wired through validate_data + build (per-entity
+  / index / `current/awards.json` + `CurrentAward` published contract). Excludes plain uniform
+  insignia, tenure pins, and the per-faith religious-emblem programs (deferred). 925 entities validate.
+
 ## 0.8.0 (minor) — 2026-07-21
 
 - `73c3363` Add the advancement-rank layer: new `rank` entity schema + the 7 Scouts BSA

@@ -49,6 +49,8 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | [`v1/current/ranks.json`](https://sethmay.github.io/open-scout-api/v1/current/ranks.json) | flat list of the 7 Scouts BSA ranks (Scout→Eagle) |
 | [`v1/ranks/index.json`](https://sethmay.github.io/open-scout-api/v1/ranks/index.json) | every rank |
 | `v1/ranks/{id}.json` | one rank: version history + events + its `requirement_sets` ids |
+| [`v1/current/awards.json`](https://sethmay.github.io/open-scout-api/v1/current/awards.json) | flat list of current awards & recognitions |
+| [`v1/awards/index.json`](https://sethmay.github.io/open-scout-api/v1/awards/index.json) · `v1/awards/{id}.json` | one award: category, audience, square-knot + insignia numbers |
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
 
 ```bash
@@ -79,6 +81,7 @@ git tag instead of `@main` for immutable version pinning once releases are tagge
 | **Requirement sets** | ✅ 148 documents (141 merit-badge + 7 rank) — full requirement tree (numbering, nesting, choose-N/option groups) + effective date + source links per revision. ⚠ Requirement **text is © Scouting America** (see below), not under this dataset's license. |
 | **Camps** | ✅ 469 entities — imported from [camp-finder](https://github.com/sethmay/camp-finder), classified by `camp_type` (361 resident, 68 day, 40 high-adventure) and `operator` (465 council + 4 national bases: Philmont, Florida Sea Base, Northern Tier, Summit/James C. Justice). Sessions/fees stay at the council site. |
 | **Ranks** | ✅ 7 Scouts BSA ranks (Scout→Eagle), one version each; requirement content in 7 rank `requirement-set` docs parsed from the official 2024 Scouts BSA Requirements (No. 33216), full verbatim tree © Scouting America. |
+| **Awards** | ✅ 52 earned awards & recognitions (knots, scouting honors, training awards, religious-emblem knot) from the Guide to Awards and Insignia (No. 33066) — facts only (category, audience, square-knot/insignia numbers, wear); catalog numbers source-verified (`llm_extraction`, conf 0.85). Excludes uniform insignia and per-faith emblems. |
 
 Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 

@@ -1,0 +1,18 @@
+{
+  "id": "negative-award-no-category",
+  "kind": "award",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Negative Award (missing required category)",
+      "audience": "adult",
+      "provenance": {
+        "sources": [{ "citation": "negative fixture" }],
+        "method": "curated",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ],
+  "notes": null
+}
