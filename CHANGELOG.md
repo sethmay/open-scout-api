@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
-- `PENDING` Import 469 camps from camp-finder into the camp dataset: classified by
+## 0.7.0 (minor) — 2026-07-21
+
+- `8de3faa` Import 469 camps from camp-finder into the camp dataset: classified by
   `camp_type` (361 resident / 68 day / 40 high-adventure) and `operator` (465 council +
   4 national HA bases — Philmont, Florida Sea Base, Northern Tier, Summit); Michigan
   Crossroads camps remapped to the kept council; demo councils excluded; description +
