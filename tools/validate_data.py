@@ -22,7 +22,8 @@ SCHEMA_DIR = ROOT / "schema" / "v1"
 DATA = ROOT / "data"
 
 DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json",
-            "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json"}
+            "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json",
+            "ranks": "rank.schema.json"}
 
 
 def load_schemas():
@@ -158,15 +159,16 @@ def main() -> int:
 
     def _count(ds):
         return len([p for p in (DATA / ds).glob("*.json") if p.name != "_events.json"])
-    ncouncils, nterr, nmb, ncamps = _count("councils"), _count("territories"), _count("merit-badges"), _count("camps")
+    ncouncils, nterr, nmb, ncamps, nranks = (_count("councils"), _count("territories"),
+                                             _count("merit-badges"), _count("camps"), _count("ranks"))
     if errs:
         print(f"{len(errs)} error(s):")
         for e in errs[:100]:
             print("  " + e)
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
-          f"{nrs} requirement-sets + {ncamps} camps valid (schema + referential + version "
-          f"windows + text-rights + camp coupling), {len(entities)} entities")
+          f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks valid "
+          f"(schema + referential + windows + text-rights + camp coupling), {len(entities)} entities")
     return 0
 
 

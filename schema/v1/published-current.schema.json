@@ -7,11 +7,11 @@
   "properties": {
     "version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
-    "kind": { "enum": ["council", "territory", "merit-badge", "camp"] },
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank"] },
     "count": { "type": "integer", "minimum": 0 },
     "items": {
       "type": "array",
-      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }] }
+      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }, { "$ref": "#/$defs/CurrentRank" }] }
     }
   },
   "required": ["version", "generated_at", "kind", "count", "items"],
@@ -75,6 +75,19 @@
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
       "required": ["id", "name", "camp_type", "operator", "council", "state", "city", "lat", "lon", "website", "program_types", "confidence"],
+      "additionalProperties": false
+    },
+    "CurrentRank": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "name": { "type": "string", "minLength": 1 },
+        "program": { "type": "string" },
+        "order": { "type": "integer", "minimum": 1 },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["id", "name", "program", "order", "url", "confidence"],
       "additionalProperties": false
     }
   }
