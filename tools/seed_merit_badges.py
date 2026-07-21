@@ -51,12 +51,24 @@ def write_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
+# Badges whose non-active status the generator handles explicitly (below). Any OTHER
+# non-active manifest row must fail loudly rather than be emitted as a current badge.
+HANDLED_NONACTIVE = {"citizenship-in-society"}
+
+
 def parse_manifest() -> list[dict]:
     out = []
     for line in MANIFEST.read_text("utf-8").splitlines():
-        m = re.match(r"\|\s*(.+?)\s*\|\s*`(.+?)`\s*\|\s*(\w+)\s*\|\s*(\S+)\s*\|\s*(\d+)\s*\|\s*(\S+)\s*\|", line)
-        if m and m.group(2) != "Slug":
-            out.append({"name": m.group(1), "slug": m.group(2), "status": m.group(3), "url": m.group(6)})
+        # a data row: "| Name | `slug` | status | ... |" — tolerate any later columns
+        m = re.match(r"\|\s*(.+?)\s*\|\s*`(.+?)`\s*\|\s*(\w+)\s*\|.*\|\s*(https?://\S+)\s*\|", line)
+        if not m or m.group(2) == "Slug":
+            continue
+        out.append({"name": m.group(1), "slug": m.group(2), "status": m.group(3), "url": m.group(4)})
+    if not out:
+        raise SystemExit("parse_manifest: no rows parsed — MANIFEST format changed")
+    unhandled = [r["slug"] for r in out if r["status"] != "active" and r["slug"] not in HANDLED_NONACTIVE]
+    if unhandled:
+        raise SystemExit(f"parse_manifest: non-active badges with no lifecycle handling: {unhandled}")
     return out
 
 
