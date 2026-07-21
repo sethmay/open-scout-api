@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "mahicantuck",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Mahicantuck",
+      "number": null,
+      "council": "council:greater-hudson-valley",
+      "section": "E18",
+      "region": "E",
+      "hq_city": "Mohegan Lake",
+      "hq_state": "NY",
+      "lat": 41.31085050000001,
+      "lon": -73.8477874,
+      "website": "https://www.ghvscouting.org/mahicantuck",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

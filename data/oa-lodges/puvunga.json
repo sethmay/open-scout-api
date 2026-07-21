@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "puvunga",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Puvunga",
+      "number": null,
+      "council": "council:long-beach-area",
+      "section": "G18S",
+      "region": "G",
+      "hq_city": "Long Beach",
+      "hq_state": "CA",
+      "lat": 33.8244563,
+      "lon": -118.1876533,
+      "website": "https://www.longbeachbsa.org/activities/oa",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

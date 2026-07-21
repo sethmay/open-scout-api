@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "mitigwa",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Mitigwa",
+      "number": null,
+      "council": "council:mid-iowa",
+      "section": "G6",
+      "region": "G",
+      "hq_city": "Des Moines",
+      "hq_state": "IA",
+      "lat": 41.5457743,
+      "lon": -93.7010009,
+      "website": "http://www.mitigwa-lodge.org",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

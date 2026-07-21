@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "unali-yi",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Unali'Yi",
+      "number": null,
+      "council": "council:coastal-carolina",
+      "section": "E7",
+      "region": "E",
+      "hq_city": "N. Charleston",
+      "hq_state": "SC",
+      "lat": 32.9761645,
+      "lon": -80.07581619999999,
+      "website": "http://site236.com",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

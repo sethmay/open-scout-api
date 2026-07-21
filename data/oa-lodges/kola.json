@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "kola",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Kola",
+      "number": null,
+      "council": "council:adventure-west",
+      "section": "G12N",
+      "region": "G",
+      "hq_city": "Greeley",
+      "hq_state": "CO",
+      "lat": 40.4024278,
+      "lon": -104.7162752,
+      "website": "https://awbsa.org/oa-kola-lodge",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

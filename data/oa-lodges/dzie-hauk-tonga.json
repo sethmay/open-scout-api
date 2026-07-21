@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "dzie-hauk-tonga",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Dzie-Hauk Tonga",
+      "number": null,
+      "council": "council:jayhawk-area",
+      "section": "G6",
+      "region": "G",
+      "hq_city": "Topeka",
+      "hq_state": "KS",
+      "lat": 39.0439654,
+      "lon": -95.6729178,
+      "website": "https://dziehauktonga.org",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

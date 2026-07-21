@@ -3,6 +3,15 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.13.0 (minor) — 2026-07-21
+
+- `PENDING` Add the Order of the Arrow lodges dataset: 238 `oa-lodge` entities from the
+  official OA lodge locator feed (oa-bsa.org), each linked to its chartering `council`
+  (238/238) with OA section/region, HQ city/state + coordinates, and website. Lodge officer
+  names and contact emails from the feed are excluded as PII. New `oa-lodge` schema +
+  `CurrentOALodge` published contract; wired through stamp_schema / validate_data / build /
+  build_sqlite. 1163 entities validate.
+
 ## 0.12.0 (minor) — 2026-07-21
 
 - `f0a5f29` Release automation + durability: `tools/build_sqlite.py` compiles the data into a

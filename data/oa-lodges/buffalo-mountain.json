@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "buffalo-mountain",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Buffalo Mountain",
+      "number": null,
+      "council": "council:pathway-to-the-rockies",
+      "section": "G12S",
+      "region": "G",
+      "hq_city": "Colorado Springs",
+      "hq_state": "CO",
+      "lat": 38.9012334,
+      "lon": -104.8528796,
+      "website": "http://buffalomountain.org",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

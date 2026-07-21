@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "ahoalan-nachpikin",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Ahoalan-Nachpikin",
+      "number": null,
+      "council": "council:chickasaw",
+      "section": "E3",
+      "region": "E",
+      "hq_city": "Memphis",
+      "hq_state": "TN",
+      "lat": 35.1297543,
+      "lon": -89.9772989,
+      "website": "http://www.chickasawoa.org",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

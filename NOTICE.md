@@ -74,5 +74,10 @@ noted here because their status shapes what we may redistribute:
   numbers, wear location) — uncopyrightable; the Guide's
   descriptive prose is © Scouting America and is not reproduced. The source PDFs are not
   redistributed (kept in git-ignored `.workbench/`).
+- **OA lodge locator feed (oa-bsa.org)** — the official Order of the Arrow lodge directory;
+  source for the `oa-lodge` catalog. We keep public/organizational facts only (lodge name,
+  chartering council, OA section/region, HQ city/state + coordinates, website). Lodge OFFICER
+  NAMES and CONTACT EMAILS in the feed are deliberately EXCLUDED as PII (especially youth
+  officers). Not redistributed wholesale; the feed URL is cited in provenance.
 
 Nothing here is guaranteed accurate or current; confirm against the council's own site.

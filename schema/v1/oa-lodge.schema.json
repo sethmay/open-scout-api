@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "title": "OA lodge (canonical entity file)",
+  "description": "One file per Order of the Arrow lodge: data/oa-lodges/<slug>.json. The OA is Scouting America's honor society; each council charters one lodge (a few large councils have more). Versioned entities (record-level SCD-2) so renames and mergers \u2014 which track council mergers \u2014 become lifecycle events. Seeded from the official OA lodge locator feed (oa-bsa.org); lodge officer names and contact emails from that feed are deliberately EXCLUDED as PII. `council` points at the chartering council; `section` is the OA administrative section code (region letter + section number, e.g. 'E6').",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "oa-lodge" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/OaLodgeVersion" },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced)."
+    },
+    "notes": { "type": ["string", "null"], "default": null }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "OaLodgeVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Lodge name during this window, e.g. 'Tamegonit'."
+        },
+        "number": {
+          "type": ["integer", "null"],
+          "minimum": 1,
+          "default": null,
+          "description": "Lodge number (iconic identifier). Null when not carried by the source feed; backfilled from lodge registries later."
+        },
+        "council": {
+          "anyOf": [{ "$ref": "common.schema.json#/$defs/EntityRef" }, { "type": "null" }],
+          "default": null,
+          "description": "The chartering council, 'council:<slug>'; null if the council isn't in this dataset."
+        },
+        "section": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "OA section code: region letter + section number, e.g. 'E6', 'G13W'."
+        },
+        "region": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "OA region letter, e.g. 'E'."
+        },
+        "hq_city": { "type": ["string", "null"], "default": null },
+        "hq_state": {
+          "anyOf": [{ "$ref": "common.schema.json#/$defs/StateCode" }, { "type": "null" }],
+          "default": null
+        },
+        "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90, "default": null },
+        "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180, "default": null },
+        "website": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "default": null,
+          "description": "Lodge website (organizational, not personal)."
+        }
+      },
+      "required": ["name"],
+      "unevaluatedProperties": false
+    }
+  }
+}

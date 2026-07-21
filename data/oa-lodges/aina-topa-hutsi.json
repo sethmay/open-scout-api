@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "aina-topa-hutsi",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Aina Topa Hutsi",
+      "number": null,
+      "council": "council:alamo-area",
+      "section": "G2",
+      "region": "G",
+      "hq_city": "San Antonio",
+      "hq_state": "TX",
+      "lat": 29.5404758,
+      "lon": -98.5280016,
+      "website": "https://www.alamoareascouting.org/oa",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}

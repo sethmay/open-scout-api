@@ -33,6 +33,9 @@ ENTITY_TABLES = {
     "ranks": ("ranks", [("program", "TEXT", "program"), ("rank_order", "INTEGER", "order")]),
     "awards": ("awards", [("category", "TEXT", "category"), ("audience", "TEXT", "audience"),
                           ("square_knot_no", "TEXT", "square_knot_no")]),
+    "oa-lodges": ("oa_lodges", [("council", "TEXT", "council"), ("section", "TEXT", "section"),
+                                ("region", "TEXT", "region"), ("hq_state", "TEXT", "hq_state"),
+                                ("lat", "REAL", "lat"), ("lon", "REAL", "lon")]),
 }
 
 

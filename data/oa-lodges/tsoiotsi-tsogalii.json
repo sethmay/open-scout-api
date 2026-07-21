@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
+  "id": "tsoiotsi-tsogalii",
+  "kind": "oa-lodge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Tsoiotsi Tsogalii",
+      "number": null,
+      "council": "council:old-north-state",
+      "section": "E8",
+      "region": "E",
+      "hq_city": "Greensboro",
+      "hq_state": "NC",
+      "lat": 36.0894401,
+      "lon": -79.8154267,
+      "website": "https://lodge70.org",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://oa-bsa.org/app/lodge-map/council_data.json"
+          }
+        ],
+        "method": "official_publication",
+        "verified_at": "2026-07-21",
+        "confidence": 1.0,
+        "notes": "Official OA lodge locator feed (snapshot 2026-07-21); chartering council linked by council number. Officer names and contact emails excluded as PII."
+      }
+    }
+  ],
+  "notes": null
+}
