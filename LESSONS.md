@@ -98,5 +98,22 @@ fold; read before similar work.
   datasets; consumers filter `current:true` for current facts.
 - **Catalog-layer house style for copyright-sensitive data:** publish only catalogue facts
   + curated flags, keep `description` null, cite the source + authoritative URL, and set
-  `confidence < 1` + a note when dates are approximate. Requirement/verbatim TEXT stays out
-  of scope until licensing is resolved (merit-badge catalog: facts only, no requirement text).
+  `confidence < 1` + a note when dates are approximate. For copyright-sensitive verbatim
+  text, the catalog layer stayed facts-only; the requirement-set layer later included it
+  under the enforced mixed-rights marking (next bullet).
+- **Mixed-rights datasets: prove the marking is ENFORCED, not just present.** For
+  third-party (e.g. Scouting America) verbatim text, pair a validator invariant
+  (`includes_official_text` ⇔ any `text` present, validate_data pass 4) with a schema
+  conditional (`if includes_official_text then text_rights` required, non-empty). Together
+  the copyright marker is un-droppable. This is the standing template for any future
+  third-party-text inclusion (ranks/awards reuse the requirement-set schema).
+- **When a change reverses a documented policy, update the canonical schema's own
+  `description` prose in the SAME patch** — not just NOTICE/README/PLAN/TODO. Schema
+  descriptions are load-bearing docs; a stale one (e.g. "summaries-only default") that
+  contradicts the data misleads the next maintainer.
+- **Honest parser degradation:** a workbook-style parser that hits irregular input must
+  make it visible in the data — flip a fallback flag, drop confidence (0.9→0.75), and stamp
+  `provenance.notes` + top-level `notes`. Never silently flatten. (seed_requirement_sets.py)
+- **Never re-run a SEED generator during a review** when its source is git-ignored/out-of-diff
+  — it rewrites tracked data. Review runs only `validate_*`/`build` (read committed data,
+  write only git-ignored `dist/`).

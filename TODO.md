@@ -62,15 +62,18 @@ as best-effort attributes of council history, never a standalone dataset.
   builds on push/PR, deploys to Pages on `main`.
 - **⚠ One-time manual: enable GitHub Pages.** Repo Settings → Pages → Source = "GitHub
   Actions". Until done, the deploy job has nothing to publish to (build still runs/gates).
-- **Add a README.** Repo is now public; PLAN deferred it until publication. Should cover:
-  what it is, the `v1/` API endpoints + example fetch, CC BY-NC-SA, unofficial disclaimer,
-  how to contribute. (Not written yet — was not part of the build slice.)
+- **Add a README. — DONE (0.3.1).**
 - **Release automation + CDN docs.** Tag releases; ship the JSON tree + a generated
   SQLite artifact (PLAN §6); document jsDelivr pinning; consider Zenodo DOI.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
   choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
   consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set.
+- **Published-projection schema for requirement-sets.** `build.py` fail-fast-validates
+  current/{councils,territories,merit-badges}.json against `published-current.schema.json`,
+  but `current/requirement-sets.json` + `requirement-sets/index.json` have no
+  published-contract schema (per-doc canonical validation covers content). Add one when the
+  requirement-set listing contract stabilizes.
 - **Requirement-text licensing — DECIDED (0.5.0).** Verbatim requirement text IS published,
   marked © Scouting America (`includes_official_text: true` + `text_rights`), excluded from
   CC BY-NC-SA, reproduced non-commercially with attribution + takedown. Revisit if SA

@@ -137,8 +137,8 @@ def main() -> None:
             "requirements": reqs,
             "provenance": {"sources": sources, "method": "curated", "verified_at": TODAY,
                            "confidence": 0.75 if used_fallback else 0.9,
-                           "notes": ("Requirement text verbatim from the official pamphlet; structure/numbering derived. "
-                                     + ("Some deeply-nested/irregular requirements were flattened during parsing — consult the source pamphlet for exact sub-structure." if used_fallback else ""))},
+                           "notes": ("Requirement text verbatim from the official pamphlet; structure/numbering derived."
+                                     + (" Some deeply-nested/irregular requirements were flattened during parsing — consult the source pamphlet for exact sub-structure." if used_fallback else ""))},
             "notes": ("Deep/irregular sub-structure was partially flattened; text complete, nesting approximate." if used_fallback else None),
         }
         (OUT / f"{slug}-{year}.json").write_text(
