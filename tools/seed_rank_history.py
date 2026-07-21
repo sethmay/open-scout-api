@@ -103,7 +103,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3l",
-            "text": "Camping , and"
+            "text": "Camping, and"
           },
           {
             "number": "3m",
@@ -113,15 +113,19 @@ DOCS = json.loads(r"""
       },
       {
         "number": "4",
-        "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: 9 Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide. 9 Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian quartermaster, chaplain aide, instructor, den chief. webmaster, or outdoor ethics guide. Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, quartermaster historian den chief, guide boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide. Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian quartermaster, chaplain aide, instructor, den chief. webmaster, or outdoor ethics guide. Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, quartermaster historian den chief, guide boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "5",
-        "text": "While a Life Scout, plan, develop, and give leadership to others in a service project helpful to any religious institution, any school, or your community. (The project must benefit an organization other than the Boy Scouts of America.) A project proposal must be approved by the organization benefiting from the effort, your Scoutmaster and unit committee, and the council or district before you start. You must use the Eagle Scout Service Project Workbook , BSA publication No. 512-927, in meeting this requirement. (To learn more about the Eagle Scout service project, see the Guide to Advancement , topics 9.0.2.0 through 9.0.2.15.)"
+        "text": "While a Life Scout, plan, develop, and give leadership to others in a service project helpful to any religious institution, any school, or your community. (The project must benefit an organization other than the Boy Scouts of America.) A project proposal must be approved by the organization benefiting from the effort, your Scoutmaster and unit committee, and the council or district before you start. You must use the Eagle Scout Service Project Workbook, BSA publication No. 512-927, in meeting this requirement. (To learn more about the Eagle Scout service project, see the Guide to Advancement, topics 9.0.2.0 through 9.0.2.15.)"
       },
       {
         "number": "6",
-        "text": "While a Life Scout, participate in a Scoutmaster conference."
+        "text": "While a Life Scout, participate in a Scoutmaster conference. In preparation for your board of review, prepare and attach to your Eagle Scout Rank Application a statement of your ambitions and life purpose and a listing of positions held in your religious institution, school, camp, community, or other organizations, during which you demonstrated leadership skills. Include honors and awards received during this service."
+      },
+      {
+        "number": "7",
+        "text": "Successfully complete your board of review for the Eagle Scout rank. (This requirement may be met after age 18 in accordance with Guide to Advancement, topic 8.0.3.1.)"
       }
     ],
     "provenance": {
@@ -213,7 +217,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3l",
-            "text": "Camping , and"
+            "text": "Camping, and"
           },
           {
             "number": "3m",
@@ -223,15 +227,19 @@ DOCS = json.loads(r"""
       },
       {
         "number": "4",
-        "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: 9 Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 11 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "5",
-        "text": "While a Life Scout, plan, develop, and give leadership to others in a service project helpful to any religious institution, any school, or your community. (The project must benefit an organization other than the Boy Scouts of America.) A project proposal must be approved by the organization benefiting from the effort, your Scoutmaster and unit committee, and the council or district before you start. You must use the Eagle Scout Service Project Workbook , BSA publication No. 512-927, in meeting this requirement. (To learn more about the Eagle Scout service project, see the Guide to Advancement , topics 9.0.2.0 through 9.0.2.15.)"
+        "text": "While a Life Scout, plan, develop, and give leadership to others in a service project helpful to any religious institution, any school, or your community. (The project must benefit an organization other than the Boy Scouts of America.) A project proposal must be approved by the organization benefiting from the effort, your Scoutmaster and unit committee, and the council or district before you start. You must use the Eagle Scout Service Project Workbook, BSA publication No. 512-927, in meeting this requirement. (To learn more about the Eagle Scout service project, see the Guide to Advancement, topics 9.0.2.0 through 9.0.2.15.)"
       },
       {
         "number": "6",
-        "text": "While a Life Scout, participate in a Scoutmaster conference."
+        "text": "While a Life Scout, participate in a Scoutmaster conference. In preparation for your board of review, prepare and attach to your Eagle Scout Rank Application a statement of your ambitions and life purpose and a listing of positions held in your religious institution, school, camp, community, or other organizations, during which you demonstrated leadership skills. Include honors and awards received during this service."
+      },
+      {
+        "number": "7",
+        "text": "Successfully complete your board of review for the Eagle Scout rank. (This requirement may be met after age 18 in accordance with Guide to Advancement, topic 8.0.3.1.)"
       }
     ],
     "provenance": {
@@ -327,7 +335,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3m",
-            "text": "Camping , and"
+            "text": "Camping, and"
           },
           {
             "number": "3n",
@@ -337,15 +345,19 @@ DOCS = json.loads(r"""
       },
       {
         "number": "4",
-        "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: 9 Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 11 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "5",
-        "text": "While a Life Scout, plan, develop, and give leadership to others in a service project helpful to any religious institution, any school, or your community. (The project must benefit an organization other than the Boy Scouts of America.) A project proposal must be approved by the organization benefiting from the effort, your Scoutmaster and unit committee, and the council or district before you start. You must use the Eagle Scout Service Project Workbook , BSA publication No. 512-927, in meeting this requirement. (To learn more about the Eagle Scout service project, see the Guide to Advancement , topics 9.0.2.0 through 9.0.2.15.)"
+        "text": "While a Life Scout, plan, develop, and give leadership to others in a service project helpful to any religious institution, any school, or your community. (The project must benefit an organization other than the Boy Scouts of America.) A project proposal must be approved by the organization benefiting from the effort, your Scoutmaster and unit committee, and the council or district before you start. You must use the Eagle Scout Service Project Workbook, BSA publication No. 512-927, in meeting this requirement. (To learn more about the Eagle Scout service project, see the Guide to Advancement, topics 9.0.2.0 through 9.0.2.15.)"
       },
       {
         "number": "6",
-        "text": "While a Life Scout, participate in a Scoutmaster conference."
+        "text": "While a Life Scout, participate in a Scoutmaster conference. In preparation for your board of review, prepare and attach to your Eagle Scout Rank Application a statement of your ambitions and life purpose and a listing of positions held in your religious institution, school, camp, community, or other organizations, during which you demonstrated leadership skills. Include honors and awards received during this service."
+      },
+      {
+        "number": "7",
+        "text": "Successfully complete your board of review for the Eagle Scout rank. (This requirement may be met after age 18 in accordance with Guide to Advancement, topic 8.0.3.1.)"
       }
     ],
     "provenance": {
@@ -477,7 +489,7 @@ DOCS = json.loads(r"""
         "children": [
           {
             "number": "6a",
-            "text": "Successfully complete the BSA swimmer test. 3"
+            "text": "Successfully complete the BSA swimmer test."
           },
           {
             "number": "6b",
@@ -706,7 +718,7 @@ DOCS = json.loads(r"""
         "children": [
           {
             "number": "6a",
-            "text": "Successfully complete the BSA swimmer test. 3&4"
+            "text": "Successfully complete the BSA swimmer test."
           },
           {
             "number": "6b",
@@ -722,7 +734,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "6e",
-            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.) 4"
+            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)"
           }
         ]
       },
@@ -935,7 +947,7 @@ DOCS = json.loads(r"""
         "children": [
           {
             "number": "6a",
-            "text": "Successfully complete the BSA swimmer test. 4&5"
+            "text": "Successfully complete the BSA swimmer test."
           },
           {
             "number": "6b",
@@ -951,7 +963,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "6e",
-            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.) 5"
+            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)"
           }
         ]
       },
@@ -1164,7 +1176,7 @@ DOCS = json.loads(r"""
         "children": [
           {
             "number": "6a",
-            "text": "Successfully complete the BSA swimmer test. 4&5"
+            "text": "Successfully complete the BSA swimmer test."
           },
           {
             "number": "6b",
@@ -1180,7 +1192,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "6e",
-            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.) 5"
+            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)"
           }
         ]
       },
@@ -1393,7 +1405,7 @@ DOCS = json.loads(r"""
         "children": [
           {
             "number": "6a",
-            "text": "Successfully complete the BSA swimmer test. 4&5"
+            "text": "Successfully complete the BSA swimmer test."
           },
           {
             "number": "6b",
@@ -1409,7 +1421,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "6e",
-            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.) 5"
+            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)"
           }
         ]
       },
@@ -1622,7 +1634,7 @@ DOCS = json.loads(r"""
         "children": [
           {
             "number": "6a",
-            "text": "Successfully complete the BSA swimmer test. 4&5"
+            "text": "Successfully complete the BSA swimmer test."
           },
           {
             "number": "6b",
@@ -1638,7 +1650,7 @@ DOCS = json.loads(r"""
           },
           {
             "number": "6e",
-            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.) 5"
+            "text": "With a helper and a practice victim, show a line rescue both as tender and rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)"
           }
         ]
       },
@@ -1763,7 +1775,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "3",
-        "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle . You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement #3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
+        "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement #3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
       },
       {
         "number": "4",
@@ -1771,7 +1783,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 7 Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian, quartermaster, chaplain aide, instructor, den chief, webmaster, or outdoor ethics guide Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, den chief, quartermaster, historian, guide, boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster, Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian, quartermaster, chaplain aide, instructor, den chief, webmaster, or outdoor ethics guide Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, den chief, quartermaster, historian, guide, boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster, Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
@@ -1817,7 +1829,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Life rank. 8"
+        "text": "Successfully complete your board of review for the Life rank. For Varsity Scouts working on Boy Scout requirements, replace \"troop\" with \"team\" and \"Scoutmaster\" with \"Varsity Scout Coach.\" For Venturers working on Boy Scout requirements, replace \"troop\" with \"crew\" and \"Scoutmaster\" with \"Crew Advisor.\" For Sea Scouts working on Boy Scout requirements, replace \"troop\" with \"ship\" and \"Scoutmaster\" with \"Skipper.\" Assistant patrol leader is not an approved position of responsibility for the Star, Life, or Eagle rank. If the board of review does not approve the Scout\u2019s advancement, the decision may be appealed in accordance with Guide to Advancement, topic 8.0.4.0. Source: 2016 Boy Scout Rank Requirements (524-012) NOTE: The footnote to Requirement 3 means that, for example, a Scout can use both Lifesaving AND Emergency Preparedness, Environmental Science AND Sustainability, and/or Swimming, Hiking, AND Cycling toward the requirement of 3 more from the required list for Eagle when working toward Life Scout.) Also note that the asterisks are specifically placed on the lines marked \"(Eagle required)\" signifying that the note applies to these badges. The Guide to Advancement explicitly states this: Also note that Requirement 8 - (Successfully complete your board of review for Life rank.) MAY be done AFTER the Scout has reached age 18. All other requirements must be completed BEFORE the Scout's 18th Birthday. The following additional requirements apply to boys registered in the Venturing Program or as Sea Scouts."
       }
     ],
     "provenance": {
@@ -1861,7 +1873,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "3",
-        "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle . You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement #3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
+        "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement #3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
       },
       {
         "number": "4",
@@ -1869,7 +1881,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 9 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
@@ -1915,7 +1927,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Life rank. 10"
+        "text": "Successfully complete your board of review for the Life rank. For Venturers working on Boy Scout requirements, replace \"troop\" with \"crew\" and \"Scoutmaster\" with \"Crew Advisor.\" For Sea Scouts working on Boy Scout requirements, replace \"troop\" with \"ship\" and \"Scoutmaster\" with \"Skipper.\" Assistant patrol leader is not an approved position of responsibility for the Star, Life, or Eagle rank. If the board of review does not approve the Scout\u2019s advancement, the decision may be appealed in accordance with Guide to Advancement, topic 8.0.4.0. The following additional requirements apply to boys registered in the Venturing Program or as Sea Scouts."
       }
     ],
     "provenance": {
@@ -1967,7 +1979,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 9 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
@@ -2013,7 +2025,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Life rank. 10"
+        "text": "Successfully complete your board of review for the Life rank. For Venturers working on Scouts BSA Requirements, replace \"troop\" with \"crew\" and \"Scoutmaster\" with \"Crew Advisor.\" For Sea Scouts working on Scouts BSA Requirements, replace \"troop\" with \"ship\" and \"Scoutmaster\" with \"Skipper.\" Assistant patrol leader is not an approved position of responsibility for the Star, Life, or Eagle rank. If the board of review does not approve the Scout\u2019s advancement, the decision may be appealed in accordance with Guide to Advancement, topic 8.0.4.0. The following additional requirements apply to boys registered in the Venturing Program or as Sea Scouts."
       }
     ],
     "provenance": {
@@ -2065,7 +2077,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 9 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a Star Scout, serve actively in your troop for six months in one or more of the following positions of responsibility (or carry out a unit leader-assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
@@ -2111,7 +2123,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Life rank. 10"
+        "text": "Successfully complete your board of review for the Life rank. For Venturers working on Scouts BSA Requirements, replace \"troop\" with \"crew\" and \"Scoutmaster\" with \"Crew Advisor.\" For Sea Scouts working on Scouts BSA Requirements, replace \"troop\" with \"ship\" and \"Scoutmaster\" with \"Skipper.\" Assistant patrol leader is not an approved position of responsibility for the Star, Life, or Eagle rank. If the board of review does not approve the Scout\u2019s advancement, the decision may be appealed in accordance with Guide to Advancement, topic 8.0.4.0. The following additional requirements apply to boys registered in the Venturing Program or as Sea Scouts."
       }
     ],
     "provenance": {
@@ -2228,7 +2240,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade. 1"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade."
       },
       {
         "number": "7",
@@ -2349,7 +2361,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade. 1"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade."
       },
       {
         "number": "7",
@@ -2470,7 +2482,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade or view the Personal Safety Awareness videos ( with your parent or Guardian's permission). 1"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guide \" and earn the Cyber Chip Award for your grade or view the Personal Safety Awareness videos (with your parent or Guardian's permission)."
       },
       {
         "number": "7",
@@ -2567,11 +2579,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3b",
-            "text": "Using a compass and a map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian. 2"
+            "text": "Using a compass and a map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian."
           },
           {
             "number": "3c",
-            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them. 2"
+            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them."
           },
           {
             "number": "3d",
@@ -2787,11 +2799,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3b",
-            "text": "Using a compass and a map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian. 2"
+            "text": "Using a compass and a map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian."
           },
           {
             "number": "3c",
-            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them. 2"
+            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them."
           },
           {
             "number": "3d",
@@ -2812,11 +2824,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "5b",
-            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place. 3"
+            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place."
           },
           {
             "number": "5c",
-            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects. 3"
+            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects."
           },
           {
             "number": "5d",
@@ -3007,11 +3019,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3b",
-            "text": "Using a compass and map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian. 2"
+            "text": "Using a compass and map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian."
           },
           {
             "number": "3c",
-            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them. 2"
+            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them."
           },
           {
             "number": "3d",
@@ -3032,11 +3044,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "5b",
-            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place. 3"
+            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place."
           },
           {
             "number": "5c",
-            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects. 3"
+            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects."
           },
           {
             "number": "5d",
@@ -3227,11 +3239,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3b",
-            "text": "Using a compass and map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian. 2"
+            "text": "Using a compass and map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian."
           },
           {
             "number": "3c",
-            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them. 2"
+            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them."
           },
           {
             "number": "3d",
@@ -3252,11 +3264,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "5b",
-            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place. 3"
+            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place."
           },
           {
             "number": "5c",
-            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects. 3"
+            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects."
           },
           {
             "number": "5d",
@@ -3447,11 +3459,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "3b",
-            "text": "Using a compass and map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian. 2"
+            "text": "Using a compass and map together, take a five-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian."
           },
           {
             "number": "3c",
-            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them. 2"
+            "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them."
           },
           {
             "number": "3d",
@@ -3472,11 +3484,11 @@ DOCS = json.loads(r"""
           },
           {
             "number": "5b",
-            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place. 3"
+            "text": "Demonstrate your ability to pass the BSA beginner test. Jump feetfirst into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place."
           },
           {
             "number": "5c",
-            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects. 3"
+            "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects."
           },
           {
             "number": "5d",
@@ -3618,7 +3630,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "3",
-        "text": "Earn six merit badges, including any four from the required list for Eagle . You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
+        "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
       },
       {
         "number": "4",
@@ -3626,11 +3638,11 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 4 Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian, quartermaster, chaplain aide, instructor, den chief, webmaster, or outdoor ethics guide Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, den chief, quartermaster, historian, guide, boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster, Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Varsity Scout team. Captain, co-captain, program manager, squad leader, team secretary, Order of the Arrow team representative, librarian, historian, quartermaster, chaplain aide, instructor, den chief, webmaster, or outdoor ethics guide Venturing crew / Sea Scout ship. President, vice president, secretary, treasurer, den chief, quartermaster, historian, guide, boatswain, boatswain's mate, yeoman, purser, storekeeper, or webmaster, Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \"How to Protect Your Children from Child Abuse: A Parents Guide\" and earn the Cyber Chip Award for your grade. 5"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \"How to Protect Your Children from Child Abuse: A Parents Guide\" and earn the Cyber Chip Award for your grade."
       },
       {
         "number": "7",
@@ -3638,7 +3650,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Star rank. 6"
+        "text": "Successfully complete your board of review for the Star rank."
       }
     ],
     "provenance": {
@@ -3682,7 +3694,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "3",
-        "text": "Earn six merit badges, including any four from the required list for Eagle . You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
+        "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. Name of Merit Badge Date Earned (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ (Eagle required) _________________________ _________________________ _________________________ _________________________ _________________________ _________________________"
       },
       {
         "number": "4",
@@ -3690,11 +3702,11 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 6 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Boy Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guid e\" and earn the Cyber Chip Award for your grade. 7"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guid e\" and earn the Cyber Chip Award for your grade."
       },
       {
         "number": "7",
@@ -3702,7 +3714,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Star rank. 8"
+        "text": "Successfully complete your board of review for the Star rank."
       }
     ],
     "provenance": {
@@ -3746,7 +3758,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "3",
-        "text": "Earn six merit badges, including any four from the required list for Eagle . You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list."
+        "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the 17 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list."
       },
       {
         "number": "4",
@@ -3754,11 +3766,11 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 6 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guid e\" and earn the Cyber Chip Award for your grade. 7"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guid e\" and earn the Cyber Chip Award for your grade."
       },
       {
         "number": "7",
@@ -3766,7 +3778,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Star rank. 8"
+        "text": "Successfully complete your board of review for the Star rank."
       }
     ],
     "provenance": {
@@ -3810,7 +3822,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "3",
-        "text": "Earn six merit badges, including any four from the required list for Eagle . You may choose any of the merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list."
+        "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list."
       },
       {
         "number": "4",
@@ -3818,11 +3830,11 @@ DOCS = json.loads(r"""
       },
       {
         "number": "5",
-        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide 6 Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        "text": "While a First Class Scout, serve actively in your troop for four months in one or more of the following positions of responsibility (or carry out a Scoutmaster assigned leadership project to help the troop): Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, bugler, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide Venturing crew President, vice president, secretary, treasurer, den chief, historian, guide, quartermaster, chaplain aide, or outdoor ethics guide Sea Scout ship. boatswain, boatswain's mate, purser, yeoman, storekeeper, or crew leader, media specialist, specialist, den chief, or chaplain aide. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
       },
       {
         "number": "6",
-        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guid e\" and earn the Cyber Chip Award for your grade or view the Personal Safety Awareness videos ( with your parent or Guardian's permission). 7"
+        "text": "With your parent or guardian, complete the exercises in the pamphlet \" How to Protect Your Children from Child Abuse: A Parents Guid e\" and earn the Cyber Chip Award for your grade or view the Personal Safety Awareness videos (with your parent or Guardian's permission)."
       },
       {
         "number": "7",
@@ -3830,7 +3842,7 @@ DOCS = json.loads(r"""
       },
       {
         "number": "8",
-        "text": "Successfully complete your board of review for the Star rank. 8"
+        "text": "Successfully complete your board of review for the Star rank."
       }
     ],
     "provenance": {
