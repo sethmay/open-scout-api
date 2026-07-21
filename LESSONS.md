@@ -80,3 +80,23 @@ fold; read before similar work.
   regex.** `territory_number` now comes from the referenced territory's canonical `number`,
   not `cst-(\d+)` on the slug — the regex silently yields null for any future current
   entity whose slug breaks the convention while the canonical number is right there.
+
+## Datasets / catalog seeding
+
+- **`validate_data.py`'s `ENDED_AS_PRED` must stay in lockstep with the `EventType`
+  enum.** The retired-entity invariant only fires for an entity ended as a `predecessor`
+  if its event type is in that set (`merged`/`absorbed`/`split`/`superseded`). Add any new
+  ending event type there or a retired entity can silently keep an open (current) version.
+- **The published `items` `oneOf` union is safe only while every current-projection type
+  has disjoint `required` fields under `additionalProperties:false`.** CurrentCouncil /
+  CurrentTerritory / CurrentMeritBadge don't overlap, so exactly one matches. A future
+  current type that isn't disjoint makes `oneOf` reject valid items (0 or 2 matches) — keep
+  them disjoint or switch to a discriminated union on `kind`.
+- **A retired entity's `index.json` row reflects its LAST version** (e.g. Citizenship in
+  Society shows `eagle_required:true, current:false`), so a raw count of a boolean facet in
+  `*/index.json` exceeds the `current/*.json` count. Intentional + consistent across
+  datasets; consumers filter `current:true` for current facts.
+- **Catalog-layer house style for copyright-sensitive data:** publish only catalogue facts
+  + curated flags, keep `description` null, cite the source + authoritative URL, and set
+  `confidence < 1` + a note when dates are approximate. Requirement/verbatim TEXT stays out
+  of scope until licensing is resolved (merit-badge catalog: facts only, no requirement text).

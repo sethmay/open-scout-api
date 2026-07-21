@@ -13,7 +13,7 @@ PLAN.md §1).
 |---|---|---|---|---|
 | 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0):** 235 councils, 229 assigned to CSTs. Follow-ups (name/HQ reconcile, defunct dispositions, rename/founding history) in Queue. | camp-finder `data/councils/*.json`; official CST maps (territory); Wikipedia council list |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
-| 3 | **Merit badge catalog** | ✅ `merit-badge` | Most-wanted dataset. Include 100+ discontinued badges (pure metadata, no copyright risk). Supersession events (computers→digital-technology). Eagle-required is time-varying (Citizenship in Society, 2022-07). | scouting.org badge list; Wikipedia; usscouts.org change logs; The Badge Archive |
+| 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | Requirement diffs by effective year — gold for advancement tools. ⚠ summaries only until license decision (see queue). | Scouts BSA Requirements book editions; usscouts.org change logs; Internet Archive |
 | 5 | **Camps (registry + history)** | ✅ `camp` | Import from camp-finder (keep IDs, `method: imported`). Historical/"lost camps" have a passionate community. Sessions/fees stay in camp-finder. | camp-finder dataset; usscouts.org OCD (robots-blocked — ask admin for dump); council sites |
 | 6 | **Rank requirement history** | ⬜ reuse `requirement-set` (`subject: rank:*`) + new `rank` entity schema | Same machinery as badges. 2016/2022 Scouts BSA revisions; 2024 Cub Scouts overhaul. | Requirements book editions; usscouts.org |
@@ -43,6 +43,14 @@ as best-effort attributes of council history, never a standalone dataset.
 - **Council rename/founding history.** Councils currently have a single version
   (valid_from/to = null) — camp-finder is a current snapshot. Add historical versions +
   rename/merger events as sourced (the temporal model already supports it).
+- **Merit badge follow-ups (after catalog seed).** (a) **Requirement content**: build
+  `requirement-set` docs per badge — summaries-only until the licensing question below is
+  settled; the workbooks repo's `badges/<slug>/<year>.md` is SA-copyrighted requirement
+  *text*, so extract structure/summaries, not verbatim. (b) **Historical discontinued
+  badges**: catalog carries only CiS + Computers as historical; add the full 100+
+  discontinued set (Wikipedia "Discontinued merit badges") with supersede/discontinue
+  events. (c) **Enrich** `description` + `tags` (both currently empty/null). Note:
+  regenerating needs the workbooks repo at `.workbench/workbooks-main/`.
 - **Finalize schema `$id` base URL. — DONE (0.3.0).** Confirmed
   `https://sethmay.github.io/open-scout-api/schema/v1/` (owner `sethmay`); build serves
   schemas at that path, no re-emit needed.

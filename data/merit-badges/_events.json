@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "id": "discontinue-citizenship-in-society-2026",
+      "type": "discontinued",
+      "date": "2026-02-27",
+      "participants": [
+        {
+          "ref": "merit-badge:citizenship-in-society",
+          "role": "subject"
+        }
+      ],
+      "notes": "Scouting America discontinued the badge effective 2026-02-27; grace period through 2026 for Scouts who had started it.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "supersede-computers-by-digital-technology-2014",
+      "type": "superseded",
+      "date": "2014",
+      "participants": [
+        {
+          "ref": "merit-badge:computers",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:digital-technology",
+          "role": "successor"
+        }
+      ],
+      "notes": "Digital Technology replaced the Computers merit badge in 2014.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Discontinued merit badges (Boy Scouts of America), Wikipedia"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.7
+      }
+    }
+  ]
+}

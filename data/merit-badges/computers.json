@@ -1,0 +1,27 @@
+{
+  "id": "computers",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": "2014",
+      "name": "Computers",
+      "eagle_required": false,
+      "tags": [],
+      "description": null,
+      "url": null,
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Discontinued merit badges (Boy Scouts of America), Wikipedia"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.7,
+        "notes": "Historical badge, not in the current catalogue; replaced by Digital Technology. Dates approximate."
+      }
+    }
+  ],
+  "notes": "Superseded by Digital Technology in 2014."
+}

@@ -39,6 +39,9 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | `v1/councils/{id}.json` | one council: full version history + its lifecycle events |
 | [`v1/territories/index.json`](https://sethmay.github.io/open-scout-api/v1/territories/index.json) | every territory (CSTs, legacy regions, merged NSTs) |
 | `v1/territories/{id}.json` | one territory: version history + events |
+| [`v1/current/merit-badges.json`](https://sethmay.github.io/open-scout-api/v1/current/merit-badges.json) | flat list of current merit badges (with `eagle_required`) |
+| [`v1/merit-badges/index.json`](https://sethmay.github.io/open-scout-api/v1/merit-badges/index.json) | every merit badge, incl. retired/historical |
+| `v1/merit-badges/{id}.json` | one merit badge: version history + events |
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
 
 ```bash
@@ -65,7 +68,7 @@ git tag instead of `@main` for immutable version pinning once releases are tagge
 |---|---|
 | **Councils** | ✅ 235 entities — 229 current, assigned to the 14 Council Service Territories; 6 historical (merged/renamed) with lifecycle events |
 | **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
-| **Merit badges / requirements** | ⬜ schemas drafted; population planned |
+| **Merit badges** | ✅ 142 entities — 140 current (17 Eagle-required incl. alternatives), Citizenship in Society (introduced 2021 → Eagle-required 2022 → discontinued 2026), Computers→Digital Technology supersession. Requirement *content* is a separate later pass. |
 | **Camps** | ⬜ import from the sibling [camp-finder](https://github.com/sethmay/camp-finder) planned |
 
 Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).

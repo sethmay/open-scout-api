@@ -104,6 +104,7 @@ def main() -> None:
 
     councils, cevents = load_dataset("councils")
     territories, tevents = load_dataset("territories")
+    merit_badges, mbevents = load_dataset("merit-badges")
 
     # --- territories: per-entity + index + current -------------------------
     current_terr_ids: set[str] = set()
@@ -149,12 +150,29 @@ def main() -> None:
                                  "website": ov.get("website"), "territory": terr_ref,
                                  "territory_number": tnum, "confidence": ov["provenance"]["confidence"]})
 
+    # --- merit badges: per-entity + index + current ------------------------
+    mb_index = []
+    current_badges = []
+    for e in merit_badges:
+        ref = f"merit-badge:{e['id']}"
+        write_json(DIST / "v1" / "merit-badges" / f"{e['id']}.json", {**e, "events": events_for(ref, mbevents)})
+        ov = open_version(e)
+        last = ov or e["versions"][-1]
+        mb_index.append({"id": e["id"], "name": last["name"],
+                         "eagle_required": last["eagle_required"], "current": ov is not None})
+        if ov is not None:
+            current_badges.append({"id": e["id"], "name": ov["name"],
+                                   "eagle_required": ov["eagle_required"], "tags": ov.get("tags", []),
+                                   "url": ov.get("url"), "confidence": ov["provenance"]["confidence"]})
+
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
     current_council_coll = coll("council", current_councils)
     current_terr_coll = coll("territory", current_territories)
+    current_badge_coll = coll("merit-badge", current_badges)
     # validate the current collections against the published consumer contract (fail-fast)
-    for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll)]:
+    for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll),
+                     ("merit-badges", current_badge_coll)]:
         errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
                  for er in collection_validator.iter_errors(c)]
     if errs:
@@ -162,8 +180,10 @@ def main() -> None:
 
     write_json(DIST / "v1" / "current" / "councils.json", current_council_coll)
     write_json(DIST / "v1" / "current" / "territories.json", current_terr_coll)
+    write_json(DIST / "v1" / "current" / "merit-badges.json", current_badge_coll)
     write_json(DIST / "v1" / "councils" / "index.json", coll("council", council_index))
     write_json(DIST / "v1" / "territories" / "index.json", coll("territory", terr_index))
+    write_json(DIST / "v1" / "merit-badges" / "index.json", coll("merit-badge", mb_index))
 
     write_json(DIST / "v1" / "meta.json", {
         "name": "Open Scout API", "version": version, "generated_at": now,
@@ -172,19 +192,24 @@ def main() -> None:
         "datasets": {
             "councils": {"total": len(councils), "current": len(current_councils)},
             "territories": {"total": len(territories), "current": len(current_territories)},
+            "merit-badges": {"total": len(merit_badges), "current": len(current_badges)},
         },
         "endpoints": ["v1/meta.json", "v1/councils/index.json", "v1/councils/{id}.json",
                       "v1/territories/index.json", "v1/territories/{id}.json",
-                      "v1/current/councils.json", "v1/current/territories.json"],
+                      "v1/merit-badges/index.json", "v1/merit-badges/{id}.json",
+                      "v1/current/councils.json", "v1/current/territories.json",
+                      "v1/current/merit-badges.json"],
     })
 
-    (DIST / "index.html").write_text(_landing(version, now, len(current_councils), len(current_territories)),
-                                     encoding="utf-8", newline="\n")
+    (DIST / "index.html").write_text(
+        _landing(version, now, len(current_councils), len(current_territories), len(current_badges)),
+        encoding="utf-8", newline="\n")
     print(f"built dist/ v{version}: {len(councils)} councils ({len(current_councils)} current), "
-          f"{len(territories)} territories ({len(current_territories)} current)")
+          f"{len(territories)} territories ({len(current_territories)} current), "
+          f"{len(merit_badges)} merit badges ({len(current_badges)} current)")
 
 
-def _landing(version, now, ncouncils, nterr) -> str:
+def _landing(version, now, ncouncils, nterr, nbadges) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -200,16 +225,17 @@ def _landing(version, now, ncouncils, nterr) -> str:
 <p><strong>Unofficial community project.</strong> Not affiliated with, endorsed by, or sponsored by
 Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
 <h2>Datasets</h2>
-<p>{ncouncils} current councils across {nterr} Council Service Territories.</p>
+<p>{ncouncils} current councils across {nterr} Council Service Territories; {nbadges} current merit badges.</p>
 <h2>Endpoints</h2>
 <ul>
  <li><a href="v1/meta.json"><code>v1/meta.json</code></a> — version, counts, license</li>
  <li><a href="v1/current/councils.json"><code>v1/current/councils.json</code></a> — flat current council list</li>
  <li><a href="v1/current/territories.json"><code>v1/current/territories.json</code></a></li>
+ <li><a href="v1/current/merit-badges.json"><code>v1/current/merit-badges.json</code></a> — flat current merit badge list</li>
  <li><a href="v1/councils/index.json"><code>v1/councils/index.json</code></a> — all councils (incl. historical)</li>
  <li><code>v1/councils/&lt;id&gt;.json</code> — one council with its lifecycle events</li>
- <li><a href="v1/territories/index.json"><code>v1/territories/index.json</code></a></li>
- <li><code>v1/territories/&lt;id&gt;.json</code></li>
+ <li><a href="v1/territories/index.json"><code>v1/territories/index.json</code></a> · <code>v1/territories/&lt;id&gt;.json</code></li>
+ <li><a href="v1/merit-badges/index.json"><code>v1/merit-badges/index.json</code></a> · <code>v1/merit-badges/&lt;id&gt;.json</code></li>
  <li><a href="schema/v1/council.schema.json"><code>schema/v1/</code></a> — JSON Schemas</li>
 </ul>
 <p class="muted">Source &amp; issues: <a href="https://github.com/sethmay/open-scout-api">github.com/sethmay/open-scout-api</a></p>

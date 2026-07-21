@@ -3,6 +3,12 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+- `PENDING` Seed merit badge catalog: 142 badges (140 current, 17 Eagle-required incl.
+  alternatives) from the OpenScouting/workbooks manifest + scouting.org; Citizenship in
+  Society lifecycle (2021 → Eagle-required 2022 → discontinued 2026) and Computers→Digital
+  Technology supersession as events; `url` added to merit-badge schema; build + validators
+  + published `current` projection extended to the merit-badges dataset
+
 ## 0.3.1 (patch) — 2026-07-21
 
 - `82c1ca5` Add README (repo is public): what it is, unofficial disclaimer, live `v1/` API
