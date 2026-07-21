@@ -1,0 +1,44 @@
+{
+  "id": "wv-james-c-justice-national-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "James C. Justice National Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "national",
+      "council": null,
+      "parent": null,
+      "operating_status": "active",
+      "address": "2550 Jack Furst Drive",
+      "city": "Glen Jean",
+      "state": "WV",
+      "lat": 37.9159909,
+      "lon": -81.1230247,
+      "website": "https://www.summitbsa.org/scout-camp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-999/wv-james-c-justice-national-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.summitbsa.org/scout-camp/"
+          },
+          {
+            "url": "https://www.summitbsa.org/scout-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

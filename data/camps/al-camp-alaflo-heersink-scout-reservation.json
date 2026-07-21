@@ -1,0 +1,45 @@
+{
+  "id": "al-camp-alaflo-heersink-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Alaflo (Heersink Scout Reservation)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:alabama-florida",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1687 County Road 156",
+      "city": "New Brockton",
+      "state": "AL",
+      "lat": 31.4131,
+      "lon": -85.8673,
+      "website": "https://bsa3.org/summer-camp-2/scouts-bsa-summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-003/al-camp-alaflo-heersink-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://bsa3.org/summer-camp-2/scouts-bsa-summer-camp/"
+          },
+          {
+            "url": "https://bsa3.org/summer-camp-2/scouts-bsa-summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

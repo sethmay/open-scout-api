@@ -1,0 +1,44 @@
+{
+  "id": "nj-pine-hill-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pine Hill Scout Reservation",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:garden-state",
+      "parent": null,
+      "operating_status": "active",
+      "address": "120 Watsontown-New Freedom Road",
+      "city": "Pine Hill",
+      "state": "NJ",
+      "lat": 39.79550870461,
+      "lon": -74.96090575826,
+      "website": "https://old.gardenstatescouting.org/pinehill",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-690/nj-pine-hill-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://old.gardenstatescouting.org/pinehill"
+          },
+          {
+            "url": "https://old.gardenstatescouting.org/pinehill"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

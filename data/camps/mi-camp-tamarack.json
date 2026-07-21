@@ -1,0 +1,44 @@
+{
+  "id": "mi-camp-tamarack",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Tamarack",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:la-salle",
+      "parent": null,
+      "operating_status": "active",
+      "address": "10891 Withers St",
+      "city": "Jones",
+      "state": "MI",
+      "lat": 41.8581391,
+      "lon": -85.777364,
+      "website": "https://lasallecouncil.org/venue/camptamarack/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-165/mi-camp-tamarack (unofficial community dataset)"
+          },
+          {
+            "url": "https://lasallecouncil.org/venue/camptamarack/"
+          },
+          {
+            "url": "https://lasallecouncil.org/venue/camptamarack/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

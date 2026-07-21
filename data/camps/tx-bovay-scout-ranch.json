@@ -1,0 +1,44 @@
+{
+  "id": "tx-bovay-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Bovay Scout Ranch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:sam-houston-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Navasota",
+      "state": "TX",
+      "lat": null,
+      "lon": null,
+      "website": "https://shacbsa.org/adventure-camp",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-576/tx-bovay-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://shacbsa.org/adventure-camp"
+          },
+          {
+            "url": "https://shacbsa.org/adventure-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

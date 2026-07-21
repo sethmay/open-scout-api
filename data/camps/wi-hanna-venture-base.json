@@ -1,0 +1,44 @@
+{
+  "id": "wi-hanna-venture-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Hanna Venture Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:samoset",
+      "parent": null,
+      "operating_status": "active",
+      "address": "5403 Spider Lake Rd",
+      "city": "Rhinelander",
+      "state": "WI",
+      "lat": 45.7293892,
+      "lon": -89.42282,
+      "website": "http://clsr.samoset.org/hanna/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-627/wi-hanna-venture-base (unofficial community dataset)"
+          },
+          {
+            "url": "http://clsr.samoset.org/hanna/"
+          },
+          {
+            "url": "http://clsr.samoset.org/hanna/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

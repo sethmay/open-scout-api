@@ -1,0 +1,44 @@
+{
+  "id": "ar-camp-rockefeller",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Rockefeller",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:natural-state",
+      "parent": null,
+      "operating_status": "active",
+      "address": "408 Scout Dr, Damascus, AR 72039 (Gus Blass Scout Reservation)",
+      "city": "Damascus",
+      "state": "AR",
+      "lat": 35.373693212714,
+      "lon": -92.450508472532,
+      "website": "https://www.naturalstatecouncil.org/crsummercamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-018/ar-camp-rockefeller (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.naturalstatecouncil.org/crsummercamp"
+          },
+          {
+            "url": "https://www.naturalstatecouncil.org/crsummercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

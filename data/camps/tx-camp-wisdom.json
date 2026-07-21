@@ -1,0 +1,44 @@
+{
+  "id": "tx-camp-wisdom",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Wisdom",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:circle-ten",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Dallas",
+      "state": "TX",
+      "lat": null,
+      "lon": null,
+      "website": "https://scoutingevent.com/571-2026DiscoveryCamp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-571/tx-camp-wisdom (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/571-2026DiscoveryCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/571-2026DiscoveryCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

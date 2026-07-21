@@ -1,0 +1,44 @@
+{
+  "id": "mi-d-bar-a-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "D-bar-A Scout Ranch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:michigan-crossroads",
+      "parent": null,
+      "operating_status": "not_operating",
+      "address": "880 E Sutton Road",
+      "city": "Metamora",
+      "state": "MI",
+      "lat": 42.948,
+      "lon": -83.283,
+      "website": "https://michiganscouting.org/camping/properties/d-bar-a-scout-ranch/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-272/mi-d-bar-a-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/properties/d-bar-a-scout-ranch/"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/properties/d-bar-a-scout-ranch/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

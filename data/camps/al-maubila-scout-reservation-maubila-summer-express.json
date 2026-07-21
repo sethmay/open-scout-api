@@ -1,0 +1,44 @@
+{
+  "id": "al-maubila-scout-reservation-maubila-summer-express",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Maubila Scout Reservation (Maubila Summer Express)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mobile-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2332 Camp Maubila Road",
+      "city": "Grove Hill",
+      "state": "AL",
+      "lat": 31.617460739327,
+      "lon": -87.824559389875,
+      "website": "https://scoutingmac.org/camp-maubila/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-004/al-maubila-scout-reservation-maubila-summer-express (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingmac.org/camp-maubila/"
+          },
+          {
+            "url": "https://scoutingmac.org/camp-maubila/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "wv-camp-arrowhead-general-andrew-lewis-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Arrowhead (General Andrew Lewis Scout Reservation)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:buckskin",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Ona",
+      "state": "WV",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.buckskin.org/camping/scoutsbsacamp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_day",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-617/wv-camp-arrowhead-general-andrew-lewis-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.buckskin.org/camping/scoutsbsacamp/"
+          },
+          {
+            "url": "https://www.buckskin.org/camping/scoutsbsacamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

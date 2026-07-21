@@ -1,0 +1,44 @@
+{
+  "id": "il-canyon-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Canyon Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:blackhawk-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Stockton",
+      "state": "IL",
+      "lat": 42.3529,
+      "lon": -90.0281,
+      "website": "https://www.canyoncampbsa.org/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-660/il-canyon-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.canyoncampbsa.org/"
+          },
+          {
+            "url": "https://www.canyoncampbsa.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

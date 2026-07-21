@@ -1,0 +1,44 @@
+{
+  "id": "il-scouts-bsa-resident-camp-at-loud-thunder",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Scouts BSA Resident Camp at Loud Thunder",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:illowa",
+      "parent": null,
+      "operating_status": "active",
+      "address": "9906 175th St W Illinois City, Illinois 61259",
+      "city": null,
+      "state": "IL",
+      "lat": 41.4238274,
+      "lon": -90.8106336,
+      "website": "https://scoutingevent.com/133-ScoutsBSAResidentCamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-133/il-scouts-bsa-resident-camp-at-loud-thunder (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/133-ScoutsBSAResidentCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/133-ScoutsBSAResidentCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

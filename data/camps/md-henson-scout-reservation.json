@@ -1,0 +1,44 @@
+{
+  "id": "md-henson-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Henson Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:del-mar-va",
+      "parent": null,
+      "operating_status": "active",
+      "address": "5700 Nanticoke Rd Rhodesdale, Maryland 21659",
+      "city": null,
+      "state": "MD",
+      "lat": 38.549444,
+      "lon": -75.7458935,
+      "website": "https://scoutingevent.com/081-HSRSummer",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-081/md-henson-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/081-HSRSummer"
+          },
+          {
+            "url": "https://scoutingevent.com/081-HSRSummer"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

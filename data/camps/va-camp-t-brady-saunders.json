@@ -1,0 +1,44 @@
+{
+  "id": "va-camp-t-brady-saunders",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp T. Brady Saunders",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:heart-of-virginia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1723 Maidens Road",
+      "city": "Maidens",
+      "state": "VA",
+      "lat": 37.6839671,
+      "lon": -77.8675371,
+      "website": "https://bradysaunders.net/camp/summercamp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-602/va-camp-t-brady-saunders (unofficial community dataset)"
+          },
+          {
+            "url": "https://bradysaunders.net/camp/summercamp/"
+          },
+          {
+            "url": "https://bradysaunders.net/camp/summercamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

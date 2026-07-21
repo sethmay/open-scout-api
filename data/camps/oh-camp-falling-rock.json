@@ -1,0 +1,45 @@
+{
+  "id": "oh-camp-falling-rock",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Falling Rock",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:simon-kenton",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Newark",
+      "state": "OH",
+      "lat": 40.1706,
+      "lon": -82.3062,
+      "website": "https://skcscouts.org/bsaresidentcamp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-441/oh-camp-falling-rock (unofficial community dataset)"
+          },
+          {
+            "url": "https://skcscouts.org/bsaresidentcamp/"
+          },
+          {
+            "url": "https://skcscouts.org/bsaresidentcamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

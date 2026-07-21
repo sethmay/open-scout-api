@@ -1,0 +1,44 @@
+{
+  "id": "fl-st-johns-river-base-at-echockotee-aquatics-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "St. Johns River Base at Echockotee (Aquatics Camp)",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:north-florida",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2513 Doctor's Lake Dr",
+      "city": "Orange Park",
+      "state": "FL",
+      "lat": 30.1548,
+      "lon": -81.7282,
+      "website": "https://www.aquaticscamp.org/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-087/fl-st-johns-river-base-at-echockotee-aquatics-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.aquaticscamp.org/"
+          },
+          {
+            "url": "https://www.aquaticscamp.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

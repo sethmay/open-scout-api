@@ -1,0 +1,44 @@
+{
+  "id": "ma-camp-resolute-e-paul-robsham-scout-reservation-adventure-day-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Resolute (E. Paul Robsham Scout Reservation) — Adventure Day Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:mayflower",
+      "parent": null,
+      "operating_status": "active",
+      "address": "129 Hudson Road",
+      "city": "Bolton",
+      "state": "MA",
+      "lat": 44.8654855,
+      "lon": -68.8304781,
+      "website": "https://www.resolutebasecamp.net/adventure-day-camp/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-251/ma-camp-resolute-e-paul-robsham-scout-reservation-adventure-day-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.resolutebasecamp.net/adventure-day-camp/"
+          },
+          {
+            "url": "https://www.resolutebasecamp.net/adventure-day-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

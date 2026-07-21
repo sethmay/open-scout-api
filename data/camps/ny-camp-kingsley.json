@@ -1,0 +1,45 @@
+{
+  "id": "ny-camp-kingsley",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Kingsley",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:leatherstocking",
+      "parent": null,
+      "operating_status": "active",
+      "address": "5328 Tuffy Rd",
+      "city": "Ava",
+      "state": "NY",
+      "lat": 43.3995,
+      "lon": -75.5348,
+      "website": "https://www.leatherstockingcouncil.org/about-us/districts-camps/camps/camp-kingsley/summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-400/ny-camp-kingsley (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.leatherstockingcouncil.org/about-us/districts-camps/camps/camp-kingsley/summer-camp/"
+          },
+          {
+            "url": "https://www.leatherstockingcouncil.org/about-us/districts-camps/camps/camp-kingsley/summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

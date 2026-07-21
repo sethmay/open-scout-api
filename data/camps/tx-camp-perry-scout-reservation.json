@@ -1,0 +1,44 @@
+{
+  "id": "tx-camp-perry-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Perry Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:rio-grande",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Harlingen",
+      "state": "TX",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.riograndecouncil.org/camping/campperry/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-775/tx-camp-perry-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.riograndecouncil.org/camping/campperry/"
+          },
+          {
+            "url": "https://www.riograndecouncil.org/camping/campperry/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

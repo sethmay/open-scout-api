@@ -1,0 +1,44 @@
+{
+  "id": "ga-camp-rainey-mountain",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Rainey Mountain",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northeast-georgia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Rainey Mountain, Clayton, GA 30525",
+      "city": "Clayton",
+      "state": "GA",
+      "lat": 34.8653,
+      "lon": -83.3429,
+      "website": "https://www.nega-bsa.org/campraineymountain",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-101/ga-camp-rainey-mountain (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.nega-bsa.org/campraineymountain"
+          },
+          {
+            "url": "https://www.nega-bsa.org/campraineymountain"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

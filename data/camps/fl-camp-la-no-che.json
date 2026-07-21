@@ -1,0 +1,44 @@
+{
+  "id": "fl-camp-la-no-che",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp La-No-Che",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:central-florida",
+      "parent": null,
+      "operating_status": "active",
+      "address": "41940 Boy Scout Rd",
+      "city": "Paisley",
+      "state": "FL",
+      "lat": 28.954,
+      "lon": -81.523,
+      "website": "https://www.camplanoche.com/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-083/fl-camp-la-no-che (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.camplanoche.com/"
+          },
+          {
+            "url": "https://www.camplanoche.com/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

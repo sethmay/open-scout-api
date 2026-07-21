@@ -1,0 +1,45 @@
+{
+  "id": "pa-custaloga-town-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Custaloga Town Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:french-creek",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Carlton",
+      "state": "PA",
+      "lat": 41.4574,
+      "lon": -80.0037,
+      "website": "https://www.fccscouting.org/custaloga-town-scout-reservation/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-532/pa-custaloga-town-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.fccscouting.org/custaloga-town-scout-reservation/"
+          },
+          {
+            "url": "https://www.fccscouting.org/custaloga-town-scout-reservation/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

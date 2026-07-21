@@ -1,0 +1,45 @@
+{
+  "id": "oh-fort-steuben-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Fort Steuben Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mountaineer-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "79601 Simpson Road, Tippecanoe, OH 44699",
+      "city": "Tippecanoe",
+      "state": "OH",
+      "lat": null,
+      "lon": null,
+      "website": "https://scoutingevent.com/615-106341",
+      "program_types": [
+        "scouts_bsa_resident",
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-615/oh-fort-steuben-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/615-106341"
+          },
+          {
+            "url": "https://scoutingevent.com/615-106341"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ks-brown-memorial-camp-camp-brown",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Brown Memorial Camp (Camp Brown)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:coronado-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1091 1900 Ln",
+      "city": "Abilene",
+      "state": "KS",
+      "lat": 38.8144,
+      "lon": -97.0691,
+      "website": "https://www.coronadoscout.org/brown/",
+      "program_types": [
+        "cub_resident",
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-192/ks-brown-memorial-camp-camp-brown (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.coronadoscout.org/brown/"
+          },
+          {
+            "url": "https://www.coronadoscout.org/brown/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "al-camp-westmoreland-cub-scout-twilight-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Westmoreland Cub Scout Twilight Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-alabama",
+      "parent": null,
+      "operating_status": "active",
+      "address": "596 Westmoreland Rd",
+      "city": "Florence",
+      "state": "AL",
+      "lat": 32.5309159,
+      "lon": -85.0021621,
+      "website": "https://1bsa.org/cub-scout-day-camp/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-001/al-camp-westmoreland-cub-scout-twilight-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://1bsa.org/cub-scout-day-camp/"
+          },
+          {
+            "url": "https://1bsa.org/cub-scout-day-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "pa-camp-garrison",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Garrison",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:cradle-of-liberty",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1425 Camp Road",
+      "city": "Pennsburg",
+      "state": "PA",
+      "lat": 40.42,
+      "lon": -75.43,
+      "website": "https://mussersr.org/summer/day-camp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-525/pa-camp-garrison (unofficial community dataset)"
+          },
+          {
+            "url": "https://mussersr.org/summer/day-camp"
+          },
+          {
+            "url": "https://mussersr.org/summer/day-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

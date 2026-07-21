@@ -1,0 +1,44 @@
+{
+  "id": "wa-camp-thunderbird",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Thunderbird",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pacific-harbors",
+      "parent": null,
+      "operating_status": "active",
+      "address": "11740 Summit Lake Rd NW",
+      "city": "Olympia",
+      "state": "WA",
+      "lat": 47.0485424,
+      "lon": -123.125928,
+      "website": "https://www.pacificharbors.org/camp/summer-camps/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-612/wa-camp-thunderbird (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.pacificharbors.org/camp/summer-camps/"
+          },
+          {
+            "url": "https://www.pacificharbors.org/camp/summer-camps/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

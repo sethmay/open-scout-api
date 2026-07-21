@@ -1,0 +1,44 @@
+{
+  "id": "ia-camp-c-s-klaus-webelos-and-arrow-of-light-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp C.S. Klaus - Webelos & Arrow of Light Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northeast-iowa",
+      "parent": null,
+      "operating_status": "active",
+      "address": "P.O. Box 236",
+      "city": "Colesburg",
+      "state": "IA",
+      "lat": 42.6565,
+      "lon": -91.248,
+      "website": "https://scoutsiowa.org/camping/cub-scout-camp/",
+      "program_types": [
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-178/ia-camp-c-s-klaus-webelos-and-arrow-of-light-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutsiowa.org/camping/cub-scout-camp/"
+          },
+          {
+            "url": "https://scoutsiowa.org/camping/cub-scout-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "la-camp-attakapas",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Attakapas",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:louisiana-purchase",
+      "parent": null,
+      "operating_status": "active",
+      "address": "795 Boy Scout Road, Trout, LA 71371",
+      "city": "Trout",
+      "state": "LA",
+      "lat": 31.695286326812,
+      "lon": -92.209521872877,
+      "website": "https://www.louisianapurchasecouncil.org/summercamps",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-213/la-camp-attakapas (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.louisianapurchasecouncil.org/summercamps"
+          },
+          {
+            "url": "https://www.louisianapurchasecouncil.org/summercamps"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "mn-phillippo-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Phillippo Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "30654 32nd Ave Way",
+      "city": "Cannon Falls",
+      "state": "MN",
+      "lat": 44.502149,
+      "lon": -92.9745538,
+      "website": "https://camp.northernstar.org/phillippo-scout-reservation",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-250/mn-phillippo-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://camp.northernstar.org/phillippo-scout-reservation"
+          },
+          {
+            "url": "https://camp.northernstar.org/phillippo-scout-reservation"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

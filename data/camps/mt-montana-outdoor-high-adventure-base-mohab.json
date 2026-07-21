@@ -1,0 +1,44 @@
+{
+  "id": "mt-montana-outdoor-high-adventure-base-mohab",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Montana Outdoor High Adventure Base (MOHAB)",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:montana",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Dupuyer",
+      "state": "MT",
+      "lat": null,
+      "lon": null,
+      "website": "https://scoutingmontana.org/camps/high-adventure/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-315/mt-montana-outdoor-high-adventure-base-mohab (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/high-adventure/"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/high-adventure/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

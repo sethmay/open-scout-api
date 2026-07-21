@@ -1,0 +1,44 @@
+{
+  "id": "mi-owasippe-camp-blackhawk",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Owasippe Camp Blackhawk",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pathway-to-adventure",
+      "parent": null,
+      "operating_status": "active",
+      "address": "9900 Russell Rd Twin Lake, Michigan 49457",
+      "city": null,
+      "state": "MI",
+      "lat": 43.43641,
+      "lon": -86.237089,
+      "website": "https://scoutingevent.com/456-101136",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-456/mi-owasippe-camp-blackhawk (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/456-101136"
+          },
+          {
+            "url": "https://scoutingevent.com/456-101136"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

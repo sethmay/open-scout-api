@@ -1,0 +1,44 @@
+{
+  "id": "mt-k-m-scout-ranch-cub-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "K-M Scout Ranch Cub Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:montana",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Hilger",
+      "state": "MT",
+      "lat": 47.2721,
+      "lon": -109.4641,
+      "website": "https://scoutingmontana.org/camps/km-scout-ranch/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-315/mt-k-m-scout-ranch-cub-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/km-scout-ranch/"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/km-scout-ranch/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

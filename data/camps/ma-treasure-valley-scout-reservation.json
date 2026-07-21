@@ -1,0 +1,46 @@
+{
+  "id": "ma-treasure-valley-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Treasure Valley Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:heart-of-new-england",
+      "parent": null,
+      "operating_status": "active",
+      "address": "394 Pleasantdale Rd.",
+      "city": "Rutland",
+      "state": "MA",
+      "lat": 42.3218632,
+      "lon": -71.9890792,
+      "website": "https://hnescouting.org/camping/tvsr/tvsr-scout-fees/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_day",
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-230/ma-treasure-valley-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://hnescouting.org/camping/tvsr/tvsr-scout-fees/"
+          },
+          {
+            "url": "https://hnescouting.org/camping/tvsr/tvsr-scout-fees/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

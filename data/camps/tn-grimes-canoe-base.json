@@ -1,0 +1,44 @@
+{
+  "id": "tn-grimes-canoe-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Grimes Canoe Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:middle-tennessee",
+      "parent": null,
+      "operating_status": "active",
+      "address": "767 Boy Scout Road",
+      "city": "Linden",
+      "state": "TN",
+      "lat": 35.1818901,
+      "lon": -85.2414843,
+      "website": "https://scoutingevent.com/560-113545",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-560/tn-grimes-canoe-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/560-113545"
+          },
+          {
+            "url": "https://scoutingevent.com/560-113545"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

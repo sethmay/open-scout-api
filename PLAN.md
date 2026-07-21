@@ -226,8 +226,9 @@ open-scout-api/
    with the full requirement tree (numbering/nesting/choose-N/options) + verbatim text
    marked © Scouting America (`text_rights`, excluded from the data license). Pending:
    historical requirement revisions + discontinued-badge backfill.
-4. **Camps import.** Transform camp-finder camps into temporal camp records
-   (`method: imported`), keeping IDs.
+4. **Camps import.** ✅ Done (0.7.0): 469 camps imported from camp-finder keeping ids
+   (`method: imported`), classified by camp_type + operator; 4 national HA bases added.
+   Reservation `parent` nesting + historical camps pending.
 5. **Build + publish.** Pipeline emitting `current/` + per-entity history projections,
    `index.json` per dataset, CI validation gate, GitHub Pages deploy, first tagged
    release.

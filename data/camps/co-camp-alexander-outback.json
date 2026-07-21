@@ -1,0 +1,44 @@
+{
+  "id": "co-camp-alexander-outback",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Alexander Outback",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:pathway-to-the-rockies",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2182 County Rd 96",
+      "city": "Lake George",
+      "state": "CO",
+      "lat": 38.952,
+      "lon": -105.301,
+      "website": "https://campalexandercolorado.org/summer-camp/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-060/co-camp-alexander-outback (unofficial community dataset)"
+          },
+          {
+            "url": "https://campalexandercolorado.org/summer-camp/"
+          },
+          {
+            "url": "https://campalexandercolorado.org/summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

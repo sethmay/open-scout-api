@@ -1,0 +1,44 @@
+{
+  "id": "nm-philmont-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Philmont Scout Ranch",
+      "camp_type": "high_adventure_base",
+      "operator": "national",
+      "council": null,
+      "parent": null,
+      "operating_status": "active",
+      "address": "17 Deer Run Road",
+      "city": "Cimarron",
+      "state": "NM",
+      "lat": 36.4419,
+      "lon": -105.2497,
+      "website": "https://www.philmontscoutranch.org/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-999/nm-philmont-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.philmontscoutranch.org/"
+          },
+          {
+            "url": "https://www.philmontscoutranch.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

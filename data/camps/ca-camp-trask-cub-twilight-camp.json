@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-trask-cub-twilight-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Trask (Cub Twilight Camp)",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-los-angeles-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1100 N Canyon Blvd",
+      "city": "Monrovia",
+      "state": "CA",
+      "lat": 34.1747955,
+      "lon": -117.9880102,
+      "website": "https://greaterlascouting.org/camp-trask/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-033/ca-camp-trask-cub-twilight-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://greaterlascouting.org/camp-trask/"
+          },
+          {
+            "url": "https://greaterlascouting.org/camp-trask/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

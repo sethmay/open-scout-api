@@ -1,0 +1,44 @@
+{
+  "id": "me-camp-william-hinds",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp William Hinds",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pine-tree",
+      "parent": null,
+      "operating_status": "active",
+      "address": "146 Plains Road",
+      "city": "Raymond",
+      "state": "ME",
+      "lat": 43.379380084063,
+      "lon": -72.493944086744,
+      "website": "https://camphinds.org/summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-218/me-camp-william-hinds (unofficial community dataset)"
+          },
+          {
+            "url": "https://camphinds.org/summer-camp/"
+          },
+          {
+            "url": "https://camphinds.org/summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

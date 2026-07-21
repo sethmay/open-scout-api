@@ -1,0 +1,44 @@
+{
+  "id": "pa-scouts-bsa-resident",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Scouts BSA Resident",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:juniata-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "227 Sand Mountain Road Spring Mills, Pennsylvania 16875",
+      "city": null,
+      "state": "PA",
+      "lat": 40.7641792,
+      "lon": -77.6060256,
+      "website": "https://scoutingevent.com/497-102563",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-497/pa-scouts-bsa-resident (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/497-102563"
+          },
+          {
+            "url": "https://scoutingevent.com/497-102563"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

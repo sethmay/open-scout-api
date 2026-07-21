@@ -1,0 +1,44 @@
+{
+  "id": "pa-camp-buck-run",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Buck Run",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:westmoreland-fayette",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Somerset",
+      "state": "PA",
+      "lat": null,
+      "lon": null,
+      "website": "https://wfbsa.org/camping/camp-buck-run/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-512/pa-camp-buck-run (unofficial community dataset)"
+          },
+          {
+            "url": "https://wfbsa.org/camping/camp-buck-run/"
+          },
+          {
+            "url": "https://wfbsa.org/camping/camp-buck-run/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

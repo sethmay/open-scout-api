@@ -1,0 +1,44 @@
+{
+  "id": "ae-camp-alpine",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Alpine",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:transatlantic",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Kandersteg International Scout Centre (KISC), Kandersteg, Switzerland",
+      "city": "Kandersteg",
+      "state": "AE",
+      "lat": 46.483382,
+      "lon": 7.663972,
+      "website": "https://scoutingevent.com/802-CampAlpine2026",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-802/ae-camp-alpine (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/802-CampAlpine2026"
+          },
+          {
+            "url": "https://scoutingevent.com/802-CampAlpine2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

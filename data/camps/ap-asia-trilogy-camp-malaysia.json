@@ -1,0 +1,44 @@
+{
+  "id": "ap-asia-trilogy-camp-malaysia",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Asia Trilogy Camp Malaysia",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:far-east",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Malaysia",
+      "city": "Malaysia",
+      "state": "AP",
+      "lat": null,
+      "lon": null,
+      "website": "https://scoutingevent.com/803-2026FECTrilogyMalaysia",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-803/ap-asia-trilogy-camp-malaysia (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/803-2026FECTrilogyMalaysia"
+          },
+          {
+            "url": "https://scoutingevent.com/803-2026FECTrilogyMalaysia"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

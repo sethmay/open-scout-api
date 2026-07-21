@@ -1,0 +1,44 @@
+{
+  "id": "pa-j-edward-mack-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "J. Edward Mack Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pennsylvania-dutch",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2 Scout Lane",
+      "city": "Newmanstown",
+      "state": "PA",
+      "lat": 40.2491,
+      "lon": -76.306,
+      "website": "http://padutchbsa.org/camping/mack/summercamp/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-524/pa-j-edward-mack-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "http://padutchbsa.org/camping/mack/summercamp/"
+          },
+          {
+            "url": "http://padutchbsa.org/camping/mack/summercamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

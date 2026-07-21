@@ -1,0 +1,44 @@
+{
+  "id": "ne-camp-cedars",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Cedars",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mid-america",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2898 Tom Lee Rd Cedar Bluffs, Nebraska 68015",
+      "city": null,
+      "state": "NE",
+      "lat": 41.4305225,
+      "lon": -96.5863424,
+      "website": "https://scoutingevent.com/326-Cedars26",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-326/ne-camp-cedars (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/326-Cedars26"
+          },
+          {
+            "url": "https://scoutingevent.com/326-Cedars26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

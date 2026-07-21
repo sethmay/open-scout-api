@@ -1,0 +1,44 @@
+{
+  "id": "fl-camp-soule",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Soule",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-tampa-bay-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2201 Soule Road",
+      "city": "Clearwater",
+      "state": "FL",
+      "lat": 27.999845,
+      "lon": -82.721141,
+      "website": "https://scoutingevent.com/089-CubDayCamp2026",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-089/fl-camp-soule (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/089-CubDayCamp2026"
+          },
+          {
+            "url": "https://scoutingevent.com/089-CubDayCamp2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

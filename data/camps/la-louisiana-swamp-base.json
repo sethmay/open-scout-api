@@ -1,0 +1,44 @@
+{
+  "id": "la-louisiana-swamp-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Louisiana Swamp Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:evangeline-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Lafayette",
+      "state": "LA",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.swampbasebsa.org/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-212/la-louisiana-swamp-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.swampbasebsa.org/"
+          },
+          {
+            "url": "https://www.swampbasebsa.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

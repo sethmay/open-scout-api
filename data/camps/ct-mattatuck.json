@@ -1,0 +1,44 @@
+{
+  "id": "ct-mattatuck",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Mattatuck",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:connecticut-rivers",
+      "parent": null,
+      "operating_status": "active",
+      "address": "221 Mount Tobe Road Plymouth, Connecticut 06782",
+      "city": null,
+      "state": "CT",
+      "lat": 41.63344192504883,
+      "lon": -73.05036926269531,
+      "website": "https://scoutingevent.com/066-102136",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-066/ct-mattatuck (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/066-102136"
+          },
+          {
+            "url": "https://scoutingevent.com/066-102136"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

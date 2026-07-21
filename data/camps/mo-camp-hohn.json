@@ -1,0 +1,46 @@
+{
+  "id": "mo-camp-hohn",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Hohn",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:great-rivers",
+      "parent": null,
+      "operating_status": "active",
+      "address": "525 Camp Hohn Dr",
+      "city": "Gravois Mills",
+      "state": "MO",
+      "lat": 38.175802146997,
+      "lon": -92.876775738252,
+      "website": "https://lakeoftheozarksscoutreservation.org/programs/scouts-bsa-camp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident",
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-653/mo-camp-hohn (unofficial community dataset)"
+          },
+          {
+            "url": "https://lakeoftheozarksscoutreservation.org/programs/scouts-bsa-camp/"
+          },
+          {
+            "url": "https://lakeoftheozarksscoutreservation.org/programs/scouts-bsa-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

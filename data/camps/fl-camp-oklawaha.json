@@ -1,0 +1,44 @@
+{
+  "id": "fl-camp-oklawaha",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Oklawaha",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:gulf-stream",
+      "parent": null,
+      "operating_status": "active",
+      "address": "8598 Potomac Ave",
+      "city": "Sebastian",
+      "state": "FL",
+      "lat": 27.7906333,
+      "lon": -80.5059434,
+      "website": "https://www.gulfstreamcouncil.org/IR-daycamp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-085/fl-camp-oklawaha (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.gulfstreamcouncil.org/IR-daycamp"
+          },
+          {
+            "url": "https://www.gulfstreamcouncil.org/IR-daycamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

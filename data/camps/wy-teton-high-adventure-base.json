@@ -1,0 +1,44 @@
+{
+  "id": "wy-teton-high-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Teton High Adventure Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:crossroads-of-the-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Jackson",
+      "state": "WY",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.utahscouts.org/teton",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-590/wy-teton-high-adventure-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.utahscouts.org/teton"
+          },
+          {
+            "url": "https://www.utahscouts.org/teton"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "fl-florida-sea-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Florida Sea Base",
+      "camp_type": "high_adventure_base",
+      "operator": "national",
+      "council": null,
+      "parent": null,
+      "operating_status": "active",
+      "address": "73800 Overseas Highway",
+      "city": "Islamorada",
+      "state": "FL",
+      "lat": 24.8519204,
+      "lon": -80.7373146,
+      "website": "https://www.bsaseabase.org/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-999/fl-florida-sea-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.bsaseabase.org/"
+          },
+          {
+            "url": "https://www.bsaseabase.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

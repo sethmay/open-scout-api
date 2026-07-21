@@ -1,0 +1,44 @@
+{
+  "id": "ri-adventure-day-camp-at-champlin-adventure-base-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Adventure Day Camp at Champlin (Adventure Base Camp)",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:narragansett",
+      "parent": null,
+      "operating_status": "active",
+      "address": "223 Scituate Avenue",
+      "city": "Cranston",
+      "state": "RI",
+      "lat": 41.7787921,
+      "lon": -71.4847418,
+      "website": "https://www.narragansettbsa.org/camping-activities/cub-scout-camping-programs/day-camp/39833",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-546/ri-adventure-day-camp-at-champlin-adventure-base-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.narragansettbsa.org/camping-activities/cub-scout-camping-programs/day-camp/39833"
+          },
+          {
+            "url": "https://www.narragansettbsa.org/camping-activities/cub-scout-camping-programs/day-camp/39833"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

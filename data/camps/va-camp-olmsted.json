@@ -1,0 +1,44 @@
+{
+  "id": "va-camp-olmsted",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Olmsted",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:national-capital-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "340 Millard Burke Memorial Highway Goshen, Virginia 22439",
+      "city": null,
+      "state": "VA",
+      "lat": 37.9674165,
+      "lon": -79.4695753,
+      "website": "https://scoutingevent.com/082-101975",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-082/va-camp-olmsted (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/082-101975"
+          },
+          {
+            "url": "https://scoutingevent.com/082-101975"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

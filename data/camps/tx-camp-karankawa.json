@@ -1,0 +1,44 @@
+{
+  "id": "tx-camp-karankawa",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Karankawa",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:south-texas",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Mathis",
+      "state": "TX",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.southtexasscouting.org/events-3/scouts-bsa-camping/summer-camp-scouts-bsa/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-577/tx-camp-karankawa (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.southtexasscouting.org/events-3/scouts-bsa-camping/summer-camp-scouts-bsa/"
+          },
+          {
+            "url": "https://www.southtexasscouting.org/events-3/scouts-bsa-camping/summer-camp-scouts-bsa/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

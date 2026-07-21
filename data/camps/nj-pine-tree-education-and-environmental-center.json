@@ -1,0 +1,44 @@
+{
+  "id": "nj-pine-tree-education-and-environmental-center",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pine Tree Education & Environmental Center",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:garden-state",
+      "parent": null,
+      "operating_status": "active",
+      "address": "110 Butterworths Bogs Road",
+      "city": "Tabernacle",
+      "state": "NJ",
+      "lat": 39.827600357455,
+      "lon": -74.679850567203,
+      "website": "https://www.old.gardenstatescouting.org/pinetree",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-690/nj-pine-tree-education-and-environmental-center (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.old.gardenstatescouting.org/pinetree"
+          },
+          {
+            "url": "https://www.old.gardenstatescouting.org/pinetree"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

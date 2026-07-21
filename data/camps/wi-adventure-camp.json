@@ -1,0 +1,44 @@
+{
+  "id": "wi-adventure-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Adventure Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:twin-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "N1910 Scout Road Birchwood, Wisconsin 54817 Adventure Camp; Tomahawk Tomahawk Scout Camp Monday 07-27-2026 9:00 AM CT to Friday 07-31-2026 4:00 PM CT More Information Map of Session $ View Pricing",
+      "city": null,
+      "state": "WI",
+      "lat": 45.700425,
+      "lon": -91.6827603,
+      "website": "https://scoutingevent.com/283-adventure",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-283/wi-adventure-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/283-adventure"
+          },
+          {
+            "url": "https://scoutingevent.com/283-adventure"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

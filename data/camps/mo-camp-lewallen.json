@@ -1,0 +1,44 @@
+{
+  "id": "mo-camp-lewallen",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Lewallen",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Lewallen",
+      "city": "Silva",
+      "state": "MO",
+      "lat": 37.13,
+      "lon": -90.47,
+      "website": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-312/mo-camp-lewallen (unofficial community dataset)"
+          },
+          {
+            "url": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/"
+          },
+          {
+            "url": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

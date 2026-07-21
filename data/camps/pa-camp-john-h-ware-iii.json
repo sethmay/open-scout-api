@@ -1,0 +1,44 @@
+{
+  "id": "pa-camp-john-h-ware-iii",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp John H. Ware III",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:chester-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": "239 Jubilee Road",
+      "city": "Peach Bottom",
+      "state": "PA",
+      "lat": 36.0468342,
+      "lon": -115.102133,
+      "website": "https://scoutingevent.com/539-105490",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-539/pa-camp-john-h-ware-iii (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/539-105490"
+          },
+          {
+            "url": "https://scoutingevent.com/539-105490"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

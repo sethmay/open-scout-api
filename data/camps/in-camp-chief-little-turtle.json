@@ -1,0 +1,45 @@
+{
+  "id": "in-camp-chief-little-turtle",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Chief Little Turtle",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:anthony-wayne-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2282 W 500 S",
+      "city": "Pleasant Lake",
+      "state": "IN",
+      "lat": 41.5842,
+      "lon": -85.037,
+      "website": "https://www.ccltbsa.org/boy-scout-camp",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-157/in-camp-chief-little-turtle (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.ccltbsa.org/boy-scout-camp"
+          },
+          {
+            "url": "https://www.ccltbsa.org/boy-scout-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

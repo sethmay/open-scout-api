@@ -1,0 +1,44 @@
+{
+  "id": "nj-alpine-day-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Alpine Day Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-new-york",
+      "parent": null,
+      "operating_status": "active",
+      "address": "441 Route 9W",
+      "city": "Alpine",
+      "state": "NJ",
+      "lat": 42.5992164,
+      "lon": -73.7937659,
+      "website": "https://scoutingevent.com/640-AlpineDayCamp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-640/nj-alpine-day-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/640-AlpineDayCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/640-AlpineDayCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

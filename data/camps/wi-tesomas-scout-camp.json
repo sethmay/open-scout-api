@@ -1,0 +1,44 @@
+{
+  "id": "wi-tesomas-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Tesomas Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:samoset",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Crystal Lake Scout Reservation",
+      "city": "Rhinelander",
+      "state": "WI",
+      "lat": 45.7299,
+      "lon": -89.4199,
+      "website": "https://samoset.org/camping/tesomas/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-627/wi-tesomas-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://samoset.org/camping/tesomas/"
+          },
+          {
+            "url": "https://samoset.org/camping/tesomas/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

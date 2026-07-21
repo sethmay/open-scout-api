@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-chawanakee",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Chawanakee",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:sequoia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "43485 Dinkey Creek Rd Shaver Lake, California 93664",
+      "city": null,
+      "state": "CA",
+      "lat": 37.0962672,
+      "lon": -119.2921417,
+      "website": "https://scoutingevent.com/027-2026campchawanakee",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-027/ca-camp-chawanakee (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/027-2026campchawanakee"
+          },
+          {
+            "url": "https://scoutingevent.com/027-2026campchawanakee"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

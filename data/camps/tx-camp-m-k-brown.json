@@ -1,0 +1,44 @@
+{
+  "id": "tx-camp-m-k-brown",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp M.K. Brown",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:golden-spread",
+      "parent": null,
+      "operating_status": "active",
+      "address": "8425 FM 3182",
+      "city": "Mobeetie",
+      "state": "TX",
+      "lat": 35.521778733208,
+      "lon": -100.361532352271,
+      "website": "https://scoutingevent.com/562-2026SummerCamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-562/tx-camp-m-k-brown (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/562-2026SummerCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/562-2026SummerCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

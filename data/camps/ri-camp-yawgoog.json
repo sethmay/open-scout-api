@@ -1,0 +1,44 @@
+{
+  "id": "ri-camp-yawgoog",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Yawgoog",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:narragansett",
+      "parent": null,
+      "operating_status": "active",
+      "address": "61 Camp Yawgoog Road Rockville, Rhode Island 02873",
+      "city": null,
+      "state": "RI",
+      "lat": 41.5190699,
+      "lon": -71.775807,
+      "website": "https://scoutingevent.com/546-100159",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-546/ri-camp-yawgoog (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/546-100159"
+          },
+          {
+            "url": "https://scoutingevent.com/546-100159"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "wi-camp-oh-da-ko-ta",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Oh-Da-Ko-Ta",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:three-harbors",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3363 Dyer Lake Road",
+      "city": "Burlington",
+      "state": "WI",
+      "lat": 44.7022588,
+      "lon": -85.70886,
+      "website": "https://www.threeharborsscouting.org/camping/cub-scout-summer-camp-2026/76668",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-636/wi-camp-oh-da-ko-ta (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.threeharborsscouting.org/camping/cub-scout-summer-camp-2026/76668"
+          },
+          {
+            "url": "https://www.threeharborsscouting.org/camping/cub-scout-summer-camp-2026/76668"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

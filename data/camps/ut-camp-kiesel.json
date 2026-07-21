@@ -1,0 +1,44 @@
+{
+  "id": "ut-camp-kiesel",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Kiesel",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:crossroads-of-the-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Huntsville",
+      "state": "UT",
+      "lat": null,
+      "lon": null,
+      "website": "https://www.utahscouts.org/kiesel",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-590/ut-camp-kiesel (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.utahscouts.org/kiesel"
+          },
+          {
+            "url": "https://www.utahscouts.org/kiesel"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

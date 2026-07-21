@@ -1,0 +1,44 @@
+{
+  "id": "me-maine-high-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Maine High Adventure Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:katahdin-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Grand Lake Matagamon",
+      "state": "ME",
+      "lat": 46.1809,
+      "lon": -68.7996,
+      "website": "https://www.mainehighadventure.org/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-216/me-maine-high-adventure-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.mainehighadventure.org/"
+          },
+          {
+            "url": "https://www.mainehighadventure.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

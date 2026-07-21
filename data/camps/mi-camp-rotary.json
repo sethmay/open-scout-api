@@ -1,0 +1,44 @@
+{
+  "id": "mi-camp-rotary",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Rotary",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:michigan-crossroads",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3201 S Clare Avenue",
+      "city": "Clare",
+      "state": "MI",
+      "lat": 43.9413161,
+      "lon": -84.7677753,
+      "website": "https://michiganscouting.org/camping/properties/camp-rotary/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-272/mi-camp-rotary (unofficial community dataset)"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/properties/camp-rotary/"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/properties/camp-rotary/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

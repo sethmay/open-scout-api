@@ -1,0 +1,44 @@
+{
+  "id": "pa-elk-lick-scout-reserve",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Elk Lick Scout Reserve",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:allegheny-highlands",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2420 Bordell Rd",
+      "city": "Smethport",
+      "state": "PA",
+      "lat": 41.850432,
+      "lon": -78.4952498,
+      "website": "https://www.alleghenyhighlands.org/camping",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-382/pa-elk-lick-scout-reserve (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.alleghenyhighlands.org/camping"
+          },
+          {
+            "url": "https://www.alleghenyhighlands.org/camping"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

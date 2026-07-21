@@ -1,0 +1,44 @@
+{
+  "id": "al-camp-horne",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Horne",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:black-warrior",
+      "parent": null,
+      "operating_status": "active",
+      "address": "13633 Keenes Mill Rd",
+      "city": "Cottondale",
+      "state": "AL",
+      "lat": 33.191791461264,
+      "lon": -87.398679848313,
+      "website": "https://www.bwc-bsa.org/summercamp2026",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-006/al-camp-horne (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.bwc-bsa.org/summercamp2026"
+          },
+          {
+            "url": "https://www.bwc-bsa.org/summercamp2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

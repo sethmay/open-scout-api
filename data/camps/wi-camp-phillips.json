@@ -1,0 +1,44 @@
+{
+  "id": "wi-camp-phillips",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Phillips",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:chippewa-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2900 16th Street Rice Lake, Wisconsin 54868",
+      "city": null,
+      "state": "WI",
+      "lat": 45.626573,
+      "lon": -91.821574,
+      "website": "https://scoutingevent.com/637-cp26",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-637/wi-camp-phillips (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/637-cp26"
+          },
+          {
+            "url": "https://scoutingevent.com/637-cp26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

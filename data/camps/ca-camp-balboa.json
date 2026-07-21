@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-balboa",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Balboa",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:san-diego-imperial",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1207 Upas St",
+      "city": "San Diego",
+      "state": "CA",
+      "lat": null,
+      "lon": null,
+      "website": "https://camping.sdicbsa.org/Balboa/SummerDayCamp.php",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-049/ca-camp-balboa (unofficial community dataset)"
+          },
+          {
+            "url": "https://camping.sdicbsa.org/Balboa/SummerDayCamp.php"
+          },
+          {
+            "url": "https://camping.sdicbsa.org/Balboa/SummerDayCamp.php"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

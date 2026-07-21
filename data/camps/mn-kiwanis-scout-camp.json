@@ -1,0 +1,44 @@
+{
+  "id": "mn-kiwanis-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Kiwanis Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "15987 St Croix Trail N",
+      "city": "Marine on St. Croix",
+      "state": "MN",
+      "lat": 45.1799192,
+      "lon": -92.7673596,
+      "website": "https://camp.northernstar.org/Kiwanis-Scout-Camp",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-250/mn-kiwanis-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://camp.northernstar.org/Kiwanis-Scout-Camp"
+          },
+          {
+            "url": "https://camp.northernstar.org/Kiwanis-Scout-Camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

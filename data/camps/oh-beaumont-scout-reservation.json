@@ -1,0 +1,44 @@
+{
+  "id": "oh-beaumont-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Beaumont Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:lake-erie",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2429 R 45 N Rock Creek, Ohio 44084",
+      "city": null,
+      "state": "OH",
+      "lat": 41.684865,
+      "lon": -80.862678,
+      "website": "https://scoutingevent.com/440-98819",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-440/oh-beaumont-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/440-98819"
+          },
+          {
+            "url": "https://scoutingevent.com/440-98819"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nj-john-e-reeves-cub-world-at-alpine-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "John E. Reeves Cub World at Alpine Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-new-york",
+      "parent": null,
+      "operating_status": "active",
+      "address": "441 Route 9W",
+      "city": "Alpine",
+      "state": "NJ",
+      "lat": 42.5992164,
+      "lon": -73.7937659,
+      "website": "https://alpinescoutcamp.org/cubworld/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-640/nj-john-e-reeves-cub-world-at-alpine-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://alpinescoutcamp.org/cubworld/"
+          },
+          {
+            "url": "https://alpinescoutcamp.org/cubworld/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

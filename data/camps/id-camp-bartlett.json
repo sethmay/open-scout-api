@@ -1,0 +1,44 @@
+{
+  "id": "id-camp-bartlett",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Bartlett",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:crossroads-of-the-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Bartlett Road",
+      "city": "Montpelier",
+      "state": "ID",
+      "lat": 42.3,
+      "lon": -111.4,
+      "website": "https://www.utahscouts.org/bartlett",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-590/id-camp-bartlett (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.utahscouts.org/bartlett"
+          },
+          {
+            "url": "https://www.utahscouts.org/bartlett"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

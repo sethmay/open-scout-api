@@ -1,0 +1,45 @@
+{
+  "id": "sc-camp-ho-non-wah",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Ho Non Wah",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:coastal-carolina",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2609 Boy Scout Road",
+      "city": "Wadmalaw Island",
+      "state": "SC",
+      "lat": 32.6289,
+      "lon": -80.1688,
+      "website": "https://scoutingevent.com/550-summer26",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-550/sc-camp-ho-non-wah (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/550-summer26"
+          },
+          {
+            "url": "https://scoutingevent.com/550-summer26"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

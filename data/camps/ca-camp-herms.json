@@ -1,0 +1,44 @@
+{
+  "id": "ca-camp-herms",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Herms",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:golden-gate-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "El Cerrito",
+      "state": "CA",
+      "lat": null,
+      "lon": null,
+      "website": "https://goldengatescouting.org/cub-scouts/cub-scouts-camping/",
+      "program_types": [
+        "webelos"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-023/ca-camp-herms (unofficial community dataset)"
+          },
+          {
+            "url": "https://goldengatescouting.org/cub-scouts/cub-scouts-camping/"
+          },
+          {
+            "url": "https://goldengatescouting.org/cub-scouts/cub-scouts-camping/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

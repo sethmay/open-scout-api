@@ -44,6 +44,8 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | `v1/merit-badges/{id}.json` | one merit badge: version history + events |
 | [`v1/requirement-sets/index.json`](https://sethmay.github.io/open-scout-api/v1/requirement-sets/index.json) | every requirement set (one per badge revision) |
 | `v1/requirement-sets/{id}.json` | one requirement set: the full requirement tree (`<slug>-<year>`) |
+| [`v1/camps/index.json`](https://sethmay.github.io/open-scout-api/v1/camps/index.json) | every camp (resident / high-adventure / day / short-term / reservation) |
+| `v1/camps/{id}.json` | one camp: version history + events |
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
 
 ```bash
@@ -72,7 +74,7 @@ git tag instead of `@main` for immutable version pinning once releases are tagge
 | **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
 | **Merit badges** | ✅ 142 entities — 140 current (17 Eagle-required incl. alternatives), Citizenship in Society (introduced 2021 → Eagle-required 2022 → discontinued 2026), Computers→Digital Technology supersession. |
 | **Requirement sets** | ✅ 141 documents — full requirement tree (numbering, nesting, choose-N/option groups) + effective date + source links per current badge revision. ⚠ Requirement **text is © Scouting America** (see below), not under this dataset's license. |
-| **Camps** | ⬜ import from the sibling [camp-finder](https://github.com/sethmay/camp-finder) planned |
+| **Camps** | ✅ 469 entities — imported from [camp-finder](https://github.com/sethmay/camp-finder), classified by `camp_type` (361 resident, 68 day, 40 high-adventure) and `operator` (465 council + 4 national bases: Philmont, Florida Sea Base, Northern Tier, Summit/James C. Justice). Sessions/fees stay at the council site. |
 
 Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 

@@ -1,0 +1,45 @@
+{
+  "id": "oh-muskingum-valley-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Muskingum Valley Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:muskingum-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "16905 County Road 271",
+      "city": "Coshocton",
+      "state": "OH",
+      "lat": 40.1984754,
+      "lon": -81.856842,
+      "website": "https://muskingumvalleycouncil.com/mvsr2026/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-467/oh-muskingum-valley-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://muskingumvalleycouncil.com/mvsr2026/"
+          },
+          {
+            "url": "https://muskingumvalleycouncil.com/mvsr2026/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

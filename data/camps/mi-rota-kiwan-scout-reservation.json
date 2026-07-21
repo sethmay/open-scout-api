@@ -1,0 +1,44 @@
+{
+  "id": "mi-rota-kiwan-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Rota-Kiwan Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:michigan-crossroads",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6278 Texas Drive",
+      "city": "Kalamazoo",
+      "state": "MI",
+      "lat": 42.211962,
+      "lon": -85.6733764,
+      "website": "https://michiganscouting.org/camping/properties/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-272/mi-rota-kiwan-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/properties/"
+          },
+          {
+            "url": "https://michiganscouting.org/camping/properties/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

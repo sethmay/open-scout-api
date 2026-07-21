@@ -1,0 +1,44 @@
+{
+  "id": "mn-camp-horace-johnson",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Horace Johnson",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "7200 Rice Lake Rd",
+      "city": "Duluth",
+      "state": "MN",
+      "lat": 47.0360361,
+      "lon": -92.1297154,
+      "website": "https://camp.northernstar.org/Camp-Horace-Johnson",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-250/mn-camp-horace-johnson (unofficial community dataset)"
+          },
+          {
+            "url": "https://camp.northernstar.org/Camp-Horace-Johnson"
+          },
+          {
+            "url": "https://camp.northernstar.org/Camp-Horace-Johnson"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "co-rocky-mountain-high-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Rocky Mountain High Adventure Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:pathway-to-the-rockies",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Rye",
+      "state": "CO",
+      "lat": null,
+      "lon": null,
+      "website": "https://pathwaytotherockies.org/facilities/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-060/co-rocky-mountain-high-adventure-base (unofficial community dataset)"
+          },
+          {
+            "url": "https://pathwaytotherockies.org/facilities/"
+          },
+          {
+            "url": "https://pathwaytotherockies.org/facilities/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nc-camp-john-j-barnhardt",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp John J. Barnhardt",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:central-north-carolina",
+      "parent": null,
+      "operating_status": "active",
+      "address": "44184 Cannon Rd, New London, NC 28127",
+      "city": "New London",
+      "state": "NC",
+      "lat": 35.442074922574,
+      "lon": -80.139400180552,
+      "website": "https://www.campjohnjbarnhardt.org/summercamp",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-416/nc-camp-john-j-barnhardt (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.campjohnjbarnhardt.org/summercamp"
+          },
+          {
+            "url": "https://www.campjohnjbarnhardt.org/summercamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

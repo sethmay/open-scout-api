@@ -1,0 +1,44 @@
+{
+  "id": "nh-camp-carpenter-overnight-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Carpenter Overnight Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:daniel-webster",
+      "parent": null,
+      "operating_status": "active",
+      "address": "300 Blondin Rd. Manchester, New Hampshire 03109",
+      "city": null,
+      "state": "NH",
+      "lat": 42.950154,
+      "lon": -71.3843598,
+      "website": "https://scoutingevent.com/330-108266",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-330/nh-camp-carpenter-overnight-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/330-108266"
+          },
+          {
+            "url": "https://scoutingevent.com/330-108266"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

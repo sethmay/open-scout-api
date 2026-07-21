@@ -1,0 +1,44 @@
+{
+  "id": "md-camp-horseshoe-long-term-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Horseshoe Long-term Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:chester-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1286 Ridge Road Rising Sun, Maryland 21911",
+      "city": null,
+      "state": "MD",
+      "lat": 39.7177408,
+      "lon": -76.1159226,
+      "website": "https://scoutingevent.com/539-101949",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-539/md-camp-horseshoe-long-term-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/539-101949"
+          },
+          {
+            "url": "https://scoutingevent.com/539-101949"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

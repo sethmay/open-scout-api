@@ -1,0 +1,44 @@
+{
+  "id": "mn-rum-river-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Rum River Scout Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "15659 St. Francis Blvd",
+      "city": "Anoka",
+      "state": "MN",
+      "lat": 45.2562,
+      "lon": -93.4094,
+      "website": "https://camp.northernstar.org/rum-river-scout-camp",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-250/mn-rum-river-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://camp.northernstar.org/rum-river-scout-camp"
+          },
+          {
+            "url": "https://camp.northernstar.org/rum-river-scout-camp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

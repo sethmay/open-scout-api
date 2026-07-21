@@ -1,0 +1,44 @@
+{
+  "id": "ok-camp-george-thomas",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp George Thomas",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:last-frontier",
+      "parent": null,
+      "operating_status": "active",
+      "address": "45456 County Street 2520",
+      "city": "Apache",
+      "state": "OK",
+      "lat": 41.3199035,
+      "lon": -72.9380083,
+      "website": "https://www.scoutingevent.com/480-CGT2026",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-480/ok-camp-george-thomas (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.scoutingevent.com/480-CGT2026"
+          },
+          {
+            "url": "https://www.scoutingevent.com/480-CGT2026"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

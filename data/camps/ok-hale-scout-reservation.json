@@ -1,0 +1,44 @@
+{
+  "id": "ok-hale-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Hale Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:indian-nations",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Talihina",
+      "state": "OK",
+      "lat": 34.7409,
+      "lon": -94.9048,
+      "website": "https://www.halescoutreservation.org/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-488/ok-hale-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.halescoutreservation.org/"
+          },
+          {
+            "url": "https://www.halescoutreservation.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ny-durland-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Durland Scout Reservation",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:greater-hudson-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1 Clear Lake Road",
+      "city": "Putnam Valley",
+      "state": "NY",
+      "lat": 41.341409,
+      "lon": -72.746123,
+      "website": "https://www.ghvscouting.org/durland/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-388/ny-durland-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.ghvscouting.org/durland/"
+          },
+          {
+            "url": "https://www.ghvscouting.org/durland/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ky-camp-mckee",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp McKee",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:blue-grass",
+      "parent": null,
+      "operating_status": "active",
+      "address": "8695 Levee Rd",
+      "city": "Jeffersonville",
+      "state": "KY",
+      "lat": 37.9968,
+      "lon": -84.44,
+      "website": "https://bgcscouting.org/camp-mckee/summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-204/ky-camp-mckee (unofficial community dataset)"
+          },
+          {
+            "url": "https://bgcscouting.org/camp-mckee/summer-camp/"
+          },
+          {
+            "url": "https://bgcscouting.org/camp-mckee/summer-camp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

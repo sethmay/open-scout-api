@@ -1,0 +1,44 @@
+{
+  "id": "in-franklin-l-cary-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Franklin L. Cary Camp",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:sagamore",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6286 IN-26",
+      "city": "Lafayette",
+      "state": "IN",
+      "lat": 40.4216,
+      "lon": -86.7832,
+      "website": "https://scoutingevent.com/162-103288",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-162/in-franklin-l-cary-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/162-103288"
+          },
+          {
+            "url": "https://scoutingevent.com/162-103288"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

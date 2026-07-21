@@ -1,0 +1,44 @@
+{
+  "id": "ca-irvine-ranch-outdoor-education-center",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Irvine Ranch Outdoor Education Center",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:orange-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Orange",
+      "state": "CA",
+      "lat": null,
+      "lon": null,
+      "website": "https://ocbsa.org/summercamp/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-039/ca-irvine-ranch-outdoor-education-center (unofficial community dataset)"
+          },
+          {
+            "url": "https://ocbsa.org/summercamp/"
+          },
+          {
+            "url": "https://ocbsa.org/summercamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

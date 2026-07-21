@@ -1,0 +1,44 @@
+{
+  "id": "nj-camp-winnebago",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Winnebago",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:patriots-path",
+      "parent": null,
+      "operating_status": "active",
+      "address": "102 Timberbrook Rd Rockaway, New Jersey 07866",
+      "city": null,
+      "state": "NJ",
+      "lat": 40.9988243,
+      "lon": -74.4567438,
+      "website": "https://scoutingevent.com/358-CampWinnebago",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-358/nj-camp-winnebago (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/358-CampWinnebago"
+          },
+          {
+            "url": "https://scoutingevent.com/358-CampWinnebago"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

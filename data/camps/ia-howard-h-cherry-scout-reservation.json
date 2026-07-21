@@ -1,0 +1,44 @@
+{
+  "id": "ia-howard-h-cherry-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Howard H. Cherry Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:hawkeye-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4521 Boy Scouts Road",
+      "city": "Central City",
+      "state": "IA",
+      "lat": 42.189,
+      "lon": -91.4614,
+      "website": "https://hawkeyescouting.org/camping/scoutcamp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-172/ia-howard-h-cherry-scout-reservation (unofficial community dataset)"
+          },
+          {
+            "url": "https://hawkeyescouting.org/camping/scoutcamp/"
+          },
+          {
+            "url": "https://hawkeyescouting.org/camping/scoutcamp/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

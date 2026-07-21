@@ -1,0 +1,44 @@
+{
+  "id": "ms-camp-currier",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Currier",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:chickasaw",
+      "parent": null,
+      "operating_status": "active",
+      "address": "9700 Highway 304, Hernando, MS",
+      "city": "Eudora",
+      "state": "MS",
+      "lat": 34.831135125001,
+      "lon": -90.16371534755,
+      "website": "https://www.campcurrier.org/",
+      "program_types": [
+        "cub_day"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-558/ms-camp-currier (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.campcurrier.org/"
+          },
+          {
+            "url": "https://www.campcurrier.org/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "wa-cowles-scout-reservation-cub-scout-overnight-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cowles Scout Reservation (Cub Scout Overnight Camp)",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:inland-northwest",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4161 North Shore Diamond Lake Rd",
+      "city": "Newport",
+      "state": "WA",
+      "lat": 48.1352658,
+      "lon": -117.207537,
+      "website": "https://scoutingevent.com/611-26CubCamp",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-611/wa-cowles-scout-reservation-cub-scout-overnight-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/611-26CubCamp"
+          },
+          {
+            "url": "https://scoutingevent.com/611-26CubCamp"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}
