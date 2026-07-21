@@ -1,0 +1,143 @@
+{
+  "id": "gardening-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:gardening",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Gardening Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/gardening/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards associated with gardening and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss the prevention of and treatment for health concerns that could occur while gardening, including cuts, scratches, puncture wounds, insect bites, anaphylactic shock, heat reactions, and reactions from exposure to pesticides and fertilizers."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following, and discuss your observations throughout the process with your counselor:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Grow six vegetables, three from seeds and three from seedlings, through harvest."
+        },
+        {
+          "number": "2b",
+          "text": "Grow six flowers, three from seeds and three from seedlings, through flowering."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Give the nutritional value of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Three root or tuber crops"
+        },
+        {
+          "number": "3b",
+          "text": "Three vegetables that bear above the ground"
+        },
+        {
+          "number": "3c",
+          "text": "Three fruits"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Test 100 seeds for germination. Determine the percentage of seeds that germinate. Explain why you think some did not germinate."
+    },
+    {
+      "number": "5",
+      "text": "Visit your county extension agent's office, local university, agricultural college, nursery, farm, or a botanical garden or arboretum. Report on what you learned."
+    },
+    {
+      "number": "6",
+      "text": "Explain to your counselor how and why honeybees are used in pollinating food crops and the problems that face the bee population today. Discuss what the impact to humanity would be if there were no pollinators."
+    },
+    {
+      "number": "7",
+      "text": "Identify five garden pests (insects, diseased plants). Recommend two solutions for each pest. At least one of the two solutions must be an organic method."
+    },
+    {
+      "number": "8",
+      "text": "Do ONE of the following and record weekly observations. Discuss the results of your project with your counselor.",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Build a compost bin and maintain it for 90 days."
+        },
+        {
+          "number": "8b",
+          "text": "Build a vermipost bin (worm compost bin) and maintain it for 90 days."
+        },
+        {
+          "number": "8c",
+          "text": "Build a hydroponic garden containing three vegetables or herbs, or three ornamental plants. Maintain this garden through harvest or flowering, or for 90 days."
+        },
+        {
+          "number": "8d",
+          "text": "Build one water garden, either in a container (at least 12 by 6 inches and 6 inches deep), or in the ground as a small, decorative pond no larger than 6 by 3 feet and 24 inches deep. Maintain the water garden for 90 days."
+        },
+        {
+          "number": "8e",
+          "text": "Prepare a honey super for use on a hive or colony. Remove a filled honey super from the hive or colony and prepare the honey for sale."
+        },
+        {
+          "number": "8f",
+          "text": "Grow a garden of your own using soil from seed or plantings to harvest or for 90 days, whichever is earlier. This can be an outdoor garden or indoors using appropriate containers, and should include at least three types of plants approved by your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "9",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Identify three career opportunities that would use skills and knowledge in gardening. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "number": "9b",
+          "text": "Identify how you might use the skills and knowledge in gardening to pursue a personal hobby and/or healthy lifestyle. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/gardening/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Gardening.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/gardening/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

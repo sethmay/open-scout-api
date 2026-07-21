@@ -1,0 +1,199 @@
+{
+  "id": "backpacking-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:backpacking",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Backpacking Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/backpacking/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss the prevention of and treatment for the health concerns that could occur while backpacking, including hypothermia, heat reactions, frostbite, dehydration, insect stings, tick bites, snakebite, and blisters."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "List the 10 Scout Basic Essentials to be carried on any backpacking trek and explain why each item is necessary."
+        },
+        {
+          "number": "2b",
+          "text": "Describe 10 ways you can limit the weight and bulk to be carried in your pack without jeopardizing your health or safety."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Define limits on the number of backpackers appropriate for a trek crew."
+        },
+        {
+          "number": "3b",
+          "text": "Describe how a trek crew should be organized."
+        },
+        {
+          "number": "3c",
+          "text": "Tell how you would minimize risk on a backpacking trek."
+        },
+        {
+          "number": "3d",
+          "text": "Explain the purpose of an emergency response plan."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Describe the importance of following the Leave No Trace Seven Principles and the Outdoor Code while backpacking, and at least five ways you can lessen the crew's impact on the environment."
+        },
+        {
+          "number": "4b",
+          "text": "Describe proper methods of handling human and other wastes while on a backpacking trek. Describe the importance of and means to assure personal cleanliness while on a backpacking trek."
+        },
+        {
+          "number": "4c",
+          "text": "Tell what factors are important in choosing a campsite."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Demonstrate two ways to treat water and tell why water treatment is essential."
+        },
+        {
+          "number": "5b",
+          "text": "Explain to your counselor the importance of staying well-hydrated during a trek."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Demonstrate that you can read topographic maps."
+        },
+        {
+          "number": "6b",
+          "text": "While on a trek, use a map and compass to establish your position on the ground at three different locations, OR use a GPS receiver to establish your position on a topographic map and on the ground at three different locations."
+        },
+        {
+          "number": "6c",
+          "text": "Explain how to stay found, and what to do if you get lost."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Tell how to properly prepare for and deal with inclement weather."
+    },
+    {
+      "number": "8",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Explain the advantages and disadvantages of the different types of backpacking stoves using at least three different types of fuel."
+        },
+        {
+          "number": "8b",
+          "text": "Demonstrate that you know how to operate a backpacking stove safely and to handle liquid fuel safely."
+        },
+        {
+          "number": "8c",
+          "text": "Prepare three meals using a stove and fuel you can carry in a backpack."
+        },
+        {
+          "number": "8d",
+          "text": "Demonstrate that you know how to keep cooking and eating gear clean and sanitary, and that you practice proper methods for food storage while on a backpacking trek."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Write a plan that includes a schedule for a patrol/crew backpacking hike of at least 2 miles."
+        },
+        {
+          "number": "9b",
+          "text": "Conduct a prehike inspection of the patrol and its equipment."
+        },
+        {
+          "number": "9c",
+          "text": "Show that you know how to properly pack your personal gear and your share of the crew's gear and food."
+        },
+        {
+          "number": "9d",
+          "text": "Show you can properly shoulder your pack and adjust it for proper wear."
+        },
+        {
+          "number": "9e",
+          "text": "While using the plan you developed for requirement 9(a), carry your fully loaded pack to complete a hike of at least 2 miles."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Following the Leave No Trace Seven Principles and the Outdoor Code, participate in at least three backpacking treks of at least three days each and at least 15 miles each, and using at least two different campsites on each trek. Carry everything you will need throughout the trek."
+    },
+    {
+      "number": "11",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "11a",
+          "text": "Write a plan for a backpacking trek of at least five days using at least three different campsites and covering at least 30 miles. Your plan must include a description of and route to the trek area, a schedule (including a daily schedule), a list of food and equipment needs, a safety and emergency plan, and a budget."
+        },
+        {
+          "number": "11b",
+          "text": "Following the Leave No Trace Seven Principles and the Outdoor Code, take the trek as planned in requirement 11(a) that is at least five full days, covering at least 30 miles and utilizing at least three different campsites. While on trek, complete at least one service project approved by your counselor."
+        },
+        {
+          "number": "11c",
+          "text": "Keep a daily journal during the trek that includes a day-by-day description of your activities, including notes about what worked well and thoughts about improvements that could be made for the next trek."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/backpacking/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Backpacking.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/backpacking/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

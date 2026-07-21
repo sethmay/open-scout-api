@@ -1,0 +1,165 @@
+{
+  "id": "motorboating-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:motorboating",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Motorboating Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/motorboating/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Discuss with your counselor the following hazards you might encounter while motorboating: flammable fuel; carbon monoxide; propellers; collisions; falls overboard; capsize; or running aground. Explain what you should do to anticipate, prevent, mitigate and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Explain first aid for injuries or illnesses that could occur while motorboating, including hypothermia, heat reactions, dehydration, motion sickness, bug bites, blisters."
+        },
+        {
+          "number": "1c",
+          "text": "Discuss the Scouting America Safety Afloat policy. Tell how it applies to motorboating activities."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Before doing requirement 5, successfully complete the Scouting America swimmer test. Note: See the Swimming merit badge pamphlet for details about the Scouting America swimmer test."
+        },
+        {
+          "number": "2b",
+          "text": "Name the different types of personal flotation devices (PFDs), and explain when each type should be used. Show how to choose and properly fit a PFD."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain inboard, outboard, and inboard/outboard motors, and the uses and advantages of each."
+        },
+        {
+          "number": "3b",
+          "text": "Explain the safety procedures and precautions involving handling fuel and engine servicing, and equipment storage and placement."
+        },
+        {
+          "number": "3c",
+          "text": "Explain how to winterize a boat motor and tell why this procedure is necessary."
+        },
+        {
+          "number": "3d",
+          "text": "Explain the safety procedures and precautions involving swimmers and skiers in the water, passenger positions underway, and boat wakes."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Show you know safety guidelines for motorboating by doing the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Review how each item of the Scouting America Safety Afloat policy applies, including checking the weather prior to and during time on the water, confirming all required equipment is present and functional, and following a float plan."
+        },
+        {
+          "number": "4b",
+          "text": "Explain the rules or laws that apply to recreational boating in your area or state. Have a permit to operate a motorboat, if required by the laws of your state. Discuss how you would find information regarding the boating laws in different states."
+        },
+        {
+          "number": "4c",
+          "text": "Discuss how hazards of weather and heavy water conditions can affect safety and performance in motorboating."
+        },
+        {
+          "number": "4d",
+          "text": "Promise that you will follow Scouting America Safety Afloat guidelines. Explain the meaning of each point."
+        },
+        {
+          "number": "4e",
+          "text": "Explain and show the correct use of equipment required by both state and federal regulations to be carried aboard a motorboat."
+        },
+        {
+          "number": "4f",
+          "text": "Explain federal and state rules for a ventilation system, and tell why these rules are required."
+        },
+        {
+          "number": "4g",
+          "text": "Explain the use of lights (sight signals) and sound signals on motorboats."
+        },
+        {
+          "number": "4h",
+          "text": "Discuss the common types of anchors used in motorboating and under what conditions each would be preferred. Explain proper anchoring techniques."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "With your counselor or other adults on board, demonstrate proper boat-handling procedures and skills by doing the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Board and assist others in boarding. Confirm that all passengers on board are wearing properly fitted life jackets."
+        },
+        {
+          "number": "5b",
+          "text": "Fuel the boat and complete a safety check."
+        },
+        {
+          "number": "5c",
+          "text": "If equipped, attach the engine cut-off switch link and safely start the motor. Get underway from dockside or from a beach launch."
+        },
+        {
+          "number": "5d",
+          "text": "Run a course for at least a mile, showing procedures for overtaking and passing slower vessels, yielding right-of-way, passing oncoming traffic, making turns, reversing direction, and using navigation aids."
+        },
+        {
+          "number": "5e",
+          "text": "Stop and secure the boat in position on the open water using anchors. Raise and stow the anchor and get underway."
+        },
+        {
+          "number": "5f",
+          "text": "Land or dock the boat, disembark, and assist others in doing the same."
+        },
+        {
+          "number": "5g",
+          "text": "Moor, dock, or beach the boat and secure all gear."
+        },
+        {
+          "number": "5h",
+          "text": "Demonstrate knots used in boating: cleating hitch, bowline, clove hitch, anchor bend, sheet bend."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/motorboating/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Motorboating.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/motorboating/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

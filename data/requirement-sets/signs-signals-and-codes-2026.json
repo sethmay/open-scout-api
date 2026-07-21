@@ -1,0 +1,166 @@
+{
+  "id": "signs-signals-and-codes-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:signs-signals-and-codes",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Signs, Signals, and Codes Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/signs-signals-and-codes/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your counselor the importance of signs, signals, and codes, and why people need these different methods of communication. Briefly discuss the history and development of signs, signals, and codes."
+    },
+    {
+      "number": "2",
+      "text": "Explain the importance of signaling in emergency communications. Discuss with your counselor the types of emergency or distress signals one might use to attract airborne search-and-rescue personnel if lost in the outdoors or trying to summon assistance during a disaster. Illustrate these signaling examples by the use of photos or drawings."
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Describe what Morse code is and the various means by which it can be sent. Spell your first name using Morse code. Send or receive a message of six to 10 words using Morse code."
+        },
+        {
+          "number": "3b",
+          "text": "Describe what American Sign Language (ASL) is and how it is used today. Spell your first name using American Sign Language. Send or receive a message of six to 10 words using ASL."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used."
+        },
+        {
+          "number": "4b",
+          "text": "Explain to your counselor the difference between semaphore flags and nautical flags."
+        },
+        {
+          "number": "4c",
+          "text": "After 4(a) and 4(b) have been completed, do the following:",
+          "children": [
+            {
+              "number": "4c(1)",
+              "text": "Spell your first name using semaphore. Send or receive a message of six to 10 words using semaphore."
+            },
+            {
+              "number": "4c(2)",
+              "text": "Using illustrations or photographs, identify 10 examples of nautical flags and discuss their importance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Explain the braille reading technique and how it helps individuals with sight impairment to communicate. Then do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Either by sight or by touch, identify the letters of the braille alphabet that spell your name. By sight or touch, decode a braille message at least six words long."
+        },
+        {
+          "number": "5b",
+          "text": "Create a message in braille at least six words long, and share this with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Describe to your counselor six sound-only signals that are in use today. Discuss the pros and cons of using sound signals versus other types of signals."
+        },
+        {
+          "number": "6b",
+          "text": "Demonstrate to your counselor six different silent Scout signals. Use these Scout signals to direct the movements and actions of your patrol or troop."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "On a Scout outing, lay out a trail for your patrol or troop to follow. Cover at least one mile in distance and use at least six different trail signs and markers. After the Scouts have completed the trail, follow the Leave No Trace Seven Principles and the Outdoor Code by replacing or returning trail markers to their original locations."
+    },
+    {
+      "number": "8",
+      "text": "For THREE of the following activities, demonstrate five signals each. Tell what the signals mean and why they are used:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Sports official's hand signs/signals"
+        },
+        {
+          "number": "8b",
+          "text": "Heavy-equipment operator's hand signals"
+        },
+        {
+          "number": "8c",
+          "text": "Aircraft carrier catapult crew signals"
+        },
+        {
+          "number": "8d",
+          "text": "Cyclist's hand signals"
+        },
+        {
+          "number": "8e",
+          "text": "An activity selected by you and your counselor"
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "9",
+      "text": "Share with your counselor 10 examples of symbols used in everyday life. Design your own symbol. Share it with your counselor and explain what it means. Then do the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Show examples of 10 traffic signs and explain their meaning."
+        },
+        {
+          "number": "9b",
+          "text": "Using a topographical map, explain what a map legend is and discuss its importance. Point out 10 map symbols and explain the meaning of each."
+        },
+        {
+          "number": "9c",
+          "text": "Discuss text-message symbols and why they are commonly used. Give examples of your favorite 10 text symbols or emoticons. Then see if your parent, guardian, or counselor can identify the meaning or usage of each symbol."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Briefly discuss the history of secret code writing (cryptography). Make up your own secret code and write a message of up to 25 words using this code. Share the message with a friend or fellow Scout. Then share the message and code key with your counselor and discuss the effectiveness of your code."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/signs-signals-and-codes/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Signs%20Signals%20Codes.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/signs-signals-and-codes/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

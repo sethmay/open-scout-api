@@ -1,0 +1,349 @@
+{
+  "id": "multisport-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:multisport",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Multisport Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/multisport/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter during multisport activities and what you should do to anticipate, prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while participating in multisport events, including abrasions, blisters, concussions, contusions, dehydration, hypothermia, overheating, sprains, and strains."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Discuss the importance of having a physical examination each year. Discuss why overall health, immunizations, medications, allergies, and medical history are covered during an examination. Tell your counselor when you last underwent a physical examination."
+        },
+        {
+          "number": "2b",
+          "text": "Explain the importance of maintaining good health habits, especially during training, and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your health and your performance in athletic activities."
+        },
+        {
+          "number": "2c",
+          "text": "Define a healthy diet and explain the importance of maintaining a healthy diet."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Discuss with your counselor your level of familiarity and experience with the multisport events (swimming, biking, and running) and the order and distance of each sports segment."
+        },
+        {
+          "number": "3b",
+          "text": "Explain to your counselor which multisport event (swimming, biking, or running) you feel is your strongest and which you could improve upon the most."
+        },
+        {
+          "number": "3c",
+          "text": "Identify the required equipment for each of the three common multisport events (swimming, biking, and running)."
+        },
+        {
+          "number": "3d",
+          "text": "Based on your interests, experience, and discussion with your counselor, select ONE of the following multisport formats to concentrate on for the remaining requirements: triathlon (swimming, biking, and running), duathlon (biking and running), aquathlon (swimming and running), or aquabike (swimming and biking)."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Complete ALL of the following for the multisport format option you selected in requirement 3(d):",
+      "children": [
+        {
+          "number": "4A",
+          "text": "Triathlon.",
+          "children": [
+            {
+              "number": "4A(1)",
+              "text": "Swimming"
+            },
+            {
+              "number": "4Aa",
+              "text": "Before doing requirements 5 through 8, earn the Swimming merit badge."
+            },
+            {
+              "number": "4Ab",
+              "text": "Explain the components of the Scouting America Safe Swim Defense program and how you will ensure they are in place when you swim."
+            },
+            {
+              "number": "4Ac",
+              "text": "Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is appropriate to wear a wet suit.",
+              "children": [
+                {
+                  "number": "4Ac(2)",
+                  "text": "Biking"
+                }
+              ]
+            },
+            {
+              "number": "4Aa",
+              "text": "Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+            },
+            {
+              "number": "4Ab",
+              "text": "Discuss what should be checked regularly to make sure the bicycle is safe to ride."
+            },
+            {
+              "number": "4Ac",
+              "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather.",
+              "children": [
+                {
+                  "number": "4Ac(3)",
+                  "text": "Running"
+                }
+              ]
+            },
+            {
+              "number": "4Aa",
+              "text": "Demonstrate a proper run warmup and cool-down. Explain to your counselor the importance of maintaining healthy habits, including hydration, nutrition, injury prevention, and rest."
+            },
+            {
+              "number": "4Ab",
+              "text": "Learn and state the basic rules of the road for runners."
+            },
+            {
+              "number": "4Ac",
+              "text": "Demonstrate important running drills, including high knees, butt kicks, lunges, inchworms, and soldier kicks."
+            }
+          ]
+        },
+        {
+          "number": "4B",
+          "text": "Duathlon.",
+          "children": [
+            {
+              "number": "4B(1)",
+              "text": "Biking"
+            },
+            {
+              "number": "4Ba",
+              "text": "Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+            },
+            {
+              "number": "4Bb",
+              "text": "Discuss what should be checked regularly to make sure the bicycle is safe to ride."
+            },
+            {
+              "number": "4Bc",
+              "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather.",
+              "children": [
+                {
+                  "number": "4Bc(2)",
+                  "text": "Running"
+                }
+              ]
+            },
+            {
+              "number": "4Ba",
+              "text": "Demonstrate a proper run warmup and cool-down. Explain to your counselor the importance of maintaining healthy habits, including hydration, nutrition, injury prevention, and rest."
+            },
+            {
+              "number": "4Bb",
+              "text": "Learn and state the basic rules of the road for runners."
+            },
+            {
+              "number": "4Bc",
+              "text": "Demonstrate important running drills, including high knees, butt kicks, lunges, inchworms, and soldier kicks."
+            }
+          ]
+        },
+        {
+          "number": "4C",
+          "text": "Aquathlon.",
+          "children": [
+            {
+              "number": "4C(1)",
+              "text": "Swimming"
+            },
+            {
+              "number": "4Ca",
+              "text": "Before doing requirements 5 through 8, earn the Swimming merit badge."
+            },
+            {
+              "number": "4Cb",
+              "text": "Explain the components of the Scouting America Safe Swim Defense guidelines and how you will ensure they are in place when you swim."
+            },
+            {
+              "number": "4Cc",
+              "text": "Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is appropriate to wear a wet suit.",
+              "children": [
+                {
+                  "number": "4Cc(2)",
+                  "text": "Running"
+                }
+              ]
+            },
+            {
+              "number": "4Ca",
+              "text": "Demonstrate a proper run warmup and cool-down. Explain to your counselor the importance of maintaining healthy habits, including hydration, nutrition, injury prevention, and rest."
+            },
+            {
+              "number": "4Cb",
+              "text": "Learn and state the basic rules of the road for runners."
+            },
+            {
+              "number": "4Cc",
+              "text": "Demonstrate important running drills, including high knees, butt kicks, lunges, inchworms, and soldier kicks."
+            }
+          ]
+        },
+        {
+          "number": "4D",
+          "text": "Aquabike.",
+          "children": [
+            {
+              "number": "4D(1)",
+              "text": "Swimming"
+            },
+            {
+              "number": "4Da",
+              "text": "Before doing requirements 5 through 8, earn the Swimming merit badge."
+            },
+            {
+              "number": "4Db",
+              "text": "Explain the components of the Scouting America Safe Swim Defense guidelines and how you will ensure they are in place when you swim."
+            },
+            {
+              "number": "4Dc",
+              "text": "Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is appropriate to wear a wet suit.",
+              "children": [
+                {
+                  "number": "4Dc(2)",
+                  "text": "Biking"
+                }
+              ]
+            },
+            {
+              "number": "4Da",
+              "text": "Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+            },
+            {
+              "number": "4Db",
+              "text": "Discuss what should be checked regularly to make sure the bicycle is safe to ride."
+            },
+            {
+              "number": "4Dc",
+              "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "With guidance from your counselor, establish a four-week training plan that combines your chosen multisport format to develop proper techniques, gain self-confidence, and increase endurance. Each session should last at least 25 minutes and include a proper warmup before the session and stretching afterward."
+        },
+        {
+          "number": "5b",
+          "text": "Use a chart or other tracking method to monitor your training and development during this period."
+        },
+        {
+          "number": "5c",
+          "text": "Set a personal goal for improvement based on one or more of the following criteria: time, technique, or distance."
+        },
+        {
+          "number": "5d",
+          "text": "At the end of four weeks, discuss your progress with your counselor and tell how your development has affected you mentally and physically."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Learn the methods of setting up your transition area, which is where your bike equipment and/or running gear will be. Discuss with your counselor how to smoothly and safely transition from one element to the next, such as mounting and dismounting your bike or adjusting your gear."
+    },
+    {
+      "number": "7",
+      "text": "After completing requirements 1-6, do ONE of the following (complete all of the activities on the same day and consecutively) for the multisport focus area you selected in requirement 3(d), including demonstrating a smooth and safe transition between each:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Triathlon (swim 100 m, bike 3 km, and run 1 km)"
+        },
+        {
+          "number": "7b",
+          "text": "Duathlon (run 1.5 km, bike 3 km, and run 0.75 km)"
+        },
+        {
+          "number": "7c",
+          "text": "Aquathlon (swim 100 m and run 1 km)"
+        },
+        {
+          "number": "7d",
+          "text": "Aquabike (swim 100 m and bike 3 km)"
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Do TWO of the following and discuss with your counselor:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Research and identify two ways you can continue participating in multisport after completing this merit badge."
+        },
+        {
+          "number": "8b",
+          "text": "Research an Olympic, Paralympic, or professional triathlete (past or current). Share information on their background in the sport and what inspires you most about this individual."
+        },
+        {
+          "number": "8c",
+          "text": "Demonstrate leadership by starting a training group and educating your peers on the importance of physical activity, nutrition, and the disciplines of multisport."
+        },
+        {
+          "number": "8d",
+          "text": "Sign up for and participate in a sanctioned multisport event in your area."
+        },
+        {
+          "number": "8e",
+          "text": "Volunteer at a local multisport event, running race, biking event, swim meet, or adaptive sporting event."
+        }
+      ],
+      "choose": 2
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/multisport/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Multisport.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/multisport/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

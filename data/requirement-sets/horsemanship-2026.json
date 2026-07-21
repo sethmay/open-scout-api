@@ -1,0 +1,148 @@
+{
+  "id": "horsemanship-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:horsemanship",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Horsemanship Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/horsemanship/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Describe the safety precautions you should take when handling and caring for a horse."
+        },
+        {
+          "number": "1b",
+          "text": "Describe the fire safety precautions you should take in a barn and around horses."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Name 15 parts of a horse and discuss the function of each with your counselor."
+    },
+    {
+      "number": "3",
+      "text": "Name four breeds of horses. Explain the special features for which each breed is known."
+    },
+    {
+      "number": "4",
+      "text": "Describe the symptoms of colic. Name and describe four other horse health problems."
+    },
+    {
+      "number": "5",
+      "text": "Explain what conformation is and why it is important. Explain the difference between lameness and unsoundness."
+    },
+    {
+      "number": "6",
+      "text": "Explain the importance of hoof care and why a horse might need to wear shoes."
+    },
+    {
+      "number": "7",
+      "text": "Demonstrate how to groom a horse, including picking hooves and caring for a horse after a ride."
+    },
+    {
+      "number": "8",
+      "text": "Explain how to determine what and how much to feed a horse and why the amount and kind of feed are changed according to the activity level and the breed of horse."
+    },
+    {
+      "number": "9",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Name 10 parts of the saddle and bridle that you will use, and explain how to care for this equipment."
+        },
+        {
+          "number": "9b",
+          "text": "Show how to properly saddle and bridle a horse."
+        },
+        {
+          "number": "9c",
+          "text": "Demonstrate how to safely mount and dismount a horse."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Explain and demonstrate how to approach and lead a horse safely from a stall, corral, or field and how to tie the horse securely."
+    },
+    {
+      "number": "11",
+      "text": "On level ground, continuously do the following movements after safely mounting the horse. Do them correctly, at ease, and in harmony with the horse.",
+      "children": [
+        {
+          "number": "11a",
+          "text": "Walk the horse in a straight line for 60 feet."
+        },
+        {
+          "number": "11b",
+          "text": "Walk the horse in a half-circle of not more than 16 feet in radius."
+        },
+        {
+          "number": "11c",
+          "text": "Trot or jog the horse in a straight line for 60 feet."
+        },
+        {
+          "number": "11d",
+          "text": "Trot or jog the horse in a half-circle of not more than 30 feet in radius."
+        },
+        {
+          "number": "11e",
+          "text": "Halt straight."
+        },
+        {
+          "number": "11f",
+          "text": "Back up straight four paces."
+        },
+        {
+          "number": "11g",
+          "text": "Halt and dismount."
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "12a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+        },
+        {
+          "number": "12b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/horsemanship/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Horsemanship.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/horsemanship/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

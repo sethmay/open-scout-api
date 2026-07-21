@@ -1,0 +1,255 @@
+{
+  "id": "crime-prevention-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:crime-prevention",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Crime Prevention Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/crime-prevention/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Laws and Society. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Why we have criminal laws."
+        },
+        {
+          "number": "1b",
+          "text": "What are types of crimes, including property crimes, crimes against people, white collar crime, and environmental crime."
+        },
+        {
+          "number": "1c",
+          "text": "Why people commit crimes."
+        },
+        {
+          "number": "1d",
+          "text": "Why everyone should follow the law even when no one is watching."
+        },
+        {
+          "number": "1e",
+          "text": "What is the meaning of crime prevention."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Groups Working to Prevent Crime. Research how the following groups contribute to crime prevention and share your findings with your counselor:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Citizens, including youth"
+        },
+        {
+          "number": "2b",
+          "text": "Schools"
+        },
+        {
+          "number": "2c",
+          "text": "Neighborhood, social and civic groups, including youth groups"
+        },
+        {
+          "number": "2d",
+          "text": "Private security"
+        },
+        {
+          "number": "2e",
+          "text": "Law enforcement agencies"
+        },
+        {
+          "number": "2f",
+          "text": "Courts"
+        },
+        {
+          "number": "2g",
+          "text": "Corrections and rehabilitation programs"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Crime in Your Community, State, and Nation. Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With your parent or guardian's permission and the approval of your counselor, research local, state, or national news coverage of three crimes of different types. Research how common these types of crimes are in your state or in the United States."
+        },
+        {
+          "number": "3b",
+          "text": "Record notes on which law enforcement agencies and courts were involved in the pursuit of justice for the victims and the accused person, why you think these crimes were committed, and what could be done to prevent similar crimes. Review your research with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Home and Neighborhood Crime Prevention. Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Discuss the following with your counselor:",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "How participation in activities of families, churches, sports teams, and clubs prevents crime."
+            },
+            {
+              "number": "4a(2)",
+              "text": "How designs of houses, neighborhoods, public buildings, stores, streets, and parks prevent crime."
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "Conduct a security survey of a home, a neighborhood, a park, or a camp building with adult supervision and following youth protection guidelines using a security checklist in the Crime Prevention merit badge pamphlet or one approved by your counselor."
+        },
+        {
+          "number": "4c",
+          "text": "Use information from your survey for requirement 4(b) and the EDGE method to develop a lesson about how a family or Scouts can protect themselves from crime. Review your teaching plan with your counselor, then present your lesson to your family or to Scouts."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Retail Crime Prevention. Research the following topics and review them with your counselor:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "The impact of shoplifting and employee theft (also known as shrinkage) and loss prevention on retail finances, customer service, and reputation."
+        },
+        {
+          "number": "5b",
+          "text": "Techniques used by retail stores to prevent shoplifting."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Reporting Crime. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "When and how to report a crime or an impending crime."
+        },
+        {
+          "number": "6b",
+          "text": "The warning signs for child abuse and domestic violence and how to report these situations."
+        },
+        {
+          "number": "6c",
+          "text": "The three R's of personal safety and protection and how to apply them."
+        },
+        {
+          "number": "6d",
+          "text": "How reporting a crime can help law enforcement provide resources for crime victims."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Peers and Crime. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "The role that peers play in crime, crime prevention, and experiencing crime."
+        },
+        {
+          "number": "7b",
+          "text": "How to resist peer influence."
+        },
+        {
+          "number": "7c",
+          "text": "Bullying and hazing behaviors and signs that a friend may be bullying you or someone else."
+        },
+        {
+          "number": "7d",
+          "text": "Explain the impact of gangs on communities."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Substance Use and Crime. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "The legal and health consequences of using alcohol, tobacco and vaping products, illegal drugs, and diverted prescription drugs."
+        },
+        {
+          "number": "8b",
+          "text": "How substance use contributes to violence and property crime and increases a person's risk of becoming a victim of crime."
+        },
+        {
+          "number": "8c",
+          "text": "How drug abuse awareness, prevention, and recovery programs help prevent crime."
+        },
+        {
+          "number": "8d",
+          "text": "How to get help if you or someone you know needs help with drugs or alcohol."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Online Crime and You. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "How to avoid being the victim of online crimes."
+        },
+        {
+          "number": "9b",
+          "text": "Common online financial scams."
+        },
+        {
+          "number": "9c",
+          "text": "Effective online security."
+        },
+        {
+          "number": "9d",
+          "text": "Identity theft and how to prevent it."
+        },
+        {
+          "number": "9e",
+          "text": "How criminals use social media to target victims."
+        },
+        {
+          "number": "9f",
+          "text": "How bullying, texting, and sharing photos can become crimes."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Interview. With your parent or guardian's permission and your counselor's approval, interview a law enforcement officer or a civil servant about their work in crime prevention. Learn about how they chose this career and about their duties. Discuss what you learned with your counselor."
+    },
+    {
+      "number": "11",
+      "text": "Careers. Identify three career opportunities that would use skills and knowledge in the field of crime prevention. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/crime-prevention/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Crime%20Prevention.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/crime-prevention/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

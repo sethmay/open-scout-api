@@ -1,0 +1,220 @@
+{
+  "id": "stamp-collecting-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:stamp-collecting",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Stamp Collecting Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/stamp-collecting/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Discuss how you can better understand people, places, institutions, history, and geography as a result of collecting stamps."
+        },
+        {
+          "number": "1b",
+          "text": "Briefly describe some aspects of the history, growth, and development of the United States postal system. Tell how it is different from postal systems in other countries."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Define topical stamp collecting. Name and describe three other types of stamp collections."
+    },
+    {
+      "number": "3",
+      "text": "Show at least ONE example of each of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Perforated and imperforate stamps"
+        },
+        {
+          "number": "3b",
+          "text": "Mint and used stamps"
+        },
+        {
+          "number": "3c",
+          "text": "Sheet, booklet, and coil stamps"
+        },
+        {
+          "number": "3d",
+          "text": "Numbers on plate block, booklet, coil, or marginal markings"
+        },
+        {
+          "number": "3e",
+          "text": "Overprint and surcharge"
+        },
+        {
+          "number": "3f",
+          "text": "Metered mail"
+        },
+        {
+          "number": "3g",
+          "text": "Definitive, commemorative, semipostal, and airmail stamps"
+        },
+        {
+          "number": "3h",
+          "text": "Cancellation and postmark"
+        },
+        {
+          "number": "3i",
+          "text": "First day cover"
+        },
+        {
+          "number": "3j",
+          "text": "Postal stationery (aerogramme, stamped envelope, and postal card)"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Demonstrate the use of ONE standard catalog for several different stamp issues. Explain why catalog value can vary from the corresponding purchase price."
+        },
+        {
+          "number": "4b",
+          "text": "Explain the meaning of the term condition as used to describe a stamp. Show examples that illustrate the different factors that affect a stamp's value."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate the use of at least THREE of the following stamp collector's tools:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Stamp tongs"
+        },
+        {
+          "number": "5b",
+          "text": "Water and tray"
+        },
+        {
+          "number": "5c",
+          "text": "Magnifiers"
+        },
+        {
+          "number": "5d",
+          "text": "Hinges and stamp mounts"
+        },
+        {
+          "number": "5e",
+          "text": "Perforation gauge"
+        },
+        {
+          "number": "5f",
+          "text": "Glassine envelopes and cover sleeves"
+        },
+        {
+          "number": "5g",
+          "text": "Watermark fluid"
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Show a stamp album and how to mount stamps with or without hinges. Show at least ONE page that displays several stamps."
+        },
+        {
+          "number": "6b",
+          "text": "Discuss at least THREE ways you can help to preserve stamps, covers, and albums in first-class condition."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Design a stamp, cancellation, or cachet."
+        },
+        {
+          "number": "7b",
+          "text": "Visit a post office, stamp club, or stamp show with an experienced collector. Explain what you saw and learned."
+        },
+        {
+          "number": "7c",
+          "text": "Write a review of an interesting article from a stamp newspaper, magazine, book, or website (with your parent or guardian's permission)."
+        },
+        {
+          "number": "7d",
+          "text": "Research and report on a famous stamp-related personality or the history behind a particular stamp."
+        },
+        {
+          "number": "7e",
+          "text": "Describe the steps taken to produce a stamp. Include the methods of printing, types of paper, perforation styles, and how they are gummed."
+        },
+        {
+          "number": "7f",
+          "text": "Prepare a two- to three-page display involving stamps. Using ingenuity, as well as clippings, drawings, etc., tell a story about the stamps , and how they relate to history, geography, or a favorite topic of yours."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "8",
+      "text": "Mount and show, in a purchased or homemade album, ONE of the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "A collection of 250 or more different stamps from at least 15 countries"
+        },
+        {
+          "number": "8b",
+          "text": "A collection of a stamp from each of 50 different countries, mounted on maps to show the location of each"
+        },
+        {
+          "number": "8c",
+          "text": "A collection of 100 or more different stamps from either one country or a group of closely related countries"
+        },
+        {
+          "number": "8d",
+          "text": "A collection of 75 or more different stamps on a single topic. (Some interesting topics are Scouting, birds, insects, the Olympics, sports, flowers, animals, ships, holidays, trains, famous people, space, and medicine). Stamps may be from different countries."
+        },
+        {
+          "number": "8e",
+          "text": "A collection of postal items discovered in your mail by monitoring it over a period of 30 days. Include at least five different types listed in requirement 3."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/stamp-collecting/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Stamp%20Collecting.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/stamp-collecting/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

@@ -42,6 +42,8 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | [`v1/current/merit-badges.json`](https://sethmay.github.io/open-scout-api/v1/current/merit-badges.json) | flat list of current merit badges (with `eagle_required`) |
 | [`v1/merit-badges/index.json`](https://sethmay.github.io/open-scout-api/v1/merit-badges/index.json) | every merit badge, incl. retired/historical |
 | `v1/merit-badges/{id}.json` | one merit badge: version history + events |
+| [`v1/requirement-sets/index.json`](https://sethmay.github.io/open-scout-api/v1/requirement-sets/index.json) | every requirement set (one per badge revision) |
+| `v1/requirement-sets/{id}.json` | one requirement set: the full requirement tree (`<slug>-<year>`) |
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
 
 ```bash
@@ -68,7 +70,8 @@ git tag instead of `@main` for immutable version pinning once releases are tagge
 |---|---|
 | **Councils** | ✅ 235 entities — 229 current, assigned to the 14 Council Service Territories; 6 historical (merged/renamed) with lifecycle events |
 | **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
-| **Merit badges** | ✅ 142 entities — 140 current (17 Eagle-required incl. alternatives), Citizenship in Society (introduced 2021 → Eagle-required 2022 → discontinued 2026), Computers→Digital Technology supersession. Requirement *content* is a separate later pass. |
+| **Merit badges** | ✅ 142 entities — 140 current (17 Eagle-required incl. alternatives), Citizenship in Society (introduced 2021 → Eagle-required 2022 → discontinued 2026), Computers→Digital Technology supersession. |
+| **Requirement sets** | ✅ 141 documents — full requirement tree (numbering, nesting, choose-N/option groups) + effective date + source links per current badge revision. ⚠ Requirement **text is © Scouting America** (see below), not under this dataset's license. |
 | **Camps** | ⬜ import from the sibling [camp-finder](https://github.com/sethmay/camp-finder) planned |
 
 Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
@@ -112,6 +115,10 @@ conventions in [`PLAN.md`](./PLAN.md) §3.
 
 - **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)** — reuse
   with attribution, non-commercial, share-alike.
+- **Merit badge requirement text** in `requirement-set` documents is **© Scouting America**
+  (marked `includes_official_text: true` + `text_rights`), reproduced with attribution for
+  non-commercial use and **not** under this dataset's license — don't relicense it. Only the
+  requirement structure/numbering/metadata is the project's CC BY-NC-SA contribution.
 - **Code** (`tools/`): MIT.
 
 Seed sources and how to attribute are in [`NOTICE.md`](./NOTICE.md). In brief: territory

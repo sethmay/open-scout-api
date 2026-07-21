@@ -1,0 +1,124 @@
+{
+  "id": "engineering-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:engineering",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Engineering Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/engineering/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Select a manufactured item in your home (such as a toy or an appliance) and, under adult supervision and with the approval of your counselor, investigate how and why it works as it does. Find out what sort of engineering activities were needed to create it. Discuss with your counselor what you learned and how you got the information."
+    },
+    {
+      "number": "2",
+      "text": "Select an engineering achievement that has had a major impact on society. Using resources such as the internet (with your parent or guardian's permission), books, and magazines, find out about the engineers who made this engineering feat possible, the special obstacles they had to overcome, and how this achievement has influenced the world today. Tell your counselor what you learned."
+    },
+    {
+      "number": "3",
+      "text": "Explain the work of six types of engineers. Pick two of the six types and explain how their work is related to engineering."
+    },
+    {
+      "number": "4",
+      "text": "Visit with an engineer (who may be your counselor, parent or guardian) and do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Discuss the work this engineer does and the tools the engineer uses."
+        },
+        {
+          "number": "4b",
+          "text": "Discuss with the engineer a current project and the engineer's particular role in it."
+        },
+        {
+          "number": "4c",
+          "text": "Find out how the engineer's work is done and how results are achieved."
+        },
+        {
+          "number": "4d",
+          "text": "Ask to see the reports that the engineer writes concerning the project."
+        },
+        {
+          "number": "4e",
+          "text": "Discuss with your counselor what you learned about engineering from this visit."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Use the systems engineering approach to design an original piece of patrol equipment, a toy or a useful device for the home, office or garage."
+    },
+    {
+      "number": "6",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Transforming Motion. Using common materials or a construction set, make a simple model that will demonstrate motion. Explain how the model uses basic mechanical elements like levers and inclined planes to demonstrate motion. Describe an example where this mechanism is used in a real product."
+        },
+        {
+          "number": "6b",
+          "text": "Using Electricity. Make a list of 10 electrical appliances in your home. Find out approximately how much electricity each uses in one month. Learn how to find out the amount and cost of electricity used in your home during periods of light and heavy use. List five ways to conserve electricity."
+        },
+        {
+          "number": "6c",
+          "text": "Understanding Electronics. Using an electronic device such as a smartphone or tablet computer, find out how sound, video, text or images travel from one location to another. Explain how the device was designed for ease of use, function, and durability."
+        },
+        {
+          "number": "6d",
+          "text": "Using Materials. Do experiments to show the differences in strength and heat conductivity in wood, metal, and plastic. Discuss with your counselor what you have learned."
+        },
+        {
+          "number": "6e",
+          "text": "Converting Energy. Do an experiment to show how mechanical, heat, chemical, solar, and/or electrical energy may be converted from one or more types of energy to another. Explain your results. Describe to your counselor what energy is and how energy is converted and used in your surroundings."
+        },
+        {
+          "number": "6f",
+          "text": "Moving People. Find out the different ways people in your community get to work. Make a study of traffic flow (number of vehicles and relative speed) in both heavy and light traffic periods. Discuss with your counselor what might be improved to make it easier for people in your community to get where they need to go."
+        },
+        {
+          "number": "6g",
+          "text": "Building an Engineering Project. Enter a project in a science or engineering fair or similar competition. (This requirement may be met by participation on an engineering competition project team.) Discuss with your counselor what your project demonstrates, the kinds of questions visitors to the fair asked you, and how well you were able to answer their questions."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "7",
+      "text": "Explain what it means to be a registered Professional Engineer (P.E.). Name the types of engineering work for which registration is most important."
+    },
+    {
+      "number": "8",
+      "text": "Study the Engineer's Code of Ethics. Explain how it is like the Scout Oath and Law."
+    },
+    {
+      "number": "9",
+      "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/engineering/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Engineering.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/engineering/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

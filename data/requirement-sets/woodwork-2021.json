@@ -1,0 +1,120 @@
+{
+  "id": "woodwork-2021",
+  "kind": "requirement-set",
+  "subject": "merit-badge:woodwork",
+  "effective_from": "2021-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Woodwork Merit Badge Requirements (2021)",
+    "url": "https://www.scouting.org/merit-badges/woodwork/",
+    "year": 2021
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in woodwork activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Explain what precautions you should take to safely use your tools."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries that could occur while woodworking, including splinters, scratches, cuts, severe bleeding, and shock. Tell what precautions must be taken to help prevent loss of eyesight or hearing, and explain why and when it is necessary to use a dust mask."
+        },
+        {
+          "number": "1c",
+          "text": "Earn the Totin' Chip recognition."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Describe how timber is grown, harvested, and milled. Tell how lumber is cured, seasoned, graded, and sized."
+        },
+        {
+          "number": "2b",
+          "text": "Collect and label blocks of six kinds of wood useful in woodworking. Describe the chief qualities of each. Give the best uses of each."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Show the proper care, use, and storage of all working tools and equipment that you own or use at home or school."
+        },
+        {
+          "number": "3b",
+          "text": "Sharpen correctly the cutting edges of two different tools."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Using a saw, plane, hammer, brace, and bit, make something useful of wood. Cut parts from lumber that you have squared and measured from working drawings."
+    },
+    {
+      "number": "5",
+      "text": "Create your own woodworking project. Begin by making working drawings, list the materials you will need to complete your project, and then build your project. Keep track of the time you spend and the cost of the materials."
+    },
+    {
+      "number": "6",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Make working drawings of a project needing beveled or rounded edges and build it."
+        },
+        {
+          "number": "6b",
+          "text": "Make working drawings of a project needing curved or incised cuttings and build it."
+        },
+        {
+          "number": "6c",
+          "text": "Make working drawings of a project needing miter, dowel, or mortise and tenon joints and build it."
+        },
+        {
+          "number": "6d",
+          "text": "Make a cabinet, box, or something else with a door or lid fastened with inset hinges."
+        },
+        {
+          "number": "6e",
+          "text": "Help make wooden toys for underprivileged children; OR help carry out a woodworking service project approved by your counselor for a charitable organization."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "7",
+      "text": "Talk with a cabinetmaker or finish carpenter. Learn about training, apprenticeships, career opportunities, work conditions, work hours, pay rates, and union organization that woodworking experts have in your area."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/woodwork/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Woodwork.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/woodwork/2021.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

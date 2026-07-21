@@ -1,0 +1,120 @@
+{
+  "id": "fish-wildlife-management-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:fish-wildlife-management",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Fish & Wildlife Management Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/fish-wildlife-management/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Describe the meaning and purposes of fish and wildlife conservation and management."
+    },
+    {
+      "number": "2",
+      "text": "List and discuss at least three major problems that continue to threaten your state's fish and wildlife resources."
+    },
+    {
+      "number": "3",
+      "text": "Describe some ways in which everyone can help with fish and wildlife conservation."
+    },
+    {
+      "number": "4",
+      "text": "List and describe five major fish and wildlife management practices used by managers in your state."
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Construct, erect, and check regularly at least two artificial nest boxes (wood duck, bluebird, squirrel, etc.) and keep written records for one nesting season."
+        },
+        {
+          "number": "5b",
+          "text": "Construct, erect, and check regularly bird feeders and keep written records daily over a two-week period of the kinds of birds visiting the feeders."
+        },
+        {
+          "number": "5c",
+          "text": "Develop and implement a fishery improvement project or a backyard wildlife habitat improvement project. Share the results with your counselor."
+        },
+        {
+          "number": "5d",
+          "text": "Design and construct a wildlife blind near a game trail, water hole, salt lick, bird feeder, or birdbath and take good photographs or make sketches from the blind of any combination of 10 wild birds, mammals, reptiles, or amphibians."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Observe and record 25 species of wildlife. Your list may include mammals, birds, reptiles, amphibians, and fish. Write down when and where each animal was seen."
+        },
+        {
+          "number": "6b",
+          "text": "List the wildlife species in your state that are classified as endangered, threatened, exotic, non-native, game species, furbearers, or migratory game birds. Discuss with your counselor management practices in place or being developed for at least three of these species."
+        },
+        {
+          "number": "6c",
+          "text": "Start a scrapbook of North American fish and wildlife. Insert markers to divide the book into separate parts for mammals, birds, reptiles, amphibians, and fish. Collect articles on such subjects as life histories, habitat, behavior, and feeding habits on all of the five categories and place them in your notebook accordingly. Articles and pictures may be taken from newspapers or science, nature, and outdoor magazines, or from other sources including the internet (with your parent or guardian's permission). Enter at least five articles on mammals, five on birds, five on reptiles, five on amphibians, and five on fish. Put each animal on a separate sheet in alphabetical order. Include pictures whenever possible."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Determine the age of five species of fish from scale samples or identify various age classes of one species in a lake and report the results."
+        },
+        {
+          "number": "7b",
+          "text": "Conduct a creel census on a small lake to estimate catch per unit effort and report the results to your counselor."
+        },
+        {
+          "number": "7c",
+          "text": "Examine the stomach contents of three fish and record the findings. It is not necessary to catch any fish for this option."
+        },
+        {
+          "number": "7d",
+          "text": "Make a freshwater aquarium. Include at least four species of native plants and four species of animal life, such as whirligig beetles, freshwater shrimp, tadpoles, water snails, and golden shiners. After 60 days of observation, discuss with your counselor the life cycles, food chains, and management needs you have recognized. Before completing this requirement, check local laws on releasing these organisms back into the wild, and follow your counselor's direction in disposing of these organisms humanely and safely."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Identify three career opportunities that would use skills and knowledge by fish and wildlife professionals. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/fish-wildlife-management/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Fish%20and%20Wildlife.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/fish-wildlife-management/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

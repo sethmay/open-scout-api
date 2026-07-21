@@ -1,0 +1,109 @@
+{
+  "id": "pioneering-2022",
+  "kind": "requirement-set",
+  "subject": "merit-badge:pioneering",
+  "effective_from": "2022-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Pioneering Merit Badge Requirements (2022)",
+    "url": "https://www.scouting.org/merit-badges/pioneering/",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you might encounter while participating in pioneering activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss the prevention of, and first-aid treatment for, injuries and conditions that could occur while working on pioneering projects, including rope splinters, rope burns, cuts, scratches, insect bites and stings, hypothermia, dehydration, heat exhaustion, heatstroke, sunburn, and falls."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Demonstrate the West Country method of whipping a rope."
+        },
+        {
+          "number": "2b",
+          "text": "Demonstrate how to tie a rope tackle and the following knots: clove hitch formed as two half hitches, clove hitch on a bight, butterfly knot, roundturn with two half hitches, and rolling hitch."
+        },
+        {
+          "number": "2c",
+          "text": "Demonstrate and explain when to use the following lashings: square, diagonal, round, shear, tripod, and floor lashing."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Using square and tripod lashings from requirement 2(c), build a Tripod Wash Station (or with your counselor's permission, another camp gadget of your own design)."
+        },
+        {
+          "number": "3b",
+          "text": "Using rolling hitches or roundturns with two half hitches, and round lashings from requirements 2(b) and 2(c), build a 15-foot Scout Stave Flagpole (or with your counselor's permission, another camp gadget of your own design)."
+        },
+        {
+          "number": "3c",
+          "text": "Using shear, square, and floor lashings, clove hitches on a bight, and rope tackles from requirements 2(b) and 2(c), build a Simple Camp Table (or with your counselor's permission, another camp gadget of your own design)."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Explain the differences between synthetic ropes and natural-fiber ropes. Discuss which types of rope are suitable for pioneering work and why. Include the following in your discussion: breaking strength, safe working loads, and the care and storage of rope."
+    },
+    {
+      "number": "5",
+      "text": "Explain the uses for the back splice, eye splice, and short splice. View a demonstration on forming each splice."
+    },
+    {
+      "number": "6",
+      "text": "Using a rope-making device or machine, make a rope at least 6 feet long consisting of three strands, each having three yarns. Whip the ends."
+    },
+    {
+      "number": "7",
+      "text": "Explain the importance of effectively anchoring a pioneering project. Describe to your counselor the 3-2-1 anchoring system and the log-and-stake anchoring system."
+    },
+    {
+      "number": "8",
+      "text": "Describe the lashings that are used when building a trestle, how the poles are positioned, and how X braces contribute to the overall structural integrity of a pioneering project."
+    },
+    {
+      "number": "9",
+      "text": "Working in a group, (or individually with the help of your counselor) build a full size pioneering structure, using one of the following designs in the Pioneering merit badge pamphlet: Double A-Frame Monkey Bridge, Single A-Frame Bridge, Single Trestle Bridge, Single Lock Bridge, 4x4 Square Climbing Tower, Four Flag Gateway Tower, Double Tripod Chippewa Kitchen, or another type of structure approved in advance by your counselor. Carefully plan the project, assembling and organizing all the materials, referring to the points under Safe Pioneering, and complying with the height restrictions in the Guide to Safe Scouting."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/pioneering/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Pioneering.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/pioneering/2022.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

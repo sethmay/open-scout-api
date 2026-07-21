@@ -1,0 +1,144 @@
+{
+  "id": "veterinary-medicine-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:veterinary-medicine",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Veterinary Medicine Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/veterinary-medicine/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your counselor the roles a veterinarian plays in the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Companion or small animal medicine, and equine medicine"
+        },
+        {
+          "number": "1b",
+          "text": "Food animal or large animal medicine"
+        },
+        {
+          "number": "1c",
+          "text": "Exotic animal medicine"
+        },
+        {
+          "number": "1d",
+          "text": "Marine animal medicine (mammal and fish)"
+        },
+        {
+          "number": "1e",
+          "text": "Poultry medicine"
+        },
+        {
+          "number": "1f",
+          "text": "Wildlife medicine and aquaculture medicine"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Discuss with your counselor the roles a veterinarian plays in the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Public health medicine and zoonotic disease surveillance and control"
+        },
+        {
+          "number": "2b",
+          "text": "The military"
+        },
+        {
+          "number": "2c",
+          "text": "Food safety and inspection"
+        },
+        {
+          "number": "2d",
+          "text": "Laboratory animal medicine and research"
+        },
+        {
+          "number": "2e",
+          "text": "Teaching and government"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Describe the training required to become a veterinarian. Where is the veterinary medical college in your state or nearest to you? Describe the prerequisites for applying to veterinary school."
+    },
+    {
+      "number": "4",
+      "text": "Tell your counselor what a registered veterinary technician (R.V.T.) or animal health technician (A.H.T.) is. Describe the training required to become an R.V.T. or A.H.T. Where is the school or facility for R.V.T. or A.H.T training in your state or nearest to you? Describe the role an R.V.T. or A.H.T. would play in assisting a veterinarian working in three of the practice types listed in requirement 1."
+    },
+    {
+      "number": "5",
+      "text": "Discuss with your counselor the role a veterinarian plays in the human-animal bond."
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Visit a veterinary clinic, hospital, or veterinary referral teaching hospital that does work in one of the practices listed in requirement 1. Spend as much time as you can observing the veterinarians and their staff. Prepare a presentation on what you observed and learned at the facility and share with your counselor."
+        },
+        {
+          "number": "6b",
+          "text": "Spend as much time as possible with a veterinarian who works in one of the fields listed in requirement 2. Learn what special training beyond veterinary medical school may have been required for that position. Learn about any special or unusual activities required of this position. Prepare a presentation and share what you have learned about this field of veterinary medicine with your counselor. Include how this field serves the needs of the general public."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Select one career from any of the lists in requirements 1 or 2. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Why would one choose this particular career field?"
+        },
+        {
+          "number": "7b",
+          "text": "What would you like about this job?"
+        },
+        {
+          "number": "7c",
+          "text": "What would be the biggest challenges in doing this job?"
+        },
+        {
+          "number": "7d",
+          "text": "What to you has been the most surprising aspect of this job?"
+        },
+        {
+          "number": "7e",
+          "text": "What continuing education requirements are required to maintain certification for this job?"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/veterinary-medicine/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Veterinary%20Medicine.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/veterinary-medicine/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

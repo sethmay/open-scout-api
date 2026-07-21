@@ -1,0 +1,304 @@
+{
+  "id": "search-and-rescue-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:search-and-rescue",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Search and Rescue Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/search-and-rescue/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Hazards and First Aid. Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Show or explain first aid for, and prevention of, injuries and conditions that searchers and subjects could develop during an SAR situation, including:",
+          "children": [
+            {
+              "number": "1a(1)",
+              "text": "Dehydration"
+            },
+            {
+              "number": "1a(2)",
+              "text": "Heatstroke"
+            },
+            {
+              "number": "1a(3)",
+              "text": "Hypothermia"
+            },
+            {
+              "number": "1a(4)",
+              "text": "Shock"
+            },
+            {
+              "number": "1a(5)",
+              "text": "Blisters"
+            },
+            {
+              "number": "1a(6)",
+              "text": "Eye injuries"
+            },
+            {
+              "number": "1a(7)",
+              "text": "Ankle and knee sprains"
+            },
+            {
+              "number": "1a(8)",
+              "text": "Bug bites of chiggers, ticks, mosquitoes, and biting gnats"
+            },
+            {
+              "number": "1a(9)",
+              "text": "Bee stings"
+            },
+            {
+              "number": "1a(10)",
+              "text": "Bites of spiders"
+            },
+            {
+              "number": "1a(11)",
+              "text": "Sting of a scorpion"
+            },
+            {
+              "number": "1a(12)",
+              "text": "Bite of a wild mammal"
+            },
+            {
+              "number": "1a(13)",
+              "text": "Bite of a venomous snake"
+            }
+          ]
+        },
+        {
+          "number": "1b",
+          "text": "Explain how the Scout Basic Essentials address hazards outdoors and help lost Scouts stay safe before they are rescued."
+        },
+        {
+          "number": "1c",
+          "text": "Discuss how the safety gear carried by SAR team members in their field packs address SAR hazards."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Staying and Getting Found. Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain how a trip plan and the buddy system help Scouts with staying found and getting found."
+        },
+        {
+          "number": "2b",
+          "text": "Explain how seasonal and daily weather changes affect Trip Plans."
+        },
+        {
+          "number": "2c",
+          "text": "Explain and show how a lost Scout could send signals that would alert a ground, airborne, or water SAR team to their location."
+        },
+        {
+          "number": "2d",
+          "text": "Demonstrate how to use a signaling mirror."
+        },
+        {
+          "number": "2e",
+          "text": "Explain how a Personal Locator Beacon (PLB) works and the role of the Air Force Rescue Coordination Center (AFRCC)."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Maps. Using a map, a compass and a GPS device or app approved by your counselor, do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Point out and explain the 5 D's (Date, Description, Details, Direction or Declination, Distance) of the map."
+        },
+        {
+          "number": "3b",
+          "text": "Choose a location on the map and record the altitude, latitude, longitude, and US National Grid coordinates. Describe how these coordinate systems differ."
+        },
+        {
+          "number": "3c",
+          "text": "Orient the map and take a bearing to another map location. Estimate the distance between, and describe the terrain between, the two locations."
+        },
+        {
+          "number": "3d",
+          "text": "Show a hypothetical place last seen and point out an area on your map that could be used for containment using natural or human-made boundaries."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Incident Command System (ICS). Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Explain how a local ICS is organized and how it compares with Scouting's patrol method."
+        },
+        {
+          "number": "4b",
+          "text": "Explain how local community agencies work to train for and manage search and rescue situations."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "SAR Teams. Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain the official duties of a search and rescue team."
+        },
+        {
+          "number": "5b",
+          "text": "Explain the differences between wilderness, urban, and water SARs."
+        },
+        {
+          "number": "5c",
+          "text": "Identify four types of search and rescue teams and explain situations where they are used."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Search and Rescue Procedures. Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Explain the difference between search and rescue."
+        },
+        {
+          "number": "6b",
+          "text": "Explain the difference between PLS (place last seen) and LKP (last known point)"
+        },
+        {
+          "number": "6c",
+          "text": "Explain the importance of effective communication in SAR operations."
+        },
+        {
+          "number": "6d",
+          "text": "Explain how predictions of \"lost person behavior\" determine SAR search plans for a young child, a teenager, and an adult."
+        },
+        {
+          "number": "6e",
+          "text": "Explain the following terms:",
+          "children": [
+            {
+              "number": "6e(1)",
+              "text": "Evaluating search urgency"
+            },
+            {
+              "number": "6e(2)",
+              "text": "Establishing confinement"
+            },
+            {
+              "number": "6e(3)",
+              "text": "Scent item"
+            },
+            {
+              "number": "6e(4)",
+              "text": "Area air scent dog"
+            },
+            {
+              "number": "6e(5)",
+              "text": "Briefing and debriefing"
+            },
+            {
+              "number": "6e(6)",
+              "text": "Clue awareness"
+            },
+            {
+              "number": "6e(7)",
+              "text": "Evidence preservation"
+            },
+            {
+              "number": "6e(8)",
+              "text": "Tracking a subject"
+            },
+            {
+              "number": "6e(9)",
+              "text": "Locating a subject using attraction"
+            },
+            {
+              "number": "6e(10)",
+              "text": "Hasty search"
+            },
+            {
+              "number": "6e(11)",
+              "text": "Trail sweep search"
+            },
+            {
+              "number": "6e(12)",
+              "text": "Grid search"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Plan and Complete a Search. Do the following with a team of Scouts, friends, or family to execute a practice SAR exercise:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Choose a hypothetical SAR scenario, either one presented in the Search and Rescue merit badge pamphlet or one approved by your counselor."
+        },
+        {
+          "number": "7b",
+          "text": "Develop an Incident Action Plan (IAP) for a hasty search using the scenario information."
+        },
+        {
+          "number": "7c",
+          "text": "Before the search begins, conduct a PAUSE briefing to review hazards, safety concerns, personal and shared Scout Basic Essentials, and other gear."
+        },
+        {
+          "number": "7d",
+          "text": "Execute the search."
+        },
+        {
+          "number": "7e",
+          "text": "After the search, hold a team debriefing to discuss the search, problems, successful and unsuccessful tactics, and ideas for improvement."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Careers. Do ONE of the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Explore careers related to Search and Rescue merit badge or emergency management. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. With permission of your parent or guardian, your research methods may include an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career."
+        },
+        {
+          "number": "8b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to serve as a volunteer on a disaster relief team, a wilderness rescue team, or a ski patrol. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursue this."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/search-and-rescue/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Search%20and%20Rescue.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/search-and-rescue/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

@@ -1,0 +1,128 @@
+{
+  "id": "geocaching-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:geocaching",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Geocaching Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/geocaching/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in geocaching activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss first aid and prevention for the types of injuries or illnesses that could occur while participating in geocaching activities, including cuts, scrapes, snakebite, insect stings, tick bites, exposure to poisonous plants, heat and cold reactions (sunburn, heatstroke, heat exhaustion, hypothermia), and dehydration."
+        },
+        {
+          "number": "1c",
+          "text": "Discuss how to properly plan an activity that uses GPS, including using the buddy system, sharing your plan with others, and considering the weather, route, and proper attire."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Why you should never bury a cache"
+        },
+        {
+          "number": "2b",
+          "text": "How to use proper geocaching etiquette when hiding or seeking a cache, and how to properly hide, post, maintain, and dismantle a geocache"
+        },
+        {
+          "number": "2c",
+          "text": "The Leave No Trace Seven Principles and the Outdoor Code as they apply to geocaching"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Explain the following terms used in geocaching: waypoint, log, cache, accuracy, difficulty and terrain ratings, attributes, and trackable. Choose five additional terms to explain to your counselor."
+    },
+    {
+      "number": "4",
+      "text": "Explain how the Global Positioning System (GPS) works. Then, using Scouting's EDGE, demonstrate to your counselor the use of a GPS unit. Include marking and editing a waypoint, changing field functions, and changing the coordinate system in the unit."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Show you know how to use a map and compass and explain why this is important for geocaching."
+        },
+        {
+          "number": "5b",
+          "text": "Explain the similarities and differences between GPS navigation and standard map-reading skills and describe the benefits of each."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Describe to your counselor the four steps to finding your first cache. Then mark and edit a waypoint."
+    },
+    {
+      "number": "7",
+      "text": "With your parent or guardian's permission, go to www.geocaching.com. Type in your city and state to locate public geocaches in your area. Share with your counselor the posted information about three of those geocaches. Then, pick one of the three and find the cache. Note: To fulfill this requirement, you will need to set up a free user account with www.Geocaching.com. Before doing so, ask your parent for permission and help."
+    },
+    {
+      "number": "8",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "If a Cache to Eagle® series exists in your council, visit at least three of the locations in the series. Describe the projects that each cache you visit highlights, and explain how the Cache to Eagle® program helps share our Scouting service with the public."
+        },
+        {
+          "number": "8b",
+          "text": "Create a Scouting-related Travel Bug® that promotes one of the values of Scouting. Release your Travel Bug into a public geocache and, with your parent or guardian's permission, monitor its progress at www.geocaching.com for 30 days. Keep a log, and share this with your counselor at the end of the 30-day period."
+        },
+        {
+          "number": "8c",
+          "text": "Set up and hide a public geocache, following the guidelines in the Geocaching merit badge pamphlet. Before doing so, share with your counselor a three-month maintenance plan for the geocache where you are personally responsible for those three months. After setting up the geocache, with your parent or guardian's permission, follow the logs online for 30 days and share them with your counselor. You must archive the geocache when you are no longer maintaining it."
+        },
+        {
+          "number": "8d",
+          "text": "Explain what Cache In Trash Out (CITO) means, and describe how you have practiced CITO at public geocaches or at a CITO event. Then, either create CITO containers to leave at public caches, or host a CITO event for your unit or for the public."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "9",
+      "text": "Plan a geohunt for a youth group such as your troop or a neighboring pack, at school, or your place of worship. Choose a theme, set up a course with at least four waypoints, teach the players how to use a GPS unit, and play the game. Tell your counselor about your experience, and share the materials you used and developed for this event."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/geocaching/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Geocaching.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/geocaching/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

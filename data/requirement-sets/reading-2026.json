@@ -1,0 +1,133 @@
+{
+  "id": "reading-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:reading",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Reading Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/reading/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Take a tour of a library. Discuss with your counselor how the library is organized and what resources and/or services are offered in the library."
+        },
+        {
+          "number": "1b",
+          "text": "Learn how to search for material using a library's card catalog or computerized catalog by author, title, and subject."
+        },
+        {
+          "number": "1c",
+          "text": "In a library, search the card catalog or computerized catalog for six books of four different types, such as poetry, fiction, nonfiction, and biographies."
+        },
+        {
+          "number": "1d",
+          "text": "With the assistance of your counselor or the librarian, see if you can locate on the shelves the six books you selected."
+        },
+        {
+          "number": "1e",
+          "text": "Explain what a library card is, why it is needed, and how to get one."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Identify a book you have enjoyed. Find out what other books the author has written."
+        },
+        {
+          "number": "2b",
+          "text": "Look at one or more \"best books\" lists. These can be based on year, subject, or even all time. Identify at least one book you would like to read."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Read four different types of books, such as poetry, fiction, nonfiction, or biographies. Do one of the following for each book you have read:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Write a review of the book. Include what you liked and/or didn't like about the book. Include whether you would recommend this book, and if so, who might enjoy reading it."
+        },
+        {
+          "number": "3b",
+          "text": "Watch a movie based on the book. What was the same between the book and movie? What was different? Which did you enjoy more? Discuss this with your counselor."
+        },
+        {
+          "number": "3c",
+          "text": "Give a book talk to your class, troop, or patrol."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Read a nonfiction book or magazine that teaches you how to do something like cooking, wood-building projects, video game design, science experiments, knot-tying, etc. With your counselor's and parent or guardian's permission, complete a project from the book. Share your experience with your counselor. Reading a merit badge pamphlet will not count toward completing this requirement."
+    },
+    {
+      "number": "5",
+      "text": "Read about the world around you from any two sources: books, magazines, newspapers, the internet (with your parent or guardian's permission), field manuals, etc. Topics may include Scouting, sports, environmental problems, politics, social issues, current events, nature, religion, etc. Discuss what you have learned with your counselor."
+    },
+    {
+      "number": "6",
+      "text": "With your counselor's and parent or guardian's permission, choose ONE of the following activities and devote at least four hours of service to that activity. Discuss your participation with your counselor.",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Read to a sick, blind, or homebound person in a hospital or in an extended-care facility."
+        },
+        {
+          "number": "6b",
+          "text": "Perform volunteer work at your school library or a public library."
+        },
+        {
+          "number": "6c",
+          "text": "Read stories to younger children, in a group or individually."
+        },
+        {
+          "number": "6d",
+          "text": "Organize a book swap in your troop, school, or place of worship."
+        },
+        {
+          "number": "6e",
+          "text": "Organize a book drive to collect books. Donate them to an organization in need."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Identify three career opportunities that would use skills and knowledge in reading. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/reading/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Reading.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/reading/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

@@ -1,0 +1,173 @@
+{
+  "id": "rowing-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:rowing",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Rowing Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/rowing/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in rowing activities, including weather- and water-related hazards, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Review prevention, symptoms, and first-aid treatment for the following injuries or illnesses that can occur while rowing: blisters, hypothermia, heat-related illnesses, dehydration, sunburn, sprains, and strains."
+        },
+        {
+          "number": "1c",
+          "text": "Review the Scouting America Safety Afloat policy. Explain to your counselor how this applies to rowing activities."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Before completing requirements 4, 5, 6, and 7, successfully complete the Scouting America swimmer test. Note: See the Swimming merit badge pamphlet for details about the Scouting America swimmer test."
+    },
+    {
+      "number": "3",
+      "text": "Review the characteristics of life jackets most appropriate for rowing and why one must always be worn while rowing. Then demonstrate how to select and fit a life jacket."
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Alone or with a passenger, do the following in either a fixed-seat or sliding-seat rowboat:",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "Launch."
+            },
+            {
+              "number": "4a(2)",
+              "text": "Row in a straight line for 100 yards. Stop, pivot, and return to the starting point."
+            },
+            {
+              "number": "4a(3)",
+              "text": "Backwater in a straight line for 25 yards. Make a turn underway and return to the starting point."
+            },
+            {
+              "number": "4a(4)",
+              "text": "Land and moor or rack your craft."
+            },
+            {
+              "number": "4a(5)",
+              "text": "Tie the following mooring knots—clove hitch, roundturn with two half-hitches, bowline, Wellman's knot, and mooring hitch."
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "Participate as a rowing team member in a competitive rowing meet. The team may be sponsored by a school, club, or Scout unit. The meet must include competition between two or more teams with different sponsors. Complete at least 10 hours of team practice prior to the meet."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "In a fixed-seat rowboat, come alongside a pier and help a passenger into the boat. Pull away from the pier, change positions with your passenger, and demonstrate sculling over the stern or side. Resume your rowing position, return alongside the pier, and help your passenger out of the boat."
+        },
+        {
+          "number": "5b",
+          "text": "In a sliding-seat rowboat, come alongside a pier and, with your buddy assisting you, get out onto the pier. Help your buddy into the boat. Reverse roles with your buddy and repeat the procedure."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "6",
+      "text": "Participate in a swamped boat drill including righting and stabilizing the craft, reboarding in deep water, and making headway. Tell why you should stay with a swamped boat."
+    },
+    {
+      "number": "7",
+      "text": "Alone in a rowboat, push off from the shore or a pier. Row 20 yards to a swimmer. While giving instructions to the swimmer, pivot the boat so that the swimmer can hold on to the stern. Tow the swimmer to shore."
+    },
+    {
+      "number": "8",
+      "text": "Describe the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Types of craft used in commercial, competitive, and recreational rowing"
+        },
+        {
+          "number": "8b",
+          "text": "Four common boatbuilding materials. Give some positive and negative points of each"
+        },
+        {
+          "number": "8c",
+          "text": "Types of oarlocks used in competitive and recreational rowing"
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Discuss the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "The advantage of feathering oars while rowing"
+        },
+        {
+          "number": "9b",
+          "text": "Precautions regarding strong winds and heavy waves, and boat-handling procedures in rough water and windstorms"
+        },
+        {
+          "number": "9c",
+          "text": "How to properly fit out and maintain a boat in season, and how to prepare and store a boat for winter"
+        },
+        {
+          "number": "9d",
+          "text": "How to determine the proper length of oars"
+        },
+        {
+          "number": "9e",
+          "text": "The differences between fixed-seat and sliding-seat rowing"
+        },
+        {
+          "number": "9f",
+          "text": "The different meanings of the term sculling in fixed- and sliding-seat rowing"
+        },
+        {
+          "number": "9g",
+          "text": "The health benefits from rowing for exercise"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/rowing/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Rowing.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/rowing/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

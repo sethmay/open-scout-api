@@ -1,0 +1,133 @@
+{
+  "id": "welding-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:welding",
+  "effective_from": "2019-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Welding Merit Badge Requirements (2019)",
+    "url": "https://www.scouting.org/merit-badges/welding/",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the hazards you are most likely to encounter while welding, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for, and the prevention of, injuries or illnesses that could occur while welding, including electrical shock, eye injuries, burns, fume inhalation, dizziness, skin irritation, and exposure to hazardous chemicals, including filler metals and welding gases."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "With your counselor, discuss general safety precautions and safety data sheets (SDS) related to welding. Explain the importance of the SDS."
+        },
+        {
+          "number": "2b",
+          "text": "Describe the appropriate safety gear and clothing that must be worn when welding. Then, present yourself properly dressed for welding—in protective equipment, clothing, and footwear."
+        },
+        {
+          "number": "2c",
+          "text": "Explain and demonstrate the proper care and storage of welding equipment, tools, and protective clothing and footwear."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Explain the terms welding, electrode, slag, and oxidation. Describe the welding process, how heat is generated, what kind of filler metal is added (if any), and what protects the molten metal from the atmosphere."
+    },
+    {
+      "number": "4",
+      "text": "Name the different mechanical and thermal cutting methods. Choose one method and describe how to use the process. Discuss one advantage and one limitation of this process."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Select two welding processes, and make a list of the different components of the equipment required for each process. Discuss one advantage and one limitation for each process."
+        },
+        {
+          "number": "5b",
+          "text": "Choose one welding process. Set up the process you have chosen, including gas regulators, work clamps, cables, filler materials, and equipment settings. Have your counselor inspect and approve the area for the welding process you have chosen."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "After successfully completing requirements 1 through 5, use the equipment you prepared for the welding process in 5(b) to do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Using a metal scribe or soapstone, sketch your initial onto a metal plate, and weld a bead on the plate following the pattern of your initial."
+        },
+        {
+          "number": "6b",
+          "text": "Cover a small plate (approximately 3\" x 3\" x 1/4\") with weld beads side by side."
+        },
+        {
+          "number": "6c",
+          "text": "Tack two plates together in a square groove butt joint."
+        },
+        {
+          "number": "6d",
+          "text": "Weld the two plates together from 6(c) on both sides."
+        },
+        {
+          "number": "6e",
+          "text": "Tack two plates together in a T joint, have your counselor inspect it, then weld a T joint with fillet weld on both sides."
+        },
+        {
+          "number": "6f",
+          "text": "Tack two plates together in a lap joint, have your counselor inspect it, then weld a lap joint with fillet weld on both sides."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Find out about three career opportunities in the welding industry. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why the profession might interest you."
+        },
+        {
+          "number": "7b",
+          "text": "Discuss the role of the American Welding Society in the welding profession."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/welding/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Welding.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/welding/2019.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

@@ -105,6 +105,12 @@ def main() -> None:
     councils, cevents = load_dataset("councils")
     territories, tevents = load_dataset("territories")
     merit_badges, mbevents = load_dataset("merit-badges")
+    rs_dir = DATA / "requirement-sets"
+    requirement_sets = sorted((read_json(p) for p in rs_dir.glob("*.json")),
+                              key=lambda d: d["id"]) if rs_dir.exists() else []
+    rs_by_subject: dict[str, list[str]] = {}
+    for d in requirement_sets:
+        rs_by_subject.setdefault(d["subject"].split(":", 1)[1], []).append(d["id"])
 
     # --- territories: per-entity + index + current -------------------------
     current_terr_ids: set[str] = set()
@@ -155,7 +161,9 @@ def main() -> None:
     current_badges = []
     for e in merit_badges:
         ref = f"merit-badge:{e['id']}"
-        write_json(DIST / "v1" / "merit-badges" / f"{e['id']}.json", {**e, "events": events_for(ref, mbevents)})
+        write_json(DIST / "v1" / "merit-badges" / f"{e['id']}.json",
+                   {**e, "events": events_for(ref, mbevents),
+                    "requirement_sets": rs_by_subject.get(e["id"], [])})
         ov = open_version(e)
         last = ov or e["versions"][-1]
         mb_index.append({"id": e["id"], "name": last["name"],
@@ -184,6 +192,15 @@ def main() -> None:
     write_json(DIST / "v1" / "councils" / "index.json", coll("council", council_index))
     write_json(DIST / "v1" / "territories" / "index.json", coll("territory", terr_index))
     write_json(DIST / "v1" / "merit-badges" / "index.json", coll("merit-badge", mb_index))
+    for d in requirement_sets:
+        write_json(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
+    rs_index = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"],
+                 "effective_to": d.get("effective_to"), "includes_official_text": d["includes_official_text"]}
+                for d in requirement_sets]
+    current_rs = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"]}
+                  for d in requirement_sets if d.get("effective_to") is None]
+    write_json(DIST / "v1" / "requirement-sets" / "index.json", coll("requirement-set", rs_index))
+    write_json(DIST / "v1" / "current" / "requirement-sets.json", coll("requirement-set", current_rs))
 
     write_json(DIST / "v1" / "meta.json", {
         "name": "Open Scout API", "version": version, "generated_at": now,
@@ -193,23 +210,28 @@ def main() -> None:
             "councils": {"total": len(councils), "current": len(current_councils)},
             "territories": {"total": len(territories), "current": len(current_territories)},
             "merit-badges": {"total": len(merit_badges), "current": len(current_badges)},
+            "requirement-sets": {"total": len(requirement_sets), "current": len(current_rs)},
         },
+        "text_rights": ("Merit-badge requirement text is \u00a9 Scouting America, reproduced with "
+                        "attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."),
         "endpoints": ["v1/meta.json", "v1/councils/index.json", "v1/councils/{id}.json",
                       "v1/territories/index.json", "v1/territories/{id}.json",
                       "v1/merit-badges/index.json", "v1/merit-badges/{id}.json",
+                      "v1/requirement-sets/index.json", "v1/requirement-sets/{id}.json",
                       "v1/current/councils.json", "v1/current/territories.json",
-                      "v1/current/merit-badges.json"],
+                      "v1/current/merit-badges.json", "v1/current/requirement-sets.json"],
     })
 
     (DIST / "index.html").write_text(
-        _landing(version, now, len(current_councils), len(current_territories), len(current_badges)),
+        _landing(version, now, len(current_councils), len(current_territories), len(current_badges), len(current_rs)),
         encoding="utf-8", newline="\n")
     print(f"built dist/ v{version}: {len(councils)} councils ({len(current_councils)} current), "
           f"{len(territories)} territories ({len(current_territories)} current), "
-          f"{len(merit_badges)} merit badges ({len(current_badges)} current)")
+          f"{len(merit_badges)} merit badges ({len(current_badges)} current), "
+          f"{len(requirement_sets)} requirement sets")
 
 
-def _landing(version, now, ncouncils, nterr, nbadges) -> str:
+def _landing(version, now, ncouncils, nterr, nbadges, nrs) -> str:
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -225,7 +247,7 @@ def _landing(version, now, ncouncils, nterr, nbadges) -> str:
 <p><strong>Unofficial community project.</strong> Not affiliated with, endorsed by, or sponsored by
 Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
 <h2>Datasets</h2>
-<p>{ncouncils} current councils across {nterr} Council Service Territories; {nbadges} current merit badges.</p>
+<p>{ncouncils} current councils across {nterr} Council Service Territories; {nbadges} current merit badges; {nrs} current requirement sets.</p>
 <h2>Endpoints</h2>
 <ul>
  <li><a href="v1/meta.json"><code>v1/meta.json</code></a> — version, counts, license</li>
@@ -236,8 +258,11 @@ Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by
  <li><code>v1/councils/&lt;id&gt;.json</code> — one council with its lifecycle events</li>
  <li><a href="v1/territories/index.json"><code>v1/territories/index.json</code></a> · <code>v1/territories/&lt;id&gt;.json</code></li>
  <li><a href="v1/merit-badges/index.json"><code>v1/merit-badges/index.json</code></a> · <code>v1/merit-badges/&lt;id&gt;.json</code></li>
+ <li><a href="v1/requirement-sets/index.json"><code>v1/requirement-sets/index.json</code></a> · <code>v1/requirement-sets/&lt;id&gt;.json</code> — requirement trees</li>
  <li><a href="schema/v1/council.schema.json"><code>schema/v1/</code></a> — JSON Schemas</li>
 </ul>
+<p class="muted">Merit-badge requirement text is © Scouting America, reproduced with attribution for
+non-commercial use and not covered by the dataset license (see NOTICE).</p>
 <p class="muted">Source &amp; issues: <a href="https://github.com/sethmay/open-scout-api">github.com/sethmay/open-scout-api</a></p>
 </body></html>
 """

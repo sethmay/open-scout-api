@@ -14,7 +14,7 @@ PLAN.md §1).
 | 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0):** 235 councils, 229 assigned to CSTs. Follow-ups (name/HQ reconcile, defunct dispositions, rename/founding history) in Queue. | camp-finder `data/councils/*.json`; official CST maps (territory); Wikipedia council list |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
-| 4 | **Requirement sets (badges)** | ✅ `requirement-set` | Requirement diffs by effective year — gold for advancement tools. ⚠ summaries only until license decision (see queue). | Scouts BSA Requirements book editions; usscouts.org change logs; Internet Archive |
+| 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
 | 5 | **Camps (registry + history)** | ✅ `camp` | Import from camp-finder (keep IDs, `method: imported`). Historical/"lost camps" have a passionate community. Sessions/fees stay in camp-finder. | camp-finder dataset; usscouts.org OCD (robots-blocked — ask admin for dump); council sites |
 | 6 | **Rank requirement history** | ⬜ reuse `requirement-set` (`subject: rank:*`) + new `rank` entity schema | Same machinery as badges. 2016/2022 Scouts BSA revisions; 2024 Cub Scouts overhaul. | Requirements book editions; usscouts.org |
 | 7 | **OA lodges** | ⬜ (council pattern fits: versions + merge events + `council` ref) | Lodge↔council mapping, merges track council merges, totem/name history. Patch-collector community curates this by hand today. | OA/lodge sites; Wikipedia; patch DBs |
@@ -43,14 +43,15 @@ as best-effort attributes of council history, never a standalone dataset.
 - **Council rename/founding history.** Councils currently have a single version
   (valid_from/to = null) — camp-finder is a current snapshot. Add historical versions +
   rename/merger events as sourced (the temporal model already supports it).
-- **Merit badge follow-ups (after catalog seed).** (a) **Requirement content**: build
-  `requirement-set` docs per badge — summaries-only until the licensing question below is
-  settled; the workbooks repo's `badges/<slug>/<year>.md` is SA-copyrighted requirement
-  *text*, so extract structure/summaries, not verbatim. (b) **Historical discontinued
-  badges**: catalog carries only CiS + Computers as historical; add the full 100+
-  discontinued set (Wikipedia "Discontinued merit badges") with supersede/discontinue
-  events. (c) **Enrich** `description` + `tags` (both currently empty/null). Note:
-  regenerating needs the workbooks repo at `.workbench/workbooks-main/`.
+- **Merit badge follow-ups.** (a) **Requirement content — DONE (0.5.0):** verbatim text +
+  structure per current revision (marked © SA). (b) **Historical requirement revisions**:
+  only the current revision per badge is seeded (workbooks ships one `<year>.md` each);
+  backfill older revisions with `supersedes` chains when sourced. (c) **plant-science
+  deep-structure**: its 5-level "alternatives" nesting was flattened (conf 0.75, flagged in
+  notes) — parse properly if it recurs. (d) **Historical discontinued badges**: catalog
+  carries only CiS + Computers; add the 100+ discontinued set. (e) **Enrich** badge
+  `description`/`tags` (empty). Regenerating needs the workbooks repo at
+  `.workbench/workbooks-main/`.
 - **Finalize schema `$id` base URL. — DONE (0.3.0).** Confirmed
   `https://sethmay.github.io/open-scout-api/schema/v1/` (owner `sethmay`); build serves
   schemas at that path, no re-emit needed.
@@ -61,15 +62,19 @@ as best-effort attributes of council history, never a standalone dataset.
   builds on push/PR, deploys to Pages on `main`.
 - **⚠ One-time manual: enable GitHub Pages.** Repo Settings → Pages → Source = "GitHub
   Actions". Until done, the deploy job has nothing to publish to (build still runs/gates).
-- **Add a README.** Repo is now public; PLAN deferred it until publication. Should cover:
-  what it is, the `v1/` API endpoints + example fetch, CC BY-NC-SA, unofficial disclaimer,
-  how to contribute. (Not written yet — was not part of the build slice.)
+- **Add a README. — DONE (0.3.1).**
 - **Release automation + CDN docs.** Tag releases; ship the JSON tree + a generated
   SQLite artifact (PLAN §6); document jsDelivr pinning; consider Zenodo DOI.
-- **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema +
-  refs + half-open windows + retired-entity + unique event ids. Still TODO when the
-  relevant data lands: event-date ↔ version-boundary consistency; `includes_official_text`
-  ⇔ any `Requirement.text`; `HistoricalDate` month/day range; `StateCode` closed USPS set.
-- **Requirement-text licensing research.** Determine what verbatim requirement text can
-  be published (usscouts.org precedent). Until resolved: `includes_official_text: false`,
-  summaries only.
+- **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
+  half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
+  choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
+  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set.
+- **Published-projection schema for requirement-sets.** `build.py` fail-fast-validates
+  current/{councils,territories,merit-badges}.json against `published-current.schema.json`,
+  but `current/requirement-sets.json` + `requirement-sets/index.json` have no
+  published-contract schema (per-doc canonical validation covers content). Add one when the
+  requirement-set listing contract stabilizes.
+- **Requirement-text licensing — DECIDED (0.5.0).** Verbatim requirement text IS published,
+  marked © Scouting America (`includes_official_text: true` + `text_rights`), excluded from
+  CC BY-NC-SA, reproduced non-commercially with attribution + takedown. Revisit if SA
+  objects or a cleaner permission path opens.

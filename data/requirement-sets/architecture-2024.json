@@ -1,0 +1,98 @@
+{
+  "id": "architecture-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:architecture",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Architecture Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/architecture/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Tour your community and list the different types of buildings you see. Try to identify buildings that can be associated with a specific period of history or style of architecture. Make a sketch of the building you most admire."
+        },
+        {
+          "number": "1b",
+          "text": "Select a historical architectural achievement that has had a major impact on society. Using resources such as the internet (with your parent or guardian's permission), books, and magazines, find out how this achievement has influenced the world today. Tell your counselor what you learned."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "In following the Leave No Trace Seven Principles and the Outdoor Code, Scouts pledge to \"Travel and camp on durable surfaces\" and to \"Leave what you find\" and to \"Be conservation-minded.\" Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "The term sustainable architecture. Identify three features typical of green buildings."
+        },
+        {
+          "number": "2b",
+          "text": "The difference between renewable building materials and recycled building materials, and how each can be used in construction."
+        },
+        {
+          "number": "2c",
+          "text": "The relationship of architecture with its surrounding environment and the community."
+        },
+        {
+          "number": "2d",
+          "text": "How entire buildings can be reused rather than torn down when they no longer serve their original purpose."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With your parent or guardian's and counselor's permission and approval, arrange to meet with an architect. Ask to see the scale model of a building and the drawings that a builder would use to construct this building. Discuss why the different building materials were selected. Look at the details in the drawings and the model to see how the materials and components are attached to each other during construction."
+        },
+        {
+          "number": "3b",
+          "text": "With your parent or guardian's and counselor's permission and approval, arrange to meet with an architect at a construction site. Ask the architect to bring drawings that the builder uses to construct the building. While at the site, discuss why the different building materials being used were selected. Discuss how the different building materials and components are attached to each other during construction. Note: To visit a construction site will require advance planning. You will need permission from your parents, counselor, the architect, and the construction site manager. A construction site is a very dangerous place. While there, you will need to closely follow the site manager's directions and comply with all the safety procedures, including wearing a hard hat, protective eyewear, and proper footwear. Be aware of the changing conditions at the site, and stay with the architect or site manager."
+        },
+        {
+          "number": "3c",
+          "text": "Interview someone who might be your client (such as a prospective homeowner or business owner) if you were an architect. Find out what your client's requirements would be for designing a new home or business building. Write a short program including a list of requirements for the project, the functions of the building and site, how the functions relate to one another, and the goals of the project."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Measure a room such as one where you live or where your troop meets. Make an accurately scaled drawing of the room's floor plan showing walls, doors, closets, windows, and any built-in furniture or cabinets. Neatly label your drawing with the following: your name, the date, what room you drew, and the scale of the drawing. (Drawing scale: 1/4 inch = 1 foot)"
+    },
+    {
+      "number": "5",
+      "text": "Find out about three career opportunities in architecture. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/architecture/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Architecture_Landscape.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/architecture/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

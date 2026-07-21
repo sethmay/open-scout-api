@@ -1,0 +1,121 @@
+{
+  "id": "collections-2021",
+  "kind": "requirement-set",
+  "subject": "merit-badge:collections",
+  "effective_from": "2021-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Collections Merit Badge Requirements (2021)",
+    "url": "https://www.scouting.org/merit-badges/collections/",
+    "year": 2021
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare a short written report or outline for your counselor, giving a detailed description of your collection, including a short history, why you enjoy your collection, and what you have learned from collecting. Be sure to include why you chose that particular type of collection/collecting method."
+    },
+    {
+      "number": "2",
+      "text": "Explain the growth and development of your collection."
+    },
+    {
+      "number": "3",
+      "text": "Demonstrate your knowledge of preserving and displaying your collection.",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the precautions you need to take to preserve your collection, including handling, cleaning, and storage."
+        },
+        {
+          "number": "3b",
+          "text": "Explain how best to display your collection, keeping in mind preserving as discussed above."
+        },
+        {
+          "number": "3c",
+          "text": "Explain to your counselor the events available for a hobbyist of this collection, including shows, seminars, conventions, contests, and museum programs and exhibits."
+        },
+        {
+          "number": "3d",
+          "text": "Explain to your counselor how you keep track of your collection. Describe your cataloging method."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate your knowledge of collecting and investing. Discuss with your counselor:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "How investing and speculation would apply to your collection"
+        },
+        {
+          "number": "4b",
+          "text": "What you would look for in purchasing other collections similar to yours"
+        },
+        {
+          "number": "4c",
+          "text": "What you would expect in return value if you decided to sell all or part of the collection"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Discuss with your counselor at least 10 terms commonly used to describe your collection and be prepared to discuss the definition of each."
+        },
+        {
+          "number": "5b",
+          "text": "Show your counselor any two groups from your collection. Explain how you organized your collection and why you chose that method. (Note: if your collection is too large to transport and your counselor is unable to view your collection directly, photographs should be available to share.)"
+        },
+        {
+          "number": "5c",
+          "text": "Explain the monetary value of your collection and where you learned about those values."
+        },
+        {
+          "number": "5d",
+          "text": "Explain how your collection is graded for value, physical defects, size, and age. Show the various classifications or ratings used in your collection."
+        },
+        {
+          "number": "5e",
+          "text": "List the national, state, or local association(s) related to or associated with your collection."
+        },
+        {
+          "number": "5f",
+          "text": "Explain to your counselor the purpose of and reason for the identification number (if applicable), series, brand name (if any), and any other special identification marks."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Discuss with your counselor the plans you have to continue with the collection in the future."
+    },
+    {
+      "number": "7",
+      "text": "Find out about career opportunities in collecting. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/collections/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Collections.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/collections/2021.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

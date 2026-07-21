@@ -1,0 +1,119 @@
+{
+  "id": "reptile-and-amphibian-study-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:reptile-and-amphibian-study",
+  "effective_from": "2023-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Reptile and Amphibian Study Merit Badge Requirements (2023)",
+    "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Describe the identifying characteristics of six species of reptiles and four species of amphibians found in the United States. For any four of these, make sketches from your own observations or take photographs. Show markings, color patterns, or other characteristics that are important in the identification of each of the four species. Discuss the habits and habitats of all 10 species."
+    },
+    {
+      "number": "2",
+      "text": "Discuss with your counselor the approximate number of species and general geographic distribution of reptiles and amphibians in the United States. Prepare a list of the most common species found in your local area or state."
+    },
+    {
+      "number": "3",
+      "text": "Describe the main differences between",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Amphibians and reptiles"
+        },
+        {
+          "number": "3b",
+          "text": "Alligators and crocodiles"
+        },
+        {
+          "number": "3c",
+          "text": "Toads and frogs"
+        },
+        {
+          "number": "3d",
+          "text": "Snakes and lizards"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Explain how reptiles and amphibians are an important component of the natural environment. List four species that are officially protected by the federal government or by the state you live in, and tell why each is protected. List three species of reptiles and three species of amphibians found in your local area that are not protected. Discuss the food habits of all 10 species."
+    },
+    {
+      "number": "5",
+      "text": "Compare how reptiles reproduce to how amphibians reproduce."
+    },
+    {
+      "number": "6",
+      "text": "From observation, describe how snakes move forward. Describe the functions of the muscles, ribs, and belly plates."
+    },
+    {
+      "number": "7",
+      "text": "Describe in detail six venomous snakes and the one venomous lizard found in the United States. Describe their habits and geographic range. Tell what you should do in case of a bite by a venomous species."
+    },
+    {
+      "number": "8",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Take custody of one or more reptiles or amphibians in a manner approved by your counselor. Maintain one or more reptiles or amphibians for at least a month. Record food accepted, eating methods, changes in coloration, shedding of skins, and general habits; or keep the eggs of a reptile from the time of laying until hatching; or keep the eggs of an amphibian from the time of laying until their transformation into tadpoles (frogs) or larvae (salamanders). Whichever you chose, keep records of and report to your counselor how you cared for your animal/eggs/larvae to include lighting, habitat, temperature and humidity maintenance and any veterinary care requirements. Unless you are the long-term owner, at the conclusion of this study, turn the animal(s) over to another responsible party approved by your counselor."
+        },
+        {
+          "number": "8b",
+          "text": "Choose a reptile or amphibian that you can observe or foster at a local zoo, aquarium, nature center, local rescue, or other such exhibit (such as your classroom or school). Study the specimen weekly for a period of three months. At each visit, sketch the specimen in its captive habitat and note any changes in its coloration, shedding of skins, and general habits and behavior. Discuss with your counselor how the animal you observed was cared for to include its housing and habitat, how the lighting, temperature, and humidity were maintained, and any veterinary care requirements. Find out, either from information you locate on your own or by talking to the caretaker, what this species eats and what are its native habitat and home range, preferred climate, average life expectancy, and natural predators. Also, identify any human-caused threats to its population and any laws that protect the species and its habitat. After the observation period, share what you have learned with your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "9",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Identify at night three kinds of toads or frogs by their voices. Imitate the song of each for your counselor. Stalk each with a flashlight and discover how each sings and from where."
+        },
+        {
+          "number": "9b",
+          "text": "Identify by sight eight species of reptiles or amphibians."
+        },
+        {
+          "number": "9c",
+          "text": "Using visual aids, give a brief talk to a small group on three different reptiles and amphibians."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "10",
+      "text": "Tell five superstitions or false beliefs about reptiles and amphibians and give a correct explanation for each. Give seven examples of unusual behavior or other true facts about reptiles and amphibians."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Reptile%20Amphibian.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/reptile-and-amphibian-study/2023.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

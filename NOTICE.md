@@ -11,6 +11,17 @@ projections published from it) is licensed under
 The **pipeline/tooling source code** (`tools/`, any future `pipeline/`) is licensed
 under the **MIT License**.
 
+### Merit badge requirement text (third-party, excluded from the data license)
+
+`requirement-set` documents reproduce **verbatim merit badge requirement text, which is
+© Scouting America** (marked per-record with `includes_official_text: true` and a
+`text_rights` statement). That text is **NOT** covered by the CC BY-NC-SA license above and
+is **not ours to relicense** — it is reproduced with attribution, for non-commercial
+Scouting use, and we honor takedown requests. Only the *compilation, structure, requirement
+numbering, and metadata* of the requirement-sets are the project's contribution (CC BY-NC-SA).
+Scouting America now distributes the merit badge pamphlets free at scouting.org. If you
+reuse requirement-set files, keep the requirement text under Scouting America's copyright.
+
 ### How to attribute
 
 > Data from the Open Scout API project (<repo URL>), licensed CC BY-NC-SA 4.0.
@@ -42,5 +53,10 @@ noted here because their status shapes what we may redistribute:
   unofficial community dataset. Used for council websites and to cross-check names/HQ.
   Records seeded from it carry `method: imported` and its provenance; the official map
   supersedes it on name/HQ conflicts.
+- **OpenScouting/workbooks** (community project) — source of the merit badge catalogue
+  (`badges/MANIFEST.md`) and the requirement source files (`badges/<slug>/<year>.md`) from
+  which requirement-set structure + verbatim text were parsed. Their repository licenses its
+  own workbook layout/code (CC BY-SA 4.0) and likewise treats the requirement text as
+  Scouting America's property.
 
 Nothing here is guaranteed accurate or current; confirm against the council's own site.

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
   "title": "Requirement set (canonical document file)",
-  "description": "One file per published requirement revision: data/requirement-sets/<slug>.json (slug convention: '<subject-slug>-<effective-year>'). Requirement sets are IMMUTABLE dated documents, not versioned entities: a revision is a NEW document whose 'supersedes' points at the previous one. 'subject' targets a merit badge today; ranks and awards reuse this schema unchanged. COPYRIGHT: requirement 'text' is Scouting America's — default policy is paraphrased 'summary' only with includes_official_text=false until the licensing question is resolved (see TODO.md).",
+  "description": "One file per published requirement revision: data/requirement-sets/<slug>.json (slug convention: '<subject-slug>-<effective-year>'). Requirement sets are IMMUTABLE dated documents, not versioned entities: a revision is a NEW document whose 'supersedes' points at the previous one. 'subject' targets a merit badge today; ranks and awards reuse this schema unchanged. COPYRIGHT: requirement 'text' is Scouting America's. When verbatim text is present, set includes_official_text=true AND a 'text_rights' statement (enforced below) — the text is reproduced with attribution for non-commercial use and is NOT covered by this dataset's CC BY-NC-SA license. 'summary' (original paraphrase) is an optional supplement. See NOTICE.md.",
   "type": "object",
   "properties": {
     "id": { "$ref": "common.schema.json#/$defs/Slug" },
@@ -59,6 +59,11 @@
       "type": "boolean",
       "description": "True iff any requirement node carries verbatim 'text'. Lets a publish step strip or withhold official text wholesale. The flag <-> text-presence correspondence is a PIPELINE-ENFORCED invariant (see TODO.md 'Pipeline validator'); never trust the boolean alone."
     },
+    "text_rights": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "Rights statement for any verbatim requirement `text` in this set. REQUIRED when includes_official_text is true: requirement text is Scouting America's copyright, reproduced with attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."
+    },
     "requirements": {
       "type": "array",
       "items": { "$ref": "#/$defs/Requirement" },
@@ -82,6 +87,8 @@
     "provenance"
   ],
   "additionalProperties": false,
+  "if": { "properties": { "includes_official_text": { "const": true } }, "required": ["includes_official_text"] },
+  "then": { "properties": { "text_rights": { "type": "string", "minLength": 1 } }, "required": ["text_rights"] },
   "$defs": {
     "Requirement": {
       "title": "Requirement",
@@ -96,12 +103,12 @@
         "text": {
           "type": ["string", "null"],
           "default": null,
-          "description": "Verbatim official text. Only when licensing permits; flips includes_official_text."
+          "description": "Verbatim official requirement text (© Scouting America). Presence requires includes_official_text=true + text_rights (see NOTICE.md)."
         },
         "summary": {
           "type": ["string", "null"],
           "default": null,
-          "description": "Original-prose paraphrase. The default, copyright-safe content."
+          "description": "Optional original-prose paraphrase/gloss. Not a substitute for the official text; carries no third-party copyright."
         },
         "choose": {
           "type": ["integer", "null"],

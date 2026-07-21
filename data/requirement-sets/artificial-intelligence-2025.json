@@ -1,0 +1,176 @@
+{
+  "id": "artificial-intelligence-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:artificial-intelligence",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Artificial Intelligence Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/artificial-intelligence/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Key Concepts. Define the following terms and share the meaning of each with your counselor: artificial intelligence (AI), artificial intelligence agents, automation, basic programming, bots, data, databases, digital workers, general AI, machine learning (ML), narrow AI, superintelligent AI, tasks, triggers, workflows, and variables."
+    },
+    {
+      "number": "2",
+      "text": "Artificial Intelligence (AI) Basics. Do the following and share what you learned with your counselor:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Identify ten examples of how AI is currently used in everyday life."
+        },
+        {
+          "number": "2b",
+          "text": "Identify five examples of how AI is currently used in the workplace."
+        },
+        {
+          "number": "2c",
+          "text": "Identify five examples of how AI can be used at school or in support of your education."
+        },
+        {
+          "number": "2d",
+          "text": "Meet with your counselor and play ten rounds of the \"AI or Not?\" game to determine if the presented scenario utilizes AI. Discuss your answers."
+        },
+        {
+          "number": "2e",
+          "text": "Create a timeline with five key milestones in the development of artificial intelligence."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Automation Basics. Do the following and share what you learned with your counselor:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Identify 10 examples of how automation is currently used in everyday life."
+        },
+        {
+          "number": "3b",
+          "text": "Identify five examples of how automation is currently used in the workplace."
+        },
+        {
+          "number": "3c",
+          "text": "Identify five examples of how automation can be used at school or in support of your education."
+        },
+        {
+          "number": "3d",
+          "text": "Explain how automation performs repetitive tasks without human intervention and how it reduces human error and optimizes resources."
+        },
+        {
+          "number": "3e",
+          "text": "Create a timeline with five significant milestones in automation development."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Ethics in AI. Do the following and share what you learned with your counselor:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Research ethical concerns and responsible use in AI, including bias, privacy, and AI decision-making."
+        },
+        {
+          "number": "4b",
+          "text": "Meet with your counselor, play, and discuss five rounds of the \"What Would You Do?\" ethical decision-making scenarios."
+        },
+        {
+          "number": "4c",
+          "text": "Develop your own ethical guidelines for the use of AI."
+        },
+        {
+          "number": "4d",
+          "text": "What is the Turing test?"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Deepfakes. Do the following and share what you learned with your counselor:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain what a deepfake is and how it can affect an individual."
+        },
+        {
+          "number": "5b",
+          "text": "Describe what actions to take if you or someone you know is impacted by a deepfake."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Developing AI Skills. Do the following and share what you learned with your counselor:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Discuss the learning process for AI and its limitations."
+        },
+        {
+          "number": "6b",
+          "text": "Identify five methods of how to effectively communicate with AI."
+        },
+        {
+          "number": "6c",
+          "text": "Explain the importance of prompt engineering when using AI to create better output."
+        },
+        {
+          "number": "6d",
+          "text": "Demonstrate three examples of writing clear instructions for a school-related task."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Practical Application. Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "With your counselor's approval, choose an artificial intelligence project based on your personal interest or a community need. Develop a plan outlining the project's objectives, data requirements, and potential ethical considerations. Implement the project utilizing appropriate artificial intelligence tools, languages, or platforms. Share your project with your counselor. Discuss the steps you followed to create the project and your experience during the process."
+        },
+        {
+          "number": "7b",
+          "text": "With your counselor's approval, design a short lesson plan on AI and teach it to your patrol or a group of Scouts. The lesson should include an AI-generated age-appropriate explanation of AI, examples of how AI is used in both everyday life as well as in the workplace, and an interactive demonstration of how Scouts could utilize AI to assist them with a school assignment, Scouting activity, or rank advancement. Share information on the development process and teaching experience with your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Career Exploration. Do ONE of the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Identify three career opportunities that would use skills and knowledge in artificial intelligence or automation. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "number": "8b",
+          "text": "Interview an artificial intelligence or automation professional. Learn about their day-to-day work, the challenges they face, and their vision for the future of artificial intelligence or automation. Inquire about training, education, certification requirements, experience, and expenses associated with entering the field. Share what you learned with your counselor."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/artificial-intelligence/"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/artificial-intelligence/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

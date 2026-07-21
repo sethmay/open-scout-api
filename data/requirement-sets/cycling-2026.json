@@ -1,0 +1,200 @@
+{
+  "id": "cycling-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:cycling",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Cycling Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/cycling/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in cycling activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while cycling, including cuts, scratches, concussions, blisters, sunburn, heat exhaustion, heatstroke, hypothermia, frostbite, dehydration, insect stings, tick bites, and snakebite. Explain to your counselor why you should be able to identify the poisonous plants and poisonous animals that are found in your area."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Describe your state and local laws concerning bicycles. Discuss what is the same and what is different from laws applying to motor vehicles. Explain where and how you should ride on roads and streets to include lane position, changing lanes, making left and right turns, and riding through intersections."
+    },
+    {
+      "number": "3",
+      "text": "Explain the importance of wearing the right clothing and gear while cycling, including a properly sized and fitted helmet. Know the Scouting America Bike Safety Guidelines."
+    },
+    {
+      "number": "4",
+      "text": "Using a bicycle safety checklist, clean and adjust a bicycle and present it to your counselor for inspection. Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Show points that should be checked regularly to make sure the bicycle is safe to ride."
+        },
+        {
+          "number": "4b",
+          "text": "Show how to adjust the saddle and handlebars for a proper fit."
+        },
+        {
+          "number": "4c",
+          "text": "Show how to adjust brakes and gear shifting (derailleurs)."
+        },
+        {
+          "number": "4d",
+          "text": "Show all points that need regular lubrication."
+        },
+        {
+          "number": "4e",
+          "text": "Show how to repair a flat by removing the tire, replacing or patching the tube, and remounting the tire."
+        },
+        {
+          "number": "4f",
+          "text": "Show that the bicycle meets local laws."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate basic bicycle handling skills to your counselor, to include how to properly mount your bicycle, starting and stopping (to include emergency stops), riding in a straight line, turning, shifting gears, scanning, and signaling."
+    },
+    {
+      "number": "6",
+      "text": "Using the Scouting America buddy system, complete all of the requirements for ONE of the following options: Road Biking OR Trail or Mixed Surface Biking.",
+      "children": [
+        {
+          "number": "6A",
+          "text": "Road Biking. Do ALL of the following:",
+          "children": [
+            {
+              "number": "6A(1)",
+              "text": "Take a road safety test with your counselor and demonstrate the following:"
+            },
+            {
+              "number": "6Aa",
+              "text": "On an urban street with light traffic, properly execute a left turn from the center of the street; also demonstrate an alternate left-turn technique used during periods of heavy traffic."
+            },
+            {
+              "number": "6Ab",
+              "text": "Properly execute a right turn."
+            },
+            {
+              "number": "6Ac",
+              "text": "Demonstrate appropriate actions at a right-turn-only lane when you are continuing straight."
+            },
+            {
+              "number": "6Ad",
+              "text": "Show proper curbside and road-edge riding. Show how to ride safely along a row of parked cars."
+            },
+            {
+              "number": "6Ae",
+              "text": "Cross railroad tracks properly.",
+              "children": [
+                {
+                  "number": "6Ae(2)",
+                  "text": "Avoiding main highways, take two rides of 10 miles each, two rides of 15 miles each, and two rides of 25 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen on the ride."
+                },
+                {
+                  "number": "6Ae(3)",
+                  "text": "After completing requirement (2) for the road biking option, do ONE of the following:"
+                }
+              ]
+            },
+            {
+              "number": "6Aa",
+              "text": "Lay out on a road map a 50-mile trip. Stay away from main highways. Using your map, make this ride in eight hours or less."
+            },
+            {
+              "number": "6Ab",
+              "text": "Participate in an organized bike tour of at least 50 miles. Make this ride in eight hours or less. Afterward, use the tour's cue sheet to make a map of the ride."
+            }
+          ]
+        },
+        {
+          "number": "6B",
+          "text": "Trail or Mixed Surface Biking Do ALL of the following: Note: These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.",
+          "children": [
+            {
+              "number": "6B(1)",
+              "text": "Demonstrate the following mountain bike handling skills to your counselor:"
+            },
+            {
+              "number": "6Ba",
+              "text": "Neutral position, ready position, bike body separation (side to side, and forward and back), and body positioning for cornering"
+            },
+            {
+              "number": "6Bb",
+              "text": "Show shifting skills as applicable to climbs and obstacles."
+            },
+            {
+              "number": "6Bc",
+              "text": "Show proper technique for riding up and down hills, including when you would ride seated, crouched, or standing.",
+              "children": [
+                {
+                  "number": "6Bc(2)",
+                  "text": "Take a trail safety test with your counselor and demonstrate the following:"
+                }
+              ]
+            },
+            {
+              "number": "6Ba",
+              "text": "Show proper trail etiquette to hikers and other cyclists, including when to yield the right-of-way."
+            },
+            {
+              "number": "6Bb",
+              "text": "Demonstrate how to correctly cross an obstacle by either going over the obstacle on your bike or dismounting your bike and crossing over or around the obstacle"
+            },
+            {
+              "number": "6Bc",
+              "text": "Cross rocks, gravel, and roots properly",
+              "children": [
+                {
+                  "number": "6Bc(3)",
+                  "text": "Describe the rules of trail riding, including how to know when a trail is unsuitable for riding."
+                },
+                {
+                  "number": "6Bc(4)",
+                  "text": "On mountain biking or multi-use trails approved by your counselor, take two rides of 2 miles each, two rides of 5 miles each, and two rides of 8 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen."
+                },
+                {
+                  "number": "6Bc(5)",
+                  "text": "After fulfilling the previous requirement, lay out on a trail map a 22-mile trip. You may include multiple trail systems, if needed. Stay away from main highways. Using your map, complete this ride in one day."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/cycling/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Cycling.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/cycling/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

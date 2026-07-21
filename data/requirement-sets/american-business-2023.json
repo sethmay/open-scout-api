@@ -1,0 +1,128 @@
+{
+  "id": "american-business-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:american-business",
+  "effective_from": "2023-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "American Business Merit Badge Requirements (2023)",
+    "url": "https://www.scouting.org/merit-badges/american-business/",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain four features of the free enterprise system in the United States. Describe the difference between freedom and license. Tell how the Scout Oath and Scout Law apply to business and free enterprise."
+        },
+        {
+          "number": "1b",
+          "text": "Describe the Industrial Revolution and tell about the major developments that marked the start of the modern industrial era in the United States. Discuss three people who had a great influence on business or industry in the United States and describe what each did."
+        },
+        {
+          "number": "1c",
+          "text": "Identify and describe to your counselor the five primary areas of business."
+        },
+        {
+          "number": "1d",
+          "text": "Explain the history of labor unions in the United States and the importance of labor unions and employers working together. Identify two major labor unions currently in existence."
+        },
+        {
+          "number": "1e",
+          "text": "Discuss with your counselor how business impacts the local, national, and global economy."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain the three basic types of financial statements (income statement, balance sheet, and statement of cash flows). Discuss with your counselor how each statement can help business leaders make better decisions."
+        },
+        {
+          "number": "2b",
+          "text": "Explain how changes in interest rates, taxes, and government spending affect the flow of money into or out of business and industry."
+        },
+        {
+          "number": "2c",
+          "text": "Explain how a sole proprietorship, partnership, or limited liability company gets its capital. Discuss and explain four ways a corporation obtains capital."
+        },
+        {
+          "number": "2d",
+          "text": "Name five kinds of insurance useful to business. Describe their purposes."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the place of profit in business."
+        },
+        {
+          "number": "3b",
+          "text": "Describe to your counselor green marketing and sustainable business practices."
+        },
+        {
+          "number": "3c",
+          "text": "Explain how ethics plays a role in business decision making."
+        },
+        {
+          "number": "3d",
+          "text": "Discuss the differences between operating a brick-and-mortar business versus an online business."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Describe the role of the U.S. Department of Labor. Discuss TWO of the following topics with your counselor: Fair Labor Standards Act (FLSA), Occupational Safety and Health Act (OSHA), Family and Medical Leave Act (FMLA), or Employee Retirement Income Security Act (ERISA)."
+    },
+    {
+      "number": "5",
+      "text": "Choose a business and research how it applies to each of the primary areas of business (accounting, finance, economics, marketing, and management). Share what you have learned with your counselor."
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Choose one of the primary areas of business and identify three career opportunities. Select one and research the education, training, and experience required for this career. Discuss this with your counselor and explain why this interests you."
+        },
+        {
+          "number": "6b",
+          "text": "Select a business leader and interview this individual to learn more about his or her company and career path. Discuss the role ethics plays in making business decisions. Share what you have learned with your counselor."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/american-business/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Business.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/american-business/2023.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

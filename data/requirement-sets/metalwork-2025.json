@@ -1,0 +1,235 @@
+{
+  "id": "metalwork-2025",
+  "kind": "requirement-set",
+  "subject": "merit-badge:metalwork",
+  "effective_from": "2025-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Metalwork Merit Badge Requirements (2025)",
+    "url": "https://www.scouting.org/merit-badges/metalwork/",
+    "year": 2025
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Read the safety rules for metalwork. Discuss how to be safe while working with metal. Discuss with your counselor the additional safety rules that apply to the metalwork option you choose for requirement 5."
+    },
+    {
+      "number": "2",
+      "text": "Explain the following terms: native metal, malleable, metallurgy, alloy, nonferrous, and ferrous. Then do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Name two nonferrous alloys used by pre-Iron Age metalworkers. Name the metals that are combined to form these alloys."
+        },
+        {
+          "number": "2b",
+          "text": "Name three ferrous alloys used by modern metalworkers."
+        },
+        {
+          "number": "2c",
+          "text": "Describe how to work-harden a metal."
+        },
+        {
+          "number": "2d",
+          "text": "Describe how to anneal a nonferrous and a ferrous metal."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Work-harden a piece of 26- or 28-gauge sheet brass or sheet copper. Put a 45-degree bend in the metal, then heavily peen the area along the bend line to work-harden it. Note the amount of effort that is required to overcome the yield point in this unworked piece of metal."
+        },
+        {
+          "number": "3b",
+          "text": "Soften the work-hardened piece from requirement 3(a) by annealing it, and then try to remove the 45-degree bend. Note the amount of effort that is required to overcome the yield point."
+        },
+        {
+          "number": "3c",
+          "text": "Make a temper color index from a flat piece of steel. Using hand tools, make and temper a center punch of medium-carbon or high-carbon steel."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Identify three career opportunities that would use skills and knowledge in metalworking. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "number": "4b",
+          "text": "Identify how you might use the skills and knowledge in metalworking to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "After completing the first four requirements, complete ONE of the following options:",
+      "children": [
+        {
+          "number": "5A",
+          "text": "Sheet Metal Mechanic/Tinsmith. Do ALL of the following:",
+          "children": [
+            {
+              "number": "5A(1)",
+              "text": "Name and describe the use of the basic sheet metalworking tools."
+            },
+            {
+              "number": "5A(2)",
+              "text": "Create a sketch of two objects to make from sheet metal. Include each component's dimensions on your sketch, which need not be to scale."
+            },
+            {
+              "number": "5A(3)",
+              "text": "Make two objects out of 24- or 26-gauge sheet metal. Use patterns either provided by your counselor or made by you and approved by your counselor. Construct these objects using a metal that is appropriate to the object's ultimate purpose, and using cutting, bending, edging, and either soldering or brazing."
+            },
+            {
+              "number": "5Aa",
+              "text": "One object also must include at least one riveted component."
+            },
+            {
+              "number": "5Ab",
+              "text": "If you do not make your objects from zinc-plated sheet steel or tin-plated sheet steel, preserve your work from oxidation."
+            }
+          ]
+        },
+        {
+          "number": "5B",
+          "text": "Silversmith. Do ALL of the following:",
+          "children": [
+            {
+              "number": "5B(1)",
+              "text": "Name and describe the use of a silversmith's basic tools."
+            },
+            {
+              "number": "5B(2)",
+              "text": "Create a sketch of two objects to make from sheet silver. Include each component's dimensions on your sketch, which need not be to scale."
+            },
+            {
+              "number": "5B(3)",
+              "text": "Make two objects out of 18- or 20-gauge sheet copper. Use patterns either provided by your counselor or made by you and approved by your counselor. Both objects must include a soldered joint. If you have prior silversmithing experience, you may substitute sterling silver, nickel silver, or lead-free pewter."
+            },
+            {
+              "number": "5Ba",
+              "text": "At least one object must include a sawed component you have made yourself."
+            },
+            {
+              "number": "5Bb",
+              "text": "At least one object must include a sunken part you have made yourself."
+            },
+            {
+              "number": "5Bc",
+              "text": "Clean and polish your objects."
+            }
+          ]
+        },
+        {
+          "number": "5C",
+          "text": "Founder. Do ALL of the following:",
+          "children": [
+            {
+              "number": "5C(1)",
+              "text": "Name and describe the use of the basic parts of a two-piece mold. Name at least three different types of molds."
+            },
+            {
+              "number": "5C(2)",
+              "text": "Create a sketch of two objects to cast in metal. Include each component's dimensions on your sketch, which need not be to scale."
+            },
+            {
+              "number": "5C(3)",
+              "text": "Make two molds, one using a pattern provided by your counselor and another one you have made yourself that has been approved by your counselor. Position the pouring gate and vents yourself. Note: Do not use copyrighted materials as patterns."
+            },
+            {
+              "number": "5Ca",
+              "text": "Using lead-free pewter, make a casting using a mold provided by your counselor."
+            },
+            {
+              "number": "5Cb",
+              "text": "Using lead-free pewter, make a casting using the mold that you have made."
+            },
+            {
+              "number": "5Cd",
+              "text": "Option D—Blacksmith. Do ALL of the following:",
+              "children": [
+                {
+                  "number": "5Cd(1)",
+                  "text": "Name and describe the use of a blacksmith's basic tools."
+                },
+                {
+                  "number": "5Cd(2)",
+                  "text": "Make a sketch of two objects to hot-forge. Include each component's dimensions on your sketch, which need not be to scale."
+                },
+                {
+                  "number": "5Cd(3)",
+                  "text": "Using low-carbon steel at least 1/4 inch thick, perform the following exercises:"
+                }
+              ]
+            },
+            {
+              "number": "5Ca",
+              "text": "Draw out by forging a taper."
+            },
+            {
+              "number": "5Cb",
+              "text": "Use the horn of the anvil by forging a U-shaped bend."
+            },
+            {
+              "number": "5Cc",
+              "text": "Form a decorative twist in a piece of square steel."
+            },
+            {
+              "number": "5Cd",
+              "text": "Use the edge of the anvil to bend metal by forging an L-shaped bend.",
+              "children": [
+                {
+                  "number": "5Cd(4)",
+                  "text": "Using low-carbon steel at least 1/4 inch thick, make the two objects you sketched that require hot-forging. Be sure you have your counselor's approval before you begin."
+                }
+              ]
+            },
+            {
+              "number": "5Ca",
+              "text": "Include a decorative twist on one object."
+            },
+            {
+              "number": "5Cb",
+              "text": "Include a hammer-riveted joint in one object."
+            },
+            {
+              "number": "5Cc",
+              "text": "Preserve your work from oxidation."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/metalwork/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Metalwork.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/metalwork/2025.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

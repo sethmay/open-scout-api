@@ -1,0 +1,298 @@
+{
+  "id": "golf-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:golf",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Golf Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/golf/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss safety on the golf course. Show that you know first aid for injuries or illnesses that could occur while golfing, including lightning, heat reactions, sunburn, dehydration, blisters, animal or bug bites, poison ivy exposure, sprains, and strains."
+    },
+    {
+      "number": "2",
+      "text": "Complete ONE of the following options:",
+      "children": [
+        {
+          "number": "2A",
+          "text": "Traditional Golf. Do ALL of the following:",
+          "children": [
+            {
+              "number": "2A(1)",
+              "text": "Study the USGA Rules of Golf now in use."
+            },
+            {
+              "number": "2Aa",
+              "text": "Tell about the three categories of golf etiquette."
+            },
+            {
+              "number": "2Ab",
+              "text": "Demonstrate that you understand the definitions of golf terms."
+            },
+            {
+              "number": "2Ac",
+              "text": "Show that you understand the Rules of Amateur Status.",
+              "children": [
+                {
+                  "number": "2Ac(2)",
+                  "text": "Tell about your understanding of the World Handicap System."
+                },
+                {
+                  "number": "2Ac(3)",
+                  "text": "Do the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Aa",
+              "text": "Tell about the early history of golf."
+            },
+            {
+              "number": "2Ab",
+              "text": "Describe golf's early years in the United States."
+            },
+            {
+              "number": "2Ac",
+              "text": "Tell about the accomplishments of a top golfer of your choice.",
+              "children": [
+                {
+                  "number": "2Ac(4)",
+                  "text": "Do the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Aa",
+              "text": "Tell how golf can contribute to a healthy lifestyle, mentally and physically."
+            },
+            {
+              "number": "2Ab",
+              "text": "Tell how a golf exercise plan can help you play better. Show two exercises that would help improve your game.",
+              "children": [
+                {
+                  "number": "2Ab(5)",
+                  "text": "Show the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Aa",
+              "text": "The proper grip, stance, posture, and key fundamentals of a good swing"
+            },
+            {
+              "number": "2Ab",
+              "text": "Driver played from a tee"
+            },
+            {
+              "number": "2Ac",
+              "text": "The fairway wood shot"
+            },
+            {
+              "number": "2Ad",
+              "text": "The long iron shot"
+            },
+            {
+              "number": "2Ae",
+              "text": "The short iron shot"
+            },
+            {
+              "number": "2Af",
+              "text": "The approach, chip-and-run, and pitch shots"
+            },
+            {
+              "number": "2Ag",
+              "text": "A recovery shot from a bunker or heavy rough"
+            },
+            {
+              "number": "2Ah",
+              "text": "A sound putting stroke",
+              "children": [
+                {
+                  "number": "2Ah(6)",
+                  "text": "Play a minimum of two nine-hole rounds or one 18-hole round of golf with another golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Aa",
+              "text": "Follow the Rules of Golf."
+            },
+            {
+              "number": "2Ab",
+              "text": "Practice good golf etiquette."
+            },
+            {
+              "number": "2Ac",
+              "text": "Show respect to fellow golfers, committee, sponsor, and gallery.",
+              "children": [
+                {
+                  "number": "2Ac(7)",
+                  "text": "Find out about three careers related to traditional golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "number": "2B",
+          "text": "Disc Golf. Do ALL of the following:",
+          "children": [
+            {
+              "number": "2B(1)",
+              "text": "Study the PDGA Official Rules of Disc Golf now in use."
+            },
+            {
+              "number": "2Ba",
+              "text": "Tell about the six areas of Courtesy (812)."
+            },
+            {
+              "number": "2Bb",
+              "text": "Describe the seven areas of Scoring (808).",
+              "children": [
+                {
+                  "number": "2Bb(2)",
+                  "text": "Tell about the history of disc golf and why it is an inclusive game."
+                },
+                {
+                  "number": "2Bb(3)",
+                  "text": "Do the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Ba",
+              "text": "Tell about the history of disc golf and why it is an inclusive game."
+            },
+            {
+              "number": "2Bb",
+              "text": "Discuss with your counselor the contributions Ed Headrick made to the sport of disc golf."
+            },
+            {
+              "number": "2Bc",
+              "text": "Describe the evolution of disc design."
+            },
+            {
+              "number": "2Bd",
+              "text": "Tell about the accomplishments of a top disc golfer of your choice.",
+              "children": [
+                {
+                  "number": "2Bd(4)",
+                  "text": "Do the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Ba",
+              "text": "Tell how disc golf can contribute to a healthy lifestyle, mentally and physically."
+            },
+            {
+              "number": "2Bb",
+              "text": "Tell how a disc golf exercise plan can help you play better. Show two exercises that would help improve your game.",
+              "children": [
+                {
+                  "number": "2Bb(5)",
+                  "text": "Show the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Ba",
+              "text": "A good throwing grip"
+            },
+            {
+              "number": "2Bb",
+              "text": "A good runup (X-step) when throwing a disc"
+            },
+            {
+              "number": "2Bc",
+              "text": "Backhand shot"
+            },
+            {
+              "number": "2Bd",
+              "text": "Forehand shot"
+            },
+            {
+              "number": "2Be",
+              "text": "Overhand shot"
+            },
+            {
+              "number": "2Bf",
+              "text": "Rolling shot"
+            },
+            {
+              "number": "2Bg",
+              "text": "A good (in-line) putting stance"
+            },
+            {
+              "number": "2Bh",
+              "text": "A good straddle putting stance"
+            },
+            {
+              "number": "2Bi",
+              "text": "A good putting grip"
+            },
+            {
+              "number": "2Bj",
+              "text": "A good putting motion & follow through"
+            },
+            {
+              "number": "2Bk",
+              "text": "The proper use of a mini-marking disc",
+              "children": [
+                {
+                  "number": "2Bk(6)",
+                  "text": "Play a minimum of 18-holes of disc golf with another disc golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:"
+                }
+              ]
+            },
+            {
+              "number": "2Ba",
+              "text": "Follow the PDGA Official Rules of Disc Golf."
+            },
+            {
+              "number": "2Bb",
+              "text": "Practice good disc golf etiquette."
+            },
+            {
+              "number": "2Bc",
+              "text": "Show respect to fellow disc golfers and other people in the park along with any wildlife, trees, and plants on the property.",
+              "children": [
+                {
+                  "number": "2Bc(7)",
+                  "text": "Find out about three careers related to disc golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/golf/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Golf.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/golf/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

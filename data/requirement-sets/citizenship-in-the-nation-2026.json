@@ -1,0 +1,144 @@
+{
+  "id": "citizenship-in-the-nation-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:citizenship-in-the-nation",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Citizenship in the Nation Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/citizenship-in-the-nation/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "What is the Constitution of the United States? What does the Constitution do? What principles does it reflect? Why is it important to have a Constitution?"
+    },
+    {
+      "number": "2",
+      "text": "List the six purposes for creating the United States Constitution set forth in the Preamble to the Constitution. How do these purposes affect your family and community?"
+    },
+    {
+      "number": "3",
+      "text": "List the three branches of the United States government. Explain:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "The function of each branch of government"
+        },
+        {
+          "number": "3b",
+          "text": "Why it is important to divide powers among different branches"
+        },
+        {
+          "number": "3c",
+          "text": "How each branch checks and balances the others"
+        },
+        {
+          "number": "3d",
+          "text": "How citizens can be involved in each branch of government"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Discuss the importance of:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Declaration of Independence"
+        },
+        {
+          "number": "4b",
+          "text": "Bill of Rights (the first 10 Amendments to the Constitution) and the 14th Amendment"
+        },
+        {
+          "number": "4c",
+          "text": "E Pluribus Unum, the traditional United States motto"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Watch the national evening news for five days in a row or read the main stories in a national media organization (e.g., a newspaper or news website) for five days in a row. Discuss the national issues that you learned about with your counselor. Choose one issue and explain how it affects you, your family, and community."
+    },
+    {
+      "number": "6",
+      "text": "With your counselor's approval, choose a speech of national historical importance. Explain:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Who the author was"
+        },
+        {
+          "number": "6b",
+          "text": "What the historical context was"
+        },
+        {
+          "number": "6c",
+          "text": "What difficulties the nation faced that the author wished to discuss"
+        },
+        {
+          "number": "6d",
+          "text": "What the author said"
+        },
+        {
+          "number": "6e",
+          "text": "Why the speech is important to the nation's history"
+        },
+        {
+          "number": "6f",
+          "text": "Choose a sentence or two from the speech that has significant meaning to you, and tell your counselor why."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Visit a place that is listed as a National Historic Landmark or that is on the National Register of Historic Places. Tell your counselor what you learned about the landmark or site and what you found interesting about it."
+        },
+        {
+          "number": "7b",
+          "text": "Tour your state capitol building or the U.S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history."
+        },
+        {
+          "number": "7c",
+          "text": "Tour a federal facility. Explain to your counselor what you saw and what you learned about its function in the local community and how it serves this nation."
+        },
+        {
+          "number": "7d",
+          "text": "Choose a United States national monument that interests you. Using books, brochures, the internet (with your parent or guardian's permission), and other resources, find out more about the monument. Tell your counselor what you learned, and explain why the monument is important to this country's citizens."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "8",
+      "text": "Name your representatives in the United States Congress. Write to your representative in Congress explaining your views on a national issue. Show your correspondence, along with any response you receive, to your counselor."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/citizenship-in-the-nation/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Citizenship%20in%20the%20Nation.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/citizenship-in-the-nation/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

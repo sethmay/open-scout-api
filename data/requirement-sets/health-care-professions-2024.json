@@ -1,0 +1,137 @@
+{
+  "id": "health-care-professions-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:health-care-professions",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Health Care Professions Merit Badge Requirements (2024)",
+    "url": "https://www.scouting.org/merit-badges/health-care-professions/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Select three of the professions from Group 1 listed below which interest you, then complete the following: Group 1: (1) Allopathic physician (MD)—all specialties (2) Osteopathic physician (DO)—all specialties (3) Podiatrist (DPM) (4) Chiropractor (DC) (5) Nurse Practitioner (NP) (6) Psychologist (PhD or PsyD) (7) Optometrist (OD) (8) Audiologist (AudD)",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "1b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Select three of the professions from Group 2 listed below which interest you, then complete the following: Group 2: (1) Physician Assistant (PA) (2) Registered Nurse (RN) (3) Certified Nurse Midwife (CNM) (4) Certified Nurse Assistant (CNA) (5) Licensed Practical Nurse (LPN/LVN) (6) Nurse Anesthetist (CRNA) (7) Pharmacist (PharmD) (8) Pharmacy Technician (9) Emergency Medical Technician (EMT)/Paramedic",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "2b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Select three of the professions from Group 3 listed below which interest you, then complete the following: Group 3: (1) Physical Therapist (DPT) (2) Occupational Therapist (OT) (3) Orthotist/Prosthetist (4) Medical Appliance Technician (5) Respiratory Therapist (RT) (6) Medical Assistant (7) Dietitian (RD) (8) Speech-Language Pathologist (Speech Therapist) (SLP)",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "3b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Select three of the professions from Group 4 listed below which interest you, then complete the following: Group 4: (1) Biomedical Engineer (BME) (2) Medical Technologist (3) Phlebotomist (4) Radiology Technologist (5) Sonographer (6) Medical Records Specialist (7) Cytopathologist (8) Histotechnologist",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "4b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at their workplace. Discuss with your counselor the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Why did they choose their particular career?"
+        },
+        {
+          "number": "5b",
+          "text": "What do they most like about their job?"
+        },
+        {
+          "number": "5c",
+          "text": "What are their biggest challenges in doing their job?"
+        },
+        {
+          "number": "5d",
+          "text": "Identify the tools/instruments that may be used in their jobs."
+        },
+        {
+          "number": "5e",
+          "text": "What has been the most surprising aspect of their career?"
+        },
+        {
+          "number": "5f",
+          "text": "What continuing education requirements are required to maintain certification?"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Discuss with your counselor your understanding of the meaning of the Physician's Oath."
+    },
+    {
+      "number": "7",
+      "text": "Describe the role of confidentiality between a patient and the health care provider. What is HIPAA?"
+    },
+    {
+      "number": "8",
+      "text": "Identify a medical advancement or discovery that has been in the news recently. Discuss with your counselor how this can affect patient care."
+    },
+    {
+      "number": "9",
+      "text": "With your parent or guardian's and counselor's approval, serve as a volunteer at a health-related event or facility in your community (e.g. blood drive, health fair, blood pressure screening event). Report to your counselor what you did and learned from the experience."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/health-care-professions/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Health%20Care%20Professions.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/health-care-professions/2024.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}

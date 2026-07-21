@@ -1,0 +1,197 @@
+{
+  "id": "kayaking-2026",
+  "kind": "requirement-set",
+  "subject": "merit-badge:kayaking",
+  "effective_from": "2026-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Kayaking Merit Badge Requirements (2026)",
+    "url": "https://www.scouting.org/merit-badges/kayaking/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the hazards you are most likely to encounter while participating in kayaking activities, including weather and water-related hazards, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Review prevention, symptoms, and first-aid treatment for the following injuries or illnesses that can occur while kayaking: blisters, cold-water shock and hypothermia, heat-related illnesses, dehydration, sunburn, sprains, and strains."
+        },
+        {
+          "number": "1c",
+          "text": "Review the Scouting America Safety Afloat policy. Explain to your counselor how this applies to kayaking."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Before doing requirements 3 through 8, successfully complete the Scouting America swimmer test. Note: See the Swimming merit badge pamphlet for details about the Scouting America swimmer test."
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Review the characteristics of life jackets most appropriate for kayaking and understand why one must always be worn while paddling. Then demonstrate how to select and fit a life jacket for kayaking."
+        },
+        {
+          "number": "3b",
+          "text": "Review the importance of safety equipment such as a signal device, extra paddle, sponge, bilge pump, flotation bags, and throw bag."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Name and point out the major parts of a kayak."
+        },
+        {
+          "number": "4b",
+          "text": "Review the differences in the design between recreational, whitewater, and sea or touring kayaks. Include how length, width, stability, and rocker are involved in the design of each type."
+        },
+        {
+          "number": "4c",
+          "text": "Explain the care, maintenance, and storage of a kayak."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Discuss the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Correct methods for the use of a kayak paddle"
+        },
+        {
+          "number": "5b",
+          "text": "Parts of a paddle"
+        },
+        {
+          "number": "5c",
+          "text": "The care and maintenance of a paddle"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Using a properly equipped kayak with an open cockpit, a sit-on-top, or an inflatable kayak, do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Safely capsize and perform a wet exit."
+        },
+        {
+          "number": "6b",
+          "text": "Reenter the kayak with assistance from a buddy boat."
+        },
+        {
+          "number": "6c",
+          "text": "Demonstrate a kayak-over-kayak rescue."
+        },
+        {
+          "number": "6d",
+          "text": "Demonstrate the HELP position."
+        },
+        {
+          "number": "6e",
+          "text": "Capsize the kayak, swim it and the paddle to shore, and empty water from the kayak with assistance if needed."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "As a solo paddler, use a properly equipped kayak to demonstrate the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Forward stroke"
+        },
+        {
+          "number": "7b",
+          "text": "Backstroke"
+        },
+        {
+          "number": "7c",
+          "text": "Forward sweep"
+        },
+        {
+          "number": "7d",
+          "text": "Reverse sweep"
+        },
+        {
+          "number": "7e",
+          "text": "Draw stroke"
+        },
+        {
+          "number": "7f",
+          "text": "Stern draw"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "As a solo paddler, use a properly equipped kayak to demonstrate the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Paddle a straight line for 15 to 20 boat lengths using appropriate strokes while maintaining trim and balance of the kayak."
+        },
+        {
+          "number": "8b",
+          "text": "Spin or pivot from a stationary position 180 degrees (half circle) to the right and left within two boat lengths."
+        },
+        {
+          "number": "8c",
+          "text": "Move abeam to the right 10 feet and to the left 10 feet."
+        },
+        {
+          "number": "8d",
+          "text": "Stop the boat in one boat length."
+        },
+        {
+          "number": "8e",
+          "text": "While maintaining forward motion, turn the kayak 90 degrees to the right and left."
+        },
+        {
+          "number": "8f",
+          "text": "Move the kayak backward three to four boat lengths using appropriate and effective reverse strokes."
+        },
+        {
+          "number": "8g",
+          "text": "Paddle the kayak in a buoyed figure 8 course around markers three to four boat lengths apart."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/merit-badges/kayaking/"
+      },
+      {
+        "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Kayaking.pdf"
+      },
+      {
+        "citation": "OpenScouting/workbooks badges/kayaking/2026.md"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official pamphlet; structure/numbering derived."
+  },
+  "notes": null
+}
