@@ -8,6 +8,11 @@
 Thumbs.db
 .DS_Store
 
+# Proprietary source maps (Scouting America) — facts extracted, images NOT redistributed
+maps/
+*.jpg
+*.jpeg
+
 # Python (future pipeline)
 __pycache__/
 *.py[cod]

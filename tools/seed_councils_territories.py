@@ -80,10 +80,14 @@ def main() -> None:
         if terr is not None:
             srcs.append({"citation": f"Scouting America Council Service Territory {terr} map (production {CF_MAP_DATE})"})
         notes = None
+        end = None
         if defunct:
-            notes = "Present in camp-finder but absent from the 2026 official CST maps; likely merged/renamed. End date and successor unverified where no event is recorded."
+            end = "2026"   # coarse upper bound: first observed absent on 2026 CST maps (exact end date unverified)
+            notes = ("Present in camp-finder but absent from the 2026 official CST maps; merged/renamed/discontinued. "
+                     "valid_to is a coarse bound (2026 = first observed absent); exact end date and successor "
+                     "unverified where no event records them.")
         ver = {
-            "valid_from": None, "valid_to": None,
+            "valid_from": None, "valid_to": end,
             "name": name,
             "bsa_number": n,
             "hq_city": cf["hq_city"],

@@ -32,16 +32,13 @@ def registry(schemas):
     return Registry().with_resources([(s["$id"], Resource.from_contents(s)) for s in schemas.values()])
 
 
-def _key(d: str | None):
-    """Half-open window sort/compare key; None from -> -inf, None to -> +inf."""
-    return d
-
 
 def main() -> int:
     schemas = load_schemas()
     reg = registry(schemas)
     errs: list[str] = []
     entities: set[str] = set()          # "kind:slug"
+    open_ended: set[str] = set()        # entities with a valid_to:null version
     entity_validator = {ds: Draft202012Validator(schemas[s], registry=reg,
                         format_checker=Draft202012Validator.FORMAT_CHECKER) for ds, s in DATASETS.items()}
     event_validator = Draft202012Validator(schemas["event.schema.json"], registry=reg,
@@ -58,6 +55,8 @@ def main() -> int:
             if obj.get("id") != p.stem:
                 errs.append(f"{p.name}: id {obj.get('id')!r} != filename stem {p.stem!r}")
             entities.add(f"{obj.get('kind')}:{obj.get('id')}")
+            if any(v.get("valid_to") is None for v in obj.get("versions", [])):
+                open_ended.add(f"{obj.get('kind')}:{obj.get('id')}")
             vs = obj.get("versions", [])
             # ordered + non-overlapping half-open: successor from == predecessor to
             for a, b in zip(vs, vs[1:]):
@@ -92,12 +91,23 @@ def main() -> int:
         for e in event_validator.iter_errors(obj):
             errs.append(f"{ds}/_events.json: schema: {e.json_path}: {e.message}")
         seen = set()
+        ENDED_AS_PRED = {"merged", "absorbed", "split"}
         for ev in obj.get("events", []):
-            if ev["id"] in seen:
-                errs.append(f"{ds}/_events.json: duplicate event id {ev['id']!r}")
-            seen.add(ev["id"])
+            eid = ev.get("id")
+            if eid in seen:
+                errs.append(f"{ds}/_events.json: duplicate event id {eid!r}")
+            seen.add(eid)
+            etype = ev.get("type")
             for part in ev.get("participants", []):
-                check_ref(part.get("ref"), f"{ds}/_events.json event {ev['id']}")
+                ref, role = part.get("ref"), part.get("role")
+                check_ref(ref, f"{ds}/_events.json event {eid}")
+                # retired-entity invariant (PLAN §3.1): an entity ended by an event
+                # must not still have an open (valid_to:null) version.
+                ended = (etype == "discontinued" and role == "subject") or \
+                        (etype in ENDED_AS_PRED and role == "predecessor")
+                if ended and ref in open_ended:
+                    errs.append(f"{ds}/_events.json event {eid}: {ref} ended by '{etype}' "
+                                f"but still has a valid_to:null (current) version")
 
     ncouncils = len(list((DATA / "councils").glob("*.json"))) - 1
     nterr = len(list((DATA / "territories").glob("*.json"))) - 1
