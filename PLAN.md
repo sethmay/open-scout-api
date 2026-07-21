@@ -195,6 +195,13 @@ open-scout-api/
   `program` (`scouts_bsa`), `order` (1–7). Requirement CONTENT lives in `requirement-set`
   docs (`subject: rank:<slug>`), not the entity. Seeded with the 7 Scouts BSA ranks; the
   same schema will hold Cub/Venturing/Sea Scout ranks and their revision history later.
+- **award** — earned awards & recognitions (religious emblems, training awards, scouting
+  honors / special recognitions) as versioned entities. FACTS only: `name`, `category`
+  (religious_emblem | training_award | scouting_honor | special_recognition), `audience`,
+  `square_knot_no` + `insignia_nos[]` (catalog numbers), `wear`, original-prose `summary`.
+  No verbatim Guide to Awards & Insignia text (© Scouting America). Excludes plain uniform
+  insignia and per-faith religious-emblem programs; earning requirements (where a source
+  exists) would reuse `requirement-set` with `subject: award:<slug>`.
 
 ## 6. Distribution (LIVE as of 0.3.0)
 

@@ -1,0 +1,30 @@
+{
+  "id": "scouters-key-skipper-s-key",
+  "kind": "award",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Scouter's Key/Skipper's Key",
+      "category": "training_award",
+      "audience": "adult",
+      "programs": ["scouts_bsa", "cub_scouts", "venturing", "sea_scouts"],
+      "square_knot_no": "5006",
+      "insignia_nos": ["924", "620592", "604950", "927", "940", "871", "872"],
+      "wear": "above left pocket",
+      "restricted": false,
+      "summary": "Training and tenure recognition for commissioned and unit adult leaders.",
+      "provenance": {
+        "sources": [
+          { "citation": "Guide to Awards and Insignia (Scouting America, No. 33066, 2024-2025)" },
+          { "url": "https://www.scouting.org/awards/awards-central/" }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85,
+        "notes": "Catalog numbers verified against the source Guide."
+      }
+    }
+  ],
+  "notes": null
+}

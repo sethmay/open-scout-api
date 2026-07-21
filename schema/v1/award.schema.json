@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/award.schema.json",
+  "title": "Award (canonical entity file)",
+  "description": "One file per earned award/recognition: data/awards/<slug>.json. Versioned entities (record-level SCD-2) so renames/retirements (e.g. NOVA discontinued 2025) are lifecycle events, not edits. Scope: awards members EARN or are RECOGNIZED with \u2014 religious emblems, training awards, and scouting honors / special recognitions \u2014 NOT plain uniform insignia. Only FACTS are stored (name, category, audience, square-knot + insignia item numbers, wear location) plus an optional ORIGINAL-prose summary; verbatim Guide to Awards & Insignia text is \u00a9 Scouting America and is never reproduced here. Any actual earning requirements, when a source exists, live in requirement-set documents (subject: award:<slug>), same as ranks/badges.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "award" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/AwardVersion" },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced)."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "AwardVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Award name during this window, e.g. \"Scouter's Key\", \"Honor Medal\"."
+        },
+        "category": {
+          "$ref": "common.schema.json#/$defs/VocabCode",
+          "description": "Open vocab; seeded set: religious_emblem | training_award | scouting_honor | special_recognition."
+        },
+        "audience": {
+          "enum": ["youth", "adult", "both"],
+          "description": "Who earns/wears it: youth member, adult leader, or both."
+        },
+        "programs": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
+          "default": [],
+          "description": "Programs it applies to (scouts_bsa | cub_scouts | venturing | sea_scouts | all); open vocab, may be empty when cross-program."
+        },
+        "square_knot_no": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Scouting America catalog number of the square-knot emblem worn for this award, when it has one (a fact, not copyrightable)."
+        },
+        "insignia_nos": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "default": [],
+          "description": "Catalog numbers of the medal/device/emblem items associated with this award (facts)."
+        },
+        "wear": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Short factual wear location, e.g. \"above left pocket\"."
+        },
+        "restricted": {
+          "type": ["boolean", "null"],
+          "default": null,
+          "description": "True if the item is restricted (controlled purchase); null if unknown."
+        },
+        "summary": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Optional ORIGINAL one-line description of what the award recognizes. Not verbatim Guide text; carries no third-party copyright."
+        },
+        "url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "default": null,
+          "description": "Authoritative page (scouting.org), when known."
+        }
+      },
+      "required": ["name", "category", "audience"],
+      "unevaluatedProperties": false
+    }
+  }
+}

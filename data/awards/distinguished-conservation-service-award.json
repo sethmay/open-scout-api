@@ -1,0 +1,34 @@
+{
+  "id": "distinguished-conservation-service-award",
+  "kind": "award",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Distinguished Conservation Service Award",
+      "category": "special_recognition",
+      "audience": "both",
+      "programs": [],
+      "square_knot_no": "1900",
+      "insignia_nos": [],
+      "wear": "above the left pocket",
+      "restricted": false,
+      "summary": "Recognizes distinguished service to natural resource conservation, conferred by councils and the National Council.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Guide to Awards and Insignia (Scouting America, No. 33066, 2024-2025)"
+          },
+          {
+            "url": "https://www.scouting.org/awards/awards-central/"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85,
+        "notes": "Facts (name, catalog numbers, wear) transcribed from the official Guide to Awards and Insignia and verified against the source; category, audience, and summary are classifications. Per-faith religious emblems and plain uniform insignia excluded."
+      }
+    }
+  ],
+  "notes": null
+}

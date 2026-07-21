@@ -37,6 +37,7 @@ PREFIX_TO_SCHEMA = {
     "merit-badge-": "merit-badge.schema.json",
     "requirement-set-": "requirement-set.schema.json",
     "events-": "event.schema.json",
+    "award-": "award.schema.json",
 }
 
 

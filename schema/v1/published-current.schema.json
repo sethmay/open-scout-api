@@ -7,11 +7,11 @@
   "properties": {
     "version": { "type": "string" },
     "generated_at": { "type": "string", "format": "date-time" },
-    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank"] },
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award"] },
     "count": { "type": "integer", "minimum": 0 },
     "items": {
       "type": "array",
-      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }, { "$ref": "#/$defs/CurrentRank" }] }
+      "items": { "oneOf": [{ "$ref": "#/$defs/CurrentCouncil" }, { "$ref": "#/$defs/CurrentTerritory" }, { "$ref": "#/$defs/CurrentMeritBadge" }, { "$ref": "#/$defs/CurrentCamp" }, { "$ref": "#/$defs/CurrentRank" }, { "$ref": "#/$defs/CurrentAward" }] }
     }
   },
   "required": ["version", "generated_at", "kind", "count", "items"],
@@ -88,6 +88,21 @@
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
       "required": ["id", "name", "program", "order", "url", "confidence"],
+      "additionalProperties": false
+    },
+    "CurrentAward": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "type": "string" },
+        "audience": { "enum": ["youth", "adult", "both"] },
+        "programs": { "type": "array", "items": { "type": "string" } },
+        "square_knot_no": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["id", "name", "category", "audience", "square_knot_no", "confidence"],
       "additionalProperties": false
     }
   }

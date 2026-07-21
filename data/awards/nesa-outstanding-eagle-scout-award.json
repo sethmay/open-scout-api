@@ -1,0 +1,39 @@
+{
+  "id": "nesa-outstanding-eagle-scout-award",
+  "kind": "award",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "NESA Outstanding Eagle Scout Award",
+      "category": "scouting_honor",
+      "audience": "adult",
+      "programs": [
+        "scouts_bsa"
+      ],
+      "square_knot_no": null,
+      "insignia_nos": [
+        "614640",
+        "780744"
+      ],
+      "wear": "above left pocket",
+      "restricted": false,
+      "summary": "Recognizes Eagle Scouts for distinguished service at local, state, or regional levels.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Guide to Awards and Insignia (Scouting America, No. 33066, 2024-2025)"
+          },
+          {
+            "url": "https://www.scouting.org/awards/awards-central/"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85,
+        "notes": "Facts (name, catalog numbers, wear) transcribed from the official Guide to Awards and Insignia and verified against the source; category, audience, and summary are classifications. Per-faith religious emblems and plain uniform insignia excluded."
+      }
+    }
+  ],
+  "notes": null
+}

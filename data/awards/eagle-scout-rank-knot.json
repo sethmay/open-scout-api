@@ -1,0 +1,36 @@
+{
+  "id": "eagle-scout-rank-knot",
+  "kind": "award",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Eagle Scout Rank Knot",
+      "category": "scouting_honor",
+      "audience": "adult",
+      "programs": [
+        "scouts_bsa"
+      ],
+      "square_knot_no": "5011",
+      "insignia_nos": [],
+      "wear": "above the left pocket",
+      "restricted": false,
+      "summary": "Adult knot recognizing having earned the Eagle Scout rank as a youth.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Guide to Awards and Insignia (Scouting America, No. 33066, 2024-2025)"
+          },
+          {
+            "url": "https://www.scouting.org/awards/awards-central/"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.85,
+        "notes": "Facts (name, catalog numbers, wear) transcribed from the official Guide to Awards and Insignia and verified against the source; category, audience, and summary are classifications. Per-faith religious emblems and plain uniform insignia excluded."
+      }
+    }
+  ],
+  "notes": null
+}
