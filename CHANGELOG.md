@@ -3,6 +3,15 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.12.0 (minor) — 2026-07-21
+
+- `PENDING` Release automation + durability: `tools/build_sqlite.py` compiles the data into a
+  queryable SQLite artifact (typed tables mirroring the `current` projections + full JSON per
+  row for `json_extract`); `.github/workflows/release.yml` publishes a GitHub Release (JSON
+  tarball + SQLite) on any `v*` tag; created `v*` git tags for all shipped versions at their
+  CHANGELOG shas; added `.zenodo.json` for DOI archiving; documented jsDelivr pinning + SQLite
+  in the README. No data content changed.
+
 ## 0.11.0 (minor) — 2026-07-21
 
 - `f590059` Add a `$schema` reference to every canonical `data/**.json` file (absolute

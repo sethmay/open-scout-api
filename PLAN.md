@@ -219,8 +219,10 @@ open-scout-api/
   step: repo Settings → Pages → Source = GitHub Actions.
 - **jsDelivr over git tags** for a CDN of the raw canonical files + immutable pinning
   (`cdn.jsdelivr.net/gh/sethmay/open-scout-api@<tag>/...`).
-- **Releases = immutable snapshots** (future): ship the JSON tree + a generated SQLite
-  artifact (and optionally Parquet); archive tagged releases to Zenodo for a DOI.
+- **Releases = immutable snapshots (LIVE as of 0.12.0).** Each version is a git tag at its
+  CHANGELOG sha; `.github/workflows/release.yml` publishes a GitHub Release with the built JSON
+  tree + a queryable SQLite artifact (`tools/build_sqlite.py`). jsDelivr pins any tag; tagged
+  releases can archive to Zenodo for a DOI (`.zenodo.json`).
 - **License: CC BY-NC-SA 4.0** for data (`LICENSE`/`NOTICE.md`); pipeline code MIT.
 
 ## 7. Phases

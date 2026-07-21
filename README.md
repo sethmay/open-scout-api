@@ -66,10 +66,15 @@ const { items } = await (await fetch(
   "https://sethmay.github.io/open-scout-api/v1/current/councils.json")).json();
 ```
 
-**Pinning:** the raw canonical files are also on jsDelivr —
-`https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@main/data/councils/cascade-pacific.json`
-(canonical shape; the denormalized projections above are served from GitHub Pages). Use a
-git tag instead of `@main` for immutable version pinning once releases are tagged.
+**Pinning & releases.** Every version is a git tag (`vMAJOR.MINOR.PATCH`) at that release's
+CHANGELOG sha. Pin canonical files immutably via jsDelivr —
+`https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@v0.11.0/data/councils/cascade-pacific.json`
+(`@main` tracks latest; the denormalized `v1/` projections are served from GitHub Pages). Pushing
+a `v*` tag runs [`release.yml`](./.github/workflows/release.yml), which publishes a GitHub Release
+with the built JSON tree (`open-scout-api-<tag>-json.tar.gz`) and a queryable **SQLite** artifact
+(`open-scout-api-<tag>.sqlite` — typed tables mirroring the `current` projections, plus the full
+canonical JSON per row for `json_extract`). Tagged releases can be archived to Zenodo for a citable
+DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.json`).
 
 ## Datasets & status
 
@@ -91,7 +96,7 @@ Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 data/                 canonical, normalized JSON (one file per entity + _events.json per dataset)
   councils/  territories/
 schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current
-tools/                build.py (data/ -> dist/), validate_data.py, validate_examples.py, stamp_schema.py, seed scripts
+tools/                build.py (data/ -> dist/), build_sqlite.py, validate_data.py, validate_examples.py, stamp_schema.py, seed scripts
 dist/                 generated static API (git-ignored; built + deployed by CI)
 PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
 ```
@@ -108,11 +113,13 @@ pip install "jsonschema[format]"
 python tools/validate_examples.py   # schemas + example fixtures (positive & negative)
 python tools/validate_data.py       # data/: schema + referential + version-window invariants
 python tools/build.py               # compile data/ -> dist/  (open dist/index.html)
+python tools/build_sqlite.py         # compile data/ -> dist/v1/open-scout-api.sqlite (run after build.py)
 python tools/stamp_schema.py         # (re)stamp data/ $schema refs after regenerating; validate_data enforces them
 ```
 
 CI ([`.github/workflows/pages.yml`](./.github/workflows/pages.yml)) runs the validators as a
-required gate on every push/PR and deploys `dist/` to GitHub Pages on `main`.
+required gate on every push/PR and deploys `dist/` to GitHub Pages on `main`; pushing a `v*` tag
+runs [`release.yml`](./.github/workflows/release.yml) to publish a GitHub Release with assets.
 
 ## Contributing
 

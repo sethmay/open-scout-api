@@ -1,0 +1,56 @@
+name: Release
+
+# Push a semver tag (e.g. v0.12.0) to build the API + SQLite, package them, and publish a
+# GitHub Release with those assets. Tags are created by the semver bump flow (see skill://semver);
+# each vX.Y.Z points at that version's CHANGELOG sha (the merge commit).
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "jsonschema[format]"
+      - name: Validate (gate — release only from valid data)
+        run: |
+          python tools/validate_examples.py
+          python tools/validate_data.py
+      - name: Build static API + SQLite artifact
+        run: |
+          python tools/build.py
+          python tools/build_sqlite.py
+      - name: Package release assets
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          cp dist/v1/open-scout-api.sqlite "open-scout-api-${tag}.sqlite"
+          tar -czf "open-scout-api-${tag}-json.tar.gz" --exclude=./v1/open-scout-api.sqlite -C dist .
+          python - "$tag" > RELEASE_NOTES.md <<'PY'
+          import re, sys
+          ver = sys.argv[1].lstrip("v")
+          lines, cap = [], False
+          for ln in open("CHANGELOG.md", encoding="utf-8").read().splitlines():
+              if re.match(rf"##\s+{re.escape(ver)}\b", ln):
+                  cap = True
+              elif ln.startswith("## ") and cap:
+                  break
+              if cap:
+                  lines.append(ln)
+          print("\n".join(lines).strip() or f"Open Scout API {ver}")
+          PY
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: RELEASE_NOTES.md
+          fail_on_unmatched_files: true
+          files: |
+            open-scout-api-${{ github.ref_name }}.sqlite
+            open-scout-api-${{ github.ref_name }}-json.tar.gz
