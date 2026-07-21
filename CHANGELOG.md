@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.11.0 (minor) — 2026-07-21
 
-- `PENDING` Add a `$schema` reference to every canonical `data/**.json` file (absolute
+- `f590059` Add a `$schema` reference to every canonical `data/**.json` file (absolute
   published URL per dataset) so contributors get live editor validation + autocomplete in
   the PR-based workflow. Permitted `$schema` in the 8 canonical schemas; new
   `tools/stamp_schema.py` normalizer stamps (and `--check`s) all 1102 files; `validate_data.py`
