@@ -3,6 +3,10 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.26.1 (patch) — 2026-07-22
+
+- `PENDING` Added **Camp Kenya** (`ae-camp-kenya`) — Transatlantic Council's (#802) winter resident camp held at the Savage Wilderness Adventure Camp near Sagana, Kenya (~3 hours from Nairobi). camp-finder never captured this overseas camp, so it was missing from the map; added by hand from the council's [camp page](https://tacscouting.org/camps/campkenya/), coordinates geocoded to the Savage Wilderness property (`exact`, 3700 ft). Classified `resident_camp` with Cub, Scouts BSA, high-adventure, Mount Kenya trek, Sea Scout, family, and adult-training programs. Camp count is now 448; this is the first `curated` (non-imported) camp in the dataset.
+
 ## 0.26.0 (minor) — 2026-07-22
 
 - `d0a36c7` Added `elevation_ft` to every camp — ground elevation in feet above sea level, from the Copernicus 90 m DEM via the open-meteo elevation API, rounded to the nearest 10 ft. Set on 446 of 447 camps (the lone null is the overseas Malaysia camp, which has no coordinate). It is a new optional additive field on both the canonical `CampVersion` and the `v1/current/camps.json` projection, and inherits `geo_precision` — an `approximate` point yields a city/reservation-centroid elevation, not the camp's exact ground.
