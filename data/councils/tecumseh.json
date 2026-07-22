@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1992",
       "valid_to": null,
       "name": "Tecumseh Council",
       "bsa_number": 439,
       "hq_city": "Springfield",
       "hq_state": "OH",
       "website": "https://tecumsehcouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "OH"
+      ],
       "territory": "territory:cst-9",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
           }
         ],
         "method": "imported",

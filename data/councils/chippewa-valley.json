@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1927",
+      "valid_to": "1925",
+      "name": "Chippewa and Eau Claire Counties Council",
+      "bsa_number": 637,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Chippewa_Valley_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Chippewa Valley Council; changed 1925. Source: Chippewa Valley Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1925",
+      "valid_to": "1928",
+      "name": "Ojibwa Council",
+      "bsa_number": 637,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Chippewa_Valley_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Chippewa Valley Council; changed 1928. Source: Chippewa Valley Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1928",
       "valid_to": null,
       "name": "Chippewa Valley Council",
       "bsa_number": 637,
       "hq_city": "Eau Claire",
       "hq_state": "WI",
       "website": "https://bsa-cvc.org/",
-      "states_served": [],
+      "states_served": [
+        "WI"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chippewa_Valley_Council"
           }
         ],
         "method": "imported",

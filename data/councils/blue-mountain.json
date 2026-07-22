@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1923",
       "valid_to": null,
       "name": "Blue Mountain Council",
       "bsa_number": 604,
       "hq_city": "Kennewick",
       "hq_state": "WA",
       "website": "https://bluemountainscouts.org/",
-      "states_served": [],
+      "states_served": [
+        "WA",
+        "OR"
+      ],
       "territory": "territory:cst-1",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Blue_Mountain_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2005",
       "valid_to": null,
       "name": "Twin Valley Council",
       "bsa_number": 283,
       "hq_city": "Mankato",
       "hq_state": "MN",
       "website": "https://www.scoutingtwinvalley.org/",
-      "states_served": [],
+      "states_served": [
+        "MN"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
           }
         ],
         "method": "imported",

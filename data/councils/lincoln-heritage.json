@@ -4,14 +4,41 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1912",
+      "valid_to": "1992",
+      "name": "Old Kentucky Home Council",
+      "bsa_number": 205,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Lincoln Heritage Council; changed 1992. Source: Lincoln Heritage Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1992",
       "valid_to": null,
       "name": "Lincoln Heritage Council",
       "bsa_number": 205,
       "hq_city": "Louisville",
       "hq_state": "KY",
       "website": "http://www.lhcbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "KY",
+        "IN",
+        "IL",
+        "TN"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +47,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
           }
         ],
         "method": "imported",

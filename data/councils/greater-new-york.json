@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1915",
+      "valid_to": "1925",
+      "name": "Greater New York Advisory Council",
+      "bsa_number": 640,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_New_York_Councils"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Greater New York Councils; changed 1925. Source: Greater New York Councils (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1925",
+      "valid_to": "1936",
+      "name": "Boy Scout Federation of Greater New York Council",
+      "bsa_number": 640,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_New_York_Councils"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Greater New York Councils; changed 1936. Source: Greater New York Councils (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1936",
       "valid_to": null,
       "name": "Greater New York Councils",
       "bsa_number": 640,
       "hq_city": "New York",
       "hq_state": "NY",
       "website": "http://www.tenmileriver.org/",
-      "states_served": [],
+      "states_served": [
+        "NY"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_New_York_Councils"
           }
         ],
         "method": "imported",

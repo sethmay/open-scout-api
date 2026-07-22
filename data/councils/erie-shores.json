@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1956",
       "valid_to": null,
       "name": "Erie Shores Council",
       "bsa_number": 460,
       "hq_city": "Toledo",
       "hq_state": "OH",
       "website": "https://www.erieshorescouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "OH",
+        "KY"
+      ],
       "territory": "territory:cst-9",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
           }
         ],
         "method": "imported",

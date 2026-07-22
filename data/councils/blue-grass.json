@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1927",
       "valid_to": null,
       "name": "Blue Grass Council",
       "bsa_number": 204,
       "hq_city": "Lexington",
       "hq_state": "KY",
       "website": "https://bgcscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "KY"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Blue_Grass_Council"
           }
         ],
         "method": "imported",

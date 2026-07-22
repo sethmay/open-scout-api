@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1992",
       "valid_to": null,
       "name": "Black Swamp Area Council",
       "bsa_number": 449,
       "hq_city": "Findlay",
       "hq_state": "OH",
       "website": "https://www.blackswampbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "OH"
+      ],
       "territory": "territory:cst-9",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Black_Swamp_Area_Council"
           }
         ],
         "method": "imported",

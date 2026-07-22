@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2011",
       "valid_to": null,
       "name": "Three Harbors Council",
       "bsa_number": 636,
       "hq_city": "Milwaukee",
       "hq_state": "WI",
       "website": "http://www.threeharborsscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "WI"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Three_Harbors_Council"
           }
         ],
         "method": "imported",

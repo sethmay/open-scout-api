@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1917",
       "valid_to": null,
       "name": "Monmouth Council",
       "bsa_number": 347,
       "hq_city": "Morganville",
       "hq_state": "NJ",
       "website": "https://www.monmouthcouncilscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "NJ"
+      ],
       "territory": "territory:cst-13",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Monmouth_Council"
           }
         ],
         "method": "imported",

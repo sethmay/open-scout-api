@@ -4,14 +4,61 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1917",
+      "valid_to": "1922",
+      "name": "Baton Rouge Council",
+      "bsa_number": 211,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Istrouma_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Istrouma Area Council; changed 1922. Source: Istrouma Area Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1922",
+      "valid_to": "1924",
+      "name": "East Baton Rouge Parish Council",
+      "bsa_number": 211,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Istrouma_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Istrouma Area Council; changed 1924. Source: Istrouma Area Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1924",
       "valid_to": null,
       "name": "Istrouma Area Council",
       "bsa_number": 211,
       "hq_city": "Baton Rouge",
       "hq_state": "LA",
       "website": "http://www.istroumascouting.org/",
-      "states_served": [],
+      "states_served": [
+        "LA",
+        "MS"
+      ],
       "territory": "territory:cst-7",
       "provenance": {
         "sources": [
@@ -20,6 +67,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 7 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Istrouma_Area_Council"
           }
         ],
         "method": "imported",

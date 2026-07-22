@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2006",
       "valid_to": null,
       "name": "Midnight Sun Council",
       "bsa_number": 696,
       "hq_city": "Fairbanks",
       "hq_state": "AK",
       "website": "https://midnightsunbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "AK"
+      ],
       "territory": "territory:cst-1",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Alaska"
           }
         ],
         "method": "imported",

@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1914",
       "valid_to": null,
       "name": "Gulf Stream Council",
       "bsa_number": 85,
       "hq_city": "Palm Beach Gardens",
       "hq_state": "FL",
       "website": "http://www.gulfstreamcouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "FL"
+      ],
       "territory": "territory:cst-16",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Gulf_Stream_Council"
           }
         ],
         "method": "imported",

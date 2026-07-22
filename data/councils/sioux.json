@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1930",
       "valid_to": null,
       "name": "Sioux Council",
       "bsa_number": 733,
       "hq_city": "Sioux Falls",
       "hq_state": "SD",
       "website": "https://www.siouxcouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "SD"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_South_Dakota"
           }
         ],
         "method": "imported",

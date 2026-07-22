@@ -53,6 +53,13 @@ noted here because their status shapes what we may redistribute:
   unofficial community dataset. Used for council websites and to cross-check names/HQ.
   Records seeded from it carry `method: imported` and its provenance; the official map
   supersedes it on name/HQ conflicts.
+- **English Wikipedia** (CC BY-SA) — source for council **founding/rename/merger lineage
+  facts**: founding years, prior council names and the years they changed, and which
+  councils merged or were absorbed (with years). Only these uncopyrightable facts are
+  extracted (`method: llm_extraction`, confidence 0.7–0.8) and the article is cited as the
+  source URL in provenance; no article prose is reproduced. Facts are cross-checked by rule
+  (bsa-number continuity, live-council collision guard) but remain best-effort — confirm
+  against the council's own site.
 - **OpenScouting/workbooks** (community project) — source of the merit badge catalogue
   (`badges/MANIFEST.md`) and the requirement source files (`badges/<slug>/<year>.md`) from
   which requirement-set structure + verbatim text were parsed. Their repository licenses its

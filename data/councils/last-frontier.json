@@ -11,7 +11,9 @@
       "hq_city": "Oklahoma City",
       "hq_state": "OK",
       "website": "https://scoutingrocks.tv/",
-      "states_served": [],
+      "states_served": [
+        "OK"
+      ],
       "territory": "territory:cst-8",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 8 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Oklahoma"
           }
         ],
         "method": "imported",

@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1973",
       "valid_to": null,
       "name": "Bay-Lakes Council",
       "bsa_number": 635,
       "hq_city": "Appleton",
       "hq_state": "WI",
       "website": "https://baylakesbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "WI"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Bay-Lakes_Council"
           }
         ],
         "method": "imported",

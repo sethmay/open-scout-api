@@ -11,7 +11,10 @@
       "hq_city": "Rockford",
       "hq_state": "IL",
       "website": "https://blackhawkscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "WI",
+        "IL"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Blackhawk_Area_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1992",
       "valid_to": null,
       "name": "Jersey Shore Council",
       "bsa_number": 341,
       "hq_city": "Toms River",
       "hq_state": "NJ",
       "website": "http://www.jerseyshorescouts.org/",
-      "states_served": [],
+      "states_served": [
+        "NJ"
+      ],
       "territory": "territory:cst-13",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Jersey_Shore_Council"
           }
         ],
         "method": "imported",

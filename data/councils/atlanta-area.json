@@ -4,14 +4,38 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1915",
+      "valid_to": "1939",
+      "name": "Atlanta Council",
+      "bsa_number": 92,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Atlanta_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Atlanta Area Council; changed 1939. Source: Atlanta Area Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1939",
       "valid_to": null,
       "name": "Atlanta Area Council",
       "bsa_number": 92,
       "hq_city": "Atlanta",
       "hq_state": "GA",
       "website": "https://www.scoutingatl.org/",
-      "states_served": [],
+      "states_served": [
+        "GA"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +44,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Atlanta_Area_Council"
           }
         ],
         "method": "imported",

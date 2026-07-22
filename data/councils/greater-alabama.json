@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1998",
       "valid_to": null,
       "name": "Greater Alabama Council",
       "bsa_number": 1,
       "hq_city": "Birmingham",
       "hq_state": "AL",
       "website": "https://1bsa.org/",
-      "states_served": [],
+      "states_served": [
+        "AL"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Alabama"
           }
         ],
         "method": "imported",

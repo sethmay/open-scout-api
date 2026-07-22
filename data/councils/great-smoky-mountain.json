@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1911",
+      "valid_to": "1915",
+      "name": "Knoxville Council",
+      "bsa_number": 557,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountain_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Great Smoky Mountain Council; changed 1915. Source: Great Smoky Mountain Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1915",
+      "valid_to": "1943",
+      "name": "Knoxville Area Council",
+      "bsa_number": 557,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountain_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Great Smoky Mountain Council; changed 1943. Source: Great Smoky Mountain Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1943",
       "valid_to": null,
       "name": "Great Smoky Mountain Council",
       "bsa_number": 557,
       "hq_city": "Knoxville",
       "hq_state": "TN",
       "website": "http://www.easttnscouts.org/",
-      "states_served": [],
+      "states_served": [
+        "TN"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountain_Council"
           }
         ],
         "method": "imported",

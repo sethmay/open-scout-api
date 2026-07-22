@@ -11,7 +11,9 @@
       "hq_city": "Fort Wayne",
       "hq_state": "IN",
       "website": "https://www.awac.org/",
-      "states_served": [],
+      "states_served": [
+        "IN"
+      ],
       "territory": "territory:cst-9",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Anthony_Wayne_Area_Council"
           }
         ],
         "method": "imported",

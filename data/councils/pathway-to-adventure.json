@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2015",
       "valid_to": null,
       "name": "Pathway to Adventure Council",
       "bsa_number": 456,
       "hq_city": "Chicago",
       "hq_state": "IL",
       "website": "http://www.pathwaytoadventure.org/",
-      "states_served": [],
+      "states_served": [
+        "IL",
+        "IN"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Pathway_to_Adventure_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,18 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1993",
       "valid_to": null,
       "name": "Mountain West Council",
       "bsa_number": 106,
       "hq_city": "Boise",
       "hq_state": "ID",
       "website": "https://www.mountainwestcouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "ID",
+        "WY",
+        "MT"
+      ],
       "territory": "territory:cst-1",
       "provenance": {
         "sources": [
@@ -20,6 +24,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Idaho"
           }
         ],
         "method": "imported",

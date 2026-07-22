@@ -3,6 +3,20 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.14.0 (minor) — 2026-07-21
+
+- `PENDING` Add **council historical lineage**. Councils grew 235 → **419** (229 current +
+  190 historical) and council events 7 → **119**. Extracted as facts (`method:
+  llm_extraction`, conf 0.7–0.8) from each current council's English Wikipedia article and
+  reconciled by rule: **141** founding dates (earliest-version `valid_from`), **57** prior-name
+  rename chains (dated `versions`), **112** new merger/absorption events, **184** named
+  predecessor councils added as defunct (retired) entities, and `states_served` filled for
+  **208** councils. bsa-number continuity decides rename-vs-merge; a predecessor whose slug
+  matches a still-live council is skipped (never retired) and logged; each predecessor is
+  retired once. Facts only — no article prose is reproduced. New `seed_council_history.py` +
+  committed `tools/council_history_facts.json`, layered idempotently onto the existing council
+  files. 1347 entities validate.
+
 ## 0.13.0 (minor) — 2026-07-21
 
 - `970ea2c` Add the Order of the Arrow lodges dataset: 238 `oa-lodge` entities from the

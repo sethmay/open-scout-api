@@ -1,0 +1,4372 @@
+{
+ "abraham-lincoln": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "IL"
+  ],
+  "wiki_title": "Abraham Lincoln Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Abraham_Lincoln_Council"
+ },
+ "adventure-west": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Adventure West Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Adventure_West_Council"
+ },
+ "alabama-florida": {
+  "founded_year": 1935,
+  "former_names": [
+   {
+    "name": "Southeast Alabama Council",
+    "until_year": 1963
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "AL",
+   "FL"
+  ],
+  "wiki_title": "Alabama-Florida Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Alabama-Florida_Council"
+ },
+ "alamo-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Alamo Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Alamo_Area_Council"
+ },
+ "allegheny-highlands": {
+  "founded_year": 1973,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Seneca Council",
+    "Chautauqua County Council",
+    "Elk Lick Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY",
+   "PA"
+  ],
+  "wiki_title": "Allegheny Highlands Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Allegheny_Highlands_Council"
+ },
+ "aloha": {
+  "founded_year": 1914,
+  "former_names": [
+   {
+    "name": "Honolulu County Council",
+    "until_year": 1957
+   },
+   {
+    "name": "Honolulu Council",
+    "until_year": 1924
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1957,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1972,
+    "councils": [
+     "Kilauea Council"
+    ]
+   },
+   {
+    "year": 2019,
+    "councils": [
+     "Maui County Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "HI",
+   "Guam",
+   "American Samoa",
+   "Northern Mariana Islands",
+   "Marshall Islands",
+   "Micronesia",
+   "Palau"
+  ],
+  "wiki_title": "Aloha Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Aloha_Council"
+ },
+ "anthony-wayne-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "IN"
+  ],
+  "wiki_title": "Anthony Wayne Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Anthony_Wayne_Area_Council"
+ },
+ "arbuckle-area": {
+  "formation": {
+   "type": "merged",
+   "year": 1946,
+   "predecessors": [
+    "Chickasaw Council",
+    "Pontotoc County Council"
+   ]
+  },
+  "founded_year": 1946,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "OK"
+  ],
+  "wiki_title": "Arbuckle Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Arbuckle_Area_Council"
+ },
+ "atlanta-area": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Polaris Council",
+    "until_year": null
+   },
+   {
+    "name": "Atlanta Council",
+    "until_year": 1939
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Atlanta Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Atlanta_Area_Council"
+ },
+ "baden-powell": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Baden-Powell Council",
+    "Susquenango Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY",
+   "PA"
+  ],
+  "wiki_title": "Baden-Powell Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Baden-Powell_Council"
+ },
+ "baltimore-area": {
+  "founded_year": 1911,
+  "former_names": [
+   {
+    "name": "Baltimore Council",
+    "until_year": 1926
+   },
+   {
+    "name": "Maryland Council",
+    "until_year": 1911
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1926,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MD"
+  ],
+  "wiki_title": "Baltimore Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Baltimore_Area_Council"
+ },
+ "bay-area": {
+  "founded_year": 1945,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Bay Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Bay_Area_Council"
+ },
+ "bay-lakes": {
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Badger Council",
+    "Waumegesako Council",
+    "Nicolet Area Council",
+    "Valley Council",
+    "Twin Lakes Council",
+    "Kettle Moraine Council"
+   ]
+  },
+  "founded_year": 1973,
+  "former_names": [],
+  "later_absorbed": [
+   {
+    "year": 2012,
+    "councils": [
+     "Hiawathaland Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Bay-Lakes Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Bay-Lakes_Council"
+ },
+ "black-swamp-area": {
+  "founded_year": 1992,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "Shawnee Area Council",
+    "Put-Han-Sen Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "OH"
+  ],
+  "wiki_title": "Black Swamp Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Black_Swamp_Area_Council"
+ },
+ "black-warrior": {
+  "founded_year": 1938,
+  "former_names": [],
+  "formation": {
+   "type": "renamed",
+   "year": 1938,
+   "predecessors": [
+    "Walker-Lamar Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "AL"
+  ],
+  "wiki_title": "Black Warrior Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Black_Warrior_Council"
+ },
+ "blackhawk-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": null,
+   "predecessors": [
+    "U.S. Grant Council",
+    "Blackhawk Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "WI",
+   "IL"
+  ],
+  "wiki_title": "Blackhawk Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Blackhawk_Area_Council"
+ },
+ "blue-grass": {
+  "founded_year": 1927,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1927,
+   "predecessors": [
+    "Issac Shelby Area Council",
+    "Daniel Boone Council",
+    "Frankfort Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "KY"
+  ],
+  "wiki_title": "Blue Grass Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Blue_Grass_Council"
+ },
+ "blue-mountain": {
+  "founded_year": 1923,
+  "former_names": [],
+  "formation": {
+   "type": "absorbed",
+   "year": 1923,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1927,
+    "councils": [
+     "Umatilla Council"
+    ]
+   },
+   {
+    "year": 1932,
+    "councils": [
+     "Eastern Oregon Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "WA",
+   "OR"
+  ],
+  "wiki_title": "Blue Mountain Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Blue_Mountain_Council"
+ },
+ "blue-ridge": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "SC"
+  ],
+  "wiki_title": "Blue Ridge Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Blue_Ridge_Council"
+ },
+ "blue-ridge-mountains": {
+  "founded_year": 1972,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1972,
+   "predecessors": [
+    "Piedmont Council",
+    "Blue Ridge Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "VA"
+  ],
+  "wiki_title": "Blue Ridge Mountains Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Blue_Ridge_Mountains_Council"
+ },
+ "buckeye": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1958,
+   "predecessors": [
+    "Buckeye Area Council",
+    "McKinley Area Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1991,
+    "councils": [
+     "Columbiana Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "OH",
+   "WV"
+  ],
+  "wiki_title": "Buckeye Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Buckeye_Council"
+ },
+ "buckskin": {
+  "founded_year": 1919,
+  "former_names": [
+   {
+    "name": "Charleston Area Council",
+    "until_year": 1949
+   },
+   {
+    "name": "Charleston Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1949,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1990,
+    "councils": [
+     "Chief Cornstalk Council"
+    ]
+   },
+   {
+    "year": 1991,
+    "councils": [
+     "Appalachian Council"
+    ]
+   },
+   {
+    "year": 2014,
+    "councils": [
+     "Tri-State Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "KY",
+   "OH",
+   "VA",
+   "WV"
+  ],
+  "wiki_title": "Buckskin Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Buckskin_Council"
+ },
+ "bucktail": {
+  "founded_year": 1930,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Bucktail Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Bucktail_Council"
+ },
+ "buffalo-trace": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "IN",
+   "IL"
+  ],
+  "wiki_title": "Buffalo Trace Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Buffalo_Trace_Council"
+ },
+ "buffalo-trail": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Buffalo Trail Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Buffalo_Trail_Council"
+ },
+ "caddo-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "AR",
+   "TX"
+  ],
+  "wiki_title": "Caddo Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Caddo_Area_Council"
+ },
+ "calcasieu-area": {
+  "founded_year": 1919,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1930,
+   "predecessors": [
+    "Choctaw Area Council",
+    "Calcasieu and Cameron Parishes Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "LA"
+  ],
+  "wiki_title": "Calcasieu Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Calcasieu_Area_Council"
+ },
+ "california-inland-empire": {
+  "founded_year": 1973,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Arrowhead Area Council",
+    "Riverside Area Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1974,
+    "councils": [
+     "Grayback Council"
+    ]
+   },
+   {
+    "year": 2006,
+    "councils": [
+     "Old Baldy Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "California Inland Empire Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
+ },
+ "cape-cod-and-the-islands": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "MA"
+  ],
+  "wiki_title": "Cape Cod and the Islands Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cape_Cod_and_the_Islands_Council"
+ },
+ "cape-fear": {
+  "founded_year": 1916,
+  "former_names": [
+   {
+    "name": "Cape Fear Area Council",
+    "until_year": 1989
+   },
+   {
+    "name": "New Hanover County Council",
+    "until_year": 1930
+   },
+   {
+    "name": "Wilmington Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1989,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Cape Fear Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cape_Fear_Council"
+ },
+ "capitol-area": {
+  "founded_year": 1912,
+  "former_names": [
+   {
+    "name": "Austin Area Council",
+    "until_year": null
+   },
+   {
+    "name": "Austin – Travis County Council",
+    "until_year": null
+   },
+   {
+    "name": "Austin Council",
+    "until_year": 1924
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Capitol Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Capitol_Area_Council"
+ },
+ "cascade-pacific": {
+  "founded_year": 1916,
+  "former_names": [
+   {
+    "name": "Columbia Pacific Council",
+    "until_year": 1993
+   },
+   {
+    "name": "Portland Area Council",
+    "until_year": 1966
+   },
+   {
+    "name": "Portland Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1993,
+   "predecessors": [
+    "Columbia Pacific Council",
+    "Cascade Area Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1932,
+    "councils": [
+     "Mount Saint Helens Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "OR",
+   "WA"
+  ],
+  "wiki_title": "Cascade Pacific Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
+ },
+ "catalina": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Tucson Council",
+    "until_year": 1922
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1922,
+   "predecessors": [
+    "Tucson Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1963,
+    "councils": [
+     "Cochise County Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "AZ"
+  ],
+  "wiki_title": "Catalina Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Catalina_Council"
+ },
+ "central-florida": {
+  "founded_year": 1922,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "Central Florida Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Central_Florida_Council"
+ },
+ "central-georgia": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Central Georgia Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Central_Georgia_Council"
+ },
+ "central-minnesota": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "MN"
+  ],
+  "wiki_title": "Central Minnesota Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Central_Minnesota_Council"
+ },
+ "central-north-carolina": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Charlotte Council",
+    "until_year": 1937
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1937,
+   "predecessors": [
+    "Charlotte Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Central North Carolina Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Central_North_Carolina_Council"
+ },
+ "chattahoochee": {
+  "founded_year": 1964,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "GA",
+   "AL"
+  ],
+  "wiki_title": "Chattahoochee Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chattahoochee_Council"
+ },
+ "cherokee-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Cherokee Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cherokee_Area_Council"
+ },
+ "cherokee-area-556": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "OK",
+   "TN"
+  ],
+  "wiki_title": "Cherokee Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cherokee_Area_Council"
+ },
+ "chester-county": {
+  "founded_year": 1919,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA",
+   "MD"
+  ],
+  "wiki_title": "Chester County Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chester_County_Council"
+ },
+ "chickasaw": {
+  "founded_year": 1916,
+  "former_names": [],
+  "formation": {
+   "type": "absorbed",
+   "year": 1916,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1993,
+    "councils": [
+     "Delta Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "TN",
+   "AR",
+   "MS"
+  ],
+  "wiki_title": "Chickasaw Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chickasaw_Council"
+ },
+ "chief-cornplanter": {
+  "founded_year": 1913,
+  "former_names": [
+   {
+    "name": "Warren County Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": null,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Chief Cornplanter Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chief_Cornplanter_Council"
+ },
+ "chief-seattle": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Seattle Area Council",
+    "until_year": 1954
+   },
+   {
+    "name": "Seattle Council",
+    "until_year": 1924
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1915,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1919,
+    "councils": [
+     "Bremerton Council",
+     "Port Angeles Council"
+    ]
+   },
+   {
+    "year": 1974,
+    "councils": [
+     "Olympic Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "WA"
+  ],
+  "wiki_title": "Chief Seattle Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
+ },
+ "chippewa-valley": {
+  "founded_year": 1927,
+  "former_names": [
+   {
+    "name": "Ojibwa Council",
+    "until_year": 1928
+   },
+   {
+    "name": "Chippewa and Eau Claire Counties Council",
+    "until_year": 1925
+   },
+   {
+    "name": "Eau Claire Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1928,
+   "predecessors": [
+    "Ojibwa Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Chippewa Valley Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Chippewa_Valley_Council"
+ },
+ "circle-ten": {
+  "founded_year": 1913,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX",
+   "OK"
+  ],
+  "wiki_title": "Circle Ten Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Circle_Ten_Council"
+ },
+ "coastal-carolina": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Charleston County Council",
+    "until_year": null
+   },
+   {
+    "name": "Charleston Council",
+    "until_year": 1940
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1940,
+   "predecessors": [
+    "Charleston Council",
+    "Beaufort",
+    "Walterboro",
+    "Georgetown"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "SC"
+  ],
+  "wiki_title": "Coastal Carolina Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Coastal_Carolina_Council"
+ },
+ "coastal-georgia": {
+  "formation": {
+   "type": "merged",
+   "year": 2014,
+   "predecessors": [
+    "Coastal Empire Council",
+    "Okefenokee Area Council"
+   ]
+  },
+  "former_names": [],
+  "founded_year": null,
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Scouting in Georgia (U.S. state)",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Georgia_%28U.S._state%29"
+ },
+ "colonial-virginia": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "VA"
+  ],
+  "wiki_title": "Scouting in Virginia",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Virginia"
+ },
+ "columbia-montour": {
+  "formation": null,
+  "former_names": [],
+  "founded_year": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Scouting in Pennsylvania",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Pennsylvania"
+ },
+ "connecticut-rivers": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": null,
+   "predecessors": [
+    "Indian Trails Council",
+    "Long Rivers Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CT"
+  ],
+  "wiki_title": "Connecticut Rivers Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Connecticut_Rivers_Council"
+ },
+ "connecticut-yankee": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Quinnipiac Council",
+    "Fairfield County Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CT"
+  ],
+  "wiki_title": "Connecticut Yankee Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Connecticut_Yankee_Council"
+ },
+ "conquistador": {
+  "founded_year": 1918,
+  "former_names": [
+   {
+    "name": "Great Southwest Area Council",
+    "until_year": 1982
+   },
+   {
+    "name": "Kit Carson Council",
+    "until_year": 1976
+   },
+   {
+    "name": "Northern New Mexico Council",
+    "until_year": 1955
+   },
+   {
+    "name": "Rio Grande Area Council",
+    "until_year": 1934
+   },
+   {
+    "name": "Bemalillo County Council",
+    "until_year": 1927
+   },
+   {
+    "name": "Albuquerque Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "NM",
+   "AZ",
+   "UT",
+   "CO"
+  ],
+  "wiki_title": "Scouting in New Mexico",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+ },
+ "cornhusker": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "Lincoln",
+    "until_year": 1929
+   },
+   {
+    "name": "Lancaster County Council",
+    "until_year": 1927
+   },
+   {
+    "name": "Lincoln",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "absorbed",
+   "year": 1924,
+   "predecessors": [
+    "University Place",
+    "Lincoln"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1932,
+    "councils": [
+     "Nemaha Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "NE"
+  ],
+  "wiki_title": "Scouting in Nebraska",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Nebraska"
+ },
+ "coronado-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "KS"
+  ],
+  "wiki_title": "Coronado Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Coronado_Area_Council"
+ },
+ "cradle-of-liberty": {
+  "founded_year": 1996,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1996,
+   "predecessors": [
+    "Philadelphia Council",
+    "Valley Forge Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Cradle of Liberty Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Cradle_of_Liberty_Council"
+ },
+ "crossroads-of-america": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "List of councils (Scouting America)",
+  "wiki_url": "https://en.wikipedia.org/wiki/List_of_councils_%28Scouting_America%29"
+ },
+ "crossroads-of-the-west": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "List of councils (Scouting America)",
+  "wiki_url": "https://en.wikipedia.org/wiki/List_of_councils_%28Scouting_America%29"
+ },
+ "dan-beard": {
+  "founded_year": 1956,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": 1985,
+    "councils": [
+     "Mound Builders Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "OH",
+   "KY"
+  ],
+  "wiki_title": "Scouting in Ohio",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+ },
+ "daniel-boone": {
+  "founded_year": 1916,
+  "former_names": [
+   {
+    "name": "Cape Fear Area Council",
+    "until_year": 1989
+   },
+   {
+    "name": "New Hanover County Council",
+    "until_year": 1930
+   },
+   {
+    "name": "Wilmington Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1989,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Scouting in North Carolina",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+ },
+ "daniel-webster": {
+  "founded_year": 1912,
+  "former_names": [
+   {
+    "name": "Daniel Webster Council",
+    "until_year": 2025
+   },
+   {
+    "name": "Manchester Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "NH"
+  ],
+  "wiki_title": "New Hampshire Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/New_Hampshire_Council"
+ },
+ "del-mar-va": {
+  "formation": {
+   "type": "renamed",
+   "year": null,
+   "predecessors": []
+  },
+  "founded_year": null,
+  "former_names": [
+   {
+    "name": "Wilmington Council",
+    "until_year": null
+   }
+  ],
+  "later_absorbed": [],
+  "states_served": [
+   "DE",
+   "MD",
+   "VA"
+  ],
+  "wiki_title": "Del-Mar-Va Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Del-Mar-Va_Council"
+ },
+ "east-carolina": {
+  "founded_year": 1916,
+  "former_names": [
+   {
+    "name": "Cape Fear Area Council",
+    "until_year": 1989
+   },
+   {
+    "name": "New Hanover County Council",
+    "until_year": 1930
+   },
+   {
+    "name": "Wilmington Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1989,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Scouting in North Carolina",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+ },
+ "east-texas-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "erie-shores": {
+  "founded_year": 1956,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": 1985,
+    "councils": [
+     "Mound Builders Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "OH",
+   "KY"
+  ],
+  "wiki_title": "Scouting in Ohio",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+ },
+ "evangeline-area": {
+  "founded_year": 1924,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2003,
+   "predecessors": [
+    "Ouachita Valley Council",
+    "Attakapas Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "LA"
+  ],
+  "wiki_title": "Scouting in Louisiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Louisiana"
+ },
+ "far-east": {
+  "founded_year": 1956,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": null,
+    "councils": [
+     "Canal Zone Council"
+    ]
+   }
+  ],
+  "states_served": [],
+  "wiki_title": "American Scouting overseas",
+  "wiki_url": "https://en.wikipedia.org/wiki/American_Scouting_overseas"
+ },
+ "flint-river": {
+  "founded_year": 1927,
+  "former_names": [
+   {
+    "name": "Griffin Area Council",
+    "until_year": 1930
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1930,
+   "predecessors": [
+    "Griffin Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Flint River Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Flint_River_Council"
+ },
+ "french-creek": {
+  "founded_year": 1972,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1972,
+   "predecessors": [
+    "Washington Trail Council",
+    "Custaloga Council",
+    "Colonel Drake Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA",
+   "OH"
+  ],
+  "wiki_title": "French Creek Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/French_Creek_Council"
+ },
+ "gamehaven": {
+  "founded_year": 2005,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2005,
+   "predecessors": [
+    "Viking Council",
+    "Indianhead Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2024,
+    "councils": [
+     "Voyageurs Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "MN"
+  ],
+  "wiki_title": "Scouting in Minnesota",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
+ },
+ "garden-state": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "NJ"
+  ],
+  "wiki_title": "Scouting in New Jersey",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_New_Jersey"
+ },
+ "gateway-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Scouting in Wisconsin",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Wisconsin"
+ },
+ "georgia-carolina": {
+  "founded_year": 2014,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2014,
+   "predecessors": [
+    "Coastal Empire Council",
+    "Okefenokee Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Scouting in Georgia (U.S. state)",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Georgia_%28U.S._state%29"
+ },
+ "glaciers-edge": {
+  "founded_year": 1973,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Badger Council",
+    "Waumegesako Council",
+    "Nicolet Area Council",
+    "Valley Council",
+    "Twin Lakes Council",
+    "Kettle Moraine Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2012,
+    "councils": [
+     "Hiawathaland Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Scouting in Wisconsin",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Wisconsin"
+ },
+ "golden-empire": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Sacramento Area Council",
+    "until_year": 1937
+   },
+   {
+    "name": "Sacramento Council",
+    "until_year": 1933
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1920,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1927,
+    "councils": [
+     "Kit Carson Council"
+    ]
+   },
+   {
+    "year": 1971,
+    "councils": [
+     "Tahoe Area Council"
+    ]
+   },
+   {
+    "year": 1992,
+    "councils": [
+     "Mount Lassen Area Council",
+     "Buttes Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Golden Empire Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+ },
+ "golden-gate-area": {
+  "founded_year": 2020,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2020,
+   "predecessors": [
+    "San Francisco Bay Area Council",
+    "Alameda Council",
+    "Mount Diablo Silverado Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Golden Gate Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Golden_Gate_Area_Council"
+ },
+ "golden-spread": {
+  "founded_year": 1987,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1987,
+   "predecessors": [
+    "Llano Estacado Council",
+    "Adobe Walls Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "TX",
+   "OK"
+  ],
+  "wiki_title": "Golden Spread Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Golden_Spread_Council"
+ },
+ "grand-canyon": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Tucson Council",
+    "until_year": 1922
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1922,
+   "predecessors": [
+    "Tucson Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1963,
+    "councils": [
+     "Cochise County Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "AZ"
+  ],
+  "wiki_title": "Scouting in Arizona",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Arizona"
+ },
+ "grand-teton": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1993,
+   "predecessors": [
+    "Tendoy Area Council",
+    "Teton Peaks Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "ID",
+   "WY",
+   "MT"
+  ],
+  "wiki_title": "Scouting in Idaho",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Idaho"
+ },
+ "great-alaska": {
+  "founded_year": 2006,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2006,
+   "predecessors": [
+    "Western Alaska Council",
+    "Southeast Alaska Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "AK"
+  ],
+  "wiki_title": "Scouting in Alaska",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Alaska"
+ },
+ "great-falls": {
+  "founded_year": 1973,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Vigilante Area Council",
+    "Western Montana Council",
+    "Yellowstone Valley Council",
+    "North Central Montana Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MT"
+  ],
+  "wiki_title": "Scouting in Montana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Montana"
+ },
+ "great-rivers": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "MO",
+   "KS",
+   "IL",
+   "IA"
+  ],
+  "wiki_title": "Scouting in Missouri",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Missouri"
+ },
+ "great-smoky-mountain": {
+  "founded_year": 1911,
+  "former_names": [
+   {
+    "name": "Knoxville Area Council",
+    "until_year": 1943
+   },
+   {
+    "name": "Knox County Council",
+    "until_year": null
+   },
+   {
+    "name": "Knoxville Council",
+    "until_year": 1915
+   }
+  ],
+  "formation": {
+   "type": "absorbed",
+   "year": null,
+   "predecessors": [
+    "Cumberland Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": null,
+    "councils": [
+     "Cumberland Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "TN"
+  ],
+  "wiki_title": "Great Smoky Mountain Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Great_Smoky_Mountain_Council"
+ },
+ "great-trail": {
+  "formation": null,
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "OH"
+  ],
+  "wiki_title": "Scouting in Ohio",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+ },
+ "greater-alabama": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Choccolocco Council",
+    "Tennessee Valley Council",
+    "Central Alabama Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "AL"
+  ],
+  "wiki_title": "Scouting in Alabama",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Alabama"
+ },
+ "greater-colorado": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Denver Area Council",
+    "until_year": 2022
+   },
+   {
+    "name": "Denver Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": 2019,
+    "councils": [
+     "Western Colorado Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CO"
+  ],
+  "wiki_title": "Scouting in Colorado",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Colorado"
+ },
+ "greater-hudson-valley": {
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Baden-Powell Council",
+    "Susquenango Council"
+   ]
+  },
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "NY",
+   "PA"
+  ],
+  "wiki_title": "Scouting in New York",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_New_York"
+ },
+ "greater-los-angeles-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2015,
+   "predecessors": [
+    "Los Angeles Area Council",
+    "San Gabriel Valley Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Greater Los Angeles Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Greater_Los_Angeles_Area_Council"
+ },
+ "greater-new-york": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Greater New York Council",
+    "until_year": null
+   },
+   {
+    "name": "Boy Scout Federation of Greater New York Council",
+    "until_year": 1936
+   },
+   {
+    "name": "Greater New York Advisory Council",
+    "until_year": 1925
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1925,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY"
+  ],
+  "wiki_title": "Greater New York Councils",
+  "wiki_url": "https://en.wikipedia.org/wiki/Greater_New_York_Councils"
+ },
+ "greater-saint-louis-area": {
+  "founded_year": 1911,
+  "former_names": [
+   {
+    "name": "Saint Louis Council, BSA",
+    "until_year": null
+   },
+   {
+    "name": "St. Louis Area Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1911,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 2017,
+    "councils": [
+     "Lewis and Clark Council"
+    ]
+   },
+   {
+    "year": 2019,
+    "councils": [
+     "Lincoln Trails Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "MO",
+   "IL"
+  ],
+  "wiki_title": "Greater St. Louis Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Greater_St._Louis_Area_Council"
+ },
+ "greater-tampa-bay-area": {
+  "founded_year": 2016,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2016,
+   "predecessors": [
+    "Gulf Ridge Council",
+    "West Central Florida Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "Greater Tampa Bay Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Greater_Tampa_Bay_Area_Council"
+ },
+ "greater-yosemite": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "Mission Council",
+    "until_year": 1994
+   },
+   {
+    "name": "Santa Barbara Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1917,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1994,
+    "councils": [
+     "Santa Lucia Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Scouting in California",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+ },
+ "green-mountain": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Long Trail Council",
+    "until_year": 1972
+   },
+   {
+    "name": "Ethan Allen Council",
+    "until_year": 1972
+   },
+   {
+    "name": "Green Mountain Council",
+    "until_year": 1965
+   },
+   {
+    "name": "Rutland County Council",
+    "until_year": 1929
+   },
+   {
+    "name": "Rutland Council",
+    "until_year": null
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": 1930,
+    "councils": [
+     "Owl Council"
+    ]
+   },
+   {
+    "year": 1965,
+    "councils": [
+     "Calvin Coolidge Council"
+    ]
+   },
+   {
+    "year": 1972,
+    "councils": [
+     "Long Trail Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "VT"
+  ],
+  "wiki_title": "Scouting in Vermont",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+ },
+ "greenwich": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Greenwich Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Greenwich_Council"
+ },
+ "gulf-coast": {
+  "founded_year": 1927,
+  "former_names": [
+   {
+    "name": "Satsumaland Council",
+    "until_year": 1935
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1935,
+   "predecessors": [
+    "Satsumaland Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "FL",
+   "AL"
+  ],
+  "wiki_title": "Gulf Coast Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Gulf_Coast_Council"
+ },
+ "gulf-stream": {
+  "founded_year": 1914,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "Gulf Stream Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Gulf_Stream_Council"
+ },
+ "hawk-mountain": {
+  "founded_year": 1970,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1970,
+   "predecessors": [
+    "Appalachian Trail Council",
+    "Daniel Boone Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Hawk Mountain Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Hawk_Mountain_Council"
+ },
+ "hawkeye-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "IA"
+  ],
+  "wiki_title": "Scouting in Iowa",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+ },
+ "heart-of-america": {
+  "founded_year": 1910,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1974,
+   "predecessors": [
+    "Kansas City Area Council",
+    "Kaw Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MO",
+   "KS"
+  ],
+  "wiki_title": "Heart of America Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Heart_of_America_Council"
+ },
+ "heart-of-new-england": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2018,
+   "predecessors": [
+    "Nashua Valley Council",
+    "Mohegan Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MA"
+  ],
+  "wiki_title": "Heart of New England Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Heart_of_New_England_Council"
+ },
+ "heart-of-virginia": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "VA"
+  ],
+  "wiki_title": "Scouting in Virginia",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Virginia"
+ },
+ "hoosier-trails": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "IN"
+  ],
+  "wiki_title": "Scouting in Indiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Indiana"
+ },
+ "housatonic": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "List of councils (Scouting America)",
+  "wiki_url": "https://en.wikipedia.org/wiki/List_of_councils_%28Scouting_America%29"
+ },
+ "illowa": {
+  "founded_year": 1914,
+  "former_names": [
+   {
+    "name": "Des Moines Council",
+    "until_year": 1926
+   },
+   {
+    "name": "Polk and Jasper Counties Council",
+    "until_year": 1927
+   },
+   {
+    "name": "Des Moines Area Council",
+    "until_year": 1932
+   },
+   {
+    "name": "Tall Corn Area Council",
+    "until_year": 1970
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1970,
+   "predecessors": [
+    "Southern Iowa Area Council",
+    "Tall Corn Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IA"
+  ],
+  "wiki_title": "Scouting in Iowa",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+ },
+ "indian-nations": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "OK"
+  ],
+  "wiki_title": "Scouting in Oklahoma",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Oklahoma"
+ },
+ "indian-waters": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": null,
+   "predecessors": [
+    "Indian Waters Council",
+    "Pee Dee Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "SC"
+  ],
+  "wiki_title": "Scouting in South Carolina",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_South_Carolina"
+ },
+ "inland-northwest": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Inland Empire Council",
+    "until_year": 1987
+   },
+   {
+    "name": "Spokane Area",
+    "until_year": 1931
+   },
+   {
+    "name": "Spokane Council",
+    "until_year": 1925
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1987,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1927,
+    "councils": [
+     "Palouse Council"
+    ]
+   },
+   {
+    "year": 1992,
+    "councils": [
+     "Lewis-Clark",
+     "Idaho Panhandle Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "WA",
+   "ID"
+  ],
+  "wiki_title": "Scouting in Washington (state)",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+ },
+ "istrouma-area": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "East Baton Rouge Parish Council",
+    "until_year": 1924
+   },
+   {
+    "name": "Baton Rouge Council",
+    "until_year": 1922
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1924,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1931,
+    "councils": [
+     "Old Hickory Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "LA",
+   "MS"
+  ],
+  "wiki_title": "Istrouma Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Istrouma_Area_Council"
+ },
+ "jayhawk-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "KS"
+  ],
+  "wiki_title": "Scouting in Kansas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Kansas"
+ },
+ "jersey-shore": {
+  "founded_year": 1992,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "Ocean County Council",
+    "Atlantic Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NJ"
+  ],
+  "wiki_title": "Jersey Shore Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Jersey_Shore_Council"
+ },
+ "juniata-valley": {
+  "formation": null,
+  "former_names": [],
+  "founded_year": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Scouting in Pennsylvania",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Pennsylvania"
+ },
+ "katahdin-area": {
+  "founded_year": 1919,
+  "former_names": [
+   {
+    "name": "Penobscot Council",
+    "until_year": 1929
+   },
+   {
+    "name": "Bangor Council",
+    "until_year": 1924
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": null,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "ME"
+  ],
+  "wiki_title": "Scouting in Maine",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Maine"
+ },
+ "la-salle": {
+  "formation": null,
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "IN"
+  ],
+  "wiki_title": "Scouting in Indiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Indiana"
+ },
+ "lake-erie": {
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "Shawnee Area Council",
+    "Put-Han-Sen Area Council"
+   ]
+  },
+  "founded_year": 1992,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "OH"
+  ],
+  "wiki_title": "Scouting in Ohio",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+ },
+ "las-vegas-area": {
+  "founded_year": 1944,
+  "former_names": [
+   {
+    "name": "Boulder Dam Area Council",
+    "until_year": 2005
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "NV",
+   "CA",
+   "AZ"
+  ],
+  "wiki_title": "Scouting in Nevada",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Nevada"
+ },
+ "last-frontier": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "OK"
+  ],
+  "wiki_title": "Scouting in Oklahoma",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Oklahoma"
+ },
+ "laurel-highlands": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2011,
+   "predecessors": [
+    "Greater Pittsburgh Council",
+    "Penn's Woods Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2014,
+    "councils": [
+     "Potomac Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "PA",
+   "WV",
+   "MD"
+  ],
+  "wiki_title": "Laurel Highlands Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Laurel_Highlands_Council"
+ },
+ "leatherstocking": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2016,
+   "predecessors": [
+    "Revolutionary Trails Council",
+    "Otschodela Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY"
+  ],
+  "wiki_title": "Leatherstocking Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Leatherstocking_Council"
+ },
+ "lincoln-heritage": {
+  "founded_year": 1912,
+  "former_names": [
+   {
+    "name": "Old Kentucky Home Council",
+    "until_year": 1992
+   },
+   {
+    "name": "Louisville Area Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "George Rogers Clark Council",
+    "Old Kentucky Home Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2012,
+    "councils": [
+     "Shawnee Trails Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "KY",
+   "IN",
+   "IL",
+   "TN"
+  ],
+  "wiki_title": "Lincoln Heritage Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
+ },
+ "long-beach-area": {
+  "founded_year": 1919,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Long Beach Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Long_Beach_Area_Council"
+ },
+ "longhorn": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "longhouse": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Baden-Powell Council",
+    "Susquenango Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY",
+   "PA"
+  ],
+  "wiki_title": "Scouting in New York",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_New_York"
+ },
+ "los-padres": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "Mission Council",
+    "until_year": 1994
+   },
+   {
+    "name": "Santa Barbara Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1994,
+   "predecessors": [
+    "Santa Lucia Area Council",
+    "Mission Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1924,
+    "councils": [
+     "Central Coast Counties council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Los Padres Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Los_Padres_Council"
+ },
+ "louisiana-purchase": {
+  "founded_year": 2003,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2003,
+   "predecessors": [
+    "Ouachita Valley Council",
+    "Attakapas Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "LA"
+  ],
+  "wiki_title": "Scouting in Louisiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Louisiana"
+ },
+ "marin": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "Mission Council",
+    "until_year": 1994
+   },
+   {
+    "name": "Santa Barbara Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1994,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1994,
+    "councils": [
+     "Santa Lucia Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Scouting in California",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+ },
+ "mayflower": {
+  "founded_year": null,
+  "former_names": [
+   {
+    "name": "Council 251",
+    "until_year": 2017
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 2017,
+   "predecessors": [
+    "Knox Trail Council",
+    "Old Colony Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MA"
+  ],
+  "wiki_title": "Mayflower Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Mayflower_Council"
+ },
+ "mecklenburg-county": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Charlotte Council",
+    "until_year": 1942
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1942,
+   "predecessors": [
+    "Charlotte Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Mecklenburg County Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Mecklenburg_County_Council"
+ },
+ "miami-valley": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "OH"
+  ],
+  "wiki_title": "Miami Valley Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Miami_Valley_Council"
+ },
+ "michigan-crossroads": {
+  "founded_year": 2012,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2012,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MI"
+  ],
+  "wiki_title": "Michigan Crossroads Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Michigan_Crossroads_Council"
+ },
+ "mid-america": {
+  "founded_year": 1915,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1965,
+   "predecessors": [
+    "Covered Wagon Council",
+    "Southwest Iowa Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2000,
+    "councils": [
+     "Prairie Gold Area Council"
+    ]
+   },
+   {
+    "year": 2024,
+    "councils": [
+     "Overland Trails Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "NE",
+   "IA",
+   "SD"
+  ],
+  "wiki_title": "Mid-America Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Mid-America_Council"
+ },
+ "mid-iowa": {
+  "formation": {
+   "type": "merged",
+   "year": 1970,
+   "predecessors": [
+    "Southern Iowa Area Council",
+    "Tall Corn Area Council"
+   ]
+  },
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "IA"
+  ],
+  "wiki_title": "Mid-Iowa Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Mid-Iowa_Council"
+ },
+ "middle-tennessee": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Nashville Area Council",
+    "until_year": 1949
+   },
+   {
+    "name": "Nashville Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1949,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": null,
+    "councils": [
+     "Davy Crockett Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "TN",
+   "KY"
+  ],
+  "wiki_title": "Middle Tennessee Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Middle_Tennessee_Council"
+ },
+ "midnight-sun": {
+  "founded_year": 2006,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2006,
+   "predecessors": [
+    "Western Alaska Council",
+    "Southeast Alaska Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "AK"
+  ],
+  "wiki_title": "Scouting in Alaska",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Alaska"
+ },
+ "minsi-trails": {
+  "founded_year": 1969,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1969,
+   "predecessors": [
+    "Bethlehem Area Council",
+    "Delaware Valley Area Council",
+    "Lehigh Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA",
+   "NJ"
+  ],
+  "wiki_title": "Minsi Trails Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Minsi_Trails_Council"
+ },
+ "mississippi-valley": {
+  "founded_year": 1917,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1994,
+   "predecessors": [
+    "Southeast Iowa Council",
+    "Saukee Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IL",
+   "MO",
+   "IA"
+  ],
+  "wiki_title": "Mississippi Valley Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Mississippi_Valley_Council"
+ },
+ "mobile-area": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Choccolocco Council",
+    "Tennessee Valley Council",
+    "Central Alabama Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "AL"
+  ],
+  "wiki_title": "Scouting in Alabama",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Alabama"
+ },
+ "monmouth": {
+  "founded_year": 1917,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "NJ"
+  ],
+  "wiki_title": "Monmouth Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Monmouth_Council"
+ },
+ "montana": {
+  "founded_year": 1973,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Vigilante Area Council",
+    "Western Montana Council",
+    "Yellowstone Valley Council",
+    "North Central Montana Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MT"
+  ],
+  "wiki_title": "Scouting in Montana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Montana"
+ },
+ "moraine-trails": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Scouting in Pennsylvania",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Pennsylvania"
+ },
+ "mount-baker": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Inland Empire Council",
+    "until_year": 1987
+   },
+   {
+    "name": "Spokane Area",
+    "until_year": 1931
+   },
+   {
+    "name": "Spokane Council",
+    "until_year": 1925
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": 1927,
+    "councils": [
+     "Palouse Council"
+    ]
+   },
+   {
+    "year": 1928,
+    "councils": [
+     "Lewis-Clark Area"
+    ]
+   },
+   {
+    "year": 1992,
+    "councils": [
+     "Lewis-Clark",
+     "Idaho Panhandle"
+    ]
+   }
+  ],
+  "states_served": [
+   "WA",
+   "ID"
+  ],
+  "wiki_title": "Scouting in Washington (state)",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+ },
+ "mountain-west": {
+  "founded_year": 1993,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1993,
+   "predecessors": [
+    "Tendoy Area Council",
+    "Teton Peaks Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "ID",
+   "WY",
+   "MT"
+  ],
+  "wiki_title": "Scouting in Idaho",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Idaho"
+ },
+ "mountaineer-area": {
+  "founded_year": 1990,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1990,
+   "predecessors": [
+    "Central West Virginia Council",
+    "Kootaga Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "WV",
+   "OH"
+  ],
+  "wiki_title": "Scouting in West Virginia",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_West_Virginia"
+ },
+ "muskingum-valley": {
+  "formation": null,
+  "former_names": [],
+  "founded_year": null,
+  "later_absorbed": [],
+  "states_served": [
+   "OH"
+  ],
+  "wiki_title": "Scouting in Ohio",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+ },
+ "narragansett": {
+  "founded_year": 1910,
+  "former_names": [
+   {
+    "name": "Rhode Island Boy Scouts",
+    "until_year": null
+   },
+   {
+    "name": "American Boy Scouts of Rhode Island",
+    "until_year": 1911
+   }
+  ],
+  "formation": {
+   "type": "absorbed",
+   "year": 1917,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 2002,
+    "councils": [
+     "Moby Dick Council"
+    ]
+   },
+   {
+    "year": 2015,
+    "councils": [
+     "Annawon Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "RI",
+   "MA",
+   "CT"
+  ],
+  "wiki_title": "Narragansett Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Narragansett_Council"
+ },
+ "national-capital-area": {
+  "founded_year": 1911,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "DC",
+   "MD",
+   "VA"
+  ],
+  "wiki_title": "National Capital Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/National_Capital_Area_Council"
+ },
+ "nevada-area": {
+  "founded_year": 1944,
+  "former_names": [
+   {
+    "name": "Boulder Dam Area Council",
+    "until_year": 2005
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "NV",
+   "CA",
+   "AZ"
+  ],
+  "wiki_title": "Scouting in Nevada",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Nevada"
+ },
+ "new-birth-of-freedom": {
+  "founded_year": 2010,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2010,
+   "predecessors": [
+    "York-Adams Area Council",
+    "Keystone Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "New Birth of Freedom Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/New_Birth_of_Freedom_Council"
+ },
+ "north-florida": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "North Florida Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/North_Florida_Council"
+ },
+ "northeast-georgia": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Northeast Georgia Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northeast_Georgia_Council"
+ },
+ "northeast-illinois": {
+  "founded_year": 1971,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1971,
+   "predecessors": [
+    "Oak Plain Council",
+    "Evanston-North Shore Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IL",
+   "WI"
+  ],
+  "wiki_title": "Northeast Illinois Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northeast_Illinois_Council"
+ },
+ "northeast-iowa": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "List of councils (Scouting America)",
+  "wiki_url": "https://en.wikipedia.org/wiki/List_of_councils_%28Scouting_America%29"
+ },
+ "northeastern-pennsylvania": {
+  "founded_year": 1990,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1990,
+   "predecessors": [
+    "Forest Lakes Council",
+    "Penn Mountains Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Northeastern Pennsylvania Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northeastern_Pennsylvania_Council"
+ },
+ "northern-lights": {
+  "founded_year": 1973,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Vigilante Area Council",
+    "Western Montana Council",
+    "Yellowstone Valley Council",
+    "North Central Montana Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MT"
+  ],
+  "wiki_title": "Scouting in Montana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Montana"
+ },
+ "northern-new-jersey": {
+  "founded_year": 1999,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1999,
+   "predecessors": [
+    "Essex Council",
+    "Hudson Liberty Council",
+    "Bergen Council",
+    "Passaic Valley Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NJ"
+  ],
+  "wiki_title": "Northern New Jersey Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northern_New_Jersey_Council"
+ },
+ "northern-star": {
+  "founded_year": 1910,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2005,
+   "predecessors": [
+    "Viking Council",
+    "Indianhead Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2024,
+    "councils": [
+     "Voyageurs Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "MN",
+   "WI"
+  ],
+  "wiki_title": "Northern Star Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northern_Star_Council"
+ },
+ "northwest-georgia": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "Northwest Georgia Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Northwest_Georgia_Council"
+ },
+ "northwest-texas": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "norwela": {
+  "founded_year": 1924,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2003,
+   "predecessors": [
+    "Ouachita Valley Council",
+    "Attakapas Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "LA"
+  ],
+  "wiki_title": "Scouting in Louisiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Louisiana"
+ },
+ "occoneechee": {
+  "founded_year": 1921,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1929,
+   "predecessors": [
+    "Wake County Council",
+    "Durham County Council",
+    "Walter Hines Page Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Occoneechee Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Occoneechee_Council"
+ },
+ "old-hickory": {
+  "founded_year": 1916,
+  "former_names": [
+   {
+    "name": "Cape Fear Area Council",
+    "until_year": 1989
+   },
+   {
+    "name": "New Hanover County Council",
+    "until_year": 1930
+   },
+   {
+    "name": "Wilmington Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1989,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Scouting in North Carolina",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+ },
+ "old-north-state": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "Uwharrie Council",
+    "Cherokee Council",
+    "General Greene Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Old North State Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Old_North_State_Council"
+ },
+ "orange-county": {
+  "founded_year": 1920,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1972,
+   "predecessors": [
+    "North Orange Council",
+    "Orange Empire Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Orange County Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Orange_County_Council"
+ },
+ "ozark-trails": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "MO",
+   "KS",
+   "IL",
+   "IA"
+  ],
+  "wiki_title": "Scouting in Missouri",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Missouri"
+ },
+ "pacific-harbors": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Inland Empire Council",
+    "until_year": 1987
+   },
+   {
+    "name": "Spokane Area",
+    "until_year": 1931
+   },
+   {
+    "name": "Spokane Council",
+    "until_year": 1925
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1987,
+   "predecessors": [
+    "Inland Empire Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1927,
+    "councils": [
+     "Palouse Council"
+    ]
+   },
+   {
+    "year": 1992,
+    "councils": [
+     "Lewis-Clark",
+     "Idaho Panhandle"
+    ]
+   }
+  ],
+  "states_served": [
+   "WA",
+   "ID"
+  ],
+  "wiki_title": "Scouting in Washington (state)",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+ },
+ "pacific-skyline": {
+  "founded_year": 1940,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1994,
+   "predecessors": [
+    "Stanford Area Council",
+    "San Mateo County Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Pacific Skyline Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Pacific_Skyline_Council"
+ },
+ "palmetto-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": null,
+    "councils": [
+     "Pee Dee Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "SC"
+  ],
+  "wiki_title": "Scouting in South Carolina",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_South_Carolina"
+ },
+ "pathway-to-adventure": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2015,
+   "predecessors": [
+    "Chicago Area Council",
+    "Des Plaines Valley Council",
+    "Northwest Suburban Council",
+    "Calumet Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IL",
+   "IN"
+  ],
+  "wiki_title": "Pathway to Adventure Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Pathway_to_Adventure_Council"
+ },
+ "pathway-to-the-rockies": {
+  "founded_year": 1915,
+  "former_names": [
+   {
+    "name": "Denver Area Council",
+    "until_year": 2022
+   },
+   {
+    "name": "Denver Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 2022,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 2019,
+    "councils": [
+     "Western Colorado Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CO"
+  ],
+  "wiki_title": "Scouting in Colorado",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Colorado"
+ },
+ "patriots-path": {
+  "founded_year": 1999,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1999,
+   "predecessors": [
+    "Morris-Sussex Area Council",
+    "Watchung Area Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2014,
+    "councils": [
+     "Central New Jersey Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "NJ"
+  ],
+  "wiki_title": "Patriots' Path Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Patriots%27_Path_Council"
+ },
+ "pennsylvania-dutch": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Scouting in Pennsylvania",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Pennsylvania"
+ },
+ "piedmont": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Piedmont Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Piedmont_Council"
+ },
+ "piedmont-420": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Piedmont Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Piedmont_Council"
+ },
+ "pine-burr-area": {
+  "founded_year": 1918,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1937,
+   "predecessors": [
+    "Kickapoo Area Council",
+    "Andrew Jackson Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MS"
+  ],
+  "wiki_title": "Scouting in Mississippi",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Mississippi"
+ },
+ "pine-tree": {
+  "founded_year": 1919,
+  "former_names": [
+   {
+    "name": "Penobscot Council",
+    "until_year": 1929
+   },
+   {
+    "name": "Bangor Council",
+    "until_year": 1924
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": null,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "ME"
+  ],
+  "wiki_title": "Scouting in Maine",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Maine"
+ },
+ "pony-express": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "MO"
+  ],
+  "wiki_title": "Scouting in Missouri",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Missouri"
+ },
+ "potawatomi-area": {
+  "founded_year": 1931,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Potawatomi Area Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Potawatomi_Area_Council"
+ },
+ "prairielands": {
+  "founded_year": null,
+  "former_names": [
+   {
+    "name": "Illiana Council 117",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1991,
+   "predecessors": [
+    "Arrowhead Council 117",
+    "Piankeshaw Council 739"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IL",
+   "IN"
+  ],
+  "wiki_title": "Prairielands Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Prairielands_Council"
+ },
+ "puerto-rico": {
+  "founded_year": 1927,
+  "former_names": [
+   {
+    "name": "Puerto Rico and Virgin Islands Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1927,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "PR"
+  ],
+  "wiki_title": "Scouting in Puerto Rico",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Puerto_Rico"
+ },
+ "quivira": {
+  "founded_year": 1928,
+  "former_names": [
+   {
+    "name": "Topeka Council",
+    "until_year": 1928
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1928,
+   "predecessors": [
+    "Topeka Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "KS"
+  ],
+  "wiki_title": "Scouting in Kansas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Kansas"
+ },
+ "rainbow": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "IL"
+  ],
+  "wiki_title": "Scouting in Illinois",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Illinois"
+ },
+ "rio-grande": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "sagamore": {
+  "founded_year": 1972,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1972,
+   "predecessors": [
+    "Central Indiana Council",
+    "Delaware County Council",
+    "Kikthawenund Council",
+    "Whitewater Valley Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IN"
+  ],
+  "wiki_title": "Scouting in Indiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Indiana"
+ },
+ "sam-houston-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "samoset": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Lincoln - Marathon Council",
+    "until_year": 1930
+   },
+   {
+    "name": "Wausau Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1920,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Samoset Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Samoset_Council"
+ },
+ "seneca-waterways": {
+  "founded_year": 2009,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2009,
+   "predecessors": [
+    "Finger Lakes Council",
+    "Otetiana Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY"
+  ],
+  "wiki_title": "Seneca Waterways Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Seneca_Waterways_Council"
+ },
+ "sequoia": {
+  "founded_year": 1919,
+  "former_names": [
+   {
+    "name": "Fresno Council",
+    "until_year": 1925
+   }
+  ],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": 1992,
+    "councils": [
+     "Mount Whitney Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Sequoia Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Sequoia_Council"
+ },
+ "sequoyah": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TN"
+  ],
+  "wiki_title": "Scouting in Tennessee",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Tennessee"
+ },
+ "shenandoah-area": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "VA"
+  ],
+  "wiki_title": "Scouting in Virginia",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Virginia"
+ },
+ "silicon-valley-monterey-bay": {
+  "founded_year": 1920,
+  "former_names": [
+   {
+    "name": "Santa Clara County Council",
+    "until_year": 2012
+   },
+   {
+    "name": "San Jose Council",
+    "until_year": 1922
+   }
+  ],
+  "formation": {
+   "type": "absorbed",
+   "year": 2012,
+   "predecessors": [
+    "Monterey Bay Area Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 2012,
+    "councils": [
+     "Monterey Bay Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Silicon Valley Monterey Bay Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Silicon_Valley_Monterey_Bay_Council"
+ },
+ "sioux": {
+  "founded_year": 1930,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "SD"
+  ],
+  "wiki_title": "Scouting in South Dakota",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_South_Dakota"
+ },
+ "south-florida": {
+  "founded_year": 1911,
+  "former_names": [
+   {
+    "name": "Dade County Council",
+    "until_year": 1945
+   },
+   {
+    "name": "Miami Council",
+    "until_year": 1921
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1945,
+   "predecessors": [
+    "Dade County Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1921,
+    "councils": [
+     "Dade County Council"
+    ]
+   },
+   {
+    "year": 1933,
+    "councils": [
+     "Broward County Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "South Florida Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/South_Florida_Council"
+ },
+ "south-georgia": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2012,
+   "predecessors": [
+    "Chehaw Council",
+    "Alapaha Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "GA"
+  ],
+  "wiki_title": "South Georgia Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/South_Georgia_Council"
+ },
+ "south-texas": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "southeast-louisiana": {
+  "founded_year": 1924,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2003,
+   "predecessors": [
+    "Ouachita Valley Council",
+    "Attakapas Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "LA"
+  ],
+  "wiki_title": "Scouting in Louisiana",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Louisiana"
+ },
+ "southwest-florida": {
+  "founded_year": 1968,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "Southwest Florida Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Southwest_Florida_Council"
+ },
+ "spirit-of-adventure": {
+  "founded_year": 2015,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 2015,
+   "predecessors": [
+    "Yankee Clipper Council",
+    "Boston Minuteman Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "MA"
+  ],
+  "wiki_title": "Spirit of Adventure Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Spirit_of_Adventure_Council"
+ },
+ "suffolk-county": {
+  "founded_year": 1974,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1974,
+   "predecessors": [
+    "West Suffolk County Council",
+    "East Suffolk County Council",
+    "Ipswich Corporation"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Suffolk County Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Suffolk_County_Council"
+ },
+ "susquehanna": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Scouting in Pennsylvania",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Pennsylvania"
+ },
+ "suwannee-river-area": {
+  "formation": null,
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "FL"
+  ],
+  "wiki_title": "Scouting in Florida",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Florida"
+ },
+ "tecumseh": {
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "Shawnee Area Council",
+    "Put-Han-Sen Area Council"
+   ]
+  },
+  "founded_year": 1992,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "OH"
+  ],
+  "wiki_title": "Scouting in Ohio",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+ },
+ "texas-southwest": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "texas-trails": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TX"
+  ],
+  "wiki_title": "Scouting in Texas",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Texas"
+ },
+ "theodore-roosevelt": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "Nassau County Council",
+    "until_year": 1997
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1917,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY"
+  ],
+  "wiki_title": "Theodore Roosevelt Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt_Council"
+ },
+ "three-fires": {
+  "founded_year": 1992,
+  "former_names": [
+   {
+    "name": "Two Rivers-DuPage Area Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1992,
+   "predecessors": [
+    "Two Rivers Council",
+    "DuPage Area Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "IL"
+  ],
+  "wiki_title": "Three Fires Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Three_Fires_Council"
+ },
+ "three-harbors": {
+  "formation": {
+   "type": "merged",
+   "year": 2011,
+   "predecessors": [
+    "Southeast Wisconsin Council",
+    "Milwaukee County Council"
+   ]
+  },
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "WI"
+  ],
+  "wiki_title": "Three Harbors Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Three_Harbors_Council"
+ },
+ "three-rivers": {
+  "founded_year": 1974,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [],
+  "wiki_title": "Three Rivers District",
+  "wiki_url": "https://en.wikipedia.org/wiki/Three_Rivers_District"
+ },
+ "tidewater": {
+  "founded_year": 1911,
+  "former_names": [
+   {
+    "name": "Norfolk Council",
+    "until_year": 1935
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1935,
+   "predecessors": [
+    "Norfolk Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1930,
+    "councils": [
+     "Portsmouth Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "VA",
+   "NC"
+  ],
+  "wiki_title": "Tidewater Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Tidewater_Council"
+ },
+ "transatlantic": {
+  "founded_year": 1956,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [
+   {
+    "year": null,
+    "councils": [
+     "Canal Zone Council"
+    ]
+   }
+  ],
+  "states_served": [],
+  "wiki_title": "American Scouting overseas",
+  "wiki_url": "https://en.wikipedia.org/wiki/American_Scouting_overseas"
+ },
+ "tukabatchee-area": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Choccolocco Council",
+    "Tennessee Valley Council",
+    "Central Alabama Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "AL"
+  ],
+  "wiki_title": "Scouting in Alabama",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Alabama"
+ },
+ "tuscarora": {
+  "founded_year": 1916,
+  "former_names": [
+   {
+    "name": "Cape Fear Area Council",
+    "until_year": 1989
+   },
+   {
+    "name": "New Hanover County Council",
+    "until_year": 1930
+   },
+   {
+    "name": "Wilmington Council",
+    "until_year": 1926
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1989,
+   "predecessors": []
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NC"
+  ],
+  "wiki_title": "Scouting in North Carolina",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+ },
+ "twin-rivers": {
+  "founded_year": 1998,
+  "former_names": [],
+  "formation": {
+   "type": "merged",
+   "year": 1998,
+   "predecessors": [
+    "Baden-Powell Council",
+    "Susquenango Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "NY",
+   "PA"
+  ],
+  "wiki_title": "Scouting in New York",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_New_York"
+ },
+ "twin-valley": {
+  "formation": {
+   "type": "merged",
+   "year": 2005,
+   "predecessors": [
+    "Viking Council",
+    "Indianhead Council"
+   ]
+  },
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [
+   {
+    "year": 2024,
+    "councils": [
+     "Voyageurs Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "MN"
+  ],
+  "wiki_title": "Scouting in Minnesota",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
+ },
+ "ventura-county": {
+  "founded_year": 1921,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Ventura County Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Ventura_County_Council"
+ },
+ "verdugo-hills": {
+  "founded_year": 1917,
+  "former_names": [
+   {
+    "name": "Mission Council",
+    "until_year": 1994
+   },
+   {
+    "name": "Santa Barbara Council",
+    "until_year": 1929
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1917,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": 1994,
+    "councils": [
+     "Santa Lucia Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Scouting in California",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+ },
+ "virginia-headwaters": {
+  "founded_year": 1927,
+  "former_names": [
+   {
+    "name": "Stonewall Jackson Area Council",
+    "until_year": 2019
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 2019,
+   "predecessors": [
+    "Stonewall Jackson Area Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1931,
+    "councils": [
+     "Lewis & Clark Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "VA",
+   "WV"
+  ],
+  "wiki_title": "Virginia Headwaters Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Virginia_Headwaters_Council"
+ },
+ "w-d-boyce": {
+  "formation": {
+   "type": "merged",
+   "year": 1973,
+   "predecessors": [
+    "Starved Rock Area Council",
+    "Corn Belt Council",
+    "Creve Coeur Council"
+   ]
+  },
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "IL"
+  ],
+  "wiki_title": "W. D. Boyce Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/W._D._Boyce_Council"
+ },
+ "washington-crossing": {
+  "founded_year": 1928,
+  "former_names": [
+   {
+    "name": "Bucks County Council",
+    "until_year": null
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1928,
+   "predecessors": []
+  },
+  "later_absorbed": [
+   {
+    "year": null,
+    "councils": [
+     "Central New Jersey Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "PA",
+   "NJ"
+  ],
+  "wiki_title": "Washington Crossing Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Washington_Crossing_Council"
+ },
+ "west-tennessee-area": {
+  "founded_year": 1914,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "TN",
+   "GA"
+  ],
+  "wiki_title": "Scouting in Tennessee",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Tennessee"
+ },
+ "western-los-angeles-county": {
+  "founded_year": 1972,
+  "former_names": [
+   {
+    "name": "Great Western Council",
+    "until_year": 1985
+   }
+  ],
+  "formation": {
+   "type": "merged",
+   "year": 1972,
+   "predecessors": [
+    "Crescent Bay Council",
+    "San Fernando Valley Council"
+   ]
+  },
+  "later_absorbed": [],
+  "states_served": [
+   "CA"
+  ],
+  "wiki_title": "Western Los Angeles County Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Western_Los_Angeles_County_Council"
+ },
+ "western-massachusetts": {
+  "founded_year": null,
+  "former_names": [],
+  "formation": null,
+  "later_absorbed": [],
+  "states_served": [
+   "MA"
+  ],
+  "wiki_title": "Scouting in Massachusetts",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Massachusetts"
+ },
+ "westmoreland-fayette": {
+  "formation": null,
+  "founded_year": null,
+  "former_names": [],
+  "later_absorbed": [],
+  "states_served": [
+   "PA"
+  ],
+  "wiki_title": "Scouting in Pennsylvania",
+  "wiki_url": "https://en.wikipedia.org/wiki/Scouting_in_Pennsylvania"
+ },
+ "winnebago": {
+  "founded_year": 1918,
+  "former_names": [
+   {
+    "name": "North Iowa Council",
+    "until_year": 1939
+   },
+   {
+    "name": "Cerro Gordo County Council",
+    "until_year": 1928
+   },
+   {
+    "name": "Mason City Council",
+    "until_year": 1922
+   }
+  ],
+  "formation": {
+   "type": "renamed",
+   "year": 1939,
+   "predecessors": [
+    "North Iowa Council"
+   ]
+  },
+  "later_absorbed": [
+   {
+    "year": 1973,
+    "councils": [
+     "Wapsipinicon Area Council"
+    ]
+   }
+  ],
+  "states_served": [
+   "IA"
+  ],
+  "wiki_title": "Winnebago Council",
+  "wiki_url": "https://en.wikipedia.org/wiki/Winnebago_Council"
+ }
+}

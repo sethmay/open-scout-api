@@ -4,14 +4,38 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1915",
+      "valid_to": "1942",
+      "name": "Charlotte Council",
+      "bsa_number": 415,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mecklenburg_County_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Mecklenburg County Council; changed 1942. Source: Mecklenburg County Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1942",
       "valid_to": null,
       "name": "Mecklenburg County Council",
       "bsa_number": 415,
       "hq_city": "Charlotte",
       "hq_state": "NC",
       "website": "http://www.mccscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "NC"
+      ],
       "territory": "territory:cst-15",
       "provenance": {
         "sources": [
@@ -20,6 +44,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Mecklenburg_County_Council"
           }
         ],
         "method": "imported",

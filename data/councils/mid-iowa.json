@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1970",
       "valid_to": null,
       "name": "Mid-Iowa Council",
       "bsa_number": 177,
       "hq_city": "Des Moines",
       "hq_state": "IA",
       "website": "http://www.scoutingiowa.org/",
-      "states_served": [],
+      "states_served": [
+        "IA"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Mid-Iowa_Council"
           }
         ],
         "method": "imported",

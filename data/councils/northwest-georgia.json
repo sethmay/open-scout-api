@@ -11,7 +11,9 @@
       "hq_city": "Rome",
       "hq_state": "GA",
       "website": "https://www.nwgascouting.org/",
-      "states_served": [],
+      "states_served": [
+        "GA"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Northwest_Georgia_Council"
           }
         ],
         "method": "imported",

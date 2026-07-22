@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1911",
+      "valid_to": "1921",
+      "name": "Miami Council",
+      "bsa_number": 84,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Florida_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of South Florida Council; changed 1921. Source: South Florida Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1921",
+      "valid_to": "1945",
+      "name": "Dade County Council",
+      "bsa_number": 84,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Florida_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of South Florida Council; changed 1945. Source: South Florida Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1945",
       "valid_to": null,
       "name": "South Florida Council",
       "bsa_number": 84,
       "hq_city": "Miami Lakes",
       "hq_state": "FL",
       "website": "https://sfcbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "FL"
+      ],
       "territory": "territory:cst-16",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Florida_Council"
           }
         ],
         "method": "imported",

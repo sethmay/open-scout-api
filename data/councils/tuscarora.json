@@ -4,14 +4,82 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1916",
+      "valid_to": "1926",
+      "name": "Wilmington Council",
+      "bsa_number": 424,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Tuscarora Council; changed 1926. Source: Scouting in North Carolina (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1926",
+      "valid_to": "1930",
+      "name": "New Hanover County Council",
+      "bsa_number": 424,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Tuscarora Council; changed 1930. Source: Scouting in North Carolina (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1930",
+      "valid_to": "1989",
+      "name": "Cape Fear Area Council",
+      "bsa_number": 424,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Tuscarora Council; changed 1989. Source: Scouting in North Carolina (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1989",
       "valid_to": null,
       "name": "Tuscarora Council",
       "bsa_number": 424,
       "hq_city": "Goldsboro",
       "hq_state": "NC",
       "website": "https://www.tuscarorabsa.org/",
-      "states_served": [],
+      "states_served": [
+        "NC"
+      ],
       "territory": "territory:cst-15",
       "provenance": {
         "sources": [
@@ -20,6 +88,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
           }
         ],
         "method": "imported",

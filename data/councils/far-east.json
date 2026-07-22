@@ -4,7 +4,7 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1956",
       "valid_to": null,
       "name": "Far East Council",
       "bsa_number": 803,
@@ -20,6 +20,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/American_Scouting_overseas"
           }
         ],
         "method": "imported",

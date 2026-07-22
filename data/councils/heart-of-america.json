@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1974",
       "valid_to": null,
       "name": "Heart of America Council",
       "bsa_number": 307,
       "hq_city": "Kansas City",
       "hq_state": "MO",
       "website": "http://www.hoac-bsa.org/Camping/HonorCampingPrograms/OrderOfTheArrow.aspx",
-      "states_served": [],
+      "states_served": [
+        "MO",
+        "KS"
+      ],
       "territory": "territory:cst-5",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Heart_of_America_Council"
           }
         ],
         "method": "imported",

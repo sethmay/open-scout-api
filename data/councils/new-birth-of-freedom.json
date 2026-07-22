@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2010",
       "valid_to": null,
       "name": "New Birth of Freedom Council",
       "bsa_number": 544,
       "hq_city": "Mechanicsburg",
       "hq_state": "PA",
       "website": "http://www.newbirthoffreedom.org/",
-      "states_served": [],
+      "states_served": [
+        "PA"
+      ],
       "territory": "territory:cst-12",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 12 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/New_Birth_of_Freedom_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,18 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1916",
       "valid_to": null,
       "name": "Chickasaw Council",
       "bsa_number": 558,
       "hq_city": "Memphis",
       "hq_state": "TN",
       "website": "https://chickasaw.org/",
-      "states_served": [],
+      "states_served": [
+        "TN",
+        "AR",
+        "MS"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +24,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chickasaw_Council"
           }
         ],
         "method": "imported",

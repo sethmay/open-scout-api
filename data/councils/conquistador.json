@@ -4,14 +4,151 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1918",
+      "valid_to": "1926",
+      "name": "Albuquerque Council",
+      "bsa_number": 413,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Conquistador Council; changed 1926. Source: Scouting in New Mexico (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1926",
+      "valid_to": "1927",
+      "name": "Bemalillo County Council",
+      "bsa_number": 413,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Conquistador Council; changed 1927. Source: Scouting in New Mexico (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1927",
+      "valid_to": "1934",
+      "name": "Rio Grande Area Council",
+      "bsa_number": 413,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Conquistador Council; changed 1934. Source: Scouting in New Mexico (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1934",
+      "valid_to": "1955",
+      "name": "Northern New Mexico Council",
+      "bsa_number": 413,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Conquistador Council; changed 1955. Source: Scouting in New Mexico (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1955",
+      "valid_to": "1976",
+      "name": "Kit Carson Council",
+      "bsa_number": 413,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Conquistador Council; changed 1976. Source: Scouting in New Mexico (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1976",
+      "valid_to": "1982",
+      "name": "Great Southwest Area Council",
+      "bsa_number": 413,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Conquistador Council; changed 1982. Source: Scouting in New Mexico (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1982",
       "valid_to": null,
       "name": "Conquistador Council",
       "bsa_number": 413,
       "hq_city": "Roswell",
       "hq_state": "NM",
       "website": "https://www.nmscouts.org/",
-      "states_served": [],
+      "states_served": [
+        "NM",
+        "AZ",
+        "UT",
+        "CO"
+      ],
       "territory": "territory:cst-8",
       "provenance": {
         "sources": [
@@ -20,6 +157,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 8 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
           }
         ],
         "method": "imported",

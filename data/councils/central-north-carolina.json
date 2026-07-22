@@ -4,14 +4,38 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1915",
+      "valid_to": "1937",
+      "name": "Charlotte Council",
+      "bsa_number": 416,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Central_North_Carolina_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Central North Carolina Council; changed 1937. Source: Central North Carolina Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1937",
       "valid_to": null,
       "name": "Central North Carolina Council",
       "bsa_number": 416,
       "hq_city": "Albemarle",
       "hq_state": "NC",
       "website": "https://www.centralncscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "NC"
+      ],
       "territory": "territory:cst-15",
       "provenance": {
         "sources": [
@@ -20,6 +44,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Central_North_Carolina_Council"
           }
         ],
         "method": "imported",

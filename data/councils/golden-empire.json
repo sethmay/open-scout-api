@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1920",
+      "valid_to": "1933",
+      "name": "Sacramento Council",
+      "bsa_number": 47,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Golden Empire Council; changed 1933. Source: Golden Empire Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1933",
+      "valid_to": "1937",
+      "name": "Sacramento Area Council",
+      "bsa_number": 47,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Golden Empire Council; changed 1937. Source: Golden Empire Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1937",
       "valid_to": null,
       "name": "Golden Empire Council",
       "bsa_number": 47,
       "hq_city": "Sacramento",
       "hq_state": "CA",
       "website": "http://www.gec-bsa.org/",
-      "states_served": [],
+      "states_served": [
+        "CA"
+      ],
       "territory": "territory:cst-3",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
           }
         ],
         "method": "imported",

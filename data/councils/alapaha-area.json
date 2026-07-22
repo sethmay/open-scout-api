@@ -1,0 +1,30 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json",
+  "id": "alapaha-area",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": "2012",
+      "name": "Alapaha Area Council",
+      "bsa_number": null,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Georgia_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.7,
+        "notes": "Predecessor council recorded via a successor's Wikipedia article; retired ~2012. Details (number/HQ) not sourced."
+      }
+    }
+  ],
+  "notes": null
+}

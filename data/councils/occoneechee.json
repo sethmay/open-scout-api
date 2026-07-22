@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1929",
       "valid_to": null,
       "name": "Occoneechee Council",
       "bsa_number": 421,
       "hq_city": "Raleigh",
       "hq_state": "NC",
       "website": "https://www.ocscouts.org/",
-      "states_served": [],
+      "states_served": [
+        "NC"
+      ],
       "territory": "territory:cst-15",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 15 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Occoneechee_Council"
           }
         ],
         "method": "imported",

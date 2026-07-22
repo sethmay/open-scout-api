@@ -4,14 +4,40 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1944",
+      "valid_to": "2005",
+      "name": "Boulder Dam Area Council",
+      "bsa_number": 328,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Nevada"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Las Vegas Area Council; changed 2005. Source: Scouting in Nevada (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "2005",
       "valid_to": null,
       "name": "Las Vegas Area Council",
       "bsa_number": 328,
       "hq_city": "Las Vegas",
       "hq_state": "NV",
       "website": "https://www.scoutinglvac.org/",
-      "states_served": [],
+      "states_served": [
+        "NV",
+        "CA",
+        "AZ"
+      ],
       "territory": "territory:cst-3",
       "provenance": {
         "sources": [
@@ -20,6 +46,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Nevada"
           }
         ],
         "method": "imported",
