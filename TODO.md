@@ -29,6 +29,36 @@ as best-effort attributes of council history, never a standalone dataset.
 
 ## Queue
 
+### Camp-finder cutover — API-side requests (reviewed 2026-07-21)
+
+camp-finder is migrating to consume this API as its core data — **durable reference data
+only** (no sessions/fees/dates/availability back; that split is the whole point). Requests
+reviewed + sequenced below; all additive/backward-compatible under `v1` (minor bumps).
+
+1. **Projection contract v1.1 (PR 1 — in progress).** Pure `build.py` + `published-current`
+   schema, additive: (a) add `verified_at` + `method` to **all** `current/*.json` projections
+   (not just camps) — freshness is the most-used provenance field, keep the contract uniform;
+   (b) denormalize council into `current/camps.json` (`council_name`, `council_website`,
+   `council_number`) resolved against the **canonical** council (so defunct-council camps still
+   get a name; the 4 national-base camps with `council:null` get nulls); (c) emit a resolved
+   `url` (camp website → council website) so the "visit official page" CTA is a guaranteed
+   contract. Plus a README note that `v1` projection fields are **additive-only** (stability
+   promise — also satisfies request #7's API side).
+2. **Coverage reconciliation (before cutover).** Councils 229 vs 238 already explained (3
+   non-geographic/dup dropped: 272/800/999; 6 defunct excluded from `current`) — just document.
+   Camps 469 vs 483: diff the 14, classify each (≈6 known session/event import artifacts +
+   ~8 unknown → artifact/dedup/genuinely-missing); contribute any real missing resident camps.
+3. **Camp `summary` (evergreen prose).** Add `summary` to `CampVersion` (original prose; MUST
+   NOT contain dates/fees/session schedules) + surface in the projection. Do NOT scrub
+   camp-finder's contaminated descriptions — regenerate clean, and add a `validate_data` guard
+   rejecting 4-digit years / `$` / month names / "session" so evergreen is an enforced gate.
+4. **Vocab-as-data.** Publish `v1/vocab/{camp-features,camp-types,camp-program-types}.json` as
+   `{code,label,description}`. **Namespace** `camp-program-types` distinctly from the rank
+   `program` vocab. (`features` is empty in data today — forward-looking.) API owns the labels.
+5. **Later / consumer-side.** #8 populate `parent`/reservation grouping (schema ready; data
+   sourcing) — after cutover. #7 TS codegen is the **site's** task (json-schema-to-typescript on
+   `published-current.schema.json`); the API only owes the additive-only stability promise (1a).
+
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
   assignment + a few observed name overrides (303 Mississippi Riverlands, 780 Michigan
