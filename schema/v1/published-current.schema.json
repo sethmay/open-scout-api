@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json",
   "title": "Open Scout API — published 'current' collection",
-  "description": "Root schema for the denormalized consumer projections emitted by tools/build.py to v1/current/councils.json and v1/current/territories.json. These are NOT the canonical layer — they are flattened, current-only (entities with an open valid_to:null version; retired/defunct excluded), and self-contained (no cross-file $ref). Point a validator at either current/*.json file to validate it. (The lighter v1/{dataset}/index.json listings use a different, unschema'd item shape.)",
+  "description": "Root schema for the denormalized, current-only consumer projections emitted by tools/build.py to v1/current/*.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges). NOT the canonical layer — flattened, current-only (entities with an open valid_to:null version; retired/defunct excluded), self-contained (no cross-file $ref). Fields are ADDITIVE-ONLY under v1 (a stable consumer contract): new optional fields may appear, but existing fields are not renamed or removed. Point a validator at any current/*.json file to validate it. (The lighter v1/{dataset}/index.json listings use a different, unschema'd item shape.)",
   "type": "object",
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
@@ -29,9 +29,11 @@
         "website": { "type": ["string", "null"], "format": "uri" },
         "territory": { "type": ["string", "null"], "pattern": "^territory:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
         "territory_number": { "type": ["integer", "null"], "minimum": 1 },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "bsa_number", "hq_city", "hq_state", "website", "territory", "territory_number", "confidence"],
+      "required": ["id", "name", "bsa_number", "hq_city", "hq_state", "website", "territory", "territory_number", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentTerritory": {
@@ -41,9 +43,11 @@
         "number": { "type": ["integer", "null"], "minimum": 1 },
         "name": { "type": "string", "minLength": 1 },
         "division_type": { "enum": ["council_service_territory", "national_service_territory", "region", "area"] },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "number", "name", "division_type", "confidence"],
+      "required": ["id", "number", "name", "division_type", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentMeritBadge": {
@@ -54,9 +58,11 @@
         "eagle_required": { "type": "boolean" },
         "tags": { "type": "array", "items": { "type": "string" } },
         "url": { "type": ["string", "null"], "format": "uri" },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "eagle_required", "tags", "url", "confidence"],
+      "required": ["id", "name", "eagle_required", "tags", "url", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentCamp": {
@@ -73,9 +79,15 @@
         "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
         "website": { "type": ["string", "null"], "format": "uri" },
         "program_types": { "type": "array", "items": { "type": "string" } },
+        "council_name": { "type": ["string", "null"] },
+        "council_website": { "type": ["string", "null"], "format": "uri" },
+        "council_number": { "type": ["integer", "null"], "minimum": 1 },
+        "url": { "type": ["string", "null"], "format": "uri" },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "camp_type", "operator", "council", "state", "city", "lat", "lon", "website", "program_types", "confidence"],
+      "required": ["id", "name", "camp_type", "operator", "council", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "website", "url", "program_types", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentRank": {
@@ -86,9 +98,11 @@
         "program": { "type": "string" },
         "order": { "type": "integer", "minimum": 1 },
         "url": { "type": ["string", "null"], "format": "uri" },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "program", "order", "url", "confidence"],
+      "required": ["id", "name", "program", "order", "url", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentAward": {
@@ -101,9 +115,11 @@
         "programs": { "type": "array", "items": { "type": "string" } },
         "square_knot_no": { "type": ["string", "null"] },
         "url": { "type": ["string", "null"], "format": "uri" },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "category", "audience", "square_knot_no", "confidence"],
+      "required": ["id", "name", "category", "audience", "square_knot_no", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentOALodge": {
@@ -116,9 +132,11 @@
         "hq_state": { "type": ["string", "null"] },
         "lat": { "type": ["number", "null"] },
         "lon": { "type": ["number", "null"] },
+        "verified_at": { "type": "string", "format": "date" },
+        "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "council", "section", "confidence"],
+      "required": ["id", "name", "council", "section", "verified_at", "method", "confidence"],
       "additionalProperties": false
     }
   }

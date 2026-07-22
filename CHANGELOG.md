@@ -3,6 +3,19 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.16.0 (minor) — 2026-07-21
+
+- `PENDING` Enrich the published **`current/*.json` projection contract** for downstream
+  consumers (camp-finder cutover, tier 1). Every current item now carries `verified_at` +
+  `method` (not just `confidence`) — powers freshness/staleness UX. `current/camps.json`
+  additionally inlines its council (`council_name`, `council_website`, `council_number`,
+  resolved against the canonical council so defunct-council camps still resolve; the 4
+  national-base camps with no council get nulls) and a guaranteed resolved `url` (camp site →
+  else council site) so consumers need zero cross-file joins. Documented the projection as an
+  **additive-only `v1` contract** (README + schema `description`) — also covers the
+  codegen-from-schema request. Pure `build.py` + `published-current.schema.json`; additive and
+  backward-compatible. 1361 entities validate.
+
 ## 0.15.0 (minor) — 2026-07-21
 
 - `9e353b8` Add **Cub Scout, Venturing, and Sea Scout advancement ranks** — completing the

@@ -119,6 +119,10 @@ def main() -> None:
     for d in requirement_sets:
         rs_by_subject.setdefault(d["subject"], []).append(d["id"])   # keyed by full ref (kind:slug)
 
+    def _prov(ov):
+        p = ov["provenance"]
+        return {"verified_at": p["verified_at"], "method": p["method"], "confidence": p["confidence"]}
+
     # --- territories: per-entity + index + current -------------------------
     current_terr_ids: set[str] = set()
     terr_index = []
@@ -133,7 +137,7 @@ def main() -> None:
             current_terr_ids.add(e["id"])
             current_territories.append({"id": e["id"], "number": ov.get("number"),
                                         "name": ov["name"], "division_type": ov["division_type"],
-                                        "confidence": ov["provenance"]["confidence"]})
+                                        **_prov(ov)})
     terr_number = {t["id"]: t["number"] for t in current_territories}
 
     # --- councils: per-entity + index + current ----------------------------
@@ -161,7 +165,7 @@ def main() -> None:
         current_councils.append({"id": e["id"], "name": ov["name"], "bsa_number": ov.get("bsa_number"),
                                  "hq_city": ov.get("hq_city"), "hq_state": ov.get("hq_state"),
                                  "website": ov.get("website"), "territory": terr_ref,
-                                 "territory_number": tnum, "confidence": ov["provenance"]["confidence"]})
+                                 "territory_number": tnum, **_prov(ov)})
 
     # --- merit badges: per-entity + index + current ------------------------
     mb_index = []
@@ -178,7 +182,12 @@ def main() -> None:
         if ov is not None:
             current_badges.append({"id": e["id"], "name": ov["name"],
                                    "eagle_required": ov["eagle_required"], "tags": ov.get("tags", []),
-                                   "url": ov.get("url"), "confidence": ov["provenance"]["confidence"]})
+                                   "url": ov.get("url"), **_prov(ov)})
+
+    council_meta = {}
+    for _c in councils:
+        _v = open_version(_c) or _c["versions"][-1]
+        council_meta[_c["id"]] = {"name": _v["name"], "website": _v.get("website"), "number": _v.get("bsa_number")}
 
     # --- camps: per-entity + index + current -------------------------------
     camp_index = []
@@ -192,12 +201,18 @@ def main() -> None:
                            "operator": last["operator"], "council": last.get("council"),
                            "state": last.get("state"), "current": ov is not None})
         if ov is not None:
+            _cslug = ov["council"].split(":", 1)[1] if ov.get("council") else None
+            _cm = council_meta.get(_cslug) if _cslug else None
             current_camps.append({"id": e["id"], "name": ov["name"], "camp_type": ov["camp_type"],
                                   "operator": ov["operator"], "council": ov.get("council"),
                                   "state": ov.get("state"), "city": ov.get("city"),
                                   "lat": ov.get("lat"), "lon": ov.get("lon"), "website": ov.get("website"),
                                   "program_types": ov.get("program_types", []),
-                                  "confidence": ov["provenance"]["confidence"]})
+                                  "council_name": _cm["name"] if _cm else None,
+                                  "council_website": _cm["website"] if _cm else None,
+                                  "council_number": _cm["number"] if _cm else None,
+                                  "url": ov.get("website") or (_cm["website"] if _cm else None),
+                                  **_prov(ov)})
 
     # --- ranks: per-entity + index + current -------------------------------
     rank_index = []
@@ -214,7 +229,7 @@ def main() -> None:
         if ov is not None:
             current_ranks.append({"id": e["id"], "name": ov["name"], "program": ov["program"],
                                   "order": ov["order"], "url": ov.get("url"),
-                                  "confidence": ov["provenance"]["confidence"]})
+                                  **_prov(ov)})
 
     # --- awards: per-entity + index + current ------------------------------
     award_index = []
@@ -232,7 +247,7 @@ def main() -> None:
             current_awards.append({"id": e["id"], "name": ov["name"], "category": ov["category"],
                                    "audience": ov["audience"], "programs": ov.get("programs", []),
                                    "square_knot_no": ov.get("square_knot_no"), "url": ov.get("url"),
-                                   "confidence": ov["provenance"]["confidence"]})
+                                   **_prov(ov)})
 
     # --- oa-lodges: per-entity + index + current ---------------------------
     lodge_index = []
@@ -249,7 +264,7 @@ def main() -> None:
             current_lodges.append({"id": e["id"], "name": ov["name"], "council": ov.get("council"),
                                    "section": ov.get("section"), "hq_state": ov.get("hq_state"),
                                    "lat": ov.get("lat"), "lon": ov.get("lon"),
-                                   "confidence": ov["provenance"]["confidence"]})
+                                   **_prov(ov)})
 
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}

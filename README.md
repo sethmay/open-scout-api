@@ -67,6 +67,15 @@ curl -s https://sethmay.github.io/open-scout-api/v1/councils/mississippi-riverla
 const { items } = await (await fetch(
   "https://sethmay.github.io/open-scout-api/v1/current/councils.json")).json();
 ```
+**Projection contract.** The `v1/current/*.json` files are the stable, denormalized consumer
+surface: every item carries its own `verified_at` / `method` / `confidence`, and
+`current/camps.json` inlines its council (`council_name`, `council_website`, `council_number`)
+plus a resolved `url` (camp site, else council site) so consumers need no cross-file joins.
+Fields are **additive-only under `v1`** — new optional fields may appear, but existing ones are
+never renamed or removed — so pinning to a field set is safe. Generate consumer types from
+[`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json)
+rather than hand-mirroring.
+
 
 **Pinning & releases.** Every version is a git tag (`vMAJOR.MINOR.PATCH`) at that release's
 CHANGELOG sha. Pin canonical files immutably via jsDelivr —
