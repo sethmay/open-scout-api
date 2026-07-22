@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1917",
+      "valid_to": "1929",
+      "name": "Santa Barbara Council",
+      "bsa_number": 35,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Marin Council; changed 1929. Source: Scouting in California (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1929",
+      "valid_to": "1994",
+      "name": "Mission Council",
+      "bsa_number": 35,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Marin Council; changed 1994. Source: Scouting in California (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1994",
       "valid_to": null,
       "name": "Marin Council",
       "bsa_number": 35,
       "hq_city": "San Rafael",
       "hq_state": "CA",
       "website": "https://www.boyscouts-marin.org/",
-      "states_served": [],
+      "states_served": [
+        "CA"
+      ],
       "territory": "territory:cst-3",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
           }
         ],
         "method": "imported",

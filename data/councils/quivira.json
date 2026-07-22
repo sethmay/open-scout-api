@@ -4,14 +4,38 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1928",
+      "valid_to": "1928",
+      "name": "Topeka Council",
+      "bsa_number": 198,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Kansas"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Quivira Council; changed 1928. Source: Scouting in Kansas (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1928",
       "valid_to": null,
       "name": "Quivira Council",
       "bsa_number": 198,
       "hq_city": "Wichita",
       "hq_state": "KS",
       "website": "https://quivira.org/",
-      "states_served": [],
+      "states_served": [
+        "KS"
+      ],
       "territory": "territory:cst-5",
       "provenance": {
         "sources": [
@@ -20,6 +44,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Kansas"
           }
         ],
         "method": "imported",

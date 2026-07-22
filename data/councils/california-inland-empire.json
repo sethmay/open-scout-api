@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1973",
       "valid_to": null,
       "name": "California Inland Empire Council",
       "bsa_number": 45,
       "hq_city": "Redlands",
       "hq_state": "CA",
       "website": "https://iescouts.org/",
-      "states_served": [],
+      "states_served": [
+        "CA"
+      ],
       "territory": "territory:cst-3",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
           }
         ],
         "method": "imported",

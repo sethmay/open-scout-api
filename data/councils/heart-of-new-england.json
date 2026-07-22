@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2018",
       "valid_to": null,
       "name": "Heart of New England Council",
       "bsa_number": 230,
       "hq_city": "Rutland",
       "hq_state": "MA",
       "website": "http://www.hnescouting.org/",
-      "states_served": [],
+      "states_served": [
+        "MA"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Heart_of_New_England_Council"
           }
         ],
         "method": "imported",

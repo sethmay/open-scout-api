@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1927",
       "valid_to": null,
       "name": "Puerto Rico Council",
       "bsa_number": 661,
       "hq_city": "Guaynabo",
       "hq_state": "PR",
       "website": "https://www.scoutingpr.org/",
-      "states_served": [],
+      "states_served": [
+        "PR"
+      ],
       "territory": "territory:cst-16",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Puerto_Rico"
           }
         ],
         "method": "imported",

@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1998",
       "valid_to": null,
       "name": "Twin Rivers Council",
       "bsa_number": 364,
       "hq_city": "Albany",
       "hq_state": "NY",
       "website": "https://trcscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "NY",
+        "PA"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_York"
           }
         ],
         "method": "imported",

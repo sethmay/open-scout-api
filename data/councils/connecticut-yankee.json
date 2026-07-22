@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1998",
       "valid_to": null,
       "name": "Connecticut Yankee Council",
       "bsa_number": 72,
       "hq_city": "Milford",
       "hq_state": "CT",
       "website": "http://www.ctyankee.org/",
-      "states_served": [],
+      "states_served": [
+        "CT"
+      ],
       "territory": "territory:cst-13",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Connecticut_Yankee_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1920",
+      "valid_to": "1926",
+      "name": "Wausau Council",
+      "bsa_number": 627,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Samoset_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Samoset Council; changed 1926. Source: Samoset Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1926",
+      "valid_to": "1930",
+      "name": "Lincoln - Marathon Council",
+      "bsa_number": 627,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Samoset_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Samoset Council; changed 1930. Source: Samoset Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1930",
       "valid_to": null,
       "name": "Samoset Council",
       "bsa_number": 627,
       "hq_city": "Weston",
       "hq_state": "WI",
       "website": "http://www.samoset.org/",
-      "states_served": [],
+      "states_served": [
+        "WI"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Samoset_Council"
           }
         ],
         "method": "imported",

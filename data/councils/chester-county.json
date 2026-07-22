@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1919",
       "valid_to": null,
       "name": "Chester County Council",
       "bsa_number": 539,
       "hq_city": "Exton",
       "hq_state": "PA",
       "website": "http://www.cccscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "PA",
+        "MD"
+      ],
       "territory": "territory:cst-13",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chester_County_Council"
           }
         ],
         "method": "imported",

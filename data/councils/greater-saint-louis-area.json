@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1911",
       "valid_to": null,
       "name": "Greater Saint Louis Area Council",
       "bsa_number": 312,
       "hq_city": "Saint Louis",
       "hq_state": "MO",
       "website": "http://www.stlbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "MO",
+        "IL"
+      ],
       "territory": "territory:cst-5",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_St._Louis_Area_Council"
           }
         ],
         "method": "imported",

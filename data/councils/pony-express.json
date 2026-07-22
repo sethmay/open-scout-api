@@ -11,7 +11,9 @@
       "hq_city": "Saint Joseph",
       "hq_state": "MO",
       "website": "https://www.ponyexpressbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "MO"
+      ],
       "territory": "territory:cst-5",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Missouri"
           }
         ],
         "method": "imported",

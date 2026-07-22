@@ -4,7 +4,7 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1974",
       "valid_to": null,
       "name": "Three Rivers Council",
       "bsa_number": 578,
@@ -20,6 +20,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 7 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Three_Rivers_District"
           }
         ],
         "method": "imported",

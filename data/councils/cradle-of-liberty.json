@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1996",
       "valid_to": null,
       "name": "Cradle of Liberty Council",
       "bsa_number": 525,
       "hq_city": "Philadelphia",
       "hq_state": "PA",
       "website": "http://www.scoutingphilly.org/",
-      "states_served": [],
+      "states_served": [
+        "PA"
+      ],
       "territory": "territory:cst-13",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Cradle_of_Liberty_Council"
           }
         ],
         "method": "imported",

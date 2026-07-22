@@ -11,7 +11,9 @@
       "hq_city": "Springfield",
       "hq_state": "IL",
       "website": "https://www.alincolnscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "IL"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln_Council"
           }
         ],
         "method": "imported",

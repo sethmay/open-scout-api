@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2016",
       "valid_to": null,
       "name": "Leatherstocking Council",
       "bsa_number": 400,
       "hq_city": "Utica",
       "hq_state": "NY",
       "website": "https://leatherstockingcouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "NY"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Leatherstocking_Council"
           }
         ],
         "method": "imported",

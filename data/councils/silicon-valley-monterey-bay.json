@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1920",
+      "valid_to": "1922",
+      "name": "San Jose Council",
+      "bsa_number": 55,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Monterey_Bay_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Silicon Valley Monterey Bay Council; changed 1922. Source: Silicon Valley Monterey Bay Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1922",
+      "valid_to": "2012",
+      "name": "Santa Clara County Council",
+      "bsa_number": 55,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Monterey_Bay_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Silicon Valley Monterey Bay Council; changed 2012. Source: Silicon Valley Monterey Bay Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "2012",
       "valid_to": null,
       "name": "Silicon Valley Monterey Bay Council",
       "bsa_number": 55,
       "hq_city": "San Jose",
       "hq_state": "CA",
       "website": "http://svmbc.org/",
-      "states_served": [],
+      "states_served": [
+        "CA"
+      ],
       "territory": "territory:cst-3",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Monterey_Bay_Council"
           }
         ],
         "method": "imported",

@@ -11,7 +11,9 @@
       "hq_city": "Sartell",
       "hq_state": "MN",
       "website": "https://www.scoutingcmc.org/",
-      "states_served": [],
+      "states_served": [
+        "MN"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Central_Minnesota_Council"
           }
         ],
         "method": "imported",

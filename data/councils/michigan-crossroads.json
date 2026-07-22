@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2012",
       "valid_to": null,
       "name": "Michigan Crossroads Council",
       "bsa_number": 780,
       "hq_city": "Eagle",
       "hq_state": "MI",
       "website": "http://www.michiganscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "MI"
+      ],
       "territory": "territory:cst-9",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Michigan_Crossroads_Council"
           }
         ],
         "method": "imported",

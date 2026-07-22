@@ -4,14 +4,82 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1920",
+      "valid_to": "1929",
+      "name": "Rutland County Council",
+      "bsa_number": 592,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Green Mountain Council; changed 1929. Source: Scouting in Vermont (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1929",
+      "valid_to": "1972",
+      "name": "Long Trail Council",
+      "bsa_number": 592,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Green Mountain Council; changed 1972. Source: Scouting in Vermont (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1972",
+      "valid_to": "1972",
+      "name": "Ethan Allen Council",
+      "bsa_number": 592,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Green Mountain Council; changed 1972. Source: Scouting in Vermont (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1972",
       "valid_to": null,
       "name": "Green Mountain Council",
       "bsa_number": 592,
       "hq_city": "Waterbury",
       "hq_state": "VT",
       "website": "https://www.scoutingvermont.org/",
-      "states_served": [],
+      "states_served": [
+        "VT"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +88,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
           }
         ],
         "method": "imported",

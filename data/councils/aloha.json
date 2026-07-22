@@ -4,14 +4,60 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1914",
+      "valid_to": "1924",
+      "name": "Honolulu Council",
+      "bsa_number": 104,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Aloha Council; changed 1924. Source: Aloha Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1924",
+      "valid_to": "1957",
+      "name": "Honolulu County Council",
+      "bsa_number": 104,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Aloha Council; changed 1957. Source: Aloha Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1957",
       "valid_to": null,
       "name": "Aloha Council",
       "bsa_number": 104,
       "hq_city": "Honolulu",
       "hq_state": "HI",
       "website": "https://www.scoutinghawaii.org/",
-      "states_served": [],
+      "states_served": [
+        "HI"
+      ],
       "territory": "territory:cst-1",
       "provenance": {
         "sources": [
@@ -20,6 +66,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
           }
         ],
         "method": "imported",

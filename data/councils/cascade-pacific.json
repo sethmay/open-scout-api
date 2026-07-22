@@ -4,14 +4,83 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1916",
+      "valid_to": "1929",
+      "name": "Portland Council",
+      "bsa_number": 492,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Cascade Pacific Council; changed 1929. Source: Cascade Pacific Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1929",
+      "valid_to": "1966",
+      "name": "Portland Area Council",
+      "bsa_number": 492,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Cascade Pacific Council; changed 1966. Source: Cascade Pacific Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1966",
+      "valid_to": "1993",
+      "name": "Columbia Pacific Council",
+      "bsa_number": 492,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Cascade Pacific Council; changed 1993. Source: Cascade Pacific Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1993",
       "valid_to": null,
       "name": "Cascade Pacific Council",
       "bsa_number": 492,
       "hq_city": "Beaverton",
       "hq_state": "OR",
       "website": "https://cpcbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "OR",
+        "WA"
+      ],
       "territory": "territory:cst-1",
       "provenance": {
         "sources": [
@@ -20,6 +89,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
           }
         ],
         "method": "imported",

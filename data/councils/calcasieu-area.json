@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1930",
       "valid_to": null,
       "name": "Calcasieu Area Council",
       "bsa_number": 209,
       "hq_city": "Lake Charles",
       "hq_state": "LA",
       "website": "https://www.calcasieubsa.org/",
-      "states_served": [],
+      "states_served": [
+        "LA"
+      ],
       "territory": "territory:cst-7",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 7 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Calcasieu_Area_Council"
           }
         ],
         "method": "imported",

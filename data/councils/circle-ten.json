@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1913",
       "valid_to": null,
       "name": "Circle Ten Council",
       "bsa_number": 571,
       "hq_city": "Dallas",
       "hq_state": "TX",
       "website": "http://www.circleten.org/",
-      "states_served": [],
+      "states_served": [
+        "TX",
+        "OK"
+      ],
       "territory": "territory:cst-8",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 8 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Circle_Ten_Council"
           }
         ],
         "method": "imported",

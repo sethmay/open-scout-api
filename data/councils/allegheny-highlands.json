@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1973",
       "valid_to": null,
       "name": "Allegheny Highlands Council",
       "bsa_number": 382,
       "hq_city": "Falconer",
       "hq_state": "NY",
       "website": "https://www.alleghenyhighlands.org/",
-      "states_served": [],
+      "states_served": [
+        "NY",
+        "PA"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Allegheny_Highlands_Council"
           }
         ],
         "method": "imported",

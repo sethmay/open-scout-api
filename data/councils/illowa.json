@@ -4,14 +4,104 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1914",
+      "valid_to": "1926",
+      "name": "Des Moines Council",
+      "bsa_number": 133,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Illowa Council; changed 1926. Source: Scouting in Iowa (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1926",
+      "valid_to": "1927",
+      "name": "Polk and Jasper Counties Council",
+      "bsa_number": 133,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Illowa Council; changed 1927. Source: Scouting in Iowa (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1927",
+      "valid_to": "1932",
+      "name": "Des Moines Area Council",
+      "bsa_number": 133,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Illowa Council; changed 1932. Source: Scouting in Iowa (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1932",
+      "valid_to": "1970",
+      "name": "Tall Corn Area Council",
+      "bsa_number": 133,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Illowa Council; changed 1970. Source: Scouting in Iowa (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1970",
       "valid_to": null,
       "name": "Illowa Council",
       "bsa_number": 133,
       "hq_city": "Davenport",
       "hq_state": "IA",
       "website": "https://illowascouting.org/",
-      "states_served": [],
+      "states_served": [
+        "IA"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +110,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
           }
         ],
         "method": "imported",

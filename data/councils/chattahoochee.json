@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1964",
       "valid_to": null,
       "name": "Chattahoochee Council",
       "bsa_number": 91,
       "hq_city": "Columbus",
       "hq_state": "GA",
       "website": "https://chattahoocheecouncilsa.org/",
-      "states_served": [],
+      "states_served": [
+        "GA",
+        "AL"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chattahoochee_Council"
           }
         ],
         "method": "imported",

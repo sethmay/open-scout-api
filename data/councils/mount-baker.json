@@ -4,14 +4,83 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1915",
+      "valid_to": "1925",
+      "name": "Spokane Council",
+      "bsa_number": 606,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Mount Baker Council; changed 1925. Source: Scouting in Washington (state) (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1925",
+      "valid_to": "1931",
+      "name": "Spokane Area",
+      "bsa_number": 606,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Mount Baker Council; changed 1931. Source: Scouting in Washington (state) (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1931",
+      "valid_to": "1987",
+      "name": "Inland Empire Council",
+      "bsa_number": 606,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Mount Baker Council; changed 1987. Source: Scouting in Washington (state) (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1987",
       "valid_to": null,
       "name": "Mount Baker Council",
       "bsa_number": 606,
       "hq_city": "Everett",
       "hq_state": "WA",
       "website": "https://www.mountbakerbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "WA",
+        "ID"
+      ],
       "territory": "territory:cst-1",
       "provenance": {
         "sources": [
@@ -20,6 +89,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 1 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
           }
         ],
         "method": "imported",

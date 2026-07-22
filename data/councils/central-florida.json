@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1922",
       "valid_to": null,
       "name": "Central Florida Council",
       "bsa_number": 83,
       "hq_city": "Apopka",
       "hq_state": "FL",
       "website": "https://www.cflscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "FL"
+      ],
       "territory": "territory:cst-16",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Central_Florida_Council"
           }
         ],
         "method": "imported",

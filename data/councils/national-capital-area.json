@@ -4,14 +4,18 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1911",
       "valid_to": null,
       "name": "National Capital Area Council",
       "bsa_number": 82,
       "hq_city": "Bethesda",
       "hq_state": "MD",
       "website": "https://ncacscouting.org/",
-      "states_served": [],
+      "states_served": [
+        "DC",
+        "MD",
+        "VA"
+      ],
       "territory": "territory:cst-12",
       "provenance": {
         "sources": [
@@ -20,6 +24,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 12 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/National_Capital_Area_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2015",
       "valid_to": null,
       "name": "Greater Los Angeles Area Council",
       "bsa_number": 33,
       "hq_city": "Los Angeles",
       "hq_state": "CA",
       "website": "https://www.glaacbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "CA"
+      ],
       "territory": "territory:cst-3",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 3 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_Los_Angeles_Area_Council"
           }
         ],
         "method": "imported",

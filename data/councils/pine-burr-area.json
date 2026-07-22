@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1937",
       "valid_to": null,
       "name": "Pine Burr Area Council",
       "bsa_number": 304,
       "hq_city": "Hattiesburg",
       "hq_state": "MS",
       "website": "https://www.pineburrscouts.org/",
-      "states_served": [],
+      "states_served": [
+        "MS"
+      ],
       "territory": "territory:cst-16",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Mississippi"
           }
         ],
         "method": "imported",

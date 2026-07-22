@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2009",
       "valid_to": null,
       "name": "Seneca Waterways Council",
       "bsa_number": 397,
       "hq_city": "Rochester",
       "hq_state": "NY",
       "website": "http://www.senecawaterways.org/",
-      "states_served": [],
+      "states_served": [
+        "NY"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Seneca_Waterways_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1969",
       "valid_to": null,
       "name": "Minsi Trails Council",
       "bsa_number": 502,
       "hq_city": "Lehigh Valley",
       "hq_state": "PA",
       "website": "http://www.minsitrails.org/",
-      "states_served": [],
+      "states_served": [
+        "PA",
+        "NJ"
+      ],
       "territory": "territory:cst-13",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 13 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Minsi_Trails_Council"
           }
         ],
         "method": "imported",

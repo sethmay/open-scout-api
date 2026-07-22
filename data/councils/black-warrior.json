@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1938",
       "valid_to": null,
       "name": "Black Warrior Council",
       "bsa_number": 6,
       "hq_city": "Tuscaloosa",
       "hq_state": "AL",
       "website": "https://www.bwc-bsa.org/",
-      "states_served": [],
+      "states_served": [
+        "AL"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Black_Warrior_Council"
           }
         ],
         "method": "imported",

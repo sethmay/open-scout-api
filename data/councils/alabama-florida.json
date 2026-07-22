@@ -4,14 +4,39 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1935",
+      "valid_to": "1963",
+      "name": "Southeast Alabama Council",
+      "bsa_number": 3,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Alabama-Florida_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Alabama-Florida Council; changed 1963. Source: Alabama-Florida Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1963",
       "valid_to": null,
       "name": "Alabama-Florida Council",
       "bsa_number": 3,
       "hq_city": "Dothan",
       "hq_state": "AL",
       "website": "https://bsa3.org/",
-      "states_served": [],
+      "states_served": [
+        "AL",
+        "FL"
+      ],
       "territory": "territory:cst-16",
       "provenance": {
         "sources": [
@@ -20,6 +45,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 16 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Alabama-Florida_Council"
           }
         ],
         "method": "imported",

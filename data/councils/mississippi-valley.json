@@ -4,14 +4,18 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1994",
       "valid_to": null,
       "name": "Mississippi Valley Council",
       "bsa_number": 141,
       "hq_city": "Quincy",
       "hq_state": "IL",
       "website": "http://www.mississippivalleybsa.org/",
-      "states_served": [],
+      "states_served": [
+        "IL",
+        "MO",
+        "IA"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +24,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Mississippi_Valley_Council"
           }
         ],
         "method": "imported",

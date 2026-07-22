@@ -11,7 +11,7 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0):** 235 councils, 229 assigned to CSTs. Follow-ups (name/HQ reconcile, defunct dispositions, rename/founding history) in Queue. | camp-finder `data/councils/*.json`; official CST maps (territory); Wikipedia council list |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 419 councils — 229 current (assigned to CSTs) + 190 historical. Founding dates (141), rename chains (57), merger/absorption events (112) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 208. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
@@ -33,16 +33,23 @@ as best-effort attributes of council history, never a standalone dataset.
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
   assignment + a few observed name overrides (303 Mississippi Riverlands, 780 Michigan
   Crossroads). The map is authoritative for name/HQ — do a full reconciliation pass
-  (extractors flagged many HQ granularity diffs, e.g. metro vs suburb). Also populate
-  `states_served` (currently `[]`; camp-finder only gave HQ state).
+  (extractors flagged many HQ granularity diffs, e.g. metro vs suburb). `states_served` is
+  now populated for 208 current councils from Wikipedia (0.14.0); the rest (and historical
+  versions) remain `[]`.
 - **Verify defunct-council dispositions + 2/11 merge targets.** 6 councils absent from
   2026 maps (30 Southern Sierra, 41 Redwood Empire, 302 Choctaw→303, 405 Rip Van Winkle,
   694 South Plains, 695 Black Hills→733 Sioux): confirm successors + dates (302/695 have
   sourced successors; 30/41/405/694 are `discontinued` with date=null). Territories 2 & 11
   (merged 2024) need their absorbing-territory targets. Add events once sourced.
-- **Council rename/founding history.** Councils currently have a single version
-  (valid_from/to = null) — camp-finder is a current snapshot. Add historical versions +
-  rename/merger events as sourced (the temporal model already supports it).
+- **Council rename/founding history — DONE (0.14.0).** Current councils carry founding
+  `valid_from`, prior-name versions, and merger/absorption events; 184 named predecessor
+  councils added as defunct entities (Wikipedia facts, `llm_extraction`, conf 0.7–0.8).
+  Remaining: review the 8 skipped live-council merger claims (`.workbench/council-history/
+  council_history_conflicts.json` — e.g. Baden-Powell / Daniel Boone claimed by multiple
+  survivors); predecessor `bsa_number`/HQ are unsourced stubs; 7 recent-merger councils lack
+  Wikipedia articles (Mississippi Riverlands, Natural State, Pacific Crest, San Diego-Imperial,
+  High Desert, Natchez Trace, Simon Kenton) so still have no founding/lineage; deeper
+  multi-level (predecessor-of-predecessor) lineage.
 - **Merit badge follow-ups.** (a) **Requirement content — DONE (0.5.0):** verbatim text +
   structure per current revision (marked © SA). (b) **Historical requirement revisions**:
   only the current revision per badge is seeded (workbooks ships one `<year>.md` each);

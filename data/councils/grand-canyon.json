@@ -4,14 +4,38 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1920",
+      "valid_to": "1922",
+      "name": "Tucson Council",
+      "bsa_number": 10,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Arizona"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Grand Canyon Council; changed 1922. Source: Scouting in Arizona (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1922",
       "valid_to": null,
       "name": "Grand Canyon Council",
       "bsa_number": 10,
       "hq_city": "Phoenix",
       "hq_state": "AZ",
       "website": "https://www.scoutingaz.org/",
-      "states_served": [],
+      "states_served": [
+        "AZ"
+      ],
       "territory": "territory:cst-8",
       "provenance": {
         "sources": [
@@ -20,6 +44,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 8 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Arizona"
           }
         ],
         "method": "imported",

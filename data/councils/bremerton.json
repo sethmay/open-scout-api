@@ -1,0 +1,30 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json",
+  "id": "bremerton",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": "1919",
+      "name": "Bremerton Council",
+      "bsa_number": null,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.7,
+        "notes": "Predecessor council recorded via a successor's Wikipedia article; retired ~1919. Details (number/HQ) not sourced."
+      }
+    }
+  ],
+  "notes": null
+}

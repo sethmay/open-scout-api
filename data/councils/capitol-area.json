@@ -4,14 +4,38 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1912",
+      "valid_to": "1924",
+      "name": "Austin Council",
+      "bsa_number": 564,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Capitol_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Capitol Area Council; changed 1924. Source: Capitol Area Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1924",
       "valid_to": null,
       "name": "Capitol Area Council",
       "bsa_number": 564,
       "hq_city": "Austin",
       "hq_state": "TX",
       "website": "https://www.bsacac.org/",
-      "states_served": [],
+      "states_served": [
+        "TX"
+      ],
       "territory": "territory:cst-7",
       "provenance": {
         "sources": [
@@ -20,6 +44,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 7 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Capitol_Area_Council"
           }
         ],
         "method": "imported",

@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1992",
       "valid_to": null,
       "name": "Three Fires Council",
       "bsa_number": 127,
       "hq_city": "St Charles",
       "hq_state": "IL",
       "website": "http://www.threefirescouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "IL"
+      ],
       "territory": "territory:cst-6",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 6 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Three_Fires_Council"
           }
         ],
         "method": "imported",

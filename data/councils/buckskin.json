@@ -4,14 +4,63 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1919",
+      "valid_to": "1929",
+      "name": "Charleston Council",
+      "bsa_number": 617,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Buckskin Council; changed 1929. Source: Buckskin Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1929",
+      "valid_to": "1949",
+      "name": "Charleston Area Council",
+      "bsa_number": 617,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Buckskin Council; changed 1949. Source: Buckskin Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1949",
       "valid_to": null,
       "name": "Buckskin Council",
       "bsa_number": 617,
       "hq_city": "Charleston",
       "hq_state": "WV",
       "website": "https://www.buckskin.org/",
-      "states_served": [],
+      "states_served": [
+        "KY",
+        "OH",
+        "VA",
+        "WV"
+      ],
       "territory": "territory:cst-12",
       "provenance": {
         "sources": [
@@ -20,6 +69,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 12 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
           }
         ],
         "method": "imported",

@@ -11,7 +11,10 @@
       "hq_city": "Chattanooga",
       "hq_state": "TN",
       "website": "https://www.cherokeeareabsa.com/",
-      "states_served": [],
+      "states_served": [
+        "OK",
+        "TN"
+      ],
       "territory": "territory:cst-14",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 14 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Cherokee_Area_Council"
           }
         ],
         "method": "imported",

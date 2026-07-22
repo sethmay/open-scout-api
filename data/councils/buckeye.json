@@ -4,14 +4,17 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1958",
       "valid_to": null,
       "name": "Buckeye Council",
       "bsa_number": 436,
       "hq_city": "Canton",
       "hq_state": "OH",
       "website": "http://buckeyecouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "OH",
+        "WV"
+      ],
       "territory": "territory:cst-9",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 9 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckeye_Council"
           }
         ],
         "method": "imported",

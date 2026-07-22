@@ -11,7 +11,11 @@
       "hq_city": "Dover",
       "hq_state": "DE",
       "website": "https://www.delmarvacouncil.org/",
-      "states_served": [],
+      "states_served": [
+        "DE",
+        "MD",
+        "VA"
+      ],
       "territory": "territory:cst-12",
       "provenance": {
         "sources": [
@@ -20,6 +24,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 12 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Del-Mar-Va_Council"
           }
         ],
         "method": "imported",

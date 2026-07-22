@@ -4,14 +4,82 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1918",
+      "valid_to": "1922",
+      "name": "Mason City Council",
+      "bsa_number": 173,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Winnebago_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Winnebago Council; changed 1922. Source: Winnebago Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1922",
+      "valid_to": "1928",
+      "name": "Cerro Gordo County Council",
+      "bsa_number": 173,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Winnebago_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Winnebago Council; changed 1928. Source: Winnebago Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1928",
+      "valid_to": "1939",
+      "name": "North Iowa Council",
+      "bsa_number": 173,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Winnebago_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Prior name of Winnebago Council; changed 1939. Source: Winnebago Council (Wikipedia)."
+      }
+    },
+    {
+      "valid_from": "1939",
       "valid_to": null,
       "name": "Winnebago Council",
       "bsa_number": 173,
       "hq_city": "Waterloo",
       "hq_state": "IA",
       "website": "http://www.winnebagobsa.org/",
-      "states_served": [],
+      "states_served": [
+        "IA"
+      ],
       "territory": "territory:cst-4",
       "provenance": {
         "sources": [
@@ -20,6 +88,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 4 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Winnebago_Council"
           }
         ],
         "method": "imported",

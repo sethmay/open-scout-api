@@ -4,14 +4,18 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1965",
       "valid_to": null,
       "name": "Mid-America Council",
       "bsa_number": 326,
       "hq_city": "Omaha",
       "hq_state": "NE",
       "website": "https://mac-bsa.org/",
-      "states_served": [],
+      "states_served": [
+        "NE",
+        "IA",
+        "SD"
+      ],
       "territory": "territory:cst-5",
       "provenance": {
         "sources": [
@@ -20,6 +24,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 5 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Mid-America_Council"
           }
         ],
         "method": "imported",

@@ -82,7 +82,7 @@ DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.jso
 
 | Dataset | Status |
 |---|---|
-| **Councils** | ✅ 235 entities — 229 current, assigned to the 14 Council Service Territories; 6 historical (merged/renamed) with lifecycle events |
+| **Councils** | ✅ 419 entities — **229 current** (assigned to the 14 Council Service Territories) + **190 historical** (merged/renamed/defunct) with lifecycle events. Current councils carry founding dates, prior-name (rename) history, and merger/absorption events extracted as facts from each council's Wikipedia article (`llm_extraction`, conf 0.7–0.8) — 141 founding years, 57 rename chains, 112 merger/absorption events. |
 | **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
 | **Merit badges** | ✅ 142 entities — 140 current (17 Eagle-required incl. alternatives), Citizenship in Society (introduced 2021 → Eagle-required 2022 → discontinued 2026), Computers→Digital Technology supersession. |
 | **Requirement sets** | ✅ 174 documents (141 merit-badge + 33 rank across editions) — full requirement tree (numbering, nesting, choose-N/option groups) + effective date/`supersedes` chains + source links per revision. ⚠ Requirement **text is © Scouting America** (see below), not under this dataset's license. |

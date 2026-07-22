@@ -4,14 +4,16 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1913",
       "valid_to": null,
       "name": "Chief Cornplanter Council",
       "bsa_number": 538,
       "hq_city": "Warren",
       "hq_state": "PA",
       "website": "https://www.cornplanterbsa.org/",
-      "states_served": [],
+      "states_served": [
+        "PA"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Chief_Cornplanter_Council"
           }
         ],
         "method": "imported",

@@ -11,7 +11,10 @@
       "hq_city": "Texarkana",
       "hq_state": "TX",
       "website": "https://caddobsa.org/",
-      "states_served": [],
+      "states_served": [
+        "AR",
+        "TX"
+      ],
       "territory": "territory:cst-8",
       "provenance": {
         "sources": [
@@ -20,6 +23,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 8 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Caddo_Area_Council"
           }
         ],
         "method": "imported",

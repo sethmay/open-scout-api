@@ -11,7 +11,9 @@
       "hq_city": "Yarmouth Port",
       "hq_state": "MA",
       "website": "https://scoutscapecod.org/",
-      "states_served": [],
+      "states_served": [
+        "MA"
+      ],
       "territory": "territory:cst-10",
       "provenance": {
         "sources": [
@@ -20,6 +22,9 @@
           },
           {
             "citation": "Scouting America Council Service Territory 10 map (production 2026-06)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Cape_Cod_and_the_Islands_Council"
           }
         ],
         "method": "imported",
