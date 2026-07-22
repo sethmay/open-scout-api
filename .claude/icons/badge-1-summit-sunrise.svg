@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <clipPath id="b1c"><circle cx="120" cy="120" r="70"/></clipPath>
+    <path id="b1t" d="M32 120 A88 88 0 0 1 208 120" fill="none"/>
+    <path id="b1b" d="M28 120 A92 92 0 0 0 212 120" fill="none"/>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="#2D5A3D"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#F5F0E6" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="120" cy="120" r="70" fill="#F5F0E6"/>
+  <g clip-path="url(#b1c)">
+    <circle cx="120" cy="100" r="20" fill="#E8A33D"/>
+    <polygon points="45,190 95,105 135,190" fill="#4A7C59"/>
+    <polygon points="95,190 145,88 200,190" fill="#2D5A3D"/>
+    <rect x="50" y="158" width="140" height="32" fill="#1B4332"/>
+  </g>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5F0E6" font-weight="bold">
+    <textPath href="#b1t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath>
+  </text>
+  <text font-family="Georgia, serif" font-size="11" letter-spacing="3" fill="#E8A33D">
+    <textPath href="#b1b" startOffset="50%" text-anchor="middle">A COMMUNITY PROJECT</textPath>
+  </text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <path id="b3t" d="M32 120 A88 88 0 0 1 208 120" fill="none"/>
+    <path id="b3b" d="M28 120 A92 92 0 0 0 212 120" fill="none"/>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="#27406B"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#F5F0E6" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="120" cy="120" r="70" fill="#F5F0E6"/>
+  <circle cx="120" cy="120" r="54" fill="none" stroke="#27406B" stroke-width="3"/>
+  <polygon points="120,72 130,120 120,168 110,120" fill="#27406B"/>
+  <polygon points="72,120 120,130 168,120 120,110" fill="#5B8DB8"/>
+  <circle cx="120" cy="120" r="8" fill="#C94F30"/>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5F0E6" font-weight="bold">
+    <textPath href="#b3t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath>
+  </text>
+  <text font-family="Georgia, serif" font-size="11" letter-spacing="3" fill="#E8A33D">
+    <textPath href="#b3b" startOffset="50%" text-anchor="middle">FIND YOUR WAY</textPath>
+  </text>
+</svg>

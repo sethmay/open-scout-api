@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <defs>
+    <clipPath id="c1"><circle cx="120" cy="120" r="70"/></clipPath>
+    <clipPath id="c2"><circle cx="360" cy="120" r="70"/></clipPath>
+    <clipPath id="c3"><circle cx="600" cy="120" r="70"/></clipPath>
+    <path id="c1t" d="M32 120 A88 88 0 0 1 208 120" fill="none"/>
+    <path id="c2t" d="M272 120 A88 88 0 0 1 448 120" fill="none"/>
+    <path id="c3t" d="M512 120 A88 88 0 0 1 688 120" fill="none"/>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="#2D5A3D"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#F5F0E6" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="120" cy="120" r="70" fill="#F5F0E6"/>
+  <g clip-path="url(#c1)">
+    <circle cx="120" cy="100" r="20" fill="#E8A33D"/>
+    <polygon points="45,190 95,105 135,190" fill="#4A7C59"/>
+    <polygon points="95,190 145,88 200,190" fill="#2D5A3D"/>
+    <rect x="50" y="158" width="140" height="32" fill="#1B4332"/>
+  </g>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5F0E6" font-weight="bold">
+    <textPath href="#c1t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath>
+  </text>
+  <circle cx="360" cy="120" r="112" fill="#27406B"/>
+  <circle cx="360" cy="120" r="103" fill="none" stroke="#F5F0E6" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="360" cy="120" r="70" fill="#F5F0E6"/>
+  <g clip-path="url(#c2)">
+    <circle cx="360" cy="100" r="20" fill="#E8A33D"/>
+    <polygon points="285,190 335,105 375,190" fill="#5B8DB8"/>
+    <polygon points="335,190 385,88 440,190" fill="#27406B"/>
+    <rect x="290" y="158" width="140" height="32" fill="#1E3050"/>
+  </g>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5F0E6" font-weight="bold">
+    <textPath href="#c2t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath>
+  </text>
+  <circle cx="600" cy="120" r="112" fill="#9C4A2F"/>
+  <circle cx="600" cy="120" r="103" fill="none" stroke="#F5EBDD" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="600" cy="120" r="70" fill="#F5EBDD"/>
+  <g clip-path="url(#c3)">
+    <circle cx="600" cy="100" r="20" fill="#E8A33D"/>
+    <polygon points="525,190 575,105 615,190" fill="#C97B4A"/>
+    <polygon points="575,190 625,88 680,190" fill="#9C4A2F"/>
+    <rect x="530" y="158" width="140" height="32" fill="#5E2C1B"/>
+  </g>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5EBDD" font-weight="bold">
+    <textPath href="#c3t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath>
+  </text>
+</svg>

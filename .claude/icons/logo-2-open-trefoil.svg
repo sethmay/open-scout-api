@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <g>
+    <path d="M120 130 Q92 88 120 42 Q148 88 120 130 Z" fill="#2D5A3D"/>
+    <path d="M120 130 Q92 88 120 42 Q148 88 120 130 Z" fill="#4A7C59" transform="rotate(120 120 130)"/>
+    <path d="M120 130 Q92 88 120 42 Q148 88 120 130 Z" fill="#74A57F" transform="rotate(240 120 130)"/>
+    <circle cx="120" cy="130" r="10" fill="#E8A33D"/>
+  </g>
+</svg>

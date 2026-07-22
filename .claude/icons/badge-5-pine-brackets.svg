@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <path id="b5t" d="M32 120 A88 88 0 0 1 208 120" fill="none"/>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="#5C6B3C"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#F5F0E6" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="120" cy="120" r="70" fill="#F5F0E6"/>
+  <polygon points="120,68 96,104 144,104" fill="#3E4F2A"/>
+  <polygon points="120,86 90,128 150,128" fill="#4A5D32"/>
+  <polygon points="120,106 82,156 158,156" fill="#5C6B3C"/>
+  <rect x="113" y="156" width="14" height="16" fill="#6E4A2F"/>
+  <polyline points="72,110 58,125 72,140" fill="none" stroke="#D9A441" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="168,110 182,125 168,140" fill="none" stroke="#D9A441" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5F0E6" font-weight="bold">
+    <textPath href="#b5t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath>
+  </text>
+  <circle cx="66" cy="176" r="4" fill="#D9A441"/>
+  <circle cx="120" cy="208" r="4" fill="#D9A441"/>
+  <circle cx="174" cy="176" r="4" fill="#D9A441"/>
+</svg>

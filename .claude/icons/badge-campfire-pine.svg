@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs><path id="t" d="M32 120 A88 88 0 0 1 208 120" fill="none"/></defs>
+  <circle cx="120" cy="120" r="112" fill="#1B4332"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#F5F0E6" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <circle cx="120" cy="120" r="70" fill="#F5F0E6"/>
+  <path d="M120 72 C145 100 148 122 120 145 C92 122 95 100 120 72 Z" fill="#E8A33D"/>
+  <g stroke="#F5F0E6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="111,102 103,111 111,120"/><polyline points="129,102 137,111 129,120"/><line x1="115" y1="122" x2="125" y2="100"/>
+  </g>
+  <rect x="80" y="152" width="80" height="10" rx="5" fill="#8B5E3C" transform="rotate(8 120 157)"/>
+  <rect x="80" y="152" width="80" height="10" rx="5" fill="#6E4A2F" transform="rotate(-8 120 157)"/>
+  <text font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#F5F0E6" font-weight="bold"><textPath href="#t" startOffset="50%" text-anchor="middle">OPEN SOURCE SCOUTING</textPath></text>
+  <circle cx="66" cy="176" r="4" fill="#E8A33D"/><circle cx="120" cy="208" r="4" fill="#E8A33D"/><circle cx="174" cy="176" r="4" fill="#E8A33D"/>
+</svg>
