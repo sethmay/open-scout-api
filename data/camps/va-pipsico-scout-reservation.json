@@ -1,19 +1,19 @@
 {
   "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
-  "id": "va-scouts-bsa-long-term",
+  "id": "va-pipsico-scout-reservation",
   "kind": "camp",
   "versions": [
     {
       "valid_from": null,
       "valid_to": null,
-      "name": "Scouts BSA Long-Term",
+      "name": "Pipsico Scout Reservation",
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:tidewater",
       "parent": null,
       "operating_status": "active",
       "address": "57 Pipsico Road Spring Grove, Virginia 23881",
-      "city": null,
+      "city": "Spring Grove",
       "state": "VA",
       "lat": 37.184948,
       "lon": -76.877991,
@@ -24,23 +24,23 @@
       ],
       "features": [],
       "summary": null,
+      "merged_from": [
+        "va-scouts-bsa-long-term"
+      ],
       "provenance": {
         "sources": [
           {
-            "citation": "camp-finder council-596/va-scouts-bsa-long-term (unofficial community dataset)"
-          },
-          {
-            "url": "https://scoutingevent.com/596-Pipsico2026"
+            "url": "https://tidewaterbsa.com/pipsico/"
           },
           {
             "url": "https://scoutingevent.com/596-Pipsico2026"
           }
         ],
-        "method": "imported",
-        "verified_at": "2026-07-18",
+        "method": "curated",
+        "verified_at": "2026-07-22",
         "imported_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "confidence": 0.9,
+        "notes": "Tidewater Council Scouts BSA resident summer camp at Pipsico Scout Reservation (Spring Grove / Surry County, VA; 57 Pipsico Road, near Williamsburg). Name corrected from the scraped registration-event title 'Scouts BSA Long-Term'; prior id va-scouts-bsa-long-term retired (resolves via aliases.json). Address independently confirms the property."
       }
     }
   ],

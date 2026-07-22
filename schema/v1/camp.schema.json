@@ -121,7 +121,7 @@
           "type": "array",
           "items": { "$ref": "common.schema.json#/$defs/Slug" },
           "uniqueItems": true,
-          "description": "Retired camp ids that were the same physical property as this camp (program/session variants), collapsed into it. Their programs/features are unioned here; consumers resolve old ids via v1/camps/aliases.json."
+          "description": "Retired camp ids that resolve to this camp: program/session variants of the same physical property collapsed in, or a prior id this camp was renamed from. Any unioned programs/features live here; consumers resolve old ids via v1/camps/aliases.json."
         },
         "reservation": {
           "type": ["object", "null"],
