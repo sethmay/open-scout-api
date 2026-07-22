@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.20.0 (minor) — 2026-07-21
 
-- `PENDING` Camps are now grouped under their reservation, so a site can nest sub-camps instead of listing them flat.
+- `3d8b517` Camps are now grouped under their reservation, so a site can nest sub-camps instead of listing them flat.
   - Set the `parent` link on 29 camps that are a sub-camp or sub-program of a larger property (for example, "Camp Tukabatchee Webelos/AOL Resident Camp" now points to Camp Tukabatchee).
   - Links are derived from the camp set itself (a camp whose slug, or whose "... at X" name, sits under another camp in the same council), so no outside data is needed and it stays in sync.
   - `parent` is now included in `current/camps.json`.
