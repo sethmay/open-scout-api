@@ -311,6 +311,10 @@ def main() -> None:
     write_json(DIST / "v1" / "requirement-sets" / "index.json", coll("requirement-set", rs_index))
     write_json(DIST / "v1" / "current" / "requirement-sets.json", coll("requirement-set", current_rs))
 
+    for p in sorted((DATA / "vocab").glob("*.json")):
+        write_json(DIST / "v1" / "vocab" / p.name, json.loads(p.read_text("utf-8")))
+    vocab_ids = sorted(p.stem for p in (DATA / "vocab").glob("*.json"))
+
     write_json(DIST / "v1" / "meta.json", {
         "name": "Open Scout API", "version": version, "generated_at": now,
         "base_url": BASE_URL, "license": LICENSE, "unofficial": True, "disclaimer": DISCLAIMER,
@@ -325,6 +329,7 @@ def main() -> None:
             "awards": {"total": len(awards), "current": len(current_awards)},
             "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges)},
         },
+        "vocab": [f"v1/vocab/{v}.json" for v in vocab_ids],
         "text_rights": ("Merit-badge and rank requirement text is \u00a9 Scouting America, reproduced with "
                         "attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."),
         "endpoints": ["v1/meta.json", "v1/councils/index.json", "v1/councils/{id}.json",
@@ -338,7 +343,8 @@ def main() -> None:
                       "v1/current/councils.json", "v1/current/territories.json",
                       "v1/current/merit-badges.json", "v1/current/requirement-sets.json",
                       "v1/current/camps.json", "v1/current/ranks.json", "v1/current/awards.json",
-                      "v1/current/oa-lodges.json"],
+                      "v1/current/oa-lodges.json",
+                      *[f"v1/vocab/{v}.json" for v in vocab_ids]],
     })
 
     (DIST / "index.html").write_text(

@@ -171,6 +171,40 @@ def main() -> int:
                 _walk_choose(r, f"requirement-sets/{name}")
         nrs = len(docs)
 
+    # pass 5: controlled vocabularies + every code used in camp data must be defined
+    vocab_dir = DATA / "vocab"
+    nvocab = 0
+    if vocab_dir.exists():
+        v_validator = Draft202012Validator(schemas["vocab.schema.json"], registry=reg,
+                                            format_checker=Draft202012Validator.FORMAT_CHECKER)
+        codes_for: dict[str, set] = {}
+        for p in sorted(vocab_dir.glob("*.json")):
+            obj = json.loads(p.read_text("utf-8"))
+            for e in v_validator.iter_errors(obj):
+                errs.append(f"vocab/{p.name}: schema: {e.json_path}: {e.message}")
+            if obj.get("id") != p.stem:
+                errs.append(f"vocab/{p.name}: id {obj.get('id')!r} != filename stem {p.stem!r}")
+            cs = {t["code"] for t in obj.get("terms", [])}
+            for field in obj.get("applies_to", []):
+                codes_for[field] = cs
+            nvocab += 1
+        getters = {"camp.camp_type": lambda v: ([v["camp_type"]] if v.get("camp_type") else []),
+                   "camp.program_types": lambda v: v.get("program_types", []),
+                   "camp.features": lambda v: v.get("features", [])}
+        for p in sorted((DATA / "camps").glob("*.json")):
+            if p.name == "_events.json":
+                continue
+            obj = json.loads(p.read_text("utf-8"))
+            for v in obj.get("versions", []):
+                for field, get in getters.items():
+                    known = codes_for.get(field)
+                    if known is None:
+                        continue
+                    for code in get(v):
+                        if code not in known:
+                            errs.append(f"camps/{p.name}: {field} value {code!r} not in vocab "
+                                        f"(add it to data/vocab/)")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
@@ -185,7 +219,7 @@ def main() -> int:
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
           f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges "
-          f"valid (schema + referential + windows + text-rights + camp coupling), {len(entities)} entities")
+          f"valid (schema + referential + windows + text-rights + camp coupling + vocab), {len(entities)} entities")
     return 0
 
 
