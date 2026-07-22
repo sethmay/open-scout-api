@@ -15,8 +15,8 @@
       "address": "PO Box 1081, Haines, AK",
       "city": "Haines",
       "state": "AK",
-      "lat": 62.5391,
-      "lon": -150.1603,
+      "lat": 59.2358,
+      "lon": -135.4453,
       "geo_precision": "approximate",
       "website": "https://alaskascoutingadventures.org/chilkoot-base/",
       "program_types": [
@@ -40,12 +40,9 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate corrected 2026-07-22 to Haines / Chilkat Peninsula (approximate, town-level); it was wrongly stamped on Denali High Adventure Scout Base's point ~600 km away. Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       },
-      "reservation": {
-        "id": "ak-chilkoot-high-adventure-base-reservation",
-        "name": null
-      }
+      "reservation": null
     }
   ],
   "notes": null

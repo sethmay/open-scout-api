@@ -191,7 +191,7 @@ RESERVATIONS = {
     "co-ben-delatour-scout-ranch": ("Ben Delatour Scout Ranch",
         ["co-elkhorn-high-adventure-base", "co-jack-nicol-cub-scout-camp"]),
     "mo-beaumont-scout-reservation": ("Beaumont Scout Reservation",
-        ["mo-cub-scout-advancement-camp-at-camp-may", "mo-grizzly-day-camp"]),
+        ["mo-camp-may", "mo-grizzly-day-camp"]),
     "mo-s-f-scout-ranch": ("S-F Scout Ranch",
         ["mo-s-f-ranger-program", "mo-swift-high-adventure-base"]),
     "nh-griswold-scout-reservation": ("Griswold Scout Reservation",
