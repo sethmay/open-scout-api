@@ -1,0 +1,47 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "venturing-2024",
+  "kind": "requirement-set",
+  "subject": "rank:venturing",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Venturing Rank — Venturing (via usscouts.org; Guide to Advancement)",
+    "url": "http://usscouts.org/usscouts/advance/venturing/VenturingRank.asp",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Participate in a crew activity outside of a crew meeting."
+    },
+    {
+      "number": "2",
+      "text": "Participate in an interview conducted by your crew president and your Advisor."
+    },
+    {
+      "number": "3",
+      "text": "Complete Personal Safety Awareness training."
+    },
+    {
+      "number": "4",
+      "text": "State intention to join the crew during a crew induction ceremony during which you repeat and commit to live by the Scout Oath and Scout Law and the Venturing motto: Lead the Adventure."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/usscouts/advance/venturing/VenturingRank.asp",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

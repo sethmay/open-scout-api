@@ -1,0 +1,376 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "quartermaster-2026",
+  "kind": "requirement-set",
+  "subject": "rank:quartermaster",
+  "effective_from": "2026",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Quartermaster Rank Requirements (2026) — Scouting America Sea Scouts",
+    "url": "https://www.seascout.org/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Ideals",
+      "children": [
+        {
+          "number": "a",
+          "text": "Initiate a discussion on the ideals stated in the Sea Promise."
+        },
+        {
+          "number": "b",
+          "text": "Prepare a written analysis, offering recommendations for improvements regarding one of the following ship’s programs: bylaws and code, training programs, ceremonies, quarterdeck meetings, recruiting programs, or fundraising."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Active Membership",
+      "children": [
+        {
+          "number": "a",
+          "text": "Meet your ship’s bylaws requirement for active participation in your ship’s meetings and activities for six months."
+        },
+        {
+          "number": "b",
+          "text": "Present a talk or program at least 15 minutes long on Sea Scouts to a service club, religious organization, PTA, or other adult organization."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Leadership",
+      "children": [
+        {
+          "number": "a",
+          "text": "Quartermaster Project: While an Able Sea Scout, plan, develop, and demonstrate leadership to others in a service project that is helpful to any religious institution, school, or your community. The project plan must be approved by your Skipper and ship committee and approved by the council or district advancement committee before you start. This service project should involve your ship and at least one other group. You must use the Quartermaster Leadership Service Project Workbook, No. 420-011, to document your work. Note: The Quartermaster project is separate and distinct from a youth's Eagle Scout service project."
+        },
+        {
+          "number": "b",
+          "text": "Officer: Serve as a ship officer for at least six months."
+        },
+        {
+          "number": "c",
+          "text": "Instruct: Organize and help conduct the Scouting America’s Introduction to Leadership Skills for Ships (ILSS) for your ship or serve as staff on an NYLT course NYLT Leadership Academy, NAYLE, Wood Badge course, or Seabadge course."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Safety",
+      "children": [
+        {
+          "number": "a",
+          "text": "Know the heavy-weather precautions taken aboard power, sailing, and paddle vessels when dangerous weather approaches, and demonstrate these precautions aboard the vessel used by your ship."
+        },
+        {
+          "number": "b",
+          "text": "Know the special precautions that should be taken when limited visibility is encountered."
+        },
+        {
+          "number": "c",
+          "text": "Teach Apprentice 5a and Ordinary 5a, 5b, and 5c requirements to a crew."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Marlinspike Seamanship",
+      "children": [
+        {
+          "number": "a",
+          "text": "Teach the Apprentice, Ordinary, and Able marlinspike seamanship requirements to a crew."
+        },
+        {
+          "number": "b",
+          "text": "Make an eye splice in double-braided line."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Boat Handling",
+      "children": [
+        {
+          "number": "a",
+          "text": "Take charge of the craft used by your ship and give all commands to the crew for picking up a mooring buoy and properly mooring the vessel in several wind and current situations. OR Take charge of three or more single occupant vessels and give all the commands necessary to move the group successfully to the opposite shore, across a river in moving water, or lake in windy conditions, without drifting downstream or down lake."
+        },
+        {
+          "number": "b",
+          "text": "Demonstrate and teach the principles of springing into and out from a dock, from both bow and stern, using an engine depending on the type of vessel used by your ship. OR Demonstrate and teach the proper way to enter moving water with a canoe, kayak, paddleboard or raft, facing both upstream and downstream, while in an eddy and from shore."
+        },
+        {
+          "number": "c",
+          "text": "Teach Ordinary and Able boat handling requirements to a crew."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Ground Tackle",
+      "children": [
+        {
+          "number": "a",
+          "text": "Teach the Ordinary and Able anchoring requirements to a crew."
+        },
+        {
+          "number": "b",
+          "text": "Know the methods of bringing a vessel to anchor and a mooring with special emphasis on wind and current."
+        },
+        {
+          "number": "c",
+          "text": "Take charge of a vessel used by your ship and give all commands to the crew for setting and weighing anchor in several wind and current situations."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Navigation Rules",
+      "children": [
+        {
+          "number": "1",
+          "text": "Teach the Ordinary navigation rules requirements and Able 9b and 9c to a crew."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Piloting and Navigation",
+      "children": [
+        {
+          "number": "a",
+          "text": "Teach the Ordinary and Able piloting requirements to a crew."
+        },
+        {
+          "number": "b",
+          "text": "Know the methods of fixing a boat’s position in limited visibility."
+        },
+        {
+          "number": "c",
+          "text": "Create a route in an electronic navigation device that includes at least five waypoints. Use the electronic navigation device to navigate your route. OR Use an electronic navigation device (e.g., GPS) to determine coordinates and routes for at least five emergency exit routes for inland waterways. Identify the beginning of each route during a boating trip."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Weather",
+      "children": [
+        {
+          "number": "a",
+          "text": "Teach the Ordinary and Able weather requirements to a crew."
+        },
+        {
+          "number": "b",
+          "text": "Demonstrate your knowledge of the weather signs for your local area, including cloud types. Prepare a 48-hour forecast and compare your forecast with the actual weather that occurred."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "Environment",
+      "children": [
+        {
+          "number": "a",
+          "text": "Discuss the three types of marine sanitation devices and the laws governing sewage discharge."
+        },
+        {
+          "number": "b",
+          "text": "Explain what gray water is and how it should be handled in your boating area."
+        },
+        {
+          "number": "c",
+          "text": "Write a 500-word report on an aquatic environment (freshwater, coastal, estuary, or sanctuary). Include in the report the location, habitat, history, animals and plants that inhabit the area, its importance to man, current regulations, and what boaters can do to help preserve it for future generations. OR Write a 500-word report on one of the United States of America’s most endangered rivers (as identified by the list provided by the American Rivers organization) highlighting the threats and potential solutions. Discuss the impact, both positive and negative, of doing or not doing each potential solution."
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "text": "Electives: Complete four Level Three electives.",
+      "choose": 4,
+      "children": [
+        {
+          "number": "a",
+          "text": "America's Boating Club: As a member of America's Boating Club, complete the Advanced Marine Navigation course."
+        },
+        {
+          "number": "b",
+          "text": "Awards: Complete the Outdoor Ethics Action Award."
+        },
+        {
+          "number": "c",
+          "text": "Duty to God: Complete the requirements for the religious emblem of your faith. (Refer to the Duty to God brochure, No. 512-879.)"
+        },
+        {
+          "number": "d",
+          "text": "Engines:",
+          "children": [
+            {
+              "number": "1",
+              "text": "Explain the principal features of steam turbine, turbo-electric, direct reversing diesel, diesel-electric, gas turbine, nuclear, gasoline, and diesel engines and the relative advantages of each type."
+            },
+            {
+              "number": "2",
+              "text": "Explain the operation of spark ignition and compression ignition for internal combustion engines used aboard small vessels."
+            },
+            {
+              "number": "3",
+              "text": "Demonstrate your familiarity with the engine aboard the vessel used by your ship, including its principles of operation, fuel, lubrication, cooling and electrical systems, and their component parts."
+            },
+            {
+              "number": "4",
+              "text": "Demonstrate your ability to locate and correct minor engine troubles according to the engine manufacturer’s troubleshooting guide."
+            }
+          ]
+        },
+        {
+          "number": "e",
+          "text": "Leadership: Attend National Advanced Youth Leadership Experience (NAYLE)."
+        },
+        {
+          "number": "f",
+          "text": "Leadership: Attend Wood Badge (youth 18 and over)."
+        },
+        {
+          "number": "g",
+          "text": "Leadership: Attend Leadership Challenge at Philmont or the Summit (youth 18 and over)."
+        },
+        {
+          "number": "h",
+          "text": "Leadership: Attend Seabadge (youth 18 and over)."
+        },
+        {
+          "number": "i",
+          "text": "Leadership: Take command of one of more vessels crewed by not less than four Sea Scouts (e.g., four single occupant vessels or a single vessel with four occupants) for at least 40 consecutive hours, including two nights. You must delegate and supervise all duties. Prior to departure, create a trip plan and receive approval from your ship's Skipper. If your boats are transported to the water, inspect all vessels with an adult leader, and evaluate whether they are adequately secured for transportation prior to departure. In addition, prior to the trip, complete the following: file a float plan, inspect the vessel(s) for required equipment; supervise all menu preparation; prepare the vessel(s) to get underway with a proper checklist approved by the adult leaders; launch, anchor, dock, and maintain course by commands to the helmsman appropriate for your vessel(s); remain underway for an extended period during darkness if your vessel has running lights; and discuss appropriate nighttime running procedures. While underway, perform safety and rescue drills appropriate to your boat(s), such as capsize, person in the water, towing vessels, damage control, abandon ship, fire, collision, and any other drills used by your ship. During this cruise no substantial errors may be committed. OR Plan and serve as coordinator on a ?live-aboard? dive trip of at least three days with all dive plans, equipment, food, surface and underwater charts on dive sites, specific training including all financial, safety information and emergency protocols, plan for provisions; supervise all menu preparation; prepare the boats to get underway with a proper checklist approved by the adult leaders; and file a float plan. If on open water, prepare a navigation chart including at least three legs and/or course corrections. If on inland rivers, identify river access points and coordinate transportation at both ends of the trip. With an adult leader, inspect all vessels and evaluate whether they are adequately secured for transportation."
+        },
+        {
+          "number": "j",
+          "text": "Maritime Tradition: (Communication) Draw the International Code flags and pennants from memory and give the single-letter meanings (Alpha = Have diver down, keep clear) of the flags. Show how to use the book International Code of Signals."
+        },
+        {
+          "number": "k",
+          "text": "NauticEd: Successfully complete a NauticEd advanced course."
+        },
+        {
+          "number": "l",
+          "text": "Paddlecraft: Complete the SmartStart for Paddlers course. Conduct a watercraft safety class for your ship using Paddle Smart America materials. Identify sources of safety brochures and other materials that could be used by your ship and distribute them to troops in your area or your chartered organization."
+        },
+        {
+          "number": "m",
+          "text": "Racing: Take charge of a crew in a race using current World Sailing racing rules."
+        },
+        {
+          "number": "n",
+          "text": "Sailing: Know the principles of handling a schooner, ketch, yawl, or other suitable sailing vessel. Under competent oversight, take charge of a crew and demonstrate your ability to handle a suitable sailing vessel in all points of sail."
+        },
+        {
+          "number": "o",
+          "text": "SCUBA: Take an additional certification course such as VIP process, tank filler/compressor operations, night diving, underwater navigation, underwater archaeology, underwater photography. Each course may be counted as an elective."
+        },
+        {
+          "number": "p",
+          "text": "SCUBA: Complete a Rescue Course from any RSTC agency."
+        },
+        {
+          "number": "q",
+          "text": "SCUBA: Become a certified Dive Master, Assistant Instructor or Instructor. Each certification may be counted as an elective. (Must be over 18 and log at least 50 dives.)."
+        },
+        {
+          "number": "r",
+          "text": "Special Proficiency: Become proficient in boardsailing, surfing, kayaking, or whitewater rafting/canoeing."
+        },
+        {
+          "number": "s",
+          "text": "Special Proficiency: Teach another Sea Scout the information needed to complete the Scouts Scouting America's Kayaking, Canoeing or Whitewater merit badges, or the SUP or Boardsailing award."
+        },
+        {
+          "number": "t",
+          "text": "Special Proficiency: Complete the requirements for lifeguard through the American Red Cross, or other approved organization’s lifeguard course."
+        },
+        {
+          "number": "u",
+          "text": "U.S. Coast Guard Auxiliary: Successfully complete the Coast Guard Auxiliary Weekend Navigator course."
+        },
+        {
+          "number": "v",
+          "text": "U.S. Coast Guard Auxiliary: Join a local Coast Guard Auxiliary flotilla as a Basic Qualified member and qualify for any Operational Auxiliary Program (AUXOP) or any Trident Marine Safety specialty rating."
+        },
+        {
+          "number": "w",
+          "text": "Vessel Maintenance: Take charge of reconditioning or overhauling at least one of your ship’s vessels or take charge of hauling out the principal vessel used by your ship. In either case, lay out a plan of the work to be done in advance, including an estimate of the materials, tools, cost, and time involved."
+        },
+        {
+          "number": "x",
+          "text": "Vessel Maintenance: Take charge of building a paddlecraft. Lay out the plan of work to be done, identify suitable building plans, estimate materials, tools, cost, and time involved. Launch the craft."
+        },
+        {
+          "number": "y",
+          "text": "Vessel Maintenance: Engines",
+          "children": [
+            {
+              "number": "1",
+              "text": "Know and demonstrate the correct method of rescuing a person in contact with a live wire."
+            },
+            {
+              "number": "2",
+              "text": "Understand the construction of simple battery cells. Demonstrate the proper care of storage batteries."
+            },
+            {
+              "number": "3",
+              "text": "Explain the difference between direct current and alternating current and the best uses for each."
+            },
+            {
+              "number": "4",
+              "text": "Demonstrate that you know how to replace fuses, reset circuit breakers and properly splice shipboard electric cable."
+            },
+            {
+              "number": "5",
+              "text": "Submit a diagram of the electrical system aboard the vessel used by your ship."
+            },
+            {
+              "number": "6",
+              "text": "Explain wire tables, the current-carrying capacity of circuits, and the hazards and prevention of electrical overloading."
+            },
+            {
+              "number": "7",
+              "text": "Explain electrolysis as applied to the deterioration of a boat’s underwater fittings by galvanic action and its prevention."
+            }
+          ]
+        },
+        {
+          "number": "z",
+          "text": "Vessel Maintenance, Electricity: Explain electrolysis as applied to the deterioration of a boat's underwater fittings by galvanic action and its prevention."
+        },
+        {
+          "number": "aa",
+          "text": "Vessels, Rigging: Demonstrate your ability to splice and handle wire rope, attach wire rope fittings, and complete a safety and tuning inspection of a vessel."
+        },
+        {
+          "number": "bb",
+          "text": "Vessels: Under competent oversight, assume the duties of navigator of your ship’s vessel. Plot its projected course between two ports at least two hours apart and cruise that course mooring to mooring handling all piloting duties. The cruise should be made in daylight hours with good visibility."
+        },
+        {
+          "number": "cc",
+          "text": "Vessels: Obtain a US Coast Guard OUPV (Operator of Uninspected Passenger Vessels) boat operator license. (Must be over 18 to take test but can collect Sea Service time before 18.)"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.seascout.org/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

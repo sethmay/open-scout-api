@@ -1,0 +1,178 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "wolf-2024",
+  "kind": "requirement-set",
+  "subject": "rank:wolf",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Wolf Rank — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/bobcat-wolf/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Required Adventures",
+      "children": [
+        {
+          "number": "1",
+          "text": "Bobcat Adventure",
+          "children": [
+            {
+              "number": "1",
+              "text": "Get to know members of your den."
+            },
+            {
+              "number": "2",
+              "text": "Recite the Scout Oath and the Scout Law with your den and den leader."
+            },
+            {
+              "number": "3",
+              "text": "Learn about the Scout Law."
+            },
+            {
+              "number": "4",
+              "text": "With your den create a den Code of Conduct."
+            },
+            {
+              "number": "5",
+              "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each is used."
+            },
+            {
+              "number": "6",
+              "text": "Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.”"
+            },
+            {
+              "number": "7",
+              "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "Running With the Pack"
+        },
+        {
+          "number": "3",
+          "text": "Safety in Numbers"
+        },
+        {
+          "number": "4",
+          "text": "Footsteps"
+        },
+        {
+          "number": "5",
+          "text": "Council Fire"
+        },
+        {
+          "number": "6",
+          "text": "Paws on the Path"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Elective Adventures",
+      "choose": 2,
+      "children": [
+        {
+          "number": "1",
+          "text": "A Wolf Goes Fishing"
+        },
+        {
+          "number": "2",
+          "text": "Adventures in Coins"
+        },
+        {
+          "number": "3",
+          "text": "Air of the Wolf"
+        },
+        {
+          "number": "4",
+          "text": "Champions for Nature Wolf"
+        },
+        {
+          "number": "5",
+          "text": "Code of the Wolf"
+        },
+        {
+          "number": "6",
+          "text": "Computing Wolves"
+        },
+        {
+          "number": "7",
+          "text": "Cubs Who Care"
+        },
+        {
+          "number": "8",
+          "text": "Digging in the Past"
+        },
+        {
+          "number": "9",
+          "text": "Finding Your Way"
+        },
+        {
+          "number": "10",
+          "text": "Germs Alive!"
+        },
+        {
+          "number": "11",
+          "text": "Let’s Camp Wolf"
+        },
+        {
+          "number": "12",
+          "text": "Paws for Water"
+        },
+        {
+          "number": "13",
+          "text": "Paws of Skill"
+        },
+        {
+          "number": "14",
+          "text": "Pedal With the Pack"
+        },
+        {
+          "number": "15",
+          "text": "Race Time Wolf"
+        },
+        {
+          "number": "16",
+          "text": "Spirit of the Water"
+        },
+        {
+          "number": "17",
+          "text": "Summertime Fun Wolf"
+        },
+        {
+          "number": "18",
+          "text": "Archery Wolf"
+        },
+        {
+          "number": "19",
+          "text": "Slingshot"
+        },
+        {
+          "number": "20",
+          "text": "BB Guns"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/bobcat-wolf/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

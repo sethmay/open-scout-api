@@ -1,0 +1,428 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "ordinary-2026",
+  "kind": "requirement-set",
+  "subject": "rank:ordinary",
+  "effective_from": "2026",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Ordinary Rank Requirements (2026) — Scouting America Sea Scouts",
+    "url": "https://www.seascout.org/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Ideals",
+      "children": [
+        {
+          "number": "a",
+          "text": "Explain the symbolism of the Sea Scout emblem."
+        },
+        {
+          "number": "b",
+          "text": "Give a brief oral history of the U.S. flag."
+        },
+        {
+          "number": "c",
+          "text": "Demonstrate how to fly, hoist, lower, fold, display and salute the U.S. flag. Explain flag etiquette and protocols for both land and sea."
+        },
+        {
+          "number": "d",
+          "text": "Discuss with an adult leader how you live the Scout Oath and Law in your daily life."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Active Membership",
+      "children": [
+        {
+          "number": "a",
+          "text": "Meet your ship's bylaws requirement for active participation in your ship's meetings and activities for three months."
+        },
+        {
+          "number": "b",
+          "text": "Do one of the following. Recruit a new member for your ship and follow through until the new member is registered and formally admitted with an admissions ceremony or assist in planning and carrying out a ship recruiting activity, such as an open house or joint activity with a youth group or organization (another Sea Scout ship will not count)."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Leadership",
+      "children": [
+        {
+          "number": "a",
+          "text": "Participate in Scouting America's Introduction to Leadership Skills for Ships (ILSS) course."
+        },
+        {
+          "number": "b",
+          "text": "Complete quarterdeck training, either as an officer or as a prospective officer."
+        },
+        {
+          "number": "c",
+          "text": "Serve as an activity chair for a major ship event. Responsibilities should include planning, directing, and evaluating the event."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Swimming",
+      "children": [
+        {
+          "number": "1",
+          "text": "Pass all requirements for the Scouting America’s Swimming merit badge."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Safety",
+      "children": [
+        {
+          "number": "a",
+          "text": "Discuss Scouting America’s Safety Afloat with an adult leader or a Quartermaster candidate."
+        },
+        {
+          "number": "b",
+          "text": "Describe the safety equipment required by law for your ship’s primary vessel. Know and demonstrate basic hand, paddle, and whistle signals commonly used on paddlecraft trips."
+        },
+        {
+          "number": "c",
+          "text": "For larger vessels that require a crew, develop a ship’s station bill for your ship and review it with an adult leader. OR For smaller vessels with only one or two people aboard, develop a roster of attendees for your ship’s next float trip. Identify lead and sweep boats. Note which boats are carrying rescue and first aid equipment, the trip roster, and medical forms. Review the roster with an adult leader."
+        },
+        {
+          "number": "d",
+          "text": "Plan and practice the following drills: man overboard, fire, and abandon ship. OR If your ship uses small vessels such as small sailboats or paddlecraft, plan and practice man overboard drills (if appropriate), capsize drills, and deep water re-entries."
+        },
+        {
+          "number": "e",
+          "text": "Describe any three types of equipment used in marine communications."
+        },
+        {
+          "number": "f",
+          "text": "Demonstrate proficiency with the communication devices used on your ship’s primary vessel."
+        },
+        {
+          "number": "g",
+          "text": "Galley",
+          "children": [
+            {
+              "number": "i",
+              "text": "Before an activity, submit a menu that uses cooked and uncooked dishes, a list of provisions, and estimated costs for a day’s meal (breakfast, lunch, and dinner). Once the provision list is approved, help obtain the items on the list."
+            },
+            {
+              "number": "ii",
+              "text": "Explain the use of charcoal, isobutane, white gas, and propane. Include safety precautions for each."
+            },
+            {
+              "number": "iii",
+              "text": "Prepare breakfast, lunch, and dinner while on the activity. Demonstrate your ability to properly use the galley equipment or personal cooking gear generally used by your ship. If your vessel does not have a galley space, these may be done ashore."
+            },
+            {
+              "number": "iv",
+              "text": "Demonstrate appropriate sanitation techniques for food preparation and meal cleanup."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Marlinspike Seamanship",
+      "children": [
+        {
+          "number": "a",
+          "text": "Name the various materials used to manufacture rope, the advantages and disadvantages of each, and the characteristics of laid and braided rope. Discuss the meaning of lay, thread, strand, and hawser. Explain how rope is sized and measured."
+        },
+        {
+          "number": "b",
+          "text": "Using both large and small lines, tie and explain the use of the following knots: stevedore’s knot, French (double) bowline, bowline on a bight, timber hitch, rolling hitch, marline hitch, midshipman’s (taut-line) hitch, and trucker's hitch."
+        },
+        {
+          "number": "c",
+          "text": "Demonstrate your ability to secure a line to pilings, cleats, and rings, and to coil, flake, and Flemish a line."
+        },
+        {
+          "number": "d",
+          "text": "Demonstrate how to cut and heat-seal a synthetic line and whip the end of plain-laid line using waxed cord or similar material."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Boat Handling",
+      "children": [
+        {
+          "number": "a",
+          "text": "Name the principal parts of the masts, booms, spars, standing and running rigging, and sails of a gaff- or Marconi-rigged sloop, schooner, and ketch or yawl."
+        },
+        {
+          "number": "b",
+          "text": "Demonstrate your ability to handle a vessel with paddles or oars by doing one of the following: Safely board a rowboat and row in a straight line for 200 feet, stop, make a pivot turn, return to the starting point, and backwater in a straight line for 40 feet. Make a turn and return to the starting point. OR Safely board a canoe, kayak, or paddleboard and paddle a straight line for 200 feet. Make a turn and return to the starting point and backwater in a straight line for 40 feet. Demonstrate a draw stroke to move the boat sideways both right and left, and forward and reverse sweeps to spin the boat both clockwise and counterclockwise."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Ground Tackle",
+      "children": [
+        {
+          "number": "a",
+          "text": "Name the parts of a stock anchor and a stockless anchor."
+        },
+        {
+          "number": "b",
+          "text": "Describe five types of anchors. Describe how each type holds the bottom, the kind of bottom in which it holds best, and the advantages or disadvantages of each type. Discuss the challenges of using an anchor with paddlecraft compared to larger vessels."
+        },
+        {
+          "number": "c",
+          "text": "Calculate the amount of anchor rode necessary for your ship’s primary vessel in the following depths: 10, 20, and 30 feet in normal and storm conditions."
+        },
+        {
+          "number": "d",
+          "text": "Demonstrate the ability to set and weigh anchor appropriate for your vessel."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Navigation Rules",
+      "children": [
+        {
+          "number": "a",
+          "text": "Explain the purpose of Navigation Rules, International and Inland."
+        },
+        {
+          "number": "b",
+          "text": "Know the general “Rule of Responsibility.”"
+        },
+        {
+          "number": "c",
+          "text": "Define stand-on and give-way vessels for the following situations: meeting, crossing, and overtaking for both power and sailing vessels."
+        },
+        {
+          "number": "d",
+          "text": "Explain “Responsibility Between Vessels” (vessel priority)."
+        },
+        {
+          "number": "e",
+          "text": "Explain the navigation lights required for power-driven and sailing vessels underway. Explain what is required for a vessel under oars. Describe the lighting requirements for paddlecraft. Explain why carrying a sound-producing device, such as a whistle, is important when operating a paddlecraft."
+        },
+        {
+          "number": "f",
+          "text": "Describe the sound signals for maneuvering, warning, and restricted visibility."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Piloting and Navigation",
+      "children": [
+        {
+          "number": "a",
+          "text": "Demonstrate your understanding of latitude and longitude. Using a chart, demonstrate that you can locate your position from given coordinates and determine the coordinates of at least five aids to navigation."
+        },
+        {
+          "number": "b",
+          "text": "Explain the degree system of compass direction. Explain variation and deviation and how they are used to convert between true headings and bearings to compass headings and bearings."
+        },
+        {
+          "number": "c",
+          "text": "Describe three kinds of devices used aboard ship for measuring speed and/or distance traveled and, if possible, demonstrate their use."
+        },
+        {
+          "number": "d",
+          "text": "Explain the 24-hour time system and demonstrate that you can convert between 12- and 24-hour time."
+        },
+        {
+          "number": "e",
+          "text": "Understand Coordinated Universal Time (Greenwich Mean Time or Zulu Time) and zone time. Demonstrate your ability to convert from one to the other for your local area."
+        },
+        {
+          "number": "f",
+          "text": "Make a dead reckoning table of compass and distances (minimum three legs) between two points, plot these on a chart, and determine the final position. Note: Ideally this requirement should be met while underway. If this is not possible, it may be simulated using charts."
+        },
+        {
+          "number": "g",
+          "text": "Discuss how a GPS unit works. Explain possible uses and functions including different screen views. Use a GPS unit to set a waypoint and navigate to the waypoint you have set."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "Practical Deck Seamanship",
+      "children": [
+        {
+          "number": "a",
+          "text": "Name the seven watches and explain bell time."
+        },
+        {
+          "number": "b",
+          "text": "Explain the duties of a lookout and demonstrate how to report objects in view and wind directions with respect to the vessel."
+        },
+        {
+          "number": "c",
+          "text": "Name relative bearings expressed in degrees."
+        },
+        {
+          "number": "d",
+          "text": "While underway, serve as a lookout for two hours total. When boating in a manually propelled craft, boating alone or as a bow paddler for a tandem craft will meet this requirement."
+        },
+        {
+          "number": "e",
+          "text": "Demonstrate the use of wheel or helm commands found in the Sea Scout Manual."
+        },
+        {
+          "number": "f",
+          "text": "Describe the deck log kept aboard your ship’s principal craft. Contribute to a cruise log for three days of cruising (one cruise or a combination of day cruises). Submit the logs to your Skipper. OR Keep a trip log for at least three paddling day trips, recording details of the waterway paddled, listing participants, and details of the paddling trip. Submit the logs to your Skipper."
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "text": "Environment",
+      "children": [
+        {
+          "number": "a",
+          "text": "Discuss with an adult leader the Federal Water Pollution Control Act as related to oil discharges. Explain what a “Discharge of Oil Prohibited” placard is and if applicable find it aboard your ship’s vessels."
+        },
+        {
+          "number": "b",
+          "text": "Explain what aquatic nuisance species are and how you can help stop their spread."
+        },
+        {
+          "number": "c",
+          "text": "Explain how the principles of Leave No Trace can be applied to boating trips."
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "text": "Weather",
+      "children": [
+        {
+          "number": "a",
+          "text": "Read and understand a local weather bulletin. Know how to obtain current marine and weather reports from the National Weather Service in your area by telephone or radio, or online."
+        },
+        {
+          "number": "b",
+          "text": "Find a river in your area and review the forecasted flow levels by using the National Weather Service’s Hydrologic Prediction Service’s map and graphs. Compare forecasted flow levels to average flow levels using the USGS National Water Information System web page."
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "text": "Cruising",
+      "children": [
+        {
+          "number": "a",
+          "text": "Plan and participate in an overnight cruise. If you cannot sleep aboard your vessel, participating in a multi-day trip will meet this requirement."
+        },
+        {
+          "number": "b",
+          "text": "While on the cruise, perform the duties of a helmsman for at least 30 minutes. If underway in a paddlecraft, paddling independently or as a stern paddler/ steersman will meet this requirement."
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "text": "Boating Safety Course",
+      "children": [
+        {
+          "number": "1",
+          "text": "Successfully complete a boating safety course approved by the National Association of State Boating Law Administrators (NASBLA) offered by one of the following agencies: a state boating agency, the United States Power Squadrons, the United States Coast Guard Auxiliary, or other private or military education courses."
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "text": "Service",
+      "children": [
+        {
+          "number": "a",
+          "text": "Log at least eight hours of work on ship equipment, projects, or activities other than ship meetings, parties, dances, or fun events."
+        },
+        {
+          "number": "b",
+          "text": "Participate with your ship for at least eight hours in community service projects."
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "text": "Electives: Complete three Level One Electives.",
+      "choose": 3,
+      "children": [
+        {
+          "number": "a",
+          "text": "America's Boating Club: Be inducted as a member of your local America's Boating Club (US Power Squadrons)."
+        },
+        {
+          "number": "b",
+          "text": "Duty to God: Participate in two appropriate interfaith religious services during ship outings."
+        },
+        {
+          "number": "c",
+          "text": "Engines: Perform routine maintenance on your ship's propulsion system, including filter, spark plug, oil changes, proper fueling procedures and other routine maintenance tasks. Refer to operations manuals or your ship's adult leaders for correct procedures and guidance."
+        },
+        {
+          "number": "d",
+          "text": "Leadership: Attend National Youth Leadership Training (NYLT)."
+        },
+        {
+          "number": "e",
+          "text": "Maritime Tradition: (Boatswain Call) Demonstrate your ability to use a boatswain's pipe by making the following calls-word to be passed, boat call, veer, all hands, pipe down and piping the side."
+        },
+        {
+          "number": "f",
+          "text": "Maritime Tradition: (Maritime History) Describe the highlights of maritime history from the earliest times to the present. Include the evolution of vessel construction and propulsion, important voyages of exploration and development, the origin of maritime traditions, and the achievements of notable maritime leaders in U.S. sea history."
+        },
+        {
+          "number": "g",
+          "text": "NauticEd: Record your time on the water using NauticEd’s online Logbook"
+        },
+        {
+          "number": "h",
+          "text": "Ornamental Ropework: Make a three-strand Turk's head and a three-strand monkey's fist. Using either ornamental knot, make up a heaving line."
+        },
+        {
+          "number": "i",
+          "text": "Paddlecraft: Join the American Canoe Association (ACA) or an ACA Paddle America Club."
+        },
+        {
+          "number": "j",
+          "text": "Racing: Describe the procedures used in yacht racing and the signals used by the race committee to start a race. Serve as a crew member in a race sailed under current International Sailing Federation Rules."
+        },
+        {
+          "number": "k",
+          "text": "Sailing: In a cat-rigged or similar small vessel, demonstrate your ability to sail single-handedly a triangular course (leeward, windward, and reaching marks). Demonstrate beating, reaching, and running. A qualified sailing instructor should observe this requirement."
+        },
+        {
+          "number": "l",
+          "text": "U.S. Coast Guard Auxiliary: Be inducted as a Basic Qualified member of a United States Coast Guard Auxiliary flotilla."
+        },
+        {
+          "number": "m",
+          "text": "Vessels: Teach and lead a crew under oar using a boat pulling at least four oars single- or double-banked. Perform the following maneuvers: get underway, maneuver ahead and back, turn the boat in its own length, dock, and secure."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.seascout.org/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

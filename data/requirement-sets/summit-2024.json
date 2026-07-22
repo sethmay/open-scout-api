@@ -1,0 +1,110 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "summit-2024",
+  "kind": "requirement-set",
+  "subject": "rank:summit",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Summit Rank — Scouting America (Venturing)",
+    "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/summit-award/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Adventure",
+      "children": [
+        {
+          "number": "1",
+          "text": "Participate in at least three additional (for a total of seven) Tier II or Tier III adventures at the crew, district, council, territory, or national level. To earn the Summit Award, a Venturer must have participated in at least one Tier III adventure and served as a leader during one adventure."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Leadership",
+      "children": [
+        {
+          "number": "2",
+          "text": "Complete Scouting America Mentoring Training prior to initiating mentoring relationships."
+        },
+        {
+          "number": "3",
+          "text": "Since earning the Pathfinder Rank, mentor another Venturer in the planning and implementation of a crew, council, territory, or national Venturing activity (see Summit Adventure requirement 1). Work with the youth enough to ensure he or she is ready to lead and has organized the appropriate resources, is prepared for contingencies, and has developed an itinerary, conducted training to support the adventure, and mitigated risk before and during the adventure. Participate in the adventure and provide feedback on how the adventure was conducted."
+        },
+        {
+          "number": "4",
+          "text": "Complete TWO of the following:",
+          "choose": 2,
+          "children": [
+            {
+              "number": "1",
+              "text": "Since earning the Pathfinder Rank, serve actively as your crew president, vice president, secretary, treasurer, guide, historian, den chief, or quartermaster for a period of at least six months.** At the beginning of your term, work with your crew president (or Advisor, if you are the president) to set performance goals for the position. Any number of different positions may be held as long as the total length of service equals at least six months. Holding simultaneous positions does not shorten the required number of months. Positions need not flow from one to the other; there may be gaps in time. Once during your term of office, discuss your successes and challenges with your crew president (or Advisor, if you are the president)."
+            },
+            {
+              "number": "2",
+              "text": "Participate in or serve on staff for leadership training such as National Youth Leadership Training, National Advanced Youth Leadership Experience, Order of the Arrow National Leadership Seminar, Sea Scout SEAL Training, or Wood Badge (for Venturers 18 or older). You may also participate in non-Scouting America leadership training courses such as those delivered by the National Outdoor Leadership School, if approved by your Advisor. This must be a different training course than you completed for Pathfinder Rank requirement 4b or Summit Award requirement 4c."
+            },
+            {
+              "number": "3",
+              "text": "Lead the delivery of Introduction to Leadership Skills for Crews for members of your Venturing crew or another local Venturing crew or for a local district or council training event. After leading the training course, discuss with your crew Advisor how you believe you helped build the skill set of your crew and what you learned by organizing the training course."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Service",
+      "children": [
+        {
+          "number": "5",
+          "text": "Since earning the Pathfinder Rank, plan, develop, and give leadership to others in a service project helpful to a religious institution, school, or community. (The project must benefit an organization other than Scouting America.) Before you start, a project proposal must be approved by the organization benefiting from the effort, your Advisor, and another Venturer designated by your crew leadership."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Personal Growth",
+      "children": [
+        {
+          "number": "6",
+          "text": "Since earning the Pathfinder Rank, complete a structured personal reflection . Use this reflection to prepare for goal setting and as part of your Advisor conference. Explore two of the following realms: “Adventures of Faith”, “Adventures of Self”, or “Adventures of Others”. You may explore one of the realms twice or select from between two different realms."
+        },
+        {
+          "number": "7",
+          "text": "Create a personal code of conduct. This code of conduct should be guided by your explorations in the realms of faith, self, and others."
+        },
+        {
+          "number": "8",
+          "text": "Since earning the Pathfinder Rank, lead an ethical controversy and conflict resolution scenario with members of your Venturing crew. ( Example Vignette )"
+        },
+        {
+          "number": "9",
+          "text": "Participate in an Advisor conference. As a part of this conference, share your code of conduct with your Advisor, and explain how your explorations of faith, self, and others, and your goal-setting exercises, influenced the development of your code."
+        },
+        {
+          "number": "11",
+          "text": "After your Advisor conference, successfully complete a crew board of review ."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/summit-award/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

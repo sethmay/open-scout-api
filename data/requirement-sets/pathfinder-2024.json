@@ -1,0 +1,116 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "pathfinder-2024",
+  "kind": "requirement-set",
+  "subject": "rank:pathfinder",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Pathfinder Rank — Scouting America (Venturing)",
+    "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/pathfinder-rank/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Adventure",
+      "children": [
+        {
+          "number": "1",
+          "text": "Participate in at least two additional (for a total of at least four) Tier II or III adventures at the crew, district, council, territory, or national level. Serve as a leader for one of the adventures."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Leadership",
+      "children": [
+        {
+          "number": "2",
+          "text": "Complete Venturing Project Management Training ."
+        },
+        {
+          "number": "3",
+          "text": "Since earning the Discovery Rank, plan and give leadership to a Tier II or Tier III adventure . Work with a youth mentor to ensure that you have organized the adventure in advance, that you are prepared for contingencies, and that you have prepared the members of your crew to take part. In some cases, you may need to confer with an external consultant to assure the adventure is feasible for your crew. The adventure must take place over at least two consecutive nights. If an event lasts more than four nights, an additional Venturer may share in planning and leading the adventure. If two Venturers plan the adventure, they should work with their mentor to ensure that the workload is divided fairly between the two leaders. At the close of the adventure, lead a reflection with the participants in the activity to determine what was learned and how it helped them to work together as a more effective team. An experienced Venturer should serve as your mentor for the adventure."
+        },
+        {
+          "number": "4",
+          "text": "Complete ONE of the following:",
+          "choose": 1,
+          "children": [
+            {
+              "number": "1",
+              "text": "Since earning the Discovery Rank, serve actively as your crew president, vice president, secretary, treasurer, guide, historian, den chief, or quartermaster for a period of at least six months.** At the beginning of your term, work with your crew president (or Advisor, if you are the president) to set performance goals for the position. Any number of different positions may be held as long as the total length of service equals at least six months. Holding simultaneous positions does not shorten the required number of months. Positions need not flow from one to the other; there may be gaps in time. Once during your term of office, discuss your successes and challenges with your crew president (or Advisor, if you are the president)."
+            },
+            {
+              "number": "2",
+              "text": "Participate in or serve on staff for leadership training such as National Youth Leadership Training, National Advanced Youth Leadership Experience, Order of the Arrow National Leadership Seminar, Sea Scout SEAL Training, or Wood Badge (for Venturers 18 or older). You may also participate in non-BSA leadership training courses such as those delivered by the National Outdoor Leadership School, if approved by your Advisor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Service",
+      "children": [
+        {
+          "number": "5",
+          "text": "Plan, organize, and give leadership to a project designed to sustain and grow your crew. Submit the plan to your crew president (or Advisor, if you are president) and explain how you think it will encourage more young people to join Venturing."
+        },
+        {
+          "number": "6",
+          "text": "Participate in service activities totaling at least 36 hours. This is in addition to the 24 hours of service required to earn the Discovery Rank. Up to half of the service may be delivered personally; the rest must be delivered through crew activities."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Personal Growth",
+      "children": [
+        {
+          "number": "7",
+          "text": "Since earning the Discovery Rank, explore the two realms (“Adventures of Faith”, “Adventures of Self”, or “Adventures of Others”) that you did not explore previously. Based on what you discover, prepare a set of personal reflections or thoughts on the subjects . Use your reflections and what you learned from the process to prepare for fulfilling Personal Growth requirement 9 and for your Pathfinder Rank Advisor conference."
+        },
+        {
+          "number": "8",
+          "text": "Participate in an ethical controversy discussion activity that includes an extension into conflict resolution. (Example Vignettes)"
+        },
+        {
+          "number": "9",
+          "text": "In consultation with your Advisor, establish at least two personal goals and achieve them. The goals should be grounded in the realms you explored in Personal Growth requirement 7."
+        },
+        {
+          "number": "10",
+          "text": "Participate in an Advisor conference. As a part of this conference, discuss with your Advisor the challenges you faced and what you learned in fulfilling Personal Growth requirements 7 and 9.",
+          "children": [
+            {
+              "number": "1",
+              "text": "A Venturer is not required to share the personal reflection associated with “Adventures of Faith” with his or her Advisor or members of a board of review, including the discussion that takes place at the Advisor conference or the board of review."
+            }
+          ]
+        },
+        {
+          "number": "11",
+          "text": "After your Advisor conference, successfully complete a crew board of review ."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/pathfinder-rank/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

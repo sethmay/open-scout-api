@@ -1,0 +1,170 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "arrow-of-light-2024",
+  "kind": "requirement-set",
+  "subject": "rank:arrow-of-light",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Arrow of Light Rank — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/bobcat-aol/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Required Adventures",
+      "children": [
+        {
+          "number": "1",
+          "text": "Bobcat Adventure",
+          "children": [
+            {
+              "number": "1",
+              "text": "Demonstrate the patrol method by choosing a patrol name and electing a patrol leader. Discuss the benefits of using the patrol method."
+            },
+            {
+              "number": "2",
+              "text": "Get to know members of your patrol."
+            },
+            {
+              "number": "3",
+              "text": "Recite the Scout Oath and Scout Law with your patrol."
+            },
+            {
+              "number": "4",
+              "text": "With your patrol create a Code of Conduct."
+            },
+            {
+              "number": "5",
+              "text": "Demonstrate the Scout sign, Scout salute and Scout handshake used by Scouting America.  Show how each are used."
+            },
+            {
+              "number": "6",
+              "text": "Learn the Scouting America slogan and motto."
+            },
+            {
+              "number": "7",
+              "text": "With your patrol, or with your parent/legal guardian, visit a Scouting America troop."
+            },
+            {
+              "number": "8",
+              "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "Personal Fitness"
+        },
+        {
+          "number": "3",
+          "text": "First Aid"
+        },
+        {
+          "number": "4",
+          "text": "Personal Safety"
+        },
+        {
+          "number": "5",
+          "text": "Family & Reverence"
+        },
+        {
+          "number": "6",
+          "text": "Citizenship"
+        },
+        {
+          "number": "7",
+          "text": "Outdoors"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Elective Adventures",
+      "choose": 2,
+      "children": [
+        {
+          "number": "1",
+          "text": "Champions for Nature AOL"
+        },
+        {
+          "number": "2",
+          "text": "Cycling"
+        },
+        {
+          "number": "3",
+          "text": "Engineer"
+        },
+        {
+          "number": "4",
+          "text": "Estimations"
+        },
+        {
+          "number": "5",
+          "text": "Fishing"
+        },
+        {
+          "number": "6",
+          "text": "High Tech Outdoors"
+        },
+        {
+          "number": "7",
+          "text": "Into the Wild"
+        },
+        {
+          "number": "8",
+          "text": "Into the Woods"
+        },
+        {
+          "number": "9",
+          "text": "Knife Safety"
+        },
+        {
+          "number": "10",
+          "text": "Paddle Craft"
+        },
+        {
+          "number": "11",
+          "text": "Race Time AOL"
+        },
+        {
+          "number": "12",
+          "text": "Summertime Fun AOL"
+        },
+        {
+          "number": "13",
+          "text": "Swimming"
+        },
+        {
+          "number": "14",
+          "text": "Archery Arrow of Light"
+        },
+        {
+          "number": "15",
+          "text": "Slingshot"
+        },
+        {
+          "number": "16",
+          "text": "BB Guns"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/bobcat-aol/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}
