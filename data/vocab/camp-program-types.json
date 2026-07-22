@@ -1,0 +1,21 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "camp-program-types",
+  "kind": "vocab",
+  "title": "Camp program types",
+  "description": "Programs and audiences a camp offers (multi-valued on camp.program_types). Distinct from the rank `program` vocabulary (cub_scouts, scouts_bsa, venturing, sea_scouts), which classifies advancement programs, not camps.",
+  "applies_to": ["camp.program_types"],
+  "open": true,
+  "terms": [
+    { "code": "scouts_bsa_resident", "label": "Scouts BSA Resident Camp", "description": "Overnight summer camp programming for Scouts BSA troops." },
+    { "code": "cub_resident", "label": "Cub Scout Resident Camp", "description": "Overnight camp for Cub Scouts, often attended with an adult partner." },
+    { "code": "cub_day", "label": "Cub Scout Day Camp", "description": "Daytime camp programming for Cub Scouts, without overnight stays." },
+    { "code": "webelos", "label": "Webelos Camp", "description": "Camp programming aimed at Webelos and Arrow of Light Cub Scouts." },
+    { "code": "high_adventure", "label": "High Adventure", "description": "Advanced backcountry, aquatics, or expedition programming for older youth." },
+    { "code": "short_term_camping", "label": "Short-Term Camping", "description": "Weekend or primitive camping use by units." },
+    { "code": "venturing", "label": "Venturing", "description": "Camp programming for Venturing crews." },
+    { "code": "sea_scout", "label": "Sea Scout", "description": "Aquatics and sailing programming for Sea Scout ships." },
+    { "code": "family_camping", "label": "Family Camping", "description": "Camping programs open to whole families." },
+    { "code": "training", "label": "Training", "description": "Adult or youth leader training programs." }
+  ]
+}

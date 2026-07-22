@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.19.0 (minor) — 2026-07-21
+
+- `PENDING` Published the camp vocabularies as data, so a consumer can show a human label for every code and fail visibly on codes it does not recognize.
+  - New endpoints `v1/vocab/camp-types.json`, `v1/vocab/camp-program-types.json`, and `v1/vocab/camp-features.json` list every code with a label and a short description.
+  - A validation check now rejects any camp whose type, program, or feature code is missing from its vocabulary, so the published labels can never fall behind the data.
+  - `camp-program-types` is named apart from the rank `program` vocabulary to avoid confusion.
+
 ## 0.18.0 (minor) — 2026-07-21
 
 - `b9334c4` Camps now carry a short, evergreen description, so a site has real copy for camp pages at cutover.

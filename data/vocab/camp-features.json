@@ -1,0 +1,24 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "camp-features",
+  "kind": "vocab",
+  "title": "Camp features",
+  "description": "Facilities and activity offerings present at a camp (multi-valued on camp.features). Seeded from camp-finder.",
+  "applies_to": ["camp.features"],
+  "open": true,
+  "terms": [
+    { "code": "dining_hall", "label": "Dining Hall", "description": "A central building where meals are served." },
+    { "code": "waterfront", "label": "Waterfront", "description": "Lake or river frontage used for aquatics activities." },
+    { "code": "pool", "label": "Swimming Pool", "description": "An on-site swimming pool." },
+    { "code": "shooting_sports", "label": "Shooting Sports", "description": "Ranges for activities such as rifle, shotgun, or archery." },
+    { "code": "climbing", "label": "Climbing", "description": "A climbing tower or wall." },
+    { "code": "horseback", "label": "Horseback Riding", "description": "Horseback riding facilities and program." },
+    { "code": "atv", "label": "ATV Program", "description": "An all-terrain-vehicle riding program." },
+    { "code": "cope", "label": "COPE", "description": "Challenging Outdoor Personal Experience: a ropes and team-challenge course." },
+    { "code": "older_scout_program", "label": "Older-Scout Program", "description": "Dedicated programming for older or more experienced participants." },
+    { "code": "high_adventure_option", "label": "High-Adventure Option", "description": "An optional high-adventure track offered at the camp." },
+    { "code": "stem", "label": "STEM", "description": "Science, technology, engineering, and math programming, including NOVA." },
+    { "code": "scuba", "label": "SCUBA", "description": "Scuba diving instruction and program." },
+    { "code": "mountain_biking", "label": "Mountain Biking", "description": "Mountain biking trails and program." }
+  ]
+}

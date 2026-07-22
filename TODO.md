@@ -55,9 +55,10 @@ reviewed + sequenced below; all additive/backward-compatible under `v1` (minor b
    NOT contain dates/fees/session schedules) + surface in the projection. Do NOT scrub
    camp-finder's contaminated descriptions — regenerate clean, and add a `validate_data` guard
    rejecting 4-digit years / `$` / month names / "session" so evergreen is an enforced gate.
-4. **Vocab-as-data.** Publish `v1/vocab/{camp-features,camp-types,camp-program-types}.json` as
-   `{code,label,description}`. **Namespace** `camp-program-types` distinctly from the rank
-   `program` vocab. (`features` is empty in data today — forward-looking.) API owns the labels.
+4. **Vocab-as-data - DONE (0.19.0).** Published `v1/vocab/{camp-types,camp-program-types,camp-features}.json`
+   as `{code,label,description}` (+ `vocab.schema.json`, listed in `meta.vocab`). `camp-program-types` is
+   namespaced apart from the rank `program` vocab. `validate_data` cross-checks that every code used in camp
+   data is defined, so the labels fail visibly on drift. `features` is populated (13 codes) from the import.
 5. **Later / consumer-side.** #8 populate `parent`/reservation grouping (schema ready; data
    sourcing) — after cutover. #7 TS codegen is the **site's** task (json-schema-to-typescript on
    `published-current.schema.json`); the API only owes the additive-only stability promise (1a).

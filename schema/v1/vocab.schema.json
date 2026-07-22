@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "title": "Controlled vocabulary",
+  "description": "One file per open vocabulary used by an entity field: data/vocab/<id>.json, published verbatim at v1/vocab/<id>.json. Gives every code a human label and description so a consumer can render any value it encounters and fail visibly (not silently) on a code it does not recognize. `applies_to` names the entity field(s) this vocabulary governs; `open: true` means new codes may appear over time, so consumers should tolerate unknowns. tools/validate_data.py checks that every code actually used in the data appears here.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "vocab" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "applies_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Entity field(s) this vocabulary governs, e.g. 'camp.program_types'."
+    },
+    "open": {
+      "type": "boolean",
+      "default": true,
+      "description": "true = new codes may be added over time; consumers should tolerate unknown codes."
+    },
+    "terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": { "$ref": "common.schema.json#/$defs/VocabCode" },
+          "label": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 }
+        },
+        "required": ["code", "label", "description"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["id", "kind", "title", "applies_to", "terms"],
+  "additionalProperties": false
+}

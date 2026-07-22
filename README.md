@@ -53,6 +53,7 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | [`v1/awards/index.json`](https://sethmay.github.io/open-scout-api/v1/awards/index.json) · `v1/awards/{id}.json` | one award: category, audience, square-knot + insignia numbers |
 | [`v1/current/oa-lodges.json`](https://sethmay.github.io/open-scout-api/v1/current/oa-lodges.json) | flat list of current OA lodges (by council) |
 | [`v1/oa-lodges/index.json`](https://sethmay.github.io/open-scout-api/v1/oa-lodges/index.json) · `v1/oa-lodges/{id}.json` | one OA lodge: chartering council, section, HQ |
+| [`v1/vocab/camp-program-types.json`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-program-types.json) · `camp-types` · `camp-features` | controlled vocabularies: every code with a human `label` + `description` |
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
 
 ```bash

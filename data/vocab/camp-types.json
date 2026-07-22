@@ -1,0 +1,18 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "camp-types",
+  "kind": "vocab",
+  "title": "Camp types",
+  "description": "Primary structural classification of a camp property (single-valued on camp.camp_type). Multi-use is expressed through camp-program-types, not here.",
+  "applies_to": ["camp.camp_type"],
+  "open": true,
+  "terms": [
+    { "code": "reservation", "label": "Reservation", "description": "A multi-camp property that contains several distinct camps." },
+    { "code": "resident_camp", "label": "Resident Camp", "description": "An overnight camp where units stay for multi-night sessions." },
+    { "code": "high_adventure_base", "label": "High-Adventure Base", "description": "A base offering advanced backcountry, aquatics, or expedition programs, usually for older participants." },
+    { "code": "short_term_camp", "label": "Short-Term Camp", "description": "A property used mainly for weekend or primitive troop camping." },
+    { "code": "day_camp", "label": "Day Camp", "description": "A camp attended during the day, without overnight stays." },
+    { "code": "program_center", "label": "Program Center", "description": "A facility for training, meetings, or program activities rather than resident camping." },
+    { "code": "other", "label": "Other", "description": "A camp property that does not fit the other categories." }
+  ]
+}
