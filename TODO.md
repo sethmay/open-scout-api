@@ -88,12 +88,16 @@ by the pipeline (as the Pipsico fix was).
   "Cub day" as separately described programs; dates/fees stay out by design). A `programs` array on a
   camp — or a first-class reservation entity with child camps and programs — would restore it. Ties
   into modeling a reservation as its own entity and the co-located `reservation` groups now in-data.
-- **True sub-camp coordinates (reservation names DONE, 0.25.0).** 17 of 19 `reservation` groups are
-  now named via the curated `RESERVATIONS` map in `import_camps.py`. Remaining: geocode each co-located
-  camp to its own point so one-pin clustering can become distinct, correctly-placed pins. Two groups
-  stay unnamed — the AK Chilkoot/Denali pair is a coordinate error (two far-apart bases share a bad
-  point; fixing the coord un-groups them), and the WY Buffalo Bill / Yellowstone Anglers pair has no
-  distinct reservation name.
+- **True sub-camp coordinates (reservation names DONE 0.25.0; AK coord fixed 0.25.2).** 17 of 18
+  `reservation` groups are named; only the WY Camp Buffalo Bill / Yellowstone Anglers pair is unnamed
+  (no distinct reservation name). Remaining coord work: geocode co-located camps to their own points so
+  one-pin clustering can become distinct, correctly-placed pins. (The AK Chilkoot/Denali coordinate
+  error is fixed — Chilkoot moved to Haines, un-grouping the pair.)
+- **Investigate `wi-adventure-camp` (flagged in the 0.25.2 sweep).** Generic scraped name "Adventure
+  Camp"; coordinate sits on Tomahawk Scout Reservation's point (Birchwood); council `twin-valley` while
+  the real Camp Decorah is `wi-camp-decorah` under `gateway-area` — a likely mislocated / cross-council
+  duplicate. Left unchanged pending council-identity clarification. (`oh-cub-world` and
+  `va-cub-and-webelos-adventure-camp` were reviewed and kept — generic-looking, but the councils' real names.)
 - **Camp elevation + average summer temperatures (camp-finder dev feature request).** Add per-camp
   `elevation` (DEM lookup on lat/lon) and typical summer-temperature normals (climate source keyed
   on location) so apps can filter/sort on altitude and heat. New optional `CampVersion` fields,

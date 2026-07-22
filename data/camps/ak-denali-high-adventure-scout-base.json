@@ -17,7 +17,7 @@
       "state": "AK",
       "lat": 62.5391,
       "lon": -150.1603,
-      "geo_precision": "approximate",
+      "geo_precision": "exact",
       "website": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/",
       "program_types": [
         "scouts_bsa_resident"
@@ -42,10 +42,7 @@
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       },
-      "reservation": {
-        "id": "ak-chilkoot-high-adventure-base-reservation",
-        "name": null
-      }
+      "reservation": null
     }
   ],
   "notes": null

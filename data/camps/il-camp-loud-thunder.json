@@ -1,12 +1,12 @@
 {
   "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
-  "id": "il-scouts-bsa-resident-camp-at-loud-thunder",
+  "id": "il-camp-loud-thunder",
   "kind": "camp",
   "versions": [
     {
       "valid_from": null,
       "valid_to": null,
-      "name": "Scouts BSA Resident Camp at Loud Thunder",
+      "name": "Camp Loud Thunder",
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:illowa",
@@ -36,12 +36,15 @@
             "url": "https://scoutingevent.com/133-ScoutsBSAResidentCamp"
           }
         ],
-        "method": "imported",
-        "verified_at": "2026-07-19",
+        "method": "curated",
+        "verified_at": "2026-07-22",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+        "notes": "Name corrected 2026-07-22 (community/data-quality review): 'Scouts BSA Resident Camp at Loud Thunder' was a scraped registration-event title; renamed to the property name, verified against the council's camp listing. Prior id 'il-scouts-bsa-resident-camp-at-loud-thunder' retired (resolves via aliases.json). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+      },
+      "merged_from": [
+        "il-scouts-bsa-resident-camp-at-loud-thunder"
+      ]
     }
   ],
   "notes": null
