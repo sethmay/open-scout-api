@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.14.0 (minor) — 2026-07-21
 
-- `PENDING` Add **council historical lineage**. Councils grew 235 → **419** (229 current +
+- `f9f6e33` Add **council historical lineage**. Councils grew 235 → **419** (229 current +
   190 historical) and council events 7 → **119**. Extracted as facts (`method:
   llm_extraction`, conf 0.7–0.8) from each current council's English Wikipedia article and
   reconciled by rule: **141** founding dates (earliest-version `valid_from`), **57** prior-name
