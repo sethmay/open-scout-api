@@ -17,7 +17,7 @@
       "state": "NY",
       "lat": 44.2675709,
       "lon": -74.6348705,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/397-Massawepie",
       "program_types": [
         "scouts_bsa_resident"

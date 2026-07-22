@@ -17,7 +17,7 @@
       "state": "AK",
       "lat": 62.5391,
       "lon": -150.1603,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/",
       "program_types": [
         "scouts_bsa_resident"

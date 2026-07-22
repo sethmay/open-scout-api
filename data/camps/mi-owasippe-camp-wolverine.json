@@ -17,7 +17,7 @@
       "state": "MI",
       "lat": 43.43641,
       "lon": -86.237089,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/456-101134",
       "program_types": [
         "scouts_bsa_resident"

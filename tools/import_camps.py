@@ -237,6 +237,22 @@ def main() -> None:
     for child, base in keep.items():   # a kept sub-camp whose base merged must follow to the survivor
         by_id[child]["parent"] = f"camp:{terminal(base)}"
 
+    # A coordinate shared by >=2 surviving camps is a reservation centroid, not an exact fix for
+    # any one of them; relabel it 'approximate' so consumers can honestly soft-plot / cluster the
+    # pins (Type-A duplicates are already merged, so co-located survivors are distinct camps).
+    coord_groups: dict[tuple, list] = {}
+    for cid, cref, name, v in built:
+        if cid in merge_edge or v.get("lat") is None:
+            continue
+        coord_groups.setdefault((round(v["lat"], 5), round(v["lon"], 5)), []).append(v)
+    stacked = 0
+    for vs_ in coord_groups.values():
+        if len(vs_) > 1:
+            for v in vs_:
+                if v.get("geo_precision") == "exact":
+                    v["geo_precision"] = "approximate"
+                    stacked += 1
+
     written = 0
     for cid, cref, name, v in built:
         if cid in merge_edge:
@@ -253,7 +269,8 @@ def main() -> None:
         raise SystemExit(f"merge dropped listings with no surviving alias: {sorted(lost)}")
     n_parent = sum(1 for v in by_id.values() if v.get("parent"))
     print(f"camps: {written} written; {len(merge_edge)} program-variants merged into base; "
-          f"{n_parent} reservation sub-camps (distinct location)")
+          f"{n_parent} reservation sub-camps (distinct location); "
+          f"{stacked} shared-coordinate camps relabeled approximate")
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@
       "state": "MD",
       "lat": 39.5584,
       "lon": -78.625,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://lhcscouting.org/scouts-work/",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,7 +17,7 @@
       "state": "AK",
       "lat": 62.5391,
       "lon": -150.1603,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://alaskascoutingadventures.org/chilkoot-base/",
       "program_types": [
         "high_adventure"

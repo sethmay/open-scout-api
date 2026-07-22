@@ -17,7 +17,7 @@
       "state": "VA",
       "lat": 37.6839671,
       "lon": -77.8675371,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://cubadventurecamp.net/summer-camp/",
       "program_types": [
         "cub_resident"
