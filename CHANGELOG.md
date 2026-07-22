@@ -3,65 +3,47 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.16.1 (patch) — 2026-07-21
+
+- `PENDING` Rewrote the release notes to be easier to read.
+  - Each release's notes (the matching CHANGELOG entry) now lead with what changed and why it matters, in plain language and point form.
+  - Recorded that style in `CLAUDE.md` so future notes stay consistent.
+  - Notes only; no data or code changed.
+
 ## 0.16.0 (minor) — 2026-07-21
 
-- `54c610a` Enrich the published **`current/*.json` projection contract** for downstream
-  consumers (camp-finder cutover, tier 1). Every current item now carries `verified_at` +
-  `method` (not just `confidence`) — powers freshness/staleness UX. `current/camps.json`
-  additionally inlines its council (`council_name`, `council_website`, `council_number`,
-  resolved against the canonical council so defunct-council camps still resolve; the 4
-  national-base camps with no council get nulls) and a guaranteed resolved `url` (camp site →
-  else council site) so consumers need zero cross-file joins. Documented the projection as an
-  **additive-only `v1` contract** (README + schema `description`) — also covers the
-  codegen-from-schema request. Pure `build.py` + `published-current.schema.json`; additive and
-  backward-compatible. 1361 entities validate.
+- `54c610a` Richer camp data for sites building on this API: the published "current" camp list now stands on its own, with no extra lookups.
+  - Every current record now shows when it was last verified, and how, so an app can flag listings that are due for a fresh check.
+  - Each camp carries its council's name, website, and number, plus a ready-to-use link to the official page.
+  - The "current" files are a stable promise for consumers: new fields may be added, but existing ones are never renamed or removed.
 
 ## 0.15.0 (minor) — 2026-07-21
 
-- `9e353b8` Add **Cub Scout, Venturing, and Sea Scout advancement ranks** — completing the
-  rank vertical across every BSA program. Ranks grew 7 → **21** (6 Cub: Lion, Tiger, Wolf,
-  Bear, Webelos, Arrow of Light; 4 Venturing: Venturing, Discovery, Pathfinder, Summit; 4 Sea
-  Scout: Apprentice, Ordinary, Able, Quartermaster), each with a current `requirement-set`
-  (requirement-sets 174 → **188**; 579 requirement-text nodes). Structured from OFFICIAL
-  sources — scouting.org Cub adventure + Venturing rank pages and the official 2026 Sea Scout
-  rank PDFs (Venturing rank via usscouts.org) — with every requirement `text` verified verbatim
-  (whitespace-insensitive substring) against its source before baking; tree structure organized
-  with LLM assistance (`method: scraped`, conf 0.9). Cub ranks model required Adventures (Bobcat
-  folded in with its sub-requirements) + elective Adventures (`choose`). Requirement text ©
-  Scouting America (`text_rights`). New `seed_program_ranks.py` + `seed_program_rank_requirements.py`
-  + committed `tools/program_rank_requirements.json`. 1361 entities validate.
+- `9e353b8` Advancement ranks now cover every Scouting America program, not just Scouts BSA. The rank list grew from 7 to 21.
+  - Added 6 Cub Scout ranks (Lion, Tiger, Wolf, Bear, Webelos, Arrow of Light), 4 Venturing ranks (Venturing, Discovery, Pathfinder, Summit), and 4 Sea Scout ranks (Apprentice, Ordinary, Able, Quartermaster).
+  - Each new rank ships its current requirements, so the requirement-set count grew from 174 to 188.
+  - Requirements come from official sources (scouting.org pages and the 2026 Sea Scout PDFs), and every line was checked word for word against its source. Requirement text remains © Scouting America.
 
 ## 0.14.0 (minor) — 2026-07-21
 
-- `f9f6e33` Add **council historical lineage**. Councils grew 235 → **419** (229 current +
-  190 historical) and council events 7 → **119**. Extracted as facts (`method:
-  llm_extraction`, conf 0.7–0.8) from each current council's English Wikipedia article and
-  reconciled by rule: **141** founding dates (earliest-version `valid_from`), **57** prior-name
-  rename chains (dated `versions`), **112** new merger/absorption events, **184** named
-  predecessor councils added as defunct (retired) entities, and `states_served` filled for
-  **208** councils. bsa-number continuity decides rename-vs-merge; a predecessor whose slug
-  matches a still-live council is skipped (never retired) and logged; each predecessor is
-  retired once. Facts only — no article prose is reproduced. New `seed_council_history.py` +
-  committed `tools/council_history_facts.json`, layered idempotently onto the existing council
-  files. 1347 entities validate.
+- `f9f6e33` Councils now carry their history, not just a current snapshot. The council list grew from 235 to 419 (229 current, 190 historical).
+  - Added founding dates for 141 councils and former-name history for 57.
+  - Added 184 predecessor councils that merged or closed over the years, with 112 merger and absorption events so you can trace how today's councils came to be.
+  - History is drawn from each council's Wikipedia article and cross-checked by council number. Facts only; no article text is copied.
 
 ## 0.13.0 (minor) — 2026-07-21
 
-- `970ea2c` Add the Order of the Arrow lodges dataset: 238 `oa-lodge` entities from the
-  official OA lodge locator feed (oa-bsa.org), each linked to its chartering `council`
-  (238/238) with OA section/region, HQ city/state + coordinates, and website. Lodge officer
-  names and contact emails from the feed are excluded as PII. New `oa-lodge` schema +
-  `CurrentOALodge` published contract; wired through stamp_schema / validate_data / build /
-  build_sqlite. 1163 entities validate.
+- `970ea2c` Added Order of the Arrow lodges: 238 lodges from the official OA lodge locator.
+  - Each lodge links to the council that charters it, with its OA section and region, headquarters city and state, map coordinates, and website.
+  - Lodge officer names and contact emails are left out on purpose to protect youth privacy.
 
 ## 0.12.0 (minor) — 2026-07-21
 
-- `f0a5f29` Release automation + durability: `tools/build_sqlite.py` compiles the data into a
-  queryable SQLite artifact (typed tables mirroring the `current` projections + full JSON per
-  row for `json_extract`); `.github/workflows/release.yml` publishes a GitHub Release (JSON
-  tarball + SQLite) on any `v*` tag; created `v*` git tags for all shipped versions at their
-  CHANGELOG shas; added `.zenodo.json` for DOI archiving; documented jsDelivr pinning + SQLite
-  in the README. No data content changed.
+- `f0a5f29` Made the data easy to download and cite, and set up automatic releases.
+  - Every release now publishes a downloadable bundle: the full dataset as JSON, plus a ready-to-query SQLite database.
+  - Pushing a version tag now builds and publishes that release on its own.
+  - Added Zenodo details for a citable archive and documented CDN pinning in the README.
+  - No data changed in this release.
 
 ## 0.11.0 (minor) — 2026-07-21
 
