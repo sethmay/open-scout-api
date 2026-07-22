@@ -18,6 +18,7 @@
       "lat": 34.5268,
       "lon": -85.6191,
       "geo_precision": "exact",
+      "elevation_ft": 1670,
       "website": "https://1bsa.org/summer-camp-at-camp-comer/",
       "program_types": [
         "scouts_bsa_resident"

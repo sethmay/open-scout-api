@@ -18,6 +18,7 @@
       "lat": 43.652178,
       "lon": -94.461083,
       "geo_precision": "approximate",
+      "elevation_ft": 1190,
       "website": "https://scoutingevent.com/283-CubScoutResidentCamp",
       "program_types": [
         "cub_resident"

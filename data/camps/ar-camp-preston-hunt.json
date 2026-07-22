@@ -18,6 +18,7 @@
       "lat": 33.413807,
       "lon": -93.955656,
       "geo_precision": "exact",
+      "elevation_ft": 490,
       "website": "https://scoutingevent.com/584-Cubsummer",
       "program_types": [
         "cub_resident"

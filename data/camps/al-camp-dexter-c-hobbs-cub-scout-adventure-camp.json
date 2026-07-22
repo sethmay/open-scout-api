@@ -18,6 +18,7 @@
       "lat": 33.1995092,
       "lon": -85.381146,
       "geo_precision": "approximate",
+      "elevation_ft": 1020,
       "website": "https://www.tukabatcheebsa.org/shop",
       "program_types": [
         "cub_resident"

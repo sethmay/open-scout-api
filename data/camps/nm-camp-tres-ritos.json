@@ -18,6 +18,7 @@
       "lat": 36.194085,
       "lon": -105.677522,
       "geo_precision": "approximate",
+      "elevation_ft": 7450,
       "website": "https://www.spccamps.org/tres-ritos",
       "program_types": [
         "scouts_bsa_resident"

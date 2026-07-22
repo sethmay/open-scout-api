@@ -92,6 +92,11 @@
           "default": null,
           "description": "Confidence of lat/lon: 'exact' = camp-specific source point inside its state box; 'approximate' = city or state-centroid backfill (tools/geocode_camps.py); null = could not be placed. Consumers should soft-plot or bucket 'approximate' points."
         },
+        "elevation_ft": {
+          "type": ["integer", "null"],
+          "default": null,
+          "description": "Ground elevation at lat/lon in feet above sea level (Copernicus 90m DEM via open-meteo, tools/elevation.py), rounded to the nearest 10 ft. Inherits geo_precision: for an 'approximate' point this is the city/reservation-centroid elevation, not the camp's exact ground. null when lat/lon is null."
+        },
         "website": {
           "type": ["string", "null"],
           "format": "uri",

@@ -18,6 +18,7 @@
       "lat": 41.4574,
       "lon": -80.0037,
       "geo_precision": "exact",
+      "elevation_ft": 1130,
       "website": "https://www.fccscouting.org/custaloga-town-scout-reservation/",
       "program_types": [
         "scouts_bsa_resident",

@@ -18,6 +18,7 @@
       "lat": 30.86,
       "lon": -90.9689,
       "geo_precision": "exact",
+      "elevation_ft": 250,
       "website": "https://www.istroumascouting.org/AvondaleSummerCamp22",
       "program_types": [
         "scouts_bsa_resident"

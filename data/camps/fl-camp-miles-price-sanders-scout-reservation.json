@@ -18,6 +18,7 @@
       "lat": 26.9275,
       "lon": -81.815,
       "geo_precision": "exact",
+      "elevation_ft": 60,
       "website": "https://www.swflcouncilbsa.org/camping/council-camps-/price-sanders-scout-reservation/76507",
       "program_types": [
         "scouts_bsa_resident"

@@ -18,6 +18,7 @@
       "lat": 38.0,
       "lon": -79.45,
       "geo_precision": "approximate",
+      "elevation_ft": 1630,
       "website": "https://scoutingevent.com/599-brsr26",
       "program_types": [
         "high_adventure"

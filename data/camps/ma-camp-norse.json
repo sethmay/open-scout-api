@@ -18,6 +18,7 @@
       "lat": 41.944402105916,
       "lon": -70.742925413311,
       "geo_precision": "exact",
+      "elevation_ft": 170,
       "website": "https://scoutingevent.com/546-98625",
       "program_types": [
         "cub_day"

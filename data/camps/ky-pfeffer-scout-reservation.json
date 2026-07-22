@@ -18,6 +18,7 @@
       "lat": 36.822430051936,
       "lon": -88.183141225673,
       "geo_precision": "exact",
+      "elevation_ft": 490,
       "website": "https://lhcbsa.org/pfeffer-scout-reservation/",
       "program_types": [
         "scouts_bsa_resident"

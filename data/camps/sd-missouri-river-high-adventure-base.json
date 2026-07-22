@@ -18,6 +18,7 @@
       "lat": 44.15,
       "lon": -100.25,
       "geo_precision": "approximate",
+      "elevation_ft": 1900,
       "website": "https://www.siouxcouncil.org/mrhabinfo",
       "program_types": [
         "high_adventure"

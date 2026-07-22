@@ -18,6 +18,7 @@
       "lat": 34.673132,
       "lon": -86.033877,
       "geo_precision": "approximate",
+      "elevation_ft": 650,
       "website": "https://1bsa.org/camp-jackson/",
       "program_types": [
         "scouts_bsa_resident"

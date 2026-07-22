@@ -18,6 +18,7 @@
       "lat": 46.129469,
       "lon": -112.953131,
       "geo_precision": "approximate",
+      "elevation_ft": 5280,
       "website": "https://scoutingmontana.org/camps/arcola/",
       "program_types": [
         "high_adventure"

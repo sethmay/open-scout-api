@@ -18,6 +18,7 @@
       "lat": 36.354627,
       "lon": -79.374148,
       "geo_precision": "exact",
+      "elevation_ft": 750,
       "website": "https://scoutingevent.com/070-summercamp2026",
       "program_types": [
         "scouts_bsa_resident"

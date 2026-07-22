@@ -18,6 +18,7 @@
       "lat": 48.191772,
       "lon": -112.500531,
       "geo_precision": "approximate",
+      "elevation_ft": 4120,
       "website": "https://scoutingmontana.org/camps/high-adventure/",
       "program_types": [
         "high_adventure"

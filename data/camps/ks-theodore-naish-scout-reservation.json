@@ -18,6 +18,7 @@
       "lat": 39.0767158,
       "lon": -94.8517614,
       "geo_precision": "exact",
+      "elevation_ft": 940,
       "website": "https://www.hoac-bsa.org/naish",
       "program_types": [
         "scouts_bsa_resident",

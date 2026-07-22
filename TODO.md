@@ -98,11 +98,11 @@ by the pipeline (as the Pipsico fix was).
   (Northern Star's camp, Birchwood WI) — the same physical property as `wi-tomahawk-scout-camp`, so it
   was merged in (a guest-council session is not a distinct physical camp). (`oh-cub-world` and
   `va-cub-and-webelos-adventure-camp` were reviewed and kept — generic-looking, but the councils' real names.)
-- **Camp elevation + average summer temperatures (camp-finder dev feature request).** Add per-camp
-  `elevation` (DEM lookup on lat/lon) and typical summer-temperature normals (climate source keyed
-  on location) so apps can filter/sort on altitude and heat. New optional `CampVersion` fields,
-  derived once and committed like coordinates; keep them off the transitory line (normals, not a
-  live forecast). Note `geo_precision: approximate` camps yield only reservation/city-level values.
+- **Average summer temperatures (camp-finder dev feature request; elevation DONE 0.26.0).** Add per-camp
+  typical summer-temperature normals (climate source keyed on location) so apps can filter/sort on heat.
+  A new optional `CampVersion` field, derived once and committed; keep it off the transitory line
+  (normals, not a live forecast). Note `geo_precision: approximate` camps yield only city/reservation-level
+  values. (`elevation_ft` shipped in 0.26.0 via `tools/elevation.py`.)
 
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*

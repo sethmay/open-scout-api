@@ -18,6 +18,7 @@
       "lat": 41.77465,
       "lon": -112.094952,
       "geo_precision": "approximate",
+      "elevation_ft": 4430,
       "website": "https://www.utahscouts.org/fife",
       "program_types": [
         "cub_day"

@@ -18,6 +18,7 @@
       "lat": 35.432501473301,
       "lon": -85.862878340314,
       "geo_precision": "exact",
+      "elevation_ft": 1990,
       "website": "https://www.cherokeeareabsa.com/skymont",
       "program_types": [
         "scouts_bsa_resident"

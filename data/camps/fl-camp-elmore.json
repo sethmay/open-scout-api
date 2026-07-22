@@ -18,6 +18,7 @@
       "lat": 26.0777,
       "lon": -80.3424,
       "geo_precision": "exact",
+      "elevation_ft": 10,
       "website": "https://sfcscouting.org/camps/camp-elmore/",
       "program_types": [
         "cub_day"

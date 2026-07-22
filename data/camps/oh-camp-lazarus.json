@@ -18,6 +18,7 @@
       "lat": 40.2331,
       "lon": -83.0454,
       "geo_precision": "exact",
+      "elevation_ft": 960,
       "website": "https://skcscouts.org/camps/summercamps/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

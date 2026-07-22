@@ -18,6 +18,7 @@
       "lat": 33.615861,
       "lon": -117.9136662,
       "geo_precision": "exact",
+      "elevation_ft": 50,
       "website": "https://www.newportseabase.org/summer-camp-youth-sailing-boating-kayaking-fishing-aquatics-stem-merit-badges-activities",
       "program_types": [
         "high_adventure"

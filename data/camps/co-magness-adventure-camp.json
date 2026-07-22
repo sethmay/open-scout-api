@@ -18,6 +18,7 @@
       "lat": 39.313882,
       "lon": -104.086897,
       "geo_precision": "approximate",
+      "elevation_ft": 5920,
       "website": "https://scoutingcolorado.org/programs/camps/mcneil-scout-ranch/",
       "program_types": [
         "cub_resident"

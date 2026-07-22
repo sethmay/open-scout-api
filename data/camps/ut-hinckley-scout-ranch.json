@@ -18,6 +18,7 @@
       "lat": 39.5,
       "lon": -111.5,
       "geo_precision": "approximate",
+      "elevation_ft": 5730,
       "website": "https://www.saltlakescouts.org/hinckley/",
       "program_types": [
         "scouts_bsa_resident"

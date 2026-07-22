@@ -18,6 +18,7 @@
       "lat": 42.5318502,
       "lon": -78.1189263,
       "geo_precision": "exact",
+      "elevation_ft": 1570,
       "website": "https://scoutingevent.com/375-samwoodcubadventure26",
       "program_types": [
         "cub_resident"

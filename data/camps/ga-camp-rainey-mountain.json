@@ -18,6 +18,7 @@
       "lat": 34.8653,
       "lon": -83.3429,
       "geo_precision": "exact",
+      "elevation_ft": 1670,
       "website": "https://www.nega-bsa.org/campraineymountain",
       "program_types": [
         "scouts_bsa_resident"

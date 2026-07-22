@@ -18,6 +18,7 @@
       "lat": 32.5309159,
       "lon": -85.0021621,
       "geo_precision": "exact",
+      "elevation_ft": 440,
       "website": "https://1bsa.org/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

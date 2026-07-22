@@ -18,6 +18,7 @@
       "lat": 39.998002,
       "lon": -79.041553,
       "geo_precision": "approximate",
+      "elevation_ft": 2310,
       "website": "https://wfbsa.org/camping/camp-buck-run/",
       "program_types": [
         "cub_resident"

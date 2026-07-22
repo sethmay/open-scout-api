@@ -18,6 +18,7 @@
       "lat": 61.427217832452,
       "lon": -149.407162629386,
       "geo_precision": "exact",
+      "elevation_ft": 350,
       "website": "https://scoutingalaska.org/camping/camp-gorsuch/",
       "program_types": [
         "scouts_bsa_resident",

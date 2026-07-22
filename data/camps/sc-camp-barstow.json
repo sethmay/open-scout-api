@@ -18,6 +18,7 @@
       "lat": 34.06423868235,
       "lon": -81.59891409993,
       "geo_precision": "exact",
+      "elevation_ft": 430,
       "website": "https://indianwaters.org/camps/barstow/",
       "program_types": [
         "scouts_bsa_resident"

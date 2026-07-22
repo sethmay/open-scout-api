@@ -18,6 +18,7 @@
       "lat": 42.608033,
       "lon": -88.302595,
       "geo_precision": "exact",
+      "elevation_ft": 870,
       "website": "https://www.threeharborsscouting.org/camping/cub-scout-summer-camp-2026/76668",
       "program_types": [
         "cub_day",

@@ -18,6 +18,7 @@
       "lat": 47.5977773,
       "lon": -116.7710295,
       "geo_precision": "exact",
+      "elevation_ft": 2410,
       "website": "https://www.nwscouts.org/",
       "program_types": [
         "high_adventure"

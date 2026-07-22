@@ -18,6 +18,7 @@
       "lat": 34.40667009891,
       "lon": -111.374455715094,
       "geo_precision": "exact",
+      "elevation_ft": 5580,
       "website": "https://www.campgeronimo.org/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

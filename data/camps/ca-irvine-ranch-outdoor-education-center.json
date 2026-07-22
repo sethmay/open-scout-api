@@ -18,6 +18,7 @@
       "lat": 33.750631,
       "lon": -117.872231,
       "geo_precision": "approximate",
+      "elevation_ft": 130,
       "website": "https://ocbsa.org/summercamp/",
       "program_types": [
         "cub_day"

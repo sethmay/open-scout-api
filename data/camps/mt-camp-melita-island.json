@@ -18,6 +18,7 @@
       "lat": 47.790483,
       "lon": -114.285486,
       "geo_precision": "approximate",
+      "elevation_ft": 3180,
       "website": "https://scoutingmontana.org/camps/melita-island/",
       "program_types": [
         "scouts_bsa_resident"

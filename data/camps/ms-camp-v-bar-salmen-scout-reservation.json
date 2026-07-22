@@ -18,6 +18,7 @@
       "lat": 30.782134,
       "lon": -89.138104,
       "geo_precision": "approximate",
+      "elevation_ft": 140,
       "website": "https://www.bsa-selacouncil.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

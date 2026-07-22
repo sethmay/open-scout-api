@@ -18,6 +18,7 @@
       "lat": 44.502149,
       "lon": -92.9745538,
       "geo_precision": "exact",
+      "elevation_ft": 880,
       "website": "https://camp.northernstar.org/phillippo-scout-reservation",
       "program_types": [
         "cub_resident"
