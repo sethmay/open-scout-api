@@ -59,9 +59,14 @@ reviewed + sequenced below; all additive/backward-compatible under `v1` (minor b
    as `{code,label,description}` (+ `vocab.schema.json`, listed in `meta.vocab`). `camp-program-types` is
    namespaced apart from the rank `program` vocab. `validate_data` cross-checks that every code used in camp
    data is defined, so the labels fail visibly on drift. `features` is populated (13 codes) from the import.
-5. **Later / consumer-side.** #8 populate `parent`/reservation grouping (schema ready; data
-   sourcing) — after cutover. #7 TS codegen is the **site's** task (json-schema-to-typescript on
-   `published-current.schema.json`); the API only owes the additive-only stability promise (1a).
+5. **Reservation grouping - DONE (0.20.0).** Populated the camp `parent` ref on 29 sub-camps
+   (derived deterministically from the camp set: slug-prefix or "... at X" name match within a
+   council; no external data), surfaced in `current/camps.json`. #7 (TS codegen) is the site's
+   task, satisfied API-side by the additive-only `v1` stability promise (step 1a).
+
+**Camp-finder cutover: all API-side requests delivered (steps 1-5, v0.16.0-v0.20.0).** Remaining
+is the site's own cutover work + the optional deeper follow-ups (Cub adventure-level requirements,
+reservation modeling as its own `camp_type`, historical "lost camps").
 
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*

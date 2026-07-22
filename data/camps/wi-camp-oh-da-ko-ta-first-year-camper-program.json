@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:three-harbors",
-      "parent": null,
+      "parent": "camp:wi-camp-oh-da-ko-ta",
       "operating_status": "active",
       "address": "3363 Dyer Lake Road",
       "city": "Burlington",

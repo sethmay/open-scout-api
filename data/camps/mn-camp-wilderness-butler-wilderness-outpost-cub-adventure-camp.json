@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:northern-lights",
-      "parent": null,
+      "parent": "camp:mn-camp-wilderness",
       "operating_status": "active",
       "address": "29984 Journey Trail",
       "city": "Park Rapids",

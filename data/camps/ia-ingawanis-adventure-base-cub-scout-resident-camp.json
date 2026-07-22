@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:winnebago",
-      "parent": null,
+      "parent": "camp:ia-ingawanis-adventure-base",
       "operating_status": "active",
       "address": null,
       "city": "Waverly",

@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:pacific-crest",
-      "parent": null,
+      "parent": "camp:or-camp-mcloughlin",
       "operating_status": "active",
       "address": "OR-140",
       "city": "Klamath Falls",

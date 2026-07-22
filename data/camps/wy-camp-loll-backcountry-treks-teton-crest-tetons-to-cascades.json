@@ -10,7 +10,7 @@
       "camp_type": "high_adventure_base",
       "operator": "council",
       "council": "council:crossroads-of-the-west",
-      "parent": null,
+      "parent": "camp:wy-camp-loll",
       "operating_status": "active",
       "address": null,
       "city": null,

@@ -73,6 +73,7 @@
         "camp_type": { "type": "string" },
         "operator": { "enum": ["council", "national", "other", "unknown"] },
         "council": { "type": ["string", "null"], "pattern": "^council:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+        "parent": { "type": ["string", "null"], "pattern": "^camp:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
         "state": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
         "city": { "type": ["string", "null"] },
         "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
@@ -88,7 +89,7 @@
         "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "camp_type", "operator", "council", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "website", "url", "summary", "program_types", "verified_at", "method", "confidence"],
+      "required": ["id", "name", "camp_type", "operator", "council", "parent", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "website", "url", "summary", "program_types", "verified_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentRank": {

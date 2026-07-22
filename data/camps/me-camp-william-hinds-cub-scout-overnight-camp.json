@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:pine-tree",
-      "parent": null,
+      "parent": "camp:me-camp-william-hinds",
       "operating_status": "active",
       "address": "146 Plains Road",
       "city": "Raymond",

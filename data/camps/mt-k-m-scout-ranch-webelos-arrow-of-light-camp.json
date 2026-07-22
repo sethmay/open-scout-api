@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:montana",
-      "parent": null,
+      "parent": "camp:mt-k-m-scout-ranch",
       "operating_status": "active",
       "address": null,
       "city": "Hilger",

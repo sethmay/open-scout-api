@@ -10,7 +10,7 @@
       "camp_type": "high_adventure_base",
       "operator": "council",
       "council": "council:cascade-pacific",
-      "parent": null,
+      "parent": "camp:or-camp-pioneer",
       "operating_status": "active",
       "address": "62681 Twin Meadows Rd",
       "city": "Idanha",

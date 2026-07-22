@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:pony-express",
-      "parent": null,
+      "parent": "camp:mo-camp-geiger",
       "operating_status": "active",
       "address": "9525 County Road 388",
       "city": "Saint Joseph",

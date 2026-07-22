@@ -208,6 +208,7 @@ def main() -> None:
                                   "state": ov.get("state"), "city": ov.get("city"),
                                   "lat": ov.get("lat"), "lon": ov.get("lon"), "website": ov.get("website"),
                                   "program_types": ov.get("program_types", []), "summary": ov.get("summary"),
+                                  "parent": ov.get("parent"),
                                   "council_name": _cm["name"] if _cm else None,
                                   "council_website": _cm["website"] if _cm else None,
                                   "council_number": _cm["number"] if _cm else None,

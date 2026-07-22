@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:mississippi-valley",
-      "parent": null,
+      "parent": "camp:il-saukenauk-scout-reservation",
       "operating_status": "active",
       "address": "2948 E 1000th St",
       "city": "Mendon",
