@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.23.0 (minor) — 2026-07-21
 
-- `PENDING` Collapsed duplicate camp listings so each physical property is one entity (one map pin) instead of one row per program.
+- `4e93f00` Collapsed duplicate camp listings so each physical property is one entity (one map pin) instead of one row per program.
   - Merged 29 program and session variants (for example "Camp C.S. Klaus - Cub Scout Day Camp" and three more Klaus rows) into their base camp, unioning the program types. The camp count is now 458, down from 487.
   - Published `v1/camps/aliases.json`, a map from each retired id to its surviving camp id, so a site can redirect old links.
   - A survivor records the ids it absorbed in `merged_from`, and a build check keeps those ids retired and unique.
