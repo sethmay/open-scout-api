@@ -12,7 +12,9 @@ Transforms:
 - DROP description (carries transient 'payment due' text + editorial) and sessions
   (operational data stays in camp-finder / the council site). method=imported.
 
-Excludes camp-finder DEMO_COUNCILS {492,606,609,697} (fixture-grade data).
+Includes every council's camps. The 4 original Pacific-Northwest demo councils
+{492,606,609,697} now carry real, verified camp-finder data (official council-site
+sources), so they are imported like any other council rather than skipped.
 """
 
 from __future__ import annotations
@@ -23,7 +25,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "camps"
 TODAY = "2026-07-21"
-DEMO = {492, 606, 609, 697}
 NATIONAL_COUNCIL = 999
 REMAP = {272: 780}  # camp-finder Michigan Crossroads dup -> the number we kept
 
@@ -95,8 +96,6 @@ def main() -> None:
     for p in sorted(cf.glob("council-*.json")):
         d = json.loads(p.read_text("utf-8"))
         cnum = d.get("number")
-        if cnum in DEMO:
-            continue
         for c in d.get("camps", []):
             if cnum == NATIONAL_COUNCIL:
                 ct = classify(c.get("program_types", []))

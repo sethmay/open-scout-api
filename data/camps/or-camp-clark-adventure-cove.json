@@ -1,0 +1,45 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-clark-adventure-cove",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Clark / Adventure Cove",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:cascade-pacific",
+      "parent": null,
+      "operating_status": "active",
+      "address": "17500 Cape Lookout Road",
+      "city": "Cloverdale",
+      "state": "OR",
+      "lat": null,
+      "lon": null,
+      "website": "https://cpcscouting.org/project/camp-clark/",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-492/or-camp-clark-adventure-cove (unofficial community dataset)"
+          },
+          {
+            "url": "https://cpcscouting.org/project/camp-clark/"
+          },
+          {
+            "url": "https://cpcscouting.org/project/camp-clark/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

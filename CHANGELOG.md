@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.17.0 (minor) — 2026-07-21
+
+- `PENDING` Added the Pacific-Northwest councils' camps, so the API no longer trails the camp-finder site.
+  - Imported 18 camps from the Cascade Pacific, Chief Seattle, Mount Baker, and Pacific Crest councils (Camp Meriwether, Camp Parsons, Fire Mountain Scout Camp, and others) that an earlier import had held back as demo data.
+  - They carry real, verified details from official council sites, so they belong in the reference set. The camp list grew from 469 to 487.
+  - The API now lists every camp the camp-finder site shows, plus a few it filters out (a national base and camps with no current program).
+
 ## 0.16.1 (patch) — 2026-07-21
 
 - `a48bd3c` Rewrote the release notes to be easier to read.

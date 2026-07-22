@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-baker",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Baker",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pacific-crest",
+      "parent": null,
+      "operating_status": "active",
+      "address": "67667 Sylvan Way, Florence, OR 97439",
+      "city": "Florence",
+      "state": "OR",
+      "lat": 44.0021,
+      "lon": -124.1088,
+      "website": "https://www.otcbsa.org/camp-baker",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [
+        "dining_hall",
+        "waterfront",
+        "pool",
+        "shooting_sports",
+        "climbing",
+        "mountain_biking"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-697/or-camp-baker (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.otcbsa.org/camp-baker"
+          },
+          {
+            "url": "https://www.otcbsa.org/camp-baker"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

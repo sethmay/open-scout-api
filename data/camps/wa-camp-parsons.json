@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wa-camp-parsons",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Parsons",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:chief-seattle",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Parsons, Brinnon, WA 98320",
+      "city": "Brinnon",
+      "state": "WA",
+      "lat": 47.6793,
+      "lon": -122.9057,
+      "website": "https://seattlebsa.org/camp-parsons/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [
+        "dining_hall",
+        "waterfront",
+        "shooting_sports",
+        "climbing",
+        "older_scout_program",
+        "high_adventure_option"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-609/wa-camp-parsons (unofficial community dataset)"
+          },
+          {
+            "url": "https://seattlebsa.org/camp-parsons/"
+          },
+          {
+            "url": "https://seattlebsa.org/camp-parsons/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}
