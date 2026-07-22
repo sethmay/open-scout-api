@@ -18,6 +18,7 @@
       "lat": 32.776272,
       "lon": -96.796856,
       "geo_precision": "approximate",
+      "elevation_ft": 440,
       "website": "https://scoutingevent.com/571-2026DiscoveryCamp",
       "program_types": [
         "cub_day"

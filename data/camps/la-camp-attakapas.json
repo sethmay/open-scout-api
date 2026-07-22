@@ -18,6 +18,7 @@
       "lat": 31.695286326812,
       "lon": -92.209521872877,
       "geo_precision": "exact",
+      "elevation_ft": 200,
       "website": "https://www.louisianapurchasecouncil.org/summercamps",
       "program_types": [
         "scouts_bsa_resident"

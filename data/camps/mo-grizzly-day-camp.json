@@ -18,6 +18,7 @@
       "lat": 38.42,
       "lon": -90.63,
       "geo_precision": "approximate",
+      "elevation_ft": 630,
       "website": "https://stlbsa.org/camps/cub-scout-day-camps/",
       "program_types": [
         "cub_day"

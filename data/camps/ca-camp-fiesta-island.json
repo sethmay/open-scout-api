@@ -18,6 +18,7 @@
       "lat": 32.767380879733,
       "lon": -117.214594642155,
       "geo_precision": "exact",
+      "elevation_ft": 10,
       "website": "https://www.sdicscouting.org/camping/summer-programs/camp-fiesta-island",
       "program_types": [
         "scouts_bsa_resident",

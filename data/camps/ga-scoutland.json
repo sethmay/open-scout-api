@@ -18,6 +18,7 @@
       "lat": 34.339642,
       "lon": -83.879691,
       "geo_precision": "exact",
+      "elevation_ft": 1190,
       "website": "https://www.nega-bsa.org/cs-twi-stem-cmp",
       "program_types": [
         "cub_day"

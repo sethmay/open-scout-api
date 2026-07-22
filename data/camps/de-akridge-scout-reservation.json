@@ -18,6 +18,7 @@
       "lat": 39.129160237811,
       "lon": -75.548081443295,
       "geo_precision": "exact",
+      "elevation_ft": 40,
       "website": "https://scoutingevent.com/081-ASRDayCamp",
       "program_types": [
         "cub_day"

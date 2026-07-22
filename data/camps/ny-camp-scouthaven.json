@@ -18,6 +18,7 @@
       "lat": 42.7829996,
       "lon": -78.3165498,
       "geo_precision": "exact",
+      "elevation_ft": 1070,
       "website": "https://scoutingevent.com/375-scouthavencubsummercamp26",
       "program_types": [
         "cub_resident",

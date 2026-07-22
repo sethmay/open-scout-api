@@ -18,6 +18,7 @@
       "lat": 41.6123659,
       "lon": -74.7101282,
       "geo_precision": "exact",
+      "elevation_ft": 1510,
       "website": "https://www.monmouthcouncilscouting.org/forestburg",
       "program_types": [
         "scouts_bsa_resident"

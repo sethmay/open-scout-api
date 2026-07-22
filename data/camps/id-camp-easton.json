@@ -18,6 +18,7 @@
       "lat": 47.6025876,
       "lon": -116.7757634,
       "geo_precision": "exact",
+      "elevation_ft": 2210,
       "website": "https://scoutingevent.com/611-2026_EastonSummerCamp",
       "program_types": [
         "scouts_bsa_resident"

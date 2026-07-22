@@ -18,6 +18,7 @@
       "lat": 33.191791461264,
       "lon": -87.398679848313,
       "geo_precision": "exact",
+      "elevation_ft": 450,
       "website": "https://www.bwc-bsa.org/summercamp2026",
       "program_types": [
         "scouts_bsa_resident"

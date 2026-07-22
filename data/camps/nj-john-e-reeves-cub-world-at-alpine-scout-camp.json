@@ -18,6 +18,7 @@
       "lat": 40.978364,
       "lon": -73.913932,
       "geo_precision": "exact",
+      "elevation_ft": 560,
       "website": "https://alpinescoutcamp.org/cubworld/",
       "program_types": [
         "cub_day",

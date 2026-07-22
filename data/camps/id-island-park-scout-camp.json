@@ -18,6 +18,7 @@
       "lat": 44.4243637,
       "lon": -111.3710645,
       "geo_precision": "exact",
+      "elevation_ft": 6300,
       "website": "https://scoutingevent.com/107-2026IPSC",
       "program_types": [
         "scouts_bsa_resident"

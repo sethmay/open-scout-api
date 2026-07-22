@@ -18,6 +18,7 @@
       "lat": 48.23251,
       "lon": -101.296273,
       "geo_precision": "approximate",
+      "elevation_ft": 1610,
       "website": "https://scoutingnlc.org/campingprograms/daycamp/",
       "program_types": [
         "cub_day"

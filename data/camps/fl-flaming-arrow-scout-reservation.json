@@ -18,6 +18,7 @@
       "lat": 27.8994,
       "lon": -81.4453,
       "geo_precision": "exact",
+      "elevation_ft": 120,
       "website": "https://tampabayscouting.org/camps/flaming-arrow-scout-reservation",
       "program_types": [
         "webelos",

@@ -18,6 +18,7 @@
       "lat": 34.282,
       "lon": -118.86,
       "geo_precision": "exact",
+      "elevation_ft": 680,
       "website": "https://www.scoutingamericavc.org/CSCamp",
       "program_types": [
         "cub_day"

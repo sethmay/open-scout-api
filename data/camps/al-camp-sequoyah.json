@@ -18,6 +18,7 @@
       "lat": 33.5282,
       "lon": -85.6716,
       "geo_precision": "exact",
+      "elevation_ft": 980,
       "website": "https://1bsa.org/summer-camp-at-camp-sequoyah/",
       "program_types": [
         "scouts_bsa_resident"

@@ -18,6 +18,7 @@
       "lat": 39.5024,
       "lon": -111.3831,
       "geo_precision": "exact",
+      "elevation_ft": 7800,
       "website": "https://www.utahscouts.org/tifie",
       "program_types": [
         "scouts_bsa_resident"

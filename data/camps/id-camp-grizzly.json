@@ -18,6 +18,7 @@
       "lat": 46.944339416469,
       "lon": -116.661258661248,
       "geo_precision": "exact",
+      "elevation_ft": 2750,
       "website": "https://scoutingevent.com/611-26GrizzlySummerCamp",
       "program_types": [
         "scouts_bsa_resident",

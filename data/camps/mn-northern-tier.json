@@ -18,6 +18,7 @@
       "lat": 47.9418,
       "lon": -91.7273,
       "geo_precision": "approximate",
+      "elevation_ft": 1350,
       "website": "https://www.ntier.org/",
       "program_types": [
         "high_adventure"

@@ -18,6 +18,7 @@
       "lat": 33.7377247,
       "lon": -116.7349892,
       "geo_precision": "exact",
+      "elevation_ft": 5300,
       "website": "https://iescouts.org/summercamp/",
       "program_types": [
         "scouts_bsa_resident"

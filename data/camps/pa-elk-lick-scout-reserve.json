@@ -18,6 +18,7 @@
       "lat": 41.850432,
       "lon": -78.4952498,
       "geo_precision": "exact",
+      "elevation_ft": 1570,
       "website": "https://www.alleghenyhighlands.org/camping",
       "program_types": [
         "cub_resident"

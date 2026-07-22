@@ -18,6 +18,7 @@
       "lat": 35.2070942,
       "lon": -80.5573318,
       "geo_precision": "exact",
+      "elevation_ft": 570,
       "website": "https://www.belkscoutcamp.org/cubcamp",
       "program_types": [
         "cub_day"

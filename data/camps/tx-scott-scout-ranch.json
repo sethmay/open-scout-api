@@ -18,6 +18,7 @@
       "lat": 30.777089,
       "lon": -94.418505,
       "geo_precision": "approximate",
+      "elevation_ft": 310,
       "website": "https://3riversbsa.org/scott-scout-ranch/",
       "program_types": [
         "scouts_bsa_resident"

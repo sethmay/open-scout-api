@@ -18,6 +18,7 @@
       "lat": 45.783901,
       "lon": -84.727828,
       "geo_precision": "approximate",
+      "elevation_ft": 600,
       "website": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/",
       "program_types": [
         "high_adventure"

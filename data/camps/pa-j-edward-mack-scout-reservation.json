@@ -18,6 +18,7 @@
       "lat": 40.2491,
       "lon": -76.306,
       "geo_precision": "exact",
+      "elevation_ft": 660,
       "website": "http://padutchbsa.org/camping/mack/summercamp/",
       "program_types": [
         "cub_resident"

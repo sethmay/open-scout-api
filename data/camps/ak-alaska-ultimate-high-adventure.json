@@ -18,6 +18,7 @@
       "lat": 62.346311,
       "lon": -150.392552,
       "geo_precision": "approximate",
+      "elevation_ft": 580,
       "website": "https://www.scoutingalaska.org/auha",
       "program_types": [
         "high_adventure"

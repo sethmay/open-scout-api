@@ -18,6 +18,7 @@
       "lat": 33.3624979,
       "lon": -112.0423881,
       "geo_precision": "exact",
+      "elevation_ft": 1300,
       "website": "https://www.scoutingaz.org/heard-scout-pueblo/",
       "program_types": [
         "cub_day"

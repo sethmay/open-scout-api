@@ -18,6 +18,7 @@
       "lat": 30.388503,
       "lon": -96.088003,
       "geo_precision": "approximate",
+      "elevation_ft": 220,
       "website": "https://shacbsa.org/adventure-camp",
       "program_types": [
         "cub_resident"

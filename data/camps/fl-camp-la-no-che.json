@@ -18,6 +18,7 @@
       "lat": 28.954,
       "lon": -81.523,
       "geo_precision": "exact",
+      "elevation_ft": 50,
       "website": "https://www.camplanoche.com/",
       "program_types": [
         "scouts_bsa_resident"

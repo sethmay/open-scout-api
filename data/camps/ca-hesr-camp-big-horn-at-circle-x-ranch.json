@@ -18,6 +18,7 @@
       "lat": 34.2510158,
       "lon": -117.1592642,
       "geo_precision": "exact",
+      "elevation_ft": 5200,
       "website": "https://scoutingevent.com/033-HESRSummerCamp",
       "program_types": [
         "scouts_bsa_resident"

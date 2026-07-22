@@ -18,6 +18,7 @@
       "lat": 33.166628,
       "lon": -97.881168,
       "geo_precision": "approximate",
+      "elevation_ft": 950,
       "website": "https://www.longhorncouncil.org/sid-richardson-scout-ranch",
       "program_types": [
         "scouts_bsa_resident"

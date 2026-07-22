@@ -18,6 +18,7 @@
       "lat": 39.355047,
       "lon": -90.037052,
       "geo_precision": "approximate",
+      "elevation_ft": 600,
       "website": "https://www.alincolnscouting.org/camp-bunn",
       "program_types": [
         "scouts_bsa_resident"

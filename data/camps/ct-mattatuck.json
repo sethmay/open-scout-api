@@ -18,6 +18,7 @@
       "lat": 41.63344192504883,
       "lon": -73.05036926269531,
       "geo_precision": "exact",
+      "elevation_ft": 850,
       "website": "https://scoutingevent.com/066-102136",
       "program_types": [
         "scouts_bsa_resident"

@@ -18,6 +18,7 @@
       "lat": 42.989542,
       "lon": -85.7118244,
       "geo_precision": "exact",
+      "elevation_ft": 750,
       "website": "https://michiganscouting.org/adventurepoint/",
       "program_types": [
         "cub_day"

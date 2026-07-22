@@ -18,6 +18,7 @@
       "lat": 40.459668716193,
       "lon": -91.353798627288,
       "geo_precision": "exact",
+      "elevation_ft": 660,
       "website": "https://mvcscouting.org/camping/",
       "program_types": [
         "scouts_bsa_resident",

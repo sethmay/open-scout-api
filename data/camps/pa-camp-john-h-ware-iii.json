@@ -18,6 +18,7 @@
       "lat": 39.731213,
       "lon": -76.123833,
       "geo_precision": "exact",
+      "elevation_ft": 380,
       "website": "https://scoutingevent.com/539-105490",
       "program_types": [
         "cub_resident"

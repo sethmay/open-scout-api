@@ -18,6 +18,7 @@
       "lat": 36.10286,
       "lon": -78.278723,
       "geo_precision": "approximate",
+      "elevation_ft": 310,
       "website": "https://www.danielboonecouncil.org/Adventure",
       "program_types": [
         "high_adventure"

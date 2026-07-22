@@ -18,6 +18,7 @@
       "lat": 45.201599,
       "lon": -123.885091,
       "geo_precision": "approximate",
+      "elevation_ft": 260,
       "website": "https://cpcscouting.org/project/camp-clark/",
       "program_types": [
         "high_adventure"

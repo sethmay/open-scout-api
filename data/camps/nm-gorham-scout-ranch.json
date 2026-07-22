@@ -18,6 +18,7 @@
       "lat": 36.003909,
       "lon": -105.946866,
       "geo_precision": "approximate",
+      "elevation_ft": 6080,
       "website": "https://www.scoutingamericahighdesertcouncil.org/gorham-scout-ranch",
       "program_types": [
         "scouts_bsa_resident"
