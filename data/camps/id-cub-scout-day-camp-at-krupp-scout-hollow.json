@@ -22,6 +22,7 @@
         "cub_day"
       ],
       "features": [],
+      "summary": "Grand Teton Council Cub Scout day camp at Scout Hollow near Rigby, Idaho, for Cub Scouts in grades K–5, offering archery, BB guns, crafts, and nature hikes.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],

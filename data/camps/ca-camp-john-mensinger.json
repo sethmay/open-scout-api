@@ -22,6 +22,7 @@
         "scouts_bsa_resident"
       ],
       "features": [],
+      "summary": "Greater Yosemite Council Scouts BSA summer resident camp in the Stanislaus National Forest at roughly 4,800 feet near Beardsley Reservoir. Offers a \"Woodsman\" program for first- and second-year Scouts, aquatics using a pool, camp lake, and reservoir, plus Webelos Adventure @ Mensinger.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],

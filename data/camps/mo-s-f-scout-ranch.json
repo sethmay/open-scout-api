@@ -22,6 +22,7 @@
         "scouts_bsa_resident"
       ],
       "features": [],
+      "summary": "Sprawling 5,200-acre Greater St. Louis Area Council ranch on 270-acre Nims Lake near Farmington, Missouri, offering Scouts BSA resident camp in two styles—air-conditioned dining or patrol-method campsite cooking. Features aquatics, Huck's Cove water park, Eagle Range shooting sports, STEM, rock climbing/challenge course, and the APEX older-Scout track.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],

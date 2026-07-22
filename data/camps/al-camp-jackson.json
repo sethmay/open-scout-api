@@ -22,6 +22,7 @@
         "scouts_bsa_resident"
       ],
       "features": [],
+      "summary": "515-acre Greater Alabama Council camp along the Tennessee River near Scottsboro, offering a traditional Scouts BSA resident summer program. Features waterfalls, more than 10 miles of trails, fishing, canoeing, mountain boards, and swimming.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],

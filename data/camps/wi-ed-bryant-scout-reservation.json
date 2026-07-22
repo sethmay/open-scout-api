@@ -22,6 +22,7 @@
         "scouts_bsa_resident"
       ],
       "features": [],
+      "summary": "Glacier's Edge Council's Scouts BSA resident summer camp spanning 244 acres along Castle Rock Lake near Mauston, Wisconsin, offering boating, jet skiing, ATVs, and a range of merit badges.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],

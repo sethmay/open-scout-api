@@ -53,6 +53,8 @@ noted here because their status shapes what we may redistribute:
   unofficial community dataset. Used for council websites and to cross-check names/HQ.
   Records seeded from it carry `method: imported` and its provenance; the official map
   supersedes it on name/HQ conflicts.
+  The camp `summary` field is our own evergreen prose, regenerated from those descriptions
+  (paraphrased, with dates/fees/schedules removed), not reproduced verbatim.
 - **English Wikipedia** (CC BY-SA) — source for council **founding/rename/merger lineage
   facts**: founding years, prior council names and the years they changed, and which
   councils merged or were absorbed (with years). Only these uncopyrightable facts are

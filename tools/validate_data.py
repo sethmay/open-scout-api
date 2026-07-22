@@ -11,6 +11,7 @@ Usage: python tools/validate_data.py
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -22,6 +23,12 @@ from stamp_schema import check_tree
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_DIR = ROOT / "schema" / "v1"
 DATA = ROOT / "data"
+
+# transitory text that must never appear in an evergreen camp `summary`:
+# 4-digit years, dollar amounts, or month names.
+_TRANSITORY = re.compile(
+    r"\b(18|19|20)\d{2}\b|\$|\b(Jan(uary)?|Feb(ruary)?|Mar(ch)?|Apr(il)?|May|Jun(e)?|"
+    r"Jul(y)?|Aug(ust)?|Sep(t|tember)?|Oct(ober)?|Nov(ember)?|Dec(ember)?)\b", re.I)
 
 DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json",
             "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json",
@@ -72,13 +79,17 @@ def main() -> int:
             for v in vs[:-1]:
                 if v.get("valid_to") is None:
                     errs.append(f"{p.name}: non-final version has valid_to=null")
-            if ds == "camps":  # operator<->council coupling (schema doesn't enforce cross-field)
+            if ds == "camps":  # operator<->council coupling + evergreen summary (schema can't express these)
                 for v in vs:
                     op, coun = v.get("operator"), v.get("council")
                     if op == "council" and coun is None:
                         errs.append(f"{p.name}: operator=council but council is null")
                     elif op in ("national", "other", "unknown") and coun is not None:
                         errs.append(f"{p.name}: operator={op} but council is set ({coun})")
+                    s = v.get("summary")
+                    if s and _TRANSITORY.search(s):
+                        errs.append(f"{p.name}: summary has transitory text ({_TRANSITORY.search(s).group(0)!r}); "
+                                    f"must be evergreen (no dates/fees/months)")
 
     # pass 2: referential integrity
     def check_ref(ref, src):

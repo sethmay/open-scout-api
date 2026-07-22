@@ -22,6 +22,7 @@
         "scouts_bsa_resident"
       ],
       "features": [],
+      "summary": "Sequoyah Council's Scouts BSA resident summer camp spanning 1,865 acres in the foothills of the Great Smoky Mountains along Cherokee Lake, offering 50+ merit badges, Frontier Camp living history, COPE and climbing, aquatics, and horsemanship.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],
