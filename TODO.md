@@ -72,8 +72,16 @@ reservation modeling as its own `camp_type`, historical "lost camps").
 
 Shipped: freshness dates (0.21.0); coordinate-integrity gate + geocode backfill + `geo_precision`
 (0.22.0); duplicate-listing merge + `aliases.json` (0.23.0); reservation-centroid relabel (0.23.1);
-non-prefix same-camp merges + `reservation` grouping (0.24.0). The `parent` approach from step 5 was
-superseded — those were duplicates (now merged); `reservation` groups co-located *distinct* camps.
+non-prefix same-camp merges + `reservation` grouping (0.24.0); reservation names + Goshen unify +
+same-council grouping (0.25.0); Pipsico rename from a scraped event title (0.25.1). The `parent`
+approach from step 5 was superseded — those were duplicates (now merged); `reservation` groups
+co-located *distinct* camps.
+
+**Source model (2026-07-22):** camp-finder has flipped to *consuming* this API and retired its
+per-council source data. `data/` is now the authoritative source; stamp/validate/build run on it
+directly. `import_camps.py` and `geocode_camps.py` are historical one-time tools (they need the
+archived camp-finder source to run) — go-forward corrections are direct edits to `data/`, validated
+by the pipeline (as the Pipsico fix was).
 
 - **Program-level tracking (future — camp-finder dev flagged).** Merging program/session variants
   into one camp unions `program_types` but drops per-offering detail (e.g. "Webelos resident" vs
@@ -86,6 +94,11 @@ superseded — those were duplicates (now merged); `reservation` groups co-locat
   stay unnamed — the AK Chilkoot/Denali pair is a coordinate error (two far-apart bases share a bad
   point; fixing the coord un-groups them), and the WY Buffalo Bill / Yellowstone Anglers pair has no
   distinct reservation name.
+- **Camp elevation + average summer temperatures (camp-finder dev feature request).** Add per-camp
+  `elevation` (DEM lookup on lat/lon) and typical summer-temperature normals (climate source keyed
+  on location) so apps can filter/sort on altitude and heat. New optional `CampVersion` fields,
+  derived once and committed like coordinates; keep them off the transitory line (normals, not a
+  live forecast). Note `geo_precision: approximate` camps yield only reservation/city-level values.
 
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
