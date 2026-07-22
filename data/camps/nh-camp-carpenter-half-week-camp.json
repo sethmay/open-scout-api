@@ -17,7 +17,7 @@
       "state": "NH",
       "lat": 42.950154,
       "lon": -71.3843598,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/330-2026AKELACAMP",
       "program_types": [
         "scouts_bsa_resident"

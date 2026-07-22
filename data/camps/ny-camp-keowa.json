@@ -17,7 +17,7 @@
       "state": "NY",
       "lat": 41.602546,
       "lon": -75.0581943,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/640-ke26",
       "program_types": [
         "scouts_bsa_resident"

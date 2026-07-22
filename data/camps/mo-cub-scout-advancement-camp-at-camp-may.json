@@ -17,7 +17,7 @@
       "state": "MO",
       "lat": 38.42,
       "lon": -90.63,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://stlbsa.org/camps/cub-scout-overnight-camps/",
       "program_types": [
         "cub_resident"

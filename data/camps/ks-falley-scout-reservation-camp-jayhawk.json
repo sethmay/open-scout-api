@@ -17,7 +17,7 @@
       "state": "KS",
       "lat": 39.2016275,
       "lon": -95.4043059,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://jayhawkcouncil.org/camping-outdoor-program/campjayhawk/",
       "program_types": [
         "scouts_bsa_resident"

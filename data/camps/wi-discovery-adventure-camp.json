@@ -17,7 +17,7 @@
       "state": "WI",
       "lat": 45.7045588,
       "lon": -91.6788074,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/250-2026dac",
       "program_types": [
         "scouts_bsa_resident"

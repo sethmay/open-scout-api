@@ -17,7 +17,7 @@
       "state": "NJ",
       "lat": 40.916304,
       "lon": -74.7649672,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/358-CampSomers",
       "program_types": [
         "scouts_bsa_resident"

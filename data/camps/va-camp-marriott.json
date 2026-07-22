@@ -17,7 +17,7 @@
       "state": "VA",
       "lat": 37.96673652528,
       "lon": -79.470431570218,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://www.gotogoshen.org/camps-programs/camp-marriott/",
       "program_types": [
         "scouts_bsa_resident"

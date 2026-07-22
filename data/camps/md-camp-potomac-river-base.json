@@ -17,7 +17,7 @@
       "state": "MD",
       "lat": 39.5584,
       "lon": -78.625,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://campreservation.com/527/Camps/886",
       "program_types": [
         "high_adventure"

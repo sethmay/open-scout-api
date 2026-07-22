@@ -17,7 +17,7 @@
       "state": "MN",
       "lat": 46.4691965,
       "lon": -94.204451,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://www.scoutingcmc.org/",
       "program_types": [
         "cub_resident"

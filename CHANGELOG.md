@@ -3,6 +3,10 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.23.1 (patch) — 2026-07-21
+
+- `PENDING` Fixed `geo_precision` on 49 camps that share a coordinate with another camp. A point shared by two or more distinct camps is the reservation's center, not an exact fix for any one of them, so those are now labeled `approximate`. A site can trust `exact` for precise pin placement and soft-plot or cluster the `approximate` ones (for example the four camps at Goshen).
+
 ## 0.23.0 (minor) — 2026-07-21
 
 - `4e93f00` Collapsed duplicate camp listings so each physical property is one entity (one map pin) instead of one row per program.

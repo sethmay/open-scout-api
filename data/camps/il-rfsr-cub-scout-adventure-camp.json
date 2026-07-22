@@ -17,7 +17,7 @@
       "state": "IL",
       "lat": 39.3,
       "lon": -89.13,
-      "geo_precision": "exact",
+      "geo_precision": "approximate",
       "website": "https://stlbsa.org/camps/cub-scout-overnight-camps/",
       "program_types": [
         "cub_resident"
