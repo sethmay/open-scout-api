@@ -17,6 +17,7 @@
       "state": "OH",
       "lat": 41.2761658,
       "lon": -82.3341084,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/440-smores2026",
       "program_types": [
         "cub_resident"

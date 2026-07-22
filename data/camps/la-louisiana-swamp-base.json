@@ -15,8 +15,9 @@
       "address": null,
       "city": "Lafayette",
       "state": "LA",
-      "lat": null,
-      "lon": null,
+      "lat": 30.226219,
+      "lon": -92.01782,
+      "geo_precision": "approximate",
       "website": "https://www.swampbasebsa.org/",
       "program_types": [
         "high_adventure"

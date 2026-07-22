@@ -15,8 +15,9 @@
       "address": null,
       "city": "El Cerrito",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 37.915406,
+      "lon": -122.301411,
+      "geo_precision": "approximate",
       "website": "https://goldengatescouting.org/cub-scouts/cub-scouts-camping/",
       "program_types": [
         "webelos"

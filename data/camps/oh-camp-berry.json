@@ -15,8 +15,9 @@
       "address": "11716 County Road 40",
       "city": "Findlay",
       "state": "OH",
-      "lat": 41.5376461,
-      "lon": -85.6878213,
+      "lat": 41.041387,
+      "lon": -83.650398,
+      "geo_precision": "approximate",
       "website": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247",
       "program_types": [
         "scouts_bsa_resident"

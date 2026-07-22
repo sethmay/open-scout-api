@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 41.341409,
       "lon": -72.746123,
+      "geo_precision": "exact",
       "website": "https://www.ghvscouting.org/durland/",
       "program_types": [
         "cub_day"

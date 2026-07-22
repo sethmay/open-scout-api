@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 30.174529839986,
       "lon": -97.26995439257,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/564-LPSRSummer26",
       "program_types": [
         "scouts_bsa_resident"

@@ -15,8 +15,9 @@
       "address": "29984 Journey Trail",
       "city": "Park Rapids",
       "state": "MN",
-      "lat": 48.4806138,
-      "lon": -114.3337984,
+      "lat": 46.922181,
+      "lon": -95.058632,
+      "geo_precision": "approximate",
       "website": "https://scoutingnlc.org/campingprograms/properties/camp-wilderness/",
       "program_types": [
         "scouts_bsa_resident"

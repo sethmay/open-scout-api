@@ -17,6 +17,7 @@
       "state": "MO",
       "lat": 39.8358485,
       "lon": -94.8712224,
+      "geo_precision": "exact",
       "website": "https://www.campgeigerscouting.org/camp/cub-camping",
       "program_types": [
         "cub_resident"

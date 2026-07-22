@@ -17,6 +17,7 @@
       "state": "MN",
       "lat": 47.0920981,
       "lon": -95.5229044,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/250-MPAllStar2026",
       "program_types": [
         "scouts_bsa_resident"

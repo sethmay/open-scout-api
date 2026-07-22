@@ -17,6 +17,7 @@
       "state": "KY",
       "lat": 38.9416,
       "lon": -84.7437,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/438-cubdaycamp",
       "program_types": [
         "cub_day"

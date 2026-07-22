@@ -17,6 +17,7 @@
       "state": "WA",
       "lat": 47.0421,
       "lon": -121.5387,
+      "geo_precision": "exact",
       "website": "https://seattlebsa.org/camp-sheppard/",
       "program_types": [
         "scouts_bsa_resident"

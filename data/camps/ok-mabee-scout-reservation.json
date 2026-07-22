@@ -15,8 +15,9 @@
       "address": "5 miles south of Locust Grove along Spring Creek",
       "city": "Locust Grove",
       "state": "OK",
-      "lat": null,
-      "lon": null,
+      "lat": 36.200094,
+      "lon": -95.16774,
+      "geo_precision": "approximate",
       "website": "https://www.okscouts.org/camps-1/mabee-scout-reservation",
       "program_types": [
         "cub_resident"

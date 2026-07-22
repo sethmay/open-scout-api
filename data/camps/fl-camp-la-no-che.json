@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 28.954,
       "lon": -81.523,
+      "geo_precision": "exact",
       "website": "https://www.camplanoche.com/",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "AP",
       "lat": null,
       "lon": null,
+      "geo_precision": null,
       "website": "https://scoutingevent.com/803-2026FECTrilogyMalaysia",
       "program_types": [
         "scouts_bsa_resident"

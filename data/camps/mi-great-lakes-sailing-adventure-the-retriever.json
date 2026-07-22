@@ -15,8 +15,9 @@
       "address": null,
       "city": "Mackinaw City",
       "state": "MI",
-      "lat": null,
-      "lon": null,
+      "lat": 45.783901,
+      "lon": -84.727828,
+      "geo_precision": "approximate",
       "website": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/",
       "program_types": [
         "high_adventure"

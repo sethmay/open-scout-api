@@ -15,8 +15,9 @@
       "address": null,
       "city": "Dallas",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 32.776272,
+      "lon": -96.796856,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/571-2026DiscoveryCamp",
       "program_types": [
         "cub_day"

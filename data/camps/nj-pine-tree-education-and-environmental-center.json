@@ -17,6 +17,7 @@
       "state": "NJ",
       "lat": 39.827600357455,
       "lon": -74.679850567203,
+      "geo_precision": "exact",
       "website": "https://www.old.gardenstatescouting.org/pinetree",
       "program_types": [
         "cub_day"

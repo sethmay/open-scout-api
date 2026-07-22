@@ -17,6 +17,7 @@
       "state": "MN",
       "lat": 44.502149,
       "lon": -92.9745538,
+      "geo_precision": "exact",
       "website": "https://camp.northernstar.org/phillippo-scout-reservation",
       "program_types": [
         "cub_resident"

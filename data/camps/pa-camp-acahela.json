@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 41.12146059686,
       "lon": -75.639451783765,
+      "geo_precision": "exact",
       "website": "https://www.acahela.org/acahela-cub-camp",
       "program_types": [
         "cub_resident"

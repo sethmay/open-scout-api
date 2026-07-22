@@ -17,6 +17,7 @@
       "state": "OR",
       "lat": 45.3712,
       "lon": -122.2087,
+      "geo_precision": "exact",
       "website": "https://cpcbsa.org/camping/camp-baldwin/",
       "program_types": [
         "scouts_bsa_resident"

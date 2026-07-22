@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 42.989542,
       "lon": -85.7118244,
+      "geo_precision": "exact",
       "website": "https://michiganscouting.org/adventurepoint/",
       "program_types": [
         "cub_day"

@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 41.1179048,
       "lon": -75.4209774,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/502-2026CampMinsiSummer",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "TN",
       "lat": 36.3,
       "lon": -83.3,
+      "geo_precision": "exact",
       "website": "https://campdavycrockett.org/scouts-bsa-summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

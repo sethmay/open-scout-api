@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.385571862893,
       "lon": -82.896057479862,
+      "geo_precision": "exact",
       "website": "https://www.campdanielboone.org/",
       "program_types": [
         "scouts_bsa_resident"

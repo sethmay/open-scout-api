@@ -17,6 +17,7 @@
       "state": "NJ",
       "lat": 40.2653,
       "lon": -74.3924,
+      "geo_precision": "exact",
       "website": "https://www.monmouthcouncilscouting.org/quailhill",
       "program_types": [
         "cub_day"

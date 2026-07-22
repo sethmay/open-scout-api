@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 43.3995,
       "lon": -75.5348,
+      "geo_precision": "exact",
       "website": "https://www.leatherstockingcouncil.org/about-us/districts-camps/camps/camp-kingsley/summer-camp/",
       "program_types": [
         "scouts_bsa_resident",

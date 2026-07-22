@@ -17,6 +17,7 @@
       "state": "NJ",
       "lat": 39.780444018546,
       "lon": -74.308898281813,
+      "geo_precision": "exact",
       "website": "https://www.cittascoutreservation.org/bs-summer-camp",
       "program_types": [
         "scouts_bsa_resident"

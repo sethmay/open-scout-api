@@ -15,8 +15,9 @@
       "address": null,
       "city": "Perkinston",
       "state": "MS",
-      "lat": null,
-      "lon": null,
+      "lat": 30.782134,
+      "lon": -89.138104,
+      "geo_precision": "approximate",
       "website": "https://www.bsa-selacouncil.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

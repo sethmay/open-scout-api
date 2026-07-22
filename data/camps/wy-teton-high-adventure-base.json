@@ -15,8 +15,9 @@
       "address": null,
       "city": "Jackson",
       "state": "WY",
-      "lat": null,
-      "lon": null,
+      "lat": 43.479965,
+      "lon": -110.761815,
+      "geo_precision": "approximate",
       "website": "https://www.utahscouts.org/teton",
       "program_types": [
         "high_adventure"

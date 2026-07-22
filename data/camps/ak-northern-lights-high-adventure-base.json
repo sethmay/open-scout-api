@@ -15,8 +15,9 @@
       "address": null,
       "city": "Fairbanks",
       "state": "AK",
-      "lat": null,
-      "lon": null,
+      "lat": 64.837845,
+      "lon": -147.716675,
+      "geo_precision": "approximate",
       "website": "https://midnightsunbsa.org/northern-lights-high-adventure-base-treks/",
       "program_types": [
         "high_adventure"

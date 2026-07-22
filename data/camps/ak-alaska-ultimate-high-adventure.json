@@ -15,8 +15,9 @@
       "address": "Mile 133 N Parks Highway",
       "city": "Trapper Creek",
       "state": "AK",
-      "lat": 32.1043276,
-      "lon": -104.4242689,
+      "lat": 62.346311,
+      "lon": -150.392552,
+      "geo_precision": "approximate",
       "website": "https://www.scoutingalaska.org/auha",
       "program_types": [
         "high_adventure"

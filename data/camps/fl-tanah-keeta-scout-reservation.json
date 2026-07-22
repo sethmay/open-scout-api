@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 26.985616303151,
       "lon": -80.131185508119,
+      "geo_precision": "exact",
       "website": "https://www.gulfstreamcouncil.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

@@ -15,8 +15,9 @@
       "address": null,
       "city": null,
       "state": "VA",
-      "lat": null,
-      "lon": null,
+      "lat": 38.0,
+      "lon": -79.45,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/599-brsr26",
       "program_types": [
         "high_adventure"

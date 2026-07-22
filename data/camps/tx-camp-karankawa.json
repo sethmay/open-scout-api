@@ -15,8 +15,9 @@
       "address": null,
       "city": "Mathis",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 28.094292,
+      "lon": -97.827411,
+      "geo_precision": "approximate",
       "website": "https://www.southtexasscouting.org/events-3/scouts-bsa-camping/summer-camp-scouts-bsa/",
       "program_types": [
         "scouts_bsa_resident"

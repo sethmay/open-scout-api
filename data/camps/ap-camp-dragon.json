@@ -17,6 +17,7 @@
       "state": "AP",
       "lat": 26.312,
       "lon": 127.929,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/803-2026CampDragon",
       "program_types": [
         "scouts_bsa_resident"

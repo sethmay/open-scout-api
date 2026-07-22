@@ -17,6 +17,7 @@
       "state": "OH",
       "lat": 40.6818578,
       "lon": -80.9534797,
+      "geo_precision": "exact",
       "website": "https://www.buckeyecouncil.org/camping/scouts-bsa-summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

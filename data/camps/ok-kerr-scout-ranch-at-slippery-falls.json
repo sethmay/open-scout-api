@@ -17,6 +17,7 @@
       "state": "OK",
       "lat": 34.310062362626,
       "lon": -96.7233350509,
+      "geo_precision": "exact",
       "website": "https://www.scoutingevent.com/480-KSRSFSUMMERCAMP2026",
       "program_types": [
         "scouts_bsa_resident"

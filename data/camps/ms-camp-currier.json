@@ -17,6 +17,7 @@
       "state": "MS",
       "lat": 34.831135125001,
       "lon": -90.16371534755,
+      "geo_precision": "exact",
       "website": "https://www.campcurrier.org/",
       "program_types": [
         "cub_day"

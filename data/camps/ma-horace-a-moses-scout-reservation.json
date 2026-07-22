@@ -17,6 +17,7 @@
       "state": "MA",
       "lat": 42.157671072603,
       "lon": -72.86921874759,
+      "geo_precision": "exact",
       "website": "https://www.wmascouting.org/SummerCamps",
       "program_types": [
         "scouts_bsa_resident"

@@ -21,7 +21,11 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import us_geo
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "camps"
@@ -30,6 +34,9 @@ NATIONAL_COUNCIL = 999
 REMAP = {272: 780}  # camp-finder Michigan Crossroads dup -> the number we kept
 SUMMARIES = (json.loads((ROOT / "tools" / "camp_summaries.json").read_text("utf-8"))
              if (ROOT / "tools" / "camp_summaries.json").exists() else {})
+
+GEO = (json.loads((ROOT / "tools" / "geocode.json").read_text("utf-8"))
+       if (ROOT / "tools" / "geocode.json").exists() else {})
 
 
 def find_camp_finder() -> Path:
@@ -67,6 +74,23 @@ def write_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
+def _resolve_coords(c: dict):
+    """Return (lat, lon, geo_precision). Source coords are 'exact' when present and inside the
+    camp's state box (or the state is non-US and uncheckable). A missing or out-of-state coord
+    falls back to the committed city geocode, then the state centroid, both 'approximate'. A
+    camp we cannot place at all -> (None, None, None)."""
+    lat, lon, st = c.get("lat"), c.get("lon"), c.get("state")
+    if lat is not None and lon is not None and (not us_geo.known(st) or us_geo.in_state(st, lat, lon)):
+        return lat, lon, "exact"
+    bf = GEO.get(c["id"])
+    if bf:
+        return bf[0], bf[1], "approximate"
+    cen = us_geo.state_centroid(st) if us_geo.known(st) else None
+    if cen:
+        return cen[0], cen[1], "approximate"
+    return None, None, None
+
+
 def version(c: dict, *, camp_type: str, operator: str, council: str | None, conf: float, extra_src=None) -> dict:
     prov = c.get("provenance", {})
     sources = [{"citation": f"camp-finder {c.get('council_id')}/{c['id']} (unofficial community dataset)"}]
@@ -76,12 +100,13 @@ def version(c: dict, *, camp_type: str, operator: str, council: str | None, conf
         sources.append({"url": c["website_url"]})
     if extra_src:
         sources.append(extra_src)
+    lat, lon, geo_precision = _resolve_coords(c)
     return {
         "valid_from": None, "valid_to": None,
         "name": c["name"], "camp_type": camp_type, "operator": operator, "council": council,
         "parent": None, "operating_status": c.get("status", "active"),
         "address": c.get("address"), "city": c.get("city"), "state": c.get("state"),
-        "lat": c.get("lat"), "lon": c.get("lon"), "website": c.get("website_url"),
+        "lat": lat, "lon": lon, "geo_precision": geo_precision, "website": c.get("website_url"),
         "program_types": c.get("program_types", []), "features": c.get("features", []),
         "summary": SUMMARIES.get(c["id"]),
         "provenance": {"sources": sources, "method": "imported",
@@ -151,7 +176,7 @@ def main() -> None:
         "valid_from": None, "valid_to": None, "name": "Northern Tier National High Adventure Bases",
         "camp_type": "high_adventure_base", "operator": "national", "council": None, "parent": None,
         "operating_status": "active", "address": None, "city": "Ely", "state": "MN",
-        "lat": 47.9418, "lon": -91.7273, "website": "https://www.ntier.org/",
+        "lat": 47.9418, "lon": -91.7273, "geo_precision": "approximate", "website": "https://www.ntier.org/",
         "program_types": ["high_adventure"], "features": [], "summary": None,
         "provenance": {"sources": [{"url": "https://www.ntier.org/"},
                                    {"url": "https://www.scouting.org/high-adventure/northern-tier/"}],

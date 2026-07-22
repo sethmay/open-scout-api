@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 32.685560482374,
       "lon": -81.551922994427,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/099-BCSR2026",
       "program_types": [
         "scouts_bsa_resident"

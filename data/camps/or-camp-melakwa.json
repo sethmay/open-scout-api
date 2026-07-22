@@ -17,6 +17,7 @@
       "state": "OR",
       "lat": 44.1783,
       "lon": -122.0453,
+      "geo_precision": "exact",
       "website": "https://www.otcbsa.org/camp-melakwa",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "SC",
       "lat": 34.5466,
       "lon": -79.895,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/553-cubfamilysummercamp2026",
       "program_types": [
         "cub_resident"

@@ -17,6 +17,7 @@
       "state": "WA",
       "lat": 47.9688,
       "lon": -121.8942,
+      "geo_precision": "exact",
       "website": "https://scoutingseattle.org/camp-pigott/scouts-bsa-summer-camp-pigott/",
       "program_types": [
         "scouts_bsa_resident"

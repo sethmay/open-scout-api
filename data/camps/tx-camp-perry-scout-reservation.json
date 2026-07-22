@@ -15,8 +15,9 @@
       "address": null,
       "city": "Harlingen",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 26.190754,
+      "lon": -97.69606,
+      "geo_precision": "approximate",
       "website": "https://www.riograndecouncil.org/camping/campperry/",
       "program_types": [
         "scouts_bsa_resident"

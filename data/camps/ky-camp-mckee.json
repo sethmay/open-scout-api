@@ -17,6 +17,7 @@
       "state": "KY",
       "lat": 37.9968,
       "lon": -84.44,
+      "geo_precision": "exact",
       "website": "https://bgcscouting.org/camp-mckee/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

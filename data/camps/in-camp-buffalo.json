@@ -17,6 +17,7 @@
       "state": "IN",
       "lat": 40.889457,
       "lon": -86.727241,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/162-100977",
       "program_types": [
         "scouts_bsa_resident",

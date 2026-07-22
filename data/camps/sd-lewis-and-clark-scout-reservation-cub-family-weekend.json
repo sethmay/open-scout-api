@@ -17,6 +17,7 @@
       "state": "SD",
       "lat": 42.8857743,
       "lon": -97.594925,
+      "geo_precision": "exact",
       "website": "https://www.siouxcouncil.org/lcsr",
       "program_types": [
         "cub_resident"

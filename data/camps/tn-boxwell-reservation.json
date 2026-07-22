@@ -17,6 +17,7 @@
       "state": "TN",
       "lat": 36.3141459,
       "lon": -86.4621322,
+      "geo_precision": "exact",
       "website": "https://www.mtcscouting.org/scoutsbsasummercamp",
       "program_types": [
         "scouts_bsa_resident"

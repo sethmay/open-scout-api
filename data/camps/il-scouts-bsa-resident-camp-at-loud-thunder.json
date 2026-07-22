@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 41.4238274,
       "lon": -90.8106336,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/133-ScoutsBSAResidentCamp",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "WV",
       "lat": 37.9159909,
       "lon": -81.1230247,
+      "geo_precision": "exact",
       "website": "https://www.summitbsa.org/scout-camp/",
       "program_types": [
         "scouts_bsa_resident"

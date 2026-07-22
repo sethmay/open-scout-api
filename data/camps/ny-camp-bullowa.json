@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 41.2465,
       "lon": -74.0021,
+      "geo_precision": "exact",
       "website": "https://www.ghvscouting.org/bullowadaycamp/",
       "program_types": [
         "cub_day"

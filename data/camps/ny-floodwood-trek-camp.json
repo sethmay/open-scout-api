@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 44.3490343,
       "lon": -74.4414173,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/333-floodwood26",
       "program_types": [
         "scouts_bsa_resident"

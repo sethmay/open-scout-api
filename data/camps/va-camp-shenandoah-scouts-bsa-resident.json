@@ -17,6 +17,7 @@
       "state": "VA",
       "lat": 38.1342036,
       "lon": -79.229441,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/763-CampShenandoah2026",
       "program_types": [
         "scouts_bsa_resident"

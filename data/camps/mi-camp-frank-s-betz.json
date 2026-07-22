@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 41.9248104,
       "lon": -86.3642888,
+      "geo_precision": "exact",
       "website": "https://pathwaytoadventure.org/cubscoutfamilycamp/",
       "program_types": [
         "cub_resident"

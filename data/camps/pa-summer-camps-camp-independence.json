@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 39.760372161865234,
       "lon": -79.54369354248047,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/527-CampIndependence2026",
       "program_types": [
         "scouts_bsa_resident"

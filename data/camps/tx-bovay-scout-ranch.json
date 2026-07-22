@@ -15,8 +15,9 @@
       "address": null,
       "city": "Navasota",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 30.388503,
+      "lon": -96.088003,
+      "geo_precision": "approximate",
       "website": "https://shacbsa.org/adventure-camp",
       "program_types": [
         "cub_resident"

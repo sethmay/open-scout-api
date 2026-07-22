@@ -17,6 +17,7 @@
       "state": "SC",
       "lat": 32.6289,
       "lon": -80.1688,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/550-summer26",
       "program_types": [
         "scouts_bsa_resident",

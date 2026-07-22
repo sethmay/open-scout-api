@@ -17,6 +17,7 @@
       "state": "NH",
       "lat": 42.866837808641,
       "lon": -72.056776161246,
+      "geo_precision": "exact",
       "website": "https://hnescouting.org/camping/summer26/",
       "program_types": [
         "scouts_bsa_resident",

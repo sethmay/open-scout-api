@@ -15,8 +15,9 @@
       "address": null,
       "city": "Athens",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 32.204442,
+      "lon": -95.854914,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/571-2026TRJSummerCamp",
       "program_types": [
         "scouts_bsa_resident"

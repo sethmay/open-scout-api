@@ -17,6 +17,7 @@
       "state": "KY",
       "lat": 37.901621785474,
       "lon": -85.671197052654,
+      "geo_precision": "exact",
       "website": "https://lhcbsa.org/harry-s-frazier-jr-scout-reservation-information/",
       "program_types": [
         "scouts_bsa_resident"

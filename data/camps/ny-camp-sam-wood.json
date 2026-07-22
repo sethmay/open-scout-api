@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 42.5318502,
       "lon": -78.1189263,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/375-samwoodcubadventure26",
       "program_types": [
         "cub_resident"

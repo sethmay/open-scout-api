@@ -15,8 +15,9 @@
       "address": null,
       "city": "Fairfax",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 37.987293,
+      "lon": -122.587967,
+      "geo_precision": "approximate",
       "website": "https://www.boyscouts-marin.org/camping-facilities/cub-scout-family-camping/8855",
       "program_types": [
         "cub_day"

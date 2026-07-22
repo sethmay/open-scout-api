@@ -15,8 +15,9 @@
       "address": "129 Hudson Road",
       "city": "Bolton",
       "state": "MA",
-      "lat": 44.8654855,
-      "lon": -68.8304781,
+      "lat": 42.434234,
+      "lon": -71.609774,
+      "geo_precision": "approximate",
       "website": "https://www.resolutebasecamp.net/adventure-day-camp/",
       "program_types": [
         "cub_day"

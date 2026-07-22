@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 30.1548,
       "lon": -81.7282,
+      "geo_precision": "exact",
       "website": "https://www.aquaticscamp.org/",
       "program_types": [
         "cub_day"

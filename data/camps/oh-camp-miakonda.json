@@ -17,6 +17,7 @@
       "state": "OH",
       "lat": 41.6947,
       "lon": -83.679,
+      "geo_precision": "exact",
       "website": "https://www.erieshorescouncil.org/cdc",
       "program_types": [
         "cub_day"

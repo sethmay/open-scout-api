@@ -17,6 +17,7 @@
       "state": "AL",
       "lat": 33.5282,
       "lon": -85.6716,
+      "geo_precision": "exact",
       "website": "https://1bsa.org/summer-camp-at-camp-sequoyah/",
       "program_types": [
         "scouts_bsa_resident"

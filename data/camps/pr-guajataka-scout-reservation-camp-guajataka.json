@@ -15,8 +15,9 @@
       "address": null,
       "city": "San Sebastian",
       "state": "PR",
-      "lat": null,
-      "lon": null,
+      "lat": 18.32346,
+      "lon": -66.972837,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/661-108970",
       "program_types": [
         "scouts_bsa_resident"

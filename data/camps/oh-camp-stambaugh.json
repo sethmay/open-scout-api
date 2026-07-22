@@ -17,6 +17,7 @@
       "state": "OH",
       "lat": 41.0071,
       "lon": -80.7204,
+      "geo_precision": "exact",
       "website": "https://www.manatoc.org/day-camps",
       "program_types": [
         "cub_day"

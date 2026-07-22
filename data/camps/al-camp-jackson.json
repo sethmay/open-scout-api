@@ -15,8 +15,9 @@
       "address": null,
       "city": "Scottsboro",
       "state": "AL",
-      "lat": null,
-      "lon": null,
+      "lat": 34.673132,
+      "lon": -86.033877,
+      "geo_precision": "approximate",
       "website": "https://1bsa.org/camp-jackson/",
       "program_types": [
         "scouts_bsa_resident"

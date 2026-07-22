@@ -17,6 +17,7 @@
       "state": "NE",
       "lat": 40.017037,
       "lon": -95.9440314,
+      "geo_precision": "exact",
       "website": "https://www.cornhuskercouncil.org/camping/camp-cornhusker/overview.html",
       "program_types": [
         "scouts_bsa_resident"

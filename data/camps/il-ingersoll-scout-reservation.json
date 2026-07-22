@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 40.718916975703,
       "lon": -90.320068043229,
+      "geo_precision": "exact",
       "website": "https://wdboyce.org/scouts-summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

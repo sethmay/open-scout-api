@@ -15,8 +15,9 @@
       "address": "3363 Dyer Lake Road",
       "city": "Burlington",
       "state": "WI",
-      "lat": 44.7022588,
-      "lon": -85.70886,
+      "lat": 42.680105,
+      "lon": -88.276413,
+      "geo_precision": "approximate",
       "website": "https://www.threeharborsscouting.org/camping/cub-scout-summer-camp-2026/76668",
       "program_types": [
         "cub_day"

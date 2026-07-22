@@ -15,8 +15,9 @@
       "address": null,
       "city": "Milburn",
       "state": "OK",
-      "lat": null,
-      "lon": null,
+      "lat": 34.240927,
+      "lon": -96.549165,
+      "geo_precision": "approximate",
       "website": "https://arbucklebsa.org/camping/campsimpsonsummercamp/",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 41.850432,
       "lon": -78.4952498,
+      "geo_precision": "exact",
       "website": "https://www.alleghenyhighlands.org/camping",
       "program_types": [
         "cub_resident"

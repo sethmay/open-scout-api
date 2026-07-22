@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 39.8927,
       "lon": -77.0712,
+      "geo_precision": "exact",
       "website": "https://newbirthoffreedom.org/camping/summer-camp-adventures/pack-camp/cub-scout-camp/",
       "program_types": [
         "cub_resident"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Fort Bragg",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 39.443658,
+      "lon": -123.805761,
+      "geo_precision": "approximate",
       "website": "http://redwoodscouting.org/camping/camp-noyo/",
       "program_types": [
         "scouts_bsa_resident"

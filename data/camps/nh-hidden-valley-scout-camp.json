@@ -15,8 +15,9 @@
       "address": null,
       "city": "Gilmanton Iron Works",
       "state": "NH",
-      "lat": null,
-      "lon": null,
+      "lat": 43.417443,
+      "lon": -71.296642,
+      "geo_precision": "approximate",
       "website": "https://nhscouting.org/gsr/",
       "program_types": [
         "scouts_bsa_resident"

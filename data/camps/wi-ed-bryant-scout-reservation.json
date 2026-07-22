@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 43.8943,
       "lon": -89.9873,
+      "geo_precision": "exact",
       "website": "https://www.glaciersedge.org/activiites/ebsr-summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

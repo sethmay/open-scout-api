@@ -15,8 +15,9 @@
       "address": null,
       "city": "Wenatchee",
       "state": "WA",
-      "lat": null,
-      "lon": null,
+      "lat": 47.42346,
+      "lon": -120.310349,
+      "geo_precision": "approximate",
       "website": "https://scoutingseattle.org/scout-a-vista/",
       "program_types": [
         "cub_day"

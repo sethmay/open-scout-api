@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.7641792,
       "lon": -77.6060256,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/497-102563",
       "program_types": [
         "scouts_bsa_resident"

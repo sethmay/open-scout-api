@@ -15,8 +15,9 @@
       "address": null,
       "city": "Franklin",
       "state": "NC",
-      "lat": null,
-      "lon": null,
+      "lat": 36.10286,
+      "lon": -78.278723,
+      "geo_precision": "approximate",
       "website": "https://www.danielboonecouncil.org/Adventure",
       "program_types": [
         "high_adventure"

@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 34.9341,
       "lon": -84.1365,
+      "geo_precision": "exact",
       "website": "https://www.campwoodruff.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

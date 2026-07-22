@@ -17,6 +17,7 @@
       "state": "ME",
       "lat": 43.5098,
       "lon": -70.8721,
+      "geo_precision": "exact",
       "website": "https://www.pinetreescouting.org/",
       "program_types": [
         "cub_day"

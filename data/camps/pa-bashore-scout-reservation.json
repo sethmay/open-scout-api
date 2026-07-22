@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.473866811884,
       "lon": -76.572172373814,
+      "geo_precision": "exact",
       "website": "http://padutchbsa.org/camping/bashore/summercamp/",
       "program_types": [
         "scouts_bsa_resident"

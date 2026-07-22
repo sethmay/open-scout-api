@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 43.447335504544,
       "lon": -86.186192766179,
+      "geo_precision": "exact",
       "website": "https://michiganscouting.org/camping/properties/gerber-scout-reservation/",
       "program_types": [
         "scouts_bsa_resident"

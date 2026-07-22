@@ -17,6 +17,7 @@
       "state": "MO",
       "lat": 38.0918624,
       "lon": -93.5580512,
+      "geo_precision": "exact",
       "website": "https://www.hoac-bsa.org/bartle",
       "program_types": [
         "scouts_bsa_resident"

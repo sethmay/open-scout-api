@@ -17,6 +17,7 @@
       "state": "MN",
       "lat": 47.9418,
       "lon": -91.7273,
+      "geo_precision": "approximate",
       "website": "https://www.ntier.org/",
       "program_types": [
         "high_adventure"

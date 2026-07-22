@@ -15,8 +15,9 @@
       "address": null,
       "city": null,
       "state": "WY",
-      "lat": null,
-      "lon": null,
+      "lat": 43.0,
+      "lon": -107.55,
+      "geo_precision": "approximate",
       "website": "https://www.utahscouts.org/loll",
       "program_types": [
         "high_adventure"

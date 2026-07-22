@@ -17,6 +17,7 @@
       "state": "OK",
       "lat": 36.3425491,
       "lon": -96.107347,
+      "geo_precision": "exact",
       "website": "https://www.okscouts.org/cub-world-at-zink-ranch",
       "program_types": [
         "cub_resident"

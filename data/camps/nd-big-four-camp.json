@@ -15,8 +15,9 @@
       "address": "900 54th Street",
       "city": "Minot",
       "state": "ND",
-      "lat": 40.637405,
-      "lon": -74.003778,
+      "lat": 48.23251,
+      "lon": -101.296273,
+      "geo_precision": "approximate",
       "website": "https://scoutingnlc.org/campingprograms/daycamp/",
       "program_types": [
         "cub_day"

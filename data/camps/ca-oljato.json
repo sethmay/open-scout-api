@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 37.236741227273264,
       "lon": -119.17765287672691,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/031-Oljato2026",
       "program_types": [
         "scouts_bsa_resident"

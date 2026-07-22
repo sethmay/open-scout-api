@@ -15,8 +15,9 @@
       "address": null,
       "city": "Woodville",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 30.777089,
+      "lon": -94.418505,
+      "geo_precision": "approximate",
       "website": "https://3riversbsa.org/scott-scout-ranch/",
       "program_types": [
         "scouts_bsa_resident"

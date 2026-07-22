@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 27.7906333,
       "lon": -80.5059434,
+      "geo_precision": "exact",
       "website": "https://www.gulfstreamcouncil.org/IR-daycamp",
       "program_types": [
         "cub_day"

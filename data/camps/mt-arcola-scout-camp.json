@@ -15,8 +15,9 @@
       "address": null,
       "city": "Anaconda",
       "state": "MT",
-      "lat": null,
-      "lon": null,
+      "lat": 46.129469,
+      "lon": -112.953131,
+      "geo_precision": "approximate",
       "website": "https://scoutingmontana.org/camps/arcola/",
       "program_types": [
         "high_adventure"

@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 41.4574,
       "lon": -80.0037,
+      "geo_precision": "exact",
       "website": "https://www.fccscouting.org/custaloga-town-scout-reservation/",
       "program_types": [
         "scouts_bsa_resident",

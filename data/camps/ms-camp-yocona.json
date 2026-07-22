@@ -17,6 +17,7 @@
       "state": "MS",
       "lat": 34.2368,
       "lon": -89.1867,
+      "geo_precision": "exact",
       "website": "https://www.natcheztracecouncil.org/ScoutCamp",
       "program_types": [
         "scouts_bsa_resident"

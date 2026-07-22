@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 33.2203,
       "lon": -97.9107,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/662-ChisholmTrail",
       "program_types": [
         "high_adventure"

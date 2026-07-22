@@ -17,6 +17,7 @@
       "state": "TN",
       "lat": 35.969630559712,
       "lon": -88.067116989527,
+      "geo_precision": "exact",
       "website": "https://www.westtnscouts.org/cmm",
       "program_types": [
         "scouts_bsa_resident",

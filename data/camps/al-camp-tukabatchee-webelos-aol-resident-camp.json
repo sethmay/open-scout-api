@@ -17,6 +17,7 @@
       "state": "AL",
       "lat": 33.1995092,
       "lon": -85.381146,
+      "geo_precision": "exact",
       "website": "https://www.tukabatcheebsa.org/shop",
       "program_types": [
         "webelos"

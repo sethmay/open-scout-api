@@ -15,8 +15,9 @@
       "address": null,
       "city": "Pottsboro",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 33.760873,
+      "lon": -96.666853,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/571-2026CubWebResidentCamp",
       "program_types": [
         "cub_resident",

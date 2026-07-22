@@ -17,6 +17,7 @@
       "state": "CT",
       "lat": 41.87092590332031,
       "lon": -72.14141845703125,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/066-102135",
       "program_types": [
         "scouts_bsa_resident"

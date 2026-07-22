@@ -15,8 +15,9 @@
       "address": null,
       "city": "Orange",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 33.750631,
+      "lon": -117.872231,
+      "geo_precision": "approximate",
       "website": "https://ocbsa.org/summercamp/",
       "program_types": [
         "cub_day"

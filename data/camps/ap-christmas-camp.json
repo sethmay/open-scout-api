@@ -17,6 +17,7 @@
       "state": "AP",
       "lat": 15.145,
       "lon": 120.596,
+      "geo_precision": "exact",
       "website": "https://www.fareastcouncil.org/camping/council-resident-camps",
       "program_types": [
         "scouts_bsa_resident"

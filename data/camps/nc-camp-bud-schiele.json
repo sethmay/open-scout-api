@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.3,
       "lon": -81.92,
+      "geo_precision": "exact",
       "website": "https://www.campbudschiele.org/campbudschiele",
       "program_types": [
         "scouts_bsa_resident",

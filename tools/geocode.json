@@ -1,0 +1,366 @@
+{
+  "ak-alaska-ultimate-high-adventure": [
+    62.346311,
+    -150.392552
+  ],
+  "ak-northern-lights-high-adventure-base": [
+    64.837845,
+    -147.716675
+  ],
+  "al-camp-jackson": [
+    34.673132,
+    -86.033877
+  ],
+  "ar-camp-preston-hunt": [
+    33.425426,
+    -94.043094
+  ],
+  "ca-camp-balboa": [
+    32.71742,
+    -117.162772
+  ],
+  "ca-camp-herms": [
+    37.915406,
+    -122.301411
+  ],
+  "ca-camp-mcconnell": [
+    37.386883,
+    -120.723532
+  ],
+  "ca-camp-noyo": [
+    39.443658,
+    -123.805761
+  ],
+  "ca-camp-robert-l-cole": [
+    39.309902,
+    -120.53993
+  ],
+  "ca-irvine-ranch-outdoor-education-center": [
+    33.750631,
+    -117.872231
+  ],
+  "ca-marin-council-cub-scout-day-camp-camp-tamarancho": [
+    37.987293,
+    -122.587967
+  ],
+  "ca-mataguay-scout-ranch": [
+    33.10921,
+    -116.673076
+  ],
+  "ca-schoepe-scout-reservation-at-lost-valley": [
+    33.28226,
+    -116.63363
+  ],
+  "co-camp-cortlandt-dietler": [
+    39.313882,
+    -104.086897
+  ],
+  "co-camp-cris-dobbins": [
+    39.313882,
+    -104.086897
+  ],
+  "co-cub-scout-adventure-camp-at-camp-cris-dobbins": [
+    39.313882,
+    -104.086897
+  ],
+  "co-elkhorn-high-adventure-base": [
+    40.807688,
+    -105.575622
+  ],
+  "co-jack-nicol-cub-scout-camp": [
+    40.807688,
+    -105.575622
+  ],
+  "co-magness-adventure-camp": [
+    39.313882,
+    -104.086897
+  ],
+  "co-rocky-mountain-high-adventure-base": [
+    37.923619,
+    -104.930266
+  ],
+  "co-tahosa-high-adventure-base": [
+    40.07226,
+    -105.507918
+  ],
+  "ct-camp-sequassen": [
+    41.878834,
+    -72.979617
+  ],
+  "ia-little-sioux-scout-ranch": [
+    41.808018,
+    -96.023033
+  ],
+  "id-cub-scout-day-camp-at-krupp-scout-hollow": [
+    43.67224,
+    -111.914863
+  ],
+  "id-salmon-river-high-adventure-base": [
+    45.422111,
+    -116.315411
+  ],
+  "il-camp-bunn": [
+    39.355047,
+    -90.037052
+  ],
+  "il-camp-illinek": [
+    39.676163,
+    -89.704544
+  ],
+  "ks-quivira-scout-ranch": [
+    37.12672,
+    -96.186936
+  ],
+  "la-louisiana-swamp-base": [
+    30.226219,
+    -92.01782
+  ],
+  "ma-camp-resolute-e-paul-robsham-scout-reservation-adventure-day-camp": [
+    42.434234,
+    -71.609774
+  ],
+  "ma-greenough-scout-reservation-camp-greenough": [
+    41.708228,
+    -70.221686
+  ],
+  "md-camp-horseshoe": [
+    39.698035,
+    -76.062819
+  ],
+  "me-camp-william-hinds": [
+    43.901851,
+    -70.470428
+  ],
+  "me-camp-william-hinds-cub-scout-overnight-camp": [
+    43.901851,
+    -70.470428
+  ],
+  "mi-camp-munhacke": [
+    42.458368,
+    -84.084398
+  ],
+  "mi-great-lakes-sailing-adventure-the-retriever": [
+    45.783901,
+    -84.727828
+  ],
+  "mn-camp-wilderness": [
+    46.922181,
+    -95.058632
+  ],
+  "mn-cedar-point-scout-camp": [
+    43.652178,
+    -94.461083
+  ],
+  "mo-rotary-scout-camp": [
+    38.8744,
+    -94.181812
+  ],
+  "ms-camp-v-bar-salmen-scout-reservation": [
+    30.782134,
+    -89.138104
+  ],
+  "ms-warren-a-hood-scout-reservation": [
+    31.860438,
+    -90.395926
+  ],
+  "mt-arcola-scout-camp": [
+    46.129469,
+    -112.953131
+  ],
+  "mt-camp-melita-island": [
+    47.790483,
+    -114.285486
+  ],
+  "mt-grizzly-base": [
+    48.067926,
+    -114.096666
+  ],
+  "mt-k-m-scout-ranch": [
+    47.253674,
+    -109.359223
+  ],
+  "mt-montana-outdoor-high-adventure-base-mohab": [
+    48.191772,
+    -112.500531
+  ],
+  "nc-lumpkin-adventure-base": [
+    36.10286,
+    -78.278723
+  ],
+  "nc-pamlico-sea-base": [
+    35.048256,
+    -78.871386
+  ],
+  "nd-big-four-camp": [
+    48.23251,
+    -101.296273
+  ],
+  "nh-camp-bell": [
+    43.417443,
+    -71.296642
+  ],
+  "nh-camp-carpenter-fort-friendship-day-camp": [
+    42.99564,
+    -71.454789
+  ],
+  "nh-hidden-valley-scout-camp": [
+    43.417443,
+    -71.296642
+  ],
+  "nj-alpine-day-camp": [
+    40.94855,
+    -73.928114
+  ],
+  "nj-john-e-reeves-cub-world-at-alpine-scout-camp": [
+    40.94855,
+    -73.928114
+  ],
+  "nm-camp-tres-ritos": [
+    36.194085,
+    -105.677522
+  ],
+  "nm-dowling-aquatic-base": [
+    32.425746,
+    -104.237612
+  ],
+  "nm-gorham-scout-ranch": [
+    36.003909,
+    -105.946866
+  ],
+  "ny-camp-merz": [
+    42.253947,
+    -79.504491
+  ],
+  "ny-camp-woodland": [
+    43.247847,
+    -76.000197
+  ],
+  "oh-camp-berry": [
+    41.041387,
+    -83.650398
+  ],
+  "oh-fort-steuben-scout-reservation": [
+    40.270347,
+    -81.287407
+  ],
+  "ok-arrow-of-light-trail-to-troop-resident-camp-at-hale": [
+    34.752417,
+    -95.041916
+  ],
+  "ok-camp-george-thomas": [
+    34.893677,
+    -98.365887
+  ],
+  "ok-camp-simpson": [
+    34.240927,
+    -96.549165
+  ],
+  "ok-mabee-scout-reservation": [
+    36.200094,
+    -95.16774
+  ],
+  "or-camp-clark-adventure-cove": [
+    45.201599,
+    -123.885091
+  ],
+  "pa-camp-buck-run": [
+    39.998002,
+    -79.041553
+  ],
+  "pa-camp-freedom": [
+    39.807147,
+    -79.565534
+  ],
+  "pa-camp-john-h-ware-iii": [
+    39.750938,
+    -76.225788
+  ],
+  "pa-eagle-base-heritage-reservation": [
+    39.807147,
+    -79.565534
+  ],
+  "pr-guajataka-scout-reservation-camp-guajataka": [
+    18.32346,
+    -66.972837
+  ],
+  "tx-bovay-scout-ranch": [
+    30.388503,
+    -96.088003
+  ],
+  "tx-camp-james-ray": [
+    33.760873,
+    -96.666853
+  ],
+  "tx-camp-karankawa": [
+    28.094292,
+    -97.827411
+  ],
+  "tx-camp-perry-scout-reservation": [
+    26.190754,
+    -97.69606
+  ],
+  "tx-camp-strake": [
+    30.592421,
+    -95.129382
+  ],
+  "tx-camp-tonkawa": [
+    32.207994,
+    -99.796132
+  ],
+  "tx-camp-wisdom": [
+    32.776272,
+    -96.796856
+  ],
+  "tx-clements-scout-ranch-trevor-rees-jones-scout-camp": [
+    32.204442,
+    -95.854914
+  ],
+  "tx-george-w-pirtle-scout-reservation": [
+    30.32743,
+    -95.724114
+  ],
+  "tx-scott-scout-ranch": [
+    30.777089,
+    -94.418505
+  ],
+  "tx-sid-richardson-scout-ranch-sr2": [
+    33.166628,
+    -97.881168
+  ],
+  "ut-camp-fife": [
+    41.77465,
+    -112.094952
+  ],
+  "ut-camp-kiesel": [
+    41.261008,
+    -111.768833
+  ],
+  "va-camp-ottari": [
+    36.966147,
+    -80.698201
+  ],
+  "wa-scout-a-vista": [
+    47.42346,
+    -120.310349
+  ],
+  "wi-akelas-world-cub-scout-camp": [
+    45.636623,
+    -89.412075
+  ],
+  "wi-camp-oh-da-ko-ta": [
+    42.680105,
+    -88.276413
+  ],
+  "wi-camp-oh-da-ko-ta-first-year-camper-program": [
+    42.680105,
+    -88.276413
+  ],
+  "wv-camp-arrowhead-general-andrew-lewis-scout-reservation": [
+    38.424809,
+    -82.2132
+  ],
+  "wy-teton-high-adventure-base": [
+    43.479965,
+    -110.761815
+  ]
+}

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Cisco Grove",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 39.309902,
+      "lon": -120.53993,
+      "geo_precision": "approximate",
       "website": "https://camprobertlcole.org/",
       "program_types": [
         "high_adventure"

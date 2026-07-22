@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 39.3226,
       "lon": -120.6142,
+      "geo_precision": "exact",
       "website": "https://www.boyscouts-marin.org/camping-facilities/scouts-bsa-summer-camp/marin-sierra-fees-payments/32933",
       "program_types": [
         "scouts_bsa_resident"

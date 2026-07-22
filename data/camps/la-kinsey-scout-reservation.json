@@ -17,6 +17,7 @@
       "state": "LA",
       "lat": 30.3608351,
       "lon": -93.2001624,
+      "geo_precision": "exact",
       "website": "https://norwela.org/summer-camp-dates-and-fees/",
       "program_types": [
         "scouts_bsa_resident"

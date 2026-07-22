@@ -17,6 +17,7 @@
       "state": "TN",
       "lat": 35.432501473301,
       "lon": -85.862878340314,
+      "geo_precision": "exact",
       "website": "https://www.cherokeeareabsa.com/skymont",
       "program_types": [
         "scouts_bsa_resident"

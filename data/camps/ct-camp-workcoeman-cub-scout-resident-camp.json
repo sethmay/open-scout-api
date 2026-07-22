@@ -17,6 +17,7 @@
       "state": "CT",
       "lat": 41.8914514,
       "lon": -73.0477717,
+      "geo_precision": "exact",
       "website": "https://campworkcoeman.org/cub-scouts/fees/",
       "program_types": [
         "cub_resident"

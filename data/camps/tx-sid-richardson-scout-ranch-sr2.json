@@ -15,8 +15,9 @@
       "address": "Boy Scout Rd",
       "city": "Runaway Bay",
       "state": "TX",
-      "lat": 39.8586606,
-      "lon": -86.0327115,
+      "lat": 33.166628,
+      "lon": -97.881168,
+      "geo_precision": "approximate",
       "website": "https://www.longhorncouncil.org/sid-richardson-scout-ranch",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "UT",
       "lat": 41.9839,
       "lon": -111.408,
+      "geo_precision": "exact",
       "website": "https://www.utahscouts.org/hunt",
       "program_types": [
         "scouts_bsa_resident"

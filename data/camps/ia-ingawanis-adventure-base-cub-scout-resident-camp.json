@@ -17,6 +17,7 @@
       "state": "IA",
       "lat": 42.6877,
       "lon": -92.4234,
+      "geo_precision": "exact",
       "website": "https://www.winnebagocouncil.org/camping/iab/cub-scout-resident-camp/",
       "program_types": [
         "cub_resident"

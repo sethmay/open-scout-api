@@ -17,6 +17,7 @@
       "state": "NJ",
       "lat": 41.055958,
       "lon": -74.948773,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/333-NoBe26",
       "program_types": [
         "scouts_bsa_resident"

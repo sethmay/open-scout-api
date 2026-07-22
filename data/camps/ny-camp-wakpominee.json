@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 43.4564655,
       "lon": -73.5861915,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/364-Wakpominee2026",
       "program_types": [
         "scouts_bsa_resident"

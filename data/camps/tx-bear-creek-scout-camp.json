@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 30.058937891444,
       "lon": -99.41733329681,
+      "geo_precision": "exact",
       "website": "https://www.alamoareascouting.org/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

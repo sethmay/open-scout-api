@@ -15,8 +15,9 @@
       "address": null,
       "city": "Tuscola",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 32.207994,
+      "lon": -99.796132,
+      "geo_precision": "approximate",
       "website": "https://www.texastrailsbsa.com/camping/camp-tonkawa/61684",
       "program_types": [
         "cub_resident"

@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 42.70599,
       "lon": -73.52813,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/364-RSR2026",
       "program_types": [
         "scouts_bsa_resident"

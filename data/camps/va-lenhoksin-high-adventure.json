@@ -17,6 +17,7 @@
       "state": "VA",
       "lat": 37.96673652528,
       "lon": -79.470431570218,
+      "geo_precision": "exact",
       "website": "https://www.gotogoshen.org/camps-programs/",
       "program_types": [
         "high_adventure"

@@ -17,6 +17,7 @@
       "state": "AP",
       "lat": 35.624,
       "lon": 139.466,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/803-2026CampOkami",
       "program_types": [
         "scouts_bsa_resident"

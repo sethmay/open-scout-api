@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 29.8072851,
       "lon": -81.294934,
+      "geo_precision": "exact",
       "website": "https://tampabayscouting.org/camps/sand-hill-scout-reservation",
       "program_types": [
         "scouts_bsa_resident"

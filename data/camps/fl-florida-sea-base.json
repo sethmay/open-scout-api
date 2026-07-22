@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 24.8519204,
       "lon": -80.7373146,
+      "geo_precision": "exact",
       "website": "https://www.bsaseabase.org/",
       "program_types": [
         "high_adventure"

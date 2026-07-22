@@ -17,6 +17,7 @@
       "state": "KS",
       "lat": 39.2016275,
       "lon": -95.4043059,
+      "geo_precision": "exact",
       "website": "https://jayhawkcouncil.org/camping-outdoor-program/camp-delaware/",
       "program_types": [
         "cub_resident",

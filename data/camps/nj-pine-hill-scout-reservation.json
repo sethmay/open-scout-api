@@ -17,6 +17,7 @@
       "state": "NJ",
       "lat": 39.79550870461,
       "lon": -74.96090575826,
+      "geo_precision": "exact",
       "website": "https://old.gardenstatescouting.org/pinehill",
       "program_types": [
         "cub_day"

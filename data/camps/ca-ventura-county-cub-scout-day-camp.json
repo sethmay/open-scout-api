@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 34.282,
       "lon": -118.86,
+      "geo_precision": "exact",
       "website": "https://www.scoutingamericavc.org/CSCamp",
       "program_types": [
         "cub_day"

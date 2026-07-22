@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 33.763,
       "lon": -82.2838,
+      "geo_precision": "exact",
       "website": "https://www.gacacouncil.org/summer-camps",
       "program_types": [
         "scouts_bsa_resident"

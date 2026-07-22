@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.433933006025,
       "lon": -76.949336316887,
+      "geo_precision": "exact",
       "website": "https://www.scoutingecc.org/",
       "program_types": [
         "scouts_bsa_resident"

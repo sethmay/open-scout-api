@@ -17,6 +17,7 @@
       "state": "IA",
       "lat": 41.9494,
       "lon": -93.9105,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/177-CubCamp2026",
       "program_types": [
         "cub_resident"

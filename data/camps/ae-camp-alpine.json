@@ -17,6 +17,7 @@
       "state": "AE",
       "lat": 46.483382,
       "lon": 7.663972,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/802-CampAlpine2026",
       "program_types": [
         "scouts_bsa_resident"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Huntsville",
       "state": "UT",
-      "lat": null,
-      "lon": null,
+      "lat": 41.261008,
+      "lon": -111.768833,
+      "geo_precision": "approximate",
       "website": "https://www.utahscouts.org/kiesel",
       "program_types": [
         "cub_day"

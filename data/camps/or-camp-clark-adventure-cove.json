@@ -15,8 +15,9 @@
       "address": "17500 Cape Lookout Road",
       "city": "Cloverdale",
       "state": "OR",
-      "lat": null,
-      "lon": null,
+      "lat": 45.201599,
+      "lon": -123.885091,
+      "geo_precision": "approximate",
       "website": "https://cpcscouting.org/project/camp-clark/",
       "program_types": [
         "high_adventure"

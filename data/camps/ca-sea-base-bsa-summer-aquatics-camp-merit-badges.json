@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 33.7562573,
       "lon": -118.1172335,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/032-SummerScoutsMeritBadges2026",
       "program_types": [
         "scouts_bsa_resident"

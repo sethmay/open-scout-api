@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 43.7549154,
       "lon": -73.6611233,
+      "geo_precision": "exact",
       "website": "https://www.ghvscouting.org/read/",
       "program_types": [
         "high_adventure"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Livingston",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 37.386883,
+      "lon": -120.723532,
+      "geo_precision": "approximate",
       "website": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468",
       "program_types": [
         "cub_resident"

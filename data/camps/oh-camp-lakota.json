@@ -17,6 +17,7 @@
       "state": "OH",
       "lat": 41.245,
       "lon": -84.568,
+      "geo_precision": "exact",
       "website": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247",
       "program_types": [
         "scouts_bsa_resident"

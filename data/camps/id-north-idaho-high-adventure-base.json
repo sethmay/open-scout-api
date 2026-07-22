@@ -17,6 +17,7 @@
       "state": "ID",
       "lat": 47.5977773,
       "lon": -116.7710295,
+      "geo_precision": "exact",
       "website": "https://www.nwscouts.org/",
       "program_types": [
         "high_adventure"

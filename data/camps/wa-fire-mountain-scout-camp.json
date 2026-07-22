@@ -17,6 +17,7 @@
       "state": "WA",
       "lat": 48.4512,
       "lon": -122.1573,
+      "geo_precision": "exact",
       "website": "https://www.mountbakerbsa.org/fire-mountain",
       "program_types": [
         "scouts_bsa_resident"

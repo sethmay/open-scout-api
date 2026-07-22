@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 40.0928,
       "lon": -87.7536,
+      "geo_precision": "exact",
       "website": "https://www.campdrake.com/scouts-bsa-camp",
       "program_types": [
         "scouts_bsa_resident"

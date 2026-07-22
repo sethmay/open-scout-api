@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 40.5904894,
       "lon": -74.1260274,
+      "geo_precision": "exact",
       "website": "https://camppouch.org/",
       "program_types": [
         "cub_day"

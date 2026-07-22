@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 30.4474,
       "lon": -84.605,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/664-SC26",
       "program_types": [
         "scouts_bsa_resident"

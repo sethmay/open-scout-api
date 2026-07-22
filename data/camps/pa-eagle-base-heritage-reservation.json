@@ -15,8 +15,9 @@
       "address": "300 Heritage Road",
       "city": "Farmington",
       "state": "PA",
-      "lat": null,
-      "lon": null,
+      "lat": 39.807147,
+      "lon": -79.565534,
+      "geo_precision": "approximate",
       "website": "https://heritagereservation.org/summer-camp/",
       "program_types": [
         "high_adventure"

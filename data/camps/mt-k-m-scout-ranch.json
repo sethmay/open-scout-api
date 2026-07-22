@@ -15,8 +15,9 @@
       "address": null,
       "city": "Hilger",
       "state": "MT",
-      "lat": null,
-      "lon": null,
+      "lat": 47.253674,
+      "lon": -109.359223,
+      "geo_precision": "approximate",
       "website": "https://scoutingmontana.org/camps/km-scout-ranch/",
       "program_types": [
         "scouts_bsa_resident"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Mayville",
       "state": "NY",
-      "lat": null,
-      "lon": null,
+      "lat": 42.253947,
+      "lon": -79.504491,
+      "geo_precision": "approximate",
       "website": "https://www.campmerz.org/scouts-bsa-summer-camp",
       "program_types": [
         "scouts_bsa_resident"

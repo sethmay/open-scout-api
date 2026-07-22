@@ -17,6 +17,7 @@
       "state": "SC",
       "lat": 35.128298,
       "lon": -82.380166,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/551-COI26",
       "program_types": [
         "scouts_bsa_resident"
