@@ -45,7 +45,11 @@
       },
       "merged_from": [
         "co-cub-scout-adventure-camp-at-camp-cris-dobbins"
-      ]
+      ],
+      "reservation": {
+        "id": "co-camp-cortlandt-dietler-reservation",
+        "name": null
+      }
     }
   ],
   "notes": null

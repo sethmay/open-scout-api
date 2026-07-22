@@ -221,7 +221,7 @@ def main() -> None:
                                   "lat": ov.get("lat"), "lon": ov.get("lon"),
                                   "geo_precision": ov.get("geo_precision"), "website": ov.get("website"),
                                   "program_types": ov.get("program_types", []), "summary": ov.get("summary"),
-                                  "parent": ov.get("parent"),
+                                  "parent": ov.get("parent"), "reservation": ov.get("reservation"),
                                   "council_name": _cm["name"] if _cm else None,
                                   "council_website": _cm["website"] if _cm else None,
                                   "council_number": _cm["number"] if _cm else None,

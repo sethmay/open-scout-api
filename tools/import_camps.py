@@ -163,6 +163,41 @@ def _distinct_location(cv: dict, bv: dict) -> bool:
     return False
 
 
+# Reviewed same-physical-camp splits whose slugs share no prefix (camp-finder program/session
+# variants of one property). survivor id -> (name override or None, [absorbed ids]).
+CURATED_MERGES = {
+    "ca-camp-fiesta-island": (None, ["ca-webelos-and-aol-resident-camp"]),
+    "ct-camp-workcoeman-cub-scout-resident-camp": ("Camp Workcoeman", ["ct-camp-workcoeman-cub-scout-day-camp"]),
+    "ia-camp-mitigwa-mitigwa-scout-reservation": ("Camp Mitigwa", ["ia-camp-mitigwa-cub-experience-summer-camp"]),
+    "il-rhodes-france-scout-reservation": (None, ["il-rfsr-cub-scout-adventure-camp"]),
+    "md-camp-potomac-river-base": ("Camp Potomac", ["md-camp-potomac-scouts-at-work-camp"]),
+    "mn-parker-scout-reservation-voyageurs-camp-for-new-scouts": ("Parker Scout Reservation", ["mn-parker-scout-reservation-cub-scout-summer-camp"]),
+    "nh-camp-carpenter-overnight-camp": ("Camp Carpenter", ["nh-camp-carpenter-half-week-camp"]),
+    "nj-john-e-reeves-cub-world-at-alpine-scout-camp": ("Alpine Scout Camp", ["nj-alpine-day-camp"]),
+    "wy-yellowstone-anglers-basecamp-full-week": ("Yellowstone Anglers' Basecamp", ["wy-yellowstone-anglers-basecamp-half-week"]),
+}
+
+
+def _slug(s: str) -> str:
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
+
+
+def _reservation_name(names: list[str]) -> str | None:
+    """A shared reservation label = the common leading words across ALL co-located camp names
+    (a single member's own '... Base/Reservation' name is not the group's name). None if the
+    camps share no meaningful prefix (e.g. Goshen's Bowman/Marriott/PMI/Lenhok'sin)."""
+    common = []
+    for col in zip(*(n.split() for n in names)):
+        if len(set(col)) == 1:
+            common.append(col[0])
+        else:
+            break
+    phrase = re.sub(r"[\s\-–—:()]+$", "", " ".join(common))   # trailing separators
+    phrase = re.sub(r"\s*\(?Camp$", "", phrase)               # trailing "(Camp" / "Camp"
+    phrase = re.sub(r"[\s\-–—:()]+$", "", phrase).strip()     # separators re-exposed by the strip
+    return phrase if len(phrase) >= 3 and phrase.lower() not in ("camp", "the", "scout") else None
+
+
 def main() -> None:
     cf = find_camp_finder()
     num2slug = council_num_to_slug()
@@ -220,6 +255,13 @@ def main() -> None:
     keep: dict[str, str] = {}         # child -> immediate base, kept as a distinct sub-camp
     for child, base in links.items():
         (keep if _distinct_location(by_id[child], by_id[base]) else merge_edge)[child] = base
+    # Reviewed same-camp splits whose slugs share no prefix: merge each absorbed id into its
+    # survivor and normalize the survivor's name to the property name.
+    for _surv, (_rename, _absorbed) in CURATED_MERGES.items():
+        if _rename:
+            by_id[_surv]["name"] = _rename
+        for _a in _absorbed:
+            merge_edge[_a] = _surv
 
     def terminal(x: str) -> str:
         seen: set[str] = set()
@@ -238,20 +280,34 @@ def main() -> None:
         by_id[child]["parent"] = f"camp:{terminal(base)}"
 
     # A coordinate shared by >=2 surviving camps is a reservation centroid, not an exact fix for
-    # any one of them; relabel it 'approximate' so consumers can honestly soft-plot / cluster the
-    # pins (Type-A duplicates are already merged, so co-located survivors are distinct camps).
+    # any one of them. Relabel it 'approximate' (Type-A duplicates are already merged, so the
+    # co-located survivors are distinct camps) and tag them with a shared `reservation` so a
+    # consumer can render one pin per reservation that expands to its camps.
     coord_groups: dict[tuple, list] = {}
     for cid, cref, name, v in built:
         if cid in merge_edge or v.get("lat") is None:
             continue
-        coord_groups.setdefault((round(v["lat"], 5), round(v["lon"], 5)), []).append(v)
-    stacked = 0
-    for vs_ in coord_groups.values():
-        if len(vs_) > 1:
-            for v in vs_:
-                if v.get("geo_precision") == "exact":
-                    v["geo_precision"] = "approximate"
-                    stacked += 1
+        coord_groups.setdefault((round(v["lat"], 5), round(v["lon"], 5)), []).append((cid, v))
+    stacked = n_res = 0
+    used_rid: set[str] = set()
+    for members in coord_groups.values():
+        if len(members) < 2:
+            continue
+        n_res += 1
+        rname = _reservation_name([v["name"] for _, v in members])
+        rstate = next((v.get("state") for _, v in members if v.get("state")), None)
+        rid = _slug(f"{rstate or 'us'}-{rname}") if rname else f"{min(cid for cid, _ in members)}-reservation"
+        if rid in used_rid:   # two same-state groups deriving one name -> disambiguate deterministically
+            base, n = rid, 2
+            while rid in used_rid:
+                rid = f"{base}-{n}"
+                n += 1
+        used_rid.add(rid)
+        for _, v in members:
+            if v.get("geo_precision") == "exact":
+                v["geo_precision"] = "approximate"
+                stacked += 1
+            v["reservation"] = {"id": rid, "name": rname}
 
     written = 0
     for cid, cref, name, v in built:
@@ -267,10 +323,8 @@ def main() -> None:
     lost = set(merge_edge) - aliased
     if lost:
         raise SystemExit(f"merge dropped listings with no surviving alias: {sorted(lost)}")
-    n_parent = sum(1 for v in by_id.values() if v.get("parent"))
-    print(f"camps: {written} written; {len(merge_edge)} program-variants merged into base; "
-          f"{n_parent} reservation sub-camps (distinct location); "
-          f"{stacked} shared-coordinate camps relabeled approximate")
+    print(f"camps: {written} written; {len(merge_edge)} program/session variants merged; "
+          f"{n_res} reservations grouping co-located camps; {stacked} coords relabeled approximate")
 
 
 if __name__ == "__main__":

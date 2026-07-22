@@ -79,6 +79,11 @@
         "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
         "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
         "geo_precision": { "enum": ["exact", "approximate", null] },
+        "reservation": {
+          "type": ["object", "null"],
+          "properties": { "id": { "type": "string" }, "name": { "type": ["string", "null"] } },
+          "required": ["id"], "additionalProperties": false
+        },
         "website": { "type": ["string", "null"], "format": "uri" },
         "program_types": { "type": "array", "items": { "type": "string" } },
         "summary": { "type": ["string", "null"] },
@@ -91,7 +96,7 @@
         "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "camp_type", "operator", "council", "parent", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "geo_precision", "website", "url", "summary", "program_types", "verified_at", "imported_at", "method", "confidence"],
+      "required": ["id", "name", "camp_type", "operator", "council", "parent", "reservation", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "geo_precision", "website", "url", "summary", "program_types", "verified_at", "imported_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentRank": {

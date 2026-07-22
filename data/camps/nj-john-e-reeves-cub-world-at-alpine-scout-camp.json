@@ -6,7 +6,7 @@
     {
       "valid_from": null,
       "valid_to": null,
-      "name": "John E. Reeves Cub World at Alpine Scout Camp",
+      "name": "Alpine Scout Camp",
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:greater-new-york",
@@ -20,6 +20,7 @@
       "geo_precision": "approximate",
       "website": "https://alpinescoutcamp.org/cubworld/",
       "program_types": [
+        "cub_day",
         "cub_resident"
       ],
       "features": [],
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "nj-alpine-day-camp"
+      ]
     }
   ],
   "notes": null

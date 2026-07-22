@@ -6,7 +6,7 @@
     {
       "valid_from": null,
       "valid_to": null,
-      "name": "Camp Workcoeman - Cub Scout Resident Camp",
+      "name": "Camp Workcoeman",
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:connecticut-rivers",
@@ -17,9 +17,10 @@
       "state": "CT",
       "lat": 41.8914514,
       "lon": -73.0477717,
-      "geo_precision": "approximate",
+      "geo_precision": "exact",
       "website": "https://campworkcoeman.org/cub-scouts/fees/",
       "program_types": [
+        "cub_day",
         "cub_resident"
       ],
       "features": [],
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "ct-camp-workcoeman-cub-scout-day-camp"
+      ]
     }
   ],
   "notes": null

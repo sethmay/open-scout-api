@@ -6,7 +6,7 @@
     {
       "valid_from": null,
       "valid_to": null,
-      "name": "Camp Carpenter Overnight Camp",
+      "name": "Camp Carpenter",
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:daniel-webster",
@@ -17,7 +17,7 @@
       "state": "NH",
       "lat": 42.950154,
       "lon": -71.3843598,
-      "geo_precision": "approximate",
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/330-108266",
       "program_types": [
         "scouts_bsa_resident"
@@ -41,7 +41,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "nh-camp-carpenter-half-week-camp"
+      ]
     }
   ],
   "notes": null
