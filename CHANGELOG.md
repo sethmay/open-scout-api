@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.19.0 (minor) — 2026-07-21
 
-- `PENDING` Published the camp vocabularies as data, so a consumer can show a human label for every code and fail visibly on codes it does not recognize.
+- `07e9e3a` Published the camp vocabularies as data, so a consumer can show a human label for every code and fail visibly on codes it does not recognize.
   - New endpoints `v1/vocab/camp-types.json`, `v1/vocab/camp-program-types.json`, and `v1/vocab/camp-features.json` list every code with a label and a short description.
   - A validation check now rejects any camp whose type, program, or feature code is missing from its vocabulary, so the published labels can never fall behind the data.
   - `camp-program-types` is named apart from the rank `program` vocabulary to avoid confusion.
