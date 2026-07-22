@@ -15,9 +15,9 @@
       "address": "441 Route 9W",
       "city": "Alpine",
       "state": "NJ",
-      "lat": 40.94855,
-      "lon": -73.928114,
-      "geo_precision": "approximate",
+      "lat": 40.978364,
+      "lon": -73.913932,
+      "geo_precision": "exact",
       "website": "https://alpinescoutcamp.org/cubworld/",
       "program_types": [
         "cub_day",
@@ -35,13 +35,16 @@
           },
           {
             "url": "https://alpinescoutcamp.org/cubworld/"
+          },
+          {
+            "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       },
       "merged_from": [
         "nj-alpine-day-camp"

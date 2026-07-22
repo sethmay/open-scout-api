@@ -15,9 +15,9 @@
       "address": "1207 Upas St",
       "city": "San Diego",
       "state": "CA",
-      "lat": 32.71742,
-      "lon": -117.162772,
-      "geo_precision": "approximate",
+      "lat": 32.741064,
+      "lon": -117.153438,
+      "geo_precision": "exact",
       "website": "https://camping.sdicbsa.org/Balboa/SummerDayCamp.php",
       "program_types": [
         "cub_day"
@@ -34,13 +34,16 @@
           },
           {
             "url": "https://camping.sdicbsa.org/Balboa/SummerDayCamp.php"
+          },
+          {
+            "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],
