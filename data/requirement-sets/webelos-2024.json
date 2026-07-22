@@ -1,0 +1,178 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "webelos-2024",
+  "kind": "requirement-set",
+  "subject": "rank:webelos",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Webelos Rank — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/bobcat-webelos/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Required Adventures",
+      "children": [
+        {
+          "number": "1",
+          "text": "Bobcat Adventure",
+          "children": [
+            {
+              "number": "1",
+              "text": "Get to know members of your den."
+            },
+            {
+              "number": "2",
+              "text": "Recite the Scout Oath and the Scout Law with your den and den leader.  Describe the three points of the Scout Oath."
+            },
+            {
+              "number": "3",
+              "text": "Learn about the Scout Law."
+            },
+            {
+              "number": "4",
+              "text": "With your den create a den Code of Conduct."
+            },
+            {
+              "number": "5",
+              "text": "Learn about the denner position and responsibilities."
+            },
+            {
+              "number": "6",
+              "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake.  Show how each is used."
+            },
+            {
+              "number": "7",
+              "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”"
+            }
+          ]
+        },
+        {
+          "number": "2",
+          "text": "Stronger, Faster, Higher"
+        },
+        {
+          "number": "3",
+          "text": "My Safety"
+        },
+        {
+          "number": "4",
+          "text": "My Family"
+        },
+        {
+          "number": "5",
+          "text": "My Community"
+        },
+        {
+          "number": "6",
+          "text": "Webelos Walkabout"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Elective Adventures",
+      "choose": 2,
+      "children": [
+        {
+          "number": "1",
+          "text": "Aquanaut"
+        },
+        {
+          "number": "2",
+          "text": "Art Explosion"
+        },
+        {
+          "number": "3",
+          "text": "Aware and Care"
+        },
+        {
+          "number": "4",
+          "text": "Build It"
+        },
+        {
+          "number": "5",
+          "text": "Catch the Big One"
+        },
+        {
+          "number": "6",
+          "text": "Champions for Nature Webelos"
+        },
+        {
+          "number": "7",
+          "text": "Chef’s Knife"
+        },
+        {
+          "number": "8",
+          "text": "Earth Rocks"
+        },
+        {
+          "number": "9",
+          "text": "Let’s Camp Webelos"
+        },
+        {
+          "number": "10",
+          "text": "Math on the Trail"
+        },
+        {
+          "number": "11",
+          "text": "Modular Design"
+        },
+        {
+          "number": "12",
+          "text": "Paddle Onward"
+        },
+        {
+          "number": "13",
+          "text": "Pedal Away"
+        },
+        {
+          "number": "14",
+          "text": "Race Time Webelos"
+        },
+        {
+          "number": "15",
+          "text": "Summertime Fun Webelos"
+        },
+        {
+          "number": "16",
+          "text": "Tech on the Trail"
+        },
+        {
+          "number": "17",
+          "text": "Yo-yo"
+        },
+        {
+          "number": "18",
+          "text": "Archery Webelos"
+        },
+        {
+          "number": "19",
+          "text": "Slingshot"
+        },
+        {
+          "number": "20",
+          "text": "BB Guns"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/bobcat-webelos/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

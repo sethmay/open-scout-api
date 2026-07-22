@@ -1,0 +1,3778 @@
+{
+ "lion": {
+  "program": "cub_scouts",
+  "order": 1,
+  "name": "Lion",
+  "rank_url": "https://www.scouting.org/programs/cub-scouts/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Lion Rank — Scouting America (Cub Scout Adventures)",
+   "url": "https://www.scouting.org/cub-scout-adventures/bobcat-lion/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Required Adventures",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Bobcat Adventure",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Get to know the members of your den.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Have your Lion adult partner or den leader read the Scout Law to you. Demonstrate your understanding of being friendly.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "At home, with your parent or legal guardian, do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "2",
+      "text": "Fun on the Run",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Lion’s Roar",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Lion’s Pride",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "King of the Jungle",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Mountain Lion",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Elective Adventures",
+    "choose": 2,
+    "children": [
+     {
+      "number": "1",
+      "text": "Build It Up, Knock It Down",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Champions for Nature Lion",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Count On Me",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Everyday Tech",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Gizmos and Gadgets",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Go Fish",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "I’ll Do It Myself",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Let’s Camp Lion",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "On a Roll",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "On Your Mark",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "Pick My Path",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "12",
+      "text": "Race Time Lion",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "13",
+      "text": "Ready, Set, Grow",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "14",
+      "text": "Time to Swim",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "15",
+      "text": "Archery Lion",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "16",
+      "text": "Slingshot",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "tiger": {
+  "program": "cub_scouts",
+  "order": 2,
+  "name": "Tiger",
+  "rank_url": "https://www.scouting.org/programs/cub-scouts/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Tiger Rank — Scouting America (Cub Scout Adventures)",
+   "url": "https://www.scouting.org/cub-scout-adventures/bobcat-tiger/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Required Adventures",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Bobcat Adventure",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Get to know the members of your den.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Recite the Scout Oath with your den, including your Tiger adult partner.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Have your Tiger adult partner or den leader read the Scout Law to you.  Demonstrate your understanding of being trustworthy, helpful, or friendly.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake.  Show how each are used.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "5",
+        "text": "Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "6",
+        "text": "At home, with your parent or legal guardian do the activities in the booklet “ How to Protect Your Children from Child Abuse: A Parent’s Guide .”",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "2",
+      "text": "Tiger Bites",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Tiger’s Roar",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Tiger Circles",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Team Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Tigers in the Wild",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Elective Adventures",
+    "choose": 2,
+    "children": [
+     {
+      "number": "1",
+      "text": "Champions for Nature Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Curiosity, Intrigue, and Magical Mysteries",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Designed by Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Fish On",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Floats and Boats",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Good Knights",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Let’s Camp Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Race Time Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Rolling Tigers",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "Safe and Smart",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "Sky is the Limit",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "12",
+      "text": "Stories in Shapes",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "13",
+      "text": "Summertime Fun Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "14",
+      "text": "Tech All Around",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "15",
+      "text": "Tiger Tag",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "16",
+      "text": "Tiger-iffic!",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "17",
+      "text": "Tigers in the Water",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "18",
+      "text": "Archery Tiger",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "19",
+      "text": "Slingshot",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "20",
+      "text": "BB Guns",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "wolf": {
+  "program": "cub_scouts",
+  "order": 3,
+  "name": "Wolf",
+  "rank_url": "https://www.scouting.org/programs/cub-scouts/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Wolf Rank — Scouting America (Cub Scout Adventures)",
+   "url": "https://www.scouting.org/cub-scout-adventures/bobcat-wolf/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Required Adventures",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Bobcat Adventure",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Get to know members of your den.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Recite the Scout Oath and the Scout Law with your den and den leader.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Learn about the Scout Law.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "With your den create a den Code of Conduct.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "5",
+        "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each is used.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "6",
+        "text": "Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.”",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "7",
+        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "2",
+      "text": "Running With the Pack",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Safety in Numbers",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Footsteps",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Council Fire",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Paws on the Path",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Elective Adventures",
+    "choose": 2,
+    "children": [
+     {
+      "number": "1",
+      "text": "A Wolf Goes Fishing",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Adventures in Coins",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Air of the Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Champions for Nature Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Code of the Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Computing Wolves",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Cubs Who Care",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Digging in the Past",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Finding Your Way",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "Germs Alive!",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "Let’s Camp Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "12",
+      "text": "Paws for Water",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "13",
+      "text": "Paws of Skill",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "14",
+      "text": "Pedal With the Pack",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "15",
+      "text": "Race Time Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "16",
+      "text": "Spirit of the Water",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "17",
+      "text": "Summertime Fun Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "18",
+      "text": "Archery Wolf",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "19",
+      "text": "Slingshot",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "20",
+      "text": "BB Guns",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "bear": {
+  "program": "cub_scouts",
+  "order": 4,
+  "name": "Bear",
+  "rank_url": "https://www.scouting.org/programs/cub-scouts/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Bear Rank — Scouting America (Cub Scout Adventures)",
+   "url": "https://www.scouting.org/cub-scout-adventures/bobcat-bear/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Required Adventures",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Bobcat Adventure",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Get to know members of your den.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Recite the Scout Oath and Law with your den and den leader.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Learn about the Scout Oath. Identify the three points of the Scout Oath.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "With your den create a den Code of Conduct.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "5",
+        "text": "Learn about the denner position and responsibilities.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "6",
+        "text": "Demonstrate the Cub Scout sign, Cub Scout salute, and Cub Scout handshake.  Show how each is used.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "7",
+        "text": "Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.” Explain why it is important to do your best.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "8",
+        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "2",
+      "text": "Bear Strong",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Standing Tall",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Bear Habitat",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Paws for Action",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Fellowship",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Elective Adventures",
+    "choose": 2,
+    "children": [
+     {
+      "number": "1",
+      "text": "A Bear Goes Fishing",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Balancing Bears",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Baloo the Builder",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Bears Afloat",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Bears on Bikes",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Champions for Nature Bear",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Chef Tech",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Critter Care",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Forensics",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "Let’s Camp Bear",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "Marble Madness",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "12",
+      "text": "Race Time Bear",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "13",
+      "text": "Roaring Laughter",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "14",
+      "text": "Salmon Run",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "15",
+      "text": "Summertime Fun Bear",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "16",
+      "text": "Super Science",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "17",
+      "text": "Whittling",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "18",
+      "text": "Archery Bear",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "19",
+      "text": "Slingshot",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "20",
+      "text": "BB Guns",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "webelos": {
+  "program": "cub_scouts",
+  "order": 5,
+  "name": "Webelos",
+  "rank_url": "https://www.scouting.org/programs/cub-scouts/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Webelos Rank — Scouting America (Cub Scout Adventures)",
+   "url": "https://www.scouting.org/cub-scout-adventures/bobcat-webelos/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Required Adventures",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Bobcat Adventure",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Get to know members of your den.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Recite the Scout Oath and the Scout Law with your den and den leader.  Describe the three points of the Scout Oath.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Learn about the Scout Law.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "With your den create a den Code of Conduct.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "5",
+        "text": "Learn about the denner position and responsibilities.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "6",
+        "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake.  Show how each is used.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "7",
+        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "2",
+      "text": "Stronger, Faster, Higher",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "My Safety",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "My Family",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "My Community",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Webelos Walkabout",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Elective Adventures",
+    "choose": 2,
+    "children": [
+     {
+      "number": "1",
+      "text": "Aquanaut",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Art Explosion",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Aware and Care",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Build It",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Catch the Big One",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Champions for Nature Webelos",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Chef’s Knife",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Earth Rocks",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Let’s Camp Webelos",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "Math on the Trail",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "Modular Design",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "12",
+      "text": "Paddle Onward",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "13",
+      "text": "Pedal Away",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "14",
+      "text": "Race Time Webelos",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "15",
+      "text": "Summertime Fun Webelos",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "16",
+      "text": "Tech on the Trail",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "17",
+      "text": "Yo-yo",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "18",
+      "text": "Archery Webelos",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "19",
+      "text": "Slingshot",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "20",
+      "text": "BB Guns",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "arrow-of-light": {
+  "program": "cub_scouts",
+  "order": 6,
+  "name": "Arrow of Light",
+  "rank_url": "https://www.scouting.org/programs/cub-scouts/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Arrow of Light Rank — Scouting America (Cub Scout Adventures)",
+   "url": "https://www.scouting.org/cub-scout-adventures/bobcat-aol/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Required Adventures",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Bobcat Adventure",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Demonstrate the patrol method by choosing a patrol name and electing a patrol leader. Discuss the benefits of using the patrol method.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Get to know members of your patrol.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Recite the Scout Oath and Scout Law with your patrol.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "With your patrol create a Code of Conduct.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "5",
+        "text": "Demonstrate the Scout sign, Scout salute and Scout handshake used by Scouting America.  Show how each are used.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "6",
+        "text": "Learn the Scouting America slogan and motto.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "7",
+        "text": "With your patrol, or with your parent/legal guardian, visit a Scouting America troop.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "8",
+        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "2",
+      "text": "Personal Fitness",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "First Aid",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Personal Safety",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Family & Reverence",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Citizenship",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Outdoors",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Elective Adventures",
+    "choose": 2,
+    "children": [
+     {
+      "number": "1",
+      "text": "Champions for Nature AOL",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Cycling",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Engineer",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Estimations",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Fishing",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "High Tech Outdoors",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Into the Wild",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Into the Woods",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Knife Safety",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "Paddle Craft",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "Race Time AOL",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "12",
+      "text": "Summertime Fun AOL",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "13",
+      "text": "Swimming",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "14",
+      "text": "Archery Arrow of Light",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "15",
+      "text": "Slingshot",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "16",
+      "text": "BB Guns",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "venturing": {
+  "program": "venturing",
+  "order": 1,
+  "name": "Venturing",
+  "rank_url": "https://www.scouting.org/programs/venturing/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Venturing Rank — Venturing (via usscouts.org; Guide to Advancement)",
+   "url": "http://usscouts.org/usscouts/advance/venturing/VenturingRank.asp",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Participate in a crew activity outside of a crew meeting.",
+    "choose": null,
+    "children": []
+   },
+   {
+    "number": "2",
+    "text": "Participate in an interview conducted by your crew president and your Advisor.",
+    "choose": null,
+    "children": []
+   },
+   {
+    "number": "3",
+    "text": "Complete Personal Safety Awareness training.",
+    "choose": null,
+    "children": []
+   },
+   {
+    "number": "4",
+    "text": "State intention to join the crew during a crew induction ceremony during which you repeat and commit to live by the Scout Oath and Scout Law and the Venturing motto: Lead the Adventure.",
+    "choose": null,
+    "children": []
+   }
+  ]
+ },
+ "discovery": {
+  "program": "venturing",
+  "order": 2,
+  "name": "Discovery",
+  "rank_url": "https://www.scouting.org/programs/venturing/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Discovery Rank — Scouting America (Venturing)",
+   "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/discovery-rank/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Adventure",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Participate in at least two  Tier II or III adventures at the crew, district, council, territory, or national level.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "Complete the following:",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Complete a standard CPR course such as American Red Cross – First Aid/CPR/AED for Schools and the Community or the American Heart Association – Heartsaver Pediatric First Aid/CPR/AED or an equivalent course.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Complete a standard first aid course such as the American Red Cross Standard First Aid or equivalent course.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Leadership",
+    "choose": null,
+    "children": [
+     {
+      "number": "3",
+      "text": "Complete the  Introduction to Leadership Skills for Crews  course (or an equivalent).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Complete  Goal Setting and Time Management Training .",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "5",
+      "text": "Complete  Venturing Crew Officer Orientation .",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Service",
+    "choose": null,
+    "children": [
+     {
+      "number": "6",
+      "text": "Participate in service activities totaling at least 24 hours. Up to half of the service may be delivered personally; the rest must be delivered through crew service activities.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Personal Growth",
+    "choose": null,
+    "children": [
+     {
+      "number": "7",
+      "text": "Complete a  structured personal reflection , and use this reflection and what you learned from the process to prepare for goal setting and as part of your Discovery Award advisor conference. Explore one of the following realms: “Adventures of Faith”, “Adventures of Self”, and “Adventures of Others”.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "In consultation with your advisor, establish at least one personal goal, and achieve it. The goal should be grounded in the realm you explored in Personal Growth requirement 7.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Since earning the Venturing Rank, participate in a conference with your advisor.* As a part of this conference, discuss with your Advisor the challenges you faced and what you learned in fulfilling Personal Growth requirements 7 and 8.",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "A Venturer is not required to share the personal reflection associated with “Adventures of Faith” with his or her Advisor, including the discussion that takes place at the Advisor conference, nor with members of a board of review.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "10",
+      "text": "After your Advisor conference, successfully complete a  crew board of review .",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "pathfinder": {
+  "program": "venturing",
+  "order": 3,
+  "name": "Pathfinder",
+  "rank_url": "https://www.scouting.org/programs/venturing/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Pathfinder Rank — Scouting America (Venturing)",
+   "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/pathfinder-rank/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Adventure",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Participate in at least two additional (for a total of at least four) Tier II or III adventures at the crew, district, council, territory, or national level. Serve as a leader for one of the adventures.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Leadership",
+    "choose": null,
+    "children": [
+     {
+      "number": "2",
+      "text": "Complete Venturing Project Management Training .",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Since earning the Discovery Rank, plan and give leadership to a Tier II or Tier III adventure . Work with a youth mentor to ensure that you have organized the adventure in advance, that you are prepared for contingencies, and that you have prepared the members of your crew to take part. In some cases, you may need to confer with an external consultant to assure the adventure is feasible for your crew. The adventure must take place over at least two consecutive nights. If an event lasts more than four nights, an additional Venturer may share in planning and leading the adventure. If two Venturers plan the adventure, they should work with their mentor to ensure that the workload is divided fairly between the two leaders. At the close of the adventure, lead a reflection with the participants in the activity to determine what was learned and how it helped them to work together as a more effective team. An experienced Venturer should serve as your mentor for the adventure.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Complete ONE of the following:",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Since earning the Discovery Rank, serve actively as your crew president, vice president, secretary, treasurer, guide, historian, den chief, or quartermaster for a period of at least six months.** At the beginning of your term, work with your crew president (or Advisor, if you are the president) to set performance goals for the position. Any number of different positions may be held as long as the total length of service equals at least six months. Holding simultaneous positions does not shorten the required number of months. Positions need not flow from one to the other; there may be gaps in time. Once during your term of office, discuss your successes and challenges with your crew president (or Advisor, if you are the president).",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Participate in or serve on staff for leadership training such as National Youth Leadership Training, National Advanced Youth Leadership Experience, Order of the Arrow National Leadership Seminar, Sea Scout SEAL Training, or Wood Badge (for Venturers 18 or older). You may also participate in non-BSA leadership training courses such as those delivered by the National Outdoor Leadership School, if approved by your Advisor.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Service",
+    "choose": null,
+    "children": [
+     {
+      "number": "5",
+      "text": "Plan, organize, and give leadership to a project designed to sustain and grow your crew. Submit the plan to your crew president (or Advisor, if you are president) and explain how you think it will encourage more young people to join Venturing.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "6",
+      "text": "Participate in service activities totaling at least 36 hours. This is in addition to the 24 hours of service required to earn the Discovery Rank. Up to half of the service may be delivered personally; the rest must be delivered through crew activities.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Personal Growth",
+    "choose": null,
+    "children": [
+     {
+      "number": "7",
+      "text": "Since earning the Discovery Rank, explore the two realms (“Adventures of Faith”, “Adventures of Self”, or “Adventures of Others”) that you did not explore previously. Based on what you discover, prepare a set of personal reflections or thoughts on the subjects . Use your reflections and what you learned from the process to prepare for fulfilling Personal Growth requirement 9 and for your Pathfinder Rank Advisor conference.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Participate in an ethical controversy discussion activity that includes an extension into conflict resolution. (Example Vignettes)",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "In consultation with your Advisor, establish at least two personal goals and achieve them. The goals should be grounded in the realms you explored in Personal Growth requirement 7.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "10",
+      "text": "Participate in an Advisor conference. As a part of this conference, discuss with your Advisor the challenges you faced and what you learned in fulfilling Personal Growth requirements 7 and 9.",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "A Venturer is not required to share the personal reflection associated with “Adventures of Faith” with his or her Advisor or members of a board of review, including the discussion that takes place at the Advisor conference or the board of review.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "11",
+      "text": "After your Advisor conference, successfully complete a crew board of review .",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "summit": {
+  "program": "venturing",
+  "order": 4,
+  "name": "Summit",
+  "rank_url": "https://www.scouting.org/programs/venturing/",
+  "effective_from": "2024",
+  "source_document": {
+   "title": "Summit Rank — Scouting America (Venturing)",
+   "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/summit-award/",
+   "year": 2024
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Adventure",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Participate in at least three additional (for a total of seven) Tier II or Tier III adventures at the crew, district, council, territory, or national level. To earn the Summit Award, a Venturer must have participated in at least one Tier III adventure and served as a leader during one adventure.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Leadership",
+    "choose": null,
+    "children": [
+     {
+      "number": "2",
+      "text": "Complete Scouting America Mentoring Training prior to initiating mentoring relationships.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "3",
+      "text": "Since earning the Pathfinder Rank, mentor another Venturer in the planning and implementation of a crew, council, territory, or national Venturing activity (see Summit Adventure requirement 1). Work with the youth enough to ensure he or she is ready to lead and has organized the appropriate resources, is prepared for contingencies, and has developed an itinerary, conducted training to support the adventure, and mitigated risk before and during the adventure. Participate in the adventure and provide feedback on how the adventure was conducted.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "4",
+      "text": "Complete TWO of the following:",
+      "choose": 2,
+      "children": [
+       {
+        "number": "1",
+        "text": "Since earning the Pathfinder Rank, serve actively as your crew president, vice president, secretary, treasurer, guide, historian, den chief, or quartermaster for a period of at least six months.** At the beginning of your term, work with your crew president (or Advisor, if you are the president) to set performance goals for the position. Any number of different positions may be held as long as the total length of service equals at least six months. Holding simultaneous positions does not shorten the required number of months. Positions need not flow from one to the other; there may be gaps in time. Once during your term of office, discuss your successes and challenges with your crew president (or Advisor, if you are the president).",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Participate in or serve on staff for leadership training such as National Youth Leadership Training, National Advanced Youth Leadership Experience, Order of the Arrow National Leadership Seminar, Sea Scout SEAL Training, or Wood Badge (for Venturers 18 or older). You may also participate in non-Scouting America leadership training courses such as those delivered by the National Outdoor Leadership School, if approved by your Advisor. This must be a different training course than you completed for Pathfinder Rank requirement 4b or Summit Award requirement 4c.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Lead the delivery of Introduction to Leadership Skills for Crews for members of your Venturing crew or another local Venturing crew or for a local district or council training event. After leading the training course, discuss with your crew Advisor how you believe you helped build the skill set of your crew and what you learned by organizing the training course.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Service",
+    "choose": null,
+    "children": [
+     {
+      "number": "5",
+      "text": "Since earning the Pathfinder Rank, plan, develop, and give leadership to others in a service project helpful to a religious institution, school, or community. (The project must benefit an organization other than Scouting America.) Before you start, a project proposal must be approved by the organization benefiting from the effort, your Advisor, and another Venturer designated by your crew leadership.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Personal Growth",
+    "choose": null,
+    "children": [
+     {
+      "number": "6",
+      "text": "Since earning the Pathfinder Rank, complete a structured personal reflection . Use this reflection to prepare for goal setting and as part of your Advisor conference. Explore two of the following realms: “Adventures of Faith”, “Adventures of Self”, or “Adventures of Others”. You may explore one of the realms twice or select from between two different realms.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "7",
+      "text": "Create a personal code of conduct. This code of conduct should be guided by your explorations in the realms of faith, self, and others.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "8",
+      "text": "Since earning the Pathfinder Rank, lead an ethical controversy and conflict resolution scenario with members of your Venturing crew. ( Example Vignette )",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "9",
+      "text": "Participate in an Advisor conference. As a part of this conference, share your code of conduct with your Advisor, and explain how your explorations of faith, self, and others, and your goal-setting exercises, influenced the development of your code.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "11",
+      "text": "After your Advisor conference, successfully complete a crew board of review .",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "apprentice": {
+  "program": "sea_scouts",
+  "order": 1,
+  "name": "Apprentice",
+  "rank_url": "https://www.seascout.org/",
+  "effective_from": "2026",
+  "source_document": {
+   "title": "Apprentice Rank Requirements (2026) — Scouting America Sea Scouts",
+   "url": "https://www.seascout.org/",
+   "year": 2026
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Ideals",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Qualify as a member of your Sea Scout ship by taking part in the ship’s admission ceremony.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Repeat from memory and discuss with an adult leader, an Able Scout, or a Quartermaster Scout the Scout Oath and Law and the Sea Promise and agree to carry out the provisions of your ship’s code and bylaws.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Demonstrate acceptable courtesies used aboard a Sea Scout vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Demonstrate the proper procedure for boarding a Sea Scout vessel and landship.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "With other Sea Scouts, friends or family members, complete the Personal Safety Awareness Training for Scouting America’s Older Youth Programs led by an adult leader or designee. The adult conducting the program should follow the program guidelines found in https://seascout.org/program-toolbox/to complete this requirement.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Active Membership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Provide evidence that you are fulfilling your financial obligations to your ship, including helping with fundraisers.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Obtain a Sea Scout uniform. Describe the Sea Scout uniform. Tell how and when to wear the uniform.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Meet your ship’s bylaws requirement for active participation in your ship’s meetings and activities for three months.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Leadership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Describe your ship’s organization, including the youth and adult leadership positions.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Demonstrate your ability to identify insignia of youth and adult leadership positions. Explain the chain of command in your ship.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Swimming",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Demonstrate your ability to swim by doing one of the following: Jump feet first into water over your head, swim 75 yards/meters in a strong manner using one or more of the following strokes: sidestroke, breaststroke, trudgen, or crawl; then swim 25 yards/meters using the elementary backstroke. The 100 yards/meters must be swum continuously and include at least one sharp turn. After completing the swim, rest by floating on your back, remaining as motionless as possible.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Discuss Scouting America’s Safe Swim Defense plan and explain how it is used to protect Sea Scouts and other groups during swimming activities.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "5",
+    "text": "Safety",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Explain the uses, advantages, and disadvantages of the various types of Coast Guard–approved life jackets. Demonstrate the proper use and care of life jackets used by your ship. Discuss your state's boating laws as they relate to life jacket wear.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Identify visual day and night marine distress signals and know their location and the proper use for your ship’s vessel(s). OR Know and demonstrate basic hand, paddle, and whistle signals commonly used on paddlecraft trips.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Identify visual day and night marine distress signals and know their location and the proper use for your ship’s vessel(s).",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Know and demonstrate basic hand, paddle, and whistle signals commonly used on paddlecraft trips.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "c",
+      "text": "Use the Distress Communications Form to demonstrate the procedure to send the following VHF emergency messages: Mayday, Pan Pan, and Security.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Know the safety rules that apply to vessels and equipment used by your ship, and safety standards in the use of power tools, machinery, lifting heavy objects, and other safety devices used by your ship. OR Obtain and discuss with your leader or designee, your state’s paddlecraft safety rules for the craft most frequently used by your ship.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Know the safety rules that apply to vessels and equipment used by your ship, and safety standards in the use of power tools, machinery, lifting heavy objects, and other safety devices used by your ship.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Obtain and discuss with your leader or designee, your state’s paddlecraft safety rules for the craft most frequently used by your ship.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "e",
+      "text": "Obtain a current copy of the U.S. Coast Guard Auxiliary (USCG AUX) or America’s Boating Club (ABC) Vessel Safety Check (VSC) Form online. With an approved Vessel Examiner or an experienced adult leader, perform a VSC on the vessel(s) in use by your Ship. Additionally, obtain, or create your own, USCG “IF FOUND” sticker(s). Complete the contact information and place it on the vessel(s) used by your Ship. If your Ship’s vessel(s) already displays an “IF FOUND” sticker, verify the contact information is still correct. If not, correct it.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "6",
+    "text": "Marlinspike Seamanship",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Using both large and small lines, tie and explain the use of the following knots: overhand, square, figure eight, bowline, two half hitches, clove hitch, sheet bend, and cleat hitch, and trucker’s hitch.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "7",
+    "text": "Boat Handling",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Name the principal parts of a typical sailboat, runabout, canoe, kayak, SUP, and raft.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Describe the identifying characteristics of:",
+      "choose": null,
+      "children": [
+       {
+        "number": "i",
+        "text": "A sloop, ketch, yawl, cutter, and schooner",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "ii",
+        "text": "An open motorboat and cabin motorboat",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "iii",
+        "text": "A touring canoe and whitewater canoe",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "iv",
+        "text": "A whitewater kayak and sea kayak",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "v",
+        "text": "Oar frame raft and a paddle raft",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "c",
+      "text": "Demonstrate the ability to use a heaving line. OR While on land, demonstrate the ability to throw a rescue throw bag and hit a four-foot-wide target 30 feet (10 meters) away. Then, without hesitation, retrieve the line, and immediately throw it as a coil, and hit a four-foot-wide target 21 feet (seven meters) away. Finally, retrieve the line and re-stuff the bag.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Demonstrate the ability to use a heaving line.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "While on land, demonstrate the ability to throw a rescue throw bag and hit a four-foot-wide target 30 feet (10 meters) away. Then, without hesitation, retrieve the line, and immediately throw it as a coil, and hit a four-foot-wide target 21 feet (seven meters) away. Finally, retrieve the line and re-stuff the bag.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "8",
+    "text": "Service",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Log at least eight hours of work on ship equipment, projects, or activities other than regular ship meetings, parties, dances, or fun events.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Participate with your ship for at least eight hours in community service projects. Note: Arrange for this work through the ship’s officers.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "ordinary": {
+  "program": "sea_scouts",
+  "order": 2,
+  "name": "Ordinary",
+  "rank_url": "https://www.seascout.org/",
+  "effective_from": "2026",
+  "source_document": {
+   "title": "Ordinary Rank Requirements (2026) — Scouting America Sea Scouts",
+   "url": "https://www.seascout.org/",
+   "year": 2026
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Ideals",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Explain the symbolism of the Sea Scout emblem.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Give a brief oral history of the U.S. flag.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Demonstrate how to fly, hoist, lower, fold, display and salute the U.S. flag. Explain flag etiquette and protocols for both land and sea.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Discuss with an adult leader how you live the Scout Oath and Law in your daily life.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Active Membership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Meet your ship's bylaws requirement for active participation in your ship's meetings and activities for three months.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Do one of the following. Recruit a new member for your ship and follow through until the new member is registered and formally admitted with an admissions ceremony or assist in planning and carrying out a ship recruiting activity, such as an open house or joint activity with a youth group or organization (another Sea Scout ship will not count).",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Leadership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Participate in Scouting America's Introduction to Leadership Skills for Ships (ILSS) course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Complete quarterdeck training, either as an officer or as a prospective officer.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Serve as an activity chair for a major ship event. Responsibilities should include planning, directing, and evaluating the event.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Swimming",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Pass all requirements for the Scouting America’s Swimming merit badge.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "5",
+    "text": "Safety",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Discuss Scouting America’s Safety Afloat with an adult leader or a Quartermaster candidate.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Describe the safety equipment required by law for your ship’s primary vessel. Know and demonstrate basic hand, paddle, and whistle signals commonly used on paddlecraft trips.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "For larger vessels that require a crew, develop a ship’s station bill for your ship and review it with an adult leader. OR For smaller vessels with only one or two people aboard, develop a roster of attendees for your ship’s next float trip. Identify lead and sweep boats. Note which boats are carrying rescue and first aid equipment, the trip roster, and medical forms. Review the roster with an adult leader.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Plan and practice the following drills: man overboard, fire, and abandon ship. OR If your ship uses small vessels such as small sailboats or paddlecraft, plan and practice man overboard drills (if appropriate), capsize drills, and deep water re-entries.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Describe any three types of equipment used in marine communications.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Demonstrate proficiency with the communication devices used on your ship’s primary vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "Galley",
+      "choose": null,
+      "children": [
+       {
+        "number": "i",
+        "text": "Before an activity, submit a menu that uses cooked and uncooked dishes, a list of provisions, and estimated costs for a day’s meal (breakfast, lunch, and dinner). Once the provision list is approved, help obtain the items on the list.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "ii",
+        "text": "Explain the use of charcoal, isobutane, white gas, and propane. Include safety precautions for each.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "iii",
+        "text": "Prepare breakfast, lunch, and dinner while on the activity. Demonstrate your ability to properly use the galley equipment or personal cooking gear generally used by your ship. If your vessel does not have a galley space, these may be done ashore.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "iv",
+        "text": "Demonstrate appropriate sanitation techniques for food preparation and meal cleanup.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "6",
+    "text": "Marlinspike Seamanship",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Name the various materials used to manufacture rope, the advantages and disadvantages of each, and the characteristics of laid and braided rope. Discuss the meaning of lay, thread, strand, and hawser. Explain how rope is sized and measured.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Using both large and small lines, tie and explain the use of the following knots: stevedore’s knot, French (double) bowline, bowline on a bight, timber hitch, rolling hitch, marline hitch, midshipman’s (taut-line) hitch, and trucker's hitch.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Demonstrate your ability to secure a line to pilings, cleats, and rings, and to coil, flake, and Flemish a line.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Demonstrate how to cut and heat-seal a synthetic line and whip the end of plain-laid line using waxed cord or similar material.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "7",
+    "text": "Boat Handling",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Name the principal parts of the masts, booms, spars, standing and running rigging, and sails of a gaff- or Marconi-rigged sloop, schooner, and ketch or yawl.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Demonstrate your ability to handle a vessel with paddles or oars by doing one of the following: Safely board a rowboat and row in a straight line for 200 feet, stop, make a pivot turn, return to the starting point, and backwater in a straight line for 40 feet. Make a turn and return to the starting point. OR Safely board a canoe, kayak, or paddleboard and paddle a straight line for 200 feet. Make a turn and return to the starting point and backwater in a straight line for 40 feet. Demonstrate a draw stroke to move the boat sideways both right and left, and forward and reverse sweeps to spin the boat both clockwise and counterclockwise.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "8",
+    "text": "Ground Tackle",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Name the parts of a stock anchor and a stockless anchor.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Describe five types of anchors. Describe how each type holds the bottom, the kind of bottom in which it holds best, and the advantages or disadvantages of each type. Discuss the challenges of using an anchor with paddlecraft compared to larger vessels.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Calculate the amount of anchor rode necessary for your ship’s primary vessel in the following depths: 10, 20, and 30 feet in normal and storm conditions.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Demonstrate the ability to set and weigh anchor appropriate for your vessel.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "9",
+    "text": "Navigation Rules",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Explain the purpose of Navigation Rules, International and Inland.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Know the general “Rule of Responsibility.”",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Define stand-on and give-way vessels for the following situations: meeting, crossing, and overtaking for both power and sailing vessels.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Explain “Responsibility Between Vessels” (vessel priority).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Explain the navigation lights required for power-driven and sailing vessels underway. Explain what is required for a vessel under oars. Describe the lighting requirements for paddlecraft. Explain why carrying a sound-producing device, such as a whistle, is important when operating a paddlecraft.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Describe the sound signals for maneuvering, warning, and restricted visibility.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "10",
+    "text": "Piloting and Navigation",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Demonstrate your understanding of latitude and longitude. Using a chart, demonstrate that you can locate your position from given coordinates and determine the coordinates of at least five aids to navigation.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Explain the degree system of compass direction. Explain variation and deviation and how they are used to convert between true headings and bearings to compass headings and bearings.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Describe three kinds of devices used aboard ship for measuring speed and/or distance traveled and, if possible, demonstrate their use.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Explain the 24-hour time system and demonstrate that you can convert between 12- and 24-hour time.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Understand Coordinated Universal Time (Greenwich Mean Time or Zulu Time) and zone time. Demonstrate your ability to convert from one to the other for your local area.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Make a dead reckoning table of compass and distances (minimum three legs) between two points, plot these on a chart, and determine the final position. Note: Ideally this requirement should be met while underway. If this is not possible, it may be simulated using charts.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "Discuss how a GPS unit works. Explain possible uses and functions including different screen views. Use a GPS unit to set a waypoint and navigate to the waypoint you have set.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "11",
+    "text": "Practical Deck Seamanship",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Name the seven watches and explain bell time.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Explain the duties of a lookout and demonstrate how to report objects in view and wind directions with respect to the vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Name relative bearings expressed in degrees.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "While underway, serve as a lookout for two hours total. When boating in a manually propelled craft, boating alone or as a bow paddler for a tandem craft will meet this requirement.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Demonstrate the use of wheel or helm commands found in the Sea Scout Manual.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Describe the deck log kept aboard your ship’s principal craft. Contribute to a cruise log for three days of cruising (one cruise or a combination of day cruises). Submit the logs to your Skipper. OR Keep a trip log for at least three paddling day trips, recording details of the waterway paddled, listing participants, and details of the paddling trip. Submit the logs to your Skipper.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "12",
+    "text": "Environment",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Discuss with an adult leader the Federal Water Pollution Control Act as related to oil discharges. Explain what a “Discharge of Oil Prohibited” placard is and if applicable find it aboard your ship’s vessels.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Explain what aquatic nuisance species are and how you can help stop their spread.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Explain how the principles of Leave No Trace can be applied to boating trips.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "13",
+    "text": "Weather",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Read and understand a local weather bulletin. Know how to obtain current marine and weather reports from the National Weather Service in your area by telephone or radio, or online.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Find a river in your area and review the forecasted flow levels by using the National Weather Service’s Hydrologic Prediction Service’s map and graphs. Compare forecasted flow levels to average flow levels using the USGS National Water Information System web page.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "14",
+    "text": "Cruising",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Plan and participate in an overnight cruise. If you cannot sleep aboard your vessel, participating in a multi-day trip will meet this requirement.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "While on the cruise, perform the duties of a helmsman for at least 30 minutes. If underway in a paddlecraft, paddling independently or as a stern paddler/ steersman will meet this requirement.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "15",
+    "text": "Boating Safety Course",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Successfully complete a boating safety course approved by the National Association of State Boating Law Administrators (NASBLA) offered by one of the following agencies: a state boating agency, the United States Power Squadrons, the United States Coast Guard Auxiliary, or other private or military education courses.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "16",
+    "text": "Service",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Log at least eight hours of work on ship equipment, projects, or activities other than ship meetings, parties, dances, or fun events.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Participate with your ship for at least eight hours in community service projects.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "17",
+    "text": "Electives: Complete three Level One Electives.",
+    "choose": 3,
+    "children": [
+     {
+      "number": "a",
+      "text": "America's Boating Club: Be inducted as a member of your local America's Boating Club (US Power Squadrons).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Duty to God: Participate in two appropriate interfaith religious services during ship outings.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Engines: Perform routine maintenance on your ship's propulsion system, including filter, spark plug, oil changes, proper fueling procedures and other routine maintenance tasks. Refer to operations manuals or your ship's adult leaders for correct procedures and guidance.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Leadership: Attend National Youth Leadership Training (NYLT).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Maritime Tradition: (Boatswain Call) Demonstrate your ability to use a boatswain's pipe by making the following calls-word to be passed, boat call, veer, all hands, pipe down and piping the side.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Maritime Tradition: (Maritime History) Describe the highlights of maritime history from the earliest times to the present. Include the evolution of vessel construction and propulsion, important voyages of exploration and development, the origin of maritime traditions, and the achievements of notable maritime leaders in U.S. sea history.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "NauticEd: Record your time on the water using NauticEd’s online Logbook",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "h",
+      "text": "Ornamental Ropework: Make a three-strand Turk's head and a three-strand monkey's fist. Using either ornamental knot, make up a heaving line.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "i",
+      "text": "Paddlecraft: Join the American Canoe Association (ACA) or an ACA Paddle America Club.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "j",
+      "text": "Racing: Describe the procedures used in yacht racing and the signals used by the race committee to start a race. Serve as a crew member in a race sailed under current International Sailing Federation Rules.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "k",
+      "text": "Sailing: In a cat-rigged or similar small vessel, demonstrate your ability to sail single-handedly a triangular course (leeward, windward, and reaching marks). Demonstrate beating, reaching, and running. A qualified sailing instructor should observe this requirement.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "l",
+      "text": "U.S. Coast Guard Auxiliary: Be inducted as a Basic Qualified member of a United States Coast Guard Auxiliary flotilla.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "m",
+      "text": "Vessels: Teach and lead a crew under oar using a boat pulling at least four oars single- or double-banked. Perform the following maneuvers: get underway, maneuver ahead and back, turn the boat in its own length, dock, and secure.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "able": {
+  "program": "sea_scouts",
+  "order": 3,
+  "name": "Able",
+  "rank_url": "https://www.seascout.org/",
+  "effective_from": "2026",
+  "source_document": {
+   "title": "Able Rank Requirements (2026) — Scouting America Sea Scouts",
+   "url": "https://www.seascout.org/",
+   "year": 2026
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Ideals",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Organize and conduct two impressive opening and closing ceremonies for your ship.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Explain how our nation's maritime history has contributed to our way of life. Note: \"Explain\" means to convey information to one or more people using any of the following methods (or something similar approved by your Skipper): video, computer slide show (PowerPoint presentation), storyboard (project board display), diorama, model, annotated photo album, verbal report, or written report. For comparison purposes, a written report of 500 to 1,000 words would form an appropriate explanation.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Active Membership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Meet your ship's bylaws requirement for active participation in your ship's meetings and activities for six months.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Prepare and present a program about Sea Scouts to a troop, Venturing crew, Venturing Officers' Association meeting, Cub Scouts, Order of the Arrow, Maritime Explorer Club, University of Scouting session, school, class, or other youth group. Your presentation should last a minimum of 15 minutes and describe the activities of your ship and Sea Scouts.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Leadership",
+    "choose": 1,
+    "children": [
+     {
+      "number": "1",
+      "text": "Either serve and fulfill the responsibilities of a crew leader or an elected officer of your ship or serve as an activity chair for two major ship events. Responsibilities should include planning, directing, and evaluating the event. (These events are in addition to the Ordinary requirement.)",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "2",
+      "text": "With a boat operator plan a boat dive trip and include all equipment, provisions and location. Using navigation charts to determine course to the location and topographical charts of the sea floor create a dive plan for the participants making the dive.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Swimming",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Pass all requirements for Scouting America's Lifesaving merit badge.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "5",
+    "text": "Safety",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Develop and use a customized vessel safety checklist for a boat used by your ship.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Demonstrate your understanding of fire prevention on motorized vessels.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Demonstrate your understanding of fire prevention on motorized vessels.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Explain how entanglements or entrapments, such as but not limited to loose ropes and difficult to remove sprayskirts, can be avoided in kayaks, canoes, paddleboards and rafts.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "c",
+      "text": "Know the classes of fires and the substances that will extinguish each type of fire.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "In a safe place, under adult supervision, demonstrate your ability to successfully extinguish a class A and a class B fire with an approved fire extinguisher. If required, see that the fire extinguisher used is properly recharged or replaced.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Conduct a fire safety inspection of the vessel normally used by your ship or of your ship's meeting place. Note any fire hazards and report them to your ship's adult leaders.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Complete the certification for standard first aid through the American Red Cross, the American Heart Association, or other approved organization's standard first-aid course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "Complete the certification for CPR through the American Red Cross, the American Heart Association, or other approved organizations' course.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Complete the certification for CPR through the American Red Cross, the American Heart Association, or other approved organizations' course.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Obtain certification from DAN®'s Professional Diver first aid course or an equivalent USCG approved course.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "6",
+    "text": "Marlinspike Seamanship",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Complete a back splice, eye splice, short splice, long splice, and a palm-and- needle whipping.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Sew a flat seam, round seam, and grommet eye in canvas or sail material. Describe how each is used in construction of and the care of sails.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Describe the parts of a block and explain how blocks are sized. Describe the following types of tackle: luff, gun, double purchase, single whip, and runner. With the help of another shipmate, reeve a double purchase tackle.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Describe the parts of a block and explain how blocks are sized. Describe the following types of tackle: luff, gun, double purchase, single whip, and runner. With the help of another shipmate, reeve a double purchase tackle.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "On land, establish a 2-point load-distributing anchor point and a 3:1 mechanical advantage system (e.g., Z-drag) used to unpin paddlecraft. Use the system to haul a weight at least 5 feet across the ground. The system must include a progress capture system and a damper.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "7",
+    "text": "Boat Handling",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Demonstrate your ability to properly operate a small boat equipped with a motor. Included should be fueling, starting, leaving a dock, maneuvering, docking, and coming alongside.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Demonstrate your ability to properly operate a small boat equipped with a motor. Included should be fueling, starting, leaving a dock, maneuvering, docking, and coming alongside.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "In a human propelled vessel, board the vessel and depart from shore, paddle or row the vessel in a straight line forward 200 feet and backwards 40 feet; spin in place 180 degrees or more to right and left; and move sideways 10 feet or more to right and left (only if the vessel uses paddles). Then, while underway, turn 90 degrees to right and left while maintaining headway and maneuver through a figure of 8 course with markers set three to four boat lengths apart. Finally return to shore and disembark the vessel. At all times, maintain proper trim and balance.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "b",
+      "text": "Know the names and functions of lines used to secure a vessel to a wharf or pier. Understand and execute docking commands used in handling lines on your ship's primary vessel.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "8",
+    "text": "Ground Tackle",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Describe the various kinds of anchor rode and the advantages and disadvantages of each type.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Identify the parts of the anchor cable starting with the anchor and ending at the vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Describe the methods of marking chain or rode and demonstrate that you know the chain or rode markings on your ship's vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "While on a cruise assist in the construction of an anchor watch schedule and stand one watch.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "While on a cruise assist in the construction of an anchor watch schedule and stand one watch.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Establish a watch for boats secured to a shore or beach and stand one watch.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "e",
+      "text": "Identify a capstan or windlass and explain its use in handling line, wire rope, or chain.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "9",
+    "text": "Navigation Rules",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Demonstrate a working knowledge of Navigation Rules, International and Inland.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Explain vessel lights and day shapes for the following: towing (astern, alongside, pushing ahead, and cannot deviate), fishing, trawling, restricted maneuverability, not under command, underwater operations, constrained by draft, dredging, aground, and sailing vessels under power.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Understand the system of aids to navigation employed in your area. Include buoys, lights, and daymarks, and their significance and corresponding chart symbols.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Read in detail a National Ocean Service (NOS) chart, preferably for the area normally cruised by your ship, identifying all marks on it.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "10",
+    "text": "Piloting and Navigation",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Supervise the proper keeping of a complete deck log for three days of cruising (one cruise or a combination of day cruises). Submit the cruise logs to your Skipper.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Supervise the proper keeping of a complete deck log for three days of cruising (one cruise or a combination of day cruises). Submit the cruise logs to your Skipper.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Keep a journal of paddling trips that includes names of participants, access points, waterway description, and notable events. Record at least three trips in the journal and submit to your Skipper.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "c",
+      "text": "Lay a course of at least three legs and execute it using dead reckoning.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Lay a course of at least three legs and execute it using dead reckoning.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Make a scuba dive, navigating three legs underwater using a compass, measuring distance and time, and logging all information Use a chart to plan depth and topography.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "d",
+      "text": "Demonstrate your ability to fix your position by the following methods: taking bearings from two known objects, running fix, and estimated position.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "e",
+      "text": "Establish distance from a known object using \"double the angle on the bow\" and explain how to set a danger bearing.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Enter three waypoints into an electronic navigation device (i.e., GPS, chart- plotter) and navigate your vessel to each point. Demonstrate the use of the MOB function on your electronic navigation device.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "Discuss how radar is used in situational awareness and the method of taking a radar fix.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "h",
+      "text": "Explain the use of tide tables, current tables, and light lists, and how to update a chart using the Notice to Mariners.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "11",
+    "text": "Practical Deck Seamanship",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Demonstrate your knowledge of personal safety equipment needed while cleaning, maintaining, or repairing your vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Know the names, uses, sizes, and proper care of the common hand tools used by your ship.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Identify and explain the use of the following: thimble, shackle, turnbuckle, pelican hook, and other ship's hardware and fittings commonly used aboard your ship's vessels.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Demonstrate proper surface and coating preparation, coating techniques, care of stored coatings, and cleaning of brushes and tools used to maintain surfaces on your ship's vessel.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Demonstrate proper surface and coating preparation, coating techniques, care of stored coatings, and cleaning of brushes and tools used to maintain surfaces on your ship's vessel.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Demonstrate how to make a minor repair on a paddlecraft used by your ship.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "e",
+      "text": "Explain techniques used for the maintenance, protection, and repair of hulls and decks on your ship's vessel.",
+      "choose": 1,
+      "children": [
+       {
+        "number": "1",
+        "text": "Explain techniques used for the maintenance, protection, and repair of hulls and decks on your ship's vessel.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Explain the techniques used for the maintenance, protection and storage of paddlecraft used by your ship.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": "12",
+    "text": "Environment",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Demonstrate your knowledge of local environmental laws related to the proper storage, disposal, and cleanup of maritime coating materials, fuels, and other environmentally sensitive materials.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Discuss with an adult leader the dumping of garbage in the marine environment. Review the contents of the MARPOL placard and locate it aboard your ship's vessels.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Explain the importance of protecting marine endangered species using a representative species as an example (mammal, bird, fish, or reptile). As a minimum, include a description of the species; its habitat, history, and current population numbers; and current steps being employed to help its recovery. Note: Refer to the definition and expectation for \"explain\" in Able 1b.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "13",
+    "text": "Weather",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Demonstrate your ability to read a barometer, thermometer, anemometer, and weathervane. Be familiar with the Beaufort Wind Force Scale.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "14",
+    "text": "Cruising",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Earn the Long Cruise badge.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "15",
+    "text": "Electives: Complete four Level Two Electives",
+    "choose": 4,
+    "children": [
+     {
+      "number": "a",
+      "text": "America's Boating Club: As a member of America's Boating Club complete the Boat Handling and Marine Navigation courses.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Awards: Complete the Outdoor Ethics Awareness Award.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Duty to God: Plan and conduct two appropriate interfaith religious services during ship outings.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Engines:",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Understand the safe and proper procedures for the use of gasoline and diesel inboard engines, including fueling, pre-start checks, ventilation, starting, running, periodic checks while running, securing, postoperative checks, and keeping an engine log.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Using the type of engine aboard the vessel you most frequently use, demonstrate your understanding of basic troubleshooting and the preventive maintenance schedule recommended by the manufacturer.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "e",
+      "text": "Leadership: Attend NYLT Leadership Academy.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Leadership: Attend Scouting America's Leave No Trace Trainer Course",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "Maritime Tradition:",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Explain how the sextant works. Show how to use it and demonstrate measuring horizontal angles and altitudes.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Find latitude by the altitude of Polaris or by the sun's altitude at local apparent noon. Demonstrate how longitude is determined.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Demonstrate finding error in the boat's compass by the sun's azimuth.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "h",
+      "text": "NauticEd: Successfully complete NauticEd's Navigation Rules for Sailboats or NauticEd's Navigation Rules for Powerboats Course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "i",
+      "text": "Ornamental Ropework: Demonstrate your ability to fashion the following items of ornamental ropework: fourstrand Turk's head, coach whipping, cockscombing, round braid, flat sennit braid, wall knot, and crown knot. Make a useful item such as a boatswain's lanyard, rigging knife lanyard, bell rope, etc., or decorate a portion of your ship's equipment such as a stanchion, rail, lifeline, tiller, etc.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "j",
+      "text": "Paddlecraft: Complete the requirements for one of the following Scouting America awards: Boardsailing, Kayaking, or Stand-Up Paddling, or the Kayaking, Whitewater, or Canoeing merit badge. (Note: This must be a different activity from the one chosen under Level 2 Electives – Specialty Proficiency.)",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "k",
+      "text": "Paddlecraft: Take a course from an ACA certified instructor or an equivalent, ie: State- certified paddling instructor.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "l",
+      "text": "Paddlecraft: Compete in a freestyle, downriver, flat water or slalom paddling race in a canoe, kayak, or Stand Up Paddleboard (SUP), using nationally accepted rules.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "m",
+      "text": "Paddlecraft: Successfully complete an ACA level one or higher assessment in canoe, kayak or SUP.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "n",
+      "text": "Paddlecraft: Complete an ACA level 3 or higher swift water rescue course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "o",
+      "text": "Paddlecraft: Earn ACA instructor certification in canoe, kayak or SUP at any level.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "p",
+      "text": "Racing:",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Demonstrate your understanding of the shapes, flag hoists, gun, and horn signals used in yacht racing as well as a working knowledge of the racing rules of World Sailing.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Serve as helmsman, with one or more additional crew members, of a sloop- rigged or other suitable boat with a spinnaker in a race sailed under World Sailing racing rules.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "q",
+      "text": "Sailing: While leading a crew of not less than two other persons, demonstrate your ability to sail a sloop or another suitable vessel correctly and safely over a triangular course (leeward, windward, reaching marks), demonstrating beating, reaching, running, and the proper commands.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "r",
+      "text": "SCUBA: Complete an Open Water Diver course from NAUI, PADI, or any other Recreational Scuba Training Council Certification Agency.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "s",
+      "text": "SCUBA: Plan and coordinate a public service event such as underwater trash cleanup, coral reforestation project, or invasive species reduction project.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "t",
+      "text": "SCUBA: Complete an Advanced Diver course from any RSTC agency.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "u",
+      "text": "SCUBA: Complete a DAN® Oxygen Administration Course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "v",
+      "text": "Special Proficiency: Complete the requirements for one of the following Scouting America Awards: Boardsailing, Kayaking, or Stand-Up Paddleboarding, Mile Swim, Whitewater Rafting, SCUBA, or Snorkeling or the Kayaking, Whitewater, or Canoeing merit badge. (Note: This must be a different activity from the one chosen under Level 2 Electives – Paddlecraft.)",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "w",
+      "text": "Special Proficiency: Complete the National Safe Boating Council course Boat Control On- Water Training.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "x",
+      "text": "Special Proficiency: Become a certified scuba diver or become proficient in board-sailing, surfing, kayaking, or whitewater rafting/canoeing.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "y",
+      "text": "U.S. Coast Guard Auxiliary: Successfully complete the Coast Guard Auxiliary Boating Skills and Seamanship course. All core sessions, as well as at least three elective sessions, must be completed to fulfill this requirement.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "z",
+      "text": "Vessel Maintenance: Demonstrate your knowledge of small paddlecraft construction by building your own or assisting in building a canoe or kayak from wood, fiberglass, or other suitable materials. Kits may be used.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ },
+ "quartermaster": {
+  "program": "sea_scouts",
+  "order": 4,
+  "name": "Quartermaster",
+  "rank_url": "https://www.seascout.org/",
+  "effective_from": "2026",
+  "source_document": {
+   "title": "Quartermaster Rank Requirements (2026) — Scouting America Sea Scouts",
+   "url": "https://www.seascout.org/",
+   "year": 2026
+  },
+  "requirements": [
+   {
+    "number": "1",
+    "text": "Ideals",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Initiate a discussion on the ideals stated in the Sea Promise.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Prepare a written analysis, offering recommendations for improvements regarding one of the following ship’s programs: bylaws and code, training programs, ceremonies, quarterdeck meetings, recruiting programs, or fundraising.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "2",
+    "text": "Active Membership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Meet your ship’s bylaws requirement for active participation in your ship’s meetings and activities for six months.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Present a talk or program at least 15 minutes long on Sea Scouts to a service club, religious organization, PTA, or other adult organization.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "3",
+    "text": "Leadership",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Quartermaster Project: While an Able Sea Scout, plan, develop, and demonstrate leadership to others in a service project that is helpful to any religious institution, school, or your community. The project plan must be approved by your Skipper and ship committee and approved by the council or district advancement committee before you start. This service project should involve your ship and at least one other group. You must use the Quartermaster Leadership Service Project Workbook, No. 420-011, to document your work. Note: The Quartermaster project is separate and distinct from a youth's Eagle Scout service project.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Officer: Serve as a ship officer for at least six months.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Instruct: Organize and help conduct the Scouting America’s Introduction to Leadership Skills for Ships (ILSS) for your ship or serve as staff on an NYLT course NYLT Leadership Academy, NAYLE, Wood Badge course, or Seabadge course.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "4",
+    "text": "Safety",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Know the heavy-weather precautions taken aboard power, sailing, and paddle vessels when dangerous weather approaches, and demonstrate these precautions aboard the vessel used by your ship.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Know the special precautions that should be taken when limited visibility is encountered.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Teach Apprentice 5a and Ordinary 5a, 5b, and 5c requirements to a crew.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "5",
+    "text": "Marlinspike Seamanship",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Teach the Apprentice, Ordinary, and Able marlinspike seamanship requirements to a crew.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Make an eye splice in double-braided line.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "6",
+    "text": "Boat Handling",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Take charge of the craft used by your ship and give all commands to the crew for picking up a mooring buoy and properly mooring the vessel in several wind and current situations. OR Take charge of three or more single occupant vessels and give all the commands necessary to move the group successfully to the opposite shore, across a river in moving water, or lake in windy conditions, without drifting downstream or down lake.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Demonstrate and teach the principles of springing into and out from a dock, from both bow and stern, using an engine depending on the type of vessel used by your ship. OR Demonstrate and teach the proper way to enter moving water with a canoe, kayak, paddleboard or raft, facing both upstream and downstream, while in an eddy and from shore.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Teach Ordinary and Able boat handling requirements to a crew.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "7",
+    "text": "Ground Tackle",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Teach the Ordinary and Able anchoring requirements to a crew.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Know the methods of bringing a vessel to anchor and a mooring with special emphasis on wind and current.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Take charge of a vessel used by your ship and give all commands to the crew for setting and weighing anchor in several wind and current situations.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "8",
+    "text": "Navigation Rules",
+    "choose": null,
+    "children": [
+     {
+      "number": "1",
+      "text": "Teach the Ordinary navigation rules requirements and Able 9b and 9c to a crew.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "9",
+    "text": "Piloting and Navigation",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Teach the Ordinary and Able piloting requirements to a crew.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Know the methods of fixing a boat’s position in limited visibility.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Create a route in an electronic navigation device that includes at least five waypoints. Use the electronic navigation device to navigate your route. OR Use an electronic navigation device (e.g., GPS) to determine coordinates and routes for at least five emergency exit routes for inland waterways. Identify the beginning of each route during a boating trip.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "10",
+    "text": "Weather",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Teach the Ordinary and Able weather requirements to a crew.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Demonstrate your knowledge of the weather signs for your local area, including cloud types. Prepare a 48-hour forecast and compare your forecast with the actual weather that occurred.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "11",
+    "text": "Environment",
+    "choose": null,
+    "children": [
+     {
+      "number": "a",
+      "text": "Discuss the three types of marine sanitation devices and the laws governing sewage discharge.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Explain what gray water is and how it should be handled in your boating area.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Write a 500-word report on an aquatic environment (freshwater, coastal, estuary, or sanctuary). Include in the report the location, habitat, history, animals and plants that inhabit the area, its importance to man, current regulations, and what boaters can do to help preserve it for future generations. OR Write a 500-word report on one of the United States of America’s most endangered rivers (as identified by the list provided by the American Rivers organization) highlighting the threats and potential solutions. Discuss the impact, both positive and negative, of doing or not doing each potential solution.",
+      "choose": null,
+      "children": []
+     }
+    ]
+   },
+   {
+    "number": "12",
+    "text": "Electives: Complete four Level Three electives.",
+    "choose": 4,
+    "children": [
+     {
+      "number": "a",
+      "text": "America's Boating Club: As a member of America's Boating Club, complete the Advanced Marine Navigation course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "b",
+      "text": "Awards: Complete the Outdoor Ethics Action Award.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "c",
+      "text": "Duty to God: Complete the requirements for the religious emblem of your faith. (Refer to the Duty to God brochure, No. 512-879.)",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "d",
+      "text": "Engines:",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Explain the principal features of steam turbine, turbo-electric, direct reversing diesel, diesel-electric, gas turbine, nuclear, gasoline, and diesel engines and the relative advantages of each type.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Explain the operation of spark ignition and compression ignition for internal combustion engines used aboard small vessels.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Demonstrate your familiarity with the engine aboard the vessel used by your ship, including its principles of operation, fuel, lubrication, cooling and electrical systems, and their component parts.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "Demonstrate your ability to locate and correct minor engine troubles according to the engine manufacturer’s troubleshooting guide.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "e",
+      "text": "Leadership: Attend National Advanced Youth Leadership Experience (NAYLE).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "f",
+      "text": "Leadership: Attend Wood Badge (youth 18 and over).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "g",
+      "text": "Leadership: Attend Leadership Challenge at Philmont or the Summit (youth 18 and over).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "h",
+      "text": "Leadership: Attend Seabadge (youth 18 and over).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "i",
+      "text": "Leadership: Take command of one of more vessels crewed by not less than four Sea Scouts (e.g., four single occupant vessels or a single vessel with four occupants) for at least 40 consecutive hours, including two nights. You must delegate and supervise all duties. Prior to departure, create a trip plan and receive approval from your ship's Skipper. If your boats are transported to the water, inspect all vessels with an adult leader, and evaluate whether they are adequately secured for transportation prior to departure. In addition, prior to the trip, complete the following: file a float plan, inspect the vessel(s) for required equipment; supervise all menu preparation; prepare the vessel(s) to get underway with a proper checklist approved by the adult leaders; launch, anchor, dock, and maintain course by commands to the helmsman appropriate for your vessel(s); remain underway for an extended period during darkness if your vessel has running lights; and discuss appropriate nighttime running procedures. While underway, perform safety and rescue drills appropriate to your boat(s), such as capsize, person in the water, towing vessels, damage control, abandon ship, fire, collision, and any other drills used by your ship. During this cruise no substantial errors may be committed. OR Plan and serve as coordinator on a ?live-aboard? dive trip of at least three days with all dive plans, equipment, food, surface and underwater charts on dive sites, specific training including all financial, safety information and emergency protocols, plan for provisions; supervise all menu preparation; prepare the boats to get underway with a proper checklist approved by the adult leaders; and file a float plan. If on open water, prepare a navigation chart including at least three legs and/or course corrections. If on inland rivers, identify river access points and coordinate transportation at both ends of the trip. With an adult leader, inspect all vessels and evaluate whether they are adequately secured for transportation.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "j",
+      "text": "Maritime Tradition: (Communication) Draw the International Code flags and pennants from memory and give the single-letter meanings (Alpha = Have diver down, keep clear) of the flags. Show how to use the book International Code of Signals.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "k",
+      "text": "NauticEd: Successfully complete a NauticEd advanced course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "l",
+      "text": "Paddlecraft: Complete the SmartStart for Paddlers course. Conduct a watercraft safety class for your ship using Paddle Smart America materials. Identify sources of safety brochures and other materials that could be used by your ship and distribute them to troops in your area or your chartered organization.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "m",
+      "text": "Racing: Take charge of a crew in a race using current World Sailing racing rules.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "n",
+      "text": "Sailing: Know the principles of handling a schooner, ketch, yawl, or other suitable sailing vessel. Under competent oversight, take charge of a crew and demonstrate your ability to handle a suitable sailing vessel in all points of sail.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "o",
+      "text": "SCUBA: Take an additional certification course such as VIP process, tank filler/compressor operations, night diving, underwater navigation, underwater archaeology, underwater photography. Each course may be counted as an elective.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "p",
+      "text": "SCUBA: Complete a Rescue Course from any RSTC agency.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "q",
+      "text": "SCUBA: Become a certified Dive Master, Assistant Instructor or Instructor. Each certification may be counted as an elective. (Must be over 18 and log at least 50 dives.).",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "r",
+      "text": "Special Proficiency: Become proficient in boardsailing, surfing, kayaking, or whitewater rafting/canoeing.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "s",
+      "text": "Special Proficiency: Teach another Sea Scout the information needed to complete the Scouts Scouting America's Kayaking, Canoeing or Whitewater merit badges, or the SUP or Boardsailing award.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "t",
+      "text": "Special Proficiency: Complete the requirements for lifeguard through the American Red Cross, or other approved organization’s lifeguard course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "u",
+      "text": "U.S. Coast Guard Auxiliary: Successfully complete the Coast Guard Auxiliary Weekend Navigator course.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "v",
+      "text": "U.S. Coast Guard Auxiliary: Join a local Coast Guard Auxiliary flotilla as a Basic Qualified member and qualify for any Operational Auxiliary Program (AUXOP) or any Trident Marine Safety specialty rating.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "w",
+      "text": "Vessel Maintenance: Take charge of reconditioning or overhauling at least one of your ship’s vessels or take charge of hauling out the principal vessel used by your ship. In either case, lay out a plan of the work to be done in advance, including an estimate of the materials, tools, cost, and time involved.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "x",
+      "text": "Vessel Maintenance: Take charge of building a paddlecraft. Lay out the plan of work to be done, identify suitable building plans, estimate materials, tools, cost, and time involved. Launch the craft.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "y",
+      "text": "Vessel Maintenance: Engines",
+      "choose": null,
+      "children": [
+       {
+        "number": "1",
+        "text": "Know and demonstrate the correct method of rescuing a person in contact with a live wire.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "2",
+        "text": "Understand the construction of simple battery cells. Demonstrate the proper care of storage batteries.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "3",
+        "text": "Explain the difference between direct current and alternating current and the best uses for each.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "4",
+        "text": "Demonstrate that you know how to replace fuses, reset circuit breakers and properly splice shipboard electric cable.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "5",
+        "text": "Submit a diagram of the electrical system aboard the vessel used by your ship.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "6",
+        "text": "Explain wire tables, the current-carrying capacity of circuits, and the hazards and prevention of electrical overloading.",
+        "choose": null,
+        "children": []
+       },
+       {
+        "number": "7",
+        "text": "Explain electrolysis as applied to the deterioration of a boat’s underwater fittings by galvanic action and its prevention.",
+        "choose": null,
+        "children": []
+       }
+      ]
+     },
+     {
+      "number": "z",
+      "text": "Vessel Maintenance, Electricity: Explain electrolysis as applied to the deterioration of a boat's underwater fittings by galvanic action and its prevention.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "aa",
+      "text": "Vessels, Rigging: Demonstrate your ability to splice and handle wire rope, attach wire rope fittings, and complete a safety and tuning inspection of a vessel.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "bb",
+      "text": "Vessels: Under competent oversight, assume the duties of navigator of your ship’s vessel. Plot its projected course between two ports at least two hours apart and cruise that course mooring to mooring handling all piloting duties. The cruise should be made in daylight hours with good visibility.",
+      "choose": null,
+      "children": []
+     },
+     {
+      "number": "cc",
+      "text": "Vessels: Obtain a US Coast Guard OUPV (Operator of Uninspected Passenger Vessels) boat operator license. (Must be over 18 to take test but can collect Sea Service time before 18.)",
+      "choose": null,
+      "children": []
+     }
+    ]
+   }
+  ]
+ }
+}

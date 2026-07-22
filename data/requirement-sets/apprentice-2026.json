@@ -1,0 +1,226 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "apprentice-2026",
+  "kind": "requirement-set",
+  "subject": "rank:apprentice",
+  "effective_from": "2026",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Apprentice Rank Requirements (2026) — Scouting America Sea Scouts",
+    "url": "https://www.seascout.org/",
+    "year": 2026
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Ideals",
+      "children": [
+        {
+          "number": "a",
+          "text": "Qualify as a member of your Sea Scout ship by taking part in the ship’s admission ceremony."
+        },
+        {
+          "number": "b",
+          "text": "Repeat from memory and discuss with an adult leader, an Able Scout, or a Quartermaster Scout the Scout Oath and Law and the Sea Promise and agree to carry out the provisions of your ship’s code and bylaws."
+        },
+        {
+          "number": "c",
+          "text": "Demonstrate acceptable courtesies used aboard a Sea Scout vessel."
+        },
+        {
+          "number": "d",
+          "text": "Demonstrate the proper procedure for boarding a Sea Scout vessel and landship."
+        },
+        {
+          "number": "e",
+          "text": "With other Sea Scouts, friends or family members, complete the Personal Safety Awareness Training for Scouting America’s Older Youth Programs led by an adult leader or designee. The adult conducting the program should follow the program guidelines found in https://seascout.org/program-toolbox/to complete this requirement."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Active Membership",
+      "children": [
+        {
+          "number": "a",
+          "text": "Provide evidence that you are fulfilling your financial obligations to your ship, including helping with fundraisers."
+        },
+        {
+          "number": "b",
+          "text": "Obtain a Sea Scout uniform. Describe the Sea Scout uniform. Tell how and when to wear the uniform."
+        },
+        {
+          "number": "c",
+          "text": "Meet your ship’s bylaws requirement for active participation in your ship’s meetings and activities for three months."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Leadership",
+      "children": [
+        {
+          "number": "a",
+          "text": "Describe your ship’s organization, including the youth and adult leadership positions."
+        },
+        {
+          "number": "b",
+          "text": "Demonstrate your ability to identify insignia of youth and adult leadership positions. Explain the chain of command in your ship."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Swimming",
+      "children": [
+        {
+          "number": "a",
+          "text": "Demonstrate your ability to swim by doing one of the following: Jump feet first into water over your head, swim 75 yards/meters in a strong manner using one or more of the following strokes: sidestroke, breaststroke, trudgen, or crawl; then swim 25 yards/meters using the elementary backstroke. The 100 yards/meters must be swum continuously and include at least one sharp turn. After completing the swim, rest by floating on your back, remaining as motionless as possible."
+        },
+        {
+          "number": "b",
+          "text": "Discuss Scouting America’s Safe Swim Defense plan and explain how it is used to protect Sea Scouts and other groups during swimming activities."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Safety",
+      "children": [
+        {
+          "number": "a",
+          "text": "Explain the uses, advantages, and disadvantages of the various types of Coast Guard–approved life jackets. Demonstrate the proper use and care of life jackets used by your ship. Discuss your state's boating laws as they relate to life jacket wear."
+        },
+        {
+          "number": "b",
+          "text": "Identify visual day and night marine distress signals and know their location and the proper use for your ship’s vessel(s). OR Know and demonstrate basic hand, paddle, and whistle signals commonly used on paddlecraft trips.",
+          "choose": 1,
+          "children": [
+            {
+              "number": "1",
+              "text": "Identify visual day and night marine distress signals and know their location and the proper use for your ship’s vessel(s)."
+            },
+            {
+              "number": "2",
+              "text": "Know and demonstrate basic hand, paddle, and whistle signals commonly used on paddlecraft trips."
+            }
+          ]
+        },
+        {
+          "number": "c",
+          "text": "Use the Distress Communications Form to demonstrate the procedure to send the following VHF emergency messages: Mayday, Pan Pan, and Security."
+        },
+        {
+          "number": "d",
+          "text": "Know the safety rules that apply to vessels and equipment used by your ship, and safety standards in the use of power tools, machinery, lifting heavy objects, and other safety devices used by your ship. OR Obtain and discuss with your leader or designee, your state’s paddlecraft safety rules for the craft most frequently used by your ship.",
+          "choose": 1,
+          "children": [
+            {
+              "number": "1",
+              "text": "Know the safety rules that apply to vessels and equipment used by your ship, and safety standards in the use of power tools, machinery, lifting heavy objects, and other safety devices used by your ship."
+            },
+            {
+              "number": "2",
+              "text": "Obtain and discuss with your leader or designee, your state’s paddlecraft safety rules for the craft most frequently used by your ship."
+            }
+          ]
+        },
+        {
+          "number": "e",
+          "text": "Obtain a current copy of the U.S. Coast Guard Auxiliary (USCG AUX) or America’s Boating Club (ABC) Vessel Safety Check (VSC) Form online. With an approved Vessel Examiner or an experienced adult leader, perform a VSC on the vessel(s) in use by your Ship. Additionally, obtain, or create your own, USCG “IF FOUND” sticker(s). Complete the contact information and place it on the vessel(s) used by your Ship. If your Ship’s vessel(s) already displays an “IF FOUND” sticker, verify the contact information is still correct. If not, correct it."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Marlinspike Seamanship",
+      "children": [
+        {
+          "number": "a",
+          "text": "Using both large and small lines, tie and explain the use of the following knots: overhand, square, figure eight, bowline, two half hitches, clove hitch, sheet bend, and cleat hitch, and trucker’s hitch."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Boat Handling",
+      "children": [
+        {
+          "number": "a",
+          "text": "Name the principal parts of a typical sailboat, runabout, canoe, kayak, SUP, and raft."
+        },
+        {
+          "number": "b",
+          "text": "Describe the identifying characteristics of:",
+          "children": [
+            {
+              "number": "i",
+              "text": "A sloop, ketch, yawl, cutter, and schooner"
+            },
+            {
+              "number": "ii",
+              "text": "An open motorboat and cabin motorboat"
+            },
+            {
+              "number": "iii",
+              "text": "A touring canoe and whitewater canoe"
+            },
+            {
+              "number": "iv",
+              "text": "A whitewater kayak and sea kayak"
+            },
+            {
+              "number": "v",
+              "text": "Oar frame raft and a paddle raft"
+            }
+          ]
+        },
+        {
+          "number": "c",
+          "text": "Demonstrate the ability to use a heaving line. OR While on land, demonstrate the ability to throw a rescue throw bag and hit a four-foot-wide target 30 feet (10 meters) away. Then, without hesitation, retrieve the line, and immediately throw it as a coil, and hit a four-foot-wide target 21 feet (seven meters) away. Finally, retrieve the line and re-stuff the bag.",
+          "choose": 1,
+          "children": [
+            {
+              "number": "1",
+              "text": "Demonstrate the ability to use a heaving line."
+            },
+            {
+              "number": "2",
+              "text": "While on land, demonstrate the ability to throw a rescue throw bag and hit a four-foot-wide target 30 feet (10 meters) away. Then, without hesitation, retrieve the line, and immediately throw it as a coil, and hit a four-foot-wide target 21 feet (seven meters) away. Finally, retrieve the line and re-stuff the bag."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Service",
+      "children": [
+        {
+          "number": "a",
+          "text": "Log at least eight hours of work on ship equipment, projects, or activities other than regular ship meetings, parties, dances, or fun events."
+        },
+        {
+          "number": "b",
+          "text": "Participate with your ship for at least eight hours in community service projects. Note: Arrange for this work through the ship’s officers."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.seascout.org/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

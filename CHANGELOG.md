@@ -3,6 +3,21 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.15.0 (minor) — 2026-07-21
+
+- `PENDING` Add **Cub Scout, Venturing, and Sea Scout advancement ranks** — completing the
+  rank vertical across every BSA program. Ranks grew 7 → **21** (6 Cub: Lion, Tiger, Wolf,
+  Bear, Webelos, Arrow of Light; 4 Venturing: Venturing, Discovery, Pathfinder, Summit; 4 Sea
+  Scout: Apprentice, Ordinary, Able, Quartermaster), each with a current `requirement-set`
+  (requirement-sets 174 → **188**; 579 requirement-text nodes). Structured from OFFICIAL
+  sources — scouting.org Cub adventure + Venturing rank pages and the official 2026 Sea Scout
+  rank PDFs (Venturing rank via usscouts.org) — with every requirement `text` verified verbatim
+  (whitespace-insensitive substring) against its source before baking; tree structure organized
+  with LLM assistance (`method: scraped`, conf 0.9). Cub ranks model required Adventures (Bobcat
+  folded in with its sub-requirements) + elective Adventures (`choose`). Requirement text ©
+  Scouting America (`text_rights`). New `seed_program_ranks.py` + `seed_program_rank_requirements.py`
+  + committed `tools/program_rank_requirements.json`. 1361 entities validate.
+
 ## 0.14.0 (minor) — 2026-07-21
 
 - `f9f6e33` Add **council historical lineage**. Councils grew 235 → **419** (229 current +

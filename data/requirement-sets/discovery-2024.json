@@ -1,0 +1,111 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "discovery-2024",
+  "kind": "requirement-set",
+  "subject": "rank:discovery",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Discovery Rank — Scouting America (Venturing)",
+    "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/discovery-rank/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Adventure",
+      "children": [
+        {
+          "number": "1",
+          "text": "Participate in at least two  Tier II or III adventures at the crew, district, council, territory, or national level."
+        },
+        {
+          "number": "2",
+          "text": "Complete the following:",
+          "children": [
+            {
+              "number": "1",
+              "text": "Complete a standard CPR course such as American Red Cross – First Aid/CPR/AED for Schools and the Community or the American Heart Association – Heartsaver Pediatric First Aid/CPR/AED or an equivalent course."
+            },
+            {
+              "number": "2",
+              "text": "Complete a standard first aid course such as the American Red Cross Standard First Aid or equivalent course."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Leadership",
+      "children": [
+        {
+          "number": "3",
+          "text": "Complete the  Introduction to Leadership Skills for Crews  course (or an equivalent)."
+        },
+        {
+          "number": "4",
+          "text": "Complete  Goal Setting and Time Management Training ."
+        },
+        {
+          "number": "5",
+          "text": "Complete  Venturing Crew Officer Orientation ."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Service",
+      "children": [
+        {
+          "number": "6",
+          "text": "Participate in service activities totaling at least 24 hours. Up to half of the service may be delivered personally; the rest must be delivered through crew service activities."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Personal Growth",
+      "children": [
+        {
+          "number": "7",
+          "text": "Complete a  structured personal reflection , and use this reflection and what you learned from the process to prepare for goal setting and as part of your Discovery Award advisor conference. Explore one of the following realms: “Adventures of Faith”, “Adventures of Self”, and “Adventures of Others”."
+        },
+        {
+          "number": "8",
+          "text": "In consultation with your advisor, establish at least one personal goal, and achieve it. The goal should be grounded in the realm you explored in Personal Growth requirement 7."
+        },
+        {
+          "number": "9",
+          "text": "Since earning the Venturing Rank, participate in a conference with your advisor.* As a part of this conference, discuss with your Advisor the challenges you faced and what you learned in fulfilling Personal Growth requirements 7 and 8.",
+          "children": [
+            {
+              "number": "1",
+              "text": "A Venturer is not required to share the personal reflection associated with “Adventures of Faith” with his or her Advisor, including the discussion that takes place at the Advisor conference, nor with members of a board of review."
+            }
+          ]
+        },
+        {
+          "number": "10",
+          "text": "After your Advisor conference, successfully complete a  crew board of review ."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/programs/venturing/venturing-awards-and-advancement/rank-advancement/discovery-rank/",
+        "accessed": "2026-07-21"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-21",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the official source (verified as a whitespace-insensitive substring of the page/PDF); tree structure organized with LLM assistance."
+  },
+  "notes": null
+}

@@ -76,6 +76,14 @@ noted here because their status shapes what we may redistribute:
   America** (see above), reproduced verbatim with attribution for non-commercial Scouting use;
   only the structure/numbering/metadata are the project's contribution. USSSP is unaffiliated
   with BSA; its own page layout/code is separately licensed and is not redistributed here.
+- **Scouting America official advancement pages & PDFs (scouting.org, seascout.org)** —
+  source for the current Cub Scout (Lion–Arrow of Light), Venturing (Discovery/Pathfinder/
+  Summit), and Sea Scout (Apprentice–Quartermaster) rank `requirement-set` documents: the
+  scouting.org Cub adventure and Venturing rank pages and the official 2026 Sea Scout rank
+  PDFs. Requirement **text is © Scouting America** (see above), reproduced verbatim with
+  attribution for non-commercial Scouting use — every requirement text was verified as a
+  verbatim substring of the official source; only the tree structure/metadata are the
+  project's contribution. Source pages/PDFs are not redistributed (kept in git-ignored `.workbench/`).
 - **Guide to Awards and Insignia (No. 33066)** — the official Scouting America publication;
   source for the `award` catalog. Only **facts** are extracted (award names, catalog item
   numbers, wear location) — uncopyrightable; the Guide's

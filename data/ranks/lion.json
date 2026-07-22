@@ -1,0 +1,28 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/rank.schema.json",
+  "id": "lion",
+  "kind": "rank",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Lion",
+      "program": "cub_scouts",
+      "order": 1,
+      "url": "https://www.scouting.org/programs/cub-scouts/",
+      "description": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/programs/cub-scouts/"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Rank name/order/program; requirement content in requirement-set docs."
+      }
+    }
+  ],
+  "notes": null
+}
