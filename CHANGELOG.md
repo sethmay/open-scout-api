@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.16.1 (patch) — 2026-07-21
 
-- `PENDING` Rewrote the release notes to be easier to read.
+- `a48bd3c` Rewrote the release notes to be easier to read.
   - Each release's notes (the matching CHANGELOG entry) now lead with what changed and why it matters, in plain language and point form.
   - Recorded that style in `CLAUDE.md` so future notes stay consistent.
   - Notes only; no data or code changed.
