@@ -3,6 +3,14 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.21.0 (minor) — 2026-07-21
+
+- `PENDING` Camp listings now carry a real "last verified" date instead of the import date, so a site can flag the ones due for a fresh check.
+  - `verified_at` now carries camp-finder's own source-confirmation date (it spans 2025 to 2026 instead of a single import day), which makes a "confirm if older than 12 months" badge actually fire.
+  - Added `imported_at` for the date we ingested the record, kept separate from `verified_at`.
+- `PENDING` The camp `url` is now a durable link. The 168 per-season registration deep-links (10 year-stamped pages and 158 scoutingevent.com registration portals) fall back to the council's own page, so the primary "visit camp" link does not 404 next season.
+  - Also documented the confidence bands (0.9 / 0.8 / 0.6) alongside the projection contract in the README.
+
 ## 0.20.0 (minor) — 2026-07-21
 
 - `3d8b517` Camps are now grouped under their reservation, so a site can nest sub-camps instead of listing them flat.

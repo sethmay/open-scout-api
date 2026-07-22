@@ -85,6 +85,11 @@
           "format": "date",
           "description": "Full ISO date a human/pipeline last confirmed this record against its sources."
         },
+        "imported_at": {
+          "type": "string",
+          "format": "date",
+          "description": "Date this record was ingested into open-scout-api, distinct from verified_at (the source's own confirmation date). Present on imported records."
+        },
         "confidence": {
           "type": "number",
           "minimum": 0,

@@ -71,7 +71,12 @@ const { items } = await (await fetch(
 **Projection contract.** The `v1/current/*.json` files are the stable, denormalized consumer
 surface: every item carries its own `verified_at` / `method` / `confidence`, and
 `current/camps.json` inlines its council (`council_name`, `council_website`, `council_number`)
-plus a resolved `url` (camp site, else council site) so consumers need no cross-file joins.
+plus a resolved, durable `url` (the camp's own page when stable, else the council site;
+per-season registration deep-links are dropped) so consumers need no cross-file joins. For
+imported camps `verified_at` is camp-finder's own source-confirmation date (so a "stale after
+12 months" check actually fires) and `imported_at` is our ingest date; `confidence` runs 0.9
+(curated / national bases) / 0.8 (higher-confidence import) / 0.6 (default import), and below 1.0 for
+LLM-extracted facts in other datasets.
 Fields are **additive-only under `v1`** — new optional fields may appear, but existing ones are
 never renamed or removed — so pinning to a field set is safe. Generate consumer types from
 [`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json)

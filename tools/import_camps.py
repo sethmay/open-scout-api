@@ -84,9 +84,10 @@ def version(c: dict, *, camp_type: str, operator: str, council: str | None, conf
         "lat": c.get("lat"), "lon": c.get("lon"), "website": c.get("website_url"),
         "program_types": c.get("program_types", []), "features": c.get("features", []),
         "summary": SUMMARIES.get(c["id"]),
-        "provenance": {"sources": sources, "method": "imported", "verified_at": TODAY,
+        "provenance": {"sources": sources, "method": "imported",
+                       "verified_at": prov.get("verified_at") or TODAY, "imported_at": TODAY,
                        "confidence": conf,
-                       "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."},
+                       "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."},
     }
 
 
@@ -154,7 +155,7 @@ def main() -> None:
         "program_types": ["high_adventure"], "features": [], "summary": None,
         "provenance": {"sources": [{"url": "https://www.ntier.org/"},
                                    {"url": "https://www.scouting.org/high-adventure/northern-tier/"}],
-                       "method": "curated", "verified_at": TODAY, "confidence": 0.9,
+                       "method": "curated", "verified_at": TODAY, "imported_at": TODAY, "confidence": 0.9,
                        "notes": "National High Adventure base (canoe country, Ely MN + Canada); coordinates approximate (Sommers base)."}}
     built.append(("mn-northern-tier", None, nt_v["name"], nt_v))
     n_natl += 1

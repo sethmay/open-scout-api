@@ -86,10 +86,11 @@
         "council_number": { "type": ["integer", "null"], "minimum": 1 },
         "url": { "type": ["string", "null"], "format": "uri" },
         "verified_at": { "type": "string", "format": "date" },
+        "imported_at": { "type": "string", "format": "date" },
         "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "camp_type", "operator", "council", "parent", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "website", "url", "summary", "program_types", "verified_at", "method", "confidence"],
+      "required": ["id", "name", "camp_type", "operator", "council", "parent", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "website", "url", "summary", "program_types", "verified_at", "imported_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentRank": {

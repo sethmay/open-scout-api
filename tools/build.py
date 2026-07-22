@@ -123,6 +123,15 @@ def main() -> None:
         p = ov["provenance"]
         return {"verified_at": p["verified_at"], "method": p["method"], "confidence": p["confidence"]}
 
+    _TRANSIENT_URL = re.compile(r"20\d\d|scoutingevent\.com")
+
+    def _durable_url(website, council_website):
+        # A year-stamped or scoutingevent.com link is a per-season registration deep-link that
+        # 404s next year; prefer the council's durable page, but never return nothing.
+        if website and not _TRANSIENT_URL.search(website):
+            return website
+        return council_website or website
+
     # --- territories: per-entity + index + current -------------------------
     current_terr_ids: set[str] = set()
     terr_index = []
@@ -212,7 +221,8 @@ def main() -> None:
                                   "council_name": _cm["name"] if _cm else None,
                                   "council_website": _cm["website"] if _cm else None,
                                   "council_number": _cm["number"] if _cm else None,
-                                  "url": ov.get("website") or (_cm["website"] if _cm else None),
+                                  "url": _durable_url(ov.get("website"), _cm["website"] if _cm else None),
+                                  "imported_at": ov["provenance"].get("imported_at"),
                                   **_prov(ov)})
 
     # --- ranks: per-entity + index + current -------------------------------
