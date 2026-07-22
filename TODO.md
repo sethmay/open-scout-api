@@ -98,6 +98,10 @@ by the pipeline (as the Pipsico fix was).
   (Northern Star's camp, Birchwood WI) — the same physical property as `wi-tomahawk-scout-camp`, so it
   was merged in (a guest-council session is not a distinct physical camp). (`oh-cub-world` and
   `va-cub-and-webelos-adventure-camp` were reviewed and kept — generic-looking, but the councils' real names.)
+- **Coverage: overseas/OCONUS councils under-scraped (camp-finder gap; Camp Kenya added 0.26.1).**
+  Camp Kenya (Transatlantic #802) was absent entirely — camp-finder's scrape favored US councils. Sweep
+  Transatlantic, Far East / Direct Service, and other overseas councils against their own camp pages for
+  camps the import missed, and add them by hand (`method: curated`) like Camp Kenya.
 - **Average summer temperatures (camp-finder dev feature request; elevation DONE 0.26.0).** Add per-camp
   typical summer-temperature normals (climate source keyed on location) so apps can filter/sort on heat.
   A new optional `CampVersion` field, derived once and committed; keep it off the transitory line

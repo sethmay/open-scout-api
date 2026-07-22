@@ -1,0 +1,60 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ae-camp-kenya",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Kenya",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:transatlantic",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Savage Wilderness Adventure Camp, Sagana, Kirinyaga, Kenya (about 3 hours from Nairobi)",
+      "city": "Sagana",
+      "state": "AE",
+      "lat": -0.7074852,
+      "lon": 37.2450752,
+      "geo_precision": "exact",
+      "elevation_ft": 3700,
+      "website": "https://tacscouting.org/camps/campkenya/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident",
+        "high_adventure",
+        "sea_scout",
+        "family_camping",
+        "training"
+      ],
+      "features": [
+        "waterfront",
+        "climbing",
+        "shooting_sports",
+        "high_adventure_option"
+      ],
+      "summary": "Transatlantic Council resident camp held at the Savage Wilderness Adventure Camp near Sagana, Kenya, about three hours from Nairobi on the Tana River. It offers six youth programs spanning a Cub Scout camp, Trail to First Class for new Scouts, Scouts BSA merit badges, a high-adventure track, a Mount Kenya trek, and Sea Scouting, alongside a family program and adult training. Activities include whitewater rafting, kayaking, stand-up paddleboarding, rock climbing, archery, wilderness survival, and a safari adventure.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://tacscouting.org/camps/campkenya/",
+            "accessed": "2026-07-21"
+          },
+          {
+            "url": "https://scoutingevent.com/802-CampKenya26"
+          },
+          {
+            "citation": "Savage Wilderness Adventure Camp, Sagana (Kirinyaga), Kenya; coordinates via OpenStreetMap / Nominatim"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "imported_at": "2026-07-21",
+        "confidence": 0.9,
+        "notes": "Added by hand from the Transatlantic Council camp page; camp-finder never captured this overseas camp, so it was missing from the map. Held at the Savage Wilderness Adventure Camp near Sagana (~3 hours from Nairobi); coordinates geocoded to the Savage Wilderness property. A multi-program winter camp (Cub through Sea Scout, plus a Mount Kenya high-adventure trek). Operational dates and fees are deliberately excluded (they stay on the council site)."
+      }
+    }
+  ],
+  "notes": null
+}
