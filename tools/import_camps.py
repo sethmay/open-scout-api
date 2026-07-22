@@ -27,6 +27,8 @@ OUT = ROOT / "data" / "camps"
 TODAY = "2026-07-21"
 NATIONAL_COUNCIL = 999
 REMAP = {272: 780}  # camp-finder Michigan Crossroads dup -> the number we kept
+SUMMARIES = (json.loads((ROOT / "tools" / "camp_summaries.json").read_text("utf-8"))
+             if (ROOT / "tools" / "camp_summaries.json").exists() else {})
 
 
 def find_camp_finder() -> Path:
@@ -80,9 +82,10 @@ def version(c: dict, *, camp_type: str, operator: str, council: str | None, conf
         "address": c.get("address"), "city": c.get("city"), "state": c.get("state"),
         "lat": c.get("lat"), "lon": c.get("lon"), "website": c.get("website_url"),
         "program_types": c.get("program_types", []), "features": c.get("features", []),
+        "summary": SUMMARIES.get(c["id"]),
         "provenance": {"sources": sources, "method": "imported", "verified_at": TODAY,
                        "confidence": conf,
-                       "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."},
+                       "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."},
     }
 
 
@@ -118,7 +121,7 @@ def main() -> None:
         "camp_type": "high_adventure_base", "operator": "national", "council": None, "parent": None,
         "operating_status": "active", "address": None, "city": "Ely", "state": "MN",
         "lat": 47.9418, "lon": -91.7273, "website": "https://www.ntier.org/",
-        "program_types": ["high_adventure"], "features": [],
+        "program_types": ["high_adventure"], "features": [], "summary": None,
         "provenance": {"sources": [{"url": "https://www.ntier.org/"},
                                    {"url": "https://www.scouting.org/high-adventure/northern-tier/"}],
                        "method": "curated", "verified_at": TODAY, "confidence": 0.9,

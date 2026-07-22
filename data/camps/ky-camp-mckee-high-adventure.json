@@ -22,6 +22,7 @@
         "high_adventure"
       ],
       "features": [],
+      "summary": "High-adventure program for older Scouts near the Red River Gorge in Jeffersonville, Kentucky, offering rock climbing, underground canoeing, ziplining, horsemanship, and target shooting. Scouts camp with their unit and travel off-site during the day.",
       "provenance": {
         "sources": [
           {
@@ -37,7 +38,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],

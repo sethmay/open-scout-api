@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.18.0 (minor) — 2026-07-21
+
+- `PENDING` Camps now carry a short, evergreen description, so a site has real copy for camp pages at cutover.
+  - Added a `summary` to most camps (405 of 487 have one): what the camp is, its setting and size, and the kinds of programs it offers.
+  - Summaries are original prose that leaves out anything that changes year to year (no dates, fees, or session schedules). A validation check rejects any summary that slips in a year, price, or month.
+  - Surfaced in `current/camps.json`, so a site needs no extra lookup.
+
 ## 0.17.0 (minor) — 2026-07-21
 
 - `4d4a381` Added the Pacific-Northwest councils' camps, so the API no longer trails the camp-finder site.

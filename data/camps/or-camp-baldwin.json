@@ -30,6 +30,7 @@
         "older_scout_program",
         "stem"
       ],
+      "summary": "Wooded resident camp in the Cascade foothills featuring a lake waterfront, dining hall, shooting sports, climbing, and COPE, with STEM offerings, a first-year Scout program, and an older Scout program.",
       "provenance": {
         "sources": [
           {
@@ -45,7 +46,7 @@
         "method": "imported",
         "verified_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
   ],
