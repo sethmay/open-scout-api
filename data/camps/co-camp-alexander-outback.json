@@ -10,7 +10,7 @@
       "camp_type": "high_adventure_base",
       "operator": "council",
       "council": "council:pathway-to-the-rockies",
-      "parent": null,
+      "parent": "camp:co-camp-alexander",
       "operating_status": "active",
       "address": "2182 County Rd 96",
       "city": "Lake George",

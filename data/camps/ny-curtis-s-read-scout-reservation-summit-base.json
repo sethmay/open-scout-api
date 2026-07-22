@@ -10,7 +10,7 @@
       "camp_type": "high_adventure_base",
       "operator": "council",
       "council": "council:greater-hudson-valley",
-      "parent": null,
+      "parent": "camp:ny-curtis-s-read-scout-reservation",
       "operating_status": "active",
       "address": "1377 Palisades Road",
       "city": "Brant Lake",

@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:northeast-iowa",
-      "parent": null,
+      "parent": "camp:ia-camp-c-s-klaus",
       "operating_status": "active",
       "address": "P.O. Box 236",
       "city": "Colesburg",

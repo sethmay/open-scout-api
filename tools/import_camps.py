@@ -20,6 +20,7 @@ sources), so they are imported like any other council rather than skipped.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,34 +90,63 @@ def version(c: dict, *, camp_type: str, operator: str, council: str | None, conf
     }
 
 
+def compute_parents(items):
+    """Derive one-level reservation parents from the camp set (deterministic): a camp is a
+    child of another camp in the SAME council when its slug extends that camp's slug
+    ('<parent>-...') or its name is 'X at <parent name>'. No external data required."""
+    ids_by_c, names_by_c = {}, {}
+    for cid, cref, name in items:
+        ids_by_c.setdefault(cref, []).append(cid)
+        names_by_c.setdefault(cref, {})[cid] = name
+    parents = {}
+    for cid, cref, name in items:
+        if not cref:
+            continue
+        cands = [a for a in ids_by_c[cref] if a != cid and cid.startswith(a + "-")]
+        if cands:
+            parents[cid] = max(cands, key=len)
+            continue
+        m = re.search(r"\bat\s+(.+)$", name)
+        if m:
+            tgt = re.sub(r"\s+", " ", m.group(1)).strip().lower()
+            for a, an in names_by_c[cref].items():
+                if a != cid and an.strip().lower() == tgt:
+                    parents[cid] = a
+                    break
+    return parents
+
+
 def main() -> None:
     cf = find_camp_finder()
     num2slug = council_num_to_slug()
     OUT.mkdir(parents=True, exist_ok=True)
     n_local = n_natl = 0
     unresolved = []
+    built = []   # (id, council_ref, name, version_dict)
 
     for p in sorted(cf.glob("council-*.json")):
         d = json.loads(p.read_text("utf-8"))
         cnum = d.get("number")
         for c in d.get("camps", []):
             if cnum == NATIONAL_COUNCIL:
-                ct = classify(c.get("program_types", []))
-                v = version(c, camp_type=ct, operator="national", council=None, conf=0.9)
+                v = version(c, camp_type=classify(c.get("program_types", [])),
+                            operator="national", council=None, conf=0.9)
+                cref = None
                 n_natl += 1
             else:
                 slug = num2slug.get(REMAP.get(cnum, cnum))
                 if slug is None:
                     unresolved.append((cnum, c["id"]))
                     continue
+                cref = f"council:{slug}"
                 cf_conf = c.get("provenance", {}).get("confidence", 0.6) or 0.6
                 v = version(c, camp_type=classify(c.get("program_types", [])),
-                            operator="council", council=f"council:{slug}", conf=min(cf_conf, 0.8))
+                            operator="council", council=cref, conf=min(cf_conf, 0.8))
                 n_local += 1
-            write_json(OUT / f"{c['id']}.json", {"id": c["id"], "kind": "camp", "versions": [v], "notes": None})
+            built.append((c["id"], cref, c["name"], v))
 
     # Northern Tier — the 4th National HA base, absent from camp-finder.
-    nt = {"id": "mn-northern-tier", "kind": "camp", "versions": [{
+    nt_v = {
         "valid_from": None, "valid_to": None, "name": "Northern Tier National High Adventure Bases",
         "camp_type": "high_adventure_base", "operator": "national", "council": None, "parent": None,
         "operating_status": "active", "address": None, "city": "Ely", "state": "MN",
@@ -125,14 +155,20 @@ def main() -> None:
         "provenance": {"sources": [{"url": "https://www.ntier.org/"},
                                    {"url": "https://www.scouting.org/high-adventure/northern-tier/"}],
                        "method": "curated", "verified_at": TODAY, "confidence": 0.9,
-                       "notes": "National High Adventure base (canoe country, Ely MN + Canada); coordinates approximate (Sommers base)."}}],
-        "notes": None}
-    write_json(OUT / "mn-northern-tier.json", nt)
+                       "notes": "National High Adventure base (canoe country, Ely MN + Canada); coordinates approximate (Sommers base)."}}
+    built.append(("mn-northern-tier", None, nt_v["name"], nt_v))
     n_natl += 1
 
     if unresolved:
         raise SystemExit(f"unresolved council refs: {unresolved}")
-    print(f"camps: {n_local} council + {n_natl} national = {n_local + n_natl} written")
+
+    parents = compute_parents([(cid, cref, name) for cid, cref, name, _ in built])
+    for cid, cref, name, v in built:
+        pid = parents.get(cid)
+        v["parent"] = f"camp:{pid}" if pid else None
+        write_json(OUT / f"{cid}.json", {"id": cid, "kind": "camp", "versions": [v], "notes": None})
+    print(f"camps: {n_local} council + {n_natl} national = {len(built)} written; "
+          f"{len(parents)} with a reservation parent")
 
 
 if __name__ == "__main__":

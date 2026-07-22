@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:greater-colorado",
-      "parent": null,
+      "parent": "camp:co-camp-cris-dobbins",
       "operating_status": "active",
       "address": "22799 Elbert Road",
       "city": "Elbert",

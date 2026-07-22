@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:bay-lakes",
-      "parent": null,
+      "parent": "camp:wi-gardner-dam-adventure-base",
       "operating_status": "active",
       "address": "N2940 Gardner Dam Rd",
       "city": "White Lake",

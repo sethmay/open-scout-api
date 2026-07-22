@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:chester-county",
-      "parent": null,
+      "parent": "camp:md-camp-horseshoe",
       "operating_status": "active",
       "address": "1286 Ridge Road Rising Sun, Maryland 21911",
       "city": null,

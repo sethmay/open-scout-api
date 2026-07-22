@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:crossroads-of-the-west",
-      "parent": null,
+      "parent": "camp:ut-camp-maple-dell",
       "operating_status": "active",
       "address": null,
       "city": "Payson",

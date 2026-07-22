@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:glaciers-edge",
-      "parent": null,
+      "parent": "camp:wi-ed-bryant-scout-reservation",
       "operating_status": "active",
       "address": "N6960 County Rd G",
       "city": "Mauston",

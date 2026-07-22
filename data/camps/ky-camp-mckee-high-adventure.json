@@ -10,7 +10,7 @@
       "camp_type": "high_adventure_base",
       "operator": "council",
       "council": "council:blue-grass",
-      "parent": null,
+      "parent": "camp:ky-camp-mckee",
       "operating_status": "active",
       "address": "8695 Levee Rd",
       "city": "Jeffersonville",

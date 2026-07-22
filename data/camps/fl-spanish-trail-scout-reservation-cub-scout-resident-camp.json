@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:gulf-coast",
-      "parent": null,
+      "parent": "camp:fl-spanish-trail-scout-reservation",
       "operating_status": "active",
       "address": "315 Pat Covell Rd",
       "city": "Defuniak Springs",

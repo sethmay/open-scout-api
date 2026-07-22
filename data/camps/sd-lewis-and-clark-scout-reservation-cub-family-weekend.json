@@ -10,7 +10,7 @@
       "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:black-hills-area",
-      "parent": null,
+      "parent": "camp:sd-lewis-and-clark-scout-reservation",
       "operating_status": "active",
       "address": "31069 430th Ave",
       "city": "Tabor",
