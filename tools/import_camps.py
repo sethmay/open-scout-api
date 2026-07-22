@@ -1,4 +1,12 @@
-"""One-time importer: camp-finder camps -> open-scout-api camp entities.
+"""HISTORICAL one-time seed tool — NOT part of the live pipeline.
+
+camp-finder now *consumes* this API and has retired its per-council source data, so this importer
+runs only if that archived source is restored at ../camp-finder/data/councils. `data/` is the
+authoritative source now; go-forward camp corrections are direct edits to data/camps/ (see the
+README "Contributing" section). Retained for provenance and for the curation maps
+(CURATED_MERGES, RESERVATIONS) that encode the current merges and reservation groupings.
+
+One-time importer: camp-finder camps -> open-scout-api camp entities.
 
 Reads the sibling camp-finder repo (data/councils/council-*.json, camps nested per
 council) and this repo's data/councils/*.json (for council number -> slug), and writes

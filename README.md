@@ -114,10 +114,12 @@ Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 ## Repository layout
 
 ```
-data/                 canonical, normalized JSON (one file per entity + _events.json per dataset)
-  councils/  territories/
+data/                 authoritative source: canonical JSON, one file per entity + _events.json per dataset
+  councils/ territories/ merit-badges/ requirement-sets/ camps/ ranks/ awards/ oa-lodges/ vocab/
 schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current
-tools/                build.py (data/ -> dist/), build_sqlite.py, validate_data.py, validate_examples.py, stamp_schema.py, seed scripts
+tools/                live pipeline: stamp_schema.py, validate_data.py, validate_examples.py,
+                      build.py (data/ -> dist/), build_sqlite.py, us_geo.py
+                      historical seed (one-time camp-finder import; see file headers): import_camps.py, geocode_camps.py
 dist/                 generated static API (git-ignored; built + deployed by CI)
 PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
 ```
@@ -144,10 +146,17 @@ runs [`release.yml`](./.github/workflows/release.yml) to publish a GitHub Releas
 
 ## Contributing
 
-Corrections and additions are welcome as pull requests. Every fact needs a checkable source in
-its `provenance` block (no bare high confidence without a citation). Run the validators above
-before opening a PR — the same gate runs in CI. New entities follow the id/versioning/event
-conventions in [`PLAN.md`](./PLAN.md) §3.
+`data/` is the authoritative source — edit the canonical JSON directly (there is no upstream to
+re-import; the camp-finder seed pipeline is historical, see below). To add or fix an entity: edit
+`data/<dataset>/<id>.json`, then run `stamp_schema.py` → `validate_data.py` → `validate_examples.py`
+→ `build.py`, and open a PR (the same validators gate CI). A camp rename, or a duplicate/variant
+folded into another camp, uses `merged_from` — the retired id then resolves via `v1/camps/aliases.json`.
+Every fact needs a checkable source in its `provenance` block (no bare high confidence without a
+citation). New entities follow the id/versioning/event conventions in [`PLAN.md`](./PLAN.md) §3.
+
+`tools/import_camps.py` and `tools/geocode_camps.py` are the one-time camp-finder **seed** tools;
+camp-finder now consumes this API and its source data is retired, so they are not part of the live
+pipeline (kept for provenance).
 
 ## License & attribution
 

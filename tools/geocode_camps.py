@@ -1,4 +1,8 @@
-"""One-time enrichment: fill in city-level coordinates for camps whose source lat/lon is
+"""HISTORICAL one-time seed tool — NOT part of the live pipeline (needs the archived camp-finder
+source and network). Its output tools/geocode.json is committed and baked into data/; go-forward
+coordinate fixes are direct edits to data/camps/ (see the README "Contributing" section).
+
+One-time enrichment: fill in city-level coordinates for camps whose source lat/lon is
 missing or grossly out-of-state, writing a committed lookup at tools/geocode.json.
 
 This is NOT part of the build. It calls the OpenStreetMap Nominatim service (max 1 req/s) once,
