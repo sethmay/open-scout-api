@@ -20,7 +20,9 @@
       "geo_precision": "exact",
       "website": "https://www.winnebagocouncil.org/camping/iab/scouts-bsa-resident-camp/",
       "program_types": [
-        "scouts_bsa_resident"
+        "cub_resident",
+        "scouts_bsa_resident",
+        "webelos"
       ],
       "features": [],
       "summary": "Winnebago Council's Scouts BSA resident camp near Waverly, Iowa, with direct access to the Cedar River.",
@@ -41,7 +43,11 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "ia-ingawanis-adventure-base-cub-scout-resident-camp",
+        "ia-ingawanis-adventure-base-webelos-resident-camp"
+      ]
     }
   ],
   "notes": null

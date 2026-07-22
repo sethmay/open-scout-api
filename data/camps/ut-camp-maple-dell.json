@@ -7,7 +7,7 @@
       "valid_from": null,
       "valid_to": null,
       "name": "Camp Maple Dell",
-      "camp_type": "day_camp",
+      "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:crossroads-of-the-west",
       "parent": null,
@@ -20,7 +20,8 @@
       "geo_precision": "exact",
       "website": "https://www.utahscouts.org/mapledell",
       "program_types": [
-        "cub_day"
+        "cub_day",
+        "webelos"
       ],
       "features": [],
       "summary": "Cub Scout and primary youth day camp in Payson Canyon above Mapleton, Utah County, offering archery and target sports, nature exploration, and outdoor games.",
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "ut-camp-maple-dell-webelos-and-arrow-of-light-overnight-adventure"
+      ]
     }
   ],
   "notes": null

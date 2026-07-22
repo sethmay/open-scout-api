@@ -20,7 +20,8 @@
       "geo_precision": "exact",
       "website": "https://baylakesbsa.org/your-camps/gardner-dam-scout-camp/",
       "program_types": [
-        "scouts_bsa_resident"
+        "scouts_bsa_resident",
+        "webelos"
       ],
       "features": [],
       "summary": "Bay-Lakes Council Scouts BSA and Venturing adventure resident camp on 400 acres along the Wild Wolf River in Langlade County, Wisconsin, featuring whitewater kayaking and rafting, COPE and climbing, ATVing, mountain biking, and merit badges.",
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "wi-gardner-dam-adventure-base-webelos-aol-adventure-camp"
+      ]
     }
   ],
   "notes": null
