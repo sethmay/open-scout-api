@@ -201,11 +201,14 @@ def main() -> None:
     # --- camps: per-entity + index + current -------------------------------
     camp_index = []
     current_camps = []
+    camp_aliases: dict[str, str] = {}
     for e in camps:
         ref = f"camp:{e['id']}"
         write_json(DIST / "v1" / "camps" / f"{e['id']}.json", {**e, "events": events_for(ref, campevents)})
         ov = open_version(e)
         last = ov or e["versions"][-1]
+        for _mid in {m for _v in e["versions"] for m in _v.get("merged_from", [])}:
+            camp_aliases[_mid] = e["id"]
         camp_index.append({"id": e["id"], "name": last["name"], "camp_type": last["camp_type"],
                            "operator": last["operator"], "council": last.get("council"),
                            "state": last.get("state"), "current": ov is not None})
@@ -225,6 +228,7 @@ def main() -> None:
                                   "url": _durable_url(ov.get("website"), _cm["website"] if _cm else None),
                                   "imported_at": ov["provenance"].get("imported_at"),
                                   **_prov(ov)})
+    write_json(DIST / "v1" / "camps" / "aliases.json", camp_aliases)
 
     # --- ranks: per-entity + index + current -------------------------------
     rank_index = []
@@ -336,7 +340,7 @@ def main() -> None:
             "territories": {"total": len(territories), "current": len(current_territories)},
             "merit-badges": {"total": len(merit_badges), "current": len(current_badges)},
             "requirement-sets": {"total": len(requirement_sets), "current": len(current_rs)},
-            "camps": {"total": len(camps), "current": len(current_camps)},
+            "camps": {"total": len(camps), "current": len(current_camps), "merged": len(camp_aliases)},
             "ranks": {"total": len(ranks), "current": len(current_ranks)},
             "awards": {"total": len(awards), "current": len(current_awards)},
             "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges)},
@@ -348,7 +352,7 @@ def main() -> None:
                       "v1/territories/index.json", "v1/territories/{id}.json",
                       "v1/merit-badges/index.json", "v1/merit-badges/{id}.json",
                       "v1/requirement-sets/index.json", "v1/requirement-sets/{id}.json",
-                      "v1/camps/index.json", "v1/camps/{id}.json",
+                      "v1/camps/index.json", "v1/camps/{id}.json", "v1/camps/aliases.json",
                       "v1/ranks/index.json", "v1/ranks/{id}.json",
                       "v1/awards/index.json", "v1/awards/{id}.json",
                       "v1/oa-lodges/index.json", "v1/oa-lodges/{id}.json",

@@ -52,6 +52,7 @@ def main() -> int:
     errs: list[str] = []
     entities: set[str] = set()          # "kind:slug"
     open_ended: set[str] = set()        # entities with a valid_to:null version
+    camp_merged: dict[str, str] = {}    # retired id -> surviving camp file that absorbed it
     entity_validator = {ds: Draft202012Validator(schemas[s], registry=reg,
                         format_checker=Draft202012Validator.FORMAT_CHECKER) for ds, s in DATASETS.items()}
     event_validator = Draft202012Validator(schemas["event.schema.json"], registry=reg,
@@ -95,6 +96,14 @@ def main() -> int:
                     if lat is not None and lon is not None and us_geo.known(st) and not us_geo.in_state(st, lat, lon):
                         errs.append(f"{p.name}: coord ({lat}, {lon}) is outside {st} bounds "
                                     f"(mislocated; null it or backfill via tools/geocode_camps.py)")
+                for _mid in {m for _v in vs for m in _v.get("merged_from", [])}:
+                    if _mid in camp_merged:
+                        errs.append(f"{p.name}: merged_from id {_mid!r} also claimed by {camp_merged[_mid]}")
+                    camp_merged[_mid] = p.name
+
+    for _mid, _src in camp_merged.items():
+        if f"camp:{_mid}" in entities:
+            errs.append(f"{_src}: merged_from id {_mid!r} is still a live camp (must be retired)")
 
     # pass 2: referential integrity
     def check_ref(ref, src):

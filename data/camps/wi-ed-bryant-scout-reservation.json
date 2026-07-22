@@ -20,6 +20,7 @@
       "geo_precision": "exact",
       "website": "https://www.glaciersedge.org/activiites/ebsr-summer-camp/",
       "program_types": [
+        "cub_resident",
         "scouts_bsa_resident"
       ],
       "features": [],
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "wi-ed-bryant-scout-reservation-cub-scout-overnight-camp"
+      ]
     }
   ],
   "notes": null

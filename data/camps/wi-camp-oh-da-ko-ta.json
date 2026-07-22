@@ -7,7 +7,7 @@
       "valid_from": null,
       "valid_to": null,
       "name": "Camp Oh-Da-Ko-Ta",
-      "camp_type": "day_camp",
+      "camp_type": "resident_camp",
       "operator": "council",
       "council": "council:three-harbors",
       "parent": null,
@@ -20,7 +20,8 @@
       "geo_precision": "approximate",
       "website": "https://www.threeharborsscouting.org/camping/cub-scout-summer-camp-2026/76668",
       "program_types": [
-        "cub_day"
+        "cub_day",
+        "scouts_bsa_resident"
       ],
       "features": [],
       "summary": "Cub Scout day camp on 185 acres with waterfront on Dyer Lake near Burlington, offering boating, swimming, fishing, field sports, nature, and shooting sports. Serves as a certified Cub Scout day camp and family camping facility.",
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "wi-camp-oh-da-ko-ta-first-year-camper-program"
+      ]
     }
   ],
   "notes": null

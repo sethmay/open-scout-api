@@ -20,6 +20,7 @@ sources), so they are imported like any other council rather than skipped.
 from __future__ import annotations
 
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -142,6 +143,26 @@ def compute_parents(items):
     return parents
 
 
+def _km(a_lat, a_lon, b_lat, b_lon):
+    if None in (a_lat, a_lon, b_lat, b_lon):
+        return None
+    r = 6371.0
+    dlat = math.radians(b_lat - a_lat)
+    dlon = math.radians(b_lon - a_lon)
+    x = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(a_lat)) * math.cos(math.radians(b_lat)) * math.sin(dlon / 2) ** 2)
+    return 2 * r * math.asin(math.sqrt(x))
+
+
+def _distinct_location(cv: dict, bv: dict) -> bool:
+    """True only when both camps are precisely placed ('exact') and more than 5 km apart — a
+    genuine sub-camp of a multi-camp reservation, not a program variant of the same property."""
+    if cv.get("geo_precision") == "exact" and bv.get("geo_precision") == "exact":
+        d = _km(cv.get("lat"), cv.get("lon"), bv.get("lat"), bv.get("lon"))
+        return d is not None and d > 5.0
+    return False
+
+
 def main() -> None:
     cf = find_camp_finder()
     num2slug = council_num_to_slug()
@@ -188,13 +209,51 @@ def main() -> None:
     if unresolved:
         raise SystemExit(f"unresolved council refs: {unresolved}")
 
-    parents = compute_parents([(cid, cref, name) for cid, cref, name, _ in built])
+    # A slug/name "child" of a base camp is a program or session variant of the SAME physical
+    # property unless both are precisely placed and genuinely far apart (a real sub-camp of a
+    # reservation). Merge variants into the base (union programs/features); keep a distinct-
+    # location child as a reservation `parent`. Chains (a < a-b < a-b-c) collapse to one terminal
+    # survivor so no id is ever orphaned.
+    links = compute_parents([(cid, cref, name) for cid, cref, name, _ in built])
+    by_id = {cid: v for cid, cref, name, v in built}
+    merge_edge: dict[str, str] = {}   # child -> immediate base to merge into
+    keep: dict[str, str] = {}         # child -> immediate base, kept as a distinct sub-camp
+    for child, base in links.items():
+        (keep if _distinct_location(by_id[child], by_id[base]) else merge_edge)[child] = base
+
+    def terminal(x: str) -> str:
+        seen: set[str] = set()
+        while x in merge_edge and x not in seen:
+            seen.add(x)
+            x = merge_edge[x]
+        return x
+
+    for child in merge_edge:
+        base = terminal(child)
+        bv, cv = by_id[base], by_id[child]
+        bv["program_types"] = sorted(set(bv["program_types"]) | set(cv["program_types"]))
+        bv["features"] = sorted(set(bv["features"]) | set(cv["features"]))
+        bv.setdefault("merged_from", []).append(child)
+    for child, base in keep.items():   # a kept sub-camp whose base merged must follow to the survivor
+        by_id[child]["parent"] = f"camp:{terminal(base)}"
+
+    written = 0
     for cid, cref, name, v in built:
-        pid = parents.get(cid)
-        v["parent"] = f"camp:{pid}" if pid else None
+        if cid in merge_edge:
+            (OUT / f"{cid}.json").unlink(missing_ok=True)
+            continue
+        if v.get("merged_from"):
+            v["merged_from"] = sorted(v["merged_from"])
+            v["camp_type"] = classify(v["program_types"])
         write_json(OUT / f"{cid}.json", {"id": cid, "kind": "camp", "versions": [v], "notes": None})
-    print(f"camps: {n_local} council + {n_natl} national = {len(built)} written; "
-          f"{len(parents)} with a reservation parent")
+        written += 1
+    aliased = {m for _, _, _, v in built if v.get("merged_from") for m in v["merged_from"]}
+    lost = set(merge_edge) - aliased
+    if lost:
+        raise SystemExit(f"merge dropped listings with no surviving alias: {sorted(lost)}")
+    n_parent = sum(1 for v in by_id.values() if v.get("parent"))
+    print(f"camps: {written} written; {len(merge_edge)} program-variants merged into base; "
+          f"{n_parent} reservation sub-camps (distinct location)")
 
 
 if __name__ == "__main__":

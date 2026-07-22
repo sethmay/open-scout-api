@@ -116,6 +116,12 @@
           "type": ["string", "null"],
           "default": null,
           "description": "Evergreen, original-prose description (setting, size, and the kinds of programs offered). MUST NOT contain dates, fees, session schedules, or other transitory details; enforced by tools/validate_data.py."
+        },
+        "merged_from": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/Slug" },
+          "uniqueItems": true,
+          "description": "Retired camp ids that were the same physical property as this camp (program/session variants), collapsed into it. Their programs/features are unioned here; consumers resolve old ids via v1/camps/aliases.json."
         }
       },
       "required": ["name", "council", "operating_status", "camp_type", "operator"],
