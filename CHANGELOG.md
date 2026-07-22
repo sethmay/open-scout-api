@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.16.0 (minor) — 2026-07-21
 
-- `PENDING` Enrich the published **`current/*.json` projection contract** for downstream
+- `54c610a` Enrich the published **`current/*.json` projection contract** for downstream
   consumers (camp-finder cutover, tier 1). Every current item now carries `verified_at` +
   `method` (not just `confidence`) — powers freshness/staleness UX. `current/camps.json`
   additionally inlines its council (`council_name`, `council_website`, `council_number`,
