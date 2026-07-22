@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 33.477099766756,
       "lon": -83.851889875738,
+      "geo_precision": "exact",
       "website": "https://www.campbertadams.org/scoutsbsa",
       "program_types": [
         "scouts_bsa_resident"

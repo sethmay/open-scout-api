@@ -17,6 +17,7 @@
       "state": "AK",
       "lat": 64.2,
       "lon": -146.4,
+      "geo_precision": "exact",
       "website": "https://www.midnightsunbsa.org/lost-lake-scout-camp/lost-lake-scout-camp.html",
       "program_types": [
         "scouts_bsa_resident"

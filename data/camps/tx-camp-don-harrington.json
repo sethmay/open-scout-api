@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 35.037404396783,
       "lon": -101.845618324589,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/562-2026CubDayCampDon",
       "program_types": [
         "cub_day"

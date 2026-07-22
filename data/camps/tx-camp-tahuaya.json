@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 31.0075,
       "lon": -97.5066,
+      "geo_precision": "exact",
       "website": "https://www.longhorncouncil.org/camp-tahuaya",
       "program_types": [
         "cub_day"

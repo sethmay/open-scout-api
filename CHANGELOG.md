@@ -3,6 +3,14 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.22.0 (minor) — 2026-07-21
+
+- `PENDING` Fixed camp map coordinates so a distance search does not silently lose or misplace camps.
+  - Backfilled 99 camps that had no coordinates or sat in the wrong state (75 were missing, 24 were mislocated, one a Colorado camp plotted in Alaska), using city-level geocoding from the council's own town.
+  - Added `geo_precision` on every camp (`exact`, `approximate`, or `null`) so a site can soft-plot or bucket the approximate points instead of trusting them as precise.
+  - Added a build check that rejects any camp coordinate outside its state box, so this class of error cannot return.
+  - Only one camp (an overseas base with no US state) is still unplaceable, down from 75.
+
 ## 0.21.0 (minor) — 2026-07-21
 
 - `4e6c480` Camp listings now carry a real "last verified" date instead of the import date, so a site can flag the ones due for a fresh check.

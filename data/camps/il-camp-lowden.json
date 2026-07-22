@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 41.9535425,
       "lon": -89.3706593,
+      "geo_precision": "exact",
       "website": "https://blackhawkscouting.org/news/2025-dinos-day-camp/",
       "program_types": [
         "cub_day",

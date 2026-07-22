@@ -17,6 +17,7 @@
       "state": "AZ",
       "lat": 32.407766,
       "lon": -110.7166163,
+      "geo_precision": "exact",
       "website": "https://catalinacouncil.org/outdoors/lawton/",
       "program_types": [
         "scouts_bsa_resident"

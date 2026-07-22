@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.433202427543,
       "lon": -75.087279274882,
+      "geo_precision": "exact",
       "website": "https://www.ockanickon.org/scoutsbsa-summercamp",
       "program_types": [
         "scouts_bsa_resident"

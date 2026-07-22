@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 45.1802654,
       "lon": -88.396808,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/635-2026summercampbearpaw",
       "program_types": [
         "scouts_bsa_resident"

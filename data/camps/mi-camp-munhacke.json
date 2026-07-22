@@ -15,8 +15,9 @@
       "address": "20120 Bartell Road",
       "city": "Gregory",
       "state": "MI",
-      "lat": null,
-      "lon": null,
+      "lat": 42.458368,
+      "lon": -84.084398,
+      "geo_precision": "approximate",
       "website": "https://michiganscouting.org/camping/cub-scout-camping/",
       "program_types": [
         "cub_resident"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Somerset",
       "state": "PA",
-      "lat": null,
-      "lon": null,
+      "lat": 39.998002,
+      "lon": -79.041553,
+      "geo_precision": "approximate",
       "website": "https://wfbsa.org/camping/camp-buck-run/",
       "program_types": [
         "cub_resident"

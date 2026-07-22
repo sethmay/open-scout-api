@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 33.4487,
       "lon": -118.4855,
+      "geo_precision": "exact",
       "website": "https://www.campemeraldbay.org/scout-programs/summer-camp-prices/",
       "program_types": [
         "scouts_bsa_resident"

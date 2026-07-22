@@ -87,6 +87,11 @@
           "maximum": 180,
           "default": null
         },
+        "geo_precision": {
+          "enum": ["exact", "approximate", null],
+          "default": null,
+          "description": "Confidence of lat/lon: 'exact' = camp-specific source point inside its state box; 'approximate' = city or state-centroid backfill (tools/geocode_camps.py); null = could not be placed. Consumers should soft-plot or bucket 'approximate' points."
+        },
         "website": {
           "type": ["string", "null"],
           "format": "uri",

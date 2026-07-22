@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 40.459668716193,
       "lon": -91.353798627288,
+      "geo_precision": "exact",
       "website": "https://mvcscouting.org/camping/",
       "program_types": [
         "scouts_bsa_resident",

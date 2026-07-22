@@ -15,8 +15,9 @@
       "address": "227 Pine Street",
       "city": "Yarmouth Port",
       "state": "MA",
-      "lat": 48.273171017586,
-      "lon": -116.606604608309,
+      "lat": 41.708228,
+      "lon": -70.221686,
+      "geo_precision": "approximate",
       "website": "https://scoutscapecod.org/camp/camp-greenough-summer-camp/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

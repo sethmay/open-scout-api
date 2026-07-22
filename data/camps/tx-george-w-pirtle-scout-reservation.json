@@ -15,8 +15,9 @@
       "address": null,
       "city": "Gary",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 30.32743,
+      "lon": -95.724114,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/585-2026FirstClassTrail",
       "program_types": [
         "scouts_bsa_resident"

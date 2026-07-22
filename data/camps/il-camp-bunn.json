@@ -15,8 +15,9 @@
       "address": "5259 Camp Ln",
       "city": "Hettick",
       "state": "IL",
-      "lat": 35.1335252,
-      "lon": -101.8932952,
+      "lat": 39.355047,
+      "lon": -90.037052,
+      "geo_precision": "approximate",
       "website": "https://www.alincolnscouting.org/camp-bunn",
       "program_types": [
         "scouts_bsa_resident"

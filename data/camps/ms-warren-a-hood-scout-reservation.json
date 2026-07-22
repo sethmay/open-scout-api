@@ -15,8 +15,9 @@
       "address": null,
       "city": "Hazlehurst",
       "state": "MS",
-      "lat": null,
-      "lon": null,
+      "lat": 31.860438,
+      "lon": -90.395926,
+      "geo_precision": "approximate",
       "website": "https://scoutingriverlands.org/hood-scout-reservation/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

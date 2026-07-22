@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.2070942,
       "lon": -80.5573318,
+      "geo_precision": "exact",
       "website": "https://www.belkscoutcamp.org/cubcamp",
       "program_types": [
         "cub_day"

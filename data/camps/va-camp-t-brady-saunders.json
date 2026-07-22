@@ -17,6 +17,7 @@
       "state": "VA",
       "lat": 37.6839671,
       "lon": -77.8675371,
+      "geo_precision": "exact",
       "website": "https://bradysaunders.net/camp/summercamp/",
       "program_types": [
         "scouts_bsa_resident"

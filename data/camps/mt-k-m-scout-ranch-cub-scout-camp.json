@@ -17,6 +17,7 @@
       "state": "MT",
       "lat": 47.2721,
       "lon": -109.4641,
+      "geo_precision": "exact",
       "website": "https://scoutingmontana.org/camps/km-scout-ranch/",
       "program_types": [
         "cub_resident"

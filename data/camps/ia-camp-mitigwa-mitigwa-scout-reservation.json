@@ -17,6 +17,7 @@
       "state": "IA",
       "lat": 41.9494,
       "lon": -93.9105,
+      "geo_precision": "exact",
       "website": "https://campiowa.org/mitigwa-scout-reservation-3/",
       "program_types": [
         "scouts_bsa_resident"

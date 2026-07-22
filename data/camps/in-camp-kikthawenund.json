@@ -17,6 +17,7 @@
       "state": "IN",
       "lat": 40.1782,
       "lon": -85.8167,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/160-108134",
       "program_types": [
         "cub_resident"

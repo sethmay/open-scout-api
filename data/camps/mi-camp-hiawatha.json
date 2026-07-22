@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 46.2560141,
       "lon": -86.7159951,
+      "geo_precision": "exact",
       "website": "https://michiganscouting.org/camping/properties/camp-hiawatha/",
       "program_types": [
         "scouts_bsa_resident"

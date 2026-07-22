@@ -15,8 +15,9 @@
       "address": null,
       "city": "Rigby",
       "state": "ID",
-      "lat": null,
-      "lon": null,
+      "lat": 43.67224,
+      "lon": -111.914863,
+      "geo_precision": "approximate",
       "website": "https://tetonscouts.org/summer-camps/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

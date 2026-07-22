@@ -15,8 +15,9 @@
       "address": "441 Route 9W",
       "city": "Alpine",
       "state": "NJ",
-      "lat": 42.5992164,
-      "lon": -73.7937659,
+      "lat": 40.94855,
+      "lon": -73.928114,
+      "geo_precision": "approximate",
       "website": "https://alpinescoutcamp.org/cubworld/",
       "program_types": [
         "cub_resident"

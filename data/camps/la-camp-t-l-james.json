@@ -17,6 +17,7 @@
       "state": "LA",
       "lat": 32.622507385596,
       "lon": -92.363576154802,
+      "geo_precision": "exact",
       "website": "https://www.louisianapurchasecouncil.org/summercamps",
       "program_types": [
         "scouts_bsa_resident"

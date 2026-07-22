@@ -17,6 +17,7 @@
       "state": "AZ",
       "lat": 35.1430036,
       "lon": -111.9686245,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/010-CubRaymond2026",
       "program_types": [
         "cub_resident"

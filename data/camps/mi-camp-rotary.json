@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 43.9413161,
       "lon": -84.7677753,
+      "geo_precision": "exact",
       "website": "https://michiganscouting.org/camping/properties/camp-rotary/",
       "program_types": [
         "scouts_bsa_resident"

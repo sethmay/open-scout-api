@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 34.788876632821,
       "lon": -78.726101489648,
+      "geo_precision": "exact",
       "website": "https://www.capefearscouting.org/content/132782/Camp-Bowers",
       "program_types": [
         "scouts_bsa_resident"

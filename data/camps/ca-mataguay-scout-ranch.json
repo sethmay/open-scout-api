@@ -15,8 +15,9 @@
       "address": "27955 Highway 79",
       "city": "Santa Ysabel",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 33.10921,
+      "lon": -116.673076,
+      "geo_precision": "approximate",
       "website": "https://www.sdicscouting.org/camping/summer-programs/mataguay-scout-ranch-summer-camp",
       "program_types": [
         "scouts_bsa_resident"

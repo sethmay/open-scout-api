@@ -17,6 +17,7 @@
       "state": "IA",
       "lat": 42.189,
       "lon": -91.4614,
+      "geo_precision": "exact",
       "website": "https://hawkeyescouting.org/camping/scoutcamp/",
       "program_types": [
         "scouts_bsa_resident"

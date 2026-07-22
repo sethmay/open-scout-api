@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 42.0299186706543,
       "lon": -75.5304183959961,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/368-Tusky2026",
       "program_types": [
         "scouts_bsa_resident"

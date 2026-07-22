@@ -17,6 +17,7 @@
       "state": "VT",
       "lat": 44.5588028,
       "lon": -72.5778415,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/592-SBSACAMP26",
       "program_types": [
         "scouts_bsa_resident"

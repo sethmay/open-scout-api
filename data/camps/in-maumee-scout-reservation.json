@@ -17,6 +17,7 @@
       "state": "IN",
       "lat": 39.008807,
       "lon": -86.2795709,
+      "geo_precision": "exact",
       "website": "https://hoosiertrails.org/summer-camp-portal/",
       "program_types": [
         "scouts_bsa_resident"

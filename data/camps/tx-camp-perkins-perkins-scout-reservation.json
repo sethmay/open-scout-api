@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 34.0578416,
       "lon": -98.4797147,
+      "geo_precision": "exact",
       "website": "https://nwtcscouting.org/camping/camp-perkins/",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 43.8943,
       "lon": -89.9873,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/620-EBSRCubs",
       "program_types": [
         "cub_resident"

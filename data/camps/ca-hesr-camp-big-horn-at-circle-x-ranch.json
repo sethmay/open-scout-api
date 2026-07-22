@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 34.2510158,
       "lon": -117.1592642,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/033-HESRSummerCamp",
       "program_types": [
         "scouts_bsa_resident"

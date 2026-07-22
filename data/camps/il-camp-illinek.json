@@ -15,8 +15,9 @@
       "address": "6610 Iron Bridge Rd",
       "city": "Chatham",
       "state": "IL",
-      "lat": 37.4252525,
-      "lon": -77.4987913,
+      "lat": 39.676163,
+      "lon": -89.704544,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/144-97467",
       "program_types": [
         "cub_resident"

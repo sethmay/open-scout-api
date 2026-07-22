@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.5425,
       "lon": -76.2298,
+      "geo_precision": "exact",
       "website": "https://hmcscouting.org/summer-camp-2026/",
       "program_types": [
         "scouts_bsa_resident"

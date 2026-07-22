@@ -17,6 +17,7 @@
       "state": "NJ",
       "lat": 40.9988243,
       "lon": -74.4567438,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/358-CampWinnebago",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "AR",
       "lat": 35.373693212714,
       "lon": -92.450508472532,
+      "geo_precision": "exact",
       "website": "https://www.naturalstatecouncil.org/crsummercamp",
       "program_types": [
         "scouts_bsa_resident"

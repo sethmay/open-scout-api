@@ -17,6 +17,7 @@
       "state": "WV",
       "lat": 39.678074347657,
       "lon": -79.957722989274,
+      "geo_precision": "exact",
       "website": "https://mountaineerscouting.org/scouts-bsa-resident-camp/",
       "program_types": [
         "scouts_bsa_resident",

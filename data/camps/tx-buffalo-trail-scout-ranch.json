@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 30.8121,
       "lon": -103.9463,
+      "geo_precision": "exact",
       "website": "https://www.btsr.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

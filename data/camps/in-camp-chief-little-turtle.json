@@ -17,6 +17,7 @@
       "state": "IN",
       "lat": 41.5842,
       "lon": -85.037,
+      "geo_precision": "exact",
       "website": "https://www.ccltbsa.org/boy-scout-camp",
       "program_types": [
         "scouts_bsa_resident",

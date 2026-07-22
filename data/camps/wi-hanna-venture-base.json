@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 45.7293892,
       "lon": -89.42282,
+      "geo_precision": "exact",
       "website": "http://clsr.samoset.org/hanna/",
       "program_types": [
         "high_adventure"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Ona",
       "state": "WV",
-      "lat": null,
-      "lon": null,
+      "lat": 38.424809,
+      "lon": -82.2132,
+      "geo_precision": "approximate",
       "website": "https://www.buckskin.org/camping/scoutsbsacamp/",
       "program_types": [
         "scouts_bsa_resident",

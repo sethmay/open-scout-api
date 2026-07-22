@@ -15,8 +15,9 @@
       "address": "173 County Road 96",
       "city": "Ward",
       "state": "CO",
-      "lat": null,
-      "lon": null,
+      "lat": 40.07226,
+      "lon": -105.507918,
+      "geo_precision": "approximate",
       "website": "https://scoutingcolorado.org/camps/tahosa-high-adventure-base/",
       "program_types": [
         "high_adventure"

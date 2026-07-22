@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 42.211962,
       "lon": -85.6733764,
+      "geo_precision": "exact",
       "website": "https://michiganscouting.org/camping/properties/",
       "program_types": [
         "cub_resident"

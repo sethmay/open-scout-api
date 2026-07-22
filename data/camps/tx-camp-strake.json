@@ -15,8 +15,9 @@
       "address": null,
       "city": "Coldspring",
       "state": "TX",
-      "lat": null,
-      "lon": null,
+      "lat": 30.592421,
+      "lon": -95.129382,
+      "geo_precision": "approximate",
       "website": "https://shacbsa.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "WV",
       "lat": 40.121944,
       "lon": -80.6461675,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/615-95179",
       "program_types": [
         "cub_day"

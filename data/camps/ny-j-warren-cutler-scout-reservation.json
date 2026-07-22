@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 42.6732706,
       "lon": -77.4430191,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/397-csac2026",
       "program_types": [
         "cub_resident"

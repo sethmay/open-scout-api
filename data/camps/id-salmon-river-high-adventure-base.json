@@ -15,8 +15,9 @@
       "address": null,
       "city": "Riggins",
       "state": "ID",
-      "lat": null,
-      "lon": null,
+      "lat": 45.422111,
+      "lon": -116.315411,
+      "geo_precision": "approximate",
       "website": "https://www.mountainwestcouncil.org/srhab",
       "program_types": [
         "high_adventure"

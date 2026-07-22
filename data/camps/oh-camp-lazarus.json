@@ -17,6 +17,7 @@
       "state": "OH",
       "lat": 40.2331,
       "lon": -83.0454,
+      "geo_precision": "exact",
       "website": "https://skcscouts.org/camps/summercamps/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

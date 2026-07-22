@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 26.0777,
       "lon": -80.3424,
+      "geo_precision": "exact",
       "website": "https://sfcscouting.org/camps/camp-elmore/",
       "program_types": [
         "cub_day"

@@ -15,8 +15,9 @@
       "address": "Crystal Lake Scout Reservation",
       "city": "Rhinelander",
       "state": "WI",
-      "lat": null,
-      "lon": null,
+      "lat": 45.636623,
+      "lon": -89.412075,
+      "geo_precision": "approximate",
       "website": "https://samoset.org/camping/akelas-world/",
       "program_types": [
         "cub_resident"

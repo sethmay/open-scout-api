@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 35.521778733208,
       "lon": -100.361532352271,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/562-2026SummerCamp",
       "program_types": [
         "scouts_bsa_resident"

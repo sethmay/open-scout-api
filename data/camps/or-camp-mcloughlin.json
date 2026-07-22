@@ -17,6 +17,7 @@
       "state": "OR",
       "lat": 42.1926622,
       "lon": -121.7971171,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/697-99662",
       "program_types": [
         "cub_resident"

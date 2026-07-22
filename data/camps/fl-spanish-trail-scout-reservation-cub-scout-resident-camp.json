@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 30.731622998752,
       "lon": -86.208906881908,
+      "geo_precision": "exact",
       "website": "https://stsr-gcc.org/cub-scout-resident-camp/",
       "program_types": [
         "cub_resident"

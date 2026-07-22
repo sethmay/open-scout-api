@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 34.1697316,
       "lon": -116.8999804,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/032-Tahquitz2026",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "MS",
       "lat": 30.9277,
       "lon": -89.1674,
+      "geo_precision": "exact",
       "website": "https://www.pineburrscouts.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

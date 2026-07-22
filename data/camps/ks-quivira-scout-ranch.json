@@ -15,8 +15,9 @@
       "address": "1781 Road 19",
       "city": "Sedan",
       "state": "KS",
-      "lat": 41.1544703,
-      "lon": -84.2279735,
+      "lat": 37.12672,
+      "lon": -96.186936,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/198-101442",
       "program_types": [
         "scouts_bsa_resident"

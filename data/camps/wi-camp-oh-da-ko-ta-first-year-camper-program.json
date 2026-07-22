@@ -15,8 +15,9 @@
       "address": "3363 Dyer Lake Road",
       "city": "Burlington",
       "state": "WI",
-      "lat": 44.7022588,
-      "lon": -85.70886,
+      "lat": 42.680105,
+      "lon": -88.276413,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/636-109480",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "SD",
       "lat": 43.8984566,
       "lon": -103.7240745,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/695-MMSR2026SummerCamp",
       "program_types": [
         "scouts_bsa_resident"

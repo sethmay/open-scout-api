@@ -15,8 +15,9 @@
       "address": null,
       "city": "Chimayo",
       "state": "NM",
-      "lat": null,
-      "lon": null,
+      "lat": 36.003909,
+      "lon": -105.946866,
+      "geo_precision": "approximate",
       "website": "https://www.scoutingamericahighdesertcouncil.org/gorham-scout-ranch",
       "program_types": [
         "scouts_bsa_resident"

@@ -15,8 +15,9 @@
       "address": null,
       "city": "Hiwassee",
       "state": "VA",
-      "lat": null,
-      "lon": null,
+      "lat": 36.966147,
+      "lon": -80.698201,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/599-brsr26",
       "program_types": [
         "scouts_bsa_resident"

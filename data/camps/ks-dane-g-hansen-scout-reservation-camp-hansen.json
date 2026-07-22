@@ -17,6 +17,7 @@
       "state": "KS",
       "lat": 39.6397,
       "lon": -99.1422,
+      "geo_precision": "exact",
       "website": "https://www.coronadoscout.org/hansen/",
       "program_types": [
         "scouts_bsa_resident"

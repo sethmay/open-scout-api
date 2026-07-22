@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 44.0568,
       "lon": -91.282,
+      "geo_precision": "exact",
       "website": "https://www.gatewayscouting.org/SBSASummerCamps",
       "program_types": [
         "scouts_bsa_resident"

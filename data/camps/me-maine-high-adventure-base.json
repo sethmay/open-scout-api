@@ -17,6 +17,7 @@
       "state": "ME",
       "lat": 46.1809,
       "lon": -68.7996,
+      "geo_precision": "exact",
       "website": "https://www.mainehighadventure.org/",
       "program_types": [
         "high_adventure"

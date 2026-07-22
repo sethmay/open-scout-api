@@ -17,6 +17,7 @@
       "state": "FL",
       "lat": 29.660476316318,
       "lon": -81.992568186152,
+      "geo_precision": "exact",
       "website": "https://www.campshands.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

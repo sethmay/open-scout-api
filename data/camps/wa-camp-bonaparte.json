@@ -17,6 +17,7 @@
       "state": "WA",
       "lat": 48.809980394186,
       "lon": -119.033325216963,
+      "geo_precision": "exact",
       "website": "https://scoutingseattle.org/camp-bonaparte/",
       "program_types": [
         "cub_resident",

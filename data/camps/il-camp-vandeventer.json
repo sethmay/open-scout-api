@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 38.330168601582,
       "lon": -90.208147034763,
+      "geo_precision": "exact",
       "website": "https://stlbsa.org/find-your-district/cahokia-mounds-district/",
       "program_types": [
         "cub_day"

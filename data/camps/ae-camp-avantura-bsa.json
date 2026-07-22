@@ -17,6 +17,7 @@
       "state": "AE",
       "lat": 45.4925,
       "lon": 13.5065,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/802-CampAvantura2026",
       "program_types": [
         "scouts_bsa_resident"

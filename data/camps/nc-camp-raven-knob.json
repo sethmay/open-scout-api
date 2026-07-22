@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 36.479072671786,
       "lon": -80.843080887322,
+      "geo_precision": "exact",
       "website": "https://www.ravenknob.com/summercampdates",
       "program_types": [
         "scouts_bsa_resident"

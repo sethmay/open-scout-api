@@ -17,6 +17,7 @@
       "state": "IL",
       "lat": 42.3529,
       "lon": -90.0281,
+      "geo_precision": "exact",
       "website": "https://www.canyoncampbsa.org/",
       "program_types": [
         "scouts_bsa_resident"

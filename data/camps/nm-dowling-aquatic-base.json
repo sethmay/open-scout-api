@@ -15,8 +15,9 @@
       "address": null,
       "city": "Carlsbad",
       "state": "NM",
-      "lat": null,
-      "lon": null,
+      "lat": 32.425746,
+      "lon": -104.237612,
+      "geo_precision": "approximate",
       "website": "https://www.nmscouts.org/dowling-aquatic-base",
       "program_types": [
         "high_adventure"

@@ -17,6 +17,7 @@
       "state": "ME",
       "lat": 44.7708510504,
       "lon": -68.557342259628,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/216-26Scoutsbsaresidentcamp",
       "program_types": [
         "scouts_bsa_resident"

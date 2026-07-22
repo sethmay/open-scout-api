@@ -15,8 +15,9 @@
       "address": "125 200th Ave",
       "city": "Fairmont",
       "state": "MN",
-      "lat": 43.8195994,
-      "lon": -85.4830497,
+      "lat": 43.652178,
+      "lon": -94.461083,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/283-CubScoutResidentCamp",
       "program_types": [
         "cub_resident"

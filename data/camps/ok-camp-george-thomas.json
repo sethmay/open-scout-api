@@ -15,8 +15,9 @@
       "address": "45456 County Street 2520",
       "city": "Apache",
       "state": "OK",
-      "lat": 41.3199035,
-      "lon": -72.9380083,
+      "lat": 34.893677,
+      "lon": -98.365887,
+      "geo_precision": "approximate",
       "website": "https://www.scoutingevent.com/480-CGT2026",
       "program_types": [
         "cub_resident"

@@ -17,6 +17,7 @@
       "state": "NY",
       "lat": 42.2497,
       "lon": -74.148,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/364-daycamp2026",
       "program_types": [
         "cub_day"

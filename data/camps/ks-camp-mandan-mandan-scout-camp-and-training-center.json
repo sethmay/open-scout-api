@@ -17,6 +17,7 @@
       "state": "KS",
       "lat": 37.825879,
       "lon": -99.9162429,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/198-Mandan",
       "program_types": [
         "cub_resident"

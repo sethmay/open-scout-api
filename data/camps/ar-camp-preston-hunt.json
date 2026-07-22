@@ -15,8 +15,9 @@
       "address": "6918 Tennessee St",
       "city": "Texarkana",
       "state": "AR",
-      "lat": null,
-      "lon": null,
+      "lat": 33.425426,
+      "lon": -94.043094,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/584-Cubsummer",
       "program_types": [
         "cub_resident"

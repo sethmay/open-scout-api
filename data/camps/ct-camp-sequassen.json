@@ -15,8 +15,9 @@
       "address": "17 Wightman Road",
       "city": "New Hartford",
       "state": "CT",
-      "lat": 42.5650409,
-      "lon": -71.193768,
+      "lat": 41.878834,
+      "lon": -72.979617,
+      "geo_precision": "approximate",
       "website": "https://www.sequassen.org/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

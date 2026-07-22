@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.2491,
       "lon": -76.306,
+      "geo_precision": "exact",
       "website": "http://padutchbsa.org/camping/mack/summercamp/",
       "program_types": [
         "cub_resident"

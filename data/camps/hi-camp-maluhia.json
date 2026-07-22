@@ -17,6 +17,7 @@
       "state": "HI",
       "lat": 20.9551683,
       "lon": -156.5251619,
+      "geo_precision": "exact",
       "website": "https://www.scoutinghawaii.org/camps/maui/",
       "program_types": [
         "scouts_bsa_resident"

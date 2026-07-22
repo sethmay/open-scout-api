@@ -15,8 +15,9 @@
       "address": "22799 Elbert Road",
       "city": "Elbert",
       "state": "CO",
-      "lat": 64.88379,
-      "lon": -147.7897051,
+      "lat": 39.313882,
+      "lon": -104.086897,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/061-2026CubAdventureCamp",
       "program_types": [
         "cub_resident"

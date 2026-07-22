@@ -17,6 +17,7 @@
       "state": "AZ",
       "lat": 32.4033251,
       "lon": -110.7214508,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/011-112973",
       "program_types": [
         "scouts_bsa_resident"

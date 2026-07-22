@@ -15,8 +15,9 @@
       "address": null,
       "city": null,
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 37.3,
+      "lon": -119.3,
+      "geo_precision": "approximate",
       "website": "https://www.vhscouting.org/CubDayCamp2026",
       "program_types": [
         "cub_day"

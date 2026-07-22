@@ -17,6 +17,7 @@
       "state": "KS",
       "lat": 39.0767158,
       "lon": -94.8517614,
+      "geo_precision": "exact",
       "website": "https://www.hoac-bsa.org/naish",
       "program_types": [
         "scouts_bsa_resident",

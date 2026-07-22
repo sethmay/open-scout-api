@@ -15,8 +15,9 @@
       "address": "300 Heritage Road",
       "city": "Farmington",
       "state": "PA",
-      "lat": 37.687867,
-      "lon": -89.225411,
+      "lat": 39.807147,
+      "lon": -79.565534,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/527-HRSBSA2026",
       "program_types": [
         "scouts_bsa_resident"

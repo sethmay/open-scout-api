@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 34.5601535,
       "lon": -85.1881791,
+      "geo_precision": "exact",
       "website": "https://www.nwgascouting.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

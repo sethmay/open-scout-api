@@ -15,8 +15,9 @@
       "address": "146 Plains Road",
       "city": "Raymond",
       "state": "ME",
-      "lat": 43.379380084063,
-      "lon": -72.493944086744,
+      "lat": 43.901851,
+      "lon": -70.470428,
+      "geo_precision": "approximate",
       "website": "https://camphinds.org/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.098147731483,
       "lon": -77.096988905333,
+      "geo_precision": "exact",
       "website": "https://newbirthoffreedom.org/camping/summer-camp-adventures/scouts-bsa-summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

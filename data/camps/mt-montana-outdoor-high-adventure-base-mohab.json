@@ -15,8 +15,9 @@
       "address": null,
       "city": "Dupuyer",
       "state": "MT",
-      "lat": null,
-      "lon": null,
+      "lat": 48.191772,
+      "lon": -112.500531,
+      "geo_precision": "approximate",
       "website": "https://scoutingmontana.org/camps/high-adventure/",
       "program_types": [
         "high_adventure"

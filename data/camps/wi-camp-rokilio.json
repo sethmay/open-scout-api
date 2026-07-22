@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 43.926022340978,
       "lon": -87.932434495535,
+      "geo_precision": "exact",
       "website": "https://baylakesbsa.org/rokilio/summer-camp/",
       "program_types": [
         "cub_resident"

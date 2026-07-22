@@ -17,6 +17,7 @@
       "state": "TX",
       "lat": 31.1273,
       "lon": -99.0496,
+      "geo_precision": "exact",
       "website": "https://www.texastrailsbsa.com/camping/camp-billy-gibbons/61680",
       "program_types": [
         "scouts_bsa_resident"

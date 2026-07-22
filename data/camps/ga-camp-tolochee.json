@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 31.192,
       "lon": -81.5622,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/099-Twilight",
       "program_types": [
         "cub_day"

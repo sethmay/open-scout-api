@@ -17,6 +17,7 @@
       "state": "OR",
       "lat": 44.5557581,
       "lon": -121.9337722,
+      "geo_precision": "exact",
       "website": "https://cpcscouting.org/summercamp/",
       "program_types": [
         "high_adventure"

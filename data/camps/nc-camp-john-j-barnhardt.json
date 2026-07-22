@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.442074922574,
       "lon": -80.139400180552,
+      "geo_precision": "exact",
       "website": "https://www.campjohnjbarnhardt.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

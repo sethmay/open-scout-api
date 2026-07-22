@@ -15,8 +15,9 @@
       "address": null,
       "city": "Talihina",
       "state": "OK",
-      "lat": null,
-      "lon": null,
+      "lat": 34.752417,
+      "lon": -95.041916,
+      "geo_precision": "approximate",
       "website": "https://www.okscouts.org/campscubscouts",
       "program_types": [
         "webelos"

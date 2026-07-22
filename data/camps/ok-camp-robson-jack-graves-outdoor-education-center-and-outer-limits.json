@@ -17,6 +17,7 @@
       "state": "OK",
       "lat": 36.0525993,
       "lon": -95.7908195,
+      "geo_precision": "exact",
       "website": "https://www.okscouts.org/reservations",
       "program_types": [
         "cub_day"

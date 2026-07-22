@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 37.0962672,
       "lon": -119.2921417,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/027-2026campchawanakee",
       "program_types": [
         "scouts_bsa_resident"

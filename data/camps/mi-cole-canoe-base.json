@@ -17,6 +17,7 @@
       "state": "MI",
       "lat": 44.1795157,
       "lon": -84.0729461,
+      "geo_precision": "exact",
       "website": "https://michiganscouting.org/camping/properties/cole-canoe-base/",
       "program_types": [
         "scouts_bsa_resident"

@@ -15,8 +15,9 @@
       "address": "1207 Upas St",
       "city": "San Diego",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 32.71742,
+      "lon": -117.162772,
+      "geo_precision": "approximate",
       "website": "https://camping.sdicbsa.org/Balboa/SummerDayCamp.php",
       "program_types": [
         "cub_day"

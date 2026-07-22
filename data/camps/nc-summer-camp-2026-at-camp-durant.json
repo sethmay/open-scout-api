@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.3421553,
       "lon": -79.5534724,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/421-Durant26",
       "program_types": [
         "scouts_bsa_resident"

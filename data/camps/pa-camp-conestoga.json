@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.02,
       "lon": -79.2288,
+      "geo_precision": "exact",
       "website": "https://wfbsa.org/camping/camp-conestoga/",
       "program_types": [
         "scouts_bsa_resident"

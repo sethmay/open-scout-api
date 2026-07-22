@@ -19,6 +19,7 @@ from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
 from stamp_schema import check_tree
+import us_geo
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_DIR = ROOT / "schema" / "v1"
@@ -90,6 +91,10 @@ def main() -> int:
                     if s and _TRANSITORY.search(s):
                         errs.append(f"{p.name}: summary has transitory text ({_TRANSITORY.search(s).group(0)!r}); "
                                     f"must be evergreen (no dates/fees/months)")
+                    lat, lon, st = v.get("lat"), v.get("lon"), v.get("state")
+                    if lat is not None and lon is not None and us_geo.known(st) and not us_geo.in_state(st, lat, lon):
+                        errs.append(f"{p.name}: coord ({lat}, {lon}) is outside {st} bounds "
+                                    f"(mislocated; null it or backfill via tools/geocode_camps.py)")
 
     # pass 2: referential integrity
     def check_ref(ref, src):
@@ -219,7 +224,7 @@ def main() -> int:
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
           f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges "
-          f"valid (schema + referential + windows + text-rights + camp coupling + vocab), {len(entities)} entities")
+          f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab), {len(entities)} entities")
     return 0
 
 

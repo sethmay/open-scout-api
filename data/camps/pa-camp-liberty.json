@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 39.79,
       "lon": -79.58,
+      "geo_precision": "exact",
       "website": "https://heritagereservation.org/camp-liberty/",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "KS",
       "lat": 37.9341276,
       "lon": -98.2519056,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/198-32972",
       "program_types": [
         "cub_resident"

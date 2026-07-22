@@ -17,6 +17,7 @@
       "state": "NE",
       "lat": 41.4305225,
       "lon": -96.5863424,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/326-Cedars26",
       "program_types": [
         "scouts_bsa_resident"

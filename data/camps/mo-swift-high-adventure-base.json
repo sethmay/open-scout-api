@@ -17,6 +17,7 @@
       "state": "MO",
       "lat": 37.6480085,
       "lon": -90.3486169,
+      "geo_precision": "exact",
       "website": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/",
       "program_types": [
         "high_adventure"

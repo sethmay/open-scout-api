@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 45.700425,
       "lon": -91.6827603,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/283-adventure",
       "program_types": [
         "scouts_bsa_resident"

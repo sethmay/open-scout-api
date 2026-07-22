@@ -17,6 +17,7 @@
       "state": "VA",
       "lat": 37.9674165,
       "lon": -79.4695753,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/082-101975",
       "program_types": [
         "scouts_bsa_resident"

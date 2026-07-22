@@ -15,8 +15,9 @@
       "address": null,
       "city": "Vadito",
       "state": "NM",
-      "lat": null,
-      "lon": null,
+      "lat": 36.194085,
+      "lon": -105.677522,
+      "geo_precision": "approximate",
       "website": "https://www.spccamps.org/tres-ritos",
       "program_types": [
         "scouts_bsa_resident"

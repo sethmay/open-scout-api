@@ -17,6 +17,7 @@
       "state": "RI",
       "lat": 41.5190699,
       "lon": -71.775807,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/546-100159",
       "program_types": [
         "scouts_bsa_resident"

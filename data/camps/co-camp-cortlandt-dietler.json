@@ -15,8 +15,9 @@
       "address": null,
       "city": "Elbert",
       "state": "CO",
-      "lat": null,
-      "lon": null,
+      "lat": 39.313882,
+      "lon": -104.086897,
+      "geo_precision": "approximate",
       "website": "https://scoutingcolorado.org/programs/camps/mcneil-scout-ranch/",
       "program_types": [
         "scouts_bsa_resident"

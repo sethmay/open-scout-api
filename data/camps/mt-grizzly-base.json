@@ -15,8 +15,9 @@
       "address": null,
       "city": "Bigfork",
       "state": "MT",
-      "lat": null,
-      "lon": null,
+      "lat": 48.067926,
+      "lon": -114.096666,
+      "geo_precision": "approximate",
       "website": "https://scoutingmontana.org/camps/grizzly-base/",
       "program_types": [
         "high_adventure"

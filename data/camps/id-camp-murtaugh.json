@@ -17,6 +17,7 @@
       "state": "ID",
       "lat": 42.4571076,
       "lon": -114.1673768,
+      "geo_precision": "exact",
       "website": "https://www.mountainwestcouncil.org/content/98896/Day-Camp---Camp-Murtaugh-",
       "program_types": [
         "cub_day"

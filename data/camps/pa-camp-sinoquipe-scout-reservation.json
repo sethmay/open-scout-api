@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.0892691,
       "lon": -77.9680072,
+      "geo_precision": "exact",
       "website": "https://www.campsinoquipe.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

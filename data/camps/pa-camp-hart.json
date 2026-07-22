@@ -17,6 +17,7 @@
       "state": "PA",
       "lat": 40.42,
       "lon": -75.43,
+      "geo_precision": "exact",
       "website": "https://mussersr.org/",
       "program_types": [
         "cub_resident"

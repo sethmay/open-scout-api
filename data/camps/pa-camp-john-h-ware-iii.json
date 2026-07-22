@@ -15,8 +15,9 @@
       "address": "239 Jubilee Road",
       "city": "Peach Bottom",
       "state": "PA",
-      "lat": 36.0468342,
-      "lon": -115.102133,
+      "lat": 39.750938,
+      "lon": -76.225788,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/539-105490",
       "program_types": [
         "cub_resident"

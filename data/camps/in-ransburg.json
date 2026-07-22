@@ -17,6 +17,7 @@
       "state": "IN",
       "lat": 39.053851,
       "lon": -86.42983,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/160-2026Ransburg",
       "program_types": [
         "scouts_bsa_resident"

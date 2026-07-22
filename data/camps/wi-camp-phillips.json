@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 45.626573,
       "lon": -91.821574,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/637-cp26",
       "program_types": [
         "scouts_bsa_resident"

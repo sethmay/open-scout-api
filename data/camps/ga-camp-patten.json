@@ -17,6 +17,7 @@
       "state": "GA",
       "lat": 31.0208,
       "lon": -83.051,
+      "geo_precision": "exact",
       "website": "https://www.sgcbsa.org/camppatten",
       "program_types": [
         "cub_day"

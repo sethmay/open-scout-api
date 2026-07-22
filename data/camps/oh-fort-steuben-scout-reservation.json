@@ -15,8 +15,9 @@
       "address": "79601 Simpson Road, Tippecanoe, OH 44699",
       "city": "Tippecanoe",
       "state": "OH",
-      "lat": null,
-      "lon": null,
+      "lat": 40.270347,
+      "lon": -81.287407,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/615-106341",
       "program_types": [
         "scouts_bsa_resident",

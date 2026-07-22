@@ -15,8 +15,9 @@
       "address": null,
       "city": "Manchester",
       "state": "NH",
-      "lat": null,
-      "lon": null,
+      "lat": 42.99564,
+      "lon": -71.454789,
+      "geo_precision": "approximate",
       "website": "https://nhscouting.org/camp-carpenter/",
       "program_types": [
         "cub_day"

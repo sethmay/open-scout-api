@@ -17,6 +17,7 @@
       "state": "CO",
       "lat": 40.751441955566406,
       "lon": -105.5020523071289,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/062-101580",
       "program_types": [
         "scouts_bsa_resident"

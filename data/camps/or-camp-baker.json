@@ -17,6 +17,7 @@
       "state": "OR",
       "lat": 44.0021,
       "lon": -124.1088,
+      "geo_precision": "exact",
       "website": "https://www.otcbsa.org/camp-baker",
       "program_types": [
         "scouts_bsa_resident"

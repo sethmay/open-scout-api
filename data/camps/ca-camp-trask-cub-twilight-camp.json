@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 34.1747955,
       "lon": -117.9880102,
+      "geo_precision": "exact",
       "website": "https://greaterlascouting.org/camp-trask/",
       "program_types": [
         "cub_day"

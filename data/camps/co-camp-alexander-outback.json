@@ -17,6 +17,7 @@
       "state": "CO",
       "lat": 38.952,
       "lon": -105.301,
+      "geo_precision": "exact",
       "website": "https://campalexandercolorado.org/summer-camp/",
       "program_types": [
         "high_adventure"

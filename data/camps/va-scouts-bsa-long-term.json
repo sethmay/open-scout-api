@@ -17,6 +17,7 @@
       "state": "VA",
       "lat": 37.184948,
       "lon": -76.877991,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/596-Pipsico2026",
       "program_types": [
         "scouts_bsa_resident"

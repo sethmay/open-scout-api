@@ -17,6 +17,7 @@
       "state": "AK",
       "lat": 58.5215652,
       "lon": -134.7956835,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/610-ERSC2026",
       "program_types": [
         "scouts_bsa_resident"

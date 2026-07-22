@@ -15,8 +15,9 @@
       "address": null,
       "city": "Rye",
       "state": "CO",
-      "lat": null,
-      "lon": null,
+      "lat": 37.923619,
+      "lon": -104.930266,
+      "geo_precision": "approximate",
       "website": "https://pathwaytotherockies.org/facilities/",
       "program_types": [
         "high_adventure"

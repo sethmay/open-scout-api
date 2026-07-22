@@ -17,6 +17,7 @@
       "state": "WI",
       "lat": 45.7045588,
       "lon": -91.6788074,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/250-TSCAllStar2026",
       "program_types": [
         "scouts_bsa_resident"

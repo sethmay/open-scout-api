@@ -17,6 +17,7 @@
       "state": "MN",
       "lat": 47.0937,
       "lon": -94.9447,
+      "geo_precision": "exact",
       "website": "https://scoutingnlc.org/campingprograms/adventurecamp/",
       "program_types": [
         "cub_resident"

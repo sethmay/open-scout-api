@@ -17,6 +17,7 @@
       "state": "CA",
       "lat": 35.902,
       "lon": -118.44,
+      "geo_precision": "exact",
       "website": "https://www.campwhitsett.org/summer-camp-prices/",
       "program_types": [
         "scouts_bsa_resident"

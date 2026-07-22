@@ -17,6 +17,7 @@
       "state": "UT",
       "lat": 39.9699,
       "lon": -111.6962,
+      "geo_precision": "exact",
       "website": "https://www.utahscouts.org/mapledell",
       "program_types": [
         "cub_day"

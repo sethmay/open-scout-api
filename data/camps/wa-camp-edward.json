@@ -17,6 +17,7 @@
       "state": "WA",
       "lat": 47.974503972535,
       "lon": -121.874472859424,
+      "geo_precision": "exact",
       "website": "https://scoutingseattle.org/camp-edward/cub-resident-camp-edward/",
       "program_types": [
         "cub_resident"

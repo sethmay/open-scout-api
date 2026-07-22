@@ -17,6 +17,7 @@
       "state": "UT",
       "lat": 40.6946,
       "lon": -111.7483,
+      "geo_precision": "exact",
       "website": "https://www.utahscouts.org/tracy",
       "program_types": [
         "cub_day"

@@ -17,6 +17,7 @@
       "state": "AR",
       "lat": 36.34,
       "lon": -91.47,
+      "geo_precision": "exact",
       "website": "https://www.chickasaw.org/events-master/summer-camp-2026",
       "program_types": [
         "scouts_bsa_resident",

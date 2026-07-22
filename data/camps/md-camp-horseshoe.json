@@ -15,8 +15,9 @@
       "address": "1286 Ridge Road",
       "city": "Rising Sun",
       "state": "MD",
-      "lat": 32.9141927,
-      "lon": -96.4618009,
+      "lat": 39.698035,
+      "lon": -76.062819,
+      "geo_precision": "approximate",
       "website": "https://scoutingevent.com/539-101949",
       "program_types": [
         "scouts_bsa_resident"

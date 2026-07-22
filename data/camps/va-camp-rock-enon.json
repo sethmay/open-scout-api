@@ -17,6 +17,7 @@
       "state": "VA",
       "lat": 39.219128893027,
       "lon": -78.386617326488,
+      "geo_precision": "exact",
       "website": "https://www.camprockenon.org/cubsummercamp",
       "program_types": [
         "cub_resident"

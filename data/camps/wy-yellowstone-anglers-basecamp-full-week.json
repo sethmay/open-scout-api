@@ -17,6 +17,7 @@
       "state": "WY",
       "lat": 44.456806,
       "lon": -109.844031,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/062-105494",
       "program_types": [
         "scouts_bsa_resident"

@@ -17,6 +17,7 @@
       "state": "ID",
       "lat": 44.398,
       "lon": -115.1482,
+      "geo_precision": "exact",
       "website": "https://www.mountainwestcouncil.org/bradley",
       "program_types": [
         "scouts_bsa_resident"

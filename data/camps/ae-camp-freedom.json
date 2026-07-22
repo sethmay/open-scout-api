@@ -17,6 +17,7 @@
       "state": "AE",
       "lat": 49.4268236,
       "lon": 10.3852889,
+      "geo_precision": "exact",
       "website": "https://tacscouting.org/camps/",
       "program_types": [
         "cub_resident"

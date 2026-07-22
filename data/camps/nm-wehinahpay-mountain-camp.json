@@ -17,6 +17,7 @@
       "state": "NM",
       "lat": 32.766280605182,
       "lon": -105.66581070108,
+      "geo_precision": "exact",
       "website": "https://scoutingevent.com/413-wmc2026",
       "program_types": [
         "scouts_bsa_resident"

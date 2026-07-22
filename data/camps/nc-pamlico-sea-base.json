@@ -15,8 +15,9 @@
       "address": null,
       "city": "Blounts Creek",
       "state": "NC",
-      "lat": null,
-      "lon": null,
+      "lat": 35.048256,
+      "lon": -78.871386,
+      "geo_precision": "approximate",
       "website": "https://www.scoutingecc.org/pamlico-sea-base",
       "program_types": [
         "high_adventure"

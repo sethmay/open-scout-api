@@ -15,8 +15,9 @@
       "address": null,
       "city": null,
       "state": "SD",
-      "lat": null,
-      "lon": null,
+      "lat": 44.15,
+      "lon": -100.25,
+      "geo_precision": "approximate",
       "website": "https://www.siouxcouncil.org/mrhabinfo",
       "program_types": [
         "high_adventure"

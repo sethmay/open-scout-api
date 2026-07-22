@@ -17,6 +17,7 @@
       "state": "KS",
       "lat": 38.8144,
       "lon": -97.0691,
+      "geo_precision": "exact",
       "website": "https://www.coronadoscout.org/brown/",
       "program_types": [
         "cub_resident",

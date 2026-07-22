@@ -17,6 +17,7 @@
       "state": "IA",
       "lat": 42.6565,
       "lon": -91.248,
+      "geo_precision": "exact",
       "website": "https://scoutsiowa.org/camping/scout-camp/",
       "program_types": [
         "scouts_bsa_resident"

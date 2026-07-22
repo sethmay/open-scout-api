@@ -15,8 +15,9 @@
       "address": null,
       "city": "Big Arm",
       "state": "MT",
-      "lat": null,
-      "lon": null,
+      "lat": 47.790483,
+      "lon": -114.285486,
+      "geo_precision": "approximate",
       "website": "https://scoutingmontana.org/camps/melita-island/",
       "program_types": [
         "scouts_bsa_resident"

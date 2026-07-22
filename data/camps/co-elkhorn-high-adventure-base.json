@@ -15,8 +15,9 @@
       "address": null,
       "city": "Red Feather Lakes",
       "state": "CO",
-      "lat": null,
-      "lon": null,
+      "lat": 40.807688,
+      "lon": -105.575622,
+      "geo_precision": "approximate",
       "website": "https://awbsa.org/ehab/",
       "program_types": [
         "high_adventure"

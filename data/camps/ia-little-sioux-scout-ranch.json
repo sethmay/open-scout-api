@@ -15,8 +15,9 @@
       "address": null,
       "city": "Little Sioux",
       "state": "IA",
-      "lat": null,
-      "lon": null,
+      "lat": 41.808018,
+      "lon": -96.023033,
+      "geo_precision": "approximate",
       "website": "https://mac-bsa.org/camping-outdoors/scouts-bsa-camping/",
       "program_types": [
         "scouts_bsa_resident"

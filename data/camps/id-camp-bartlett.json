@@ -17,6 +17,7 @@
       "state": "ID",
       "lat": 42.3,
       "lon": -111.4,
+      "geo_precision": "exact",
       "website": "https://www.utahscouts.org/bartlett",
       "program_types": [
         "scouts_bsa_resident"

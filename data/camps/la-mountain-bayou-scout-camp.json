@@ -17,6 +17,7 @@
       "state": "LA",
       "lat": 30.8552856,
       "lon": -92.3115165,
+      "geo_precision": "exact",
       "website": "https://www.eacscouting.org/mountain",
       "program_types": [
         "scouts_bsa_resident",

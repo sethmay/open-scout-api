@@ -17,6 +17,7 @@
       "state": "MO",
       "lat": 39.8358485,
       "lon": -94.8712224,
+      "geo_precision": "exact",
       "website": "https://ponyexpressbsa.org/camping-and-activities/camp-geiger",
       "program_types": [
         "scouts_bsa_resident"

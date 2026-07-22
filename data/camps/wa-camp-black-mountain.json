@@ -17,6 +17,7 @@
       "state": "WA",
       "lat": 48.3401,
       "lon": -121.7712,
+      "geo_precision": "exact",
       "website": "https://www.mountbakerbsa.org/properties",
       "program_types": [
         "scouts_bsa_resident"

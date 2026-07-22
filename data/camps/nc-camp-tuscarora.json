@@ -17,6 +17,7 @@
       "state": "NC",
       "lat": 35.4455571,
       "lon": -78.4294653,
+      "geo_precision": "exact",
       "website": "https://www.tuscarorabsa.org/Summercamp",
       "program_types": [
         "scouts_bsa_resident"

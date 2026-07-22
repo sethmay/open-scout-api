@@ -17,6 +17,7 @@
       "state": "AR",
       "lat": 33.0533,
       "lon": -92.6788,
+      "geo_precision": "exact",
       "website": "https://www.naturalstatecouncil.org/campdesotosummercamp",
       "program_types": [
         "scouts_bsa_resident"

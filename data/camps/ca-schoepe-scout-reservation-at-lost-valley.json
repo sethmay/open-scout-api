@@ -15,8 +15,9 @@
       "address": null,
       "city": "Warner Springs",
       "state": "CA",
-      "lat": null,
-      "lon": null,
+      "lat": 33.28226,
+      "lon": -116.63363,
+      "geo_precision": "approximate",
       "website": "https://www.ssrlv.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"
