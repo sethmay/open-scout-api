@@ -68,6 +68,22 @@ reviewed + sequenced below; all additive/backward-compatible under `v1` (minor b
 is the site's own cutover work + the optional deeper follow-ups (Cub adventure-level requirements,
 reservation modeling as its own `camp_type`, historical "lost camps").
 
+### Camp data-quality follow-ups (camp-finder review, 2026-07-22)
+
+Shipped: freshness dates (0.21.0); coordinate-integrity gate + geocode backfill + `geo_precision`
+(0.22.0); duplicate-listing merge + `aliases.json` (0.23.0); reservation-centroid relabel (0.23.1);
+non-prefix same-camp merges + `reservation` grouping (0.24.0). The `parent` approach from step 5 was
+superseded — those were duplicates (now merged); `reservation` groups co-located *distinct* camps.
+
+- **Program-level tracking (future — camp-finder dev flagged).** Merging program/session variants
+  into one camp unions `program_types` but drops per-offering detail (e.g. "Webelos resident" vs
+  "Cub day" as separately described programs; dates/fees stay out by design). A `programs` array on a
+  camp — or a first-class reservation entity with child camps and programs — would restore it. Ties
+  into modeling a reservation as its own entity and the co-located `reservation` groups now in-data.
+- **Reservation names + true sub-camp coordinates.** 17 of 21 `reservation` groups are unnamed (the
+  camps carry no common name: Goshen, Warner, Heritage). A curated name map plus geocoding each
+  co-located camp to its own point would upgrade one-pin clustering to distinct, correctly-placed pins.
+
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
   assignment + a few observed name overrides (303 Mississippi Riverlands, 780 Michigan

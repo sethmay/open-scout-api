@@ -45,7 +45,11 @@
       },
       "merged_from": [
         "al-camp-tukabatchee-webelos-aol-resident-camp"
-      ]
+      ],
+      "reservation": {
+        "id": "al-camp-dexter-c-hobbs-cub-scout-adventure-camp-reservation",
+        "name": null
+      }
     }
   ],
   "notes": null

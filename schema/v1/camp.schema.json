@@ -122,6 +122,16 @@
           "items": { "$ref": "common.schema.json#/$defs/Slug" },
           "uniqueItems": true,
           "description": "Retired camp ids that were the same physical property as this camp (program/session variants), collapsed into it. Their programs/features are unioned here; consumers resolve old ids via v1/camps/aliases.json."
+        },
+        "reservation": {
+          "type": ["object", "null"],
+          "properties": {
+            "id": { "type": "string" },
+            "name": { "type": ["string", "null"] }
+          },
+          "required": ["id"],
+          "additionalProperties": false,
+          "description": "Set when this camp shares a location with other distinct camps (a reservation centroid): a grouping so consumers render one reservation pin. `name` is null when the camps do not carry a common reservation name. Not a plottable entity."
         }
       },
       "required": ["name", "council", "operating_status", "camp_type", "operator"],

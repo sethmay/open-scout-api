@@ -17,10 +17,11 @@
       "state": "CA",
       "lat": 32.767380879733,
       "lon": -117.214594642155,
-      "geo_precision": "approximate",
+      "geo_precision": "exact",
       "website": "https://www.sdicscouting.org/camping/summer-programs/camp-fiesta-island",
       "program_types": [
-        "scouts_bsa_resident"
+        "scouts_bsa_resident",
+        "webelos"
       ],
       "features": [],
       "summary": "Waterfront Scouts BSA resident camp on Fiesta Island in Mission Bay, operated by the San Diego-Imperial Council.",
@@ -41,7 +42,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.6,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
-      }
+      },
+      "merged_from": [
+        "ca-webelos-and-aol-resident-camp"
+      ]
     }
   ],
   "notes": null
