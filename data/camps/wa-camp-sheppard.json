@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wa-camp-sheppard",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sheppard",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:chief-seattle",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Sheppard, Enumclaw, WA 98022",
+      "city": "Enumclaw",
+      "state": "WA",
+      "lat": 47.0421,
+      "lon": -121.5387,
+      "website": "https://seattlebsa.org/camp-sheppard/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [
+        "dining_hall",
+        "shooting_sports",
+        "climbing",
+        "cope",
+        "stem"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-609/wa-camp-sheppard (unofficial community dataset)"
+          },
+          {
+            "url": "https://seattlebsa.org/camp-sheppard/"
+          },
+          {
+            "url": "https://seattlebsa.org/camp-sheppard/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

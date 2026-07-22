@@ -15,7 +15,7 @@ PLAN.md §1).
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
-| 5 | **Camps (registry + history)** | ✅ `camp` | 🌱 **SEEDED (0.7.0):** 469 camps imported from camp-finder (361 resident / 68 day / 40 high-adventure; 465 council + 4 national). Follow-ups: reclassify/dedupe ~6 session/event-shaped entries (camp-finder LLM artifact, e.g. `*-full-week`/`*-half-week`/`*-2026-new`); reservation `parent` nesting; `camp_type` refinement; historical "lost camps". | camp-finder dataset; scouting.org (national bases) |
+| 5 | **Camps (registry + history)** | ✅ `camp` | 🌱 **SEEDED (0.7.0); PARITY (0.17.0):** 487 camps imported from camp-finder (376 resident / 69 day / 42 high-adventure; 483 council + 4 national). 0.17.0 added the 4 Pacific-Northwest councils' camps (492/606/609/697) the initial import held back as demo data (now real, verified). Follow-ups: reclassify/dedupe ~6 session/event-shaped entries (camp-finder LLM artifact, e.g. `*-full-week`/`*-half-week`/`*-2026-new`); reservation `parent` nesting; `camp_type` refinement; historical "lost camps". | camp-finder dataset; scouting.org (national bases) |
 | 6 | **Rank requirement history** | ✅ `rank` + `requirement-set` (`subject: rank:*`) | 🌱 **SEEDED (0.8.0-0.10.0); ALL PROGRAMS (0.15.0):** 21 rank entities (7 Scouts BSA + 6 Cub + 4 Venturing + 4 Sea Scout) + 47 requirement-sets. Scouts BSA: 2024 (No. 33216) + 26 historical editions (2016-2023) via usscouts.org with `supersedes` chains. Cub/Venturing/Sea Scout: current requirements from official scouting.org pages + 2026 Sea Scout PDFs (verbatim-verified). Follow-ups: pre-2016 Scouts BSA editions; Cub adventure-level requirement detail (each adventure's own requirements); historical editions for the new programs. | 2024 Scouts BSA Requirements; usscouts.org; scouting.org; seascout.org PDFs |
 | 7 | **OA lodges** | ✅ `oa-lodge` | 🌱 **SEEDED (0.13.0):** 238 lodges from the official OA lodge locator feed (oa-bsa.org), all linked to their chartering `council` + OA section/region + HQ/coords + website; officer/contact PII excluded. Follow-ups: lodge numbers (not in feed), merger/rename history + events (track council mergers), totem. | oa-bsa.org lodge locator feed; ScoutWiki/Fandom (numbers/history) |
 | 8 | **Merit badge earned-counts by year** | ⬜ (simple fact table, not temporal-entity) | BSA publishes annually; longitudinal series exists nowhere machine-readable. Tiny. | Scouting magazine / Bryan on Scouting annual posts |
@@ -35,7 +35,7 @@ camp-finder is migrating to consume this API as its core data — **durable refe
 only** (no sessions/fees/dates/availability back; that split is the whole point). Requests
 reviewed + sequenced below; all additive/backward-compatible under `v1` (minor bumps).
 
-1. **Projection contract v1.1 (PR 1 — in progress).** Pure `build.py` + `published-current`
+1. **Projection contract v1.1 - DONE (0.16.0).** Pure `build.py` + `published-current`
    schema, additive: (a) add `verified_at` + `method` to **all** `current/*.json` projections
    (not just camps) — freshness is the most-used provenance field, keep the contract uniform;
    (b) denormalize council into `current/camps.json` (`council_name`, `council_website`,
@@ -44,10 +44,13 @@ reviewed + sequenced below; all additive/backward-compatible under `v1` (minor b
    `url` (camp website → council website) so the "visit official page" CTA is a guaranteed
    contract. Plus a README note that `v1` projection fields are **additive-only** (stability
    promise — also satisfies request #7's API side).
-2. **Coverage reconciliation (before cutover).** Councils 229 vs 238 already explained (3
-   non-geographic/dup dropped: 272/800/999; 6 defunct excluded from `current`) — just document.
-   Camps 469 vs 483: diff the 14, classify each (≈6 known session/event import artifacts +
-   ~8 unknown → artifact/dedup/genuinely-missing); contribute any real missing resident camps.
+2. **Coverage reconciliation - DONE (0.17.0).** Councils 229 vs 238: explained, no loss (API
+   drops 3 non-geographic/dup - 272->780, 800 Direct Service, 999 National holder - and
+   excludes 6 defunct councils from `current`). Camps: root cause was `import_camps.py`
+   deliberately skipping the 4 Pacific-Northwest demo councils; that data is now real and
+   verified, so the exclusion was removed and their 18 camps imported. API camps 469 -> 487;
+   0 camp-finder camps now missing (the API is a superset - it also carries a national base
+   and camps the camp-finder site itself filters out).
 3. **Camp `summary` (evergreen prose).** Add `summary` to `CampVersion` (original prose; MUST
    NOT contain dates/fees/session schedules) + surface in the projection. Do NOT scrub
    camp-finder's contaminated descriptions — regenerate clean, and add a `validate_data` guard

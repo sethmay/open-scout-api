@@ -1,0 +1,45 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-butte-creek-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Butte Creek Scout Ranch",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:cascade-pacific",
+      "parent": null,
+      "operating_status": "active",
+      "address": "13462 S Butte Creek Rd",
+      "city": "Scotts Mills",
+      "state": "OR",
+      "lat": 45.0157485,
+      "lon": -122.59339,
+      "website": "https://cpcscouting.org/project/butte-creek/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-492/or-butte-creek-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://cpcscouting.org/project/butte-creek/"
+          },
+          {
+            "url": "https://cpcscouting.org/project/butte-creek/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

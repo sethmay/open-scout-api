@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-melakwa",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Melakwa",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:pacific-crest",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Camp Melakwa, McKenzie Bridge, OR 97413",
+      "city": "McKenzie Bridge",
+      "state": "OR",
+      "lat": 44.1783,
+      "lon": -122.0453,
+      "website": "https://www.otcbsa.org/camp-melakwa",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [
+        "dining_hall",
+        "waterfront",
+        "climbing",
+        "cope",
+        "older_scout_program",
+        "high_adventure_option"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-697/or-camp-melakwa (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.otcbsa.org/camp-melakwa"
+          },
+          {
+            "url": "https://www.otcbsa.org/camp-melakwa"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

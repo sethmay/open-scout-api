@@ -1,0 +1,45 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wa-camp-edward",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Edward",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:chief-seattle",
+      "parent": null,
+      "operating_status": "active",
+      "address": "25600-B Monroe Camp Rd",
+      "city": "Snohomish",
+      "state": "WA",
+      "lat": 47.974503972535,
+      "lon": -121.874472859424,
+      "website": "https://scoutingseattle.org/camp-edward/cub-resident-camp-edward/",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-609/wa-camp-edward (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingseattle.org/camp-edward/cub-resident-camp-edward/"
+          },
+          {
+            "url": "https://scoutingseattle.org/camp-edward/cub-resident-camp-edward/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.6,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

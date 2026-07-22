@@ -1,0 +1,53 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wa-fire-mountain-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Fire Mountain Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mount-baker",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Fire Mountain Scout Camp, Mount Vernon, WA 98274",
+      "city": "Mount Vernon",
+      "state": "WA",
+      "lat": 48.4512,
+      "lon": -122.1573,
+      "website": "https://www.mountbakerbsa.org/fire-mountain",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [
+        "dining_hall",
+        "waterfront",
+        "shooting_sports",
+        "climbing",
+        "cope",
+        "mountain_biking",
+        "stem"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-606/wa-fire-mountain-scout-camp (unofficial community dataset)"
+          },
+          {
+            "url": "https://www.mountbakerbsa.org/fire-mountain"
+          },
+          {
+            "url": "https://www.mountbakerbsa.org/fire-mountain"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-baldwin",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Baldwin",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:cascade-pacific",
+      "parent": null,
+      "operating_status": "active",
+      "address": "27650 SE Baldwin Rd, Sandy, OR 97055",
+      "city": "Sandy",
+      "state": "OR",
+      "lat": 45.3712,
+      "lon": -122.2087,
+      "website": "https://cpcbsa.org/camping/camp-baldwin/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [
+        "dining_hall",
+        "waterfront",
+        "shooting_sports",
+        "climbing",
+        "cope",
+        "older_scout_program",
+        "stem"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-492/or-camp-baldwin (unofficial community dataset)"
+          },
+          {
+            "url": "https://cpcbsa.org/camping/camp-baldwin/"
+          },
+          {
+            "url": "https://cpcbsa.org/camping/camp-baldwin/"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder; description/sessions dropped (operational data stays at the council site). camp_type classified from program_types."
+      }
+    }
+  ],
+  "notes": null
+}
