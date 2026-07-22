@@ -43,8 +43,8 @@
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       },
       "reservation": {
-        "id": "ny-camp-aquehonga-reservation",
-        "name": null
+        "id": "ny-ten-mile-river-scout-camps",
+        "name": "Ten Mile River Scout Camps"
       }
     }
   ],

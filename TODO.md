@@ -80,9 +80,12 @@ superseded — those were duplicates (now merged); `reservation` groups co-locat
   "Cub day" as separately described programs; dates/fees stay out by design). A `programs` array on a
   camp — or a first-class reservation entity with child camps and programs — would restore it. Ties
   into modeling a reservation as its own entity and the co-located `reservation` groups now in-data.
-- **Reservation names + true sub-camp coordinates.** 17 of 21 `reservation` groups are unnamed (the
-  camps carry no common name: Goshen, Warner, Heritage). A curated name map plus geocoding each
-  co-located camp to its own point would upgrade one-pin clustering to distinct, correctly-placed pins.
+- **True sub-camp coordinates (reservation names DONE, 0.25.0).** 17 of 19 `reservation` groups are
+  now named via the curated `RESERVATIONS` map in `import_camps.py`. Remaining: geocode each co-located
+  camp to its own point so one-pin clustering can become distinct, correctly-placed pins. Two groups
+  stay unnamed — the AK Chilkoot/Denali pair is a coordinate error (two far-apart bases share a bad
+  point; fixing the coord un-groups them), and the WY Buffalo Bill / Yellowstone Anglers pair has no
+  distinct reservation name.
 
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
