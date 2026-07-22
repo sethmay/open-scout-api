@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.15.0 (minor) — 2026-07-21
 
-- `PENDING` Add **Cub Scout, Venturing, and Sea Scout advancement ranks** — completing the
+- `9e353b8` Add **Cub Scout, Venturing, and Sea Scout advancement ranks** — completing the
   rank vertical across every BSA program. Ranks grew 7 → **21** (6 Cub: Lion, Tiger, Wolf,
   Bear, Webelos, Arrow of Light; 4 Venturing: Venturing, Discovery, Pathfinder, Summit; 4 Sea
   Scout: Apprentice, Ordinary, Able, Quartermaster), each with a current `requirement-set`
