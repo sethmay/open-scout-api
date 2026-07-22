@@ -93,10 +93,10 @@ by the pipeline (as the Pipsico fix was).
   (no distinct reservation name). Remaining coord work: geocode co-located camps to their own points so
   one-pin clustering can become distinct, correctly-placed pins. (The AK Chilkoot/Denali coordinate
   error is fixed — Chilkoot moved to Haines, un-grouping the pair.)
-- **Investigate `wi-adventure-camp` (flagged in the 0.25.2 sweep).** Generic scraped name "Adventure
-  Camp"; coordinate sits on Tomahawk Scout Reservation's point (Birchwood); council `twin-valley` while
-  the real Camp Decorah is `wi-camp-decorah` under `gateway-area` — a likely mislocated / cross-council
-  duplicate. Left unchanged pending council-identity clarification. (`oh-cub-world` and
+- **`wi-adventure-camp` — RESOLVED (0.25.5).** Not Camp Decorah and not a mislocation: it was Twin
+  Valley Council (#283, Mankato MN) running a Scouts BSA session AT Tomahawk Scout Reservation
+  (Northern Star's camp, Birchwood WI) — the same physical property as `wi-tomahawk-scout-camp`, so it
+  was merged in (a guest-council session is not a distinct physical camp). (`oh-cub-world` and
   `va-cub-and-webelos-adventure-camp` were reviewed and kept — generic-looking, but the councils' real names.)
 - **Camp elevation + average summer temperatures (camp-finder dev feature request).** Add per-camp
   `elevation` (DEM lookup on lat/lon) and typical summer-temperature normals (climate source keyed
