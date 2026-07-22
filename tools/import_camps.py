@@ -177,6 +177,40 @@ CURATED_MERGES = {
     "wy-yellowstone-anglers-basecamp-full-week": ("Yellowstone Anglers' Basecamp", ["wy-yellowstone-anglers-basecamp-half-week"]),
 }
 
+# Curated reservation names for co-located distinct camps, verified against council sites/addresses.
+# id -> (name, [member camp ids]). A reservation may span more than one coordinate point (e.g.
+# Goshen); listing its members here unifies those points into one named reservation.
+RESERVATIONS = {
+    "va-goshen-scout-reservation": ("Goshen Scout Reservation",
+        ["va-camp-bowman", "va-camp-marriott", "va-camp-pmi", "va-lenhoksin-high-adventure",
+         "va-camp-olmsted", "va-camp-ross"]),
+    "al-warner-scout-reservation": ("Warner Scout Reservation",
+        ["al-camp-tukabatchee", "al-camp-dexter-c-hobbs-cub-scout-adventure-camp"]),
+    "co-peaceful-valley-scout-ranch": ("Peaceful Valley Scout Ranch",
+        ["co-camp-cortlandt-dietler", "co-camp-cris-dobbins", "co-magness-adventure-camp"]),
+    "co-ben-delatour-scout-ranch": ("Ben Delatour Scout Ranch",
+        ["co-elkhorn-high-adventure-base", "co-jack-nicol-cub-scout-camp"]),
+    "mo-beaumont-scout-reservation": ("Beaumont Scout Reservation",
+        ["mo-cub-scout-advancement-camp-at-camp-may", "mo-grizzly-day-camp"]),
+    "mo-s-f-scout-ranch": ("S-F Scout Ranch",
+        ["mo-s-f-ranger-program", "mo-swift-high-adventure-base"]),
+    "nh-griswold-scout-reservation": ("Griswold Scout Reservation",
+        ["nh-camp-bell", "nh-hidden-valley-scout-camp"]),
+    "nj-mount-allamuchy-scout-reservation": ("Mount Allamuchy Scout Reservation",
+        ["nj-camp-somers", "nj-camp-wheeler"]),
+    "ny-ten-mile-river-scout-camps": ("Ten Mile River Scout Camps",
+        ["ny-camp-aquehonga", "ny-camp-keowa"]),
+    "pa-heritage-reservation": ("Heritage Reservation",
+        ["pa-camp-freedom", "pa-eagle-base-heritage-reservation"]),
+    "pa-musser-scout-reservation": ("Musser Scout Reservation",
+        ["pa-camp-garrison", "pa-camp-hart"]),
+    "va-heart-of-virginia-scout-reservation": ("Heart of Virginia Scout Reservation",
+        ["va-camp-t-brady-saunders", "va-cub-and-webelos-adventure-camp"]),
+    "wi-tomahawk-scout-reservation": ("Tomahawk Scout Reservation",
+        ["wi-discovery-adventure-camp", "wi-tomahawk-scout-camp"]),
+}
+_MEMBER_RES = {mid: (rid, name) for rid, (name, members) in RESERVATIONS.items() for mid in members}
+
 
 def _slug(s: str) -> str:
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
@@ -279,6 +313,10 @@ def main() -> None:
     for child, base in keep.items():   # a kept sub-camp whose base merged must follow to the survivor
         by_id[child]["parent"] = f"camp:{terminal(base)}"
 
+    bad_res = sorted(m for m in _MEMBER_RES if m not in by_id or m in merge_edge)
+    if bad_res:
+        raise SystemExit(f"RESERVATIONS references unknown or merged camp ids: {bad_res}")
+
     # A coordinate shared by >=2 surviving camps is a reservation centroid, not an exact fix for
     # any one of them. Relabel it 'approximate' (Type-A duplicates are already merged, so the
     # co-located survivors are distinct camps) and tag them with a shared `reservation` so a
@@ -287,27 +325,33 @@ def main() -> None:
     for cid, cref, name, v in built:
         if cid in merge_edge or v.get("lat") is None:
             continue
-        coord_groups.setdefault((round(v["lat"], 5), round(v["lon"], 5)), []).append((cid, v))
-    stacked = n_res = 0
-    used_rid: set[str] = set()
+        coord_groups.setdefault((cref, round(v["lat"], 5), round(v["lon"], 5)), []).append((cid, v))
+    stacked = 0
+    reservations: set[str] = set()
+    used_auto: set[str] = set()
     for members in coord_groups.values():
         if len(members) < 2:
             continue
-        n_res += 1
-        rname = _reservation_name([v["name"] for _, v in members])
-        rstate = next((v.get("state") for _, v in members if v.get("state")), None)
-        rid = _slug(f"{rstate or 'us'}-{rname}") if rname else f"{min(cid for cid, _ in members)}-reservation"
-        if rid in used_rid:   # two same-state groups deriving one name -> disambiguate deterministically
-            base, n = rid, 2
-            while rid in used_rid:
+        curated = next((_MEMBER_RES[cid] for cid, _ in members if cid in _MEMBER_RES), None)
+        if curated:
+            rid, rname = curated
+        else:
+            rname = _reservation_name([v["name"] for _, v in members])
+            rstate = next((v.get("state") for _, v in members if v.get("state")), None)
+            rid = _slug(f"{rstate or 'us'}-{rname}") if rname else f"{min(cid for cid, _ in members)}-reservation"
+            if rid in used_auto:   # two same-state auto groups deriving one name -> disambiguate
+                base, n = rid, 2
+                while f"{base}-{n}" in used_auto:
+                    n += 1
                 rid = f"{base}-{n}"
-                n += 1
-        used_rid.add(rid)
+            used_auto.add(rid)
+        reservations.add(rid)
         for _, v in members:
             if v.get("geo_precision") == "exact":
                 v["geo_precision"] = "approximate"
                 stacked += 1
             v["reservation"] = {"id": rid, "name": rname}
+    n_res = len(reservations)
 
     written = 0
     for cid, cref, name, v in built:
