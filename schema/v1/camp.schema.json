@@ -122,10 +122,33 @@
         },
         "features": {
           "type": "array",
-          "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
           "uniqueItems": true,
           "default": [],
-          "description": "Open vocabulary; seeded from camp-finder (dining_hall, waterfront, pool, shooting_sports, climbing, horseback, atv, cope, older_scout_program, high_adventure_option, stem, scuba, mountain_biking)."
+          "description": "What this camp offers — facilities, activities, accommodation, and program models — as coded entries from the open `camp-features` vocabulary. ONE namespace holds both widely-shared features (dining_hall) and long-tail differentiators (land_sailing): `code` is the only filterable key, and the vocabulary's `broader` field lets a consumer roll specific leaves up to coarse parents. Records only WHETHER the property offers something; dates, fees, session schedules, and availability stay at the council site. Always read alongside `features_verified_at` — an empty array by itself does NOT mean the camp offers none. Codes are unique per version (enforced by tools/validate_data.py).",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": { "$ref": "common.schema.json#/$defs/VocabCode" },
+              "signature": {
+                "type": "boolean",
+                "default": false,
+                "description": "This camp presents the feature as a headline draw — a reason to travel here. Deliberately per camp rather than per vocabulary term, because the same feature is table stakes in one region and a differentiator in another (a climbing tower in Colorado vs on the prairie)."
+              },
+              "note": {
+                "type": ["string", "null"],
+                "default": null,
+                "description": "Optional short factual phrase for cases where the code alone under-describes the offering (e.g. 'Land sailers and sandboards on two miles of private beach'). Evergreen and non-promotional: no dates, fees, or session schedules; enforced by tools/validate_data.py."
+              }
+            },
+            "required": ["code"],
+            "additionalProperties": false
+          }
+        },
+        "features_verified_at": {
+          "type": ["string", "null"],
+          "format": "date",
+          "default": null,
+          "description": "Date of the last deliberate features survey of this camp against its own sources — what makes `features` interpretable. The two vary independently: null + [] = never surveyed, nothing known; null + entries = incidental data from a bulk import, not a survey; date + entries = surveyed; date + [] = surveyed and the camp genuinely offers none of the vocabulary's features. Without this an unsurveyed camp is indistinguishable from an empty one, every 'has X' filter silently under-reports, and 'camps without X' is unanswerable."
         },
         "summary": {
           "type": ["string", "null"],

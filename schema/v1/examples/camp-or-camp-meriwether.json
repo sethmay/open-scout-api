@@ -18,7 +18,12 @@
       "lon": null,
       "website": null,
       "program_types": ["scouts_bsa_resident"],
-      "features": ["waterfront", "dining_hall"],
+      "features": [
+        { "code": "dining_hall" },
+        { "code": "waterfront" },
+        { "code": "scuba", "signature": true, "note": "Ocean scuba instruction off two miles of private beach." }
+      ],
+      "features_verified_at": "2026-07-21",
       "provenance": {
         "sources": [
           {

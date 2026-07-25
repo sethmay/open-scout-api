@@ -175,11 +175,17 @@ source (see the Meriwether evidence in PLAN §5.1).
   generated, minutes spent. Deliverables: yield-per-tier table, a first vocabulary draft sized from
   real data, and a go/no-go on whether the 159 page-less camps are reachable at all (program/leader's
   guides, council PDFs, ScoutWiki) or should stay explicitly unsurveyed.
-- **Phase 1 — schema + vocab reshape (cheap, pre-1.0).** `features[]` → array of
-  `{code, signature?, note?}`; add `features_verified_at`; add `category`/`broader`/`aliases` to
-  vocabulary terms. Validator rules: every `code` defined (already enforced); `note` passes the
-  evergreen guard used for `summary`; `features_verified_at` required when `features` is non-empty;
-  `broader` resolves to a defined code; no alias collides with another term's code.
+- **Phase 1 — schema + vocab reshape — DONE (0.29.0).** `features[]` is now an array of
+  `{code, signature?, note?}`; `features_verified_at` added; vocabulary terms may carry
+  `category`/`broader`/`aliases` and all 13 existing terms are categorized (6 with aliases).
+  Validator guards, each proven to bite: duplicate feature `code` in one version (`uniqueItems`
+  stops catching this once two entries differ), a `note` containing transitory text (reuses the
+  evergreen `summary` guard), `broader` naming an undefined term, a `broader` cycle, and an alias
+  colliding with a real code or with another term's alias. Two negative fixtures added.
+  *Design change during implementation:* `features_verified_at` is deliberately NOT required when
+  `features` is non-empty. That rule would have forbidden the honest state the 8 imported camps are
+  actually in — features present from a bulk import, never deliberately surveyed — so the field
+  instead carries four meaningful states (see the schema description).
 - **Phase 2 — vocabulary v1.** Expand 13 codes → the set the spike justifies, keeping today's coarse
   codes as `broader` parents so the migration stays additive. Assign categories, add aliases, and
   settle the two open questions in PLAN §5.1 (`older_scout_program`/`high_adventure_option` →

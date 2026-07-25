@@ -210,7 +210,7 @@ open-scout-api/
   not in the source feed). Renames/mergers (which track council mergers) will become events.
   Seeded from the official OA lodge locator feed; officer/contact PII deliberately excluded.
 
-### 5.1 Camp program features (design — not yet implemented)
+### 5.1 Camp program features (shape implemented 0.29.0; population pending)
 
 **Why redesign rather than extend.** `features[]` is populated on **8 of 448 camps** (the
 Pacific-Northwest demo-origin camps plus Camp Kenya) and is **not published in any projection** —

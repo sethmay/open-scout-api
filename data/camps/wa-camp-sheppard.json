@@ -26,12 +26,23 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "shooting_sports",
-        "climbing",
-        "cope",
-        "stem"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "stem"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Cascade forest resident camp bordering Mt. Rainier National Forest, offering hiking and ecology programs alongside a dining hall, shooting sports, climbing, COPE, and STEM activities.",
       "provenance": {
         "sources": [

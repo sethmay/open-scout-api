@@ -1,0 +1,23 @@
+{
+  "id": "negative-fixture",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Negative Fixture Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:example",
+      "operating_status": "active",
+      "features": [
+        { "code": "climbing", "verified_at": "2026-07-25" }
+      ],
+      "provenance": {
+        "sources": [{ "citation": "negative fixture: a feature entry takes only code/signature/note — per-feature provenance is not part of the shape" }],
+        "method": "curated",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ]
+}

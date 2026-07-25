@@ -26,14 +26,29 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "waterfront",
-        "shooting_sports",
-        "climbing",
-        "cope",
-        "older_scout_program",
-        "stem"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "stem"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Wooded resident camp in the Cascade foothills featuring a lake waterfront, dining hall, shooting sports, climbing, and COPE, with STEM offerings, a first-year Scout program, and an older Scout program.",
       "provenance": {
         "sources": [
