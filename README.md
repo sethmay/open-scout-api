@@ -81,14 +81,17 @@ LLM-extracted facts in other datasets.
 Each camp's `geo_precision` marks its coordinate `exact` (camp-specific point), `approximate`
 (city or state-centroid backfill — soft-plot or bucket these), or `null` (could not be placed).
 Fields are **additive-only under `v1`** — new optional fields may appear, but existing ones are
-never renamed or removed — so pinning to a field set is safe. **Every published surface is
-schema-pinned and build-gated:** the denormalized `v1/current/*.json` views against
+never renamed or removed — so pinning to a field set is safe. **Every published *collection*
+projection is schema-pinned and build-gated:** the denormalized `v1/current/*.json` views against
 [`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json),
 and the lighter `v1/{dataset}/index.json` listings (every entity incl. historical, with a `current`
-flag) against
+flag — except requirement-sets, which are effective-dated documents and use `effective_to: null`
+for "in force") against
 [`published-index.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json).
-Each file names its own contract in `$schema`, and `build.py` fails the build if any projection
-drifts from it. Generate consumer types from those schemas rather than hand-mirroring.
+Each of those 16 files names its own contract in `$schema`, the item shape is selected by the
+envelope `kind`, and `build.py` fails the build if any projection drifts. Generate consumer types
+from those schemas rather than hand-mirroring. Not yet pinned (tracked in `TODO.md` for 1.0):
+`v1/meta.json`, `v1/camps/aliases.json`, and the per-entity `v1/{dataset}/{id}.json` documents.
 A camp's `reservation.id` is a stable opaque grouping key (a bare slug, deliberately not a
 `kind:slug` entity ref): group by it, don't parse it.
 

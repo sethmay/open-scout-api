@@ -35,7 +35,7 @@
           "description": "Lodge number (iconic identifier). Null when not carried by the source feed; backfilled from lodge registries later."
         },
         "council": {
-          "anyOf": [{ "$ref": "common.schema.json#/$defs/EntityRef" }, { "type": "null" }],
+          "anyOf": [{ "type": "string", "pattern": "^council:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" }, { "type": "null" }],
           "default": null,
           "description": "The chartering council, 'council:<slug>'; null if the council isn't in this dataset."
         },

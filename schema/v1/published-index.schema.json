@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json",
   "title": "Open Scout API — published dataset index (listing)",
-  "description": "Root schema for the lightweight listing projections emitted by tools/build.py to v1/{dataset}/index.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges, requirement-sets). One entry per entity INCLUDING retired/defunct ones — a `current` boolean says whether the entity has an open (valid_to:null) version, which is the difference from v1/current/*.json (current-only, denormalized, richer). An index item carries just an id plus the few fields needed to list, filter, or link: enough to build a picker without fetching every entity document. NOT the canonical layer and no cross-file $ref (self-contained). Fields are ADDITIVE-ONLY under v1 (a stable consumer contract): new optional fields may appear, but existing fields are not renamed or removed. Point a validator at any v1/{dataset}/index.json file to validate it.",
+  "description": "Root schema for the lightweight listing projections emitted by tools/build.py to v1/{dataset}/index.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges, requirement-sets). One entry per entity INCLUDING retired/defunct ones — a `current` boolean says whether the entity has an open (valid_to:null) version, which is the difference from v1/current/*.json (current-only, denormalized, richer). EXCEPTION: requirement-sets are immutable effective-dated documents, not versioned entities, so their items carry effective_from/effective_to (effective_to:null = in force) and have no `current` flag. An index item carries just an id plus the few fields needed to list, filter, or link: enough to build a picker without fetching every entity document. NOT the canonical layer and no cross-file $ref (self-contained). The item shape is selected BY the envelope `kind`, so a listing cannot publish another dataset's item shape. Fields are ADDITIVE-ONLY under v1 (a stable consumer contract): new optional fields may appear, but existing fields are not renamed or removed. Point a validator at any v1/{dataset}/index.json file to validate it.",
   "type": "object",
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
@@ -12,22 +12,29 @@
     "count": { "type": "integer", "minimum": 0 },
     "items": {
       "type": "array",
-      "items": {
-        "oneOf": [
-          { "$ref": "#/$defs/CouncilIndexItem" },
-          { "$ref": "#/$defs/TerritoryIndexItem" },
-          { "$ref": "#/$defs/MeritBadgeIndexItem" },
-          { "$ref": "#/$defs/CampIndexItem" },
-          { "$ref": "#/$defs/RankIndexItem" },
-          { "$ref": "#/$defs/AwardIndexItem" },
-          { "$ref": "#/$defs/OALodgeIndexItem" },
-          { "$ref": "#/$defs/RequirementSetIndexItem" }
-        ]
-      }
+      "items": { "type": "object" }
     }
   },
   "required": ["version", "generated_at", "kind", "count", "items"],
   "additionalProperties": false,
+  "allOf": [
+    { "if": { "properties": { "kind": { "const": "council" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/CouncilIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "territory" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/TerritoryIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "merit-badge" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/MeritBadgeIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "camp" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/CampIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "rank" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/RankIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "award" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/AwardIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "oa-lodge" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/OALodgeIndexItem" } } } } },
+    { "if": { "properties": { "kind": { "const": "requirement-set" } }, "required": ["kind"] },
+      "then": { "properties": { "items": { "items": { "$ref": "#/$defs/RequirementSetIndexItem" } } } } }
+  ],
   "$defs": {
     "Slug": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
     "HistoricalDate": { "type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
@@ -46,12 +53,15 @@
     },
     "TerritoryIndexItem": {
       "type": "object",
+      "description": "The territories listing is categorically mixed — current Council Service Territories, closed National Service Territories, and pre-2021 regions — so `division_type` and `number` are exposed here: a consumer must not infer either by parsing the name or the id.",
       "properties": {
         "id": { "$ref": "#/$defs/Slug" },
         "name": { "type": "string", "minLength": 1 },
+        "number": { "type": ["integer", "null"], "minimum": 1 },
+        "division_type": { "enum": ["council_service_territory", "national_service_territory", "region", "area"] },
         "current": { "type": "boolean" }
       },
-      "required": ["id", "name", "current"],
+      "required": ["id", "name", "number", "division_type", "current"],
       "additionalProperties": false
     },
     "MeritBadgeIndexItem": {

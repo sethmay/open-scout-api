@@ -36,17 +36,23 @@ promised do.
 
 Cleared in 0.28.0:
 
-- **Every published surface is schema-pinned + build-gated** — 16 files: 8 `current/*.json` against
-  `published-current.schema.json` and 8 `{dataset}/index.json` against the new
-  `published-index.schema.json`. Each file names its own contract in `$schema`; `build.py` fails if
-  any projection drifts. (Verified non-vacuous: unknown fields, a bad `kind`, a malformed
-  `council:` ref, and a non-slug `reservation.id` are all rejected.)
-- **`current/requirement-sets.json` was the one unpinned published surface** — now pinned, and it
-  gained the `verified_at`/`method`/`confidence` that the 0.16.0 uniform-provenance promise already
-  implied, plus `includes_official_text` (the licensing flag its own index already carried).
+- **Every published *collection* projection is schema-pinned + build-gated** — 16 files: 8
+  `current/*.json` against `published-current.schema.json` and 8 `{dataset}/index.json` against the
+  new `published-index.schema.json`. Each names its own contract in `$schema`; `build.py` exits
+  nonzero if any projection drifts. The item shape is selected BY the envelope `kind` (`allOf` of
+  `if kind then items.$ref`), not a bare `oneOf`, so a mis-wired listing cannot publish another
+  dataset's items at a right-looking URL. (Verified non-vacuous: unknown fields, missing required
+  fields, a bad `kind`, a malformed `council:` ref, a non-slug `reservation.id`, and kind/item
+  mis-pairings are all rejected.)
+- **`current/requirement-sets.json` was the one unpinned `current/` surface** — now pinned, and it
+  gained `verified_at`/`method`/`confidence` (it was the lone holdout among the 8, so provenance is
+  now uniform) plus `includes_official_text` (the licensing flag its own index already carried).
 - **`reservation.id` is now contractually a stable opaque grouping key** (a bare slug, never a
   `kind:slug` EntityRef). A future reservation entity reuses these exact slugs and adds a *new* ref
   field rather than changing this one — so first-classing reservations stays additive.
+- **`territories/index.json` now exposes `number` + `division_type`** — that listing mixes CSTs,
+  closed NSTs, and pre-2021 regions, and consumers had no way to tell them apart without parsing
+  names or ids.
 
 **Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 1,340 entity
 files carry `$schema: https://sethmay.github.io/open-scout-api/schema/v1/…`, `build.py` hardcodes
@@ -54,6 +60,15 @@ that base, and it is both the documented API root and the jsDelivr pin path. Mov
 org afterwards would change every schema URL and every published URL — maximally breaking. Settle
 org + name, re-stamp `data/` once, update the README/CDN docs, then cut 1.0. This also unblocks the
 Zenodo DOI (below), which binds to the final GitHub location.
+
+**Remaining 1.0 consideration: 10 published endpoints are still unpinned.** The 16 collection
+projections are gated, but `v1/meta.json` (the discovery document), `v1/camps/aliases.json`, and all
+8 per-entity `v1/{dataset}/{id}.json` endpoints (~1,528 files) have no published contract — their
+shape (canonical entity + a projected `events` array, plus `requirement_sets` for
+merit-badges/ranks/awards) exists only inside `build.py`, so renaming `events` is a one-line edit no
+gate would catch. Either add `published-entity` + `published-meta` schemas or state in the README
+that only the collection projections are covered by the stability promise. (The README now says
+which surfaces are unpinned; deciding whether to pin them is the open part.)
 
 ## Queue
 

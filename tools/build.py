@@ -123,7 +123,10 @@ def main() -> None:
 
     def _prov(ov):
         p = ov["provenance"]
-        return {"verified_at": p["verified_at"], "method": p["method"], "confidence": p["confidence"]}
+        # confidence is optional in common.schema.json with `default: 1` — honour that default
+        # rather than KeyError'ing on a record that legitimately omits it.
+        return {"verified_at": p["verified_at"], "method": p["method"],
+                "confidence": p.get("confidence", 1)}
 
     _TRANSIENT_URL = re.compile(r"20\d\d|scoutingevent\.com")
 
@@ -142,8 +145,9 @@ def main() -> None:
         ref = f"territory:{e['id']}"
         write_json(DIST / "v1" / "territories" / f"{e['id']}.json", {**e, "events": events_for(ref, tevents)})
         ov = open_version(e)
-        terr_index.append({"id": e["id"], "name": (ov or e["versions"][-1])["name"],
-                           "current": ov is not None})
+        _tv = ov or e["versions"][-1]
+        terr_index.append({"id": e["id"], "name": _tv["name"], "number": _tv.get("number"),
+                           "division_type": _tv["division_type"], "current": ov is not None})
         if ov is not None:
             current_terr_ids.add(e["id"])
             current_territories.append({"id": e["id"], "number": ov.get("number"),
@@ -209,7 +213,7 @@ def main() -> None:
         write_json(DIST / "v1" / "camps" / f"{e['id']}.json", {**e, "events": events_for(ref, campevents)})
         ov = open_version(e)
         last = ov or e["versions"][-1]
-        for _mid in {m for _v in e["versions"] for m in _v.get("merged_from", [])}:
+        for _mid in sorted({m for _v in e["versions"] for m in _v.get("merged_from", [])}):
             camp_aliases[_mid] = e["id"]
         camp_index.append({"id": e["id"], "name": last["name"], "camp_type": last["camp_type"],
                            "operator": last["operator"], "council": last.get("council"),
