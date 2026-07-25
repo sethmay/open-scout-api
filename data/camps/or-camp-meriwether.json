@@ -27,10 +27,39 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
+          "code": "land_sailing",
+          "signature": true,
+          "note": "Land sailers and sandboards on two miles of private Pacific beach; the council bills it as unique to Meriwether."
         },
         {
-          "code": "waterfront"
+          "code": "sandboarding"
+        },
+        {
+          "code": "bike_park",
+          "note": "A BMX pump track plus roughly two miles of coastal-rainforest trails."
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "living_history",
+          "signature": true,
+          "note": "A full-size replica of Lewis and Clark's winter fort, with costumed staff teaching blacksmithing, candle-making, and black-powder marksmanship."
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
         },
         {
           "code": "shooting_sports"
@@ -42,16 +71,33 @@
           "code": "cope"
         },
         {
+          "code": "scuba"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
           "code": "older_scout_program"
         },
         {
           "code": "high_adventure_option"
         },
         {
-          "code": "scuba"
+          "code": "provisional_attendance",
+          "signature": true,
+          "note": "Rover Camp forms a provisional troop with its own adult leadership, so a Scout can attend without their unit."
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "Oceanfront resident camp on the Oregon coast featuring a waterfront with sailing, surfing, and scuba, plus shooting sports, climbing, COPE, and a dining hall. Offers a dedicated older-Scout program with high-adventure options.",
       "provenance": {
         "sources": [
@@ -63,13 +109,17 @@
           },
           {
             "url": "https://cpcbsa.org/camping/camp-meriwether/"
+          },
+          {
+            "url": "https://cpcscouting.org/project/camp-meriwether/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-01",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

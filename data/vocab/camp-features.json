@@ -10,47 +10,30 @@
   "open": true,
   "terms": [
     {
-      "code": "dining_hall",
-      "label": "Dining Hall",
-      "description": "A central building where meals are served.",
-      "category": "facility"
+      "code": "air_conditioning",
+      "label": "Air Conditioning",
+      "description": "Air conditioning in a main building such as the dining hall.",
+      "category": "accommodation"
     },
     {
-      "code": "waterfront",
-      "label": "Waterfront",
-      "description": "Lake or river frontage used for aquatics activities.",
-      "category": "facility"
+      "code": "alpine_tower",
+      "label": "Alpine Tower",
+      "description": "A multi-face alpine tower, distinct from a standard climbing wall or tower.",
+      "category": "activity",
+      "broader": "climbing"
     },
     {
-      "code": "pool",
-      "label": "Swimming Pool",
-      "description": "An on-site swimming pool.",
-      "category": "facility"
-    },
-    {
-      "code": "shooting_sports",
-      "label": "Shooting Sports",
-      "description": "Ranges for activities such as rifle, shotgun, or archery.",
+      "code": "aquatics",
+      "label": "Aquatics",
+      "description": "Water-based program of any kind; parent term for specific aquatics activities.",
       "category": "activity"
     },
     {
-      "code": "climbing",
-      "label": "Climbing",
-      "description": "A climbing tower or wall.",
+      "code": "archery",
+      "label": "Archery",
+      "description": "Archery range and instruction.",
       "category": "activity",
-      "aliases": [
-        "climbing_tower",
-        "climbing_wall"
-      ]
-    },
-    {
-      "code": "horseback",
-      "label": "Horseback Riding",
-      "description": "Horseback riding facilities and program.",
-      "category": "activity",
-      "aliases": [
-        "equestrian"
-      ]
+      "broader": "shooting_sports"
     },
     {
       "code": "atv",
@@ -63,6 +46,90 @@
       ]
     },
     {
+      "code": "bathhouse",
+      "label": "Bathhouse",
+      "description": "Shower house with hot water.",
+      "category": "facility",
+      "aliases": [
+        "showers"
+      ]
+    },
+    {
+      "code": "bb_guns",
+      "label": "BB Guns",
+      "description": "BB-gun range, typically for Cub Scout-age youth.",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
+      "code": "bike_park",
+      "label": "Bike Park",
+      "description": "A purpose-built pump track, BMX circuit, or skills park.",
+      "category": "activity",
+      "broader": "mountain_biking",
+      "aliases": [
+        "bmx",
+        "pump_track"
+      ]
+    },
+    {
+      "code": "black_powder",
+      "label": "Black Powder",
+      "description": "Muzzle-loading rifle program.",
+      "category": "activity",
+      "broader": "shooting_sports",
+      "aliases": [
+        "muzzleloading"
+      ]
+    },
+    {
+      "code": "blacksmithing",
+      "label": "Blacksmithing",
+      "description": "A working forge with instruction.",
+      "category": "activity"
+    },
+    {
+      "code": "boat_access",
+      "label": "Boat Access Only",
+      "description": "The property is reached by boat; there is no road access.",
+      "category": "accommodation"
+    },
+    {
+      "code": "cabins",
+      "label": "Cabins",
+      "description": "Enclosed cabin lodging.",
+      "category": "accommodation"
+    },
+    {
+      "code": "campsite_electricity",
+      "label": "Campsite Electricity",
+      "description": "Mains power available at campsites.",
+      "category": "accommodation"
+    },
+    {
+      "code": "canoeing",
+      "label": "Canoeing",
+      "description": "Canoeing program.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "climbing",
+      "label": "Climbing",
+      "description": "A climbing tower or wall.",
+      "category": "activity",
+      "aliases": [
+        "climbing_wall"
+      ]
+    },
+    {
+      "code": "climbing_tower",
+      "label": "Climbing Tower",
+      "description": "A purpose-built climbing tower.",
+      "category": "activity",
+      "broader": "climbing"
+    },
+    {
       "code": "cope",
       "label": "COPE",
       "description": "Challenging Outdoor Personal Experience: a ropes and team-challenge course.",
@@ -73,10 +140,39 @@
       ]
     },
     {
-      "code": "older_scout_program",
-      "label": "Older-Scout Program",
-      "description": "Dedicated programming for older or more experienced participants.",
-      "category": "program_model"
+      "code": "dining_hall",
+      "label": "Dining Hall",
+      "description": "A central building where meals are served.",
+      "category": "facility"
+    },
+    {
+      "code": "fishing",
+      "label": "Fishing",
+      "description": "Fishing program or licensed fishing water on the property.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "floating_obstacle_course",
+      "label": "Floating Obstacle Course",
+      "description": "An inflatable or floating waterfront obstacle course.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "aqua_park"
+      ]
+    },
+    {
+      "code": "flush_toilets",
+      "label": "Flush Toilets",
+      "description": "Flush toilets in or near campsites, rather than latrines only.",
+      "category": "accommodation"
+    },
+    {
+      "code": "gaga_ball",
+      "label": "Gaga Ball",
+      "description": "One or more gaga ball pits.",
+      "category": "activity"
     },
     {
       "code": "high_adventure_option",
@@ -85,10 +181,121 @@
       "category": "program_model"
     },
     {
-      "code": "stem",
-      "label": "STEM",
-      "description": "Science, technology, engineering, and math programming, including NOVA.",
+      "code": "horseback",
+      "label": "Horseback Riding",
+      "description": "Horseback riding facilities and program.",
+      "category": "activity",
+      "aliases": [
+        "equestrian"
+      ]
+    },
+    {
+      "code": "hunter_safety",
+      "label": "Hunter Safety",
+      "description": "A hunter-safety certification course.",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
+      "code": "kayaking",
+      "label": "Kayaking",
+      "description": "Kayaking program.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "sea_kayaking"
+      ]
+    },
+    {
+      "code": "land_sailing",
+      "label": "Land Sailing",
+      "description": "Wind-powered land sailers ridden on sand or a hard flat surface.",
+      "category": "activity",
+      "aliases": [
+        "land_yachting"
+      ]
+    },
+    {
+      "code": "living_history",
+      "label": "Living History",
+      "description": "Costumed interpretation at a historic site or replica.",
+      "category": "activity",
+      "aliases": [
+        "historic_program"
+      ]
+    },
+    {
+      "code": "marine_science",
+      "label": "Marine Science",
+      "description": "A marine-science or aquarium facility with instruction.",
       "category": "subject"
+    },
+    {
+      "code": "mountain_biking",
+      "label": "Mountain Biking",
+      "description": "Mountain biking trails and program.",
+      "category": "activity",
+      "aliases": [
+        "mtb"
+      ]
+    },
+    {
+      "code": "older_scout_program",
+      "label": "Older-Scout Program",
+      "description": "Dedicated programming for older or more experienced participants.",
+      "category": "program_model"
+    },
+    {
+      "code": "pavilion",
+      "label": "Pavilion",
+      "description": "A covered open-air gathering shelter.",
+      "category": "facility"
+    },
+    {
+      "code": "platform_tents",
+      "label": "Platform Tents",
+      "description": "Canvas or poly tents pitched on permanent wooden platforms.",
+      "category": "accommodation",
+      "aliases": [
+        "canvas_tents",
+        "wall_tents"
+      ]
+    },
+    {
+      "code": "pool",
+      "label": "Swimming Pool",
+      "description": "An on-site swimming pool.",
+      "category": "facility"
+    },
+    {
+      "code": "provisional_attendance",
+      "label": "Provisional Attendance",
+      "description": "A Scout may attend individually without their troop, joining a provisional unit run by camp staff.",
+      "category": "program_model",
+      "aliases": [
+        "rover_camp",
+        "individual_scout"
+      ]
+    },
+    {
+      "code": "rifle",
+      "label": "Rifle",
+      "description": "Smallbore rifle range (typically .22).",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
+      "code": "sailing",
+      "label": "Sailing",
+      "description": "Small-boat sailing instruction and program.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "sandboarding",
+      "label": "Sandboarding",
+      "description": "Boarding on sand dunes.",
+      "category": "activity"
     },
     {
       "code": "scuba",
@@ -100,13 +307,49 @@
       ]
     },
     {
-      "code": "mountain_biking",
-      "label": "Mountain Biking",
-      "description": "Mountain biking trails and program.",
+      "code": "shooting_sports",
+      "label": "Shooting Sports",
+      "description": "Ranges for activities such as rifle, shotgun, or archery.",
+      "category": "activity"
+    },
+    {
+      "code": "shotgun",
+      "label": "Shotgun",
+      "description": "Shotgun/trap/skeet range.",
       "category": "activity",
-      "aliases": [
-        "mtb"
-      ]
+      "broader": "shooting_sports"
+    },
+    {
+      "code": "stem",
+      "label": "STEM",
+      "description": "Science, technology, engineering, and math programming, including NOVA.",
+      "category": "subject"
+    },
+    {
+      "code": "surfing",
+      "label": "Surfing",
+      "description": "Surf instruction; requires ocean frontage.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "swimming",
+      "label": "Swimming",
+      "description": "Supervised open swim and swim instruction.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "trading_post",
+      "label": "Trading Post",
+      "description": "An on-site camp store.",
+      "category": "facility"
+    },
+    {
+      "code": "waterfront",
+      "label": "Waterfront",
+      "description": "Lake or river frontage used for aquatics activities.",
+      "category": "facility"
     }
   ]
 }

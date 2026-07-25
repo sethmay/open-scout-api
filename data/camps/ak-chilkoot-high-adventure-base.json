@@ -25,8 +25,24 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall",
+          "note": "A shared dining cabin also used for meetings and briefings."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Seven showers with separate areas for boys, girls, and staff."
+        },
+        {
+          "code": "pavilion",
+          "note": "Covered gathering space with a fire ring."
+        },
+        {
+          "code": "cabins"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Great Alaska Council high-adventure base on the Chilkat Peninsula near Haines, offering custom multi-day backpacking, sea kayaking, mountaineering, and whitewater rafting expeditions for Scouts BSA.",
       "provenance": {
         "sources": [
@@ -44,7 +60,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate corrected 2026-07-22 to Haines / Chilkat Peninsula (approximate, town-level); it was wrongly stamped on Denali High Adventure Scout Base's point ~600 km away. Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate corrected 2026-07-22 to Haines / Chilkat Peninsula (approximate, town-level); it was wrongly stamped on Denali High Adventure Scout Base's point ~600 km away. Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": null
     }
