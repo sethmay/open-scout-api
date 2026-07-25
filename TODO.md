@@ -27,6 +27,49 @@ PLAN.md §1).
 ToS-hostile, staleness = liability. **Districts:** extreme churn, anecdotal sourcing; only
 as best-effort attributes of council history, never a standalone dataset.
 
+## v1.0 readiness — contract freeze
+
+1.0 means the `v1` surface is frozen: additive-only forever, no renames or removals. Everything in
+the dataset catalog above is additive (new files / new optional fields = MINOR), so **data
+completeness does not gate 1.0** — only changes that would become *breaking* once stability is
+promised do.
+
+Cleared in 0.28.0:
+
+- **Every published *collection* projection is schema-pinned + build-gated** — 16 files: 8
+  `current/*.json` against `published-current.schema.json` and 8 `{dataset}/index.json` against the
+  new `published-index.schema.json`. Each names its own contract in `$schema`; `build.py` exits
+  nonzero if any projection drifts. The item shape is selected BY the envelope `kind` (`allOf` of
+  `if kind then items.$ref`), not a bare `oneOf`, so a mis-wired listing cannot publish another
+  dataset's items at a right-looking URL. (Verified non-vacuous: unknown fields, missing required
+  fields, a bad `kind`, a malformed `council:` ref, a non-slug `reservation.id`, and kind/item
+  mis-pairings are all rejected.)
+- **`current/requirement-sets.json` was the one unpinned `current/` surface** — now pinned, and it
+  gained `verified_at`/`method`/`confidence` (it was the lone holdout among the 8, so provenance is
+  now uniform) plus `includes_official_text` (the licensing flag its own index already carried).
+- **`reservation.id` is now contractually a stable opaque grouping key** (a bare slug, never a
+  `kind:slug` EntityRef). A future reservation entity reuses these exact slugs and adds a *new* ref
+  field rather than changing this one — so first-classing reservations stays additive.
+- **`territories/index.json` now exposes `number` + `division_type`** — that listing mixes CSTs,
+  closed NSTs, and pre-2021 regions, and consumers had no way to tell them apart without parsing
+  names or ids.
+
+**Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 1,340 entity
+files carry `$schema: https://sethmay.github.io/open-scout-api/schema/v1/…`, `build.py` hardcodes
+that base, and it is both the documented API root and the jsDelivr pin path. Moving the repo to an
+org afterwards would change every schema URL and every published URL — maximally breaking. Settle
+org + name, re-stamp `data/` once, update the README/CDN docs, then cut 1.0. This also unblocks the
+Zenodo DOI (below), which binds to the final GitHub location.
+
+**Remaining 1.0 consideration: 10 published endpoints are still unpinned.** The 16 collection
+projections are gated, but `v1/meta.json` (the discovery document), `v1/camps/aliases.json`, and all
+8 per-entity `v1/{dataset}/{id}.json` endpoints (~1,528 files) have no published contract — their
+shape (canonical entity + a projected `events` array, plus `requirement_sets` for
+merit-badges/ranks/awards) exists only inside `build.py`, so renaming `events` is a one-line edit no
+gate would catch. Either add `published-entity` + `published-meta` schemas or state in the README
+that only the collection projections are covered by the stability promise. (The README now says
+which surfaces are unpinned; deciding whether to pin them is the open part.)
+
 ## Queue
 
 ### Camp-finder cutover — API-side requests (reviewed 2026-07-21)
@@ -158,15 +201,14 @@ by the pipeline (as the Pipsico fix was).
   since the DOI + Zenodo record bind to that GitHub location.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
-  choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
-  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set; camp
-  `operator`↔`council` coupling (operator=council ⇒ council set; national/other/unknown ⇒
-  council null) — convention-only in the schema, assert in the camp import pipeline.
-- **Published-projection schema for requirement-sets.** `build.py` fail-fast-validates
-  current/{councils,territories,merit-badges}.json against `published-current.schema.json`,
-  but `current/requirement-sets.json` + `requirement-sets/index.json` have no
-  published-contract schema (per-doc canonical validation covers content). Add one when the
-  requirement-set listing contract stabilizes.
+  choose-needs-children + camp `operator`↔`council` coupling + coordinate bounds + vocab codes.
+  Still TODO when relevant data lands: event-date ↔ version-boundary consistency;
+  `HistoricalDate` month/day range; `StateCode` closed USPS set.
+- **Published-projection schemas — DONE (0.28.0).** `build.py` now fail-fast-validates *every*
+  published projection: all 8 `current/*.json` against `published-current.schema.json` (adding
+  `CurrentRequirementSet`, previously the one unpinned surface) and all 8 `{dataset}/index.json`
+  against the new `published-index.schema.json`. Each emitted file advertises its contract in
+  `$schema`. See the v1.0 readiness section above.
 - **Requirement-text licensing — DECIDED (0.5.0).** Verbatim requirement text IS published,
   marked © Scouting America (`includes_official_text: true` + `text_rights`), excluded from
   CC BY-NC-SA, reproduced non-commercially with attribution + takedown. Revisit if SA
