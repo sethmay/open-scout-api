@@ -19,6 +19,8 @@
       "lon": -84.2477959,
       "geo_precision": "exact",
       "elevation_ft": 970,
+      "july_high_f": 82,
+      "july_low_f": 60,
       "website": "https://michiganscouting.org/camping/cub-scout-camping/",
       "program_types": [
         "cub_resident"

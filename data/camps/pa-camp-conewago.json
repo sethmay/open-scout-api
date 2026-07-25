@@ -19,6 +19,8 @@
       "lon": -77.0712,
       "geo_precision": "exact",
       "elevation_ft": 450,
+      "july_high_f": 86,
+      "july_low_f": 63,
       "website": "https://newbirthoffreedom.org/camping/summer-camp-adventures/pack-camp/cub-scout-camp/",
       "program_types": [
         "cub_resident"

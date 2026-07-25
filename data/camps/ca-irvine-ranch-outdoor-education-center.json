@@ -19,6 +19,8 @@
       "lon": -117.872231,
       "geo_precision": "approximate",
       "elevation_ft": 130,
+      "july_high_f": 83,
+      "july_low_f": 63,
       "website": "https://ocbsa.org/summercamp/",
       "program_types": [
         "cub_day"

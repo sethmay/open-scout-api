@@ -19,6 +19,8 @@
       "lon": -97.827411,
       "geo_precision": "approximate",
       "elevation_ft": 160,
+      "july_high_f": 95,
+      "july_low_f": 73,
       "website": "https://www.southtexasscouting.org/events-3/scouts-bsa-camping/summer-camp-scouts-bsa/",
       "program_types": [
         "scouts_bsa_resident"

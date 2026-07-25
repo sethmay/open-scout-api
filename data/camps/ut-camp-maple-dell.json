@@ -19,6 +19,8 @@
       "lon": -111.6962,
       "geo_precision": "exact",
       "elevation_ft": 5760,
+      "july_high_f": 85,
+      "july_low_f": 53,
       "website": "https://www.utahscouts.org/mapledell",
       "program_types": [
         "cub_day",

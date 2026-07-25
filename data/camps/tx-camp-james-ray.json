@@ -19,6 +19,8 @@
       "lon": -96.666853,
       "geo_precision": "approximate",
       "elevation_ft": 760,
+      "july_high_f": 94,
+      "july_low_f": 72,
       "website": "https://scoutingevent.com/571-2026CubWebResidentCamp",
       "program_types": [
         "cub_resident",

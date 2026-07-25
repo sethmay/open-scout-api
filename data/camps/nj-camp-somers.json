@@ -19,6 +19,8 @@
       "lon": -74.7649672,
       "geo_precision": "approximate",
       "elevation_ft": 760,
+      "july_high_f": 83,
+      "july_low_f": 59,
       "website": "https://scoutingevent.com/358-CampSomers",
       "program_types": [
         "scouts_bsa_resident"

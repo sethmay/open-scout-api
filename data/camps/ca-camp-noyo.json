@@ -19,6 +19,8 @@
       "lon": -123.805761,
       "geo_precision": "approximate",
       "elevation_ft": 80,
+      "july_high_f": 69,
+      "july_low_f": 48,
       "website": "http://redwoodscouting.org/camping/camp-noyo/",
       "program_types": [
         "scouts_bsa_resident"

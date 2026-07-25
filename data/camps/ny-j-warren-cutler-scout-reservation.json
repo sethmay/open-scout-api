@@ -19,6 +19,8 @@
       "lon": -77.4430191,
       "geo_precision": "exact",
       "elevation_ft": 1660,
+      "july_high_f": 78,
+      "july_low_f": 56,
       "website": "https://scoutingevent.com/397-csac2026",
       "program_types": [
         "cub_resident"

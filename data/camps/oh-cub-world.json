@@ -19,6 +19,8 @@
       "lon": -84.2733478,
       "geo_precision": "exact",
       "elevation_ft": 590,
+      "july_high_f": 87,
+      "july_low_f": 64,
       "website": "https://scoutingevent.com/438-cubsummercamp",
       "program_types": [
         "cub_resident"

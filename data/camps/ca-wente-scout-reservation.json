@@ -19,6 +19,8 @@
       "lon": -123.2758206,
       "geo_precision": "exact",
       "elevation_ft": 1750,
+      "july_high_f": 86,
+      "july_low_f": 49,
       "website": "https://scoutingevent.com/023-WSR2026",
       "program_types": [
         "scouts_bsa_resident"

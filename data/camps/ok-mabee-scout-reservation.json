@@ -19,6 +19,8 @@
       "lon": -95.16774,
       "geo_precision": "approximate",
       "elevation_ft": 670,
+      "july_high_f": 92,
+      "july_low_f": 70,
       "website": "https://www.okscouts.org/camps-1/mabee-scout-reservation",
       "program_types": [
         "cub_resident"

@@ -19,6 +19,8 @@
       "lon": -81.992568186152,
       "geo_precision": "exact",
       "elevation_ft": 170,
+      "july_high_f": 91,
+      "july_low_f": 70,
       "website": "https://www.campshands.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

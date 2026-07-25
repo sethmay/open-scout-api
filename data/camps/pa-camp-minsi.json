@@ -19,6 +19,8 @@
       "lon": -75.4209774,
       "geo_precision": "exact",
       "elevation_ft": 1810,
+      "july_high_f": 78,
+      "july_low_f": 56,
       "website": "https://scoutingevent.com/502-2026CampMinsiSummer",
       "program_types": [
         "scouts_bsa_resident"

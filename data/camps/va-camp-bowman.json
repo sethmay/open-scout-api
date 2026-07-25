@@ -19,6 +19,8 @@
       "lon": -79.470431570218,
       "geo_precision": "approximate",
       "elevation_ft": 1480,
+      "july_high_f": 85,
+      "july_low_f": 61,
       "website": "https://www.gotogoshen.org/camps-programs/camp-bowman/",
       "program_types": [
         "scouts_bsa_resident"

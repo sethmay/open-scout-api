@@ -19,6 +19,8 @@
       "lon": -95.7908195,
       "geo_precision": "exact",
       "elevation_ft": 760,
+      "july_high_f": 93,
+      "july_low_f": 71,
       "website": "https://www.okscouts.org/reservations",
       "program_types": [
         "cub_day"

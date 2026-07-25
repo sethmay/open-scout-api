@@ -19,6 +19,8 @@
       "lon": -90.3486169,
       "geo_precision": "approximate",
       "elevation_ft": 960,
+      "july_high_f": 88,
+      "july_low_f": 65,
       "website": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/",
       "program_types": [
         "high_adventure"

@@ -19,6 +19,8 @@
       "lon": -81.59891409993,
       "geo_precision": "exact",
       "elevation_ft": 430,
+      "july_high_f": 92,
+      "july_low_f": 68,
       "website": "https://indianwaters.org/camps/barstow/",
       "program_types": [
         "scouts_bsa_resident"

@@ -19,6 +19,8 @@
       "lon": -103.9463,
       "geo_precision": "exact",
       "elevation_ft": 4440,
+      "july_high_f": 88,
+      "july_low_f": 62,
       "website": "https://www.btsr.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

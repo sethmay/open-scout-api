@@ -19,6 +19,8 @@
       "lon": -79.45,
       "geo_precision": "approximate",
       "elevation_ft": 1630,
+      "july_high_f": 85,
+      "july_low_f": 61,
       "website": "https://scoutingevent.com/599-brsr26",
       "program_types": [
         "high_adventure"

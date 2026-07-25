@@ -19,6 +19,8 @@
       "lon": -114.096666,
       "geo_precision": "approximate",
       "elevation_ft": 2940,
+      "july_high_f": 77,
+      "july_low_f": 50,
       "website": "https://scoutingmontana.org/camps/grizzly-base/",
       "program_types": [
         "high_adventure"

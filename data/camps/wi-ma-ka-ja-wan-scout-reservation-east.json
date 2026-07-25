@@ -19,6 +19,8 @@
       "lon": -88.9651634,
       "geo_precision": "approximate",
       "elevation_ft": 1580,
+      "july_high_f": 78,
+      "july_low_f": 54,
       "website": "https://scoutingevent.com/129-2026MSREastCamp",
       "program_types": [
         "scouts_bsa_resident"

@@ -19,6 +19,8 @@
       "lon": -79.54369354248047,
       "geo_precision": "exact",
       "elevation_ft": 2180,
+      "july_high_f": 80,
+      "july_low_f": 58,
       "website": "https://scoutingevent.com/527-CampIndependence2026",
       "program_types": [
         "scouts_bsa_resident"

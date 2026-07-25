@@ -19,6 +19,8 @@
       "lon": -96.023033,
       "geo_precision": "approximate",
       "elevation_ft": 1040,
+      "july_high_f": 87,
+      "july_low_f": 64,
       "website": "https://mac-bsa.org/camping-outdoors/scouts-bsa-camping/",
       "program_types": [
         "scouts_bsa_resident"

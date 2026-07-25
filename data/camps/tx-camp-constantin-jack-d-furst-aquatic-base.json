@@ -19,6 +19,8 @@
       "lon": -98.4843,
       "geo_precision": "exact",
       "elevation_ft": 1080,
+      "july_high_f": 95,
+      "july_low_f": 71,
       "website": "https://scoutingevent.com/571-2026SummerCampCON",
       "program_types": [
         "scouts_bsa_resident"

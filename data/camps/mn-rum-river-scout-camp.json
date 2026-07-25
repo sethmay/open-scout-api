@@ -19,6 +19,8 @@
       "lon": -93.4094,
       "geo_precision": "exact",
       "elevation_ft": 880,
+      "july_high_f": 83,
+      "july_low_f": 60,
       "website": "https://camp.northernstar.org/rum-river-scout-camp",
       "program_types": [
         "cub_day"

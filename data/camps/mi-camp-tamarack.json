@@ -19,6 +19,8 @@
       "lon": -85.777364,
       "geo_precision": "exact",
       "elevation_ft": 820,
+      "july_high_f": 83,
+      "july_low_f": 60,
       "website": "https://lasallecouncil.org/venue/camptamarack/",
       "program_types": [
         "scouts_bsa_resident"

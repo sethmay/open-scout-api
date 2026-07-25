@@ -19,6 +19,8 @@
       "lon": -122.1573,
       "geo_precision": "exact",
       "elevation_ft": 2130,
+      "july_high_f": 67,
+      "july_low_f": 48,
       "website": "https://www.mountbakerbsa.org/fire-mountain",
       "program_types": [
         "scouts_bsa_resident"

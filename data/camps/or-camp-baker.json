@@ -19,6 +19,8 @@
       "lon": -124.1088,
       "geo_precision": "exact",
       "elevation_ft": 80,
+      "july_high_f": 69,
+      "july_low_f": 51,
       "website": "https://www.otcbsa.org/camp-baker",
       "program_types": [
         "scouts_bsa_resident"

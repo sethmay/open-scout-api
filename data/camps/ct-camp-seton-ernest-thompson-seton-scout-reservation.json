@@ -19,6 +19,8 @@
       "lon": -73.6685695,
       "geo_precision": "exact",
       "elevation_ft": 250,
+      "july_high_f": 84,
+      "july_low_f": 63,
       "website": "https://www.campseton.org/DayCampReg",
       "program_types": [
         "cub_day"

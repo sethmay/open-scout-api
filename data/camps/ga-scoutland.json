@@ -19,6 +19,8 @@
       "lon": -83.879691,
       "geo_precision": "exact",
       "elevation_ft": 1190,
+      "july_high_f": 88,
+      "july_low_f": 67,
       "website": "https://www.nega-bsa.org/cs-twi-stem-cmp",
       "program_types": [
         "cub_day"

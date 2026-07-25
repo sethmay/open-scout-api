@@ -19,6 +19,8 @@
       "lon": -122.587967,
       "geo_precision": "approximate",
       "elevation_ft": 120,
+      "july_high_f": 81,
+      "july_low_f": 53,
       "website": "https://www.boyscouts-marin.org/camping-facilities/cub-scout-family-camping/8855",
       "program_types": [
         "cub_day"

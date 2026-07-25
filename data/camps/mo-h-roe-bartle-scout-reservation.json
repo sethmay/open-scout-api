@@ -19,6 +19,8 @@
       "lon": -93.5580512,
       "geo_precision": "exact",
       "elevation_ft": 930,
+      "july_high_f": 89,
+      "july_low_f": 67,
       "website": "https://www.hoac-bsa.org/bartle",
       "program_types": [
         "scouts_bsa_resident"

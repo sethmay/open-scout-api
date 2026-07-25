@@ -19,6 +19,8 @@
       "lon": -111.914863,
       "geo_precision": "approximate",
       "elevation_ft": 4860,
+      "july_high_f": 85,
+      "july_low_f": 48,
       "website": "https://tetonscouts.org/summer-camps/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

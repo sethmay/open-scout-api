@@ -19,6 +19,8 @@
       "lon": -95.058632,
       "geo_precision": "approximate",
       "elevation_ft": 1440,
+      "july_high_f": 81,
+      "july_low_f": 57,
       "website": "https://scoutingnlc.org/campingprograms/properties/camp-wilderness/",
       "program_types": [
         "cub_resident",

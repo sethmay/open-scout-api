@@ -19,6 +19,8 @@
       "lon": -70.232593,
       "geo_precision": "exact",
       "elevation_ft": 80,
+      "july_high_f": 78,
+      "july_low_f": 63,
       "website": "https://scoutscapecod.org/camp/camp-greenough-summer-camp/cub-scout-day-camp/",
       "program_types": [
         "cub_day"

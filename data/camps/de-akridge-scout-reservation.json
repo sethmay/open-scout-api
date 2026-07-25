@@ -19,6 +19,8 @@
       "lon": -75.548081443295,
       "geo_precision": "exact",
       "elevation_ft": 40,
+      "july_high_f": 87,
+      "july_low_f": 67,
       "website": "https://scoutingevent.com/081-ASRDayCamp",
       "program_types": [
         "cub_day"

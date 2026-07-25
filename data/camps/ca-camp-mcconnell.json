@@ -19,6 +19,8 @@
       "lon": -120.723532,
       "geo_precision": "approximate",
       "elevation_ft": 130,
+      "july_high_f": 94,
+      "july_low_f": 60,
       "website": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468",
       "program_types": [
         "cub_resident"

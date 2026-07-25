@@ -19,6 +19,8 @@
       "lon": -121.7712,
       "geo_precision": "exact",
       "elevation_ft": 4470,
+      "july_high_f": 64,
+      "july_low_f": 45,
       "website": "https://www.mountbakerbsa.org/properties",
       "program_types": [
         "scouts_bsa_resident"

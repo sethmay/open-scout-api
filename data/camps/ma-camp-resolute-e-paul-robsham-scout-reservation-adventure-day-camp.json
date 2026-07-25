@@ -19,6 +19,8 @@
       "lon": -71.583996,
       "geo_precision": "exact",
       "elevation_ft": 350,
+      "july_high_f": 82,
+      "july_low_f": 59,
       "website": "https://www.resolutebasecamp.net/adventure-day-camp/",
       "program_types": [
         "cub_day"

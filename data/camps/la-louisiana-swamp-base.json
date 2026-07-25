@@ -19,6 +19,8 @@
       "lon": -92.01782,
       "geo_precision": "approximate",
       "elevation_ft": 50,
+      "july_high_f": 92,
+      "july_low_f": 73,
       "website": "https://www.swampbasebsa.org/",
       "program_types": [
         "high_adventure"

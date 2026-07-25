@@ -19,6 +19,8 @@
       "lon": -121.5387,
       "geo_precision": "exact",
       "elevation_ft": 4280,
+      "july_high_f": 64,
+      "july_low_f": 44,
       "website": "https://seattlebsa.org/camp-sheppard/",
       "program_types": [
         "scouts_bsa_resident"

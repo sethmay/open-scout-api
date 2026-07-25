@@ -19,6 +19,8 @@
       "lon": -70.469051,
       "geo_precision": "exact",
       "elevation_ft": 320,
+      "july_high_f": 79,
+      "july_low_f": 57,
       "website": "https://camphinds.org/summer-camp/",
       "program_types": [
         "cub_resident",

@@ -19,6 +19,8 @@
       "lon": -89.3706593,
       "geo_precision": "exact",
       "elevation_ft": 840,
+      "july_high_f": 83,
+      "july_low_f": 62,
       "website": "https://blackhawkscouting.org/news/2025-dinos-day-camp/",
       "program_types": [
         "cub_day",

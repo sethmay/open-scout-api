@@ -19,6 +19,8 @@
       "lon": -135.4453,
       "geo_precision": "approximate",
       "elevation_ft": 90,
+      "july_high_f": 66,
+      "july_low_f": 50,
       "website": "https://alaskascoutingadventures.org/chilkoot-base/",
       "program_types": [
         "high_adventure"

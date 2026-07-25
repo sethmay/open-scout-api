@@ -19,6 +19,8 @@
       "lon": -77.45,
       "geo_precision": "exact",
       "elevation_ft": 1110,
+      "july_high_f": 83,
+      "july_low_f": 63,
       "website": "https://weownadventure.com/camp-catoctin-2026/",
       "program_types": [
         "scouts_bsa_resident"

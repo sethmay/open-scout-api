@@ -19,6 +19,8 @@
       "lon": -84.568,
       "geo_precision": "exact",
       "elevation_ft": 670,
+      "july_high_f": 85,
+      "july_low_f": 61,
       "website": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247",
       "program_types": [
         "scouts_bsa_resident"

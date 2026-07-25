@@ -19,6 +19,8 @@
       "lon": -75.43,
       "geo_precision": "approximate",
       "elevation_ft": 500,
+      "july_high_f": 84,
+      "july_low_f": 62,
       "website": "https://mussersr.org/summer/day-camp",
       "program_types": [
         "cub_day"

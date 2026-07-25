@@ -19,6 +19,8 @@
       "lon": -112.500531,
       "geo_precision": "approximate",
       "elevation_ft": 4120,
+      "july_high_f": 80,
+      "july_low_f": 51,
       "website": "https://scoutingmontana.org/camps/high-adventure/",
       "program_types": [
         "high_adventure"

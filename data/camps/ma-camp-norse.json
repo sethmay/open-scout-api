@@ -19,6 +19,8 @@
       "lon": -70.742925413311,
       "geo_precision": "exact",
       "elevation_ft": 170,
+      "july_high_f": 81,
+      "july_low_f": 62,
       "website": "https://scoutingevent.com/546-98625",
       "program_types": [
         "cub_day"

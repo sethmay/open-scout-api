@@ -19,6 +19,8 @@
       "lon": -111.768833,
       "geo_precision": "approximate",
       "elevation_ft": 4930,
+      "july_high_f": 87,
+      "july_low_f": 53,
       "website": "https://www.utahscouts.org/kiesel",
       "program_types": [
         "cub_day"

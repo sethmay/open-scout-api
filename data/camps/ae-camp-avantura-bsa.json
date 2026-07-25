@@ -19,6 +19,8 @@
       "lon": 13.5065,
       "geo_precision": "exact",
       "elevation_ft": 60,
+      "july_high_f": 82,
+      "july_low_f": 66,
       "website": "https://scoutingevent.com/802-CampAvantura2026",
       "program_types": [
         "scouts_bsa_resident"

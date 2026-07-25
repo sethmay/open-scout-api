@@ -19,6 +19,8 @@
       "lon": -74.1260274,
       "geo_precision": "exact",
       "elevation_ft": 340,
+      "july_high_f": 84,
+      "july_low_f": 65,
       "website": "https://camppouch.org/",
       "program_types": [
         "cub_day"

@@ -96,5 +96,12 @@ noted here because their status shapes what we may redistribute:
   chartering council, OA section/region, HQ city/state + coordinates, website). Lodge OFFICER
   NAMES and CONTACT EMAILS in the feed are deliberately EXCLUDED as PII (especially youth
   officers). Not redistributed wholesale; the feed URL is cited in provenance.
+- **WorldClim v2.1 climate normals** (CC BY 4.0) — source for each camp's `july_high_f` /
+  `july_low_f`: 1970-2000 monthly normals sampled at 30 arc-seconds (~1 km) from the camp's
+  coordinate. Cite as Fick, S.E. and R.J. Hijmans (2017), *WorldClim 2: new 1-km spatial
+  resolution climate surfaces for global land areas*, International Journal of Climatology
+  37(12):4302-4315. The source rasters (~8 GB) are **not redistributed** (git-ignored
+  `tools/worldclim/`); only the derived per-coordinate values (`tools/july_temp.json`) are
+  committed.
 
 Nothing here is guaranteed accurate or current; confirm against the council's own site.

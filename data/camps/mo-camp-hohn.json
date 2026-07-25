@@ -19,6 +19,8 @@
       "lon": -92.876775738252,
       "geo_precision": "exact",
       "elevation_ft": 880,
+      "july_high_f": 89,
+      "july_low_f": 67,
       "website": "https://lakeoftheozarksscoutreservation.org/programs/scouts-bsa-camp/",
       "program_types": [
         "scouts_bsa_resident",

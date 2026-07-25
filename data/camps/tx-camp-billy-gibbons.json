@@ -19,6 +19,8 @@
       "lon": -99.0496,
       "geo_precision": "exact",
       "elevation_ft": 1440,
+      "july_high_f": 95,
+      "july_low_f": 70,
       "website": "https://www.texastrailsbsa.com/camping/camp-billy-gibbons/61680",
       "program_types": [
         "scouts_bsa_resident"

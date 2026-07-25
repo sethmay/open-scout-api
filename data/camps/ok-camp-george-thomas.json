@@ -19,6 +19,8 @@
       "lon": -98.365887,
       "geo_precision": "approximate",
       "elevation_ft": 1290,
+      "july_high_f": 95,
+      "july_low_f": 71,
       "website": "https://www.scoutingevent.com/480-CGT2026",
       "program_types": [
         "cub_resident"

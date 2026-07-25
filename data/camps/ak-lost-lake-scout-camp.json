@@ -19,6 +19,8 @@
       "lon": -146.4,
       "geo_precision": "exact",
       "elevation_ft": 1460,
+      "july_high_f": 70,
+      "july_low_f": 47,
       "website": "https://www.midnightsunbsa.org/lost-lake-scout-camp/lost-lake-scout-camp.html",
       "program_types": [
         "scouts_bsa_resident"

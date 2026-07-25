@@ -19,6 +19,8 @@
       "lon": -111.4,
       "geo_precision": "exact",
       "elevation_ft": 5960,
+      "july_high_f": 83,
+      "july_low_f": 46,
       "website": "https://www.utahscouts.org/bartlett",
       "program_types": [
         "scouts_bsa_resident"

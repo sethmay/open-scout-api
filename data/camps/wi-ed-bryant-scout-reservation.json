@@ -19,6 +19,8 @@
       "lon": -89.9873,
       "geo_precision": "exact",
       "elevation_ft": 930,
+      "july_high_f": 82,
+      "july_low_f": 59,
       "website": "https://www.glaciersedge.org/activiites/ebsr-summer-camp/",
       "program_types": [
         "cub_resident",

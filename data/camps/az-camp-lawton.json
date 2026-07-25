@@ -19,6 +19,8 @@
       "lon": -110.7166163,
       "geo_precision": "exact",
       "elevation_ft": 7910,
+      "july_high_f": 79,
+      "july_low_f": 55,
       "website": "https://catalinacouncil.org/outdoors/lawton/",
       "program_types": [
         "scouts_bsa_resident"

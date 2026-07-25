@@ -19,6 +19,8 @@
       "lon": 120.596,
       "geo_precision": "exact",
       "elevation_ft": 310,
+      "july_high_f": 88,
+      "july_low_f": 74,
       "website": "https://www.fareastcouncil.org/camping/council-resident-camps",
       "program_types": [
         "scouts_bsa_resident"

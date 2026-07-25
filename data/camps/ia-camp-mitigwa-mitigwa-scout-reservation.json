@@ -19,6 +19,8 @@
       "lon": -93.9105,
       "geo_precision": "exact",
       "elevation_ft": 1080,
+      "july_high_f": 85,
+      "july_low_f": 63,
       "website": "https://campiowa.org/mitigwa-scout-reservation-3/",
       "program_types": [
         "cub_resident",
