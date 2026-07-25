@@ -150,6 +150,52 @@ by the pipeline (as the Pipsico fix was).
   (`elevation_ft` shipped in 0.26.0.) Open, if ever wanted: other months / a seasonal curve, and a
   present-day baseline — WorldClim's window is 1970-2000, ~1°F cooler than a current normal.
 
+### Camp program features — implementation + population plan
+
+Design: [`PLAN.md`](./PLAN.md) §5.1. Status: **design only, nothing implemented.** `features[]` is
+populated on 8 of 448 camps and published in no projection. The schema reshape is free until `v1`
+freezes at 1.0; population is the long pole.
+
+**Source reality (measured 2026-07-25).** Of 448 camps: 292 have a durable camp/council page, 146
+point at a scoutingevent/247 registration portal, 10 are year-stamped — and **159 publish
+`url == council_website`**, i.e. no camp-specific page at all. Roughly a third of camps have no
+obvious page to read features off, and *that*, not the model, is the risk.
+
+⚠ **Retraction:** the idea of inferring features from per-camp merit-badge offerings (Climbing MB ⇒
+tower, Small-Boat Sailing ⇒ sailing) does **not** work as stated — no per-camp badge offerings exist
+anywhere in `data/`, and their only source is the scoutingevent registration layer this dataset
+deliberately excludes. Salvageable only as a *derivation-only* input (ingest to derive a feature,
+cite the source, never store the offerings). Deprioritized anyway: the council page proved a richer
+source (see the Meriwether evidence in PLAN §5.1).
+
+- **Phase 0 — sourcing spike (do first; it measures yield, not the model).** 12-15 camps stratified
+  across the three source tiers above, deliberately mixing flagships with plain day camps. Record per
+  camp: features extractable, tier-2 differentiators found, whether the council itself flags them
+  (Meriwether has a literal "Featured Experiences … unique to Camp Meriwether" section), new codes
+  generated, minutes spent. Deliverables: yield-per-tier table, a first vocabulary draft sized from
+  real data, and a go/no-go on whether the 159 page-less camps are reachable at all (program/leader's
+  guides, council PDFs, ScoutWiki) or should stay explicitly unsurveyed.
+- **Phase 1 — schema + vocab reshape (cheap, pre-1.0).** `features[]` → array of
+  `{code, signature?, note?}`; add `features_verified_at`; add `category`/`broader`/`aliases` to
+  vocabulary terms. Validator rules: every `code` defined (already enforced); `note` passes the
+  evergreen guard used for `summary`; `features_verified_at` required when `features` is non-empty;
+  `broader` resolves to a defined code; no alias collides with another term's code.
+- **Phase 2 — vocabulary v1.** Expand 13 codes → the set the spike justifies, keeping today's coarse
+  codes as `broader` parents so the migration stays additive. Assign categories, add aliases, and
+  settle the two open questions in PLAN §5.1 (`older_scout_program`/`high_adventure_option` →
+  `program_types`? housing type as its own field?).
+- **Phase 3 — population in waves.** (a) The 292 durable-page camps — highest yield per minute.
+  (b) Flagship/high-adventure properties regardless of tier: most differentiators, biggest draw for
+  out-of-council troops. (c) The remainder, best-effort. Never guess: a camp with no usable source
+  stays `features_verified_at: null` rather than acquiring an empty-but-surveyed record.
+- **Phase 4 — publish.** Add `features` + `features_verified_at` to `current/camps.json` and the
+  `published-current` contract once coverage is meaningful (additive, MINOR). Keep them out of
+  `{dataset}/index.json` — listings stay light.
+- **Phase 5 — maintenance.** `signature` and long-tail entries decay fastest (a camp trials land
+  sailing for two seasons), so they need a shorter re-verification cycle than facilities. Fold in a
+  link-health check while there: **stored camp URLs rot** — Meriwether's stored `cpcbsa.org` already
+  silently redirects to `cpcscouting.org`.
+
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*
   assignment + a few observed name overrides (303 Mississippi Riverlands, 780 Michigan

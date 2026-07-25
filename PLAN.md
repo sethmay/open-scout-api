@@ -210,6 +210,82 @@ open-scout-api/
   not in the source feed). Renames/mergers (which track council mergers) will become events.
   Seeded from the official OA lodge locator feed; officer/contact PII deliberately excluded.
 
+### 5.1 Camp program features (design — not yet implemented)
+
+**Why redesign rather than extend.** `features[]` is populated on **8 of 448 camps** (the
+Pacific-Northwest demo-origin camps plus Camp Kenya) and is **not published in any projection** —
+it exists only inside the per-entity document. The field is effectively greenfield, so reshaping
+it is free now and becomes an additive-only constraint the moment `v1` freezes at 1.0.
+
+Camp Meriwether is the worked example. Its coded features are `dining_hall, waterfront,
+shooting_sports, climbing, cope, older_scout_program, high_adventure_option, scuba` — while its own
+evergreen `summary` already says "sailing, surfing, and scuba", and the council's page headlines
+**Land Sailing** as a "Featured Experience … unique to Camp Meriwether", alongside sandboarding, a
+BMX pump track, blacksmithing and black-powder marksmanship at a full-size Lewis & Clark fort
+replica, and *Rover Camp* (attend summer camp with no troop). The 13-code vocabulary captured the
+eight generic things and dropped every differentiator — including two already present in our own
+prose. Councils reliably advertise their own differentiators; our model had nowhere to put them.
+
+**Two tiers, one namespace.** Standard features and long-tail differentiators are the *same* axis
+at different granularity, not two fields. A second, non-filterable "highlights" field would be
+worse than nothing: consumers filter the coded field only, so the differentiators — precisely what
+draws out-of-council troops — would become invisible. Instead: one coded, filterable namespace in
+which `land_sailing` is as legitimate a term as `dining_hall`, plus vocabulary hierarchy so coarse
+queries still work.
+
+**Shape.** `features[]` becomes an array of objects rather than bare codes:
+
+```json
+{ "code": "land_sailing", "signature": true,
+  "note": "Land sailers and sandboards on two miles of private beach." }
+```
+
+- `code` — a registered vocabulary term; the only filterable key. Long-tail items *are* codes.
+- `signature` — optional: this camp treats it as a headline draw. Deliberately per camp-feature
+  pair, not per vocabulary term, because the same feature is table stakes in one region and a
+  differentiator in another (a climbing tower in Colorado vs on the prairie).
+- `note` — optional short factual phrase, for the unusual ones that a code alone under-describes.
+  Subject to the same evergreen guard as `summary`: no dates, fees, session schedules — and no
+  marketing superlatives.
+
+**Survey state (mandatory, not optional polish).** A `features_verified_at` date on the version:
+absent = **not surveyed**; present with `features: []` = surveyed, nothing found. Without it,
+today's 440 empty arrays are indistinguishable from "this camp has no dining hall", every "has X"
+filter silently under-reports (7 dining halls across 448 camps), and "camps *without* X" is
+unanswerable. This is the same discipline `geo_precision` already applies to coordinates: never let
+an unknown masquerade as a fact.
+
+**Vocabulary.** `vocab/camp-features.json` terms gain three fields (the vocab is already
+`open: true` data with a validator asserting every code used is defined):
+
+- `category` — `facility | activity | program_model | accommodation | subject`. The existing 13
+  codes are four different kinds of thing in one flat list (facilities like `dining_hall`;
+  activities like `climbing`; audience tiers like `older_scout_program`; subjects like `stem`),
+  which have different query semantics. Consumers group by category instead of hardcoding.
+- `broader` — optional parent code, so specific leaves roll up: `sailing`/`kayaking`/`surfing` →
+  `aquatics`; `rifle`/`shotgun`/`archery`/`black_powder` → `shooting_sports`. Most of today's
+  coarse codes become rollup parents rather than being retired, which makes the migration additive.
+- `aliases` — synonyms, so an open vocabulary doesn't fork: ATV / quads / 4-wheeling; COPE / ropes
+  course / challenge course; zipline / zip line / canopy tour.
+
+A label seen at ≥2 camps must become its own code; a genuine one-off may still be a code (adding
+one is cheap and self-documenting). Age/rank gating (ATV is 14+) belongs on the *vocabulary term*
+as program-wide BSA rule metadata, not repeated as a per-camp fact.
+
+**Boundaries.** IN: whether the property offers this at all (durable). OUT: dates, fees, session
+schedules, availability, staffing — these stay at the council site, which is the split this dataset
+exists to preserve. Two axes ride the same mechanism via `category` but are *not* program features:
+`accommodation` (tent vs cabin vs adirondack, ADA access, medical facility, potable water at sites,
+cell coverage) and `program_model` (Rover/provisional attendance — an enrollment fact, not a
+facility). Housing type may warrant its own single-valued field, since troops filter on it as a
+primary axis rather than as one checkbox among many.
+
+**Open questions.** (a) `older_scout_program` / `high_adventure_option` arguably belong in
+`program_types`, which already carries `high_adventure` — deprecate them from `features`?
+(b) Housing type: own field, or `accommodation` category? (c) Publish `features` in
+`current/camps.json` — yes, but only once meaningfully populated, so `v1` doesn't gain a field
+that is 98% empty.
+
 ## 6. Distribution (LIVE as of 0.3.0)
 
 - **GitHub repo = database; GitHub Pages = read API.** `tools/build.py` denormalizes the
