@@ -168,13 +168,44 @@ deliberately excludes. Salvageable only as a *derivation-only* input (ingest to 
 cite the source, never store the offerings). Deprioritized anyway: the council page proved a richer
 source (see the Meriwether evidence in PLAN §5.1).
 
-- **Phase 0 — sourcing spike (do first; it measures yield, not the model).** 12-15 camps stratified
-  across the three source tiers above, deliberately mixing flagships with plain day camps. Record per
-  camp: features extractable, tier-2 differentiators found, whether the council itself flags them
-  (Meriwether has a literal "Featured Experiences … unique to Camp Meriwether" section), new codes
-  generated, minutes spent. Deliverables: yield-per-tier table, a first vocabulary draft sized from
-  real data, and a go/no-go on whether the 159 page-less camps are reachable at all (program/leader's
-  guides, council PDFs, ScoutWiki) or should stay explicitly unsurveyed.
+- **Phase 0 — sourcing spike — DONE (0.30.0).** 10 camps sampled deterministically across the two
+  real source tiers (the planned `C_no_page` tier is empty: every camp has *some* stored website, and
+  the "159 with no camp page" figure was the published `url` falling back to the council site). The
+  5th portal camp was dropped as redundant once that tier was 0-for-4.
+
+  | tier | sampled | usable | rich | zero |
+  |---|--:|--:|--:|--:|
+  | durable camp/council page (292 camps) | 6 | 5 | 2 | 1 |
+  | registration portal (156 camps) | 4 | 0 | 0 | 4 |
+
+  Yield: Meriwether 21 features / 3 signature, Bowers 17 / 3, Emerald Bay 7 / 1, Chilkoot 4, Tunnel
+  Mill 4. All five are now surveyed in `data/`. Findings:
+  - **Source tier is the dominant predictor.** A durable camp page is usable 5 times in 6; a
+    registration portal was usable 0 times in 4.
+  - **Councils flag their own differentiators**, so `signature` is populatable from sources rather
+    than guesswork: Meriwether has a literal "Featured Experiences … unique to Camp Meriwether"
+    section; Bowers names "Rippy World" and a 50-foot alpine tower. 7 signature entries from 5 camps.
+  - **The binding constraint is broken URLs, not thin pages.** 5 of the 10 stored websites do not
+    describe their camp at all: Elk Lick → a near-empty Wix index for a *different* camp (Merz);
+    Yawgoog → the BSA Annual Health and Medical Record PDF; Chawanakee → a dead "no calendar
+    selected" page; Verdugo Oaks → a registration page whose map is a *church*; Kanza → a 2020 event
+    with registration closed six years ago. Plus Meriwether's `cpcbsa.org` silently redirects.
+    **A URL-health/repair pass is now a prerequisite for population, not a side quest.**
+  - **Pages are explicitly non-exhaustive** ("For a complete list of activities … check the Program
+    Guide"), so `features_verified_at` means *a survey happened*, not *the list is complete*; that
+    caveat is recorded in each surveyed camp's provenance. Leader's/Program Guide PDFs are linked
+    from most usable pages and are the natural second wave.
+  - **`features_verified_at` earned its place immediately.** The 5 zero-yield camps must stay `null`:
+    they certainly *have* features, we simply could not source them — which is a different fact from
+    "surveyed, offers none". Without the field they would be indistinguishable.
+  - **Day camps may not be surveyable in principle.** Verdugo Oaks' day camp runs at a rented church,
+    so for `day_camp` the camp↔property relationship is weak and features may be meaningless.
+    Consider excluding day camps from population rather than recording nulls forever.
+  - **Vocabulary sizing:** 5 usable camps produced **33 new codes** (13 → 46). Growth should be
+    sublinear as later camps reuse terms, but expect roughly 100-150 codes at full coverage.
+  - Cost estimate from observed effort: ~10-15 min per camp for a careful survey including notes, so
+    the ~240 reachable durable-page camps are ~40-60 hours of extraction. Prioritise resident and
+    high-adventure properties (biggest out-of-council draw) over day camps.
 - **Phase 1 — schema + vocab reshape — DONE (0.29.0).** `features[]` is now an array of
   `{code, signature?, note?}`; `features_verified_at` added; vocabulary terms may carry
   `category`/`broader`/`aliases` and all 13 existing terms are categorized (6 with aliases).
