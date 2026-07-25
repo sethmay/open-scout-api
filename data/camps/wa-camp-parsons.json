@@ -26,13 +26,26 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "waterfront",
-        "shooting_sports",
-        "climbing",
-        "older_scout_program",
-        "high_adventure_option"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "high_adventure_option"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Historic Hood Canal resident camp at the foot of the Olympic Mountains, offering sailing, kayaking, and mountain treks. Facilities include a waterfront, dining hall, shooting sports, and climbing, plus an older Scout program and high-adventure options.",
       "provenance": {
         "sources": [

@@ -31,11 +31,20 @@
         "training"
       ],
       "features": [
-        "waterfront",
-        "climbing",
-        "shooting_sports",
-        "high_adventure_option"
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "high_adventure_option"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Transatlantic Council resident camp held at the Savage Wilderness Adventure Camp near Sagana, Kenya, about three hours from Nairobi on the Tana River. It offers six youth programs spanning a Cub Scout camp, Trail to First Class for new Scouts, Scouts BSA merit badges, a high-adventure track, a Mount Kenya trek, and Sea Scouting, alongside a family program and adult training. Activities include whitewater rafting, kayaking, stand-up paddleboarding, rock climbing, archery, wilderness survival, and a safari adventure.",
       "provenance": {
         "sources": [

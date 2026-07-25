@@ -26,13 +26,26 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "waterfront",
-        "pool",
-        "shooting_sports",
-        "climbing",
-        "mountain_biking"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "mountain_biking"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Coastal dunes resident camp featuring an aquatics-heavy program with sailing, waterfront, and pool, plus shooting sports, climbing, mountain biking, and a dining hall.",
       "provenance": {
         "sources": [

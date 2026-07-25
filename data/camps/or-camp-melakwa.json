@@ -26,13 +26,26 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "waterfront",
-        "climbing",
-        "cope",
-        "older_scout_program",
-        "high_adventure_option"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "high_adventure_option"
+        }
       ],
+      "features_verified_at": null,
       "summary": "High-Cascades resident camp set at elevation, offering mountain hiking, COPE, and climbing, plus a waterfront, dining hall, and programming for older Scouts including high-adventure options.",
       "provenance": {
         "sources": [

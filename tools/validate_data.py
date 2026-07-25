@@ -92,6 +92,18 @@ def main() -> int:
                     if s and _TRANSITORY.search(s):
                         errs.append(f"{p.name}: summary has transitory text ({_TRANSITORY.search(s).group(0)!r}); "
                                     f"must be evergreen (no dates/fees/months)")
+                    seen_f: set[str] = set()
+                    for ft in (v.get("features") or []):
+                        c = ft.get("code")
+                        if c in seen_f:
+                            # uniqueItems compares whole objects, so it stops catching this the
+                            # moment two entries for one code differ in `note`/`signature`.
+                            errs.append(f"{p.name}: duplicate feature code {c!r}")
+                        seen_f.add(c)
+                        n = ft.get("note")
+                        if n and _TRANSITORY.search(n):
+                            errs.append(f"{p.name}: feature {c!r} note has transitory text "
+                                        f"({_TRANSITORY.search(n).group(0)!r}); must be evergreen")
                     lat, lon, st = v.get("lat"), v.get("lon"), v.get("state")
                     if lat is not None and lon is not None and us_geo.known(st) and not us_geo.in_state(st, lat, lon):
                         errs.append(f"{p.name}: coord ({lat}, {lon}) is outside {st} bounds "
@@ -199,12 +211,34 @@ def main() -> int:
             if obj.get("id") != p.stem:
                 errs.append(f"vocab/{p.name}: id {obj.get('id')!r} != filename stem {p.stem!r}")
             cs = {t["code"] for t in obj.get("terms", [])}
+            by_code = {t["code"]: t for t in obj.get("terms", [])}
+            claimed: dict[str, str] = {}
+            for t in obj.get("terms", []):
+                b = t.get("broader")
+                if b is not None and b not in cs:
+                    errs.append(f"vocab/{p.name}: term {t['code']!r} has broader {b!r}, "
+                                f"which is not a term in this vocabulary")
+                for a in t.get("aliases", []):
+                    if a in cs:
+                        errs.append(f"vocab/{p.name}: alias {a!r} on {t['code']!r} collides with a real code")
+                    elif a in claimed:
+                        errs.append(f"vocab/{p.name}: alias {a!r} claimed by both "
+                                    f"{claimed[a]!r} and {t['code']!r}")
+                    else:
+                        claimed[a] = t["code"]
+                walked, cur = set(), t["code"]          # a `broader` chain must terminate
+                while cur is not None:
+                    if cur in walked:
+                        errs.append(f"vocab/{p.name}: `broader` cycle reachable from {t['code']!r}")
+                        break
+                    walked.add(cur)
+                    cur = by_code.get(cur, {}).get("broader")
             for field in obj.get("applies_to", []):
                 codes_for[field] = cs
             nvocab += 1
         getters = {"camp.camp_type": lambda v: ([v["camp_type"]] if v.get("camp_type") else []),
                    "camp.program_types": lambda v: v.get("program_types", []),
-                   "camp.features": lambda v: v.get("features", [])}
+                   "camp.features": lambda v: [f["code"] for f in v.get("features", [])]}
         for p in sorted((DATA / "camps").glob("*.json")):
             if p.name == "_events.json":
                 continue

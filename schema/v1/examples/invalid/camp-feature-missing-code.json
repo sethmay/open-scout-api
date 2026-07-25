@@ -1,0 +1,23 @@
+{
+  "id": "negative-fixture",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Negative Fixture Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:example",
+      "operating_status": "active",
+      "features": [
+        { "signature": true, "note": "A differentiator with no code is unfilterable, so code is required." }
+      ],
+      "provenance": {
+        "sources": [{ "citation": "negative fixture: a feature entry must carry a vocabulary code" }],
+        "method": "curated",
+        "verified_at": "2026-07-21"
+      }
+    }
+  ]
+}

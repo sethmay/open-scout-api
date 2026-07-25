@@ -26,14 +26,29 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "waterfront",
-        "shooting_sports",
-        "climbing",
-        "cope",
-        "mountain_biking",
-        "stem"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "stem"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Resident camp in the North Cascades foothills near Mount Vernon, Washington, featuring a strong first-year program and mountain biking trails, plus a dining hall, waterfront, shooting sports, climbing, COPE, and STEM offerings.",
       "provenance": {
         "sources": [

@@ -26,6 +26,7 @@
         "scouts_bsa_resident"
       ],
       "features": [],
+      "features_verified_at": null,
       "summary": null,
       "merged_from": [
         "va-scouts-bsa-long-term"

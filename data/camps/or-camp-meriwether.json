@@ -26,15 +26,32 @@
         "scouts_bsa_resident"
       ],
       "features": [
-        "dining_hall",
-        "waterfront",
-        "shooting_sports",
-        "climbing",
-        "cope",
-        "older_scout_program",
-        "high_adventure_option",
-        "scuba"
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "scuba"
+        }
       ],
+      "features_verified_at": null,
       "summary": "Oceanfront resident camp on the Oregon coast featuring a waterfront with sailing, surfing, and scuba, plus shooting sports, climbing, COPE, and a dining hall. Offers a dedicated older-Scout program with high-adventure options.",
       "provenance": {
         "sources": [
