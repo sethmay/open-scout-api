@@ -19,6 +19,8 @@
       "lon": -79.565534,
       "geo_precision": "approximate",
       "elevation_ft": 1850,
+      "july_high_f": 81,
+      "july_low_f": 58,
       "website": "https://heritagereservation.org/summer-camp/",
       "program_types": [
         "high_adventure"

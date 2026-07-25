@@ -19,6 +19,8 @@
       "lon": -101.296273,
       "geo_precision": "approximate",
       "elevation_ft": 1610,
+      "july_high_f": 83,
+      "july_low_f": 57,
       "website": "https://scoutingnlc.org/campingprograms/daycamp/",
       "program_types": [
         "cub_day"

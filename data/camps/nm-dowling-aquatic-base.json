@@ -19,6 +19,8 @@
       "lon": -104.237612,
       "geo_precision": "approximate",
       "elevation_ft": 3120,
+      "july_high_f": 95,
+      "july_low_f": 67,
       "website": "https://www.nmscouts.org/dowling-aquatic-base",
       "program_types": [
         "high_adventure"

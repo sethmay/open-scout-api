@@ -19,6 +19,8 @@
       "lon": -98.4797147,
       "geo_precision": "exact",
       "elevation_ft": 1000,
+      "july_high_f": 97,
+      "july_low_f": 72,
       "website": "https://nwtcscouting.org/camping/camp-perkins/",
       "program_types": [
         "scouts_bsa_resident"

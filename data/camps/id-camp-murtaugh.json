@@ -19,6 +19,8 @@
       "lon": -114.1673768,
       "geo_precision": "exact",
       "elevation_ft": 4130,
+      "july_high_f": 85,
+      "july_low_f": 53,
       "website": "https://www.mountainwestcouncil.org/content/98896/Day-Camp---Camp-Murtaugh-",
       "program_types": [
         "cub_day"

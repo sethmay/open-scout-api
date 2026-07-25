@@ -13,6 +13,10 @@ maps/
 *.jpg
 *.jpeg
 
+# WorldClim source rasters (~8 GB, tools/july_temp.py input; see README "Contributing")
+# Not redistributed — fetched on demand; the derived tools/july_temp.json cache IS committed.
+tools/worldclim/
+
 # Python (future pipeline)
 __pycache__/
 *.py[cod]

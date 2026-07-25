@@ -19,6 +19,8 @@
       "lon": -91.7273,
       "geo_precision": "approximate",
       "elevation_ft": 1350,
+      "july_high_f": 77,
+      "july_low_f": 54,
       "website": "https://www.ntier.org/",
       "program_types": [
         "high_adventure"

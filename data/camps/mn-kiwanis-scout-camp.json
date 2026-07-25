@@ -19,6 +19,8 @@
       "lon": -92.7673596,
       "geo_precision": "exact",
       "elevation_ft": 800,
+      "july_high_f": 82,
+      "july_low_f": 60,
       "website": "https://camp.northernstar.org/Kiwanis-Scout-Camp",
       "program_types": [
         "cub_resident"

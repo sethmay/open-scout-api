@@ -19,6 +19,8 @@
       "lon": -85.8673,
       "geo_precision": "exact",
       "elevation_ft": 450,
+      "july_high_f": 90,
+      "july_low_f": 70,
       "website": "https://bsa3.org/summer-camp-2/scouts-bsa-summer-camp/",
       "program_types": [
         "scouts_bsa_resident",

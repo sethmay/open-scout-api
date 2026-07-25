@@ -19,6 +19,8 @@
       "lon": -96.088003,
       "geo_precision": "approximate",
       "elevation_ft": 220,
+      "july_high_f": 95,
+      "july_low_f": 73,
       "website": "https://shacbsa.org/adventure-camp",
       "program_types": [
         "cub_resident"

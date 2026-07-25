@@ -19,6 +19,8 @@
       "lon": -81.87558889284,
       "geo_precision": "exact",
       "elevation_ft": 1290,
+      "july_high_f": 87,
+      "july_low_f": 64,
       "website": "https://www.mycampgrimes.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

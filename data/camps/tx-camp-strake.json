@@ -19,6 +19,8 @@
       "lon": -95.129382,
       "geo_precision": "approximate",
       "elevation_ft": 360,
+      "july_high_f": 93,
+      "july_low_f": 71,
       "website": "https://shacbsa.org/summer-camp",
       "program_types": [
         "scouts_bsa_resident"

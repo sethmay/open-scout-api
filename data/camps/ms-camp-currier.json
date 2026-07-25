@@ -19,6 +19,8 @@
       "lon": -90.16371534755,
       "geo_precision": "exact",
       "elevation_ft": 320,
+      "july_high_f": 91,
+      "july_low_f": 71,
       "website": "https://www.campcurrier.org/",
       "program_types": [
         "cub_day"

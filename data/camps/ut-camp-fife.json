@@ -19,6 +19,8 @@
       "lon": -112.094952,
       "geo_precision": "approximate",
       "elevation_ft": 4430,
+      "july_high_f": 90,
+      "july_low_f": 54,
       "website": "https://www.utahscouts.org/fife",
       "program_types": [
         "cub_day"

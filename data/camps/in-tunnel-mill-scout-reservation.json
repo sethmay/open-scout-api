@@ -19,6 +19,8 @@
       "lon": -85.622466577543,
       "geo_precision": "exact",
       "elevation_ft": 560,
+      "july_high_f": 87,
+      "july_low_f": 65,
       "website": "https://lhcbsa.org/resident-camp/",
       "program_types": [
         "cub_resident"

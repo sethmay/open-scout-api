@@ -19,6 +19,8 @@
       "lon": -86.186192766179,
       "geo_precision": "exact",
       "elevation_ft": 730,
+      "july_high_f": 81,
+      "july_low_f": 58,
       "website": "https://michiganscouting.org/camping/properties/gerber-scout-reservation/",
       "program_types": [
         "scouts_bsa_resident"

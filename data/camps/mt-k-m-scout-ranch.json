@@ -19,6 +19,8 @@
       "lon": -109.359223,
       "geo_precision": "approximate",
       "elevation_ft": 4060,
+      "july_high_f": 80,
+      "july_low_f": 49,
       "website": "https://scoutingmontana.org/camps/km-scout-ranch/",
       "program_types": [
         "cub_resident",

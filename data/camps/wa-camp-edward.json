@@ -19,6 +19,8 @@
       "lon": -121.874472859424,
       "geo_precision": "exact",
       "elevation_ft": 580,
+      "july_high_f": 72,
+      "july_low_f": 51,
       "website": "https://scoutingseattle.org/camp-edward/cub-resident-camp-edward/",
       "program_types": [
         "cub_resident"

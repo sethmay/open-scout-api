@@ -19,6 +19,8 @@
       "lon": -94.181812,
       "geo_precision": "approximate",
       "elevation_ft": 980,
+      "july_high_f": 89,
+      "july_low_f": 66,
       "website": "https://www.hoac-bsa.org/rotary-camp",
       "program_types": [
         "scouts_bsa_resident"

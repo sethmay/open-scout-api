@@ -19,6 +19,8 @@
       "lon": -75.639451783765,
       "geo_precision": "exact",
       "elevation_ft": 1590,
+      "july_high_f": 79,
+      "july_low_f": 56,
       "website": "https://www.acahela.org/acahela-cub-camp",
       "program_types": [
         "cub_resident"

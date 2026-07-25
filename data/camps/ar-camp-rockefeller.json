@@ -19,6 +19,8 @@
       "lon": -92.450508472532,
       "geo_precision": "exact",
       "elevation_ft": 480,
+      "july_high_f": 92,
+      "july_low_f": 69,
       "website": "https://www.naturalstatecouncil.org/crsummercamp",
       "program_types": [
         "scouts_bsa_resident"

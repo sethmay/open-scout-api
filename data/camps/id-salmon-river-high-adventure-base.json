@@ -19,6 +19,8 @@
       "lon": -116.315411,
       "geo_precision": "approximate",
       "elevation_ft": 1810,
+      "july_high_f": 89,
+      "july_low_f": 55,
       "website": "https://www.mountainwestcouncil.org/srhab",
       "program_types": [
         "high_adventure"

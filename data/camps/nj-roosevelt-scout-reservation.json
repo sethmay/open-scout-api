@@ -19,6 +19,8 @@
       "lon": -75.289940849443,
       "geo_precision": "exact",
       "elevation_ft": 110,
+      "july_high_f": 86,
+      "july_low_f": 65,
       "website": "https://gardenstatescouting.org/camping/day-camp/",
       "program_types": [
         "cub_day"

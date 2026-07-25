@@ -19,6 +19,8 @@
       "lon": -74.96090575826,
       "geo_precision": "exact",
       "elevation_ft": 180,
+      "july_high_f": 86,
+      "july_low_f": 65,
       "website": "https://old.gardenstatescouting.org/pinehill",
       "program_types": [
         "cub_day"

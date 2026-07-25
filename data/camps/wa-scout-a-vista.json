@@ -19,6 +19,8 @@
       "lon": -120.310349,
       "geo_precision": "approximate",
       "elevation_ft": 680,
+      "july_high_f": 88,
+      "july_low_f": 59,
       "website": "https://scoutingseattle.org/scout-a-vista/",
       "program_types": [
         "cub_day"

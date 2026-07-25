@@ -19,6 +19,8 @@
       "lon": -95.041916,
       "geo_precision": "approximate",
       "elevation_ft": 690,
+      "july_high_f": 93,
+      "july_low_f": 69,
       "website": "https://www.okscouts.org/campscubscouts",
       "program_types": [
         "webelos"

@@ -19,6 +19,8 @@
       "lon": -94.8712224,
       "geo_precision": "exact",
       "elevation_ft": 1100,
+      "july_high_f": 88,
+      "july_low_f": 67,
       "website": "https://ponyexpressbsa.org/camping-and-activities/camp-geiger",
       "program_types": [
         "cub_resident",

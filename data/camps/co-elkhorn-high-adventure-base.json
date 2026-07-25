@@ -19,6 +19,8 @@
       "lon": -105.575622,
       "geo_precision": "approximate",
       "elevation_ft": 8160,
+      "july_high_f": 74,
+      "july_low_f": 44,
       "website": "https://awbsa.org/ehab/",
       "program_types": [
         "high_adventure"

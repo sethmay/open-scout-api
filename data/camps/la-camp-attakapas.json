@@ -19,6 +19,8 @@
       "lon": -92.209521872877,
       "geo_precision": "exact",
       "elevation_ft": 200,
+      "july_high_f": 92,
+      "july_low_f": 71,
       "website": "https://www.louisianapurchasecouncil.org/summercamps",
       "program_types": [
         "scouts_bsa_resident"

@@ -19,6 +19,8 @@
       "lon": -116.63363,
       "geo_precision": "approximate",
       "elevation_ft": 3140,
+      "july_high_f": 94,
+      "july_low_f": 55,
       "website": "https://www.ssrlv.org/summercamp",
       "program_types": [
         "scouts_bsa_resident"

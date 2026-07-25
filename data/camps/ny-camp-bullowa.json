@@ -19,6 +19,8 @@
       "lon": -74.0021,
       "geo_precision": "exact",
       "elevation_ft": 260,
+      "july_high_f": 84,
+      "july_low_f": 62,
       "website": "https://www.ghvscouting.org/bullowadaycamp/",
       "program_types": [
         "cub_day"

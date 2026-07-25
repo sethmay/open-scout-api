@@ -19,6 +19,8 @@
       "lon": -73.0477717,
       "geo_precision": "exact",
       "elevation_ft": 1110,
+      "july_high_f": 80,
+      "july_low_f": 58,
       "website": "https://campworkcoeman.org/cub-scouts/fees/",
       "program_types": [
         "cub_day",

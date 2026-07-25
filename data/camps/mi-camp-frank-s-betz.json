@@ -19,6 +19,8 @@
       "lon": -86.3642888,
       "geo_precision": "exact",
       "elevation_ft": 700,
+      "july_high_f": 83,
+      "july_low_f": 63,
       "website": "https://pathwaytoadventure.org/cubscoutfamilycamp/",
       "program_types": [
         "cub_resident"

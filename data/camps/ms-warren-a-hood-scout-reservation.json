@@ -19,6 +19,8 @@
       "lon": -90.395926,
       "geo_precision": "approximate",
       "elevation_ft": 480,
+      "july_high_f": 91,
+      "july_low_f": 70,
       "website": "https://scoutingriverlands.org/hood-scout-reservation/summer-camp/",
       "program_types": [
         "scouts_bsa_resident"

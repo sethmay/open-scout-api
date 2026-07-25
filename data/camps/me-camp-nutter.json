@@ -19,6 +19,8 @@
       "lon": -70.8721,
       "geo_precision": "exact",
       "elevation_ft": 530,
+      "july_high_f": 81,
+      "july_low_f": 57,
       "website": "https://www.pinetreescouting.org/",
       "program_types": [
         "cub_day"

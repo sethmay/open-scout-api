@@ -19,6 +19,8 @@
       "lon": -74.744361,
       "geo_precision": "exact",
       "elevation_ft": 2480,
+      "july_high_f": 75,
+      "july_low_f": 54,
       "website": "https://scoutingevent.com/386-onteora",
       "program_types": [
         "scouts_bsa_resident"

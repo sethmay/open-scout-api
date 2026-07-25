@@ -19,6 +19,8 @@
       "lon": -83.679,
       "geo_precision": "exact",
       "elevation_ft": 710,
+      "july_high_f": 85,
+      "july_low_f": 62,
       "website": "https://www.erieshorescouncil.org/cdc",
       "program_types": [
         "cub_day"

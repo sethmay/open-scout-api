@@ -19,6 +19,8 @@
       "lon": -76.949336316887,
       "geo_precision": "exact",
       "elevation_ft": 30,
+      "july_high_f": 89,
+      "july_low_f": 69,
       "website": "https://www.scoutingecc.org/",
       "program_types": [
         "scouts_bsa_resident"

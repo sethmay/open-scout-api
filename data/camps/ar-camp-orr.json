@@ -19,6 +19,8 @@
       "lon": -93.2674,
       "geo_precision": "exact",
       "elevation_ft": 970,
+      "july_high_f": 90,
+      "july_low_f": 66,
       "website": "https://www.naturalstatecouncil.org/camporrsummercamp",
       "program_types": [
         "scouts_bsa_resident"

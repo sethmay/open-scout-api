@@ -19,6 +19,8 @@
       "lon": -111.5,
       "geo_precision": "approximate",
       "elevation_ft": 5730,
+      "july_high_f": 89,
+      "july_low_f": 53,
       "website": "https://www.saltlakescouts.org/hinckley/",
       "program_types": [
         "scouts_bsa_resident"

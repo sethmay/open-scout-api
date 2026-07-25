@@ -102,11 +102,10 @@ by the pipeline (as the Pipsico fix was).
   Camp Kenya (Transatlantic #802) was absent entirely — camp-finder's scrape favored US councils. Sweep
   Transatlantic, Far East / Direct Service, and other overseas councils against their own camp pages for
   camps the import missed, and add them by hand (`method: curated`) like Camp Kenya.
-- **Average summer temperatures (camp-finder dev feature request; elevation DONE 0.26.0).** Add per-camp
-  typical summer-temperature normals (climate source keyed on location) so apps can filter/sort on heat.
-  A new optional `CampVersion` field, derived once and committed; keep it off the transitory line
-  (normals, not a live forecast). Note `geo_precision: approximate` camps yield only city/reservation-level
-  values. (`elevation_ft` shipped in 0.26.0 via `tools/elevation.py`.)
+- **Average summer temperatures — DONE (0.27.0).** `july_high_f` / `july_low_f` ship on every camp
+  with a coordinate (447 of 448), sampled from WorldClim v2.1 1 km normals by `tools/july_temp.py`.
+  (`elevation_ft` shipped in 0.26.0.) Open, if ever wanted: other months / a seasonal curve, and a
+  present-day baseline — WorldClim's window is 1970-2000, ~1°F cooler than a current normal.
 
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*

@@ -19,6 +19,8 @@
       "lon": -101.845618324589,
       "geo_precision": "exact",
       "elevation_ft": 3480,
+      "july_high_f": 92,
+      "july_low_f": 65,
       "website": "https://scoutingevent.com/562-2026CubDayCampDon",
       "program_types": [
         "cub_day"

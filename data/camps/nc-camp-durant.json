@@ -19,6 +19,8 @@
       "lon": -79.5534724,
       "geo_precision": "exact",
       "elevation_ft": 480,
+      "july_high_f": 89,
+      "july_low_f": 67,
       "website": "https://scoutingevent.com/421-Durant26",
       "program_types": [
         "scouts_bsa_resident"

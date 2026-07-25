@@ -19,6 +19,8 @@
       "lon": -93.344,
       "geo_precision": "exact",
       "elevation_ft": 60,
+      "july_high_f": 91,
+      "july_low_f": 72,
       "website": "https://www.calcasieubsa.org/campedgewood",
       "program_types": [
         "scouts_bsa_resident"

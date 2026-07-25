@@ -19,6 +19,8 @@
       "lon": -77.8675371,
       "geo_precision": "approximate",
       "elevation_ft": 330,
+      "july_high_f": 88,
+      "july_low_f": 65,
       "website": "https://bradysaunders.net/camp/summercamp/",
       "program_types": [
         "scouts_bsa_resident"

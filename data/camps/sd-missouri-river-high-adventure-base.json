@@ -19,6 +19,8 @@
       "lon": -100.25,
       "geo_precision": "approximate",
       "elevation_ft": 1900,
+      "july_high_f": 89,
+      "july_low_f": 61,
       "website": "https://www.siouxcouncil.org/mrhabinfo",
       "program_types": [
         "high_adventure"

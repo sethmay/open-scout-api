@@ -19,6 +19,8 @@
       "lon": -81.5343431,
       "geo_precision": "exact",
       "elevation_ft": 910,
+      "july_high_f": 82,
+      "july_low_f": 61,
       "website": "https://scoutingevent.com/433-manatoc2026",
       "program_types": [
         "scouts_bsa_resident"

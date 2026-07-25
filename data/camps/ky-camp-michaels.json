@@ -19,6 +19,8 @@
       "lon": -84.7437,
       "geo_precision": "exact",
       "elevation_ft": 810,
+      "july_high_f": 86,
+      "july_low_f": 64,
       "website": "https://scoutingevent.com/438-cubdaycamp",
       "program_types": [
         "cub_day"

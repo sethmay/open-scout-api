@@ -80,6 +80,8 @@
         "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
         "geo_precision": { "enum": ["exact", "approximate", null] },
         "elevation_ft": { "type": ["integer", "null"] },
+        "july_high_f": { "type": ["integer", "null"] },
+        "july_low_f": { "type": ["integer", "null"] },
         "reservation": {
           "type": ["object", "null"],
           "properties": { "id": { "type": "string" }, "name": { "type": ["string", "null"] } },

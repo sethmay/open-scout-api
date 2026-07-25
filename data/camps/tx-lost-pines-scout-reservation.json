@@ -19,6 +19,8 @@
       "lon": -97.26995439257,
       "geo_precision": "exact",
       "elevation_ft": 500,
+      "july_high_f": 94,
+      "july_low_f": 72,
       "website": "https://scoutingevent.com/564-LPSRSummer26",
       "program_types": [
         "scouts_bsa_resident"

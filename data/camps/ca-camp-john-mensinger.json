@@ -19,6 +19,8 @@
       "lon": -119.3,
       "geo_precision": "approximate",
       "elevation_ft": 5550,
+      "july_high_f": 79,
+      "july_low_f": 50,
       "website": "https://www.yosemitescouting.org/camping/boy-scout-camping/camp-john-mensinger/51466",
       "program_types": [
         "scouts_bsa_resident"

@@ -19,6 +19,8 @@
       "lon": -77.6060256,
       "geo_precision": "exact",
       "elevation_ft": 1680,
+      "july_high_f": 80,
+      "july_low_f": 58,
       "website": "https://scoutingevent.com/497-102563",
       "program_types": [
         "scouts_bsa_resident"

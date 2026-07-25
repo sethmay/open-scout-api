@@ -19,6 +19,8 @@
       "lon": -96.549165,
       "geo_precision": "approximate",
       "elevation_ft": 730,
+      "july_high_f": 94,
+      "july_low_f": 71,
       "website": "https://arbucklebsa.org/camping/campsimpsonsummercamp/",
       "program_types": [
         "scouts_bsa_resident"

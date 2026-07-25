@@ -19,6 +19,8 @@
       "lon": -92.6788,
       "geo_precision": "exact",
       "elevation_ft": 200,
+      "july_high_f": 92,
+      "july_low_f": 70,
       "website": "https://www.naturalstatecouncil.org/campdesotosummercamp",
       "program_types": [
         "scouts_bsa_resident"

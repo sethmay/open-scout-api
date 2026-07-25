@@ -19,6 +19,8 @@
       "lon": -78.386617326488,
       "geo_precision": "exact",
       "elevation_ft": 950,
+      "july_high_f": 85,
+      "july_low_f": 61,
       "website": "https://www.camprockenon.org/cubsummercamp",
       "program_types": [
         "cub_resident"

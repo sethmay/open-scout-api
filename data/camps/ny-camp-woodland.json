@@ -19,6 +19,8 @@
       "lon": -76.000197,
       "geo_precision": "approximate",
       "elevation_ft": 390,
+      "july_high_f": 80,
+      "july_low_f": 60,
       "website": "https://scoutingevent.com/373-cubcamp26",
       "program_types": [
         "cub_day"

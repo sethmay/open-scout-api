@@ -19,6 +19,8 @@
       "lon": -86.42983,
       "geo_precision": "exact",
       "elevation_ft": 700,
+      "july_high_f": 86,
+      "july_low_f": 65,
       "website": "https://scoutingevent.com/160-2026Ransburg",
       "program_types": [
         "scouts_bsa_resident"

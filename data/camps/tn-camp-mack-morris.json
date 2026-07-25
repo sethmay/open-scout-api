@@ -19,6 +19,8 @@
       "lon": -88.067116989527,
       "geo_precision": "exact",
       "elevation_ft": 470,
+      "july_high_f": 90,
+      "july_low_f": 67,
       "website": "https://www.westtnscouts.org/cmm",
       "program_types": [
         "scouts_bsa_resident",

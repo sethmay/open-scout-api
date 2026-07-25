@@ -19,6 +19,8 @@
       "lon": -79.504491,
       "geo_precision": "approximate",
       "elevation_ft": 1460,
+      "july_high_f": 78,
+      "july_low_f": 59,
       "website": "https://www.campmerz.org/scouts-bsa-summer-camp",
       "program_types": [
         "scouts_bsa_resident"

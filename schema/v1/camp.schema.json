@@ -97,6 +97,16 @@
           "default": null,
           "description": "Ground elevation at lat/lon in feet above sea level (Copernicus 90m DEM via open-meteo, tools/elevation.py), rounded to the nearest 10 ft. Inherits geo_precision: for an 'approximate' point this is the city/reservation-centroid elevation, not the camp's exact ground. null when lat/lon is null."
         },
+        "july_high_f": {
+          "type": ["integer", "null"],
+          "default": null,
+          "description": "Average daily high temperature in July in °F — a WorldClim v2.1 climate normal for 1970-2000, sampled at 30 arc-seconds (~1 km) from the camp's coordinate (tools/july_temp.py). Inherits geo_precision: for an 'approximate' point this describes the city/reservation centroid. A coastal or island camp whose cell is open water uses the nearest land cell. July is a fixed month (US resident-camp season) — still a real July value for overseas/equatorial camps, but not necessarily their camp season. null when lat/lon is null."
+        },
+        "july_low_f": {
+          "type": ["integer", "null"],
+          "default": null,
+          "description": "Average overnight low temperature in July in °F — companion to july_high_f (same source, window, and caveats)."
+        },
         "website": {
           "type": ["string", "null"],
           "format": "uri",

@@ -19,6 +19,8 @@
       "lon": -110.761815,
       "geo_precision": "approximate",
       "elevation_ft": 6240,
+      "july_high_f": 81,
+      "july_low_f": 42,
       "website": "https://www.utahscouts.org/teton",
       "program_types": [
         "high_adventure"

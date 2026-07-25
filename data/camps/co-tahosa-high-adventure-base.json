@@ -19,6 +19,8 @@
       "lon": -105.507918,
       "geo_precision": "approximate",
       "elevation_ft": 9160,
+      "july_high_f": 72,
+      "july_low_f": 42,
       "website": "https://scoutingcolorado.org/camps/tahosa-high-adventure-base/",
       "program_types": [
         "high_adventure"

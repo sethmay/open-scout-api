@@ -19,6 +19,8 @@
       "lon": -156.5251619,
       "geo_precision": "exact",
       "elevation_ft": 650,
+      "july_high_f": 78,
+      "july_low_f": 67,
       "website": "https://www.scoutinghawaii.org/camps/maui/",
       "program_types": [
         "scouts_bsa_resident"

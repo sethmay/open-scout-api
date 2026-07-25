@@ -19,6 +19,8 @@
       "lon": -95.4043059,
       "geo_precision": "approximate",
       "elevation_ft": 1070,
+      "july_high_f": 89,
+      "july_low_f": 67,
       "website": "https://jayhawkcouncil.org/camping-outdoor-program/camp-delaware/",
       "program_types": [
         "cub_resident",

@@ -19,6 +19,8 @@
       "lon": -73.6611233,
       "geo_precision": "exact",
       "elevation_ft": 970,
+      "july_high_f": 79,
+      "july_low_f": 56,
       "website": "https://www.ghvscouting.org/read/",
       "program_types": [
         "high_adventure",

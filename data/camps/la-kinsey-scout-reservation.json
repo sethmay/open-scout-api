@@ -19,6 +19,8 @@
       "lon": -93.2001624,
       "geo_precision": "exact",
       "elevation_ft": 30,
+      "july_high_f": 91,
+      "july_low_f": 73,
       "website": "https://norwela.org/summer-camp-dates-and-fees/",
       "program_types": [
         "scouts_bsa_resident"

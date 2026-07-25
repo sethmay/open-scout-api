@@ -19,6 +19,8 @@
       "lon": -116.7710295,
       "geo_precision": "exact",
       "elevation_ft": 2410,
+      "july_high_f": 80,
+      "july_low_f": 51,
       "website": "https://www.nwscouts.org/",
       "program_types": [
         "high_adventure"

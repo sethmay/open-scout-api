@@ -19,6 +19,8 @@
       "lon": -95.854914,
       "geo_precision": "approximate",
       "elevation_ft": 510,
+      "july_high_f": 94,
+      "july_low_f": 72,
       "website": "https://scoutingevent.com/571-2026TRJSummerCamp",
       "program_types": [
         "scouts_bsa_resident"
