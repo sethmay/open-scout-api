@@ -55,7 +55,7 @@ Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under 
 | [`v1/current/oa-lodges.json`](https://sethmay.github.io/open-scout-api/v1/current/oa-lodges.json) | flat list of current OA lodges (by council) |
 | [`v1/oa-lodges/index.json`](https://sethmay.github.io/open-scout-api/v1/oa-lodges/index.json) · `v1/oa-lodges/{id}.json` | one OA lodge: chartering council, section, HQ |
 | [`v1/vocab/camp-program-types.json`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-program-types.json) · `camp-types` · `camp-features` | controlled vocabularies: every code with a human `label` + `description` |
-| [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` contract) |
+| [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` and `index` contracts) |
 
 ```bash
 # the current council list
@@ -81,9 +81,16 @@ LLM-extracted facts in other datasets.
 Each camp's `geo_precision` marks its coordinate `exact` (camp-specific point), `approximate`
 (city or state-centroid backfill — soft-plot or bucket these), or `null` (could not be placed).
 Fields are **additive-only under `v1`** — new optional fields may appear, but existing ones are
-never renamed or removed — so pinning to a field set is safe. Generate consumer types from
-[`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json)
-rather than hand-mirroring.
+never renamed or removed — so pinning to a field set is safe. **Every published surface is
+schema-pinned and build-gated:** the denormalized `v1/current/*.json` views against
+[`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json),
+and the lighter `v1/{dataset}/index.json` listings (every entity incl. historical, with a `current`
+flag) against
+[`published-index.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json).
+Each file names its own contract in `$schema`, and `build.py` fails the build if any projection
+drifts from it. Generate consumer types from those schemas rather than hand-mirroring.
+A camp's `reservation.id` is a stable opaque grouping key (a bare slug, deliberately not a
+`kind:slug` entity ref): group by it, don't parse it.
 
 
 **Pinning & releases.** Every version is a git tag (`vMAJOR.MINOR.PATCH`) at that release's
@@ -116,7 +123,7 @@ Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
 ```
 data/                 authoritative source: canonical JSON, one file per entity + _events.json per dataset
   councils/ territories/ merit-badges/ requirement-sets/ camps/ ranks/ awards/ oa-lodges/ vocab/
-schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current
+schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current/-index
 tools/                live pipeline: stamp_schema.py, validate_data.py, validate_examples.py,
                       build.py (data/ -> dist/), build_sqlite.py, us_geo.py
                       enrichment (run manually): geocode_addresses.py (coords from street addresses), elevation.py (elevation_ft), july_temp.py (July normals; needs rasterio)

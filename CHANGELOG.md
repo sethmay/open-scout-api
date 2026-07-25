@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.28.0 (minor) — 2026-07-25
+
+- `PENDING` **Contract-freeze prep for 1.0: every published surface is now schema-pinned and build-gated.** `build.py` fail-fast-validates all 16 published projections — the 8 `current/*.json` denormalized views against `published-current.schema.json`, and all 8 `v1/{dataset}/index.json` listings against a new **`published-index.schema.json`** — and each emitted file advertises its contract in `$schema`. Previously only 7 of 16 were validated, so 9 published surfaces were unpinned promises. Verified non-vacuous: unknown fields, a bad `kind`, a malformed `council:` ref, and a non-slug `reservation.id` are each rejected.
+  - **`current/requirement-sets.json` is pinned** via a new `CurrentRequirementSet` def (it was the one `current/` file with no contract and no `$schema`). It also gained `includes_official_text` — the licensing flag its own index already carried — plus the `verified_at` / `method` / `confidence` that 0.16.0's "provenance on *all* current projections" promise already implied. Additive; nothing renamed or removed.
+  - **`reservation.id` is now contractually a stable opaque grouping key** — a bare slug, deliberately *not* a `kind:slug` EntityRef, since no reservation entity exists. Documented in both the canonical `camp` schema and the published contract, and the slug shape is now enforced. This keeps first-classing reservations later strictly additive: a future entity reuses these exact slugs and any reference arrives as a NEW field rather than changing this one.
+  - `TODO.md` gains a **v1.0 readiness** section recording what the freeze cleared and the one remaining blocker (the permanent home / `$id` base URL, an owner decision that also gates the Zenodo DOI). Also corrected a stale claim that camp `operator`↔`council` coupling was unimplemented — it has been running in `validate_data.py`.
+
 ## 0.27.0 (minor) — 2026-07-25
 
 - `5fa923c` Added **`july_high_f` / `july_low_f`** to every camp — the average July daily high and overnight low in °F, a WorldClim v2.1 1970-2000 climate normal sampled at 30 arc-seconds (~1 km) from each camp's own coordinate. Set on 447 of 448 camps (the lone null is the overseas Malaysia camp, which has no coordinate). Both are new optional additive fields on the canonical `CampVersion` and the `v1/current/camps.json` projection, and inherit `geo_precision`; a coastal camp whose 1 km cell is open water falls back to the nearest land cell (4 camps). Values span 64-105°F, median 84°F — Heard Scout Pueblo (Phoenix) 105°F, Tahosa at 9,160 ft 72°F, Camp Gorsuch AK 65°F.

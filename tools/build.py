@@ -104,6 +104,8 @@ def main() -> None:
 
     pub = read_json(SCHEMA_DIR / "published-current.schema.json")
     collection_validator = Draft202012Validator(pub, format_checker=Draft202012Validator.FORMAT_CHECKER)
+    pubidx = read_json(SCHEMA_DIR / "published-index.schema.json")
+    index_validator = Draft202012Validator(pubidx, format_checker=Draft202012Validator.FORMAT_CHECKER)
 
     councils, cevents = load_dataset("councils")
     territories, tevents = load_dataset("territories")
@@ -287,7 +289,15 @@ def main() -> None:
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
     PUB_CURRENT = "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json"
+    PUB_INDEX = "https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json"
     cur = lambda kind, items: {"$schema": PUB_CURRENT, **coll(kind, items)}
+    idx = lambda kind, items: {"$schema": PUB_INDEX, **coll(kind, items)}
+    rs_index = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"],
+                 "effective_to": d.get("effective_to"), "includes_official_text": d["includes_official_text"]}
+                for d in requirement_sets]
+    current_rs = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"],
+                   "includes_official_text": d["includes_official_text"], **_prov(d)}
+                  for d in requirement_sets if d.get("effective_to") is None]
     current_council_coll = cur("council", current_councils)
     current_terr_coll = cur("territory", current_territories)
     current_badge_coll = cur("merit-badge", current_badges)
@@ -295,39 +305,42 @@ def main() -> None:
     current_rank_coll = cur("rank", current_ranks)
     current_award_coll = cur("award", current_awards)
     current_lodge_coll = cur("oa-lodge", current_lodges)
-    # validate the current collections against the published consumer contract (fail-fast)
+    current_rs_coll = cur("requirement-set", current_rs)
+    index_colls = [("councils", idx("council", council_index)),
+                   ("territories", idx("territory", terr_index)),
+                   ("merit-badges", idx("merit-badge", mb_index)),
+                   ("camps", idx("camp", camp_index)),
+                   ("ranks", idx("rank", rank_index)),
+                   ("awards", idx("award", award_index)),
+                   ("oa-lodges", idx("oa-lodge", lodge_index)),
+                   ("requirement-sets", idx("requirement-set", rs_index))]
+    # Every published projection is validated against its consumer contract (fail-fast): the
+    # current/* denormalized views against published-current, the */index.json listings against
+    # published-index. A published surface without a schema is an unpinned promise.
     for fname, c in [("councils", current_council_coll), ("territories", current_terr_coll),
                      ("merit-badges", current_badge_coll), ("camps", current_camp_coll),
                      ("ranks", current_rank_coll), ("awards", current_award_coll),
-                     ("oa-lodges", current_lodge_coll)]:
+                     ("oa-lodges", current_lodge_coll), ("requirement-sets", current_rs_coll)]:
         errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
                  for er in collection_validator.iter_errors(c)]
+    for ds, c in index_colls:
+        errs += [f"{ds}/index.json: {er.json_path}: {er.message}"
+                 for er in index_validator.iter_errors(c)]
     if errs:
         raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
 
     write_json(DIST / "v1" / "current" / "councils.json", current_council_coll)
     write_json(DIST / "v1" / "current" / "territories.json", current_terr_coll)
     write_json(DIST / "v1" / "current" / "merit-badges.json", current_badge_coll)
-    write_json(DIST / "v1" / "councils" / "index.json", coll("council", council_index))
-    write_json(DIST / "v1" / "territories" / "index.json", coll("territory", terr_index))
-    write_json(DIST / "v1" / "merit-badges" / "index.json", coll("merit-badge", mb_index))
     write_json(DIST / "v1" / "current" / "camps.json", current_camp_coll)
-    write_json(DIST / "v1" / "camps" / "index.json", coll("camp", camp_index))
     write_json(DIST / "v1" / "current" / "ranks.json", current_rank_coll)
-    write_json(DIST / "v1" / "ranks" / "index.json", coll("rank", rank_index))
     write_json(DIST / "v1" / "current" / "awards.json", current_award_coll)
-    write_json(DIST / "v1" / "awards" / "index.json", coll("award", award_index))
     write_json(DIST / "v1" / "current" / "oa-lodges.json", current_lodge_coll)
-    write_json(DIST / "v1" / "oa-lodges" / "index.json", coll("oa-lodge", lodge_index))
+    write_json(DIST / "v1" / "current" / "requirement-sets.json", current_rs_coll)
+    for ds, c in index_colls:
+        write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
         write_json(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
-    rs_index = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"],
-                 "effective_to": d.get("effective_to"), "includes_official_text": d["includes_official_text"]}
-                for d in requirement_sets]
-    current_rs = [{"id": d["id"], "subject": d["subject"], "effective_from": d["effective_from"]}
-                  for d in requirement_sets if d.get("effective_to") is None]
-    write_json(DIST / "v1" / "requirement-sets" / "index.json", coll("requirement-set", rs_index))
-    write_json(DIST / "v1" / "current" / "requirement-sets.json", coll("requirement-set", current_rs))
 
     for p in sorted((DATA / "vocab").glob("*.json")):
         write_json(DIST / "v1" / "vocab" / p.name, json.loads(p.read_text("utf-8")))

@@ -27,6 +27,34 @@ PLAN.md §1).
 ToS-hostile, staleness = liability. **Districts:** extreme churn, anecdotal sourcing; only
 as best-effort attributes of council history, never a standalone dataset.
 
+## v1.0 readiness — contract freeze
+
+1.0 means the `v1` surface is frozen: additive-only forever, no renames or removals. Everything in
+the dataset catalog above is additive (new files / new optional fields = MINOR), so **data
+completeness does not gate 1.0** — only changes that would become *breaking* once stability is
+promised do.
+
+Cleared in 0.28.0:
+
+- **Every published surface is schema-pinned + build-gated** — 16 files: 8 `current/*.json` against
+  `published-current.schema.json` and 8 `{dataset}/index.json` against the new
+  `published-index.schema.json`. Each file names its own contract in `$schema`; `build.py` fails if
+  any projection drifts. (Verified non-vacuous: unknown fields, a bad `kind`, a malformed
+  `council:` ref, and a non-slug `reservation.id` are all rejected.)
+- **`current/requirement-sets.json` was the one unpinned published surface** — now pinned, and it
+  gained the `verified_at`/`method`/`confidence` that the 0.16.0 uniform-provenance promise already
+  implied, plus `includes_official_text` (the licensing flag its own index already carried).
+- **`reservation.id` is now contractually a stable opaque grouping key** (a bare slug, never a
+  `kind:slug` EntityRef). A future reservation entity reuses these exact slugs and adds a *new* ref
+  field rather than changing this one — so first-classing reservations stays additive.
+
+**Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 1,340 entity
+files carry `$schema: https://sethmay.github.io/open-scout-api/schema/v1/…`, `build.py` hardcodes
+that base, and it is both the documented API root and the jsDelivr pin path. Moving the repo to an
+org afterwards would change every schema URL and every published URL — maximally breaking. Settle
+org + name, re-stamp `data/` once, update the README/CDN docs, then cut 1.0. This also unblocks the
+Zenodo DOI (below), which binds to the final GitHub location.
+
 ## Queue
 
 ### Camp-finder cutover — API-side requests (reviewed 2026-07-21)
@@ -158,15 +186,14 @@ by the pipeline (as the Pipsico fix was).
   since the DOI + Zenodo record bind to that GitHub location.
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
-  choose-needs-children. Still TODO when relevant data lands: event-date ↔ version-boundary
-  consistency; `HistoricalDate` month/day range; `StateCode` closed USPS set; camp
-  `operator`↔`council` coupling (operator=council ⇒ council set; national/other/unknown ⇒
-  council null) — convention-only in the schema, assert in the camp import pipeline.
-- **Published-projection schema for requirement-sets.** `build.py` fail-fast-validates
-  current/{councils,territories,merit-badges}.json against `published-current.schema.json`,
-  but `current/requirement-sets.json` + `requirement-sets/index.json` have no
-  published-contract schema (per-doc canonical validation covers content). Add one when the
-  requirement-set listing contract stabilizes.
+  choose-needs-children + camp `operator`↔`council` coupling + coordinate bounds + vocab codes.
+  Still TODO when relevant data lands: event-date ↔ version-boundary consistency;
+  `HistoricalDate` month/day range; `StateCode` closed USPS set.
+- **Published-projection schemas — DONE (0.28.0).** `build.py` now fail-fast-validates *every*
+  published projection: all 8 `current/*.json` against `published-current.schema.json` (adding
+  `CurrentRequirementSet`, previously the one unpinned surface) and all 8 `{dataset}/index.json`
+  against the new `published-index.schema.json`. Each emitted file advertises its contract in
+  `$schema`. See the v1.0 readiness section above.
 - **Requirement-text licensing — DECIDED (0.5.0).** Verbatim requirement text IS published,
   marked © Scouting America (`includes_official_text: true` + `text_rights`), excluded from
   CC BY-NC-SA, reproduced non-commercially with attribution + takedown. Revisit if SA
