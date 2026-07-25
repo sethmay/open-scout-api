@@ -22,7 +22,10 @@ product, so a coastal or island camp whose pixel is open water falls back to the
 cell. July is a fixed month (US resident-camp season); for overseas/equatorial camps it is still
 a real July value, not necessarily their camp season.
 
-WorldClim v2.1 is CC-BY 4.0 — Fick & Hijmans (2017), Int. J. Climatol. 37:4302-4315. See NOTICE.md.
+WorldClim v2.1 is free for academic/non-commercial use, and redistribution or commercial use
+needs prior permission — so the rasters are NOT committed and only derived point values are
+published (this project's data is CC BY-NC-SA 4.0, i.e. non-commercial). Cite Fick & Hijmans
+(2017), Int. J. Climatol. 37:4302-4315. See NOTICE.md.
 
 Usage: python tools/july_temp.py
 """
@@ -43,11 +46,13 @@ CACHE = ROOT / "tools" / "july_temp.json"
 RASTERS = Path(os.environ.get("WORLDCLIM_DIR") or (ROOT / "tools" / "worldclim"))
 RES = os.environ.get("WORLDCLIM_RES", "30s")
 NODATA_FLOOR = -1e30  # WorldClim nodata is ~-3.4e38; any real °C is far above this
-MAX_RING = 12  # nearest-land search radius in pixels (~12 km at 30s)
+MAX_RING = 12  # nearest-land search radius, in pixels (~12 km at 30s; scales with WORLDCLIM_RES)
 
 
 def _key(lat: float, lon: float) -> str:
-    return f"{lat:.5f},{lon:.5f}"
+    # Resolution-scoped: tiers yield different values, so a cache built at one RES must never
+    # satisfy a lookup at another (and a mixed cache must not be silently interleaved).
+    return f"{RES}:{lat:.5f},{lon:.5f}"
 
 
 def _c_to_f(c: float) -> int:
@@ -66,8 +71,13 @@ def _raster(var: str) -> str:
 
 
 def _nearest_land(ds, lon: float, lat: float):
-    """Value of the closest land pixel to (lon, lat), or None. For coastal/island points
-    whose own cell is open water in this land-surface product."""
+    """Value of the closest land pixel to (lon, lat), or None. For coastal/island points whose
+    own cell is open water in this land-surface product. Expands square rings and takes the
+    closest land pixel in the first ring containing one: exact at ring 1 (where every real
+    fallback here resolves), approximate to within a pixel beyond it."""
+    if ds.nodata is None:
+        raise SystemExit(f"{ds.name}: raster declares no nodata value, so water cannot be told "
+                         "from land (boundless reads would pad with 0 °C). Refusing to guess.")
     row, col = ds.index(lon, lat)
     for ring in range(1, MAX_RING + 1):
         blk = ds.read(1, window=Window(col - ring, row - ring, 2 * ring + 1, 2 * ring + 1),
