@@ -27,52 +27,24 @@
       ],
       "features": [
         {
-          "code": "waterfront",
-          "signature": true,
-          "note": "The 270-acre Nims Lake."
+          "code": "adirondack_shelters"
         },
         {
-          "code": "zip_line",
-          "note": "Zip line at the Huck's Cove water park."
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "canoeing",
-          "note": "Thirty canoes available for unit use."
-        },
-        {
-          "code": "motorboating"
-        },
-        {
-          "code": "water_skiing"
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "shotgun",
-          "note": "The Eagle Range combines trap and skeet fields."
+          "code": "air_conditioning"
         },
         {
           "code": "archery"
         },
         {
-          "code": "rifle"
+          "code": "backpacking",
+          "note": "The 21-mile Three Notch Trail lies entirely within the property."
         },
         {
-          "code": "rock_climbing",
-          "note": "Climbing and rappelling on natural cliffs, with cliff-top campsites."
+          "code": "cabins"
         },
         {
-          "code": "rappelling"
+          "code": "canoeing",
+          "note": "Thirty canoes available for unit use."
         },
         {
           "code": "climbing",
@@ -83,50 +55,81 @@
           "note": "High and low challenge course, available year-round."
         },
         {
-          "code": "backpacking",
-          "note": "The 21-mile Three Notch Trail lies entirely within the property."
+          "code": "dining_hall",
+          "note": "Leadership Hall seats 450 and has a commercial kitchen."
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "hammock_camping"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "older_scout_program"
         },
         {
           "code": "outpost_overnight"
         },
         {
-          "code": "stem",
-          "note": "A stocked STEM pavilion with robotics, drones, and electronics kits."
-        },
-        {
-          "code": "welding"
+          "code": "paddleboarding"
         },
         {
           "code": "patrol_cooking",
           "note": "Camp Gamble runs as a patrol-method cooking camp."
         },
         {
-          "code": "dining_hall",
-          "note": "Leadership Hall seats 450 and has a commercial kitchen."
+          "code": "pavilion"
         },
         {
-          "code": "air_conditioning"
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Climbing and rappelling on natural cliffs, with cliff-top campsites."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun",
+          "note": "The Eagle Range combines trap and skeet fields."
+        },
+        {
+          "code": "stem",
+          "note": "A stocked STEM pavilion with robotics, drones, and electronics kits."
         },
         {
           "code": "storm_shelter"
         },
         {
-          "code": "pavilion"
+          "code": "swimming"
         },
         {
-          "code": "cabins"
+          "code": "water_skiing"
         },
         {
-          "code": "adirondack_shelters"
+          "code": "water_slide"
         },
         {
-          "code": "hammock_camping"
+          "code": "waterfront",
+          "signature": true,
+          "note": "The 270-acre Nims Lake."
         },
         {
-          "code": "first_year_program"
+          "code": "welding"
         },
         {
-          "code": "older_scout_program"
+          "code": "zip_line",
+          "note": "Zip line at the Huck's Cove water park."
         }
       ],
       "features_verified_at": "2026-07-25",

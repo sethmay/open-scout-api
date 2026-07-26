@@ -49,6 +49,9 @@
           "note": "Forest trail riding, with advanced sessions covering trail skills and maintenance."
         },
         {
+          "code": "mountain_boarding"
+        },
+        {
           "code": "older_scout_program",
           "note": "Advanced horse, biking, and boarding sessions built for older Scouts."
         },
@@ -74,6 +77,9 @@
         {
           "code": "waterfront",
           "note": "A five-acre man-made lake."
+        },
+        {
+          "code": "whitewater_rafting"
         }
       ],
       "features_verified_at": "2026-07-25",

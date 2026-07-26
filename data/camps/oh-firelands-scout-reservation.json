@@ -48,8 +48,20 @@
           "note": "High ropes course at Camp Wyandot."
         },
         {
+          "code": "hiking"
+        },
+        {
+          "code": "leadership_training"
+        },
+        {
+          "code": "sledding"
+        },
+        {
           "code": "waterfront",
           "note": "A 23-acre lake at Camp Wyandot with an island joined by a peninsula."
+        },
+        {
+          "code": "winter_camping"
         }
       ],
       "features_verified_at": "2026-07-25",

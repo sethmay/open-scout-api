@@ -109,6 +109,23 @@
         "website": { "type": ["string", "null"], "format": "uri" },
         "program_types": { "type": "array", "items": { "type": "string" } },
         "summary": { "type": ["string", "null"] },
+        "features": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true,
+          "description": "What this camp offers, as codes from the open `camp-features` vocabulary published at v1/vocab/camp-features.json. Sorted, unique, and flattened for filtering: the canonical per-camp document (v1/camps/{id}.json) carries the same features as objects with an optional prose `note`, which is deliberately NOT republished here — this projection is the filterable one. Codes form a shallow hierarchy via each term's `broader`, so a consumer filtering on a coarse code must expand it to its descendants (asking for `aquatics` should match a camp offering only `kayaking`). ALWAYS read alongside `features_verified_at`: an empty array on its own does NOT mean the camp offers nothing."
+        },
+        "features_signature": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true,
+          "description": "The subset of `features` a camp presents as a headline draw rather than table stakes — the same feature can be signature at one camp and unremarkable at another (a climbing tower is ordinary in Colorado and a real differentiator on the prairie). Intended for ranking and badge rendering in list views, not for filtering. Always a subset of `features`."
+        },
+        "features_verified_at": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Date of the last deliberate features survey of this camp against its own sources. Four states, and the distinction matters: `null` + empty `features` = never surveyed, nothing is known; `null` + non-empty = features arrived from a bulk import and were never deliberately verified; a date + non-empty = surveyed, and this is what was found; a date + empty = surveyed and the camp's own page described no offerings. A date means a survey happened, NOT that the list is complete — camp pages are rarely exhaustive, and a camp surveyed before a vocabulary term existed cannot carry it."
+        },
         "council_name": { "type": ["string", "null"] },
         "council_website": { "type": ["string", "null"], "format": "uri" },
         "council_number": { "type": ["integer", "null"], "minimum": 1 },
@@ -118,7 +135,7 @@
         "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "camp_type", "operator", "council", "parent", "reservation", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "geo_precision", "website", "url", "summary", "program_types", "verified_at", "imported_at", "method", "confidence"],
+      "required": ["id", "name", "camp_type", "operator", "council", "parent", "reservation", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "geo_precision", "website", "url", "summary", "program_types", "features", "features_signature", "features_verified_at", "verified_at", "imported_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentRank": {

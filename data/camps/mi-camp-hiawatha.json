@@ -27,40 +27,58 @@
       ],
       "features": [
         {
-          "code": "cabins",
-          "note": "Eighteen cabins alongside nine campsites."
+          "code": "accessible_facilities"
         },
         {
-          "code": "flush_toilets"
+          "code": "atv"
         },
         {
           "code": "bathhouse",
           "note": "A shower house with ten stalls, including an accessible stall."
         },
         {
-          "code": "accessible_facilities"
-        },
-        {
-          "code": "patrol_cooking",
-          "note": "Scouts BSA sessions are patrol cooking; units cook in their own sites."
+          "code": "cabins",
+          "note": "Eighteen cabins alongside nine campsites."
         },
         {
           "code": "dining_hall",
           "note": "Cub Scout sessions are run as a dining hall camp."
         },
         {
+          "code": "disc_golf"
+        },
+        {
           "code": "first_year_program"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "flush_toilets"
         },
         {
           "code": "high_adventure_option",
           "note": "A high-adventure track for older, more experienced Scouts."
         },
         {
+          "code": "nature_study"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Scouts BSA sessions are patrol cooking; units cook in their own sites."
+        },
+        {
           "code": "provisional_attendance",
           "note": "A Scout can attend without their unit at a provisional fee."
         },
         {
-          "code": "atv"
+          "code": "shooting_sports"
+        },
+        {
+          "code": "sledding"
+        },
+        {
+          "code": "snowshoeing"
         },
         {
           "code": "swimming"
@@ -68,18 +86,6 @@
         {
           "code": "waterfront",
           "note": "The camp encircles Bunting Lake."
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "disc_golf"
-        },
-        {
-          "code": "shooting_sports"
-        },
-        {
-          "code": "nature_study"
         }
       ],
       "features_verified_at": "2026-07-25",

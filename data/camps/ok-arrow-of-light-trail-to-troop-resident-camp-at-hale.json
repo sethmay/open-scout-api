@@ -71,6 +71,9 @@
           "note": "Trading post with laundry facilities behind it."
         },
         {
+          "code": "water_slide"
+        },
+        {
           "code": "waterfront",
           "note": "Lake activities, for which water shoes are required."
         }

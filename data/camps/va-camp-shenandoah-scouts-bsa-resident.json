@@ -27,41 +27,44 @@
       ],
       "features": [
         {
-          "code": "waterfront",
-          "note": "A private spring-fed lake used for aquatics instruction, recreation, and fishing."
-        },
-        {
-          "code": "swimming"
-        },
-        {
           "code": "canoeing"
         },
         {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
           "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
         },
         {
           "code": "sailing",
           "note": "Small-boat sailing."
         },
         {
-          "code": "fishing"
-        },
-        {
           "code": "shooting_sports",
           "note": "A shooting sports program area."
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "nature_study"
         },
         {
           "code": "stem"
         },
         {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "A private spring-fed lake used for aquatics instruction, recreation, and fishing."
+        },
+        {
           "code": "welding",
           "note": "Welding and metalworking in the skilled trades area."
+        },
+        {
+          "code": "woodworking"
         }
       ],
       "features_verified_at": "2026-07-25",

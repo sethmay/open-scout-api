@@ -32,33 +32,36 @@
           "note": "A week-long backcountry trek to outpost campsites across the ranch."
         },
         {
-          "code": "outpost_overnight"
-        },
-        {
-          "code": "blacksmithing"
-        },
-        {
-          "code": "cope"
-        },
-        {
           "code": "black_powder"
         },
         {
-          "code": "fishing"
+          "code": "blacksmithing"
         },
         {
           "code": "canoeing",
           "note": "Canoeing on the 270-acre Nims Lake."
         },
         {
-          "code": "waterfront"
+          "code": "cope"
+        },
+        {
+          "code": "fishing"
         },
         {
           "code": "older_scout_program"
         },
         {
+          "code": "outpost_overnight"
+        },
+        {
           "code": "provisional_attendance",
           "note": "All leadership is provided, so a Scout can attend without their troop."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "wilderness_survival"
         }
       ],
       "features_verified_at": "2026-07-25",

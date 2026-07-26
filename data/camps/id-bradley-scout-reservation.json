@@ -100,6 +100,9 @@
         {
           "code": "waterfront",
           "note": "Boating runs on the largest of the Cape Horn Lakes."
+        },
+        {
+          "code": "whitewater_rafting"
         }
       ],
       "features_verified_at": "2026-07-25",

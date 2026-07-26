@@ -35,6 +35,9 @@
           "note": "A craft shelter."
         },
         {
+          "code": "hiking"
+        },
+        {
           "code": "patrol_cooking",
           "note": "Campers bring their own tents and cook at their campsite."
         },

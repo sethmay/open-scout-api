@@ -27,29 +27,30 @@
       ],
       "features": [
         {
-          "code": "waterfront",
-          "signature": true,
-          "note": "Over a mile of Chesapeake Bay shoreline; the only Scout camp on the bay."
-        },
-        {
-          "code": "pool",
-          "note": "A pool with three deep ends."
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "sailing",
-          "note": "A dedicated sailing base on the Chesapeake, with a regatta race."
-        },
-        {
           "code": "archery"
         },
         {
-          "code": "rifle"
+          "code": "climbing_tower",
+          "note": "A thirty-foot climbing tower."
         },
         {
-          "code": "shotgun"
+          "code": "first_year_program",
+          "note": "The Brownsea first-year camper program."
+        },
+        {
+          "code": "handicraft",
+          "note": "Bull Mountain Studios covers handicraft plus moviemaking, photography, music, and graphic arts."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Off-site high-adventure sailing on the Chesapeake for Scouts fourteen and older."
+        },
+        {
+          "code": "knife_throwing"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Camp-provided mountain bikes in the health and fitness area."
         },
         {
           "code": "nature_center",
@@ -59,41 +60,43 @@
           "code": "nature_study"
         },
         {
-          "code": "stem"
-        },
-        {
-          "code": "mountain_biking",
-          "note": "Camp-provided mountain bikes in the health and fitness area."
-        },
-        {
-          "code": "handicraft",
-          "note": "Bull Mountain Studios covers handicraft plus moviemaking, photography, music, and graphic arts."
+          "code": "older_scout_program",
+          "note": "The Advanced Camper Experience for Scouts fourteen and older."
         },
         {
           "code": "pavilion",
           "note": "A Scoutcraft pavilion."
         },
         {
-          "code": "climbing_tower",
-          "note": "A thirty-foot climbing tower."
+          "code": "pool",
+          "note": "A pool with three deep ends."
         },
         {
           "code": "rappelling"
         },
         {
-          "code": "high_adventure_option",
-          "note": "Off-site high-adventure sailing on the Chesapeake for Scouts fourteen and older."
+          "code": "rifle"
         },
         {
-          "code": "older_scout_program",
-          "note": "The Advanced Camper Experience for Scouts fourteen and older."
+          "code": "sailing",
+          "note": "A dedicated sailing base on the Chesapeake, with a regatta race."
         },
         {
-          "code": "first_year_program",
-          "note": "The Brownsea first-year camper program."
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
         },
         {
           "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "Over a mile of Chesapeake Bay shoreline; the only Scout camp on the bay."
         }
       ],
       "features_verified_at": "2026-07-25",

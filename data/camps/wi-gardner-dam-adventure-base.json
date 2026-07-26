@@ -28,85 +28,88 @@
       ],
       "features": [
         {
-          "code": "kayaking",
-          "signature": true,
-          "note": "White water kayaking on the Wolf River."
-        },
-        {
-          "code": "climbing_tower"
-        },
-        {
-          "code": "canoeing"
-        },
-        {
-          "code": "mountain_biking",
-          "note": "75 miles of mountain biking trails."
-        },
-        {
-          "code": "waterfront",
-          "note": "Frontage on the Wolf River."
-        },
-        {
-          "code": "cope",
-          "note": "On-site COPE courses."
-        },
-        {
-          "code": "rappelling",
-          "note": "The climbing tower is also used for rappelling."
-        },
-        {
-          "code": "bouldering"
-        },
-        {
-          "code": "atv"
-        },
-        {
-          "code": "fishing",
-          "note": "Fly fishing on the Wolf River."
-        },
-        {
-          "code": "nature_study"
-        },
-        {
-          "code": "rifle"
+          "code": "air_conditioning",
+          "note": "The dining hall is air-conditioned."
         },
         {
           "code": "archery"
         },
         {
-          "code": "bb_guns"
-        },
-        {
-          "code": "handicraft",
-          "note": "Leatherwork."
-        },
-        {
-          "code": "stem"
-        },
-        {
-          "code": "dining_hall"
-        },
-        {
-          "code": "air_conditioning",
-          "note": "The dining hall is air-conditioned."
-        },
-        {
-          "code": "patrol_cooking",
-          "note": "Units can cook in their campsites instead of eating in the dining hall."
+          "code": "atv"
         },
         {
           "code": "bathhouse",
           "note": "A shower house."
         },
         {
-          "code": "trading_post"
+          "code": "bb_guns"
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "canoeing"
         },
         {
           "code": "chapel"
         },
         {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "On-site COPE courses."
+        },
+        {
+          "code": "cross_country_skiing"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "fishing",
+          "note": "Fly fishing on the Wolf River."
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork."
+        },
+        {
+          "code": "kayaking",
+          "signature": true,
+          "note": "White water kayaking on the Wolf River."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "75 miles of mountain biking trails."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Units can cook in their campsites instead of eating in the dining hall."
+        },
+        {
           "code": "provisional_attendance",
           "note": "Sessions a youth can attend with a parent rather than with their den."
+        },
+        {
+          "code": "rappelling",
+          "note": "The climbing tower is also used for rappelling."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on the Wolf River."
         }
       ],
       "features_verified_at": "2026-07-25",

@@ -27,35 +27,26 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
-          "code": "chapel"
-        },
-        {
           "code": "amphitheater",
           "note": "A campfire circle."
-        },
-        {
-          "code": "waterfront",
-          "note": "The reservation's Lake Merriweather."
-        },
-        {
-          "code": "swimming",
-          "note": "Lake swimming."
-        },
-        {
-          "code": "water_trampoline",
-          "note": "A 23-foot water trampoline."
-        },
-        {
-          "code": "fishing"
         },
         {
           "code": "archery"
         },
         {
+          "code": "astronomy"
+        },
+        {
           "code": "bb_guns"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "fishing"
         },
         {
           "code": "handicraft",
@@ -68,6 +59,18 @@
         {
           "code": "provisional_attendance",
           "note": "The Phoenix Nest option forms one pack from small parties of one adult and up to four youth."
+        },
+        {
+          "code": "swimming",
+          "note": "Lake swimming."
+        },
+        {
+          "code": "water_trampoline",
+          "note": "A 23-foot water trampoline."
+        },
+        {
+          "code": "waterfront",
+          "note": "The reservation's Lake Merriweather."
         }
       ],
       "features_verified_at": "2026-07-25",

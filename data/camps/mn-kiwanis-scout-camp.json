@@ -27,45 +27,41 @@
       ],
       "features": [
         {
-          "code": "waterfront",
-          "note": "The property fronts the St. Croix River."
+          "code": "archery"
         },
         {
-          "code": "campsite_wifi",
-          "note": "Wi-Fi covers the entire property."
+          "code": "bathhouse"
         },
         {
-          "code": "sports_field",
-          "note": "A sport court and a personal fitness course."
-        },
-        {
-          "code": "climbing_tower"
+          "code": "bb_guns"
         },
         {
           "code": "cabins",
           "note": "Six identical sleeping cabins plus a dormitory, bunkhouse, and screen huts."
         },
         {
-          "code": "dining_hall",
-          "note": "Randall Dining Hall seats 160 and has a commercial kitchen."
-        },
-        {
-          "code": "bathhouse"
-        },
-        {
-          "code": "flush_toilets"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "bb_guns"
+          "code": "campsite_wifi",
+          "note": "Wi-Fi covers the entire property."
         },
         {
           "code": "canoeing"
         },
         {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "A low ropes challenge course."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Randall Dining Hall seats 160 and has a commercial kitchen."
+        },
+        {
           "code": "fishing"
+        },
+        {
+          "code": "flush_toilets"
         },
         {
           "code": "gaga_ball"
@@ -77,8 +73,18 @@
           "code": "handicraft"
         },
         {
-          "code": "cope",
-          "note": "A low ropes challenge course."
+          "code": "orienteering"
+        },
+        {
+          "code": "snowshoeing"
+        },
+        {
+          "code": "sports_field",
+          "note": "A sport court and a personal fitness course."
+        },
+        {
+          "code": "waterfront",
+          "note": "The property fronts the St. Croix River."
         }
       ],
       "features_verified_at": "2026-07-25",

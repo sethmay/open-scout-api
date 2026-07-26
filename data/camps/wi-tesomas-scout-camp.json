@@ -27,64 +27,67 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
-          "code": "trading_post"
-        },
-        {
-          "code": "first_year_program",
-          "note": "Eagle Quest, a first-year camper advancement programme."
-        },
-        {
-          "code": "provisional_attendance"
-        },
-        {
-          "code": "swimming",
-          "note": "Swimming is in spring-fed Crystal Lake; there is no pool."
-        },
-        {
-          "code": "waterfront"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "cope"
-        },
-        {
-          "code": "climbing"
-        },
-        {
-          "code": "zip_line",
-          "note": "A night zip line runs at the COPE and climbing area."
-        },
-        {
-          "code": "shotgun"
-        },
-        {
-          "code": "shooting_sports"
-        },
-        {
           "code": "atv",
           "note": "An ATV riding course leading to rider certification, for older Scouts."
-        },
-        {
-          "code": "high_adventure_option",
-          "note": "Micro-Trek tracks for campers who have already done much of the standard programme."
-        },
-        {
-          "code": "chapel"
         },
         {
           "code": "bathhouse",
           "note": "Shower buildings on each side of camp."
         },
         {
-          "code": "sports_field"
+          "code": "chapel"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Eagle Quest, a first-year camper advancement programme."
         },
         {
           "code": "fishing"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Micro-Trek tracks for campers who have already done much of the standard programme."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "river_tubing"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming is in spring-fed Crystal Lake; there is no pool."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "zip_line",
+          "note": "A night zip line runs at the COPE and climbing area."
         }
       ],
       "features_verified_at": "2026-07-25",

@@ -93,6 +93,9 @@
           "code": "swimming"
         },
         {
+          "code": "water_blob"
+        },
+        {
           "code": "water_skiing",
           "signature": true,
           "note": "A fleet of ski boats at the Jack D. Furst Aquatic Base, the programme the camp is best known for."

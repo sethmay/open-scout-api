@@ -124,6 +124,33 @@ def main() -> None:
     cur.execute("CREATE INDEX idx_events_id ON events(id)")
     counts["events"] = len(ev_rows)
 
+    # camp program features: the flat list is a JSON array, which SQL cannot filter, so it is
+    # unrolled into a junction table. The vocabulary ships alongside it (with `broader`) so a
+    # coarse query can be answered with a recursive CTE — see the README.
+    cur.execute("CREATE TABLE camp_features (camp_id TEXT, code TEXT, signature INTEGER, "
+                "note TEXT, verified_at TEXT)")
+    cf_rows = []
+    for p in sorted((DATA / "camps").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        e = read_json(p)
+        v = open_version(e) or (e.get("versions") or [{}])[-1]
+        for f in (v.get("features") or []):
+            cf_rows.append([e["id"], f["code"], 1 if f.get("signature") else 0,
+                            f.get("note"), v.get("features_verified_at")])
+    cur.executemany("INSERT INTO camp_features VALUES (?,?,?,?,?)", cf_rows)
+    cur.execute("CREATE INDEX idx_camp_features_camp ON camp_features(camp_id)")
+    cur.execute("CREATE INDEX idx_camp_features_code ON camp_features(code)")
+    counts["camp_features"] = len(cf_rows)
+
+    cur.execute("CREATE TABLE feature_vocab (code TEXT PRIMARY KEY, label TEXT, category TEXT, "
+                "broader TEXT, description TEXT)")
+    vp = DATA / "vocab" / "camp-features.json"
+    fv_rows = [[t["code"], t.get("label"), t.get("category"), t.get("broader"), t.get("description")]
+               for t in (read_json(vp).get("terms", []) if vp.exists() else [])]
+    cur.executemany("INSERT INTO feature_vocab VALUES (?,?,?,?,?)", fv_rows)
+    counts["feature_vocab"] = len(fv_rows)
+
     version = current_version()
     meta = {"name": "Open Scout API", "version": version,
             "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -133,7 +160,7 @@ def main() -> None:
     con.close()
     total = sum(counts.values())
     print(f"built {OUT.relative_to(ROOT)} v{version}: {total} rows across "
-          f"{len(ENTITY_TABLES) + 2} tables ({', '.join(f'{k}={v}' for k, v in counts.items())})")
+          f"{len(counts)} tables ({', '.join(f'{k}={v}' for k, v in counts.items())})")
 
 
 if __name__ == "__main__":

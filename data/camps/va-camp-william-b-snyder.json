@@ -29,37 +29,40 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
           "code": "air_conditioning",
           "note": "The dining hall is air-conditioned."
-        },
-        {
-          "code": "cabins"
-        },
-        {
-          "code": "trading_post",
-          "note": "An on-site Scout shop."
-        },
-        {
-          "code": "pool",
-          "note": "A pool with a water slide."
-        },
-        {
-          "code": "waterfront",
-          "note": "A managed wetland with program areas for fishing and boating."
         },
         {
           "code": "aquatics",
           "note": "Boating on the wetland."
         },
         {
+          "code": "cabins"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
           "code": "fishing"
+        },
+        {
+          "code": "pool",
+          "note": "A pool with a water slide."
         },
         {
           "code": "provisional_attendance",
           "note": "Scouts BSA youth can attend Specialty Week in a provisional unit."
+        },
+        {
+          "code": "trading_post",
+          "note": "An on-site Scout shop."
+        },
+        {
+          "code": "waterfront",
+          "note": "A managed wetland with program areas for fishing and boating."
+        },
+        {
+          "code": "woodworking"
         }
       ],
       "features_verified_at": "2026-07-25",

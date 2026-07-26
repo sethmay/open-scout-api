@@ -32,12 +32,24 @@
           "note": "Wilderness canoe expeditions into the Boundary Waters, Quetico Provincial Park, and the Canadian Crown Lands."
         },
         {
+          "code": "cross_country_skiing"
+        },
+        {
           "code": "fishing",
           "note": "Ice fishing on winter treks."
         },
         {
+          "code": "ice_fishing"
+        },
+        {
           "code": "provisional_attendance",
           "note": "Individual treks place a Scout with an existing crew."
+        },
+        {
+          "code": "snowshoeing"
+        },
+        {
+          "code": "winter_camping"
         }
       ],
       "features_verified_at": "2026-07-25",

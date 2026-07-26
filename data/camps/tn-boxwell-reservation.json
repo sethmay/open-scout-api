@@ -33,6 +33,9 @@
           "code": "archery"
         },
         {
+          "code": "astronomy"
+        },
+        {
           "code": "bathhouse",
           "note": "Six air-conditioned shower houses, each combining shower, toilet, and sink."
         },
@@ -54,6 +57,9 @@
         },
         {
           "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "digital_media"
         },
         {
           "code": "dining_hall"

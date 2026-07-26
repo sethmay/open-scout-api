@@ -27,27 +27,8 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
-          "code": "pavilion",
-          "note": "The Janicki Shelter at the heart of camp."
-        },
-        {
-          "code": "waterfront",
-          "note": "Lake Challenge at the heart of camp, with a sandy swim beach."
-        },
-        {
-          "code": "swimming",
-          "note": "A palm-treed sandy swim beach."
-        },
-        {
           "code": "aquatics",
           "note": "A complete boating program."
-        },
-        {
-          "code": "paddleboarding",
-          "note": "Stand-up paddle boards."
         },
         {
           "code": "climbing",
@@ -58,29 +39,51 @@
           "note": "A high COPE course."
         },
         {
-          "code": "zip_line",
-          "note": "A tandem zip line over a thousand feet long."
-        },
-        {
-          "code": "shooting_sports"
-        },
-        {
           "code": "cowboy_action_shooting",
           "note": "A western-style cowboy action range."
         },
         {
-          "code": "mountain_biking"
+          "code": "dining_hall"
         },
         {
           "code": "handicraft",
           "note": "A crafts area."
         },
         {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "mountain_boarding"
+        },
+        {
           "code": "nature_study",
           "note": "A nature and conservation area."
         },
         {
+          "code": "paddleboarding",
+          "note": "Stand-up paddle boards."
+        },
+        {
+          "code": "pavilion",
+          "note": "The Janicki Shelter at the heart of camp."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
           "code": "stem"
+        },
+        {
+          "code": "swimming",
+          "note": "A palm-treed sandy swim beach."
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Challenge at the heart of camp, with a sandy swim beach."
+        },
+        {
+          "code": "zip_line",
+          "note": "A tandem zip line over a thousand feet long."
         }
       ],
       "features_verified_at": "2026-07-25",

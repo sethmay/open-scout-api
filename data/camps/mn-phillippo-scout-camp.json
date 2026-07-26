@@ -27,70 +27,79 @@
       ],
       "features": [
         {
-          "code": "dining_hall",
-          "note": "Frey Fellowship Dining Hall seats 300."
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "bouldering"
         },
         {
           "code": "cabins",
           "note": "Cabins ranging from wood-heated basics to a multi-room cabin sleeping 50."
         },
         {
-          "code": "bathhouse"
-        },
-        {
-          "code": "platform_tents"
-        },
-        {
-          "code": "shooting_sports",
-          "note": "Six shooting sports ranges."
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "shotgun"
-        },
-        {
-          "code": "tomahawk_throwing"
-        },
-        {
-          "code": "bouldering"
-        },
-        {
-          "code": "rock_climbing"
+          "code": "canoeing",
+          "note": "Canoes and trailers can be rented for river trips."
         },
         {
           "code": "cope",
           "note": "Low ropes challenge course."
         },
         {
-          "code": "canoeing",
-          "note": "Canoes and trailers can be rented for river trips."
+          "code": "cross_country_skiing"
         },
         {
-          "code": "fishing"
-        },
-        {
-          "code": "waterfront",
-          "note": "Frontage on the Cannon River and Lake Byllesby Reservoir."
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "gaga_ball"
+          "code": "dining_hall",
+          "note": "Frey Fellowship Dining Hall seats 300."
         },
         {
           "code": "disc_golf"
         },
         {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
           "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "rock_climbing"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Six shooting sports ranges."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sledding"
+        },
+        {
+          "code": "snowshoeing"
         },
         {
           "code": "sports_field"
         },
         {
+          "code": "tomahawk_throwing"
+        },
+        {
           "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on the Cannon River and Lake Byllesby Reservoir."
         }
       ],
       "features_verified_at": "2026-07-25",

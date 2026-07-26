@@ -27,68 +27,62 @@
       ],
       "features": [
         {
-          "code": "cope"
-        },
-        {
-          "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "rowing"
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "waterfront"
+          "code": "accessible_facilities",
+          "note": "Sioux campsite is barrier-free and sited near the dining hall."
         },
         {
           "code": "archery"
         },
         {
-          "code": "rifle"
+          "code": "backpacking"
         },
         {
-          "code": "shotgun"
+          "code": "bathhouse",
+          "note": "Central shower houses plus a campsite shower in each site."
         },
         {
-          "code": "geocaching"
+          "code": "cabins",
+          "note": "Bunkhouses available in several campsites."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall"
         },
         {
           "code": "disc_golf"
         },
         {
+          "code": "first_year_program",
+          "note": "The Pathfinder program for Scouts with limited camping experience."
+        },
+        {
+          "code": "fishing"
+        },
+        {
           "code": "gaga_ball"
         },
         {
-          "code": "sports_field"
-        },
-        {
-          "code": "mountain_biking"
-        },
-        {
-          "code": "horseback"
-        },
-        {
-          "code": "welding"
+          "code": "geocaching"
         },
         {
           "code": "handicraft"
         },
         {
-          "code": "stem"
+          "code": "health_lodge"
         },
         {
-          "code": "backpacking"
+          "code": "horseback"
         },
         {
-          "code": "first_year_program",
-          "note": "The Pathfinder program for Scouts with limited camping experience."
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking"
         },
         {
           "code": "older_scout_program",
@@ -96,31 +90,40 @@
           "note": "Adventure Ridge is an expert-level pioneering track for experienced Scouts."
         },
         {
-          "code": "dining_hall"
+          "code": "pavilion"
         },
         {
-          "code": "bathhouse",
-          "note": "Central shower houses plus a campsite shower in each site."
+          "code": "pioneering"
         },
         {
           "code": "platform_tents"
         },
         {
-          "code": "cabins",
-          "note": "Bunkhouses available in several campsites."
+          "code": "rifle"
         },
         {
-          "code": "accessible_facilities",
-          "note": "Sioux campsite is barrier-free and sited near the dining hall."
+          "code": "rowing"
         },
         {
-          "code": "health_lodge"
+          "code": "shotgun"
         },
         {
-          "code": "pavilion"
+          "code": "sports_field"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
         },
         {
           "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "welding"
         }
       ],
       "features_verified_at": "2026-07-25",

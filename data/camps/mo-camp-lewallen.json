@@ -27,21 +27,57 @@
       ],
       "features": [
         {
-          "code": "dining_hall",
-          "note": "The Earl Jarvis Dining Hall has a commercial kitchen and a stone fireplace."
+          "code": "adirondack_shelters"
         },
         {
           "code": "air_conditioning"
         },
         {
-          "code": "adirondack_shelters"
+          "code": "amphitheater",
+          "note": "A council ring overlooking the lake."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "canoeing"
         },
         {
           "code": "climbing_tower",
           "note": "The Kyle Davidson climbing tower complex is open year-round."
         },
         {
-          "code": "bouldering"
+          "code": "dining_hall",
+          "note": "The Earl Jarvis Dining Hall has a commercial kitchen and a stone fireplace."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching",
+          "signature": true,
+          "note": "Over forty caches across eighteen multi-cache courses, including gadget caches."
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "pavilion"
         },
         {
           "code": "rifle"
@@ -50,44 +86,11 @@
           "code": "shotgun"
         },
         {
-          "code": "bb_guns"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "canoeing"
-        },
-        {
-          "code": "fishing"
+          "code": "stem"
         },
         {
           "code": "waterfront",
           "note": "Lake Potashnick and frontage on the St. Francis River."
-        },
-        {
-          "code": "pavilion"
-        },
-        {
-          "code": "amphitheater",
-          "note": "A council ring overlooking the lake."
-        },
-        {
-          "code": "geocaching",
-          "signature": true,
-          "note": "Over forty caches across eighteen multi-cache courses, including gadget caches."
-        },
-        {
-          "code": "atv"
-        },
-        {
-          "code": "older_scout_program"
-        },
-        {
-          "code": "stem"
         }
       ],
       "features_verified_at": "2026-07-25",

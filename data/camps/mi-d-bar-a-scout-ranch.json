@@ -27,109 +27,112 @@
       ],
       "features": [
         {
-          "code": "horseback",
-          "signature": true,
-          "note": "A working ranch with a herd of horses, corral rides, trail rides, and hay rides."
+          "code": "amphitheater",
+          "note": "Two firebowls."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "backpacking",
+          "note": "Backpacking and cavalcade training trails prepare crews for Philmont."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "bouldering"
         },
         {
           "code": "cabins",
           "note": "Twenty-eight heated cabins with kitchens."
         },
         {
-          "code": "pavilion",
-          "note": "Three dining pavilions served by a large central kitchen."
-        },
-        {
           "code": "climbing_tower",
           "note": "A 32-foot climbing tower."
-        },
-        {
-          "code": "bouldering"
-        },
-        {
-          "code": "bb_guns"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "slingshot"
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "shotgun"
-        },
-        {
-          "code": "pistol"
-        },
-        {
-          "code": "black_powder"
         },
         {
           "code": "cowboy_action_shooting"
         },
         {
-          "code": "amphitheater",
-          "note": "Two firebowls."
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "waterfront",
-          "note": "Three spring-fed lakes on the property."
-        },
-        {
-          "code": "nature_center"
-        },
-        {
-          "code": "gaga_ball"
-        },
-        {
-          "code": "sports_field",
-          "note": "A volleyball pit, horseshoe pits, and human foosball."
-        },
-        {
           "code": "disc_golf"
-        },
-        {
-          "code": "welding",
-          "note": "Ranch Hand participants learn to bend and weld metal."
-        },
-        {
-          "code": "patrol_cooking"
-        },
-        {
-          "code": "older_scout_program",
-          "note": "A week-long Trail to Eagle programme for older Scouts."
         },
         {
           "code": "first_year_program",
           "note": "A week-long Trail to First Class programme for new Scouts."
         },
         {
-          "code": "provisional_attendance",
-          "note": "An individual Scout can sign up for Ranch Hand Camp without their unit."
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "horseback",
+          "signature": true,
+          "note": "A working ranch with a herd of horses, corral rides, trail rides, and hay rides."
         },
         {
           "code": "museum",
           "note": "The Thomas Trainor Scout Museum."
         },
         {
+          "code": "nature_center"
+        },
+        {
+          "code": "observatory"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "A week-long Trail to Eagle programme for older Scouts."
+        },
+        {
+          "code": "patrol_cooking"
+        },
+        {
+          "code": "pavilion",
+          "note": "Three dining pavilions served by a large central kitchen."
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "An individual Scout can sign up for Ranch Hand Camp without their unit."
+        },
+        {
+          "code": "rifle"
+        },
+        {
           "code": "rv_sites",
           "note": "A family camp with RV sites on water, sewer, and electricity."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "sports_field",
+          "note": "A volleyball pit, horseshoe pits, and human foosball."
+        },
+        {
+          "code": "swimming"
         },
         {
           "code": "trading_post"
         },
         {
-          "code": "backpacking",
-          "note": "Backpacking and cavalcade training trails prepare crews for Philmont."
+          "code": "waterfront",
+          "note": "Three spring-fed lakes on the property."
+        },
+        {
+          "code": "welding",
+          "note": "Ranch Hand participants learn to bend and weld metal."
         }
       ],
       "features_verified_at": "2026-07-25",

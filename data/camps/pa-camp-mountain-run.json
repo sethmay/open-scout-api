@@ -27,67 +27,108 @@
       ],
       "features": [
         {
-          "code": "platform_tents",
-          "note": "Two-person canvas tents with cots on wooden platforms."
-        },
-        {
           "code": "adirondack_shelters",
           "note": "Most campsites include an Adirondack shelter."
         },
         {
-          "code": "hammock_camping",
-          "note": "Most campsites have space to hang hammocks."
+          "code": "archery"
         },
         {
-          "code": "cabins",
-          "note": "The Eynon and Glen Ru cabins."
-        },
-        {
-          "code": "dining_hall"
-        },
-        {
-          "code": "trading_post"
+          "code": "backpacking",
+          "note": "Backpacking and a 50-Miler award within Mountain Adventure Camp."
         },
         {
           "code": "bathhouse",
           "note": "Individual shower stalls at the pool and at the Walker Center."
         },
         {
+          "code": "black_powder",
+          "note": "A black-powder version of the rifle programme."
+        },
+        {
+          "code": "cabins",
+          "note": "The Eynon and Glen Ru cabins."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
           "code": "chapel",
           "note": "The Reitz Chapel, used for vespers."
         },
         {
-          "code": "pavilion",
-          "note": "Walker Pavilion."
+          "code": "climbing"
         },
         {
-          "code": "sports_field",
-          "note": "An activity field, a parade field, and a volleyball court."
+          "code": "cope",
+          "note": "Troop COPE sessions on the low elements, plus open climb evenings."
         },
         {
-          "code": "pool",
-          "note": "The Stackpole-Hall swimming pool."
+          "code": "cowboy_action_shooting",
+          "note": "An evening cowboy action shoot with rifle, shotgun, and pistol."
         },
         {
-          "code": "swimming",
-          "note": "Open swim, instructional swim, and a Mile Swim award."
+          "code": "dining_hall"
         },
         {
-          "code": "waterfront",
-          "note": "Boone Lake."
+          "code": "first_year_program",
+          "note": "Trailblazers, for Scouts in their first week of long-term camp."
         },
         {
           "code": "fishing",
           "note": "A stocked fishing pond and a lake, supplied by a cooperative trout hatchery."
         },
         {
-          "code": "canoeing"
+          "code": "hammock_camping",
+          "note": "Most campsites have space to hang hammocks."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "horseback"
         },
         {
           "code": "kayaking"
         },
         {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Mountain Adventure Camp, for Scouts fourteen and older."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Trailblazers hike out to a secluded part of the property to camp and cook."
+        },
+        {
           "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion",
+          "note": "Walker Pavilion."
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person canvas tents with cots on wooden platforms."
+        },
+        {
+          "code": "pool",
+          "note": "The Stackpole-Hall swimming pool."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Individual Scouts can join a provisional troop run by camp staff."
         },
         {
           "code": "rifle"
@@ -96,63 +137,25 @@
           "code": "shotgun"
         },
         {
-          "code": "archery"
-        },
-        {
-          "code": "black_powder",
-          "note": "A black-powder version of the rifle programme."
-        },
-        {
-          "code": "cowboy_action_shooting",
-          "note": "An evening cowboy action shoot with rifle, shotgun, and pistol."
-        },
-        {
-          "code": "pistol"
-        },
-        {
-          "code": "cope",
-          "note": "Troop COPE sessions on the low elements, plus open climb evenings."
-        },
-        {
-          "code": "climbing"
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "nature_study"
+          "code": "sports_field",
+          "note": "An activity field, a parade field, and a volleyball court."
         },
         {
           "code": "stem"
         },
         {
+          "code": "swimming",
+          "note": "Open swim, instructional swim, and a Mile Swim award."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Boone Lake."
+        },
+        {
           "code": "welding"
-        },
-        {
-          "code": "horseback"
-        },
-        {
-          "code": "first_year_program",
-          "note": "Trailblazers, for Scouts in their first week of long-term camp."
-        },
-        {
-          "code": "outpost_overnight",
-          "note": "Trailblazers hike out to a secluded part of the property to camp and cook."
-        },
-        {
-          "code": "provisional_attendance",
-          "note": "Individual Scouts can join a provisional troop run by camp staff."
-        },
-        {
-          "code": "older_scout_program",
-          "note": "Mountain Adventure Camp, for Scouts fourteen and older."
-        },
-        {
-          "code": "high_adventure_option"
-        },
-        {
-          "code": "backpacking",
-          "note": "Backpacking and a 50-Miler award within Mountain Adventure Camp."
         }
       ],
       "features_verified_at": "2026-07-25",

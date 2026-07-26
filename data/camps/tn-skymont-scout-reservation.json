@@ -78,6 +78,9 @@
           "note": "The Jeff Ligon Memorial Cumberland Adventure, a sampler high-adventure programme for older Scouts."
         },
         {
+          "code": "hiking"
+        },
+        {
           "code": "kayaking"
         },
         {
@@ -111,12 +114,18 @@
           "code": "trading_post"
         },
         {
+          "code": "water_slide"
+        },
+        {
           "code": "waterfront",
           "note": "A lakefront aquatics area with a water slide."
         },
         {
           "code": "welding",
           "note": "Welding and metalwork instruction."
+        },
+        {
+          "code": "whitewater_rafting"
         },
         {
           "code": "zip_line"

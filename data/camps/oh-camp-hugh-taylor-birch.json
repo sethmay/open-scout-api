@@ -99,6 +99,9 @@
           "note": "Trail to Eagle, a program area for older Scouts working Eagle-required merit badges."
         },
         {
+          "code": "orienteering"
+        },
+        {
           "code": "outpost_overnight",
           "note": "Outpost camping is a requirement of the Mad River Trace program."
         },

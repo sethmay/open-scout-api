@@ -27,98 +27,57 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
           "code": "air_conditioning",
           "note": "The dining hall is air-conditioned."
-        },
-        {
-          "code": "bathhouse",
-          "note": "Four shower houses with individual rooms."
-        },
-        {
-          "code": "health_lodge"
-        },
-        {
-          "code": "trading_post"
-        },
-        {
-          "code": "sports_field",
-          "note": "Sandpit volleyball court and a basketball court."
-        },
-        {
-          "code": "waterfront",
-          "note": "Aquatics program on Lake Dillon."
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "climbing_tower",
-          "note": "The Patty Dunn Climbing Tower."
-        },
-        {
-          "code": "rappelling"
-        },
-        {
-          "code": "bouldering",
-          "note": "A traverse wall."
-        },
-        {
-          "code": "cope"
         },
         {
           "code": "archery",
           "note": "Covered range plus a 3D archery range."
         },
         {
-          "code": "rifle",
-          "note": "Covered rifle range."
-        },
-        {
-          "code": "shotgun",
-          "note": "Remote-controlled multi-station shotgun range."
+          "code": "bathhouse",
+          "note": "Four shower houses with individual rooms."
         },
         {
           "code": "black_powder"
         },
         {
-          "code": "tomahawk_throwing"
+          "code": "bouldering",
+          "note": "A traverse wall."
         },
         {
-          "code": "mountain_biking",
-          "note": "Ten miles of mountain bike and hiking trails."
+          "code": "building_wifi"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "The Patty Dunn Climbing Tower."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall"
         },
         {
           "code": "disc_golf",
           "note": "A nine-hole course."
         },
         {
-          "code": "geocaching",
-          "note": "A combined compass and geocaching course."
+          "code": "first_year_program",
+          "note": "Trail Blazers first-year camper program."
         },
         {
           "code": "gaga_ball"
         },
         {
-          "code": "stem"
+          "code": "geocaching",
+          "note": "A combined compass and geocaching course."
         },
         {
-          "code": "first_year_program",
-          "note": "Trail Blazers first-year camper program."
+          "code": "health_lodge"
         },
         {
           "code": "high_adventure_option",
@@ -126,11 +85,58 @@
           "note": "Ranger Challenge, a half-day high-adventure track for Scouts aged thirteen and older."
         },
         {
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Ten miles of mountain bike and hiking trails."
+        },
+        {
           "code": "older_scout_program"
+        },
+        {
+          "code": "paddleboarding"
         },
         {
           "code": "provisional_attendance",
           "note": "A provisional troop runs for one week of camp."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle",
+          "note": "Covered rifle range."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun",
+          "note": "Remote-controlled multi-station shotgun range."
+        },
+        {
+          "code": "sports_field",
+          "note": "Sandpit volleyball court and a basketball court."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_slide"
+        },
+        {
+          "code": "waterfront",
+          "note": "Aquatics program on Lake Dillon."
         }
       ],
       "features_verified_at": "2026-07-25",

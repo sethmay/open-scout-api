@@ -27,34 +27,37 @@
       ],
       "features": [
         {
-          "code": "high_adventure_option",
-          "signature": true,
-          "note": "The Day Trek programme, a different off-site adventure each day, for Scouts fourteen and older."
-        },
-        {
-          "code": "older_scout_program"
-        },
-        {
-          "code": "caving",
-          "note": "Caving and spelunking day treks."
+          "code": "atv",
+          "note": "Participants complete an ATV safety e-course before riding."
         },
         {
           "code": "canoeing",
           "note": "Paddling on nearby Yough Lake."
         },
         {
+          "code": "caving",
+          "note": "Caving and spelunking day treks."
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "The Day Trek programme, a different off-site adventure each day, for Scouts fourteen and older."
+        },
+        {
           "code": "kayaking"
         },
         {
-          "code": "zip_line"
+          "code": "older_scout_program"
         },
         {
           "code": "shotgun",
           "note": "Sporting clays."
         },
         {
-          "code": "atv",
-          "note": "Participants complete an ATV safety e-course before riding."
+          "code": "whitewater_rafting"
+        },
+        {
+          "code": "zip_line"
         }
       ],
       "features_verified_at": "2026-07-25",

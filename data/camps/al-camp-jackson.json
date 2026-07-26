@@ -27,27 +27,30 @@
       ],
       "features": [
         {
-          "code": "fishing",
-          "signature": true,
-          "note": "Fishing from the camp docks on the Tennessee River."
+          "code": "bike_park",
+          "note": "A pump track for bikes."
         },
         {
           "code": "canoeing"
         },
         {
-          "code": "waterfront",
-          "note": "Dock frontage on the Tennessee River."
+          "code": "fishing",
+          "signature": true,
+          "note": "Fishing from the camp docks on the Tennessee River."
         },
         {
-          "code": "bike_park",
-          "note": "A pump track for bikes."
+          "code": "hiking"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Several platform tents on an otherwise primitive property."
         },
         {
           "code": "swimming"
         },
         {
-          "code": "platform_tents",
-          "note": "Several platform tents on an otherwise primitive property."
+          "code": "waterfront",
+          "note": "Dock frontage on the Tennessee River."
         }
       ],
       "features_verified_at": "2026-07-25",

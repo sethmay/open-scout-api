@@ -122,3 +122,31 @@ fold; read before similar work.
   `versions[0]`.** versions[0] is the *earliest* (possibly historical) snapshot; a
   renumbered/renamed entity would misroute. Harmless today (councils are single-version)
   but latent — resolve current-value lookups against the current version. (import_camps.py)
+- **Agent scaffolding can be the only copy of real signal — commit it before you tidy.**
+  Sixteen survey agents wrote `proposals-NN.json` (observations the frozen vocabulary could
+  not express). Treating them as scratch and `rm`-ing them before `git add` destroyed the
+  camp→proposed-code mapping; only the aggregate counts survived, which are useless for
+  applying anything. 182 of 226 were later clawed back out of the agents' session
+  transcripts (`toolCall.arguments.content` in `~/.omp/agent/sessions/**/<Agent>.jsonl`),
+  but four agents had built theirs inside `eval` cells and were unrecoverable. Either commit
+  the scaffolding or fold it into data before deleting — and know the transcript path as a
+  last resort.
+- **Curating a controlled vocabulary AFTER the survey guarantees false negatives.** Terms
+  added post-wave match zero entities, so a consumer filtering on the most-requested term of
+  all (`whitewater_rafting`, 15 camps' pages described it) gets an empty result that reads as
+  "nobody offers this". Publishing is what made it visible. Either freeze the vocabulary and
+  accept proposals as a *later* enrichment pass with the evidence retained, or run a
+  calibration slice first and curate before the main wave — never curate and publish in the
+  same breath without re-checking term usage. A `zero-camp terms` count is a cheap standing
+  health check.
+- **A shared eval kernel across parallel agents is a silent data-corruption channel.** Generic
+  globals (`p`, `d`, `camp`) get reassigned by siblings mid-run, so one agent's write lands on
+  another's target path. Namespace per-agent (`S06_*`) or, better, run writes as a separate
+  process. Relative paths in edit headers are the same class of bug: they resolve against the
+  session cwd, not the worktree, and leak edits into the main checkout.
+- **Verify parallel agents' claims against the artifact, not their reports.** Self-reports are
+  honest but lossy: one agent reported a clobbered feature list that was actually a compliant
+  parent→leaf refinement (it compared diff lines, where a reordered array shows codes as both
+  removed and added). Compare parsed *sets* before and after; and treat a subagent exit code
+  as unrelated to whether its work landed — 9 of 16 exited non-zero after their writes were
+  already on disk and valid.

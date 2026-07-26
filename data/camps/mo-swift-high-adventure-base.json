@@ -27,68 +27,32 @@
       ],
       "features": [
         {
-          "code": "swimming"
-        },
-        {
-          "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "water_skiing"
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "waterfront"
-        },
-        {
-          "code": "zip_line"
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "shotgun"
-        },
-        {
           "code": "archery"
         },
         {
-          "code": "pistol"
-        },
-        {
-          "code": "cowboy_action_shooting"
+          "code": "canoeing"
         },
         {
           "code": "cope",
           "note": "High and low challenge courses."
         },
         {
-          "code": "rock_climbing"
+          "code": "cowboy_action_shooting"
         },
         {
-          "code": "rappelling"
-        },
-        {
-          "code": "mountain_biking"
+          "code": "fishing"
         },
         {
           "code": "horseback"
         },
         {
-          "code": "outpost_overnight"
+          "code": "kayaking"
         },
         {
-          "code": "provisional_attendance"
+          "code": "mountain_biking"
+        },
+        {
+          "code": "mountain_boarding"
         },
         {
           "code": "older_scout_program",
@@ -96,7 +60,46 @@
           "note": "One of few camps accredited specifically for Venturing summer camp."
         },
         {
+          "code": "outpost_overnight"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
           "code": "sports_field"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "zip_line"
         }
       ],
       "features_verified_at": "2026-07-25",

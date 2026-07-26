@@ -27,69 +27,72 @@
       ],
       "features": [
         {
-          "code": "swimming"
+          "code": "archery"
         },
         {
           "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "motorboating"
-        },
-        {
-          "code": "waterfront",
-          "note": "Spring-fed lake frontage with docks and a swim area."
-        },
-        {
-          "code": "fishing",
-          "note": "Fishing from docks, a pontoon, or open boating time."
         },
         {
           "code": "climbing_tower",
           "note": "A 42-foot tower with multiple climbing faces and an interior chimney."
         },
         {
-          "code": "rappelling",
-          "note": "A dedicated face of the climbing tower is used for rappelling."
+          "code": "first_year_program",
+          "note": "Trailblazer, a half-day introduction for first-time campers."
         },
         {
-          "code": "mountain_biking",
-          "note": "Flow trails and singletrack ridden on mountain and fat-tire bikes."
+          "code": "fishing",
+          "note": "Fishing from docks, a pontoon, or open boating time."
         },
         {
           "code": "handicraft",
           "note": "Wood carving, leatherwork, basketry, pottery, and sculpture."
         },
         {
-          "code": "rocketry"
+          "code": "hiking"
         },
         {
-          "code": "nature_study"
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Flow trails and singletrack ridden on mountain and fat-tire bikes."
         },
         {
           "code": "nature_center",
           "note": "An ecology and conservation lodge."
         },
         {
-          "code": "archery"
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "rappelling",
+          "note": "A dedicated face of the climbing tower is used for rappelling."
         },
         {
           "code": "rifle"
         },
         {
+          "code": "rocketry"
+        },
+        {
+          "code": "sailing"
+        },
+        {
           "code": "shotgun"
         },
         {
-          "code": "first_year_program",
-          "note": "Trailblazer, a half-day introduction for first-time campers."
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "Spring-fed lake frontage with docks and a swim area."
         },
         {
           "code": "zip_line",
