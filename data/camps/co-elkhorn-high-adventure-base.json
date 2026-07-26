@@ -25,8 +25,31 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "Guided treks in the Rawah Wilderness, including a fifty-mile option."
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "fishing",
+          "note": "Permitted with participants' own gear and a Colorado licence."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "An acclimation overnighter at Ashley's Grange with evening rock climbing."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rock_climbing"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Backpacking high-adventure base at Ben Delatour Scout Ranch in Colorado's Roosevelt National Forest and Rawah Wilderness, offering rock climbing, rappelling, and black-powder shooting.",
       "provenance": {
         "sources": [
@@ -38,13 +61,21 @@
           },
           {
             "url": "https://awbsa.org/ehab/"
+          },
+          {
+            "url": "https://awbsa.org/ehab/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://awbsa.org/wp-content/uploads/2026/03/2026-Elkhorn-High-Adventure-Leaders-Guide.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "co-ben-delatour-scout-ranch",

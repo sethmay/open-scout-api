@@ -26,8 +26,53 @@
         "cub_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "540 acres on Lake Texoma with miles of shoreline."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "pool",
+          "note": "Pool with a slide and beachfront entry."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "fishing",
+          "note": "Lake Texoma shoreline fished for sand bass and striper."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air-conditioned."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Fully plumbed private bath houses."
+        },
+        {
+          "code": "flush_toilets"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Circle Ten Council resident weekend camp near Lake Texoma, offering summer Cub Adventure programming for Cub Scouts.",
       "provenance": {
         "sources": [
@@ -49,7 +94,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/571-2026CubWebResidentCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/571-2026CubWebResidentCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -27,8 +27,130 @@
         "cub_day",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Campfire programme is held at the Council Ring."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A 30-foot tower with three climbing sides and one rappelling side."
+        },
+        {
+          "code": "cope",
+          "note": "Project COPE runs from ground initiative games up to a high ropes course."
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Scouts engage interactive targets with .22 rifles, shotguns, and pistols on a themed range."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "disc_golf",
+          "note": "A disc golf course laid out around camp; discs are issued at the camp office."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Tecumseh Island, the first-year camper program based at Cargill Pavilion."
+        },
+        {
+          "code": "fishing",
+          "note": "Fishing on Bud Martin Lake, outside the waterfront area."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching",
+          "note": "Multiple geocaches around camp; coordinates come from the outdoor skills area director."
+        },
+        {
+          "code": "handicraft",
+          "note": "Handicraft is based in the Kiwanis Lodge."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "living_history",
+          "signature": true,
+          "note": "Mad River Trace, a multi-year progressive frontier skills program covering primitive fire making, leather craft, and tomahawk throwing."
+        },
+        {
+          "code": "nature_center",
+          "note": "The nature center is housed in the Chaplain's Cabin."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Trail to Eagle, a program area for older Scouts working Eagle-required merit badges."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Outpost camping is a requirement of the Mad River Trace program."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing",
+          "note": "Small-boat sailing on the camp lake."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem",
+          "note": "The Tech Center in the Adams Building is the camp's STEM hub."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing",
+          "note": "Tomahawk throwing is taught in the Mad River Trace program."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "The lakefront is the base for all boating programme."
+        },
+        {
+          "code": "welding",
+          "note": "Welding merit badge is offered in the skill trades evening program."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Tecumseh Council's Scouts BSA resident summer camp in Yellow Springs, Ohio, also serving Cub Scout day and resident programs.",
       "provenance": {
         "sources": [
@@ -40,13 +162,17 @@
           },
           {
             "url": "https://tecumsehcouncil.org/camping/scouts-bsa-summer-camp/"
+          },
+          {
+            "url": "https://tecumsehcouncil.org/wp-content/uploads/2026/05/2026-Scouts-BSA-Summer-Camp-Program-Guide.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

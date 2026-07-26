@@ -26,8 +26,96 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Troop rappel sessions run on the climbing tower."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Baden Powell first-year camper program."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "floating_obstacle_course",
+          "signature": true,
+          "note": "The camp's floating jungle gym, which it lists first among its featured attractions."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Volleyball, basketball, horseshoes, and wiffleball."
+        },
+        {
+          "code": "swimming",
+          "note": "Includes a mile swim and a junior lifeguard program."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing",
+          "note": "Taught through the water sports merit badge."
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on the Tennessee River at Birdsong Creek, with a cypress grove reached by paddle craft."
+        },
+        {
+          "code": "welding",
+          "note": "Metalworking instruction."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp on roughly 500 acres along the Tennessee River at Birdsong Creek, offering shooting sports, COPE and climbing, aquatics, merit badges, and a First Year Camper program.",
       "provenance": {
         "sources": [
@@ -39,13 +127,21 @@
           },
           {
             "url": "https://www.westtnscouts.org/cmm"
+          },
+          {
+            "url": "https://www.westtnscouts.org/cmm",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.westtnscouts.org/_files/ugd/0e083d_690585b597de4e0885672117e75be25d.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Most programme detail comes from the leader's guide the camp page links."
       }
     }
   ],

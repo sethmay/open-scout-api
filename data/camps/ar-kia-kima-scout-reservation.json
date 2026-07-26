@@ -26,8 +26,33 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "waterfront",
+          "note": "John A. Cooper Lake at Camp Cherokee and the South Fork River below Camp Osage."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Camp Osage serves meals in a dining hall."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Troops in Camp Cherokee cook in their own sites from commissary-issued food."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Chickasaw Council resident camp spanning roughly 540 acres in the Arkansas Ozarks along the South Fork River. Offerings include scoutcraft, aquatics, shooting sports, climbing/COPE, the Trailblazers first-year program, and Ozark Venture high adventure, with dining hall and troop cooking options.",
       "provenance": {
         "sources": [
@@ -39,13 +64,17 @@
           },
           {
             "url": "https://www.chickasaw.org/events-master/summer-camp-2026"
+          },
+          {
+            "url": "https://www.chickasaw.org/events-master/summer-camp-2026",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

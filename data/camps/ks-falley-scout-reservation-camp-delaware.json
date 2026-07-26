@@ -26,8 +26,38 @@
         "cub_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "aquatics",
+          "note": "Open boating and paddle craft sessions."
+        },
+        {
+          "code": "handicraft",
+          "note": "Cub craft projects, whittling, and art sessions."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "stem"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Jayhawk Area Council Cub Scout resident camp at Camp Delaware on Falley Scout Reservation, located near Lake Perry in Oskaloosa, Kansas, offering Cub Scout Resident Camp and Akela Camp.",
       "provenance": {
         "sources": [
@@ -39,13 +69,17 @@
           },
           {
             "url": "https://jayhawkcouncil.org/camping-outdoor-program/camp-delaware/"
+          },
+          {
+            "url": "https://jayhawkcouncil.org/wp-content/uploads/2026/02/Camp-Delaware-2026-Program-Kick-off-Flyer-1.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "ks-falley-scout-reservation",

@@ -25,8 +25,60 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Butler sits at the centre of camp."
+        },
+        {
+          "code": "pool",
+          "note": "A large swimming pool in addition to the lake."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Miles of biking trails on the property."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "stem",
+          "note": "Hands-on robotics and coding projects."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The ROCKS Program, for first-time campers."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Provisional campers are accepted on a unit-leader recommendation."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp located on the Gus Blass Scout Reservation.",
       "provenance": {
         "sources": [
@@ -38,13 +90,17 @@
           },
           {
             "url": "https://www.naturalstatecouncil.org/crsummercamp"
+          },
+          {
+            "url": "https://www.naturalstatecouncil.org/crsummercamp",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

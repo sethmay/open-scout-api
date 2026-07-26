@@ -25,8 +25,32 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall",
+          "note": "Meals are prepared in the camp kitchen and served cafeteria style."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp sits on the shores of Lake Chapin."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "handicraft"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout family resident camp on a 57-acre preserve along Lake Chapin in Berrien Springs, Michigan, offering range and target activities, waterfront, boating, and handicrafts.",
       "provenance": {
         "sources": [
@@ -34,17 +58,22 @@
             "citation": "camp-finder council-456/mi-camp-frank-s-betz (unofficial community dataset)"
           },
           {
-            "url": "https://pathwaytoadventure.org/cubscoutfamilycamp/"
+            "url": "https://pathwaytoadventure.org/cubscoutfamilycamp/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://pathwaytoadventure.org/cubscoutfamilycamp/"
+          },
+          {
+            "url": "https://pathwaytoadventure.org/campbetz/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

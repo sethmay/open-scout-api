@@ -25,8 +25,90 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "Frontage on the Susquehanna River and a forest stream."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Units can cook their own food in site instead of eating in the dining hall."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person canvas tents are set up in each campsite."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Project Thunder Herons, the all-inclusive first-year program."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Project Wake, a Susquehanna River trek."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "special_needs_program",
+          "note": "A long history of including youth with physical and intellectual disabilities."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +124,17 @@
           {
             "url": "https://broadcreekscouting.org/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://broadcreekscouting.org/programs/summer/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/220-bc26); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/220-bc26); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -25,8 +25,51 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A shower house with private stalls near the campsites."
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "Gravel roads and forest trails; the camp reports medical scooters and basic wheelchairs work well, with transport assistance on request."
+        },
+        {
+          "code": "waterfront",
+          "note": "A lake used for swimming and canoeing."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "handicraft",
+          "note": "A crafts program area."
+        },
+        {
+          "code": "nature_study",
+          "note": "A nature program area."
+        },
+        {
+          "code": "stem",
+          "note": "A combined STEM and Scouting-skills area covering knot tying and orienteering."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident summer camp of Pacific Harbors Council, set on Summit Lake west of Olympia, Washington, serving Cub Scouts in early elementary grades.",
       "provenance": {
         "sources": [
@@ -38,13 +81,17 @@
           },
           {
             "url": "https://www.pacificharbors.org/camp/summer-camps/"
+          },
+          {
+            "url": "https://www.pacificharbors.org/camp/summer-camps/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

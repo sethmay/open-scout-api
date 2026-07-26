@@ -27,8 +27,77 @@
         "cub_day",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "nature_center",
+          "note": "A nature lodge."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "cabins",
+          "note": "A bunkhouse on the property."
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "waterfront",
+          "note": "Two lakes on the property, used for canoeing and rowing."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A campfire circle and amphitheatre."
+        },
+        {
+          "code": "handicraft",
+          "note": "A craft shelter."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "pavilion"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Buckskin Council's 280-acre summer camp in Ona, West Virginia, serving as the council's consolidated site for Scouts BSA and Cub Scout camping.",
       "provenance": {
         "sources": [
@@ -40,13 +109,17 @@
           },
           {
             "url": "https://www.buckskin.org/camping/scoutsbsacamp/"
+          },
+          {
+            "url": "https://www.buckskin.org/wp-content/uploads/2026/02/Camp-Arrowhead-map-with-legend-2026.jpg",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

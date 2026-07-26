@@ -25,8 +25,84 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "Participants get access to some of the reserve's high-adventure venues."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "A water obstacle course at Goodrich Lake."
+        },
+        {
+          "code": "waterfront",
+          "note": "Aquatics on Goodrich Lake."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Brownsea Island programme for new Scouts."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "fishing",
+          "note": "Fishing and fly-fishing at the camp's fish camp."
+        },
+        {
+          "code": "hunter_safety"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "bike_park",
+          "note": "A BMX track and skatepark in the wheeled sports area."
+        },
+        {
+          "code": "zip_line"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A shower house next to the campsites, with ambient-temperature water."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "campsite_wifi",
+          "note": "Wi-Fi reaches the subcamps."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA and Venturing resident camp at the Summit Bechtel Reserve in West Virginia, offering more than 70 merit badges, the Brownsea first-year program, and access to high-adventure venues including whitewater, ziplining, BMX, and mountain biking.",
       "provenance": {
         "sources": [
@@ -44,7 +120,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.9,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

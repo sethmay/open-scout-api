@@ -27,25 +27,114 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
+          "code": "adirondack_shelters",
+          "note": "Three-sided Adirondack shelters with two sets of bunk beds, plus smaller two-person minidaks."
         },
         {
-          "code": "waterfront"
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A new gender-neutral shower house with single-stall showers and bathrooms."
+        },
+        {
+          "code": "black_powder",
+          "note": "Muzzleloading on the range."
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoe outbounds paddle across Siltcoos Lake."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A climbing tower with a climbing wall, open in the afternoons."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served cafeteria style in the Kenneth Ford Lodge."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trail to First Class, an accelerated rank-advancement track in the Scoutcraft area."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "Metalwork, wood carving, basketry, leatherwork, and art."
+        },
+        {
+          "code": "health_lodge",
+          "note": "A new health lodge providing an updated medical station."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "nature_center",
+          "note": "A nature and ecology centre."
+        },
+        {
+          "code": "nature_study",
+          "note": "Environmental science, forestry, soil and water conservation, oceanography, and mammal study."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Adventure Week, a session for older Scouts focused on adventure rather than badges."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Traditional canvas tents on wooden platforms."
         },
         {
           "code": "pool"
         },
         {
-          "code": "shooting_sports"
+          "code": "rappelling"
         },
         {
-          "code": "climbing"
+          "code": "rifle"
         },
         {
-          "code": "mountain_biking"
+          "code": "sailing",
+          "note": "Small-boat sailing."
+        },
+        {
+          "code": "sandboarding",
+          "signature": true,
+          "note": "Sandboarding on the Oregon Dunes National Recreation Area, reached by excursion from camp."
+        },
+        {
+          "code": "scuba",
+          "note": "Discover SCUBA at the waterfront."
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming and lifesaving instruction, plus Mile Swim and a Polar Bear Swim."
+        },
+        {
+          "code": "water_skiing",
+          "note": "Water skiing and tubing behind a powerboat."
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp sits on a private peninsula on Siltcoos Lake."
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "Coastal dunes resident camp featuring an aquatics-heavy program with sailing, waterfront, and pool, plus shooting sports, climbing, mountain biking, and a dining hall.",
       "provenance": {
         "sources": [
@@ -61,13 +150,17 @@
           {
             "url": "https://pccscouting.org/camping/camp-baker/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://pccscouting.org/camping/camp-baker/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-06-15",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://www.otcbsa.org/camp-baker now redirects to https://pccscouting.org/camping/camp-baker/ (link audit, tools/check_urls.py)."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://www.otcbsa.org/camp-baker now redirects to https://pccscouting.org/camping/camp-baker/ (link audit, tools/check_urls.py). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
       }
     }
   ],

@@ -25,8 +25,52 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Polaris, the camp's first-year programme."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "stem"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp operated by the Allegheny Highlands Council, situated on Chautauqua Lake in Mayville, New York.",
       "provenance": {
         "sources": [
@@ -38,13 +82,25 @@
           },
           {
             "url": "https://www.campmerz.org/scouts-bsa-summer-camp"
+          },
+          {
+            "url": "https://www.campmerz.org/scouts-bsa-summer-camp",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.campmerz.org/leaders-guide-forms",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.campmerz.org/_files/ugd/821774_c1f94f61c05f44e6894a749b53bab35a.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

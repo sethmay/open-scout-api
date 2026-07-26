@@ -25,8 +25,156 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "A 28-acre lake."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "pool",
+          "note": "An aquatics center with a swimming pool and pool house."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "fishing",
+          "note": "Lake fishing for bass, sunfish, and bluegill; hooks must be barbless."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "hunter_safety",
+          "note": "Texas hunter safety and bowhunter safety courses."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A combined climbing and rappelling tower."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "cope",
+          "note": "High- and low-ropes courses, with suspended platforms and mid-air obstacles."
+        },
+        {
+          "code": "zip_line",
+          "note": "Two 850-foot zip lines over the lake."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "A marked mountain bike trail served by a bike barn; bikes and helmets provided."
+        },
+        {
+          "code": "atv",
+          "note": "Offered within the older-Scout high-adventure track."
+        },
+        {
+          "code": "stem",
+          "note": "A STEM center."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "welding",
+          "note": "Camp provides welding jackets, gloves, and helmets."
+        },
+        {
+          "code": "disc_golf",
+          "note": "A Frisbee golf course."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Air-conditioned dining hall seating 450."
+        },
+        {
+          "code": "air_conditioning"
+        },
+        {
+          "code": "trading_post",
+          "note": "In the camp headquarters building."
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "pavilion",
+          "note": "A covered pavilion with picnic tables at every campsite, plus the Grand Pavilion."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person wall tents on wooden pallets."
+        },
+        {
+          "code": "adirondack_shelters",
+          "note": "Adirondacks in select campsites sleep eight."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Two electrical outlets at each campsite pavilion."
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "Built to meet both ADA and Scouting America requirements."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Voyager, a patrol-based track for first-year Scouts."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "Mission Lone Star, a full-week older-Scout track combining zip line, COPE, climbing, shooting sports, aquatics, ATV, and a NASA visit."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Primitive camping on the Lone Star Trail."
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Super Troop, registered by the parent rather than by a unit."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Sam Houston Area Council's Scouts BSA resident summer camp near Coldspring, Texas.",
       "provenance": {
         "sources": [
@@ -44,7 +192,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

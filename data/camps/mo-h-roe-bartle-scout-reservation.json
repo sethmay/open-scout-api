@@ -25,8 +25,47 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "rifle",
+          "note": "Ranges include long-range rifle."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "pool",
+          "note": "More than one camp pool."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on Truman Lake."
+        },
+        {
+          "code": "climbing_tower",
+          "signature": true,
+          "note": "Climbing tower alongside a mock ice wall and crate stacking."
+        },
+        {
+          "code": "cope"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Heart of America Council's flagship Scouts BSA resident camp set in the Osage hills near Osceola, spanning three camps and offering more than forty merit badges.",
       "provenance": {
         "sources": [
@@ -44,7 +83,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

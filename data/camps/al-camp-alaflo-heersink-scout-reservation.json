@@ -26,8 +26,71 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall",
+          "note": "Units line up in formation on the parade ground before each meal."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "One ADA-compliant campsite with power, reserved for units with additional needs."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "scuba",
+          "note": "SCUBA BSA offered as an adventure program."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Off-camp high-adventure trips offered alongside the merit badge program."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Rawhide, the camp's first-year camper program."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "A 520-acre summer camp near Enterprise, Alabama, serving Scouts BSA and Cub Scouts. Features an air-conditioned dining hall, Lake Essayon with a floating dock for canoeing, and archery, shotgun, and rifle ranges. Offers the Pathfinders first-year camper program, merit badges, and a high-adventure activity.",
       "provenance": {
         "sources": [
@@ -39,13 +102,17 @@
           },
           {
             "url": "https://bsa3.org/summer-camp-2/scouts-bsa-summer-camp/"
+          },
+          {
+            "url": "https://bsa3.org/wp-content/uploads/2023/01/003-Summer-Camp-2023-LG-v3-1-17-23.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -25,8 +25,114 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "horseback",
+          "signature": true,
+          "note": "A working ranch with a herd of horses, corral rides, trail rides, and hay rides."
+        },
+        {
+          "code": "cabins",
+          "note": "Twenty-eight heated cabins with kitchens."
+        },
+        {
+          "code": "pavilion",
+          "note": "Three dining pavilions served by a large central kitchen."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A 32-foot climbing tower."
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "amphitheater",
+          "note": "Two firebowls."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "Three spring-fed lakes on the property."
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "sports_field",
+          "note": "A volleyball pit, horseshoe pits, and human foosball."
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "welding",
+          "note": "Ranch Hand participants learn to bend and weld metal."
+        },
+        {
+          "code": "patrol_cooking"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "A week-long Trail to Eagle programme for older Scouts."
+        },
+        {
+          "code": "first_year_program",
+          "note": "A week-long Trail to First Class programme for new Scouts."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "An individual Scout can sign up for Ranch Hand Camp without their unit."
+        },
+        {
+          "code": "museum",
+          "note": "The Thomas Trainor Scout Museum."
+        },
+        {
+          "code": "rv_sites",
+          "note": "A family camp with RV sites on water, sewer, and electricity."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "backpacking",
+          "note": "Backpacking and cavalcade training trails prepare crews for Philmont."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "A 1,700-acre Michigan Crossroads Council ranch north of Detroit that hosts scouting events; the council's only site offering the Horsemanship merit badge.",
       "provenance": {
         "sources": [
@@ -34,7 +140,8 @@
             "citation": "camp-finder council-272/mi-d-bar-a-scout-ranch (unofficial community dataset)"
           },
           {
-            "url": "https://michiganscouting.org/camping/properties/d-bar-a-scout-ranch/"
+            "url": "https://michiganscouting.org/camping/properties/d-bar-a-scout-ranch/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://michiganscouting.org/camping/properties/d-bar-a-scout-ranch/"
@@ -44,7 +151,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

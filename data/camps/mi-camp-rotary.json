@@ -25,8 +25,49 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "A spring-fed lake forms the camp waterfront."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served family style."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "cabins",
+          "note": "Four rentable lodges with heat, kitchens, and bath and shower facilities."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A Scout can attend without their unit at a provisional fee."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp operated by the Michigan Crossroads Council, located in the central Lower Peninsula near Clare.",
       "provenance": {
         "sources": [
@@ -34,7 +75,8 @@
             "citation": "camp-finder council-272/mi-camp-rotary (unofficial community dataset)"
           },
           {
-            "url": "https://michiganscouting.org/camping/properties/camp-rotary/"
+            "url": "https://michiganscouting.org/camping/properties/camp-rotary/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://michiganscouting.org/camping/properties/camp-rotary/"
@@ -44,7 +86,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

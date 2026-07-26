@@ -25,8 +25,82 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall",
+          "note": "A large modern dining hall for communal meals."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Units can eat in the dining hall or cook patrol meals in their own sites."
+        },
+        {
+          "code": "trading_post",
+          "note": "A well-stocked trading post for snacks and memorabilia."
+        },
+        {
+          "code": "chapel",
+          "note": "A spacious chapel on a wooded point overlooking the water."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A lakeside fire circle for council fires and ceremonies."
+        },
+        {
+          "code": "waterfront",
+          "note": "On the shores of Bear Paw Lake in the Nicolet National Forest."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "fishing",
+          "note": "Includes ice fishing in the winter season."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Marked cycling trails of up to fifty miles around camp."
+        },
+        {
+          "code": "climbing",
+          "note": "A rock climbing program."
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork."
+        },
+        {
+          "code": "stem",
+          "note": "A STEM centre."
+        },
+        {
+          "code": "disc_golf",
+          "note": "A nine-hole course."
+        },
+        {
+          "code": "ice_skating",
+          "note": "Part of the winter season program."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +116,17 @@
           {
             "url": "https://baylakesbsa.org/bear-paw/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://baylakesbsa.org/bear-paw/summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "curated",
         "verified_at": "2026-07-22",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Name corrected 2026-07-22 (community/data-quality review): 'Scouts BSA Summer Camp - Bear Paw Scout Camp' was a scraped registration-event title; renamed to the property name, verified against the council's camp listing. Prior id 'wi-scouts-bsa-summer-camp-bear-paw-scout-camp' retired (resolves via aliases.json). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/635-2026summercampbearpaw); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Name corrected 2026-07-22 (community/data-quality review): 'Scouts BSA Summer Camp - Bear Paw Scout Camp' was a scraped registration-event title; renamed to the property name, verified against the council's camp listing. Prior id 'wi-scouts-bsa-summer-camp-bear-paw-scout-camp' retired (resolves via aliases.json). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/635-2026summercampbearpaw); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "wi-scouts-bsa-summer-camp-bear-paw-scout-camp"

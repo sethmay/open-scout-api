@@ -25,8 +25,52 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "first_year_program",
+          "note": "Trail to Eagle, covering most Tenderfoot, Second Class, and First Class requirements."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "archery",
+          "note": "A 3D archery course."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "bike_park",
+          "note": "A BMX biking course."
+        },
+        {
+          "code": "waterfront",
+          "note": "The property adjoins Kirwin Reservoir."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "chapel"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Coronado Area Council Scouts BSA resident camp on the south shore of Kirwin Reservoir in northwest Kansas, offering over 35 merit badges, a Trail to Eagle first-year program, shooting sports, ATV, COPE, and aquatics.",
       "provenance": {
         "sources": [
@@ -38,13 +82,17 @@
           },
           {
             "url": "https://www.coronadoscout.org/hansen/"
+          },
+          {
+            "url": "https://www.coronadoscout.org/hansen/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

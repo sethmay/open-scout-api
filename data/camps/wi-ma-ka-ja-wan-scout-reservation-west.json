@@ -25,8 +25,78 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "waterfront",
+          "note": "Spring-fed lake frontage with docks and a swim area."
+        },
+        {
+          "code": "fishing",
+          "note": "Fishing from docks, a pontoon, or open boating time."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A 42-foot tower with multiple climbing faces and an interior chimney."
+        },
+        {
+          "code": "rappelling",
+          "note": "A dedicated face of the climbing tower is used for rappelling."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Flow trails and singletrack ridden on mountain and fat-tire bikes."
+        },
+        {
+          "code": "handicraft",
+          "note": "Wood carving, leatherwork, basketry, pottery, and sculpture."
+        },
+        {
+          "code": "rocketry"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "nature_center",
+          "note": "An ecology and conservation lodge."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trailblazer, a half-day introduction for first-time campers."
+        },
+        {
+          "code": "zip_line",
+          "note": "A 500-foot dual cable zip line."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +112,17 @@
           {
             "url": "https://makajawan.com/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://makajawan.com/activities",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/129-2026MSRWestCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/129-2026MSRWestCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "wi-ma-ka-ja-wan-scout-reservation",

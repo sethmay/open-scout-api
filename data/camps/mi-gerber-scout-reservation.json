@@ -25,8 +25,60 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "cope",
+          "note": "Both high and low COPE courses."
+        },
+        {
+          "code": "bouldering",
+          "note": "A bouldering wall called Babe the Blue Ox."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A Scout can attend without their unit at a provisional fee."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp operated by the Michigan Crossroads Council, set within the Manistee Forest near Twin Lake, Michigan.",
       "provenance": {
         "sources": [
@@ -34,7 +86,8 @@
             "citation": "camp-finder council-272/mi-gerber-scout-reservation (unofficial community dataset)"
           },
           {
-            "url": "https://michiganscouting.org/camping/properties/gerber-scout-reservation/"
+            "url": "https://michiganscouting.org/camping/properties/gerber-scout-reservation/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://michiganscouting.org/camping/properties/gerber-scout-reservation/"
@@ -44,7 +97,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

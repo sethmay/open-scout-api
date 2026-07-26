@@ -26,8 +26,54 @@
         "high_adventure",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "Multi-day treks into Grand Teton and Yellowstone under national park permits."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "nature_study",
+          "note": "A nature area."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "waterfront",
+          "note": "A waterfront on Lake of the Woods."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The A.C.E. programme mixes merit badges with high-adventure activity for older youth."
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "amphitheater",
+          "note": "A fire bowl for campfire programme."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "bathhouse"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Wilderness Scouts BSA resident camp of the Crossroads of the West Council, set on Lake of the Woods in Teton County, Wyoming, near Yellowstone. Offers a classic camp program alongside high-adventure options and the A.C.E. program for older youth.",
       "provenance": {
         "sources": [
@@ -39,13 +85,17 @@
           },
           {
             "url": "https://www.utahscouts.org/loll"
+          },
+          {
+            "url": "https://www.utahscouts.org/_files/ugd/401ad5_27b0de92d7bc4b93878769bc8ee9cce1.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "wy-camp-loll-backcountry-treks-teton-crest-tetons-to-cascades"

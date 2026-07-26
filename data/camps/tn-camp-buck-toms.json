@@ -25,8 +25,65 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A multi-level climbing tower."
+        },
+        {
+          "code": "cope",
+          "note": "High and low course elements, including a V swing."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Dan Beard first-year camper program."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Mountain Adventure, a five-day expedition built around the mountains, rivers, caves, and trails of East Tennessee."
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming",
+          "note": "Includes BSA Lifeguard and a mile swim."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Great Smoky Mountain Council's Scouts BSA resident summer camp set on a cove of Watts Bar Lake, offering a Dan Beard first-year program, high adventure, and a wide range of merit badges.",
       "provenance": {
         "sources": [
@@ -38,13 +95,21 @@
           },
           {
             "url": "https://easttnscouts.org/summercamp/"
+          },
+          {
+            "url": "https://easttnscouts.org/summercamp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://easttnscouts.org/high-adventure/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). The climbing tower, COPE elements, and zip line come from the council's high-adventure page, which names them as Buck Toms facilities."
       }
     }
   ],

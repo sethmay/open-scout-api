@@ -26,8 +26,94 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "atv",
+          "note": "An ATV programme in Carburetor Canyon run by a certified instructor."
+        },
+        {
+          "code": "waterfront",
+          "note": "Pit Lake, a former rock quarry with clear water and a sandy bottom."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "fishing",
+          "note": "A fishing shack at Pit Lake."
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology and Conservation based at Thoms Lodge."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing_tower",
+          "signature": true,
+          "note": "A 32-foot climbing and rappelling tower the camp is known for."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "stem",
+          "note": "A STEAM centre in Grandstaff Lodge."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Soaring Eagles sessions for First Class Scouts and above."
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "Turtle Quest, used as a template by other camps."
+        },
+        {
+          "code": "high_adventure_option"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Anthony Wayne Area Council's Scouts BSA and Cub Scout resident summer camp on the 1,200-acre Anthony Wayne Scout Reservation, which also includes Camps Foellinger and Wilderness, near Pleasant Lake, Indiana.",
       "provenance": {
         "sources": [
@@ -39,13 +125,17 @@
           },
           {
             "url": "https://www.ccltbsa.org/boy-scout-camp"
+          },
+          {
+            "url": "https://www.ccltbsa.org/program",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

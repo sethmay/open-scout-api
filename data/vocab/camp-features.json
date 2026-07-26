@@ -65,6 +65,15 @@
       "broader": "shooting_sports"
     },
     {
+      "code": "astronomy",
+      "label": "Astronomy",
+      "description": "Astronomy or stargazing programme.",
+      "category": "subject",
+      "aliases": [
+        "stargazing"
+      ]
+    },
+    {
       "code": "atv",
       "label": "ATV Program",
       "description": "An all-terrain-vehicle riding program.",
@@ -72,6 +81,15 @@
       "aliases": [
         "four_wheeling",
         "quads"
+      ]
+    },
+    {
+      "code": "automotive",
+      "label": "Automotive",
+      "description": "Automotive or small-engine mechanics instruction.",
+      "category": "activity",
+      "aliases": [
+        "auto_mechanics"
       ]
     },
     {
@@ -138,6 +156,12 @@
       "description": "A bouldering wall or natural boulder problems.",
       "category": "activity",
       "broader": "climbing"
+    },
+    {
+      "code": "building_wifi",
+      "label": "Building Wi-Fi",
+      "description": "Wi-Fi in main buildings but not at campsites.",
+      "category": "accommodation"
     },
     {
       "code": "cabins",
@@ -212,6 +236,15 @@
       "broader": "climbing"
     },
     {
+      "code": "conservation_project",
+      "label": "Conservation Project",
+      "description": "Hands-on conservation or service project work on the property.",
+      "category": "program_model",
+      "aliases": [
+        "service_project"
+      ]
+    },
+    {
       "code": "cope",
       "label": "COPE",
       "description": "Challenging Outdoor Personal Experience: a ropes and team-challenge course.",
@@ -234,6 +267,24 @@
       "description": "Cowboy action shooting programme.",
       "category": "activity",
       "broader": "shooting_sports"
+    },
+    {
+      "code": "cross_country_skiing",
+      "label": "Cross-Country Skiing",
+      "description": "Nordic ski trails or instruction.",
+      "category": "activity",
+      "aliases": [
+        "nordic_skiing"
+      ]
+    },
+    {
+      "code": "digital_media",
+      "label": "Digital Media",
+      "description": "Photography, video, or digital-media programme.",
+      "category": "subject",
+      "aliases": [
+        "video_production"
+      ]
     },
     {
       "code": "dining_hall",
@@ -336,6 +387,16 @@
       "category": "program_model"
     },
     {
+      "code": "hiking",
+      "label": "Hiking",
+      "description": "Marked hiking trails or a hiking programme on the property.",
+      "category": "activity",
+      "aliases": [
+        "hiking_trails",
+        "day_hiking"
+      ]
+    },
+    {
       "code": "horseback",
       "label": "Horseback Riding",
       "description": "Horseback riding facilities and program.",
@@ -350,6 +411,13 @@
       "description": "A hunter-safety certification course.",
       "category": "activity",
       "broader": "shooting_sports"
+    },
+    {
+      "code": "ice_fishing",
+      "label": "Ice Fishing",
+      "description": "Ice fishing at a winter-operating camp.",
+      "category": "activity",
+      "broader": "fishing"
     },
     {
       "code": "ice_skating",
@@ -368,12 +436,28 @@
       ]
     },
     {
+      "code": "knife_throwing",
+      "label": "Knife Throwing",
+      "description": "Knife-throwing range.",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
       "code": "land_sailing",
       "label": "Land Sailing",
       "description": "Wind-powered land sailers ridden on sand or a hard flat surface.",
       "category": "activity",
       "aliases": [
         "land_yachting"
+      ]
+    },
+    {
+      "code": "leadership_training",
+      "label": "Leadership Training",
+      "description": "A youth leadership training course run at the camp.",
+      "category": "program_model",
+      "aliases": [
+        "nylt"
       ]
     },
     {
@@ -414,6 +498,12 @@
       ]
     },
     {
+      "code": "mountain_boarding",
+      "label": "Mountain Boarding",
+      "description": "Mountain boarding or downhill boarding on a slope.",
+      "category": "activity"
+    },
+    {
       "code": "mountaineering",
       "label": "Mountaineering",
       "description": "Alpine mountaineering or glacier travel.",
@@ -442,10 +532,23 @@
       ]
     },
     {
+      "code": "observatory",
+      "label": "Observatory",
+      "description": "A telescope observatory building on the property.",
+      "category": "facility"
+    },
+    {
       "code": "older_scout_program",
       "label": "Older-Scout Program",
       "description": "Dedicated programming for older or more experienced participants.",
       "category": "program_model"
+    },
+    {
+      "code": "orienteering",
+      "label": "Orienteering",
+      "description": "Map-and-compass orienteering course or programme.",
+      "category": "activity",
+      "broader": "scoutcraft"
     },
     {
       "code": "outpost_overnight",
@@ -486,6 +589,15 @@
       "category": "facility"
     },
     {
+      "code": "performing_arts",
+      "label": "Performing Arts",
+      "description": "Theatre, music, or performance programme.",
+      "category": "activity",
+      "aliases": [
+        "theater"
+      ]
+    },
+    {
       "code": "personal_watercraft",
       "label": "Personal Watercraft",
       "description": "Jet-ski style personal watercraft.",
@@ -494,6 +606,13 @@
       "aliases": [
         "jet_ski"
       ]
+    },
+    {
+      "code": "pioneering",
+      "label": "Pioneering",
+      "description": "Pioneering: lashings, spars, and built structures.",
+      "category": "activity",
+      "broader": "scoutcraft"
     },
     {
       "code": "pistol",
@@ -546,6 +665,13 @@
       "broader": "shooting_sports"
     },
     {
+      "code": "river_tubing",
+      "label": "River Tubing",
+      "description": "Float tubing on a river or creek.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
       "code": "rock_climbing",
       "label": "Natural Rock Climbing",
       "description": "Climbing on natural rock or cliffs, as distinct from a built tower.",
@@ -585,6 +711,15 @@
       "category": "activity"
     },
     {
+      "code": "scoutcraft",
+      "label": "Scoutcraft",
+      "description": "Core outdoor-skills programme area; parent for pioneering, orienteering, and survival skills.",
+      "category": "activity",
+      "aliases": [
+        "outdoor_skills"
+      ]
+    },
+    {
       "code": "scuba",
       "label": "SCUBA",
       "description": "Scuba diving instruction and program.",
@@ -607,6 +742,15 @@
       "broader": "shooting_sports"
     },
     {
+      "code": "sledding",
+      "label": "Sledding",
+      "description": "A sledding or snow-tubing hill.",
+      "category": "activity",
+      "aliases": [
+        "snow_tubing"
+      ]
+    },
+    {
       "code": "slingshot",
       "label": "Slingshot",
       "description": "A slingshot range.",
@@ -619,6 +763,12 @@
       "description": "Snorkelling instruction or guided snorkelling.",
       "category": "activity",
       "broader": "aquatics"
+    },
+    {
+      "code": "snowshoeing",
+      "label": "Snowshoeing",
+      "description": "Snowshoeing programme or trails.",
+      "category": "activity"
     },
     {
       "code": "special_needs_program",
@@ -684,6 +834,16 @@
       "category": "facility"
     },
     {
+      "code": "water_blob",
+      "label": "Water Blob",
+      "description": "An inflatable launch blob at the waterfront.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "blob"
+      ]
+    },
+    {
       "code": "water_skiing",
       "label": "Water Skiing",
       "description": "Water skiing and towed water sports.",
@@ -691,6 +851,16 @@
       "broader": "aquatics",
       "aliases": [
         "wakeboarding"
+      ]
+    },
+    {
+      "code": "water_slide",
+      "label": "Water Slide",
+      "description": "A water slide at the waterfront or pool.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "waterslide"
       ]
     },
     {
@@ -713,6 +883,53 @@
       "category": "activity",
       "aliases": [
         "metalwork"
+      ]
+    },
+    {
+      "code": "whitewater_rafting",
+      "label": "Whitewater Rafting",
+      "description": "Whitewater rafting, on site or as a camp-run trip.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "rafting"
+      ]
+    },
+    {
+      "code": "wilderness_survival",
+      "label": "Wilderness Survival",
+      "description": "Wilderness survival instruction and overnight practice.",
+      "category": "activity",
+      "broader": "scoutcraft",
+      "aliases": [
+        "survival"
+      ]
+    },
+    {
+      "code": "wildlife_viewing",
+      "label": "Wildlife Viewing",
+      "description": "Guided wildlife viewing as a programme feature.",
+      "category": "activity",
+      "aliases": [
+        "wildlife_watching"
+      ]
+    },
+    {
+      "code": "winter_camping",
+      "label": "Winter Camping",
+      "description": "The property operates for winter camping.",
+      "category": "program_model",
+      "aliases": [
+        "cold_weather_camping"
+      ]
+    },
+    {
+      "code": "woodworking",
+      "label": "Woodworking",
+      "description": "Woodworking or carpentry shop.",
+      "category": "activity",
+      "aliases": [
+        "carpentry"
       ]
     },
     {

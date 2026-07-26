@@ -25,8 +25,34 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics",
+          "note": "Water activities on the reservation's lake and expanded pond."
+        },
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "Camp Alaska, a winter challenge in which participants backpack their gear in and sleep out in a Scout-made site."
+        },
+        {
+          "code": "cabins",
+          "note": "Cabins at Camp Avery Hand sleeping four to thirty-two people."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Climbing tower at Camp Wyandot."
+        },
+        {
+          "code": "cope",
+          "note": "High ropes course at Camp Wyandot."
+        },
+        {
+          "code": "waterfront",
+          "note": "A 23-acre lake at Camp Wyandot with an island joined by a peninsula."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Lake Erie Council's home base for Cub Scout and Webelos resident camps, hosting overnight adventure sessions at Camp Wyandot in Wakeman, Ohio.",
       "provenance": {
         "sources": [
@@ -42,13 +68,17 @@
           {
             "url": "https://lecscouting.org/firelands",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://lecscouting.org/firelands",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/440-smores2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/440-smores2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

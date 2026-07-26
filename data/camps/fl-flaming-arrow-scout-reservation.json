@@ -26,8 +26,87 @@
         "webelos",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Three of the fifteen campsites have Adirondack shelters."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A council ring."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Wood Hall serves as the dining hall and training space."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_center",
+          "note": "An ecology lodge."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Eleven of the fifteen campsites have permanent cabin-style tents."
+        },
+        {
+          "code": "rappelling",
+          "note": "A dedicated rappelling tower."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Volleyball and softball."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "Three clear spring-fed natural lakes, which the council names as what the camp is known for."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "677-acre camp set on three spring-fed lakes near Lake Wales, home to Greater Tampa Bay Area Council resident camp programs, offering a Webelos/Arrow of Light resident camp that introduces Cubs to Scouts BSA-style camping.",
       "provenance": {
         "sources": [
@@ -39,13 +118,17 @@
           },
           {
             "url": "https://tampabayscouting.org/camps/flaming-arrow-scout-reservation"
+          },
+          {
+            "url": "https://tampabayscouting.org/camps/flaming-arrow-scout-reservation",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

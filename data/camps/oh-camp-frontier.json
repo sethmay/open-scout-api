@@ -25,8 +25,122 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "atv",
+          "signature": true,
+          "note": "A week-long ATV riding course plus trail rides and rider certification."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Camp packs out food and units cook at their campsites."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "Three stocked lakes, with open boating on Lake Spieker."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "zip_line"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Starting Place, for first-year Scouts."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Erie Shores Council's Scouts BSA resident summer camp located at Pioneer Scout Reservation.",
       "provenance": {
         "sources": [
@@ -38,13 +152,21 @@
           },
           {
             "url": "https://www.psrweb.org/SummerCamp2026"
+          },
+          {
+            "url": "https://www.psrweb.org/SummerCamp2026",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.psrweb.org/files/46279/camp-frontier-leader%27s-guide",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

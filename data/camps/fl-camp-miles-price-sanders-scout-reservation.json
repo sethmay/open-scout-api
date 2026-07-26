@@ -25,8 +25,31 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics",
+          "note": "The camp page lists aquatics as a bookable program area without naming individual activities."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts can attend winter camp individually as provisional campers."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Shooting ranges are bookable, without individual disciplines named."
+        },
+        {
+          "code": "welding",
+          "note": "Welding and metalworking are taught among the camp's trade skills badges."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Southwest Florida Council's 1,200-acre Scouts BSA resident camp near Punta Gorda, featuring a pool, rifle, shotgun, archery, and BB ranges, a climbing wall, rappelling tower, ropes course, and waterfront.",
       "provenance": {
         "sources": [
@@ -38,13 +61,21 @@
           },
           {
             "url": "https://www.swflcouncilbsa.org/camping/council-camps-/price-sanders-scout-reservation/76507"
+          },
+          {
+            "url": "https://www.swflcouncilbsa.org/camping/council-camps-/price-sanders-scout-reservation/76507",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.swflcouncilbsa.org/camping/scouts-bsa-winter-camp/54016",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

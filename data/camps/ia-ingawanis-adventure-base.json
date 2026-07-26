@@ -27,8 +27,116 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery",
+          "note": "An archery range, plus an action-archery range with moving foam-disc targets."
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "black_powder",
+          "note": "Black powder rifles are fired at the rifle range on family night."
+        },
+        {
+          "code": "cabins",
+          "note": "Cabins are rented to units during the year-round camping season."
+        },
+        {
+          "code": "canoeing",
+          "note": "Troop canoe floats run off site and are booked before camp."
+        },
+        {
+          "code": "chalkball",
+          "note": "A marking-round target range where Scouts shoot paintballs at targets."
+        },
+        {
+          "code": "chapel",
+          "note": "A non-denominational worship service is held at the chapel."
+        },
+        {
+          "code": "cit_program",
+          "note": "A counsellor-in-training programme for youth aged fourteen and fifteen."
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "Low and high COPE for Scouts thirteen and over."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served family style."
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trail to First Class, a morning programme for first-year campers."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Units cook breakfast and supper in their campsites midweek using food drawn from the commissary."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Provisional campers are paired with a unit for the week."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "stem",
+          "note": "A STEM lab running programming, photography, movie-making, and space exploration."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "welding",
+          "note": "Metalwork is taught in the skilled-trades area at the quartermaster."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Winnebago Council's Scouts BSA resident camp near Waverly, Iowa, with direct access to the Cedar River.",
       "provenance": {
         "sources": [
@@ -40,13 +148,17 @@
           },
           {
             "url": "https://www.winnebagocouncil.org/camping/iab/scouts-bsa-resident-camp/"
+          },
+          {
+            "url": "https://www.winnebagocouncil.org/wp-content/uploads/2023/11/2024-BSA-Summer-Camp-Leader-Program-Guide-10.31.2023.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "ia-ingawanis-adventure-base-cub-scout-resident-camp",

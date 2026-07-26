@@ -25,8 +25,115 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cowboy_action_shooting",
+          "signature": true,
+          "note": "Cowboy action shooting with pistols, rifles, and shotguns for participants aged 14 and older."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Air conditioning in the dining hall."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Gas-powered hot water heaters supply campsite showers."
+        },
+        {
+          "code": "chapel",
+          "note": "The open-air Livingston Chapel, overlooking Horne Lake."
+        },
+        {
+          "code": "pool",
+          "note": "An Olympic-length swimming pool."
+        },
+        {
+          "code": "waterfront",
+          "note": "Two lakes, with a boating area and boathouse on Horne Lake."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A combined climbing and rappelling tower."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "nature_study",
+          "note": "An ecology area with an ecology cabin."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "handicraft",
+          "note": "A handicraft pavilion."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "disc_golf",
+          "note": "A nine-hole disc golf course."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "sports_field",
+          "note": "Volleyball, basketball, and horseshoes."
+        },
+        {
+          "code": "adirondack_shelters",
+          "note": "Adirondacks used as campsite lodging alongside tents."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Trailblazer program for first-year campers."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Outpost camping, including wilderness survival and Trailblazer outposts."
+        },
+        {
+          "code": "cit_program",
+          "note": "Counselor-in-Training positions open to Scouts aged 14 and older."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Black Warrior Council Scouts BSA resident summer camp spanning 488 acres in Cottondale, Alabama, featuring a pool, two lakes, a shooting sports complex, a climbing tower, and merit badge programs.",
       "provenance": {
         "sources": [
@@ -38,13 +145,17 @@
           },
           {
             "url": "https://www.bwc-bsa.org/summercamp2026"
+          },
+          {
+            "url": "https://www.bwc-bsa.org/_files/ugd/982354_12cb0194a1a8405dae299ea71a5f4af9.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

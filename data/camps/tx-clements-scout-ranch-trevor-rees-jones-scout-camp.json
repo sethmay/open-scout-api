@@ -25,8 +25,96 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "Five lakes across 3,200 acres, including the 160-acre Lake Murchison."
+        },
+        {
+          "code": "fishing",
+          "signature": true,
+          "note": "Stocked lakes with several fishing docks, holding largemouth bass."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "horseback",
+          "signature": true,
+          "note": "A resident herd of horses, with an equestrian program and monthly trail rides for units."
+        },
+        {
+          "code": "atv",
+          "note": "Run during summer camp."
+        },
+        {
+          "code": "cope",
+          "note": "The Roy and Frances Rea COPE Center, a challenge course for youth aged thirteen and older."
+        },
+        {
+          "code": "zip_line",
+          "note": "Part of the COPE challenge course."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "The John Coffman Climbing and Rappelling Complex, a 60-foot wooden tower."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "museum",
+          "note": "A museum of natural history at Trevor Rees-Jones Scout Camp."
+        },
+        {
+          "code": "health_lodge",
+          "note": "A first aid lodge."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air-conditioned."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Fully plumbed private bath houses."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "pavilion",
+          "note": "Two large pavilions at each of the two camps, one at the water's edge."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Philmont-style backcountry camps on the ranch."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Circle Ten Council's Scouts BSA resident summer camp at Clements Scout Ranch, encompassing Trevor Rees-Jones Scout Camp and Camp Meisenbach, located near Athens, Texas.",
       "provenance": {
         "sources": [
@@ -48,7 +136,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/571-2026TRJSummerCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/571-2026TRJSummerCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

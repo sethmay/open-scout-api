@@ -25,8 +25,34 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "A mile-long sandy beach on the James River, below cliffs."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A Guns 'n' Grillin' outdoor adventure weekend is hosted at camp."
+        },
+        {
+          "code": "scuba",
+          "note": "A SCUBA Camp track for veteran campers."
+        },
+        {
+          "code": "sailing",
+          "note": "The Sail Hampton Roads track for veteran campers."
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "Huskanaw, a rite-of-passage program with over an acre of ground developed for it."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Veteran Camper programs run in parallel with base camp."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "merged_from": [
         "va-scouts-bsa-long-term"
@@ -42,13 +68,17 @@
           {
             "url": "https://pipsicobsa.com/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://pipsicobsa.com/summer-camp-programs/scoutsbsa-summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "curated",
         "verified_at": "2026-07-22",
         "imported_at": "2026-07-21",
         "confidence": 0.9,
-        "notes": "Tidewater Council Scouts BSA resident summer camp at Pipsico Scout Reservation (Spring Grove / Surry County, VA; 57 Pipsico Road, near Williamsburg). Name corrected from the scraped registration-event title 'Scouts BSA Long-Term'; prior id va-scouts-bsa-long-term retired (resolves via aliases.json). Address independently confirms the property. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/596-Pipsico2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Tidewater Council Scouts BSA resident summer camp at Pipsico Scout Reservation (Spring Grove / Surry County, VA; 57 Pipsico Road, near Williamsburg). Name corrected from the scraped registration-event title 'Scouts BSA Long-Term'; prior id va-scouts-bsa-long-term retired (resolves via aliases.json). Address independently confirms the property. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/596-Pipsico2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

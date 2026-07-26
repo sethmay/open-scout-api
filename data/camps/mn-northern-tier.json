@@ -25,13 +25,28 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "canoeing",
+          "signature": true,
+          "note": "Wilderness canoe expeditions into the Boundary Waters, Quetico Provincial Park, and the Canadian Crown Lands."
+        },
+        {
+          "code": "fishing",
+          "note": "Ice fishing on winter treks."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Individual treks place a Scout with an existing crew."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
           {
-            "url": "https://www.ntier.org/"
+            "url": "https://www.ntier.org/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://www.scouting.org/high-adventure/northern-tier/"
@@ -41,7 +56,7 @@
         "verified_at": "2026-07-21",
         "imported_at": "2026-07-21",
         "confidence": 0.9,
-        "notes": "National High Adventure base (canoe country, Ely MN + Canada); coordinates approximate (Sommers base)."
+        "notes": "National High Adventure base (canoe country, Ely MN + Canada); coordinates approximate (Sommers base). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

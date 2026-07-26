@@ -25,8 +25,69 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Eagle Quest, a first-year camper advancement programme."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming is in spring-fed Crystal Lake; there is no pool."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "zip_line",
+          "note": "A night zip line runs at the COPE and climbing area."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "atv",
+          "note": "An ATV riding course leading to rider certification, for older Scouts."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Micro-Trek tracks for campers who have already done much of the standard programme."
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower buildings on each side of camp."
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "fishing"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Samoset Council's flagship Scouts BSA resident camp at Crystal Lake Scout Reservation near Rhinelander, Wisconsin, offering week-long periods with a wide range of merit badge opportunities.",
       "provenance": {
         "sources": [
@@ -38,13 +99,17 @@
           },
           {
             "url": "https://samoset.org/camping/tesomas/"
+          },
+          {
+            "url": "https://samoset.org/wp-content/uploads/2026/02/Tesomas_Leader_Guide.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

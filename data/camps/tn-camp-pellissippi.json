@@ -25,8 +25,39 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "note": "Hiking and backpacking legs on Winding Waters expeditions."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "Winding Waters, a create-your-own expedition programme based out of this camp."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Open to participants at least fourteen years of age."
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Scaling natural rock formations."
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake frontage paddled by canoe and kayak."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Great Smoky Mountain Council camp on Norris Lake, serving as home base for the Winding Waters Adventures high-adventure program, offering mountain biking, backpacking, rock climbing, whitewater rafting, canoeing, and kayaking for older Scouts, Venturers, and Sea Scouts.",
       "provenance": {
         "sources": [
@@ -38,13 +69,17 @@
           },
           {
             "url": "https://easttnscouts.org/high-adventure/"
+          },
+          {
+            "url": "https://easttnscouts.org/high-adventure/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Only the Winding Waters section of that page describes this property; the COPE and Mountain Adventure sections belong to Camp Buck Toms and were excluded."
       }
     }
   ],

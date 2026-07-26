@@ -30,25 +30,60 @@
           "code": "dining_hall"
         },
         {
-          "code": "waterfront"
+          "code": "pavilion",
+          "note": "The Janicki Shelter at the heart of camp."
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Challenge at the heart of camp, with a sandy swim beach."
+        },
+        {
+          "code": "swimming",
+          "note": "A palm-treed sandy swim beach."
+        },
+        {
+          "code": "aquatics",
+          "note": "A complete boating program."
+        },
+        {
+          "code": "paddleboarding",
+          "note": "Stand-up paddle boards."
+        },
+        {
+          "code": "climbing",
+          "note": "Run together with the COPE program."
+        },
+        {
+          "code": "cope",
+          "note": "A high COPE course."
+        },
+        {
+          "code": "zip_line",
+          "note": "A tandem zip line over a thousand feet long."
         },
         {
           "code": "shooting_sports"
         },
         {
-          "code": "climbing"
-        },
-        {
-          "code": "cope"
+          "code": "cowboy_action_shooting",
+          "note": "A western-style cowboy action range."
         },
         {
           "code": "mountain_biking"
         },
         {
+          "code": "handicraft",
+          "note": "A crafts area."
+        },
+        {
+          "code": "nature_study",
+          "note": "A nature and conservation area."
+        },
+        {
           "code": "stem"
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "Resident camp in the North Cascades foothills near Mount Vernon, Washington, featuring a strong first-year program and mountain biking trails, plus a dining hall, waterfront, shooting sports, climbing, COPE, and STEM offerings.",
       "provenance": {
         "sources": [
@@ -60,13 +95,21 @@
           },
           {
             "url": "https://www.mountbakerbsa.org/fire-mountain"
+          },
+          {
+            "url": "https://mountbakerscouting.org/firemountain/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://mountbakerscouting.org/firemountain/residentcamp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-05-30",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
       }
     }
   ],

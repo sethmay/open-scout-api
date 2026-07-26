@@ -25,8 +25,29 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air conditioned."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Modern bathroom facilities with private showers."
+        },
+        {
+          "code": "dining_hall",
+          "note": "All meals are served in the dining hall."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "The property hosts high-adventure activity alongside district events and training."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Shooting sports are among the activities the property hosts."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "A 600-acre Indian Nations Council reservation near Locust Grove, Oklahoma, hosting Cub Scout resident camp, Webelos Woods, high adventure, and shooting sports.",
       "provenance": {
         "sources": [
@@ -38,13 +59,21 @@
           },
           {
             "url": "https://www.okscouts.org/camps-1/mabee-scout-reservation"
+          },
+          {
+            "url": "https://www.okscouts.org/camps-1/mabee-scout-reservation",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.okscouts.org/campscubscouts",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -27,28 +27,56 @@
       ],
       "features": [
         {
+          "code": "cope"
+        },
+        {
           "code": "dining_hall"
         },
         {
-          "code": "waterfront"
+          "code": "fishing",
+          "note": "Freshly stocked rainbow trout."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Outbound trips beyond camp, including Class III whitewater on the Deschutes River and the Whitewater merit badge."
+        },
+        {
+          "code": "horseback",
+          "note": "Trail rides for all sizes, plus the CL Advanced Wrangler program in which older Scouts work alongside the wranglers."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Forest trail riding, with advanced sessions covering trail skills and maintenance."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Advanced horse, biking, and boarding sessions built for older Scouts."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Jamboree-style cooking: campers cook half their meals in the campsite, with equipment, stoves, propane, and mess kits provided."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Rover Camp forms a provisional troop with its own staff leadership for Scouts attending without a troop."
+        },
+        {
+          "code": "rock_climbing",
+          "signature": true,
+          "note": "Climbing on the natural faces of Vulture Rocks rather than a built tower."
         },
         {
           "code": "shooting_sports"
         },
         {
-          "code": "climbing"
-        },
-        {
-          "code": "cope"
-        },
-        {
-          "code": "older_scout_program"
-        },
-        {
           "code": "stem"
+        },
+        {
+          "code": "waterfront",
+          "note": "A five-acre man-made lake."
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "Wooded resident camp in the Cascade foothills featuring a lake waterfront, dining hall, shooting sports, climbing, and COPE, with STEM offerings, a first-year Scout program, and an older Scout program.",
       "provenance": {
         "sources": [
@@ -64,13 +92,17 @@
           {
             "url": "https://cpcscouting.org/project/camp-baldwin/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://cpcscouting.org/project/camp-baldwin/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-01",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://cpcbsa.org/camping/camp-baldwin/ now redirects to https://cpcscouting.org/project/camp-baldwin/ (link audit, tools/check_urls.py)."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://cpcbsa.org/camping/camp-baldwin/ now redirects to https://cpcscouting.org/project/camp-baldwin/ (link audit, tools/check_urls.py). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
       }
     }
   ],

@@ -25,8 +25,13 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cabins",
+          "note": "Six Rothrock cabins sleeping eight each, plus a main lodge sleeping twenty-one."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout overnight resident camp in New Oxford, Pennsylvania, operated by the New Birth of Freedom Council.",
       "provenance": {
         "sources": [
@@ -38,13 +43,17 @@
           },
           {
             "url": "https://newbirthoffreedom.org/camping/summer-camp-adventures/pack-camp/cub-scout-camp/"
+          },
+          {
+            "url": "https://newbirthoffreedom.org/camping/camp-conewago/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). The stored website is a council-wide Cub Scout camp page that never names Conewago, so the council's own Camp Conewago property page was used instead."
       }
     }
   ],

@@ -25,8 +25,105 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cope"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "backpacking"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Pathfinder program for Scouts with limited camping experience."
+        },
+        {
+          "code": "older_scout_program",
+          "signature": true,
+          "note": "Adventure Ridge is an expert-level pioneering track for experienced Scouts."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Central shower houses plus a campsite shower in each site."
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "cabins",
+          "note": "Bunkhouses available in several campsites."
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "Sioux campsite is barrier-free and sited near the dining hall."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp at the L.O. Crosby Scout Reservation in Wiggins, Mississippi, operated by the Pine Burr Area Council.",
       "provenance": {
         "sources": [
@@ -38,13 +135,17 @@
           },
           {
             "url": "https://www.pineburrscouts.org/summercamp"
+          },
+          {
+            "url": "https://www.pineburrscouts.org/s/2026-Camp-Tiak-Summer-Camp-Guide-2.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

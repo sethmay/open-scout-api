@@ -26,8 +26,64 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "atv",
+          "note": "An ATV safety program with capped enrollment for Scouts aged 14 and older."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "dining_hall"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp at Warner Scout Reservation, offering merit badges, COPE, aquatics, shooting sports, and ATV.",
       "provenance": {
         "sources": [
@@ -45,7 +101,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "al-camp-tukabatchee-webelos-aol-resident-camp"

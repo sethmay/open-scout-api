@@ -221,35 +221,49 @@ source (see the Meriwether evidence in PLAN §5.1).
   `features` is non-empty. That rule would have forbidden the honest state the 8 imported camps are
   actually in — features present from a bulk import, never deliberately surveyed — so the field
   instead carries four meaningful states (see the schema description).
-- **Phase 2 — vocabulary v1 — DONE (0.33.0).** 13 → 46 codes from the spike, then → **95** from the
-  calibration wave's 65 proposals (54 distinct). Curation merged duplicates (`nature_ecology` →
-  `nature_study`, two first-year-camper spellings, `wheelchair_accessible` + `accessible_campsite` →
-  `accessible_facilities`, `jet_ski` → an alias of `personal_watercraft`) and rejected `family_camp`,
-  which is an audience already carried by the `camp-program-types` vocabulary, not a feature. 33 of
-  95 terms carry `broader`, 34 carry `aliases`. Still open from the original Phase 2: whether
-  `older_scout_program` / `high_adventure_option` belong in `program_types`, and whether housing type
-  deserves its own field.
-- **Phase 3 — population — CALIBRATION DONE (0.33.0), main wave outstanding.** Two agents surveyed 40
-  camps against a frozen vocabulary contract. Result: **33 usable (82.5%), 322 features, 13 signature
-  entries, and — the number that matters — zero invented codes and zero notes violating the evergreen
-  rule across 100 notes.** The contract holds under parallel execution, which is what makes the main
-  wave safe to run wide.
-  - **The 0.32.0 portal repair demonstrably paid for itself:** repaired-cohort camps yielded **10.5
-    features each** versus 9.0 for camps whose link was already clean. Repairing a link does not just
-    unblock a camp, it produces a *better* survey than average.
-  - Cost: ~5-9 minutes per camp, so the remaining ~280 addressable camps are roughly 25-40 hours
-    sequentially — but the wave parallelises cleanly, since camps are one-file-each with no shared
-    writes. Sixteen agents at 20 camps each is one or two waves.
-  - **Run the main wave only against the 95-term vocabulary.** MOHAB proved why: its page was rich,
-    but with no code for wilderness trekking the agent could record nothing, and an empty-but-dated
-    record reads as "surveyed, offers none". It has been re-queued (`features_verified_at` back to
-    `null`) now that backpacking/mountaineering/caving/packrafting exist. Expect a smaller second
-    round of proposals; curate between waves rather than mid-wave.
-  - Never guess: a camp with no usable source keeps `features_verified_at: null`, which is a
-    different fact from an empty survey.
-- **Phase 4 — publish.** Add `features` + `features_verified_at` to `current/camps.json` and the
-  `published-current` contract once coverage is meaningful (additive, MINOR). Keep them out of
-  `{dataset}/index.json` — listings stay light.
+- **Phase 2 — vocabulary v1 — DONE (0.34.0).** 13 codes → 46 (spike) → 95 (calibration) → **121**
+  (main wave). Round two curated 226 proposals covering 116 distinct codes down to 26 additions,
+  driven by how many independent camps asked for each: **whitewater_rafting was requested by 18
+  camps** and had no code at all, `hiking` by 17 (counting the `hiking_trails` spelling), and a whole
+  missing season showed up as snowshoeing / cross-country skiing / sledding / ice fishing / winter
+  camping. `scoutcraft` was added as the parent the vocabulary had been missing for orienteering,
+  pioneering, and wilderness survival — all standard BSA programme areas. Merges: `hiking_trails` →
+  `hiking`, `waterslide` → `water_slide`, `stargazing` → `astronomy`. Rejected: `trade_skills` and
+  `bike_friendly` (too vague to filter on), `waterfall` (a landscape feature, not an offering), and
+  `family_camp` again. **83 singletons were deliberately held back** — a code used once is not yet a
+  category; they get in on a second sighting. 42 of 121 terms carry `broader`, 51 carry `aliases`.
+  Still open: whether `older_scout_program` / `high_adventure_option` belong in `program_types`, and
+  whether housing type deserves its own field.
+- **Phase 3 — population — MAIN WAVE DONE (0.34.0).** 16 agents surveyed 285 camps in parallel
+  against the frozen 95-term contract. **294 of 448 camps are now surveyed (77% of the 384
+  non-day-camps), carrying 4,226 feature entries and 147 signature entries across 91 distinct codes**
+  — up from 37 camps and 416 entries. Integrity held completely: **zero unknown codes, zero duplicate
+  codes, zero notes violating the evergreen rule, zero unparseable files**, and no camp outside a
+  batch was touched.
+  - **Parallel execution worked, but only because the contract was frozen first.** The agents also
+    caught four hazards I had not anticipated and fixed them mid-flight: edits leaking into the main
+    checkout via relative paths; the eval kernel being SHARED between agents, so a generic global
+    could silently redirect one agent's write to another's file; the evergreen guard rejecting the
+    ordinary word "may" (case-insensitively) and month abbreviations; and eight camps arriving with
+    imported features already present, where a blind write would have deleted data. All four are
+    worth stating up front in any future brief.
+  - **Biggest yield lever found: extensionless guide PDFs.** Councils commonly link a Leader's or
+    Program Guide with no file extension (the Tentaroo `/files/NNNNN/name` pattern), which the reader
+    refuses. Fetching the bytes and reading them from a temp `.pdf` path unlocked them — one camp went
+    from 3 features to 36, another 8 → 21, another 5 → 23, another 4 → 22. Use it from the start next
+    time rather than as a retry.
+  - **~90 non-day-camps remain unsurveyed**, mostly the 62 registration-portal camps (nothing to
+    survey) plus genuinely dead or wrong-camp links. These need link repair before survey, not more
+    survey effort.
+  - **Known under-recording:** the 294 surveyed camps were surveyed against the 95-term vocabulary, so
+    they systematically miss the 26 codes added afterwards — rafting above all. This is within the
+    documented contract (`features_verified_at` means a survey happened, explicitly not that the list
+    is complete, and every surveyed camp says so in provenance), so nothing was re-queued. A cheap
+    enrichment pass could add the new codes without re-surveying from scratch.
+- **Phase 4 — publish — NEXT.** Coverage is now meaningful (77% of non-day-camps), so add `features` +
+  `features_verified_at` to `current/camps.json` and the `published-current` contract (additive,
+  MINOR). Keep them out of `{dataset}/index.json` — listings stay light. Until this ships, the
+  features are only visible in the per-entity `v1/camps/{id}.json` documents.
 - **Phase 5 — maintenance.** `signature` and long-tail entries decay fastest (a camp trials land
   sailing for two seasons), so they need a shorter re-verification cycle than facilities. Link health
   is now audited separately — see below.
@@ -303,6 +317,31 @@ Outstanding, in value order:
   Valley's page is on `ssrlv.org`, which encodes the name in the domain rather than the text), and two
   Colorado camps legitimately share their parent reservation's page (McNeil Scout Ranch).
 - **`stale` (22)** is lowest priority: the page exists and names the camp, it is just not maintained.
+
+**Findings from the 0.34.0 survey wave — human judgement needed, not automation.** Sixteen agents
+read 285 camp pages by hand, which surfaced link problems the automated classifier cannot see:
+
+- **Entity-identity questions, the highest-value class.** `nc-lumpkin-adventure-base`: the name
+  "Lumpkin Adventure Base" appears *only* in meta keywords on the council's own domain and never in
+  body copy, while the council markets the same facility as "Harrison High Adventure Base" — almost
+  certainly a rename, and if so it wants a `renamed` lifecycle event, not a URL edit.
+  `ut-camp-hinckley`: the stored `saltlakescouts.org` is a pre-merger domain that no longer resolves
+  and `utahscouts.org/hinckley` 404s — mergers routinely retire camp pages along with the domain.
+  Neither was guessed at; both files are untouched.
+- **Lifecycle findings, from camps' own announcements.** MOHAB announces "MOHAB to Pause Following
+  2026 Season" (no operation 2027–28, decision due 2029); Gorham announces closure "for the 2026
+  summer sessions". Both are `operating_status` changes with a source, deliberately left for a
+  lifecycle pass rather than folded into a features survey.
+- **Wrong-camp links are worse than dead links** — they silently misinform instead of failing.
+  Confirmed: `ia-little-sioux-scout-ranch` and `ga-camp-dani…` point at a different camp; two
+  California camps' stored domains are now **squatted** (one is a gambling site), as is Tahosa's
+  legacy domain.
+- **Whole-council outages, not per-camp faults.** `nhscouting.org` 500s site-wide (`nh-camp-bell`,
+  `nh-hidden-valley-scout-camp`); `alincolnscouting.org/camping` 404s (`il-camp-illinek`, left at 1
+  feature). Re-test the host before spending research on the camp.
+- **Sources that exist but cannot be read.** `wi-camp-rokilio`'s programme PDF is a scanned graphic —
+  cheap for anyone with OCR, impossible without it. `ks-camp-mandan`'s guide attachment is gone.
+  `ks-camp-kanza` remains the clearest dead end: a 2020 event page, registration closed six years ago.
 
 ⚠ **Method note for whoever re-runs this.** The first pass reported 65 hard failures; 35 of those
 were self-inflicted — 10 concurrent workers rate-limited whole councils into 429s and tripped

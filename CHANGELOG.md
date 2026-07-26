@@ -3,6 +3,39 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.34.0 (minor) — 2026-07-25
+
+- `PENDING` **Main survey wave: 285 camps surveyed in parallel by 16 agents; camps with program
+  features go 37 → 294 (77% of the 384 non-day-camps), feature entries 416 → 4,226.** Signature
+  entries 20 → 147, across 91 distinct codes. Integrity held exactly as the calibration predicted:
+  **zero unknown codes, zero duplicate codes, zero notes breaking the evergreen rule, zero
+  unparseable files**, and no camp outside an agent's assigned batch was modified.
+- Vocabulary **95 → 121 terms**, curated from 226 proposals covering 116 distinct codes. Additions
+  were chosen by independent demand, not taste: `whitewater_rafting` was requested by 18 separate
+  camps and had no code at all, and an entire missing season arrived as snowshoeing, cross-country
+  skiing, sledding, ice fishing, and winter camping. `scoutcraft` was added as the parent the
+  vocabulary lacked for orienteering, pioneering, and wilderness survival — standard BSA programme
+  areas. Merged `hiking_trails` → `hiking`, `waterslide` → `water_slide`, `stargazing` → `astronomy`.
+  Rejected `trade_skills`, `bike_friendly`, `waterfall`, and `family_camp`. **83 singletons were held
+  back**: a code used once is not yet a category.
+- Four hazards of wide parallel execution were found and fixed mid-wave, and are worth stating up
+  front in any future brief: relative edit paths resolve against the session cwd and leak into the
+  main checkout; the eval kernel is **shared between agents**, so a generic global can silently
+  redirect one agent's write to another agent's file; the evergreen-text guard is case-insensitive
+  and so rejects the ordinary English word "may" and month abbreviations; and eight camps carried
+  bulk-imported features that a blind write would have deleted (the ruling: merge, never replace,
+  and only refine a parent to a leaf when the page confirms the leaf).
+- Highest-yield technique found: councils link Leader's/Program Guide PDFs **without a file
+  extension** (the Tentaroo `/files/NNNNN/name` pattern), which the reader refuses. Fetching the
+  bytes and reading them via a temp `.pdf` path took individual camps from 3 → 36, 8 → 21, 5 → 23,
+  and 4 → 22 features.
+- Survey reading also produced a worklist of things automation cannot settle, recorded in `TODO.md`:
+  two probable camp **renames** (Lumpkin → Harrison, Hinckley's pre-merger domain), two **operating
+  status** announcements (MOHAB pausing after 2026, Gorham closed for 2026), wrong-camp links, and
+  two stored domains that are now **squatted**.
+- `features` are still **not** in `current/camps.json` — publishing them is Phase 4, next up now that
+  coverage is meaningful. They are visible today in the per-entity `v1/camps/{id}.json` documents.
+
 ## 0.33.0 (minor) — 2026-07-25
 
 - `05915bc` **Calibration wave for feature population: 40 camps surveyed in parallel, vocabulary 46 → 95.** Two agents worked simultaneously against a frozen vocabulary contract, each on 20 camps. Result: **33 usable (82.5%), 322 feature entries, 13 signature entries** — and the numbers that decide whether the main wave is safe to run wide: **zero invented codes, and zero of 100 notes violating the evergreen rule.** Camps surveyed rose 5 → 37; the dataset now carries 416 feature entries across 45 distinct codes.

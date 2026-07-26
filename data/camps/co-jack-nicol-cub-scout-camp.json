@@ -25,8 +25,56 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Individual showers with on-demand hot water near the campsites."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served family-style with a salad and breakfast bar."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Individual restrooms with flushing toilets near the campsites."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "horseback",
+          "note": "A horse program at the Wild West Frontier Fort."
+        },
+        {
+          "code": "nature_study",
+          "note": "A Rocky Mountain nature outpost covering forest, wildlife, and Leave No Trace."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Large canvas wall tents on wood platforms."
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "themed_lodging",
+          "signature": true,
+          "note": "Cub World themed areas including a medieval castle, a frontier fort, and a lighthouse."
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident camp (Cub World) at Ben Delatour Scout Ranch for Lions through Webelos and AOL, featuring medieval castle, frontier fort, and STEM themes.",
       "provenance": {
         "sources": [
@@ -38,13 +86,17 @@
           },
           {
             "url": "https://awbsa.org/cub-world/"
+          },
+          {
+            "url": "https://awbsa.org/cub-world/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "co-ben-delatour-scout-ranch",

@@ -25,8 +25,29 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "dining_hall",
+          "note": "A dining hall that seats four hundred."
+        },
+        {
+          "code": "pavilion",
+          "note": "Shelters available alongside cabins and campsites."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Crossroads of America Council resident Cub Scout camp spanning 230 acres along Pipe Creek near Frankton, offering a weekend pack overnight program featuring STEM, aquatics, archery, and sports.",
       "provenance": {
         "sources": [
@@ -48,7 +69,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/160-108134); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. The page is not recently updated, which is fine here: it is used for durable description, not sessions or fees."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/160-108134); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. The page is not recently updated, which is fine here: it is used for durable description, not sessions or fees. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

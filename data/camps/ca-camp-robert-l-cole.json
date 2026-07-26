@@ -25,8 +25,34 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming",
+          "note": "Swimming in Lake Sterling."
+        },
+        {
+          "code": "aquatics",
+          "note": "Boating on Lake Sterling."
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp sits on the south shore of Lake Sterling among evergreens and granite cliffs."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "cope",
+          "note": "A COPE challenge course."
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "handicraft"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-elevation (7,200 ft) wilderness camp on Lake Sterling in the Tahoe National Forest, reservable by units for First Class advancement, intensive merit badge programs, fishing, and stargazing.",
       "provenance": {
         "sources": [
@@ -38,13 +64,17 @@
           },
           {
             "url": "https://camprobertlcole.org/"
+          },
+          {
+            "url": "https://camprobertlcole.org/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

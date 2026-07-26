@@ -28,8 +28,92 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "canoeing",
+          "note": "A river canoe trip runs in alternate years within the COPE program."
+        },
+        {
+          "code": "caving",
+          "note": "A caving experience on camp property, alternating yearly with the canoe trip."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A tower with two rappelling heights, an inverted wall, a chimney climb, and a dozen routes."
+        },
+        {
+          "code": "cope",
+          "note": "Low and high ropes courses for older Scouts."
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "A purpose-built wild west town of targets."
+        },
+        {
+          "code": "disc_golf",
+          "note": "A nine-hole disc golf course."
+        },
+        {
+          "code": "first_year_program",
+          "note": "BASE Camp, Beginning Advancement Skills for Eagle, a Brownsea-style patrol programme."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_center",
+          "note": "The camp nature centre houses live snakes, fish, and other animals."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "sports_field",
+          "note": "Daily afternoon games including volleyball, soccer, lacrosse, and basketball."
+        },
+        {
+          "code": "stem",
+          "note": "The IMPACT area blends STEAM and Eagle-required merit badges."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake John Deere."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Northeast Iowa Council Scouts BSA resident summer camp set in a 200-acre wooded valley near Colesburg, offering 45+ merit badges, a COPE/climbing tower, aquatics on Lake John Deere, and a BASE Camp program for new Scouts.",
       "provenance": {
         "sources": [
@@ -47,7 +131,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "ia-camp-c-s-klaus-cub-scout-adventure",

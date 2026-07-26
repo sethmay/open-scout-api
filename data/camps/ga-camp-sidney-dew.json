@@ -25,8 +25,99 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Four-person Adirondack shelters at some campsites."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "caving",
+          "note": "A guided wild-cave excursion offered off property."
+        },
+        {
+          "code": "climbing",
+          "note": "The Climbing merit badge runs at the COPE shelter."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served family style using a waiter system."
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "Spike Buck, described by the camp as its signature first-year camper program."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion",
+          "note": "Every campsite has a covered pavilion."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person wall tents on wooden floors with cots."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "zip_line",
+          "note": "A guided zip line excursion over a ravine, offered off property."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp spanning 650 acres in northwest Georgia, operated by the Northwest Georgia Council.",
       "provenance": {
         "sources": [
@@ -38,13 +129,17 @@
           },
           {
             "url": "https://www.nwgascouting.org/summer-camp"
+          },
+          {
+            "url": "https://www.nwgascouting.org/files/58161/2026-Leaders-Guide",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

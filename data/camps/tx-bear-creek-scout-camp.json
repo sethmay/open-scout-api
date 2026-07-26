@@ -25,8 +25,66 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "Taught through the metalworking merit badge."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Ranger Program, for members new to Scouts BSA."
+        },
+        {
+          "code": "fishing",
+          "note": "Includes fly fishing."
+        },
+        {
+          "code": "handicraft",
+          "note": "Pottery, photography, leatherworking, and wood carving."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "The Bear Claw, a five-day challenge-by-choice track."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The Bear Claw track is for youth thirteen and older who have finished eighth grade."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Alamo Area Council's Scouts BSA resident summer camp near Hunt, Texas, offering Bear Claw, Ranger first-year, and traditional program tracks.",
       "provenance": {
         "sources": [
@@ -38,13 +96,17 @@
           },
           {
             "url": "https://www.alamoareascouting.org/summer-camp/"
+          },
+          {
+            "url": "https://www.alamoareascouting.org/summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). The stored page is the council's multi-camp Camps index; only its Bear Creek section was used, and the dedicated page is https://www.alamoareascouting.org/summer-camp/rangercamp/."
       }
     }
   ],

@@ -25,8 +25,49 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "fishing",
+          "signature": true,
+          "note": "Fish Camp, an angling program run with Trout Unlimited covering Fishing and Fly-Fishing merit badges."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "caving"
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "welding",
+          "note": "Part of Geronimo DIY, a vocational track working on real camp facilities."
+        },
+        {
+          "code": "stem",
+          "note": "A drone flight school teaching aviation physics through STEM challenges."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Brownsea Island Adventure, a transitional program for Scouts new to a troop."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Spade Ranch Adventure is an a la carte program for older youth and adults."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Spade Ranch Adventure combines climbing, canyoneering, caving, horseback riding, canoeing, and mountain biking."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA week-long resident summer camp operated by the Grand Canyon Council, set below the Mogollon Rim north of Payson, Arizona.",
       "provenance": {
         "sources": [
@@ -38,13 +79,17 @@
           },
           {
             "url": "https://www.campgeronimo.org/summer-camp/"
+          },
+          {
+            "url": "https://www.campgeronimo.org/summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -26,8 +26,17 @@
         "cub_resident",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "On Bonaparte Lake in the Colville National Forest."
+        },
+        {
+          "code": "fishing",
+          "note": "Sport fishing on the lake, with six species found most seasons."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout and Scouts BSA resident camp on Bonaparte Lake in Washington's Colville National Forest, offering archery, BB guns, swimming, boating, and a climbing wall.",
       "provenance": {
         "sources": [
@@ -39,13 +48,17 @@
           },
           {
             "url": "https://scoutingseattle.org/camp-bonaparte/"
+          },
+          {
+            "url": "https://scoutingseattle.org/camp-bonaparte/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

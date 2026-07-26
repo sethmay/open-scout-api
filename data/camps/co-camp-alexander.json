@@ -26,8 +26,83 @@
         "high_adventure",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing",
+          "note": "A climbing area known as The Rock."
+        },
+        {
+          "code": "disc_golf",
+          "note": "Disc golf activities used to complete the Golf merit badge."
+        },
+        {
+          "code": "first_year_program",
+          "note": "A First Class Center paired with the handicraft area."
+        },
+        {
+          "code": "fishing",
+          "note": "Fly and reel fishing on the camp lake and a stretch of the South Platte River."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "Outback, a high-adventure track run alongside the resident camp."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "A staffed hike and bike area in Eleven Mile Canyon."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pool",
+          "note": "A heated swimming pool."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "welding"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp operated by Pathway to the Rockies Council, set within Colorado's Pike National Forest near Lake George.",
       "provenance": {
         "sources": [
@@ -39,13 +114,21 @@
           },
           {
             "url": "https://campalexandercolorado.org/summer-camp/"
+          },
+          {
+            "url": "https://campalexandercolorado.org/summer-camp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://campalexandercolorado.org/summer-camp/program/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "co-camp-alexander-outback"

@@ -26,8 +26,56 @@
         "cub_day",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on Dyer Lake."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "trading_post",
+          "note": "The trading post is on the west side of the administration building."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A fire bowl for campfire programme."
+        },
+        {
+          "code": "pavilion",
+          "note": "Several pavilions across the property."
+        },
+        {
+          "code": "sports_field",
+          "note": "Open playing fields used for field sports."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout day camp on 185 acres with waterfront on Dyer Lake near Burlington, offering boating, swimming, fishing, field sports, nature, and shooting sports. Serves as a certified Cub Scout day camp and family camping facility.",
       "provenance": {
         "sources": [
@@ -42,13 +90,21 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://www.threeharborsscouting.org/camping/camp-oh-da-ko-ta/64325",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.threeharborsscouting.org/document/odktmap-letter-2024/213144",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "wi-camp-oh-da-ko-ta-first-year-camper-program"

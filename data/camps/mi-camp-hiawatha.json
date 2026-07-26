@@ -25,8 +25,64 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cabins",
+          "note": "Eighteen cabins alongside nine campsites."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A shower house with ten stalls, including an accessible stall."
+        },
+        {
+          "code": "accessible_facilities"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Scouts BSA sessions are patrol cooking; units cook in their own sites."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Cub Scout sessions are run as a dining hall camp."
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "A high-adventure track for older, more experienced Scouts."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A Scout can attend without their unit at a provisional fee."
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp encircles Bunting Lake."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "nature_study"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp operated by the Michigan Crossroads Council in Michigan's Upper Peninsula, situated on Bunting Lake.",
       "provenance": {
         "sources": [
@@ -34,7 +90,8 @@
             "citation": "camp-finder council-272/mi-camp-hiawatha (unofficial community dataset)"
           },
           {
-            "url": "https://michiganscouting.org/camping/properties/camp-hiawatha/"
+            "url": "https://michiganscouting.org/camping/properties/camp-hiawatha/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://michiganscouting.org/camping/properties/camp-hiawatha/"
@@ -44,7 +101,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -25,8 +25,55 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "themed_lodging",
+          "signature": true,
+          "note": "Theme buildings including a fort, a Viking ship, a castle, and a train station serve as camper lodging."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork and other crafts."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Sessions a youth can attend with a parent rather than with their pack."
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident camp on 213 acres in the Kettle Moraine near Kiel, with lodging in four themed buildings. Offers waterfront, shooting sports, nature, and STEM/NOVA programming for Tigers through Webelos.",
       "provenance": {
         "sources": [
@@ -44,7 +91,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

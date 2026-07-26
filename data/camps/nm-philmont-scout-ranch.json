@@ -25,8 +25,42 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "Twelve-, nine-, and seven-day backcountry treks between staffed and trail camps."
+        },
+        {
+          "code": "rock_climbing"
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Individual treks let a Scout join a crew without their own unit."
+        },
+        {
+          "code": "special_needs_program",
+          "note": "Zia Adventures runs inclusive, adaptive programmes."
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "cabins",
+          "note": "Lodge rooms and bungalows at the Philmont Training Center."
+        },
+        {
+          "code": "museum",
+          "note": "The National Scouting Museum is on the property."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-adventure base offering backcountry backpacking treks through the mountains of northern New Mexico; Scouting America's flagship destination.",
       "provenance": {
         "sources": [
@@ -38,13 +72,17 @@
           },
           {
             "url": "https://www.philmontscoutranch.org/"
+          },
+          {
+            "url": "https://www.philmontscoutranch.org/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.9,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -26,8 +26,40 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "On Waneta Lake in the Finger Lakes."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_center"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp on Waneta Lake in New York's Finger Lakes region, offering more than fifty merit badges, including Eagle-required options.",
       "provenance": {
         "sources": [
@@ -43,13 +75,17 @@
           {
             "url": "https://gfcscouting.org/camping/camp-gorton/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.campreservation.com/documents/BSA375/document_15809507540_8878.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/375-95872); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/375-95872); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

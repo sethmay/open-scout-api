@@ -27,8 +27,113 @@
         "cub_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "zip_line",
+          "signature": true,
+          "note": "A dual quarter-mile zip line."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A 60-foot hexagonal climbing and rappelling tower."
+        },
+        {
+          "code": "rock_climbing",
+          "note": "A 30-foot natural rock face for climbing."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "waterfront",
+          "note": "A waterfront on Lake Strawn."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Mountain University, career-focused merit badges for experienced Scouts."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Mountaineer programme, for first-year resident campers."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "First-year campers hike about three miles to the Camp Lynn outpost to camp for a night."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder",
+          "note": "Muzzleloader shooting as an evening programme."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "geocaching",
+          "note": "Geocaches sited around the property."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "amphitheater",
+          "note": "A council fire ring used for camp-wide campfires."
+        },
+        {
+          "code": "sports_field"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Mountaineer Area Council's Scouts BSA resident camp spanning over 1,000 acres near Morgantown, West Virginia, offering a block program schedule with 50 merit badges.",
       "provenance": {
         "sources": [
@@ -40,13 +145,17 @@
           },
           {
             "url": "https://mountaineerscouting.org/scouts-bsa-resident-camp/"
+          },
+          {
+            "url": "https://mountaineerscouting.org/wp-content/uploads/2026/04/2026-Program-Guide-Scouts-BSA_compressed-1.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],
