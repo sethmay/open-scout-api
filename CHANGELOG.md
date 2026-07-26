@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.35.0 (minor) — 2026-07-25
 
-- `PENDING` **Published camp program features.** `current/camps.json` now carries `features`
+- `81b02b5` **Published camp program features.** `current/camps.json` now carries `features`
   (sorted codes from the 121-term open `camp-features` vocabulary), `features_signature` (the subset
   a camp presents as a headline draw), and `features_verified_at`. All three are pinned as
   **required** in `published-current.schema.json`, so the build fails if the projection ever
