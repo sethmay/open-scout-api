@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.34.0 (minor) — 2026-07-25
 
-- `PENDING` **Main survey wave: 285 camps surveyed in parallel by 16 agents; camps with program
+- `4866d96` **Main survey wave: 285 camps surveyed in parallel by 16 agents; camps with program
   features go 37 → 294 (77% of the 384 non-day-camps), feature entries 416 → 4,226.** Signature
   entries 20 → 147, across 91 distinct codes. Integrity held exactly as the calibration predicted:
   **zero unknown codes, zero duplicate codes, zero notes breaking the evergreen rule, zero
