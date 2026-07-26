@@ -49,12 +49,6 @@
             "citation": "camp-finder council-315/mt-montana-outdoor-high-adventure-base-mohab (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingmontana.org/camps/high-adventure/"
-          },
-          {
-            "url": "https://scoutingmontana.org/camps/high-adventure/"
-          },
-          {
             "url": "https://scoutingmontana.org/camps/high-adventure/",
             "accessed": "2026-07-25"
           }
@@ -67,5 +61,5 @@
       }
     }
   ],
-  "notes": null
+  "notes": "Council announced on the camp's own page that MOHAB will PAUSE after the 2026 season: no operation in 2027 or 2028, with a decision on 2029 to be made by the end of 2027. operating_status remains `active` because the pause has not taken effect - the 2026 season is in progress. Re-check after the 2026 season and set `not_operating` (the property exists; only the program stops), not `closed`. Note the same page still advertises 2027 dates and fees alongside the pause announcement; the dated announcement is authoritative and the schedule block is stale."
 }

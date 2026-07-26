@@ -150,3 +150,25 @@ fold; read before similar work.
   removed and added). Compare parsed *sets* before and after; and treat a subagent exit code
   as unrelated to whether its work landed — 9 of 16 exited non-zero after their writes were
   already on disk and valid.
+- **An agent's *observation* is evidence; its *identity conclusion* is a hypothesis. Verify before
+  it reaches a doc.** Of four lifecycle findings handed up by the survey wave, two did not survive
+  checking, and I had already written one of them into `TODO.md` as "almost certainly a rename".
+  - The false rename came from absence-of-evidence reasoning: "Lumpkin Adventure Base" appeared
+    only in a meta keywords tag while the council marketed "Harrison High Adventure Base", so they
+    looked like one property under two names. The council's own older programme guide settled it in
+    one line — crews were housed "between the Harrison High Adventure Outpost **and** Lumpkin
+    Adventure Base". **When a current page is silent, the organisation's own older documents are
+    the cheapest disproof**, and a public search found it in one query.
+  - The false status change came from reading a headline literally: "closed for the 2026 summer
+    camp sessions" is a *season* fact, and the next sentence offered weekend camping, Wood Badge,
+    NYLT and BrownSea at the same property. Know which granularity your field models —
+    `operating_status` describes the property, and a dataset that deliberately holds no sessions
+    has nothing to record.
+  - Corollary for future waves: a page can contradict itself and usually will. MOHAB announces a
+    pause *and* advertises next season's dates and fees on the same page. Prefer the dated
+    announcement, and record that the other block is stale rather than silently picking one.
+- **A future-dated fact is not a version change yet.** MOHAB's pause is real, sourced, and starts
+  after a season that is still running. Writing it into `operating_status` now would publish a
+  falsehood, and future-dating a new version would too, since `open_version` picks whatever has
+  `valid_to: null` and would surface it immediately. Park it in entity `notes` with the trigger
+  condition and the exact value to set later.
