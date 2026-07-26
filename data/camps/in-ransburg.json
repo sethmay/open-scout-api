@@ -21,7 +21,7 @@
       "elevation_ft": 700,
       "july_high_f": 86,
       "july_low_f": 65,
-      "website": "https://scoutingevent.com/160-2026Ransburg",
+      "website": "https://www.joinscoutsin.org/camps/ransburg-scout-reservation/",
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -38,13 +38,17 @@
           },
           {
             "url": "https://scoutingevent.com/160-2026Ransburg"
+          },
+          {
+            "url": "https://www.joinscoutsin.org/camps/ransburg-scout-reservation/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/160-2026Ransburg); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. The page is not recently updated, which is fine here: it is used for durable description, not sessions or fees."
       }
     }
   ],
