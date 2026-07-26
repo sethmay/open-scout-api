@@ -27,44 +27,6 @@
       ],
       "features": [
         {
-          "code": "dining_hall",
-          "note": "Meals are served cafeteria style."
-        },
-        {
-          "code": "trading_post"
-        },
-        {
-          "code": "health_lodge",
-          "note": "A staffed health office in the Mark Program Center."
-        },
-        {
-          "code": "bathhouse",
-          "note": "A shower house in the campsite area with separate facilities for men, women, and youth."
-        },
-        {
-          "code": "flush_toilets",
-          "note": "Provided in each village."
-        },
-        {
-          "code": "campsite_electricity",
-          "note": "Each campsite has electrical service."
-        },
-        {
-          "code": "pavilion",
-          "note": "A picnic shelter in each village."
-        },
-        {
-          "code": "chapel"
-        },
-        {
-          "code": "waterfront",
-          "signature": true,
-          "note": "Huck Finn's Waterfront on the spring-fed Crystal Lake; the camp has no pool."
-        },
-        {
-          "code": "swimming"
-        },
-        {
           "code": "aquatics",
           "note": "Boating at Huck Finn's Waterfront."
         },
@@ -72,35 +34,76 @@
           "code": "archery"
         },
         {
+          "code": "bathhouse",
+          "note": "A shower house in the campsite area with separate facilities for men, women, and youth."
+        },
+        {
           "code": "bb_guns"
-        },
-        {
-          "code": "slingshot",
-          "note": "Includes three-person slingshots at the Lost Ship."
-        },
-        {
-          "code": "climbing",
-          "note": "An indoor climbing wall at Hanna Venture Base, a short drive from camp."
         },
         {
           "code": "bike_park",
           "note": "A BMX area."
         },
         {
+          "code": "campsite_electricity",
+          "note": "Each campsite has electrical service."
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing",
+          "note": "An indoor climbing wall at Hanna Venture Base, a short drive from camp."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served cafeteria style."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Provided in each village."
+        },
+        {
           "code": "handicraft",
           "note": "Khan's Kabin, a makerspace for art and craft projects."
+        },
+        {
+          "code": "health_lodge",
+          "note": "A staffed health office in the Mark Program Center."
         },
         {
           "code": "nature_study",
           "note": "Conservation and wildlife adventures."
         },
         {
+          "code": "outpost_overnight",
+          "note": "The Arrow of Light Outpost camps away from the main camp."
+        },
+        {
+          "code": "pavilion",
+          "note": "A picnic shelter in each village."
+        },
+        {
+          "code": "slingshot",
+          "note": "Includes three-person slingshots at the Lost Ship."
+        },
+        {
           "code": "stem",
           "note": "The Treehouses science area, with engineering and forensics adventures."
         },
         {
-          "code": "outpost_overnight",
-          "note": "The Arrow of Light Outpost camps away from the main camp."
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_slide"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "Huck Finn's Waterfront on the spring-fed Crystal Lake; the camp has no pool."
         }
       ],
       "features_verified_at": "2026-07-25",

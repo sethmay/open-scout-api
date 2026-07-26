@@ -32,11 +32,7 @@
       ],
       "features": [
         {
-          "code": "waterfront"
-        },
-        {
-          "code": "high_adventure_option",
-          "note": "Kilele Camp, a high-adventure track with extended whitewater rafting and a night of safari camping."
+          "code": "archery"
         },
         {
           "code": "backpacking",
@@ -44,24 +40,34 @@
           "note": "The Mlima Camp trek culminates in summiting Mt. Kenya."
         },
         {
-          "code": "paddleboarding"
+          "code": "first_year_program",
+          "note": "Karibu Camp, a Trail to First Class track for new Scouts."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Kilele Camp, a high-adventure track with extended whitewater rafting and a night of safari camping."
         },
         {
           "code": "kayaking"
         },
         {
+          "code": "older_scout_program",
+          "note": "Three separate camps for youth aged 14 to 20."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
           "code": "rock_climbing"
         },
         {
-          "code": "archery"
+          "code": "waterfront"
         },
         {
-          "code": "first_year_program",
-          "note": "Karibu Camp, a Trail to First Class track for new Scouts."
+          "code": "whitewater_rafting"
         },
         {
-          "code": "older_scout_program",
-          "note": "Three separate camps for youth aged 14 to 20."
+          "code": "wildlife_viewing"
         }
       ],
       "features_verified_at": "2026-07-25",

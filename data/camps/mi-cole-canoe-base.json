@@ -27,45 +27,54 @@
       ],
       "features": [
         {
-          "code": "canoeing",
-          "signature": true,
-          "note": "Canoe trips on the Rifle River, offered spring through autumn."
-        },
-        {
-          "code": "waterfront",
-          "note": "The camp fronts the Rifle River."
-        },
-        {
           "code": "archery"
         },
         {
-          "code": "rifle"
-        },
-        {
-          "code": "shotgun"
+          "code": "atv"
         },
         {
           "code": "cabins",
           "note": "White Pines Cabin has bunk beds, a full kitchen, and indoor restrooms and showers."
         },
         {
+          "code": "canoeing",
+          "signature": true,
+          "note": "Canoe trips on the Rifle River, offered spring through autumn."
+        },
+        {
+          "code": "cross_country_skiing"
+        },
+        {
           "code": "pavilion",
           "note": "Some campsites have their own pavilion."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A Scout can attend without their unit at a provisional fee."
+        },
+        {
+          "code": "rifle"
         },
         {
           "code": "rv_sites",
           "note": "A family camp with sixteen RV sites, twelve of them with full hook-ups."
         },
         {
+          "code": "shotgun"
+        },
+        {
+          "code": "sledding"
+        },
+        {
+          "code": "snowshoeing"
+        },
+        {
           "code": "trading_post",
           "note": "The camp trading post is called The River Store."
         },
         {
-          "code": "atv"
-        },
-        {
-          "code": "provisional_attendance",
-          "note": "A Scout can attend without their unit at a provisional fee."
+          "code": "waterfront",
+          "note": "The camp fronts the Rifle River."
         }
       ],
       "features_verified_at": "2026-07-25",

@@ -27,27 +27,33 @@
       ],
       "features": [
         {
-          "code": "dining_hall",
-          "note": "Meals are prepared in the camp kitchen and served cafeteria style."
+          "code": "bathhouse"
         },
         {
           "code": "cabins"
         },
         {
+          "code": "dining_hall",
+          "note": "Meals are prepared in the camp kitchen and served cafeteria style."
+        },
+        {
           "code": "flush_toilets"
         },
         {
-          "code": "bathhouse"
+          "code": "handicraft"
+        },
+        {
+          "code": "leadership_training"
+        },
+        {
+          "code": "shooting_sports"
         },
         {
           "code": "waterfront",
           "note": "The camp sits on the shores of Lake Chapin."
         },
         {
-          "code": "shooting_sports"
-        },
-        {
-          "code": "handicraft"
+          "code": "winter_camping"
         }
       ],
       "features_verified_at": "2026-07-25",

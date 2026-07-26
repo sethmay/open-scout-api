@@ -36,6 +36,9 @@
         {
           "code": "waterfront",
           "note": "Saltwater frontage on Favorite Channel; program is scheduled around the tides."
+        },
+        {
+          "code": "wildlife_viewing"
         }
       ],
       "features_verified_at": "2026-07-25",

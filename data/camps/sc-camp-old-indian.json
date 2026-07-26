@@ -35,6 +35,9 @@
           "note": "The dining hall is air conditioned."
         },
         {
+          "code": "astronomy"
+        },
+        {
           "code": "cabins",
           "note": "Some campsites have tree cabins."
         },
@@ -47,6 +50,9 @@
         },
         {
           "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "digital_media"
         },
         {
           "code": "dining_hall"
@@ -82,6 +88,9 @@
         },
         {
           "code": "trading_post"
+        },
+        {
+          "code": "whitewater_rafting"
         },
         {
           "code": "zip_line",

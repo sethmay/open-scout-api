@@ -27,92 +27,95 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
           "code": "air_conditioning",
           "note": "The dining hall and the leaders' lounge are air-conditioned."
+        },
+        {
+          "code": "archery"
         },
         {
           "code": "bathhouse",
           "note": "Single-person bathrooms and showers."
         },
         {
-          "code": "waterfront",
-          "note": "A ten-acre lake."
-        },
-        {
-          "code": "pool"
-        },
-        {
-          "code": "swimming",
-          "note": "Swimming and lifesaving instruction."
-        },
-        {
           "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "rowing"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "scuba",
-          "note": "A Discover Scuba evening programme."
         },
         {
           "code": "climbing"
         },
         {
-          "code": "rappelling"
-        },
-        {
-          "code": "zip_line"
-        },
-        {
           "code": "cope"
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "shotgun"
-        },
-        {
-          "code": "archery"
         },
         {
           "code": "cowboy_action_shooting"
         },
         {
-          "code": "nature_study",
-          "note": "An outdoor skills and ecology centre."
-        },
-        {
-          "code": "stem"
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "patrol_cooking",
-          "note": "An option to cook in the campsite: patrols collect ingredients from the dining-hall commissary."
+          "code": "dining_hall"
         },
         {
           "code": "first_year_program",
           "note": "The Lakusin programme for first-year Scouts."
         },
         {
-          "code": "older_scout_program",
-          "note": "A Trail Blazer second-year programme, plus adventure trips for veteran Scouts."
+          "code": "handicraft"
         },
         {
           "code": "high_adventure_option",
           "note": "Day-trip excursions and week-long adventure programmes."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study",
+          "note": "An outdoor skills and ecology centre."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "A Trail Blazer second-year programme, plus adventure trips for veteran Scouts."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "An option to cook in the campsite: patrols collect ingredients from the dining-hall commissary."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "scuba",
+          "note": "A Discover Scuba evening programme."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming and lifesaving instruction."
+        },
+        {
+          "code": "waterfront",
+          "note": "A ten-acre lake."
+        },
+        {
+          "code": "whitewater_rafting"
+        },
+        {
+          "code": "zip_line"
         }
       ],
       "features_verified_at": "2026-07-25",

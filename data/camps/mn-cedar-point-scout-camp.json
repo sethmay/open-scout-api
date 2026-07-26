@@ -27,38 +27,41 @@
       ],
       "features": [
         {
-          "code": "cabins",
-          "note": "Two heated lodges with full kitchens and fireplaces."
+          "code": "accessible_facilities",
+          "note": "An accessible toilet and shower in the shower house."
+        },
+        {
+          "code": "archery"
         },
         {
           "code": "bathhouse",
           "note": "A shower house with six showers and six toilets."
         },
         {
-          "code": "flush_toilets"
-        },
-        {
-          "code": "accessible_facilities",
-          "note": "An accessible toilet and shower in the shower house."
+          "code": "cabins",
+          "note": "Two heated lodges with full kitchens and fireplaces."
         },
         {
           "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "paddleboarding"
         },
         {
           "code": "fishing",
           "note": "Fishing gear and a portable ice-fishing house can be rented."
         },
         {
-          "code": "archery"
+          "code": "flush_toilets"
         },
         {
           "code": "gaga_ball"
+        },
+        {
+          "code": "ice_fishing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
         },
         {
           "code": "waterfront"

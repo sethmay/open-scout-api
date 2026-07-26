@@ -255,15 +255,22 @@ source (see the Meriwether evidence in PLAN §5.1).
   - **~90 non-day-camps remain unsurveyed**, mostly the 62 registration-portal camps (nothing to
     survey) plus genuinely dead or wrong-camp links. These need link repair before survey, not more
     survey effort.
-  - **Known under-recording:** the 294 surveyed camps were surveyed against the 95-term vocabulary, so
-    they systematically miss the 26 codes added afterwards — rafting above all. This is within the
-    documented contract (`features_verified_at` means a survey happened, explicitly not that the list
-    is complete, and every surveyed camp says so in provenance), so nothing was re-queued. A cheap
-    enrichment pass could add the new codes without re-surveying from scratch.
-- **Phase 4 — publish — NEXT.** Coverage is now meaningful (77% of non-day-camps), so add `features` +
-  `features_verified_at` to `current/camps.json` and the `published-current` contract (additive,
-  MINOR). Keep them out of `{dataset}/index.json` — listings stay light. Until this ships, the
-  features are only visible in the per-entity `v1/camps/{id}.json` documents.
+  - **Known under-recording — mostly repaired in 0.35.0.** The 294 camps were surveyed against the
+    95-term vocabulary and so could not carry the 26 terms added afterwards. Publishing made the
+    damage visible and unacceptable: `whitewater_rafting` matched **0 camps** despite 15 surveyed
+    pages describing it. 182 of the wave's 226 proposals were recovered and 103 entries applied
+    across 68 camps, cutting zero-camp vocabulary terms 30 → 6. The 6 that remain
+    (`coral_restoration`, `fossil_dig`, `maple_sugaring`, `surfing`, `automotive`,
+    `performing_arts`) are genuine rarities, not artefacts. Residual gap: ~44 proposals from four
+    agents were unrecoverable, so a handful of camps still under-record.
+- **Phase 4 — publish — DONE (0.35.0).** `features`, `features_signature`, and
+  `features_verified_at` are in `current/camps.json` and pinned in the `published-current` contract
+  (additive; all three required, so the build fails if the projection ever silently drops them).
+  Deliberately **codes only** — the prose `note` stays in the per-entity `v1/camps/{id}.json`,
+  because this projection is the filterable one and republishing notes cost +43% file size for text
+  no filter reads (+12% for codes: 466 → 605 KB). `{dataset}/index.json` listings stay light.
+  `features_signature` is published separately for ranking and badges, never for filtering. If
+  consumers ever want the notes inline, they arrive as a new additive `features_detail` field.
 - **Phase 5 — maintenance.** `signature` and long-tail entries decay fastest (a camp trials land
   sailing for two seasons), so they need a shorter re-verification cycle than facilities. Link health
   is now audited separately — see below.

@@ -94,6 +94,18 @@ from those schemas rather than hand-mirroring. Not yet pinned (tracked in `TODO.
 `v1/meta.json`, `v1/camps/aliases.json`, and the per-entity `v1/{dataset}/{id}.json` documents.
 A camp's `reservation.id` is a stable opaque grouping key (a bare slug, deliberately not a
 `kind:slug` entity ref): group by it, don't parse it.
+Each camp also carries **`features`** — what it actually offers, as sorted codes from the open
+[`camp-features`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-features.json) vocabulary
+(121 terms) — plus `features_signature` (the subset the camp presents as a headline draw, for
+ranking and badges, never for filtering) and `features_verified_at`. **Read the date with the
+array, always:** `null` + empty means *never surveyed, nothing known*, which is a different fact
+from a date + empty (*surveyed, its page described no offerings*); a date + non-empty is a real
+survey, and `null` + non-empty means the codes came from a bulk import nobody verified. A date
+means a survey happened, **not** that the list is exhaustive — camp pages rarely are. Codes form a
+shallow hierarchy through each term's `broader`, so a filter on a coarse code must expand it to its
+descendants: a camp offering only `kayaking` should match a search for `aquatics`. The prose `note`
+attached to some features is deliberately **not** in this projection — it lives in the per-camp
+`v1/camps/{id}.json` document, keeping the flat list filterable rather than 40% larger.
 
 
 **Pinning & releases.** Every version is a git tag (`vMAJOR.MINOR.PATCH`) at that release's
@@ -103,7 +115,20 @@ CHANGELOG sha. Pin canonical files immutably via jsDelivr —
 a `v*` tag runs [`release.yml`](./.github/workflows/release.yml), which publishes a GitHub Release
 with the built JSON tree (`open-scout-api-<tag>-json.tar.gz`) and a queryable **SQLite** artifact
 (`open-scout-api-<tag>.sqlite` — typed tables mirroring the `current` projections, plus the full
-canonical JSON per row for `json_extract`). Tagged releases can be archived to Zenodo for a citable
+canonical JSON per row for `json_extract`). Camp program features are unrolled into a
+`camp_features` junction table (`camp_id`, `code`, `signature`, `note`, `verified_at` — the prose
+`note` *is* included here, unlike the flat JSON projection) alongside `feature_vocab`
+(`code`, `label`, `category`, `broader`), so a coarse query resolves the hierarchy in one recursive
+CTE:
+
+```sql
+WITH RECURSIVE sub(code) AS (
+  SELECT 'aquatics'
+  UNION SELECT v.code FROM feature_vocab v JOIN sub ON v.broader = sub.code)
+SELECT COUNT(DISTINCT camp_id) FROM camp_features WHERE code IN (SELECT code FROM sub);  -- 254
+```
+
+Tagged releases can be archived to Zenodo for a citable
 DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.json`).
 
 ## Datasets & status
@@ -114,7 +139,7 @@ DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.jso
 | **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
 | **Merit badges** | ✅ 142 entities — 140 current (17 Eagle-required incl. alternatives), Citizenship in Society (introduced 2021 → Eagle-required 2022 → discontinued 2026), Computers→Digital Technology supersession. |
 | **Requirement sets** | ✅ 188 documents (141 merit-badge + 47 rank across programs/editions) — full requirement tree (numbering, nesting, choose-N/option groups) + effective date/`supersedes` chains + source links per revision. ⚠ Requirement **text is © Scouting America** (see below), not under this dataset's license. |
-| **Camps** | ✅ 448 entities — seeded from [camp-finder](https://github.com/sethmay/camp-finder), classified by `camp_type` (349 resident, 64 day, 35 high-adventure) and `operator` (444 council + 4 national bases: Philmont, Florida Sea Base, Northern Tier, Summit/James C. Justice). Duplicate and program/session-variant listings are merged into their base camp and scraped-artifact names corrected to the real property name; retired ids (50) resolve to the surviving camp via [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json). 41 co-located distinct camps carry a `reservation` grouping (18 reservations, 17 named — e.g. Goshen Scout Reservation) so consumers render one pin per property. Every camp with coordinates also carries `elevation_ft` (ground elevation from a 90 m DEM) and July climate normals `july_high_f` / `july_low_f` (WorldClim 1 km, 1970-2000), all inheriting `geo_precision`. Most carry an evergreen `summary` (371 of 448; durable prose, no dates/fees/sessions). Coordinates carry `geo_precision` (336 `exact`, 111 `approximate`, 1 unplaceable) — a point shared by several camps is a reservation centroid, so it is `approximate`, not `exact` — and a build gate rejects any point outside its state box. Covers every camp the camp-finder site lists; sessions/fees stay at the council site. |
+| **Camps** | ✅ 448 entities — seeded from [camp-finder](https://github.com/sethmay/camp-finder), classified by `camp_type` (349 resident, 64 day, 35 high-adventure) and `operator` (444 council + 4 national bases: Philmont, Florida Sea Base, Northern Tier, Summit/James C. Justice). Duplicate and program/session-variant listings are merged into their base camp and scraped-artifact names corrected to the real property name; retired ids (50) resolve to the surviving camp via [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json). 41 co-located distinct camps carry a `reservation` grouping (18 reservations, 17 named — e.g. Goshen Scout Reservation) so consumers render one pin per property. Every camp with coordinates also carries `elevation_ft` (ground elevation from a 90 m DEM) and July climate normals `july_high_f` / `july_low_f` (WorldClim 1 km, 1970-2000), all inheriting `geo_precision`. Most carry an evergreen `summary` (371 of 448; durable prose, no dates/fees/sessions). Coordinates carry `geo_precision` (336 `exact`, 111 `approximate`, 1 unplaceable) — a point shared by several camps is a reservation centroid, so it is `approximate`, not `exact` — and a build gate rejects any point outside its state box. Covers every camp the camp-finder site lists; sessions/fees stay at the council site. **Program `features`** — what each camp offers, as codes from the open 121-term [`camp-features`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-features.json) vocabulary — are surveyed from each camp's own page: **294 camps carry 4,329 feature entries (77% of the 384 non-day-camps)**, each with a `features_verified_at` date, and 147 marked `signature` where the camp presents them as a headline draw. Day camps are out of scope (they often run at rented sites). An empty array never means "offers nothing" — read it with the date. |
 | **Ranks** | ✅ 21 across 4 programs — 7 Scouts BSA (Scout→Eagle) + 6 Cub Scout (Lion→Arrow of Light), 4 Venturing (Venturing→Summit), 4 Sea Scout (Apprentice→Quartermaster). Requirement content in 47 rank `requirement-set` docs: Scouts BSA current (2024, No. 33216) + 26 historical editions (2016-2023) via usscouts.org; Cub/Venturing/Sea Scout current from official scouting.org pages + 2026 Sea Scout PDFs. Full verbatim tree © Scouting America. |
 | **Awards** | ✅ 52 earned awards & recognitions (knots, scouting honors, training awards, religious-emblem knot) from the Guide to Awards and Insignia (No. 33066) — facts only (category, audience, square-knot/insignia numbers, wear); catalog numbers source-verified (`llm_extraction`, conf 0.85). Excludes uniform insignia and per-faith emblems. |
 | **OA lodges** | ✅ 238 entities — Order of the Arrow lodges from the official OA lodge locator feed (oa-bsa.org), each linked to its chartering council, with OA section/region, HQ + coordinates, and website. Officer/contact PII excluded. |

@@ -27,17 +27,61 @@
       ],
       "features": [
         {
-          "code": "waterfront",
-          "note": "A forty-acre lake, plus an upper lake for fishing."
+          "code": "air_conditioning",
+          "note": "An air-conditioned dining hall."
         },
         {
-          "code": "swimming"
+          "code": "archery"
+        },
+        {
+          "code": "atv",
+          "note": "An ATV certification course on a dedicated track."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Each campsite has an outhouse with showers."
+        },
+        {
+          "code": "black_powder",
+          "note": "The Louisiana Long Guns black-powder rifle program."
         },
         {
           "code": "canoeing"
         },
         {
+          "code": "cit_program"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Brownsea Island first-year camper program."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
           "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas wall tents can be checked out from the quartermaster."
+        },
+        {
+          "code": "rifle"
         },
         {
           "code": "rowing"
@@ -46,62 +90,21 @@
           "code": "sailing"
         },
         {
-          "code": "zip_line",
-          "note": "A zip line across the lake ending in a splashdown."
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "rifle"
-        },
-        {
           "code": "shotgun"
         },
         {
-          "code": "black_powder",
-          "note": "The Louisiana Long Guns black-powder rifle program."
+          "code": "swimming"
         },
         {
-          "code": "atv",
-          "note": "An ATV certification course on a dedicated track."
+          "code": "water_blob"
         },
         {
-          "code": "cowboy_action_shooting"
+          "code": "waterfront",
+          "note": "A forty-acre lake, plus an upper lake for fishing."
         },
         {
-          "code": "bathhouse",
-          "note": "Each campsite has an outhouse with showers."
-        },
-        {
-          "code": "platform_tents",
-          "note": "Canvas wall tents can be checked out from the quartermaster."
-        },
-        {
-          "code": "dining_hall"
-        },
-        {
-          "code": "air_conditioning",
-          "note": "An air-conditioned dining hall."
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "nature_study"
-        },
-        {
-          "code": "first_year_program",
-          "note": "The Brownsea Island first-year camper program."
-        },
-        {
-          "code": "older_scout_program"
-        },
-        {
-          "code": "cit_program"
+          "code": "zip_line",
+          "note": "A zip line across the lake ending in a splashdown."
         }
       ],
       "features_verified_at": "2026-07-25",

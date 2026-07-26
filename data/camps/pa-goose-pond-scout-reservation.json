@@ -27,13 +27,34 @@
       ],
       "features": [
         {
-          "code": "swimming"
+          "code": "archery"
+        },
+        {
+          "code": "backpacking"
         },
         {
           "code": "canoeing"
         },
         {
+          "code": "climbing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
           "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "rifle"
         },
         {
           "code": "rowing"
@@ -43,31 +64,13 @@
           "note": "Small-boat sailing instruction."
         },
         {
-          "code": "fishing"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "rifle"
-        },
-        {
           "code": "shotgun"
         },
         {
-          "code": "climbing"
+          "code": "swimming"
         },
         {
-          "code": "backpacking"
-        },
-        {
-          "code": "geocaching"
-        },
-        {
-          "code": "nature_study"
-        },
-        {
-          "code": "handicraft"
+          "code": "whitewater_rafting"
         }
       ],
       "features_verified_at": "2026-07-25",

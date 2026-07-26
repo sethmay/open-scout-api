@@ -27,39 +27,73 @@
       ],
       "features": [
         {
-          "code": "pool",
-          "note": "The Charles Heistand Memorial Pool."
+          "code": "accessible_facilities",
+          "note": "Many camp facilities are wheelchair accessible."
         },
         {
-          "code": "swimming"
+          "code": "amphitheater",
+          "note": "A natural amphitheatre at The Bend fire circle."
         },
         {
-          "code": "snorkeling"
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse"
         },
         {
           "code": "canoeing"
         },
         {
-          "code": "kayaking"
+          "code": "chapel",
+          "note": "A chapel used for a sunrise service."
         },
         {
-          "code": "waterfront",
-          "note": "Boat docks on the Octoraro Creek."
+          "code": "cit_program",
+          "note": "A three-to-four-week counsellor-in-training programme for ages fourteen and fifteen."
+        },
+        {
+          "code": "climbing"
         },
         {
           "code": "cope",
           "note": "A ropes course, aerial obstacles, and a vertical playground."
         },
         {
-          "code": "climbing"
+          "code": "dining_hall"
         },
         {
-          "code": "rappelling",
-          "note": "A thirty-five-foot rappelling tower."
+          "code": "disc_golf"
         },
         {
-          "code": "zip_line",
-          "note": "A three-hundred-foot zip line."
+          "code": "first_year_program",
+          "note": "The Trailblazer first-year camper program."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "Craft projects, plaques, and industrial arts."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Guided rides across miles of camp trails."
+        },
+        {
+          "code": "museum",
+          "note": "A rare computer museum in the STEAM centre."
         },
         {
           "code": "nature_center",
@@ -69,47 +103,7 @@
           "code": "nature_study"
         },
         {
-          "code": "sports_field",
-          "note": "An athletic field used for sports and athletics."
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "disc_golf"
-        },
-        {
-          "code": "gaga_ball"
-        },
-        {
-          "code": "handicraft",
-          "note": "Craft projects, plaques, and industrial arts."
-        },
-        {
-          "code": "mountain_biking",
-          "note": "Guided rides across miles of camp trails."
-        },
-        {
-          "code": "pistol",
-          "note": "A pistol marksmanship program for Scouts fifteen and older."
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "stem",
-          "note": "A STEAM centre in Schramm Lodge."
-        },
-        {
-          "code": "museum",
-          "note": "A rare computer museum in the STEAM centre."
-        },
-        {
-          "code": "first_year_program",
-          "note": "The Trailblazer first-year camper program."
+          "code": "older_scout_program"
         },
         {
           "code": "outpost_overnight",
@@ -120,42 +114,51 @@
           "note": "The dining hall closes on outpost day and troops cook in their sites."
         },
         {
-          "code": "dining_hall"
+          "code": "pistol",
+          "note": "A pistol marksmanship program for Scouts fifteen and older."
         },
         {
-          "code": "trading_post"
-        },
-        {
-          "code": "health_lodge"
-        },
-        {
-          "code": "bathhouse"
-        },
-        {
-          "code": "chapel",
-          "note": "A chapel used for a sunrise service."
-        },
-        {
-          "code": "amphitheater",
-          "note": "A natural amphitheatre at The Bend fire circle."
-        },
-        {
-          "code": "accessible_facilities",
-          "note": "Many camp facilities are wheelchair accessible."
+          "code": "pool",
+          "note": "The Charles Heistand Memorial Pool."
         },
         {
           "code": "provisional_attendance",
           "note": "Provisional campers are paired with a host troop."
         },
         {
-          "code": "cit_program",
-          "note": "A three-to-four-week counsellor-in-training programme for ages fourteen and fifteen."
+          "code": "rappelling",
+          "note": "A thirty-five-foot rappelling tower."
         },
         {
-          "code": "older_scout_program"
+          "code": "rifle"
         },
         {
-          "code": "geocaching"
+          "code": "river_tubing"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "sports_field",
+          "note": "An athletic field used for sports and athletics."
+        },
+        {
+          "code": "stem",
+          "note": "A STEAM centre in Schramm Lodge."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Boat docks on the Octoraro Creek."
+        },
+        {
+          "code": "zip_line",
+          "note": "A three-hundred-foot zip line."
         }
       ],
       "features_verified_at": "2026-07-25",

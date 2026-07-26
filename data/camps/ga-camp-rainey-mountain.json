@@ -49,6 +49,9 @@
           "note": "Centrally located shower houses with hot water."
         },
         {
+          "code": "building_wifi"
+        },
+        {
           "code": "campsite_electricity",
           "note": "A limited number of campsites have outlets for powering medical equipment."
         },
@@ -131,6 +134,9 @@
         {
           "code": "waterfront",
           "note": "A private lake with two separate waterfronts."
+        },
+        {
+          "code": "whitewater_rafting"
         }
       ],
       "features_verified_at": "2026-07-25",

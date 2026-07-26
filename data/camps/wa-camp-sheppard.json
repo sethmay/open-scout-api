@@ -27,10 +27,6 @@
       ],
       "features": [
         {
-          "code": "dining_hall",
-          "note": "The lodge houses a dining hall and kitchen."
-        },
-        {
           "code": "bathhouse",
           "note": "Centrally located restrooms with showers."
         },
@@ -39,21 +35,31 @@
           "note": "Heated cabins with bunks."
         },
         {
-          "code": "shooting_sports",
-          "note": "A range operates as part of the winter camp program."
-        },
-        {
           "code": "climbing"
         },
         {
           "code": "cope"
         },
         {
-          "code": "stem"
+          "code": "cross_country_skiing"
+        },
+        {
+          "code": "dining_hall",
+          "note": "The lodge houses a dining hall and kitchen."
         },
         {
           "code": "nature_study",
           "note": "Ecology sessions in the winter camp program."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A range operates as part of the winter camp program."
+        },
+        {
+          "code": "sledding"
+        },
+        {
+          "code": "stem"
         }
       ],
       "features_verified_at": "2026-07-25",

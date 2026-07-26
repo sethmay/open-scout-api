@@ -30,27 +30,14 @@
           "code": "aquatics"
         },
         {
-          "code": "nature_study"
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "stem",
-          "note": "The FSR STEAM Lab covers science, technology, engineering, art, and mathematics."
-        },
-        {
           "code": "archery",
           "note": "The Ken Staab Action Archery Range has life-size 3D animal targets on a wooded course."
         },
         {
-          "code": "rifle"
+          "code": "climbing"
         },
         {
-          "code": "shotgun"
-        },
-        {
-          "code": "pistol"
+          "code": "cope"
         },
         {
           "code": "cowboy_action_shooting",
@@ -58,14 +45,30 @@
           "note": "Single-action .22 pistols, lever-action .22 rifles, and 20-gauge shotguns for campers fourteen and older."
         },
         {
-          "code": "cope"
+          "code": "handicraft"
         },
         {
-          "code": "climbing"
+          "code": "nature_study"
         },
         {
           "code": "outpost_overnight",
           "note": "Two off-camp outpost adventures, one of them an overnight."
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem",
+          "note": "The FSR STEAM Lab covers science, technology, engineering, art, and mathematics."
         }
       ],
       "features_verified_at": "2026-07-25",

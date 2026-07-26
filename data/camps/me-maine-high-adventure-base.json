@@ -27,26 +27,32 @@
       ],
       "features": [
         {
+          "code": "backpacking",
+          "note": "Treks can include hiking Mount Katahdin in Baxter State Park."
+        },
+        {
           "code": "canoeing",
           "signature": true,
           "note": "Fully outfitted multi-day backcountry canoe treks, with flatwater and up to Class III whitewater."
         },
         {
-          "code": "backpacking",
-          "note": "Treks can include hiking Mount Katahdin in Baxter State Park."
+          "code": "conservation_project"
         },
         {
           "code": "fishing"
         },
         {
-          "code": "swimming"
+          "code": "nature_study"
         },
         {
-          "code": "nature_study"
+          "code": "orienteering"
         },
         {
           "code": "patrol_cooking",
           "note": "Crews cook over an open fire on the trail."
+        },
+        {
+          "code": "swimming"
         }
       ],
       "features_verified_at": "2026-07-25",

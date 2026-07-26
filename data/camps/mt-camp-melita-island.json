@@ -27,13 +27,33 @@
       ],
       "features": [
         {
+          "code": "archery"
+        },
+        {
           "code": "boat_access",
           "signature": true,
           "note": "The camp occupies a private island in Flathead Lake."
         },
         {
-          "code": "waterfront",
-          "note": "Frontage on Flathead Lake, the largest natural freshwater lake in the western United States."
+          "code": "cope"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "Inflatable obstacles at the waterfront."
+        },
+        {
+          "code": "handicraft",
+          "note": "A fine arts programme area."
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The Advanced Camper Experience for Scouts aged 14 to 17."
         },
         {
           "code": "sailing",
@@ -41,40 +61,23 @@
           "note": "Large and small boat sailing."
         },
         {
-          "code": "water_skiing"
-        },
-        {
-          "code": "swimming"
-        },
-        {
           "code": "snorkeling"
-        },
-        {
-          "code": "floating_obstacle_course",
-          "note": "Inflatable obstacles at the waterfront."
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "handicraft",
-          "note": "A fine arts programme area."
         },
         {
           "code": "stem"
         },
         {
-          "code": "cope"
+          "code": "swimming"
         },
         {
-          "code": "older_scout_program",
-          "note": "The Advanced Camper Experience for Scouts aged 14 to 17."
+          "code": "water_skiing"
         },
         {
-          "code": "high_adventure_option"
+          "code": "waterfront",
+          "note": "Frontage on Flathead Lake, the largest natural freshwater lake in the western United States."
+        },
+        {
+          "code": "whitewater_rafting"
         }
       ],
       "features_verified_at": "2026-07-25",

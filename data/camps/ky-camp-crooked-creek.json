@@ -27,18 +27,19 @@
       ],
       "features": [
         {
+          "code": "adirondack_shelters",
+          "note": "Adirondack sites in four of the campsites."
+        },
+        {
           "code": "archery"
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "shotgun"
         },
         {
           "code": "atv",
           "signature": true,
           "note": "An all-terrain-vehicle program with its own rider course."
+        },
+        {
+          "code": "bathhouse"
         },
         {
           "code": "blacksmithing"
@@ -47,46 +48,48 @@
           "code": "canoeing"
         },
         {
-          "code": "kayaking"
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "scuba"
-        },
-        {
           "code": "cope",
           "note": "A high-ropes challenge course."
-        },
-        {
-          "code": "handicraft"
-        },
-        {
-          "code": "waterfront",
-          "note": "The seventy-acre John Barr Lake."
-        },
-        {
-          "code": "pool"
-        },
-        {
-          "code": "adirondack_shelters",
-          "note": "Adirondack sites in four of the campsites."
-        },
-        {
-          "code": "bathhouse"
         },
         {
           "code": "first_year_program"
         },
         {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
           "code": "older_scout_program"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scuba"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "The seventy-acre John Barr Lake."
         }
       ],
       "features_verified_at": "2026-07-25",

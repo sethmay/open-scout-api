@@ -3,6 +3,39 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.35.0 (minor) — 2026-07-25
+
+- `PENDING` **Published camp program features.** `current/camps.json` now carries `features`
+  (sorted codes from the 121-term open `camp-features` vocabulary), `features_signature` (the subset
+  a camp presents as a headline draw), and `features_verified_at`. All three are pinned as
+  **required** in `published-current.schema.json`, so the build fails if the projection ever
+  silently drops them; nine injection probes confirm the new keywords bite (missing field, duplicate
+  code, non-string code, wrong type, bad date, stray property).
+- **Codes only, deliberately.** The prose `note` on ~40% of feature entries stays in the per-entity
+  `v1/camps/{id}.json` document. Republishing it inline would have grown the flat list 43%
+  (466 → 664 KB) with text no filter reads; codes alone cost 12% (466 → 605 KB). This projection is
+  the filterable one. Notes can still arrive later as an additive `features_detail` field.
+  `{dataset}/index.json` listings stay light (107 KB, unchanged).
+- **Publishing exposed a false-negative bug and it is now fixed.** Because the vocabulary was
+  curated *after* the survey wave, 30 of 121 terms matched zero camps — including
+  `whitewater_rafting`, the single most-requested term, which 15 surveyed camp pages described. A
+  consumer filtering it got an empty result reading as "nobody offers this". 182 of the wave's 226
+  proposals were recovered from the agents' session transcripts (the files had been deleted as
+  scaffolding before being committed — see `LESSONS.md`) and **103 entries applied across 68 camps**
+  against the accepted vocabulary only; rejected and held-back codes stayed dropped. Zero-camp terms
+  **30 → 6**, and the six that remain (`coral_restoration`, `fossil_dig`, `maple_sugaring`,
+  `surfing`, `automotive`, `performing_arts`) are genuine rarities. Published feature entries:
+  4,226 → **4,329**.
+- Verified end to end as a consumer would: building the `broader` rollup from the published vocab
+  file alone and filtering the published camp list — `aquatics` → 254 camps, and a camp offering
+  only `kayaking` correctly matches it.
+- **The SQLite artifact carries features relationally**, not just inside its opaque `data` blob: a
+  new `camp_features` junction table (4,329 rows; `camp_id`, `code`, `signature`, `note`,
+  `verified_at` — the prose `note` *is* kept here, since bandwidth is not a constraint for a
+  download) plus `feature_vocab` (121 rows, with `broader`), so a coarse query resolves the
+  hierarchy in one recursive CTE. Verified the SQL answers match the JSON exactly (`aquatics` → 254
+  camps either way). The artifact goes 9 → 11 tables, 1,652 → 6,102 rows.
+
 ## 0.34.0 (minor) — 2026-07-25
 
 - `4866d96` **Main survey wave: 285 camps surveyed in parallel by 16 agents; camps with program

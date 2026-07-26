@@ -28,63 +28,50 @@
       ],
       "features": [
         {
-          "code": "high_adventure_option",
-          "signature": true,
-          "note": "CTSRTREK: kayaking, hiking, biking, and horseback riding from a state-park base, returning to camp for the ATV program."
-        },
-        {
-          "code": "older_scout_program"
+          "code": "archery"
         },
         {
           "code": "atv"
         },
         {
-          "code": "horseback"
-        },
-        {
-          "code": "pool"
-        },
-        {
-          "code": "waterfront",
-          "note": "A boat house on the water, run alongside the pool as one aquatics area."
-        },
-        {
-          "code": "swimming",
-          "note": "Swimming and lifesaving instruction, plus a learn-to-swim programme."
+          "code": "cabins"
         },
         {
           "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "rowing"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "fishing"
         },
         {
           "code": "climbing_tower",
           "note": "A 40-foot climbing tower."
         },
         {
-          "code": "rappelling"
-        },
-        {
           "code": "cope"
         },
         {
-          "code": "rifle"
+          "code": "cross_country_skiing"
         },
         {
-          "code": "shotgun"
+          "code": "first_year_program",
+          "note": "Guyasuta Braves, for Scouts in their first year."
         },
         {
-          "code": "archery"
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "CTSRTREK: kayaking, hiking, biking, and horseback riding from a state-park base, returning to camp for the ATV program."
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "kayaking"
         },
         {
           "code": "nature_center",
@@ -94,28 +81,47 @@
           "code": "nature_study"
         },
         {
-          "code": "stem",
-          "note": "A Sci-Tech centre covering engineering through space exploration."
+          "code": "older_scout_program"
         },
         {
-          "code": "handicraft"
-        },
-        {
-          "code": "geocaching"
+          "code": "orienteering"
         },
         {
           "code": "outpost_overnight",
           "note": "Scoutcraft campers hike to the outer limits of the property and camp there."
         },
         {
-          "code": "first_year_program",
-          "note": "Guyasuta Braves, for Scouts in their first year."
+          "code": "paddleboarding"
         },
         {
-          "code": "cabins"
+          "code": "pool"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem",
+          "note": "A Sci-Tech centre covering engineering through space exploration."
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming and lifesaving instruction, plus a learn-to-swim programme."
         },
         {
           "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A boat house on the water, run alongside the pool as one aquatics area."
         }
       ],
       "features_verified_at": "2026-07-25",

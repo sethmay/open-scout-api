@@ -84,6 +84,9 @@
           "code": "handicraft"
         },
         {
+          "code": "hiking"
+        },
+        {
           "code": "kayaking"
         },
         {
@@ -95,6 +98,9 @@
         },
         {
           "code": "nature_study"
+        },
+        {
+          "code": "orienteering"
         },
         {
           "code": "paddleboarding"
@@ -132,6 +138,9 @@
         {
           "code": "tomahawk_throwing",
           "note": "An axe throwing range."
+        },
+        {
+          "code": "water_slide"
         },
         {
           "code": "waterfront"

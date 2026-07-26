@@ -27,47 +27,8 @@
       ],
       "features": [
         {
-          "code": "dining_hall",
-          "note": "A large modern dining hall for communal meals."
-        },
-        {
-          "code": "patrol_cooking",
-          "note": "Units can eat in the dining hall or cook patrol meals in their own sites."
-        },
-        {
-          "code": "trading_post",
-          "note": "A well-stocked trading post for snacks and memorabilia."
-        },
-        {
-          "code": "chapel",
-          "note": "A spacious chapel on a wooded point overlooking the water."
-        },
-        {
           "code": "amphitheater",
           "note": "A lakeside fire circle for council fires and ceremonies."
-        },
-        {
-          "code": "waterfront",
-          "note": "On the shores of Bear Paw Lake in the Nicolet National Forest."
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "canoeing"
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "fishing",
-          "note": "Includes ice fishing in the winter season."
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "cowboy_action_shooting"
         },
         {
           "code": "archery"
@@ -76,28 +37,73 @@
           "code": "atv"
         },
         {
-          "code": "mountain_biking",
-          "note": "Marked cycling trails of up to fifty miles around camp."
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "A spacious chapel on a wooded point overlooking the water."
         },
         {
           "code": "climbing",
           "note": "A rock climbing program."
         },
         {
-          "code": "handicraft",
-          "note": "Leatherwork."
+          "code": "cowboy_action_shooting"
         },
         {
-          "code": "stem",
-          "note": "A STEM centre."
+          "code": "dining_hall",
+          "note": "A large modern dining hall for communal meals."
         },
         {
           "code": "disc_golf",
           "note": "A nine-hole course."
         },
         {
+          "code": "fishing",
+          "note": "Includes ice fishing in the winter season."
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork."
+        },
+        {
+          "code": "hiking"
+        },
+        {
           "code": "ice_skating",
           "note": "Part of the winter season program."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Marked cycling trails of up to fifty miles around camp."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Units can eat in the dining hall or cook patrol meals in their own sites."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "snowshoeing"
+        },
+        {
+          "code": "stem",
+          "note": "A STEM centre."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post",
+          "note": "A well-stocked trading post for snacks and memorabilia."
+        },
+        {
+          "code": "waterfront",
+          "note": "On the shores of Bear Paw Lake in the Nicolet National Forest."
         }
       ],
       "features_verified_at": "2026-07-25",

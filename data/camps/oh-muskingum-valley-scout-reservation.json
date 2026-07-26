@@ -89,6 +89,9 @@
           "note": "PEAK, an unstructured high-adventure track for Scouts aged 14 and older."
         },
         {
+          "code": "hiking"
+        },
+        {
           "code": "kayaking"
         },
         {
@@ -98,6 +101,9 @@
         {
           "code": "nature_study",
           "note": "Eco-Con, the ecology and conservation area, with a marked nature trail."
+        },
+        {
+          "code": "observatory"
         },
         {
           "code": "older_scout_program",

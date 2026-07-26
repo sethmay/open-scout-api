@@ -27,55 +27,58 @@
       ],
       "features": [
         {
-          "code": "platform_tents",
-          "note": "Eleven campsites with tent platforms, latrines, and water."
-        },
-        {
-          "code": "cabins",
-          "note": "Five cabins usable year-round."
-        },
-        {
-          "code": "dining_hall"
+          "code": "accessible_facilities",
+          "note": "The shower buildings and the trading-post restrooms are wheelchair accessible."
         },
         {
           "code": "air_conditioning",
           "note": "The dining hall and trading post are air-conditioned."
         },
         {
+          "code": "aquatics"
+        },
+        {
           "code": "bathhouse",
           "note": "Two modern shower and restroom buildings."
         },
         {
-          "code": "accessible_facilities",
-          "note": "The shower buildings and the trading-post restrooms are wheelchair accessible."
-        },
-        {
-          "code": "trading_post"
-        },
-        {
-          "code": "pool",
-          "note": "A swimming pool complex."
-        },
-        {
-          "code": "waterfront",
-          "note": "A lake used for boating and water sports."
-        },
-        {
-          "code": "aquatics"
-        },
-        {
-          "code": "cope"
-        },
-        {
-          "code": "health_lodge"
+          "code": "cabins",
+          "note": "Five cabins usable year-round."
         },
         {
           "code": "chapel",
           "note": "A non-denominational outdoor chapel."
         },
         {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "hiking"
+        },
+        {
           "code": "pavilion",
           "note": "Program areas and pavilions with lighting and electricity."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Eleven campsites with tent platforms, latrines, and water."
+        },
+        {
+          "code": "pool",
+          "note": "A swimming pool complex."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A lake used for boating and water sports."
         }
       ],
       "features_verified_at": "2026-07-25",

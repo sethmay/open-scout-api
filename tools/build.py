@@ -229,6 +229,10 @@ def main() -> None:
                                   "elevation_ft": ov.get("elevation_ft"),
                                   "july_high_f": ov.get("july_high_f"), "july_low_f": ov.get("july_low_f"),
                                   "program_types": ov.get("program_types", []), "summary": ov.get("summary"),
+                                  "features": sorted(f["code"] for f in (ov.get("features") or [])),
+                                  "features_signature": sorted(f["code"] for f in (ov.get("features") or [])
+                                                               if f.get("signature")),
+                                  "features_verified_at": ov.get("features_verified_at"),
                                   "parent": ov.get("parent"), "reservation": ov.get("reservation"),
                                   "council_name": _cm["name"] if _cm else None,
                                   "council_website": _cm["website"] if _cm else None,
@@ -420,7 +424,7 @@ Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by
  <li><a href="v1/merit-badges/index.json"><code>v1/merit-badges/index.json</code></a> · <code>v1/merit-badges/&lt;id&gt;.json</code></li>
  <li><a href="v1/requirement-sets/index.json"><code>v1/requirement-sets/index.json</code></a> · <code>v1/requirement-sets/&lt;id&gt;.json</code> — requirement trees</li>
  <li><a href="v1/camps/index.json"><code>v1/camps/index.json</code></a> · <code>v1/camps/&lt;id&gt;.json</code> — resident/HA/day/short-term camps</li>
- <li><a href="v1/current/camps.json"><code>v1/current/camps.json</code></a> — flat current camp list</li>
+ <li><a href="v1/current/camps.json"><code>v1/current/camps.json</code></a> — flat current camp list, with program <code>features</code></li>
  <li><a href="v1/ranks/index.json"><code>v1/ranks/index.json</code></a> · <code>v1/ranks/&lt;id&gt;.json</code> — Scouts BSA ranks</li>
  <li><a href="v1/awards/index.json"><code>v1/awards/index.json</code></a> · <code>v1/awards/&lt;id&gt;.json</code> — awards &amp; recognitions (knots, honors, training)</li>
  <li><a href="v1/oa-lodges/index.json"><code>v1/oa-lodges/index.json</code></a> · <code>v1/oa-lodges/&lt;id&gt;.json</code> — Order of the Arrow lodges (by council)</li>

@@ -33,7 +33,40 @@
           "code": "bb_guns"
         },
         {
+          "code": "bouldering",
+          "note": "A bouldering wall called Babe the Blue Ox."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope",
+          "note": "Both high and low COPE courses."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "ice_fishing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A Scout can attend without their unit at a provisional fee."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
           "code": "rifle"
+        },
+        {
+          "code": "sailing"
         },
         {
           "code": "shotgun"
@@ -42,40 +75,10 @@
           "code": "slingshot"
         },
         {
-          "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "sailing"
-        },
-        {
           "code": "swimming"
         },
         {
-          "code": "fishing"
-        },
-        {
-          "code": "climbing"
-        },
-        {
-          "code": "rappelling"
-        },
-        {
-          "code": "cope",
-          "note": "Both high and low COPE courses."
-        },
-        {
-          "code": "bouldering",
-          "note": "A bouldering wall called Babe the Blue Ox."
-        },
-        {
           "code": "waterfront"
-        },
-        {
-          "code": "provisional_attendance",
-          "note": "A Scout can attend without their unit at a provisional fee."
         }
       ],
       "features_verified_at": "2026-07-25",

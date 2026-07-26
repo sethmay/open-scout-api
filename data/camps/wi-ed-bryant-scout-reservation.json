@@ -28,9 +28,54 @@
       ],
       "features": [
         {
+          "code": "archery",
+          "note": "Range archery plus aerial and 3-D archery."
+        },
+        {
           "code": "atv",
           "signature": true,
           "note": "ATV Adventure, run at the camp's Wheels program area."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chalkball",
+          "note": "Paintball target shooting on the range."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope",
+          "note": "A low COPE challenge course."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion"
         },
         {
           "code": "personal_watercraft",
@@ -38,89 +83,47 @@
           "note": "A jet ski expedition run from the boat beach."
         },
         {
-          "code": "dining_hall"
-        },
-        {
-          "code": "trading_post"
+          "code": "pistol",
+          "note": "An orientation course on a .22 semi-automatic pistol."
         },
         {
           "code": "provisional_attendance"
         },
         {
-          "code": "canoeing"
-        },
-        {
-          "code": "kayaking"
+          "code": "rifle"
         },
         {
           "code": "sailing",
           "note": "Small-boat sailing."
         },
         {
-          "code": "water_skiing"
+          "code": "scoutcraft"
         },
         {
-          "code": "paddleboarding"
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
         },
         {
           "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing"
         },
         {
           "code": "waterfront",
           "note": "Shoreline on Castle Rock Lake, with separate swim and boat beaches."
         },
         {
-          "code": "nature_study"
-        },
-        {
-          "code": "cope",
-          "note": "A low COPE challenge course."
-        },
-        {
-          "code": "climbing"
-        },
-        {
-          "code": "zip_line"
-        },
-        {
-          "code": "archery",
-          "note": "Range archery plus aerial and 3-D archery."
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "shotgun"
-        },
-        {
-          "code": "pistol",
-          "note": "An orientation course on a .22 semi-automatic pistol."
-        },
-        {
-          "code": "cowboy_action_shooting"
-        },
-        {
-          "code": "chalkball",
-          "note": "Paintball target shooting on the range."
-        },
-        {
-          "code": "handicraft"
-        },
-        {
           "code": "welding",
           "note": "Metalwork instruction."
         },
         {
-          "code": "stem"
-        },
-        {
-          "code": "first_year_program"
-        },
-        {
-          "code": "pavilion"
-        },
-        {
-          "code": "gaga_ball"
+          "code": "zip_line"
         }
       ],
       "features_verified_at": "2026-07-25",

@@ -27,28 +27,24 @@
       ],
       "features": [
         {
+          "code": "archery"
+        },
+        {
           "code": "backpacking",
           "signature": true,
           "note": "The Lenhok'sin Trail Trek, five days on the trail visiting staffed outposts, is the camp's primary program."
         },
         {
+          "code": "black_powder"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "The Foxfire outpost, an Appalachian forge where crews make knives and hooks."
+        },
+        {
           "code": "canoeing",
           "signature": true,
           "note": "The James River Canoe Trek, a five-day whitewater trek over sixty-one miles of the upper James."
-        },
-        {
-          "code": "kayaking"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "waterfront",
-          "note": "Lake Merriweather."
-        },
-        {
-          "code": "fishing",
-          "note": "Crews fish for dinner on the river trek."
         },
         {
           "code": "caving",
@@ -59,17 +55,14 @@
           "note": "Low and high elements."
         },
         {
-          "code": "blacksmithing",
-          "note": "The Foxfire outpost, an Appalachian forge where crews make knives and hooks."
+          "code": "fishing",
+          "note": "Crews fish for dinner on the river trek."
         },
         {
-          "code": "black_powder"
+          "code": "kayaking"
         },
         {
-          "code": "tomahawk_throwing"
-        },
-        {
-          "code": "archery"
+          "code": "knife_throwing"
         },
         {
           "code": "living_history",
@@ -80,8 +73,18 @@
           "note": "Crews visit up to four staffed outposts across the trek."
         },
         {
+          "code": "paddleboarding"
+        },
+        {
           "code": "provisional_attendance",
           "note": "Provisional crews run for both the trail trek and the river trek."
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Merriweather."
         }
       ],
       "features_verified_at": "2026-07-25",

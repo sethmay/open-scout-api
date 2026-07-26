@@ -27,42 +27,45 @@
       ],
       "features": [
         {
-          "code": "platform_tents",
-          "note": "Two-person canvas tents on wooden platforms."
-        },
-        {
-          "code": "dining_hall"
+          "code": "archery"
         },
         {
           "code": "bathhouse",
           "note": "Hot showers alongside campsite latrines."
         },
         {
-          "code": "flush_toilets",
-          "note": "Flush toilets at the dining hall and pool house."
+          "code": "climbing",
+          "note": "A climbing wall."
         },
         {
-          "code": "pool"
-        },
-        {
-          "code": "waterfront",
-          "note": "River frontage used for tubing and fishing."
+          "code": "dining_hall"
         },
         {
           "code": "fishing"
         },
         {
-          "code": "archery"
+          "code": "flush_toilets",
+          "note": "Flush toilets at the dining hall and pool house."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person canvas tents on wooden platforms."
+        },
+        {
+          "code": "pool"
         },
         {
           "code": "rifle"
         },
         {
-          "code": "climbing",
-          "note": "A climbing wall."
+          "code": "river_tubing"
         },
         {
           "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "River frontage used for tubing and fishing."
         }
       ],
       "features_verified_at": "2026-07-25",
