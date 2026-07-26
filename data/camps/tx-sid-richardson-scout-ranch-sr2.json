@@ -25,8 +25,54 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "16 miles of shoreline on 10,000-acre Lake Bridgeport."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "A blacksmith shop in the main camp."
+        },
+        {
+          "code": "nature_center",
+          "note": "A nature lodge."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "amphitheater",
+          "note": "A council ring."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Summer camp showers; outlying campsites have latrines."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Longhorn Council's Scouts BSA resident summer camp spanning 2,500 acres with 15 miles of shoreline along Lake Bridgeport near Runaway Bay, Texas, featuring a \"Great American West\" theme.",
       "provenance": {
         "sources": [
@@ -38,13 +84,17 @@
           },
           {
             "url": "https://www.longhorncouncil.org/sid-richardson-scout-ranch"
+          },
+          {
+            "url": "https://www.longhorncouncil.org/sites/default/files/2022-11/sid_main_camp_9-10.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

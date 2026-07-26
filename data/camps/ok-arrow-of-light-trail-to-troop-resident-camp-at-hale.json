@@ -25,8 +25,57 @@
       "program_types": [
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "bathhouse",
+          "note": "Every campsite sits near a bathroom facility with running water and hot showers."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Each campsite has access to a power outlet."
+        },
+        {
+          "code": "climbing",
+          "note": "An indoor climbing wall in the dining hall, used for daily climbing races."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Kitchen-prepared meals with a full salad bar."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Campsites share shower and toilet facilities close by."
+        },
+        {
+          "code": "health_lodge",
+          "note": "A health officer is on duty around the clock."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas wall tents on wooden platforms, two participants per tent, cots provided."
+        },
+        {
+          "code": "pool",
+          "note": "Swim checks are run at the pool on arrival."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Range sports form part of the programme; firearms are confined to designated ranges."
+        },
+        {
+          "code": "swimming",
+          "note": "Swim classification and aquatics instruction."
+        },
+        {
+          "code": "trading_post",
+          "note": "Trading post with laundry facilities behind it."
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake activities, for which water shoes are required."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Arrow of Light resident camp for rising fifth graders at Hale Scout Reservation, offered by Indian Nations Council in Talihina, Oklahoma.",
       "provenance": {
         "sources": [
@@ -38,13 +87,21 @@
           },
           {
             "url": "https://www.okscouts.org/campscubscouts"
+          },
+          {
+            "url": "https://www.okscouts.org/aoltrailtotroop",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.okscouts.org/_files/ugd/ae9d57_f8729f8a5efb42e791a6f31b1e04c152.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

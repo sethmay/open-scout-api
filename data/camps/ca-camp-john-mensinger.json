@@ -25,8 +25,55 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery",
+          "note": "Target and field archery."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun",
+          "note": "Trap shooting."
+        },
+        {
+          "code": "black_powder",
+          "note": "Muzzle-loader shooting."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A climbing and rappelling tower."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "swimming",
+          "note": "Open swim plus a Mile Swim."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "disc_golf",
+          "note": "A frisbee golf course."
+        },
+        {
+          "code": "sports_field",
+          "note": "Volleyball and horseshoes."
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Greater Yosemite Council Scouts BSA summer resident camp in the Stanislaus National Forest at roughly 4,800 feet near Beardsley Reservoir. Offers a \"Woodsman\" program for first- and second-year Scouts, aquatics using a pool, camp lake, and reservoir, plus Webelos Adventure @ Mensinger.",
       "provenance": {
         "sources": [
@@ -38,13 +85,17 @@
           },
           {
             "url": "https://www.yosemitescouting.org/camping/boy-scout-camping/camp-john-mensinger/51466"
+          },
+          {
+            "url": "https://www.yosemitescouting.org/camping/camp-john-mensinger/activities/51493",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

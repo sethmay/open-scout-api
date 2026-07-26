@@ -26,8 +26,130 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Opening and closing campfires are held at the Council Ring."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower houses in both North Camp and South Camp."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "An interfaith service is held at the camp chapel each week."
+        },
+        {
+          "code": "cit_program",
+          "note": "A Counselor-in-Training program for Scouts aged 14 and older."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A climbing tower, with night climbs offered by sign-up."
+        },
+        {
+          "code": "cope",
+          "note": "A low COPE course."
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Open to Scouts aged 14 and older with a signed permission form."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Cafeteria-style service with a salad bar."
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "The Netami program for first-year campers: a fully scheduled day introducing every area of camp."
+        },
+        {
+          "code": "fishing",
+          "note": "Fishing on the camp lake, with Complete Angler and Big Fish awards."
+        },
+        {
+          "code": "gaga_ball",
+          "note": "A gaga ball pit by the trading post."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "PEAK, an unstructured high-adventure track for Scouts aged 14 and older."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_center",
+          "note": "Eco-Con keeps live animals in an observation cabin."
+        },
+        {
+          "code": "nature_study",
+          "note": "Eco-Con, the ecology and conservation area, with a marked nature trail."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "PEAK is limited to Scouts aged 14 and older and interested adult leaders."
+        },
+        {
+          "code": "paddleboarding",
+          "note": "Stand-up paddleboarding on the lake, with equipment provided."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "pistol",
+          "note": "A pistol program limited to six participants per week."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rappelling",
+          "note": "Rappelling runs alongside climbing under Level 1 instructors."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling",
+          "note": "Snorkeling award with equipment provided."
+        },
+        {
+          "code": "stem",
+          "note": "Straker Lodge is wired for STEM work and holds a 3D printer."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A private lake used for boating, with rowing, canoeing, and kayaking."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA and Cub Scout resident summer camp in Coshocton, Ohio, operated by the Muskingum Valley Council.",
       "provenance": {
         "sources": [
@@ -39,13 +161,17 @@
           },
           {
             "url": "https://muskingumvalleycouncil.com/mvsr2026/"
+          },
+          {
+            "url": "https://muskingumvalleycouncil.com/wp-content/uploads/2025/11/2026-MVSR-Leaders-Guide-Final.docx",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

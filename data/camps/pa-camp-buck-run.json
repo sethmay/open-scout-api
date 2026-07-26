@@ -25,8 +25,64 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cabins",
+          "signature": true,
+          "note": "Cub Scouts sleep in rustic six-bunk cabins; adults sleep in tents."
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "A wheelchair-accessible cabin on Raccoon Ridge."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Jackson Dining Hall."
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "handicraft"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident camp of the Westmoreland-Fayette Council, located at Eberly Scout Reservation in Somerset, Pennsylvania.",
       "provenance": {
         "sources": [
@@ -38,13 +94,17 @@
           },
           {
             "url": "https://wfbsa.org/camping/camp-buck-run/"
+          },
+          {
+            "url": "https://wfbsa.org/wp-content/uploads/2026/03/2026-Buck-Run-Leaders-Guide.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Aquatics for Buck Run campers take place at the pool and lake of neighbouring Camp Conestoga, so no on-site pool or waterfront is recorded here."
       }
     }
   ],

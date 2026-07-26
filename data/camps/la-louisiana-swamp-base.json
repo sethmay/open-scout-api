@@ -25,8 +25,42 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "canoeing",
+          "signature": true,
+          "note": "A sixty-one-mile canoe trek through the Atchafalaya Swamp over six days."
+        },
+        {
+          "code": "nature_study",
+          "note": "Wetland ecology instruction and conservation service learning."
+        },
+        {
+          "code": "fishing",
+          "note": "Free-time fishing on the bayous and lakes along the trail."
+        },
+        {
+          "code": "hammock_camping",
+          "note": "Hammocks with built-in mosquito nets for the primitive island night."
+        },
+        {
+          "code": "pavilion",
+          "note": "Floating campsites sit under a roofed pavilion."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Most overnight stops have 110-volt power; the first two nights do not."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Crews cook their own meals at each overnight camp on a propane stove."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A provisional crew places individual Scouts from across the country together."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-adventure and conservation program run by the Evangeline Area Council, immersing crews in paddling treks through the Atchafalaya Swamp.",
       "provenance": {
         "sources": [
@@ -38,13 +72,21 @@
           },
           {
             "url": "https://www.swampbasebsa.org/"
+          },
+          {
+            "url": "https://www.swampbasebsa.org/trek-1",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.swampbasebsa.org/_files/ugd/43ed3e_0da889955df841f3aa240d35ac135f52.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -26,8 +26,39 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "Mount Bayou Lake and connecting bayous."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoe float trips on the lake and connecting bayous."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "chapel",
+          "note": "A chapel with a bell, rung for religious services."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Evangeline Area Council's 640-acre resident camp near Mt. Bayou Lake in Evangeline Parish, north of Ville Platte, Louisiana. Offers traditional scoutcraft, nature, and aquatics including pool swimming and lake canoe trips for Scouts BSA and Cub resident programs.",
       "provenance": {
         "sources": [
@@ -39,13 +70,17 @@
           },
           {
             "url": "https://www.eacscouting.org/mountain"
+          },
+          {
+            "url": "https://www.eacscouting.org/mountain",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

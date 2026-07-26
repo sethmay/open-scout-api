@@ -25,8 +25,48 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "patrol_cooking",
+          "signature": true,
+          "note": "Units cook breakfast and supper in their own campsites from food issued by camp."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trail to First Class, combined with two Eagle-required badges."
+        },
+        {
+          "code": "backpacking",
+          "note": "A guided five-day trek in the Sangre de Cristo Mountains."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "fishing",
+          "note": "Fly fishing on national forest water; a state licence is required."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "pavilion",
+          "note": "Merit badge classes are taught in or near covered shelters."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-altitude Scouts BSA resident summer camp in New Mexico's Sangre de Cristo Mountains, operated by the South Plains Council, featuring patrol-style cooking and a merit-badge program, with units bringing their own tents and cooking gear.",
       "provenance": {
         "sources": [
@@ -38,13 +78,21 @@
           },
           {
             "url": "https://www.spccamps.org/tres-ritos"
+          },
+          {
+            "url": "https://www.spccamps.org/tres-ritos",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.southplainscouncil.org/_files/ugd/fb440e_06aabb7721154af2a6a6d70e551f08de.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

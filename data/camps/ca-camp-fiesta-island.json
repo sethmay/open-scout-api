@@ -26,8 +26,45 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "kayaking",
+          "note": "Kayaking on Mission Bay."
+        },
+        {
+          "code": "sailing",
+          "note": "Sailing on Mission Bay."
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "personal_watercraft"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "An aquatics-centre property on Mission Bay, where units camp among the sandy dunes."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Mariner program, a first-year Trail to First Class track."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts without their own troop are paired with a host troop."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Waterfront Scouts BSA resident camp on Fiesta Island in Mission Bay, operated by the San Diego-Imperial Council.",
       "provenance": {
         "sources": [
@@ -39,13 +76,17 @@
           },
           {
             "url": "https://www.sdicscouting.org/camping/summer-programs/camp-fiesta-island"
+          },
+          {
+            "url": "https://www.sdicscouting.org/camping/summer-programs/camp-fiesta-island",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "ca-webelos-and-aol-resident-camp"

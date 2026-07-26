@@ -26,8 +26,103 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Showers are at the pool."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "amphitheater",
+          "note": "The Campfire Arena."
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Night climbs are offered at the tower."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "zip_line",
+          "note": "Part of the COPE high-ropes course."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "A blacksmith shop used for metalwork and coin minting."
+        },
+        {
+          "code": "nature_center",
+          "note": "The Nature Lodge keeps live animals on display."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "stem",
+          "note": "A STEM Works area with a STEM Bay for robotics and aviation."
+        },
+        {
+          "code": "storm_shelter"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Trailblazer program for younger Scouts."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "outpost_overnight"
+        },
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "The Rimrock Trek, a three-day, two-night trek across the reservation."
+        },
+        {
+          "code": "high_adventure_option"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Heart of America Council's Scouts BSA resident summer camp set on more than 900 acres above the Kaw River Valley near Kansas City, offering over 40 merit badges plus the Rimrock high-adventure trek.",
       "provenance": {
         "sources": [
@@ -39,13 +134,21 @@
           },
           {
             "url": "https://www.hoac-bsa.org/naish"
+          },
+          {
+            "url": "https://www.hoac-bsa.org/naish",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.hoac-bsa.org/Data/Sites/1/media/camping/naish/2026-naish-scouts-bsa-leader-guide.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

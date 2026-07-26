@@ -25,8 +25,55 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "sailing",
+          "signature": true,
+          "note": "Progressive youth sailing from beginner dinghies through advanced classes, plus big-boat sailing and a junior racing team."
+        },
+        {
+          "code": "rowing",
+          "signature": true,
+          "note": "A named rowing programme running from Learn to Row through a competitive high-school team."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "paddleboarding",
+          "note": "Including giant ten-person stand-up paddleboards."
+        },
+        {
+          "code": "motorboating",
+          "note": "Learning to handle a motor boat around the harbour."
+        },
+        {
+          "code": "fishing",
+          "note": "Bay and ocean fishing."
+        },
+        {
+          "code": "marine_science",
+          "note": "An on-site aquarium and hermit crab exhibit, touch tanks with rays and sharks, oceanography, and dissections."
+        },
+        {
+          "code": "stem",
+          "note": "Design-and-build workshops, robotics, engineering, and underwater drone exploration."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "waterfront",
+          "note": "A harbour-front aquatics centre on Newport Bay."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Orange County Council's aquatics high-adventure base on Newport Harbor, offering sailing, rowing, kayaking, fishing, oceanography, and STEM programs for youth.",
       "provenance": {
         "sources": [
@@ -38,13 +85,17 @@
           },
           {
             "url": "https://www.newportseabase.org/summer-camp-youth-sailing-boating-kayaking-fishing-aquatics-stem-merit-badges-activities"
+          },
+          {
+            "url": "https://www.newportseabase.org/summer-camp-youth-sailing-boating-kayaking-fishing-aquatics-stem-merit-badges-activities",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

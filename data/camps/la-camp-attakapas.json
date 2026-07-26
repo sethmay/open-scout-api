@@ -25,8 +25,93 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "The fifteen-acre Lake Ernie Story."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder",
+          "note": "The Louisiana Long Guns black-powder rifle program."
+        },
+        {
+          "code": "atv",
+          "note": "An ATV certification course on a dedicated track."
+        },
+        {
+          "code": "tomahawk_throwing",
+          "signature": true,
+          "note": "Knife and tomahawk throwing, offered only at this camp."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Most campsites share a bathhouse with running water."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas wall tents can be checked out from the quartermaster."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "An air-conditioned dining hall."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Brownsea Island first-year camper program."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "cit_program"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "National-accredited resident summer camp for Scouts BSA in Trout, Louisiana.",
       "provenance": {
         "sources": [
@@ -38,13 +123,21 @@
           },
           {
             "url": "https://www.louisianapurchasecouncil.org/summercamps"
+          },
+          {
+            "url": "https://www.louisianapurchasecouncil.org/AttakapasSummerCamp",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.louisianapurchasecouncil.org/files/55809/Summer-Camp",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

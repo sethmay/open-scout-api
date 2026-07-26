@@ -25,8 +25,47 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bike_park",
+          "note": "A BMX course."
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Night climbing sessions are offered as well as daytime climbing."
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Older Scout Adventures."
+        },
+        {
+          "code": "paddleboarding",
+          "note": "Paddleboard yoga on the waterfront."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "welding",
+          "note": "Metalwork instruction."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Connecticut Yankee Council Scouts BSA resident camp on West Hill Lake in New Hartford, offering merit badges, waterfront activities, a climbing tower, and shooting sports.",
       "provenance": {
         "sources": [
@@ -41,13 +80,17 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://www.sequassen.org/summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

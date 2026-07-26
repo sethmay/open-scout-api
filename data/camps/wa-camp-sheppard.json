@@ -27,10 +27,20 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
+          "code": "dining_hall",
+          "note": "The lodge houses a dining hall and kitchen."
         },
         {
-          "code": "shooting_sports"
+          "code": "bathhouse",
+          "note": "Centrally located restrooms with showers."
+        },
+        {
+          "code": "cabins",
+          "note": "Heated cabins with bunks."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A range operates as part of the winter camp program."
         },
         {
           "code": "climbing"
@@ -40,9 +50,13 @@
         },
         {
           "code": "stem"
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology sessions in the winter camp program."
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "Cascade forest resident camp bordering Mt. Rainier National Forest, offering hiking and ecology programs alongside a dining hall, shooting sports, climbing, COPE, and STEM activities.",
       "provenance": {
         "sources": [
@@ -64,7 +78,7 @@
         "verified_at": "2026-06-20",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://seattlebsa.org/camp-sheppard/ now redirects to https://scoutingseattle.org/camp-sheppard/ (link audit, tools/check_urls.py)."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://seattlebsa.org/camp-sheppard/ now redirects to https://scoutingseattle.org/camp-sheppard/ (link audit, tools/check_urls.py). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
       }
     }
   ],

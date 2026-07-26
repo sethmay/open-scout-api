@@ -25,8 +25,104 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A latrine and showerhouse in every main-camp site."
+        },
+        {
+          "code": "cabins",
+          "note": "Staff City cabins, each with electrical service."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "caving",
+          "note": "A night hike to Van Dyke's Cave, one of the caves on the property."
+        },
+        {
+          "code": "chalkball",
+          "note": "Paintball target shooting."
+        },
+        {
+          "code": "chapel",
+          "note": "Lightfoot Chapel, used for weekly vespers."
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "High and low ropes courses."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "fishing",
+          "note": "Includes fishing at remote Lake 4."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "The Jeff Ligon Memorial Cumberland Adventure, a sampler high-adventure programme for older Scouts."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A lakefront aquatics area with a water slide."
+        },
+        {
+          "code": "welding",
+          "note": "Welding and metalwork instruction."
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cherokee Area Council's Scouts BSA summer camp spanning over 2,200 acres of the Cumberland Plateau, offering 50 merit badges, first-year programs, and off-site high-adventure and hiking options.",
       "provenance": {
         "sources": [
@@ -38,13 +134,21 @@
           },
           {
             "url": "https://www.cherokeeareabsa.com/skymont"
+          },
+          {
+            "url": "https://www.cherokeeareabsa.com/skymont",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://irp.cdn-website.com/2832b2ce/files/uploaded/2026+Skymont+Summer+Camp+Promotional+Brochure_email-7311a5ef.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Programme detail comes from the promotional programme guide the camp page links."
       }
     }
   ],

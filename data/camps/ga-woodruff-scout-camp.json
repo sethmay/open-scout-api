@@ -25,8 +25,55 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Mountaineer program for first-year campers."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "Whitewater rafting treks on north Georgia rivers are the camp's headline adventure."
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "stem",
+          "note": "A dedicated STEM center."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp operated by the Atlanta Area Council, set in the north Georgia mountains near Blairsville.",
       "provenance": {
         "sources": [
@@ -44,7 +91,7 @@
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

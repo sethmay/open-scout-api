@@ -27,8 +27,97 @@
         "cub_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "patrol_cooking",
+          "note": "Food service delivers ingredients to each campsite and patrols cook their own meals."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "scuba"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "personal_watercraft"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "zip_line",
+          "note": "Feger's Flight zip line."
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "stem",
+          "signature": true,
+          "note": "STEM programming at the Sinquefield Invention Campus, including an Invention Scouts track."
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "amphitheater"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "campsite_wifi"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Great Rivers Council patrol-method Scouts BSA resident camp on the Osage Arm of Lake of the Ozarks, offering 80+ merit badges, STEM programs at the Sinquefield Invention Campus, aquatics, shooting sports, COPE/climbing, and a Brownsea first-year program.",
       "provenance": {
         "sources": [
@@ -46,7 +135,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

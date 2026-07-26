@@ -26,8 +26,99 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "CTSRTREK: kayaking, hiking, biking, and horseback riding from a state-park base, returning to camp for the ATV program."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "waterfront",
+          "note": "A boat house on the water, run alongside the pool as one aquatics area."
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming and lifesaving instruction, plus a learn-to-swim programme."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A 40-foot climbing tower."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "nature_center",
+          "note": "The Gradin Nature Lodge, holding tanks, taxidermy, and hands-on exhibits."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "stem",
+          "note": "A Sci-Tech centre covering engineering through space exploration."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Scoutcraft campers hike to the outer limits of the property and camp there."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Guyasuta Braves, for Scouts in their first year."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "French Creek Council's resident summer camp in Carlton, Pennsylvania, serving Scouts BSA and Cub Scouts.",
       "provenance": {
         "sources": [
@@ -39,13 +130,17 @@
           },
           {
             "url": "https://www.fccscouting.org/custaloga-town-scout-reservation/"
+          },
+          {
+            "url": "https://www.fccscouting.org/scouts-summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). The council's Scouts BSA summer camp page, which covers this reservation, was read as the second source for program detail."
       }
     }
   ],

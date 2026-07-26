@@ -35,16 +35,36 @@
           "code": "waterfront"
         },
         {
-          "code": "climbing"
+          "code": "high_adventure_option",
+          "note": "Kilele Camp, a high-adventure track with extended whitewater rafting and a night of safari camping."
         },
         {
-          "code": "shooting_sports"
+          "code": "backpacking",
+          "signature": true,
+          "note": "The Mlima Camp trek culminates in summiting Mt. Kenya."
         },
         {
-          "code": "high_adventure_option"
+          "code": "paddleboarding"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rock_climbing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Karibu Camp, a Trail to First Class track for new Scouts."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Three separate camps for youth aged 14 to 20."
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "Transatlantic Council resident camp held at the Savage Wilderness Adventure Camp near Sagana, Kenya, about three hours from Nairobi on the Tana River. It offers six youth programs spanning a Cub Scout camp, Trail to First Class for new Scouts, Scouts BSA merit badges, a high-adventure track, a Mount Kenya trek, and Sea Scouting, alongside a family program and adult training. Activities include whitewater rafting, kayaking, stand-up paddleboarding, rock climbing, archery, wilderness survival, and a safari adventure.",
       "provenance": {
         "sources": [
@@ -63,7 +83,7 @@
         "verified_at": "2026-07-21",
         "imported_at": "2026-07-21",
         "confidence": 0.9,
-        "notes": "Added by hand from the Transatlantic Council camp page; camp-finder never captured this overseas camp, so it was missing from the map. Held at the Savage Wilderness Adventure Camp near Sagana (~3 hours from Nairobi); coordinates geocoded to the Savage Wilderness property. A multi-program winter camp (Cub through Sea Scout, plus a Mount Kenya high-adventure trek). Operational dates and fees are deliberately excluded (they stay on the council site)."
+        "notes": "Added by hand from the Transatlantic Council camp page; camp-finder never captured this overseas camp, so it was missing from the map. Held at the Savage Wilderness Adventure Camp near Sagana (~3 hours from Nairobi); coordinates geocoded to the Savage Wilderness property. A multi-program winter camp (Cub through Sea Scout, plus a Mount Kenya high-adventure trek). Operational dates and fees are deliberately excluded (they stay on the council site). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
       }
     }
   ],

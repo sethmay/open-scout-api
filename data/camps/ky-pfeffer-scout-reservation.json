@@ -25,8 +25,64 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "sailing",
+          "signature": true,
+          "note": "Aquabase, a week-long program on twenty-five-foot Catalina sailboats on Kentucky Lake."
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lakeside frontage on Kentucky Lake."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Aquabase, a week-long sailing adventure for crews."
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "older_scout_program"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp situated on Kentucky Lake.",
       "provenance": {
         "sources": [
@@ -38,13 +94,17 @@
           },
           {
             "url": "https://lhcbsa.org/pfeffer-scout-reservation/"
+          },
+          {
+            "url": "https://lhcbsa.org/pfeffer-scout-reservation/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

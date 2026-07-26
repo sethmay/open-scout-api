@@ -25,8 +25,43 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "A week-long backcountry trek to outpost campsites across the ranch."
+        },
+        {
+          "code": "outpost_overnight"
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoeing on the 270-acre Nims Lake."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "All leadership is provided, so a Scout can attend without their troop."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Week-long backcountry backpacking trek across the S-F Scout Ranch, designed for older participants aged 14 and up.",
       "provenance": {
         "sources": [
@@ -44,7 +79,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "mo-s-f-scout-ranch",

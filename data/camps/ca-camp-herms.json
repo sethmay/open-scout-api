@@ -25,8 +25,13 @@
       "program_types": [
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "museum",
+          "note": "The Lodge's North Room serves as a meeting room and camp history centre."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub and Webelos camp set in the hills of El Cerrito, offering weekend Cub Scout events and a space-themed Adventure Camp for Webelos and Arrow of Light Scouts designed to prepare them for Scouts BSA summer camp.",
       "provenance": {
         "sources": [
@@ -38,13 +43,17 @@
           },
           {
             "url": "https://goldengatescouting.org/cub-scouts/cub-scouts-camping/"
+          },
+          {
+            "url": "https://campherms.goldengatescouting.org/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

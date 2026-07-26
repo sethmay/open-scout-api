@@ -25,8 +25,115 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "The camp surrounds Murray Gill Lake."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "water_skiing",
+          "note": "Water skiing and tubing behind camp boats."
+        },
+        {
+          "code": "personal_watercraft",
+          "signature": true,
+          "note": "A fleet of Sea Doo personal watercraft on the lake."
+        },
+        {
+          "code": "fishing",
+          "note": "A fishing and fly-fishing crew program, plus fish and wildlife management."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Guided rides culminating in a twenty-two-mile round trip off camp."
+        },
+        {
+          "code": "backpacking",
+          "note": "An introductory backpacking trek based on the Backpacking merit badge."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Each older-Scout crew takes at least one outpost away from main camp."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "stem",
+          "note": "A technology area with a 3D printer, game design, and animation."
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Air-conditioned indoor technology classrooms."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Older-Scout crews cook in camp or on trek for some meals."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The OAKS program covers rank fundamentals for new Scouts."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "HIGH Q, a crew-based adventure week for older Scouts."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA and Venturing resident summer camp located in Sedan, Kansas.",
       "provenance": {
         "sources": [
@@ -45,13 +152,21 @@
           {
             "url": "https://quivira.org",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://quivira.org/camping-with-quivira/qsr-summer-camp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://quivira.org/wp-content/uploads/sites/25/2025/08/QSR-2026-Unit-Planning-Guide-1.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/198-101442); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/198-101442); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

@@ -25,8 +25,39 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "The Day Trek programme, a different off-site adventure each day, for Scouts fourteen and older."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "caving",
+          "note": "Caving and spelunking day treks."
+        },
+        {
+          "code": "canoeing",
+          "note": "Paddling on nearby Yough Lake."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "zip_line"
+        },
+        {
+          "code": "shotgun",
+          "note": "Sporting clays."
+        },
+        {
+          "code": "atv",
+          "note": "Participants complete an ATV safety e-course before riding."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-adventure Day Trek program at Heritage Reservation, offering older Scouts BSA off-site adventure beyond merit badges.",
       "provenance": {
         "sources": [
@@ -44,7 +75,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Only the Eagle Base section of that page was used; several of its activities happen off-property on the day treks."
       },
       "reservation": {
         "id": "pa-heritage-reservation",

@@ -25,8 +25,66 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "The Lenhok'sin Trail Trek, five days on the trail visiting staffed outposts, is the camp's primary program."
+        },
+        {
+          "code": "canoeing",
+          "signature": true,
+          "note": "The James River Canoe Trek, a five-day whitewater trek over sixty-one miles of the upper James."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Merriweather."
+        },
+        {
+          "code": "fishing",
+          "note": "Crews fish for dinner on the river trek."
+        },
+        {
+          "code": "caving",
+          "note": "An outpost exploring an expansive cave system."
+        },
+        {
+          "code": "cope",
+          "note": "Low and high elements."
+        },
+        {
+          "code": "blacksmithing",
+          "note": "The Foxfire outpost, an Appalachian forge where crews make knives and hooks."
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "living_history",
+          "note": "Staffed outposts include a fur-trapper mountain-man camp and a medieval homestead."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Crews visit up to four staffed outposts across the trek."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Provisional crews run for both the trail trek and the river trek."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-adventure base at Goshen Scout Reservation in Goshen, Virginia, offering backpacking and canoe treks on the James River for older Scouts.",
       "provenance": {
         "sources": [
@@ -38,13 +96,17 @@
           },
           {
             "url": "https://www.gotogoshen.org/camps-programs/"
+          },
+          {
+            "url": "https://www.gotogoshen.org/camps-programs/lenhoksin-high-adventure/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "va-goshen-scout-reservation",

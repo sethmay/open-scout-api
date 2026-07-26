@@ -25,8 +25,89 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "climbing_tower",
+          "signature": true,
+          "note": "A 40-foot, three-sided climbing and rappelling tower."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "waterfront",
+          "note": "On the 35-acre Summit Lake."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "Giant inflatables for climbing at the waterfront."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "sports_field",
+          "note": "A basketball court and a kickball field."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trailblazer, for first-year campers."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person canvas wall tents on platforms."
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "bathhouse",
+          "note": "An individual-room shower house."
+        },
+        {
+          "code": "dining_hall"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +123,17 @@
           {
             "url": "https://www.bpcouncil.org/camping/tuscarora/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.bpcouncil.org/camping/tuscarora/summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/368-Tusky2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. The page is not recently updated, which is fine here: it is used for durable description, not sessions or fees."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/368-Tusky2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. The page is not recently updated, which is fine here: it is used for durable description, not sessions or fees. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

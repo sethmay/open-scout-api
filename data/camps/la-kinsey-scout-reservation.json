@@ -25,8 +25,63 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "Three lakes on the reservation."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "climbing",
+          "note": "The Mount Haley climbing wall."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "The Chuck Tiller Shooting Sports Complex."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_center",
+          "note": "The Murray Nature Pavilion."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trail to First Class, the first-year Scout skills program."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Star to Eagle advancement programming."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Norwela Council's 1,600-acre Scouts BSA resident summer camp in northwest Louisiana, near Shreveport, offering aquatics, shooting sports, climbing at Mount Haley, outdoor skills, nature, handicraft, Trail to First Class, and Star-to-Eagle programs.",
       "provenance": {
         "sources": [
@@ -38,13 +93,21 @@
           },
           {
             "url": "https://norwela.org/summer-camp-dates-and-fees/"
+          },
+          {
+            "url": "https://norwela.org/kinsey-scout-camp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://norwela.org/summer-camp-dates-and-fees/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

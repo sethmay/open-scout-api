@@ -25,8 +25,29 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "pool",
+          "note": "A beginner-sized swimming pool."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A campfire bowl used for evening programme."
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp sits on the banks of the Merced River."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Outside showers."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Men's and women's bathrooms plus two individual locking restrooms."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Greater Yosemite Council camp on the Merced River near Livingston, hosting Cub Scout resident and day camp, Camp Akela, and Webelos activities, along with troop weekend camping and leader training.",
       "provenance": {
         "sources": [
@@ -38,13 +59,17 @@
           },
           {
             "url": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468"
+          },
+          {
+            "url": "https://www.yosemitescouting.org/about-gyc/properties/camp-mcconnell/51468",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

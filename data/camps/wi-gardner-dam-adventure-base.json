@@ -26,8 +26,90 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "kayaking",
+          "signature": true,
+          "note": "White water kayaking on the Wolf River."
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "75 miles of mountain biking trails."
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on the Wolf River."
+        },
+        {
+          "code": "cope",
+          "note": "On-site COPE courses."
+        },
+        {
+          "code": "rappelling",
+          "note": "The climbing tower is also used for rappelling."
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "fishing",
+          "note": "Fly fishing on the Wolf River."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air-conditioned."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Units can cook in their campsites instead of eating in the dining hall."
+        },
+        {
+          "code": "bathhouse",
+          "note": "A shower house."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Sessions a youth can attend with a parent rather than with their den."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Bay-Lakes Council Scouts BSA and Venturing adventure resident camp on 400 acres along the Wild Wolf River in Langlade County, Wisconsin, featuring whitewater kayaking and rafting, COPE and climbing, ATVing, mountain biking, and merit badges.",
       "provenance": {
         "sources": [
@@ -39,13 +121,21 @@
           },
           {
             "url": "https://baylakesbsa.org/your-camps/gardner-dam-scout-camp/"
+          },
+          {
+            "url": "https://baylakesbsa.org/gardner-dam/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://baylakesbsa.org/gardner-dam/summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "wi-gardner-dam-adventure-base-webelos-aol-adventure-camp"

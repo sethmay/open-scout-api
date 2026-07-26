@@ -25,8 +25,22 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "Named ridge treks include the Kesugi Ridge route through Denali State Park and Resurrection Pass."
+        },
+        {
+          "code": "kayaking",
+          "signature": true,
+          "note": "Sea-kayak trek to Caines Head and Fort McGilvray on Resurrection Bay."
+        },
+        {
+          "code": "fishing"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Council-operated high-adventure trek program in Trapper Creek, Alaska, based out of the Denali High Adventure Scout Base.",
       "provenance": {
         "sources": [
@@ -38,13 +52,17 @@
           },
           {
             "url": "https://www.scoutingalaska.org/auha"
+          },
+          {
+            "url": "https://scoutingalaska.org/alaska-ultimate-high-adventure/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

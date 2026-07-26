@@ -26,8 +26,47 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "waterfront",
+          "note": "A 40-acre lake with a swimming beach and a boathouse."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "climbing",
+          "note": "A 30-foot climbing wall."
+        },
+        {
+          "code": "zip_line"
+        },
+        {
+          "code": "provisional_attendance"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Mississippi Valley Council Scouts BSA resident summer camp on 602 acres near Mendon, Illinois, featuring a 40-acre lake, a 30-foot climbing wall, and a zipline.",
       "provenance": {
         "sources": [
@@ -39,13 +78,17 @@
           },
           {
             "url": "https://mvcscouting.org/camping/"
+          },
+          {
+            "url": "https://mvcscouting.org/camping/saukenauk/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "il-saukenauk-scout-reservation-webelos-and-arrow-of-light-adventure-camp"

@@ -25,8 +25,97 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall and the leaders' lounge are air-conditioned."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Single-person bathrooms and showers."
+        },
+        {
+          "code": "waterfront",
+          "note": "A ten-acre lake."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming",
+          "note": "Swimming and lifesaving instruction."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "scuba",
+          "note": "A Discover Scuba evening programme."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "zip_line"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "nature_study",
+          "note": "An outdoor skills and ecology centre."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "An option to cook in the campsite: patrols collect ingredients from the dining-hall commissary."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Lakusin programme for first-year Scouts."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "A Trail Blazer second-year programme, plus adventure trips for veteran Scouts."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Day-trip excursions and week-long adventure programmes."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Shenandoah Area Council's 530-acre Scouts BSA resident summer camp in Fulton County, Pennsylvania, featuring a 10-acre lake, more than 40 merit badges, and dedicated first-year (Lakusin) and second-year (Trailblazer) programs.",
       "provenance": {
         "sources": [
@@ -44,7 +133,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

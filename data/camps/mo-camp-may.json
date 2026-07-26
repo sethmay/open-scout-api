@@ -25,8 +25,38 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "campsite_wifi"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "stem",
+          "signature": true,
+          "note": "Hosts the council's STEM and skilled-trades specialty week, with drones and 3D printing."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "dining_hall"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Overnight Cub Scout resident camp in High Ridge, Missouri, focused on Wolf and Bear advancement.",
       "provenance": {
         "sources": [
@@ -38,13 +68,17 @@
           },
           {
             "url": "https://stlbsa.org/camps/cub-scout-overnight-camps/"
+          },
+          {
+            "url": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "curated",
         "verified_at": "2026-07-22",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Name corrected 2026-07-22 (community/data-quality review): 'Cub Scout Advancement Camp at Camp May' was a scraped registration-event title; renamed to the property name, verified against the council's camp listing. Prior id 'mo-cub-scout-advancement-camp-at-camp-may' retired (resolves via aliases.json). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Name corrected 2026-07-22 (community/data-quality review): 'Cub Scout Advancement Camp at Camp May' was a scraped registration-event title; renamed to the property name, verified against the council's camp listing. Prior id 'mo-cub-scout-advancement-camp-at-camp-may' retired (resolves via aliases.json). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "mo-beaumont-scout-reservation",

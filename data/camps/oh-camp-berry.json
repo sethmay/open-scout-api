@@ -25,8 +25,73 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "Lake of the Pines, with a dock and a boating deck."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "nature_center",
+          "note": "The Edelbrook Nature Center."
+        },
+        {
+          "code": "horseback"
+        },
+        {
+          "code": "atv",
+          "note": "An ATV course on the property."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "pool",
+          "note": "Part of a combined bathroom, shower, and pool complex."
+        },
+        {
+          "code": "sports_field",
+          "note": "A volleyball court."
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "chapel",
+          "note": "Marcus Chapel."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "amphitheater",
+          "note": "A council fire ring."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp near Findlay, Ohio, operated by the Black Swamp Area Council as one of its two Scouts BSA camps alongside Camp Lakota.",
       "provenance": {
         "sources": [
@@ -41,13 +106,25 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://www.blackswampbsa.org/camping/scouts-bsa-summer-camp/63247",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.blackswampbsa.org/camping/about-our-camps/camp-berry/63302",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.blackswampbsa.org/document/map-of-camp-berry-updated-4-9-25/216994",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

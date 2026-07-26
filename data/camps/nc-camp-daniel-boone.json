@@ -25,8 +25,82 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Allen plus the Little East Fork River, which runs through camp."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Goin' Great, with Junior and Senior tracks for new Scouts."
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "horseback",
+          "note": "Horsemanship taught at a partner working farm about fifteen minutes from camp."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Air conditioning in the administrative building's leader lounge."
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "amphitheater"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp operated by the Daniel Boone Council in Western North Carolina.",
       "provenance": {
         "sources": [
@@ -38,13 +112,17 @@
           },
           {
             "url": "https://www.campdanielboone.org/"
+          },
+          {
+            "url": "https://www.campdanielboone.org/files/59314/2026-program-guide",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

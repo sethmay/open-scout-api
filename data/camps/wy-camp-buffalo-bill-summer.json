@@ -25,8 +25,105 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "fishing",
+          "signature": true,
+          "note": "Bait and fly fishing on the camp pond and the North Fork of the Shoshone."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Family-style meals."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Eagle Claw, a programme for young and new Scouts."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "waterfront",
+          "note": "An aquatics pond, plus the Shoshone River along the camp boundary."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "climbing",
+          "note": "Indoor climbing during open programme; the climbing merit badge is taught off camp."
+        },
+        {
+          "code": "backpacking"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "High-adventure treks and day trips operate out of camp for older youth."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_center",
+          "note": "A nature lodge."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "living_history",
+          "note": "A living history area with a forge, branding, lassoing, and hawk and knife throwing."
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "geocaching",
+          "note": "A geocaching course."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A rustic shower house with curtained stalls, flush toilets, and sinks."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Limited electricity in a few campsites."
+        },
+        {
+          "code": "health_lodge"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +139,17 @@
           {
             "url": "https://awbsa.org/summer-camp-at-cbb/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://awbsa.org/wp-content/uploads/2025/10/2026-CBB-Guidebook.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/062-101576); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/062-101576); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": {
         "id": "wy-camp-buffalo-bill-summer-reservation",

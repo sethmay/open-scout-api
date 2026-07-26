@@ -28,8 +28,68 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "atv",
+          "signature": true,
+          "note": "Miles of ATV trails, with a pre-camp e-course and a dedicated ATV course."
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "stem",
+          "note": "Underwater cameras in a spring-fed pond support STEM and trout study."
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A range and target activities area."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "A renovated spring-fed pond."
+        },
+        {
+          "code": "canoeing",
+          "note": "A Missouri River canoe trek of more than fifty miles."
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "dining_hall",
+          "note": "A modern lodge and dining hall with a Scoutmaster lounge."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Flush toilets and showers near every campsite."
+        },
+        {
+          "code": "bathhouse"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Montana Council Scouts BSA resident camp in the Moccasin Mountains near Lewistown, offering ATV and mountain bike trails, aquatics, STEM and trout study, climbing, and range and target activities.",
       "provenance": {
         "sources": [
@@ -47,7 +107,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "mt-k-m-scout-ranch-cub-scout-camp",

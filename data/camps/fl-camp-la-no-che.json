@@ -25,8 +25,125 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Screened Adirondack shelters with electricity and fans."
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Air-conditioned buildings are among the camping options."
+        },
+        {
+          "code": "alpine_tower"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "atv",
+          "note": "An ATV course at the camp's Adventure Camp area."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "bouldering",
+          "note": "A bouldering wall."
+        },
+        {
+          "code": "campsite_electricity"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope",
+          "note": "High and low COPE courses."
+        },
+        {
+          "code": "dining_hall",
+          "note": "A dining hall seating six hundred to eight hundred in a single service."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "hammock_camping"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Trail biking."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rappelling",
+          "note": "A rappelling tower plus a practice rappelling wall."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun",
+          "note": "Shotgun and sporting clays."
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "sports_field",
+          "note": "Basketball, soccer, and volleyball."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing",
+          "note": "An axe throwing range."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Central Florida Council's Scouts BSA resident summer camp in Paisley, FL, where Scouts choose merit-badge and specialty programs including shooting sports, ATVs, sailing, swimming, and climbing.",
       "provenance": {
         "sources": [
@@ -38,13 +155,17 @@
           },
           {
             "url": "https://www.camplanoche.com/"
+          },
+          {
+            "url": "https://temp.camplanoche.com/camp-activities/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Only the La-No-Che activity list was used; sibling properties on the same page (Rybolt, Roper, Mitchell) were excluded."
       }
     }
   ],

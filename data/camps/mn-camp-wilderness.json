@@ -26,8 +26,78 @@
         "cub_resident",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall",
+          "note": "Two dining facilities, including the Herman Stern Dining Hall."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "cope",
+          "note": "Both high and low COPE elements."
+        },
+        {
+          "code": "waterfront",
+          "note": "Two waterfronts on the property."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "chapel",
+          "note": "The Virgil Reed Chapel in the Pines."
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "nature_center",
+          "note": "The Lavold Nature Center."
+        },
+        {
+          "code": "health_lodge",
+          "note": "The Butler Health Center."
+        },
+        {
+          "code": "storm_shelter"
+        },
+        {
+          "code": "trading_post",
+          "note": "The Wanzek Trading Post."
+        },
+        {
+          "code": "museum",
+          "note": "An on-site history center."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Outpost sites at Boardman Lake, Lily Lake, and Mantrap."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Northern Lights Council's 2,400-acre Scouts BSA resident camp in the Paul Bunyan State Forest near Park Rapids, Minnesota, offering merit badges, COPE and climbing, ATV, shooting sports, aquatics, and white water rafting.",
       "provenance": {
         "sources": [
@@ -35,7 +105,8 @@
             "citation": "camp-finder council-429/mn-camp-wilderness (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingnlc.org/campingprograms/properties/camp-wilderness/"
+            "url": "https://scoutingnlc.org/campingprograms/properties/camp-wilderness/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://scoutingnlc.org/campingprograms/properties/camp-wilderness/"
@@ -45,7 +116,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "mn-camp-wilderness-butler-wilderness-outpost-cub-adventure-camp"

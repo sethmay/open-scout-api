@@ -25,8 +25,150 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Six air-conditioned shower houses, each combining shower, toilet, and sink."
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "Thirty COPE obstacles, with a separate advanced course."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Brownsea, the camp's first-year camper program, run at the Beany Elam program area."
+        },
+        {
+          "code": "fishing",
+          "note": "Catch-and-release fishing on the lake; no licence needed."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "museum",
+          "note": "The Boxwell museum of Scouting heritage."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The skilled trades program is restricted to Scouts aged thirteen and over."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas tent, cot, and mattress provided at each site."
+        },
+        {
+          "code": "pool",
+          "note": "An Olympic-size pool with two slides."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rappelling",
+          "note": "Open rappelling from the climbing tower."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scuba",
+          "note": "A Scuba BSA experience taught at the pool."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem",
+          "note": "The Parnell STEM Center, a standalone hands-on facility."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing",
+          "note": "Skiing from the Pfeffer Boat Harbor."
+        },
+        {
+          "code": "waterfront",
+          "note": "Nine miles of shoreline on Old Hickory Lake, with a waterfront at each of the two camps."
+        },
+        {
+          "code": "welding",
+          "signature": true,
+          "note": "Part of the Roy Grindstaff Skilled Trades Center, equipped with service bays and classroom space."
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Middle Tennessee Council's Scouts BSA resident summer camp near Lebanon, Tennessee, encompassing Camps Craig and Stahlman, offering more than sixty merit badges alongside adventure activities.",
       "provenance": {
         "sources": [
@@ -38,13 +180,21 @@
           },
           {
             "url": "https://www.mtcscouting.org/scoutsbsasummercamp"
+          },
+          {
+            "url": "https://www.mtcscouting.org/scoutsbsasummercamp",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.mtcscouting.org/_files/ugd/219c7b_f08699f479a045e1b2b50ae484b1915f.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Most features come from the council's linked Boxwell program guide, since the camp page itself carries mainly dates and forms; features cover the whole reservation, which contains Camps Stahlman, Craig, and the Parnell program area."
       }
     }
   ],

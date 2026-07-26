@@ -25,8 +25,94 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall",
+          "note": "Meals are served family style."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming",
+          "note": "Every camper takes a swim classification test on arrival, and there is an early-morning Polar Bear dip."
+        },
+        {
+          "code": "waterfront",
+          "note": "A waterfront paddling area, open to campers who pass the swimmer test."
+        },
+        {
+          "code": "aquatics",
+          "note": "Paddle-craft sessions at the waterfront."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "bike_park",
+          "note": "A BMX riding area plus a pedal-cart track."
+        },
+        {
+          "code": "bouldering",
+          "note": "A bouldering wall, taught with spotting technique."
+        },
+        {
+          "code": "cope",
+          "note": "A low COPE course."
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "disc_golf",
+          "note": "A disc golf course, with an award segment for completing it."
+        },
+        {
+          "code": "handicraft",
+          "note": "An Art Academy area covering whittling and carpentry projects."
+        },
+        {
+          "code": "stem",
+          "note": "An Innovation area covering science, engineering, and design."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "chapel",
+          "note": "The Camp Ware Chapel, used for the inter-faith service."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Separate shower houses for adults, staff, and Scouts, plus pool-house showers."
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "Tent platforms with ramps are available on request."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Chester County Council Cub Scout overnight resident camp located at Horseshoe Scout Reservation in Peach Bottom, Pennsylvania.",
       "provenance": {
         "sources": [
@@ -45,13 +131,21 @@
           {
             "url": "https://cccscouting.org/venue/camp-john-h-ware-3rd/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://cccscouting.org/wp-content/uploads/2026-Cub-Scout-Leaders-Guide-V.1.0.pdf",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://cccscouting.org/wp-content/uploads/2026-Program-Guide-ONLY.docx.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/539-105490); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/539-105490); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). The stored website is an events-calendar venue listing with no property detail, so the council's own Camp Ware camp guide was used instead."
       }
     }
   ],

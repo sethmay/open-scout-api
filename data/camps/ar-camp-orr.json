@@ -25,8 +25,67 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "note": "Backpacking treks on the Buffalo River Trail from camp."
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoe float trips on the Buffalo National River."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Climbing on the bluffs of the Buffalo National River wilderness area."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "dining_hall",
+          "note": "A 520-person dining hall."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Buffalo Trail, an all-day track for Scouts who have just crossed over or have limited camping experience."
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "The council brands the property a high-adventure base, with named canoe-float and backpacking treks run from camp."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp in Jasper, Arkansas, offering merit-badge programs along with high-adventure treks.",
       "provenance": {
         "sources": [
@@ -38,13 +97,17 @@
           },
           {
             "url": "https://www.naturalstatecouncil.org/camporrsummercamp"
+          },
+          {
+            "url": "https://www.naturalstatecouncil.org/camporrsummercamp",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

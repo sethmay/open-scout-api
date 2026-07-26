@@ -25,8 +25,115 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "A barrier-free campsite with wheelchair-accessible tents, showers, and restrooms."
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The H. Randolph Holder Dining Hall is air-conditioned."
+        },
+        {
+          "code": "amphitheater",
+          "note": "The Stewart Amphitheatre is used for campfires and assemblies."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Centrally located shower houses with hot water."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "A limited number of campsites have outlets for powering medical equipment."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "Two chapels: a lakeside chapel and a chapel in the woods."
+        },
+        {
+          "code": "cit_program",
+          "signature": true,
+          "note": "Launch, the camp's signature counsellor-in-training program for youth joining staff."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope",
+          "note": "COPE and climbing run out of the Challenge Valley area."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "TNT, The New Trail, covering Scout through First Class rank."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "A high-adventure track for older Scouts covering climbing, COPE, and whitewater."
+        },
+        {
+          "code": "nature_center",
+          "note": "An ecology and conservation centre with live specimens and nature displays."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "pavilion",
+          "note": "Covered pavilions throughout the program areas."
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "The Summer Squad provisional unit, with adult leadership provided."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Activity fields for inter-troop and camp-wide games."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A private lake with two separate waterfronts."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp set in the mountains of Northeast Georgia.",
       "provenance": {
         "sources": [
@@ -38,13 +145,17 @@
           },
           {
             "url": "https://www.nega-bsa.org/campraineymountain"
+          },
+          {
+            "url": "https://www.nega-bsa.org/files/59010/NEW---2026-CRM-SUMC-Camp-Leader-s-Guide-",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

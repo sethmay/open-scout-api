@@ -25,8 +25,18 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "sailing",
+          "signature": true,
+          "note": "Offshore sail training aboard the Retriever, a 52-foot ketch home-ported at Mackinaw City."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Crews bring their own food and cook it in the vessel's galley on a rotating galley-crew duty."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-adventure sailing expedition aboard the Retriever, a 52-foot ketch based in Mackinaw City, Michigan, cruising the northern Great Lakes to destinations such as Mackinac Island, Beaver Island, and Charlevoix. Participants learn sail trim, helmsmanship, navigation, and marine safety.",
       "provenance": {
         "sources": [
@@ -34,17 +44,22 @@
             "citation": "camp-finder council-272/mi-great-lakes-sailing-adventure-the-retriever (unofficial community dataset)"
           },
           {
-            "url": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/"
+            "url": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/",
+            "accessed": "2026-07-25"
           },
           {
             "url": "https://michiganscouting.org/camping/great-lakes-sailing-adventure/"
+          },
+          {
+            "url": "https://michiganscouting.org/wp-content/uploads/2026/01/GLSA-PlanGuide26.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

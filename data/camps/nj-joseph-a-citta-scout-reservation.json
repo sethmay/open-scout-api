@@ -25,8 +25,74 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "archery",
+          "note": "Includes a 3D archery course."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person wall tents with canvas cots in each site."
+        },
+        {
+          "code": "adirondack_shelters",
+          "note": "One campsite is equipped with four-person lean-tos rather than wall tents."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Flushing toilets in every campsite."
+        },
+        {
+          "code": "pavilion",
+          "note": "A pavilion in each unit campsite."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "waterfront"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp set in the New Jersey Pine Barrens near Barnegat.",
       "provenance": {
         "sources": [
@@ -38,13 +104,17 @@
           },
           {
             "url": "https://www.cittascoutreservation.org/bs-summer-camp"
+          },
+          {
+            "url": "https://www.cittascoutreservation.org/bs-summer-camp",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

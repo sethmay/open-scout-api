@@ -25,8 +25,96 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Camp-wide campfires and evening events are held at the council ring."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "cabins",
+          "note": "Eight-person cabins alongside tented sites."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Trailblazer program covering Scout through First Class rank skills."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "hammock_camping",
+          "note": "Sites carry enough trees for hammock camping."
+        },
+        {
+          "code": "handicraft",
+          "note": "A handicraft pavilion with woodcarving and leatherworking tools."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "museum",
+          "note": "The council's Scouting museum sits at the back of the trading post building."
+        },
+        {
+          "code": "nature_study",
+          "note": "An ecology and conservation area with a nature lodge and displays."
+        },
+        {
+          "code": "pavilion",
+          "note": "Each program area is built around a covered pavilion."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas wall tents on permanent platforms."
+        },
+        {
+          "code": "pool",
+          "note": "Swimming and lifesaving instruction happen at the pool rather than the lake."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Individual campers attend as Baden-Powell Scouts placed with an established troop."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lakefront on Lake Talquin used for boating and canoeing."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp spanning over 600 acres along Lake Talquin in Gadsden County, near Quincy, Florida.",
       "provenance": {
         "sources": [
@@ -42,13 +130,17 @@
           {
             "url": "https://www.suwanneeriver.net/wallwood-bsr/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.suwanneeriver.net/wp-content/uploads/sites/31/2023/05/WBSR-Summer-Camp-Leaders-Guide-2023.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/664-SC26); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/664-SC26); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

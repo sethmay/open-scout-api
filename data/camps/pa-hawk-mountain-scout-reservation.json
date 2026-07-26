@@ -25,8 +25,88 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "pool"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "aquatics",
+          "note": "Aquatics run at both the pool and the lakefront."
+        },
+        {
+          "code": "swimming",
+          "note": "Open swim daily, plus an early-morning Polar Bear dip."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Range and target activities; no individual ranges are named."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "zip_line"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "nature_study",
+          "note": "A conservation programme area."
+        },
+        {
+          "code": "stem",
+          "note": "A STEM building near the centre of camp."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Two dining halls, Miller and Willits."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person canvas tents on raised wooden platforms."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Latrines in each site, plus centralised shower and restroom buildings."
+        },
+        {
+          "code": "pavilion",
+          "note": "Each campsite has its own pavilion."
+        },
+        {
+          "code": "health_lodge",
+          "note": "On the ground floor of the Miller Dining Hall."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "amphitheater",
+          "note": "A campfire circle used for the opening and closing campfires."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Pathfinder first-year camper programme."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Youth who cannot attend with their own troop can register as provisional campers."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp near New Ringgold, Pennsylvania, in Schuylkill County, offering a first-year camper program, aquatics with pool and lakefront, range and target activities, outdoor skills, conservation, handicraft, climbing, and zip-lining.",
       "provenance": {
         "sources": [
@@ -38,13 +118,17 @@
           },
           {
             "url": "https://hmcscouting.org/summer-camp-2026/"
+          },
+          {
+            "url": "https://hmcscouting.org/download/5365/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). That page summarises program areas without naming individual ranges, so two parent codes are kept; the reservation's own Scouts BSA leaders guide, linked from it, was read as the second source for facilities and programme structure."
       }
     }
   ],

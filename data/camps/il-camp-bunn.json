@@ -25,8 +25,52 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "pavilion",
+          "note": "Eight tent camping sites, each with a multi-use pavilion."
+        },
+        {
+          "code": "cabins",
+          "note": "Two rental cabins, one sleeping up to ten with a full kitchen."
+        },
+        {
+          "code": "waterfront",
+          "note": "Dock access to a private lake, Lake Freesen."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "fishing",
+          "note": "Three ponds plus Lake Freesen."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp on over 600 acres near Hettick, featuring a private lake (Lake Freesen) with small-boat sailing, COPE/climbing, shooting sports, and merit badge programs.",
       "provenance": {
         "sources": [
@@ -38,13 +82,17 @@
           },
           {
             "url": "https://www.alincolnscouting.org/camp-bunn"
+          },
+          {
+            "url": "https://www.alincolnscouting.org/camp-bunn",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

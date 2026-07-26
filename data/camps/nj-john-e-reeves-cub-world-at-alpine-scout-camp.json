@@ -26,8 +26,58 @@
         "cub_day",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "platform_tents",
+          "note": "Two-person wall tents on raised wooden or concrete platforms."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower and laundry facilities on site."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Cafeteria-style service in a 400-seat hall."
+        },
+        {
+          "code": "themed_lodging",
+          "signature": true,
+          "note": "Themed facilities including a fort, a land ship, and a mine."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "climbing",
+          "note": "Indoor and outdoor climbing walls in the Activity Center."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Weekly provisional sessions organised by home borough."
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident camp on 500 wooded acres along the Palisades, operated by Greater New York Councils; campers stay in two-person wall tents on platforms.",
       "provenance": {
         "sources": [
@@ -42,13 +92,17 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://alpinescoutcamp.org/cubworld/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "nj-alpine-day-camp"

@@ -27,8 +27,49 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cope"
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "signature": true,
+          "note": "The Johnny Fry cowboy action shooting program."
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "stem",
+          "note": "A design-and-engineering track taking projects from concept to prototype."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "storm_shelter",
+          "note": "FEMA-certified storm shelters at every campsite, each topped with a covered program area."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "flush_toilets"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp operated by the Pony Express Council near Saint Joseph, Missouri.",
       "provenance": {
         "sources": [
@@ -40,13 +81,17 @@
           },
           {
             "url": "https://ponyexpressbsa.org/camping-and-activities/camp-geiger"
+          },
+          {
+            "url": "https://www.campgeigerscouting.org/camp/camp-geiger",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "mo-camp-geiger-cub-adventure-camp",

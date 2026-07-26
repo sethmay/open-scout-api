@@ -26,8 +26,51 @@
         "cub_day",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "zip_line",
+          "note": "A zip line area above the lake."
+        },
+        {
+          "code": "cope",
+          "note": "A ropes course."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "nature_center",
+          "note": "The Eccles Nature Center."
+        },
+        {
+          "code": "amphitheater",
+          "note": "Three amphitheatres, including the J.D. Colman and Wahkara Ridge amphitheatres."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "health_lodge",
+          "note": "A medical office in the main camp."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower houses serving the campsite areas."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout and primary youth day camp in Payson Canyon above Mapleton, Utah County, offering archery and target sports, nature exploration, and outdoor games.",
       "provenance": {
         "sources": [
@@ -39,13 +82,17 @@
           },
           {
             "url": "https://www.utahscouts.org/mapledell"
+          },
+          {
+            "url": "https://www.utahscouts.org/_files/ugd/401ad5_fa51bc014aa24195839de0eba64a44cb.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "ut-camp-maple-dell-webelos-and-arrow-of-light-overnight-adventure"

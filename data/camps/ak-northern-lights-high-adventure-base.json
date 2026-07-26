@@ -25,8 +25,21 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "fishing"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Midnight Sun Council's remote wilderness high-adventure base offering guided Alaska treks staged from Fairbanks, with custom trek durations.",
       "provenance": {
         "sources": [
@@ -38,13 +51,17 @@
           },
           {
             "url": "https://midnightsunbsa.org/northern-lights-high-adventure-base-treks/"
+          },
+          {
+            "url": "https://midnightsunbsa.org/wp-content/uploads/2024/05/2025-FINAL-Northern-Lights-High-Adventure-Expedition-Planning-Guide.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

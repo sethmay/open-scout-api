@@ -26,8 +26,81 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "Wheelchair ramps at the health lodge and the waterfront pier."
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air conditioned."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A natural amphitheatre with a sound system."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Hot showers at centralised locations."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Woodsman first-year camper program."
+        },
+        {
+          "code": "fishing",
+          "note": "A fishing pier on the Bohicket River."
+        },
+        {
+          "code": "handicraft",
+          "note": "A handicraft shelter."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "living_history",
+          "signature": true,
+          "note": "The Bohicket Towne colonial immersion program for older Scouts."
+        },
+        {
+          "code": "nature_center",
+          "note": "The camp's Ecology Lodge."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "stem",
+          "note": "A STEM program with a computer lab."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Three aquatics areas: a lake, a pool, and the river."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Coastal Carolina Council's resident camp spanning 184 acres along the Bohicket River on Wadmalaw Island, offering more than 70 merit badges and a Woodsman program for new scouts.",
       "provenance": {
         "sources": [
@@ -43,13 +116,17 @@
           {
             "url": "https://coastalcarolinacouncil.org/camp-ho-non-wah-continues-to-see-major-improvements/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://coastalcarolinacouncil.org/camping/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/550-summer26); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/550-summer26); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

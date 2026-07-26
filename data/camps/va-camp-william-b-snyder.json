@@ -27,8 +27,42 @@
         "cub_day",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air-conditioned."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "trading_post",
+          "note": "An on-site Scout shop."
+        },
+        {
+          "code": "pool",
+          "note": "A pool with a water slide."
+        },
+        {
+          "code": "waterfront",
+          "note": "A managed wetland with program areas for fishing and boating."
+        },
+        {
+          "code": "aquatics",
+          "note": "Boating on the wetland."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts BSA youth can attend Specialty Week in a provisional unit."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "National Capital Area Council camp in Haymarket, Virginia, designed for Cub Scouts, offering Cub and Webelos resident programs, Cub day sessions, and Scouts BSA specialty programming.",
       "provenance": {
         "sources": [
@@ -40,13 +74,21 @@
           },
           {
             "url": "https://www.gotosnyder.org/summer-camp/"
+          },
+          {
+            "url": "https://www.gotosnyder.org/summer-camp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.gotosnyder.org/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

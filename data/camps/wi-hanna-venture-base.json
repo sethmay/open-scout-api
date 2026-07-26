@@ -25,8 +25,20 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "The base building is heated and step-free accessible."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "cabins",
+          "note": "Indoor bedrooms sleeping about twenty, with two meeting rooms and a kitchen."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "High-adventure base within Samoset Council's Crystal Lake Scout Reservation in Rhinelander, Wisconsin, offering week-long wilderness treks to the Apostle Islands and Porcupine Mountains for older Scouts and Venturers, with gear provided.",
       "provenance": {
         "sources": [
@@ -38,13 +50,17 @@
           },
           {
             "url": "http://clsr.samoset.org/hanna/"
+          },
+          {
+            "url": "https://samoset.org/wp-content/uploads/2024/11/Property_Details_CLSR.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

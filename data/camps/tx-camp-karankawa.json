@@ -25,8 +25,35 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "health_lodge",
+          "note": "Staffed by a qualified medical professional during camp."
+        },
+        {
+          "code": "living_history"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts without their own troop join the camp's Super Troop."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident camp spanning 130 acres along Lake Corpus Christi near Mathis, Texas, operated by the South Texas Council, featuring an air-conditioned dining hall.",
       "provenance": {
         "sources": [
@@ -38,13 +65,17 @@
           },
           {
             "url": "https://www.southtexasscouting.org/events-3/scouts-bsa-camping/summer-camp-scouts-bsa/"
+          },
+          {
+            "url": "https://www.southtexasscouting.org/wp-content/uploads/2026/06/2026-Program-Schedule.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

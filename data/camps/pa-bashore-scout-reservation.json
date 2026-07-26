@@ -25,8 +25,80 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "A 5.5-acre lake."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "pool",
+          "note": "An Olympic-sized swimming pool."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "archery",
+          "signature": true,
+          "note": "A nationally recognised archery program with 3D targets, traditional targets, and sporting arrows."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing",
+          "note": "An indoor climbing gym."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "cabins",
+          "note": "Three heated cabins or lodges sleeping 22 to 40 people."
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "accessible_facilities",
+          "note": "Latrines are wheelchair accessible, and the Adirondack campsite suits wheelchair users."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Blue Mountaineers, for first-year campers and Arrow of Light crossovers."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "outpost_overnight"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp spanning over 400 acres in Pennsylvania's Blue Mountains, operated by the Pennsylvania Dutch Council.",
       "provenance": {
         "sources": [
@@ -38,13 +110,17 @@
           },
           {
             "url": "http://padutchbsa.org/camping/bashore/summercamp/"
+          },
+          {
+            "url": "http://padutchbsa.org/camping/bashore/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

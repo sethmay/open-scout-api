@@ -25,8 +25,85 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "shooting_sports",
+          "signature": true,
+          "note": "The council bills this as the largest range and target program on the west coast."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle",
+          "note": "A .22 rifle range."
+        },
+        {
+          "code": "black_powder",
+          "note": "Muzzle-loading rifle."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pistol",
+          "note": "An NRA First Steps pistol orientation, offered within the older-Scout programme."
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Single-action revolvers, lever-action rifles, and double-barrel shotguns in old-time western scenarios, for participants aged fourteen and over."
+        },
+        {
+          "code": "stem",
+          "signature": true,
+          "note": "An aviation merit-badge programme culminating in a real glider ride with a partner glider port, alongside robotics, engineering, journalism, and photography."
+        },
+        {
+          "code": "cope",
+          "note": "High and low COPE courses."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Trails for all levels, with bikes available to borrow."
+        },
+        {
+          "code": "welding",
+          "note": "Part of a trades programme with metalwork, painting, and automotive maintenance."
+        },
+        {
+          "code": "pool",
+          "note": "A refurbished swimming pool."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Dan Henry, used for open boating time."
+        },
+        {
+          "code": "dining_hall",
+          "note": "The Parker Dining Hall."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Pathfinder Trail to First Class programme, including swim instruction."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Four jams of adventure for Scouts fourteen and over, ending with a choose-your-own activity day."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Mountain Scouts BSA resident summer camp operated by San Diego-Imperial Council, located near Lake Henshaw in Santa Ysabel, California.",
       "provenance": {
         "sources": [
@@ -41,13 +118,17 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://www.sdicscouting.org/camping/summer-programs/mataguay-scout-ranch-summer-camp",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

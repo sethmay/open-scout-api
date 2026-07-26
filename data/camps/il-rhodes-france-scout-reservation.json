@@ -26,8 +26,69 @@
         "cub_resident",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "waterfront",
+          "note": "Two lakes on the property, including Lake Millikin."
+        },
+        {
+          "code": "pool",
+          "note": "An in-ground swimming pool."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A shooting sports area for target and range activities."
+        },
+        {
+          "code": "pistol",
+          "note": "An NRA First Steps pistol programme."
+        },
+        {
+          "code": "chapel",
+          "note": "A rustic open-air chapel seating over one hundred."
+        },
+        {
+          "code": "amphitheater",
+          "signature": true,
+          "note": "The Firebowl Arena, an amphitheatre set on Lake Millikin."
+        },
+        {
+          "code": "dining_hall",
+          "note": "The Activity Building serves as the dining hall."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "cabins",
+          "note": "Six cabins with bunk beds, electricity, heating, and air conditioning."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "first_year_program"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA summer camp with a dining hall, located in central Illinois and operated by the Greater St. Louis Area Council.",
       "provenance": {
         "sources": [
@@ -39,13 +100,17 @@
           },
           {
             "url": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/"
+          },
+          {
+            "url": "https://stlbsa.org/properties/rhodes-france-scout-reservation/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "il-rfsr-cub-scout-adventure-camp"

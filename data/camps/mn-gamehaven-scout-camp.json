@@ -26,8 +26,33 @@
         "cub_resident",
         "cub_day"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A range and target activities programme with its own committee and waiver."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "cabins",
+          "note": "Indoor overnight lodging is available alongside tent camping."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "cit_program",
+          "note": "The Emerging Camp Leaders programme is a supplemental counsellor-in-training track."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Overnight Cub Scout camp located five miles southeast of Rochester, Minnesota, offering swimming, shooting, hiking, cooking, and advancement.",
       "provenance": {
         "sources": [
@@ -39,13 +64,17 @@
           },
           {
             "url": "https://gamehavenbsa.org/gamehaven-scout-camp/"
+          },
+          {
+            "url": "https://scoutinggamehaven.org/camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

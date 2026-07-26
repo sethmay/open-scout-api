@@ -27,25 +27,38 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
-        },
-        {
-          "code": "waterfront"
-        },
-        {
-          "code": "climbing"
+          "code": "aquatics",
+          "note": "A variety of aquatic activities on the camp's lake."
         },
         {
           "code": "cope"
         },
         {
-          "code": "older_scout_program"
+          "code": "dining_hall"
         },
         {
           "code": "high_adventure_option"
+        },
+        {
+          "code": "mountaineering",
+          "note": "Summit attempts on Middle Sister, in the Cascade crest above camp."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Climbing and rappelling on natural rock."
+        },
+        {
+          "code": "waterfront",
+          "note": "A clear mountain lake at camp."
         }
       ],
-      "features_verified_at": null,
+      "features_verified_at": "2026-07-25",
       "summary": "High-Cascades resident camp set at elevation, offering mountain hiking, COPE, and climbing, plus a waterfront, dining hall, and programming for older Scouts including high-adventure options.",
       "provenance": {
         "sources": [
@@ -57,13 +70,17 @@
           },
           {
             "url": "https://www.otcbsa.org/camp-melakwa"
+          },
+          {
+            "url": "https://pccscouting.org/camping/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2025-02-10",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
       }
     }
   ],

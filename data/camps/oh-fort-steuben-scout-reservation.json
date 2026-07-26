@@ -26,8 +26,33 @@
         "scouts_bsa_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Adirondack and trail shelters with water."
+        },
+        {
+          "code": "archery",
+          "note": "Offered to visiting units subject to staff availability."
+        },
+        {
+          "code": "cabins",
+          "note": "Two bunk cabins with electricity, water, and indoor restrooms."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Dining hall with kitchen, water, indoor restrooms, and electricity."
+        },
+        {
+          "code": "pavilion",
+          "note": "The Ken Moore Pavilion, with water, electricity, and a latrine."
+        },
+        {
+          "code": "rifle",
+          "note": "Offered to visiting units subject to staff availability."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Mountaineer Area Council property in eastern Ohio offering a short-term Scouts BSA resident camp experience focused on rank advancement and merit badges.",
       "provenance": {
         "sources": [
@@ -43,13 +68,17 @@
           {
             "url": "https://mountaineerscouting.org/fssr/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://mountaineerscouting.org/fssr/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/615-106341); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/615-106341); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

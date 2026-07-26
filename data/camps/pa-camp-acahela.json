@@ -25,8 +25,47 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "platform_tents",
+          "note": "Two-person canvas tents on wooden platforms."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Hot showers alongside campsite latrines."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "Flush toilets at the dining hall and pool house."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "waterfront",
+          "note": "River frontage used for tubing and fishing."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "climbing",
+          "note": "A climbing wall."
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident camp on 250 acres of Pocono woodlands near Blakeslee, Pennsylvania, sited at the confluence of the Lehigh River and Tobyhanna Creek. Operated by the Northeastern Pennsylvania Council, with accommodations in two-person canvas tents.",
       "provenance": {
         "sources": [
@@ -44,7 +83,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],
