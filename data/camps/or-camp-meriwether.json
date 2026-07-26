@@ -21,7 +21,7 @@
       "elevation_ft": 10,
       "july_high_f": 68,
       "july_low_f": 50,
-      "website": "https://cpcbsa.org/camping/camp-meriwether/",
+      "website": "https://cpcscouting.org/project/camp-meriwether/",
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -119,7 +119,7 @@
         "verified_at": "2026-07-01",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Website canonicalised 2026-07-25: https://cpcbsa.org/camping/camp-meriwether/ now redirects to https://cpcscouting.org/project/camp-meriwether/ (link audit, tools/check_urls.py)."
       }
     }
   ],

@@ -185,12 +185,16 @@ source (see the Meriwether evidence in PLAN §5.1).
   - **Councils flag their own differentiators**, so `signature` is populatable from sources rather
     than guesswork: Meriwether has a literal "Featured Experiences … unique to Camp Meriwether"
     section; Bowers names "Rippy World" and a 50-foot alpine tower. 7 signature entries from 5 camps.
-  - **The binding constraint is broken URLs, not thin pages.** 5 of the 10 stored websites do not
-    describe their camp at all: Elk Lick → a near-empty Wix index for a *different* camp (Merz);
-    Yawgoog → the BSA Annual Health and Medical Record PDF; Chawanakee → a dead "no calendar
-    selected" page; Verdugo Oaks → a registration page whose map is a *church*; Kanza → a 2020 event
-    with registration closed six years ago. Plus Meriwether's `cpcbsa.org` silently redirects.
-    **A URL-health/repair pass is now a prerequisite for population, not a side quest.**
+  - **Stored URLs are often not descriptive pages** — though the original wording of this finding
+    overstated it, and is corrected here. Verified by the 0.31.0 link audit: Elk Lick really does
+    point at a near-empty Wix index for a *different* camp (Merz); Kanza's page really is a 2020
+    event, six years closed; Verdugo Oaks really is a registration page whose map is a *church*;
+    Meriwether's `cpcbsa.org` really did silently redirect. But **Yawgoog and Chawanakee were wrongly
+    called broken** — both return real HTML that names the camp. The "health-record PDF" and "dead
+    calendar link" were artifacts of how the page was *fetched* during the spike (an attachment link
+    followed, and a `.md`-suffix variant), not properties of the stored URL. Both are ordinary
+    `portal` pages: thin for feature-surveying, but not broken. So the honest count is 3 of 10
+    genuinely wrong, not 5 of 10 — and a link audit is still a prerequisite for population.
   - **Pages are explicitly non-exhaustive** ("For a complete list of activities … check the Program
     Guide"), so `features_verified_at` means *a survey happened*, not *the list is complete*; that
     caveat is recorded in each surveyed camp's provenance. Leader's/Program Guide PDFs are linked
@@ -229,9 +233,50 @@ source (see the Meriwether evidence in PLAN §5.1).
   `published-current` contract once coverage is meaningful (additive, MINOR). Keep them out of
   `{dataset}/index.json` — listings stay light.
 - **Phase 5 — maintenance.** `signature` and long-tail entries decay fastest (a camp trials land
-  sailing for two seasons), so they need a shorter re-verification cycle than facilities. Fold in a
-  link-health check while there: **stored camp URLs rot** — Meriwether's stored `cpcbsa.org` already
-  silently redirects to `cpcscouting.org`.
+  sailing for two seasons), so they need a shorter re-verification cycle than facilities. Link health
+  is now audited separately — see below.
+
+### Camp link health (audit DONE 0.31.0; repairs mostly outstanding)
+
+`tools/check_urls.py` audits every non-day-camp `website` and classifies what is actually there.
+Day camps (64) are deliberately out of scope: a day camp often runs at a rented site, so its property
+link is weak by nature. Full run over the remaining **384 camps**:
+
+| verdict | n | meaning |
+|---|--:|---|
+| `ok` | 180 | loads and names the camp |
+| `portal` | 132 | a registration platform, not a descriptive page |
+| `http_error` | 25 | 4xx/5xx |
+| `stale` | 22 | loads, but newest content year is pre-2025 |
+| `redirect` | 11 | loads and names the camp at a different final URL |
+| `no_name` | 9 | loads but never names the camp |
+| `unreachable` | 5 | DNS/TLS/timeout |
+
+Done in 0.31.0: **8 of the 11 redirects canonicalised** — mostly council rebrands (`cpcbsa.org` →
+`cpcscouting.org`, `seattlebsa.org` → `scoutingseattle.org`, `otcbsa.org` → `pccscouting.org`,
+`bsaseabase.org` → `seabaseha.org`). The other 3 were deliberately *kept*, because the redirect
+target is worse than the stored URL: La-No-Che redirects to a temporary host (`temp.`), Gardner Dam's
+camp page is gone and lands on the council homepage, and Fire Mountain's target is a Cub-only
+carousel item. Those three are really "page removed", not "page moved".
+
+Outstanding, in value order:
+
+- **`portal` (132) is the features blocker.** A registration link has nothing to survey, so these
+  camps need a descriptive council page found for them before Phase 3 population can touch them.
+  This is the single biggest lever on feature coverage.
+- **Genuinely broken (30).** Only 4 hosts affect more than one camp (`utahscouts.org` ×5 and
+  `okscouts.org` ×3, both still 429 even when polite; `scoutingcolorado.org` ×2 404; `nhscouting.org`
+  ×2 500), so this is largely per-camp research.
+- **`no_name` (9) needs eyes, not automation.** Some are real findings (Elk Lick points at a Wix
+  index for a *different* camp; Camp Freedom at the TAC camps index), some are false positives (Lost
+  Valley's page is on `ssrlv.org`, which encodes the name in the domain rather than the text), and two
+  Colorado camps legitimately share their parent reservation's page (McNeil Scout Ranch).
+- **`stale` (22)** is lowest priority: the page exists and names the camp, it is just not maintained.
+
+⚠ **Method note for whoever re-runs this.** The first pass reported 65 hard failures; 35 of those
+were self-inflicted — 10 concurrent workers rate-limited whole councils into 429s and tripped
+timeouts. The checker now backs off on 429 (honouring `Retry-After`), retries transient failures, and
+checkpoints so an interrupted run resumes. Re-run politely or you will libel a council's website.
 
 - **Reconcile council name/HQ to official CST maps (follow-up to councils seed).** The
   seed uses camp-finder (unofficial) names/HQ with official CST-map *territory*

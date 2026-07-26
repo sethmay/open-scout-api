@@ -21,7 +21,7 @@
       "elevation_ft": 10,
       "july_high_f": 89,
       "july_low_f": 78,
-      "website": "https://www.bsaseabase.org/",
+      "website": "https://seabaseha.org/",
       "program_types": [
         "high_adventure"
       ],
@@ -38,13 +38,17 @@
           },
           {
             "url": "https://www.bsaseabase.org/"
+          },
+          {
+            "url": "https://seabaseha.org/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.9,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://www.bsaseabase.org/ now redirects to https://seabaseha.org/ (link audit, tools/check_urls.py)."
       }
     }
   ],
