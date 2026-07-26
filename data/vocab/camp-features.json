@@ -10,6 +10,26 @@
   "open": true,
   "terms": [
     {
+      "code": "accessible_facilities",
+      "label": "Accessible Facilities",
+      "description": "Step-free or wheelchair-accessible campsites, buildings, and programme areas.",
+      "category": "accommodation",
+      "aliases": [
+        "wheelchair_accessible",
+        "accessible_campsite",
+        "ada_accessible"
+      ]
+    },
+    {
+      "code": "adirondack_shelters",
+      "label": "Adirondack Shelters",
+      "description": "Three-sided Adirondack shelters as campsite lodging.",
+      "category": "accommodation",
+      "aliases": [
+        "lean_tos"
+      ]
+    },
+    {
       "code": "air_conditioning",
       "label": "Air Conditioning",
       "description": "Air conditioning in a main building such as the dining hall.",
@@ -21,6 +41,15 @@
       "description": "A multi-face alpine tower, distinct from a standard climbing wall or tower.",
       "category": "activity",
       "broader": "climbing"
+    },
+    {
+      "code": "amphitheater",
+      "label": "Amphitheater",
+      "description": "An outdoor amphitheatre used for campfire programme.",
+      "category": "facility",
+      "aliases": [
+        "campfire_bowl"
+      ]
     },
     {
       "code": "aquatics",
@@ -43,6 +72,15 @@
       "aliases": [
         "four_wheeling",
         "quads"
+      ]
+    },
+    {
+      "code": "backpacking",
+      "label": "Backpacking",
+      "description": "Multi-day backpacking or trekking from camp.",
+      "category": "activity",
+      "aliases": [
+        "trekking"
       ]
     },
     {
@@ -95,6 +133,13 @@
       "category": "accommodation"
     },
     {
+      "code": "bouldering",
+      "label": "Bouldering",
+      "description": "A bouldering wall or natural boulder problems.",
+      "category": "activity",
+      "broader": "climbing"
+    },
+    {
       "code": "cabins",
       "label": "Cabins",
       "description": "Enclosed cabin lodging.",
@@ -107,11 +152,48 @@
       "category": "accommodation"
     },
     {
+      "code": "campsite_wifi",
+      "label": "Campsite Wi-Fi",
+      "description": "Wi-Fi coverage reaching campsites.",
+      "category": "accommodation"
+    },
+    {
       "code": "canoeing",
       "label": "Canoeing",
       "description": "Canoeing program.",
       "category": "activity",
       "broader": "aquatics"
+    },
+    {
+      "code": "caving",
+      "label": "Caving",
+      "description": "Caving in natural caves.",
+      "category": "activity",
+      "aliases": [
+        "spelunking"
+      ]
+    },
+    {
+      "code": "chalkball",
+      "label": "Chalkball",
+      "description": "Chalkball or marking-round target sport.",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
+      "code": "chapel",
+      "label": "Chapel",
+      "description": "An on-site chapel or worship space.",
+      "category": "facility"
+    },
+    {
+      "code": "cit_program",
+      "label": "Counsellor-in-Training",
+      "description": "A counsellor-in-training programme for older youth.",
+      "category": "program_model",
+      "aliases": [
+        "cit"
+      ]
     },
     {
       "code": "climbing",
@@ -140,10 +222,43 @@
       ]
     },
     {
+      "code": "coral_restoration",
+      "label": "Coral Restoration",
+      "description": "Hands-on coral reef restoration work by participants.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "cowboy_action_shooting",
+      "label": "Cowboy Action Shooting",
+      "description": "Cowboy action shooting programme.",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
       "code": "dining_hall",
       "label": "Dining Hall",
       "description": "A central building where meals are served.",
       "category": "facility"
+    },
+    {
+      "code": "disc_golf",
+      "label": "Disc Golf",
+      "description": "A disc golf course.",
+      "category": "activity",
+      "aliases": [
+        "frisbee_golf"
+      ]
+    },
+    {
+      "code": "first_year_program",
+      "label": "First-Year Camper Program",
+      "description": "A dedicated programme track for first-year campers.",
+      "category": "program_model",
+      "aliases": [
+        "first_year_camper_program",
+        "brownsea"
+      ]
     },
     {
       "code": "fishing",
@@ -169,10 +284,50 @@
       "category": "accommodation"
     },
     {
+      "code": "fossil_dig",
+      "label": "Fossil Dig",
+      "description": "A fossil dig site used for programme.",
+      "category": "activity"
+    },
+    {
       "code": "gaga_ball",
       "label": "Gaga Ball",
       "description": "One or more gaga ball pits.",
       "category": "activity"
+    },
+    {
+      "code": "geocaching",
+      "label": "Geocaching",
+      "description": "A geocaching course or programme.",
+      "category": "activity"
+    },
+    {
+      "code": "gold_panning",
+      "label": "Gold Panning",
+      "description": "Gold panning programme.",
+      "category": "activity"
+    },
+    {
+      "code": "hammock_camping",
+      "label": "Hammock Camping",
+      "description": "Campsites set up for hammock camping.",
+      "category": "accommodation"
+    },
+    {
+      "code": "handicraft",
+      "label": "Handicraft",
+      "description": "A handicraft or crafts programme area.",
+      "category": "activity",
+      "aliases": [
+        "crafts",
+        "leatherwork"
+      ]
+    },
+    {
+      "code": "health_lodge",
+      "label": "Health Lodge",
+      "description": "A staffed health lodge or first-aid building.",
+      "category": "facility"
     },
     {
       "code": "high_adventure_option",
@@ -195,6 +350,12 @@
       "description": "A hunter-safety certification course.",
       "category": "activity",
       "broader": "shooting_sports"
+    },
+    {
+      "code": "ice_skating",
+      "label": "Ice Skating",
+      "description": "Ice skating, typically at a winter-operating camp.",
+      "category": "activity"
     },
     {
       "code": "kayaking",
@@ -225,10 +386,23 @@
       ]
     },
     {
+      "code": "maple_sugaring",
+      "label": "Maple Sugaring",
+      "description": "Maple sugaring programme.",
+      "category": "activity"
+    },
+    {
       "code": "marine_science",
       "label": "Marine Science",
       "description": "A marine-science or aquarium facility with instruction.",
       "category": "subject"
+    },
+    {
+      "code": "motorboating",
+      "label": "Motorboating",
+      "description": "Powerboat handling instruction.",
+      "category": "activity",
+      "broader": "aquatics"
     },
     {
       "code": "mountain_biking",
@@ -240,16 +414,93 @@
       ]
     },
     {
+      "code": "mountaineering",
+      "label": "Mountaineering",
+      "description": "Alpine mountaineering or glacier travel.",
+      "category": "activity"
+    },
+    {
+      "code": "museum",
+      "label": "Museum",
+      "description": "An on-site museum or heritage collection.",
+      "category": "facility"
+    },
+    {
+      "code": "nature_center",
+      "label": "Nature Center",
+      "description": "A dedicated nature-centre building.",
+      "category": "facility"
+    },
+    {
+      "code": "nature_study",
+      "label": "Nature Study",
+      "description": "A nature or ecology programme area.",
+      "category": "subject",
+      "aliases": [
+        "nature_ecology",
+        "ecology"
+      ]
+    },
+    {
       "code": "older_scout_program",
       "label": "Older-Scout Program",
       "description": "Dedicated programming for older or more experienced participants.",
       "category": "program_model"
     },
     {
+      "code": "outpost_overnight",
+      "label": "Outpost Overnight",
+      "description": "An overnight outpost or trek away from the main camp.",
+      "category": "program_model"
+    },
+    {
+      "code": "packrafting",
+      "label": "Packrafting",
+      "description": "Packrafting on rivers or lakes.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "paddleboarding",
+      "label": "Paddleboarding",
+      "description": "Stand-up paddleboarding.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "sup"
+      ]
+    },
+    {
+      "code": "patrol_cooking",
+      "label": "Patrol Cooking",
+      "description": "Units cook in their own campsites rather than eating in a dining hall.",
+      "category": "program_model",
+      "aliases": [
+        "site_cooking"
+      ]
+    },
+    {
       "code": "pavilion",
       "label": "Pavilion",
       "description": "A covered open-air gathering shelter.",
       "category": "facility"
+    },
+    {
+      "code": "personal_watercraft",
+      "label": "Personal Watercraft",
+      "description": "Jet-ski style personal watercraft.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "jet_ski"
+      ]
+    },
+    {
+      "code": "pistol",
+      "label": "Pistol",
+      "description": "Pistol marksmanship, typically .22.",
+      "category": "activity",
+      "broader": "shooting_sports"
     },
     {
       "code": "platform_tents",
@@ -278,11 +529,47 @@
       ]
     },
     {
+      "code": "rappelling",
+      "label": "Rappelling",
+      "description": "Rappelling instruction.",
+      "category": "activity",
+      "broader": "climbing",
+      "aliases": [
+        "abseiling"
+      ]
+    },
+    {
       "code": "rifle",
       "label": "Rifle",
       "description": "Smallbore rifle range (typically .22).",
       "category": "activity",
       "broader": "shooting_sports"
+    },
+    {
+      "code": "rock_climbing",
+      "label": "Natural Rock Climbing",
+      "description": "Climbing on natural rock or cliffs, as distinct from a built tower.",
+      "category": "activity",
+      "broader": "climbing"
+    },
+    {
+      "code": "rocketry",
+      "label": "Rocketry",
+      "description": "Model rocketry with launch pads.",
+      "category": "activity"
+    },
+    {
+      "code": "rowing",
+      "label": "Rowing",
+      "description": "Rowing or rowboats.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "rv_sites",
+      "label": "RV Sites",
+      "description": "Sites with RV parking or hook-ups for adult leaders.",
+      "category": "accommodation"
     },
     {
       "code": "sailing",
@@ -320,10 +607,45 @@
       "broader": "shooting_sports"
     },
     {
+      "code": "slingshot",
+      "label": "Slingshot",
+      "description": "A slingshot range.",
+      "category": "activity",
+      "broader": "shooting_sports"
+    },
+    {
+      "code": "snorkeling",
+      "label": "Snorkelling",
+      "description": "Snorkelling instruction or guided snorkelling.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
+      "code": "special_needs_program",
+      "label": "Special-Needs Program",
+      "description": "Programme built for Scouts with disabilities or additional needs.",
+      "category": "program_model"
+    },
+    {
+      "code": "sports_field",
+      "label": "Sports Field",
+      "description": "Ball fields or sports courts.",
+      "category": "facility",
+      "aliases": [
+        "athletic_field"
+      ]
+    },
+    {
       "code": "stem",
       "label": "STEM",
       "description": "Science, technology, engineering, and math programming, including NOVA.",
       "category": "subject"
+    },
+    {
+      "code": "storm_shelter",
+      "label": "Storm Shelter",
+      "description": "Rated storm shelters on the property.",
+      "category": "facility"
     },
     {
       "code": "surfing",
@@ -340,16 +662,68 @@
       "broader": "aquatics"
     },
     {
+      "code": "themed_lodging",
+      "label": "Themed Lodging",
+      "description": "Themed lodging structures, e.g. a fort or castle in a Cub-world area.",
+      "category": "accommodation"
+    },
+    {
+      "code": "tomahawk_throwing",
+      "label": "Tomahawk Throwing",
+      "description": "Tomahawk or axe throwing range.",
+      "category": "activity",
+      "broader": "shooting_sports",
+      "aliases": [
+        "axe_throwing"
+      ]
+    },
+    {
       "code": "trading_post",
       "label": "Trading Post",
       "description": "An on-site camp store.",
       "category": "facility"
     },
     {
+      "code": "water_skiing",
+      "label": "Water Skiing",
+      "description": "Water skiing and towed water sports.",
+      "category": "activity",
+      "broader": "aquatics",
+      "aliases": [
+        "wakeboarding"
+      ]
+    },
+    {
+      "code": "water_trampoline",
+      "label": "Water Trampoline",
+      "description": "An inflatable water trampoline at the waterfront.",
+      "category": "activity",
+      "broader": "aquatics"
+    },
+    {
       "code": "waterfront",
       "label": "Waterfront",
       "description": "Lake or river frontage used for aquatics activities.",
       "category": "facility"
+    },
+    {
+      "code": "welding",
+      "label": "Welding",
+      "description": "Welding or metal-arts instruction.",
+      "category": "activity",
+      "aliases": [
+        "metalwork"
+      ]
+    },
+    {
+      "code": "zip_line",
+      "label": "Zip Line",
+      "description": "A zip line or canopy tour.",
+      "category": "activity",
+      "aliases": [
+        "zipline",
+        "canopy_tour"
+      ]
     }
   ]
 }

@@ -25,8 +25,32 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "older_scout_program",
+          "signature": true,
+          "note": "The Yawgoog Leadership Experience, the camp's counselor-in-training program."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +66,17 @@
           {
             "url": "https://www.narragansettbsa.org/support-scouting/endowment-/yawgoog-100-walkway/59412",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.yawgoog.org/about.html",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/546-100159); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/546-100159); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

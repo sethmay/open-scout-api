@@ -221,14 +221,32 @@ source (see the Meriwether evidence in PLAN §5.1).
   `features` is non-empty. That rule would have forbidden the honest state the 8 imported camps are
   actually in — features present from a bulk import, never deliberately surveyed — so the field
   instead carries four meaningful states (see the schema description).
-- **Phase 2 — vocabulary v1.** Expand 13 codes → the set the spike justifies, keeping today's coarse
-  codes as `broader` parents so the migration stays additive. Assign categories, add aliases, and
-  settle the two open questions in PLAN §5.1 (`older_scout_program`/`high_adventure_option` →
-  `program_types`? housing type as its own field?).
-- **Phase 3 — population in waves.** (a) The 292 durable-page camps — highest yield per minute.
-  (b) Flagship/high-adventure properties regardless of tier: most differentiators, biggest draw for
-  out-of-council troops. (c) The remainder, best-effort. Never guess: a camp with no usable source
-  stays `features_verified_at: null` rather than acquiring an empty-but-surveyed record.
+- **Phase 2 — vocabulary v1 — DONE (0.33.0).** 13 → 46 codes from the spike, then → **95** from the
+  calibration wave's 65 proposals (54 distinct). Curation merged duplicates (`nature_ecology` →
+  `nature_study`, two first-year-camper spellings, `wheelchair_accessible` + `accessible_campsite` →
+  `accessible_facilities`, `jet_ski` → an alias of `personal_watercraft`) and rejected `family_camp`,
+  which is an audience already carried by the `camp-program-types` vocabulary, not a feature. 33 of
+  95 terms carry `broader`, 34 carry `aliases`. Still open from the original Phase 2: whether
+  `older_scout_program` / `high_adventure_option` belong in `program_types`, and whether housing type
+  deserves its own field.
+- **Phase 3 — population — CALIBRATION DONE (0.33.0), main wave outstanding.** Two agents surveyed 40
+  camps against a frozen vocabulary contract. Result: **33 usable (82.5%), 322 features, 13 signature
+  entries, and — the number that matters — zero invented codes and zero notes violating the evergreen
+  rule across 100 notes.** The contract holds under parallel execution, which is what makes the main
+  wave safe to run wide.
+  - **The 0.32.0 portal repair demonstrably paid for itself:** repaired-cohort camps yielded **10.5
+    features each** versus 9.0 for camps whose link was already clean. Repairing a link does not just
+    unblock a camp, it produces a *better* survey than average.
+  - Cost: ~5-9 minutes per camp, so the remaining ~280 addressable camps are roughly 25-40 hours
+    sequentially — but the wave parallelises cleanly, since camps are one-file-each with no shared
+    writes. Sixteen agents at 20 camps each is one or two waves.
+  - **Run the main wave only against the 95-term vocabulary.** MOHAB proved why: its page was rich,
+    but with no code for wilderness trekking the agent could record nothing, and an empty-but-dated
+    record reads as "surveyed, offers none". It has been re-queued (`features_verified_at` back to
+    `null`) now that backpacking/mountaineering/caving/packrafting exist. Expect a smaller second
+    round of proposals; curate between waves rather than mid-wave.
+  - Never guess: a camp with no usable source keeps `features_verified_at: null`, which is a
+    different fact from an empty survey.
 - **Phase 4 — publish.** Add `features` + `features_verified_at` to `current/camps.json` and the
   `published-current` contract once coverage is meaningful (additive, MINOR). Keep them out of
   `{dataset}/index.json` — listings stay light.

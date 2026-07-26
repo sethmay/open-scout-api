@@ -26,8 +26,15 @@
         "cub_resident",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "swimming"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Scouts BSA resident summer camp within McNeil Scout Ranch at Peaceful Valley in Colorado, offering 50+ merit badges, an outdoor pool with water slides, and an Olympic shotgun range.",
       "provenance": {
         "sources": [
@@ -42,13 +49,17 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://scoutingcolorado.org/programs/camps/mcneil-scout-ranch/cub-scout-camping/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "co-cub-scout-adventure-camp-at-camp-cris-dobbins"

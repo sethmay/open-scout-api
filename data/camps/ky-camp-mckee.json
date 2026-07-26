@@ -26,8 +26,32 @@
         "high_adventure",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Older Scouts travel off-site by day for rock climbing, underground canoeing, and ziplining."
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "shooting_sports",
+          "signature": true
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Blue Grass Council's nationally accredited Scouts BSA resident camp on 800-plus acres in eastern Kentucky, offering a Pioneer first-year camper program, over 50 merit badges, shooting sports, and mountain biking.",
       "provenance": {
         "sources": [
@@ -39,13 +63,17 @@
           },
           {
             "url": "https://bgcscouting.org/camp-mckee/summer-camp/"
+          },
+          {
+            "url": "https://www.campmckee.org/summer-camp/program/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "ky-camp-mckee-high-adventure"

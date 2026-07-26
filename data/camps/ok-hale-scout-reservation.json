@@ -25,8 +25,82 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pool",
+          "note": "Two pools."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Bohannon, used for open boating and fishing."
+        },
+        {
+          "code": "fishing",
+          "note": "There is a fishing dock on the lake."
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "An inflatable iceberg climbing structure on the lake."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "horseback",
+          "note": "Horsemanship merit badge plus trail rides."
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "stem",
+          "note": "A technology center; merit badges include game design and artificial intelligence."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "pavilion",
+          "note": "A renovated waterfront pavilion and four scoutcraft pavilions."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas wall tents on wooden platforms, two cots per tent."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "An electrical outlet in each campsite."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Running water and hot showers near every campsite."
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "provisional_attendance"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Indian Nations Council's 620-acre Scouts BSA resident camp set in the Winding Stair Mountains within the Ouachita National Forest.",
       "provenance": {
         "sources": [
@@ -38,13 +112,21 @@
           },
           {
             "url": "https://www.halescoutreservation.org/"
+          },
+          {
+            "url": "https://www.halescoutreservation.org/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.halescoutreservation.org/_files/ugd/ae9d57_02996547fa124fc3bb3929160c81c51b.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],
