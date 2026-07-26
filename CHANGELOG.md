@@ -3,6 +3,43 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.36.0 (minor) — 2026-07-26
+
+- `PENDING` **Phase 5 maintenance machinery: new `tools/maintenance.py`,** the standing health check
+  and re-verification queue. Facts decay at different rates, so one "last verified" date cannot
+  drive planning; the policy is now encoded — **signature features 12 months** (the most perishable
+  thing in the dataset), ordinary features 24, website 6, provenance 24.
+  - **Every clock reads zero today** because the whole corpus was verified across 0.33–0.35. That is
+    the reason the tool also reports what a clock cannot see — 154 camps never surveyed, 2 with no
+    website, and the zero-use vocabulary count promised in `LESSONS.md`. A pure staleness report
+    would have looked healthy and said nothing.
+  - **First real find: 445 entities carried duplicated provenance sources** — 535 redundant entries,
+    16% of all 3,425 — left by successive passes appending the same url, sometimes bare and
+    sometimes with an `accessed` date. `--fix-sources` collapses them keeping the richest entry;
+    verified against HEAD that **zero urls and zero `accessed` dates were lost**. Repair stays
+    behind an explicit flag, matching the `--overwrite` convention.
+- **Adjudicated all four lifecycle findings from the survey wave — and two of the four claims did
+  not survive verification.** This is why they were held for a research pass instead of applied.
+  - `nc-lumpkin-adventure-base`: the **rename hypothesis was wrong**, and 0.34.0's `TODO.md` had
+    already recorded it as "almost certainly a rename" of Harrison High Adventure Base. The
+    council's own 2017 guide disproves it in one line — crews housed "between the Harrison High
+    Adventure Outpost **and** Lumpkin Adventure Base". Lumpkin is a distinct Macon County property
+    (Lumpkin family trust 1937, Tessentee Valley 1957) that is absent from the current guide.
+    Retracted and corrected in `TODO.md`.
+  - `nm-gorham-scout-ranch`: **not a status change, no edit made.** "Closed for the 2026 summer camp
+    sessions" is a season fact; the same page offers weekend camping, Wood Badge, NYLT and BrownSea
+    at the property. `operating_status` describes the property, and this dataset holds no sessions.
+  - MOHAB: **confirmed and sourced**, but the pause begins after the 2026 season, which is in
+    progress — so the camp is operating today, `operating_status` stays `active`, and the trigger
+    plus the exact value to set later (`not_operating`, never `closed`) is recorded in `notes`.
+  - `ut-hinckley-scout-ranch`: **confirmed.** `saltlakescouts.org` now fails DNS outright and the
+    successor council never names the camp.
+- **Two camps get `website: null`, the first in the dataset** (Lumpkin, Hinckley). A wrong link is
+  worse than none: `_durable_url` falls back to the council's own site, so the published `url` went
+  from a page about the four national bases and a dead pre-merger domain to
+  `danielboonecouncil.org` and `utahscouts.org`. `operating_status` was left `active` in both cases
+  — absence of a page is not proof of closure, and guessing is what this dataset refuses to do.
+
 ## 0.35.0 (minor) — 2026-07-25
 
 - `81b02b5` **Published camp program features.** `current/camps.json` now carries `features`

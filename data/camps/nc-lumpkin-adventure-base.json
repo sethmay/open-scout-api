@@ -21,7 +21,7 @@
       "elevation_ft": 310,
       "july_high_f": 90,
       "july_low_f": 66,
-      "website": "https://www.danielboonecouncil.org/Adventure",
+      "website": null,
       "program_types": [
         "high_adventure"
       ],
@@ -34,19 +34,17 @@
             "citation": "camp-finder council-414/nc-lumpkin-adventure-base (unofficial community dataset)"
           },
           {
-            "url": "https://www.danielboonecouncil.org/Adventure"
-          },
-          {
-            "url": "https://www.danielboonecouncil.org/Adventure"
+            "url": "https://www.danielboonecouncil.org/Adventure",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website cleared 2026-07-25: the stored URL (https://www.danielboonecouncil.org/Adventure) is the council's generic index of the four BSA NATIONAL high-adventure bases and never mentions this camp; no council-owned page describes it, so a wrong link was replaced with none and the published url falls back to the council site."
       }
     }
   ],
-  "notes": null
+  "notes": "Distinct property, NOT a rename of Harrison High Adventure Base: the council's 2017 High Adventure Guide houses crews 'between the Harrison High Adventure Outpost and Lumpkin Adventure Base', so both existed at once. Lumpkin is a Macon County property held for Scouting by the Lumpkin family (trust from 1937, Tessentee Valley purchase in 1957) with local press covering an open house and family day in the 2010s. It is absent from the council's current High Adventure Guide, which houses crews at 'The Outpost' a quarter mile from base camp, and the council website mentions 'Lumpkin Adventure Base' only inside a meta keywords tag, never in body copy. That is suggestive of a property that left the program, but it is NOT proof, so operating_status is left as `active` rather than guessed. Needs a human or a council contact to resolve."
 }

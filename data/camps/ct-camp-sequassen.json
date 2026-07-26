@@ -73,17 +73,11 @@
             "citation": "camp-finder council-072/ct-camp-sequassen (unofficial community dataset)"
           },
           {
-            "url": "https://www.sequassen.org/summer-camp/"
-          },
-          {
-            "url": "https://www.sequassen.org/summer-camp/"
+            "url": "https://www.sequassen.org/summer-camp/",
+            "accessed": "2026-07-25"
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
-          },
-          {
-            "url": "https://www.sequassen.org/summer-camp/",
-            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",

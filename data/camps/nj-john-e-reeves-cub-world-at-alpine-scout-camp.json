@@ -85,17 +85,11 @@
             "citation": "camp-finder council-640/nj-john-e-reeves-cub-world-at-alpine-scout-camp (unofficial community dataset)"
           },
           {
-            "url": "https://alpinescoutcamp.org/cubworld/"
-          },
-          {
-            "url": "https://alpinescoutcamp.org/cubworld/"
+            "url": "https://alpinescoutcamp.org/cubworld/",
+            "accessed": "2026-07-25"
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
-          },
-          {
-            "url": "https://alpinescoutcamp.org/cubworld/",
-            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",

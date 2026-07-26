@@ -271,9 +271,24 @@ source (see the Meriwether evidence in PLAN §5.1).
   no filter reads (+12% for codes: 466 → 605 KB). `{dataset}/index.json` listings stay light.
   `features_signature` is published separately for ranking and badges, never for filtering. If
   consumers ever want the notes inline, they arrive as a new additive `features_detail` field.
-- **Phase 5 — maintenance.** `signature` and long-tail entries decay fastest (a camp trials land
-  sailing for two seasons), so they need a shorter re-verification cycle than facilities. Link health
-  is now audited separately — see below.
+- **Phase 5 — maintenance — MACHINERY DONE (0.36.0), the queue itself is ongoing.**
+  `tools/maintenance.py` encodes the re-verification policy and is the standing health check.
+  Different facts decay at different rates, so one "last verified" date cannot drive planning:
+  **signature features 12 months** (the most perishable thing here — a camp trials land sailing for
+  two seasons and drops it), **ordinary features 24**, **website 6** (`check_urls.py` does the
+  fetching; this only ages it), **provenance 24** (identity and coordinates are close to inert).
+  - **Every clock reads zero today**, because the whole corpus was verified in the 0.33–0.35 waves.
+    That is exactly why the tool also reports what a clock cannot see: 154 never surveyed, 2 with no
+    website, and the zero-use vocabulary count promised in `LESSONS.md`. A report that only aged
+    dates would have looked healthy and said nothing.
+  - **First real find: 445 entities carried duplicated provenance sources** (535 redundant entries,
+    16% of all 3,425), left by successive passes appending the same url — sometimes bare, sometimes
+    with an `accessed` date. `--fix-sources` collapses them keeping the richest entry; verified zero
+    urls and zero `accessed` dates lost. Repairs stay behind an explicit flag, per the
+    `--overwrite` convention.
+  - Next in this phase: the ~90 unsurveyed non-day camps (gated on link repair, not survey effort),
+    and the 6 zero-use vocabulary terms, which are rarities rather than artefacts and should simply
+    be watched.
 
 ### Camp link health (audit DONE 0.31.0; portal repair DONE 0.32.0)
 
@@ -328,17 +343,32 @@ Outstanding, in value order:
 **Findings from the 0.34.0 survey wave — human judgement needed, not automation.** Sixteen agents
 read 285 camp pages by hand, which surfaced link problems the automated classifier cannot see:
 
-- **Entity-identity questions, the highest-value class.** `nc-lumpkin-adventure-base`: the name
-  "Lumpkin Adventure Base" appears *only* in meta keywords on the council's own domain and never in
-  body copy, while the council markets the same facility as "Harrison High Adventure Base" — almost
-  certainly a rename, and if so it wants a `renamed` lifecycle event, not a URL edit.
-  `ut-camp-hinckley`: the stored `saltlakescouts.org` is a pre-merger domain that no longer resolves
-  and `utahscouts.org/hinckley` 404s — mergers routinely retire camp pages along with the domain.
-  Neither was guessed at; both files are untouched.
-- **Lifecycle findings, from camps' own announcements.** MOHAB announces "MOHAB to Pause Following
-  2026 Season" (no operation 2027–28, decision due 2029); Gorham announces closure "for the 2026
-  summer sessions". Both are `operating_status` changes with a source, deliberately left for a
-  lifecycle pass rather than folded into a features survey.
+- **Entity-identity questions — ALL FOUR ADJUDICATED IN 0.36.0, and two of the four claims below
+  did not survive verification.** Left here in corrected form because the *error pattern* is the
+  reusable lesson.
+  - `nc-lumpkin-adventure-base` — **the rename claim was WRONG, and this entry asserted it.** The
+    reasoning was that "Lumpkin Adventure Base" appears only in meta keywords while the council
+    markets "Harrison High Adventure Base", so one must be the other. The council's own 2017 High
+    Adventure Guide disproves it: crews "will be housed between the Harrison High Adventure Outpost
+    **and** Lumpkin Adventure Base" — two facilities at once. Lumpkin is a distinct Macon County
+    property (Lumpkin family trust 1937, Tessentee Valley purchase 1957, local press covering an
+    open house and family day in the 2010s). It is absent from the current guide, which houses crews
+    at "The Outpost" a quarter mile from base camp. Absence from a programme guide is not proof of
+    closure, so `operating_status` stays `active`; the wrong `website` was cleared and the evidence
+    is recorded in the camp's `notes`. **Still needs a human or a council contact.**
+  - `ut-hinckley-scout-ranch` — **confirmed.** `saltlakescouts.org` fails DNS outright (not an HTTP
+    error), the successor council 404s on `/hinckley`, and its camps listing never names Hinckley.
+    Same treatment: website cleared, status untouched, evidence in `notes`, needs a human.
+  - MOHAB — **confirmed and sourced**, but *not yet in effect*: the pause starts after the 2026
+    season, which is in progress, so the camp is operating today and `operating_status` stays
+    `active`. Recorded in `notes` with the instruction to set `not_operating` (property exists,
+    programme stops) — never `closed` — after the season. Watch out: the same page still advertises
+    2027 dates and fees beside the pause announcement.
+  - `nm-gorham-scout-ranch` — **NOT a status change; no edit made.** The page reads "closed for the
+    2026 summer camp sessions – But ONLY for 2026. Weekend camping, Wood Badge, NYLT, and BrownSea
+    will all be offered". The property operates; only summer resident sessions stop. `operating_status`
+    describes the *property*, and this dataset deliberately holds no sessions, so there is nothing
+    here to record. Do not re-raise it.
 - **Wrong-camp links are worse than dead links** — they silently misinform instead of failing.
   Confirmed: `ia-little-sioux-scout-ranch` and `ga-camp-dani…` point at a different camp; two
   California camps' stored domains are now **squatted** (one is a gambling site), as is Tahosa's

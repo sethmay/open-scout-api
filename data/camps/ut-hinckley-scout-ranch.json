@@ -21,7 +21,7 @@
       "elevation_ft": 5730,
       "july_high_f": 89,
       "july_low_f": 53,
-      "website": "https://www.saltlakescouts.org/hinckley/",
+      "website": null,
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -35,18 +35,15 @@
           },
           {
             "url": "https://www.saltlakescouts.org/hinckley/"
-          },
-          {
-            "url": "https://www.saltlakescouts.org/hinckley/"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website cleared 2026-07-25: the stored URL (https://www.saltlakescouts.org/hinckley/) is on a pre-merger domain that no longer resolves, and the successor council has no page for this camp; the published url falls back to the council site."
       }
     }
   ],
-  "notes": null
+  "notes": "Stored website used saltlakescouts.org, a pre-merger council domain that no longer resolves (DNS failure, not an HTTP error). The successor council (Crossroads of the West, utahscouts.org) 404s on /hinckley and its camps listing never mentions Hinckley. Council mergers routinely retire camp pages along with the old domain, so this may be a property that left the program - but absence of a page is not proof of closure, so operating_status is left as `active`. Needs a human or a council contact to resolve."
 }

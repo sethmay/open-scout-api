@@ -155,7 +155,7 @@ schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + pu
 tools/                live pipeline: stamp_schema.py, validate_data.py, validate_examples.py,
                       build.py (data/ -> dist/), build_sqlite.py, us_geo.py
                       enrichment (run manually): geocode_addresses.py (coords from street addresses), elevation.py (elevation_ft), july_temp.py (July normals; needs rasterio)
-                      maintenance: check_urls.py (audit camp website health), find_camp_pages.py (find a camp page on the council site)
+                      maintenance: check_urls.py (audit camp website health), find_camp_pages.py (find a camp page on the council site), maintenance.py (re-verification queue + standing health check)
                       historical seed (one-time camp-finder import; see file headers): import_camps.py, geocode_camps.py
 dist/                 generated static API (git-ignored; built + deployed by CI)
 PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
@@ -177,7 +177,7 @@ python tools/build_sqlite.py         # compile data/ -> dist/v1/open-scout-api.s
 python tools/stamp_schema.py         # (re)stamp data/ $schema refs after regenerating; validate_data enforces them
 ```
 
-The **enrichment** and maintenance tools (`geocode_addresses.py`, `elevation.py`, `july_temp.py`, `check_urls.py`, `find_camp_pages.py`) are run manually,
+The **enrichment** and maintenance tools (`geocode_addresses.py`, `elevation.py`, `july_temp.py`, `check_urls.py`, `find_camp_pages.py`, `maintenance.py`) are run manually,
 never by CI, and carry the only extra requirements: `july_temp.py` needs `rasterio`
 (`pip install rasterio`) plus the WorldClim rasters (~8 GB, git-ignored `tools/worldclim/`; fetch
 URLs are in the tool's docstring). Their derived caches are committed, so validating or building the
