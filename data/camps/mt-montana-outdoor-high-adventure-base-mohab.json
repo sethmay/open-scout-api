@@ -38,13 +38,17 @@
           },
           {
             "url": "https://scoutingmontana.org/camps/high-adventure/"
+          },
+          {
+            "url": "https://scoutingmontana.org/camps/high-adventure/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features survey attempted 2026-07-25: the page is rich, but the vocabulary then had no codes for wilderness trekking, so nothing could be recorded. Backpacking/mountaineering/caving/packrafting codes were added afterwards — re-queued for survey."
       }
     }
   ],

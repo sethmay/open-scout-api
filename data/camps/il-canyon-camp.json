@@ -25,8 +25,66 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "pool",
+          "note": "A pool three to ten feet deep, also used for snorkelling."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "The Coon Lake lakefront, with a fleet of watercraft."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "cope",
+          "signature": true,
+          "note": "A new COPE adventure facility with high and low ropes courses and a rappelling tower."
+        },
+        {
+          "code": "climbing",
+          "note": "A multi-difficulty climbing wall and a twelve-sided continuous bouldering wall."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "The COPE tower, used for rappelling."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Full-service dining hall."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas tents on platforms with bunks and mattresses."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Operation O.W.L., the Outdoor Wilderness League, for older Scouts and leaders."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Blackhawk Area Council Scouts BSA resident summer camp near Galena and Stockton, Illinois, offering over 55 merit badges alongside specialty programs.",
       "provenance": {
         "sources": [
@@ -38,13 +96,17 @@
           },
           {
             "url": "https://www.canyoncampbsa.org/"
+          },
+          {
+            "url": "https://www.canyoncampbsa.org/summer-camp",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

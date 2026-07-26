@@ -26,8 +26,30 @@
         "cub_resident",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "sailing",
+          "note": "Includes an afternoon sailing experience for Scouts thirteen and older."
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp has more than one waterfront."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Merit badge instruction at the camp's shooting ranges."
+        },
+        {
+          "code": "stem",
+          "signature": true,
+          "note": "A STEM center, including Shipyard STEM merit badges taught by Portsmouth Naval Shipyard experts."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Troop H, a staff-supervised provisional unit."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Pine Tree Council Scouts BSA resident camp on Panther Pond in Maine's Sebago region, offering more than 40 merit badges, sailing, STEM, shooting sports, and a first-year-camper program.",
       "provenance": {
         "sources": [
@@ -42,13 +64,21 @@
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://camphinds.org/summer-camp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://camphinds.org/program/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Coordinate refined 2026-07-22 from the camp's street address (was a city/state-centroid approximation). Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "merged_from": [
         "me-camp-william-hinds-cub-scout-overnight-camp"

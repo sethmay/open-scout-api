@@ -25,8 +25,68 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "Squire Lake, used for boating and fishing."
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoes alongside paddle boats, rowboats and coracles."
+        },
+        {
+          "code": "fishing",
+          "note": "Catch and release on Squire Lake; poles are available at camp."
+        },
+        {
+          "code": "stem",
+          "note": "A STEM program area."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served cafeteria style."
+        },
+        {
+          "code": "pavilion",
+          "note": "The dining hall is a pavilion."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "bathhouse",
+          "note": "A shower house and comfort station near the dining hall and pool."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "In the shower house and the Alley Action Center; campsites have pit latrines."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas wall tents on wooden platforms, grouped in pods of three."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "One outlet at each campsite latrine, for charging only."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The Outpost overnight, run in the weeklong sessions for Webelos and Arrow of Light Scouts."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Cub Scout resident camp operated by the Pennsylvania Dutch Council at Camp Mack in Newmanstown, Pennsylvania, offering weekend and week-long sessions.",
       "provenance": {
         "sources": [
@@ -38,13 +98,21 @@
           },
           {
             "url": "http://padutchbsa.org/camping/mack/summercamp/"
+          },
+          {
+            "url": "http://padutchbsa.org/camping/mack/summercamp/",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "http://padutchbsa.org/wp-content/uploads/2026/03/2026-Mack-Adult-Guide-.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

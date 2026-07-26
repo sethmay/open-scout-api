@@ -25,8 +25,37 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "cope",
+          "note": "High and low ropes courses with a ropes course center."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "bathhouse"
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": "Crossroads of the West Council Scouts BSA resident camp in Sanpete County near Mount Pleasant, Utah, offering swimming, target and range sports, a challenge and ropes course, and merit badge programs.",
       "provenance": {
         "sources": [
@@ -38,13 +67,21 @@
           },
           {
             "url": "https://www.utahscouts.org/tifie"
+          },
+          {
+            "url": "https://www.utahscouts.org/tifie",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.utahscouts.org/_files/ugd/401ad5_3f003a2e51774f07bf19843a893cc357.pdf",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

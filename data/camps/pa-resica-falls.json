@@ -25,8 +25,81 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "pool",
+          "note": "A pool with a three-story water slide."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake Roger, a spring-fed lake used for open boating."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "A Wibit aquapark on the lake, with a trampoline and blob."
+        },
+        {
+          "code": "archery",
+          "note": "Includes action archery and sporting arrows."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "atv",
+          "note": "Open to Scouts fourteen and older."
+        },
+        {
+          "code": "stem",
+          "note": "Drone racing and virtual reality."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "pavilion",
+          "note": "The Eibner Handicraft Pavilion."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The High Five Adventure Club for Scouts fourteen and older."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Resica Troop One, a staff-led troop for Scouts attending without their unit."
+        }
+      ],
+      "features_verified_at": "2026-07-25",
       "summary": null,
       "provenance": {
         "sources": [
@@ -42,13 +115,21 @@
           {
             "url": "https://resicafalls.org/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://resicafalls.org/summer/programs",
+            "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://resicafalls.org/summer/provo",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/525-102013); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/525-102013); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],
