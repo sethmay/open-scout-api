@@ -236,7 +236,7 @@ source (see the Meriwether evidence in PLAN §5.1).
   sailing for two seasons), so they need a shorter re-verification cycle than facilities. Link health
   is now audited separately — see below.
 
-### Camp link health (audit DONE 0.31.0; repairs mostly outstanding)
+### Camp link health (audit DONE 0.31.0; portal repair DONE 0.32.0)
 
 `tools/check_urls.py` audits every non-day-camp `website` and classifies what is actually there.
 Day camps (64) are deliberately out of scope: a day camp often runs at a rented site, so its property
@@ -259,11 +259,24 @@ target is worse than the stored URL: La-No-Che redirects to a temporary host (`t
 camp page is gone and lands on the council homepage, and Fire Mountain's target is a Cub-only
 carousel item. Those three are really "page removed", not "page moved".
 
+Done in 0.32.0: **portal-linked camps cut 132 → 62.** `tools/find_camp_pages.py` walks each
+council's own website (homepage plus its camping-index pages, one level down) and looks for a link
+whose anchor text or slug names the camp, then fetches the candidate and confirms it. Work is grouped
+by council, so a council with four portal camps is crawled once — 132 camps live under just 85
+councils, and every one of those councils already had a `council_website` stored. 74 of 132 produced
+a confirmed candidate; **70 were applied** after a second classifier pass, each recorded in
+provenance with the portal URL it replaced.
+
+Judgement calls worth knowing: a candidate that is merely *stale* was still applied (7 of the 70) —
+a 2023-dated council page still describes the camp, and this dataset deliberately holds no sessions
+or fees, so staleness costs nothing here. Three were rejected by hand: a council homepage (no better
+than the portal for surveying), a "Yellowstone High Adventure Outpost" page that may be a different
+programme from Yellowstone Anglers Basecamp, and one candidate that was itself a portal.
+
 Outstanding, in value order:
 
-- **`portal` (132) is the features blocker.** A registration link has nothing to survey, so these
-  camps need a descriptive council page found for them before Phase 3 population can touch them.
-  This is the single biggest lever on feature coverage.
+- **`portal` (62 left).** The council site had no findable camp page for these, so they need the open
+  web or a leader's guide. Diminishing returns compared with the first 70.
 - **Genuinely broken (30).** Only 4 hosts affect more than one camp (`utahscouts.org` ×5 and
   `okscouts.org` ×3, both still 429 even when polite; `scoutingcolorado.org` ×2 404; `nhscouting.org`
   ×2 500), so this is largely per-camp research.

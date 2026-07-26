@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.32.0 (minor) — 2026-07-25
+
+- `PENDING` **Repaired the portal links: camps pointing at a registration platform fell 132 → 62.** These were the blocker on feature population — a registration link has nothing to survey. New `tools/find_camp_pages.py` exploits the fact that all 132 belonged to just **85 councils**, every one of which already had a `council_website` stored: it walks each council's own site (homepage plus its camping-index pages, one level down), finds a link whose anchor text or slug names the camp, then fetches the candidate and confirms the page really names it. 74 of 132 produced a confirmed candidate and **70 were applied** after a second pass through the link classifier, each recorded in provenance alongside the portal URL it replaced.
+  - Ranking the candidates needed one non-obvious rule: **prefer the council's own domain, decisively.** An earlier "shallowest path wins" tiebreak looked sensible and was actively wrong — a bare root domain always wins on depth, so it picked the Illinek *OA lodge* and the Buffalo Bill *museum* over the councils' real camp pages. Host now dominates, with depth only breaking ties within a host. Candidate links to PDFs and images are skipped outright.
+  - A merely **stale** candidate was still applied (7 of the 70): a 2023-dated council page still describes the camp, and this dataset deliberately carries no sessions, dates, or fees, so staleness costs nothing for the purpose. Three were rejected by hand — a council homepage (no better than the portal), a "Yellowstone High Adventure Outpost" page that may be a different programme from Yellowstone Anglers Basecamp, and a candidate that was itself a portal.
+  - Candidates are written to a review file rather than applied automatically, and the tool is checkpointed and resumable. The remaining 62 have no findable camp page on their council's own site, so they need the open web or a leader's guide — diminishing returns next to the first 70.
+
 ## 0.31.0 (minor) — 2026-07-25
 
 - `7dd595d` **Audited every camp's stored website and canonicalised the redirects.** New `tools/check_urls.py` fetches each non-day-camp `website`, follows redirects, and classifies what is actually there (`ok` / `portal` / `redirect` / `no_name` / `stale` / `http_error` / `unreachable`). Day camps (64) are out of scope on purpose: a day camp often runs at a rented site, so its property link is weak by nature. Across the remaining **384 camps**: 180 ok, 132 portal, 25 http_error, 22 stale, 11 redirect, 9 no_name, 5 unreachable.

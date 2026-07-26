@@ -21,7 +21,7 @@
       "elevation_ft": 1190,
       "july_high_f": 83,
       "july_low_f": 62,
-      "website": "https://scoutingevent.com/283-CubScoutResidentCamp",
+      "website": "https://www.scoutingtwinvalley.org/camps/cedar-point-scout-camp/",
       "program_types": [
         "cub_resident"
       ],
@@ -38,13 +38,17 @@
           },
           {
             "url": "https://scoutingevent.com/283-CubScoutResidentCamp"
+          },
+          {
+            "url": "https://www.scoutingtwinvalley.org/camps/cedar-point-scout-camp/",
+            "accessed": "2026-07-25"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/283-CubScoutResidentCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
       }
     }
   ],
