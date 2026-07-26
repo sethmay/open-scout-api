@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.36.0 (minor) — 2026-07-26
 
-- `PENDING` **Phase 5 maintenance machinery: new `tools/maintenance.py`,** the standing health check
+- `1898c3f` **Phase 5 maintenance machinery: new `tools/maintenance.py`,** the standing health check
   and re-verification queue. Facts decay at different rates, so one "last verified" date cannot
   drive planning; the policy is now encoded — **signature features 12 months** (the most perishable
   thing in the dataset), ordinary features 24, website 6, provenance 24.
