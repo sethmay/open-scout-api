@@ -9,7 +9,7 @@
       "name": "Camp Don Harrington",
       "camp_type": "day_camp",
       "operator": "council",
-      "council": "council:golden-spread",
+      "council": "council:prairie-sky",
       "parent": null,
       "operating_status": "active",
       "address": "15427 FM 1541",
@@ -41,7 +41,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Council repointed 2026-07-26 from council:golden-spread to council:prairie-sky: Golden Spread Council merged into Prairie Sky Council."
       }
     }
   ],

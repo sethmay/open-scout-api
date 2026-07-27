@@ -25,8 +25,74 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "A campfire site overlooking West Pine Pond."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "backpacking",
+          "note": "Multi-day hiking treks, including trips into the High Peaks."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Hot showers in the shower house at base camp."
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoe treks launch from Rollins Pond into the linked Saranac, St Regis, Tupper, Raquette and Fulton Chain waters; the camp keeps a small fleet of lightweight Kevlar canoes."
+        },
+        {
+          "code": "health_lodge",
+          "note": "Staffed by a camp health officer."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "The camp is dedicated to trek-based high adventure; each trek carries a trained staff Voyager guide."
+        },
+        {
+          "code": "hiking",
+          "note": "Includes a one-mile climb to the top of Floodwood Mountain."
+        },
+        {
+          "code": "pioneering",
+          "note": "Includes building a monkey bridge."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Patrol sites with canvas tents on wood platforms."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Climbing and rappelling on a natural rock face with certified staff instruction."
+        },
+        {
+          "code": "scoutcraft",
+          "note": "Two-man saw, fire building and pioneering activities at base camp."
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing",
+          "note": "Towed tubing and water skiing on Rollins Pond."
+        },
+        {
+          "code": "waterfront",
+          "note": "Rollins Pond serves as the launching point for canoe treks and towed water sports."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +101,18 @@
           },
           {
             "url": "https://scoutingevent.com/333-floodwood26"
+          },
+          {
+            "url": "https://scoutingnnj.org/wp-content/uploads/2026/06/FMR-Leaders-Guide-2026.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingnnj.org/camping/floodwood/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.floodwood.org/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

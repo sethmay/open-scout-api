@@ -58,6 +58,15 @@
       "category": "activity"
     },
     {
+      "code": "archaeology",
+      "label": "Archaeology",
+      "description": "Archaeology or fossil-dig programme.",
+      "category": "subject",
+      "aliases": [
+        "archeology"
+      ]
+    },
+    {
       "code": "archery",
       "label": "Archery",
       "description": "Archery range and instruction.",
@@ -161,7 +170,8 @@
       "code": "building_wifi",
       "label": "Building Wi-Fi",
       "description": "Wi-Fi in main buildings but not at campsites.",
-      "category": "accommodation"
+      "category": "accommodation",
+      "broader": "wifi"
     },
     {
       "code": "cabins",
@@ -179,7 +189,8 @@
       "code": "campsite_wifi",
       "label": "Campsite Wi-Fi",
       "description": "Wi-Fi coverage reaching campsites.",
-      "category": "accommodation"
+      "category": "accommodation",
+      "broader": "wifi"
     },
     {
       "code": "canoeing",
@@ -302,6 +313,12 @@
       ]
     },
     {
+      "code": "escape_room",
+      "label": "Escape Room",
+      "description": "A bookable escape-room activity.",
+      "category": "activity"
+    },
+    {
       "code": "first_year_program",
       "label": "First-Year Camper Program",
       "description": "A dedicated programme track for first-year campers.",
@@ -353,10 +370,26 @@
       "category": "activity"
     },
     {
+      "code": "giant_swing",
+      "label": "Giant Swing",
+      "description": "A giant swing, usually alongside the challenge course.",
+      "category": "activity",
+      "broader": "cope"
+    },
+    {
       "code": "gold_panning",
       "label": "Gold Panning",
       "description": "Gold panning programme.",
       "category": "activity"
+    },
+    {
+      "code": "golf",
+      "label": "Golf",
+      "description": "Golf instruction or a course/driving range on the property.",
+      "category": "activity",
+      "aliases": [
+        "driving_range"
+      ]
     },
     {
       "code": "hammock_camping",
@@ -467,6 +500,17 @@
       "category": "activity",
       "aliases": [
         "historic_program"
+      ]
+    },
+    {
+      "code": "lumberjack",
+      "label": "Lumberjack Sports",
+      "description": "Logging and woodsman sports: sawing, axe throwing, log rolling.",
+      "category": "activity",
+      "broader": "scoutcraft",
+      "aliases": [
+        "lumberjack_sports",
+        "woodsman"
       ]
     },
     {
@@ -828,6 +872,16 @@
       ]
     },
     {
+      "code": "trade_skills",
+      "label": "Trade Skills",
+      "description": "Building-trades programme area — welding, plumbing, electricity, surveying.",
+      "category": "activity",
+      "aliases": [
+        "trades",
+        "plumbing"
+      ]
+    },
+    {
       "code": "trading_post",
       "label": "Trading Post",
       "description": "An on-site camp store.",
@@ -894,6 +948,12 @@
       "aliases": [
         "rafting"
       ]
+    },
+    {
+      "code": "wifi",
+      "label": "Wi-Fi",
+      "description": "Wi-Fi somewhere on the property; parent for the building and campsite cases.",
+      "category": "accommodation"
     },
     {
       "code": "wilderness_survival",

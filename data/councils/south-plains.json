@@ -5,7 +5,7 @@
   "versions": [
     {
       "valid_from": null,
-      "valid_to": "2026",
+      "valid_to": "2026-06-01",
       "name": "South Plains Council",
       "bsa_number": 694,
       "hq_city": "Lubbock",
@@ -17,12 +17,19 @@
         "sources": [
           {
             "citation": "camp-finder council-694 (unofficial community dataset)"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Plains_Council"
+          },
+          {
+            "url": "https://amarillotribune.org/2026/06/26/scoutings-americas-amarillo-and-lubbock-councils-merge-to-form-the-prairie-sky-council/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.5,
-        "notes": "Present in camp-finder but absent from the 2026 official CST maps; merged/renamed/discontinued. valid_to is a coarse bound (2026 = first observed absent); exact end date and successor unverified where no event records them."
+        "confidence": 0.8,
+        "notes": "Merged with Golden Spread Council on 2026-06-01 to form Prairie Sky Council. Supersedes the earlier placeholder note, which recorded the successor and date as unverified."
       }
     }
   ],

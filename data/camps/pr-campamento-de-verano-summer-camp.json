@@ -25,8 +25,89 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics",
+          "note": "A lakeside waterfront plus two pools, all staffed by certified aquatics personnel."
+        },
+        {
+          "code": "archery",
+          "note": "A supervised archery range described as a favourite of visiting Cub Scout and Scouts BSA units."
+        },
+        {
+          "code": "astronomy",
+          "note": "Star watching, including guided night walks from the nature lodge."
+        },
+        {
+          "code": "backpacking",
+          "note": "Backpacking routes graded from beginner to advanced in the terrain around the camp."
+        },
+        {
+          "code": "canoeing",
+          "note": "A fleet of about thirty-five canoes."
+        },
+        {
+          "code": "cope",
+          "note": "A high-impact challenge course circuit."
+        },
+        {
+          "code": "dining_hall",
+          "note": "A modern hall seating five hundred, serving fresh meals daily."
+        },
+        {
+          "code": "health_lodge",
+          "note": "An infirmary staffed around the clock by certified personnel, with ambulance service."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Guided expeditions for more experienced campers, including one to the headwaters of the river."
+        },
+        {
+          "code": "hiking",
+          "note": "Guided walks to see birds, stars and forest species, notably through the mahogany stand."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_center",
+          "note": "A nature lodge running its own classes and hosting the guided nature walks."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pool",
+          "note": "Two pools with certified aquatics staff."
+        },
+        {
+          "code": "rappelling",
+          "note": "A dedicated rappelling tower."
+        },
+        {
+          "code": "rowing",
+          "note": "Rowboats are part of the waterfront fleet."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "note": "On the shore of the lake, with an observation tower over the water and a fleet of canoes, kayaks, paddleboards, rowboats and sailboats."
+        },
+        {
+          "code": "wildlife_viewing",
+          "note": "Bird watching is a regular guided activity."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +115,12 @@
             "citation": "camp-finder council-661/pr-campamento-de-verano-summer-camp (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/661-GSR2026"
+            "url": "https://scoutingevent.com/661-GSR2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingpr.org/guajataka/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

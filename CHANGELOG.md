@@ -3,6 +3,47 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.38.0 (minor) — 2026-07-26
+
+- `PENDING` **The "unsurveyable" 62 were an instrument error, not a data limit. All 62 surveyed;
+  non-day coverage 79% -> 95%** (366 of 384), feature entries 4,609 -> **6,373**. Four agents,
+  **1,752 features, 49 `guide` + 13 `camp_page`, zero `portal`, zero untouched, zero invented
+  codes.**
+  - **I retract 0.37.0's "cheap automation is exhausted for the 62".** Reading a
+    `scoutingevent.com` URL without a selector follows a redirect to an empty "you have not selected
+    a calendar" shell; **the same URL with `:raw` returns the real page including the camp's prose.**
+    Two automated passes and my own 12-camp spike all mistook that shell for the camps' content.
+    When an entire population looks uniformly empty, suspect the instrument first.
+  - Also decisive: Black Pug's council-authored per-camp facility inventories at
+    `campreservation.com/<org>/Camps/<id>` outlive their registration event keys, and guidebooks
+    hidden behind Google Drive redirects yield to a curl-to-temp-`.pdf`.
+- **New `features_source_tier` on every camp (`guide` / `camp_page` / `portal`, null iff
+  `features_verified_at` is null)** — a completeness qualifier in the same spirit as
+  `geo_precision`, published in `current/camps.json` and pinned in `published-current.schema.json`.
+  It earns its place: `guide` camps average **21 features against 13** for `camp_page`. Derived
+  mechanically for the 304 pre-existing surveys from which provenance sources carry an `accessed`
+  date, biased so `guide` is never over-claimed. `validate_data.py` enforces the coupling.
+- **Two 2026 council mergers resolved, replacing placeholder dead-ends.** South Plains + Golden
+  Spread merged on 2026-06-01 into the new **Prairie Sky Council** (created; `bsa_number` left null
+  because no source states the merged council's number, and `hq_city` null because the sources
+  record it as undecided). Redwood Empire was **absorbed** by Golden Gate Area Council, which kept
+  its identity and runs it as the Redwood Empire Service Area. Both were previously `discontinued`
+  with no successor. Five camps repointed; the orphaned-council count is now **0**.
+- Vocabulary **121 -> 128**, admitting only codes seen at 2+ independent camps: `escape_room`,
+  `lumberjack`, `golf`, `giant_swing`, `trade_skills`, `archaeology`, plus a `wifi` parent for the
+  two orphaned wifi leaves. All seven were applied to the camps that evidenced them, so none ship
+  dead — the mistake 0.35.0 made with `whitewater_rafting`. `giant_swing` was on last release's
+  held-back list, recurred, and got in: the second-sighting rule works. 25 singletons stay held.
+- **Manual review queue** via `tools/maintenance.py`: no camp sits at `portal` tier, so the queue is
+  **43 surveyed camps with <= 5 features** against a ~15 median, **18 non-day camps still
+  unsurveyed**, and three specific defects the agents refused to guess at — `az-r-c-scout-ranch`
+  (address, coordinates and website all say Camp Raymond while only `name` says R-C),
+  `ok-camp-george-thomas` (image-only guide the reader cannot mine), and `ar-camp-preston-hunt`
+  (pool attested only by a line saying it was *out* of use).
+- Field hazard worth keeping: **poisoned domains.** `baitinghollowscoutcamp.org` resolves, carries
+  the exactly-correct camp title, and is squatted SEO spam. Test — a genuine camp site names its
+  council or owning body in its own prose.
+
 ## 0.37.0 (minor) — 2026-07-26
 
 - `26ba36a` **Coverage recovery: 10 more camps surveyed, non-day coverage 77% -> 79%** (304 of 384),

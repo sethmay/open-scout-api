@@ -26,8 +26,141 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Each campsite has an Adirondack that sleeps eight alongside its tents."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "Evening observations and a star hike run out of the STEM lodge."
+        },
+        {
+          "code": "automotive"
+        },
+        {
+          "code": "black_powder",
+          "note": "Dedicated muzzleloading range."
+        },
+        {
+          "code": "blacksmithing",
+          "note": "Expanded forge with multiple forges and anvils."
+        },
+        {
+          "code": "building_wifi",
+          "note": "Limited Wi-Fi in the dining hall for adult leader use."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "Open camp chapel used for a non-denominational service."
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Gallery-style reactive targets with lever-action rifles and single-action revolvers."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Eagle's Nest track covers Scout through First Class skills."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking",
+          "note": "Trail to neighbouring Laird Park and wooded trails between program areas."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study",
+          "note": "Eco-Science area with forestry, plant science and wildlife badges."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Tradescraft trades track is aimed at returning and older Scouts."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pavilion",
+          "note": "Shade shelters at every program area and campsite."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas tents on wooden platforms in every campsite."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Individual Scouts are matched with a volunteer troop for the session."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rocketry"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports",
+          "signature": true,
+          "note": "Six separate ranges including shotgun five-stand and sporting arrows."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem",
+          "note": "STEM lodge running electricity, electronics and space exploration."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Small lake fed by the Palouse River, sized for beginner boating."
+        },
+        {
+          "code": "welding",
+          "note": "Welding and metalwork in the Tradescraft area."
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking",
+          "note": "Wood shop open during open program periods."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Historic Scouts BSA resident summer camp on the Palouse River in the Hoodoo Mountains, run by the Inland Northwest Council, featuring six shooting-sports ranges and the Eagle's Nest new-Scout program.",
       "provenance": {
         "sources": [
@@ -35,7 +168,16 @@
             "citation": "camp-finder council-611/id-camp-grizzly (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/611-26GrizzlySummerCamp"
+            "url": "https://scoutingevent.com/611-26GrizzlySummerCamp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/611183058/OR/Program_Guide__Grizzly_2026.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/611148923/OR/Grizzly_Leader_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

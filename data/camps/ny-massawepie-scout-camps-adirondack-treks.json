@@ -25,8 +25,42 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "backpacking",
+          "note": "Hiking treks range from pond-hopping itineraries to peak-bagging routes."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Crews clean up and shower on returning to base camp."
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoe routes run from short trips to over seventy miles; crews pass a swimmer test and a canoe test before departing."
+        },
+        {
+          "code": "health_lodge",
+          "note": "Base camp health services cover trek crews, including a medical re-check on arrival."
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true,
+          "note": "A dedicated Adirondack trek program: crews of up to seven, aged fourteen and over, on three- to six-day canoe, hiking or combination routes, each led by a trained staff Voyageur guide certified for wilderness travel."
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Open only to participants aged fourteen and over, or thirteen with the eighth grade completed."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Crews cook their own trail meals using camp-issued stove and frybake kits."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +69,26 @@
           },
           {
             "url": "https://scoutingevent.com/397-MassawepieTreks"
+          },
+          {
+            "url": "https://massawepietreks.org/wp-content/uploads/2025/11/2026-Massawepie-Treks-Leaders-Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://massawepietreks.org/?page_id=205",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://massawepietreks.org/?page_id=215",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://massawepietreks.org/?page_id=301",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://massawepietreks.org/?page_id=304",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

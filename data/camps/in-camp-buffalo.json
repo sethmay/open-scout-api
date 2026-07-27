@@ -26,8 +26,169 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Large campfire ring."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "atv",
+          "note": "ATV safety course with its own waiver."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower houses at the pool, Ivey Lodge, Beasy Hall and the dining hall."
+        },
+        {
+          "code": "building_wifi",
+          "note": "Wi-Fi and a Scoutmaster lounge in the dining hall."
+        },
+        {
+          "code": "cabins",
+          "note": "Winter Quarters and Ivey Lodge cabins plus bunk rooms in the multi-purpose building."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "Quiet chapel area."
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Shideler Hall."
+        },
+        {
+          "code": "escape_room"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Brownsea Island area for newer Scouts."
+        },
+        {
+          "code": "fishing",
+          "note": "Liberty Lake."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "Open around the clock."
+        },
+        {
+          "code": "hiking",
+          "note": "Miles of trails on the property."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Dedicated mountain bike trail."
+        },
+        {
+          "code": "nature_center",
+          "note": "Rustic nature lodge."
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology area; two wetlands used for wildlife and conservation lessons."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Canoe trips on the Tippecanoe River ranging from a few hours to overnight."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion",
+          "note": "Scoutmaster pavilion near Beasy Hall."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "pool",
+          "note": "Outdoor swimming pool with attached pool house."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Individual Scouts are partnered with a host troop for the week."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "scuba",
+          "note": "Sampler session at the pool run by an outside dive shop."
+        },
+        {
+          "code": "shooting_sports",
+          "signature": true,
+          "note": "Range and target activity complex covering rifle, shotgun, archery and cowboy action."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem",
+          "note": "Skilled-trades and science cluster including electricity, plumbing, surveying and space exploration."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trade_skills"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Liberty Lake plus frontage on the Tippecanoe River."
+        },
+        {
+          "code": "welding",
+          "note": "Welding and metalwork in the skilled trades cluster."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Sagamore Council's Scouts BSA resident summer camp along the Tippecanoe River north of Monticello, offering aquatics, shooting sports, outdoor skills, skilled trades, ecology, and a Brownsea Island program.",
       "provenance": {
         "sources": [
@@ -35,7 +196,20 @@
             "citation": "camp-finder council-162/in-camp-buffalo (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/162-100977"
+            "url": "https://scoutingevent.com/162-100977",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campbuffalo.com/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/162182181/OR/2026_Summer_Camp_Event_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/162177031/OR/Merit_Badge_Class_Catalog.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

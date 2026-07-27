@@ -25,8 +25,161 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "A campfire circle reached on foot from the camp parade field."
+        },
+        {
+          "code": "aquatics",
+          "note": "The camp runs its own aquatics program area rather than sharing one with its sibling camp on the reservation."
+        },
+        {
+          "code": "archery",
+          "note": "At the range and target activities area, which is shared with the neighbouring camp on the same reservation."
+        },
+        {
+          "code": "atv",
+          "note": "An on-property rider-course day trek run by the reservation's high-adventure staff, finishing with a ride around the lake."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Newer shower houses with twelve single-occupant rooms, each holding a shower, sink and toilet, plus older shower buildings in each camp."
+        },
+        {
+          "code": "canoeing",
+          "note": "Offered as a day-trek float of about fifteen miles on a nearby river rather than on the camp lake."
+        },
+        {
+          "code": "caving",
+          "note": "An off-property day trek descending an unlit natural cave system."
+        },
+        {
+          "code": "climbing",
+          "note": "At the challenge course area, which is shared with the neighbouring camp on the same reservation."
+        },
+        {
+          "code": "cope",
+          "note": "Group initiative games, trust events and low and high course elements; the area is shared with the neighbouring camp on the same reservation."
+        },
+        {
+          "code": "dining_hall",
+          "signature": true,
+          "note": "A four-hundred-seat family-style dining hall with assigned tables and rotating waiters; this is what distinguishes the camp from its patrol-cooking sibling on the same reservation. One evening a week the hall closes and units cook a steak dinner over coals in their campsite."
+        },
+        {
+          "code": "first_year_program",
+          "note": "A Trail to First Class program emphasising the patrol method, with Scouts also working several merit badges along the way."
+        },
+        {
+          "code": "fishing",
+          "note": "On the reservation's own lake."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "In the single-occupant shower rooms; campsites themselves are served by latrines."
+        },
+        {
+          "code": "hammock_camping",
+          "note": "Campers can bring hammocks and hang them among the trees at the campsite, unstacked."
+        },
+        {
+          "code": "handicraft",
+          "note": "The camp runs its own handicraft program area."
+        },
+        {
+          "code": "health_lodge",
+          "note": "The reservation health lodge in the central service area, with health officers on call around the clock."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "A day-trek program for Scouts aged fourteen and over, staged from the reservation's high-adventure base while they camp and eat with their troop."
+        },
+        {
+          "code": "hiking",
+          "note": "Includes a five-mile trail circuit of the reservation lake."
+        },
+        {
+          "code": "kayaking",
+          "note": "A day-trek paddle on a nearby lake using camp kayaks."
+        },
+        {
+          "code": "mountain_biking",
+          "note": "A day trek on rented bikes at an off-property trail system built for progression."
+        },
+        {
+          "code": "nature_study",
+          "note": "At the shared ecology and STEM program area."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "The day-trek track, open to Scouts aged fourteen and over."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Camp-provided canvas wall tents on wooden floorboards, with a cot per camper."
+        },
+        {
+          "code": "rappelling",
+          "note": "Part of the challenge course program."
+        },
+        {
+          "code": "rifle",
+          "note": "At the shared range and target activities area."
+        },
+        {
+          "code": "rock_climbing",
+          "note": "A day trek on natural sandstone cliffs with instruction in movement, knots and belaying."
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing",
+          "note": "On the reservation's own lake."
+        },
+        {
+          "code": "scoutcraft",
+          "note": "The scoutcraft area is shared with the neighbouring camp on the same reservation."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "The range and target activities area is shared with the neighbouring camp on the same reservation."
+        },
+        {
+          "code": "shotgun",
+          "note": "Offered as sporting clays on an off-property day trek to a nearby mountain resort."
+        },
+        {
+          "code": "stem",
+          "note": "A combined ecology and STEM area shared with the neighbouring camp on the same reservation."
+        },
+        {
+          "code": "swimming",
+          "note": "On the reservation's own lake, which is wholly inside the property."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing",
+          "note": "On the reservation's own lake."
+        },
+        {
+          "code": "waterfront",
+          "note": "A two-hundred-and-seventy-acre lake owned entirely by the reservation; campsites sit both on ridge tops and along the shore."
+        },
+        {
+          "code": "whitewater_rafting",
+          "note": "A guided day trek down seven and a half miles of class three whitewater."
+        },
+        {
+          "code": "zip_line",
+          "note": "A canopy zipline and high ropes day trek run with a university outdoor education partner."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp operated by Laurel Highlands Council at Heritage Reservation in Farmington, Pennsylvania, featuring a dining hall.",
       "provenance": {
         "sources": [
@@ -35,6 +188,18 @@
           },
           {
             "url": "https://scoutingevent.com/527-HRSBSA2026"
+          },
+          {
+            "url": "http://sbsaguide.heritagereservation.org/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://heritagereservation.org/camp-freedom/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://heritagereservation.org/camps/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

@@ -26,8 +26,81 @@
         "cub_resident",
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "Stargazing is part of the nature program."
+        },
+        {
+          "code": "bathhouse",
+          "note": "A shower house near the nature building; outhouses serve each campsite."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Buffet-style meals with campers and staff seated together."
+        },
+        {
+          "code": "handicraft",
+          "note": "Wood projects, leatherworking and basketry."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "hiking",
+          "note": "Includes a twilight nature hike."
+        },
+        {
+          "code": "nature_center",
+          "note": "The nature building anchors the nature program."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "An extended Webelos and Arrow of Light session built as a bridge toward Scouts BSA camp."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "An outbound overnight for older Cub Scouts, sleeping under the stars in a shelter they build."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Green canvas tents on platforms are provided in each campsite."
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "swimming",
+          "note": "Includes an early-morning polar bear swim."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Swimming and canoeing on Lake of the Woods, with a boat house on the shore."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Pacific Crest Council Cub Scout resident summer camp on Lake of the Woods near Klamath Falls, Oregon.",
       "provenance": {
         "sources": [
@@ -36,6 +109,14 @@
           },
           {
             "url": "https://scoutingevent.com/697-99662"
+          },
+          {
+            "url": "https://pccscouting.org/camping/camp-mcloughlin/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://pccscouting.org/wp-content/uploads/2026/03/2026-Camp-McLoughlin-Leader-Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

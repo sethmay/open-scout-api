@@ -25,8 +25,145 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "one wheelchair-accessible campsite with a sidewalk and a power outlet for medical use"
+        },
+        {
+          "code": "amphitheater",
+          "note": "open-air council ring with a stage and seating for the opening and closing campfires"
+        },
+        {
+          "code": "archery",
+          "note": "covered archery range"
+        },
+        {
+          "code": "bathhouse",
+          "note": "four shower houses with hot and cold running water"
+        },
+        {
+          "code": "bb_guns",
+          "note": "air rifles offered alongside the smallbore range"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "a-frame open-concept chapel used for daily non-denominational services"
+        },
+        {
+          "code": "cit_program",
+          "note": "counsellor-in-training program for older campers"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "forty-two-foot tower used for the climbing badge"
+        },
+        {
+          "code": "conservation_project",
+          "note": "unit service projects arranged with the camp director"
+        },
+        {
+          "code": "cope",
+          "note": "COPE course paired with a zip line"
+        },
+        {
+          "code": "dining_hall",
+          "note": "cafeteria-style service with troop table waiters"
+        },
+        {
+          "code": "first_year_program",
+          "note": "first-year camper area and a dedicated first class trail session"
+        },
+        {
+          "code": "handicraft",
+          "note": "covered handicraft area for art, wood carving, leatherwork, and basketry"
+        },
+        {
+          "code": "health_lodge",
+          "note": "health officer on duty around the clock"
+        },
+        {
+          "code": "hiking",
+          "note": "marked hiking trails on the property"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study",
+          "note": "ecology and conservation pavilion covering forestry and geology"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "paddleboarding",
+          "note": "paddleboards at the waterfront"
+        },
+        {
+          "code": "pavilion",
+          "note": "program pavilions for the first-year, outdoor skills, and ecology areas, plus a covered stage building"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "pool",
+          "note": "large pool with a deep end and individual dressing rooms"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "maverick Scouts without a unit are adopted by a provisional troop for the week"
+        },
+        {
+          "code": "rappelling",
+          "note": "rappelling from the climbing tower"
+        },
+        {
+          "code": "rifle",
+          "note": "covered smallbore range"
+        },
+        {
+          "code": "rowing",
+          "note": "rowboats at the waterfront"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "outdoor skills pavilion"
+        },
+        {
+          "code": "shotgun",
+          "note": "covered shotgun range"
+        },
+        {
+          "code": "swimming",
+          "note": "pool swimming plus lake waterfront"
+        },
+        {
+          "code": "trading_post",
+          "note": "camp store with supplies, snacks, and badge pamphlets"
+        },
+        {
+          "code": "water_slide",
+          "note": "slide into the camp pool"
+        },
+        {
+          "code": "waterfront",
+          "note": "lake frontage with a boat marina"
+        },
+        {
+          "code": "woodworking",
+          "note": "wood carving in the handicraft area"
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident summer camp of the East Texas Area Council near Gary, Texas, offering a first-year First Class Trail program and an aquatics program.",
       "provenance": {
         "sources": [
@@ -35,6 +172,10 @@
           },
           {
             "url": "https://scoutingevent.com/585-2026FirstClassTrail"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/585164575/OR/2026_GWP_Leaders_Guide_.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

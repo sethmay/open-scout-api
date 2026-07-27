@@ -150,6 +150,11 @@
           "default": null,
           "description": "Date of the last deliberate features survey of this camp against its own sources — what makes `features` interpretable. The two vary independently: null + [] = never surveyed, nothing known; null + entries = incidental data from a bulk import, not a survey; date + entries = surveyed; date + [] = surveyed and the camp genuinely offers none of the vocabulary's features. Without this an unsurveyed camp is indistinguishable from an empty one, every 'has X' filter silently under-reports, and 'camps without X' is unanswerable."
         },
+        "features_source_tier": {
+          "enum": ["guide", "camp_page", "portal", null],
+          "default": null,
+          "description": "How good the source behind `features` was — a completeness qualifier, in the same spirit as `geo_precision` for coordinates. `guide`: a camp-specific DOCUMENT was read (leader's or program guide, program schedule, or a labelled camp map) — the most complete source available, averaging 21 features per camp. `camp_page`: a descriptive web page owned by the camp or its council, averaging 13. `portal`: ONLY a registration-platform blurb was available because the camp has no descriptive page anywhere; these are deliberately thin, are the least complete surveys in the dataset, and form the standing queue for manual review. `null` iff `features_verified_at` is null (coupling enforced by tools/validate_data.py). A `portal` survey is still a real survey — the date means a source was read — but treat its feature list as a floor, not a description. Derived mechanically from which provenance sources carry an `accessed` date, biased so `guide` is never over-claimed."
+        },
         "summary": {
           "type": ["string", "null"],
           "default": null,

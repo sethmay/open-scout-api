@@ -25,8 +25,58 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "A named fire ring serves as the camp campfire area."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing",
+          "note": "A traverse wall rather than a climbing tower."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "handicraft",
+          "note": "Held in dedicated craft pavilions."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "pool",
+          "note": "Aquatics run at a pool; the camp has no lake or waterfront."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "Separate archery and BB ranges."
+        },
+        {
+          "code": "sports_field",
+          "note": "Two open program fields."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": "Cub and Webelos resident camp operated by the Last Frontier Council in Apache, Oklahoma.",
       "provenance": {
         "sources": [
@@ -34,7 +84,12 @@
             "citation": "camp-finder council-480/ok-camp-george-thomas (unofficial community dataset)"
           },
           {
-            "url": "https://www.scoutingevent.com/480-CGT2026"
+            "url": "https://www.scoutingevent.com/480-CGT2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/480/Camps/389",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

@@ -25,8 +25,147 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "Two campsites set up for campers with mobility needs."
+        },
+        {
+          "code": "adirondack_shelters",
+          "note": "Most campsites are Adirondack sites."
+        },
+        {
+          "code": "amphitheater",
+          "note": "Council Circle on the pond shore."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "automotive",
+          "note": "Automotive maintenance taught in the STEM block."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower house plus camper showers spread through camp."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "cabins",
+          "note": "Blackcap Cabin, Little Fitts Cabin and several lodges."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "Outdoor chapel near the waterfront."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "digital_media",
+          "note": "Photography in the STEM block."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Peter G. Vigue Scout Center."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Project Blackcap covers Scout through Second Class."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft",
+          "note": "Shorey Handicraft Lodge running pottery, leatherwork, sculpture and carving."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "hiking",
+          "note": "Marked trail network at the base of Blackcap Mountain."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_center",
+          "note": "Nature Lodge with a nature observatory and demonstration forest."
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology area covering forestry, herpetology and environmental science."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Canvas tent platform campsites alongside the Adirondack sites."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Provisional campsite for Scouts attending without their unit."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "sailing",
+          "note": "Small-boat sailing on Little Fitts Pond."
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Starfire Field and Gilwell Field."
+        },
+        {
+          "code": "stem",
+          "note": "STEAM block with engineering, programming and space exploration."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on Little Fitts Pond."
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp on the Katahdin Scout Reservation in Eddington, Maine, operated by Katahdin Area Council, offering hands-on outdoor skills, merit badge sessions, paddling, archery, and campwide activities.",
       "provenance": {
         "sources": [
@@ -34,7 +173,24 @@
             "citation": "camp-finder council-216/me-camp-roosevelt (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/216-26Scoutsbsaresidentcamp"
+            "url": "https://scoutingevent.com/216-26Scoutsbsaresidentcamp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://katahdinareabsa.org/camps/camp-roosevelt/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://katahdinareabsa.org/wp-content/uploads/2026/04/ksr-map-2017.webp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/216175592/OR/Camp_Roosevelt_Leader_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/216175531/OR/Scouts_BSA_Merit_Badges.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

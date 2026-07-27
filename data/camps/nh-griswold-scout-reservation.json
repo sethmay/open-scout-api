@@ -25,8 +25,167 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Hidden Valley council ring."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "Stargazing nights and an astronomy outpost."
+        },
+        {
+          "code": "atv",
+          "signature": true,
+          "note": "Rider safety certification on a terrain-neutral course plus extended trail rides across the reservation."
+        },
+        {
+          "code": "backpacking",
+          "note": "Belknap Backcountry runs two- and three-day treks into the surrounding mountains."
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "Foxfire area forge for patrol blacksmithing."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "Hidden Valley chapel hosts a weekly interfaith service."
+        },
+        {
+          "code": "climbing",
+          "note": "Top-rope climbing, including an indoor climbing barn at Camp Bell."
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cope",
+          "note": "Low and high ropes, with troop, morning and night COPE sessions."
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Cowboy action range between the archery and rifle ranges."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Day-long and multi-day trek programs beyond the standard week."
+        },
+        {
+          "code": "hiking",
+          "note": "Summit hikes, a shoreline loop and peak-bagging across the reservation."
+        },
+        {
+          "code": "horseback",
+          "signature": true,
+          "note": "Bell Farm stables with horsemanship instruction and extended trail rides."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "lumberjack"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology area exploring the swamp, ridge and lake shoreline."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Age-gated tracks such as ATV, morning COPE and backcountry backpacking."
+        },
+        {
+          "code": "orienteering",
+          "note": "Permanent orienteering course."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Weekly outposts run out to remote sites for badge requirements."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Troops can opt to cook in their campsites instead of using the dining hall."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "pistol",
+          "note": "Basic pistol shooting course with live fire."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts can come on their own as provisional campers."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Field games including ultimate, volleyball and football."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Two waterfronts on the reservation's lake."
+        },
+        {
+          "code": "welding",
+          "note": "Patrol welding and metalworking in the Foxfire area."
+        },
+        {
+          "code": "whitewater_rafting",
+          "note": "Run as a camp-organised day trip to a nearby whitewater park."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +193,16 @@
             "citation": "camp-finder council-330/nh-griswold-scout-reservation (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/330-105629"
+            "url": "https://scoutingevent.com/330-105629",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/330182210/OR/2026_Program_Guide_53026.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/330158741/OR/Afternoon_Activity_Descriptions.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

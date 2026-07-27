@@ -25,8 +25,157 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "campfire hill used for the opening campfire"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "taught in the camp technology center"
+        },
+        {
+          "code": "atv",
+          "note": "reservation-wide riding program with a safety course, circuit courses, mud pits, and trail riding"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower house with individual showers and washrooms"
+        },
+        {
+          "code": "building_wifi",
+          "note": "wireless internet in the leaders' lounge inside the dining hall"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "reservation program based at another camp, open to this camp's Scouts"
+        },
+        {
+          "code": "conservation_project",
+          "note": "posted in-camp service projects, from refurbishing a sign to rebuilding a bridge"
+        },
+        {
+          "code": "cope",
+          "note": "reservation program based at another camp, open to this camp's Scouts"
+        },
+        {
+          "code": "digital_media",
+          "note": "animation, moviemaking, and photography taught in the technology center"
+        },
+        {
+          "code": "dining_hall",
+          "note": "the reservation's only Scouts dining hall, serving meals family style"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trailshead, a half-day track for newly joined Scouts working on early rank advancement"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft",
+          "note": "handicraft pavilion covering basketry, leatherwork, sculpture, and painting"
+        },
+        {
+          "code": "health_lodge",
+          "note": "camp first-aid office, backed by the reservation health lodge"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "older-Scout track drawing on the reservation's high-adventure base"
+        },
+        {
+          "code": "hiking",
+          "note": "trails to Viewing Rock and Jump Rock and a circuit of the lake"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study",
+          "note": "ecology area covering forestry, geology, weather, and wildlife badges"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "reservation-wide Osprey program for Scouts in their teens"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pavilion",
+          "note": "handicraft pavilion, also used for medical check-in"
+        },
+        {
+          "code": "performing_arts",
+          "note": "theater and music badges in the culture craft area"
+        },
+        {
+          "code": "pioneering",
+          "note": "campsite pioneering projects encouraged as camp improvements"
+        },
+        {
+          "code": "platform_tents",
+          "note": "canvas tents on wooden platforms with cots, picnic tables, and a shade fly"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "individual Scouts can attend during the final week of the season"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing",
+          "note": "small-boat sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem",
+          "signature": true,
+          "note": "the reservation's only technology center, with robotics, digital technology, engineering, programming, and space exploration"
+        },
+        {
+          "code": "swimming",
+          "note": "open and instructional swim plus a weekly mile swim"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "lake frontage with open boating"
+        },
+        {
+          "code": "welding",
+          "note": "metalworking and welding workshop in the reservation older-Scout program"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking",
+          "note": "wood carving in the handicraft area"
+        },
+        {
+          "code": "zip_line",
+          "note": "open zip line at the reservation COPE course, based at another camp"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +184,14 @@
           },
           {
             "url": "https://scoutingevent.com/082-101975"
+          },
+          {
+            "url": "https://www.gotogoshen.org/camps-programs/camp-olmsted/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.gotogoshen.org/wp-content/uploads/2026/03/2026-Camp-Olmsted-Leaders-Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

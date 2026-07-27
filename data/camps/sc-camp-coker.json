@@ -25,8 +25,96 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "A council ring used for the camp-wide closing campfire."
+        },
+        {
+          "code": "aquatics",
+          "note": "A swimming area and paddle craft, with a boat house on the lake; a swim test is required before any water activity."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Bathrooms and shower houses sit close to each campsite."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Campsites are wired for power."
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "A dedicated challenge course training centre."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Packs form up at the flagpole in front of the hall before meals."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft",
+          "note": "Held in a handicraft lodge."
+        },
+        {
+          "code": "health_lodge",
+          "note": "A medic is on duty at all times and all treatment is given at the lodge except in an emergency."
+        },
+        {
+          "code": "nature_center",
+          "note": "An ecology hut anchors the nature program."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "An outdoor skills area on the camp trail circuit."
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A combined range area covering BB rifles, slingshots and archery for the Cub program, with rifle and shotgun ranges on the property."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "sports_field",
+          "note": "An open activity field."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post",
+          "note": "Carries camp merchandise, drinks and snacks."
+        },
+        {
+          "code": "waterfront",
+          "note": "The camp's three hundred and thirty-five acres wrap around a lake and an island."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Cub Scout resident summer camp near Society Hill, South Carolina, operated by Indian Waters Council, offering overnight camping and meals.",
       "provenance": {
         "sources": [
@@ -34,7 +122,20 @@
             "citation": "camp-finder council-553/sc-camp-coker (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/553-cubfamilysummercamp2026"
+            "url": "https://scoutingevent.com/553-cubfamilysummercamp2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/553184321/OR/Leader_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/553121889/OR/Camp_Coker_Map_.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campcoker.info/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

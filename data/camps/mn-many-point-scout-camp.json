@@ -25,8 +25,192 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "atv",
+          "note": "Safety training course plus evening trail rides."
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "cabins",
+          "note": "Rental cabins in the family camp area."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "cit_program",
+          "note": "Counselor-in-training program running five-week sessions."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Buckskin subcamp eats all three meals in the dining hall."
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "first_year_program",
+          "note": "First Class Adventure and First Class Aquatics tracks."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "Pottery, leatherwork, textiles, basketry and carving."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Flintlock Adventure Base runs week-long older-Scout tracks."
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "mountain_biking",
+          "signature": true,
+          "note": "Challenge course plus technical forested trails and a week-long bike outpost."
+        },
+        {
+          "code": "museum",
+          "note": "History Center used for Scouting heritage programming."
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Tiered older-Scout adventures out of Flintlock."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Fishing, raft and treehouse overnights away from the subcamps."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Ten Chiefs and Voyageur subcamps cook by patrol in their campsites."
+        },
+        {
+          "code": "personal_watercraft",
+          "note": "Jet skiing in the water sports outpost."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "All-Star Troop forms a full unit for Scouts without their own troop."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "rv_sites"
+        },
+        {
+          "code": "sailing",
+          "note": "Small-boat and big-boat sailing on Many Point Lake."
+        },
+        {
+          "code": "scuba",
+          "note": "Open-water certification offered in a single dedicated week."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun",
+          "note": "Includes a five-stand course."
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "stem",
+          "note": "Robotics outpost and artificial intelligence badge."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "themed_lodging",
+          "note": "Two treehouse villages above a bluff, used for overnights."
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "water_trampoline"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "Thirteen miles of shoreline on Many Point Lake."
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "wildlife_viewing",
+          "note": "Property borders the Tamarac National Wildlife Refuge."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +218,12 @@
             "citation": "camp-finder council-250/mn-many-point-scout-camp (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/250-MPAllStar2026"
+            "url": "https://scoutingevent.com/250-MPAllStar2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.manypoint.org/Portals/6/Documents/Program%20Catalog%202026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

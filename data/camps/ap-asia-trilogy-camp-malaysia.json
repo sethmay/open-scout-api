@@ -22,8 +22,64 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Separate restroom and shower rooms with locking stalls."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trail to First Class track for newer Scouts."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "An on-site medical lodge."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "whitewater_rafting"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Far East Council Scouts BSA resident camp located in Malaysia.",
       "provenance": {
         "sources": [
@@ -31,7 +87,12 @@
             "citation": "camp-finder council-803/ap-asia-trilogy-camp-malaysia (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/803-2026FECTrilogyMalaysia"
+            "url": "https://scoutingevent.com/803-2026FECTrilogyMalaysia",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/803182465/OR/2026_Trilogy_Camp_Malaysia_Leader_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

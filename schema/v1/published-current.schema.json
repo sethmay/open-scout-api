@@ -121,6 +121,10 @@
           "uniqueItems": true,
           "description": "The subset of `features` a camp presents as a headline draw rather than table stakes — the same feature can be signature at one camp and unremarkable at another (a climbing tower is ordinary in Colorado and a real differentiator on the prairie). Intended for ranking and badge rendering in list views, not for filtering. Always a subset of `features`."
         },
+        "features_source_tier": {
+          "enum": ["guide", "camp_page", "portal", null],
+          "description": "How complete the source behind `features` was, in the same spirit as `geo_precision` for coordinates. `guide`: a camp-specific document was read (leader's/program guide, schedule, or labelled map) — averages 21 features per camp. `camp_page`: a descriptive page owned by the camp or council — averages 13. `portal`: only a registration-platform blurb existed because the camp has no descriptive page anywhere; these are deliberately thin and are the dataset's manual-review queue. `null` exactly when `features_verified_at` is null. Rank and trust completeness by this field: a `portal` feature list is a floor, not a description."
+        },
         "features_verified_at": {
           "type": ["string", "null"],
           "format": "date",
@@ -135,7 +139,7 @@
         "method": { "type": "string" },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       },
-      "required": ["id", "name", "camp_type", "operator", "council", "parent", "reservation", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "geo_precision", "website", "url", "summary", "program_types", "features", "features_signature", "features_verified_at", "verified_at", "imported_at", "method", "confidence"],
+      "required": ["id", "name", "camp_type", "operator", "council", "parent", "reservation", "council_name", "council_website", "council_number", "state", "city", "lat", "lon", "geo_precision", "website", "url", "summary", "program_types", "features", "features_signature", "features_verified_at", "features_source_tier", "verified_at", "imported_at", "method", "confidence"],
       "additionalProperties": false
     },
     "CurrentRank": {

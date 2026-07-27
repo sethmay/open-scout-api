@@ -25,8 +25,73 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Central heat and air in one of the cabins."
+        },
+        {
+          "code": "amphitheater",
+          "note": "The Whitmarsh Amphitheater, also used for outside events."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "cabins",
+          "note": "Numbered bunkhouse-style cabins plus a family cabin."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "dining_hall",
+          "note": "An open building with a fireplace, seating about three hundred."
+        },
+        {
+          "code": "fishing",
+          "note": "The camp lake is stocked with bass and catfish."
+        },
+        {
+          "code": "health_lodge",
+          "note": "The Berry Health Lodge."
+        },
+        {
+          "code": "hiking",
+          "note": "The Tennessee Hollow Trail."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "pavilion",
+          "note": "The Main Pavilion, open-air."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "The Camp Preston Hunt lake."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Caddo Area Council's 250-acre year-round camp on the outskirts of Texarkana, Arkansas, offering a Cub Scout and Webelos resident program with a swimming pool, dining hall, canoe lake, cub pirate ship, and COPE course.",
       "provenance": {
         "sources": [
@@ -34,10 +99,19 @@
             "citation": "camp-finder council-584/ar-camp-preston-hunt (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/584-Cubsummer"
+            "url": "https://scoutingevent.com/584-Cubsummer",
+            "accessed": "2026-07-26"
           },
           {
             "citation": "coordinate geocoded from street address (US Census / OpenStreetMap), 2026-07-22"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/58475440/OR/2021_Cub_Scout_Summer_Camp_Pirates_of_Camp_Preston_Hunt_Parents__Leaders_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/584/Camps/608",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

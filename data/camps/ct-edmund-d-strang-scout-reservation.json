@@ -25,8 +25,50 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "first_year_program",
+          "note": "A staffed first-year camper program."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "A health office staffed around the clock."
+        },
+        {
+          "code": "nature_study",
+          "note": "An ecology and conservation area."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "The outdoor skills area."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Housatonic Council Scouts BSA resident summer camp set on 186 acres in Litchfield County, Goshen, Connecticut, focused on merit badge advancement, with a Venturing/off-site program and a Webelos resident program.",
       "provenance": {
         "sources": [
@@ -34,7 +76,12 @@
             "citation": "camp-finder council-069/ct-edmund-d-strang-scout-reservation (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/069-104966"
+            "url": "https://scoutingevent.com/069-104966",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/069165929/OR/2026_Summer_Camp_Program.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

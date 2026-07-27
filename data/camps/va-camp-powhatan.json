@@ -25,8 +25,204 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "eight-person adirondack shelters in several campsites"
+        },
+        {
+          "code": "amphitheater",
+          "note": "campfire area used for the opening and closing campfires"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "astronomy and space exploration badges"
+        },
+        {
+          "code": "atv",
+          "note": "day trip to the reservation's own riding course and safety riders course"
+        },
+        {
+          "code": "backpacking",
+          "note": "backpacking badge taught in the scoutcraft area"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "building_wifi",
+          "note": "wireless internet for adult leaders only"
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "electrical access in several campsites"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "caving",
+          "note": "day trip to a private wild cave near camp"
+        },
+        {
+          "code": "chapel",
+          "note": "weekly interfaith service held in the camp chapel"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "four-story tower at the camp COPE and climbing center"
+        },
+        {
+          "code": "conservation_project",
+          "note": "unit service projects on the reservation"
+        },
+        {
+          "code": "cope",
+          "note": "nationally accredited low and high COPE course with high ropes elements"
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "western-themed evening range with revolver, double-barrelled shotgun, and lever-action rifle"
+        },
+        {
+          "code": "digital_media",
+          "note": "photography, animation, and game design badges"
+        },
+        {
+          "code": "dining_hall",
+          "note": "family-style meals served in two seatings"
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "Brownsea Island, an all-day all-week program for newly joined Scouts working toward First Class"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "basketry, leatherwork, wood carving, and art in an open handicraft shelter"
+        },
+        {
+          "code": "health_lodge",
+          "note": "health lodge staffed around the clock by medical personnel"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "New River Adventure and scuba tracks based out of this camp"
+        },
+        {
+          "code": "hiking",
+          "note": "over one hundred miles of reservation trails"
+        },
+        {
+          "code": "horseback",
+          "note": "day trip to a partner farm for a riding lesson and trail ride"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_center",
+          "note": "nature lodge built in collaboration with a university"
+        },
+        {
+          "code": "nature_study",
+          "note": "ecology area covering forestry, geology, reptile study, and weather"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "New River Adventure for Scouts in their teens"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pavilion",
+          "note": "open-air handicraft shelter, also used as the arrival gathering point"
+        },
+        {
+          "code": "performing_arts",
+          "note": "music badge offered as an evening class"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "pistol",
+          "note": "revolver shooting within the cowboy action program"
+        },
+        {
+          "code": "platform_tents",
+          "note": "two-person canvas wall tents; primitive sites have bare tent platforms for unit-owned tents"
+        },
+        {
+          "code": "rappelling",
+          "note": "rappelling from the climbing tower and from natural rock"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "day trip to natural rock faces in the river gorge"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "scuba",
+          "note": "open-water certification course run with a partner dive shop"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling",
+          "note": "snorkeling instruction within the diving program"
+        },
+        {
+          "code": "stem",
+          "note": "robotics, electronics, engineering, and game design badges"
+        },
+        {
+          "code": "swimming",
+          "note": "daily open swim plus learn-to-swim and mile swim certifications"
+        },
+        {
+          "code": "trading_post",
+          "note": "camp store with a snack bar"
+        },
+        {
+          "code": "water_blob",
+          "signature": true,
+          "note": "an inflatable blob at the waterfront, launched from a jump off the lifeguard tower"
+        },
+        {
+          "code": "waterfront",
+          "note": "mountain lake used for swimming, boating, and fishing"
+        },
+        {
+          "code": "whitewater_rafting",
+          "note": "class two to four rapids on the river with an outfitter"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking",
+          "note": "wood carving in the handicraft area"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp at Blue Ridge Scout Reservation in the Blue Ridge Mountains of Hiwassee, Virginia, operated by Blue Ridge Mountains Council.",
       "provenance": {
         "sources": [
@@ -35,6 +231,14 @@
           },
           {
             "url": "https://scoutingevent.com/599-brsr26"
+          },
+          {
+            "url": "https://brmcreservation.org/program-pages/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/599174893/OR/BRSR_Leaders_Guide_2026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

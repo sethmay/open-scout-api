@@ -25,8 +25,160 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics",
+          "note": "The waterfront area on Orchard Lake, with open boating, open swimming, a mile swim and boating competitions."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "An astronomy outpost and star party run as an evening program."
+        },
+        {
+          "code": "atv",
+          "note": "A full-day hands-on rider course on the camp's own machines before riding the trails."
+        },
+        {
+          "code": "bike_park",
+          "note": "A bike track at the field sports area."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing",
+          "note": "A climbing wall shared with the challenge course area, including a lit night climb."
+        },
+        {
+          "code": "cope",
+          "note": "A COPE and climbing area with a timed ranger course."
+        },
+        {
+          "code": "digital_media",
+          "note": "Moviemaking, animation and photography at the communications and technology area."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Shifted breakfast and dinner with a rolling midday meal, plus one in-site pizza night and a closing barbecue."
+        },
+        {
+          "code": "escape_room"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Dan Beard program, split into a first tier covering Scout through Second Class and a Pathfinders tier continuing into First Class."
+        },
+        {
+          "code": "fishing",
+          "note": "Includes an evening session at the fishing dock."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "A craft lodge covering sculpture, leatherwork, basketry, pottery, textiles and wood carving."
+        },
+        {
+          "code": "health_lodge",
+          "note": "A staffed first-aid station beside the trading post is the primary point of care in camp."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "knife_throwing"
+        },
+        {
+          "code": "living_history",
+          "note": "A frontier-era program area with branding, period skills and a Brownsea Island exhibit."
+        },
+        {
+          "code": "motorboating",
+          "note": "Run as an all-day trip off the reservation."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "An older-Scout area teaching trades and repair skills."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion",
+          "note": "Pavilions at seven campsites and at the archery instructional area."
+        },
+        {
+          "code": "performing_arts",
+          "note": "Theater instruction that culminates in a Scout-written mock trial performance."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A range and target activities area offering an illuminated night shoot."
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "stem",
+          "note": "A technology hub covering robotics, programming, cybersecurity, game design, nuclear science and an escape room."
+        },
+        {
+          "code": "swimming",
+          "note": "Includes early-morning polar bear swims and a water carnival."
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "On Orchard Lake, with new docks for the swimming section."
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "whitewater_rafting"
+        },
+        {
+          "code": "woodworking"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +187,18 @@
           },
           {
             "url": "https://scoutingevent.com/386-onteora"
+          },
+          {
+            "url": "https://www.onteora.org/files/59882/2026-program-guide",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.onteora.org/aboutus",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.trcscouts.org/camping/onteora/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

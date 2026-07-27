@@ -25,8 +25,173 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery",
+          "note": "Includes action archery special events."
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "atv",
+          "note": "Guided tours of camp with safe-riding instruction and a trail ride."
+        },
+        {
+          "code": "backpacking",
+          "note": "Adventure week teaches backpacking skills and runs an overnight trek."
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "cabins",
+          "note": "Cabins are bookable across Mount Allamuchy Scout Reservation, shared with Camp Wheeler."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Climbing tower alongside a natural rock face."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Dan Beard introductory camper program, ending with an outpost overnight."
+        },
+        {
+          "code": "fishing",
+          "note": "Frenche's Pond."
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "Inflatable climbing obstacle course at the waterfront."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "Basketry, leatherwork, metalwork, pottery wheel and wood carving."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Adventure week combining trekking, whitewater, ATVs and climbing."
+        },
+        {
+          "code": "hiking",
+          "note": "Rocky ridge terrain and a nature trail."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology area covering conservation, plant science and herpetology."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Eagle Academy and Trail to Eagle tracks gated by age and rank."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight"
+        },
+        {
+          "code": "pavilion",
+          "note": "Handicraft pavilion, plus a pavilion or dining fly in each campsite."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two-person wall tents on wooden platforms with canvas cots."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts arriving without a troop form provisional camp troops."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Natural rock face used for climbing alongside the built tower."
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "sports_field",
+          "note": "Volleyball, basketball and campwide games."
+        },
+        {
+          "code": "stem",
+          "note": "Ecology and STEM centre running electricity, electronics and engineering."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake swimming and boating on the reservation."
+        },
+        {
+          "code": "welding",
+          "note": "Metalwork taught in the handicraft area."
+        },
+        {
+          "code": "whitewater_rafting",
+          "note": "Camp-run rapids trip on a nearby river during adventure week."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +199,16 @@
             "citation": "camp-finder council-358/nj-camp-somers (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/358-CampSomers"
+            "url": "https://scoutingevent.com/358-CampSomers",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://ppcscouting.org/wp-content/uploads/2026-Camp-Somers-Leaders-Guide-1.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://ppcscouting.org/wp-content/uploads/2026-Camp-Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

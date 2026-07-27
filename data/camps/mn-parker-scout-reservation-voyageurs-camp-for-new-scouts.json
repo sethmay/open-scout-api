@@ -26,8 +26,76 @@
         "cub_resident",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities"
+        },
+        {
+          "code": "amphitheater",
+          "note": "Council campfire ring used for the closing campfire."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower house on the reservation."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "chapel",
+          "note": "Used for the camp worship service."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "Voyageurs is built entirely around Scout through First Class rank requirements."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "Fire building, wood cutting, knot tying, camping and first aid."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "themed_lodging",
+          "signature": true,
+          "note": "Miller Castle, a twelve-thousand-square-foot castle with fortress wall, catwalk and drawbridge, sleeping ninety."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Sandy beach on North Long Lake."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp for new Scouts on 276 acres at Parker Scout Reservation, set on North Long Lake near Nisswa, Minnesota.",
       "provenance": {
         "sources": [
@@ -35,7 +103,16 @@
             "citation": "camp-finder council-296/mn-parker-scout-reservation-voyageurs-camp-for-new-scouts (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/296-Voyageurs2026"
+            "url": "https://scoutingevent.com/296-Voyageurs2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingcmc.org/camp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/296147309/OR/LeaderParent_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

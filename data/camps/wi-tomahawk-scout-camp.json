@@ -25,8 +25,231 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery",
+          "note": "archery badge plus open range times and moving-target sporting arrows"
+        },
+        {
+          "code": "astronomy",
+          "note": "star party and moon charts for the astronomy badge"
+        },
+        {
+          "code": "atv",
+          "note": "two-tier program with a safety riding course and an extended ride over six miles of back trails on the property"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "propane forge, hammers, and anvil in the metalwork badge, plus smithing at the logging outpost"
+        },
+        {
+          "code": "cabins",
+          "note": "log cabin at the logging outpost for a small overnight group"
+        },
+        {
+          "code": "canoeing",
+          "note": "canoe outposts and a voyageur canoe, plus a whitewater badge paddled on nearby rivers"
+        },
+        {
+          "code": "chalkball",
+          "note": "paintball range with a variety of targets"
+        },
+        {
+          "code": "cit_program",
+          "note": "four-week counsellor-in-training program for older youth"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "sixty-foot mega tower plus open climbing in the evenings"
+        },
+        {
+          "code": "conservation_project",
+          "note": "conservation project offered as a unit activity"
+        },
+        {
+          "code": "cope",
+          "note": "high ropes course fifty feet up with ten aerial elements, three ascents, and a flying squirrel"
+        },
+        {
+          "code": "digital_media",
+          "note": "photography badge with cameras available to borrow"
+        },
+        {
+          "code": "disc_golf",
+          "note": "eighteen-hole course, also used to earn the golf badge"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Brownsea, a first-year advancement track taught in day themes"
+        },
+        {
+          "code": "fishing",
+          "note": "fishing and fly fishing badges leading to a complete angler award"
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "the aqua rig, a floating platform with a rope swing and launch blob"
+        },
+        {
+          "code": "geocaching",
+          "note": "explore camp by GPS and sign the logbook in each cache"
+        },
+        {
+          "code": "golf"
+        },
+        {
+          "code": "handicraft",
+          "note": "basketry, leatherwork, wood carving, and open handicraft in the evenings"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "bundled older-Scout high-adventure tracks"
+        },
+        {
+          "code": "hiking",
+          "note": "five-mile hike route out to the logging outpost"
+        },
+        {
+          "code": "horseback",
+          "note": "corral on the property with trail rides and a horsemanship badge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "knife_throwing",
+          "note": "knife throwing at the logging outpost and the paintball range"
+        },
+        {
+          "code": "living_history",
+          "signature": true,
+          "note": "logging camp outpost interpreting old-time logging, with candle making, spar-pole climbing, branding, two-person sawing, and root beer from the tap"
+        },
+        {
+          "code": "motorboating",
+          "note": "badge includes a state boater's permit"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "single-track trails at camp plus nine miles of continuous single track off camp"
+        },
+        {
+          "code": "museum",
+          "note": "history exhibit at the welcome center"
+        },
+        {
+          "code": "nature_study",
+          "note": "ecology area with owl-pellet dissection, bog hikes, and beaver ecology"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "a large slate of programs reserved for Scouts thirteen and older"
+        },
+        {
+          "code": "orienteering",
+          "note": "one-mile orienteering course laid out in the woods"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "overnight stays at the logging outpost and canoe outposts"
+        },
+        {
+          "code": "pioneering",
+          "note": "lashing and knot-tying instruction, with knot-tying races in the evenings"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "all-star campers without a unit are matched with a host unit for the week"
+        },
+        {
+          "code": "rifle",
+          "note": "rifle badge and open shoots, plus a lever-action rifle at the logging outpost"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "offsite trip to climb natural rock on nearby cliffs"
+        },
+        {
+          "code": "rocketry",
+          "note": "model rocket built for the space exploration badge"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing",
+          "signature": true,
+          "note": "small-boat sailing, catamarans, wind surfing, a closing regatta, and a multi-day cruise on a fifty-foot boat on the big lake"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "scoutcraft area that lends map and compass gear and runs open program"
+        },
+        {
+          "code": "shotgun",
+          "note": "shotgun badge and open shoots, plus a double-barrelled shotgun at the logging outpost"
+        },
+        {
+          "code": "snorkeling",
+          "note": "unit snorkel sessions at the waterfront"
+        },
+        {
+          "code": "sports_field",
+          "note": "volleyball and water polo tournaments through the week"
+        },
+        {
+          "code": "stem",
+          "note": "four-year rotation of STEM badges taught at the welcome center"
+        },
+        {
+          "code": "swimming",
+          "note": "open swim, swim lessons by ability level, and a mile swim"
+        },
+        {
+          "code": "tomahawk_throwing",
+          "note": "tomahawk throwing at the logging outpost"
+        },
+        {
+          "code": "trade_skills"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_blob",
+          "note": "a thirty-five-foot inflatable blob on the floating aqua rig"
+        },
+        {
+          "code": "water_trampoline",
+          "note": "open aqua trampoline at the beach"
+        },
+        {
+          "code": "waterfront",
+          "note": "lake beach supporting the whole aquatics program"
+        },
+        {
+          "code": "welding",
+          "note": "wire-feed welders, plus metalwork and plumbing trades badges at the camp shop"
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "campers build and sleep in an improvised shelter for the badge"
+        },
+        {
+          "code": "wildlife_viewing",
+          "note": "visit to the camp's resident bison herd"
+        },
+        {
+          "code": "woodworking",
+          "note": "woodwork and wood carving badges at the camp shop"
+        },
+        {
+          "code": "zip_line",
+          "note": "five-hundred-foot zip line on the high ropes course"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +258,14 @@
           },
           {
             "url": "https://scoutingevent.com/250-TSCAllStar2026"
+          },
+          {
+            "url": "https://www.camptomahawk.org/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.camptomahawk.org/Portals/4/Documents/Program%20Catalog%202026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

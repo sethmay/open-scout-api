@@ -80,6 +80,9 @@
           "code": "fishing"
         },
         {
+          "code": "giant_swing"
+        },
+        {
           "code": "handicraft"
         },
         {
@@ -160,6 +163,7 @@
         }
       ],
       "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident summer camp at Goshen Scout Reservation, featuring patrol-cooking.",
       "provenance": {
         "sources": [

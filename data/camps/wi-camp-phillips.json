@@ -25,8 +25,120 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "amphitheater used for the leaders' meeting and the weekly troop campfire"
+        },
+        {
+          "code": "archery",
+          "note": "archery badge plus open archery periods"
+        },
+        {
+          "code": "bathhouse",
+          "note": "showerhouse near each campsite"
+        },
+        {
+          "code": "chapel",
+          "note": "chapel overlooking one of the camp lakes"
+        },
+        {
+          "code": "climbing",
+          "note": "climbing offered alongside the COPE program"
+        },
+        {
+          "code": "cope",
+          "note": "high COPE course thirty feet off the ground"
+        },
+        {
+          "code": "digital_media",
+          "note": "cinematography taught in the handicraft area"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "first-year camper track covering Tenderfoot through First Class requirements"
+        },
+        {
+          "code": "fishing",
+          "note": "fishing from rowboats, docks, or shore, with a fly fishing badge offered"
+        },
+        {
+          "code": "handicraft",
+          "note": "basketry and wood carving through to cinematography"
+        },
+        {
+          "code": "nature_study",
+          "note": "ecology and conservation area focused on observing and documenting nature"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "midweek overnight adventures run out of the first-year and outdoor skills areas"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "units can choose patrol or in-site cooking instead of dining hall service"
+        },
+        {
+          "code": "pavilion",
+          "note": "a pavilion with picnic tables in every campsite, plus one at the dining hall"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "four-person tent cabins with wooden floors, screens, canvas walls, rigid roofs, and cots"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts whose unit is not attending can come with a provisional unit"
+        },
+        {
+          "code": "rifle",
+          "note": "rifle badge plus open rifle periods"
+        },
+        {
+          "code": "rowing",
+          "signature": true,
+          "note": "every campsite has its own dock and rowboat with direct lake access"
+        },
+        {
+          "code": "shotgun",
+          "note": "shotgun badge plus open shotgun periods"
+        },
+        {
+          "code": "sports_field",
+          "note": "parade ground used for camp-wide games such as soccer and ultimate frisbee"
+        },
+        {
+          "code": "stem",
+          "note": "space exploration and game design badges"
+        },
+        {
+          "code": "swimming",
+          "note": "open swim during free time"
+        },
+        {
+          "code": "waterfront",
+          "note": "two waterfront areas on separate lakes, one of them a marina"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking",
+          "note": "wood carving in the handicraft area"
+        },
+        {
+          "code": "zip_line",
+          "note": "five-hundred-foot zip line"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +147,14 @@
           },
           {
             "url": "https://scoutingevent.com/637-cp26"
+          },
+          {
+            "url": "https://bsa-cvc.org/camping",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campphillips.org/scouts",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

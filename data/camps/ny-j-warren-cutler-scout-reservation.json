@@ -25,8 +25,75 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Three-sided lean-tos with overhanging roofs, each with a tent area around it."
+        },
+        {
+          "code": "archery",
+          "note": "The range is run most weekends by the campmaster crew."
+        },
+        {
+          "code": "bb_guns",
+          "note": "The range can be run by unit-provided trained instructors or by camp staff when available."
+        },
+        {
+          "code": "cabins",
+          "note": "Lodges and heated buildings with wood-burning stoves, including a three-bedroom lodge with kitchen and a bunkroom sleeping twenty-four."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "fishing",
+          "note": "On the camp's own fishing lake."
+        },
+        {
+          "code": "health_lodge",
+          "note": "An office, exam room, patient resting room and private bathroom for medical staff."
+        },
+        {
+          "code": "hiking",
+          "note": "An extensive system of hiking trails across more than fourteen hundred acres."
+        },
+        {
+          "code": "nature_center",
+          "note": "A nature lodge with taxidermy mounts of local mammals, birds and fish plus plant and tree displays."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "orienteering",
+          "note": "Permanent orienteering courses on the property."
+        },
+        {
+          "code": "rifle",
+          "note": "Use requires a certified rifle instructor and a range safety officer."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "sledding",
+          "note": "A dedicated sledding hill."
+        },
+        {
+          "code": "themed_lodging",
+          "signature": true,
+          "note": "Cub campers stay in five themed villages: tall ships and a lighthouse, an old west fort, a medieval castle, a mountain man encampment and a native village."
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "winter_camping",
+          "note": "Facilities are available year-round, including heated buildings with wood stoves."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": "Cub Scout overnight resident adventure camp operated by Seneca Waterways Council in Naples, New York.",
       "provenance": {
         "sources": [
@@ -35,6 +102,14 @@
           },
           {
             "url": "https://scoutingevent.com/397-csac2026"
+          },
+          {
+            "url": "https://campreservation.com/397/Camps/343",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutsroc.org/camps/j-warren-cutler-scout-reservation",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

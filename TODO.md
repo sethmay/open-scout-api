@@ -297,24 +297,73 @@ source (see the Meriwether evidence in PLAN §5.1).
     - Two agents surveyed the 14: **10 usable, 280 features, 16 signature, zero invented codes**;
       4 correctly left untouched with `features_verified_at: null`. Non-day coverage 77% -> **79%**
       (304/384), feature entries 4,329 -> **4,609**.
-  - **Negative result worth keeping: the guide-PDF lever does NOT rescue the 62 portal camps.**
-    Spiked it across 8 councils covering 12 camps — **0 hits.** The only guide-shaped links on those
-    sites are Cub den-leader advancement booklets, not camp guides. That is consistent with why
-    `find_camp_pages.py` failed on them in 0.32.0: these councils have no camp page *and* no camp
-    guide on their public site. The lever worked in the main wave precisely because those camps
-    already had a council page and the guide was one click from it. **Cheap automation is now
-    exhausted for the 62** — they need per-camp research or a council contact, and should not be
-    re-spiked with another crawler.
-  - Held-back vocabulary proposals from the recovery batch (all singletons, per "a code used once
-    is not yet a category"), recorded here because the files were not kept: `ocean_beachfront`
-    (or-camp-clark), `tabletop_gaming` + `eagle_advancement_intensive` (or-camp-pioneer),
-    `outdoor_cooking` (or-camp-clark), `skilled_trades` (oh-camp-manatoc), `giant_swing`
-    (va-camp-bowman), `heater_stack_dining` + `live_animal_exhibit` (va-camp-marriott), `cascading`
-    + `day_camp_option` (va-camp-rock-enon), `whitewater_canoeing` (va-blue-ridge). `giant_swing`
-    and `live_animal_exhibit` look most likely to recur.
-  - Still open: the 62 portal camps (blocked, see above), the 4 remaining zero-use vocabulary terms
-    (genuine rarities — watch, do not prune), and 3 camps whose council dissolved with no recorded
-    successor (below).
+  - ~~**Negative result worth keeping: the guide-PDF lever does NOT rescue the 62 portal camps.**~~
+    **RETRACTED IN 0.38.0 — the spike was measuring a tool bug, not the data.** It reported 0 hits
+    across 12 camps and I concluded "cheap automation is exhausted for the 62". Wrong. Reading a
+    `scoutingevent.com` URL without a selector follows a redirect to an empty "you have not selected
+    a calendar" shell; **the same URL read with `:raw` returns the real page, blurb and all.** Two
+    earlier passes and my spike all mistook that shell for the camps' actual content. With `:raw`
+    plus the Black Pug per-camp facility pages, **all 62 proved surveyable.** Lesson recorded: when
+    a whole population looks uniformly empty, suspect the instrument before the population.
+  - **Portal wave (0.38.0): 62/62 surveyed, non-day coverage 79% -> 95%.** Four agents,
+    **1,752 features, 49 `guide` + 13 `camp_page`, ZERO `portal` tier, zero untouched, zero invented
+    codes.** Feature entries 4,609 -> **6,361**; median surveyed camp now carries ~15 features.
+    The three techniques that did it, all reusable:
+    - `scoutingevent.com/<key>:raw` — mandatory, see above.
+    - `campreservation.com/<councilOrgId>/Camps/<campId>` — Black Pug's council-authored per-camp
+      facility inventories stay live long after the matching event key expires.
+    - Guidebooks behind vanity subdomains redirecting into Google Drive: curl to a temp `.pdf`
+      (append `&confirm=t` to the `drive.usercontent.google.com/download` URL).
+  - **Why these camps looked orphaned, and the test that settles it.** A council with no page for a
+    camp it demonstrably operates often does not *own* it: Camp Coker belongs to the Camp Coker
+    Trust and is leased to Indian Waters Council, Floodwood is run with an alumni association. Look
+    for a trust, foundation, or "Friends of" with its own domain. **Refinement that keeps this from
+    being over-applied: asymmetric silence is the signal** (a council promoting a sibling camp while
+    silent on this one); uniform silence just means the council's whole site is unreadable, and
+    there is no separate owner to find.
+  - **Poisoned domains are a live hazard.** `baitinghollowscoutcamp.org` resolves, carries the
+    exactly-correct camp title, and is squatted SEO spam with a paid backlink to a termite company;
+    two other camp domains in this project are squats, one a gambling site. **Test: a genuine camp
+    site names its council or owning body in its own prose.** Perfect name + no council named = walk
+    away.
+  - Held-back vocabulary proposals, recorded here because the files are not kept. From the recovery
+    batch: `ocean_beachfront`, `tabletop_gaming`, `eagle_advancement_intensive`, `outdoor_cooking`,
+    `skilled_trades`, `heater_stack_dining`, `live_animal_exhibit`, `cascading`, `day_camp_option`,
+    `whitewater_canoeing`. From the portal wave: `air_rifle`, `paintball`, `log_rolling`,
+    `cultural_excursion`, `historic_mine_tour`, `rc_vehicles`, `sauna`, `mini_golf`, `pedal_boats`,
+    `free_fall_jump`, `observation_tower`, `game_room`, `windsurfing`, `drone_racing`, `fire_tower`.
+    Re-rejected again: `family_camp` (an audience, already in `camp-program-types`) and `waterfall`
+    (a landscape feature). `giant_swing` was on this list last release, recurred, and is now a code —
+    the second-sighting rule works, keep using it.
+  - Still open: the 18 non-day camps that remain unsurveyed, the 43 thin surveys queued for review
+    (below), and the 4 zero-use vocabulary terms (genuine rarities — watch, do not prune).
+
+### Manual review queue — `python tools/maintenance.py --out FILE.json`
+
+`features_source_tier` (`guide` / `camp_page` / `portal`) ranks how good the source behind each
+survey was; `guide` camps average 21 features against 13 for `camp_page`. **No camp currently sits
+at `portal`** — every one that looked portal-only turned out to have something better once the
+`:raw` bug was understood — so the practical review queue is the thin tail plus the specific defects
+agents flagged and refused to guess at:
+
+- **43 surveyed camps with <= 5 features** against a ~15 median. Some are honestly small
+  (`va-claytor-lake-aquatics-base` is a day-trip aquatics site with exactly 4 attested activities;
+  `mi-great-lakes-sailing-adventure-the-retriever` is a boat), but most are under-served.
+- **18 non-day camps still unsurveyed** — mostly whole-council outages (`nhscouting.org` 500s
+  site-wide) and the two `website: null` identity cases.
+- **`az-r-c-scout-ranch` — record identity defect, do not fix by guessing.** The record's address,
+  coordinates, elevation and stored website all point at **Camp Raymond** (7709 S Boy Scout Camp
+  Road, Parks AZ) while only `name` says R-C Scout Ranch, and its own `summary` calls R-C the
+  "Raymond-Cragin Scout Reservation". Grand Canyon Council's Black Pug appears to list R-C Scout
+  Ranch (Payson) and Camp Raymond (Parks) as separate properties ~150 miles apart, but GCC's camp
+  nav shows Camp Raymond and no R-C. Three live readings: mislabelled Camp Raymond / R-C is the
+  reservation and Raymond a camp in it / two properties and we are missing one. The features are
+  correct for the property the record locates; `name`, `website` and `summary` were left untouched.
+- **`ok-camp-george-thomas`** — its 19-page Leaders Guide is an image-only scan the reader cannot
+  currently mine (its own image selectors fail), so the camp sits at 14 codes from a facility
+  inventory. Unmined, not empty.
+- **`ar-camp-preston-hunt`** — the pool is attested only by a 2021 guide line saying it would *not*
+  be in use that season. Verify before trusting.
 - **Camps on councils that no longer exist — guard added 0.37.0.** Six *active* camps were hanging
   off dissolved councils, undetected because `check_ref` only proves a ref resolves and a
   merged-away council still resolves. `validate_data.py` now hard-fails a current camp whose council
