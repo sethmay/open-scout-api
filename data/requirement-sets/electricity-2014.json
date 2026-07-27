@@ -1,0 +1,176 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "electricity-2014",
+  "kind": "requirement-set",
+  "subject": "merit-badge:electricity",
+  "effective_from": "2014-01-01",
+  "effective_to": "2020-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Electricity Merit Badge Requirements (2014, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb043-14.asp",
+    "year": 2014
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Demonstrate that you know how to respond to electrical emergencies by doing the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Show how to rescue a person touching a live wire in the home."
+        },
+        {
+          "number": "1b",
+          "text": "Show how to render first aid to a person who is unconscious from electrical shock."
+        },
+        {
+          "number": "1c",
+          "text": "Show how to treat an electrical burn."
+        },
+        {
+          "number": "1d",
+          "text": "Explain what to do in an electrical storm."
+        },
+        {
+          "number": "1e",
+          "text": "Explain what to do in the event of an electrical fire."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Complete an electrical home safety inspection of your home, using the checklist found in this pamphlet or one approved by your counselor. Discuss what you find with your counselor."
+    },
+    {
+      "number": "3",
+      "text": "Make a simple electromagnet and use it to show magnetic attraction and repulsion."
+    },
+    {
+      "number": "4",
+      "text": "Explain the difference between direct current and alternating current."
+    },
+    {
+      "number": "5",
+      "text": "Make a simple drawing to show how a battery and an electric bell work."
+    },
+    {
+      "number": "6",
+      "text": "Explain why a fuse blows or a circuit breaker trips. Tell how to find a blown fuse or tripped circuit breaker in your home. Show how to safely reset the circuit breaker."
+    },
+    {
+      "number": "7",
+      "text": "Explain what overloading an electric circuit means. Tell what you have done to make sure your home circuits are not overloaded."
+    },
+    {
+      "number": "8",
+      "text": "Make a floor plan wiring diagram of the lights, switches, and outlets for a room in your home. Show which fuse or circuit breaker protects each one."
+    },
+    {
+      "number": "9",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Read an electric meter and, using your family's electric bill, determine the energy cost from the meter readings."
+        },
+        {
+          "number": "9b",
+          "text": "Discuss with your counselor five ways in which your family can conserve energy."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Explain the following electrical terms:"
+    },
+    {
+      "number": "11",
+      "text": "volt,"
+    },
+    {
+      "number": "12",
+      "text": "ampere,"
+    },
+    {
+      "number": "13",
+      "text": "watt,"
+    },
+    {
+      "number": "14",
+      "text": "ohm,"
+    },
+    {
+      "number": "15",
+      "text": "resistance,"
+    },
+    {
+      "number": "16",
+      "text": "potential difference,"
+    },
+    {
+      "number": "17",
+      "text": "rectifier,"
+    },
+    {
+      "number": "18",
+      "text": "rheostat,"
+    },
+    {
+      "number": "19",
+      "text": "conductor,"
+    },
+    {
+      "number": "20",
+      "text": "ground,"
+    },
+    {
+      "number": "21",
+      "text": "circuit, and"
+    },
+    {
+      "number": "22",
+      "text": "short circuit"
+    },
+    {
+      "number": "23",
+      "text": "Do any TWO of the following:",
+      "children": [
+        {
+          "number": "23a",
+          "text": "Connect a buzzer, bell, or light with a battery. Have a key or switch in the line."
+        },
+        {
+          "number": "23b",
+          "text": "Make and run a simple electric motor (not from a kit)."
+        },
+        {
+          "number": "23c",
+          "text": "Build a simple rheostat. Show that it works."
+        },
+        {
+          "number": "23d",
+          "text": "Build a single-pole, double-throw switch. Show that it works."
+        },
+        {
+          "number": "23e",
+          "text": "Hook a model electric train layout to a house circuit. Tell how it works."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb043-14.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "pottery-2003",
+  "kind": "requirement-set",
+  "subject": "merit-badge:pottery",
+  "effective_from": "2003-01-01",
+  "effective_to": "2008-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Pottery Merit Badge Requirements (2003, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb087-03.asp",
+    "year": 2003
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain to your counselor the precautions that must be followed for the safe use and operation of a potter’s tools, equipment, and other materials."
+    },
+    {
+      "number": "2",
+      "text": "Explain the properties and ingredients of a good clay body for the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Making sculpture"
+        },
+        {
+          "number": "2b",
+          "text": "Throwing on the wheel"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Make two drawings of pottery forms, each on an 8 1/2 by 11 inch sheet of paper. One must be a historical pottery type. The other must be of your own design."
+    },
+    {
+      "number": "4",
+      "text": "Explain the meaning of the following pottery terms: bat, wedging, throwing, leather hard, bone dry, greenware, bisque, terra-cotta, grog, slip, score, earthenware, stoneware, porcelain, pyrometric cone, and glaze."
+    },
+    {
+      "number": "5",
+      "text": "Do the following. Each piece is to be painted, glazed, or otherwise decorated by you:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Make a slab pot, a coil pot, and a pinch pot."
+        },
+        {
+          "number": "5b",
+          "text": "Make a human or animal figurine or decorative sculpture."
+        },
+        {
+          "number": "5c",
+          "text": "Throw a functional form on a potter's wheel."
+        },
+        {
+          "number": "5d",
+          "text": "Help to fire a kiln."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Tell how three different kinds of potter’s wheels work."
+    },
+    {
+      "number": "7",
+      "text": "Visit the kiln yard at a local college or other crafts school. Learn how the different kinds of kilns work, including the low-fire electric, high-fire gas or propane, wood or salt/soda, and raku."
+    },
+    {
+      "number": "8",
+      "text": "Explain the scope of the ceramic industry in the United States. Tell some things made other than craft pottery."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb087-03.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

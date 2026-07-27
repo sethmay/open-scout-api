@@ -1,0 +1,68 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "hiking-2013",
+  "kind": "requirement-set",
+  "subject": "merit-badge:hiking",
+  "effective_from": "2013-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Hiking Merit Badge Requirements (2013, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb061-13.asp",
+    "year": 2013
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while hiking, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while hiking, including hypothermia, heatstroke, heat exhaustion, frostbite, dehydration, sunburn, sprained ankle, insect stings, tick bites, snakebite, blisters, hyperventilation, and altitude sickness."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain and, where possible, show the points of good hiking practices. including the principles of Leave No Trace, hiking safety in the daytime and at night, courtesy to others, choice of footwear, and proper care of feet and footwear."
+    },
+    {
+      "number": "3",
+      "text": "Explain how hiking is an aerobic activity. Develop a plan for conditioning yourself for 10-mile hikes, and describe how you will increase your fitness for longer hikes."
+    },
+    {
+      "number": "4",
+      "text": "Make a written plan for a 10-mile hike, including map routes, a clothing and equipment list, and a list of items for a trail lunch."
+    },
+    {
+      "number": "5",
+      "text": "Take five hikes, each on a different day, and each of at least ten continuous miles. You may stop for as many short rest periods as needed, as well as one meal, during each hike, but not for an extended period (example: overnight). Prepare a hike plan for each hike.*"
+    },
+    {
+      "number": "6",
+      "text": "Take a hike of 20 continuous miles in one day following a hike plan you have prepared.*"
+    },
+    {
+      "number": "7",
+      "text": "After each of the hikes (or during each hike if on one continuous \"trek\") in requirements 5 and 6, write a short report of your experience. Give dates and descriptions of routes covered, the weather, and interesting things you saw. Share this report with your merit badge counselor."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb061-13.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

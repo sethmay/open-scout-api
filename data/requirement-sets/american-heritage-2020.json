@@ -5,7 +5,7 @@
   "subject": "merit-badge:american-heritage",
   "effective_from": "2020-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:american-heritage-2014",
   "source_document": {
     "title": "American Heritage Merit Badge Requirements (2020)",
     "url": "https://www.scouting.org/merit-badges/american-heritage/",

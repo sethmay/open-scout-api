@@ -5,7 +5,7 @@
   "subject": "merit-badge:first-aid",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:first-aid-2024",
   "source_document": {
     "title": "First Aid Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/first-aid/",

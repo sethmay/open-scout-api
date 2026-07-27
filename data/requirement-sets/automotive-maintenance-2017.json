@@ -1,0 +1,295 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "automotive-maintenance-2017",
+  "kind": "requirement-set",
+  "subject": "merit-badge:automotive-maintenance",
+  "effective_from": "2017-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Automotive Maintenance Merit Badge Requirements (2017, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb127-17.asp",
+    "year": 2017
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the hazards you are most likely to encounter during automotive maintenance activities, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss with your counselor the safety equipment, tools, and clothing used while checking or repairing a motor vehicle. Use this equipment, tools, and/or clothing (when needed or called for) in meeting the requirements for this merit badge."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "General Maintenance, Safety, and Registration Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Review the maintenance chart in the owner's manual. Explain the requirements and time limits."
+        },
+        {
+          "number": "2b",
+          "text": "Demonstrate how to check the following:",
+          "children": [
+            {
+              "number": "2b(1)",
+              "text": "Brake Fluid"
+            },
+            {
+              "number": "2b(2)",
+              "text": "Engine Oil"
+            },
+            {
+              "number": "2b(3)",
+              "text": "Coolant"
+            },
+            {
+              "number": "2b(4)",
+              "text": "Power steering fluid"
+            },
+            {
+              "number": "2b(5)",
+              "text": "Windshield washer fluid"
+            },
+            {
+              "number": "2b(6)",
+              "text": "Transmission fluid"
+            },
+            {
+              "number": "2b(7)",
+              "text": "Battery fluid (if possible) and condition of the battery terminals"
+            }
+          ]
+        },
+        {
+          "number": "2c",
+          "text": "Locate the fuse boxes; determine the type and size of fuses. Demonstrate the proper replacement of burned-out fuses."
+        },
+        {
+          "number": "2d",
+          "text": "Demonstrate how to check the condition and tension of belts and hoses."
+        },
+        {
+          "number": "2e",
+          "text": "Check the vehicle for proper operation of its lights, including the interior overhead lights, instrument lights, warning lights, and exterior bulbs."
+        },
+        {
+          "number": "2f",
+          "text": "Locate and check the air filter(s)."
+        },
+        {
+          "number": "2g",
+          "text": "Explain the purpose, importance, and limitations of safety belts and passive restraints."
+        },
+        {
+          "number": "2h",
+          "text": "Find out the requirements for your state';s emissions and safety inspections (as applicable), including how often a vehicle needs to be inspected."
+        },
+        {
+          "number": "2i",
+          "text": "Explain the importance of registering a vehicle and find out the annual registration fee for renewing your family car's registration."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Dashboard. Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the function of the fuel gauge, speedometer, tachometer, oil pressure, and engine temperature gauge. Point out each one on the instrument cluster."
+        },
+        {
+          "number": "3b",
+          "text": "Explain the symbols that light up on the dashboard and the difference between the yellow and red symbols. Explain each of the indicators on the dashboard, using the owner's manual, if necessary."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Tires. Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Explain the difference between tire manufacturer's and vehicle manufacturer's specifications and show where to find them."
+        },
+        {
+          "number": "4b",
+          "text": "Demonstrate how to check pressure and properly inflate a tire. Check the spare tire and make sure it is ready for use."
+        },
+        {
+          "number": "4c",
+          "text": "Explain why wheel alignment is important to the life of a tire. Explain camber, caster, and toe-in adjustments on wheel alignment."
+        },
+        {
+          "number": "4d",
+          "text": "Explain the purpose of the lateral-wear bar indicator."
+        },
+        {
+          "number": "4e",
+          "text": "Explain how to dispose of old tires in accordance with local laws and regulations."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Engine. Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain how an internal combustion engine operates. Tell the differences between gasoline and diesel engines. Explain how a gasoline-electric hybrid vehicle is powered."
+        },
+        {
+          "number": "5b",
+          "text": "Explain the purpose of engine oil. Explain the API service code, the SAE number, and the viscosity rating."
+        },
+        {
+          "number": "5c",
+          "text": "Explain where to find the recommended oil type and the amount of oil to be used in the vehicle's engine."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Cooling system Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Explain the need for coolant in the cooling system, and the importance of selecting the correct coolant type for a given vehicle."
+        },
+        {
+          "number": "6b",
+          "text": "Explain how to flush and change the engine coolant in the vehicle , and how to properly dispose of the used coolant."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Fuel system. Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Explain how the air and fuel systems work together and why it is necessary to have an air filter and fuel filter."
+        },
+        {
+          "number": "7b",
+          "text": "Explain how a how a fuel injection system works and how an on-board computer works with the fuel injection system."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Ignition and electrical systems. Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Diagram and explain the parts of the electrical system."
+        },
+        {
+          "number": "8b",
+          "text": "Explain the engine’s firing order."
+        },
+        {
+          "number": "8c",
+          "text": "Explain the purpose of the spark gap."
+        },
+        {
+          "number": "8d",
+          "text": "Demonstrate how to safely connect jumper cables to your car battery."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Drive Train. Do the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Diagram the drive train and explain the different parts."
+        },
+        {
+          "number": "9b",
+          "text": "Explain the difference between automatic and standard transmissions."
+        },
+        {
+          "number": "9c",
+          "text": "Explain the types of automatic transmission fluid."
+        },
+        {
+          "number": "9d",
+          "text": "Explain the types of lubricants used in a standard transmission and in the differential and transfer case."
+        },
+        {
+          "number": "9e",
+          "text": "Explain the difference between front-wheel, rear- wheel, and four-wheel drive."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Brake System. Do the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Explain the brake system (including anti-lock systems) and how it operates."
+        },
+        {
+          "number": "10b",
+          "text": "Explain the differences between disc and drum systems."
+        },
+        {
+          "number": "10c",
+          "text": "Demonstrate how to check the condition of a vehicle's brake system. After checking make recommendations for repairs (if necessary)."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "Do two of the following:",
+      "children": [
+        {
+          "number": "11a",
+          "text": "Determine the value of three different vehicles you are interested in purchasing. One must be new and one must be used; the third vehicle can be new or used. For each vehicle, find out the requirements and cost of automobile insurance to include basic liability and options for collision, comprehensive, towing, and rental car. Using the three vehicles you chose and with your merit badge counselor's assistance, complete the operation/maintenance chart provided in the merit badge pamphlet. Use this information to determine the operating cost per mile for each vehicle, and discuss what you learn with your counselor."
+        },
+        {
+          "number": "11b",
+          "text": "Choose a car cleaner and wax product for a vehicle you want to clean. Explain clear-coat paint and the precautions necessary for care. Clean the vehicle, both inside and out, and wax the exterior. Use a vinyl and rubber protectant (on vinyl tops, rubber door seals, sidewalls, etc.) and explain the importance of the protectant."
+        },
+        {
+          "number": "11c",
+          "text": "Locate the manufacturer's jack Use the jack to demonstrate how to engage the jack correctly on the vehicle, then change a tire correctly."
+        },
+        {
+          "number": "11d",
+          "text": "Perform an oil filter and oil change on a vehicle. Explain how to properly dispose of the used oil and filter."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "12",
+      "text": "Find out about three career opportunities in the automotive industry. Pick one and find out about the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb127-17.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

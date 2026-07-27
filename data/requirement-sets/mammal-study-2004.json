@@ -1,0 +1,96 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "mammal-study-2004",
+  "kind": "requirement-set",
+  "subject": "merit-badge:mammal-study",
+  "effective_from": "2004-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Mammal Study Merit Badge Requirements (2004, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb071-04.asp",
+    "year": 2004
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain the meaning of \"animal,\" \"invertebrate,\" \"vertebrate,\" and \"mammal.\" Name three characteristic that distinguish mammals from all other animals."
+    },
+    {
+      "number": "2",
+      "text": "Explain how the animal kingdom is classified. Explain where mammals fit in the classification of animals. Classify three mammals from phylum through species."
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Spend 3 hours in each of two different kinds of natural habitats or at different elevations. List the different mammal species and individual members that you identified by sight or sign. Tell why all mammals do not live in the same kind of habitat."
+        },
+        {
+          "number": "3b",
+          "text": "Spend 3 hours on each of 5 days on at least a 25- acre area (about the size of 3 1/2 football fields). List the mammal species you identified by sight or sign."
+        },
+        {
+          "number": "3c",
+          "text": "From study and reading, write a simple history of one nongame mammal that lives in your area. Tell how this mammal lived before its habitat was affected in any way by humans. Tell how it reproduces, what it eats, and its natural habitat. Describe its dependency upon plants, upon other animals (including humans), and how they depend upon it. Tell how it is helpful or harmful to humankind."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Under the guidance of a nature center or natural history museum, make two study skins of rats or mice. Tell the uses of study skins and mounted specimens respectively."
+        },
+        {
+          "number": "4b",
+          "text": "Take good pictures of two kinds of mammals in the wild. Record light conditions, film used, exposure, and other factors, including notes on the activities of the pictured animals."
+        },
+        {
+          "number": "4c",
+          "text": "Write a life history of a native game mammal that lives in your area, covering the points outlined in requirement 3c. List sources for this information."
+        },
+        {
+          "number": "4d",
+          "text": "Make and bait a tracking pit. Report what mammals and other animals came to the bait."
+        },
+        {
+          "number": "4e",
+          "text": "Visit a natural history museum. Report on how specimens are prepared and cataloged. Explain the purposes of museums."
+        },
+        {
+          "number": "4f",
+          "text": "Write a report of 500 words on a book about a mammal species."
+        },
+        {
+          "number": "4g",
+          "text": "Trace two possible food chains of carnivorous mammals from soil through four stages to the mammal."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Working with your counselor, select and carry out one project that will influence the numbers of one or more mammals."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb071-04.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

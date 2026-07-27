@@ -5,7 +5,7 @@
   "subject": "merit-badge:aviation",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:aviation-2014",
   "source_document": {
     "title": "Aviation Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/aviation/",

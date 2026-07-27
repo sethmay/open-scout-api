@@ -1,0 +1,424 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "health-care-professions-2018",
+  "kind": "requirement-set",
+  "subject": "merit-badge:health-care-professions",
+  "effective_from": "2018-01-01",
+  "effective_to": "2021-11-14",
+  "supersedes": null,
+  "source_document": {
+    "title": "Health Care Professions Merit Badge Requirements (2018, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/old/mb130-18.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your counselor the influence that EIGHT of the following people or events had on the history of health care:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Hippocrates"
+        },
+        {
+          "number": "1b",
+          "text": "William Harvey"
+        },
+        {
+          "number": "1c",
+          "text": "Antoine van Leeuwenhoek"
+        },
+        {
+          "number": "1d",
+          "text": "Edward Jenner"
+        },
+        {
+          "number": "1e",
+          "text": "Florence Nightingale"
+        },
+        {
+          "number": "1f",
+          "text": "Louis Pasteur"
+        },
+        {
+          "number": "1g",
+          "text": "Gregor Mendel"
+        },
+        {
+          "number": "1h",
+          "text": "Joseph Lister"
+        },
+        {
+          "number": "1i",
+          "text": "Robert Koch"
+        },
+        {
+          "number": "1j",
+          "text": "Daniel Hale Williams"
+        },
+        {
+          "number": "1k",
+          "text": "Wilhelm Conrad Roentgen"
+        },
+        {
+          "number": "1l",
+          "text": "Marie and Pierre Curie"
+        },
+        {
+          "number": "1m",
+          "text": "Walter Reed"
+        },
+        {
+          "number": "1n",
+          "text": "Karl Landsteiner"
+        },
+        {
+          "number": "1o",
+          "text": "Alexander Fleming"
+        },
+        {
+          "number": "1p",
+          "text": "Charles Richard Drew"
+        },
+        {
+          "number": "1q",
+          "text": "Helen Taussig"
+        },
+        {
+          "number": "1r",
+          "text": "Jonas Salk"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain the Hippocratic Oath to your counselor, and compare to the original version to a more modern one. Discuss to whom those subscribing to the original version of the oath owe the greatest allegiance."
+    },
+    {
+      "number": "3",
+      "text": "Discuss the health-care provider-patient relationship with your counselor, and the importance of such a relationship in the delivery of quality care to the patient. Describe the role of confidentiality in this relationship."
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Describe the roles the following people play in the delivery of health care.",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "Allopathic physician (M.D.)and Osteopathic physician (D.O."
+            },
+            {
+              "number": "4a(2)",
+              "text": "Chiropractor (D.C.)"
+            },
+            {
+              "number": "4a(3)",
+              "text": "Emergency medical technician"
+            },
+            {
+              "number": "4a(4)",
+              "text": "Licensed practical/vocational nurse"
+            },
+            {
+              "number": "4a(5)",
+              "text": "Medical assistant"
+            },
+            {
+              "number": "4a(6)",
+              "text": "Medical laboratory technologist"
+            },
+            {
+              "number": "4a(7)",
+              "text": "Nurse-midwife"
+            },
+            {
+              "number": "4a(8)",
+              "text": "Nurse practitioner"
+            },
+            {
+              "number": "4a(9)",
+              "text": "Occupational therapist"
+            },
+            {
+              "number": "4a(10)",
+              "text": "Optometrist"
+            },
+            {
+              "number": "4a(11)",
+              "text": "Pharmacist"
+            },
+            {
+              "number": "4a(12)",
+              "text": "Physical therapist"
+            },
+            {
+              "number": "4a(13)",
+              "text": "Physician's assistant"
+            },
+            {
+              "number": "4a(14)",
+              "text": "Podiatrist"
+            },
+            {
+              "number": "4a(15)",
+              "text": "Psychologist"
+            },
+            {
+              "number": "4a(16)",
+              "text": "Radiologic technologist"
+            },
+            {
+              "number": "4a(17)",
+              "text": "Registered Nurse"
+            },
+            {
+              "number": "4a(18)",
+              "text": "Respiratory therapist"
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "Describe the educational and licensing requirements to practice health care in your state for FIVE of the professions in requirement 4a. (Not all professions may exist in your state.)."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": null,
+      "children": [
+        {
+          "number": "5a",
+          "text": "Tell what is meant by the term \"primary care\" with regard to a medical specialty."
+        },
+        {
+          "number": "5b",
+          "text": "Briefly describe the types of work done by physicians in the following specialties:",
+          "children": [
+            {
+              "number": "5b(1)",
+              "text": "Internal medicine*"
+            },
+            {
+              "number": "5b(2)",
+              "text": "Family practice*"
+            },
+            {
+              "number": "5b(3)",
+              "text": "Obstetrics/gynecology*"
+            },
+            {
+              "number": "5b(4)",
+              "text": "Pediatrics*"
+            },
+            {
+              "number": "5b(5)",
+              "text": "Psychiatry"
+            },
+            {
+              "number": "5b(6)",
+              "text": "Surgery"
+            }
+          ]
+        },
+        {
+          "number": "5c",
+          "text": "Describe the additional educational requirements for these specialties."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": null,
+      "children": [
+        {
+          "number": "6a",
+          "text": "Briefly describe the types of work performed by physicians in FIVE of the following specialties or subspecialties:",
+          "children": [
+            {
+              "number": "6a(1)",
+              "text": "Allergy/immunology"
+            },
+            {
+              "number": "6a(2)",
+              "text": "Anesthesiology"
+            },
+            {
+              "number": "6a(3)",
+              "text": "Cardiology"
+            },
+            {
+              "number": "6a(4)",
+              "text": "Colorectal surgery"
+            },
+            {
+              "number": "6a(5)",
+              "text": "Critical care medicine (intensive care medicine)"
+            },
+            {
+              "number": "6a(6)",
+              "text": "Dermatology"
+            },
+            {
+              "number": "6a(7)",
+              "text": "Emergency Medicine"
+            },
+            {
+              "number": "6a(8)",
+              "text": "Endocrinology"
+            },
+            {
+              "number": "6a(9)",
+              "text": "Gastroenterology"
+            },
+            {
+              "number": "6a(10)",
+              "text": "Geriatric medicine"
+            },
+            {
+              "number": "6a(11)",
+              "text": "Hematology/oncology"
+            },
+            {
+              "number": "6a(12)",
+              "text": "Hospitalist"
+            },
+            {
+              "number": "6a(13)",
+              "text": "Infectious disease"
+            },
+            {
+              "number": "6a(14)",
+              "text": "Nephrology"
+            },
+            {
+              "number": "6a(15)",
+              "text": "Neuro surgery"
+            },
+            {
+              "number": "6a(16)",
+              "text": "Neurology"
+            },
+            {
+              "number": "6a(17)",
+              "text": "Nuclear medicine"
+            },
+            {
+              "number": "6a(18)",
+              "text": "Ophthalmology"
+            },
+            {
+              "number": "6a(19)",
+              "text": "Orthopedic surgery"
+            },
+            {
+              "number": "6a(20)",
+              "text": "Otolaryngology/head and neck surgery"
+            },
+            {
+              "number": "6a(21)",
+              "text": "Pathology"
+            },
+            {
+              "number": "6a(22)",
+              "text": "Physical medicine and rehabilitation"
+            },
+            {
+              "number": "6a(23)",
+              "text": "Plastic, reconstructive, and maxillofacial surgery."
+            },
+            {
+              "number": "6a(24)",
+              "text": "Preventive medicine"
+            },
+            {
+              "number": "6a(25)",
+              "text": "Pulmonology"
+            },
+            {
+              "number": "6a(26)",
+              "text": "Radiology"
+            },
+            {
+              "number": "6a(27)",
+              "text": "Rheumatology"
+            },
+            {
+              "number": "6a(28)",
+              "text": "Thoracic/cardiothoracic surgery"
+            },
+            {
+              "number": "6a(29)",
+              "text": "Urology"
+            },
+            {
+              "number": "6a(30)",
+              "text": "Vascular surgery"
+            }
+          ]
+        },
+        {
+          "number": "6b",
+          "text": "Describe the additional educational requirements for the five specialties or subspecialties you chose in 6a."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": null,
+      "children": [
+        {
+          "number": "7a",
+          "text": "Visit a physician's office,** preferably one who delivers \"primary care.\" (This may be that of your counselor.) Discuss the components of a medical history and physical examination (an official BSA health form may be used to guide this discussion), and become familiar with the instruments used."
+        },
+        {
+          "number": "7b",
+          "text": "Describe the characteristics of a good diagnostic test to screen for disease (e.g. routine blood pressure measurement). Explain briefly why diagnostic tests are not perfect."
+        },
+        {
+          "number": "7c",
+          "text": "Show how to take a blood pressure reading and a pulse reading."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Discuss the roles medical societies, employers, the insurance industry, and the government play in influencing the practice of medicine in the United States."
+        },
+        {
+          "number": "8b",
+          "text": "Briefly tell how your state monitors the quality of health care within its borders, and how it provides care to those who do not have health insurance."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Compare and discuss with your counselor at least two types of health care delivery systems used throughout the world."
+    },
+    {
+      "number": "10",
+      "text": "Serve as a volunteer at a health-related event or facility in your community (e.g. blood drive, \"health fair\", blood pressure screening, etc.) approved by your counselor."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/old/mb130-18.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

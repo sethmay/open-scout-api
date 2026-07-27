@@ -229,6 +229,30 @@ def main() -> int:
                             f"but text-present={has_text}")
             for r in obj.get("requirements", []):
                 _walk_choose(r, f"requirement-sets/{name}")
+
+        # Revision-chain invariants. Editions of one subject form a single ordered history,
+        # so: no edition supersedes itself, two editions never claim the same effective_from
+        # (ids are <subject>-<year>, so a collision silently overwrites one), and a subject
+        # has exactly one open edition unless the subject itself is retired.
+        by_subject: dict[str, list[dict]] = {}
+        for _n, obj in docs:
+            by_subject.setdefault(obj.get("subject"), []).append(obj)
+        for subj, sets in sorted(by_subject.items()):
+            for obj in sets:
+                if obj.get("supersedes") == f"requirement-set:{obj['id']}":
+                    errs.append(f"requirement-sets/{obj['id']}: supersedes itself")
+            froms = [o["effective_from"] for o in sets]
+            dupe = next((f for f in froms if froms.count(f) > 1), None)
+            if dupe:
+                errs.append(f"requirement-sets: subject {subj!r} has two editions effective {dupe} "
+                            f"(ids collide on year; one would overwrite the other)")
+            opens = [o for o in sets if o.get("effective_to") is None]
+            subject_open = subj in open_ended
+            if len(opens) > 1:
+                errs.append(f"requirement-sets: subject {subj!r} has {len(opens)} open editions "
+                            f"({', '.join(o['id'] for o in opens)}); at most one may be current")
+            elif not opens and subject_open:
+                errs.append(f"requirement-sets: subject {subj!r} is current but has no open edition")
         nrs = len(docs)
 
     # pass 5: controlled vocabularies + every code used in camp data must be defined

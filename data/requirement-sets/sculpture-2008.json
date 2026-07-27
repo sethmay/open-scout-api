@@ -1,0 +1,57 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "sculpture-2008",
+  "kind": "requirement-set",
+  "subject": "merit-badge:sculpture",
+  "effective_from": "2008-01-01",
+  "effective_to": "2017-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Sculpture Merit Badge Requirements (2008, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb101-08.asp",
+    "year": 2008
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain to your counselor the precautions that must be followed for the safe use and operation of a sculptor's tools, equipment, and other materials."
+    },
+    {
+      "number": "2",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Model in clay a life-sized human head. Then sculpt in modeling clay (such as Plastine or Sculpey) or carve/rasp in wood or soft stone a small-scale model of an animal or person. Explain to your counselor the method and tools you used to sculpt the figure."
+        },
+        {
+          "number": "2b",
+          "text": "Make a plaster mold of a fruit or vegetable. In this mold make a copy of the fruit or vegetable. Explain to your counselor the method and tools you used to make the copy."
+        },
+        {
+          "number": "2c",
+          "text": "With your parent's permission and your counselor's approval, visit a museum, art exhibit, art gallery, artists' co-op, or artist's studio. After your visit, share with your counselor what you have learned. Discuss the importance of visual arts and how it strengthens social tolerance and helps stimulate cultural, intellectual, and personal development."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "3",
+      "text": "Find out about career opportunities in sculpture. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb101-08.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

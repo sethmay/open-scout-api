@@ -1,0 +1,130 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "collections-2009",
+  "kind": "requirement-set",
+  "subject": "merit-badge:collections",
+  "effective_from": "2009-01-01",
+  "effective_to": "2020-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Collections Merit Badge Requirements (2009, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb128-09.asp",
+    "year": 2009
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare a short written report or outline for your counselor, giving a detailed description of your collection,* including a short history. Be sure to include why you chose that particular type of collecting and what you enjoy and have learned from your collection. *Stamp and coin collecting are excluded from eligibility for this merit badge."
+    },
+    {
+      "number": "2",
+      "text": "Explain the growth and development of your collection."
+    },
+    {
+      "number": "3",
+      "text": "Demonstrate your knowledge of preserving and displaying your collection.",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the precautions that you need to take to preserve your collection, including",
+          "children": [
+            {
+              "number": "3a(1)",
+              "text": "Handling"
+            },
+            {
+              "number": "3a(2)",
+              "text": "Cleaning"
+            },
+            {
+              "number": "3a(3)",
+              "text": "Storage"
+            }
+          ]
+        },
+        {
+          "number": "3b",
+          "text": "Explain how best to display your collection, keeping in mind preserving as discussed above."
+        },
+        {
+          "number": "3c",
+          "text": "Explain to your counselor the events available for a hobbyist of this collection, including shows, seminars, conventions, contests, and museum programs or exhibits."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate your knowledge of collecting and investing. Discuss with your counselor:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "How investing and speculation would apply to your collection"
+        },
+        {
+          "number": "4b",
+          "text": "What you would look for in purchasing other collections similar to yours"
+        },
+        {
+          "number": "4c",
+          "text": "What you would expect in return value in the event you decided to sell all or part of the collection"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Discuss with your counselor at least 10 terms commonly used in your collection and be prepared to discuss the definition of each."
+        },
+        {
+          "number": "5b",
+          "text": "Show your counselor any two groups from your collection. Explain how you organized your collection and why you chose that method. (Note: if your collection is too large to transport and your counselor is unable to view your collection directly, photographs should be available to share.)"
+        },
+        {
+          "number": "5c",
+          "text": "Explain how your collection is valued by other collectors and display to your counselor any price guides that may be available."
+        },
+        {
+          "number": "5d",
+          "text": "Explain how your collection is graded for value, physical defects, size and age. Show the various classifications or ratings used in your collection."
+        },
+        {
+          "number": "5e",
+          "text": "List the national, state, or local association responsive to your collection."
+        },
+        {
+          "number": "5f",
+          "text": "Show the location of and explain to your counselor the identification number (if applicable), series, brand name (if any),and any special identification marks."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Discuss with your counselor the plans you have to continue with the collection in the future."
+    },
+    {
+      "number": "7",
+      "text": "Discuss with your counselor why and how collecting has changed and how this applies to your collection."
+    },
+    {
+      "number": "8",
+      "text": "Find out about career opportunities in collecting. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb128-09.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

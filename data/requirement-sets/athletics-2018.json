@@ -1,0 +1,288 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "athletics-2018",
+  "kind": "requirement-set",
+  "subject": "merit-badge:athletics",
+  "effective_from": "2018-01-01",
+  "effective_to": "2021-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Athletics Merit Badge Requirements (2018, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb023-18.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter during athletics activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while participating in athletic events, including sprains, strains, contusions, abrasions, blisters, dehydration, and heat reactions."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Before completing requirements 3 and 5, have your health-care practitioner give you a physical examination, using the Scout medical examination form."
+        },
+        {
+          "number": "2b",
+          "text": "Explain the importance of a physical exam"
+        },
+        {
+          "number": "2c",
+          "text": "Explain the importance of maintaining good health habits, especially during training - and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your health and performance in athletic activities."
+        },
+        {
+          "number": "2d",
+          "text": "Explain the importance of maintaining a healthy diet."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Select an athletic activity that interests you, then do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With guidance from your counselor, establish a personal training program suited to the activity you have chosen. Follow this training program for three months."
+        },
+        {
+          "number": "3b",
+          "text": "Create a chart to monitor your progress during this time."
+        },
+        {
+          "number": "3c",
+          "text": "Explain to your counselor the equipment necessary to participate in this activity and the appropriate clothing for the time of year."
+        },
+        {
+          "number": "3d",
+          "text": "At the end of four (sic) months, review the chart you created for requirement 3b, and discuss with your counselor what progress you have made during training. Tell how your development has affected you mentally and physically."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Give the rules for two athletic activities, one of which is the activity you chose for requirement 3."
+        },
+        {
+          "number": "4b",
+          "text": "Discuss the importance of warming up and cooling down."
+        },
+        {
+          "number": "4c",
+          "text": "Explain to your counselor what an amateur athlete is and the differences between an amateur and a professional athlete."
+        },
+        {
+          "number": "4d",
+          "text": "Discuss the traits and importance of good sportsmanship. Tell what role sportsmanship plays in both individual and group athletic activities."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Complete the activities in FOUR of the following groups and show improvement over a three-month period."
+    },
+    {
+      "number": "6",
+      "text": "Group 1: Sprinting",
+      "children": [
+        {
+          "number": "6a",
+          "text": "100-meter dash"
+        },
+        {
+          "number": "6b",
+          "text": "200-meter dash"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Group 2: Long-Distance Running",
+      "children": [
+        {
+          "number": "7a",
+          "text": "3k run"
+        },
+        {
+          "number": "7b",
+          "text": "5k run"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Group 3: Long Jump OR High Jump",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Running long jump OR running high jump (best of three tries)"
+        },
+        {
+          "number": "8b",
+          "text": "Standing long jump OR standing high jump (best of three tries)"
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Group 4: Swimming",
+      "children": [
+        {
+          "number": "9a",
+          "text": "100-meter swim"
+        },
+        {
+          "number": "9b",
+          "text": "200-meter swim"
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Group 5: Pull-Ups AND Push-Ups",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Pull-ups in two minutes"
+        },
+        {
+          "number": "10b",
+          "text": "Push-ups in two minutes"
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "Group 6: Baseball Throw",
+      "children": [
+        {
+          "number": "11a",
+          "text": "Baseball throw for accuracy, 10 throws at a target (distance to be determined by age): ages 11 to 12, 20 feet; ages 13 to 15, 30 feet; ages 16 to 17, 40 feet"
+        },
+        {
+          "number": "11b",
+          "text": "Baseball throw for distance, five throws (total distance)"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "text": "Group 7: Basketball Shooting",
+      "children": [
+        {
+          "number": "12a",
+          "text": "Basketball shot for accuracy, 10 free-throw shots"
+        },
+        {
+          "number": "12b",
+          "text": "Basketball throw for skill and agility, the following shots as shown on the diagram",
+          "children": [
+            {
+              "number": "12b(1)",
+              "text": "Left-side layup"
+            },
+            {
+              "number": "12b(2)",
+              "text": "Right-side layup"
+            },
+            {
+              "number": "12b(3)",
+              "text": "Left side of hoop, along the key line"
+            },
+            {
+              "number": "12b(4)",
+              "text": "Right side of hoop, along the key line"
+            },
+            {
+              "number": "12b(5)",
+              "text": "Where key line and free-throw line meet, left side"
+            },
+            {
+              "number": "12b(6)",
+              "text": "Where key line and free-throw line meet, right side"
+            },
+            {
+              "number": "12b(7)",
+              "text": "Top of the key"
+            },
+            {
+              "number": "12b(8)",
+              "text": "Anywhere along the three-point line."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "text": "Group 8: Football Kick OR Soccer Kick",
+      "children": [
+        {
+          "number": "13a",
+          "text": "Goals from the 10-yard line, eight kicks"
+        },
+        {
+          "number": "13b",
+          "text": "Football kick or soccer kick for distance, five kicks (total distance)"
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "text": "Group 9: Weight Training",
+      "children": [
+        {
+          "number": "14a",
+          "text": "Chest/bench press, two sets of 15 repetitions each"
+        },
+        {
+          "number": "14b",
+          "text": "Leg curls, two sets of 15 repetitions each"
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "text": "Do the following",
+      "children": [
+        {
+          "number": "15a",
+          "text": "Prepare plans for conducting a sports meet or field day that includes 10activities, at least five of which must come from the groups mentioned in requirement 5. Outline the duties of each official needed and list the equipment the meet will require."
+        },
+        {
+          "number": "15b",
+          "text": "With your parent's and counselor's approval, serve as an official or volunteer at a sports meet to observe officials in action. Tell your counselor about your responsibilities at the meet and discuss what you learned."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb023-18.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "crime-prevention-2020",
+  "kind": "requirement-set",
+  "subject": "merit-badge:crime-prevention",
+  "effective_from": "2020-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:crime-prevention-2018",
+  "source_document": {
+    "title": "Crime Prevention Merit Badge Requirements (2020, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb131.asp",
+    "year": 2020
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss the role and value of laws in society with regard to crime and crime prevention. Include in your discussion the definitions of \"crime\" and \"crime prevention.\""
+    },
+    {
+      "number": "2",
+      "text": "Prepare a journal from various sources that addresses crime and crime prevention efforts in your community."
+    },
+    {
+      "number": "3",
+      "text": "Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "The role of citizens, including youth, in crime prevention"
+        },
+        {
+          "number": "3b",
+          "text": "Gangs and their impact on the community"
+        },
+        {
+          "number": "3c",
+          "text": "When and how to report a crime"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "After doing EACH of the following, discuss with your counselor what you have learned.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Inspect your neighborhood for opportunities that may lead to crime. Learn how to do a crime prevention survey."
+        },
+        {
+          "number": "4b",
+          "text": "Using the checklist in this (the merit badge) pamphlet, conduct a security survey of your home and discuss the results with your family."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Teach your family or patrol members how to protect themselves from crime at home. at school, in your community, and while traveling."
+    },
+    {
+      "number": "6",
+      "text": "Help raise awareness about one school safety issue facing students by doing ONE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Create a poster for display on a school bulletin board."
+        },
+        {
+          "number": "6b",
+          "text": "With permission from school officials, create a page long public service announcement that could be read over the public address system at school or posted on the school's website."
+        },
+        {
+          "number": "6c",
+          "text": "Make a presentation to a group such as a Cub Scout den that addresses the issue."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Assist in the planning and organization of a crime prevention program in your community such as Neighborhood Watch, Community Watch, or Crime Stoppers. Explain how this program can benefit your neighborhood."
+        },
+        {
+          "number": "7b",
+          "text": "With your parent's parent or guardian's and counselor's approval, visit a jail or detention facility or a criminal court hearing. Discuss your experience with your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "How drug abuse awareness programs help prevent crime"
+        },
+        {
+          "number": "8b",
+          "text": "Why alcohol, tobacco, and marijuana are sometimes called \"gateway drugs\" and how \"gateway drugs\" can lead to the use of other drugs"
+        },
+        {
+          "number": "8c",
+          "text": "The potential consequences from the misuse of prescription drugs."
+        },
+        {
+          "number": "8d",
+          "text": "How the illegal sale and use of drugs lead to other crimes"
+        },
+        {
+          "number": "8e",
+          "text": "Three resources in your city where a person with a drug problem or drug-related problem can go for help"
+        },
+        {
+          "number": "8f",
+          "text": "How to recognize child abuse"
+        },
+        {
+          "number": "8g",
+          "text": "The three R's of Youth Protection"
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "The role of a sheriff's or police department in crime prevention."
+        },
+        {
+          "number": "9b",
+          "text": "The purpose and operation of agencies in your community that help law enforcement personnel prevent crime, and how those agencies function during emergency situations."
+        },
+        {
+          "number": "9c",
+          "text": "Explain the role private security plays in crime prevention."
+        },
+        {
+          "number": "9d",
+          "text": "Choose a career in the crime prevention or security industry that interests you. Describe the level of education required and responsibilities of a person in that position. Tell why this position interests you."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb131.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

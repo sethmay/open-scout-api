@@ -1,0 +1,120 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "sports-2017",
+  "kind": "requirement-set",
+  "subject": "merit-badge:sports",
+  "effective_from": "2017-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Sports Merit Badge Requirements (2017, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/old/mb013-17.asp",
+    "year": 2017
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while playing sports, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while participating in sports, including sprains, strains, contusions, abrasions, fractures, blisters, muscle cramps, injured teeth, dehydration, heat and cold reactions, and concussions or other suspected injuries to the head, neck, and back."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain the importance of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "The importance of the physical exam"
+        },
+        {
+          "number": "2b",
+          "text": "The importance of maintaining good health habits for life (such as exercising regularly), and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your health and your performance in sports activities"
+        },
+        {
+          "number": "2c",
+          "text": "The importance of maintaining a healthy diet"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Discuss the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "The importance of warming up and cooling down"
+        },
+        {
+          "number": "3b",
+          "text": "The importance of weight training"
+        },
+        {
+          "number": "3c",
+          "text": "What an amateur athlete is and the differences between an amateur and a professional athlete"
+        },
+        {
+          "number": "3d",
+          "text": "The attributes (qualities) of a good sport, the importance of sportsmanship, and the traits of a good team leader and player who exhibits Scout spirit on and off the playing field"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "With guidance from your counselor, establish a personal training program suited to the activities you choose for requirement 5. Then do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Create a chart and use it to track your training, practice, and development in these sports for one season (or four months)."
+        },
+        {
+          "number": "4b",
+          "text": "Demonstrate proper technique for your two chosen sports."
+        },
+        {
+          "number": "4c",
+          "text": "At the end of the season, share your completed chart with your counselor and discuss how your participation in the sports you chose has affected you mentally and physically."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Take part for one season (or four months) as a competitive individual or as a member of an organized team in TWO of the following sports: baseball, basketball, bowling, cross-country, field hockey, football, golf, gymnastics, ice hockey, lacrosse, soccer, softball, swimming, table tennis, tennis, track and field, volleyball, water polo, wrestling. Your counselor may approve in advance other recognized sports, but not any sport that is restricted and not authorized by the Boy Scouts of America. Then with your chosen sports do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Give the rules and etiquette for the two sports you picked."
+        },
+        {
+          "number": "5b",
+          "text": "List the equipment needed for the two sports you chose. Describe the protective equipment and appropriate clothing (if any) and explain why it is needed."
+        },
+        {
+          "number": "5c",
+          "text": "Draw diagrams of the playing areas for your two sports."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/old/mb013-17.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

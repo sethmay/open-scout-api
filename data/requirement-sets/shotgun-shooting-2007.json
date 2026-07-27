@@ -1,0 +1,263 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "shotgun-shooting-2007",
+  "kind": "requirement-set",
+  "subject": "merit-badge:shotgun-shooting",
+  "effective_from": "2007-01-01",
+  "effective_to": "2013-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Shotgun Shooting Merit Badge Requirements (2007, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb124-07.asp",
+    "year": 2007
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain why BB and pellet air guns must always be treated with the same respect as firearms."
+        },
+        {
+          "number": "1b",
+          "text": "Describe how you would react if a friend visiting your home asked to see your or your family's firearm(s)."
+        },
+        {
+          "number": "1c",
+          "text": "Explain the need for and use and types of eye and hearing protection."
+        },
+        {
+          "number": "1d",
+          "text": "Explain the main points of the laws for owning and using guns in your community and state."
+        },
+        {
+          "number": "1e",
+          "text": "Explain how hunting is related to the wise use of renewable wildlife resources."
+        },
+        {
+          "number": "1f",
+          "text": "Successfully complete a state hunter education course, or obtain a copy of the hunting laws for your state, then do the following:",
+          "children": [
+            {
+              "number": "1f(1)",
+              "text": "Explain the main points of hunting laws in your state and give any special laws on the use of guns and ammunition, and"
+            },
+            {
+              "number": "1f(2)",
+              "text": "List the kinds of wildlife that can be legally hunted in your state."
+            }
+          ]
+        },
+        {
+          "number": "1g",
+          "text": "Explain to your counselor the proper hygienic guidelines used in shooting."
+        },
+        {
+          "number": "1h",
+          "text": "Identify and explain three shotgun sports. Identify places in your community where you could shoot these sports and explain how you can join or be a part of shooting sports activities."
+        },
+        {
+          "number": "1i",
+          "text": "Give your counselor a list of sources that you could contact for information on firearms and their use."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do ONE of the following options: OPTION A --- SHOTGUN SHOOTING (MODERN SHOTSHELL TYPE)",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Identify the principal parts of a shotgun, action types, and how they function."
+        },
+        {
+          "number": "2b",
+          "text": "Identify and demonstrate the rules for safely handling a shotgun."
+        },
+        {
+          "number": "2c",
+          "text": "Identify the parts of a shotgun shell and their functions."
+        },
+        {
+          "number": "2d",
+          "text": "Identify the various gauges of shotguns. Explain which one you would pick for use and why."
+        },
+        {
+          "number": "2e",
+          "text": "Identify and demonstrate the fundamentals of safely shooting a shotgun. Explain what a misfire, hangfire, and squib fire are, and explain the procedures to follow in response to each."
+        },
+        {
+          "number": "2f",
+          "text": "Identify and explain each rule for shooting a shotgun safely."
+        },
+        {
+          "number": "2g",
+          "text": "Demonstrate the knowledge, skill and attitude necessary to safely shoot moving targets, using the fundamentals of shotgun shooting."
+        },
+        {
+          "number": "2h",
+          "text": "Identify the materials needed to clean a shotgun."
+        },
+        {
+          "number": "2i",
+          "text": "Demonstrate how to clean a shotgun properly and safely."
+        },
+        {
+          "number": "2j",
+          "text": "Discuss what points you would consider in selecting a shotgun."
+        },
+        {
+          "number": "2k",
+          "text": "Shooting score required. - Hit at least 12 (48 percent) out of 25 targets in two 25 target groups. The two groups need not be shot in consecutive order. Shooting skill rules: OPTION B --- MUZZLE-LOADING SHOTGUN SHOOTING Shooting skill rules:",
+          "children": [
+            {
+              "number": "2k(1)",
+              "text": "Discuss a brief history of the development of the muzzle-loading shotgun."
+            },
+            {
+              "number": "2k(2)",
+              "text": "Identify principal parts of percussion and flintlock shotguns and discuss how they function."
+            },
+            {
+              "number": "2k(3)",
+              "text": "Demonstrate and discuss safe handling rules of a muzzle-loading shotgun."
+            },
+            {
+              "number": "2k(4)",
+              "text": "Identify the various grades of black powder and their proper and safe use."
+            },
+            {
+              "number": "2k(5)",
+              "text": "Discuss proper safety procedures pertaining to black powder use and storage."
+            },
+            {
+              "number": "2k(6)",
+              "text": "Discuss proper components of a load."
+            },
+            {
+              "number": "2k(7)",
+              "text": "Identify proper procedures and accessories used for safely loading a muzzle-loading shotgun."
+            },
+            {
+              "number": "2k(8)",
+              "text": "Demonstrate the knowledge, skills, and attitude necessary to safely shoot a muzzle-loading shotgun on a range, including range procedures. Explain what a misfire, hangfire, and squibfire are, and explain the procedures to follow in response to each."
+            },
+            {
+              "number": "2k(9)",
+              "text": "Shoot a moving target with a muzzle-loading shotgun using the five fundamentals of firing the shot."
+            },
+            {
+              "number": "2k(10)",
+              "text": "Identify the materials needed to clean a muzzle-loading shotgun properly and safely."
+            },
+            {
+              "number": "2k(11)",
+              "text": "Demonstrate how to clean a muzzle-loading shotgun safely."
+            },
+            {
+              "number": "2k(12)",
+              "text": "Identify the causes of a muzzle-loading shotgun's failing to fire and explain or demonstrate proper correction procedures."
+            },
+            {
+              "number": "2k(13)",
+              "text": "Discuss what points you would consider in selecting a muzzle-loading shotgun."
+            },
+            {
+              "number": "2k(14)",
+              "text": "Shooting score required. -- Hit at least 5 out of 15 targets in two 15-target groups. The two groups need not be shot in consecutive order."
+            }
+          ]
+        },
+        {
+          "number": "2l",
+          "text": "Targets may be thrown by a hand trap, manual mechanical trap, or on any trap or skeet field. Note: If using a hand trap or manual mechanical trap, the trap operator should be at least 5 feet to the right and 3 feet to the rear of the shooter. If throwing left-handed with a hand trap this should be reversed (If throwing left-handed with a hand trap, the trap operator should be at least 5 feet to the left and 3 feet to the rear of the shooter)."
+        },
+        {
+          "number": "2m",
+          "text": "All targets should be thrown at a reasonable speed and in the same direction."
+        },
+        {
+          "number": "2n",
+          "text": "Targets should be generally thrown so as to climb in the air after leaving the trap."
+        },
+        {
+          "number": "2o",
+          "text": "Scores may be fired at any time, either in formal competition or in practice."
+        },
+        {
+          "number": "2p",
+          "text": "Any gauge shotgun not exceeding 12 gauge may be used."
+        },
+        {
+          "number": "2q",
+          "text": "Standard clay targets customarily used for trap and skeet are to be used."
+        },
+        {
+          "number": "2r",
+          "text": "Any ammunition, either factory or hand loaded, may be used."
+        },
+        {
+          "number": "2s",
+          "text": "Shooters must shoot in rounds of 25. Rounds need not be shot continuously or on the same day (the term \"round\" refers to a single series of 25 shots)."
+        },
+        {
+          "number": "2t",
+          "text": "If using a trap field, shoot station 3 with traps set to throw straightaway targets."
+        },
+        {
+          "number": "2u",
+          "text": "If using a skeet field, shoot station 7 low house."
+        },
+        {
+          "number": "2v",
+          "text": "Targets may be thrown by a hand trap, manual mechanical trap, or on any trap or skeet field. Note: if using a hand trap or manual mechanical trap, the trap operator should be at least 5 feet to the right and 3 feet to the rear of the shooter. If throwing left-handed with a hand trap this should be reversed. (If throwing left-handed with a hand trap, the trap operator should be at least 5 feet to the left and 3 feet to the rear of the shooter)."
+        },
+        {
+          "number": "2w",
+          "text": "All targets should be thrown at a reasonable speed and in the same direction."
+        },
+        {
+          "number": "2x",
+          "text": "Targets should be generally thrown so as to climb in the air after leaving the trap."
+        },
+        {
+          "number": "2y",
+          "text": "Scores may be fired at any time, either in formal competition or in practice."
+        },
+        {
+          "number": "2z",
+          "text": "Any gauge shotgun not exceeding 10 gauge may be used."
+        },
+        {
+          "number": "2{",
+          "text": "Standard clay targets customarily used for trap and skeet are to be used."
+        },
+        {
+          "number": "2|",
+          "text": "On a standard trap field, the shooter should be positioned 8 yards behind the trap house. The trap should be set to throw only straightaway targets"
+        },
+        {
+          "number": "2}",
+          "text": "If using a skeet field, shoot station 7 low house."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb124-07.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

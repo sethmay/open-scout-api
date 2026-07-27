@@ -5,7 +5,7 @@
   "subject": "merit-badge:american-business",
   "effective_from": "2023-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:american-business-2019",
   "source_document": {
     "title": "American Business Merit Badge Requirements (2023)",
     "url": "https://www.scouting.org/merit-badges/american-business/",

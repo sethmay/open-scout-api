@@ -1,0 +1,172 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "fire-safety-2017",
+  "kind": "requirement-set",
+  "subject": "merit-badge:fire-safety",
+  "effective_from": "2017-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Fire Safety Merit Badge Requirements (2017, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb050-17.asp",
+    "year": 2017
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Demonstrate the technique of stop, drop, cover, roll, cover your face, and cool. Explain how burn injuries can be prevented."
+        },
+        {
+          "number": "1b",
+          "text": "List the most frequent causes of burn injuries."
+        },
+        {
+          "number": "1c",
+          "text": "Explain how to safely discard and store flammable liquids."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain the chemistry and physics of fire. Name the parts of the fire tetrahedron. Explain why vapors are important to the burning process. Name the products of combustion. Give an example of how fire grows and what happens."
+    },
+    {
+      "number": "3",
+      "text": "Name the most frequent causes of fire in the home and give examples of ways they can be prevented. Include a discussion about fires caused by smoking in the home, cooking, candles, fireplaces, and electrical appliances."
+    },
+    {
+      "number": "4",
+      "text": "Explain the role of human behavior in the arson problem in this country"
+    },
+    {
+      "number": "5",
+      "text": "List the actions and common circumstances that cause seasonal and holiday-related fires. Explain how these fires can be prevented."
+    },
+    {
+      "number": "6",
+      "text": "Conduct a home safety survey with the help of an adult. Then do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Draw a home fire-escape plan, create a home fire-drill schedule, and conduct a home fire drill."
+        },
+        {
+          "number": "6b",
+          "text": "Test a smoke alarm and demonstrate regular maintenance of a smoke alarm."
+        },
+        {
+          "number": "6c",
+          "text": "Explain what to do when you smell gas and when you smell smoke."
+        },
+        {
+          "number": "6d",
+          "text": "Explain how you would report a fire alarm."
+        },
+        {
+          "number": "6e",
+          "text": "Explain what fire safety equipment can be found in public buildings."
+        },
+        {
+          "number": "6f",
+          "text": "Explain who should use fire extinguishers and when these devices can be used."
+        },
+        {
+          "number": "6g",
+          "text": "Explain how to extinguish a grease pan fire."
+        },
+        {
+          "number": "6h",
+          "text": "Explain what fire safety precautions you should take when you are in a public building."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Demonstrate lighting a match safely."
+        },
+        {
+          "number": "7b",
+          "text": "Demonstrate the safe way to start a charcoal fire."
+        },
+        {
+          "number": "7c",
+          "text": "Demonstrate how to safely light a candle. Discuss with your counselor how to safely use candles."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Explain the difference between combustible and noncombustible liquids and between combustible and noncombustible fabrics."
+    },
+    {
+      "number": "9",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Describe for your counselor the safe way to refuel a liquid fuel engine, such as a lawn mower, weed eater, an outboard motor, farm machine, or an automobile with gas from an approved gas can."
+        },
+        {
+          "number": "9b",
+          "text": "Demonstrate the safety factors, such as proper ventilation, for auxiliary heating devices and the proper way to fuel those devices."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Explain the cost of outdoor and wildland fires and how to prevent them."
+        },
+        {
+          "number": "10b",
+          "text": "Demonstrate setting up and putting out a cooking fire."
+        },
+        {
+          "number": "10c",
+          "text": "Demonstrate using a camp stove and lantern."
+        },
+        {
+          "number": "10d",
+          "text": "Explain how to set up a campsite safe from fire."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "Visit a fire station. Identify the types of fire trucks. Find out about the fire prevention activities in your community."
+    },
+    {
+      "number": "12",
+      "text": "Determine if smoke detectors are required in all dwellings within your municipality. If so, explain which specific types are required. Tell your counselor what type of smoke detectors your house has or needs."
+    },
+    {
+      "number": "13",
+      "text": "Choose a fire safety-related career that interests you and describe the level of education required and responsibilities of a person in that position. Tell why this position interests you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb050-17.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

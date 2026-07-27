@@ -1,0 +1,159 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "coin-collecting-2022",
+  "kind": "requirement-set",
+  "subject": "merit-badge:coin-collecting",
+  "effective_from": "2022-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Coin Collecting Merit Badge Requirements (2022, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb035-22.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Understand how coins are made, and where the active U.S. Mint facilities are located."
+    },
+    {
+      "number": "2",
+      "text": "Explain these collecting terms:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Obverse"
+        },
+        {
+          "number": "2b",
+          "text": "Reverse"
+        },
+        {
+          "number": "2c",
+          "text": "Reeding"
+        },
+        {
+          "number": "2d",
+          "text": "Clad"
+        },
+        {
+          "number": "2e",
+          "text": "Type set"
+        },
+        {
+          "number": "2f",
+          "text": "Date set"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Explain the grading terms Uncirculated, Extremely Fine, Very Fine, Fine, Very Good, Good, and Poor. Show five different grade examples of the same coin type. Explain the term proof and why it is not a grade. Tell what encapsulated coins are."
+    },
+    {
+      "number": "4",
+      "text": "Know three different ways to store a collection, and describe the benefits, drawbacks, and expense of each method. Pick one to use when completing requirements."
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Demonstrate to your counselor that you know how to use two U.S. or world coin reference catalogs."
+        },
+        {
+          "number": "5b",
+          "text": "Read a numismatic magazine or newspaper and tell your counselor about what you learned."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "6",
+      "text": "Describe the 1999-2008 50 State Quarters program or the 2010-2021 America the Beautiful Quarters program. Collect and show your counselor five different quarters from circulation you have acquired from one of these programs."
+    },
+    {
+      "number": "7",
+      "text": "Collect from circulation a set of current U.S. coins. Include one coin of each denomination (cent, nickel, dime, quarter, half-dollar, dollar). For each coin, locate the mint marks, if any, and the designer's initials, if any."
+    },
+    {
+      "number": "8",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Identify the people depicted on the following denominations of current U.S. paper money: $1, $2, $5, $10, $20, $50, and $100."
+        },
+        {
+          "number": "8b",
+          "text": "Explain \"legal tender.\""
+        },
+        {
+          "number": "8c",
+          "text": "Describe the role the Federal Reserve System plays in the distribution of currency."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Collect and identify 50 foreign coins from at least 10 different countries."
+        },
+        {
+          "number": "9b",
+          "text": "Collect and identify 20 bank notes from at least five different countries."
+        },
+        {
+          "number": "9c",
+          "text": "Collect and identify 15 different tokens or medals."
+        },
+        {
+          "number": "9d",
+          "text": "For each year since the year of your birth, collect a date set of a single type of coin"
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "10",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Tour a U.S. Mint facility, a Bureau of Engraving and Printing facility, a Federal Reserve Bank, or a numismatic museum or exhibit, and describe what you learned to your counselor."
+        },
+        {
+          "number": "10b",
+          "text": "With your parent's permission, attend a coin show or coin club meeting, or view the website of the U.S. Mint or a coin dealer, and report what you learned."
+        },
+        {
+          "number": "10c",
+          "text": "Give a talk about coin collecting to a group such as your troop, a Cub Scout pack, or your class at school."
+        },
+        {
+          "number": "10d",
+          "text": "Do drawings of five Colonial-era U.S. coins."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb035-22.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

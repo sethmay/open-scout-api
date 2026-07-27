@@ -1,0 +1,156 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "motorboating-2021",
+  "kind": "requirement-set",
+  "subject": "merit-badge:motorboating",
+  "effective_from": "2021-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:motorboating-2019",
+  "source_document": {
+    "title": "Motorboating Merit Badge Requirements (2021, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb076.asp",
+    "year": 2021
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Discuss with your counselor the following hazards you might encounter while motorboating: flammable fuel; arbon monoxide; propellers; collisions; falls overboard; capsize; running aground. Explain what you should do to anticipate, prevent, mitigate and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Explain first aid for injuries or illnesses that could occur while motorboating, including hypothermia, heat reactions, dehydration, motion sickness, bugbites, and blisters."
+        },
+        {
+          "number": "1c",
+          "text": "Identify the conditions that must exist before performing CPR on a person, and explain how such conditions are recognized. Demonstrate proper technique for performing CPR using a training device approved by your counselor."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Before doing requirement 5, successfully complete the BSA swimmer test."
+        },
+        {
+          "number": "2b",
+          "text": "Name the different types of personal flotation devices (PFDs), and explain when each type should be used. Show how to choose and properly fit a PFD."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain inboard, outboard, and inboard/outboard motors, and the uses and advantages of each."
+        },
+        {
+          "number": "3b",
+          "text": "Explain the safety procedures and precautions involving handling fuel and engine servicing, and equipment storage and placement."
+        },
+        {
+          "number": "3c",
+          "text": "Explain how to winterize a boat motor and tell why this procedure is necessary."
+        },
+        {
+          "number": "3d",
+          "text": "Explain the safety procedures and precautions involving swimmers and skiers in the water, passenger positions underway, and boat wakes."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Show you know safety guidelines for motorboating by doing the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Review how each item of the BSA Safety Afloat policy applies, including checking the weather prior to and during time on the water, confirming all required equipment is present and functional, and following a float plan."
+        },
+        {
+          "number": "4b",
+          "text": "Explain the rules or laws that apply to recreational boating in your area or state. Have a permit to operate a motorboat, if required by the laws of your state. Discuss how you would find information regarding the boating laws in different states."
+        },
+        {
+          "number": "4c",
+          "text": "Discuss how hazards of weather and heavy water conditions can affect safety and performance in motorboating."
+        },
+        {
+          "number": "4d",
+          "text": "Discuss with your counselor the nautical rules of the road and describe the national and your state’s aids to navigation."
+        },
+        {
+          "number": "4e",
+          "text": "Explain and show the correct use of equipment required by both state and federal regulations to be carried aboard a motorboat."
+        },
+        {
+          "number": "4f",
+          "text": "Explain federal and state rules for a ventilation system, and tell why these rules are required."
+        },
+        {
+          "number": "4g",
+          "text": "Explain the use of lights (sight signals) and sound signals on motorboats."
+        },
+        {
+          "number": "4h",
+          "text": "Discuss the common types of anchors used in motorboating and under what conditions each would be preferred. Explain proper anchoring techniques."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "With your counselor or other adults on board, demonstrate proper boat-handling procedures and skills by doingthe following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Board and assist others in boarding. Confirm that all pas-sengers on board are wearing properly fitted life jackets."
+        },
+        {
+          "number": "5b",
+          "text": "Fuel the boat and complete a safety check."
+        },
+        {
+          "number": "5c",
+          "text": "If equiped, attach a kill switch and safely start the motor. Get underway from dockside or from a beach launch."
+        },
+        {
+          "number": "5d",
+          "text": "Run a course for at least a mile, showing procedures for overtaking and passing slower craft, yielding right-of-way, passing oncoming traffic, making turns, reversing direction, and using navigation aids."
+        },
+        {
+          "number": "5e",
+          "text": "Stop and secure the boat in position on the open water using anchors. Raise and stow the anchor andget underway."
+        },
+        {
+          "number": "5f",
+          "text": "Land or dock the boat, disembark, and assist others in doing the same."
+        },
+        {
+          "number": "5g",
+          "text": "Moor, dock, or beach the boat and secure all gear."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb076.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

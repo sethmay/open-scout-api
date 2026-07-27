@@ -5,7 +5,7 @@
   "subject": "merit-badge:forestry",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:forestry-2019",
   "source_document": {
     "title": "Forestry Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/forestry/",

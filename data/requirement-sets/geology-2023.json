@@ -1,0 +1,228 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "geology-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:geology",
+  "effective_from": "2023-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Geology Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb058.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Define geology. Discuss how geologists learn about rock formations. In geology, explain why the study of the present is important to understanding the past."
+    },
+    {
+      "number": "2",
+      "text": "Pick three resources that can be extracted or mined from Earth for commercial use. Discuss with your counselor how each product is discovered and processed."
+    },
+    {
+      "number": "3",
+      "text": "Review a geologic map of your area or an area selected by your counselor, and discuss the different rock types and estimated ages of rocks represented. Determine whether the rocks are horizontal, folded, or faulted, and explain how you arrived at your conclusion."
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "With your parent's parent or guardian's and counselor's approval, visit with a geologist, land use planner, or civil engineer. Discuss this professional's work and the tools required in this line of work. Learn about a project that this person is now working on, and ask to see reports and maps created for this project. Discuss with your counselor what you have learned."
+        },
+        {
+          "number": "4b",
+          "text": "Find out about three career opportunities available in geology. Pick one and find out the education, training, and experience required for the profession. Discuss this with your counselor, and explain why this profession might interest you."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following (a OR b OR c OR d):",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Surface and Sedimentary Processes Option",
+          "children": [
+            {
+              "number": "5a(1)",
+              "text": "Conduct an experiment approved by your counselor that demonstrates how sediments settle from suspension in water. Explain to your counselor what the exercise shows and why it is important."
+            },
+            {
+              "number": "5a(2)",
+              "text": "Using topographical maps provided by your counselor, plot the stream gradients (different elevations divided by distance) for four different stream types (straight, meandering, dendritic, trellis). Explain which ones flow fastest and why, and which ones will carry larger grains of sediment and why."
+            },
+            {
+              "number": "5a(3)",
+              "text": "On a stream diagram, show areas where you will ,find the following features: cut bank, fill bank, point bar, medial channel bars, lake delta. Describe the relative sediment grain size found in each feature."
+            },
+            {
+              "number": "5a(4)",
+              "text": "Conduct an experiment approved by your counselor that shows how some sedimentary material carried by water may be too small for you to see without a magnifier."
+            },
+            {
+              "number": "5a(5)",
+              "text": "Visit a nearby stream. Find clues that show the direction of water flow, even if the water is missing. Record your observations in a notebook, and sketch those clues you observe. Discuss your observations with your counselor."
+            }
+          ]
+        },
+        {
+          "number": "5b",
+          "text": "Energy Resources Option",
+          "children": [
+            {
+              "number": "5b(1)",
+              "text": "List the top five Earth resources used to generate electricity in the United States."
+            },
+            {
+              "number": "5b(2)",
+              "text": "Discuss source rock, trap, and reservoir rock - the three components necessary for the occurrence of oil and gas underground."
+            },
+            {
+              "number": "5b(3)",
+              "text": "Explain how each of the following items is used in subsurface exploration to locate oil or gas: reflection seismic, electric well logs, stratigraphic correlation, offshore platform, geologic map, subsurface structure map, subsurface isopach map, and core samples and cutting samples."
+            },
+            {
+              "number": "5b(4)",
+              "text": "Using at least 20 data points provided by your counselor, create a subsurface structure map and use it to explain how subsurface geology maps are used to find oil, gas, or coal resources."
+            },
+            {
+              "number": "5b(5)",
+              "text": "Do ONE of the following activities:",
+              "children": [
+                {
+                  "number": "5b(5)(1)",
+                  "text": "Make a display or presentation showing how oil and gas or coal is found, extracted, and processed. You may use maps, books, articles from periodicals, and research found on the Internet (with your parent's parent or guardian's permission). Share the display with your counselor or a small group (such as your class at school) in a five minute presentation."
+                },
+                {
+                  "number": "5b(5)(2)",
+                  "text": "With your parent's parent or guardian's and counselor's permission and assistance, arrange for a visit to an operating drilling rig. While there, talk with a geologist and ask to see what the geologist does onsite. Ask to see cutting samples taken at the site."
+                }
+              ],
+              "choose": 1
+            }
+          ]
+        },
+        {
+          "number": "5c",
+          "text": "Mineral Resources Option",
+          "children": [
+            {
+              "number": "5c(1)",
+              "text": "Define rock. Discuss the three classes of rocks including their origin and characteristics."
+            },
+            {
+              "number": "5c(2)",
+              "text": "Define mineral. Discuss the origin of minerals and their chemical composition and identification properties, including hardness, specific gravity, color, streak, cleavage, luster, and crystal form."
+            },
+            {
+              "number": "5c(3)",
+              "text": "Do ONE of the following:",
+              "children": [
+                {
+                  "number": "5c(3)(1)",
+                  "text": "Collect 10 different rocks or minerals. Record in a notebook where you obtained (found, bought, traded) each one. Label each specimen, identify its class and origin, determine its chemical composition, and list its physical properties. Share your collection with your counselor."
+                },
+                {
+                  "number": "5c(3)(2)",
+                  "text": "With your counselor's assistance, identify 15 different rocks and minerals. List the name of each specimen, tell whether it is a rock or mineral, and give the name of its class (if it is a rock) or list its identifying physical properties (if it is a mineral)."
+                }
+              ],
+              "choose": 1
+            },
+            {
+              "number": "5c(4)",
+              "text": "List three of the most common road building materials used in your area. Explain how each material is produced and how each is used in road building."
+            },
+            {
+              "number": "5c(5)",
+              "text": "Do ONE of the following activities:",
+              "children": [
+                {
+                  "number": "5c(5)(1)",
+                  "text": "With your parent's parent or guardian's and counselor's approval, visit an active mining site, quarry, or sand and gravel pit. Tell your counselor what you learned about the resources extracted from this location and how these resources are used by society."
+                },
+                {
+                  "number": "5c(5)(2)",
+                  "text": "With your counselor, choose two examples of rocks and two examples of minerals. Discuss the mining of these materials and describe how each is used by society."
+                },
+                {
+                  "number": "5c(5)(3)",
+                  "text": "With your parent's parent or guardian's and counselor's approval, visit the office of a civil engineer and learn how geology is used in construction. Discuss what you learned with your counselor."
+                }
+              ],
+              "choose": 1
+            }
+          ]
+        },
+        {
+          "number": "5d",
+          "text": "Earth History Option",
+          "children": [
+            {
+              "number": "5d(1)",
+              "text": "Create a chart showing suggested geological eras and periods. Determine which period the rocks in your region might have been formed."
+            },
+            {
+              "number": "5d(2)",
+              "text": "Explain the theory of plate tectonics. Make a chart explaining, or discuss with your counselor, how the processes of plate tectonics work. Discuss how plate tectonics determines the distribution of most of the Earth's volcanoes, earthquakes, and mountain belts."
+            },
+            {
+              "number": "5d(3)",
+              "text": "Explain to your counselor the processes of burial and fossilization, and discuss the concept of extinction."
+            },
+            {
+              "number": "5d(4)",
+              "text": "Explain to your counselor how fossils provide information about ancient life, environment, climate, and geography. Discuss the following terms and explain how animals from each habitat obtain food: benthonic, pelagic, littoral, lacustrine, open marine, brackish, fluvial, eolian, protected reef."
+            },
+            {
+              "number": "5d(5)",
+              "text": "Collect 10 different fossil plants or animals OR (with your counselor's assistance) identify 15 different fossil plants or animals. Record in a notebook where you obtained (found, bought, traded) each one. Classify each specimen to the best of your ability, and explain how each one might have survived and obtained food. Tell what else you can learn from these fossils."
+            },
+            {
+              "number": "5d(6)",
+              "text": "Do ONE of the following:",
+              "children": [
+                {
+                  "number": "5d(6)(1)",
+                  "text": "Visit a science museum or the geology department of a local university that has fossils on display. With your parent's parent or guardian's and counselor's approval, before you go, make an appointment with a curator or guide who can show you how the fossils are preserved and prepared for display."
+                },
+                {
+                  "number": "5d(6)(2)",
+                  "text": "Visit a structure in your area that was built using fossiliferous rocks. Determine what kind of rock was used and tell your counselor the kinds of fossil evidence you found there."
+                },
+                {
+                  "number": "5d(6)(3)",
+                  "text": "Visit a rock outcrop that contains fossils. Determine what kind of rock contains the fossils, and tell your counselor the kinds of fossil evidence you found at the outcrop."
+                },
+                {
+                  "number": "5d(6)(4)",
+                  "text": "Prepare a display or presentation on your state fossil. Include an image of the fossil, the age of the fossil, and its classification. You may use maps, books, articles from periodicals, and research found on the Internet (with your parent's parent or guardian's permission). Share the display with your counselor or a small group (such as your class at school). If your state does not have a state fossil, you may select a state fossil from a neighboring state."
+                }
+              ],
+              "choose": 1
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb058.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

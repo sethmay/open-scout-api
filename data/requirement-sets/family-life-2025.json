@@ -5,7 +5,7 @@
   "subject": "merit-badge:family-life",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:family-life-2023",
   "source_document": {
     "title": "Family Life Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/family-life/",

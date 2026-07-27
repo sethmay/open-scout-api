@@ -1,0 +1,112 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "family-life-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:family-life",
+  "effective_from": "2019-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Family Life Merit Badge Requirements (2019, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb129-19.asp",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare an outline on what a family is and discuss this with your merit badge counselor. Tell why families are important to individuals and to society. Discuss how the actions of one member can affect other members."
+    },
+    {
+      "number": "2",
+      "text": "List several reasons why you are important to your family and discuss this with your parents or guardians and with your merit badge counselor."
+    },
+    {
+      "number": "3",
+      "text": "Prepare a list of your regular home duties or chores (at least five) and do them for 90 days. Keep a record of how often you do each of them. Discuss with your counselor the effect your chores had on your family."
+    },
+    {
+      "number": "4",
+      "text": "With the approval of your parents or guardians and your merit badge counselor, decide on and carry out a project that you would do around the home that would benefit your family. Submit a report to your merit badge counselor outlining how the project benefited your family."
+    },
+    {
+      "number": "5",
+      "text": "Plan and carry out a project that involves the participation of your family. After completing the project, discuss the following with your merit badge counselor:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "The objective or goal of the project"
+        },
+        {
+          "number": "5b",
+          "text": "How individual members of your family participated"
+        },
+        {
+          "number": "5c",
+          "text": "The results of the project"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following: Discussion of each of these subjects will very likely carry over to more than one family meeting.",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Discuss with your merit badge counselor how to plan and carry out a family meeting."
+        },
+        {
+          "number": "6b",
+          "text": "After this discussion, plan and carry out a family meeting* to include the following subjects:",
+          "children": [
+            {
+              "number": "6b(1)",
+              "text": "Avoiding substance abuse, including tobacco, alcohol, and drugs, all of which negatively affect your health and well-being"
+            },
+            {
+              "number": "6b(2)",
+              "text": "Understanding the growing-up process and how the body changes, and making responsible decisions dealing with sex"
+            },
+            {
+              "number": "6b(3)",
+              "text": "How your chores in requirement 3 contributed to your role in the family"
+            },
+            {
+              "number": "6b(4)",
+              "text": "Personal and family finances"
+            },
+            {
+              "number": "6b(5)",
+              "text": "A crisis situation within your family"
+            },
+            {
+              "number": "6b(6)",
+              "text": "The effect of technology on your family"
+            },
+            {
+              "number": "6b(7)",
+              "text": "Good etiquette and manners"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Discuss with your counselor your understanding of what makes an effective parent and why, and your thoughts on the parent's role and responsibilities in the family."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb129-19.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

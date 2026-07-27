@@ -1,0 +1,95 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "model-design-and-building-2004",
+  "kind": "requirement-set",
+  "subject": "merit-badge:model-design-and-building",
+  "effective_from": "2004-01-01",
+  "effective_to": "2019-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Model Design and Building Merit Badge Requirements (2004, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb075-04.asp",
+    "year": 2004
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Study and understand the requirements for personal safety when using such modelmaker hand tools such as: knives, handsaws, vices, files, hammers, screwdrivers, hand drills and drill bits, pliers, and portable power tools, and when to use protective equipment such as goggles when grinding or drilling. Know what precautions to take when using flammable or hazardous products such as: glue, epoxy, paint, thinners. Discuss these with your counselor before you begin your model-making project and tell why they are important."
+    },
+    {
+      "number": "2",
+      "text": "Explain the uses for each of the following types of models: architectural, structural, process, mechanical, and industrial. Do research into the different types of materials that could be used in making these models."
+    },
+    {
+      "number": "3",
+      "text": "With your counselor's advice, select a subject from requirement 4 for your model project (no kits). Prepare the necessary plans to the proper scale. Make a list of materials to be used, and a list of the required tools. This model should be your own original work. Tell why you selected this subject."
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Make an architectural model. Build a model of a house to a scale of 1/4\"=1'0\" (50:1 metric). Discuss with your counselor the materials you intend to use, the amount of detail required, outside treatment (finish, shrubbery, walks, etc.) and color selections. After completing the model, present it to your counselor for approval."
+        },
+        {
+          "number": "4b",
+          "text": "Build a structural model. Construct a model showing corner construction of a wood frame building to a scale of 1 1/2\"=1'0\" (8:1 Metric). All structures shown must be to scale. Cardboard or flat sheet wood stock may be used for sheeting or flooring on the model. Review with your counselor the problems you encountered in gathering the materials and supporting the structure. Be able to name the parts of the floor and wall frames, such as intermediate girder, joist, bridging, subfloor, sill, sole plate, stud and rafter."
+        },
+        {
+          "number": "4c",
+          "text": "Make a process model. Build a model showing the plumbing system in your house. Show hot and cold water supply, all waste returns, and venting to a scale of 3/4\"=1'0\" (15:1 Metric). Talk to your counselor about how to begin this model, and present the scale and the materials you will use. After completion, present the model to your counselor and be prepared to discuss any problems you had building this model."
+        },
+        {
+          "number": "4d",
+          "text": "Complete a mechanical model. Build a model of a mechanical device that uses at least two of the six simple machines. After completing the the model, present it to your counselor. Be prepared to discuss materials used, the machine's function, and any particular difficulty you may have encountered."
+        },
+        {
+          "number": "4e",
+          "text": "Make an industrial model. Build a model of an actual passenger-carrying vehicle to a scale of 1\"=1'0\" or \" = 1'0\" (10:1 or 25:1 Metric). Take the dimensions of the vehicle, and record the important dimensions. Draw the top, front, rear, and sides of the vehicle to scale. From your plans, build a model of the vehicle to scale. From your plans, build a model of the vehicle and finish in a craftsmanlike manner. Discuss with your counselor the most difficult part of completing the model."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Build a special-effects model of a fantasy spacecraft that might appear in a Hollywood science-fiction movie. Determine an appropriate scale for your design - one that makes practical sense. Include a cockpit or control area, living space, storage unit, engineering spaces, and propulsion systems. As you plan and build your model, do the following",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Study aircraft, submarines, and naval ships for design ideas."
+        },
+        {
+          "number": "5b",
+          "text": "Arrange and assemble the parts."
+        },
+        {
+          "number": "5c",
+          "text": "Sketch your completed model."
+        },
+        {
+          "number": "5d",
+          "text": "Write a short essay in which you discuss your design, scale, and materials choices. Describe how you engineered your model and discuss any difficulties you encountered and what you learned."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "List at least six occupations in which modelmaking is used and discuss with your counselor some career opportunities in this field."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb075-04.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

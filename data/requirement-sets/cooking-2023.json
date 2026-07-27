@@ -1,0 +1,220 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "cooking-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:cooking",
+  "effective_from": "2023-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Cooking Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb038-23.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Health and Safety. Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in cooking activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards"
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for and how to prevent injuries or illnesses that could occur while preparing meals and eating, including burns and scalds, cuts, choking, and allergic reactions."
+        },
+        {
+          "number": "1c",
+          "text": "Describe how meat, fish, chicken, eggs, dairy products, and fresh vegetables should be stored, transported, and properly prepared for cooking. Explain how to prevent cross-contamination."
+        },
+        {
+          "number": "1d",
+          "text": "Discuss with your counselor food allergies, food intolerance, and food-related illnesses and diseases. Explain why someone who handles or prepares food needs to be aware of these concerns."
+        },
+        {
+          "number": "1e",
+          "text": "Discuss with your counselor why reading food labels is important. Explain how to identify common allergens such as peanuts, tree nuts, milk, eggs, wheat, soy, and shellfish."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Nutrition. Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, give five examples for EACH of the following food groups, the recommended number of daily servings, and the recommended serving size:",
+          "children": [
+            {
+              "number": "2a(1)",
+              "text": "Fruits"
+            },
+            {
+              "number": "2a(2)",
+              "text": "Vegetables"
+            },
+            {
+              "number": "2a(3)",
+              "text": "Grains"
+            },
+            {
+              "number": "2a(4)",
+              "text": "Proteins"
+            },
+            {
+              "number": "2a(5)",
+              "text": "Dairy"
+            }
+          ]
+        },
+        {
+          "number": "2b",
+          "text": "Explain why you should limit your intake of oils and sugars."
+        },
+        {
+          "number": "2c",
+          "text": "Track your daily level of activity and your daily caloric need based on your activity for five days. Then, based on the My Plate food guide, discuss with your counselor an appropriate meal plan for yourself for one day."
+        },
+        {
+          "number": "2d",
+          "text": "Discuss your current eating habits with your counselor and what you can do to eat healthier, based on the MyPlate food guide."
+        },
+        {
+          "number": "2e",
+          "text": "Discuss the following food label terms: calorie, fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, dietary fiber, sugar, protein. Explain how to calculate total carbohydrates and nutritional values for two servings, based on the serving size specified on the label."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Cooking Basics. Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Discuss EACH of the following cooking methods. For each one, describe the equipment needed, how temperature control is maintained, and name at least one food that can be cooked using that method: baking, boiling, broiling, pan frying, simmering, steaming, microwaving, grilling, foil cooking, and use of a Dutch oven."
+        },
+        {
+          "number": "3b",
+          "text": "Discuss the benefits of using a camp stove on an outing vs. a charcoal or wood fire."
+        },
+        {
+          "number": "3c",
+          "text": "Describe with your counselor how to manage your time when preparing a meal so components for each course are ready to serve at the same time."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Cooking at Home. Using the MyPlate food guide or the current USDA nutrition model, plan a menu for three full days of meals (three breakfasts, three lunches, and three dinners) plus one dessert. Your menu should include enough to feed yourself and at least one adult, keeping in mind any special needs (such as food allergies) and how you kept your foods safe and free from cross-contamination. List the equipment and utensils needed to prepare and serve these meals. Then do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Discuss with your counselor food allergies, food intolerance, and food-related illnesses and diseases. Explain why everyone who handles or prepares food needs to be aware of these concerns."
+        },
+        {
+          "number": "4b",
+          "text": "Share and discuss your meal plan and shopping list with your counselor."
+        },
+        {
+          "number": "4c",
+          "text": "Using at least five of the 10 cooking methods from requirement 3, prepare and serve yourself and at least one adult (parent, family member, guardian, or other responsible adult) one breakfast, one lunch, one dinner, and one dessert from the meals you planned. *"
+        },
+        {
+          "number": "4d",
+          "text": "Time your cooking to have each meal ready to serve at the proper time. Have an adult verify the preparation of the meal to your counselor."
+        },
+        {
+          "number": "4e",
+          "text": "After each meal, ask a person you served to evaluate the meal on presentation and taste, then evaluate your own meal. Discuss what you learned with your counselor, including any adjustments that could have improved or enhanced your meals. Tell how better planning and preparation help ensure a successful meal."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Camp Cooking. Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan a menu for your patrol (or a similar size group of up to eight youth, including you) for a camping trip. Your menu should include enough food for each person, keeping in mind any special needs (such as food allergies) and how you keep your foods safe and free from cross-contamination. These five meals must include at least one breakfast, one lunch, one dinner, AND at least one snack OR one dessert. List the equipment and utensils needed to prepare and serve these meals."
+        },
+        {
+          "number": "5b",
+          "text": "Discuss with your counselor food allergies, food intolerance, and food-related illnesses and diseases. Explain why everyone who handles or prepares food needs to be aware of these concerns."
+        },
+        {
+          "number": "5c",
+          "text": "Share and discuss your meal plan and shopping list with your counselor."
+        },
+        {
+          "number": "5d",
+          "text": "In the outdoors, using your menu plans and recipes for this requirement, cook three of the five meals you planned using either a camp stove OR backpack stove. Use a skillet over campfire coals OR a Dutch oven for a fourth meal, and cook the fifth meal in a foil pack OR on a skewer. Serve all of these meals to your patrol or a group of youth.**"
+        },
+        {
+          "number": "5e",
+          "text": "In the outdoors, prepare a dessert OR a snack and serve it to your patrol or a group of youth.**"
+        },
+        {
+          "number": "5f",
+          "text": "After each meal, have those you served evaluate the meal on presentation and taste, and then evaluate your own meal. Discuss what you learned with your counselor, including any adjustments that could have improved or enhanced your meals. Tell how planning and preparation help ensure successful outdoor cooking."
+        },
+        {
+          "number": "5g",
+          "text": "Lead the clean-up of equipment, utensils, and the cooking site thoroughly after each meal. Properly store or dispose unused ingredients, leftover food, dishwater and garbage."
+        },
+        {
+          "number": "5h",
+          "text": "Discuss how you followed the Outdoor Code and no-trace principles when preparing your meals."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Trail and backpacking meals. Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan a meal for trail hiking or backpacking that includes one breakfast, one lunch, one dinner, and one snack. These meals must consider weight, not require refrigeration and are to be consumed by three to five people (including you). List the equipment and utensils needed to prepare and serve these meals."
+        },
+        {
+          "number": "6b",
+          "text": "Create a shopping list for your meals, showing the amount of food needed to prepare and serve each meal, and the cost for each meal."
+        },
+        {
+          "number": "6c",
+          "text": "Share and discuss your meal plan and shopping list with your counselor. Your plan must include how to repackage foods for your hike or backpacking trip to eliminate as much bulk, weight, and garbage as possible."
+        },
+        {
+          "number": "6d",
+          "text": "While on a trail hike or backpacking trip, prepare and serve two meals and a snack from the menu planned for this requirement. At least one of those meals must be cooked over a fire, or an approved trail stove (with proper supervision).**"
+        },
+        {
+          "number": "6e",
+          "text": "After each meal, have those you served evaluate the meal on presentation and taste, then evaluate your own meal. Discuss what you learned with your counselor, including any adjustments that could have improved or enhanced your meals. Tell how planning and preparation help ensure successful trail hiking or backpacking meals."
+        },
+        {
+          "number": "6f",
+          "text": "Explain to your counselor how you should divide the food and cooking supplies among the patrol in order to share the load. Discuss how to properly clean the cooking area and store your food to protect it from animals."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Food-related careers. Find out about three career opportunities in cooking. Select one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb038-23.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

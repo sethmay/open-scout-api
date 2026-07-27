@@ -1,0 +1,193 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "home-repairs-2010",
+  "kind": "requirement-set",
+  "subject": "merit-badge:home-repairs",
+  "effective_from": "2010-01-01",
+  "effective_to": "2013-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Home Repairs Merit Badge Requirements (2010, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb062-10.asp",
+    "year": 2010
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss general precautions related to home repairs. Name at least 10 safe practices that every home repairer should exercise."
+    },
+    {
+      "number": "2",
+      "text": "Under the supervision of your merit badge counselor, do FOUR of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Maintain or recondition a yard tool and show that you know how to clean up and properly store this equipment."
+        },
+        {
+          "number": "2b",
+          "text": "Weather strip a window or door."
+        },
+        {
+          "number": "2c",
+          "text": "Caulk cracks or joints open to the weather."
+        },
+        {
+          "number": "2d",
+          "text": "Waterproof a basement."
+        },
+        {
+          "number": "2e",
+          "text": "Repair a break in a concrete or asphalt surface."
+        },
+        {
+          "number": "2f",
+          "text": "Repair the screen in a window or door."
+        },
+        {
+          "number": "2g",
+          "text": "Replace a pane of glass."
+        },
+        {
+          "number": "2h",
+          "text": "Solder a broken wire or metal object."
+        }
+      ],
+      "choose": 4
+    },
+    {
+      "number": "3",
+      "text": "Under the supervision of your merit badge counselor, do THREE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Install or build equipment for storing tools."
+        },
+        {
+          "number": "3b",
+          "text": "Build a workbench"
+        },
+        {
+          "number": "3c",
+          "text": "Repair a piece of furniture."
+        },
+        {
+          "number": "3d",
+          "text": "Paint or varnish a piece of furniture, a door, or trim on a house."
+        },
+        {
+          "number": "3e",
+          "text": "Repair a sagging door or gate."
+        },
+        {
+          "number": "3f",
+          "text": "Repair a loose step or railing."
+        },
+        {
+          "number": "3g",
+          "text": "Repair a fence."
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "4",
+      "text": "Under the supervision of your merit badge counselor, do TWO of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Locate a main electrical switch box and know how to replace a fuse or reset a circuit breaker."
+        },
+        {
+          "number": "4b",
+          "text": "Replace an electrical cord or repair a plug or lamp socket."
+        },
+        {
+          "number": "4c",
+          "text": "Install a single-pole light switch."
+        },
+        {
+          "number": "4d",
+          "text": "Replace an electrical wall outlet."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "5",
+      "text": "Under the supervision of your merit badge counselor, do TWO of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Clear a clogged drain or trap."
+        },
+        {
+          "number": "5b",
+          "text": "Repair a leaky water faucet."
+        },
+        {
+          "number": "5c",
+          "text": "Repair a flush toilet."
+        },
+        {
+          "number": "5d",
+          "text": "Repair a leaky hose or connector."
+        },
+        {
+          "number": "5e",
+          "text": "Clean or replace a sprinkler head."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "6",
+      "text": "Under the supervision of your merit badge counselor, do THREE of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Paint a wall or ceiling."
+        },
+        {
+          "number": "6b",
+          "text": "Repair or replace damaged tile or linoleum."
+        },
+        {
+          "number": "6c",
+          "text": "Install drapery or curtain rods and then hang drapes or curtains."
+        },
+        {
+          "number": "6d",
+          "text": "Replace window blind cords."
+        },
+        {
+          "number": "6e",
+          "text": "Repair or replace a window sash cord."
+        },
+        {
+          "number": "6f",
+          "text": "Reinforce a picture frame."
+        },
+        {
+          "number": "6g",
+          "text": "Mend an object made of china, glass, or pottery."
+        }
+      ],
+      "choose": 3
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb062-10.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

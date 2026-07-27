@@ -5,7 +5,7 @@
   "subject": "merit-badge:american-labor",
   "effective_from": "2024-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:american-labor-2019",
   "source_document": {
     "title": "American Labor Merit Badge Requirements (2024)",
     "url": "https://www.scouting.org/merit-badges/american-labor/",

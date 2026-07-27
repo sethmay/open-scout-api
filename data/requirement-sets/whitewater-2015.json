@@ -1,0 +1,436 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "whitewater-2015",
+  "kind": "requirement-set",
+  "subject": "merit-badge:whitewater",
+  "effective_from": "2015-01-01",
+  "effective_to": "2019-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Whitewater Merit Badge Requirements (2015, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb125-15.asp",
+    "year": 2015
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in whitewater activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Review with your counselor the prevention, symptoms, and first aid treatment for the following injuries or illnesses that could occur while participating in whitewater activities including cold-water shock; hypothermia; head, neck, and back injuries; heat-related illnesses; sunburn; dehydration; blisters; bruises; cuts; sprains and strains; shoulder dislocation; and submersion injuries."
+        },
+        {
+          "number": "1c",
+          "text": "Discuss with your counselor the BSA Safety Afloat policy and the American Whitewater safety guidelines."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain the following river features:"
+        },
+        {
+          "number": "2b",
+          "text": "upstream V,"
+        },
+        {
+          "number": "2c",
+          "text": "downstream V,"
+        },
+        {
+          "number": "2d",
+          "text": "riffle,"
+        },
+        {
+          "number": "2e",
+          "text": "eddy,"
+        },
+        {
+          "number": "2f",
+          "text": "eddy line,"
+        },
+        {
+          "number": "2g",
+          "text": "pillow,"
+        },
+        {
+          "number": "2h",
+          "text": "ledge,"
+        },
+        {
+          "number": "2i",
+          "text": "bend,"
+        },
+        {
+          "number": "2j",
+          "text": "shallows,"
+        },
+        {
+          "number": "2k",
+          "text": "current,"
+        },
+        {
+          "number": "2l",
+          "text": "drop,"
+        },
+        {
+          "number": "2m",
+          "text": "horizon line,"
+        },
+        {
+          "number": "2n",
+          "text": "wave,"
+        },
+        {
+          "number": "2o",
+          "text": "standing wave,"
+        },
+        {
+          "number": "2p",
+          "text": "wave train."
+        },
+        {
+          "number": "2q",
+          "text": "Explain when, why, and how you should scout a river while ashore and while on the river."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Before doing requirements 4 through 12, earn the Canoeing merit badge if you will be using a canoe to earn this merit badge. If you will be using a kayak, earn the Kayaking merit badge. Then do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "If you will be using a canoe to earn this merit badge, demonstrate strokes and maneuvers from the Canoeing merit badge to the satisfaction of your merit badge counselor. OR"
+        },
+        {
+          "number": "3b",
+          "text": "If you will be using a kayak to earn this merit badge, demonstrate strokes and maneuvers from the Kayaking merit badge to the satisfaction of your merit badge counselor."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "If you are completing these requirements as a tandem canoeist, perform the following on calm water: OR",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "Demonstrate the following strokes in the bow:"
+            },
+            {
+              "number": "4a(2)",
+              "text": "cross forward,"
+            },
+            {
+              "number": "4a(3)",
+              "text": "bow draw,"
+            },
+            {
+              "number": "4a(4)",
+              "text": "cross bow draw,"
+            },
+            {
+              "number": "4a(5)",
+              "text": "bow pry,"
+            },
+            {
+              "number": "4a(6)",
+              "text": "Duffek,"
+            },
+            {
+              "number": "4a(7)",
+              "text": "sculling draw, and"
+            },
+            {
+              "number": "4a(8)",
+              "text": "sculling pushaway (reverse scull)."
+            },
+            {
+              "number": "4a(9)",
+              "text": "Demonstrate the following strokes in the stern:"
+            },
+            {
+              "number": "4a(10)",
+              "text": "stern draw,"
+            },
+            {
+              "number": "4a(11)",
+              "text": "stern pry,"
+            },
+            {
+              "number": "4a(12)",
+              "text": "sculling draw,"
+            },
+            {
+              "number": "4a(13)",
+              "text": "sculling pushaway (reverse scull), and"
+            },
+            {
+              "number": "4a(14)",
+              "text": "forward with stern pry."
+            },
+            {
+              "number": "4a(15)",
+              "text": "Demonstrate a high brace, low brace, and a righting pry."
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "If you are completing these requirements as a solo canoeist, perform the following on calm water: OR",
+          "children": [
+            {
+              "number": "4b(1)",
+              "text": "Demonstrate the following strokes:"
+            },
+            {
+              "number": "4b(2)",
+              "text": "cross forward,"
+            },
+            {
+              "number": "4b(3)",
+              "text": "bow draw,"
+            },
+            {
+              "number": "4b(4)",
+              "text": "cross bow draw,"
+            },
+            {
+              "number": "4b(5)",
+              "text": "stern draw,"
+            },
+            {
+              "number": "4b(6)",
+              "text": "pry,"
+            },
+            {
+              "number": "4b(7)",
+              "text": "stern pry,"
+            },
+            {
+              "number": "4b(8)",
+              "text": "Duffek,"
+            },
+            {
+              "number": "4b(9)",
+              "text": "sculling draw,"
+            },
+            {
+              "number": "4b(10)",
+              "text": "sculling pushaway (reverse scull), and"
+            },
+            {
+              "number": "4b(11)",
+              "text": "forward with stern pry."
+            },
+            {
+              "number": "4b(12)",
+              "text": "Demonstrate a high brace, low brace, and righting pry."
+            }
+          ]
+        },
+        {
+          "number": "4c",
+          "text": "If you are completing these requirements as a solo kayaker, perform the following on calm water:",
+          "children": [
+            {
+              "number": "4c(1)",
+              "text": "Demonstrate the following strokes:"
+            },
+            {
+              "number": "4c(2)",
+              "text": "Duffek,"
+            },
+            {
+              "number": "4c(3)",
+              "text": "bow draw,"
+            },
+            {
+              "number": "4c(4)",
+              "text": "rudder, and"
+            },
+            {
+              "number": "4c(5)",
+              "text": "sculling draw."
+            },
+            {
+              "number": "4c(6)",
+              "text": "Demonstrate a high brace and low brace."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain the International Scale of River Difficulty and apply the scale to the stretch of river approved by your counselor."
+        },
+        {
+          "number": "5b",
+          "text": "Identify the specific characteristics of the river that are factors in your classification according to the International Scale."
+        },
+        {
+          "number": "5c",
+          "text": "Discuss how the level of flow changes a river from one class to another and what effects different flow rates have on the features of a river and its hazards."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Explain the importance of communication during every whitewater outing. Demonstrate knowledge and ability to use the following American Whitewater Universal River Signals, both visual and auditory:"
+    },
+    {
+      "number": "7",
+      "text": "\"Stop,\""
+    },
+    {
+      "number": "8",
+      "text": "\"Are you OK?,\""
+    },
+    {
+      "number": "9",
+      "text": "\"Help/emergency,\""
+    },
+    {
+      "number": "10",
+      "text": "\"Run river right,\""
+    },
+    {
+      "number": "11",
+      "text": "\"Run river left,\" and"
+    },
+    {
+      "number": "12",
+      "text": "\"All clear-come ahead.\""
+    },
+    {
+      "number": "13",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "13a",
+          "text": "If completing this merit badge in a canoe, describe the various types of canoes used on moving water and how they differ in design, materials, and purpose. OR"
+        },
+        {
+          "number": "13b",
+          "text": "If completing this merit badge in a kayak, describe the various types of kayaks used on moving water and explain how they differ in design, materials, and purpose."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "14",
+      "text": "Discuss the personal and group equipment necessary for a safe whitewater outing and how and why it is used. Explain how to pack and protect these items."
+    },
+    {
+      "number": "15",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "15a",
+          "text": "Demonstrate your ability to read a Class II section of river approved by your counselor. Describe the most desirable paths or lines of travel as well as alternative routes and options. Point out how to use the existing water features to your advantage, and explain how to best avoid the hazards present."
+        },
+        {
+          "number": "15b",
+          "text": "Wearing a proper life jacket and being appropriately dressed for the weather and water conditions, perform the following skills in moving water in a properly equipped whitewater craft of your choice (tandem canoe, solo canoe, or solo kayak). If a tandem canoe is used, the skills must be demonstrated from both the bow and stern positions.",
+          "children": [
+            {
+              "number": "15b(1)",
+              "text": "Launch and land."
+            },
+            {
+              "number": "15b(2)",
+              "text": "Paddle forward in a straight line."
+            },
+            {
+              "number": "15b(3)",
+              "text": "Backpaddle."
+            },
+            {
+              "number": "15b(4)",
+              "text": "Ferry upstream."
+            },
+            {
+              "number": "15b(5)",
+              "text": "Ferry downstream."
+            },
+            {
+              "number": "15b(6)",
+              "text": "Eddy turn."
+            },
+            {
+              "number": "15b(7)",
+              "text": "Peel out."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "16",
+      "text": "Explain and demonstrate the following to your counselor:",
+      "children": [
+        {
+          "number": "16a",
+          "text": "Self-rescue and procedures when capsized in moving water, including a wet exit if necessary"
+        },
+        {
+          "number": "16b",
+          "text": "Proper use of a throw rope to rescue a swimmer in whitewater"
+        },
+        {
+          "number": "16c",
+          "text": "Proper technique for receiving a throw rope as a swimmer"
+        },
+        {
+          "number": "16d",
+          "text": "Portaging - where portaging would be appropriate, and when and how to do it"
+        },
+        {
+          "number": "16e",
+          "text": "The whitewater buddy system using at least three persons and three craft"
+        }
+      ]
+    },
+    {
+      "number": "17",
+      "text": "Discuss the use of inflatable rafts on moving water. In your discussion, explain the special safety precautions that should be taken when using an inflatable raft and the risks of \"tubing\" on moving water."
+    },
+    {
+      "number": "18",
+      "text": "Participate in a whitewater trip using either a canoe or kayak on a Class I or Class II river. Help to prepare a written plan, specifying the route, schedule, equipment, safety precautions, and emergency procedures. Determine local rules and obtain permission from landowners and land managers in advance. Explain what steps you have taken to comply with BSA Safety Afloat and the American Whitewater safety guidelines. Execute the plan with others."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb125-15.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

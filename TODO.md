@@ -494,10 +494,26 @@ checkpoints so an interrupted run resumes. Re-run politely or you will libel a c
   High Desert, Natchez Trace, Simon Kenton) so still have no founding/lineage; deeper
   multi-level (predecessor-of-predecessor) lineage.
 - **Merit badge follow-ups.** (a) **Requirement content — DONE (0.5.0):** verbatim text +
-  structure per current revision (marked © SA). (b) **Historical requirement revisions**:
-  only the current revision per badge is seeded (workbooks ships one `<year>.md` each);
-  backfill older revisions with `supersedes` chains when sourced. (c) **plant-science
-  deep-structure**: its 5-level "alternatives" nesting was flattened (conf 0.75, flagged in
+  structure per current revision (marked © SA). (b) **Historical requirement revisions — DONE
+  (0.40.0).** Requirement-sets 188 → **415**; **131 of 141 badges now carry more than one edition**
+  (96 carry three), spanning **1995–2026**, with full verbatim trees, effective windows and
+  `supersedes` chains. Source: usscouts.org mirrors each badge at `/mb/mbNNN.asp` **and keeps the
+  preceding edition at `/mb/Old/mbNNN-YY.asp`**, with the revision type and effective date declared
+  in the page's own editable region — so editions are dated from the source, not inferred. Two
+  editions per badge are usually recoverable because usscouts' "current" page trails the newest
+  booklet workbooks tracks. Generator: `tools/seed_merit_badge_history.py` (caches fetches; polite
+  to a volunteer-run site). Editions are deduped **by text, never by claimed date**.
+  - Three chain invariants are now build-gated and each caught a real bug on the first pass: no
+    edition supersedes itself, no two editions of one subject share an `effective_from` (ids are
+    `<subject>-<year>`, so a year collision silently overwrites), and a subject has at most one open
+    edition — and must have one unless the subject itself is retired.
+  - **Remaining here:** Geology's archived page 404s (1 badge); 10 badges still have a single
+    edition, mostly ones created too recently to have a prior; and **30 scraped editions were dropped
+    because they claimed a year another edition already occupied** — same year, different text means
+    one label is wrong and the source cannot say which, so those want a human. Going deeper than one
+    prior edition needs Wayback (86 distinct-content snapshots exist for a single badge page, so the
+    depth is there if anyone wants pre-2000 history).
+  - (c) **plant-science deep-structure**: its 5-level "alternatives" nesting was flattened (conf 0.75, flagged in
   notes) — parse properly if it recurs. (d) **Historical discontinued badges**: catalog
   carries only CiS + Computers; add the 100+ discontinued set. (e) **Badge `description` + `tags`
   — DONE (0.39.0).** All 140 current badges carry an original-prose description (24-38 words,

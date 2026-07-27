@@ -5,7 +5,7 @@
   "subject": "merit-badge:shotgun-shooting",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:shotgun-shooting-2014",
   "source_document": {
     "title": "Shotgun Shooting Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/shotgun-shooting/",

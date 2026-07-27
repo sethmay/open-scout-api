@@ -5,7 +5,7 @@
   "subject": "merit-badge:drafting",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:drafting-2015",
   "source_document": {
     "title": "Drafting Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/drafting/",

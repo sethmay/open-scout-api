@@ -5,7 +5,7 @@
   "subject": "merit-badge:dog-care",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:dog-care-2017",
   "source_document": {
     "title": "Dog Care Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/dog-care/",

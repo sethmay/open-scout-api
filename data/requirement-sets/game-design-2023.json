@@ -5,7 +5,7 @@
   "subject": "merit-badge:game-design",
   "effective_from": "2023-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:game-design-2013",
   "source_document": {
     "title": "Game Design Merit Badge Requirements (2023)",
     "url": "https://www.scouting.org/merit-badges/game-design/",

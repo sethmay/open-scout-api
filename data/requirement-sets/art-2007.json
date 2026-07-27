@@ -1,0 +1,99 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "art-2007",
+  "kind": "requirement-set",
+  "subject": "merit-badge:art",
+  "effective_from": "2007-01-01",
+  "effective_to": "2013-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Art Merit Badge Requirements (2007, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb021-07.asp",
+    "year": 2007
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Tell a story with a picture or pictures or using a 3-D rendering."
+    },
+    {
+      "number": "2",
+      "text": "Do ONE of the following.",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Design something useful. Make a sketch or model of your design and get your counselor's approval before you proceed. Then create a promotional piece for the item using a picture or pictures."
+        },
+        {
+          "number": "2b",
+          "text": "Design a logo. Share your design with your counselor and explain the significance of your logo. Then, with your parent's permission and your counselor's approval, put your logo on Scout equipment, furniture, ceramics, or fabric."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "3",
+      "text": "Render a subject of your choice in FOUR of these ways:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Pen and ink,"
+        },
+        {
+          "number": "3b",
+          "text": "Watercolors,"
+        },
+        {
+          "number": "3c",
+          "text": "Pencil,"
+        },
+        {
+          "number": "3d",
+          "text": "Pastels,"
+        },
+        {
+          "number": "3e",
+          "text": "Oil paints,"
+        },
+        {
+          "number": "3f",
+          "text": "Tempera,"
+        },
+        {
+          "number": "3g",
+          "text": "Acrylics,"
+        },
+        {
+          "number": "3h",
+          "text": "Charcoal"
+        },
+        {
+          "number": "3i",
+          "text": "Computer drawing or painting"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "With your parent's permission and your counselor's approval, visit a museum, art exhibit, art gallery, artists' co-op, or artist's workshop. Find out about the art displayed or created there. Discuss what you learn with your counselor."
+    },
+    {
+      "number": "5",
+      "text": "Find out about three career opportunities in art. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb021-07.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

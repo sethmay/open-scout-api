@@ -1,0 +1,261 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "animal-science-2020",
+  "kind": "requirement-set",
+  "subject": "merit-badge:animal-science",
+  "effective_from": "2020-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Animal Science Merit Badge Requirements (2020, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb018-20.asp",
+    "year": 2020
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Name four breeds of livestock in each of the following classifications: horses, dairy cattle, beef cattle, sheep, hogs. Tell their principal uses and merits. Tell where the breeds originated."
+    },
+    {
+      "number": "2",
+      "text": "List five diseases in each of the classifications in requirement 1. Also list five diseases of poultry. . Describe the symptoms of each disease and explain how each is contracted and how it could be prevented."
+    },
+    {
+      "number": "3",
+      "text": "Explain the differences in the digestive systems of ruminants, horses, pigs, and poultry. Explain how the differences structure and function among these types of digestive tracts affect the nutritional management of these species."
+    },
+    {
+      "number": "4",
+      "text": "Select one type of animal - beef cow, dairy cow, horse, sheep, goat, or hog, or a poultry flock - and tell how you would properly manage it. Include in your discussion nutritional (feeding) concerns, housing, disease prevention, waste control/removal, breeding programs, and biosecurity as appropriate."
+    },
+    {
+      "number": "5",
+      "text": "Explain the importance of setting clear goals for any animal breeding program. Tell how purebred lines of animals are produced. Explain the practice of crossbreeding and the value of this practice."
+    },
+    {
+      "number": "6",
+      "text": "Complete ONE of the following options:"
+    },
+    {
+      "number": "7",
+      "text": "BEEF CATTLE OPTION",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Visit a farm or ranch where beef cattle are produced under any of these systems: Talk with the operator to learn how the cattle were handled, fed, weighed, and shipped. Describe what you saw and explain what you learned. If you cannot visit a cattle ranch or farm, view a video from a breed association, or research the Internet (with your parent's permission) for information on beef cattle production. Tell about your findings.",
+          "children": [
+            {
+              "number": "7a(1)",
+              "text": "Feeding market cattle for harvest;"
+            },
+            {
+              "number": "7a(2)",
+              "text": "Cow/calf operation, producing feeder cattle for sale to commercial cattle feeders;"
+            },
+            {
+              "number": "7a(3)",
+              "text": "Producing purebred cattle for sale as breeding stock to others."
+            }
+          ]
+        },
+        {
+          "number": "7b",
+          "text": "Sketch a plan of a feedlot to include its forage and grain storage facilities, and loading chute for 30 or more fattening steers, or sketch a corral plan with cutting and loading chutes for handling 50 or more beef cows and their calves at one time."
+        },
+        {
+          "number": "7c",
+          "text": "Make a sketch showing the principal wholesale and retail cuts of beef. Tell about the U.S. Department of Agriculture (USDA) dual grading system of beef. Tell the basis of each grade in each system."
+        },
+        {
+          "number": "7d",
+          "text": "Define the following terms: bull, steer, bullock, cow, heifer, freemartin, heiferette, calf."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "DAIRYING OPTION",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Tell how a cow or a goat converts forage and grain into milk. Explain the differences in feeds typically used for dairy cows versus those fed to beef cows."
+        },
+        {
+          "number": "8b",
+          "text": "Make a chart showing the components in cows' milk or goat's milk. Chart the amount of each component."
+        },
+        {
+          "number": "8c",
+          "text": "Explain the requirements for producing grade A milk. Tell how and why milk is pasteurized."
+        },
+        {
+          "number": "8d",
+          "text": "Tell about the kinds of equipment used for milking and the sanitation standards that must be met for dairy farms."
+        },
+        {
+          "number": "8e",
+          "text": "Define the following terms: bull, cow, steer, heifer, springer, buck, doe, kid."
+        },
+        {
+          "number": "8f",
+          "text": "Visit a dairy farm or a milk processing plant. Describe what you saw and explain what you learned. If you cannot visit a dairy farm or processing plant, view a video from a breed or dairy association, or research the Internet (with your parent's permission) for information on dairying. Tell about your findings."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "HORSE OPTION",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Make a sketch of a useful saddle horse barn and exercise yard."
+        },
+        {
+          "number": "9b",
+          "text": "Tell about the history of the horse and the benefits it has brought to people. Using the four breeds of horses you chose in requirement 1, discuss the different special uses of each breed."
+        },
+        {
+          "number": "9c",
+          "text": "Define the following terms: mare, stallion, gelding, foal, colt, filly; mustang, quarter horse, draft horse, pacer, trotter; pinto, calico, palomino, roan, overo, tobiano."
+        },
+        {
+          "number": "9d",
+          "text": "Visit a horse farm. Describe what you saw and explain what you learned. If you cannot visit a horse farm, view a video from a breed association, or research the Internet (with your parent's permission) for information on horses. Tell about your findings."
+        },
+        {
+          "number": "9e",
+          "text": "Outline the proper feeding of a horse doing light work. Explain why the amount and kind of feed will change according to the kind of horse and the work it does. Describe what colic is, what can cause it, and its symptoms."
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "SHEEP OPTION",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Make a sketch of a live lamb. Show the location of the various wholesale and retail cuts."
+        },
+        {
+          "number": "10b",
+          "text": "Discuss how wools are sorted and graded."
+        },
+        {
+          "number": "10c",
+          "text": "Do ONE of the following:",
+          "children": [
+            {
+              "number": "10c(1)",
+              "text": "Raise a lamb from weaning to market weight. Keep records of feed intake, weight gains, medication, vaccination, and mortality. Present your records to your counselor for review."
+            },
+            {
+              "number": "10c(2)",
+              "text": "Visit a farm or ranch where sheep are raised. Describe what you saw and explain what you learned. If you cannot visit a sheep farm or ranch, view a video from a breed association, or research the Internet (with your parent's permission) for information on sheep . Tell about your findings."
+            }
+          ],
+          "choose": 1
+        },
+        {
+          "number": "10d",
+          "text": "Describe some differences between the production of purebred and commercial lambs. Then select two breeds that would be appropriate for the production of crossbred market lambs in your region. Identify which breed the ram should be."
+        },
+        {
+          "number": "10e",
+          "text": "Define the following terms: wether, ewe, ram, lamb."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "HOG OPTION",
+      "children": [
+        {
+          "number": "11a",
+          "text": "Make a sketch showing the principal wholesale and retail cuts of pork. Tell about the recommended USDA grades of pork. Tell the basis for each grade."
+        },
+        {
+          "number": "11b",
+          "text": "Outline in writing the proper feeding programs used from the breeding of a gilt or sow through the weaning of the litter. Discuss the growth and finishing periods from the breeding of a gilt or sow through the weaning of the litter. Discuss the feeding programs for the growth and finishing periods."
+        },
+        {
+          "number": "11c",
+          "text": "Do ONE of the following:",
+          "children": [
+            {
+              "number": "11c(1)",
+              "text": "Raise a feeder pig from weaning to market weight. Keep records of feed intake, weight gains, medication, vaccination, and mortality. Present your records to your counselor for review."
+            },
+            {
+              "number": "11c(2)",
+              "text": "Visit a farm where hogs are produced, or visit a packing plant handling hogs. Describe what you saw and explain what you learned. If you cannot visit a hog production unit or packing plant, view a video from a packer or processor, or research the Internet (with your parent's permission) for information on hogs. Tell about your findings."
+            }
+          ],
+          "choose": 1
+        },
+        {
+          "number": "11d",
+          "text": "Define the following terms: gilt, sow, barrow, boar."
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "text": "AVIAN OPTION",
+      "children": [
+        {
+          "number": "12a",
+          "text": "Make a sketch of a layer house or broiler house showing nests, roosts, feeders, waterers, and means of ventilation. Explain how insulation, ventilation, temperature controls, automatic lights, and other environmental controls are used to protect birds from heat, cold, and bad weather."
+        },
+        {
+          "number": "12b",
+          "text": "Explain why overcrowding is dangerous for poultry flocks."
+        },
+        {
+          "number": "12c",
+          "text": "Tell about the grading of eggs. Tell how broilers (fryers) are graded. Describe the classes of chicken meat."
+        },
+        {
+          "number": "12d",
+          "text": "Do ONE of the following:",
+          "children": [
+            {
+              "number": "12d(1)",
+              "text": "Manage an egg-producing flock for five months. Keep records of feed purchased, eggs sold, medication, vaccination, and mortality. Present your records to your counselor for review."
+            },
+            {
+              "number": "12d(2)",
+              "text": "Raise five chickens from hatching. Keep records of feed intake, weight gains, medication, vaccination, and mortality. Present your records to your counselor for review."
+            },
+            {
+              "number": "12d(3)",
+              "text": "Visit a commercial avian production facility. Describe what you saw and explain what you learned. If you cannot visit a commercial facility, view a video from a poultry association, or research the Internet (with your parent's permission) for information on poultry production. Tell about your findings."
+            }
+          ],
+          "choose": 1
+        },
+        {
+          "number": "12e",
+          "text": "Define the following terms: hen, rooster, chick, capon, tom, poult."
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "text": "Find out about three career opportunities in animal science. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb018-20.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

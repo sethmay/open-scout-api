@@ -5,7 +5,7 @@
   "subject": "merit-badge:leatherwork",
   "effective_from": "2017-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:leatherwork-2014",
   "source_document": {
     "title": "Leatherwork Merit Badge Requirements (2017)",
     "url": "https://www.scouting.org/merit-badges/leatherwork/",

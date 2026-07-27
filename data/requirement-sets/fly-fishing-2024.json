@@ -1,0 +1,120 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "fly-fishing-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:fly-fishing",
+  "effective_from": "2024-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:fly-fishing-2021",
+  "source_document": {
+    "title": "Fly Fishing Merit Badge Requirements (2024, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb136.asp",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in fly-fishing activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Name and explain five safety practices you should always follow while fly-fishing."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss the prevention of and treatment for health concerns that could occur while fly-fishing, including cuts and scratches, puncture wounds, insect bites, hypothermia, dehydration, heat exhaustion, heatstroke, and sunburn."
+        },
+        {
+          "number": "1c",
+          "text": "Explain how to remove a hook that has lodged in your arm."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Demonstrate how to match a fly rod, line and leader to achieve a balanced system. Discuss several types of fly lines, and explain how and when each would be used. Review with your counselor how to care for this equipment."
+    },
+    {
+      "number": "3",
+      "text": "Demonstrate how to tie proper knots to prepare a fly rod for fishing:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Tie backing to the arbor of a fly reel spool using an arbor knot."
+        },
+        {
+          "number": "3b",
+          "text": "Tie backing to the fly line using a nail (tube)knot."
+        },
+        {
+          "number": "3c",
+          "text": "Attach a leader to the fly line using a nail (tube) knot or a loop-to-loop connection."
+        },
+        {
+          "number": "3d",
+          "text": "Add a tippet to a leader using a surgeon's knot or a loop-to-loop connection,"
+        },
+        {
+          "number": "3e",
+          "text": "Tie a fly onto the terminal end of the leader using an improved clinch knot."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Explain how and when each of the following types of flies is used: dry flies, wet flies, nymphs, streamers, bass bugs, poppers , and saltwater flies. Tell what each one imitates. Tie at least two types of the flies mentioned in this requirement."
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate the ability to cast a fly 30 feet consistently and accurately using both overhead and roll cast techniques."
+    },
+    {
+      "number": "6",
+      "text": "Go to a suitable fishing location and observe what fish may be eating both above and beneath the water's surface. Explain the importance of matching the hatch."
+    },
+    {
+      "number": "7",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Explain the importance of practicing Leave No Trace techniques. Discuss the positive effects of Leave No Trace on fly-fishing resources."
+        },
+        {
+          "number": "7b",
+          "text": "Discuss the meaning and importance of catch and release. Describe how to properly release a fish safely to the water."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Obtain and review a copy of the regulations affecting game fishing where you live or where you plan to fish. Explain why they were adopted and what is accomplished by following them."
+    },
+    {
+      "number": "9",
+      "text": "Discuss what good sportsmanlike behavior is and how it relates to anglers. Tell how the Outdoor Code of the Boy Scouts of America relates to a fishing enthusiast, including the aspects of littering, trespassing, courteous behavior, \"catch and release,\" and obeying fishing regulations."
+    },
+    {
+      "number": "10",
+      "text": "Catch at least one fish using a fly and identify it."
+    },
+    {
+      "number": "11",
+      "text": "If regulations and health concerns permit, clean and cook a fish you have caught. If you are unable to catch a fish for eating, acquire a fish, clean the fish you acquired, and cook the fish you acquired. (It is not required that you eat the fish.)"
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb136.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

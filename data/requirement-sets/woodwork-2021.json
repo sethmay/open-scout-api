@@ -5,7 +5,7 @@
   "subject": "merit-badge:woodwork",
   "effective_from": "2021-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:woodwork-2019",
   "source_document": {
     "title": "Woodwork Merit Badge Requirements (2021)",
     "url": "https://www.scouting.org/merit-badges/woodwork/",

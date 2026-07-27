@@ -1,0 +1,138 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "dentistry-2022",
+  "kind": "requirement-set",
+  "subject": "merit-badge:dentistry",
+  "effective_from": "2022-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:dentistry-2017",
+  "source_document": {
+    "title": "Dentistry Merit Badge Requirements (2022, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb040.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Using x-ray (radiographic) films and with your counselor's guidance, study the tooth structure and look for decay. Then do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Using the radiographs as a guide, draw a lower molar. Label its parts and surfaces. Show surrounding structures such as bone and gum tissues."
+        },
+        {
+          "number": "1b",
+          "text": "Show on your drawing where the nerves and blood vessels enter and leave the tooth."
+        },
+        {
+          "number": "1c",
+          "text": "Show on your drawing where bacterial plaque is most likely to be found."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Tell or write about what causes dental decay and gum disease. Tell how each of the following contributes to dental decay and gum disease: bacterial plaque, sugars, and acid."
+        },
+        {
+          "number": "2b",
+          "text": "Tell the possible causes for traumatic tooth loss, describe the types of mouth guards used to help prevent tooth trauma, and list the athletic activities during which a person should wear a mouth guard."
+        },
+        {
+          "number": "2c",
+          "text": "Explain the first-aid procedure for saving a tooth that has been knocked out."
+        },
+        {
+          "number": "2d",
+          "text": "Discuss how the use of tobacco products can negatively affect your oral health"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Arrange for a visit with a dentist. Before you go, ask whether your visit can include a dental examination and a plaque-control demonstration. Afterward, ask questions about things you want to know. Then tell your counselor what the dentist does during a checkup examination."
+    },
+    {
+      "number": "4",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Name at least five instruments and five pieces of equipment a dentist uses."
+        },
+        {
+          "number": "4b",
+          "text": "With the help of a dentist, prepare a dental stone cast using a vibrator, a mixing bowl, a water measure, a plastic measure, model stone, and a spatula."
+        },
+        {
+          "number": "4c",
+          "text": "Keep a record of everything you eat for three days. Circle those items that may provide the sugars that bacterial plaque needs to make acid. List snacks that you should avoid to help maintain the best oral health."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "5",
+      "text": "Discuss with your merit badge counselor the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "How fluorides help prevent tooth decay and the ways fluorides can be provided to the teeth."
+        },
+        {
+          "number": "5b",
+          "text": "How the mouth is related to the rest of the body. Topics might include chewing, saliva, enzymes, nutrition, and speech."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Make a model tooth out of soap, clay, papier-mch, or wax. Using a string and a large hand brush, show your troop or a school class proper tooth-brushing and flossing procedures."
+        },
+        {
+          "number": "6b",
+          "text": "Make a poster on the prevention of dental disease. Show the importance of good oral health."
+        },
+        {
+          "number": "6c",
+          "text": "Collect at least five advertisements for different toothpastes. List the claims that each one makes. Tell about the accuracy of the advertisements."
+        },
+        {
+          "number": "6d",
+          "text": "Write a feature story for your school newspaper on the proper care of teeth and gums. Include in your story how the use of tobacco products can negatively affect a person's oral health."
+        },
+        {
+          "number": "6e",
+          "text": "Make drawings and write about the progress of dental decay. Describe the types of dental filling and treatments a dentist can use to repair dental decay problems."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "7",
+      "text": "Learn about career opportunities for both Doctor of Dental Surgery (D.D.S.) and auxiliary dental professions. Pick either general dentistry OR a dental specialty, plus one auxiliary dental profession. Find out about the education, training, and experience required for these two professions. Discuss these with your counselor, and explain why these professions interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb040.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

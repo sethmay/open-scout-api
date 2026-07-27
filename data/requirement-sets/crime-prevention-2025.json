@@ -5,7 +5,7 @@
   "subject": "merit-badge:crime-prevention",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:crime-prevention-2020",
   "source_document": {
     "title": "Crime Prevention Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/crime-prevention/",

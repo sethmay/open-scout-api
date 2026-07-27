@@ -1,0 +1,135 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "robotics-2011",
+  "kind": "requirement-set",
+  "subject": "merit-badge:robotics",
+  "effective_from": "2011-04-12",
+  "effective_to": "2025-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Robotics Merit Badge Requirements (2011, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb146.asp",
+    "year": 2011
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Safety. Do each of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while working with robots and what you should do to anticipate, mitigate and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working with robotics."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss first aid and prevention for the types of injuries that could occur while participating in robotics activities and competitions, including cuts, eye injuries, and burns (chemical or heat)."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Robotics industry. Discuss the following with your counselor:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "The kinds of things robots can do and how robots are best used today."
+        },
+        {
+          "number": "2b",
+          "text": "The similarities and differences between remote-control vehicles, telerobots, and autonomous robots."
+        },
+        {
+          "number": "2c",
+          "text": "Three different methods robots can use to move themselves other than wheels or tracks. Describe when it would be appropriate to use each method."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "General knowledge. Discuss with your counselor three of the five major fields of robotics (human-robot interface, mobility, manipulation, programming, sensors) and their importance to robotics development. Discuss either the three fields as they relate to a single robot system OR talk about each field in general. Find pictures or at least one video to aid in your discussion."
+    },
+    {
+      "number": "4",
+      "text": "Design, build, program, test. Do each of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "With your counselor's approval, choose a task for the robot or robotic subsystem that you plan to build. Include sensor feedback and programming in the task. Document this information in your robot engineering notebook."
+        },
+        {
+          "number": "4b",
+          "text": "Design your robot. The robot design should use sensors and programming and have at least 2 degrees of freedom. Document the design in your robot engineering notebook using drawings and a written description."
+        },
+        {
+          "number": "4c",
+          "text": "Build a robot or robotic subsystem of your original design to accomplish the task you chose for requirement 4a."
+        },
+        {
+          "number": "4d",
+          "text": "Discuss with your counselor the programming options available for your robot. Then do either option 1 OR option 2.",
+          "children": [
+            {
+              "number": "4d(1)",
+              "text": "Option 1. Program your robot to perform the task you chose for your robot in 4a. Include a sample of your program's source code in your robot engineering notebook."
+            },
+            {
+              "number": "4d(2)",
+              "text": "Option 2. Prepare a flowchart of the desired steps to program your robot for accomplishing the task in 4a. Include procedures that show activities based on sensor inputs. Place this in your robot engineering notebook."
+            }
+          ]
+        },
+        {
+          "number": "4e",
+          "text": "Test your robot and record the results in your robot engineering notebook. Include suggestions on how you could improve your robot, as well as pictures or sketches of your finished robot."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate. Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Demonstrate for your counselor the robot you built in requirement 4."
+        },
+        {
+          "number": "5b",
+          "text": "Share your robot engineering notebook with your counselor. Talk about how well your robot accomplished the task, the improvements you would make in your next design, and what you learned about the design process."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Competitions. Do ONE of the following.",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Attend a robotics competition and report to your counselor what you saw and learned about the competition and how teams are organized and managed."
+        },
+        {
+          "number": "6b",
+          "text": "Learn about three youth robotics competitions. Tell your counselor about these, including the type of competition, time commitment, age of the participants, and how many teams are involved."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Careers. Name three career opportunities in robotics. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb146.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

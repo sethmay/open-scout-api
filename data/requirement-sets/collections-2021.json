@@ -5,7 +5,7 @@
   "subject": "merit-badge:collections",
   "effective_from": "2021-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:collections-2009",
   "source_document": {
     "title": "Collections Merit Badge Requirements (2021)",
     "url": "https://www.scouting.org/merit-badges/collections/",

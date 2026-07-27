@@ -5,7 +5,7 @@
   "subject": "merit-badge:pulp-and-paper",
   "effective_from": "2024-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:pulp-and-paper-2017",
   "source_document": {
     "title": "Pulp and Paper Merit Badge Requirements (2024)",
     "url": "https://www.scouting.org/merit-badges/pulp-and-paper/",

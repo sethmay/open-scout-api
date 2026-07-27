@@ -5,7 +5,7 @@
   "subject": "merit-badge:horsemanship",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:horsemanship-2014",
   "source_document": {
     "title": "Horsemanship Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/horsemanship/",

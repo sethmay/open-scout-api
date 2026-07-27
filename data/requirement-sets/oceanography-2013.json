@@ -1,0 +1,122 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "oceanography-2013",
+  "kind": "requirement-set",
+  "subject": "merit-badge:oceanography",
+  "effective_from": "2013-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:oceanography-2004",
+  "source_document": {
+    "title": "Oceanography Merit Badge Requirements (2013, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb079.asp",
+    "year": 2013
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Name four branches of oceanography. Describe at least five reasons why it is important for people to learn about the oceans."
+    },
+    {
+      "number": "2",
+      "text": "Define salinity, temperature, and density, and describe how these important properties of seawater are measured by the physical oceanographer. Discuss the circulation and currents of the ocean. Describe the effects of the oceans on weather and climate."
+    },
+    {
+      "number": "3",
+      "text": "Describe the characteristics of ocean waves. Point out the differences among the storm surge, tsunami, tidal wave, and tidal bore. Explain the difference between sea, swell, and surf. Explain how breakers are formed."
+    },
+    {
+      "number": "4",
+      "text": "Draw a cross-section of underwater topography. Show what is meant by: Name and put on your drawing the following: seamount, guyot, rift valley, canyon, trench, and oceanic ridge. Compare the depths in the oceans with the heights of mountains on land.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Continental shelf"
+        },
+        {
+          "number": "4b",
+          "text": "Continental slope, and"
+        },
+        {
+          "number": "4c",
+          "text": "Abyssal plain"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "List the main salts, gases, and nutrients in sea water. Describe some important properties of water. Tell how the animals and plants of the ocean affect the chemical composition of seawater. Explain how differences in evaporation and precipitation affect the salt content of the oceans."
+    },
+    {
+      "number": "6",
+      "text": "Describe some of the biologically important properties of seawater. Define benthos, nekton, and plankton. Name some of the plants and animals that make up each of these groups. Describe the place and importance of phytoplankton in the oceanic food chain."
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Make a plankton net. Tow the net by a dock, wade with it, hold it in a current, or tow it from a rowboat*. Do this for about 20 minutes. Save the sample. Examine it under a microscope or high-power glass. Identify the three most common types of plankton in the sample."
+        },
+        {
+          "number": "7b",
+          "text": "Make a series of models (clay or plaster and wood) of a volcanic island. Show the growth of an atoll from a fringing reef through a barrier reef. Describe the Darwinian theory of coral reef formation."
+        },
+        {
+          "number": "7c",
+          "text": "Measure the water temperature at the surface, midwater, and bottom of a body of water four times daily for five consecutive days. You may measure depth with a rock tied to a line. Make a Secchi disk to measure turbidity (how much suspended sedimentation is in the water). Measure the air temperature. Note the cloud cover and roughness of the water. Show your findings (air and water temperature, turbidity) on a graph. Tell how the water temperature changes with air temperature."
+        },
+        {
+          "number": "7d",
+          "text": "Make a model showing the inshore sediment movement by littoral currents, tidal movement, and wave action. Include such formations as high and low waterlines, low tide terrace, berm, and coastal cliffs. Show how the offshore bars are built up and torn down."
+        },
+        {
+          "number": "7e",
+          "text": "Make a wave generator. Show reflection and refraction of waves. Show how groins, jetties, and breakwaters affect these patterns."
+        },
+        {
+          "number": "7f",
+          "text": "Track and monitor satellite images available on the Internet for a specific location for three weeks. Describe what you have learned to your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Write a 500-word report on a book about oceanography approved by your counselor."
+        },
+        {
+          "number": "8b",
+          "text": "Visit one of the following: (1) an oceanographic research ship, or (2) an oceanographic institute, marine laboratory, or marine aquarium. Write a 500-word report about your visit."
+        },
+        {
+          "number": "8c",
+          "text": "Explain to your troop in a five minute prepared speech \"Why Oceanography Is Important\" or describe \"Career Opportunities in Oceanography.\" (Before making your speech, show your speech outline to your counselor for approval.)"
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "9",
+      "text": "Describe four methods that marine scientists use to investigate the ocean, underlying geology, and organisms living in the water."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb079.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

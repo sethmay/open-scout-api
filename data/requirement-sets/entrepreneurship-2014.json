@@ -5,7 +5,7 @@
   "subject": "merit-badge:entrepreneurship",
   "effective_from": "2014-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:entrepreneurship-2007",
   "source_document": {
     "title": "Entrepreneurship Merit Badge Requirements (2014)",
     "url": "https://www.scouting.org/merit-badges/entrepreneurship/",

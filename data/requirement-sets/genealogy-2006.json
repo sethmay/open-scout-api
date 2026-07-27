@@ -1,0 +1,123 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "genealogy-2006",
+  "kind": "requirement-set",
+  "subject": "merit-badge:genealogy",
+  "effective_from": "2006-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Genealogy Merit Badge Requirements (2006, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/old/mb056-06.asp",
+    "year": 2006
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain to your counselor what the words genealogy, ancestor, and descendant mean."
+    },
+    {
+      "number": "2",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Do a time line for yourself or for a relative. Then write a short biography based on that time line."
+        },
+        {
+          "number": "2b",
+          "text": "Keep a journal for 6 weeks. You must write in it at least once a week."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "3",
+      "text": "With your parent's help, choose a relative or a family acquaintance you can interview in person, by telephone, or by e-mail or letter. Record the information you collect so you do not forget it."
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Name three types of genealogical resources and explain how these resources can help you chart your family tree."
+        },
+        {
+          "number": "4b",
+          "text": "Obtain at least one genealogical document that supports an event that is or can be recorded on your pedigree chart or family group record. The document could be found at home or at a government office, religious organization, archive, or library."
+        },
+        {
+          "number": "4c",
+          "text": "Tell how you would evaluate the genealogical information you found for requirement 4b."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Contact ONE of the following individuals or institutions. Ask what genealogical services, records, or activities this individual or institution provides, and report the results:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "A genealogical or lineage society"
+        },
+        {
+          "number": "5b",
+          "text": "A professional genealogist (someone who gets paid for doing genealogical research)"
+        },
+        {
+          "number": "5c",
+          "text": "A surname organization, such as your family's organization"
+        },
+        {
+          "number": "5d",
+          "text": "A genealogical education facility or institution."
+        },
+        {
+          "number": "5e",
+          "text": "A genealogical record repository of any type (courthouse, genealogical library, state or national archive, state library, etc.)"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Begin your family tree by listing yourself and include at least two additional generations. You may complete this requirement by using the chart provided in the Genealogy merit badge pamphlet or the genealogy software program of your choice."
+    },
+    {
+      "number": "7",
+      "text": "Complete a family group record form, listing yourself and your brothers and sisters as the children. On another family group record form, show one of your parents and his or her brothers and sisters as the children. This requirement may be completed using the chart provided or the genealogy software program of your choice."
+    },
+    {
+      "number": "8",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Explain the effect computers and the Internet are having on the world of genealogy."
+        },
+        {
+          "number": "8b",
+          "text": "Explain how photography (including microfilming) has influenced genealogy."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Discuss what you have learned about your family and your family members through your genealogical research."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/old/mb056-06.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -5,7 +5,7 @@
   "subject": "merit-badge:insect-study",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:insect-study-2024",
   "source_document": {
     "title": "Insect Study Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/insect-study/",

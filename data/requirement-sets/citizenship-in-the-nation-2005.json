@@ -1,0 +1,103 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "citizenship-in-the-nation-2005",
+  "kind": "requirement-set",
+  "subject": "merit-badge:citizenship-in-the-nation",
+  "effective_from": "2005-01-01",
+  "effective_to": "2021-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Citizenship in the Nation Merit Badge Requirements (2005, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb003-05.asp",
+    "year": 2005
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain what citizenship in the nation means and what it takes to be a good citizen of this country. Discuss the rights, duties, and obligations of a responsible and active American citizen."
+    },
+    {
+      "number": "2",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Visit a place that is listed as a National Historic Landmark or that is on the National Register of Historic Places. Tell your counselor what you learned about the landmark or site and what you found interesting about it."
+        },
+        {
+          "number": "2b",
+          "text": "Tour your state capitol building or the U.S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history."
+        },
+        {
+          "number": "2c",
+          "text": "Tour a federal facility. Explain to your counselor what you saw there and what you learned about its function in the local community and how it serves this nation."
+        },
+        {
+          "number": "2d",
+          "text": "Choose a national monument that interests you. Using books, brochures, the Internet (with your parent's permission), and other resources, find out more about the monument. Tell your counselor what you learned, and explain why the monument is important to this country's citizens."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "3",
+      "text": "Watch the national evening news five days in a row OR read the front page of a major daily newspaper five days in a row. Discuss the national issues you learned about with your counselor. Choose one of the issues and explain how it affects you and your family."
+    },
+    {
+      "number": "4",
+      "text": "Discuss each of the following documents with your counselor. Tell your counselor how you feel life in the United States might be different without each one.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Declaration of Independence"
+        },
+        {
+          "number": "4b",
+          "text": "Preamble to the Constitution"
+        },
+        {
+          "number": "4c",
+          "text": "The Constitution"
+        },
+        {
+          "number": "4d",
+          "text": "Bill of Rights"
+        },
+        {
+          "number": "4e",
+          "text": "Amendments to the Constitution"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "List the six functions of government as noted in the preamble to the Constitution. Discuss with your counselor how these functions affect your family and local community."
+    },
+    {
+      "number": "6",
+      "text": "With your counselor's approval, choose a speech of national historical importance. Find out about the author, and tell your counselor about the person who gave the speech. Explain the importance of the speech at the time it was given, and tell how it applies to American citizens today. Choose a sentence or two from the speech that has significant meaning to you, and tell your counselor why."
+    },
+    {
+      "number": "7",
+      "text": "Name the three branches of our federal government and explain to your counselor their functions. Explain how citizens are involved in each branch. For each branch of government, explain the importance of the system of checks and balances."
+    },
+    {
+      "number": "8",
+      "text": "Name your two senators and the member of Congress from your congressional district. Write a letter about a national issue and send it to one of these elected officials, sharing your view with him or her. Show your letter and any response you receive to your counselor."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb003-05.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

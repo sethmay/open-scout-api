@@ -5,7 +5,7 @@
   "subject": "merit-badge:public-health",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:public-health-2021",
   "source_document": {
     "title": "Public Health Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/public-health/",

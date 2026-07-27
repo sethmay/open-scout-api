@@ -5,7 +5,7 @@
   "subject": "merit-badge:bird-study",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:bird-study-2024",
   "source_document": {
     "title": "Bird Study Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/bird-study/",

@@ -5,7 +5,7 @@
   "subject": "merit-badge:gardening",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:gardening-2018",
   "source_document": {
     "title": "Gardening Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/gardening/",

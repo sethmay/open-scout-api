@@ -5,7 +5,7 @@
   "subject": "merit-badge:fish-wildlife-management",
   "effective_from": "2024-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:fish-wildlife-management-2021",
   "source_document": {
     "title": "Fish & Wildlife Management Merit Badge Requirements (2024)",
     "url": "https://www.scouting.org/merit-badges/fish-wildlife-management/",

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "music-2012",
+  "kind": "requirement-set",
+  "subject": "merit-badge:music",
+  "effective_from": "2012-01-01",
+  "effective_to": "2016-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Music Merit Badge Requirements (2012, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb077-12.asp",
+    "year": 2012
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Sing or play a simple song or hymn chosen by your counselor using good technique, phrasing, tone, rhythm, and dynamics.. Read all the signs and terms of the score."
+    },
+    {
+      "number": "2",
+      "text": "Name the five general groups of musical instruments. Create an illustration that shows how tones are generated and how instruments produce sound."
+    },
+    {
+      "number": "3",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Attend a live performance, or listen to three hours of recordings from any two of the following musical styles: blues, jazz, classical, country, bluegrass, ethnic, gospel, musical theater, opera. Describe the sound of the music and the instruments used. Identify the composers or songwriters, the performers, and the titles of the pieces you heard. If it was a live performance, describe the setting and the reaction of the audience. Discuss your thoughts about the music."
+        },
+        {
+          "number": "3b",
+          "text": "Interview an adult member of your family about music. Find out what the most popular music was when he or she was your age. Find out what his or her favorite music is now, and listen to three of your relative's favorite tunes with him or her. How do those favorites sound to you? Had you ever heard any of them? Play three of your favorite songs for your relative, and explain why you like these songs. Ask what he or she thinks of your favorite music."
+        },
+        {
+          "number": "3c",
+          "text": "Serve for six months as a member of a school band, choir, or other organized musical group; or perform as a soloist in public six times."
+        },
+        {
+          "number": "3d",
+          "text": "List five people who are important in the history of American music and explain to your counselor why they continue to be influential. Include at least one composer, one performer, one innovator, and one person born more than 100 years ago."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Teach three songs to a group of people. Lead them in singing the songs, using proper hand motions."
+        },
+        {
+          "number": "4b",
+          "text": "Compose and write the score for a piece of music of 12 measures or more, and play this music on an instrument."
+        },
+        {
+          "number": "4c",
+          "text": "Make a traditional instrument and learn to play it."
+        },
+        {
+          "number": "4d",
+          "text": "Catalog your own or your family's collection of 12 or more compact discs, tapes, records, or other recorded music. Show how to handle and store them."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb077-12.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

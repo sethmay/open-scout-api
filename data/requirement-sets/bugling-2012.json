@@ -1,0 +1,124 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "bugling-2012",
+  "kind": "requirement-set",
+  "subject": "merit-badge:bugling",
+  "effective_from": "2012-01-01",
+  "effective_to": "2019-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Bugling Merit Badge Requirements (2012, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb032-12.asp",
+    "year": 2012
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Give a brief history of the bugle."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain and demonstrate how the bugle makes sound, and explain how the bugle is related to other brass wind instruments."
+        },
+        {
+          "number": "2b",
+          "text": "Compose a bugle call for your troop or patrol to signal a common group activity, such as assembling for mealtime or striking a campsite. Play the call that you have composed before your unit or patrol."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Sound the following bugle calls:"
+    },
+    {
+      "number": "4",
+      "text": "First Call"
+    },
+    {
+      "number": "5",
+      "text": "Reveille"
+    },
+    {
+      "number": "6",
+      "text": "Assembly"
+    },
+    {
+      "number": "7",
+      "text": "Mess"
+    },
+    {
+      "number": "8",
+      "text": "Drill"
+    },
+    {
+      "number": "9",
+      "text": "Fatigue"
+    },
+    {
+      "number": "10",
+      "text": "Officers"
+    },
+    {
+      "number": "11",
+      "text": "Recall"
+    },
+    {
+      "number": "12",
+      "text": "Church"
+    },
+    {
+      "number": "13",
+      "text": "Swimming"
+    },
+    {
+      "number": "14",
+      "text": "Fire"
+    },
+    {
+      "number": "15",
+      "text": "Retreat"
+    },
+    {
+      "number": "16",
+      "text": "To the Colors"
+    },
+    {
+      "number": "17",
+      "text": "Call to Quarters, and"
+    },
+    {
+      "number": "18",
+      "text": "Taps"
+    },
+    {
+      "number": "19",
+      "text": "Explain when each of the calls in requirement 3 is used."
+    },
+    {
+      "number": "20",
+      "text": "Explain how to care for, clean, and maintain a bugle."
+    },
+    {
+      "number": "21",
+      "text": "Serve as bugler in your troop for three months."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb032-12.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

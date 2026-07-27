@@ -1,0 +1,166 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "small-boat-sailing-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:small-boat-sailing",
+  "effective_from": "2023-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:small-boat-sailing-2005",
+  "source_document": {
+    "title": "Small-Boat Sailing Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb105.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in small-boat activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Review prevention, symptoms, and first-aid treatment for the following injuries or illnesses that can occur while sailing: blisters, cold-water shock and hypothermia, dehydration, heat-related illnesses, sunburn, sprains, and strains."
+        },
+        {
+          "number": "1c",
+          "text": "Discuss the BSA Safety Afloat policy. Tell how it applies to small-boat activities."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Before doing requirements 3 through 9, successfully complete the BSA swimmer test:"
+    },
+    {
+      "number": "3",
+      "text": "Jump feetfirst into water over the head in depth. Level off and swim 75 yards in a strong manner using one or more of the following strokes: sidestroke, breaststroke, trudgen, or crawl; then swim 25 yards using an easy resting backstroke. The 100 yards must be completed in one swim without stops and must include at least one sharp turn. After completing the swim, rest by floating."
+    },
+    {
+      "number": "4",
+      "text": "Describe the boat you will be using for the sailing requirement, naming all of the major parts and the function of those parts.*"
+    },
+    {
+      "number": "5",
+      "text": "Before going afloat, do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Discuss the nine points of the BSA Safety Afloat plan."
+        },
+        {
+          "number": "5b",
+          "text": "Explain the rules of the road in general and any specific rules or laws that apply to your area or state."
+        },
+        {
+          "number": "5c",
+          "text": "Explain how water conditions, the hazards of weather, and heavy winds can affect both- safety and performance in sailing."
+        },
+        {
+          "number": "5d",
+          "text": "Discuss the warning signs of inclement weather and what to do should heavy winds develop or a storm approach."
+        },
+        {
+          "number": "5e",
+          "text": "Prepare a typical float plan."
+        },
+        {
+          "number": "5f",
+          "text": "Discuss the proper clothing, footwear, and personal gear required for small-boat sailing in warm weather and in cool weather. Explain how choosing the proper clothing, footwear, and personal gear will .help keep you comfortable and safe while sailing."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Discuss with your counselor how to identify the wind direction and wind indicators. Explain the importance of this task before setting sail."
+    },
+    {
+      "number": "7",
+      "text": "Following the BSA Safety Afloat plan, show that you and a buddy can sail a boat properly. Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Prepare a boat for sailing, including a safety inspection."
+        },
+        {
+          "number": "7b",
+          "text": "Get underway from a dock,. mooring, or beach."
+        },
+        {
+          "number": "7c",
+          "text": "Properly set sails for a round-trip course approved by your counselor that will include running, beating, and reaching-the basic points of sail. While sailing, demonstrate good helmsmanship skills."
+        },
+        {
+          "number": "7d",
+          "text": "Change direction by tacking; change direction by jibing."
+        },
+        {
+          "number": "7e",
+          "text": "Demonstrate getting out of irons."
+        },
+        {
+          "number": "7f",
+          "text": "Demonstrate the safety position."
+        },
+        {
+          "number": "7g",
+          "text": "Demonstrate capsize procedures and. the rescue of a person overboard."
+        },
+        {
+          "number": "7h",
+          "text": "Demonstrate the procedure to take after running aground."
+        },
+        {
+          "number": "7i",
+          "text": "Accept a single line or side tow and maneuver the craft being towed safely for 20 boat lengths."
+        },
+        {
+          "number": "7j",
+          "text": "Upon returning to the dock, mooring, or beach, properly secure all equipment, furl or stow sails, and prepare the craft for unattended docking or beaching overnight or longer."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Demonstrate a working knowledge of marlinespike seamanship. Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Show how to tie a square (reef) knot, clove hitch, two half hitches, bowline, cleat hitch, and figure-eight knot. Demonstrate the use of each."
+        },
+        {
+          "number": "8b",
+          "text": "Show how to heave a line, coil a line, and fake down a line."
+        },
+        {
+          "number": "8c",
+          "text": "Discuss the kinds of lines used on sailboats and the types of fibers used in their manufacture. Explain the advantages and disadvantages of each."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Describe how you would care for and maintain a sailboat and its gear throughout the year."
+    },
+    {
+      "number": "10",
+      "text": "With your counselor, review sailing terminology and the points of sail. Discuss various types of sailboats in use today and explain their differences."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb105.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -5,7 +5,7 @@
   "subject": "merit-badge:chess",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:chess-2013",
   "source_document": {
     "title": "Chess Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/chess/",

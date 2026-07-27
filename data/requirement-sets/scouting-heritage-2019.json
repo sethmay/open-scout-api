@@ -1,0 +1,131 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "scouting-heritage-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:scouting-heritage",
+  "effective_from": "2019-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Scouting Heritage Merit Badge Requirements (2019, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb143-19.asp",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your counselor the life and times of Lord Baden-Powell of Gilwell. Explain why he felt a program like Scouting would be good for the young men of his day. Include in your discussion how Scouting was introduced in the United States, and the origins of Boy Scouting and Cub Scouting under Baden-Powell."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Give a short biographical summary of any TWO of the following, and tell of their roles in how Scouting developed and grew in the United States.",
+          "children": [
+            {
+              "number": "2a(1)",
+              "text": "Daniel Carter Beard"
+            },
+            {
+              "number": "2a(2)",
+              "text": "William D. Boyce"
+            },
+            {
+              "number": "2a(3)",
+              "text": "Waite Phillips"
+            },
+            {
+              "number": "2a(4)",
+              "text": "Ernest Thompson Seton"
+            },
+            {
+              "number": "2a(5)",
+              "text": "James E. West"
+            },
+            {
+              "number": "2a(6)",
+              "text": "\"Green Bar Bill\" Hillcourt"
+            }
+          ]
+        },
+        {
+          "number": "2b",
+          "text": "Discuss the significance to Scouting of any TWO of the following:",
+          "children": [
+            {
+              "number": "2b(1)",
+              "text": "Brownsea Island"
+            },
+            {
+              "number": "2b(2)",
+              "text": "The First World Scout Jamboree"
+            },
+            {
+              "number": "2b(3)",
+              "text": "Boy Scout Handbook"
+            },
+            {
+              "number": "2b(4)",
+              "text": "Boys' Life magazine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Discuss with your counselor how Scouting's programs have developed over time and been adapted to fit different age groups and interests (Cub Scouting, Boy Scouting, Exploring, Venturing)"
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Attend either a BSA national jamboree, OR world Scout jamboree, OR a national BSA high-adventure base. While there, keep a journal documenting your day-to-day experiences. Upon your return, report to your counselor what you did, saw, and learned. You may include photos, brochures, and other documents in your report."
+        },
+        {
+          "number": "4b",
+          "text": "Write or visit the National Scouting Museum. Obtain information about this facility. Give a short report on what you think the role of this museum is in the Scouting program."
+        },
+        {
+          "number": "4c",
+          "text": "Visit an exhibit of Scouting memorabilia or a local museum with a Scouting history gallery, or (with your parent's permission and counselor's approval) visit with someone in your council who is recognized as a dedicated Scouting historian or memorabilia collector. Learn what you can about the history of Boy Scouting. Give a short report to your counselor on what you saw and learned."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Learn about the history of your unit or Scouting in your area. Interview at least two people (one from the past and one from the present) associated with your troop. These individuals could be adult unit leaders, Scouts, troop committee members, or representatives of your troop's chartered organization. Find out when your unit was originally chartered. Create a report of your findings on the history of your troop, and present it to your patrol or troop or at a court of honor, and then add it to the troop's library. This presentation could be in the form of an oral/written report, an exhibit, a scrapbook, or a computer presentation such as a slide show."
+    },
+    {
+      "number": "6",
+      "text": "Make a collection of some of your personal patches and other Scouting memorabilia. With their permission, you may include items borrowed from family members or friends who have been in Scouting in the past, or you may include photographs of these items. Show this collection to your counselor, and share what you have learned about items in the collection. (There is no requirement regarding how large or small this collection must be.)"
+    },
+    {
+      "number": "7",
+      "text": "Reproduce the equipment for an old-time Scouting game such as those played at Brownsea Island. You may find one on your own (with your counselor's approval), or pick one from the Scouting Heritage merit badge pamphlet. Teach and play the game with other Scouts."
+    },
+    {
+      "number": "8",
+      "text": "Interview at least three people (different from those you interviewed for requirement 5) over the age of 40 who were Scouts. Find out about their Scouting experiences. Ask about the impact that Scouting has had on their lives. Share what you learned with your counselor."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb143-19.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}
