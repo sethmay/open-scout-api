@@ -19,7 +19,8 @@ KIND_BY_DIR = {
     "councils": "council", "territories": "territory", "merit-badges": "merit-badge",
     "camps": "camp", "ranks": "rank", "awards": "award", "requirement-sets": "requirement-set",
     "oa-lodges": "oa-lodge", "adventures": "adventure",
-    "merit-badge-rankings": "merit-badge-ranking", "vocab": "vocab",
+    "merit-badge-rankings": "merit-badge-ranking", "positions": "position",
+    "vocab": "vocab",
 }
 
 

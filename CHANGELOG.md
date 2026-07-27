@@ -3,6 +3,34 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.49.0 (minor) — 2026-07-27
+
+- `PENDING` **Positions of responsibility are entities: 29 of them, and the rank requirements now
+  resolve to them.** Star, Life and Eagle each listed ~35 positions across three unit types inside a
+  single sentence. Those sentences are now `choose: 1` trees — pick a unit type, then a position —
+  with **104 `position:` refs** across the three ranks, a `positions` dataset at
+  `v1/positions/{id}.json`, and a `rank_positions` SQLite junction.
+- **The edge is the point, because it is not symmetric.** Bugler counts for Star and Life and *not*
+  for Eagle, which is exactly the kind of rule a flat list cannot express. Acceptance therefore
+  lives on the rank's requirement-set, never on the position, and "counts for Star but not Eagle"
+  is now one query returning `['Bugler']`. The gate is deliberately one-directional for the same
+  reason: demanding every rank list every position would forbid the real rule.
+- Derived from the requirement text itself rather than hand-typed, so a reissued requirements book
+  changes the catalog by re-running the tool. That is how the Bugler asymmetry was found — by
+  diffing the three lists, not by knowing it in advance — and it also caught that Star and Life
+  offer a Scoutmaster-approved leadership project as a fourth alternative where Eagle does not.
+- New `position` schema and `position-unit-types` vocab. **`crew_or_ship` is deliberately one code:**
+  the requirement prints a single "Venturing crew/Sea Scout ship" heading over one list, and
+  splitting it would assert a distinction the source does not make. Six positions (Den Chief,
+  Quartermaster, Historian, Chaplain Aide, Outdoor Ethics Guide, Webmaster) appear under both
+  headings. `audience` is `youth` throughout and exists so adult roles can be added later without a
+  breaking change; they are a separate unpublished catalog and are not here.
+- Lone Scout stays prose. The requirement offers "leadership responsibility in your school,
+  religious organization, club, or elsewhere in your community" — that is one alternative described
+  in words, not a list of positions, and splitting it on commas would have invented four.
+- 4 gates proven by injection: a position listed under a unit type it does not claim, a position no
+  rank offers, a dangling `position:` ref, and an unregistered unit-type code.
+
 ## 0.48.0 (minor) — 2026-07-27
 
 - `5f1caf4` **The Eagle merit-badge requirement is a graph now, not a paragraph.** Requirement 3

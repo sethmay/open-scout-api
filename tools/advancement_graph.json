@@ -94,5 +94,373 @@
     ]
    }
   ]
+ },
+ "positions": [
+  {
+   "slug": "assistant-senior-patrol-leader",
+   "name": "Assistant Senior Patrol Leader",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "boatswain",
+   "name": "Boatswain",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "boatswains-mate",
+   "name": "Boatswain’s Mate",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "bugler",
+   "name": "Bugler",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "chaplain-aide",
+   "name": "Chaplain Aide",
+   "unit_types": [
+    "scout_troop",
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "crew-leader",
+   "name": "Crew Leader",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "den-chief",
+   "name": "Den Chief",
+   "unit_types": [
+    "scout_troop",
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "guide",
+   "name": "Guide",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "historian",
+   "name": "Historian",
+   "unit_types": [
+    "scout_troop",
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "instructor",
+   "name": "Instructor",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "junior-assistant-scoutmaster",
+   "name": "Junior Assistant Scoutmaster",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "librarian",
+   "name": "Librarian",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "media-specialist",
+   "name": "Media Specialist",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "order-of-the-arrow-troop-representative",
+   "name": "Order of the Arrow Troop Representative",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "outdoor-ethics-guide",
+   "name": "Outdoor Ethics Guide",
+   "unit_types": [
+    "scout_troop",
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "patrol-leader",
+   "name": "Patrol Leader",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "president",
+   "name": "President",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "purser",
+   "name": "Purser",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "quartermaster",
+   "name": "Quartermaster",
+   "unit_types": [
+    "scout_troop",
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "scribe",
+   "name": "Scribe",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "secretary",
+   "name": "Secretary",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "senior-patrol-leader",
+   "name": "Senior Patrol Leader",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "specialist",
+   "name": "Specialist",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "storekeeper",
+   "name": "Storekeeper",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "treasurer",
+   "name": "Treasurer",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "troop-guide",
+   "name": "Troop Guide",
+   "unit_types": [
+    "scout_troop"
+   ]
+  },
+  {
+   "slug": "vice-president",
+   "name": "Vice President",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "webmaster",
+   "name": "Webmaster",
+   "unit_types": [
+    "scout_troop",
+    "crew_or_ship"
+   ]
+  },
+  {
+   "slug": "yeoman",
+   "name": "Yeoman",
+   "unit_types": [
+    "crew_or_ship"
+   ]
+  }
+ ],
+ "rank_positions": {
+  "star": {
+   "requirement": "5",
+   "groups": [
+    {
+     "unit_type": "scout_troop",
+     "slugs": [
+      "patrol-leader",
+      "assistant-senior-patrol-leader",
+      "senior-patrol-leader",
+      "troop-guide",
+      "order-of-the-arrow-troop-representative",
+      "den-chief",
+      "scribe",
+      "librarian",
+      "historian",
+      "quartermaster",
+      "bugler",
+      "junior-assistant-scoutmaster",
+      "chaplain-aide",
+      "instructor",
+      "webmaster",
+      "outdoor-ethics-guide"
+     ]
+    },
+    {
+     "unit_type": "crew_or_ship",
+     "slugs": [
+      "president",
+      "vice-president",
+      "secretary",
+      "treasurer",
+      "den-chief",
+      "quartermaster",
+      "historian",
+      "guide",
+      "boatswain",
+      "boatswains-mate",
+      "yeoman",
+      "purser",
+      "storekeeper",
+      "chaplain-aide",
+      "outdoor-ethics-guide",
+      "crew-leader",
+      "media-specialist",
+      "specialist",
+      "webmaster"
+     ]
+    }
+   ],
+   "lone_scout": "Leadership responsibility in your school, religious organization, club, or elsewhere in your community.",
+   "leadership_project": true
+  },
+  "life": {
+   "requirement": "5",
+   "groups": [
+    {
+     "unit_type": "scout_troop",
+     "slugs": [
+      "patrol-leader",
+      "assistant-senior-patrol-leader",
+      "senior-patrol-leader",
+      "troop-guide",
+      "order-of-the-arrow-troop-representative",
+      "den-chief",
+      "scribe",
+      "librarian",
+      "historian",
+      "quartermaster",
+      "bugler",
+      "junior-assistant-scoutmaster",
+      "chaplain-aide",
+      "instructor",
+      "webmaster",
+      "outdoor-ethics-guide"
+     ]
+    },
+    {
+     "unit_type": "crew_or_ship",
+     "slugs": [
+      "president",
+      "vice-president",
+      "secretary",
+      "treasurer",
+      "den-chief",
+      "quartermaster",
+      "historian",
+      "guide",
+      "boatswain",
+      "boatswains-mate",
+      "yeoman",
+      "purser",
+      "storekeeper",
+      "chaplain-aide",
+      "outdoor-ethics-guide",
+      "crew-leader",
+      "media-specialist",
+      "specialist",
+      "webmaster"
+     ]
+    }
+   ],
+   "lone_scout": "Leadership responsibility in your school, religious organization, club, or elsewhere in your community.",
+   "leadership_project": true
+  },
+  "eagle": {
+   "requirement": "4",
+   "groups": [
+    {
+     "unit_type": "scout_troop",
+     "slugs": [
+      "patrol-leader",
+      "assistant-senior-patrol-leader",
+      "senior-patrol-leader",
+      "troop-guide",
+      "order-of-the-arrow-troop-representative",
+      "den-chief",
+      "scribe",
+      "librarian",
+      "historian",
+      "quartermaster",
+      "junior-assistant-scoutmaster",
+      "chaplain-aide",
+      "instructor",
+      "webmaster",
+      "outdoor-ethics-guide"
+     ]
+    },
+    {
+     "unit_type": "crew_or_ship",
+     "slugs": [
+      "president",
+      "vice-president",
+      "secretary",
+      "treasurer",
+      "quartermaster",
+      "historian",
+      "den-chief",
+      "guide",
+      "boatswain",
+      "boatswains-mate",
+      "yeoman",
+      "purser",
+      "storekeeper",
+      "chaplain-aide",
+      "outdoor-ethics-guide",
+      "crew-leader",
+      "media-specialist",
+      "specialist",
+      "webmaster"
+     ]
+    }
+   ],
+   "lone_scout": "Leadership responsibility in your school, religious organization, club, or elsewhere in your community.",
+   "leadership_project": false
+  }
  }
 }

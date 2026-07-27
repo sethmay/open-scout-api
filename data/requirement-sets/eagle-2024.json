@@ -141,7 +141,198 @@
     },
     {
       "number": "4",
-      "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: (See pages 422–425.) Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide. Venturing crew/Sea Scout ship. President, vice president, secretary, treasurer, quartermaster, historian, den chief, guide, boatswain, boatswain’s mate, yeoman, purser, storekeeper, chaplain aide, outdoor ethics guide, crew leader, media specialist, specialist or webmaster. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+      "text": "While a Life Scout, serve actively in your troop for six months in one or more of the following positions of responsibility: (See pages 422–425.) Scout troop. Patrol leader, assistant senior patrol leader, senior patrol leader, troop guide, Order of the Arrow troop representative, den chief, scribe, librarian, historian, quartermaster, junior assistant Scoutmaster, chaplain aide, instructor, webmaster, or outdoor ethics guide. Venturing crew/Sea Scout ship. President, vice president, secretary, treasurer, quartermaster, historian, den chief, guide, boatswain, boatswain’s mate, yeoman, purser, storekeeper, chaplain aide, outdoor ethics guide, crew leader, media specialist, specialist or webmaster. Lone Scout. Leadership responsibility in your school, religious organization, club, or elsewhere in your community.",
+      "choose": 1,
+      "children": [
+        {
+          "number": "4a",
+          "text": "Scout troop",
+          "choose": 1,
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "Patrol Leader",
+              "ref": "position:patrol-leader"
+            },
+            {
+              "number": "4a(2)",
+              "text": "Assistant Senior Patrol Leader",
+              "ref": "position:assistant-senior-patrol-leader"
+            },
+            {
+              "number": "4a(3)",
+              "text": "Senior Patrol Leader",
+              "ref": "position:senior-patrol-leader"
+            },
+            {
+              "number": "4a(4)",
+              "text": "Troop Guide",
+              "ref": "position:troop-guide"
+            },
+            {
+              "number": "4a(5)",
+              "text": "Order of the Arrow Troop Representative",
+              "ref": "position:order-of-the-arrow-troop-representative"
+            },
+            {
+              "number": "4a(6)",
+              "text": "Den Chief",
+              "ref": "position:den-chief"
+            },
+            {
+              "number": "4a(7)",
+              "text": "Scribe",
+              "ref": "position:scribe"
+            },
+            {
+              "number": "4a(8)",
+              "text": "Librarian",
+              "ref": "position:librarian"
+            },
+            {
+              "number": "4a(9)",
+              "text": "Historian",
+              "ref": "position:historian"
+            },
+            {
+              "number": "4a(10)",
+              "text": "Quartermaster",
+              "ref": "position:quartermaster"
+            },
+            {
+              "number": "4a(11)",
+              "text": "Junior Assistant Scoutmaster",
+              "ref": "position:junior-assistant-scoutmaster"
+            },
+            {
+              "number": "4a(12)",
+              "text": "Chaplain Aide",
+              "ref": "position:chaplain-aide"
+            },
+            {
+              "number": "4a(13)",
+              "text": "Instructor",
+              "ref": "position:instructor"
+            },
+            {
+              "number": "4a(14)",
+              "text": "Webmaster",
+              "ref": "position:webmaster"
+            },
+            {
+              "number": "4a(15)",
+              "text": "Outdoor Ethics Guide",
+              "ref": "position:outdoor-ethics-guide"
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "Venturing crew/Sea Scout ship",
+          "choose": 1,
+          "children": [
+            {
+              "number": "4b(1)",
+              "text": "President",
+              "ref": "position:president"
+            },
+            {
+              "number": "4b(2)",
+              "text": "Vice President",
+              "ref": "position:vice-president"
+            },
+            {
+              "number": "4b(3)",
+              "text": "Secretary",
+              "ref": "position:secretary"
+            },
+            {
+              "number": "4b(4)",
+              "text": "Treasurer",
+              "ref": "position:treasurer"
+            },
+            {
+              "number": "4b(5)",
+              "text": "Quartermaster",
+              "ref": "position:quartermaster"
+            },
+            {
+              "number": "4b(6)",
+              "text": "Historian",
+              "ref": "position:historian"
+            },
+            {
+              "number": "4b(7)",
+              "text": "Den Chief",
+              "ref": "position:den-chief"
+            },
+            {
+              "number": "4b(8)",
+              "text": "Guide",
+              "ref": "position:guide"
+            },
+            {
+              "number": "4b(9)",
+              "text": "Boatswain",
+              "ref": "position:boatswain"
+            },
+            {
+              "number": "4b(10)",
+              "text": "Boatswain’s Mate",
+              "ref": "position:boatswains-mate"
+            },
+            {
+              "number": "4b(11)",
+              "text": "Yeoman",
+              "ref": "position:yeoman"
+            },
+            {
+              "number": "4b(12)",
+              "text": "Purser",
+              "ref": "position:purser"
+            },
+            {
+              "number": "4b(13)",
+              "text": "Storekeeper",
+              "ref": "position:storekeeper"
+            },
+            {
+              "number": "4b(14)",
+              "text": "Chaplain Aide",
+              "ref": "position:chaplain-aide"
+            },
+            {
+              "number": "4b(15)",
+              "text": "Outdoor Ethics Guide",
+              "ref": "position:outdoor-ethics-guide"
+            },
+            {
+              "number": "4b(16)",
+              "text": "Crew Leader",
+              "ref": "position:crew-leader"
+            },
+            {
+              "number": "4b(17)",
+              "text": "Media Specialist",
+              "ref": "position:media-specialist"
+            },
+            {
+              "number": "4b(18)",
+              "text": "Specialist",
+              "ref": "position:specialist"
+            },
+            {
+              "number": "4b(19)",
+              "text": "Webmaster",
+              "ref": "position:webmaster"
+            }
+          ]
+        },
+        {
+          "number": "4c",
+          "text": "Lone Scout Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
+        }
+      ]
     },
     {
       "number": "5",

@@ -26,7 +26,8 @@
         "award",
         "oa-lodge",
         "requirement-set",
-        "adventure"
+        "adventure",
+        "position"
       ]
     },
     "count": {
@@ -216,8 +217,7 @@
           }
         }
       }
-    }
-    ,
+    },
     {
       "if": {
         "properties": {
@@ -234,6 +234,27 @@
           "items": {
             "items": {
               "$ref": "#/$defs/CurrentAdventure"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "position"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/$defs/CurrentPosition"
             }
           }
         }
@@ -894,8 +915,7 @@
         "confidence"
       ],
       "additionalProperties": false
-    }
-    ,
+    },
     "CurrentAdventure": {
       "type": "object",
       "description": "A Cub Scout adventure currently offered. `ranks` is the reverse index of the rank requirement-sets, which remain authoritative for grouping and choose-counts. The shooting-sports adventures carry a null `url` and have no requirement-set; join v1/requirement-sets/index.json on subject 'adventure:<id>' to find the ones with published requirements.",
@@ -964,6 +984,57 @@
         "category",
         "area",
         "url",
+        "verified_at",
+        "method",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "CurrentPosition": {
+      "type": "object",
+      "description": "A youth leadership position. `unit_types` are vocabulary CODES from v1/vocab/position-unit-types.json, never display labels. Which RANKS accept a position is not here: it is an edge, and it differs — Bugler counts for Star and Life but not Eagle. Read the rank's requirement-set for that.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audience": {
+          "enum": [
+            "youth",
+            "adult",
+            "both"
+          ]
+        },
+        "unit_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+          }
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "method": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "audience",
+        "unit_types",
         "verified_at",
         "method",
         "confidence"

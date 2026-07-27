@@ -38,6 +38,7 @@ ENTITY_TABLES = {
                                 ("lat", "REAL", "lat"), ("lon", "REAL", "lon")]),
     "adventures": ("adventures", [("program", "TEXT", "program"), ("category", "TEXT", "category"),
                                   ("area", "TEXT", "area")]),
+    "positions": ("positions", [("audience", "TEXT", "audience")]),
 }
 
 
@@ -130,6 +131,31 @@ def main() -> None:
     cur.execute("CREATE INDEX idx_mbr_year ON merit_badge_rankings(year)")
     cur.execute("CREATE INDEX idx_mbr_badge ON merit_badge_rankings(merit_badge_id)")
     counts["merit_badge_rankings"] = len(mbr_rows)
+
+    # which ranks accept which position, unrolled from the rank requirement trees. This is the
+    # edge that actually matters and it is NOT symmetric: Bugler counts for Star and Life but not
+    # Eagle, so "positions for this rank" cannot be derived from the position entity alone.
+    cur.execute("CREATE TABLE rank_positions (rank_id TEXT, position_id TEXT, unit_type TEXT)")
+    GROUP_UNIT = {"Scout troop": "scout_troop", "Venturing crew/Sea Scout ship": "crew_or_ship"}
+    rp_rows = []
+    rs_all = DATA / "requirement-sets"
+    if rs_all.exists():
+        for p2 in sorted(rs_all.glob("*.json")):
+            doc = read_json(p2)
+            subj = doc.get("subject") or ""
+            if not subj.startswith("rank:"):
+                continue
+            for req in doc.get("requirements", []):
+                for grp in (req.get("children") or []):
+                    unit = GROUP_UNIT.get((grp.get("text") or "").strip())
+                    for child in (grp.get("children") or []):
+                        ref = child.get("ref") or ""
+                        if ref.startswith("position:"):
+                            rp_rows.append([subj.split(":", 1)[1], ref.split(":", 1)[1], unit])
+    cur.executemany("INSERT INTO rank_positions VALUES (?,?,?)", rp_rows)
+    cur.execute("CREATE INDEX idx_rank_positions_rank ON rank_positions(rank_id)")
+    cur.execute("CREATE INDEX idx_rank_positions_pos ON rank_positions(position_id)")
+    counts["rank_positions"] = len(rp_rows)
 
     # lifecycle events (one row per event, tagged with its dataset)
     cur.execute("CREATE TABLE events (dataset TEXT, id TEXT, type TEXT, date TEXT, data TEXT)")

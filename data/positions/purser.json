@@ -1,0 +1,28 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/position.schema.json",
+  "id": "purser",
+  "kind": "position",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Purser",
+      "audience": "youth",
+      "unit_types": [
+        "crew_or_ship"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "2024 Scouts BSA Requirements (No. 33216), Star/Life/Eagle positions of responsibility"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": "Name and unit types derived from the rank requirements that list it; these positions appear in no other published catalog."
+      }
+    }
+  ],
+  "notes": null
+}
