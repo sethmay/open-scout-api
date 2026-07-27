@@ -165,7 +165,7 @@ schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + pu
 tools/                live pipeline: stamp_schema.py, validate_data.py, validate_examples.py,
                       build.py (data/ -> dist/), build_sqlite.py, us_geo.py
                       enrichment (run manually): geocode_addresses.py (coords from street addresses), elevation.py (elevation_ft), july_temp.py (July normals; needs rasterio)
-                      maintenance: check_urls.py (audit camp website health), find_camp_pages.py (find a camp page on the council site), maintenance.py (re-verification queue + standing health check)
+                      maintenance: check_urls.py (audit camp website health), restamp_identity.py (move the API base URL / repo slug), find_camp_pages.py (find a camp page on the council site), maintenance.py (re-verification queue + standing health check)
                       historical seed (one-time camp-finder import; see file headers): import_camps.py, geocode_camps.py
 dist/                 generated static API (git-ignored; built + deployed by CI)
 PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md

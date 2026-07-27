@@ -3,6 +3,30 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.42.1 (patch) — 2026-07-27
+
+- `PENDING` **New `tools/restamp_identity.py`: the last 1.0 blocker is no longer a one-way door.**
+  The API base URL is the schema `$id` prefix, the documented API root and the jsDelivr pin path, and
+  it appears in ~1,900 files — which is what made "decide the permanent home" feel irreversible. It
+  is one command, and the tool proves it rather than asserting it. No data or schema changes.
+- Moves the two identities **independently**, which is the point: `--api-base` (the published root
+  every `$id` hangs off — make it a custom domain and it need never change again, even if the repo
+  moves) and `--repo owner/name` (source links, tool User-Agent strings, the Zenodo
+  related_identifier). Reads today's values out of `build.py` instead of hardcoding them, dry-runs by
+  default, and after `--apply` verifies zero stale references survive.
+- Deliberately scoped so unrelated things stay put: `.zenodo.json` `creators` is untouched
+  (authorship is a person, not a host), and the README's link to `github.com/<owner>/camp-finder`
+  does not follow this repo's move — the substitution matches the full `owner/repo` string, not the
+  bare owner name.
+- **Verified by a full round trip, not by inspection:** re-stamped to a throwaway identity;
+  `validate_data`, `build`, `build_sqlite` and `validate_examples` all passed; every published
+  surface moved (`meta.base_url`, `meta.schemas`, every collection and per-entity `$schema`, the
+  SQLite `source` row); then re-stamped back and confirmed **byte-identical to HEAD** across all
+  1,919 files.
+- `TODO.md` now frames the remaining decision as the durable-vs-convenient choice it actually is —
+  custom domain (identity stops depending on GitHub), GitHub org (free, still coupled), or stay put
+  — rather than as a naming question.
+
 ## 0.42.0 (minor) — 2026-07-27
 
 - `10ae3ff` **Discontinued merit badges: the catalog goes 142 → 268 entities**, adding 126 retired

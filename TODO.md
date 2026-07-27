@@ -56,10 +56,36 @@ Cleared in 0.28.0:
 
 **Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 1,756 entity
 files carry `$schema: https://sethmay.github.io/open-scout-api/schema/v1/…`, `build.py` hardcodes
-that base, and it is both the documented API root and the jsDelivr pin path. Moving the repo to an
-org afterwards would change every schema URL and every published URL — maximally breaking. Settle
-org + name, re-stamp `data/` once, update the README/CDN docs, then cut 1.0. This also unblocks the
-Zenodo DOI (below), which binds to the final GitHub location.
+that base, and it is both the documented API root and the jsDelivr pin path. It also gates the
+Zenodo DOI, which binds to the final GitHub location.
+
+**The mechanics are no longer the hard part — `tools/restamp_identity.py` (0.42.1) makes it one
+command.** It moves the two identities *independently*, reads today's values out of `build.py`
+rather than hardcoding them, dry-runs by default, and after `--apply` verifies that zero stale
+references survive:
+
+- `--api-base` — the published root that every schema `$id` and documented URL hangs off.
+- `--repo owner/name` — source links, tool User-Agent strings, the Zenodo related_identifier.
+
+Scoped so unrelated things do not move: `.zenodo.json` `creators` stays (authorship is a person,
+not a host) and `github.com/<owner>/camp-finder` in the README stays (different project). Proven by
+a full round trip — re-stamped to a throwaway identity, `validate_data` + `build` + `build_sqlite`
++ `validate_examples` all passed, every published surface moved (`meta.base_url`, every `$schema`,
+the SQLite `source` row), then re-stamped back **byte-identical** to HEAD.
+
+**What still needs deciding, and it is the durable-vs-convenient choice, not a naming one:**
+
+1. **Custom domain (recommended).** Point a domain at Pages via CNAME and make `$id`
+   `https://<domain>`. The published identity then stops depending on GitHub at all: the repo can
+   move between accounts or orgs later and **no consumer notices**, because `$id` never changes.
+   One re-stamp now, none ever again. Cost is a registration plus auto-renew; the real risk is
+   letting the domain lapse, which would 404 every `$id` in the wild — so register long and lock it.
+2. **GitHub org, no custom domain.** e.g. `github.com/<org>/open-scout-api` serving
+   `<org>.github.io/open-scout-api`. Free, reads as a project rather than a personal side project,
+   but the identity stays coupled to GitHub — a later move is another (now cheap) re-stamp, and
+   consumers pinned to the old host still break.
+3. **Stay put.** Zero work. The identity says "personal side project", and any future move remains
+   the breaking event that has been deferred all along.
 
 **Every published endpoint is now pinned — CLEARED IN 0.41.0.** The last 10 unpinned surfaces were
 `v1/meta.json`, `v1/{dataset}/aliases.json`, and the 8 per-entity `v1/{dataset}/{id}.json` families,
