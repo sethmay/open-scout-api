@@ -571,6 +571,59 @@ def main() -> int:
                                     f"{hi} (a pre-rename name may have been mapped)")
             nrank_docs += 1
 
+    # pass 7: the Eagle merit-badge slot tree and the `eagle_required` flag describe the same fact
+    # from two directions and must not drift. The flag marks LIST membership (18 badges, the number
+    # Star and Life requirement 3 themselves cite); the tree carries the SLOTS (14, three of them
+    # either/or). A tracker needs both, so both are published — and every badge the tree refs must
+    # carry the flag, every flagged badge must appear in the tree, and the slot count must match the
+    # number the requirement's own verbatim text states.
+    eagle_sets = [p for p in sorted((DATA / "requirement-sets").glob("eagle-*.json"))
+                  if json.loads(p.read_text("utf-8")).get("effective_to") is None]
+    # Compared AS OF the requirement-set's own effective date, not today. Citizenship in Society is
+    # slot (d) of the in-force 2024 requirements and was Eagle-required from 2022 until Scouting
+    # America discontinued it in Feb 2026 — the two records agree for the window the requirement
+    # took effect in, and only a same-date comparison sees that.
+    def flagged_at(when: str) -> set[str]:
+        out = set()
+        for q in sorted((DATA / "merit-badges").glob("*.json")):
+            if q.name == "_events.json":
+                continue
+            obj = json.loads(q.read_text("utf-8"))
+            for v in obj["versions"]:
+                lo, hi = v.get("valid_from"), v.get("valid_to")
+                if (lo is None or lo <= when) and (hi is None or hi > when):
+                    if v.get("eagle_required"):
+                        out.add(f"merit-badge:{obj['id']}")
+                    break
+        return out
+
+    for p in eagle_sets:
+        doc = json.loads(p.read_text("utf-8"))
+        flagged = flagged_at(doc["effective_from"])
+        req3 = next((r for r in doc["requirements"] if r["number"] == "3"), None)
+        if req3 is None or not req3.get("children"):
+            errs.append(f"requirement-sets/{p.name}: Eagle requirement 3 carries no slot tree; run "
+                        f"tools/seed_advancement_graph.py (a prose-only list cannot be counted)")
+            continue
+        refs = set()
+
+        def _refs(nodes):
+            for n in nodes:
+                if (n.get("ref") or "").startswith("merit-badge:"):
+                    refs.add(n["ref"])
+                _refs(n.get("children") or [])
+        _refs(req3["children"])
+        if refs - flagged:
+            errs.append(f"requirement-sets/{p.name}: Eagle slot tree refs {sorted(refs - flagged)} "
+                        f"which are not flagged eagle_required")
+        if flagged - refs:
+            errs.append(f"requirement-sets/{p.name}: {sorted(flagged - refs)} are flagged "
+                        f"eagle_required but appear in no Eagle slot")
+        stated = re.search(r"these\s+(\d+)\s+merit badges", req3.get("text") or "", re.I)
+        if stated and int(stated.group(1)) != len(req3["children"]):
+            errs.append(f"requirement-sets/{p.name}: requirement 3 says 'these {stated.group(1)} "
+                        f"merit badges' but the slot tree has {len(req3['children'])}")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):

@@ -6,6 +6,17 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **When two counts disagree, suspect that both are true of different things.** 18 badges carry
+  `eagle_required`; Eagle names 14 slots. The tempting fix was "the flag is wrong" — but Star and
+  Life requirement 3 both cite "the 18 merit badges on the required list", so the flag means list
+  membership and the tree means obligations. Adding the missing structure beat redefining a
+  published field, and the gate now holds the two representations together.
+- **Compare effective-dated records at a date, never at "now".** The Eagle slot tree references
+  Citizenship in Society, which lost its `eagle_required` flag when Scouting America discontinued
+  the badge — so a present-tense comparison declared the in-force requirement inconsistent with
+  itself. Evaluated as of the requirement's own effective date the two agree exactly. Any check
+  spanning two temporal datasets needs an explicit as-of date, and the mismatch it surfaced (a live
+  requirement naming a dead badge) was worth recording rather than suppressing.
 - **Check what the source actually publishes before naming the dataset.** The backlog said "merit badge
   earned-counts by year" for months; the source publishes *ranks* and no absolute number anywhere. Had
   the field been called `count`, every consumer would have read volume into a position. Name the field

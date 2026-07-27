@@ -415,6 +415,25 @@ source (see the Meriwether evidence in PLAN §5.1).
   - Still open: the 18 non-day camps that remain unsurveyed, the 43 thin surveys queued for review
     (below), and the 4 zero-use vocabulary terms (genuine rarities — watch, do not prune).
 
+### Advancement graph — Eagle slots DONE (0.48.0); positions of responsibility open
+
+Eagle requirement 3 is structured: 14 slots, three either/or, every badge `ref`-resolved, gate-tied
+to `eagle_required` (which marks the 18-badge list, not the slot count). Remaining:
+
+- **Positions of responsibility.** Eagle requirement 4 and Star/Life requirement 5 list ~40
+  positions across three unit types (Scout troop / Venturing crew + Sea Scout ship / Lone Scout) in
+  one prose blob each. Structuring them as `choose: 1` groups of text nodes is cheap; making
+  positions first-class entities is the larger question, and nothing else in the dataset references
+  a position yet.
+- **Star and Life badge counts.** "Six merit badges, including any four from the required list"
+  (Star) and "five more ... including any three additional" (Life) are countable rules still living
+  in prose. They reference Eagle's list rather than restating it, so structuring them means a
+  cross-rank reference the schema has no shape for yet.
+- ⚠ **The in-force Eagle requirements require a discontinued badge.** `eagle-2024` (effective
+  2024-01-01, `effective_to: null`) lists Citizenship in Society at slot (d); Scouting America
+  discontinued that badge on 2026-02-27. A newer Eagle edition presumably exists and we do not have
+  it — until then the dataset faithfully reports a rule that reality has moved past.
+
 ### Camp feature accuracy audit — `python tools/audit_camp_features.py --all`
 
 Added 0.46.0 after a user spot-check found two defects `validate_data.py` structurally cannot see:

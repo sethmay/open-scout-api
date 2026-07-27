@@ -1,0 +1,98 @@
+{
+ "note": "The Scouts BSA advancement graph as structure rather than prose. Eagle requirement 3 names 14 lettered slots drawn from an 18-badge list: eleven slots take one badge and three are either/or choices, and the requirement says so outright - 'You must choose only one of the merit badges listed in categories i, j, and l.' `eagle_required: true` marks LIST membership (18 badges, which is the number Star and Life requirement 3 themselves cite); the slot count is 14. Both facts are true and a tracker needs both, which is why this adds structure instead of changing the flag.",
+ "source": "Eagle rank requirement 3, 2024 Scouts BSA Requirements (No. 33216)",
+ "eagle_merit_badge_slots": {
+  "subject": "rank:eagle",
+  "requirement": "3",
+  "slots": [
+   {
+    "label": "a",
+    "badges": [
+     "first-aid"
+    ]
+   },
+   {
+    "label": "b",
+    "badges": [
+     "citizenship-in-the-community"
+    ]
+   },
+   {
+    "label": "c",
+    "badges": [
+     "citizenship-in-the-nation"
+    ]
+   },
+   {
+    "label": "d",
+    "badges": [
+     "citizenship-in-society"
+    ]
+   },
+   {
+    "label": "e",
+    "badges": [
+     "citizenship-in-the-world"
+    ]
+   },
+   {
+    "label": "f",
+    "badges": [
+     "communication"
+    ]
+   },
+   {
+    "label": "g",
+    "badges": [
+     "cooking"
+    ]
+   },
+   {
+    "label": "h",
+    "badges": [
+     "personal-fitness"
+    ]
+   },
+   {
+    "label": "i",
+    "badges": [
+     "emergency-preparedness",
+     "lifesaving"
+    ]
+   },
+   {
+    "label": "j",
+    "badges": [
+     "environmental-science",
+     "sustainability"
+    ]
+   },
+   {
+    "label": "k",
+    "badges": [
+     "personal-management"
+    ]
+   },
+   {
+    "label": "l",
+    "badges": [
+     "swimming",
+     "hiking",
+     "cycling"
+    ]
+   },
+   {
+    "label": "m",
+    "badges": [
+     "camping"
+    ]
+   },
+   {
+    "label": "n",
+    "badges": [
+     "family-life"
+    ]
+   }
+  ]
+ }
+}
