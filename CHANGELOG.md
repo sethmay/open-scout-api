@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.47.1 (patch) — 2026-07-27
 
-- `PENDING` **The three 2025 merit badges now carry their introduction year.** Artificial
+- `4730af3` **The three 2025 merit badges now carry their introduction year.** Artificial
   Intelligence, Cybersecurity and Multisport had `valid_from: null` — unknown — and are now dated
   **2025**, confirmed by the project owner and corroborated by the ranking series shipped hours
   earlier: each appears in 2025 and in no earlier year, and Scouting America's 2025 recap gives all
