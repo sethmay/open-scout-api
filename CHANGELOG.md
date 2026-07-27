@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.49.0 (minor) — 2026-07-27
 
-- `PENDING` **Positions of responsibility are entities: 29 of them, and the rank requirements now
+- `665a843` **Positions of responsibility are entities: 29 of them, and the rank requirements now
   resolve to them.** Star, Life and Eagle each listed ~35 positions across three unit types inside a
   single sentence. Those sentences are now `choose: 1` trees — pick a unit type, then a position —
   with **104 `position:` refs** across the three ranks, a `positions` dataset at
