@@ -172,3 +172,25 @@ fold; read before similar work.
   falsehood, and future-dating a new version would too, since `open_version` picks whatever has
   `valid_to: null` and would surface it immediately. Park it in entity `notes` with the trigger
   condition and the exact value to set later.
+- **"The data on disk is valid" is not "the work got done".** After a 16-agent wave I verified every
+  file parsed, every code was known, and nothing outside the batches was touched — all true, and I
+  concluded nothing was lost. Two releases later, five camps turned out to be the "final five
+  payloads" an agent announced writing in its last message before it exited non-zero. Reconcile the
+  **assigned** manifest against the **written** set, not just the integrity of what landed.
+- **Image-only PDFs are readable: rasterize and look at them.** The main wave wrote off a scanned
+  programme PDF as "needs OCR, impossible without it". A later agent rasterized map PDFs at 4x and
+  read the program-area labels visually, turning two otherwise-thin camps into 16-feature records.
+  Any vision-capable reader can do this; do not mark an image PDF unusable.
+- **Beware the site-wide default meta-description.** One agent nearly sourced features from a
+  council page's `meta-description` advertising sea kayaking and sandboarding — then noticed it was
+  byte-identical on a sibling camp's page, i.e. a CMS default, not a description of either camp.
+  Body copy only; if a "description" repeats across pages it describes the council, not the camp.
+- **Negative results are worth a changelog entry.** The guide-PDF lever that transformed the main
+  wave produced **0 hits across 12 camps** on the remaining portal-linked councils, because those
+  councils publish neither a camp page nor a camp guide. Recording that stops the next person
+  building a third crawler for the same 62 camps.
+- **`check_ref` proving a reference resolves is not the same as it being *current*.** A council that
+  merged away still exists as an entity, so six active camps sat on dissolved councils for several
+  releases with a clean validator. When entities have lifecycle state, referential checks need to
+  assert the *state* of the target, not just its existence — and hard-fail only where the repair is
+  unambiguous (a recorded successor), reporting the rest for research.

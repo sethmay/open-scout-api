@@ -9,7 +9,7 @@
       "name": "Medicine Mountain",
       "camp_type": "resident_camp",
       "operator": "council",
-      "council": "council:black-hills-area",
+      "council": "council:sioux",
       "parent": null,
       "operating_status": "active",
       "address": "24201 Bobcat Rd Custer, South Dakota 57730",
@@ -59,7 +59,7 @@
         "verified_at": "2026-07-18",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/695-MMSR2026SummerCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Both council pages name only coarse program areas for this property, so the recorded codes are deliberately parent terms."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/695-MMSR2026SummerCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Both council pages name only coarse program areas for this property, so the recorded codes are deliberately parent terms. Council repointed 2026-07-26: Black Hills Area Council was absorbed by Sioux Council (recorded in data/councils/_events.json); the camp had been left on the dissolved council, which resolves as a ref but is not current."
       }
     }
   ],

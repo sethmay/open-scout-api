@@ -25,8 +25,62 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "campfire circle above the lake"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "cabins",
+          "note": "a cabin stands at several of the campsites"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking",
+          "note": "blazed trails link the camp to the wider reservation"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "sports_field",
+          "note": "basketball court"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "lakefront on Unami Lake"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": "Cub Scout summer resident program for Cub Scouts and Webelos, set on the 1,400-acre Musser Scout Reservation along Unami Creek in Pennsburg, Pennsylvania, operated by the Cradle of Liberty Council.",
       "provenance": {
         "sources": [
@@ -35,6 +89,14 @@
           },
           {
             "url": "https://mussersr.org/"
+          },
+          {
+            "url": "https://mussersr.org/camp-maps/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://mussersr.org/wp-content/uploads/2026/01/Camp-Hart-Map-2026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

@@ -25,8 +25,159 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "council ring used for ceremonies and campfire program"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "blacksmithing",
+          "signature": true,
+          "note": "a working forge with demonstrations alongside a resident smith"
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "historic dining hall listed on the National Register of Historic Places"
+        },
+        {
+          "code": "first_year_program",
+          "note": "patrol-based track rotating first-year Scouts through every program area"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball",
+          "note": "two pits near the administration building"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "hiking",
+          "note": "six blazed colour trails across the reservation"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "leadership_training"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "museum",
+          "note": "camp museum inside the administration building"
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "patrol_cooking"
+        },
+        {
+          "code": "performing_arts"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "canvas wall tents pitched on wooden platforms"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "lakefront used for small-craft instruction"
+        },
+        {
+          "code": "welding",
+          "signature": true,
+          "note": "skilled trades centre with equipped bays for welding and allied trades"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": null,
       "provenance": {
         "sources": [
@@ -39,6 +190,14 @@
           {
             "url": "https://www.gtcscouting.org/calendar-events/manatoc-events-and-meetings",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.manatoc.org/camping/camp-manatoc",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1gQ8tImIxfiwa7kc-iai0qCt0TtbF36DU/view?usp=sharing",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "curated",

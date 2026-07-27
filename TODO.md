@@ -286,9 +286,46 @@ source (see the Meriwether evidence in PLAN §5.1).
     with an `accessed` date. `--fix-sources` collapses them keeping the richest entry; verified zero
     urls and zero `accessed` dates lost. Repairs stay behind an explicit flag, per the
     `--overwrite` convention.
-  - Next in this phase: the ~90 unsurveyed non-day camps (gated on link repair, not survey effort),
-    and the 6 zero-use vocabulary terms, which are rarities rather than artefacts and should simply
-    be watched.
+  - **Coverage recovery (0.37.0): 90 unsurveyed non-day camps triaged, 10 surveyed, 79% coverage.**
+    The 90 split into 62 registration-portal camps, 26 with their own page, and 2 with none. Running
+    the link classifier over the 26 found **14 genuinely surveyable** — and five of them
+    (`va-blue-ridge-scout-reservation`, `va-camp-bowman`, `va-camp-marriott`, `va-camp-pmi`,
+    `va-camp-rock-enon`) were exactly the "final five payloads" an agent announced writing
+    immediately before it exited non-zero in the main wave. **The wave did lose work** — not
+    corrupted, just never written. Verifying that what landed on disk was valid did not prove that
+    everything assigned had landed at all; check both next time.
+    - Two agents surveyed the 14: **10 usable, 280 features, 16 signature, zero invented codes**;
+      4 correctly left untouched with `features_verified_at: null`. Non-day coverage 77% -> **79%**
+      (304/384), feature entries 4,329 -> **4,609**.
+  - **Negative result worth keeping: the guide-PDF lever does NOT rescue the 62 portal camps.**
+    Spiked it across 8 councils covering 12 camps — **0 hits.** The only guide-shaped links on those
+    sites are Cub den-leader advancement booklets, not camp guides. That is consistent with why
+    `find_camp_pages.py` failed on them in 0.32.0: these councils have no camp page *and* no camp
+    guide on their public site. The lever worked in the main wave precisely because those camps
+    already had a council page and the guide was one click from it. **Cheap automation is now
+    exhausted for the 62** — they need per-camp research or a council contact, and should not be
+    re-spiked with another crawler.
+  - Held-back vocabulary proposals from the recovery batch (all singletons, per "a code used once
+    is not yet a category"), recorded here because the files were not kept: `ocean_beachfront`
+    (or-camp-clark), `tabletop_gaming` + `eagle_advancement_intensive` (or-camp-pioneer),
+    `outdoor_cooking` (or-camp-clark), `skilled_trades` (oh-camp-manatoc), `giant_swing`
+    (va-camp-bowman), `heater_stack_dining` + `live_animal_exhibit` (va-camp-marriott), `cascading`
+    + `day_camp_option` (va-camp-rock-enon), `whitewater_canoeing` (va-blue-ridge). `giant_swing`
+    and `live_animal_exhibit` look most likely to recur.
+  - Still open: the 62 portal camps (blocked, see above), the 4 remaining zero-use vocabulary terms
+    (genuine rarities — watch, do not prune), and 3 camps whose council dissolved with no recorded
+    successor (below).
+- **Camps on councils that no longer exist — guard added 0.37.0.** Six *active* camps were hanging
+  off dissolved councils, undetected because `check_ref` only proves a ref resolves and a
+  merged-away council still resolves. `validate_data.py` now hard-fails a current camp whose council
+  is non-current **when our own event graph names a successor**, since the repair is then
+  unambiguous; the three Black Hills Area camps were repointed to Sioux Council (their websites were
+  already on `siouxcouncil.org`, which corroborates it). The other three sit on councils recorded as
+  `discontinued` with no continuing party — `ca-camp-noyo` (Redwood Empire), `nm-camp-tres-ritos`
+  and `tx-c-w-post-memorial-scout-camp` (South Plains) — so nobody knows where they went. Those are
+  reported by `tools/maintenance.py` rather than blocking the build, and need research. Note both
+  South Plains camps still register under council #694 and `southplainscouncil.org` still resolves,
+  so verify the *council* record before assuming the camps are wrong.
 
 ### Camp link health (audit DONE 0.31.0; portal repair DONE 0.32.0)
 

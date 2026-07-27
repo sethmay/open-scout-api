@@ -3,6 +3,37 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.37.0 (minor) — 2026-07-26
+
+- `PENDING` **Coverage recovery: 10 more camps surveyed, non-day coverage 77% -> 79%** (304 of 384),
+  feature entries 4,329 -> **4,609**, 16 new signature entries, **zero invented codes**. Two agents
+  worked the 14 surveyable camps found by triaging the 90 that were still unsurveyed; 4 were
+  correctly left untouched with `features_verified_at: null`.
+- **The main wave did lose work, and this found it.** Five of the recovered camps
+  (`va-blue-ridge-scout-reservation`, `va-camp-bowman`, `va-camp-marriott`, `va-camp-pmi`,
+  `va-camp-rock-enon`) were precisely the "final five payloads" an agent announced writing in its
+  last message before exiting non-zero in 0.34.0. Verifying that everything *on disk* was valid did
+  not prove that everything *assigned* had been written — a distinction now in `LESSONS.md`.
+- **Six active camps were hanging off councils that no longer exist**, undetected for several
+  releases because `check_ref` only proves a reference resolves and a merged-away council still
+  resolves. `validate_data.py` gains a guard that hard-fails a current camp whose council is
+  non-current **when our own event graph names a successor** (the repair is then unambiguous);
+  proven by injection. The three Black Hills Area camps were repointed to Sioux Council — their
+  websites were already on `siouxcouncil.org`, which corroborates it. The other three sit on
+  councils recorded as `discontinued` with no continuing party, so they are reported by
+  `tools/maintenance.py` for research rather than blocking the build.
+- **Negative result, recorded so nobody rebuilds it:** the guide-PDF lever that transformed the main
+  wave gets **0 hits across 12 camps** on the remaining 62 portal-linked councils. Those councils
+  publish neither a camp page nor a camp guide — the only guide-shaped links are Cub den-leader
+  advancement booklets. Cheap automation is exhausted for the 62; they need per-camp research.
+- `tools/maintenance.py` immediately paid for itself again, catching **7 duplicated provenance
+  sources** introduced by this wave.
+- Two techniques worth reusing, both from the surveying agents: **image-only PDFs are readable** if
+  you rasterize and look at them (the main wave had written off a scanned guide as needing OCR —
+  two thin camps became 16-feature records this way), and a page's `meta-description` can be a
+  **site-wide CMS default** advertising activities the camp does not offer, caught only by noticing
+  it was byte-identical on a sibling camp's page.
+
 ## 0.36.0 (minor) — 2026-07-26
 
 - `1898c3f` **Phase 5 maintenance machinery: new `tools/maintenance.py`,** the standing health check

@@ -25,8 +25,13 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "winter_camping",
+          "note": "the property is open year round for weekend camping"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": "Three Rivers Council's roughly 715-acre scout ranch set in the East Texas Piney Woods near Woodville, north of Beaumont. Open year-round for camping and host to council-run resident summer and winter camps.",
       "provenance": {
         "sources": [
@@ -34,7 +39,8 @@
             "citation": "camp-finder council-578/tx-scott-scout-ranch (unofficial community dataset)"
           },
           {
-            "url": "https://3riversbsa.org/scott-scout-ranch/"
+            "url": "https://3riversbsa.org/scott-scout-ranch/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

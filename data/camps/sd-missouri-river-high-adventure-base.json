@@ -9,7 +9,7 @@
       "name": "Missouri River High Adventure Base",
       "camp_type": "high_adventure_base",
       "operator": "council",
-      "council": "council:black-hills-area",
+      "council": "council:sioux",
       "parent": null,
       "operating_status": "active",
       "address": null,
@@ -52,7 +52,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). This is a trek base rather than a facility camp: the page states it has no cabins and no merit badge program, so the short feature list is the property, not a gap in sourcing."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). This is a trek base rather than a facility camp: the page states it has no cabins and no merit badge program, so the short feature list is the property, not a gap in sourcing. Council repointed 2026-07-26: Black Hills Area Council was absorbed by Sioux Council (recorded in data/councils/_events.json); the camp had been left on the dissolved council, which resolves as a ref but is not current."
       }
     }
   ],

@@ -25,8 +25,212 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "some campsites have eight-person Adirondack shelters"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "atv"
+        },
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "trail-camp and trek programs based out of backcountry outposts"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower houses in the base camps"
+        },
+        {
+          "code": "black_powder",
+          "note": "muzzle-loading rifles and shotguns in the frontier living-history program"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "working forge used in the frontier living-history program"
+        },
+        {
+          "code": "bouldering",
+          "note": "indoor climbing facility with a bouldering area and two thirty-foot walls"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "caving",
+          "note": "guided trips into natural caves with camp-provided gear"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "four-story tower at the COPE and climbing center"
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cope",
+          "note": "nationally accredited course with low and high elements"
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "revolver, double-barrelled shotgun and lever-action rifle on a western-themed range"
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "catered family-style dining"
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "Brownsea Island program built on the patrol method"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "staffed around the clock"
+        },
+        {
+          "code": "high_adventure_option",
+          "signature": true
+        },
+        {
+          "code": "hiking",
+          "signature": true,
+          "note": "more than one hundred miles of trails on the property"
+        },
+        {
+          "code": "horseback",
+          "note": "camp-run riding program at a partner farm off the property"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "knife_throwing"
+        },
+        {
+          "code": "leadership_training",
+          "note": "youth leadership course hosted at the reservation"
+        },
+        {
+          "code": "living_history",
+          "note": "frontier longhunter and settler programs with period skills"
+        },
+        {
+          "code": "motorboating",
+          "note": "offered on a camp-run day trip to a nearby lake"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Eagle-required badge track for experienced Scouts"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "backcountry outposts used by the trail-camp and trek programs"
+        },
+        {
+          "code": "paddleboarding",
+          "note": "offered on a camp-run day trip to a nearby lake"
+        },
+        {
+          "code": "performing_arts"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "canvas tents on platforms, with primitive tent-platform sites also available"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "specialty programs run with camp-provided leadership"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "natural rock climbing offered as a day activity"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "scuba",
+          "signature": true,
+          "note": "certification program with open-water dives at a quarry and river sites"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing",
+          "note": "water skiing and towed tubing on a camp-run day trip to a nearby lake"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "whitewater_rafting"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "winter_camping",
+          "note": "the reservation takes units all year"
+        },
+        {
+          "code": "woodworking"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": null,
       "provenance": {
         "sources": [
@@ -39,6 +243,10 @@
           {
             "url": "https://brmcreservation.org/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/599174893/OR/BRSR_Leaders_Guide_2026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",
