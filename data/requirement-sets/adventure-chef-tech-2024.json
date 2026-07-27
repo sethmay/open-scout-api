@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-chef-tech-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:chef-tech",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Chef Tech — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/chef-tech/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Pick a kitchen appliance that uses technology to complete the following requirements."
+    },
+    {
+      "number": "2",
+      "text": "With an adult, review the safety guidelines in the owner’s manual and follow all safety guidelines."
+    },
+    {
+      "number": "3",
+      "text": "With adult supervision, download a cooking app or search online to find a recipe."
+    },
+    {
+      "number": "4",
+      "text": "With adult supervision, follow the selected recipe and make the recipe."
+    },
+    {
+      "number": "5",
+      "text": "Think of a way technology can improve the appliance used to make your recipe."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/chef-tech/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

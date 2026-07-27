@@ -1,0 +1,59 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-yo-yo-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:yo-yo",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Yo-yo — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/yo-yo/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Learn the safety rules of using a yo-yo and always follow them."
+    },
+    {
+      "number": "2",
+      "text": "Discover how to find the proper yo-yo string length for you."
+    },
+    {
+      "number": "3",
+      "text": "Explain why it is important to have the correct string length and to be in the right location before throwing a yo-yo."
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate how to properly string a yo-yo and how to create a slip knot."
+    },
+    {
+      "number": "5",
+      "text": "Conduct the pendulum experiment with a yo-yo. Explain what happens to the yo-yo when the string is longer."
+    },
+    {
+      "number": "6",
+      "text": "Show that you can properly wind a yo-yo."
+    },
+    {
+      "number": "7",
+      "text": "Attempt each of the following: gravity pull, sleeper, breakaway."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/yo-yo/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

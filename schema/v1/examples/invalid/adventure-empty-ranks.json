@@ -1,0 +1,29 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/adventure.schema.json",
+  "id": "adventure-with-no-rank",
+  "kind": "adventure",
+  "versions": [
+    {
+      "valid_from": "2024",
+      "valid_to": null,
+      "name": "Paws on the Path",
+      "program": "cub_scouts",
+      "ranks": [],
+      "category": "required",
+      "url": "https://www.scouting.org/cub-scout-adventures/paws-on-the-path/",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/cub-scout-adventures/paws-on-the-path/",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": "Name, rank placement and category from the official rank adventure pages."
+      }
+    }
+  ],
+  "notes": null
+}

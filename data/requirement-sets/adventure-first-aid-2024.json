@@ -1,0 +1,59 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-first-aid-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:first-aid",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "First Aid — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/first-aid/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Arrow of Light rank."
+    },
+    {
+      "number": "2",
+      "text": "Explain what you should do if you encounter someone in need of first aid."
+    },
+    {
+      "number": "3",
+      "text": "Demonstrate what to do for hurry cases of first aid: serious bleeding, heart attack or sudden cardiac arrest, stopped breathing, stroke, poisoning."
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate how to help a choking victim."
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate how to treat shock."
+    },
+    {
+      "number": "6",
+      "text": "Demonstrate how to treat the following: cuts and scratches, burns and scalds, bites and stings of insects and animals, and nosebleed."
+    },
+    {
+      "number": "7",
+      "text": "Make a personal first-aid kit. Demonstrate the proper use of each item in your first-aid kit."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/first-aid/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

@@ -6,6 +6,28 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **A sentinel that means "all" cannot also mean "none".** `choose: null` on a requirement node
+  reads as *complete every child*. Modelling the Cub "Special Elective Adventures" heading as a
+  peer group therefore asserted that every Cub must earn BB Guns to rank up — a page heading
+  copied faithfully into a false requirement. When a source's visual grouping has no truthful
+  encoding in the requirement tree, it is an attribute of the member (`adventure.category`), not a
+  sibling requirement. Ask what the node *claims*, not what the page *looks like*.
+- **A rendered list interleaves labels with items, and a naive parser cannot tell them apart.**
+  Each Cub rank page pairs its required adventures with six *area* names (Character & Leadership,
+  Personal Fitness, Personal Safety, Family & Reverence, Citizenship, Outdoors). An earlier seed
+  captured three of those areas as if they were Arrow of Light adventures, and they shipped for
+  months — AOL published seven required adventures where the page's own rule says six. Parse by
+  element role (the adventures are the `<h2>`s), and check the count the source states in prose
+  against the count you extracted; that sentence is the cheapest available oracle.
+- **Prose stating a total is a stronger source than the list you can see.** "Complete six required
+  Adventures and any two elective" is what proved Bobcat is genuinely the sixth required adventure
+  even though it sits outside the required heading — and it is what would have caught the Arrow of
+  Light error at write time. Look for the sentence that counts before modelling the list.
+- **A link's href is not the target's identity.** The Arrow of Light page links
+  `/cub-scout-adventures/bobcat-arrow-of-light/`, which redirects to a page whose `rel=canonical`
+  is `bobcat-aol`. Derive ids from the destination's own canonical URL, never from the referring
+  link — and never from a slugified display name, which would also have missed
+  `pick-my-path-lion`.
 - **Schema fixtures MUST include expected-fail cases for every strictness/conditional
   keyword** (`additionalProperties`/`unevaluatedProperties: false`, `anyOf`, `if/then`).
   A positive-only validator stays green when the guard is deleted. Inherited from

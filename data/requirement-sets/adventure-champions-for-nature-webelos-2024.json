@@ -1,0 +1,55 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-champions-for-nature-webelos-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:champions-for-nature-webelos",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Champions for Nature Webelos — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discover the four components that make up a habitat: food, water, shelter, space."
+    },
+    {
+      "number": "2",
+      "text": "Pick an animal that is currently threatened or endangered to complete requirements 3, 4, and 5."
+    },
+    {
+      "number": "3",
+      "text": "Identify the characteristics that classify an animal as a threatened or endangered species."
+    },
+    {
+      "number": "4",
+      "text": "Explore what caused this animal to be threatened or endangered."
+    },
+    {
+      "number": "5",
+      "text": "Research what is currently being done to protect the animal."
+    },
+    {
+      "number": "6",
+      "text": "Participate in a conservation service project."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/champions-for-nature-webelos/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

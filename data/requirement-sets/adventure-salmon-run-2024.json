@@ -1,0 +1,55 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-salmon-run-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:salmon-run",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Salmon Run — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/salmon-run/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your den or an adult, identify the attributes of qualified adult supervision at a swimming activity."
+    },
+    {
+      "number": "2",
+      "text": "Learn the three swimming ability groups for Scouting America and water depths appropriate for each."
+    },
+    {
+      "number": "3",
+      "text": "Go swimming with your den, pack, or family for 30 minutes using the buddy system."
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate the use the buddy system, buddy checks, and ability groups with your den or an adult."
+    },
+    {
+      "number": "5",
+      "text": "Attempt Scouting America beginner swim test."
+    },
+    {
+      "number": "6",
+      "text": "Demonstrate both a reach rescue and a throw rescue."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/salmon-run/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

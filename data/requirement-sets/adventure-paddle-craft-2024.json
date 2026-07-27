@@ -1,0 +1,67 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-paddle-craft-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:paddle-craft",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Paddle Craft — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/paddle-craft/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Before attempting requirements 5, 6, 7, 8 and 9 for this Adventure, you must pass Scouting America swimmer test."
+    },
+    {
+      "number": "2",
+      "text": "Pick a paddle craft for which to complete all requirements: canoe, kayak, or stand-up paddleboard."
+    },
+    {
+      "number": "3",
+      "text": "Review Safety Afloat."
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate how to choose and properly wear a life jacket that is the correct size."
+    },
+    {
+      "number": "5",
+      "text": "Jump feet first into water over your head while wearing a life jacket then swim 25 feet wearing the life jacket."
+    },
+    {
+      "number": "6",
+      "text": "Demonstrate how to enter and exit a canoe, kayak, or stand-up paddleboard safely."
+    },
+    {
+      "number": "7",
+      "text": "Discuss what to do if your canoe or kayak tips over or you fall off your stand-up paddleboard."
+    },
+    {
+      "number": "8",
+      "text": "Learn two paddle strokes, power stroke and sweep."
+    },
+    {
+      "number": "9",
+      "text": "Have 30 minutes, or more, of canoe, kayak, or stand-up paddleboard paddle time."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/paddle-craft/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

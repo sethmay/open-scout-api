@@ -36,6 +36,7 @@ ENTITY_TABLES = {
     "oa-lodges": ("oa_lodges", [("council", "TEXT", "council"), ("section", "TEXT", "section"),
                                 ("region", "TEXT", "region"), ("hq_state", "TEXT", "hq_state"),
                                 ("lat", "REAL", "lat"), ("lon", "REAL", "lon")]),
+    "adventures": ("adventures", [("program", "TEXT", "program"), ("category", "TEXT", "category")]),
 }
 
 
@@ -142,6 +143,23 @@ def main() -> None:
     cur.execute("CREATE INDEX idx_camp_features_camp ON camp_features(camp_id)")
     cur.execute("CREATE INDEX idx_camp_features_code ON camp_features(code)")
     counts["camp_features"] = len(cf_rows)
+
+    # adventure -> rank is many-to-many (Slingshot and BB Guns are offered by several ranks) and
+    # lives in a JSON array, so it unrolls into a junction table too: this is what answers
+    # "which adventures does a Wolf need, and which are required".
+    cur.execute("CREATE TABLE adventure_ranks (adventure_id TEXT, rank_id TEXT, category TEXT)")
+    ar_rows = []
+    for p in sorted((DATA / "adventures").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        e = read_json(p)
+        v = open_version(e) or (e.get("versions") or [{}])[-1]
+        for r in (v.get("ranks") or []):
+            ar_rows.append([e["id"], r.split(":", 1)[-1], v.get("category")])
+    cur.executemany("INSERT INTO adventure_ranks VALUES (?,?,?)", ar_rows)
+    cur.execute("CREATE INDEX idx_adventure_ranks_rank ON adventure_ranks(rank_id)")
+    cur.execute("CREATE INDEX idx_adventure_ranks_adv ON adventure_ranks(adventure_id)")
+    counts["adventure_ranks"] = len(ar_rows)
 
     cur.execute("CREATE TABLE feature_vocab (code TEXT PRIMARY KEY, label TEXT, category TEXT, "
                 "broader TEXT, description TEXT)")

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-math-on-the-trail-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:math-on-the-trail",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Math on the Trail — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/math-on-the-trail/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Determine your walking pace by walking ¼ mile. Make a projection on how long it would take you to walk 2 miles."
+    },
+    {
+      "number": "2",
+      "text": "Walk 2 miles and record the time it took you to complete the two miles."
+    },
+    {
+      "number": "3",
+      "text": "Make a projection on how long it would take you to hike a 20-mile trail over two days. List all the factors to consider for your projection."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/math-on-the-trail/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

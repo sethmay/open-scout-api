@@ -30,6 +30,8 @@ def clean_node(n: dict) -> dict:
     out = {"number": str(n["number"])}
     if n.get("text") is not None and str(n["text"]).strip():
         out["text"] = str(n["text"]).strip()
+    if n.get("ref") is not None:
+        out["ref"] = str(n["ref"])
     if n.get("choose") is not None:
         out["choose"] = int(n["choose"])
     kids = [clean_node(c) for c in (n.get("children") or []) if isinstance(c, dict)]

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-fishing-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:fishing",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Fishing — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/fishing/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Make a plan to go fishing. Determine where you will go and what type of fish you plan to catch. All of the following requirements are to be completed based on your choice."
+    },
+    {
+      "number": "2",
+      "text": "Use Scouting America’s SAFE Checklist to plan what you need for your fishing experience."
+    },
+    {
+      "number": "3",
+      "text": "Describe the environment where the fish might be found."
+    },
+    {
+      "number": "4",
+      "text": "Make a list of the equipment and materials you will need to fish."
+    },
+    {
+      "number": "5",
+      "text": "Determine the best type of knot to tie your hook to your line and tie it."
+    },
+    {
+      "number": "6",
+      "text": "On your own, choose the appropriate type of fishing rod and tackle you will be using. Have an adult review your gear."
+    },
+    {
+      "number": "7",
+      "text": "Using what you have learned about fish and fishing equipment, spend at least one hour fishing following local guidelines and regulations."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/fishing/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

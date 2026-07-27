@@ -1,0 +1,28 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "adventure-categories",
+  "kind": "vocab",
+  "title": "Cub Scout adventure categories",
+  "description": "How an adventure counts toward a Cub Scout rank. A rank is earned by completing all six of its required adventures plus any two electives. The authoritative grouping for a given rank is that rank's own requirement-set; this vocabulary names the groups and is single-valued on adventure.category.",
+  "applies_to": [
+    "adventure.category"
+  ],
+  "open": true,
+  "terms": [
+    {
+      "code": "required",
+      "label": "Required",
+      "description": "One of the six adventures every Scout must complete to earn the rank. Includes the rank's Bobcat adventure."
+    },
+    {
+      "code": "elective",
+      "label": "Elective",
+      "description": "Optional adventure; any two count toward the rank, and a Scout may complete as many as they wish."
+    },
+    {
+      "code": "special_elective",
+      "label": "Special Elective",
+      "description": "Elective adventure that may only be completed at an approved event run by a qualified instructor. Covers the shooting-sports adventures (Archery, BB Guns, Slingshot), whose requirements are not published online."
+    }
+  ]
+}

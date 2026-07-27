@@ -1,0 +1,67 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-lets-camp-webelos-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:lets-camp-webelos",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Let’s Camp Webelos — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your den, pack, or family, plan and participate in a campout."
+    },
+    {
+      "number": "2",
+      "text": "Upon arrival at the campground, determine where to set up a tent."
+    },
+    {
+      "number": "3",
+      "text": "Set up your tent without help from an adult."
+    },
+    {
+      "number": "4",
+      "text": "Identify a potential weather hazard that could occur in your area. Determine the action you will take if you experience the weather hazard during the campout."
+    },
+    {
+      "number": "5",
+      "text": "Show how to tie a bowline. Explain when this knot should be used and why."
+    },
+    {
+      "number": "6",
+      "text": "Know the fire safety rules. Using those rules, locate a safe area to build a campfire."
+    },
+    {
+      "number": "7",
+      "text": "Using tinder, kindling, and fuel wood, properly build a teepee fire lay. If circumstances permit, and there is no local restriction on fires, show how to safely light the fire while under adult supervision. After allowing the fire to burn safely, extinguish the flames with minimal impact to the fire site."
+    },
+    {
+      "number": "8",
+      "text": "Recite the Outdoor Code and Leave No Trace Principles for Kids from Memory."
+    },
+    {
+      "number": "9",
+      "text": "After your campout, share the things you did to follow the Outdoor Code and Leave No Trace Principles for Kids with your den or family."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/lets-camp-webelos/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

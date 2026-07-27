@@ -1,0 +1,67 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-bear-habitat-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:bear-habitat",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Bear Habitat — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/bear-habitat/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare for a one-mile walk by gathering the Cub Scout Six Essentials and weather appropriate clothing and shoes."
+    },
+    {
+      "number": "2",
+      "text": "“Know Before You Go” Identify the location of your walk on a map and confirm your one-mile route."
+    },
+    {
+      "number": "3",
+      "text": "“Choose the Right Path” Learn about the path and surrounding area you will be walking on."
+    },
+    {
+      "number": "4",
+      "text": "“Trash your Trash” Make a plan for what you will do with your personal trash or trash you find along the trail."
+    },
+    {
+      "number": "5",
+      "text": "“Leave What You Find” Take pictures along your walk or bring a sketchbook to draw five things that you want to remember on your walk."
+    },
+    {
+      "number": "6",
+      "text": "“Be Careful with Fire” Determine the fire danger rating along your path."
+    },
+    {
+      "number": "7",
+      "text": "“Respect Wildlife” From a safe distance, identify as you look up, down, and around you, six signs of any mammals, birds, insects, reptiles."
+    },
+    {
+      "number": "8",
+      "text": "“Be Kind to Other Visitors” Identify what you need to do as a den to be kind to others on the path."
+    },
+    {
+      "number": "9",
+      "text": "Go on your one-mile walk while practicing your Leave No Trace Principles for Kids."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/bear-habitat/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

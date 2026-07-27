@@ -1,0 +1,47 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-floats-and-boats-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:floats-and-boats",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Floats and Boats — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/floats-and-boats/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Identify five different types of boats."
+    },
+    {
+      "number": "2",
+      "text": "Identify five things that float and five things that do not float."
+    },
+    {
+      "number": "3",
+      "text": "Build or create a model boat and float it on the water. This can be made from recycled materials or other items."
+    },
+    {
+      "number": "4",
+      "text": "Show that you can put on and fasten a life jacket correctly and learn when it is safe to enter a boat."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/floats-and-boats/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}
