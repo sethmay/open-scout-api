@@ -415,6 +415,28 @@ source (see the Meriwether evidence in PLAN §5.1).
   - Still open: the 18 non-day camps that remain unsurveyed, the 43 thin surveys queued for review
     (below), and the 4 zero-use vocabulary terms (genuine rarities — watch, do not prune).
 
+### Camp feature accuracy audit — `python tools/audit_camp_features.py --all`
+
+Added 0.46.0 after a user spot-check found two defects `validate_data.py` structurally cannot see:
+a feature no source attests (Camp Baker's `mountain_biking`, an inherited LLM guess) and a survey
+that stopped at an index page (Camp Parsons' unread `/program/`, holding its ATV program). The tool
+re-fetches each camp's cited sources plus the program pages they link to and reports three lead
+types: no lexical trace, page-names-record-omits, and uncited program pages.
+
+**Not yet run across the corpus** — only the two camps in this release. Running `--all` over the 366
+surveyed camps is the obvious next sweep, and the two leads it already surfaces are worth designing
+for first:
+
+- **Match per source, not against the concatenation.** A camp's council-wide page can attest a
+  feature belonging to a *different* camp of that council (it suggested `trading_post` and
+  `leadership_training` for Parsons on that basis). Keeping the hit's source URL would both cut the
+  noise and let a real finding cite its evidence.
+- **Uncited PDFs.** Baker's remaining lead is a merit-badge schedule PDF the survey never read;
+  guidebook PDFs were the richest source in the 0.38.0 wave (`guide` camps average 21 features
+  against 13), so PDF-aware fetching is likely where the next real coverage lives.
+- Terms whose every word is generic (`older_scout_program`, `high_adventure_option`) are reported as
+  *not lexically checkable* and will need a human or a different signal entirely.
+
 ### Manual review queue — `python tools/maintenance.py --out FILE.json`
 
 `features_source_tier` (`guide` / `camp_page` / `portal`) ranks how good the source behind each

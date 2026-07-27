@@ -81,9 +81,6 @@
           "code": "motorboating"
         },
         {
-          "code": "mountain_biking"
-        },
-        {
           "code": "nature_center",
           "note": "A nature and ecology centre."
         },
@@ -96,11 +93,16 @@
           "note": "Adventure Week, a session for older Scouts focused on adventure rather than badges."
         },
         {
-          "code": "platform_tents",
-          "note": "Traditional canvas tents on wooden platforms."
+          "code": "orienteering",
+          "note": "Orienteering as part of the outdoor-skills programme."
         },
         {
-          "code": "pool"
+          "code": "pioneering",
+          "note": "Pioneering taught alongside the camp's Scoutcraft skills."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Traditional canvas tents on wooden platforms."
         },
         {
           "code": "rappelling"
@@ -132,18 +134,19 @@
         {
           "code": "waterfront",
           "note": "The camp sits on a private peninsula on Siltcoos Lake."
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "Wilderness survival skills, with first aid and search-and-rescue instruction."
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-07-27",
       "features_source_tier": "camp_page",
       "summary": "Coastal dunes resident camp featuring an aquatics-heavy program with sailing, waterfront, and pool, plus shooting sports, climbing, mountain biking, and a dining hall.",
       "provenance": {
         "sources": [
           {
             "citation": "camp-finder council-697/or-camp-baker (unofficial community dataset)"
-          },
-          {
-            "url": "https://www.otcbsa.org/camp-baker"
           },
           {
             "url": "https://pccscouting.org/camping/camp-baker/",

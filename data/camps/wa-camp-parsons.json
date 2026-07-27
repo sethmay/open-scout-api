@@ -27,44 +27,89 @@
       ],
       "features": [
         {
-          "code": "dining_hall"
+          "code": "archery"
         },
         {
-          "code": "waterfront",
-          "signature": true,
-          "note": "An open-water salt-water base on Hood Canal used for all aquatic activities; the council calls it one of the few camps to do so."
+          "code": "atv",
+          "note": "A BSA ATV Safety Program with rider-course certification and a trail project.",
+          "signature": true
         },
         {
-          "code": "swimming"
+          "code": "bouldering",
+          "note": "A bouldering wall beside the tower."
         },
         {
           "code": "canoeing",
           "note": "Canoeing on glassy salt water along a forested shoreline."
         },
         {
-          "code": "sailing"
-        },
-        {
           "code": "climbing_tower"
         },
         {
-          "code": "rifle"
+          "code": "dining_hall"
         },
         {
-          "code": "archery"
+          "code": "first_year_program",
+          "note": "Trail to First Class, the accelerated rank-advancement track."
         },
         {
           "code": "handicraft",
           "note": "A craft lodge."
         },
         {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "hiking",
+          "note": "Nature, arboretum and beach trails, plus a hike to the camp's high point."
+        },
+        {
+          "code": "kayaking",
+          "note": "Kayaking and canoeing around the boating area."
+        },
+        {
+          "code": "museum",
+          "note": "A camp museum covering its history back to its founding."
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology and conservation sessions, nature games and beach combing."
+        },
+        {
           "code": "older_scout_program"
         },
         {
-          "code": "high_adventure_option"
+          "code": "rappelling",
+          "note": "Rappelling down the climbing tower."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "Scoutcraft field games, an obstacle course and a cooking demonstration."
+        },
+        {
+          "code": "scuba",
+          "note": "A SCUBA experience run with an outside dive partner."
+        },
+        {
+          "code": "snorkeling",
+          "note": "Snorkelling over the canal bottom from the saltwater base."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "An open-water salt-water base on Hood Canal used for all aquatic activities; the council calls it one of the few camps to do so."
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-07-27",
       "features_source_tier": "camp_page",
       "summary": "Historic Hood Canal resident camp at the foot of the Olympic Mountains, offering sailing, kayaking, and mountain treks. Facilities include a waterfront, dining hall, shooting sports, and climbing, plus an older Scout program and high-adventure options.",
       "provenance": {
@@ -82,6 +127,10 @@
           {
             "url": "https://www.campparsons.org/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.campparsons.org/program/",
+            "accessed": "2026-07-27"
           }
         ],
         "method": "imported",

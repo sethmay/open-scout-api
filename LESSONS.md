@@ -6,6 +6,27 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **A pass that only ADDS cannot re-verify what it inherited.** Camp Baker's `mountain_biking` was
+  an LLM guess whose upstream provenance literally said "features inferred". Importing it was fine;
+  what broke the record was a later survey that added 23 sourced features and then stamped the whole
+  camp `features_source_tier: camp_page` / freshly `features_verified_at`. The tier and the date are
+  claims about *every* feature, so an enrichment pass must either re-attest the inherited ones or
+  leave the confidence markers alone. Laundering is worse than a low confidence score, because it
+  destroys the evidence that the value was ever a guess.
+- **"I read a camp page" is not "I read the right camp page".** Camp Parsons' ATV program was missed
+  by two independent projects because every source either of them consulted was an *index* page —
+  council landing page, camp landing page — while the programme sat one link away at `/program/`.
+  A completeness qualifier that records the *kind* of source (`camp_page`) says nothing about depth.
+  When a record looks thin against its peers (11 features against a ~15 median), suspect the crawl
+  before believing the camp.
+- **Ask whether two sources are actually two.** Baker cited `otcbsa.org/camp-baker` and
+  `pccscouting.org/camping/camp-baker/` — the first 301s to the second. Corroboration counted twice
+  is corroboration once, and after a council merger old domains redirect silently. Resolve URLs
+  before recording them as independent.
+- **Concatenating a subject's sources smears attribution across subjects.** The audit tool joins all
+  of a camp's cited pages before matching, so a council-wide page mentioning a trading post at some
+  *other* camp reads as evidence for this one — precisely the slippage that produced both defects.
+  Match per source and keep the source with the hit.
 - **"Verbatim" is a claim a normaliser can quietly falsify.** The heading tidier — which strips a
   trailing period, correctly, from a name — was also running over requirement text, so 93% of the
   pre-2024 Cub requirements lost their final full stop while `text_rights` asserted the text was
