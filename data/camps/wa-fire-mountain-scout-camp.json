@@ -21,7 +21,7 @@
       "elevation_ft": 2130,
       "july_high_f": 67,
       "july_low_f": 48,
-      "website": "https://www.mountbakerbsa.org/fire-mountain",
+      "website": "https://mountbakerscouting.org/firemountain/",
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -50,7 +50,8 @@
           "note": "A crafts area."
         },
         {
-          "code": "mountain_biking"
+          "code": "mountain_biking",
+          "note": "Mountain biking alongside the camp's mountain-boarding programme."
         },
         {
           "code": "mountain_boarding"
@@ -71,9 +72,6 @@
           "code": "shooting_sports"
         },
         {
-          "code": "stem"
-        },
-        {
           "code": "swimming",
           "note": "A palm-treed sandy swim beach."
         },
@@ -86,7 +84,7 @@
           "note": "A tandem zip line over a thousand feet long."
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-07-27",
       "features_source_tier": "camp_page",
       "summary": "Resident camp in the North Cascades foothills near Mount Vernon, Washington, featuring a strong first-year program and mountain biking trails, plus a dining hall, waterfront, shooting sports, climbing, COPE, and STEM offerings.",
       "provenance": {
@@ -110,7 +108,7 @@
         "verified_at": "2026-05-30",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Unconfirmed codes inherited from camp-finder's frontend fixture data were removed 2026-07-27: camp-finder recorded these camps as fixture data for frontend development, not a live scrape, and no reachable source attests the removed codes. Generic amenities (dining hall, waterfront) are kept — this camp's page is a stub, so its silence about them is not evidence. Distinctive facilities a camp page would advertise are not. Website corrected 2026-07-27: https://www.mountbakerbsa.org/fire-mountain no longer serves this camp (dead, or redirecting to an unrelated page); now https://mountbakerscouting.org/firemountain/. Only `stem` was removed here: the camp's resident-camp page (cited) states its programme outright — \"COPE/Climbing (newer High COPE and 1000+ foot tandem zipline) ... Mountain Boarding and Mountain Biking\" — which attests `cope` and `mountain_biking`, and STEM appears nowhere. `mountain_biking` was briefly removed on 2026-07-27 by reading only the council's stub landing page, and restored the same day from the page already in these sources."
       }
     }
   ],

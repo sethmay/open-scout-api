@@ -13,6 +13,19 @@ fold; read before similar work.
   claims about *every* feature, so an enrichment pass must either re-attest the inherited ones or
   leave the confidence markers alone. Laundering is worse than a low confidence score, because it
   destroys the evidence that the value was ever a guess.
+- **An audit that only hunts false positives manufactures false negatives.** Sweeping the camps whose
+  features came from camp-finder fixture data, I deleted Fire Mountain's `mountain_biking` after
+  reading the council's stub landing page — one step after writing the lesson directly above this
+  one. The camp's resident-camp page, *already cited in its own provenance*, says "Mountain Boarding
+  and Mountain Biking" in the same sentence that sources four other features. What caught it was the
+  audit reporting **candidate omissions alongside unsupported claims**: it suggested
+  `mountain_biking` seconds after the deletion. Build the reverse direction into any
+  data-quality tool, and re-read the sources a record already cites before trusting a thin page.
+- **Fixture data is the most dangerous provenance there is.** camp-finder marked these camps
+  `method: manual, confidence: 1.0` while its notes said "Fixture data for frontend development; not
+  a live scrape" and "Deliberately stale verified_at to exercise the StaleBadge UI state". The
+  structured fields claimed certainty; only the prose admitted the truth. When importing, read the
+  notes, not just the confidence — and never let demo data inherit a real method.
 - **"I read a camp page" is not "I read the right camp page".** Camp Parsons' ATV program was missed
   by two independent projects because every source either of them consulted was an *index* page —
   council landing page, camp landing page — while the programme sat one link away at `/program/`.
