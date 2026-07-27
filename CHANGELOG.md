@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.45.0 (minor) — 2026-07-27
 
-- `PENDING` **The pre-2024 Cub adventure line-up is recorded: 38 retired adventures added, 121
+- `49f70b0` **The pre-2024 Cub adventure line-up is recorded: 38 retired adventures added, 121
   historical requirement editions, 951 requirement nodes.** The 2024 program replaced the line-up
   wholesale and until now none of that was in the dataset. Of the 92 adventures the 2015-2024
   program ended with, **50 carried into 2024 unchanged, 4 under a tidied name, 3 were renamed
