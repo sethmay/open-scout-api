@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.52.0 (minor) — 2026-07-27
 
-- `PENDING` **Adult training: 28 courses and 67 position-trained requirements.** Parsed from
+- `483e3ea` **Adult training: 28 courses and 67 position-trained requirements.** Parsed from
   Scouting America's own `TRAINED LEADER REQUIREMENTS` chart, which is a PDF and the only place the
   mapping exists. Two new datasets — `v1/training/{id}.json` (course code, delivery, renewal) and
   `v1/training-requirements/{id}.json` — plus three SQLite tables, 20 in all.
