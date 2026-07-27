@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.38.0 (minor) — 2026-07-26
 
-- `PENDING` **The "unsurveyable" 62 were an instrument error, not a data limit. All 62 surveyed;
+- `cae518b` **The "unsurveyable" 62 were an instrument error, not a data limit. All 62 surveyed;
   non-day coverage 79% -> 95%** (366 of 384), feature entries 4,609 -> **6,373**. Four agents,
   **1,752 features, 49 `guide` + 13 `camp_page`, zero `portal`, zero untouched, zero invented
   codes.**
