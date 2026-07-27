@@ -4,7 +4,7 @@
   "kind": "merit-badge",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "2025",
       "valid_to": null,
       "name": "Artificial Intelligence",
       "eagle_required": false,
@@ -24,7 +24,8 @@
         ],
         "method": "curated",
         "verified_at": "2026-07-21",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "notes": "Introduced 2025. Confirmed by the project owner and corroborated by the merit-badge ranking series, which places the badge in 2025 and nowhere earlier: Scouting America's 2025 recap gives it the 999 'no prior rank' sentinel for 2024."
       }
     }
   ],
