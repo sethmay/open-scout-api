@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.37.0 (minor) — 2026-07-26
 
-- `PENDING` **Coverage recovery: 10 more camps surveyed, non-day coverage 77% -> 79%** (304 of 384),
+- `26ba36a` **Coverage recovery: 10 more camps surveyed, non-day coverage 77% -> 79%** (304 of 384),
   feature entries 4,329 -> **4,609**, 16 new signature entries, **zero invented codes**. Two agents
   worked the 14 surveyable camps found by triaging the 90 that were still unsurveyed; 4 were
   correctly left untouched with `features_verified_at: null`.
