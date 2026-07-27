@@ -81,17 +81,27 @@ LLM-extracted facts in other datasets.
 Each camp's `geo_precision` marks its coordinate `exact` (camp-specific point), `approximate`
 (city or state-centroid backfill — soft-plot or bucket these), or `null` (could not be placed).
 Fields are **additive-only under `v1`** — new optional fields may appear, but existing ones are
-never renamed or removed — so pinning to a field set is safe. **Every published *collection*
-projection is schema-pinned and build-gated:** the denormalized `v1/current/*.json` views against
+never renamed or removed — so pinning to a field set is safe. **Every published surface is now
+schema-pinned and build-gated — all 1,774 files, with nothing left unpinned:** the denormalized
+`v1/current/*.json` views against
 [`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json),
-and the lighter `v1/{dataset}/index.json` listings (every entity incl. historical, with a `current`
+the lighter `v1/{dataset}/index.json` listings (every entity incl. historical, with a `current`
 flag — except requirement-sets, which are effective-dated documents and use `effective_to: null`
 for "in force") against
-[`published-index.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json).
-Each of those 16 files names its own contract in `$schema`, the item shape is selected by the
+[`published-index.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json),
+the **1,756 per-entity `v1/{dataset}/{id}.json` documents** against
+[`published-entity.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json),
+the discovery document against
+[`published-meta.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json),
+and `v1/{dataset}/aliases.json` against
+[`published-aliases.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-aliases.schema.json).
+Every file names its own contract in `$schema` — except the alias map, which is deliberately a bare
+`{retired-id: surviving-id}` lookup with no room for one — the item shape is selected by the
 envelope `kind`, and `build.py` fails the build if any projection drifts. Generate consumer types
-from those schemas rather than hand-mirroring. Not yet pinned (tracked in `TODO.md` for 1.0):
-`v1/meta.json`, `v1/camps/aliases.json`, and the per-entity `v1/{dataset}/{id}.json` documents.
+from those schemas rather than hand-mirroring. The per-entity contract pins the envelope and the
+projection (`versions` non-empty, lifecycle `events` folded in under that key, `requirement_sets`
+listing every edition of a subject); the interior of each `version` is validated against its
+canonical schema by `validate_data.py` before the build runs.
 A camp's `reservation.id` is a stable opaque grouping key (a bare slug, deliberately not a
 `kind:slug` entity ref): group by it, don't parse it.
 Each camp also carries **`features`** — what it actually offers, as sorted codes from the open

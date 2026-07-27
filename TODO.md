@@ -54,21 +54,43 @@ Cleared in 0.28.0:
   closed NSTs, and pre-2021 regions, and consumers had no way to tell them apart without parsing
   names or ids.
 
-**Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 1,340 entity
+**Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 1,756 entity
 files carry `$schema: https://sethmay.github.io/open-scout-api/schema/v1/…`, `build.py` hardcodes
 that base, and it is both the documented API root and the jsDelivr pin path. Moving the repo to an
 org afterwards would change every schema URL and every published URL — maximally breaking. Settle
 org + name, re-stamp `data/` once, update the README/CDN docs, then cut 1.0. This also unblocks the
 Zenodo DOI (below), which binds to the final GitHub location.
 
-**Remaining 1.0 consideration: 10 published endpoints are still unpinned.** The 16 collection
-projections are gated, but `v1/meta.json` (the discovery document), `v1/camps/aliases.json`, and all
-8 per-entity `v1/{dataset}/{id}.json` endpoints (~1,528 files) have no published contract — their
-shape (canonical entity + a projected `events` array, plus `requirement_sets` for
-merit-badges/ranks/awards) exists only inside `build.py`, so renaming `events` is a one-line edit no
-gate would catch. Either add `published-entity` + `published-meta` schemas or state in the README
-that only the collection projections are covered by the stability promise. (The README now says
-which surfaces are unpinned; deciding whether to pin them is the open part.)
+**Every published endpoint is now pinned — CLEARED IN 0.41.0.** The last 10 unpinned surfaces were
+`v1/meta.json`, `v1/{dataset}/aliases.json`, and the 8 per-entity `v1/{dataset}/{id}.json` families,
+whose shape existed only inside `build.py` — so renaming `events` was a one-line edit no gate would
+catch. Three new contracts close it, and `build.py` fail-fast-validates **1,774 published files**
+(1,756 per-entity + 16 collections + meta + aliases):
+
+- **`published-entity.schema.json`** — the deep surface, kind-selected: versioned entities
+  (`versions` non-empty, `events` folded in under that exact key, resolved participant refs),
+  versioned entities that also carry `requirement_sets` (merit-badges/ranks/awards), and
+  requirement-set documents (effective-dated, no versions, no events). Scope is deliberate: it pins
+  the **envelope and the projection**, because each `version`'s interior is already validated against
+  its canonical schema by `validate_data.py` before the build runs. It also enforces a licensing
+  invariant the canonical layer only checked indirectly: **a document with
+  `includes_official_text: true` MUST carry `text_rights`**, so verbatim © Scouting America text can
+  never be published without its carve-out stated on the document itself.
+- **`published-meta.schema.json`** — the discovery document. `endpoints` and `vocab` are the
+  machine-readable index of the whole API, and `unofficial` is `const: true` and required, so a
+  consumer cannot lose the no-affiliation fact by reading a subset.
+- **`published-aliases.schema.json`** — the `{retired-id: surviving-id}` map, pinned as a bare
+  lookup via `propertyNames` + `additionalProperties` rather than being wrapped in an envelope,
+  which would have been a breaking shape change for the one file whose only sane use is a direct
+  lookup. It is therefore also the one published file that carries no `$schema` key: a `$schema`
+  entry in a bare map would read as an alias, and the contract rejects it.
+
+Per-entity documents and `meta.json` now stamp `$schema` like every other published file, which
+realises the intent already commented in `build.py` ("dist files reference published schemas").
+Verified non-vacuous by injection — renaming `events`, dropping or ref-prefixing
+`requirement_sets`, emitting an entity with zero versions, removing `unofficial` from meta, a
+non-slug alias value, and stripping `text_rights` from a document with official text are all
+rejected.
 
 ## Queue
 

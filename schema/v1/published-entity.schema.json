@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json",
+  "title": "Published per-entity document",
+  "description": "Contract for the per-entity endpoints emitted by tools/build.py to v1/{dataset}/{id}.json. These are the DEEP surface: the canonical entity plus everything the build projects onto it, and for camps they are the only place the prose `note` on a program feature appears. Scope is deliberate: this schema pins the ENVELOPE and the PROJECTION - that `versions` is a non-empty ordered history, that lifecycle `events` are folded in under that exact key with resolved participants, and that `requirement_sets` lists the editions belonging to a subject. The interior of each `version` is already validated against its canonical schema (council/camp/merit-badge/...) by tools/validate_data.py before the build runs, so it is not restated here; what was previously unguarded, and is now, is the projection step - renaming `events`, dropping `requirement_sets`, or emitting an entity with no versions used to be a one-line edit no gate would catch. Fields are ADDITIVE-ONLY under v1, like every other published surface. The item shape is selected BY `kind`.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set"] }
+  },
+  "required": ["$schema", "kind", "id"],
+  "allOf": [
+    { "if": { "properties": { "kind": { "enum": ["council", "territory", "camp", "oa-lodge"] } }, "required": ["kind"] },
+      "then": { "$ref": "#/$defs/VersionedEntity" } },
+    { "if": { "properties": { "kind": { "enum": ["merit-badge", "rank", "award"] } }, "required": ["kind"] },
+      "then": { "$ref": "#/$defs/VersionedEntityWithRequirementSets" } },
+    { "if": { "properties": { "kind": { "const": "requirement-set" } }, "required": ["kind"] },
+      "then": { "$ref": "#/$defs/RequirementSetDocument" } }
+  ],
+  "$defs": {
+    "Slug": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+    "EntityRef": {
+      "type": "string",
+      "pattern": "^(council|territory|merit-badge|camp|rank|award|oa-lodge|requirement-set):[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+    },
+    "HistoricalDate": { "type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
+    "Version": {
+      "type": "object",
+      "description": "One attribute snapshot. Half-open window: `valid_from` null means 'from the beginning of what we know', `valid_to` null means current. Exactly one version per entity may have valid_to null (enforced by tools/validate_data.py). Attribute fields beyond these are dataset-specific and validated against the canonical schema for that kind.",
+      "properties": {
+        "valid_from": { "anyOf": [{ "$ref": "#/$defs/HistoricalDate" }, { "type": "null" }] },
+        "valid_to": { "anyOf": [{ "$ref": "#/$defs/HistoricalDate" }, { "type": "null" }] },
+        "provenance": { "type": "object" }
+      },
+      "required": ["valid_from", "valid_to", "provenance"]
+    },
+    "Event": {
+      "type": "object",
+      "description": "A lifecycle event PROJECTED onto this entity from the dataset's _events.json. Stored once there, copied here for convenience: an entity carries every event it participates in, whichever role it plays.",
+      "properties": {
+        "id": { "$ref": "#/$defs/Slug" },
+        "type": { "enum": ["established", "renamed", "merged", "split", "absorbed", "transferred", "reorganized", "discontinued", "reinstated", "superseded"] },
+        "date": { "anyOf": [{ "$ref": "#/$defs/HistoricalDate" }, { "type": "null" }] },
+        "participants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "ref": { "$ref": "#/$defs/EntityRef" },
+              "role": { "type": "string" }
+            },
+            "required": ["ref", "role"],
+            "additionalProperties": false
+          }
+        },
+        "notes": { "type": ["string", "null"] },
+        "provenance": { "type": "object" }
+      },
+      "required": ["id", "type", "date", "participants", "provenance"],
+      "additionalProperties": false
+    },
+    "VersionedEntity": {
+      "type": "object",
+      "properties": {
+        "$schema": { "type": "string", "format": "uri" },
+        "id": { "$ref": "#/$defs/Slug" },
+        "kind": { "type": "string" },
+        "notes": { "type": ["string", "null"] },
+        "versions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Version" } },
+        "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } }
+      },
+      "required": ["$schema", "id", "kind", "notes", "versions", "events"]
+    },
+    "VersionedEntityWithRequirementSets": {
+      "type": "object",
+      "properties": {
+        "$schema": { "type": "string", "format": "uri" },
+        "id": { "$ref": "#/$defs/Slug" },
+        "kind": { "type": "string" },
+        "notes": { "type": ["string", "null"] },
+        "versions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Version" } },
+        "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } },
+        "requirement_sets": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/Slug" },
+          "description": "Ids of every requirement-set edition whose `subject` is this entity, oldest and newest alike - not just the one in force. Fetch v1/requirement-sets/{id}.json for the tree, or read the effective windows and `supersedes` chain to pick the edition that applied on a given date."
+        }
+      },
+      "required": ["$schema", "id", "kind", "notes", "versions", "events", "requirement_sets"]
+    },
+    "RequirementSetDocument": {
+      "type": "object",
+      "description": "An effective-dated requirement document (merit badge or rank edition). Not a versioned entity: editions are immutable and chained by `supersedes`, so there are no `versions` and no `events`.",
+      "properties": {
+        "$schema": { "type": "string", "format": "uri" },
+        "id": { "$ref": "#/$defs/Slug" },
+        "kind": { "type": "string" },
+        "subject": { "$ref": "#/$defs/EntityRef" },
+        "effective_from": { "$ref": "#/$defs/HistoricalDate" },
+        "effective_to": { "anyOf": [{ "$ref": "#/$defs/HistoricalDate" }, { "type": "null" }] },
+        "supersedes": { "anyOf": [{ "type": "string", "pattern": "^requirement-set:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" }, { "type": "null" }] },
+        "source_document": {
+          "type": "object",
+          "properties": { "title": { "type": "string", "minLength": 1 } },
+          "required": ["title"]
+        },
+        "includes_official_text": { "type": "boolean" },
+        "text_rights": { "type": ["string", "null"] },
+        "requirements": { "type": "array", "minItems": 1 },
+        "notes": { "type": ["string", "null"] },
+        "provenance": { "type": "object" }
+      },
+      "required": ["$schema", "id", "kind", "subject", "effective_from", "effective_to", "supersedes",
+                   "source_document", "includes_official_text", "requirements", "provenance"],
+      "allOf": [
+        {
+          "if": { "properties": { "includes_official_text": { "const": true } }, "required": ["includes_official_text"] },
+          "then": {
+            "properties": { "text_rights": { "type": "string", "minLength": 1 } },
+            "required": ["text_rights"],
+            "description": "A document carrying verbatim official text MUST state its rights. Requirement text is © Scouting America and sits outside this dataset's CC licence; publishing it without the carve-out recorded on the document itself would misrepresent the licence."
+          }
+        }
+      ]
+    }
+  }
+}

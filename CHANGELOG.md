@@ -3,6 +3,40 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.41.0 (minor) — 2026-07-27
+
+- `PENDING` **Every published endpoint is now schema-pinned and build-gated — 1,774 files, nothing
+  left unpinned.** The last 10 surfaces had no contract at all: `v1/meta.json`,
+  `v1/{dataset}/aliases.json`, and the 8 per-entity `v1/{dataset}/{id}.json` families (**1,756
+  files**). Their shape existed only inside `build.py`, so renaming `events` was a one-line edit no
+  gate would catch — on the surface that just became the richest, since per-entity documents are the
+  only place a camp feature's prose `note` and a badge's full requirement history appear.
+- Three new contracts:
+  - **`published-entity.schema.json`** — kind-selected across versioned entities, versioned entities
+    that also carry `requirement_sets`, and effective-dated requirement documents. It pins the
+    **envelope and the projection** — `versions` non-empty, lifecycle `events` folded in under that
+    exact key with resolved participant refs, `requirement_sets` listing every edition of a subject
+    as bare slugs — and deliberately does not restate each `version`'s interior, which
+    `validate_data.py` already validates against its canonical schema before the build runs.
+  - **`published-meta.schema.json`** — the discovery document, where `endpoints` and `vocab` are the
+    machine-readable index of the whole API. `unofficial` is `const: true` and required, so a
+    consumer cannot lose the no-affiliation fact by reading a subset of the document.
+  - **`published-aliases.schema.json`** — the `{retired-id: surviving-id}` map, pinned as a bare
+    lookup via `propertyNames` rather than wrapped in an envelope, which would have been a breaking
+    shape change to the one file whose only sane use is a direct lookup.
+- **A licensing invariant is now enforced on the published surface, not just inferred:** a document
+  with `includes_official_text: true` MUST carry `text_rights`. Verbatim requirement text is
+  © Scouting America and sits outside this dataset's CC licence, so it can no longer be published
+  without the carve-out recorded on the document itself.
+- Per-entity documents and `meta.json` now stamp `$schema` like every other published file, which
+  realises an intent already commented in `build.py` ("dist files reference published schemas") but
+  never achievable while no such schema existed. The alias map is the one exception and stays a bare
+  map: a `$schema` key there would read as an alias entry, and its contract rejects it.
+- Verified non-vacuous by injecting seven kinds of drift into the build, all rejected: renaming
+  `events`, dropping `requirement_sets`, emitting `requirement_sets` as `kind:slug` refs instead of
+  slugs, an entity with zero versions, `meta.json` losing `unofficial`, a non-slug alias value, and
+  stripping `text_rights` from a document carrying official text.
+
 ## 0.40.0 (minor) — 2026-07-26
 
 - `b7829b5` **Merit badge requirement history: requirement-sets go 188 -> 415, and 131 of 141 badges
