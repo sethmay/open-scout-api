@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Pulp and Paper",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades",
+        "nature"
+      ],
+      "description": "Pull your own sheet from wet pulp, follow fiber from managed forest to pulp mill to coated stock, compare mechanical and chemical pulping, and count the paper products filling an ordinary home.",
       "url": "https://www.scouting.org/merit-badges/pulp-and-paper/",
       "provenance": {
         "sources": [

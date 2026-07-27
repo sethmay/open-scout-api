@@ -3,6 +3,33 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.39.0 (minor) — 2026-07-26
+
+- `PENDING` **Every merit badge now has a description and subject tags** — they were `null` and `[]`
+  on all 140, which was the most visible hole in the dataset: any app listing badges had nothing to
+  show and no way to filter. Descriptions are original prose, 24-38 words (median 33), written from
+  each badge's own requirement tree; `tags` carry 1-3 facets from a new **16-term
+  `merit-badge-tags` vocabulary** (218 applications, every code in use). `description` is now
+  emitted in `current/merit-badges.json` and **required** in `published-current.schema.json`;
+  `tags` already was.
+- **The copyright gate is the interesting part.** Requirement text is © Scouting America and is
+  published only under the narrow `text_rights` carve-out on requirement-sets, so a description that
+  quoted it would silently drag copyrighted wording into the CC-licensed part of the dataset.
+  `validate_data.py` now **rejects any description sharing 8+ consecutive words with its own badge's
+  requirement text**, building the n-gram corpus from the union of every requirement set for that
+  badge. Proven by injection alongside two companion guards: badge `tags` must exist in the
+  vocabulary, and descriptions must pass the same evergreen check as camp summaries.
+  - The four writing agents went further than asked and probed at 7 and 6 words as a *margin* check.
+    That caught five descriptions that passed at 8 but had tracked a requirement's clause and
+    swapped a word — the exact failure the rule aims at. Worst shared run in the shipped set is 5,
+    and every one of those is unavoidable domain vocabulary ("plaited coiled ribbed and wicker").
+- Four descriptions were rewritten by hand after the wave: they were the worked examples in the
+  authoring brief, and one agent honestly flagged that it had shipped the brief's sentence rather
+  than writing its own. Replaced with prose derived from the requirements.
+- Housekeeping: `TODO.md` had two entries stale for several releases — GitHub Pages is enabled and
+  the API verified live (`v1/meta.json` returns 200 at the current release, all 48 tags on the
+  remote), and camp `summary` shipped long ago on 371 of 448 camps.
+
 ## 0.38.0 (minor) — 2026-07-26
 
 - `cae518b` **The "unsurveyable" 62 were an instrument error, not a data limit. All 62 surveyed;

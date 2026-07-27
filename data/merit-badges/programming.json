@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Programming",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Write, debug, and explain working programs in three different languages and environments, trace how languages evolved, and sort out licensing, open source, and the intellectual property that covers code.",
       "url": "https://www.scouting.org/merit-badges/programming/",
       "provenance": {
         "sources": [

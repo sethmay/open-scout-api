@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Multisport",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports",
+        "health"
+      ],
+      "description": "Pick a triathlon, duathlon, aquathlon, or aquabike format, train for four weeks against a tracked goal, set up a transition area, and finish the swim, bike, and run legs back to back.",
       "url": "https://www.scouting.org/merit-badges/multisport/",
       "provenance": {
         "sources": [

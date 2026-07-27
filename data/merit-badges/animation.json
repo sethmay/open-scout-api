@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Animation",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts",
+        "stem"
+      ],
+      "description": "Study the principles that make motion read as believable, like squash and stretch and anticipation, then plan with thumbnail sketches and build two short animations using different techniques.",
       "url": "https://www.scouting.org/merit-badges/animation/",
       "provenance": {
         "sources": [

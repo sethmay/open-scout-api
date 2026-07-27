@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Law",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship",
+        "heritage"
+      ],
+      "description": "Trace law from Hammurabi's code to the jury system, sort out civil from criminal cases, sit in on a trial or stage a mock one, and find how someone gets legal help they cannot afford.",
       "url": "https://www.scouting.org/merit-badges/law/",
       "provenance": {
         "sources": [

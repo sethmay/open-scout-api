@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Emergency Preparedness",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "safety",
+        "citizenship"
+      ],
+      "description": "Work out how to prevent, survive, and recover from disasters from kitchen fires to hurricanes, build a family escape plan and a disaster kit, signal rescuers, and mobilize your troop to help.",
       "url": "https://www.scouting.org/merit-badges/emergency-preparedness/",
       "provenance": {
         "sources": [

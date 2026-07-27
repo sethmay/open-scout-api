@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Rifle Shooting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "shooting_sports",
+        "safety"
+      ],
+      "description": "Handle a rifle safely on a supervised range, then work on aiming, breathing, trigger control and follow-through until your shots group tightly with a rimfire, air, or muzzleloading rifle.",
       "url": "https://www.scouting.org/merit-badges/rifle-shooting/",
       "provenance": {
         "sources": [

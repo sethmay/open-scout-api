@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Chess",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports"
+      ],
+      "description": "Teach someone the moves, record games in algebraic notation, work through openings like the Ruy Lopez and French Defense, force mate with rook and queen, and play or organize a tournament.",
       "url": "https://www.scouting.org/merit-badges/chess/",
       "provenance": {
         "sources": [

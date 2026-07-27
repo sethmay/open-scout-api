@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "American Heritage",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "heritage",
+        "citizenship"
+      ],
+      "description": "Rewrite part of the Declaration of Independence in your own words, trace how the flag, the anthem, and the Pledge came to be, and dig into the history of your own family and town.",
       "url": "https://www.scouting.org/merit-badges/american-heritage/",
       "provenance": {
         "sources": [

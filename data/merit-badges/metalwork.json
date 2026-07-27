@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Metalwork",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft",
+        "trades"
+      ],
+      "description": "Work-harden, anneal, and temper metal by hand, then choose a path - tinsmith, silversmith, founder, or blacksmith - and make objects from sheet stock, cast pewter, or hot-forged steel.",
       "url": "https://www.scouting.org/merit-badges/metalwork/",
       "provenance": {
         "sources": [

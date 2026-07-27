@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Cooking",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "health",
+        "outdoor"
+      ],
+      "description": "Plan balanced menus, shop to them, and cook three days of meals at home, then feed your patrol in camp over a stove or fire and pack lightweight food for the trail. Clean up properly every time.",
       "url": "https://www.scouting.org/merit-badges/cooking/",
       "provenance": {
         "sources": [

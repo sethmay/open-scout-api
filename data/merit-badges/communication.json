@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Communication",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts",
+        "business"
+      ],
+      "description": "Write and deliver a five-minute speech, interview someone you respect and listen closely, teach a skill with aids you prepared, and emcee a campfire program or court of honor you planned yourself.",
       "url": "https://www.scouting.org/merit-badges/communication/",
       "provenance": {
         "sources": [

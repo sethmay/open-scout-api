@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Canoeing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics"
+      ],
+      "description": "Paddle tandem well enough to pivot, move sideways, and hold a straight line, then handle the hard parts: a controlled capsize, reentry in deep water, emptying a swamped canoe, and a throw-bag rescue.",
       "url": "https://www.scouting.org/merit-badges/canoeing/",
       "provenance": {
         "sources": [

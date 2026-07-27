@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Landscape Architecture",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "nature"
+      ],
+      "description": "Walk a designed site and read its plan, identify trees, shrubs, and ground covers by shape and texture, then measure, draw to scale, and redesign an entry area for drainage, comfort, and safety.",
       "url": "https://www.scouting.org/merit-badges/landscape-architecture/",
       "provenance": {
         "sources": [

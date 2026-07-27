@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Moviemaking",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Turn a written treatment into a storyboard and then into finished footage, framing shots, choosing angles and light, and keeping the 180-degree axis straight so the cut makes sense to an audience.",
       "url": "https://www.scouting.org/merit-badges/moviemaking/",
       "provenance": {
         "sources": [

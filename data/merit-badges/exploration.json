@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Exploration",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "stem"
+      ],
+      "description": "Study what separates real exploration from travel, learn how expeditions are funded, staffed, and documented, then plan and carry out your own trip to somewhere you have never been and report the findings.",
       "url": "https://www.scouting.org/merit-badges/exploration/",
       "provenance": {
         "sources": [

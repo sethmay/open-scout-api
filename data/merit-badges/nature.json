@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Nature",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "outdoor"
+      ],
+      "description": "Identify birds, mammals, reptiles, insects, fish, shells, wild plants, soils, and rocks in the field, build land and water food chains, and read how a meadow or forest changes through succession.",
       "url": "https://www.scouting.org/merit-badges/nature/",
       "provenance": {
         "sources": [

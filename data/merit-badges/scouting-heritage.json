@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Scouting Heritage",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "heritage",
+        "collecting"
+      ],
+      "description": "Trace Scouting from Baden-Powell and Brownsea Island to the people who grew the movement in this country, gather patches and memorabilia, revive an old-time Scout game, and interview Scouts from earlier generations.",
       "url": "https://www.scouting.org/merit-badges/scouting-heritage/",
       "provenance": {
         "sources": [

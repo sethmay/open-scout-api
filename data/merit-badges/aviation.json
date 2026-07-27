@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Aviation",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "trades"
+      ],
+      "description": "Learn the four forces on an aircraft and how an airfoil makes lift, read the instrument panel and an aeronautical chart, build and fly a model, and visit an airport or control facility.",
       "url": "https://www.scouting.org/merit-badges/aviation/",
       "provenance": {
         "sources": [

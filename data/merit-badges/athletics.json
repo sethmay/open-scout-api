@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Athletics",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports",
+        "health"
+      ],
+      "description": "Build a training program for a sport you choose, track your progress over three months across events like sprints, jumps, and weight training, and plan a field day for others while learning what good sportsmanship demands.",
       "url": "https://www.scouting.org/merit-badges/athletics/",
       "provenance": {
         "sources": [

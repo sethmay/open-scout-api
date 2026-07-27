@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Fishing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "sports"
+      ],
+      "description": "Rig rod and reel, tie the clinch, Palomar, uni, and arbor knots, pick lures or bait to match the water, then catch a fish, identify it, and clean and cook it or release it safely.",
       "url": "https://www.scouting.org/merit-badges/fishing/",
       "provenance": {
         "sources": [

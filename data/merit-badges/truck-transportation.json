@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Truck Transportation",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades",
+        "business"
+      ],
+      "description": "Follow freight from an overseas factory to a store shelf, tour a terminal to see how dispatchers, driver logs and maintenance keep a fleet rolling, and price out shipping a load five hundred miles.",
       "url": "https://www.scouting.org/merit-badges/truck-transportation/",
       "provenance": {
         "sources": [

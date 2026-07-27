@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "American Indian Culture",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "heritage"
+      ],
+      "description": "Map the major American Indian cultural areas, study one nation's dwellings, government, beliefs, and language, learn common words and place names, and teach a traditional game to your patrol.",
       "url": "https://www.scouting.org/merit-badges/american-indian-culture/",
       "provenance": {
         "sources": [

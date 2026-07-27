@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Artificial Intelligence",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Tell real artificial intelligence apart from ordinary automation, weigh bias and privacy against usefulness, understand deepfakes and how to respond to one, and practice writing prompts clear enough to get good output.",
       "url": "https://www.scouting.org/merit-badges/artificial-intelligence/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Signs, Signals and Codes",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts",
+        "outdoor"
+      ],
+      "description": "Send and read Morse, semaphore, braille and American Sign Language, lay a marked trail for your patrol to follow, decode everyday symbols and traffic signs, and invent a cipher a friend has to crack.",
       "url": "https://www.scouting.org/merit-badges/signs-signals-and-codes/",
       "provenance": {
         "sources": [

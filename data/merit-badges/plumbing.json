@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Plumbing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades"
+      ],
+      "description": "Draw how supply and drain-vent systems run through a house, then cut and solvent-weld PVC, crimp PEX, solder a copper joint, swap a faucet, and pull and reset a sink trap.",
       "url": "https://www.scouting.org/merit-badges/plumbing/",
       "provenance": {
         "sources": [

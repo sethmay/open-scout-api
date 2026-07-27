@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Sports",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports",
+        "health"
+      ],
+      "description": "Train for two chosen sports across a season, charting practice and progress, and learn each game's rules, etiquette, gear and playing area alongside the conditioning and diet that keep an athlete healthy.",
       "url": "https://www.scouting.org/merit-badges/sports/",
       "provenance": {
         "sources": [

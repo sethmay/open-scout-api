@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Crime Prevention",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship",
+        "safety"
+      ],
+      "description": "Survey a home or park for weak points and teach a family how to close them, learn when to report a crime, and recognize online scams, identity theft, and the pressures that pull people toward crime.",
       "url": "https://www.scouting.org/merit-badges/crime-prevention/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Welding",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades"
+      ],
+      "description": "Set up a welding process, dress for the sparks, and lay beads, butt joints, T joints and lap joints on steel plate, learning how heat, filler metal and shielding fuse two pieces into one.",
       "url": "https://www.scouting.org/merit-badges/welding/",
       "provenance": {
         "sources": [

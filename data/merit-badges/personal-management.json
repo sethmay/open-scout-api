@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Personal Management",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "business"
+      ],
+      "description": "Build a savings plan for something expensive your family wants, run a real budget and reconcile it, compare how stocks, bonds, and insurance work, then plan a project against your own schedule.",
       "url": "https://www.scouting.org/merit-badges/personal-management/",
       "provenance": {
         "sources": [

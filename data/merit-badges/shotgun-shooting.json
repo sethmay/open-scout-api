@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Shotgun Shooting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "shooting_sports",
+        "safety"
+      ],
+      "description": "Break clay targets with a modern or muzzleloading shotgun, working on stance, gun mount and swing, and learn gauges, shell parts, cleaning, storage and the three sports built around wing shooting.",
       "url": "https://www.scouting.org/merit-badges/shotgun-shooting/",
       "provenance": {
         "sources": [

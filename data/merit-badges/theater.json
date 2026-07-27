@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Theater",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Review full-length plays you have seen or read, write a one-act with real conflict and a climax, and take a production role: acting, directing, sets, costumes, lighting, sound or stage managing.",
       "url": "https://www.scouting.org/merit-badges/theater/",
       "provenance": {
         "sources": [

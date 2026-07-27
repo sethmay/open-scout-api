@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Swimming",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "safety"
+      ],
+      "description": "Swim front crawl, back crawl, sidestroke, breaststroke and elementary backstroke over a continuous distance, surface dive for an object, float to survive cold water, and rescue someone by reaching or throwing.",
       "url": "https://www.scouting.org/merit-badges/swimming/",
       "provenance": {
         "sources": [

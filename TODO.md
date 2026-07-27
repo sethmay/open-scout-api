@@ -94,10 +94,11 @@ reviewed + sequenced below; all additive/backward-compatible under `v1` (minor b
    verified, so the exclusion was removed and their 18 camps imported. API camps 469 -> 487;
    0 camp-finder camps now missing (the API is a superset - it also carries a national base
    and camps the camp-finder site itself filters out).
-3. **Camp `summary` (evergreen prose).** Add `summary` to `CampVersion` (original prose; MUST
-   NOT contain dates/fees/session schedules) + surface in the projection. Do NOT scrub
-   camp-finder's contaminated descriptions — regenerate clean, and add a `validate_data` guard
-   rejecting 4-digit years / `$` / month names / "session" so evergreen is an enforced gate.
+3. **Camp `summary` (evergreen prose) — DONE (0.26.x).** `summary` is on `CampVersion` and in the
+   projection; **371 of 448 camps carry one**, regenerated as original prose rather than scrubbing
+   camp-finder's contaminated descriptions, and `validate_data.py` rejects 4-digit years, `$`, and
+   month names so evergreen is an enforced gate rather than a convention. (The same guard now
+   covers merit-badge descriptions and camp feature notes.)
 4. **Vocab-as-data - DONE (0.19.0).** Published `v1/vocab/{camp-types,camp-program-types,camp-features}.json`
    as `{code,label,description}` (+ `vocab.schema.json`, listed in `meta.vocab`). `camp-program-types` is
    namespaced apart from the rank `program` vocab. `validate_data` cross-checks that every code used in camp
@@ -498,9 +499,16 @@ checkpoints so an interrupted run resumes. Re-run politely or you will libel a c
   backfill older revisions with `supersedes` chains when sourced. (c) **plant-science
   deep-structure**: its 5-level "alternatives" nesting was flattened (conf 0.75, flagged in
   notes) — parse properly if it recurs. (d) **Historical discontinued badges**: catalog
-  carries only CiS + Computers; add the 100+ discontinued set. (e) **Enrich** badge
-  `description`/`tags` (empty). Regenerating needs the workbooks repo at
-  `.workbench/workbooks-main/`.
+  carries only CiS + Computers; add the 100+ discontinued set. (e) **Badge `description` + `tags`
+  — DONE (0.39.0).** All 140 current badges carry an original-prose description (24-38 words,
+  median 33) and 1-3 tags from the new 16-facet `merit-badge-tags` vocabulary (218 applications,
+  every code in use). Written from the requirement trees, which are local, so no scraping was
+  needed. **Two build gates now protect this**, both proven by injection: a description sharing 8+
+  consecutive words with its own badge's requirement text is REJECTED (that text is © Scouting
+  America and lives under the `text_rights` carve-out; a lifted description would drag copyrighted
+  wording into the CC-licensed part of the dataset), and the evergreen guard applies as it does to
+  camp summaries. Regenerating the *catalog* still needs the workbooks repo at
+  `.workbench/workbooks-main/`; the descriptions are hand-written and need nothing.
 - **Finalize schema `$id` base URL. — DONE (0.3.0).** Confirmed
   `https://sethmay.github.io/open-scout-api/schema/v1/` (owner `sethmay`); build serves
   schemas at that path, no re-emit needed.
@@ -509,8 +517,10 @@ checkpoints so an interrupted run resumes. Re-run politely or you will libel a c
   `v1/current/*.json`, `schema/v1/*`); validates `current/` against
   `published-current.schema.json`. `.github/workflows/pages.yml` gates (validators) +
   builds on push/PR, deploys to Pages on `main`.
-- **⚠ One-time manual: enable GitHub Pages.** Repo Settings → Pages → Source = "GitHub
-  Actions". Until done, the deploy job has nothing to publish to (build still runs/gates).
+- **One-time manual: enable GitHub Pages — DONE.** Verified live 2026-07-26:
+  `https://sethmay.github.io/open-scout-api/v1/meta.json` returns 200 and reports the current
+  release, all 48 `v*` tags are on the remote, and `main` has no unpushed commits. The API is
+  serving.
 - **Add a README. — DONE (0.3.1).**
 - **Release automation + CDN docs. — DONE (0.12.0).** `v*` git tags at CHANGELOG shas;
   `.github/workflows/release.yml` publishes GitHub Releases with the JSON tree +

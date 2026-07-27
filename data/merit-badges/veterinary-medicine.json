@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Veterinary Medicine",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "animals",
+        "health"
+      ],
+      "description": "Look at what veterinarians do across pets, horses, livestock, poultry, wildlife and marine animals, and in public health, food inspection and research, then spend time in a clinic watching the work firsthand.",
       "url": "https://www.scouting.org/merit-badges/veterinary-medicine/",
       "provenance": {
         "sources": [

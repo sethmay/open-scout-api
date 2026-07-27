@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Space Exploration",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Fly a model rocket you built yourself, recover it and send it up again for a set objective, explain how engines push and satellites hold orbit, and design a sample-return mission or a crewed base off Earth.",
       "url": "https://www.scouting.org/merit-badges/space-exploration/",
       "provenance": {
         "sources": [

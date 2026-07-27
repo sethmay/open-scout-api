@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Cybersecurity",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "safety"
+      ],
+      "description": "Map your own attack surface, spot phishing and spoofed sites, harden accounts with strong passwords and multi-factor authentication, and see encryption and hashing at work while learning why confidentiality, integrity, and availability drive every defense.",
       "url": "https://www.scouting.org/merit-badges/cybersecurity/",
       "provenance": {
         "sources": [

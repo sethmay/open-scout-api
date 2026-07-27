@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Digital Technology",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Explain how text, sound, and images become data, how networks and apps move it around, and what malware does. Then build real projects with a spreadsheet, word processor, graphics tool, or webpage.",
       "url": "https://www.scouting.org/merit-badges/digital-technology/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Collections",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "collecting"
+      ],
+      "description": "Take a collection of your own seriously: catalog it, learn the terms and grading standards collectors use, work out what it is worth, and figure out how to store and display it without damage.",
       "url": "https://www.scouting.org/merit-badges/collections/",
       "provenance": {
         "sources": [

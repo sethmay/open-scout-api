@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Astronomy",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Find constellations, bright stars, and planets by eye, learn what binoculars and telescopes each do well, and keep an observing log across several nights.",
       "url": "https://www.scouting.org/merit-badges/astronomy/",
       "provenance": {
         "sources": [

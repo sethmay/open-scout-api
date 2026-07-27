@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Pioneering",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor"
+      ],
+      "description": "Whip and splice rope, tie the lashings that hold spars together, then build camp gadgets and a full-size structure - a tower, bridge, or trestle - anchored to stand up under load.",
       "url": "https://www.scouting.org/merit-badges/pioneering/",
       "provenance": {
         "sources": [

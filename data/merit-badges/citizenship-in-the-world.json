@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Citizenship in the World",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship"
+      ],
+      "description": "Compare how different countries govern themselves and mark them on a world map, learn what international law can and cannot do, study organizations like the United Nations and Interpol, and see how diplomats and passports work.",
       "url": "https://www.scouting.org/merit-badges/citizenship-in-the-world/",
       "provenance": {
         "sources": [

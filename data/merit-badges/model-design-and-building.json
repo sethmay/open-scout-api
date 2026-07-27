@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Model Design and Building",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft",
+        "stem"
+      ],
+      "description": "Draw plans to scale and build an original model - a house, a framed corner, a plumbing run, a machine, or a vehicle - then design a fantasy spacecraft from real aircraft and ship references.",
       "url": "https://www.scouting.org/merit-badges/model-design-and-building/",
       "provenance": {
         "sources": [

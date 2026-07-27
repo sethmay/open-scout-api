@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Traffic Safety",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "safety",
+        "citizenship"
+      ],
+      "description": "Examine why distracted, impaired and drowsy drivers crash, check the lights, tires and wipers on a real car, pace out braking distances at highway speed, and read what signs and markings are telling you.",
       "url": "https://www.scouting.org/merit-badges/traffic-safety/",
       "provenance": {
         "sources": [

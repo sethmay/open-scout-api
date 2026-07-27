@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Entrepreneurship",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "business"
+      ],
+      "description": "Interview someone who started a business, generate and screen your own ideas, then write a full plan covering the product, market, competitors, pricing, staffing, and how you would promote it.",
       "url": "https://www.scouting.org/merit-badges/entrepreneurship/",
       "provenance": {
         "sources": [

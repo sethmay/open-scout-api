@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Surveying",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Turn angles and measure distances around a five-sided lot, run levels to find elevations, plot your field notes into a scaled map, and compare instrument work against GPS, drones and laser scanning.",
       "url": "https://www.scouting.org/merit-badges/surveying/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Basketry",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft"
+      ],
+      "description": "Tell plaited, coiled, ribbed, and wicker work apart, learn how different weaves behave, then make three pieces by hand: two baskets and a woven campstool seat.",
       "url": "https://www.scouting.org/merit-badges/basketry/",
       "provenance": {
         "sources": [

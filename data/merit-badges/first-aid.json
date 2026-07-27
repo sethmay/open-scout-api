@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "First Aid",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "safety",
+        "health"
+      ],
+      "description": "Assess a scene and a patient, then treat wounds, burns, bone and joint injuries, and heat or cold emergencies, deciding who to help first when several people are hurt.",
       "url": "https://www.scouting.org/merit-badges/first-aid/",
       "provenance": {
         "sources": [

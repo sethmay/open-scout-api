@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Geocaching",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "stem"
+      ],
+      "description": "Learn how GPS fixes a position, mark and edit waypoints, find a public cache using posted coordinates and clues, and set up a geohunt with its own course for a younger group.",
       "url": "https://www.scouting.org/merit-badges/geocaching/",
       "provenance": {
         "sources": [

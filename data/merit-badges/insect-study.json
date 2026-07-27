@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Insect Study",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "stem"
+      ],
+      "description": "Tell insects from spiders and millipedes, raise a caterpillar through metamorphosis, observe twenty species across four orders in the field, and study a bee hive or ant colony up close.",
       "url": "https://www.scouting.org/merit-badges/insect-study/",
       "provenance": {
         "sources": [

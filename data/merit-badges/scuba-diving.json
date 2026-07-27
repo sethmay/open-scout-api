@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Scuba Diving",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "safety"
+      ],
+      "description": "Earn an open water certification and learn what breathing compressed air does to a body, from squeezes and nitrogen narcosis to decompression illness, along with the aquatic ecosystems a diver moves through.",
       "url": "https://www.scouting.org/merit-badges/scuba-diving/",
       "provenance": {
         "sources": [

@@ -197,6 +197,7 @@ def main() -> None:
         if ov is not None:
             current_badges.append({"id": e["id"], "name": ov["name"],
                                    "eagle_required": ov["eagle_required"], "tags": ov.get("tags", []),
+                                   "description": ov.get("description"),
                                    "url": ov.get("url"), **_prov(ov)})
 
     council_meta = {}

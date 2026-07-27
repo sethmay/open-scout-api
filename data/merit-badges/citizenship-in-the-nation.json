@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Citizenship in the Nation",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship",
+        "heritage"
+      ],
+      "description": "Work out what the Constitution does, how the three branches check each other, and where the Bill of Rights fits, then study a landmark speech, visit a historic site, and send your views to a member of Congress.",
       "url": "https://www.scouting.org/merit-badges/citizenship-in-the-nation/",
       "provenance": {
         "sources": [

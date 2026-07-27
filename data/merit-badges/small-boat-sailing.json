@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Small-Boat Sailing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics"
+      ],
+      "description": "Rig a small sailboat and take it through the basic points of sail, tack and jibe around a course, get out of irons, recover from a capsize, and tie the knots that hold everything fast.",
       "url": "https://www.scouting.org/merit-badges/small-boat-sailing/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Reptile and Amphibian Study",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature"
+      ],
+      "description": "Identify snakes, lizards, turtles, frogs and salamanders by their markings and calls, keep or observe a live specimen over weeks, and sort real behavior from the superstitions people repeat.",
       "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/",
       "provenance": {
         "sources": [

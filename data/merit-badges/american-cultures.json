@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "American Cultures",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "heritage",
+        "citizenship"
+      ],
+      "description": "Meet three groups whose background differs from your own — by race, ethnicity, or faith — through a festival, a place of worship, or a museum, then compare their customs and contributions before leading a discussion.",
       "url": "https://www.scouting.org/merit-badges/american-cultures/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Public Speaking",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Introduce yourself to a live audience, deliver a prepared talk with visual aids and an impromptu one with no warning, research and write a longer speech, and run a meeting by the rules of order.",
       "url": "https://www.scouting.org/merit-badges/public-speaking/",
       "provenance": {
         "sources": [

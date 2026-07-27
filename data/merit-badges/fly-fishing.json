@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Fly Fishing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "sports"
+      ],
+      "description": "Balance rod, line, and leader, tie backing, nail, and surgeon's knots, tie your own flies, cast overhead and roll casts to thirty feet, then read what the fish are eating and match the hatch.",
       "url": "https://www.scouting.org/merit-badges/fly-fishing/",
       "provenance": {
         "sources": [

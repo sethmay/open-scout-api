@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Cycling",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports",
+        "outdoor"
+      ],
+      "description": "Tune and repair your own bike, handle it safely in traffic or on singletrack, and build up through longer rides to a fifty-mile road route or a long trail circuit.",
       "url": "https://www.scouting.org/merit-badges/cycling/",
       "provenance": {
         "sources": [

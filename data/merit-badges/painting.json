@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Painting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades"
+      ],
+      "description": "Patch, caulk, prime, and topcoat two real surfaces, choose harmonizing colors from the color wheel, tell enamel from flat and stain from varnish, and clean and store brushes and rollers properly.",
       "url": "https://www.scouting.org/merit-badges/painting/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Composite Materials",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "trades"
+      ],
+      "description": "Learn how fiber reinforcement and resin combine into a material stronger than either, compare composites against wood, steel, and aluminum, handle resins safely, then build and evaluate two composite projects of your own.",
       "url": "https://www.scouting.org/merit-badges/composite-materials/",
       "provenance": {
         "sources": [
