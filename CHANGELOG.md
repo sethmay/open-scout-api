@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.40.0 (minor) — 2026-07-26
 
-- `PENDING` **Merit badge requirement history: requirement-sets go 188 -> 415, and 131 of 141 badges
+- `b7829b5` **Merit badge requirement history: requirement-sets go 188 -> 415, and 131 of 141 badges
   now have more than one edition** (96 have three). Before this, `supersedes` chains existed for
   ranks but not badges, so "which requirements applied when my Scout started" was unanswerable for
   the entire badge catalog. Editions now span **1995 to 2026**, with full verbatim requirement trees,
