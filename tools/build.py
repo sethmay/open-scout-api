@@ -233,6 +233,7 @@ def main() -> None:
                                   "features_signature": sorted(f["code"] for f in (ov.get("features") or [])
                                                                if f.get("signature")),
                                   "features_verified_at": ov.get("features_verified_at"),
+                                  "features_source_tier": ov.get("features_source_tier"),
                                   "parent": ov.get("parent"), "reservation": ov.get("reservation"),
                                   "council_name": _cm["name"] if _cm else None,
                                   "council_website": _cm["website"] if _cm else None,

@@ -25,8 +25,184 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Council ring used for camp-wide campfires."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archaeology"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "Astronomy night run at the camp observatory."
+        },
+        {
+          "code": "atv",
+          "note": "Polaris ATV course open to youth and adults."
+        },
+        {
+          "code": "backpacking"
+        },
+        {
+          "code": "black_powder",
+          "note": "Muzzleloader rifle offered as a route to the rifle badge."
+        },
+        {
+          "code": "blacksmithing",
+          "note": "Thunder Forge, a working forge with instructors."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "Thunder Chapel, open at any time, hosts an interfaith service."
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Climbing tower used as a vertical gym and for a tower race."
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cope",
+          "note": "Low and high COPE course with team challenges."
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Spirit of the West evening pairs chuck-wagon supper with cowboy action shooting."
+        },
+        {
+          "code": "digital_media",
+          "note": "Moviemaking and photography in the handicraft area."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Family-style meals."
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trailblazers track for first-year campers working toward First Class."
+        },
+        {
+          "code": "fishing",
+          "note": "Stocked lake supporting fishing, fly fishing and the Complete Angler award."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "Health officer on duty around the clock."
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "leadership_training",
+          "note": "Senior patrol leader training for returning Scouts."
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology and conservation area covering geology, plant science and herpetology."
+        },
+        {
+          "code": "observatory",
+          "signature": true,
+          "note": "Observatory building housing a high-resolution telescope for year-round viewing."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "pavilion",
+          "note": "Kiva picnic shelter by the pool."
+        },
+        {
+          "code": "pistol",
+          "signature": true,
+          "note": "Supervised handgun marksmanship, presented as unique among camps in the region."
+        },
+        {
+          "code": "pool",
+          "note": "Large outdoor swimming pool with attached showers and restrooms."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "Outdoor Skills area covering knots, blade safety, fire building and map work."
+        },
+        {
+          "code": "scuba"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem",
+          "note": "Robotics and Lego League programming."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Two lakes on the property for boating and fishing."
+        },
+        {
+          "code": "welding",
+          "note": "Metalworking taught at the camp forge."
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "Includes a night out in a self-built shelter."
+        },
+        {
+          "code": "wildlife_viewing"
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +210,24 @@
             "citation": "camp-finder council-133/il-scouts-bsa-resident-camp-at-loud-thunder (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/133-ScoutsBSAResidentCamp"
+            "url": "https://scoutingevent.com/133-ScoutsBSAResidentCamp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://loudthunder.org/about-us/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://loudthunder.org/about-us/our-facilities/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://loudthunder.org/scouts-bsa-resident-camp/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1DFOui_ymnO2BM8WUDZ7qO6djpX4Ug57p/view",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "curated",

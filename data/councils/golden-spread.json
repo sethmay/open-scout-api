@@ -5,7 +5,7 @@
   "versions": [
     {
       "valid_from": "1987",
-      "valid_to": null,
+      "valid_to": "2026-06-01",
       "name": "Golden Spread Council",
       "bsa_number": 562,
       "hq_city": "Amarillo",
@@ -26,11 +26,19 @@
           },
           {
             "url": "https://en.wikipedia.org/wiki/Golden_Spread_Council"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Plains_Council"
+          },
+          {
+            "url": "https://amarillotribune.org/2026/06/26/scoutings-americas-amarillo-and-lubbock-councils-merge-to-form-the-prairie-sky-council/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "notes": "Merged with South Plains Council on 2026-06-01 to form Prairie Sky Council; this version closes at that date."
       }
     }
   ],

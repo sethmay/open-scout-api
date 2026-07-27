@@ -25,8 +25,46 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "bathhouse",
+          "note": "Warm and cold water shower houses with restrooms."
+        },
+        {
+          "code": "canoeing",
+          "signature": true,
+          "note": "The base exists for paddling the Buffalo River, with access to more than a hundred miles of water and a fleet of seventeen-foot two-person aluminium canoes."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Multi-day downriver canoe and camp trips of varying length."
+        },
+        {
+          "code": "kayaking",
+          "note": "Single-seat open-water kayaks that are easy to enter and exit."
+        },
+        {
+          "code": "platform_tents",
+          "note": "Camp-provided two-person tents with cots in shaded wooded campsites."
+        },
+        {
+          "code": "trading_post",
+          "note": "Stocks snacks, shirts and patches."
+        },
+        {
+          "code": "waterfront",
+          "note": "River frontage used as the put-in for canoe and kayak trips."
+        },
+        {
+          "code": "wildlife_viewing",
+          "note": "Bald eagles are among the wildlife seen from the river."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": "High-adventure canoe and kayak base operated by the Middle Tennessee Council on the Buffalo River, offering guided river trips for Troops and Crews.",
       "provenance": {
         "sources": [
@@ -35,6 +73,14 @@
           },
           {
             "url": "https://scoutingevent.com/560-113545"
+          },
+          {
+            "url": "https://campreservation.com/560/Camps/453",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.mtcscouting.org/campfacilities",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

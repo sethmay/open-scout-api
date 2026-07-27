@@ -25,8 +25,173 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "At least one lodge is wheelchair accessible."
+        },
+        {
+          "code": "adirondack_shelters",
+          "note": "A three-shelter site plus waterfront shelters on the pond beach."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A lakeside program area with a stage, fire pit, and bench seating."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "atv",
+          "signature": true,
+          "note": "An all-terrain vehicle rider course run to a national safety-institute syllabus."
+        },
+        {
+          "code": "automotive"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "cabins",
+          "note": "Numerous cabins, cottages, and heated lodges, including bungalows used by the provisional programme."
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope",
+          "note": "High and low course."
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "A four-season hall seating up to four hundred, with a porch over the pond."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The First Class Path programme."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "leadership_training",
+          "note": "Youth leadership training weeks alongside troop-level courses."
+        },
+        {
+          "code": "living_history",
+          "note": "A heritage centre and living-history programming."
+        },
+        {
+          "code": "lumberjack"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "museum",
+          "note": "The Nathan Hale heritage centre."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight"
+        },
+        {
+          "code": "pavilion",
+          "note": "Large powered pavilions, one of them the handicraft pavilion."
+        },
+        {
+          "code": "performing_arts"
+        },
+        {
+          "code": "personal_watercraft",
+          "note": "A five-day personal watercraft course on the pond for older Scouts."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Campsites have wooden tent platforms."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "The Thunderbird provisional programme."
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "stem",
+          "note": "The APEX technology centre."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "waterfront",
+          "note": "A pond of about twenty-three acres with a beach."
+        },
+        {
+          "code": "whitewater_rafting",
+          "note": "A rafting trip offered in selected weeks."
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +199,32 @@
             "citation": "camp-finder council-066/ct-j-n-webster (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/066-102135"
+            "url": "https://scoutingevent.com/066-102135",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.gotowebster.org/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.gotowebster.org/scout-summer-camp.html",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.gotowebster.org/atv-powersports.html",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.gotowebster.org/personal-watercraft-pwc.html",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/066176752/OR/2026_Merit_Badge_Matrix_V1.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/066/Camps/126",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

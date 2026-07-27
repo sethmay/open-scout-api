@@ -25,8 +25,127 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Lakeside fire bowl used for campfire programs and Scouts Own."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "building_wifi",
+          "note": "Limited Wi-Fi in the dining hall for adult leader use."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Some campsites have power for medical devices such as CPAP machines."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "Lever-action rifle, revolver and coach-style shotgun for older Scouts."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Eaglecraft area runs the Trail to First Class tracks."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "scuba",
+          "signature": true,
+          "note": "Open-water certification run with a partner dive shop; one of the camp's headline draws."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "sports_field",
+          "note": "Volleyball court and parade-ground field games."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "waterfront",
+          "note": "Frontage on Lake Coeur d'Alene in Gotham Bay."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Inland Northwest Council's Scouts BSA resident summer camp on the shore of Lake Coeur d'Alene, offering a broad merit-badge program that includes SCUBA.",
       "provenance": {
         "sources": [
@@ -34,7 +153,12 @@
             "citation": "camp-finder council-611/id-camp-easton (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/611-2026_EastonSummerCamp"
+            "url": "https://scoutingevent.com/611-2026_EastonSummerCamp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/611177249/OR/2026_Camp_Easton_Program_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

@@ -25,8 +25,68 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "One campsite is marked accessible."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "dining_hall",
+          "note": "All meals are served in the Camp Raymond dining hall, called the Bistro."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "Staffed around the clock."
+        },
+        {
+          "code": "hiking",
+          "note": "Trail hikes ranging from two to twelve miles."
+        },
+        {
+          "code": "pavilion",
+          "note": "Campsite shelters."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rv_sites",
+          "note": "Campsite hook-ups for recreational vehicles."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A lake used for canoeing and fishing."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Grand Canyon Council's Raymond-Cragin (R-C) Scout Reservation, hosting a Cub Scout resident camp near Parks and Flagstaff, Arizona.",
       "provenance": {
         "sources": [
@@ -34,7 +94,24 @@
             "citation": "camp-finder council-010/az-r-c-scout-ranch (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/010-CubRaymond2026"
+            "url": "https://scoutingevent.com/010-CubRaymond2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingaz.org/wp-content/uploads/adventure_camp_guide_2026_2.html",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingaz.org/scout-camping/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingaz.org/public-facility-rentals/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/010/Camps/659",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",
@@ -45,5 +122,5 @@
       }
     }
   ],
-  "notes": null
+  "notes": "SURVEY SCOPE: the features dated 2026-07-26 describe the property at 7709 S Boy Scout Camp Road, Parks AZ - the camp Grand Canyon Council calls Camp Raymond. That is the address, coordinate and elevation this record already carried, and the stored website is the Cub Raymond family camp held there, so the features are correct for the property the record points at. Whether the record's NAME is right is UNRESOLVED and deliberately left alone; queued for manual review. Evidence is contradictory. For two separate properties: the council's reservation system carries distinct entries at distinct addresses, R-C Scout Ranch at 19887 Highway 260, Payson AZ (described as a former working cattle ranch at the base of Christopher Mountain, campsites named Hawk through Javalina, pit toilets) and Camp Raymond at 7709 S Boy Scout Camp Road, Parks AZ (numbered sites 01 through 14, one marked ADA); the two sit about 73 miles apart; and scoutingaz.org's Public Facility Rentals page says 'four locations across the state' and lists R-C Scout Ranch, Camp Raymond, Heard Scout Pueblo and Camp Geronimo with four different descriptions. Against, i.e. for one property: this record's own summary reads 'Raymond-Cragin (R-C) Scout Reservation ... near Parks and Flagstaff', treating the two names as one place, and the council's Camp Properties site navigation lists only Camp Geronimo, Camp Raymond and Heard Scout Pueblo, with no R-C entry. Three readings stay live: a mislabelled Camp Raymond; R-C as the reservation with Raymond the camp inside it; or two genuinely separate properties, one of them missing from this dataset. Do not treat the feature list as evidence for any of the three - it describes Parks, not Payson."
 }

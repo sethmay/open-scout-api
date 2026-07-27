@@ -25,8 +25,121 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy",
+          "note": "Astronomy nights at the nature lodge."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Latrine and shower facilities near each campsite."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "cope",
+          "note": "Challenge courses, with a combined climbing and ropes release form."
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served at the Camp Winton lodge."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Trail to First Class area for new Scouts."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "The camp medical lodge."
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_study",
+          "note": "The nature lodge."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Overnight canoe treks departing from the waterfront."
+        },
+        {
+          "code": "performing_arts"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Campsites have tent platforms; units bring their own tents."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "sailing",
+          "note": "Includes an advanced sailing award beyond the merit badge."
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem",
+          "note": "The Winton Institute of Technology."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post",
+          "note": "The Duff Holder Trading Post."
+        },
+        {
+          "code": "water_skiing",
+          "signature": true,
+          "note": "Water skiing and wakeboarding with the camp waterfront fleet."
+        },
+        {
+          "code": "waterfront",
+          "note": "Lake frontage on a Sierra reservoir."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +147,16 @@
             "citation": "camp-finder council-047/ca-camp-winton (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/047-104173"
+            "url": "https://scoutingevent.com/047-104173",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/047183581/OR/2026_Camp_Winton_Scouts_BSA_Leader_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/047183583/OR/2026_Camp_Winton_Merit_Badge_and_Program_Offerings.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

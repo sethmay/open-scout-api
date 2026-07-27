@@ -25,8 +25,167 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "A wheelchair-accessible cabin with heating and cooling."
+        },
+        {
+          "code": "adirondack_shelters",
+          "note": "Two Adirondack sites, one with its own pavilion."
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Heating and cooling in the accessible cabin."
+        },
+        {
+          "code": "amphitheater",
+          "note": "A large council fire ring at the head of the fishing lake, wired for sound and lighting."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "automotive"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower and latrine facilities throughout camp."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "blacksmithing"
+        },
+        {
+          "code": "building_wifi",
+          "note": "Limited Wi-Fi in the camp office area only."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel",
+          "note": "A chapel overlooking the camp lake."
+        },
+        {
+          "code": "cit_program",
+          "note": "A counsellor-in-training track for teens, with an invited third week."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "Climbing towers with their own pavilion, plus a climbing wall."
+        },
+        {
+          "code": "cope",
+          "note": "High and low course."
+        },
+        {
+          "code": "dining_hall",
+          "note": "A central dining hall serving three meals a day."
+        },
+        {
+          "code": "first_year_program",
+          "note": "Buckskin, the camp's first-year camper program."
+        },
+        {
+          "code": "fishing",
+          "note": "Includes fly fishing and open fishing in free time."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "Staffed around the clock by a trained health officer."
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "A biking program with its own pavilion for checked-in bikes."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "performing_arts"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Most campsites are platform tent sites."
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "river_tubing",
+          "note": "Tubing on the river that borders the property."
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A dock and marina on the camp lake."
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "whitewater_rafting",
+          "note": "An optional rafting trip."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident summer camp at the Gerald I. Lawhorn Scouting Base near Molena, Georgia, set between the Flint River and Pine Mountain. Offers traditional merit badges, evening adventures, and optional whitewater rafting.",
       "provenance": {
         "sources": [
@@ -34,7 +193,20 @@
             "citation": "camp-finder council-095/ga-camp-thunder-gerald-i-lawhorn-scouting-base (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/095-95749"
+            "url": "https://scoutingevent.com/095-95749",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/095176002/OR/Leaders_Guide_Summer_2026.docx",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/095176003/OR/CIT_Program.docx",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/095/Camps/157",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

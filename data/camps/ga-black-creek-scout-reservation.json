@@ -25,8 +25,97 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "air_conditioning",
+          "note": "The dining hall is air conditioned."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Single-use bath rooms with on-demand hot water, each shared between two campsites."
+        },
+        {
+          "code": "campsite_electricity"
+        },
+        {
+          "code": "canoeing",
+          "note": "Includes a camp-run river canoe trip."
+        },
+        {
+          "code": "climbing_tower",
+          "note": "A fifty-foot tower with high and low ropes courses."
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "dining_hall",
+          "note": "The Reese Dining Hall, served cafeteria style."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "kayaking",
+          "note": "Includes a kayak float trip on the river."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "pavilion",
+          "note": "Each campsite has an activity shelter with power and overhead fans."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Large canvas tents on platforms, two cots per tent."
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A private forty-acre lake used for swimming, boating, and fishing."
+        },
+        {
+          "code": "zip_line"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Coastal Georgia Council's 380-acre Scouts BSA resident summer camp on Black Creek in Screven County, featuring a private lake, 60-foot climbing tower, ropes courses, shooting ranges, and an air-conditioned dining hall. NCAP-accredited.",
       "provenance": {
         "sources": [
@@ -34,7 +123,16 @@
             "citation": "camp-finder council-099/ga-black-creek-scout-reservation (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/099-BCSR2026"
+            "url": "https://scoutingevent.com/099-BCSR2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/099169426/OR/Field_Guide_2026.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/099/Camps/161",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

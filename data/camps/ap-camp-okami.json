@@ -25,8 +25,36 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Trail to First Class track for newer Scouts."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "An air rifle range alongside the archery range."
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp operated by the Far East Council at the Tama Hills Recreation Center, a US military recreation area near Tokyo, Japan.",
       "provenance": {
         "sources": [
@@ -34,7 +62,16 @@
             "citation": "camp-finder council-803/ap-camp-okami (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/803-2026CampOkami"
+            "url": "https://scoutingevent.com/803-2026CampOkami",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/803179236/OR/2026_Camp_Okami_Leader_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/803181500/OR/2026_Camp_Okami_Schedule.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

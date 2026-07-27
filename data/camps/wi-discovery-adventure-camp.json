@@ -25,8 +25,91 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower buildings with individual stalls or single-occupancy rooms"
+        },
+        {
+          "code": "cabins",
+          "note": "bunkhouse with bunk beds and mattress pads for most nights of the session"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "climbing towers over twenty feet, with climbing structures at four locations"
+        },
+        {
+          "code": "cope",
+          "note": "low ropes challenge course plus a high ropes course"
+        },
+        {
+          "code": "disc_golf"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "handicraft",
+          "note": "crafts plus leather branding to take home"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "horseback",
+          "note": "riding and trail-travel instruction at the camp horse program"
+        },
+        {
+          "code": "living_history",
+          "note": "historic logging camp on the property"
+        },
+        {
+          "code": "orienteering",
+          "note": "map and compass skills"
+        },
+        {
+          "code": "pioneering",
+          "note": "knot and lashing kits for outdoor-skills instruction"
+        },
+        {
+          "code": "platform_tents",
+          "note": "canvas wall tents with cots for one night of the session"
+        },
+        {
+          "code": "rifle",
+          "note": "smallbore rifle range"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "volleyball and open field games"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming",
+          "note": "swimming areas with inflatables; a swim qualification is required before aquatics"
+        },
+        {
+          "code": "tomahawk_throwing"
+        },
+        {
+          "code": "trading_post",
+          "note": "camp store with snacks, apparel, and souvenirs"
+        },
+        {
+          "code": "waterfront",
+          "note": "lakefront swimming and boating areas"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +118,10 @@
           },
           {
             "url": "https://scoutingevent.com/250-2026dac"
+          },
+          {
+            "url": "https://camp.northernstar.org/Article-Detail/discovery-adventure-camp",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

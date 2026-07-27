@@ -1,0 +1,37 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json",
+  "id": "prairie-sky",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": "2026-06-01",
+      "valid_to": null,
+      "name": "Prairie Sky Council",
+      "bsa_number": null,
+      "hq_city": null,
+      "hq_state": "TX",
+      "website": null,
+      "states_served": [
+        "TX",
+        "OK"
+      ],
+      "territory": "territory:cst-8",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Plains_Council"
+          },
+          {
+            "url": "https://amarillotribune.org/2026/06/26/scoutings-americas-amarillo-and-lubbock-councils-merge-to-form-the-prairie-sky-council/",
+            "accessed": "2026-07-26"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-26",
+        "confidence": 0.8,
+        "notes": "Formed 2026-06-01 by the merger of Golden Spread Council (#562, Amarillo) and South Plains Council (#694, Lubbock). bsa_number is null because no source states which number the merged council carries. hq_city is null because the sources record that it was undecided whether the Amarillo and Lubbock service centres would combine. territory inherited from Golden Spread (same CST)."
+      }
+    }
+  ],
+  "notes": null
+}

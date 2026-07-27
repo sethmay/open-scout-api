@@ -25,8 +25,69 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "bouldering"
+        },
+        {
+          "code": "cabins",
+          "note": "Cabins are bookable across Mount Allamuchy Scout Reservation, shared with Camp Somers."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Reservation dining hall shared with Camp Somers; day campers themselves eat packed lunches at the Watchu Center."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "pool",
+          "note": "Pool divided into three roped sections by swim classification, with changing rooms."
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "sports_field",
+          "note": "Parade field used for ceremonies and camp games."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Boating on the reservation lake, assigned by swim classification."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +95,20 @@
             "citation": "camp-finder council-358/nj-camp-wheeler (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/358-CampWheeler"
+            "url": "https://scoutingevent.com/358-CampWheeler",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.ppccubscoutcamps.org/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://docs.google.com/document/d/e/2PACX-1vRFMyUPY92SSfQGYM5nh8kNoqMP71MlBh0e7KKSAbijKLVmIkgJel1WI-yhGEq2CA/pub",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://ppcscouting.org/wp-content/uploads/2026-Camp-Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

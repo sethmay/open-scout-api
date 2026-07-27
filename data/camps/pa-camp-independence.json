@@ -25,8 +25,68 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics",
+          "note": "A dedicated aquatics area for swimming and boating, separate from the other camps on the reservation."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower facilities at the program hall and at one of the lower campsites."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "dining_hall",
+          "note": "The camp has its own dining hall, separate from the other camps on the reservation."
+        },
+        {
+          "code": "disc_golf",
+          "note": "Available as a self-guided activity."
+        },
+        {
+          "code": "fishing",
+          "note": "A staffed fishing area plus self-guided fishing."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "hiking",
+          "note": "Includes the reservation lake trail."
+        },
+        {
+          "code": "nature_study",
+          "note": "An ecology and nature program area."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "An extended session for Webelos and Arrow of Light Scouts, longer than the pack sessions and built as a bridge toward Scouts BSA camp."
+        },
+        {
+          "code": "orienteering",
+          "note": "A self-guided map and compass course."
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports",
+          "note": "A combined target and range area."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "waterfront"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +94,20 @@
             "citation": "camp-finder council-527/pa-summer-camps-camp-independence (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/527-CampIndependence2026"
+            "url": "https://scoutingevent.com/527-CampIndependence2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "http://indyguide.heritagereservation.org/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://heritagereservation.org/summer-camp/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://heritagereservation.org/camp-independence/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "curated",

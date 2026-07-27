@@ -98,7 +98,8 @@ def main() -> None:
 
     # --- re-verification queue -------------------------------------------------
     due_sig, due_feat, due_site, due_prov = [], [], [], []
-    never, no_site, imported_unverified = [], [], []
+    never, no_site, imported_unverified, portal_tier, thin = [], [], [], [], []
+    THIN = 5      # median surveyed camp carries ~15 features; <=5 is under-served
     for p, e in camps:
         v = open_version(e)
         if v is None:
@@ -114,6 +115,10 @@ def main() -> None:
                 due_sig.append((cid, age_f))
             elif age_f is not None and age_f >= FEATURES_MONTHS:
                 due_feat.append((cid, age_f))
+        if v.get("features_source_tier") == "portal":
+            portal_tier.append(cid)
+        if fva and len(feats) <= THIN:
+            thin.append((cid, len(feats), v.get("features_source_tier")))
         if not v.get("website"):
             no_site.append(cid)
         prov = v.get("provenance") or {}
@@ -178,6 +183,7 @@ def main() -> None:
         "due_website": due_site, "due_provenance": due_prov,
         "never_surveyed": never, "imported_unverified": imported_unverified,
         "no_website": no_site, "zero_use_vocab": zero, "orphaned_council": orphaned,
+        "portal_tier_review": portal_tier, "thin_survey_review": thin,
         "duplicate_sources": dupes,
     }
 
@@ -192,6 +198,9 @@ def main() -> None:
     print(f"    never surveyed         {len(never):>4}  (no features, no survey date)")
     print(f"    imported, unverified   {len(imported_unverified):>4}  (features present, never confirmed)")
     print(f"    no website             {len(no_site):>4}  (link cleared or never had one)")
+    print(f"    portal-tier survey     {len(portal_tier):>4}  (registration blurb was the only source)")
+    print(f"    thin survey (<={THIN})       {len(thin):>4}  (surveyed but under-served vs a ~15-feature median"
+          f" — MANUAL REVIEW QUEUE)")
     print(f"    council no longer exists {len(orphaned):>2}  (dissolved with no recorded successor)")
     for cid, ref, nm in orphaned:
         print(f"        {cid[:38]:40} {str(nm)[:28]}")

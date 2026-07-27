@@ -25,8 +25,110 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Year-round shower house."
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "cabins",
+          "note": "Ten unheated cabins with electricity sleeping two to eight."
+        },
+        {
+          "code": "canoeing",
+          "note": "Paddle skills and exploration trips on Long Pond."
+        },
+        {
+          "code": "chapel",
+          "note": "Interfaith chapel."
+        },
+        {
+          "code": "cope",
+          "note": "Team-based challenge course combining games and ropes elements."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Year-round dining hall seating several hundred."
+        },
+        {
+          "code": "fishing",
+          "note": "Catch-and-release shore fishing on Long Pond."
+        },
+        {
+          "code": "floating_obstacle_course",
+          "note": "Aquatic adventure zone with a tall inflatable iceberg."
+        },
+        {
+          "code": "flush_toilets",
+          "note": "In the shower house and dining hall; campsites have latrines."
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking",
+          "note": "Self-guided nature hike along the Dan Beard Trail."
+        },
+        {
+          "code": "horseback",
+          "note": "Pony sessions for camper-age youth."
+        },
+        {
+          "code": "museum",
+          "signature": true,
+          "note": "Home of a large Scouting memorabilia museum and reference library."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Pre-assembled platform tents with cots in each campsite."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Provisional camping for Scouts who cannot attend with their unit."
+        },
+        {
+          "code": "scoutcraft",
+          "note": "Shelter building, knots and rope work at the Fort Friendship area."
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "sports_field",
+          "note": "Athletic field, plus a human foosball court."
+        },
+        {
+          "code": "stem",
+          "note": "STEM centre running hands-on science sessions."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_trampoline"
+        },
+        {
+          "code": "waterfront",
+          "note": "Private lake on the property."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +136,16 @@
             "citation": "camp-finder council-330/nh-camp-carpenter-overnight-camp (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/330-108266"
+            "url": "https://scoutingevent.com/330-108266",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/330/Camps/304",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/330178968/OR/2026_Camp_Carpenter_Program_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

@@ -25,8 +25,161 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "Council ring, with a separate dance arbor nearby."
+        },
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "atv",
+          "note": "Dedicated ATV course with its own program shelter."
+        },
+        {
+          "code": "automotive",
+          "note": "Automotive maintenance in the trade skills shop."
+        },
+        {
+          "code": "bathhouse",
+          "note": "Several shower houses across the reservation."
+        },
+        {
+          "code": "black_powder",
+          "note": "Muzzle-loading range."
+        },
+        {
+          "code": "blacksmithing",
+          "note": "Blacksmith shop in the metalwork area."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "Challenge course alongside the climbing tower."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "F.R.O.G.S. track for first-year campers."
+        },
+        {
+          "code": "fishing",
+          "note": "Includes an advanced fishing activity beyond the badge."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork, carving and pottery."
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "leadership_training",
+          "note": "Cherokee Future Leaders develops junior leaders beyond the patrol method."
+        },
+        {
+          "code": "nature_center",
+          "note": "Nature Lodge."
+        },
+        {
+          "code": "nature_study",
+          "note": "Ecology and conservation area covering geology, herpetology and insect study."
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "orienteering",
+          "note": "Permanent orienteering courses on the property."
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion",
+          "note": "Anderson, fitness, dining hall and ATV program shelters."
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Provisional troops led by a dedicated Scoutmaster."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun",
+          "note": "Sporting clays alongside the shotgun ranges."
+        },
+        {
+          "code": "sports_field",
+          "note": "Activity field."
+        },
+        {
+          "code": "stem",
+          "note": "STEM lab shared with the trade skills shop; aviation lab on site."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Tanger Lake."
+        },
+        {
+          "code": "welding",
+          "note": "Modern welding lab in the metalwork area."
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "Includes a required overnight in a self-built shelter."
+        },
+        {
+          "code": "winter_camping"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +187,28 @@
             "citation": "camp-finder council-070/nc-summer-camp-at-cherokee-scout-reservation (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/070-summercamp2026"
+            "url": "https://scoutingevent.com/070-summercamp2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://csr.camp/programs/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.dropbox.com/scl/fi/lm7w58zrw5d6oow4ou8c0/Map-of-CSR.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://csr.camp/wp-content/uploads/2025/10/Aquatics-Program-Merit-Badges.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://csr.camp/wp-content/uploads/2025/10/Scoutcraft-Program-Merit-Badges.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://csr.camp/wp-content/uploads/2025/10/Ecology-Program-Merit-Badges.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

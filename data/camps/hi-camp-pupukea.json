@@ -26,8 +26,73 @@
         "scouts_bsa_resident",
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Shower facilities beside the pool area."
+        },
+        {
+          "code": "cope",
+          "note": "High and low COPE courses on the property."
+        },
+        {
+          "code": "digital_media",
+          "note": "Animation taught in the handicraft area."
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "The medic lodge, also used for first-aid instruction."
+        },
+        {
+          "code": "hiking",
+          "note": "The nature and wildcat trails on the property."
+        },
+        {
+          "code": "leadership_training",
+          "note": "A leadership challenge for older Scouts who have reached First Class or completed national youth leadership training."
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "A skills program for Scouts aged fourteen and older."
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "Troops cook in their own campsites; no food service is provided."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "Includes a night in a shelter the Scout builds."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Aloha Council's flagship Scouts BSA resident camp on the North Shore of Oahu, offering long-term troop-cook summer camp for Scouts.",
       "provenance": {
         "sources": [
@@ -35,7 +100,16 @@
             "citation": "camp-finder council-104/hi-camp-pupukea (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/104-summercamp2026"
+            "url": "https://scoutingevent.com/104-summercamp2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/104182078/OR/Summer_Camp_Program_Guide_2026_V2.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/104/Camps/29",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

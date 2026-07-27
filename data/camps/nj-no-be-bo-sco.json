@@ -25,8 +25,145 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "backpacking"
+        },
+        {
+          "code": "building_wifi",
+          "note": "Wi-Fi and charging are provided for adult leaders in the leader lounge beside the dining hall."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "conservation_project"
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Meals are served family style with assigned tables and a staff member seated at each."
+        },
+        {
+          "code": "first_year_program",
+          "note": "First Class Adventure, covering Tenderfoot through First Class requirements plus a five-mile hike."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "horseback",
+          "note": "Run through a nearby farm rather than on the camp property."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Camp bikes can be checked out from the quartermaster to ride the trails on the property."
+        },
+        {
+          "code": "nature_center",
+          "note": "The nature lodge is the trailhead for a self-guided nature trail."
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Trail to Eagle track for Star and above, plus a self-guided award for fourth-year and older campers."
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Two campers per tent on wooden platforms, with cots provided and bedding brought from home."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "A provisional troop staffed by former camp staff takes Scouts whose own troop is not attending."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Athletic field used for volleyball, ultimate frisbee and camp-wide land games."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post",
+          "note": "Housed in Orel Lodge."
+        },
+        {
+          "code": "waterfront",
+          "note": "Swimming and boating on Sand Pond, a dark natural lake."
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "woodworking"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -35,6 +172,26 @@
           },
           {
             "url": "https://scoutingevent.com/333-NoBe26"
+          },
+          {
+            "url": "http://campnobebosco.org/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "http://campnobebosco.org/programs",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "http://campnobebosco.org/campprograms/2015/3/programs-at-aquatics",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "http://campnobebosco.org/news/2026/4/6/2026-leaders-guide-and-leaders-meeting",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://static1.squarespace.com/static/53eaca69e4b0221af62dd76c/t/6a1cc3e615b4fb736ecbea5d/1780270054123/531+NoBe+2026+Leaders+Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

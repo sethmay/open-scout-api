@@ -92,6 +92,12 @@ def main() -> int:
                     if s and _TRANSITORY.search(s):
                         errs.append(f"{p.name}: summary has transitory text ({_TRANSITORY.search(s).group(0)!r}); "
                                     f"must be evergreen (no dates/fees/months)")
+                    # a survey date and a source tier describe the same act: neither is
+                    # meaningful alone, so they must appear and disappear together.
+                    fva, tier = v.get("features_verified_at"), v.get("features_source_tier")
+                    if bool(fva) != bool(tier):
+                        errs.append(f"{p.name}: features_verified_at={fva!r} but "
+                                    f"features_source_tier={tier!r}; both are set or both are null")
                     seen_f: set[str] = set()
                     for ft in (v.get("features") or []):
                         c = ft.get("code")

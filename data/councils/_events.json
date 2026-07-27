@@ -2,29 +2,81 @@
   "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/event.schema.json",
   "events": [
     {
-      "id": "absorb-choctaw-area-into-mississippi-riverlands",
+      "id": "absorb-annawon-into-narragansett",
       "type": "absorbed",
-      "date": null,
+      "date": "2015",
       "participants": [
         {
-          "ref": "council:choctaw-area",
+          "ref": "council:annawon",
           "role": "predecessor"
         },
         {
-          "ref": "council:mississippi-riverlands",
+          "ref": "council:narragansett",
           "role": "continuing"
         }
       ],
-      "notes": "camp-finder records councils 302/303 consolidating into Mississippi Riverlands (303). Date unverified.",
+      "notes": null,
       "provenance": {
         "sources": [
           {
-            "citation": "camp-finder TODO (302/303 -> Mississippi Riverlands)"
+            "url": "https://en.wikipedia.org/wiki/Narragansett_Council"
           }
         ],
-        "method": "imported",
+        "method": "llm_extraction",
         "verified_at": "2026-07-21",
-        "confidence": 0.5
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-appalachian-into-buckskin",
+      "type": "absorbed",
+      "date": "1991",
+      "participants": [
+        {
+          "ref": "council:appalachian",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:buckskin",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-beaufort-into-coastal-carolina",
+      "type": "absorbed",
+      "date": "1940",
+      "participants": [
+        {
+          "ref": "council:beaufort",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:coastal-carolina",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Coastal_Carolina_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
       }
     },
     {
@@ -54,116 +106,6 @@
       }
     },
     {
-      "id": "rename-andrew-jackson-to-mississippi-riverlands",
-      "type": "renamed",
-      "date": null,
-      "participants": [
-        {
-          "ref": "council:mississippi-riverlands",
-          "role": "subject"
-        }
-      ],
-      "notes": "Council 303 shown as 'Mississippi Riverlands' on 2026 CST maps; camp-finder lists former name 'Andrew Jackson Council'. Date unverified.",
-      "provenance": {
-        "sources": [
-          {
-            "citation": "Scouting America CST map (production 2026-06)"
-          }
-        ],
-        "method": "curated",
-        "verified_at": "2026-07-21",
-        "confidence": 0.6
-      }
-    },
-    {
-      "id": "discontinued-southern-sierra",
-      "type": "discontinued",
-      "date": null,
-      "participants": [
-        {
-          "ref": "council:southern-sierra",
-          "role": "subject"
-        }
-      ],
-      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
-      "provenance": {
-        "sources": [
-          {
-            "citation": "Absent from Scouting America CST maps (production 2026-06)"
-          }
-        ],
-        "method": "curated",
-        "verified_at": "2026-07-21",
-        "confidence": 0.4
-      }
-    },
-    {
-      "id": "discontinued-redwood-empire",
-      "type": "discontinued",
-      "date": null,
-      "participants": [
-        {
-          "ref": "council:redwood-empire",
-          "role": "subject"
-        }
-      ],
-      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
-      "provenance": {
-        "sources": [
-          {
-            "citation": "Absent from Scouting America CST maps (production 2026-06)"
-          }
-        ],
-        "method": "curated",
-        "verified_at": "2026-07-21",
-        "confidence": 0.4
-      }
-    },
-    {
-      "id": "discontinued-rip-van-winkle",
-      "type": "discontinued",
-      "date": null,
-      "participants": [
-        {
-          "ref": "council:rip-van-winkle",
-          "role": "subject"
-        }
-      ],
-      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
-      "provenance": {
-        "sources": [
-          {
-            "citation": "Absent from Scouting America CST maps (production 2026-06)"
-          }
-        ],
-        "method": "curated",
-        "verified_at": "2026-07-21",
-        "confidence": 0.4
-      }
-    },
-    {
-      "id": "discontinued-south-plains",
-      "type": "discontinued",
-      "date": null,
-      "participants": [
-        {
-          "ref": "council:south-plains",
-          "role": "subject"
-        }
-      ],
-      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
-      "provenance": {
-        "sources": [
-          {
-            "citation": "Absent from Scouting America CST maps (production 2026-06)"
-          }
-        ],
-        "method": "curated",
-        "verified_at": "2026-07-21",
-        "confidence": 0.4
-      }
-    },
-    {
       "id": "absorb-bremerton-into-chief-seattle",
       "type": "absorbed",
       "date": "1919",
@@ -182,434 +124,6 @@
         "sources": [
           {
             "url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-port-angeles-into-chief-seattle",
-      "type": "absorbed",
-      "date": "1919",
-      "participants": [
-        {
-          "ref": "council:port-angeles",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:chief-seattle",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-university-place-into-cornhusker",
-      "type": "absorbed",
-      "date": "1924",
-      "participants": [
-        {
-          "ref": "council:university-place",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:cornhusker",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Nebraska"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-central-coast-counties-into-los-padres",
-      "type": "absorbed",
-      "date": "1924",
-      "participants": [
-        {
-          "ref": "council:central-coast-counties",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:los-padres",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Los_Padres_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-blue-grass-1927",
-      "type": "merged",
-      "date": "1927",
-      "participants": [
-        {
-          "ref": "council:blue-grass",
-          "role": "successor"
-        },
-        {
-          "ref": "council:issac-shelby-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:frankfort",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Blue_Grass_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-umatilla-into-blue-mountain",
-      "type": "absorbed",
-      "date": "1927",
-      "participants": [
-        {
-          "ref": "council:umatilla",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:blue-mountain",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Blue_Mountain_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-kit-carson-into-golden-empire",
-      "type": "absorbed",
-      "date": "1927",
-      "participants": [
-        {
-          "ref": "council:kit-carson",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:golden-empire",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-palouse-into-inland-northwest",
-      "type": "absorbed",
-      "date": "1927",
-      "participants": [
-        {
-          "ref": "council:palouse",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:inland-northwest",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-lewis-clark-area-into-mount-baker",
-      "type": "absorbed",
-      "date": "1928",
-      "participants": [
-        {
-          "ref": "council:lewis-clark-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:mount-baker",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-occoneechee-1929",
-      "type": "merged",
-      "date": "1929",
-      "participants": [
-        {
-          "ref": "council:occoneechee",
-          "role": "successor"
-        },
-        {
-          "ref": "council:wake-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:durham-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:walter-hines-page",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Occoneechee_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-owl-into-green-mountain",
-      "type": "absorbed",
-      "date": "1930",
-      "participants": [
-        {
-          "ref": "council:owl",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:green-mountain",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-portsmouth-area-into-tidewater",
-      "type": "absorbed",
-      "date": "1930",
-      "participants": [
-        {
-          "ref": "council:portsmouth-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:tidewater",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Tidewater_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-old-hickory-area-into-istrouma-area",
-      "type": "absorbed",
-      "date": "1931",
-      "participants": [
-        {
-          "ref": "council:old-hickory-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:istrouma-area",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Istrouma_Area_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-lewis-and-clark-into-virginia-headwaters",
-      "type": "absorbed",
-      "date": "1931",
-      "participants": [
-        {
-          "ref": "council:lewis-and-clark",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:virginia-headwaters",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Virginia_Headwaters_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-eastern-oregon-area-into-blue-mountain",
-      "type": "absorbed",
-      "date": "1932",
-      "participants": [
-        {
-          "ref": "council:eastern-oregon-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:blue-mountain",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Blue_Mountain_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-mount-saint-helens-into-cascade-pacific",
-      "type": "absorbed",
-      "date": "1932",
-      "participants": [
-        {
-          "ref": "council:mount-saint-helens",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:cascade-pacific",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-nemaha-into-cornhusker",
-      "type": "absorbed",
-      "date": "1932",
-      "participants": [
-        {
-          "ref": "council:nemaha",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:cornhusker",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Nebraska"
           }
         ],
         "method": "llm_extraction",
@@ -644,28 +158,76 @@
       }
     },
     {
-      "id": "merge-into-pine-burr-area-1937",
-      "type": "merged",
-      "date": "1937",
+      "id": "absorb-buttes-area-into-golden-empire",
+      "type": "absorbed",
+      "date": "1992",
       "participants": [
         {
-          "ref": "council:pine-burr-area",
-          "role": "successor"
-        },
-        {
-          "ref": "council:kickapoo-area",
+          "ref": "council:buttes-area",
           "role": "predecessor"
         },
         {
-          "ref": "council:andrew-jackson-area",
-          "role": "predecessor"
+          "ref": "council:golden-empire",
+          "role": "continuing"
         }
       ],
       "notes": null,
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Mississippi"
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-calvin-coolidge-into-green-mountain",
+      "type": "absorbed",
+      "date": "1965",
+      "participants": [
+        {
+          "ref": "council:calvin-coolidge",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:green-mountain",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-cascade-area-into-cascade-pacific",
+      "type": "absorbed",
+      "date": "1993",
+      "participants": [
+        {
+          "ref": "council:cascade-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:cascade-pacific",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
           }
         ],
         "method": "llm_extraction",
@@ -674,16 +236,16 @@
       }
     },
     {
-      "id": "absorb-walker-lamar-into-black-warrior",
+      "id": "absorb-central-coast-counties-into-los-padres",
       "type": "absorbed",
-      "date": "1938",
+      "date": "1924",
       "participants": [
         {
-          "ref": "council:walker-lamar",
+          "ref": "council:central-coast-counties",
           "role": "predecessor"
         },
         {
-          "ref": "council:black-warrior",
+          "ref": "council:los-padres",
           "role": "continuing"
         }
       ],
@@ -691,7 +253,163 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Black_Warrior_Council"
+            "url": "https://en.wikipedia.org/wiki/Los_Padres_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-central-new-jersey-into-patriots-path",
+      "type": "absorbed",
+      "date": "2014",
+      "participants": [
+        {
+          "ref": "council:central-new-jersey",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:patriots-path",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Patriots%27_Path_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-chief-cornstalk-into-buckskin",
+      "type": "absorbed",
+      "date": "1990",
+      "participants": [
+        {
+          "ref": "council:chief-cornstalk",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:buckskin",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-choctaw-area-into-mississippi-riverlands",
+      "type": "absorbed",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:choctaw-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mississippi-riverlands",
+          "role": "continuing"
+        }
+      ],
+      "notes": "camp-finder records councils 302/303 consolidating into Mississippi Riverlands (303). Date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder TODO (302/303 -> Mississippi Riverlands)"
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-07-21",
+        "confidence": 0.5
+      }
+    },
+    {
+      "id": "absorb-cochise-county-into-catalina",
+      "type": "absorbed",
+      "date": "1963",
+      "participants": [
+        {
+          "ref": "council:cochise-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:catalina",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Catalina_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-columbiana-into-buckeye",
+      "type": "absorbed",
+      "date": "1991",
+      "participants": [
+        {
+          "ref": "council:columbiana",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:buckeye",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckeye_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-crescent-bay-into-western-los-angeles-county",
+      "type": "absorbed",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "council:crescent-bay",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:western-los-angeles-county",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Western_Los_Angeles_County_Council"
           }
         ],
         "method": "llm_extraction",
@@ -700,16 +418,16 @@
       }
     },
     {
-      "id": "absorb-beaufort-into-coastal-carolina",
+      "id": "absorb-delta-area-into-chickasaw",
       "type": "absorbed",
-      "date": "1940",
+      "date": "1993",
       "participants": [
         {
-          "ref": "council:beaufort",
+          "ref": "council:delta-area",
           "role": "predecessor"
         },
         {
-          "ref": "council:coastal-carolina",
+          "ref": "council:chickasaw",
           "role": "continuing"
         }
       ],
@@ -717,25 +435,25 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Coastal_Carolina_Council"
+            "url": "https://en.wikipedia.org/wiki/Chickasaw_Council"
           }
         ],
         "method": "llm_extraction",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.75
       }
     },
     {
-      "id": "absorb-walterboro-into-coastal-carolina",
+      "id": "absorb-eastern-oregon-area-into-blue-mountain",
       "type": "absorbed",
-      "date": "1940",
+      "date": "1932",
       "participants": [
         {
-          "ref": "council:walterboro",
+          "ref": "council:eastern-oregon-area",
           "role": "predecessor"
         },
         {
-          "ref": "council:coastal-carolina",
+          "ref": "council:blue-mountain",
           "role": "continuing"
         }
       ],
@@ -743,7 +461,33 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Coastal_Carolina_Council"
+            "url": "https://en.wikipedia.org/wiki/Blue_Mountain_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-george-rogers-clark-into-lincoln-heritage",
+      "type": "absorbed",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:george-rogers-clark",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:lincoln-heritage",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
           }
         ],
         "method": "llm_extraction",
@@ -778,6 +522,1228 @@
       }
     },
     {
+      "id": "absorb-grayback-into-california-inland-empire",
+      "type": "absorbed",
+      "date": "1974",
+      "participants": [
+        {
+          "ref": "council:grayback",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:california-inland-empire",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-hiawathaland-into-bay-lakes",
+      "type": "absorbed",
+      "date": "2012",
+      "participants": [
+        {
+          "ref": "council:hiawathaland",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:bay-lakes",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Bay-Lakes_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-idaho-panhandle-into-inland-northwest",
+      "type": "absorbed",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:idaho-panhandle",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:inland-northwest",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-kilauea-into-aloha",
+      "type": "absorbed",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "council:kilauea",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:aloha",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-kit-carson-into-golden-empire",
+      "type": "absorbed",
+      "date": "1927",
+      "participants": [
+        {
+          "ref": "council:kit-carson",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:golden-empire",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-knox-trail-into-mayflower",
+      "type": "absorbed",
+      "date": "2017",
+      "participants": [
+        {
+          "ref": "council:knox-trail",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mayflower",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mayflower_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-lewis-and-clark-into-virginia-headwaters",
+      "type": "absorbed",
+      "date": "1931",
+      "participants": [
+        {
+          "ref": "council:lewis-and-clark",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:virginia-headwaters",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Virginia_Headwaters_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-lewis-clark-area-into-mount-baker",
+      "type": "absorbed",
+      "date": "1928",
+      "participants": [
+        {
+          "ref": "council:lewis-clark-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mount-baker",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-lewis-clark-into-inland-northwest",
+      "type": "absorbed",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:lewis-clark",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:inland-northwest",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-lincoln-trails-into-greater-saint-louis-area",
+      "type": "absorbed",
+      "date": "2019",
+      "participants": [
+        {
+          "ref": "council:lincoln-trails",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:greater-saint-louis-area",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_St._Louis_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-maui-county-into-aloha",
+      "type": "absorbed",
+      "date": "2019",
+      "participants": [
+        {
+          "ref": "council:maui-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:aloha",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-moby-dick-into-narragansett",
+      "type": "absorbed",
+      "date": "2002",
+      "participants": [
+        {
+          "ref": "council:moby-dick",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:narragansett",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Narragansett_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-monterey-bay-area-into-silicon-valley-monterey-bay",
+      "type": "absorbed",
+      "date": "2012",
+      "participants": [
+        {
+          "ref": "council:monterey-bay-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:silicon-valley-monterey-bay",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Monterey_Bay_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-mound-builders-area-into-dan-beard",
+      "type": "absorbed",
+      "date": "1985",
+      "participants": [
+        {
+          "ref": "council:mound-builders-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:dan-beard",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-mount-lassen-area-into-golden-empire",
+      "type": "absorbed",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:mount-lassen-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:golden-empire",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-mount-saint-helens-into-cascade-pacific",
+      "type": "absorbed",
+      "date": "1932",
+      "participants": [
+        {
+          "ref": "council:mount-saint-helens",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:cascade-pacific",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-mount-whitney-area-into-sequoia",
+      "type": "absorbed",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:mount-whitney-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:sequoia",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Sequoia_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-nemaha-into-cornhusker",
+      "type": "absorbed",
+      "date": "1932",
+      "participants": [
+        {
+          "ref": "council:nemaha",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:cornhusker",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Nebraska"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-old-baldy-into-california-inland-empire",
+      "type": "absorbed",
+      "date": "2006",
+      "participants": [
+        {
+          "ref": "council:old-baldy",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:california-inland-empire",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-old-colony-into-mayflower",
+      "type": "absorbed",
+      "date": "2017",
+      "participants": [
+        {
+          "ref": "council:old-colony",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mayflower",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mayflower_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-old-hickory-area-into-istrouma-area",
+      "type": "absorbed",
+      "date": "1931",
+      "participants": [
+        {
+          "ref": "council:old-hickory-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:istrouma-area",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Istrouma_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-olympic-area-into-chief-seattle",
+      "type": "absorbed",
+      "date": "1974",
+      "participants": [
+        {
+          "ref": "council:olympic-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:chief-seattle",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-overland-trails-into-mid-america",
+      "type": "absorbed",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "council:overland-trails",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mid-america",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mid-America_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-owl-into-green-mountain",
+      "type": "absorbed",
+      "date": "1930",
+      "participants": [
+        {
+          "ref": "council:owl",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:green-mountain",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-palouse-into-inland-northwest",
+      "type": "absorbed",
+      "date": "1927",
+      "participants": [
+        {
+          "ref": "council:palouse",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:inland-northwest",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-port-angeles-into-chief-seattle",
+      "type": "absorbed",
+      "date": "1919",
+      "participants": [
+        {
+          "ref": "council:port-angeles",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:chief-seattle",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-portsmouth-area-into-tidewater",
+      "type": "absorbed",
+      "date": "1930",
+      "participants": [
+        {
+          "ref": "council:portsmouth-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:tidewater",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Tidewater_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-potomac-into-laurel-highlands",
+      "type": "absorbed",
+      "date": "2014",
+      "participants": [
+        {
+          "ref": "council:potomac",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:laurel-highlands",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Laurel_Highlands_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-prairie-gold-area-into-mid-america",
+      "type": "absorbed",
+      "date": "2000",
+      "participants": [
+        {
+          "ref": "council:prairie-gold-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mid-america",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Mid-America_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-san-fernando-valley-into-western-los-angeles-county",
+      "type": "absorbed",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "council:san-fernando-valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:western-los-angeles-county",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Western_Los_Angeles_County_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-santa-lucia-area-into-greater-yosemite",
+      "type": "absorbed",
+      "date": "1994",
+      "participants": [
+        {
+          "ref": "council:santa-lucia-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:greater-yosemite",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-shawnee-trails-into-lincoln-heritage",
+      "type": "absorbed",
+      "date": "2012",
+      "participants": [
+        {
+          "ref": "council:shawnee-trails",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:lincoln-heritage",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-southern-iowa-area-into-illowa",
+      "type": "absorbed",
+      "date": "1970",
+      "participants": [
+        {
+          "ref": "council:southern-iowa-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:illowa",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-susquenango-into-baden-powell",
+      "type": "absorbed",
+      "date": "1998",
+      "participants": [
+        {
+          "ref": "council:susquenango",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:baden-powell",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Baden-Powell_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-tahoe-area-into-golden-empire",
+      "type": "absorbed",
+      "date": "1971",
+      "participants": [
+        {
+          "ref": "council:tahoe-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:golden-empire",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-tri-state-area-into-buckskin",
+      "type": "absorbed",
+      "date": "2014",
+      "participants": [
+        {
+          "ref": "council:tri-state-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:buckskin",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-umatilla-into-blue-mountain",
+      "type": "absorbed",
+      "date": "1927",
+      "participants": [
+        {
+          "ref": "council:umatilla",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:blue-mountain",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Blue_Mountain_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-university-place-into-cornhusker",
+      "type": "absorbed",
+      "date": "1924",
+      "participants": [
+        {
+          "ref": "council:university-place",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:cornhusker",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Nebraska"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-voyageurs-area-into-gamehaven",
+      "type": "absorbed",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "council:voyageurs-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:gamehaven",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-walker-lamar-into-black-warrior",
+      "type": "absorbed",
+      "date": "1938",
+      "participants": [
+        {
+          "ref": "council:walker-lamar",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:black-warrior",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Black_Warrior_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-walterboro-into-coastal-carolina",
+      "type": "absorbed",
+      "date": "1940",
+      "participants": [
+        {
+          "ref": "council:walterboro",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:coastal-carolina",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Coastal_Carolina_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-wapsipinicon-area-into-winnebago",
+      "type": "absorbed",
+      "date": "1973",
+      "participants": [
+        {
+          "ref": "council:wapsipinicon-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:winnebago",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Winnebago_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorb-western-colorado-into-greater-colorado",
+      "type": "absorbed",
+      "date": "2019",
+      "participants": [
+        {
+          "ref": "council:western-colorado",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:greater-colorado",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Colorado"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.75
+      }
+    },
+    {
+      "id": "absorbed-redwood-empire-2026",
+      "type": "absorbed",
+      "date": "2026",
+      "participants": [
+        {
+          "ref": "council:golden-gate-area",
+          "role": "continuing"
+        },
+        {
+          "ref": "council:redwood-empire",
+          "role": "predecessor"
+        }
+      ],
+      "notes": "Golden Gate Area Council kept its identity and now runs the territory as its Redwood Empire Service Area, so this is an absorption. Date is the coarse year: the vote was 2025 and integration ran into 2026.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Redwood_Empire_Council"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-26",
+        "confidence": 0.7
+      }
+    },
+    {
+      "id": "discontinued-rip-van-winkle",
+      "type": "discontinued",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:rip-van-winkle",
+          "role": "subject"
+        }
+      ],
+      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Absent from Scouting America CST maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.4
+      }
+    },
+    {
+      "id": "discontinued-southern-sierra",
+      "type": "discontinued",
+      "date": null,
+      "participants": [
+        {
+          "ref": "council:southern-sierra",
+          "role": "subject"
+        }
+      ],
+      "notes": "Absent from 2026 official CST maps; presumed merged/discontinued. Successor and date unverified.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Absent from Scouting America CST maps (production 2026-06)"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-21",
+        "confidence": 0.4
+      }
+    },
+    {
+      "id": "merge-into-allegheny-highlands-1973",
+      "type": "merged",
+      "date": "1973",
+      "participants": [
+        {
+          "ref": "council:allegheny-highlands",
+          "role": "successor"
+        },
+        {
+          "ref": "council:seneca",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:chautauqua-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:elk-lick",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Allegheny_Highlands_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "merge-into-arbuckle-area-1946",
       "type": "merged",
       "date": "1946",
@@ -796,6 +1762,112 @@
         "sources": [
           {
             "url": "https://en.wikipedia.org/wiki/Arbuckle_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-bay-lakes-1973",
+      "type": "merged",
+      "date": "1973",
+      "participants": [
+        {
+          "ref": "council:bay-lakes",
+          "role": "successor"
+        },
+        {
+          "ref": "council:badger",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:waumegesako",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:nicolet-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:twin-lakes",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:kettle-moraine",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Bay-Lakes_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-black-swamp-area-1992",
+      "type": "merged",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:black-swamp-area",
+          "role": "successor"
+        },
+        {
+          "ref": "council:shawnee-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:put-han-sen-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Black_Swamp_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-blue-grass-1927",
+      "type": "merged",
+      "date": "1927",
+      "participants": [
+        {
+          "ref": "council:blue-grass",
+          "role": "successor"
+        },
+        {
+          "ref": "council:issac-shelby-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:frankfort",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Blue_Grass_Council"
           }
         ],
         "method": "llm_extraction",
@@ -834,55 +1906,649 @@
       }
     },
     {
-      "id": "absorb-cochise-county-into-catalina",
-      "type": "absorbed",
-      "date": "1963",
+      "id": "merge-into-california-inland-empire-1973",
+      "type": "merged",
+      "date": "1973",
       "participants": [
         {
-          "ref": "council:cochise-county",
+          "ref": "council:california-inland-empire",
+          "role": "successor"
+        },
+        {
+          "ref": "council:arrowhead-area",
           "role": "predecessor"
         },
         {
-          "ref": "council:catalina",
-          "role": "continuing"
+          "ref": "council:riverside-area",
+          "role": "predecessor"
         }
       ],
       "notes": null,
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Catalina_Council"
+            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
           }
         ],
         "method": "llm_extraction",
         "verified_at": "2026-07-21",
-        "confidence": 0.75
+        "confidence": 0.8
       }
     },
     {
-      "id": "absorb-calvin-coolidge-into-green-mountain",
-      "type": "absorbed",
-      "date": "1965",
+      "id": "merge-into-coastal-georgia-2014",
+      "type": "merged",
+      "date": "2014",
       "participants": [
         {
-          "ref": "council:calvin-coolidge",
+          "ref": "council:coastal-georgia",
+          "role": "successor"
+        },
+        {
+          "ref": "council:coastal-empire",
           "role": "predecessor"
         },
         {
-          "ref": "council:green-mountain",
-          "role": "continuing"
+          "ref": "council:okefenokee-area",
+          "role": "predecessor"
         }
       ],
       "notes": null,
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Vermont"
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Georgia_%28U.S._state%29"
           }
         ],
         "method": "llm_extraction",
         "verified_at": "2026-07-21",
-        "confidence": 0.75
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-connecticut-yankee-1998",
+      "type": "merged",
+      "date": "1998",
+      "participants": [
+        {
+          "ref": "council:connecticut-yankee",
+          "role": "successor"
+        },
+        {
+          "ref": "council:quinnipiac",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:fairfield-county",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Connecticut_Yankee_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-cradle-of-liberty-1996",
+      "type": "merged",
+      "date": "1996",
+      "participants": [
+        {
+          "ref": "council:cradle-of-liberty",
+          "role": "successor"
+        },
+        {
+          "ref": "council:philadelphia",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:valley-forge",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cradle_of_Liberty_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-evangeline-area-2003",
+      "type": "merged",
+      "date": "2003",
+      "participants": [
+        {
+          "ref": "council:evangeline-area",
+          "role": "successor"
+        },
+        {
+          "ref": "council:ouachita-valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:attakapas",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Louisiana"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-french-creek-1972",
+      "type": "merged",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "council:french-creek",
+          "role": "successor"
+        },
+        {
+          "ref": "council:washington-trail",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:custaloga",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:colonel-drake",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/French_Creek_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-gamehaven-2005",
+      "type": "merged",
+      "date": "2005",
+      "participants": [
+        {
+          "ref": "council:gamehaven",
+          "role": "successor"
+        },
+        {
+          "ref": "council:viking",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:indianhead",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-golden-gate-area-2020",
+      "type": "merged",
+      "date": "2020",
+      "participants": [
+        {
+          "ref": "council:golden-gate-area",
+          "role": "successor"
+        },
+        {
+          "ref": "council:san-francisco-bay-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:alameda",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mount-diablo-silverado",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Gate_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-golden-spread-1987",
+      "type": "merged",
+      "date": "1987",
+      "participants": [
+        {
+          "ref": "council:golden-spread",
+          "role": "successor"
+        },
+        {
+          "ref": "council:llano-estacado",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:adobe-walls",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Golden_Spread_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-grand-teton-1993",
+      "type": "merged",
+      "date": "1993",
+      "participants": [
+        {
+          "ref": "council:grand-teton",
+          "role": "successor"
+        },
+        {
+          "ref": "council:tendoy-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:teton-peaks",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Idaho"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-great-alaska-2006",
+      "type": "merged",
+      "date": "2006",
+      "participants": [
+        {
+          "ref": "council:great-alaska",
+          "role": "successor"
+        },
+        {
+          "ref": "council:western-alaska",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:southeast-alaska",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Alaska"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-great-falls-1973",
+      "type": "merged",
+      "date": "1973",
+      "participants": [
+        {
+          "ref": "council:great-falls",
+          "role": "successor"
+        },
+        {
+          "ref": "council:vigilante-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:western-montana",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:yellowstone-valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:north-central-montana",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Montana"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-greater-alabama-1998",
+      "type": "merged",
+      "date": "1998",
+      "participants": [
+        {
+          "ref": "council:greater-alabama",
+          "role": "successor"
+        },
+        {
+          "ref": "council:choccolocco",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:tennessee-valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:central-alabama",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Alabama"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-greater-los-angeles-area-2015",
+      "type": "merged",
+      "date": "2015",
+      "participants": [
+        {
+          "ref": "council:greater-los-angeles-area",
+          "role": "successor"
+        },
+        {
+          "ref": "council:los-angeles-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:san-gabriel-valley",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_Los_Angeles_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-greater-tampa-bay-area-2016",
+      "type": "merged",
+      "date": "2016",
+      "participants": [
+        {
+          "ref": "council:greater-tampa-bay-area",
+          "role": "successor"
+        },
+        {
+          "ref": "council:gulf-ridge",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:west-central-florida",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Greater_Tampa_Bay_Area_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-hawk-mountain-1970",
+      "type": "merged",
+      "date": "1970",
+      "participants": [
+        {
+          "ref": "council:hawk-mountain",
+          "role": "successor"
+        },
+        {
+          "ref": "council:appalachian-trail",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Hawk_Mountain_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-heart-of-america-1974",
+      "type": "merged",
+      "date": "1974",
+      "participants": [
+        {
+          "ref": "council:heart-of-america",
+          "role": "successor"
+        },
+        {
+          "ref": "council:kansas-city-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:kaw",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Heart_of_America_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-heart-of-new-england-2018",
+      "type": "merged",
+      "date": "2018",
+      "participants": [
+        {
+          "ref": "council:heart-of-new-england",
+          "role": "successor"
+        },
+        {
+          "ref": "council:nashua-valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:mohegan",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Heart_of_New_England_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-jersey-shore-1992",
+      "type": "merged",
+      "date": "1992",
+      "participants": [
+        {
+          "ref": "council:jersey-shore",
+          "role": "successor"
+        },
+        {
+          "ref": "council:ocean-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:atlantic-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Jersey_Shore_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-laurel-highlands-2011",
+      "type": "merged",
+      "date": "2011",
+      "participants": [
+        {
+          "ref": "council:laurel-highlands",
+          "role": "successor"
+        },
+        {
+          "ref": "council:greater-pittsburgh",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:penns-woods",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Laurel_Highlands_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-leatherstocking-2016",
+      "type": "merged",
+      "date": "2016",
+      "participants": [
+        {
+          "ref": "council:leatherstocking",
+          "role": "successor"
+        },
+        {
+          "ref": "council:revolutionary-trails",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:otschodela",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Leatherstocking_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
       }
     },
     {
@@ -950,16 +2616,20 @@
       }
     },
     {
-      "id": "merge-into-hawk-mountain-1970",
+      "id": "merge-into-mississippi-valley-1994",
       "type": "merged",
-      "date": "1970",
+      "date": "1994",
       "participants": [
         {
-          "ref": "council:hawk-mountain",
+          "ref": "council:mississippi-valley",
           "role": "successor"
         },
         {
-          "ref": "council:appalachian-trail",
+          "ref": "council:southeast-iowa",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:saukee-area",
           "role": "predecessor"
         }
       ],
@@ -967,680 +2637,12 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Hawk_Mountain_Council"
+            "url": "https://en.wikipedia.org/wiki/Mississippi_Valley_Council"
           }
         ],
         "method": "llm_extraction",
         "verified_at": "2026-07-21",
         "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-southern-iowa-area-into-illowa",
-      "type": "absorbed",
-      "date": "1970",
-      "participants": [
-        {
-          "ref": "council:southern-iowa-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:illowa",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Iowa"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-tahoe-area-into-golden-empire",
-      "type": "absorbed",
-      "date": "1971",
-      "participants": [
-        {
-          "ref": "council:tahoe-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:golden-empire",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-northeast-illinois-1971",
-      "type": "merged",
-      "date": "1971",
-      "participants": [
-        {
-          "ref": "council:northeast-illinois",
-          "role": "successor"
-        },
-        {
-          "ref": "council:oak-plain",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:evanston-north-shore-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Northeast_Illinois_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-kilauea-into-aloha",
-      "type": "absorbed",
-      "date": "1972",
-      "participants": [
-        {
-          "ref": "council:kilauea",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:aloha",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-french-creek-1972",
-      "type": "merged",
-      "date": "1972",
-      "participants": [
-        {
-          "ref": "council:french-creek",
-          "role": "successor"
-        },
-        {
-          "ref": "council:washington-trail",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:custaloga",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:colonel-drake",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/French_Creek_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-orange-county-1972",
-      "type": "merged",
-      "date": "1972",
-      "participants": [
-        {
-          "ref": "council:orange-county",
-          "role": "successor"
-        },
-        {
-          "ref": "council:north-orange",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:orange-empire",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Orange_County_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-sagamore-1972",
-      "type": "merged",
-      "date": "1972",
-      "participants": [
-        {
-          "ref": "council:sagamore",
-          "role": "successor"
-        },
-        {
-          "ref": "council:central-indiana",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:delaware-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:kikthawenund",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:whitewater-valley",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Indiana"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-crescent-bay-into-western-los-angeles-county",
-      "type": "absorbed",
-      "date": "1972",
-      "participants": [
-        {
-          "ref": "council:crescent-bay",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:western-los-angeles-county",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Western_Los_Angeles_County_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-san-fernando-valley-into-western-los-angeles-county",
-      "type": "absorbed",
-      "date": "1972",
-      "participants": [
-        {
-          "ref": "council:san-fernando-valley",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:western-los-angeles-county",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Western_Los_Angeles_County_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-allegheny-highlands-1973",
-      "type": "merged",
-      "date": "1973",
-      "participants": [
-        {
-          "ref": "council:allegheny-highlands",
-          "role": "successor"
-        },
-        {
-          "ref": "council:seneca",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:chautauqua-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:elk-lick",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Allegheny_Highlands_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-bay-lakes-1973",
-      "type": "merged",
-      "date": "1973",
-      "participants": [
-        {
-          "ref": "council:bay-lakes",
-          "role": "successor"
-        },
-        {
-          "ref": "council:badger",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:waumegesako",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:nicolet-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:valley",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:twin-lakes",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:kettle-moraine",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Bay-Lakes_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-california-inland-empire-1973",
-      "type": "merged",
-      "date": "1973",
-      "participants": [
-        {
-          "ref": "council:california-inland-empire",
-          "role": "successor"
-        },
-        {
-          "ref": "council:arrowhead-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:riverside-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-great-falls-1973",
-      "type": "merged",
-      "date": "1973",
-      "participants": [
-        {
-          "ref": "council:great-falls",
-          "role": "successor"
-        },
-        {
-          "ref": "council:vigilante-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:western-montana",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:yellowstone-valley",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:north-central-montana",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Montana"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-w-d-boyce-1973",
-      "type": "merged",
-      "date": "1973",
-      "participants": [
-        {
-          "ref": "council:w-d-boyce",
-          "role": "successor"
-        },
-        {
-          "ref": "council:starved-rock-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:corn-belt",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:creve-coeur",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/W._D._Boyce_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-wapsipinicon-area-into-winnebago",
-      "type": "absorbed",
-      "date": "1973",
-      "participants": [
-        {
-          "ref": "council:wapsipinicon-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:winnebago",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Winnebago_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-grayback-into-california-inland-empire",
-      "type": "absorbed",
-      "date": "1974",
-      "participants": [
-        {
-          "ref": "council:grayback",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:california-inland-empire",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-olympic-area-into-chief-seattle",
-      "type": "absorbed",
-      "date": "1974",
-      "participants": [
-        {
-          "ref": "council:olympic-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:chief-seattle",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Chief_Seattle_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-heart-of-america-1974",
-      "type": "merged",
-      "date": "1974",
-      "participants": [
-        {
-          "ref": "council:heart-of-america",
-          "role": "successor"
-        },
-        {
-          "ref": "council:kansas-city-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:kaw",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Heart_of_America_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-suffolk-county-1974",
-      "type": "merged",
-      "date": "1974",
-      "participants": [
-        {
-          "ref": "council:suffolk-county",
-          "role": "successor"
-        },
-        {
-          "ref": "council:west-suffolk-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:east-suffolk-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:ipswich-corporation",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Suffolk_County_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-mound-builders-area-into-dan-beard",
-      "type": "absorbed",
-      "date": "1985",
-      "participants": [
-        {
-          "ref": "council:mound-builders-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:dan-beard",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Ohio"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-golden-spread-1987",
-      "type": "merged",
-      "date": "1987",
-      "participants": [
-        {
-          "ref": "council:golden-spread",
-          "role": "successor"
-        },
-        {
-          "ref": "council:llano-estacado",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:adobe-walls",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Golden_Spread_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-chief-cornstalk-into-buckskin",
-      "type": "absorbed",
-      "date": "1990",
-      "participants": [
-        {
-          "ref": "council:chief-cornstalk",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:buckskin",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
       }
     },
     {
@@ -1674,6 +2676,66 @@
       }
     },
     {
+      "id": "merge-into-new-birth-of-freedom-2010",
+      "type": "merged",
+      "date": "2010",
+      "participants": [
+        {
+          "ref": "council:new-birth-of-freedom",
+          "role": "successor"
+        },
+        {
+          "ref": "council:york-adams-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:keystone-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/New_Birth_of_Freedom_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-northeast-illinois-1971",
+      "type": "merged",
+      "date": "1971",
+      "participants": [
+        {
+          "ref": "council:northeast-illinois",
+          "role": "successor"
+        },
+        {
+          "ref": "council:oak-plain",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:evanston-north-shore-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Northeast_Illinois_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "merge-into-northeastern-pennsylvania-1990",
       "type": "merged",
       "date": "1990",
@@ -1696,656 +2758,6 @@
         "sources": [
           {
             "url": "https://en.wikipedia.org/wiki/Northeastern_Pennsylvania_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-columbiana-into-buckeye",
-      "type": "absorbed",
-      "date": "1991",
-      "participants": [
-        {
-          "ref": "council:columbiana",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:buckeye",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Buckeye_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-appalachian-into-buckskin",
-      "type": "absorbed",
-      "date": "1991",
-      "participants": [
-        {
-          "ref": "council:appalachian",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:buckskin",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-prairielands-1991",
-      "type": "merged",
-      "date": "1991",
-      "participants": [
-        {
-          "ref": "council:prairielands",
-          "role": "successor"
-        },
-        {
-          "ref": "council:arrowhead-council-117",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:piankeshaw-council-739",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Prairielands_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-black-swamp-area-1992",
-      "type": "merged",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:black-swamp-area",
-          "role": "successor"
-        },
-        {
-          "ref": "council:shawnee-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:put-han-sen-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Black_Swamp_Area_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-mount-lassen-area-into-golden-empire",
-      "type": "absorbed",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:mount-lassen-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:golden-empire",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-buttes-area-into-golden-empire",
-      "type": "absorbed",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:buttes-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:golden-empire",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Golden_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-lewis-clark-into-inland-northwest",
-      "type": "absorbed",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:lewis-clark",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:inland-northwest",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-idaho-panhandle-into-inland-northwest",
-      "type": "absorbed",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:idaho-panhandle",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:inland-northwest",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-jersey-shore-1992",
-      "type": "merged",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:jersey-shore",
-          "role": "successor"
-        },
-        {
-          "ref": "council:ocean-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:atlantic-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Jersey_Shore_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-george-rogers-clark-into-lincoln-heritage",
-      "type": "absorbed",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:george-rogers-clark",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:lincoln-heritage",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-old-north-state-1992",
-      "type": "merged",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:old-north-state",
-          "role": "successor"
-        },
-        {
-          "ref": "council:uwharrie",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:cherokee",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:general-greene",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Old_North_State_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-mount-whitney-area-into-sequoia",
-      "type": "absorbed",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:mount-whitney-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:sequoia",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Sequoia_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-three-fires-1992",
-      "type": "merged",
-      "date": "1992",
-      "participants": [
-        {
-          "ref": "council:three-fires",
-          "role": "successor"
-        },
-        {
-          "ref": "council:two-rivers",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:dupage-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Three_Fires_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-cascade-area-into-cascade-pacific",
-      "type": "absorbed",
-      "date": "1993",
-      "participants": [
-        {
-          "ref": "council:cascade-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:cascade-pacific",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Cascade_Pacific_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-delta-area-into-chickasaw",
-      "type": "absorbed",
-      "date": "1993",
-      "participants": [
-        {
-          "ref": "council:delta-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:chickasaw",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Chickasaw_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-grand-teton-1993",
-      "type": "merged",
-      "date": "1993",
-      "participants": [
-        {
-          "ref": "council:grand-teton",
-          "role": "successor"
-        },
-        {
-          "ref": "council:tendoy-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:teton-peaks",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Idaho"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-santa-lucia-area-into-greater-yosemite",
-      "type": "absorbed",
-      "date": "1994",
-      "participants": [
-        {
-          "ref": "council:santa-lucia-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:greater-yosemite",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-mississippi-valley-1994",
-      "type": "merged",
-      "date": "1994",
-      "participants": [
-        {
-          "ref": "council:mississippi-valley",
-          "role": "successor"
-        },
-        {
-          "ref": "council:southeast-iowa",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:saukee-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Mississippi_Valley_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-pacific-skyline-1994",
-      "type": "merged",
-      "date": "1994",
-      "participants": [
-        {
-          "ref": "council:pacific-skyline",
-          "role": "successor"
-        },
-        {
-          "ref": "council:stanford-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:san-mateo-county",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Pacific_Skyline_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-cradle-of-liberty-1996",
-      "type": "merged",
-      "date": "1996",
-      "participants": [
-        {
-          "ref": "council:cradle-of-liberty",
-          "role": "successor"
-        },
-        {
-          "ref": "council:philadelphia",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:valley-forge",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Cradle_of_Liberty_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-susquenango-into-baden-powell",
-      "type": "absorbed",
-      "date": "1998",
-      "participants": [
-        {
-          "ref": "council:susquenango",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:baden-powell",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Baden-Powell_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-connecticut-yankee-1998",
-      "type": "merged",
-      "date": "1998",
-      "participants": [
-        {
-          "ref": "council:connecticut-yankee",
-          "role": "successor"
-        },
-        {
-          "ref": "council:quinnipiac",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:fairfield-county",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Connecticut_Yankee_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-greater-alabama-1998",
-      "type": "merged",
-      "date": "1998",
-      "participants": [
-        {
-          "ref": "council:greater-alabama",
-          "role": "successor"
-        },
-        {
-          "ref": "council:choccolocco",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:tennessee-valley",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:central-alabama",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Alabama"
           }
         ],
         "method": "llm_extraction",
@@ -2392,20 +2804,24 @@
       }
     },
     {
-      "id": "merge-into-patriots-path-1999",
+      "id": "merge-into-occoneechee-1929",
       "type": "merged",
-      "date": "1999",
+      "date": "1929",
       "participants": [
         {
-          "ref": "council:patriots-path",
+          "ref": "council:occoneechee",
           "role": "successor"
         },
         {
-          "ref": "council:morris-sussex-area",
+          "ref": "council:wake-county",
           "role": "predecessor"
         },
         {
-          "ref": "council:watchung-area",
+          "ref": "council:durham-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:walter-hines-page",
           "role": "predecessor"
         }
       ],
@@ -2413,7 +2829,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Patriots%27_Path_Council"
+            "url": "https://en.wikipedia.org/wiki/Occoneechee_Council"
           }
         ],
         "method": "llm_extraction",
@@ -2422,72 +2838,24 @@
       }
     },
     {
-      "id": "absorb-prairie-gold-area-into-mid-america",
-      "type": "absorbed",
-      "date": "2000",
-      "participants": [
-        {
-          "ref": "council:prairie-gold-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:mid-america",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Mid-America_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-moby-dick-into-narragansett",
-      "type": "absorbed",
-      "date": "2002",
-      "participants": [
-        {
-          "ref": "council:moby-dick",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:narragansett",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Narragansett_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-evangeline-area-2003",
+      "id": "merge-into-old-north-state-1992",
       "type": "merged",
-      "date": "2003",
+      "date": "1992",
       "participants": [
         {
-          "ref": "council:evangeline-area",
+          "ref": "council:old-north-state",
           "role": "successor"
         },
         {
-          "ref": "council:ouachita-valley",
+          "ref": "council:uwharrie",
           "role": "predecessor"
         },
         {
-          "ref": "council:attakapas",
+          "ref": "council:cherokee",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:general-greene",
           "role": "predecessor"
         }
       ],
@@ -2495,7 +2863,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Louisiana"
+            "url": "https://en.wikipedia.org/wiki/Old_North_State_Council"
           }
         ],
         "method": "llm_extraction",
@@ -2504,20 +2872,20 @@
       }
     },
     {
-      "id": "merge-into-gamehaven-2005",
+      "id": "merge-into-orange-county-1972",
       "type": "merged",
-      "date": "2005",
+      "date": "1972",
       "participants": [
         {
-          "ref": "council:gamehaven",
+          "ref": "council:orange-county",
           "role": "successor"
         },
         {
-          "ref": "council:viking",
+          "ref": "council:north-orange",
           "role": "predecessor"
         },
         {
-          "ref": "council:indianhead",
+          "ref": "council:orange-empire",
           "role": "predecessor"
         }
       ],
@@ -2525,7 +2893,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
+            "url": "https://en.wikipedia.org/wiki/Orange_County_Council"
           }
         ],
         "method": "llm_extraction",
@@ -2534,46 +2902,20 @@
       }
     },
     {
-      "id": "absorb-old-baldy-into-california-inland-empire",
-      "type": "absorbed",
-      "date": "2006",
-      "participants": [
-        {
-          "ref": "council:old-baldy",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:california-inland-empire",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/California_Inland_Empire_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-great-alaska-2006",
+      "id": "merge-into-pacific-skyline-1994",
       "type": "merged",
-      "date": "2006",
+      "date": "1994",
       "participants": [
         {
-          "ref": "council:great-alaska",
+          "ref": "council:pacific-skyline",
           "role": "successor"
         },
         {
-          "ref": "council:western-alaska",
+          "ref": "council:stanford-area",
           "role": "predecessor"
         },
         {
-          "ref": "council:southeast-alaska",
+          "ref": "council:san-mateo-county",
           "role": "predecessor"
         }
       ],
@@ -2581,404 +2923,12 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Alaska"
+            "url": "https://en.wikipedia.org/wiki/Pacific_Skyline_Council"
           }
         ],
         "method": "llm_extraction",
         "verified_at": "2026-07-21",
         "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-seneca-waterways-2009",
-      "type": "merged",
-      "date": "2009",
-      "participants": [
-        {
-          "ref": "council:seneca-waterways",
-          "role": "successor"
-        },
-        {
-          "ref": "council:finger-lakes",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:otetiana",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Seneca_Waterways_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-new-birth-of-freedom-2010",
-      "type": "merged",
-      "date": "2010",
-      "participants": [
-        {
-          "ref": "council:new-birth-of-freedom",
-          "role": "successor"
-        },
-        {
-          "ref": "council:york-adams-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:keystone-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/New_Birth_of_Freedom_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-laurel-highlands-2011",
-      "type": "merged",
-      "date": "2011",
-      "participants": [
-        {
-          "ref": "council:laurel-highlands",
-          "role": "successor"
-        },
-        {
-          "ref": "council:greater-pittsburgh",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:penns-woods",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Laurel_Highlands_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-three-harbors-2011",
-      "type": "merged",
-      "date": "2011",
-      "participants": [
-        {
-          "ref": "council:three-harbors",
-          "role": "successor"
-        },
-        {
-          "ref": "council:southeast-wisconsin",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:milwaukee-county",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Three_Harbors_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-hiawathaland-into-bay-lakes",
-      "type": "absorbed",
-      "date": "2012",
-      "participants": [
-        {
-          "ref": "council:hiawathaland",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:bay-lakes",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Bay-Lakes_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-shawnee-trails-into-lincoln-heritage",
-      "type": "absorbed",
-      "date": "2012",
-      "participants": [
-        {
-          "ref": "council:shawnee-trails",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:lincoln-heritage",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Lincoln_Heritage_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-monterey-bay-area-into-silicon-valley-monterey-bay",
-      "type": "absorbed",
-      "date": "2012",
-      "participants": [
-        {
-          "ref": "council:monterey-bay-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:silicon-valley-monterey-bay",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Monterey_Bay_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-south-georgia-2012",
-      "type": "merged",
-      "date": "2012",
-      "participants": [
-        {
-          "ref": "council:south-georgia",
-          "role": "successor"
-        },
-        {
-          "ref": "council:chehaw",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:alapaha-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/South_Georgia_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-tri-state-area-into-buckskin",
-      "type": "absorbed",
-      "date": "2014",
-      "participants": [
-        {
-          "ref": "council:tri-state-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:buckskin",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Buckskin_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-coastal-georgia-2014",
-      "type": "merged",
-      "date": "2014",
-      "participants": [
-        {
-          "ref": "council:coastal-georgia",
-          "role": "successor"
-        },
-        {
-          "ref": "council:coastal-empire",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:okefenokee-area",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Georgia_%28U.S._state%29"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-potomac-into-laurel-highlands",
-      "type": "absorbed",
-      "date": "2014",
-      "participants": [
-        {
-          "ref": "council:potomac",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:laurel-highlands",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Laurel_Highlands_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-central-new-jersey-into-patriots-path",
-      "type": "absorbed",
-      "date": "2014",
-      "participants": [
-        {
-          "ref": "council:central-new-jersey",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:patriots-path",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Patriots%27_Path_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-greater-los-angeles-area-2015",
-      "type": "merged",
-      "date": "2015",
-      "participants": [
-        {
-          "ref": "council:greater-los-angeles-area",
-          "role": "successor"
-        },
-        {
-          "ref": "council:los-angeles-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:san-gabriel-valley",
-          "role": "predecessor"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Greater_Los_Angeles_Area_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-annawon-into-narragansett",
-      "type": "absorbed",
-      "date": "2015",
-      "participants": [
-        {
-          "ref": "council:annawon",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:narragansett",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Narragansett_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
       }
     },
     {
@@ -3020,6 +2970,228 @@
       }
     },
     {
+      "id": "merge-into-patriots-path-1999",
+      "type": "merged",
+      "date": "1999",
+      "participants": [
+        {
+          "ref": "council:patriots-path",
+          "role": "successor"
+        },
+        {
+          "ref": "council:morris-sussex-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:watchung-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Patriots%27_Path_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-pine-burr-area-1937",
+      "type": "merged",
+      "date": "1937",
+      "participants": [
+        {
+          "ref": "council:pine-burr-area",
+          "role": "successor"
+        },
+        {
+          "ref": "council:kickapoo-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:andrew-jackson-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Mississippi"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-prairie-sky-2026",
+      "type": "merged",
+      "date": "2026-06-01",
+      "participants": [
+        {
+          "ref": "council:prairie-sky",
+          "role": "successor"
+        },
+        {
+          "ref": "council:golden-spread",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:south-plains",
+          "role": "predecessor"
+        }
+      ],
+      "notes": "Amarillo-based Golden Spread and Lubbock-based South Plains merged to form a newly named council; neither predecessor kept its identity, so this is a merge rather than an absorption.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Plains_Council"
+          },
+          {
+            "url": "https://amarillotribune.org/2026/06/26/scoutings-americas-amarillo-and-lubbock-councils-merge-to-form-the-prairie-sky-council/",
+            "accessed": "2026-07-26"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-26",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-prairielands-1991",
+      "type": "merged",
+      "date": "1991",
+      "participants": [
+        {
+          "ref": "council:prairielands",
+          "role": "successor"
+        },
+        {
+          "ref": "council:arrowhead-council-117",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:piankeshaw-council-739",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Prairielands_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-sagamore-1972",
+      "type": "merged",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "council:sagamore",
+          "role": "successor"
+        },
+        {
+          "ref": "council:central-indiana",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:delaware-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:kikthawenund",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:whitewater-valley",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_Indiana"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-seneca-waterways-2009",
+      "type": "merged",
+      "date": "2009",
+      "participants": [
+        {
+          "ref": "council:seneca-waterways",
+          "role": "successor"
+        },
+        {
+          "ref": "council:finger-lakes",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:otetiana",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Seneca_Waterways_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "merge-into-south-georgia-2012",
+      "type": "merged",
+      "date": "2012",
+      "participants": [
+        {
+          "ref": "council:south-georgia",
+          "role": "successor"
+        },
+        {
+          "ref": "council:chehaw",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:alapaha-area",
+          "role": "predecessor"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/South_Georgia_Council"
+          }
+        ],
+        "method": "llm_extraction",
+        "verified_at": "2026-07-21",
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "merge-into-spirit-of-adventure-2015",
       "type": "merged",
       "date": "2015",
@@ -3050,20 +3222,24 @@
       }
     },
     {
-      "id": "merge-into-greater-tampa-bay-area-2016",
+      "id": "merge-into-suffolk-county-1974",
       "type": "merged",
-      "date": "2016",
+      "date": "1974",
       "participants": [
         {
-          "ref": "council:greater-tampa-bay-area",
+          "ref": "council:suffolk-county",
           "role": "successor"
         },
         {
-          "ref": "council:gulf-ridge",
+          "ref": "council:west-suffolk-county",
           "role": "predecessor"
         },
         {
-          "ref": "council:west-central-florida",
+          "ref": "council:east-suffolk-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:ipswich-corporation",
           "role": "predecessor"
         }
       ],
@@ -3071,7 +3247,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Greater_Tampa_Bay_Area_Council"
+            "url": "https://en.wikipedia.org/wiki/Suffolk_County_Council"
           }
         ],
         "method": "llm_extraction",
@@ -3080,20 +3256,20 @@
       }
     },
     {
-      "id": "merge-into-leatherstocking-2016",
+      "id": "merge-into-three-fires-1992",
       "type": "merged",
-      "date": "2016",
+      "date": "1992",
       "participants": [
         {
-          "ref": "council:leatherstocking",
+          "ref": "council:three-fires",
           "role": "successor"
         },
         {
-          "ref": "council:revolutionary-trails",
+          "ref": "council:two-rivers",
           "role": "predecessor"
         },
         {
-          "ref": "council:otschodela",
+          "ref": "council:dupage-area",
           "role": "predecessor"
         }
       ],
@@ -3101,7 +3277,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Leatherstocking_Council"
+            "url": "https://en.wikipedia.org/wiki/Three_Fires_Council"
           }
         ],
         "method": "llm_extraction",
@@ -3110,72 +3286,20 @@
       }
     },
     {
-      "id": "absorb-knox-trail-into-mayflower",
-      "type": "absorbed",
-      "date": "2017",
-      "participants": [
-        {
-          "ref": "council:knox-trail",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:mayflower",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Mayflower_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "absorb-old-colony-into-mayflower",
-      "type": "absorbed",
-      "date": "2017",
-      "participants": [
-        {
-          "ref": "council:old-colony",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:mayflower",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Mayflower_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
-      }
-    },
-    {
-      "id": "merge-into-heart-of-new-england-2018",
+      "id": "merge-into-three-harbors-2011",
       "type": "merged",
-      "date": "2018",
+      "date": "2011",
       "participants": [
         {
-          "ref": "council:heart-of-new-england",
+          "ref": "council:three-harbors",
           "role": "successor"
         },
         {
-          "ref": "council:nashua-valley",
+          "ref": "council:southeast-wisconsin",
           "role": "predecessor"
         },
         {
-          "ref": "council:mohegan",
+          "ref": "council:milwaukee-county",
           "role": "predecessor"
         }
       ],
@@ -3183,7 +3307,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Heart_of_New_England_Council"
+            "url": "https://en.wikipedia.org/wiki/Three_Harbors_Council"
           }
         ],
         "method": "llm_extraction",
@@ -3192,102 +3316,24 @@
       }
     },
     {
-      "id": "absorb-maui-county-into-aloha",
-      "type": "absorbed",
-      "date": "2019",
-      "participants": [
-        {
-          "ref": "council:maui-county",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:aloha",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Aloha_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-western-colorado-into-greater-colorado",
-      "type": "absorbed",
-      "date": "2019",
-      "participants": [
-        {
-          "ref": "council:western-colorado",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:greater-colorado",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Colorado"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-lincoln-trails-into-greater-saint-louis-area",
-      "type": "absorbed",
-      "date": "2019",
-      "participants": [
-        {
-          "ref": "council:lincoln-trails",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:greater-saint-louis-area",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Greater_St._Louis_Area_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "merge-into-golden-gate-area-2020",
+      "id": "merge-into-w-d-boyce-1973",
       "type": "merged",
-      "date": "2020",
+      "date": "1973",
       "participants": [
         {
-          "ref": "council:golden-gate-area",
+          "ref": "council:w-d-boyce",
           "role": "successor"
         },
         {
-          "ref": "council:san-francisco-bay-area",
+          "ref": "council:starved-rock-area",
           "role": "predecessor"
         },
         {
-          "ref": "council:alameda",
+          "ref": "council:corn-belt",
           "role": "predecessor"
         },
         {
-          "ref": "council:mount-diablo-silverado",
+          "ref": "council:creve-coeur",
           "role": "predecessor"
         }
       ],
@@ -3295,7 +3341,7 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Golden_Gate_Area_Council"
+            "url": "https://en.wikipedia.org/wiki/W._D._Boyce_Council"
           }
         ],
         "method": "llm_extraction",
@@ -3304,55 +3350,25 @@
       }
     },
     {
-      "id": "absorb-voyageurs-area-into-gamehaven",
-      "type": "absorbed",
-      "date": "2024",
+      "id": "rename-andrew-jackson-to-mississippi-riverlands",
+      "type": "renamed",
+      "date": null,
       "participants": [
         {
-          "ref": "council:voyageurs-area",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:gamehaven",
-          "role": "continuing"
+          "ref": "council:mississippi-riverlands",
+          "role": "subject"
         }
       ],
-      "notes": null,
+      "notes": "Council 303 shown as 'Mississippi Riverlands' on 2026 CST maps; camp-finder lists former name 'Andrew Jackson Council'. Date unverified.",
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Minnesota"
+            "citation": "Scouting America CST map (production 2026-06)"
           }
         ],
-        "method": "llm_extraction",
+        "method": "curated",
         "verified_at": "2026-07-21",
-        "confidence": 0.75
-      }
-    },
-    {
-      "id": "absorb-overland-trails-into-mid-america",
-      "type": "absorbed",
-      "date": "2024",
-      "participants": [
-        {
-          "ref": "council:overland-trails",
-          "role": "predecessor"
-        },
-        {
-          "ref": "council:mid-america",
-          "role": "continuing"
-        }
-      ],
-      "notes": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Mid-America_Council"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.75
+        "confidence": 0.6
       }
     }
   ]

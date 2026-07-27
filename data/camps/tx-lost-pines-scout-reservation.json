@@ -25,8 +25,141 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "two campfire rings with grassy banks and bench seating for campfires and skits"
+        },
+        {
+          "code": "archery",
+          "note": "eight-lane archery range with equipment available to units"
+        },
+        {
+          "code": "bathhouse",
+          "note": "several bathhouses with restrooms and showers across camp"
+        },
+        {
+          "code": "black_powder",
+          "note": "muzzle-loading rifles available as an add-on at the rifle range"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "forge in the living history area"
+        },
+        {
+          "code": "cabins",
+          "note": "eleven small cabins in the pines, each with four bunk beds"
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "ten campgrounds with pavilions and power"
+        },
+        {
+          "code": "canoeing",
+          "note": "three canoe racks with paddles and life jackets for use on the lake"
+        },
+        {
+          "code": "chapel",
+          "note": "outdoor chapel with a view of the lake and benches"
+        },
+        {
+          "code": "climbing_tower",
+          "signature": true,
+          "note": "the tallest freestanding wooden climbing tower in the state"
+        },
+        {
+          "code": "conservation_project",
+          "note": "nature and conservation program area"
+        },
+        {
+          "code": "cope",
+          "note": "separate high and low COPE courses"
+        },
+        {
+          "code": "dining_hall",
+          "note": "dining hall with a smaller back room, plus a lodge hall"
+        },
+        {
+          "code": "fishing",
+          "note": "a fishing dock on the lake, with catfish and largemouth bass"
+        },
+        {
+          "code": "flush_toilets",
+          "note": "flush toilets in the bathhouses"
+        },
+        {
+          "code": "handicraft",
+          "note": "handicraft pavilion"
+        },
+        {
+          "code": "health_lodge",
+          "note": "medical lodge with laundry and isolation rooms"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "living_history",
+          "note": "living history area with an old log cabin, a forge, and an axe-throwing area"
+        },
+        {
+          "code": "nature_study",
+          "note": "nature and ecology pavilions"
+        },
+        {
+          "code": "orienteering",
+          "note": "a do-it-yourself orienteering map of the property"
+        },
+        {
+          "code": "pavilion",
+          "note": "pavilions at the waterfront, handicraft, scoutcraft, and cooking areas"
+        },
+        {
+          "code": "platform_tents",
+          "note": "many campsites are built on tent platforms"
+        },
+        {
+          "code": "pool",
+          "note": "two pools available for unit use"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "a campsite set aside for provisional campers"
+        },
+        {
+          "code": "rifle",
+          "note": "smallbore rifle range"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "scoutcraft pavilion area"
+        },
+        {
+          "code": "shotgun",
+          "note": "shotgun range using twenty-gauge shells"
+        },
+        {
+          "code": "swimming",
+          "note": "swimming in the pools and at the lakefront"
+        },
+        {
+          "code": "tomahawk_throwing",
+          "note": "axe-throwing area beside the living history cabin"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "lake frontage with a waterfront pavilion and dock"
+        },
+        {
+          "code": "winter_camping",
+          "note": "the property hosts a winter resident camp as well as a summer one"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": "Scouts BSA resident summer camp operated by Capitol Area Council, situated on the north shore of Lake Bastrop in the Lost Pines region of Bastrop, Texas.",
       "provenance": {
         "sources": [
@@ -35,6 +168,14 @@
           },
           {
             "url": "https://scoutingevent.com/564-LPSRSummer26"
+          },
+          {
+            "url": "https://www.capitolareascouting.org/activities/camping/lost-pines/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/564/Camps/459",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

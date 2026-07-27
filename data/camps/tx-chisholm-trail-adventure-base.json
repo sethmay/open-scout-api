@@ -25,8 +25,122 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater",
+          "note": "council ring on the ranch; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "archery",
+          "note": "shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "atv",
+          "note": "trail riding offered as one of the outposts"
+        },
+        {
+          "code": "backpacking",
+          "note": "two remote hike-in practice trek sites with bear cables; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "bb_guns",
+          "note": "BB shooting listed among the ranch field sports; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "blacksmith's shop worked by appointment with the ranch smiths; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "canoeing",
+          "note": "shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "climbing",
+          "note": "climbing offered as one of the outposts"
+        },
+        {
+          "code": "climbing_tower",
+          "note": "ranch climbing tower with day and night climbing blocks; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "conservation_project",
+          "note": "conservation and trail-building projects planned with the ranch, also the focus of an order of the arrow trail crew week"
+        },
+        {
+          "code": "cope",
+          "note": "COPE challenge course on the peninsula; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "dining_hall",
+          "note": "ranch dining hall with a full kitchen; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "the base is built around a choice of high-adventure outposts"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "living_history",
+          "note": "themed outposts including viking, cavalry, and ranger programs"
+        },
+        {
+          "code": "motorboating",
+          "note": "units pilot pontoon boats to reach the watersports bases and outposts"
+        },
+        {
+          "code": "outpost_overnight",
+          "signature": true,
+          "note": "outposts spread along miles of rugged lake shoreline, reached by boat with a week's gear"
+        },
+        {
+          "code": "paddleboarding",
+          "note": "stand-up paddleboarding in the daily watersports block"
+        },
+        {
+          "code": "pavilion",
+          "note": "tower training pavilion; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "platform_tents",
+          "note": "summer-camp tents pitched on platforms; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "pool",
+          "note": "ranch pool, open only during the summer camp season; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "rifle",
+          "note": "shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "two natural climbing areas with bolted and natural anchors, gear kits rented from the ranch; shared ranch facility, available to this base's participants"
+        },
+        {
+          "code": "sailing",
+          "note": "sailing on the lake from the ranch waterfront"
+        },
+        {
+          "code": "shotgun",
+          "note": "sporting clays offered as one of the outposts"
+        },
+        {
+          "code": "water_blob",
+          "note": "blobbing in the daily watersports block"
+        },
+        {
+          "code": "water_skiing",
+          "note": "wakeboarding and towed tubing in the daily watersports block"
+        },
+        {
+          "code": "waterfront",
+          "note": "a very large lake with many miles of shoreline inside the property"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": "Longhorn Council's flagship high-adventure program at Sid Richardson Scout Ranch on 10,000-acre Lake Bridgeport, using pontoon boats to reach watersports bases and outposts along 15 miles of shoreline.",
       "provenance": {
         "sources": [
@@ -34,7 +148,16 @@
             "citation": "camp-finder council-662/tx-chisholm-trail-adventure-base (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/662-ChisholmTrail"
+            "url": "https://scoutingevent.com/662-ChisholmTrail",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.longhorncouncil.org/sid-richardson-scout-ranch",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/662/Camps/566",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

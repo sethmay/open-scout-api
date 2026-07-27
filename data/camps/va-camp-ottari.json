@@ -25,8 +25,182 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "adirondack shelter campsites alongside tent sites"
+        },
+        {
+          "code": "amphitheater",
+          "note": "amphitheater plus a separate campfire circle"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "trail camp crews cover thirty-five to fifty miles across the reservation, staying at staffed backcountry outposts"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower house at the base camp"
+        },
+        {
+          "code": "black_powder",
+          "note": "fifty-calibre muzzle-loading rifles and shotguns in the frontier living-history program"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "working forge used in the frontier living-history program"
+        },
+        {
+          "code": "bouldering",
+          "note": "indoor climbing facility with an extensive bouldering area, used in wet weather"
+        },
+        {
+          "code": "canoeing",
+          "note": "flat-water skills on the camp lake before a multi-day river trek"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing",
+          "note": "climbing wall at the camp COPE course"
+        },
+        {
+          "code": "conservation_project",
+          "note": "unit service projects on the reservation"
+        },
+        {
+          "code": "cope",
+          "note": "COPE course with a climbing wall and zip line"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "fishing",
+          "note": "angling on the river during the canoe trek"
+        },
+        {
+          "code": "flush_toilets",
+          "note": "flush toilets and showers at the base camp"
+        },
+        {
+          "code": "hammock_camping",
+          "note": "hammocks permitted on the trail when hung with tree-friendly webbing"
+        },
+        {
+          "code": "handicraft",
+          "note": "handicraft shelter"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "trail camp, canoe trek, and living-history tracks based out of this camp"
+        },
+        {
+          "code": "hiking",
+          "note": "over one hundred miles of reservation trails leaving from this camp"
+        },
+        {
+          "code": "horseback",
+          "note": "day trip from camp to a partner farm for a riding lesson and trail ride"
+        },
+        {
+          "code": "knife_throwing",
+          "note": "knife throwing in the frontier living-history program"
+        },
+        {
+          "code": "living_history",
+          "signature": true,
+          "note": "eighteenth-century frontier program at an outpost a mile from base camp, with period dress, patrol fires, and a tavern"
+        },
+        {
+          "code": "mountain_boarding",
+          "note": "all-terrain boarding down a backwoods trail at a staffed outpost"
+        },
+        {
+          "code": "nature_center",
+          "note": "nature lodge"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "programs restricted to Scouts in their teens"
+        },
+        {
+          "code": "orienteering",
+          "note": "map-and-compass navigation required on the trail program"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "staffed backcountry outposts where crews camp and take a daily program"
+        },
+        {
+          "code": "patrol_cooking",
+          "note": "crews and patrols cook their own meals over open fires"
+        },
+        {
+          "code": "pavilion",
+          "note": "picnic shelter plus open-air program shelters"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "individual Scouts can register and be placed with a crew"
+        },
+        {
+          "code": "rappelling",
+          "note": "rappelling a natural rock face above a creek"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "natural rock face above a creek, climbed and rappelled at a staffed outpost"
+        },
+        {
+          "code": "scoutcraft",
+          "note": "scoutcraft shelter"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "swimming",
+          "note": "waterfront swimming area with a swimmer check on arrival"
+        },
+        {
+          "code": "tomahawk_throwing",
+          "note": "tomahawk throwing at the frontier trapper's camp"
+        },
+        {
+          "code": "trading_post",
+          "note": "trading post and snack bar, plus a frontier tavern at the living-history outpost"
+        },
+        {
+          "code": "waterfront",
+          "note": "lake with separate swimming and boating areas"
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "trapping, snares, edible plants, and tracking in the frontier program"
+        },
+        {
+          "code": "woodworking",
+          "note": "wood shop, plus crosscut sawing and shingle riving in the logging program"
+        },
+        {
+          "code": "zip_line",
+          "note": "zip line at the camp COPE course"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp at Blue Ridge Scout Reservation in the Blue Ridge Mountains, offering traditional tent campsites, more than 30 merit badges, and the Mile Swim.",
       "provenance": {
         "sources": [
@@ -35,6 +209,18 @@
           },
           {
             "url": "https://scoutingevent.com/599-brsr26"
+          },
+          {
+            "url": "https://brmcreservation.org/wp-content/uploads/2025/03/Camp-Ottari-map-2023.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://brmcreservation.org/facilities/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/599174893/OR/BRSR_Leaders_Guide_2026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

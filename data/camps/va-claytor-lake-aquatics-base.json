@@ -25,8 +25,26 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "motorboating",
+          "note": "powerboat-towed lake program run as a day trip from the reservation base camp"
+        },
+        {
+          "code": "paddleboarding",
+          "note": "stand-up paddleboarding on the lake"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "lake site used solely for towed and paddled aquatics; participants pass a swimmer check and hold a state boating safety card first"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "High-adventure aquatics base on Claytor Lake in Virginia, operated by the Blue Ridge Mountains Council as part of the Blue Ridge Scout Reservation.",
       "provenance": {
         "sources": [
@@ -35,6 +53,10 @@
           },
           {
             "url": "https://scoutingevent.com/599-brsr26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/599174893/OR/BRSR_Leaders_Guide_2026.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

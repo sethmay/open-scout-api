@@ -25,8 +25,157 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery",
+          "note": "archery range with open shoots through the week"
+        },
+        {
+          "code": "astronomy",
+          "note": "astronomy badge with evening star study sessions"
+        },
+        {
+          "code": "atv",
+          "note": "riding course on the mountain with a rider safety certification for older Scouts"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower houses in camp"
+        },
+        {
+          "code": "blacksmithing",
+          "note": "forge and blacksmith work area in the living history area"
+        },
+        {
+          "code": "building_wifi",
+          "note": "limited internet in camp for adult leaders"
+        },
+        {
+          "code": "cabins",
+          "note": "a bunk-bedded cabin and an a-frame building available to year-round groups"
+        },
+        {
+          "code": "climbing",
+          "note": "climbing program run out of a climbing shed"
+        },
+        {
+          "code": "cowboy_action_shooting",
+          "note": "cowboy action shoot offered with its own release form"
+        },
+        {
+          "code": "cross_country_skiing",
+          "note": "winter nordic ski trails on the property"
+        },
+        {
+          "code": "digital_media",
+          "note": "movie making and photography badges in the handicraft area"
+        },
+        {
+          "code": "dining_hall",
+          "note": "family-style meals in the camp lodge, with camp-wide cookouts outside it"
+        },
+        {
+          "code": "first_year_program",
+          "note": "Roaring Lions, a three-class track for new Scouts working on early ranks"
+        },
+        {
+          "code": "handicraft",
+          "note": "handicraft pavilion covering basketry, leatherwork, wood carving, and pottery"
+        },
+        {
+          "code": "hiking",
+          "note": "trails on the property including a climb to the fire tower on the mountain top"
+        },
+        {
+          "code": "leadership_training",
+          "note": "the council runs its youth leadership training course at this camp"
+        },
+        {
+          "code": "living_history",
+          "note": "living history area with a forge, teepees, period games, and a frontier-themed evening inpost"
+        },
+        {
+          "code": "nature_center",
+          "note": "nature lodge built for the mountain ecology program"
+        },
+        {
+          "code": "nature_study",
+          "note": "forestry, geology, nature, and environmental science taught at the nature lodge"
+        },
+        {
+          "code": "older_scout_program",
+          "note": "a woodsman program using pioneer hand tools, plus age-gated riding and pistol activities"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "overnight outposts including a skills outpost and a survival shelter night"
+        },
+        {
+          "code": "pavilion",
+          "note": "handicraft pavilion"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "pistol",
+          "note": "pistol shooting for older Scouts"
+        },
+        {
+          "code": "rifle",
+          "note": "smallbore range with open shoots"
+        },
+        {
+          "code": "rock_climbing",
+          "signature": true,
+          "note": "climbing program built on the natural rock faces inside camp, including a night climb"
+        },
+        {
+          "code": "rocketry",
+          "note": "model rockets built and flown for the space exploration badge"
+        },
+        {
+          "code": "shotgun",
+          "note": "shotgun range for experienced campers"
+        },
+        {
+          "code": "stem",
+          "note": "nuclear science, space exploration, and game design badges"
+        },
+        {
+          "code": "tomahawk_throwing",
+          "note": "tomahawk throwing in the living history area"
+        },
+        {
+          "code": "trading_post",
+          "note": "camp store carrying badge kits, supplies, and stamps"
+        },
+        {
+          "code": "welding",
+          "note": "metalwork badge taught over a double period"
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "survival badge with an overnight in a shelter the Scout builds"
+        },
+        {
+          "code": "winter_camping",
+          "note": "the camp runs a multi-day winter camp with merit badges"
+        },
+        {
+          "code": "woodworking",
+          "note": "woodwork and wood carving, plus an axe and cross-cut saw skills program"
+        },
+        {
+          "code": "zip_line",
+          "note": "four zip lines, two of them with return lines"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Scouts BSA resident camp of the Adventure West Council with family-style dining hall, set at the base of Black Mountain near Wheatland beside Medicine Bow National Forest. Offerings range from the Roaring Lion first-year program to high-adventure rock climbing, mountain boarding, and ATVs.",
       "provenance": {
         "sources": [
@@ -34,7 +183,16 @@
             "citation": "camp-finder council-062/wy-camp-laramie-peak (unofficial community dataset)"
           },
           {
-            "url": "https://campreservation.com/062/Camps/718"
+            "url": "https://campreservation.com/062/Camps/718",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/062107271/OR/2023_CLP_Leaders_Guide_Draft_January.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://awbsa.org/",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

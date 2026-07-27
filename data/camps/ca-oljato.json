@@ -25,8 +25,125 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Numbered restroom and shower buildings along the campsite trails."
+        },
+        {
+          "code": "boat_access",
+          "signature": true,
+          "note": "Reached only by a one-mile boat trip across the lake."
+        },
+        {
+          "code": "building_wifi",
+          "note": "Wi-Fi in the centre of camp."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall",
+          "note": "A rustic dining hall at the centre of camp."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Trail to First Class program in the scoutcraft area."
+        },
+        {
+          "code": "fishing",
+          "note": "Stocked trout water, with a freezer in the nature area for the catch."
+        },
+        {
+          "code": "geocaching"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "horseback",
+          "note": "Horsemanship run with a pack station across the lake."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "provisional_attendance"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing",
+          "note": "A sheltered cove on a well-known sailing lake."
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_skiing",
+          "note": "Water skiing, wakeboarding, and towed tubing."
+        },
+        {
+          "code": "water_trampoline"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +151,12 @@
             "citation": "camp-finder council-031/ca-oljato (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/031-Oljato2026"
+            "url": "https://scoutingevent.com/031-Oljato2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/031176400/OR/2026_Oljato_Leader_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

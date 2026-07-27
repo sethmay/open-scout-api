@@ -9,7 +9,7 @@
       "name": "Camp M.K. Brown",
       "camp_type": "resident_camp",
       "operator": "council",
-      "council": "council:golden-spread",
+      "council": "council:prairie-sky",
       "parent": null,
       "operating_status": "active",
       "address": "8425 FM 3182",
@@ -53,6 +53,7 @@
         }
       ],
       "features_verified_at": "2026-07-25",
+      "features_source_tier": "camp_page",
       "summary": "Golden Spread Council Scouts BSA resident summer camp located in the Texas Panhandle, near the Oklahoma border.",
       "provenance": {
         "sources": [
@@ -71,7 +72,7 @@
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
         "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/562-2026SummerCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/562-2026SummerCamp); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Council repointed 2026-07-26 from council:golden-spread to council:prairie-sky: Golden Spread Council merged into Prairie Sky Council."
       }
     }
   ],

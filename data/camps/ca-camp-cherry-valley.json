@@ -25,8 +25,107 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Bathrooms with showers in the up-canyon camping area."
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "conservation_project",
+          "note": "Troop service projects arranged on the property."
+        },
+        {
+          "code": "digital_media"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Trail to First Class program."
+        },
+        {
+          "code": "fishing",
+          "note": "Catch and release only."
+        },
+        {
+          "code": "handicraft",
+          "note": "The Handiland craft area."
+        },
+        {
+          "code": "hiking",
+          "note": "A camp-wide hike day across the island."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "leadership_training"
+        },
+        {
+          "code": "marine_science",
+          "note": "The camp sea lab, with a touch tank for local marine life."
+        },
+        {
+          "code": "nature_study",
+          "note": "A nature area and trail camp."
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "platform_tents",
+          "note": "Platform campsites shaded by cherry trees."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "scuba"
+        },
+        {
+          "code": "snorkeling",
+          "signature": true,
+          "note": "Snorkelling in the sheltered cove among Catalina reef fish."
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post",
+          "note": "The Panther Post camp store."
+        },
+        {
+          "code": "waterfront",
+          "note": "A cove waterfront with a rebuilt dock and pier."
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": null,
       "provenance": {
         "sources": [
@@ -34,7 +133,28 @@
             "citation": "camp-finder council-033/ca-camp-cherry-valley (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/033-CherryValley"
+            "url": "https://scoutingevent.com/033-CherryValley",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campcherryvalley.org/about/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campcherryvalley.org/facilities/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campcherryvalley.org/programs/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/033180452/OR/2026_CCV_Updated_Program_Guide.pdf",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/033/Camps/91",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

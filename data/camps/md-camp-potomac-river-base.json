@@ -26,8 +26,78 @@
         "high_adventure",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "Adirondack campsites at White Oak, Indian, Beaver and Bear."
+        },
+        {
+          "code": "amphitheater",
+          "note": "Council ring."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "Year-round heated bathhouse."
+        },
+        {
+          "code": "cabins",
+          "note": "Large Lodge, Small Lodge, Bess Lodge and several smaller cabins."
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoe floats on the Potomac run out of the camp's river base."
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "climbing",
+          "note": "Climbing wall near the Dan Beard area."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "fishing",
+          "note": "Catch-and-release on the camp's stocked Friendship Lake."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Potomac River Base runs multi-day canoe floats across two states."
+        },
+        {
+          "code": "hiking",
+          "note": "Chief Potomac Trail and footpaths across the property."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shooting_sports"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "sports_field",
+          "note": "Activity field with a volleyball court."
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "Friendship Lake with a boathouse."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "A 114-acre Laurel Highlands Council high-adventure base along the Potomac River near the C&O Canal, offering self-scheduled canoe float trips in Maryland and West Virginia.",
       "provenance": {
         "sources": [
@@ -35,7 +105,16 @@
             "citation": "camp-finder council-527/md-camp-potomac-river-base (unofficial community dataset)"
           },
           {
-            "url": "https://campreservation.com/527/Camps/886"
+            "url": "https://campreservation.com/527/Camps/886",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://lhcscouting.org/camping/weekend/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://lhcscouting.org/wp-content/uploads/2021/09/camp_potomac_map.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

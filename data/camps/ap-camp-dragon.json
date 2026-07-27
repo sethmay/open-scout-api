@@ -25,8 +25,66 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "bathhouse",
+          "note": "Youth-designated restroom and shower facilities."
+        },
+        {
+          "code": "campsite_electricity",
+          "note": "Standard outlets by the campground trailers."
+        },
+        {
+          "code": "campsite_wifi",
+          "note": "Public Wi-Fi and strong cellular coverage at the campground."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Scouting Basics track, built for newer Scouts."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "A high-adventure version of the naturalist and island exploration track."
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "A one-night trek away from camp inside the exploration track."
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "scuba",
+          "signature": true,
+          "note": "An optional underwater track with guided dives or entry-level certification, run through an outside dive operator."
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "wilderness_survival"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
       "summary": "Far East Council Scouts BSA resident camp located at White Beach, Okinawa, Japan.",
       "provenance": {
         "sources": [
@@ -34,7 +92,12 @@
             "citation": "camp-finder council-803/ap-camp-dragon (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingevent.com/803-2026CampDragon"
+            "url": "https://scoutingevent.com/803-2026CampDragon",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/803171510/OR/Camp_Dragon_2026_Leaders_and_Participant_Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

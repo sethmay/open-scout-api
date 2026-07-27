@@ -25,8 +25,41 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "cabins",
+          "note": "cabin lodging alongside family campsites"
+        },
+        {
+          "code": "dining_hall",
+          "note": "lodge with a kitchen used for group meals and gatherings"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "gaga_ball",
+          "note": "dedicated gaga ball court"
+        },
+        {
+          "code": "rv_sites",
+          "note": "recreational vehicle spots on the property"
+        },
+        {
+          "code": "swimming",
+          "note": "supervised swimming area on the lake"
+        },
+        {
+          "code": "themed_lodging",
+          "note": "treehouses available as overnight lodging"
+        },
+        {
+          "code": "waterfront",
+          "note": "two miles of lakefront on the reservation"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "camp_page",
       "summary": "Inland Northwest Council Cub Scout overnight and resident camp on Diamond Lake in Newport, Washington.",
       "provenance": {
         "sources": [
@@ -35,6 +68,14 @@
           },
           {
             "url": "https://scoutingevent.com/611-26CubCamp"
+          },
+          {
+            "url": "https://www.nwrentals.org/cowles-home",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.nwrentals.org/cowles-about",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

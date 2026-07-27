@@ -194,3 +194,29 @@ fold; read before similar work.
   releases with a clean validator. When entities have lifecycle state, referential checks need to
   assert the *state* of the target, not just its existence — and hard-fail only where the repair is
   unambiguous (a recorded successor), reporting the rest for research.
+- **When a whole population looks uniformly empty, suspect the instrument before the population.**
+  62 camps were written off across three separate attempts — an automated council crawl, a
+  12-camp guide spike I ran myself, and a changelog entry declaring "cheap automation is exhausted"
+  — because their registration pages appeared to be bare forms. They were not. Reading a
+  `scoutingevent.com` URL without a selector follows a redirect to an empty "you have not selected a
+  calendar" shell; the same URL read with `:raw` returns the full page. Every one of the 62 then
+  proved surveyable, at an average of 28 features each. A uniform negative across a large,
+  heterogeneous population is far more likely to be a measurement artefact than a property of the
+  world — sanity-check one case by a completely different route (a real browser, curl, a different
+  reader mode) before generalising.
+- **A quality tier must be derived from evidence you actually recorded, not asserted.**
+  `features_source_tier` is computed from which provenance sources carry an `accessed` date, biased
+  so `guide` is never over-claimed. That it separates cleanly (21 features/camp vs 13) is what makes
+  it trustworthy; had the two tiers scored the same, the field would have been decoration. Validate
+  a new quality signal by checking it predicts something before you publish it.
+- **Add vocabulary and populate it in the same release.** 0.35.0 shipped 26 codes curated after the
+  survey, so `whitewater_rafting` matched zero camps and a consumer filtering it saw "nobody offers
+  this". This release admitted 7 codes and applied all 7 to the camps whose evidence justified them,
+  in the same change. The standing check is the zero-use count in `tools/maintenance.py`.
+- **Squatted domains are a real sourcing hazard, and name-matching is not evidence.** Three camp
+  domains in this project are squats — one SEO spam with a paid termite-company backlink, one a
+  gambling site — and each carried the exactly-correct camp name. Test: a genuine camp site names
+  its council or owning body in its own prose. Related: a council with no page for a camp it
+  operates often does not own it (trust, foundation, or alumni association), but only when the
+  silence is *asymmetric* — a council promoting sibling camps while silent on this one. Uniform
+  silence just means the council's website is broken.
