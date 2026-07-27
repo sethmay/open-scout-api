@@ -20,6 +20,7 @@ KIND_BY_DIR = {
     "camps": "camp", "ranks": "rank", "awards": "award", "requirement-sets": "requirement-set",
     "oa-lodges": "oa-lodge", "adventures": "adventure",
     "merit-badge-rankings": "merit-badge-ranking", "positions": "position",
+    "training": "training", "training-requirements": "training-requirement",
     "vocab": "vocab",
 }
 

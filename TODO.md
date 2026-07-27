@@ -132,6 +132,28 @@ rejected.
 
 ## Queue
 
+### Adult training — SHIPPED 0.52.0; two follow-ups
+
+28 courses + 67 position-trained requirements from `TRAINED LEADER REQUIREMENTS`
+(`filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf`, cached in
+`.workbench/training/`). Re-run `python tools/seed_training.py` after dropping a newer PDF;
+idempotent, byte-identical output. **`filestore.scouting.org` serves PDFs where `www.scouting.org`
+returns 403** — worth remembering for any other official document.
+
+- **Supplemental and advanced training is not modelled, correctly.** Wood Badge, Powder Horn,
+  Seabadge, Kodiak, BALOO, Safe Swim Defense, National Camp School and NYLT appear in the Guide to
+  Leader Training (511-028, also cached) as *narrative*, classed as supplemental or advanced — no
+  position requires any of them, so they have no row in the chart and would be orphan courses the
+  validator rightly rejects. Adding them needs a different source that states *their own* entry
+  requirements (Wood Badge requires position-specific training first; BALOO gates a Cub overnight,
+  which is an activity permission rather than a position). Model as prerequisites/permissions, not
+  as position-trained rows.
+- **The six Basic Commissioner course titles are unknown.** `D16`–`D26` are listed only inside "Any
+  Basic Commissioner Training" and neither source names them individually; all six currently carry
+  the group name with that stated in provenance. A commissioner-training source would fix this.
+- Not a gap: `Leader of 11-Year Old Scouts`, Varsity Team and the Team positions are legacy
+  programs the chart still prints. Recorded as printed.
+
 ### Council service areas — SOURCE FOUND, DELIBERATELY NOT BUILT (researched 2026-07-27)
 
 "Which council serves my address" is the first question every Scouting app asks and we cannot

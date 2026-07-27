@@ -28,7 +28,7 @@
         "requirement-set",
         "adventure",
         "merit-badge-ranking",
-        "position"
+        "position", "training", "training-requirement"
       ]
     },
     "count": {

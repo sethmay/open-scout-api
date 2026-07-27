@@ -1,0 +1,28 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
+  "id": "d20-basic-commissioner-training",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": "D20",
+      "name": "Basic Commissioner Training",
+      "delivery": "unknown",
+      "renew_months": null,
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+            "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": "The chart lists D20 only inside \"Any Basic Commissioner Training\" alongside the other basic commissioner course codes and never gives it its own title, so this name is the group's. Not a transcription of a printed course name."
+      }
+    }
+  ],
+  "notes": null
+}

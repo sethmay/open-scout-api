@@ -6,6 +6,7 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **A gate that would reject the new data is telling you the kind is wrong.** Adult registered positions looked like they belonged in `data/positions/`, until the gate "every position must be offered by some rank requirement" would have failed all 52 of them. That gate is correct - youth positions are earned toward a rank - so the honest read is that adult roles are a different kind, not that the gate needs loosening. Weakening a true invariant to admit data it was never about is how a dataset stops meaning anything.
 - **Let the source's own wording pick the rule; do not normalise it away.** Star says "any four *from the required list*" and Eagle says "including *these 14*" — two sentences that look like the same fact and are not: one is list membership (Swimming and Hiking count as two), the other is a slot tree (they share a slot and count once). The extractor keys on that exact phrasing difference, so the distinction is derived rather than remembered. When two rules would collapse under a tidier shared model, the collapse is the bug.
 - **A gate loose enough to accept two conventions is how you get two conventions.** Half-open and
   inclusive `effective_to` coexisted for months because the validator asked only "no overlaps, no

@@ -42,6 +42,11 @@ PREFIX_TO_SCHEMA = {
     "adventure-": "adventure.schema.json",
     "badge-ranking-": "merit-badge-ranking.schema.json",
     "position-": "position.schema.json",
+    # "training-course-" and "training-req-" rather than "training-": a bare "training-"
+    # prefix would also match every training-requirement example and schema_for() rejects
+    # a filename matching two prefixes.
+    "training-course-": "training.schema.json",
+    "training-req-": "training-requirement.schema.json",
 }
 
 

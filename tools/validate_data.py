@@ -35,7 +35,7 @@ DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.
             "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json",
             "ranks": "rank.schema.json", "awards": "award.schema.json",
             "oa-lodges": "oa-lodge.schema.json", "adventures": "adventure.schema.json",
-            "positions": "position.schema.json"}
+            "positions": "position.schema.json", "training": "training.schema.json"}
 
 
 def load_schemas():
@@ -737,6 +737,70 @@ def main() -> int:
                         f"{base} + {bc['earn']} != {bc['cumulative']}")
         prev_cum[program] = bc["cumulative"]
 
+    # pass 10: adult training requirements. These are flat documents rather than versioned
+    # entities — one per row of the TRAINED LEADER REQUIREMENTS chart, keyed by (position,
+    # unit_type) — so pass 1 does not see them and they need their own schema + integrity pass.
+    treq_dir = DATA / "training-requirements"
+    ntreq = 0
+    if treq_dir.exists():
+        treq_validator = Draft202012Validator(schemas["training-requirement.schema.json"],
+                                              registry=reg,
+                                              format_checker=Draft202012Validator.FORMAT_CHECKER)
+        course_refs: set[str] = set()
+        by_code: dict[tuple[str, str], str] = {}
+        course_code: dict[str, str | None] = {}
+        for q in sorted((DATA / "training").glob("*.json")):
+            if q.name == "_events.json":
+                continue
+            cd = json.loads(q.read_text("utf-8"))
+            cur_v = next((v for v in cd["versions"] if v.get("valid_to") is None), cd["versions"][-1])
+            course_code[f"training:{cd['id']}"] = cur_v.get("code")
+
+        def _refs(items):
+            for it in items:
+                if "ref" in it:
+                    yield it
+                kids = it.get("children") or []
+                if kids and it.get("choose", 0) > len(kids):
+                    yield {"_overchoose": it}
+                yield from _refs(kids)
+
+        for p in sorted(treq_dir.glob("*.json")):
+            doc = json.loads(p.read_text("utf-8"))
+            ntreq += 1
+            for e in treq_validator.iter_errors(doc):
+                errs.append(f"training-requirements/{p.name}: {'/'.join(str(x) for x in e.path)} "
+                            f"{e.message}")
+            if doc.get("id") != p.stem:
+                errs.append(f"training-requirements/{p.name}: id {doc.get('id')!r} != filename")
+            ypt = False
+            for node in _refs(doc.get("requires", [])):
+                if "_overchoose" in node:
+                    it = node["_overchoose"]
+                    errs.append(f"training-requirements/{p.name}: choose {it['choose']} of only "
+                                f"{len(it['children'])} alternatives")
+                    continue
+                ref = node["ref"]
+                course_refs.add(ref)
+                if ref not in entities:
+                    errs.append(f"training-requirements/{p.name}: {ref} does not resolve")
+                elif (code := course_code.get(ref, "") or "").startswith("Y"):
+                    ypt = True
+            # The chart states it outright: "Youth Protection Training is a joining requirement for
+            # all registered adults." A row without it is a transcription that dropped a column.
+            if not ypt:
+                errs.append(f"training-requirements/{p.name}: requires no Youth Protection course; "
+                            f"YPT is a joining requirement for every registered adult")
+            for code in doc.get("registration_codes", []):
+                key = (doc.get("unit_type"), code)
+                if key in by_code:
+                    errs.append(f"training-requirements/{p.name}: registration code {code!r} in "
+                                f"{doc.get('unit_type')!r} already claimed by {by_code[key]}")
+                by_code[key] = p.name
+        # A course nothing requires is either a parse artefact or a row we failed to transcribe.
+        for ref in sorted(set(course_code) - course_refs):
+            errs.append(f"training/{ref.split(':', 1)[1]}.json: no position requires this course")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
@@ -753,7 +817,8 @@ def main() -> int:
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
           f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges + "
-          f"{nadv} adventures + {npos} positions + {nrank_docs} badge-ranking years "
+          f"{nadv} adventures + {npos} positions + {ntreq} training requirements + "
+          f"{nrank_docs} badge-ranking years "
           f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab "
           f"+ rank/adventure agreement + area coverage), {len(entities)} entities")
     return 0

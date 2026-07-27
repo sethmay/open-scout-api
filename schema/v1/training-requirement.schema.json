@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/training-requirement.schema.json",
+  "title": "What one adult position must complete to be Position Trained",
+  "description": "One file per row of Scouting America's TRAINED LEADER REQUIREMENTS chart: data/training-requirements/<unit_type>-<position>.json. The key is (position, unit_type), NOT position alone - registration code CC requires C60 in a pack, WS10 in a troop, WS11 in a team, WS12 in a crew and P44 in a ship, and a Chartered Organization Representative takes Y01 in a pack but Y02 in a crew. Folding that into a single per-position record would assert a uniformity the source does not have. Adult positions are not modelled as entities: they have no identity beyond this chart, so name and registration codes are carried inline.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "training-requirement" },
+    "position_name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Position name exactly as the chart prints it, including its typos ('Neigborhood Chairman'). Corrections belong in notes, never in the transcription."
+    },
+    "registration_codes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "pattern": "^[0-9A-Z]{2,4}$" },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Scouting America registration code(s) for the position (SM, CC, 91U). More than one where the chart lists them together (Merit Badge Counselor is 42 and 42F). These are the join key a consumer already holds from my.scouting - the position name is not stable enough to match on."
+    },
+    "unit_type": {
+      "enum": ["pack", "troop", "team", "crew", "ship", "other"],
+      "description": "Which section of the chart this row sits in. Closed set: these are the chart's own six sidebar groupings, so a new value is a new edition of the source rather than a data addition - hence an enum here and not a vocab file. `other` covers council, district and non-unit positions."
+    },
+    "requires": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/RequiredCourse" },
+      "minItems": 1,
+      "description": "Everything required to be Position Trained. All entries are required together; alternatives are expressed inside an entry with `choose`."
+    },
+    "source_document": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "required": ["title"],
+      "additionalProperties": false
+    },
+    "provenance": { "$ref": "common.schema.json#/$defs/Provenance" },
+    "notes": { "type": ["string", "null"], "default": null }
+  },
+  "required": ["id", "kind", "position_name", "registration_codes", "unit_type", "requires", "provenance"],
+  "additionalProperties": false,
+  "$defs": {
+    "RequiredCourse": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "$ref": "common.schema.json#/$defs/EntityRef",
+          "description": "The course, as 'training:<slug>'. Present on a leaf; absent on a node that only groups alternatives."
+        },
+        "choose": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Complete this many of `children`. Always 1 in the current chart: classroom OR online for the Cub Scout positions, and any one of six Basic Commissioner courses."
+        },
+        "label": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "The chart's own wording for a group ('Any Basic Commissioner Training'), kept so a consumer can render the choice the way the source states it."
+        },
+        "delivery_note": {
+          "enum": ["either_instructor_led_or_elearning", "elearning_only"],
+          "description": "A footnote marker attached to THIS cell. Deliberately per-requirement and not per-course: the chart marks WS10 as e-learning only for Troop Committee Chairman and Troop Committee, but leaves the same course unmarked for Parent Coordinator."
+        },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/RequiredCourse" },
+          "minItems": 2
+        }
+      },
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["ref"] },
+        { "required": ["choose", "children"] }
+      ]
+    }
+  }
+}

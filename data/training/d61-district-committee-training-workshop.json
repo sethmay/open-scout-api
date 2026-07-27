@@ -1,0 +1,28 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
+  "id": "d61-district-committee-training-workshop",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": "D61",
+      "name": "District Committee Training Workshop",
+      "delivery": "unknown",
+      "renew_months": null,
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+            "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": null
+      }
+    }
+  ],
+  "notes": null
+}

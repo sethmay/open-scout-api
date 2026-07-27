@@ -1,0 +1,28 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
+  "id": "y02-venturing-youth-protection-training",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": "Y02",
+      "name": "Venturing Youth Protection Training",
+      "delivery": "both",
+      "renew_months": 24,
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+            "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": "Course name and code as printed in the chart. Also printed as: Youth Protection Training."
+      }
+    }
+  ],
+  "notes": null
+}

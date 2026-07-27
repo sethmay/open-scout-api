@@ -1,0 +1,56 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training-requirement.schema.json",
+  "id": "other-assistant-council-commissioner",
+  "kind": "training-requirement",
+  "position_name": "Assistant Council Commissioner",
+  "registration_codes": [
+    "16"
+  ],
+  "unit_type": "other",
+  "requires": [
+    {
+      "ref": "training:y01-youth-protection-training"
+    },
+    {
+      "choose": 1,
+      "label": "Any Basic Commissioner Training",
+      "children": [
+        {
+          "ref": "training:d16-basic-commissioner-training"
+        },
+        {
+          "ref": "training:d17-basic-commissioner-training"
+        },
+        {
+          "ref": "training:d18-basic-commissioner-training"
+        },
+        {
+          "ref": "training:d19-basic-commissioner-training"
+        },
+        {
+          "ref": "training:d20-basic-commissioner-training"
+        },
+        {
+          "ref": "training:d26-basic-commissioner-training"
+        }
+      ]
+    }
+  ],
+  "source_document": {
+    "title": "Trained Leader Requirements - Unit and Other Positions",
+    "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+        "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": null
+  },
+  "notes": null
+}
