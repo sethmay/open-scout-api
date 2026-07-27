@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.42.1 (patch) — 2026-07-27
 
-- `PENDING` **New `tools/restamp_identity.py`: the last 1.0 blocker is no longer a one-way door.**
+- `87c7a51` **New `tools/restamp_identity.py`: the last 1.0 blocker is no longer a one-way door.**
   The API base URL is the schema `$id` prefix, the documented API root and the jsDelivr pin path, and
   it appears in ~1,900 files — which is what made "decide the permanent home" feel irreversible. It
   is one command, and the tool proves it rather than asserting it. No data or schema changes.
