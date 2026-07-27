@@ -1,0 +1,59 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-bears-on-bikes-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:bears-on-bikes",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Bears on Bikes — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/bears-on-bikes/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Show how to properly wear a bicycle helmet."
+    },
+    {
+      "number": "2",
+      "text": "Decide what you should wear when riding a bike."
+    },
+    {
+      "number": "3",
+      "text": "Demonstrate proper hand signals."
+    },
+    {
+      "number": "4",
+      "text": "Demonstrate how to adjust saddle height."
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate how to operate brakes."
+    },
+    {
+      "number": "6",
+      "text": "Learn how to use a pump to inflate your tires. Discuss why riding with low-pressure or flat tires is unsafe and can cause damage to your bike."
+    },
+    {
+      "number": "7",
+      "text": "With your family, den, or pack, follow the buddy system and go on a 30-minute bike ride."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/bears-on-bikes/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

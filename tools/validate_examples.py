@@ -39,6 +39,7 @@ PREFIX_TO_SCHEMA = {
     "events-": "event.schema.json",
     "award-": "award.schema.json",
     "oa-lodge-": "oa-lodge.schema.json",
+    "adventure-": "adventure.schema.json",
 }
 
 

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-fellowship-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:fellowship",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Fellowship — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/fellowship/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your parent or legal guardian talk about your family’s faith traditions. Identify three holidays or celebrations that are part of your family’s faith traditions. Make a craft, work of art, or a food item that is part of your favorite family’s faith tradition, holiday or celebration."
+    },
+    {
+      "number": "2",
+      "text": "With your family, attend a religious service OR other gathering that shows how your family expresses reverence."
+    },
+    {
+      "number": "3",
+      "text": "Carry out an act of kindness."
+    },
+    {
+      "number": "4",
+      "text": "With your parent or legal guardian identify a religion or faith that is different from your own. Determine two things that it has in common with your family’s beliefs."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/fellowship/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

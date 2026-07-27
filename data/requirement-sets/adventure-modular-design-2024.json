@@ -1,0 +1,55 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-modular-design-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:modular-design",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Modular Design — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/modular-design/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Learn what modular design is and identify three things that use modular design in their construction."
+    },
+    {
+      "number": "2",
+      "text": "Using modular-based building pieces, build a model without a set of instructions."
+    },
+    {
+      "number": "3",
+      "text": "Using the model made in requirement 2, create a set of step-by-step instructions on how to make your model."
+    },
+    {
+      "number": "4",
+      "text": "Have someone make your model using your instructions."
+    },
+    {
+      "number": "5",
+      "text": "Using the same modular pieces used in requirement 2, build another model of something different."
+    },
+    {
+      "number": "6",
+      "text": "With your parent or legal guardian’s permission, watch a video demonstrating how something was built using modular design."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/modular-design/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

@@ -93,7 +93,7 @@
   "$defs": {
     "Requirement": {
       "title": "Requirement",
-      "description": "One node of the requirement tree. At least one of text/summary/children must be present. 'choose' = complete N of the children (null = all children required). Option groups (e.g. 'do 7a OR 7b') are a parent node with choose=1.",
+      "description": "One node of the requirement tree. At least one of text/summary/children must be present. 'choose' = complete N of the children (null = all children required). Option groups (e.g. 'do 7a OR 7b') are a parent node with choose=1. A node that stands for another entity — a Cub rank's adventures, and in future a rank's named merit badges — carries `ref` so consumers resolve it instead of matching on name.",
       "type": "object",
       "properties": {
         "number": {
@@ -116,6 +116,10 @@
           "minimum": 1,
           "default": null,
           "description": "Complete this many of 'children'; null = all. Meaningful only with children (pipeline rule)."
+        },
+        "ref": {
+          "$ref": "common.schema.json#/$defs/EntityRef",
+          "description": "The entity this node stands for (e.g. 'adventure:paws-on-the-path'). Present when the requirement is 'complete that entity' and its own requirements live in the entity's requirement-set rather than inline here. `text` still carries the name as printed, so the document reads standalone. Referential integrity is a pipeline rule."
         },
         "children": {
           "type": "array",

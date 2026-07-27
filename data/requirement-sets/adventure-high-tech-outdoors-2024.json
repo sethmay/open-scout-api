@@ -1,0 +1,47 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-high-tech-outdoors-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:high-tech-outdoors",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "High Tech Outdoors — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/high-tech-outdoors/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With an adult, use a weather app or website to see the forecast for an outdoor activity and discuss any preparation needed to accommodate the weather."
+    },
+    {
+      "number": "2",
+      "text": "With an adult, find a knot-tying app. Select one knot to learn, and tie it using the app."
+    },
+    {
+      "number": "3",
+      "text": "Discuss how technology has improved camping gear."
+    },
+    {
+      "number": "4",
+      "text": "Think of a way technology can improve camping gear used on one of your outdoor activities."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/high-tech-outdoors/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

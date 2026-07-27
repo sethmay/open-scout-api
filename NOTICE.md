@@ -11,9 +11,10 @@ projections published from it) is licensed under
 The **pipeline/tooling source code** (`tools/`, any future `pipeline/`) is licensed
 under the **MIT License**.
 
-### Merit badge & rank requirement text (third-party, excluded from the data license)
+### Merit badge, rank & Cub adventure requirement text (third-party, excluded from the data license)
 
-`requirement-set` documents reproduce **verbatim merit badge and rank requirement text, which is
+`requirement-set` documents reproduce **verbatim merit badge, rank and Cub Scout adventure
+requirement text, which is
 © Scouting America** (marked per-record with `includes_official_text: true` and a
 `text_rights` statement). That text is **NOT** covered by the CC BY-NC-SA license above and
 is **not ours to relicense** — it is reproduced with attribution, for non-commercial
@@ -80,8 +81,10 @@ noted here because their status shapes what we may redistribute:
   with BSA; its own page layout/code is separately licensed and is not redistributed here.
 - **Scouting America official advancement pages & PDFs (scouting.org, seascout.org)** —
   source for the current Cub Scout (Lion–Arrow of Light), Venturing (Discovery/Pathfinder/
-  Summit), and Sea Scout (Apprentice–Quartermaster) rank `requirement-set` documents: the
-  scouting.org Cub adventure and Venturing rank pages and the official 2026 Sea Scout rank
+  Summit), and Sea Scout (Apprentice–Quartermaster) rank `requirement-set` documents, and for
+  the **131 Cub Scout `adventure` requirement-sets** and the identity/rank placement of all 139
+  adventures: the scouting.org per-rank adventure pages (`/cub-scout-adventures/<rank>/`), the
+  131 per-adventure pages, the Venturing rank pages, and the official 2026 Sea Scout rank
   PDFs. Requirement **text is © Scouting America** (see above), reproduced verbatim with
   attribution for non-commercial Scouting use — every requirement text was verified as a
   verbatim substring of the official source; only the tree structure/metadata are the

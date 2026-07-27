@@ -1,0 +1,55 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-pedal-away-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:pedal-away",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Pedal Away — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/pedal-away/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Decide on gear and supplies you should bring for a long bike ride."
+    },
+    {
+      "number": "2",
+      "text": "Discover how multi-gear bicycles work and how they benefit a rider ."
+    },
+    {
+      "number": "3",
+      "text": "Practice how to lubricate a chain."
+    },
+    {
+      "number": "4",
+      "text": "Pick a bicycle lock that you will use. Demonstrate how it locks and unlocks, how it secures your bicycle, and how you carry it while you are riding your bicycle."
+    },
+    {
+      "number": "5",
+      "text": "With your family, den, or pack, use a map and plan a bicycle ride that is at least 5 miles."
+    },
+    {
+      "number": "6",
+      "text": "With your den, pack, or family and using the buddy system, go on a bicycle ride that is a minimum of 5 miles."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/pedal-away/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

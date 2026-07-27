@@ -20,45 +20,33 @@
       "children": [
         {
           "number": "1",
-          "text": "Bobcat Adventure",
-          "children": [
-            {
-              "number": "1",
-              "text": "Get to know the members of your den."
-            },
-            {
-              "number": "2",
-              "text": "Have your Lion adult partner or den leader read the Scout Law to you. Demonstrate your understanding of being friendly."
-            },
-            {
-              "number": "3",
-              "text": "Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”"
-            },
-            {
-              "number": "4",
-              "text": "At home, with your parent or legal guardian, do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”"
-            }
-          ]
+          "text": "Bobcat Lion",
+          "ref": "adventure:bobcat-lion"
         },
         {
           "number": "2",
-          "text": "Fun on the Run"
+          "text": "Fun on the Run",
+          "ref": "adventure:fun-on-the-run"
         },
         {
           "number": "3",
-          "text": "Lion’s Roar"
+          "text": "Lion’s Roar",
+          "ref": "adventure:lions-roar"
         },
         {
           "number": "4",
-          "text": "Lion’s Pride"
+          "text": "Lion’s Pride",
+          "ref": "adventure:lions-pride"
         },
         {
           "number": "5",
-          "text": "King of the Jungle"
+          "text": "King of the Jungle",
+          "ref": "adventure:king-of-the-jungle"
         },
         {
           "number": "6",
-          "text": "Mountain Lion"
+          "text": "Mountain Lion",
+          "ref": "adventure:mountain-lion"
         }
       ]
     },
@@ -69,67 +57,83 @@
       "children": [
         {
           "number": "1",
-          "text": "Build It Up, Knock It Down"
+          "text": "Build It Up, Knock It Down",
+          "ref": "adventure:build-it-up-knock-it-down"
         },
         {
           "number": "2",
-          "text": "Champions for Nature Lion"
+          "text": "Champions for Nature Lion",
+          "ref": "adventure:champions-for-nature-lion"
         },
         {
           "number": "3",
-          "text": "Count On Me"
+          "text": "Count On Me",
+          "ref": "adventure:count-on-me"
         },
         {
           "number": "4",
-          "text": "Everyday Tech"
+          "text": "Everyday Tech",
+          "ref": "adventure:everyday-tech"
         },
         {
           "number": "5",
-          "text": "Gizmos and Gadgets"
+          "text": "Gizmos and Gadgets",
+          "ref": "adventure:gizmos-and-gadgets"
         },
         {
           "number": "6",
-          "text": "Go Fish"
+          "text": "Go Fish",
+          "ref": "adventure:go-fish"
         },
         {
           "number": "7",
-          "text": "I’ll Do It Myself"
+          "text": "I’ll Do It Myself",
+          "ref": "adventure:ill-do-it-myself"
         },
         {
           "number": "8",
-          "text": "Let’s Camp Lion"
+          "text": "Let’s Camp Lion",
+          "ref": "adventure:lets-camp-lion"
         },
         {
           "number": "9",
-          "text": "On a Roll"
+          "text": "On a Roll",
+          "ref": "adventure:on-a-roll"
         },
         {
           "number": "10",
-          "text": "On Your Mark"
+          "text": "On Your Mark",
+          "ref": "adventure:on-your-mark"
         },
         {
           "number": "11",
-          "text": "Pick My Path"
+          "text": "Pick My Path",
+          "ref": "adventure:pick-my-path-lion"
         },
         {
           "number": "12",
-          "text": "Race Time Lion"
+          "text": "Race Time Lion",
+          "ref": "adventure:race-time-lion"
         },
         {
           "number": "13",
-          "text": "Ready, Set, Grow"
+          "text": "Ready, Set, Grow",
+          "ref": "adventure:ready-set-grow"
         },
         {
           "number": "14",
-          "text": "Time to Swim"
+          "text": "Time to Swim",
+          "ref": "adventure:time-to-swim"
         },
         {
           "number": "15",
-          "text": "Archery Lion"
+          "text": "Archery Lion",
+          "ref": "adventure:archery-lion"
         },
         {
           "number": "16",
-          "text": "Slingshot"
+          "text": "Slingshot",
+          "ref": "adventure:slingshot"
         }
       ]
     }

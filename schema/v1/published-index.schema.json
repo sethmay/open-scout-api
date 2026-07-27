@@ -25,7 +25,8 @@
         "rank",
         "award",
         "oa-lodge",
-        "requirement-set"
+        "requirement-set",
+        "adventure"
       ]
     },
     "count": {
@@ -211,6 +212,27 @@
           "items": {
             "items": {
               "$ref": "#/$defs/RequirementSetIndexItem"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "adventure"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/$defs/AdventureIndexItem"
             }
           }
         }
@@ -513,6 +535,36 @@
         "effective_from",
         "effective_to",
         "includes_official_text"
+      ],
+      "additionalProperties": false
+    }
+    ,
+    "AdventureIndexItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Slug"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "program": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "current": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "program",
+        "category",
+        "current"
       ],
       "additionalProperties": false
     }

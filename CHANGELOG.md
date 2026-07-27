@@ -3,6 +3,52 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.43.0 (minor) — 2026-07-27
+
+- `PENDING` **Cub Scout adventures are a first-class dataset: 139 entities and 611 requirements,
+  the unit of Cub advancement.** Adventures are to Cub Scouts what merit badges are to Scouts BSA —
+  a rank is earned by completing six required adventures plus any two electives, and each adventure
+  carries its own requirements — so they get identity (`data/adventures/<slug>.json`), their own
+  requirement-set editions, and `v1/adventures/{id}.json` endpoints. Requirement content now lives
+  once, on the adventure.
+- New `schema/v1/adventure.schema.json`, `data/vocab/adventure-categories.json` (3 terms) and
+  `tools/seed_cub_adventures.py`. Slugs are each page's own `rel=canonical` slug rather than a
+  slugified name, so they match Scouting America (`pick-my-path-lion`, `bobcat-aol` — whose rank-page
+  link redirects, which is why the page's canonical wins). Requirement-set ids are prefixed
+  `adventure-` because five adventures share a name with a merit badge (Swimming, First Aid, Cycling,
+  Fishing, Personal Fitness) and requirement-set ids are one flat namespace: `swimming-2024` was
+  already taken.
+- **131 of 139 adventures carry published requirements.** The 8 that do not are the shooting sports
+  (Archery ×6, BB Guns, Slingshot), which are listed on every rank page but have no page of their
+  own — "only ... at approved events with qualified instructors". They exist as entities with a null
+  `url` and no requirement-set, which is the honest shape; join
+  `v1/requirement-sets/index.json` on `subject` to find the ones with requirements.
+- **Three corrections to already-published Cub rank data**, all caught by diffing our trees against
+  the official rank pages:
+  - Arrow of Light listed **three adventures that do not exist** — `Personal Safety`,
+    `Family & Reverence` and `Outdoors`. Those are the page's *area* labels, captured as if they were
+    adventures; the real required adventures are `Duty to God` and `Outdoor Adventurer`. AOL had 7
+    required where the rule says six.
+  - The rank rule is "**six** required Adventures and any two elective" — so Bobcat genuinely is the
+    sixth required adventure, not an extra. (An earlier read of the page, which lists only five under
+    the heading and links Bobcat separately, suggested our data was wrong here. It was right.)
+  - Shooting sports were folded into the ordinary elective list; they are now in the elective pool
+    with `category: special_elective` carrying the constraint.
+- Requirement nodes gain an optional **`ref`** (additive): a node standing for another entity now
+  points at it (`adventure:paws-on-the-path`) instead of being matched on name. The Cub rank trees
+  are pure structure — two groups, `choose: 2` over 20 electives, every adventure a ref — and
+  Bobcat's requirements are no longer duplicated into all six ranks.
+- ⚠ **Deliberately did not model the elective split as a third rank group.** The page shows
+  "Special Elective Adventures" as a peer heading, but a peer group here needs `choose: null`, which
+  this schema reads as *all children required* — i.e. every Cub must earn BB Guns to rank up. The
+  split is a property of the adventure, so it lives on `adventure.category`, and the rank states the
+  two groups its own rule states.
+- New gates, each proven to fire by injecting the drift it is meant to catch (13 injections, 13
+  caught): adventure↔rank agreement in both directions, category-versus-group, orphan adventures,
+  dangling `ranks` and node `ref`s, category vocab, and the four published-projection contracts.
+  `adventure_ranks` junction table in the SQLite artifact answers "which adventures does a Wolf
+  need" in one query.
+
 ## 0.42.2 (patch) — 2026-07-27
 
 - `9057232` **Identity decision recorded: the base URL stays `sethmay.github.io/open-scout-api` for

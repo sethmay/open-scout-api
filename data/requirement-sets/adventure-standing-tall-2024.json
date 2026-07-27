@@ -1,0 +1,47 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-standing-tall-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:standing-tall",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Standing Tall — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/standing-tall/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With permission from your parent or legal guardian, watch the Protect Yourself Rules video for the Bear rank."
+    },
+    {
+      "number": "2",
+      "text": "Complete the Personal Space Bubble worksheet that is part of the Protect Yourself Rules resources."
+    },
+    {
+      "number": "3",
+      "text": "With your parent or legal guardian, set up a family policy for digital devices."
+    },
+    {
+      "number": "4",
+      "text": "Identify common personal safety gear for your head, eyes, mouth, hands, and feet. List how each of these items protect you. Demonstrate the proper use of personal safety gear for an activity."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/standing-tall/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

@@ -20,53 +20,33 @@
       "children": [
         {
           "number": "1",
-          "text": "Bobcat Adventure",
-          "children": [
-            {
-              "number": "1",
-              "text": "Get to know the members of your den."
-            },
-            {
-              "number": "2",
-              "text": "Recite the Scout Oath with your den, including your Tiger adult partner."
-            },
-            {
-              "number": "3",
-              "text": "Have your Tiger adult partner or den leader read the Scout Law to you.  Demonstrate your understanding of being trustworthy, helpful, or friendly."
-            },
-            {
-              "number": "4",
-              "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake.  Show how each are used."
-            },
-            {
-              "number": "5",
-              "text": "Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”"
-            },
-            {
-              "number": "6",
-              "text": "At home, with your parent or legal guardian do the activities in the booklet “ How to Protect Your Children from Child Abuse: A Parent’s Guide .”"
-            }
-          ]
+          "text": "Bobcat Tiger",
+          "ref": "adventure:bobcat-tiger"
         },
         {
           "number": "2",
-          "text": "Tiger Bites"
+          "text": "Tiger Bites",
+          "ref": "adventure:tiger-bites"
         },
         {
           "number": "3",
-          "text": "Tiger’s Roar"
+          "text": "Tiger’s Roar",
+          "ref": "adventure:tigers-roar"
         },
         {
           "number": "4",
-          "text": "Tiger Circles"
+          "text": "Tiger Circles",
+          "ref": "adventure:tiger-circles"
         },
         {
           "number": "5",
-          "text": "Team Tiger"
+          "text": "Team Tiger",
+          "ref": "adventure:team-tiger"
         },
         {
           "number": "6",
-          "text": "Tigers in the Wild"
+          "text": "Tigers in the Wild",
+          "ref": "adventure:tigers-in-the-wild"
         }
       ]
     },
@@ -77,83 +57,103 @@
       "children": [
         {
           "number": "1",
-          "text": "Champions for Nature Tiger"
+          "text": "Champions for Nature Tiger",
+          "ref": "adventure:champions-for-nature-tiger"
         },
         {
           "number": "2",
-          "text": "Curiosity, Intrigue, and Magical Mysteries"
+          "text": "Curiosity, Intrigue, and Magical Mysteries",
+          "ref": "adventure:curiosity-intrigue-and-magical-mysteries"
         },
         {
           "number": "3",
-          "text": "Designed by Tiger"
+          "text": "Designed by Tiger",
+          "ref": "adventure:designed-by-tiger"
         },
         {
           "number": "4",
-          "text": "Fish On"
+          "text": "Fish On",
+          "ref": "adventure:fish-on"
         },
         {
           "number": "5",
-          "text": "Floats and Boats"
+          "text": "Floats and Boats",
+          "ref": "adventure:floats-and-boats"
         },
         {
           "number": "6",
-          "text": "Good Knights"
+          "text": "Good Knights",
+          "ref": "adventure:good-knights"
         },
         {
           "number": "7",
-          "text": "Let’s Camp Tiger"
+          "text": "Let’s Camp Tiger",
+          "ref": "adventure:lets-camp-tiger"
         },
         {
           "number": "8",
-          "text": "Race Time Tiger"
+          "text": "Race Time Tiger",
+          "ref": "adventure:race-time-tiger"
         },
         {
           "number": "9",
-          "text": "Rolling Tigers"
+          "text": "Rolling Tigers",
+          "ref": "adventure:rolling-tigers"
         },
         {
           "number": "10",
-          "text": "Safe and Smart"
+          "text": "Safe and Smart",
+          "ref": "adventure:safe-and-smart"
         },
         {
           "number": "11",
-          "text": "Sky is the Limit"
+          "text": "Sky is the Limit",
+          "ref": "adventure:sky-is-the-limit"
         },
         {
           "number": "12",
-          "text": "Stories in Shapes"
+          "text": "Stories in Shapes",
+          "ref": "adventure:stories-in-shapes"
         },
         {
           "number": "13",
-          "text": "Summertime Fun Tiger"
+          "text": "Summertime Fun Tiger",
+          "ref": "adventure:summertime-fun-tiger"
         },
         {
           "number": "14",
-          "text": "Tech All Around"
+          "text": "Tech All Around",
+          "ref": "adventure:tech-all-around"
         },
         {
           "number": "15",
-          "text": "Tiger Tag"
+          "text": "Tiger Tag",
+          "ref": "adventure:tiger-tag"
         },
         {
           "number": "16",
-          "text": "Tiger-iffic!"
+          "text": "Tiger-iffic!",
+          "ref": "adventure:tiger-iffic"
         },
         {
           "number": "17",
-          "text": "Tigers in the Water"
+          "text": "Tigers in the Water",
+          "ref": "adventure:tigers-in-the-water"
         },
         {
           "number": "18",
-          "text": "Archery Tiger"
+          "text": "Archery Tiger",
+          "ref": "adventure:archery-tiger"
         },
         {
           "number": "19",
-          "text": "Slingshot"
+          "text": "Slingshot",
+          "ref": "adventure:slingshot"
         },
         {
           "number": "20",
-          "text": "BB Guns"
+          "text": "BB Guns",
+          "ref": "adventure:bb-guns"
         }
       ]
     }

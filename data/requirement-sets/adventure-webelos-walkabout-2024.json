@@ -1,0 +1,59 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-webelos-walkabout-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:webelos-walkabout",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Webelos Walkabout — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/webelos-walkabout/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare for a 2-mile walk outside. Gather your Cub Scout Six Essentials and weather appropriate clothing and shoes."
+    },
+    {
+      "number": "2",
+      "text": "Plan a 2-mile route for your walk."
+    },
+    {
+      "number": "3",
+      "text": "Check the weather forecast for the time of your planned 2-mile walk."
+    },
+    {
+      "number": "4",
+      "text": "Review the four points of Scouting America SAFE Checklist and how you will apply them on your 2-mile walk."
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate first aid for each of the following events that could occur on your 2-mile walk: blister, sprained ankle, sunburn, dehydration and heat related illness."
+    },
+    {
+      "number": "6",
+      "text": "With your den, pack, or family, go on your 2-mile walk while practicing the Leave No Trace Principles for Kids and Outdoor Code."
+    },
+    {
+      "number": "7",
+      "text": "After your 2-mile walk, discuss with your den what went well and what you would do differently next time."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/webelos-walkabout/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}

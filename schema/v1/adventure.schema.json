@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/adventure.schema.json",
+  "title": "Cub Scout adventure (canonical entity file)",
+  "description": "One file per adventure: data/adventures/<slug>.json. Adventures are the unit of Cub Scout advancement — a rank is earned by completing six required adventures plus any two electives — so they are entities in their own right, the Cub-side analogue of merit badges. Requirement content lives in separate requirement-set documents (subject 'adventure:<slug>'), not here; each rank's requirement-set carries only the advancement structure and refs each adventure. Retirement is a 'discontinued' event plus a closed final version window; replacement chains (the 2024 program rewrote the adventure line-up wholesale) are 'superseded' events in data/adventures/_events.json.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/Slug",
+      "description": "The adventure's own canonical slug on scouting.org (e.g. 'pick-my-path-lion'), not a slugified name."
+    },
+    "kind": {
+      "const": "adventure"
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/AdventureVersion"
+      },
+      "minItems": 1,
+      "description": "Chronologically ordered, non-overlapping snapshots (pipeline-enforced). A new version window is opened by renames and by moves between ranks or categories."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "versions"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "AdventureVersion": {
+      "allOf": [
+        {
+          "$ref": "common.schema.json#/$defs/VersionBase"
+        }
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official adventure name during this window. Names are often rank-qualified by Scouting America itself (e.g. 'Champions for Nature Wolf', 'Bobcat Arrow of Light')."
+        },
+        "program": {
+          "$ref": "common.schema.json#/$defs/VocabCode",
+          "description": "Program the adventure belongs to (e.g. cub_scouts)."
+        },
+        "ranks": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/EntityRef"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Rank(s) offering this adventure during this window. Almost every adventure belongs to exactly one rank; the shooting-sports adventures Slingshot and BB Guns are offered across several. The authoritative placement — which group, and how many to choose — is the rank's own requirement-set; this field is the reverse index, and the pipeline checks the two agree."
+        },
+        "category": {
+          "$ref": "common.schema.json#/$defs/VocabCode",
+          "description": "Placement within the rank: see data/vocab/adventure-categories.json. Consistent across ranks for adventures offered by more than one."
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri",
+          "default": null,
+          "description": "Authoritative adventure page. null for the shooting-sports adventures, which are listed on the rank pages but have no page of their own."
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": null,
+          "description": "Short original-prose description. Never verbatim requirement text."
+        }
+      },
+      "required": [
+        "name",
+        "program",
+        "ranks",
+        "category"
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

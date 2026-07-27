@@ -18,62 +18,43 @@
     "children": [
      {
       "number": "1",
-      "text": "Bobcat Adventure",
+      "text": "Bobcat Lion",
+      "ref": "adventure:bobcat-lion",
       "choose": null,
-      "children": [
-       {
-        "number": "1",
-        "text": "Get to know the members of your den.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "2",
-        "text": "Have your Lion adult partner or den leader read the Scout Law to you. Demonstrate your understanding of being friendly.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "3",
-        "text": "Share with your Lion adult partner, during a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "4",
-        "text": "At home, with your parent or legal guardian, do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
-        "choose": null,
-        "children": []
-       }
-      ]
+      "children": []
      },
      {
       "number": "2",
       "text": "Fun on the Run",
+      "ref": "adventure:fun-on-the-run",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Lion’s Roar",
+      "ref": "adventure:lions-roar",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Lion’s Pride",
+      "ref": "adventure:lions-pride",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "King of the Jungle",
+      "ref": "adventure:king-of-the-jungle",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Mountain Lion",
+      "ref": "adventure:mountain-lion",
       "choose": null,
       "children": []
      }
@@ -87,96 +68,112 @@
      {
       "number": "1",
       "text": "Build It Up, Knock It Down",
+      "ref": "adventure:build-it-up-knock-it-down",
       "choose": null,
       "children": []
      },
      {
       "number": "2",
       "text": "Champions for Nature Lion",
+      "ref": "adventure:champions-for-nature-lion",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Count On Me",
+      "ref": "adventure:count-on-me",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Everyday Tech",
+      "ref": "adventure:everyday-tech",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Gizmos and Gadgets",
+      "ref": "adventure:gizmos-and-gadgets",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Go Fish",
+      "ref": "adventure:go-fish",
       "choose": null,
       "children": []
      },
      {
       "number": "7",
       "text": "I’ll Do It Myself",
+      "ref": "adventure:ill-do-it-myself",
       "choose": null,
       "children": []
      },
      {
       "number": "8",
       "text": "Let’s Camp Lion",
+      "ref": "adventure:lets-camp-lion",
       "choose": null,
       "children": []
      },
      {
       "number": "9",
       "text": "On a Roll",
+      "ref": "adventure:on-a-roll",
       "choose": null,
       "children": []
      },
      {
       "number": "10",
       "text": "On Your Mark",
+      "ref": "adventure:on-your-mark",
       "choose": null,
       "children": []
      },
      {
       "number": "11",
       "text": "Pick My Path",
+      "ref": "adventure:pick-my-path-lion",
       "choose": null,
       "children": []
      },
      {
       "number": "12",
       "text": "Race Time Lion",
+      "ref": "adventure:race-time-lion",
       "choose": null,
       "children": []
      },
      {
       "number": "13",
       "text": "Ready, Set, Grow",
+      "ref": "adventure:ready-set-grow",
       "choose": null,
       "children": []
      },
      {
       "number": "14",
       "text": "Time to Swim",
+      "ref": "adventure:time-to-swim",
       "choose": null,
       "children": []
      },
      {
       "number": "15",
       "text": "Archery Lion",
+      "ref": "adventure:archery-lion",
       "choose": null,
       "children": []
      },
      {
       "number": "16",
       "text": "Slingshot",
+      "ref": "adventure:slingshot",
       "choose": null,
       "children": []
      }
@@ -203,74 +200,43 @@
     "children": [
      {
       "number": "1",
-      "text": "Bobcat Adventure",
+      "text": "Bobcat Tiger",
+      "ref": "adventure:bobcat-tiger",
       "choose": null,
-      "children": [
-       {
-        "number": "1",
-        "text": "Get to know the members of your den.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "2",
-        "text": "Recite the Scout Oath with your den, including your Tiger adult partner.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "3",
-        "text": "Have your Tiger adult partner or den leader read the Scout Law to you.  Demonstrate your understanding of being trustworthy, helpful, or friendly.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "4",
-        "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake.  Show how each are used.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "5",
-        "text": "Share with your Tiger adult partner, at a den meeting or at home, a time when you have demonstrated the Cub Scout motto “Do Your Best.”",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "6",
-        "text": "At home, with your parent or legal guardian do the activities in the booklet “ How to Protect Your Children from Child Abuse: A Parent’s Guide .”",
-        "choose": null,
-        "children": []
-       }
-      ]
+      "children": []
      },
      {
       "number": "2",
       "text": "Tiger Bites",
+      "ref": "adventure:tiger-bites",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Tiger’s Roar",
+      "ref": "adventure:tigers-roar",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Tiger Circles",
+      "ref": "adventure:tiger-circles",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Team Tiger",
+      "ref": "adventure:team-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Tigers in the Wild",
+      "ref": "adventure:tigers-in-the-wild",
       "choose": null,
       "children": []
      }
@@ -284,120 +250,140 @@
      {
       "number": "1",
       "text": "Champions for Nature Tiger",
+      "ref": "adventure:champions-for-nature-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "2",
       "text": "Curiosity, Intrigue, and Magical Mysteries",
+      "ref": "adventure:curiosity-intrigue-and-magical-mysteries",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Designed by Tiger",
+      "ref": "adventure:designed-by-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Fish On",
+      "ref": "adventure:fish-on",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Floats and Boats",
+      "ref": "adventure:floats-and-boats",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Good Knights",
+      "ref": "adventure:good-knights",
       "choose": null,
       "children": []
      },
      {
       "number": "7",
       "text": "Let’s Camp Tiger",
+      "ref": "adventure:lets-camp-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "8",
       "text": "Race Time Tiger",
+      "ref": "adventure:race-time-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "9",
       "text": "Rolling Tigers",
+      "ref": "adventure:rolling-tigers",
       "choose": null,
       "children": []
      },
      {
       "number": "10",
       "text": "Safe and Smart",
+      "ref": "adventure:safe-and-smart",
       "choose": null,
       "children": []
      },
      {
       "number": "11",
       "text": "Sky is the Limit",
+      "ref": "adventure:sky-is-the-limit",
       "choose": null,
       "children": []
      },
      {
       "number": "12",
       "text": "Stories in Shapes",
+      "ref": "adventure:stories-in-shapes",
       "choose": null,
       "children": []
      },
      {
       "number": "13",
       "text": "Summertime Fun Tiger",
+      "ref": "adventure:summertime-fun-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "14",
       "text": "Tech All Around",
+      "ref": "adventure:tech-all-around",
       "choose": null,
       "children": []
      },
      {
       "number": "15",
       "text": "Tiger Tag",
+      "ref": "adventure:tiger-tag",
       "choose": null,
       "children": []
      },
      {
       "number": "16",
       "text": "Tiger-iffic!",
+      "ref": "adventure:tiger-iffic",
       "choose": null,
       "children": []
      },
      {
       "number": "17",
       "text": "Tigers in the Water",
+      "ref": "adventure:tigers-in-the-water",
       "choose": null,
       "children": []
      },
      {
       "number": "18",
       "text": "Archery Tiger",
+      "ref": "adventure:archery-tiger",
       "choose": null,
       "children": []
      },
      {
       "number": "19",
       "text": "Slingshot",
+      "ref": "adventure:slingshot",
       "choose": null,
       "children": []
      },
      {
       "number": "20",
       "text": "BB Guns",
+      "ref": "adventure:bb-guns",
       "choose": null,
       "children": []
      }
@@ -424,80 +410,43 @@
     "children": [
      {
       "number": "1",
-      "text": "Bobcat Adventure",
+      "text": "Bobcat Wolf",
+      "ref": "adventure:bobcat-wolf",
       "choose": null,
-      "children": [
-       {
-        "number": "1",
-        "text": "Get to know members of your den.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "2",
-        "text": "Recite the Scout Oath and the Scout Law with your den and den leader.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "3",
-        "text": "Learn about the Scout Law.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "4",
-        "text": "With your den create a den Code of Conduct.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "5",
-        "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake. Show how each is used.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "6",
-        "text": "Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.”",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "7",
-        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
-        "choose": null,
-        "children": []
-       }
-      ]
+      "children": []
      },
      {
       "number": "2",
       "text": "Running With the Pack",
+      "ref": "adventure:running-with-the-pack",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Safety in Numbers",
+      "ref": "adventure:safety-in-numbers",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Footsteps",
+      "ref": "adventure:footsteps",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Council Fire",
+      "ref": "adventure:council-fire",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Paws on the Path",
+      "ref": "adventure:paws-on-the-path",
       "choose": null,
       "children": []
      }
@@ -511,120 +460,140 @@
      {
       "number": "1",
       "text": "A Wolf Goes Fishing",
+      "ref": "adventure:a-wolf-goes-fishing",
       "choose": null,
       "children": []
      },
      {
       "number": "2",
       "text": "Adventures in Coins",
+      "ref": "adventure:adventures-in-coins",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Air of the Wolf",
+      "ref": "adventure:air-of-the-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Champions for Nature Wolf",
+      "ref": "adventure:champions-for-nature-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Code of the Wolf",
+      "ref": "adventure:code-of-the-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Computing Wolves",
+      "ref": "adventure:computing-wolves",
       "choose": null,
       "children": []
      },
      {
       "number": "7",
       "text": "Cubs Who Care",
+      "ref": "adventure:cubs-who-care",
       "choose": null,
       "children": []
      },
      {
       "number": "8",
       "text": "Digging in the Past",
+      "ref": "adventure:digging-in-the-past",
       "choose": null,
       "children": []
      },
      {
       "number": "9",
       "text": "Finding Your Way",
+      "ref": "adventure:finding-your-way",
       "choose": null,
       "children": []
      },
      {
       "number": "10",
       "text": "Germs Alive!",
+      "ref": "adventure:germs-alive",
       "choose": null,
       "children": []
      },
      {
       "number": "11",
       "text": "Let’s Camp Wolf",
+      "ref": "adventure:lets-camp-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "12",
       "text": "Paws for Water",
+      "ref": "adventure:paws-for-water",
       "choose": null,
       "children": []
      },
      {
       "number": "13",
       "text": "Paws of Skill",
+      "ref": "adventure:paws-of-skill",
       "choose": null,
       "children": []
      },
      {
       "number": "14",
       "text": "Pedal With the Pack",
+      "ref": "adventure:pedal-with-the-pack",
       "choose": null,
       "children": []
      },
      {
       "number": "15",
       "text": "Race Time Wolf",
+      "ref": "adventure:race-time-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "16",
       "text": "Spirit of the Water",
+      "ref": "adventure:spirit-of-the-water",
       "choose": null,
       "children": []
      },
      {
       "number": "17",
       "text": "Summertime Fun Wolf",
+      "ref": "adventure:summertime-fun-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "18",
       "text": "Archery Wolf",
+      "ref": "adventure:archery-wolf",
       "choose": null,
       "children": []
      },
      {
       "number": "19",
       "text": "Slingshot",
+      "ref": "adventure:slingshot",
       "choose": null,
       "children": []
      },
      {
       "number": "20",
       "text": "BB Guns",
+      "ref": "adventure:bb-guns",
       "choose": null,
       "children": []
      }
@@ -651,86 +620,43 @@
     "children": [
      {
       "number": "1",
-      "text": "Bobcat Adventure",
+      "text": "Bobcat Bear",
+      "ref": "adventure:bobcat-bear",
       "choose": null,
-      "children": [
-       {
-        "number": "1",
-        "text": "Get to know members of your den.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "2",
-        "text": "Recite the Scout Oath and Law with your den and den leader.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "3",
-        "text": "Learn about the Scout Oath. Identify the three points of the Scout Oath.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "4",
-        "text": "With your den create a den Code of Conduct.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "5",
-        "text": "Learn about the denner position and responsibilities.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "6",
-        "text": "Demonstrate the Cub Scout sign, Cub Scout salute, and Cub Scout handshake.  Show how each is used.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "7",
-        "text": "Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.” Explain why it is important to do your best.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "8",
-        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
-        "choose": null,
-        "children": []
-       }
-      ]
+      "children": []
      },
      {
       "number": "2",
       "text": "Bear Strong",
+      "ref": "adventure:bear-strong",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Standing Tall",
+      "ref": "adventure:standing-tall",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Bear Habitat",
+      "ref": "adventure:bear-habitat",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Paws for Action",
+      "ref": "adventure:paws-for-action",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Fellowship",
+      "ref": "adventure:fellowship",
       "choose": null,
       "children": []
      }
@@ -744,120 +670,140 @@
      {
       "number": "1",
       "text": "A Bear Goes Fishing",
+      "ref": "adventure:a-bear-goes-fishing",
       "choose": null,
       "children": []
      },
      {
       "number": "2",
       "text": "Balancing Bears",
+      "ref": "adventure:balancing-bears",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Baloo the Builder",
+      "ref": "adventure:baloo-the-builder",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Bears Afloat",
+      "ref": "adventure:bears-afloat",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Bears on Bikes",
+      "ref": "adventure:bears-on-bikes",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Champions for Nature Bear",
+      "ref": "adventure:champions-for-nature-bear",
       "choose": null,
       "children": []
      },
      {
       "number": "7",
       "text": "Chef Tech",
+      "ref": "adventure:chef-tech",
       "choose": null,
       "children": []
      },
      {
       "number": "8",
       "text": "Critter Care",
+      "ref": "adventure:critter-care",
       "choose": null,
       "children": []
      },
      {
       "number": "9",
       "text": "Forensics",
+      "ref": "adventure:forensics",
       "choose": null,
       "children": []
      },
      {
       "number": "10",
       "text": "Let’s Camp Bear",
+      "ref": "adventure:lets-camp-bear",
       "choose": null,
       "children": []
      },
      {
       "number": "11",
       "text": "Marble Madness",
+      "ref": "adventure:marble-madness",
       "choose": null,
       "children": []
      },
      {
       "number": "12",
       "text": "Race Time Bear",
+      "ref": "adventure:race-time-bear",
       "choose": null,
       "children": []
      },
      {
       "number": "13",
       "text": "Roaring Laughter",
+      "ref": "adventure:roaring-laughter",
       "choose": null,
       "children": []
      },
      {
       "number": "14",
       "text": "Salmon Run",
+      "ref": "adventure:salmon-run",
       "choose": null,
       "children": []
      },
      {
       "number": "15",
       "text": "Summertime Fun Bear",
+      "ref": "adventure:summertime-fun-bear",
       "choose": null,
       "children": []
      },
      {
       "number": "16",
       "text": "Super Science",
+      "ref": "adventure:super-science",
       "choose": null,
       "children": []
      },
      {
       "number": "17",
       "text": "Whittling",
+      "ref": "adventure:whittling",
       "choose": null,
       "children": []
      },
      {
       "number": "18",
       "text": "Archery Bear",
+      "ref": "adventure:archery-bear",
       "choose": null,
       "children": []
      },
      {
       "number": "19",
       "text": "Slingshot",
+      "ref": "adventure:slingshot",
       "choose": null,
       "children": []
      },
      {
       "number": "20",
       "text": "BB Guns",
+      "ref": "adventure:bb-guns",
       "choose": null,
       "children": []
      }
@@ -884,80 +830,43 @@
     "children": [
      {
       "number": "1",
-      "text": "Bobcat Adventure",
+      "text": "Bobcat Webelos",
+      "ref": "adventure:bobcat-webelos",
       "choose": null,
-      "children": [
-       {
-        "number": "1",
-        "text": "Get to know members of your den.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "2",
-        "text": "Recite the Scout Oath and the Scout Law with your den and den leader.  Describe the three points of the Scout Oath.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "3",
-        "text": "Learn about the Scout Law.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "4",
-        "text": "With your den create a den Code of Conduct.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "5",
-        "text": "Learn about the denner position and responsibilities.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "6",
-        "text": "Demonstrate the Cub Scout sign, Cub Scout salute and Cub Scout handshake.  Show how each is used.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "7",
-        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
-        "choose": null,
-        "children": []
-       }
-      ]
+      "children": []
      },
      {
       "number": "2",
       "text": "Stronger, Faster, Higher",
+      "ref": "adventure:stronger-faster-higher",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "My Safety",
+      "ref": "adventure:my-safety",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "My Family",
+      "ref": "adventure:my-family",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "My Community",
+      "ref": "adventure:my-community",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Webelos Walkabout",
+      "ref": "adventure:webelos-walkabout",
       "choose": null,
       "children": []
      }
@@ -971,120 +880,140 @@
      {
       "number": "1",
       "text": "Aquanaut",
+      "ref": "adventure:aquanaut",
       "choose": null,
       "children": []
      },
      {
       "number": "2",
       "text": "Art Explosion",
+      "ref": "adventure:art-explosion",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Aware and Care",
+      "ref": "adventure:aware-and-care",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Build It",
+      "ref": "adventure:build-it",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Catch the Big One",
+      "ref": "adventure:catch-the-big-one",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "Champions for Nature Webelos",
+      "ref": "adventure:champions-for-nature-webelos",
       "choose": null,
       "children": []
      },
      {
       "number": "7",
       "text": "Chef’s Knife",
+      "ref": "adventure:chefs-knife",
       "choose": null,
       "children": []
      },
      {
       "number": "8",
       "text": "Earth Rocks",
+      "ref": "adventure:earth-rocks",
       "choose": null,
       "children": []
      },
      {
       "number": "9",
       "text": "Let’s Camp Webelos",
+      "ref": "adventure:lets-camp-webelos",
       "choose": null,
       "children": []
      },
      {
       "number": "10",
       "text": "Math on the Trail",
+      "ref": "adventure:math-on-the-trail",
       "choose": null,
       "children": []
      },
      {
       "number": "11",
       "text": "Modular Design",
+      "ref": "adventure:modular-design",
       "choose": null,
       "children": []
      },
      {
       "number": "12",
       "text": "Paddle Onward",
+      "ref": "adventure:paddle-onward",
       "choose": null,
       "children": []
      },
      {
       "number": "13",
       "text": "Pedal Away",
+      "ref": "adventure:pedal-away",
       "choose": null,
       "children": []
      },
      {
       "number": "14",
       "text": "Race Time Webelos",
+      "ref": "adventure:race-time-webelos",
       "choose": null,
       "children": []
      },
      {
       "number": "15",
       "text": "Summertime Fun Webelos",
+      "ref": "adventure:summertime-fun-webelos",
       "choose": null,
       "children": []
      },
      {
       "number": "16",
       "text": "Tech on the Trail",
+      "ref": "adventure:tech-on-the-trail",
       "choose": null,
       "children": []
      },
      {
       "number": "17",
       "text": "Yo-yo",
+      "ref": "adventure:yo-yo",
       "choose": null,
       "children": []
      },
      {
       "number": "18",
       "text": "Archery Webelos",
+      "ref": "adventure:archery-webelos",
       "choose": null,
       "children": []
      },
      {
       "number": "19",
       "text": "Slingshot",
+      "ref": "adventure:slingshot",
       "choose": null,
       "children": []
      },
      {
       "number": "20",
       "text": "BB Guns",
+      "ref": "adventure:bb-guns",
       "choose": null,
       "children": []
      }
@@ -1111,92 +1040,43 @@
     "children": [
      {
       "number": "1",
-      "text": "Bobcat Adventure",
+      "text": "Bobcat Arrow of Light",
+      "ref": "adventure:bobcat-aol",
       "choose": null,
-      "children": [
-       {
-        "number": "1",
-        "text": "Demonstrate the patrol method by choosing a patrol name and electing a patrol leader. Discuss the benefits of using the patrol method.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "2",
-        "text": "Get to know members of your patrol.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "3",
-        "text": "Recite the Scout Oath and Scout Law with your patrol.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "4",
-        "text": "With your patrol create a Code of Conduct.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "5",
-        "text": "Demonstrate the Scout sign, Scout salute and Scout handshake used by Scouting America.  Show how each are used.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "6",
-        "text": "Learn the Scouting America slogan and motto.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "7",
-        "text": "With your patrol, or with your parent/legal guardian, visit a Scouting America troop.",
-        "choose": null,
-        "children": []
-       },
-       {
-        "number": "8",
-        "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”",
-        "choose": null,
-        "children": []
-       }
-      ]
+      "children": []
      },
      {
       "number": "2",
       "text": "Personal Fitness",
+      "ref": "adventure:personal-fitness",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "First Aid",
+      "ref": "adventure:first-aid",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
-      "text": "Personal Safety",
+      "text": "Duty to God",
+      "ref": "adventure:duty-to-god",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
-      "text": "Family & Reverence",
+      "text": "Citizenship",
+      "ref": "adventure:citizenship",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
-      "text": "Citizenship",
-      "choose": null,
-      "children": []
-     },
-     {
-      "number": "7",
-      "text": "Outdoors",
+      "text": "Outdoor Adventurer",
+      "ref": "adventure:outdoor-adventurer",
       "choose": null,
       "children": []
      }
@@ -1210,96 +1090,112 @@
      {
       "number": "1",
       "text": "Champions for Nature AOL",
+      "ref": "adventure:champions-for-nature-aol",
       "choose": null,
       "children": []
      },
      {
       "number": "2",
       "text": "Cycling",
+      "ref": "adventure:cycling",
       "choose": null,
       "children": []
      },
      {
       "number": "3",
       "text": "Engineer",
+      "ref": "adventure:engineer",
       "choose": null,
       "children": []
      },
      {
       "number": "4",
       "text": "Estimations",
+      "ref": "adventure:estimations",
       "choose": null,
       "children": []
      },
      {
       "number": "5",
       "text": "Fishing",
+      "ref": "adventure:fishing",
       "choose": null,
       "children": []
      },
      {
       "number": "6",
       "text": "High Tech Outdoors",
+      "ref": "adventure:high-tech-outdoors",
       "choose": null,
       "children": []
      },
      {
       "number": "7",
       "text": "Into the Wild",
+      "ref": "adventure:into-the-wild",
       "choose": null,
       "children": []
      },
      {
       "number": "8",
       "text": "Into the Woods",
+      "ref": "adventure:into-the-woods",
       "choose": null,
       "children": []
      },
      {
       "number": "9",
       "text": "Knife Safety",
+      "ref": "adventure:knife-safety",
       "choose": null,
       "children": []
      },
      {
       "number": "10",
       "text": "Paddle Craft",
+      "ref": "adventure:paddle-craft",
       "choose": null,
       "children": []
      },
      {
       "number": "11",
       "text": "Race Time AOL",
+      "ref": "adventure:race-time-aol",
       "choose": null,
       "children": []
      },
      {
       "number": "12",
       "text": "Summertime Fun AOL",
+      "ref": "adventure:summertime-fun-aol",
       "choose": null,
       "children": []
      },
      {
       "number": "13",
       "text": "Swimming",
+      "ref": "adventure:swimming",
       "choose": null,
       "children": []
      },
      {
       "number": "14",
       "text": "Archery Arrow of Light",
+      "ref": "adventure:archery-arrow-of-light",
       "choose": null,
       "children": []
      },
      {
       "number": "15",
       "text": "Slingshot",
+      "ref": "adventure:slingshot",
       "choose": null,
       "children": []
      },
      {
       "number": "16",
       "text": "BB Guns",
+      "ref": "adventure:bb-guns",
       "choose": null,
       "children": []
      }

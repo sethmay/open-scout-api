@@ -20,61 +20,33 @@
       "children": [
         {
           "number": "1",
-          "text": "Bobcat Adventure",
-          "children": [
-            {
-              "number": "1",
-              "text": "Get to know members of your den."
-            },
-            {
-              "number": "2",
-              "text": "Recite the Scout Oath and Law with your den and den leader."
-            },
-            {
-              "number": "3",
-              "text": "Learn about the Scout Oath. Identify the three points of the Scout Oath."
-            },
-            {
-              "number": "4",
-              "text": "With your den create a den Code of Conduct."
-            },
-            {
-              "number": "5",
-              "text": "Learn about the denner position and responsibilities."
-            },
-            {
-              "number": "6",
-              "text": "Demonstrate the Cub Scout sign, Cub Scout salute, and Cub Scout handshake.  Show how each is used."
-            },
-            {
-              "number": "7",
-              "text": "Share with your den, or family, a time when you demonstrated the Cub Scout motto “Do Your Best.” Explain why it is important to do your best."
-            },
-            {
-              "number": "8",
-              "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”"
-            }
-          ]
+          "text": "Bobcat Bear",
+          "ref": "adventure:bobcat-bear"
         },
         {
           "number": "2",
-          "text": "Bear Strong"
+          "text": "Bear Strong",
+          "ref": "adventure:bear-strong"
         },
         {
           "number": "3",
-          "text": "Standing Tall"
+          "text": "Standing Tall",
+          "ref": "adventure:standing-tall"
         },
         {
           "number": "4",
-          "text": "Bear Habitat"
+          "text": "Bear Habitat",
+          "ref": "adventure:bear-habitat"
         },
         {
           "number": "5",
-          "text": "Paws for Action"
+          "text": "Paws for Action",
+          "ref": "adventure:paws-for-action"
         },
         {
           "number": "6",
-          "text": "Fellowship"
+          "text": "Fellowship",
+          "ref": "adventure:fellowship"
         }
       ]
     },
@@ -85,83 +57,103 @@
       "children": [
         {
           "number": "1",
-          "text": "A Bear Goes Fishing"
+          "text": "A Bear Goes Fishing",
+          "ref": "adventure:a-bear-goes-fishing"
         },
         {
           "number": "2",
-          "text": "Balancing Bears"
+          "text": "Balancing Bears",
+          "ref": "adventure:balancing-bears"
         },
         {
           "number": "3",
-          "text": "Baloo the Builder"
+          "text": "Baloo the Builder",
+          "ref": "adventure:baloo-the-builder"
         },
         {
           "number": "4",
-          "text": "Bears Afloat"
+          "text": "Bears Afloat",
+          "ref": "adventure:bears-afloat"
         },
         {
           "number": "5",
-          "text": "Bears on Bikes"
+          "text": "Bears on Bikes",
+          "ref": "adventure:bears-on-bikes"
         },
         {
           "number": "6",
-          "text": "Champions for Nature Bear"
+          "text": "Champions for Nature Bear",
+          "ref": "adventure:champions-for-nature-bear"
         },
         {
           "number": "7",
-          "text": "Chef Tech"
+          "text": "Chef Tech",
+          "ref": "adventure:chef-tech"
         },
         {
           "number": "8",
-          "text": "Critter Care"
+          "text": "Critter Care",
+          "ref": "adventure:critter-care"
         },
         {
           "number": "9",
-          "text": "Forensics"
+          "text": "Forensics",
+          "ref": "adventure:forensics"
         },
         {
           "number": "10",
-          "text": "Let’s Camp Bear"
+          "text": "Let’s Camp Bear",
+          "ref": "adventure:lets-camp-bear"
         },
         {
           "number": "11",
-          "text": "Marble Madness"
+          "text": "Marble Madness",
+          "ref": "adventure:marble-madness"
         },
         {
           "number": "12",
-          "text": "Race Time Bear"
+          "text": "Race Time Bear",
+          "ref": "adventure:race-time-bear"
         },
         {
           "number": "13",
-          "text": "Roaring Laughter"
+          "text": "Roaring Laughter",
+          "ref": "adventure:roaring-laughter"
         },
         {
           "number": "14",
-          "text": "Salmon Run"
+          "text": "Salmon Run",
+          "ref": "adventure:salmon-run"
         },
         {
           "number": "15",
-          "text": "Summertime Fun Bear"
+          "text": "Summertime Fun Bear",
+          "ref": "adventure:summertime-fun-bear"
         },
         {
           "number": "16",
-          "text": "Super Science"
+          "text": "Super Science",
+          "ref": "adventure:super-science"
         },
         {
           "number": "17",
-          "text": "Whittling"
+          "text": "Whittling",
+          "ref": "adventure:whittling"
         },
         {
           "number": "18",
-          "text": "Archery Bear"
+          "text": "Archery Bear",
+          "ref": "adventure:archery-bear"
         },
         {
           "number": "19",
-          "text": "Slingshot"
+          "text": "Slingshot",
+          "ref": "adventure:slingshot"
         },
         {
           "number": "20",
-          "text": "BB Guns"
+          "text": "BB Guns",
+          "ref": "adventure:bb-guns"
         }
       ]
     }

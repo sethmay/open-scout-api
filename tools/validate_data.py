@@ -34,7 +34,7 @@ _TRANSITORY = re.compile(
 DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json",
             "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json",
             "ranks": "rank.schema.json", "awards": "award.schema.json",
-            "oa-lodges": "oa-lodge.schema.json"}
+            "oa-lodges": "oa-lodge.schema.json", "adventures": "adventure.schema.json"}
 
 
 def load_schemas():
@@ -137,6 +137,8 @@ def main() -> int:
                 check_ref(v.get("territory"), f"{p.name} territory")
                 check_ref(v.get("parent"), f"{p.name} parent")
                 check_ref(v.get("council"), f"{p.name} council")
+                for r in (v.get("ranks") or []):     # adventure.ranks (list-valued)
+                    check_ref(r, f"{p.name} ranks")
 
     # pass 3: event files (schema + participant refs + unique ids)
     for ds in DATASETS:
@@ -215,6 +217,8 @@ def main() -> int:
         def _walk_choose(node, where):
             if node.get("choose") is not None and not node.get("children"):
                 errs.append(f"{where}: requirement {node.get('number')!r} has choose but no children")
+            # a node standing for another entity must resolve, or the advancement graph is broken
+            check_ref(node.get("ref"), f"{where} requirement {node.get('number')!r} ref")
             for c in node.get("children", []):
                 _walk_choose(c, where)
 
@@ -324,6 +328,17 @@ def main() -> int:
                             errs.append(f"merit-badges/{p.name}: tag {code!r} not in vocab "
                                         f"(add it to data/vocab/merit-badge-tags.json)")
 
+        # adventure categories, same discipline
+        known_cats = codes_for.get("adventure.category")
+        for p in sorted((DATA / "adventures").glob("*.json")):
+            if p.name == "_events.json":
+                continue
+            obj = json.loads(p.read_text("utf-8"))
+            for v in obj.get("versions", []):
+                if known_cats is not None and v.get("category") not in known_cats:
+                    errs.append(f"adventures/{p.name}: category {v.get('category')!r} not in vocab "
+                                f"(add it to data/vocab/adventure-categories.json)")
+
     # pass 5b: merit-badge `description` must be original evergreen prose, never pamphlet or
     # requirement text. The requirement text IS Scouting America's copyright and is published
     # only under the `text_rights` carve-out; a description that quoted it would silently drag
@@ -370,21 +385,77 @@ def main() -> int:
                             f"from its requirement text ({' '.join(lifted)!r}) — must be original "
                             f"prose, not Scouting America's wording")
 
+    # pass 5c: a Cub rank's requirement-set and its adventures must tell the same story.
+    # The rank tree is authoritative (which adventures, in which group); `adventure.ranks` and
+    # `adventure.category` are the reverse index consumers actually read. Nothing stops the two
+    # drifting apart -- an adventure moved between ranks upstream, or a category edited by hand --
+    # so both directions are checked: every ref'd adventure claims that rank back, every
+    # adventure's claimed ranks really list it, and its category matches the group it sits in.
+    # A rank states two groups; the page's further split of electives into ordinary and
+    # "special" (shooting sports, approved events only) is a property of the adventure, so the
+    # elective group legitimately holds both categories. Mirrors tools/seed_cub_adventures.py.
+    GROUP_CATEGORIES = {"Required Adventures": {"required"},
+                        "Elective Adventures": {"elective", "special_elective"}}
+    from_ranks: dict[str, set[str]] = {}        # adventure slug -> rank slugs listing it
+    cat_from_ranks: dict[str, set[str]] = {}    # adventure slug -> categories it is grouped under
+    if (DATA / "requirement-sets").exists():
+        for p in sorted((DATA / "requirement-sets").glob("*.json")):
+            doc = json.loads(p.read_text("utf-8"))
+            subj = doc.get("subject") or ""
+            if not subj.startswith("rank:"):
+                continue
+            for g in doc.get("requirements", []):
+                allowed = GROUP_CATEGORIES.get(g.get("text"))
+                for child in (g.get("children") or []):
+                    ref = child.get("ref") or ""
+                    if not ref.startswith("adventure:"):
+                        continue
+                    slug = ref.split(":", 1)[1]
+                    from_ranks.setdefault(slug, set()).add(subj.split(":", 1)[1])
+                    if allowed is None:
+                        errs.append(f"requirement-sets/{p.name}: adventure {slug!r} sits under group "
+                                    f"{g.get('text')!r}, which maps to no adventure category")
+                    else:
+                        cat_from_ranks.setdefault(slug, set()).update(allowed)
+    for p in sorted((DATA / "adventures").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        obj = json.loads(p.read_text("utf-8"))
+        slug = obj.get("id")
+        listed = from_ranks.get(slug, set())
+        if not listed:
+            errs.append(f"adventures/{p.name}: no rank requirement-set refs {slug!r}; an adventure "
+                        f"no rank offers is unreachable (retire it, or add the ref)")
+        for v in obj.get("versions", []):
+            if v.get("valid_to") is not None:
+                continue                      # historical window: the current tree can't speak for it
+            claimed = {r.split(":", 1)[1] for r in (v.get("ranks") or [])}
+            if listed and claimed != listed:
+                errs.append(f"adventures/{p.name}: ranks {sorted(claimed)} but the rank "
+                            f"requirement-sets list it under {sorted(listed)}")
+            cats = cat_from_ranks.get(slug, set())
+            if cats and v.get("category") not in cats:
+                errs.append(f"adventures/{p.name}: category {v.get('category')!r} but the group it "
+                            f"sits in under the rank requirement-sets allows {sorted(cats)}")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
         return len([p for p in (DATA / ds).glob("*.json") if p.name != "_events.json"])
-    ncouncils, nterr, nmb, ncamps, nranks, nawards, nlodges = (_count("councils"), _count("territories"),
+    ncouncils, nterr, nmb, ncamps, nranks, nawards, nlodges, nadv = (_count("councils"), _count("territories"),
                                                       _count("merit-badges"), _count("camps"),
-                                                      _count("ranks"), _count("awards"), _count("oa-lodges"))
+                                                      _count("ranks"), _count("awards"), _count("oa-lodges"),
+                                                      _count("adventures"))
     if errs:
         print(f"{len(errs)} error(s):")
         for e in errs[:100]:
             print("  " + e)
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
-          f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges "
-          f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab), {len(entities)} entities")
+          f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges + "
+          f"{nadv} adventures "
+          f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab "
+          f"+ rank/adventure agreement), {len(entities)} entities")
     return 0
 
 

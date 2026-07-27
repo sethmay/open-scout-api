@@ -20,65 +20,33 @@
       "children": [
         {
           "number": "1",
-          "text": "Bobcat Adventure",
-          "children": [
-            {
-              "number": "1",
-              "text": "Demonstrate the patrol method by choosing a patrol name and electing a patrol leader. Discuss the benefits of using the patrol method."
-            },
-            {
-              "number": "2",
-              "text": "Get to know members of your patrol."
-            },
-            {
-              "number": "3",
-              "text": "Recite the Scout Oath and Scout Law with your patrol."
-            },
-            {
-              "number": "4",
-              "text": "With your patrol create a Code of Conduct."
-            },
-            {
-              "number": "5",
-              "text": "Demonstrate the Scout sign, Scout salute and Scout handshake used by Scouting America.  Show how each are used."
-            },
-            {
-              "number": "6",
-              "text": "Learn the Scouting America slogan and motto."
-            },
-            {
-              "number": "7",
-              "text": "With your patrol, or with your parent/legal guardian, visit a Scouting America troop."
-            },
-            {
-              "number": "8",
-              "text": "At home, with your parent or legal guardian do the activities in the booklet “How to Protect Your Children from Child Abuse: A Parent’s Guide.”"
-            }
-          ]
+          "text": "Bobcat Arrow of Light",
+          "ref": "adventure:bobcat-aol"
         },
         {
           "number": "2",
-          "text": "Personal Fitness"
+          "text": "Personal Fitness",
+          "ref": "adventure:personal-fitness"
         },
         {
           "number": "3",
-          "text": "First Aid"
+          "text": "First Aid",
+          "ref": "adventure:first-aid"
         },
         {
           "number": "4",
-          "text": "Personal Safety"
+          "text": "Duty to God",
+          "ref": "adventure:duty-to-god"
         },
         {
           "number": "5",
-          "text": "Family & Reverence"
+          "text": "Citizenship",
+          "ref": "adventure:citizenship"
         },
         {
           "number": "6",
-          "text": "Citizenship"
-        },
-        {
-          "number": "7",
-          "text": "Outdoors"
+          "text": "Outdoor Adventurer",
+          "ref": "adventure:outdoor-adventurer"
         }
       ]
     },
@@ -89,67 +57,83 @@
       "children": [
         {
           "number": "1",
-          "text": "Champions for Nature AOL"
+          "text": "Champions for Nature AOL",
+          "ref": "adventure:champions-for-nature-aol"
         },
         {
           "number": "2",
-          "text": "Cycling"
+          "text": "Cycling",
+          "ref": "adventure:cycling"
         },
         {
           "number": "3",
-          "text": "Engineer"
+          "text": "Engineer",
+          "ref": "adventure:engineer"
         },
         {
           "number": "4",
-          "text": "Estimations"
+          "text": "Estimations",
+          "ref": "adventure:estimations"
         },
         {
           "number": "5",
-          "text": "Fishing"
+          "text": "Fishing",
+          "ref": "adventure:fishing"
         },
         {
           "number": "6",
-          "text": "High Tech Outdoors"
+          "text": "High Tech Outdoors",
+          "ref": "adventure:high-tech-outdoors"
         },
         {
           "number": "7",
-          "text": "Into the Wild"
+          "text": "Into the Wild",
+          "ref": "adventure:into-the-wild"
         },
         {
           "number": "8",
-          "text": "Into the Woods"
+          "text": "Into the Woods",
+          "ref": "adventure:into-the-woods"
         },
         {
           "number": "9",
-          "text": "Knife Safety"
+          "text": "Knife Safety",
+          "ref": "adventure:knife-safety"
         },
         {
           "number": "10",
-          "text": "Paddle Craft"
+          "text": "Paddle Craft",
+          "ref": "adventure:paddle-craft"
         },
         {
           "number": "11",
-          "text": "Race Time AOL"
+          "text": "Race Time AOL",
+          "ref": "adventure:race-time-aol"
         },
         {
           "number": "12",
-          "text": "Summertime Fun AOL"
+          "text": "Summertime Fun AOL",
+          "ref": "adventure:summertime-fun-aol"
         },
         {
           "number": "13",
-          "text": "Swimming"
+          "text": "Swimming",
+          "ref": "adventure:swimming"
         },
         {
           "number": "14",
-          "text": "Archery Arrow of Light"
+          "text": "Archery Arrow of Light",
+          "ref": "adventure:archery-arrow-of-light"
         },
         {
           "number": "15",
-          "text": "Slingshot"
+          "text": "Slingshot",
+          "ref": "adventure:slingshot"
         },
         {
           "number": "16",
-          "text": "BB Guns"
+          "text": "BB Guns",
+          "ref": "adventure:bb-guns"
         }
       ]
     }

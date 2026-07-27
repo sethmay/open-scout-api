@@ -1,0 +1,31 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/adventure.schema.json",
+  "id": "archery-arrow-of-light",
+  "kind": "adventure",
+  "versions": [
+    {
+      "valid_from": "2024",
+      "valid_to": null,
+      "name": "Archery Arrow of Light",
+      "program": "cub_scouts",
+      "ranks": [
+        "rank:arrow-of-light"
+      ],
+      "category": "special_elective",
+      "url": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/programs/cub-scouts/adventures/",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": "Listed on the official rank pages; requirements are not published online (completed only at approved events with qualified instructors)."
+      }
+    }
+  ],
+  "notes": null
+}

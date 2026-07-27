@@ -1,0 +1,31 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/adventure.schema.json",
+  "id": "running-with-the-pack",
+  "kind": "adventure",
+  "versions": [
+    {
+      "valid_from": "2024",
+      "valid_to": null,
+      "name": "Running With the Pack",
+      "program": "cub_scouts",
+      "ranks": [
+        "rank:wolf"
+      ],
+      "category": "required",
+      "url": "https://www.scouting.org/cub-scout-adventures/running-with-the-pack/",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scouting.org/cub-scout-adventures/running-with-the-pack/",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": "Name, rank placement and category from the official rank adventure pages."
+      }
+    }
+  ],
+  "notes": null
+}

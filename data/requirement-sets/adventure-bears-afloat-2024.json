@@ -1,0 +1,59 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-bears-afloat-2024",
+  "kind": "requirement-set",
+  "subject": "adventure:bears-afloat",
+  "effective_from": "2024",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Bears Afloat — Scouting America (Cub Scout Adventures)",
+    "url": "https://www.scouting.org/cub-scout-adventures/bears-afloat/",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Before attempting requirements 6 and 7 for this Adventure, you must pass Scouting America swimmer test."
+    },
+    {
+      "number": "2",
+      "text": "Pick a paddle craft you’ll use to complete all requirements: canoe, kayak, or stand-up paddleboard."
+    },
+    {
+      "number": "3",
+      "text": "With your den or an adult, discuss the role of qualified adult supervision at a paddle craft activity."
+    },
+    {
+      "number": "4",
+      "text": "Explain the safety rules to follow when safely using a paddle craft."
+    },
+    {
+      "number": "5",
+      "text": "Discover how to tell if a life jacket is the correct size and approved for your paddle craft activity. Demonstrate how to wear it."
+    },
+    {
+      "number": "6",
+      "text": "Explore how your paddle craft responds as you move your paddle through the water from different places."
+    },
+    {
+      "number": "7",
+      "text": "Have 30 minutes, or more, of canoe, kayak, or stand-up paddleboard paddle time."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://www.scouting.org/cub-scout-adventures/bears-afloat/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Requirement text verbatim from the adventure's official page."
+  },
+  "notes": null
+}
