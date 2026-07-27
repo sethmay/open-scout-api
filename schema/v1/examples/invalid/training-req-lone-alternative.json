@@ -1,0 +1,19 @@
+{
+  "id": "troop-example",
+  "kind": "training-requirement",
+  "position_name": "Example Leader",
+  "registration_codes": ["XX"],
+  "unit_type": "troop",
+  "requires": [
+    { "ref": "training:y01-youth-protection-training" },
+    { "choose": 1, "label": "Classroom or online",
+      "children": [ { "ref": "training:s24-scoutmaster-specific-training" } ] }
+  ],
+  "provenance": {
+    "sources": [{ "citation": "Example", "url": "https://example.org/" }],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9
+  },
+  "notes": "INVALID: a choose group offering one alternative. That is not a choice - it is a required course wearing a group's clothing, and it would let a consumer render 'complete 1 of: X' for something with no decision in it. Alternatives need at least two children."
+}

@@ -6,24 +6,26 @@
   "type": "object",
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
-    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure", "merit-badge-ranking", "position"] }
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure", "merit-badge-ranking", "position", "training", "training-requirement"] }
   },
   "required": ["$schema", "kind", "id"],
   "allOf": [
-    { "if": { "properties": { "kind": { "enum": ["council", "territory", "camp", "oa-lodge", "position"] } }, "required": ["kind"] },
+    { "if": { "properties": { "kind": { "enum": ["council", "territory", "camp", "oa-lodge", "position", "training"] } }, "required": ["kind"] },
       "then": { "$ref": "#/$defs/VersionedEntity" } },
     { "if": { "properties": { "kind": { "enum": ["merit-badge", "rank", "award", "adventure"] } }, "required": ["kind"] },
       "then": { "$ref": "#/$defs/VersionedEntityWithRequirementSets" } },
     { "if": { "properties": { "kind": { "const": "requirement-set" } }, "required": ["kind"] },
       "then": { "$ref": "#/$defs/RequirementSetDocument" } },
     { "if": { "properties": { "kind": { "const": "merit-badge-ranking" } }, "required": ["kind"] },
-      "then": { "$ref": "#/$defs/BadgeRankingDocument" } }
+      "then": { "$ref": "#/$defs/BadgeRankingDocument" } },
+    { "if": { "properties": { "kind": { "const": "training-requirement" } }, "required": ["kind"] },
+      "then": { "$ref": "#/$defs/TrainingRequirementDocument" } }
   ],
   "$defs": {
     "Slug": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
     "EntityRef": {
       "type": "string",
-      "pattern": "^(council|territory|merit-badge|camp|rank|award|oa-lodge|requirement-set|adventure|position):[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+      "pattern": "^(council|territory|merit-badge|camp|rank|award|oa-lodge|requirement-set|adventure|position|training):[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
     },
     "HistoricalDate": { "type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
     "Version": {
@@ -128,6 +130,17 @@
       ]
     }
     ,
+    "TrainingRequirementDocument": {
+      "type": "object",
+      "description": "One row of the TRAINED LEADER REQUIREMENTS chart: what an adult in this position, in this unit type, must complete to be Position Trained. Not a versioned entity - the chart is a single edition and the row has no identity apart from it. `registration_codes` is the join key a consumer already holds from my.scouting; `position_name` is display only and is printed with the source's own typos.",
+      "properties": {
+        "position_name": { "type": "string", "minLength": 1 },
+        "registration_codes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "unit_type": { "enum": ["pack", "troop", "team", "crew", "ship", "other"] },
+        "requires": { "type": "array", "minItems": 1 }
+      },
+      "required": ["position_name", "registration_codes", "unit_type", "requires", "provenance"]
+    },
     "BadgeRankingDocument": {
       "type": "object",
       "description": "One year of merit badge popularity ranks. Like a requirement-set it is a dated document, not a versioned entity, so it carries neither `versions` nor `events`. `metric` is pinned because the numbers are RANKS, not counts, and a consumer that mistook one for the other would draw volume conclusions the source never supports.",

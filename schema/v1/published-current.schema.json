@@ -27,7 +27,7 @@
         "oa-lodge",
         "requirement-set",
         "adventure",
-        "position"
+        "position", "training", "training-requirement"
       ]
     },
     "count": {

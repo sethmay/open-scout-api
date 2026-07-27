@@ -50,6 +50,17 @@ noted here because their status shapes what we may redistribute:
   name, HQ city, territory assignment — which are not themselves subject to copyright
   (facts are uncopyrightable); the map is cited as the source. Production date of the
   map set used for the initial seed: mid-2026.
+- **Scouting America "Trained Leader Requirements" chart**
+  (`filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf`; the
+  chart carries no publication number, so it is cited by title and URL) — the source for
+  `data/training/` and
+  `data/training-requirements/`. The PDF itself is **NOT redistributed** here
+  (`.workbench/` is git-ignored); we extract only **facts** — course codes and names,
+  registration codes, which course each position requires, and the stated Youth
+  Protection renewal interval. No requirement text is reproduced, so these records carry
+  no `includes_official_text` flag. Course names are transcribed exactly as printed,
+  including the chart's own typos, because a corrected transcription is no longer a
+  transcription. Chart edition retrieved: 2026-07-27.
 - **camp-finder** (sibling project, `D:\repos\claude\personal\camp-finder`) — an
   unofficial community dataset. Used for council websites and to cross-check names/HQ.
   Records seeded from it carry `method: imported` and its provenance; the official map

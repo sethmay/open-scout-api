@@ -1,0 +1,44 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training-requirement.schema.json",
+  "id": "pack-assistant-cubmaster",
+  "kind": "training-requirement",
+  "position_name": "Assistant Cubmaster",
+  "registration_codes": [
+    "CA"
+  ],
+  "unit_type": "pack",
+  "requires": [
+    {
+      "ref": "training:y01-youth-protection-training"
+    },
+    {
+      "choose": 1,
+      "label": "Classroom or online",
+      "children": [
+        {
+          "ref": "training:c40-cubmaster-asst-pos-specific-tng"
+        },
+        {
+          "ref": "training:cubmaster-position-specific-training"
+        }
+      ]
+    }
+  ],
+  "source_document": {
+    "title": "Trained Leader Requirements - Unit and Other Positions",
+    "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+        "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": null
+  },
+  "notes": null
+}

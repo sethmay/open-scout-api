@@ -1,0 +1,35 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training-requirement.schema.json",
+  "id": "crew-venturing-crew-assoc-advisor",
+  "kind": "training-requirement",
+  "position_name": "Venturing Crew Assoc. Advisor",
+  "registration_codes": [
+    "NA"
+  ],
+  "unit_type": "crew",
+  "requires": [
+    {
+      "ref": "training:y02-venturing-youth-protection-training"
+    },
+    {
+      "ref": "training:p21-venturing-leader-specific-tng"
+    }
+  ],
+  "source_document": {
+    "title": "Trained Leader Requirements - Unit and Other Positions",
+    "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+        "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": null
+  },
+  "notes": null
+}

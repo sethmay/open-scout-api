@@ -39,6 +39,8 @@ ENTITY_TABLES = {
     "adventures": ("adventures", [("program", "TEXT", "program"), ("category", "TEXT", "category"),
                                   ("area", "TEXT", "area")]),
     "positions": ("positions", [("audience", "TEXT", "audience")]),
+    "training": ("training", [("code", "TEXT", "code"), ("delivery", "TEXT", "delivery"),
+                              ("renew_months", "INTEGER", "renew_months")]),
 }
 
 
@@ -194,6 +196,39 @@ def main() -> None:
     cur.executemany("INSERT INTO rank_advancement VALUES (?,?,?,?,?,?,?)", ra_rows)
     cur.execute("CREATE INDEX idx_rank_advancement_rank ON rank_advancement(rank_id)")
     counts["rank_advancement"] = len(ra_rows)
+
+    # Adult training: the chart row, its registration codes, and the courses it demands. Three
+    # tables because all three are the query: "what does a Scoutmaster need", "who is code CC in a
+    # troop", and the one a flat column cannot answer - "which positions require S11".
+    cur.execute("CREATE TABLE training_requirements (id TEXT PRIMARY KEY, position_name TEXT, "
+                "unit_type TEXT)")
+    cur.execute("CREATE TABLE training_requirement_codes (requirement_id TEXT, code TEXT)")
+    cur.execute("CREATE TABLE training_requirement_courses (requirement_id TEXT, training_id TEXT, "
+                "alternative INTEGER)")
+    tr_rows, tc_rows, tq_rows = [], [], []
+    treq_dir = DATA / "training-requirements"
+    if treq_dir.exists():
+        def course_refs(items, alt=0):
+            for it in items:
+                if "ref" in it:
+                    yield it["ref"], alt
+                # Children of a `choose` node are alternatives: a consumer counting required
+                # courses must not count all six commissioner options as six obligations.
+                yield from course_refs(it.get("children") or [], 1 if it.get("choose") else alt)
+        for p2 in sorted(treq_dir.glob("*.json")):
+            d = read_json(p2)
+            tr_rows.append([d["id"], d["position_name"], d["unit_type"]])
+            tc_rows += [[d["id"], c] for c in d["registration_codes"]]
+            tq_rows += [[d["id"], ref.split(":", 1)[1], alt]
+                        for ref, alt in course_refs(d["requires"])]
+    cur.executemany("INSERT INTO training_requirements VALUES (?,?,?)", tr_rows)
+    cur.executemany("INSERT INTO training_requirement_codes VALUES (?,?)", tc_rows)
+    cur.executemany("INSERT INTO training_requirement_courses VALUES (?,?,?)", tq_rows)
+    cur.execute("CREATE INDEX idx_trc_code ON training_requirement_codes(code)")
+    cur.execute("CREATE INDEX idx_trq_course ON training_requirement_courses(training_id)")
+    cur.execute("CREATE INDEX idx_trq_req ON training_requirement_courses(requirement_id)")
+    counts["training_requirements"] = len(tr_rows)
+    counts["training_requirement_courses"] = len(tq_rows)
 
     # lifecycle events (one row per event, tagged with its dataset)
     cur.execute("CREATE TABLE events (dataset TEXT, id TEXT, type TEXT, date TEXT, data TEXT)")

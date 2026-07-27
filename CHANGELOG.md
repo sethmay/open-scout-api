@@ -3,6 +3,37 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.52.0 (minor) — 2026-07-27
+
+- `PENDING` **Adult training: 28 courses and 67 position-trained requirements.** Parsed from
+  Scouting America's own `TRAINED LEADER REQUIREMENTS` chart, which is a PDF and the only place the
+  mapping exists. Two new datasets — `v1/training/{id}.json` (course code, delivery, renewal) and
+  `v1/training-requirements/{id}.json` — plus three SQLite tables, 20 in all.
+- **The key is (position, unit type), not position.** Registration code `CC` requires `C60` in a
+  pack, `WS10` in a troop, `WS11` in a team, `WS12` in a crew and `P44` in a ship; a Chartered
+  Organization Representative takes `Y01` in a pack and `Y02` in a crew. One record per position
+  would have to pick one of those and be wrong five times. Same shape as the youth positions in
+  0.49.0: the requirement is an edge.
+- **Adult roles are deliberately NOT added to `data/positions/`.** That dataset's gate requires
+  every position to be offered by some rank requirement — true of youth positions, false of every
+  adult one. Reusing the kind would have meant deleting a correct gate.
+- **`filestore.scouting.org` is reachable** where `www.scouting.org` returns 403, which is what had
+  blocked this dataset. The chart PDF and the Guide to Leader Training both download cleanly.
+- **Youth Protection renews every 24 months, read from the chart's own header sentence** rather
+  than typed — the same derive-don't-transcribe rule as the rank counts.
+- **Nothing invented.** The chart titles `D16`–`D26` only as a group ("Any Basic Commissioner
+  Training"), and neither it nor the Guide to Leader Training names them individually, so all six
+  carry the group's name and say so in their provenance. Source typos are preserved verbatim
+  (`Neigborhood Chairman`, `Supernova Mentor Traning`), as is `91U` keeping `Y01` inside the Crew
+  and Ship sections where every sibling row takes `Y02`.
+- **Wood Badge, BALOO and NYLT are absent because no position requires them.** The Guide to Leader
+  Training classes Wood Badge and Powder Horn as *advanced* and BALOO as *supplemental*; NYLT is
+  youth training. Only YPT and IOLS (`S11`) from the original request are position-trained
+  requirements, and both are here.
+- **6 gates proven by injection**: a dangling course ref, a position with no Youth Protection
+  course, two rows claiming one registration code in a unit type, a `choose` demanding more
+  alternatives than exist, an id disagreeing with its filename, and a course no position requires.
+
 ## 0.51.0 (minor) — 2026-07-27
 
 - `151a4ea` **Tenure and merit-badge counts are countable: 13 + 3 facts lifted out of prose.**

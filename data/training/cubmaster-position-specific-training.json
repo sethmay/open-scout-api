@@ -1,0 +1,33 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
+  "id": "cubmaster-position-specific-training",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": null,
+      "name": "Cubmaster Position-Specific Training",
+      "delivery": "online",
+      "renew_months": null,
+      "modules": [
+        "Cubmaster - Before the First Meeting",
+        "Cubmaster - First 30 Days",
+        "Cubmaster - Position Trained"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+            "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": null
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,21 @@
+{
+  "id": "x00-example-course",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": "X00",
+      "name": "Example Course",
+      "delivery": "online",
+      "renew_months": 0,
+      "provenance": {
+        "sources": [{ "citation": "Example", "url": "https://example.org/" }],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "notes": "INVALID: renew_months is 0. A course that must be retaken every zero months cannot be completed. Where the source states no expiry the field is null, which says 'the chart does not give one' - never 0, which would silently mark every adult permanently out of date."
+}

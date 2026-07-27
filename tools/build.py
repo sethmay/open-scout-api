@@ -137,6 +137,9 @@ def main() -> None:
     oa_lodges, oalodgeevents = load_dataset("oa-lodges")
     adventures, advevents = load_dataset("adventures")
     positions, posevents = load_dataset("positions")
+    training, trainevents = load_dataset("training")
+    training_reqs = sorted((read_json(q) for q in (DATA / "training-requirements").glob("*.json")),
+                           key=lambda d: d["id"]) if (DATA / "training-requirements").exists() else []
     rs_dir = DATA / "requirement-sets"
     requirement_sets = sorted((read_json(p) for p in rs_dir.glob("*.json")),
                               key=lambda d: d["id"]) if rs_dir.exists() else []
@@ -355,6 +358,30 @@ def main() -> None:
             current_positions.append({"id": e["id"], "name": ov["name"], "audience": ov["audience"],
                                       "unit_types": ov["unit_types"], **_prov(ov)})
 
+    # --- adult training: course entities + the position-trained requirement rows -------------
+    train_index, current_training = [], []
+    for e in training:
+        ref = f"training:{e['id']}"
+        write_entity(DIST / "v1" / "training" / f"{e['id']}.json",
+                     {**e, "events": events_for(ref, trainevents)})
+        ov = open_version(e)
+        last = ov or e["versions"][-1]
+        train_index.append({"id": e["id"], "name": last["name"], "code": last.get("code"),
+                            "current": ov is not None})
+        if ov is not None:
+            current_training.append({"id": e["id"], "name": ov["name"], "code": ov.get("code"),
+                                     "delivery": ov["delivery"],
+                                     "renew_months": ov.get("renew_months"), **_prov(ov)})
+    # Requirements are flat documents, not versioned entities: one per chart row, keyed by
+    # (position, unit_type). Published whole, plus an index carrying the registration codes,
+    # because the code is what a consumer holds from my.scouting and the name is not stable.
+    treq_index = []
+    for d in training_reqs:
+        write_entity(DIST / "v1" / "training-requirements" / f"{d['id']}.json", d)
+        treq_index.append({"id": d["id"], "position_name": d["position_name"],
+                           "registration_codes": d["registration_codes"],
+                           "unit_type": d["unit_type"]})
+
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
     PUB_CURRENT = "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json"
@@ -377,6 +404,7 @@ def main() -> None:
     current_rs_coll = cur("requirement-set", current_rs)
     current_adv_coll = cur("adventure", current_adventures)
     current_pos_coll = cur("position", current_positions)
+    current_train_coll = cur("training", current_training)
     index_colls = [("councils", idx("council", council_index)),
                    ("territories", idx("territory", terr_index)),
                    ("merit-badges", idx("merit-badge", mb_index)),
@@ -387,6 +415,8 @@ def main() -> None:
                    ("requirement-sets", idx("requirement-set", rs_index)),
                    ("adventures", idx("adventure", adv_index)),
                    ("positions", idx("position", pos_index)),
+                   ("training", idx("training", train_index)),
+                   ("training-requirements", idx("training-requirement", treq_index)),
                    ("merit-badge-rankings", idx("merit-badge-ranking",
                        [{"id": d["id"], "year": d["year"], "metric": d["metric"],
                          "complete": d["complete"], "count": len(d["rankings"])}
@@ -398,7 +428,8 @@ def main() -> None:
                      ("merit-badges", current_badge_coll), ("camps", current_camp_coll),
                      ("ranks", current_rank_coll), ("awards", current_award_coll),
                      ("oa-lodges", current_lodge_coll), ("requirement-sets", current_rs_coll),
-                     ("adventures", current_adv_coll), ("positions", current_pos_coll)]:
+                     ("adventures", current_adv_coll), ("positions", current_pos_coll),
+                     ("training", current_train_coll)]:
         errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
                  for er in collection_validator.iter_errors(c)]
     for ds, c in index_colls:
@@ -417,6 +448,7 @@ def main() -> None:
     write_json(DIST / "v1" / "current" / "requirement-sets.json", current_rs_coll)
     write_json(DIST / "v1" / "current" / "adventures.json", current_adv_coll)
     write_json(DIST / "v1" / "current" / "positions.json", current_pos_coll)
+    write_json(DIST / "v1" / "current" / "training.json", current_train_coll)
     for ds, c in index_colls:
         write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
@@ -445,6 +477,8 @@ def main() -> None:
             "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges)},
             "adventures": {"total": len(adventures), "current": len(current_adventures)},
             "positions": {"total": len(positions), "current": len(current_positions)},
+            "training": {"total": len(training), "current": len(current_training)},
+            "training-requirements": {"total": len(training_reqs)},
         },
         "vocab": [f"v1/vocab/{v}.json" for v in vocab_ids],
         "text_rights": ("Merit-badge, rank and Cub adventure requirement text is \u00a9 Scouting America, reproduced with "
@@ -466,6 +500,10 @@ def main() -> None:
                       "v1/current/adventures.json",
                       "v1/positions/index.json", "v1/positions/{id}.json",
                       "v1/current/positions.json",
+                      "v1/training/index.json", "v1/training/{id}.json",
+                      "v1/current/training.json",
+                      "v1/training-requirements/index.json",
+                      "v1/training-requirements/{id}.json",
                       *[f"v1/vocab/{v}.json" for v in vocab_ids]],
     }
     errs.extend(f"meta.json: {er.json_path}: {er.message}"
@@ -483,6 +521,7 @@ def main() -> None:
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
           f"{len(camps)} camps, {len(ranks)} ranks, {len(awards)} awards, {len(oa_lodges)} oa-lodges, "
           f"{len(adventures)} adventures, {len(positions)} positions, "
+          f"{len(training)} training courses, {len(training_reqs)} training requirements, "
           f"{len(badge_rankings)} badge-ranking years")
 
 

@@ -1,0 +1,27 @@
+{
+  "id": "y01-youth-protection-training",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": "Y01",
+      "name": "Youth Protection Training",
+      "delivery": "both",
+      "renew_months": 24,
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+            "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-27",
+        "confidence": 0.9,
+        "notes": null
+      }
+    }
+  ],
+  "notes": "The only kind of course in the chart that expires. `renew_months` is 24 because the chart's header says Youth Protection 'must be retaken every two years' - it is read from that sentence, not typed. `delivery: both` likewise comes from the source saying it is available instructor-led in the council or as e-learning; every other course is `unknown`, which means the chart does not say, NOT that it is untracked."
+}

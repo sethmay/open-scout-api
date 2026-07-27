@@ -1,0 +1,43 @@
+{
+  "id": "pack-cubmaster",
+  "kind": "training-requirement",
+  "position_name": "Cubmaster",
+  "registration_codes": [
+    "CM"
+  ],
+  "unit_type": "pack",
+  "requires": [
+    {
+      "ref": "training:y01-youth-protection-training"
+    },
+    {
+      "choose": 1,
+      "label": "Classroom or online",
+      "children": [
+        {
+          "ref": "training:c40-cubmaster-asst-pos-specific-tng"
+        },
+        {
+          "ref": "training:cubmaster-position-specific-training"
+        }
+      ]
+    }
+  ],
+  "source_document": {
+    "title": "Trained Leader Requirements - Unit and Other Positions",
+    "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+        "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": null
+  },
+  "notes": "Shows both halves of the model. `requires` entries are ALL required - Youth Protection plus position-specific training - while alternatives live inside an entry as `choose`. Here the choice is classroom C40 or the online path, and the online course carries its three modules. The key is (position, unit_type): registration code CM is a Cubmaster only in a pack, and code CC would need a completely different course in each of the five unit types."
+}
