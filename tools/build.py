@@ -334,6 +334,7 @@ def main() -> None:
         if ov is not None:
             current_adventures.append({"id": e["id"], "name": ov["name"], "program": ov["program"],
                                        "ranks": ov["ranks"], "category": ov["category"],
+                                       "area": ov.get("area"),
                                        "url": ov.get("url"), **_prov(ov)})
 
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,

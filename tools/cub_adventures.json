@@ -1,7 +1,15 @@
 {
- "note": "Cub Scout adventures for the 2024 program: identity, rank/category placement and requirement text, parsed from saved scouting.org pages (the site is behind bot protection). Slugs are the pages' own canonical slugs. Requirement text is verbatim (c) Scouting America; see NOTICE.md.",
+ "note": "Cub Scout adventures for the 2024 program: identity, rank/category/area placement and requirement text, parsed from saved scouting.org pages (the site is behind bot protection). Slugs are the pages' own canonical slugs. Areas come from each card's CMS taxonomy class, not from the printed layout. Requirement text is verbatim (c) Scouting America; see NOTICE.md.",
  "accessed": "2026-07-27",
  "effective_from": "2024",
+ "areas": [
+  "character_leadership",
+  "citizenship",
+  "family_reverence",
+  "outdoors",
+  "personal_fitness",
+  "personal_safety"
+ ],
  "unsourced": [
   "archery-arrow-of-light",
   "archery-bear",
@@ -309,6 +317,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -344,6 +353,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -375,6 +385,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -402,6 +413,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -429,6 +441,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -464,6 +477,7 @@
     "arrow-of-light"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -474,6 +488,7 @@
     "bear"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -484,6 +499,7 @@
     "lion"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -494,6 +510,7 @@
     "tiger"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -504,6 +521,7 @@
     "webelos"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -514,6 +532,7 @@
     "wolf"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -524,6 +543,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -551,6 +571,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -578,6 +599,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -605,6 +627,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -640,6 +663,7 @@
     "arrow-of-light"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -650,6 +674,7 @@
     "bear"
    ],
    "category": "required",
+   "area": "outdoors",
    "requirements": [
     {
      "number": "1",
@@ -697,6 +722,7 @@
     "bear"
    ],
    "category": "required",
+   "area": "personal_fitness",
    "requirements": [
     {
      "number": "1",
@@ -728,6 +754,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -767,6 +794,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -806,6 +834,7 @@
     "arrow-of-light"
    ],
    "category": "required",
+   "area": "character_leadership",
    "requirements": [
     {
      "number": "1",
@@ -849,6 +878,7 @@
     "bear"
    ],
    "category": "required",
+   "area": "character_leadership",
    "requirements": [
     {
      "number": "1",
@@ -892,6 +922,7 @@
     "lion"
    ],
    "category": "required",
+   "area": "character_leadership",
    "requirements": [
     {
      "number": "1",
@@ -919,6 +950,7 @@
     "tiger"
    ],
    "category": "required",
+   "area": "character_leadership",
    "requirements": [
     {
      "number": "1",
@@ -954,6 +986,7 @@
     "webelos"
    ],
    "category": "required",
+   "area": "character_leadership",
    "requirements": [
     {
      "number": "1",
@@ -993,6 +1026,7 @@
     "wolf"
    ],
    "category": "required",
+   "area": "character_leadership",
    "requirements": [
     {
      "number": "1",
@@ -1032,6 +1066,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1059,6 +1094,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1082,6 +1118,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1121,6 +1158,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1156,6 +1194,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1187,6 +1226,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1214,6 +1254,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1241,6 +1282,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1276,6 +1318,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1303,6 +1346,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1334,6 +1378,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1361,6 +1406,7 @@
     "arrow-of-light"
    ],
    "category": "required",
+   "area": "citizenship",
    "requirements": [
     {
      "number": "1",
@@ -1380,6 +1426,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1407,6 +1454,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1434,6 +1482,7 @@
     "wolf"
    ],
    "category": "required",
+   "area": "citizenship",
    "requirements": [
     {
      "number": "1",
@@ -1469,6 +1518,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1492,6 +1542,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1519,6 +1570,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1546,6 +1598,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1573,6 +1626,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1612,6 +1666,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1643,6 +1698,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1670,6 +1726,7 @@
     "arrow-of-light"
    ],
    "category": "required",
+   "area": "family_reverence",
    "requirements": [
     {
      "number": "1",
@@ -1693,6 +1750,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1720,6 +1778,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1751,6 +1810,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1778,6 +1838,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1801,6 +1862,7 @@
     "bear"
    ],
    "category": "required",
+   "area": "family_reverence",
    "requirements": [
     {
      "number": "1",
@@ -1828,6 +1890,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1859,6 +1922,7 @@
     "arrow-of-light"
    ],
    "category": "required",
+   "area": "personal_safety",
    "requirements": [
     {
      "number": "1",
@@ -1898,6 +1962,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1925,6 +1990,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1964,6 +2030,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -1991,6 +2058,7 @@
     "wolf"
    ],
    "category": "required",
+   "area": "family_reverence",
    "requirements": [
     {
      "number": "1",
@@ -2018,6 +2086,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2053,6 +2122,7 @@
     "lion"
    ],
    "category": "required",
+   "area": "personal_fitness",
    "requirements": [
     {
      "number": "1",
@@ -2080,6 +2150,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2111,6 +2182,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2134,6 +2206,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2157,6 +2230,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2184,6 +2258,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2211,6 +2286,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2234,6 +2310,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2265,6 +2342,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2296,6 +2374,7 @@
     "lion"
    ],
    "category": "required",
+   "area": "citizenship",
    "requirements": [
     {
      "number": "1",
@@ -2323,6 +2402,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2354,6 +2434,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2385,6 +2466,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2412,6 +2494,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2443,6 +2526,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2490,6 +2574,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2521,6 +2606,7 @@
     "lion"
    ],
    "category": "required",
+   "area": "family_reverence",
    "requirements": [
     {
      "number": "1",
@@ -2544,6 +2630,7 @@
     "lion"
    ],
    "category": "required",
+   "area": "personal_safety",
    "requirements": [
     {
      "number": "1",
@@ -2571,6 +2658,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2602,6 +2690,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2625,6 +2714,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2660,6 +2750,7 @@
     "lion"
    ],
    "category": "required",
+   "area": "outdoors",
    "requirements": [
     {
      "number": "1",
@@ -2687,6 +2778,7 @@
     "webelos"
    ],
    "category": "required",
+   "area": "citizenship",
    "requirements": [
     {
      "number": "1",
@@ -2714,6 +2806,7 @@
     "webelos"
    ],
    "category": "required",
+   "area": "family_reverence",
    "requirements": [
     {
      "number": "1",
@@ -2741,6 +2834,7 @@
     "webelos"
    ],
    "category": "required",
+   "area": "personal_safety",
    "requirements": [
     {
      "number": "1",
@@ -2768,6 +2862,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2791,6 +2886,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2814,6 +2910,7 @@
     "arrow-of-light"
    ],
    "category": "required",
+   "area": "outdoors",
    "requirements": [
     {
      "number": "1",
@@ -2857,6 +2954,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2904,6 +3002,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -2951,6 +3050,7 @@
     "bear"
    ],
    "category": "required",
+   "area": "citizenship",
    "requirements": [
     {
      "number": "1",
@@ -2978,6 +3078,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3013,6 +3114,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3036,6 +3138,7 @@
     "wolf"
    ],
    "category": "required",
+   "area": "outdoors",
    "requirements": [
     {
      "number": "1",
@@ -3067,6 +3170,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3102,6 +3206,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3137,6 +3242,7 @@
     "arrow-of-light"
    ],
    "category": "required",
+   "area": "personal_fitness",
    "requirements": [
     {
      "number": "1",
@@ -3164,6 +3270,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3187,6 +3294,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3218,6 +3326,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3249,6 +3358,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3276,6 +3386,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3303,6 +3414,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3334,6 +3446,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3365,6 +3478,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3388,6 +3502,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3419,6 +3534,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3450,6 +3566,7 @@
     "wolf"
    ],
    "category": "required",
+   "area": "personal_fitness",
    "requirements": [
     {
      "number": "1",
@@ -3485,6 +3602,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3524,6 +3642,7 @@
     "wolf"
    ],
    "category": "required",
+   "area": "personal_safety",
    "requirements": [
     {
      "number": "1",
@@ -3551,6 +3670,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3586,6 +3706,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3618,6 +3739,7 @@
     "arrow-of-light"
    ],
    "category": "special_elective",
+   "area": null,
    "requirements": []
   },
   {
@@ -3628,6 +3750,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3655,6 +3778,7 @@
     "bear"
    ],
    "category": "required",
+   "area": "personal_safety",
    "requirements": [
     {
      "number": "1",
@@ -3682,6 +3806,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3709,6 +3834,7 @@
     "webelos"
    ],
    "category": "required",
+   "area": "personal_fitness",
    "requirements": [
     {
      "number": "1",
@@ -3740,6 +3866,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3755,6 +3882,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3770,6 +3898,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3785,6 +3914,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3800,6 +3930,7 @@
     "wolf"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3815,6 +3946,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3842,6 +3974,7 @@
     "arrow-of-light"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3869,6 +4002,7 @@
     "tiger"
    ],
    "category": "required",
+   "area": "citizenship",
    "requirements": [
     {
      "number": "1",
@@ -3896,6 +4030,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3923,6 +4058,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -3950,6 +4086,7 @@
     "tiger"
    ],
    "category": "required",
+   "area": "personal_fitness",
    "requirements": [
     {
      "number": "1",
@@ -3977,6 +4114,7 @@
     "tiger"
    ],
    "category": "required",
+   "area": "family_reverence",
    "requirements": [
     {
      "number": "1",
@@ -4000,6 +4138,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -4027,6 +4166,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -4054,6 +4194,7 @@
     "tiger"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -4089,6 +4230,7 @@
     "tiger"
    ],
    "category": "required",
+   "area": "outdoors",
    "requirements": [
     {
      "number": "1",
@@ -4120,6 +4262,7 @@
     "tiger"
    ],
    "category": "required",
+   "area": "personal_safety",
    "requirements": [
     {
      "number": "1",
@@ -4147,6 +4290,7 @@
     "lion"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -4178,6 +4322,7 @@
     "webelos"
    ],
    "category": "required",
+   "area": "outdoors",
    "requirements": [
     {
      "number": "1",
@@ -4217,6 +4362,7 @@
     "bear"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",
@@ -4244,6 +4390,7 @@
     "webelos"
    ],
    "category": "elective",
+   "area": null,
    "requirements": [
     {
      "number": "1",

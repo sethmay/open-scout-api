@@ -6,6 +6,22 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **Prefer the CMS's own taxonomy over anything the page prints.** The six Cub requirement areas
+  looked like a layout-reading problem — labels interleaved with adventure names, in an order that
+  differs by rank — until the markup turned out to tag every card
+  `cs-adv-rank-<rank> cs-adv-type-required cs-adv-topic-<area>`. Structured classes, `data-*`
+  attributes, JSON-LD and feed URLs are the publisher's own model of the content; visible text is a
+  rendering of it. Grep the markup for the taxonomy before writing a positional parser, because a
+  positional parser can only ever be as reliable as the layout it assumes.
+- **Completeness invariants beat per-record checks.** Six areas × six ranks = 36 edges, each filled
+  exactly once — one arithmetic assertion that no per-record validation could express, and the exact
+  check that would have caught the Arrow of Light error on the day it was written (seven required
+  adventures covering five areas). When a source implies a grid, assert the grid.
+- **A code field typed as `string` is not pinned.** The published contract accepted
+  `"Personal Fitness"` where `personal_fitness` belongs, so the label-for-code bug this very release
+  fixed could have been re-published through a schema that claimed to prevent drift. Vocabulary
+  fields get the `^[a-z0-9]+(_[a-z0-9]+)*$` pattern, not a bare type — and a negative fixture pins
+  the label shape, because "we'd never do that" is what shipped it the first time.
 - **A sentinel that means "all" cannot also mean "none".** `choose: null` on a requirement node
   reads as *complete every child*. Modelling the Cub "Special Elective Adventures" heading as a
   peer group therefore asserted that every Cub must earn BB Guns to rank up — a page heading

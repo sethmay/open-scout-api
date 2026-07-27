@@ -69,6 +69,18 @@
           "$ref": "common.schema.json#/$defs/VocabCode",
           "description": "Placement within the rank: see data/vocab/adventure-categories.json. Consistent across ranks for adventures offered by more than one."
         },
+        "area": {
+          "anyOf": [
+            {
+              "$ref": "common.schema.json#/$defs/VocabCode"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The requirement area this adventure fills for its rank: see data/vocab/adventure-areas.json. Every rank's six required adventures fill the six areas exactly once each, which is what makes 'what does this Scout still need' a group-by rather than a list diff. **null for electives** — an elective fills no area. Pipeline-enforced: non-null exactly when category is 'required', and complete per rank."
+        },
         "url": {
           "type": [
             "string",

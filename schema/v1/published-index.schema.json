@@ -553,7 +553,9 @@
           "type": "string"
         },
         "category": {
-          "type": "string"
+          "type": "string",
+          "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$",
+          "description": "Vocabulary CODE from v1/vocab/adventure-categories.json, never a display label."
         },
         "current": {
           "type": "boolean"

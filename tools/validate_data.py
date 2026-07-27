@@ -328,8 +328,9 @@ def main() -> int:
                             errs.append(f"merit-badges/{p.name}: tag {code!r} not in vocab "
                                         f"(add it to data/vocab/merit-badge-tags.json)")
 
-        # adventure categories, same discipline
+        # adventure categories and areas, same discipline
         known_cats = codes_for.get("adventure.category")
+        known_areas = codes_for.get("adventure.area")
         for p in sorted((DATA / "adventures").glob("*.json")):
             if p.name == "_events.json":
                 continue
@@ -338,6 +339,15 @@ def main() -> int:
                 if known_cats is not None and v.get("category") not in known_cats:
                     errs.append(f"adventures/{p.name}: category {v.get('category')!r} not in vocab "
                                 f"(add it to data/vocab/adventure-categories.json)")
+                area = v.get("area")
+                if area is not None and known_areas is not None and area not in known_areas:
+                    errs.append(f"adventures/{p.name}: area {area!r} not in vocab "
+                                f"(add it to data/vocab/adventure-areas.json)")
+                # an area IS the required slot it fills, so the two facts are one fact: a required
+                # adventure that fills nothing, or an elective that claims a slot, is incoherent.
+                if (v.get("category") == "required") != (area is not None):
+                    errs.append(f"adventures/{p.name}: category={v.get('category')!r} but "
+                                f"area={area!r}; area is set exactly for required adventures")
 
     # pass 5b: merit-badge `description` must be original evergreen prose, never pamphlet or
     # requirement text. The requirement text IS Scouting America's copyright and is published
@@ -438,6 +448,32 @@ def main() -> int:
                 errs.append(f"adventures/{p.name}: category {v.get('category')!r} but the group it "
                             f"sits in under the rank requirement-sets allows {sorted(cats)}")
 
+    # pass 5d: every Cub rank fills all six requirement areas, exactly once each. This is the check
+    # that would have caught the original Arrow of Light error at write time: two AOL adventures are
+    # *named* after areas ("Personal Fitness", "Citizenship"), so a parser that read printed labels
+    # as adventures produced seven required entries covering five areas, and it shipped. Coverage is
+    # arithmetic; eyeballing a list is not.
+    all_areas: set[str] = set()
+    area_by_rank: dict[str, list[tuple[str, str]]] = {}   # rank -> [(area, adventure slug)]
+    for p in sorted((DATA / "adventures").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        obj = json.loads(p.read_text("utf-8"))
+        for v in obj.get("versions", []):
+            if v.get("valid_to") is not None or not v.get("area"):
+                continue
+            all_areas.add(v["area"])
+            for r in (v.get("ranks") or []):
+                area_by_rank.setdefault(r.split(":", 1)[1], []).append((v["area"], obj["id"]))
+    for rank in sorted(area_by_rank):
+        filled = [a for a, _ in area_by_rank[rank]]
+        for area in sorted(all_areas):
+            n = filled.count(area)
+            if n != 1:
+                who = sorted(s for a, s in area_by_rank[rank] if a == area)
+                errs.append(f"rank {rank!r}: area {area!r} filled by {n} required adventures "
+                            f"({', '.join(who) or 'none'}); each rank fills every area exactly once")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
@@ -455,7 +491,7 @@ def main() -> int:
           f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges + "
           f"{nadv} adventures "
           f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab "
-          f"+ rank/adventure agreement), {len(entities)} entities")
+          f"+ rank/adventure agreement + area coverage), {len(entities)} entities")
     return 0
 
 

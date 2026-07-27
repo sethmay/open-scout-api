@@ -1,23 +1,23 @@
 {
   "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/adventure.schema.json",
-  "id": "balancing-bears",
+  "id": "adventure-area-as-label",
   "kind": "adventure",
   "versions": [
     {
       "valid_from": "2024",
       "valid_to": null,
-      "name": "Balancing Bears",
+      "name": "Paws on the Path",
       "program": "cub_scouts",
       "ranks": [
-        "rank:bear"
+        "rank:wolf"
       ],
-      "category": "elective",
-      "area": null,
-      "url": "https://www.scouting.org/cub-scout-adventures/balancing-bears/",
+      "category": "required",
+      "area": "Personal Fitness",
+      "url": "https://www.scouting.org/cub-scout-adventures/paws-on-the-path/",
       "provenance": {
         "sources": [
           {
-            "url": "https://www.scouting.org/cub-scout-adventures/balancing-bears/",
+            "url": "https://www.scouting.org/cub-scout-adventures/paws-on-the-path/",
             "accessed": "2026-07-27"
           }
         ],

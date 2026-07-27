@@ -920,7 +920,21 @@
           "minItems": 1
         },
         "category": {
-          "type": "string"
+          "type": "string",
+          "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$",
+          "description": "Vocabulary CODE from v1/vocab/adventure-categories.json, never a display label."
+        },
+        "area": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "The requirement area this adventure fills for its rank, or null for electives. Every rank's six required adventures cover the six areas of v1/vocab/adventure-areas.json exactly once each. A vocabulary CODE, never a display label — two Arrow of Light adventures are *named* after areas, so publishing a label here would reintroduce exactly that confusion."
         },
         "url": {
           "type": [
@@ -948,6 +962,7 @@
         "program",
         "ranks",
         "category",
+        "area",
         "url",
         "verified_at",
         "method",
