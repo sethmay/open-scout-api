@@ -132,6 +132,39 @@ rejected.
 
 ## Queue
 
+### Council service areas — SOURCE FOUND, DELIBERATELY NOT BUILT (researched 2026-07-27)
+
+"Which council serves my address" is the first question every Scouting app asks and we cannot
+answer it: `states_served` covers 208 councils and nothing finer exists. The sourcing question is
+now **settled** — do not re-research it, decide it.
+
+**`beascout.scouting.org/list/?zip=NNNNN` is the only good source**, and it is a genuinely good one:
+
+- **Territory-based, not unit-based** — the decisive test. ZIPs with *zero* nearby units still
+  resolve to exactly one council (99723 → Midnight Sun 696, 89049 → Nevada Area 329, 59545 →
+  Montana 315, 00901 → Puerto Rico 661), so it reads a service-area table rather than finding the
+  nearest troop.
+- **Exact join key.** Returns council name *and* BSA number; 12/12 sample ZIPs joined to our
+  `bsa_number`, including recent renames (Denver Area → Greater Colorado, 2022). ⚠ beascout
+  zero-pads to three digits (`084`) and we store `int` — normalise or the join silently misses.
+- **Crawling is permitted:** `robots.txt` is `Disallow:` (empty).
+
+**Why it is not built: `robots.txt` sets `Crawl-delay: 10`.** Honouring that across the 33,792
+ZCTAs in the Census ZCTA→county relationship file is ~94 hours. The county-level shortcut (~3,144
+ZIPs, ~9 hours) is lossy exactly where it matters, because metro counties split between councils are
+the common case, not the edge — and a half-swept map is worse than none, since it looks
+authoritative while being silently incomplete. Owner call (2026-07-27): leave the feature out rather
+than ship a mediocre approximation.
+
+If it is ever built: primary artifact is **ZIP → council** (exact, no interpretation); county is a
+*derived* rollup via the Census file, carrying an explicit `split: true` where a county maps to more
+than one council. The crawl must be resumable and cached so it can run over days.
+
+**Rejected alternatives** (all checked, all mediocre): Wikipedia's council list has no service-area
+column at all; Scouting America's official Council Service Territory maps are JPG/PDF only and would
+need georeferencing; per-council websites are inconsistent prose across ~229 sites; no public
+shapefile or GIS layer exists.
+
 ### Camp-finder cutover — API-side requests (reviewed 2026-07-21)
 
 camp-finder is migrating to consume this API as its core data — **durable reference data
