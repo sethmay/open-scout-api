@@ -3,6 +3,42 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.46.1 (patch) — 2026-07-27
+
+- `PENDING` **Swept the rest of the population 0.46.0's spot-check pointed at.** Exactly **7 camps**
+  carried the provenance marker *"Some codes are retained from the original camp-finder import and
+  were not re-confirmed by this survey"* — Baker and Parsons (fixed last release) plus Baldwin,
+  Melakwa, Sheppard, Fire Mountain and Camp Kenya. They are the Pacific-Northwest set camp-finder
+  built first, and camp-finder's own notes say what they were: **"Fixture data for frontend
+  development; not a live scrape"** (Baldwin) and **"Deliberately stale verified_at to exercise the
+  StaleBadge UI state"** (Melakwa) — recorded as `method: manual, confidence: 1.0`, which reads
+  authoritative and was never meant to.
+- **5 unsourced codes removed**, each absent from every reachable page: `cope` + `stem` from Baldwin
+  (checked across ~45 KB of Cascade Pacific content including `/summercamp/`), `cope` + `stem` from
+  Sheppard (~69 KB of Chief Seattle content), `cope` from Melakwa. Feature entries 6,385 -> 6,379.
+  Generic amenities were deliberately **kept**: these pages are stubs, so silence about a dining hall
+  is not evidence, while silence about a COPE course on a page that lists facilities is.
+- ⚠ **I removed a real feature and put it back the same day.** Fire Mountain lost
+  `mountain_biking` because I read the council's stub landing page — one step after writing the
+  lesson that *"I read a camp page" is not "I read the right camp page"*. Its resident-camp page,
+  **already cited in its own provenance**, states the programme outright: "COPE/Climbing (newer High
+  COPE and 1000+ foot tandem zipline) ... Mountain Boarding and Mountain Biking". Only `stem` was
+  genuinely unsupported there. That page also vindicates the survey: `cope`'s note ("A high COPE
+  course") was accurate, and `aquatics`/`cowboy_action_shooting`/`paddleboarding`/`zip_line` all
+  trace to that one sentence.
+  - The audit tool caught my error because it reports **omissions as well as unsupported claims** —
+    it flagged `mountain_biking` as a candidate miss immediately after I deleted it. An audit that
+    only hunts false positives manufactures false negatives.
+- **Two broken source URLs fixed**, both of which explain thin surveys: Melakwa's
+  `otcbsa.org/camp-melakwa` is dead (the camp is still live — Pacific Crest's camping index
+  describes it), now `pccscouting.org/camping/`; Fire Mountain's `mountbakerbsa.org/fire-mountain`
+  redirects to an unrelated *Cub-and-Me* carousel, now `mountbakerscouting.org/firemountain/`.
+- **Camp Kenya's provenance contradicted itself** — the same note said camp-finder "never captured
+  this overseas camp" *and* that codes were retained from the camp-finder import. The retention
+  sentence was pasted boilerplate; removed. Its features are hand-curated, so no codes were touched.
+- Baker's and Parsons' stale retention boilerplate replaced with what actually happened to them, so
+  the marker now appears on **zero** camps and means something when it reappears.
+
 ## 0.46.0 (minor) — 2026-07-27
 
 - `687e7c4` **Two camp feature defects found by a user spot-check, traced to their origin, and

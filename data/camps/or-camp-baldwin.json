@@ -27,9 +27,6 @@
       ],
       "features": [
         {
-          "code": "cope"
-        },
-        {
           "code": "dining_hall"
         },
         {
@@ -72,9 +69,6 @@
           "code": "shooting_sports"
         },
         {
-          "code": "stem"
-        },
-        {
           "code": "waterfront",
           "note": "A five-acre man-made lake."
         },
@@ -82,7 +76,7 @@
           "code": "whitewater_rafting"
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-07-27",
       "features_source_tier": "camp_page",
       "summary": "Wooded resident camp in the Cascade foothills featuring a lake waterfront, dining hall, shooting sports, climbing, and COPE, with STEM offerings, a first-year Scout program, and an older Scout program.",
       "provenance": {
@@ -102,7 +96,7 @@
         "verified_at": "2026-07-01",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://cpcbsa.org/camping/camp-baldwin/ now redirects to https://cpcscouting.org/project/camp-baldwin/ (link audit, tools/check_urls.py). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Some codes are retained from the original camp-finder import and were not re-confirmed by this survey."
+        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website canonicalised 2026-07-25: https://cpcbsa.org/camping/camp-baldwin/ now redirects to https://cpcscouting.org/project/camp-baldwin/ (link audit, tools/check_urls.py). Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). Unconfirmed codes inherited from camp-finder's frontend fixture data were removed 2026-07-27: camp-finder recorded these camps as fixture data for frontend development, not a live scrape, and no reachable source attests the removed codes. Generic amenities (dining hall, waterfront) are kept — this camp's page is a stub, so its silence about them is not evidence. Distinctive facilities a camp page would advertise are not."
       }
     }
   ],
