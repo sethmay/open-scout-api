@@ -5,7 +5,7 @@
   "subject": "adventure:tiger-circles",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-tiger-circles-2018",
   "source_document": {
     "title": "Tiger Circles — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/tiger-circles/",

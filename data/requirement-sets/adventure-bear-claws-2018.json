@@ -1,0 +1,76 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-bear-claws-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:bear-claws",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Bear Claws — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Learn about three common designs of pocketknives."
+    },
+    {
+      "number": "2",
+      "text": "Learn knife safety and earn your Whittling Chip."
+    },
+    {
+      "number": "3",
+      "text": "Do one of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Using a pocketknife, carve two items."
+        },
+        {
+          "number": "3b",
+          "text": "With a pocketknife, safely perform each of these tasks:",
+          "children": [
+            {
+              "number": "3b1",
+              "text": "Demonstrate how to cut a piece of rope, twine or fishing line;"
+            },
+            {
+              "number": "3b2",
+              "text": "Open a sealed box without damaging the contents;"
+            },
+            {
+              "number": "3b3",
+              "text": "Open a can with the can opener tool on a pocketknife;"
+            },
+            {
+              "number": "3b4",
+              "text": "Remove and replace the screws on an object with the screwdriver tool on a pocketknife;"
+            },
+            {
+              "number": "3b5",
+              "text": "Open a letter"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

@@ -1,0 +1,134 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-code-of-the-wolf-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:code-of-the-wolf",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Code of the Wolf — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Complete two of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "With the members of your den or family, make a game with simple materials that requires math to keep score."
+        },
+        {
+          "number": "1b",
+          "text": "Play a game of “Go Fish for 10s.”"
+        },
+        {
+          "number": "1c",
+          "text": "Do five activities at home, at school, or in your den that use mathematics, and then explain to your den how you used everyday math."
+        },
+        {
+          "number": "1d",
+          "text": "Make a rekenrek with two rows, and show your den leader or other adult how you would represent the numbers 4, 6, 9, and 14."
+        },
+        {
+          "number": "1e",
+          "text": "Make a rain gauge or some other measuring device, and use it."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Complete one of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "With other members of your den or family, identify three different types of shapes that you see in nature."
+        },
+        {
+          "number": "2b",
+          "text": "With other members of your den or family, identify two shapes you can see in the construction of bridges."
+        },
+        {
+          "number": "2c",
+          "text": "Select a single shape or figure. Observe the world around you for at least a week, and write down where you see this shape or figure and how it is used."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Complete one of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With your den, find something that comes with many small, colored items in one package. Count the number of items of each color in your package. Keep track of each color. Then:",
+          "children": [
+            {
+              "number": "3a1",
+              "text": "Draw a graph showing the number of items of each color."
+            },
+            {
+              "number": "3a2",
+              "text": "Determine what the most common color is."
+            },
+            {
+              "number": "3a3",
+              "text": "Compare your results to those of the other Scouts."
+            },
+            {
+              "number": "3a4",
+              "text": "Predict how many items of each color you will find in one more package."
+            },
+            {
+              "number": "3a5",
+              "text": "Decide if your prediction was close."
+            }
+          ]
+        },
+        {
+          "number": "3b",
+          "text": "With your den or family, measure the height of everyone in the group and see who takes more steps to walk 100 feet."
+        },
+        {
+          "number": "3c",
+          "text": "Have each member of your den shoot a basketball. Count the number of shots it takes for each scout to sink five baskets. Make a graph that shows how successful your den was. Your graph should show each group that needed 5, 6-10, 11-15, 16-20, and more than 20 tries to sink their shots."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Complete one of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Use a secret code using numbers to send a message to one of your den members or your den leader. Have that person send a message back to you. Be sure you both use the same code."
+        },
+        {
+          "number": "4b",
+          "text": "Send a message to another member of your den or your den leader using the pig pen code or another code that changes letters into special shapes."
+        },
+        {
+          "number": "4c",
+          "text": "Practice using a code stick to create and decode a message."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

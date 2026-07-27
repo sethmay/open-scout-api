@@ -1,0 +1,76 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-games-tigers-play-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:games-tigers-play",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Games Tigers Play — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1 and 2 plus at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Play two initiative or team-building games with the members of your den."
+        },
+        {
+          "number": "1b",
+          "text": "Listen carefully to your leader while the rules are being explained, and follow directions when playing."
+        },
+        {
+          "number": "1c",
+          "text": "At the end of the game, talk with the leader about what you learned when you played the game. Tell how you helped the den by playing your part."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Talk with your den or family about why good nutrition helps you to be strong and active. Bring a nutritious snack to a den meeting. Share why you picked it and what makes it a good snack choice."
+    },
+    {
+      "number": "3",
+      "text": "Make up a game with the members of your den, and play it with den members. After playing the game, talk with your den about the experience.."
+    },
+    {
+      "number": "4",
+      "text": "Make up a new game, and play it with your family or members of your den or pack. Then talk with the group about the experience."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Attend a sporting event with your den or family."
+        },
+        {
+          "number": "5b",
+          "text": "Before or after the event, talk with a coach or athlete about what it is like to participate in the sport. OR Find out more about the sport and share what you have learned with your den or family members before or after the event."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

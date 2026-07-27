@@ -5,7 +5,7 @@
   "subject": "adventure:into-the-wild",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-into-the-wild-2022",
   "source_document": {
     "title": "Into the Wild — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/into-the-wild/",

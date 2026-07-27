@@ -45,6 +45,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FACTS = ROOT / "tools" / "cub_adventures.json"
+HIST_FACTS = ROOT / "tools" / "cub_adventures_history.json"
 RANK_FACTS = ROOT / "tools" / "program_rank_requirements.json"
 OUT_ADV = ROOT / "data" / "adventures"
 OUT_RS = ROOT / "data" / "requirement-sets"
@@ -314,12 +315,88 @@ def _patch_rank_facts(rank_structure: dict, adv: dict) -> None:
 
 # --------------------------------------------------------------------------- generate
 
+def _hist_version(rec: dict, ed_from: str, ed_to: str, accessed: str, page_url: str) -> dict:
+    """One pre-2024 attribute snapshot. `area` is null: the six requirement areas are a 2024
+    construct, and `url` is null because scouting.org no longer serves these pages — the source
+    lives in provenance."""
+    return {
+        "valid_from": ed_from, "valid_to": ed_to,
+        "name": rec["name"], "program": PROGRAM,
+        "ranks": [f"rank:{r}" for r in rec["ranks"]],
+        "category": rec["category"], "area": None, "url": None,
+        "provenance": {
+            "sources": [{"url": page_url, "accessed": accessed}],
+            "method": "scraped", "verified_at": accessed, "confidence": 0.8,
+            "notes": ("Pre-2024 Cub program, via the U.S. Scouting Service Project archive "
+                      "(usscouts.org), which is unaffiliated with Scouting America."),
+        },
+    }
+
+
+def _attrs(v: dict) -> tuple:
+    """The attributes a version window exists to record a change in."""
+    return (v["name"], v["category"], tuple(v["ranks"]), v.get("area"))
+
+
 def generate() -> None:
     facts = json.loads(FACTS.read_text("utf-8"))
+    hist = json.loads(HIST_FACTS.read_text("utf-8")) if HIST_FACTS.exists() else None
     OUT_ADV.mkdir(parents=True, exist_ok=True)
     OUT_RS.mkdir(parents=True, exist_ok=True)
     year = facts["effective_from"]
-    nrs = 0
+
+    # index the pre-2024 line-up by the 2024 entity it belongs to (continues/renamed), and keep
+    # the retired ones aside — they become entities of their own with closed windows.
+    hist_for: dict[str, dict] = {}
+    hist_retired: list[dict] = []
+    if hist:
+        for rec in hist["adventures"]:
+            d = rec["disposition"]
+            if d["kind"] in ("continues", "renamed"):
+                hist_for[d["id"]] = rec
+            else:
+                hist_retired.append(rec)
+
+    entities: list[dict] = []
+    docs: list[dict] = []
+
+    # A rule that just says "do all of these" adds nothing over the list itself, so it collapses
+    # to null; anything that narrows the list is published verbatim in `completion_rule`.
+    ALL_REQUIRED = re.compile(r"^complete\s+(?:all\s+of\s+)?the\s+following(?:\s+requirements?)?\.?$", re.I)
+
+    def rs_docs(slug: str, name: str, rec: dict, accessed: str) -> list[dict]:
+        """One requirement-set per pre-2024 edition, chained newest-supersedes-oldest."""
+        out = []
+        prev = None
+        for ed in rec["editions"]:
+            eff = ed["effective_from"]
+            rid = f"adventure-{slug}-{eff[:4]}"
+            url = hist["sources"][ed["source_page"]]["url"]
+            rule = (ed["rule"] or "").strip()
+            out.append({
+                "id": rid, "kind": "requirement-set",
+                "subject": f"adventure:{slug}",
+                "effective_from": eff, "effective_to": ed["effective_to"],
+                "supersedes": f"requirement-set:{prev}" if prev else None,
+                "source_document": {
+                    "title": f"{rec['name']} \u2014 Cub Scout Adventure requirements "
+                             f"(pre-2024 program, USSSP archive)",
+                    "url": url, "year": int(eff[:4])},
+                "includes_official_text": True,
+                "text_rights": TEXT_RIGHTS,
+                "completion_rule": None if (not rule or ALL_REQUIRED.match(rule)) else rule,
+                "requirements": ed["requirements"],
+                "provenance": {
+                    "sources": [{"url": url, "accessed": accessed}],
+                    "method": "scraped", "verified_at": accessed, "confidence": 0.8,
+                    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program.",
+                },
+                "notes": ed.get("retired_note"),
+            })
+            prev = rid
+        return out
+
+    # ---- the 2024 line-up, with any pre-2024 history folded in
     for a in facts["adventures"]:
         prov = {
             "sources": [{"url": a["url"] or "https://www.scouting.org/programs/cub-scouts/adventures/",
@@ -330,42 +407,98 @@ def generate() -> None:
                       "Listed on the official rank pages; requirements are not published online "
                       "(completed only at approved events with qualified instructors)."),
         }
-        entity = {
-            "id": a["slug"], "kind": "adventure",
-            "versions": [{
-                "valid_from": year, "valid_to": None,
-                "name": a["name"], "program": PROGRAM,
-                "ranks": [f"rank:{r}" for r in a["ranks"]],
-                "category": a["category"], "area": a.get("area"), "url": a["url"],
-                "provenance": prov,
-            }],
-            "notes": None,
+        current = {
+            "valid_from": year, "valid_to": None,
+            "name": a["name"], "program": PROGRAM,
+            "ranks": [f"rank:{r}" for r in a["ranks"]],
+            "category": a["category"], "area": a.get("area"), "url": a["url"],
+            "provenance": prov,
         }
-        (OUT_ADV / f"{a['slug']}.json").write_text(
-            json.dumps(entity, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
-        if not a["requirements"]:
-            continue
-        rid = f"adventure-{a['slug']}-{year}"
-        doc = {
-            "id": rid, "kind": "requirement-set",
-            "subject": f"adventure:{a['slug']}",
-            "effective_from": year, "effective_to": None, "supersedes": None,
-            "source_document": {"title": f"{a['name']} \u2014 Scouting America (Cub Scout Adventures)",
-                                "url": a["url"], "year": int(year)},
-            "includes_official_text": True,
-            "text_rights": TEXT_RIGHTS,
-            "requirements": [{"number": r["number"], "text": r["text"]} for r in a["requirements"]],
-            "provenance": {
-                "sources": [{"url": a["url"], "accessed": facts["accessed"]}],
-                "method": "scraped", "verified_at": facts["accessed"], "confidence": 0.9,
-                "notes": "Requirement text verbatim from the adventure's official page.",
-            },
-            "notes": None,
-        }
-        (OUT_RS / f"{rid}.json").write_text(
-            json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
-        nrs += 1
-    print(f"adventures: {len(facts['adventures'])} entities, {nrs} requirement-sets written")
+        versions = [current]
+        rec = hist_for.get(a["slug"])
+        if rec:
+            first = rec["editions"][0]
+            page_url = hist["sources"][first["source_page"]]["url"]
+            old = _hist_version(rec, first["effective_from"], year, hist["accessed"], page_url)
+            # A version window exists to record an ATTRIBUTE change. Where nothing changed but the
+            # requirements, opening a second window would assert a change that never happened, so
+            # the single window simply starts when the adventure did; the requirement editions
+            # carry the revision history.
+            if _attrs(old) == _attrs(current):
+                current["valid_from"] = first["effective_from"]
+            else:
+                versions = [old, current]
+            docs += rs_docs(a["slug"], a["name"], rec, hist["accessed"])
+        entities.append({"id": a["slug"], "kind": "adventure", "versions": versions, "notes": None})
+        if a["requirements"]:
+            docs.append({
+                "id": f"adventure-{a['slug']}-{year}", "kind": "requirement-set",
+                "subject": f"adventure:{a['slug']}",
+                "effective_from": year, "effective_to": None,
+                "supersedes": (f"requirement-set:adventure-{a['slug']}-"
+                               f"{rec['editions'][-1]['effective_from'][:4]}") if rec else None,
+                "source_document": {"title": f"{a['name']} \u2014 Scouting America (Cub Scout Adventures)",
+                                    "url": a["url"], "year": int(year)},
+                "includes_official_text": True,
+                "text_rights": TEXT_RIGHTS,
+                "requirements": [{"number": r["number"], "text": r["text"]} for r in a["requirements"]],
+                "provenance": {
+                    "sources": [{"url": a["url"], "accessed": facts["accessed"]}],
+                    "method": "scraped", "verified_at": facts["accessed"], "confidence": 0.9,
+                    "notes": "Requirement text verbatim from the adventure's official page.",
+                },
+                "notes": None,
+            })
+
+    # ---- adventures the 2024 program dropped: identity persists, every window closed
+    events = []
+    for rec in hist_retired:
+        slug = _slug_from_name(rec["name"])
+        vers = []
+        for ed in rec["editions"]:
+            page_url = hist["sources"][ed["source_page"]]["url"]
+            vers.append(_hist_version(rec, ed["effective_from"], ed["effective_to"],
+                                      hist["accessed"], page_url))
+        # collapse windows that record no attribute change (the usual case: only requirements moved)
+        merged = [vers[0]]
+        for v in vers[1:]:
+            if _attrs(v) == _attrs(merged[-1]):
+                merged[-1]["valid_to"] = v["valid_to"]
+            else:
+                merged.append(v)
+        entities.append({"id": slug, "kind": "adventure", "versions": merged, "notes": None})
+        docs += rs_docs(slug, rec["name"], rec, hist["accessed"])
+        d = rec["disposition"]
+        ev_prov = {"sources": [{"url": hist["sources"][rec["editions"][-1]["source_page"]]["url"],
+                                "accessed": hist["accessed"]}],
+                   "method": "scraped", "verified_at": hist["accessed"], "confidence": 0.8}
+        if d["kind"] == "superseded":
+            events.append({"id": f"supersede-{slug}-by-{d['by']}", "type": "superseded",
+                           "date": rec["retired_on"],
+                           "participants": [{"ref": f"adventure:{slug}", "role": "predecessor"},
+                                            {"ref": f"adventure:{d['by']}", "role": "successor"}],
+                           "notes": (f"The 2024 Cub program renamed this adventure to "
+                                     f"{d['by_name']!r}."),
+                           "provenance": ev_prov})
+        else:
+            events.append({"id": f"discontinue-{slug}", "type": "discontinued",
+                           "date": rec["retired_on"],
+                           "participants": [{"ref": f"adventure:{slug}", "role": "subject"}],
+                           "notes": rec["editions"][-1].get("retired_note"),
+                           "provenance": ev_prov})
+
+    for e in entities:
+        (OUT_ADV / f"{e['id']}.json").write_text(
+            json.dumps(e, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    for d in docs:
+        (OUT_RS / f"{d['id']}.json").write_text(
+            json.dumps(d, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    if events:
+        (OUT_ADV / "_events.json").write_text(
+            json.dumps({"events": sorted(events, key=lambda e: e["id"])}, indent=2,
+                       ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    print(f"adventures: {len(entities)} entities ({len(hist_retired)} retired), "
+          f"{len(docs)} requirement-sets, {len(events)} lifecycle events")
 
 
 def main() -> None:

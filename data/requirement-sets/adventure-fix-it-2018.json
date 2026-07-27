@@ -1,0 +1,162 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-fix-it-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:fix-it",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Fix It — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Put a Fix It Toolbox together. Describe what each item in your toolbox can be used for. Show how to use three of the tools safely."
+    },
+    {
+      "number": "2",
+      "text": "Be ready. With the help of an adult in your family, do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Locate the electrical panel in your home. Determine if the electrical panel has fuses or breakers."
+        },
+        {
+          "number": "2b",
+          "text": "Determine what heat source is used to heat your home."
+        },
+        {
+          "number": "2c",
+          "text": "Learn what you would do to shut off the water for a sink, a toilet, a washing machine, or a water heater. If there is a main shut-off valve for your home, show where it is located."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "3. Describe to your Webelos den leader how to fix or make safe the following circumstances with help from an adult:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "A toilet is overflowing."
+        },
+        {
+          "number": "3b",
+          "text": "The kitchen sink is clogged."
+        },
+        {
+          "number": "3c",
+          "text": "A circuit breaker tripped, causing some of the lights to go out."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "4. Let's Fix It. Select and do eight of the following. You will need an adult's supervision for each of these Fix It projects:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Show how to change a light bulb in a lamp or fixture. Determine the type of light bulb and how to properly dispose of it."
+        },
+        {
+          "number": "4b",
+          "text": "Fix a squeaky door or cabinet hinge."
+        },
+        {
+          "number": "4c",
+          "text": "Tighten a loose handle or knob on a cabinet or a piece of furniture."
+        },
+        {
+          "number": "4d",
+          "text": "Demonstrate how to stop a toilet from running."
+        },
+        {
+          "number": "4e",
+          "text": "Replace a furnace filter."
+        },
+        {
+          "number": "4f",
+          "text": "Wash a car."
+        },
+        {
+          "number": "4g",
+          "text": "Check the oil level and tire pressure in a car."
+        },
+        {
+          "number": "4h",
+          "text": "Show how to replace a bulb in a taillight, turn signal, or parking light, or replace a headlight in a car."
+        },
+        {
+          "number": "4i",
+          "text": "Help an adult change a tire on a car."
+        },
+        {
+          "number": "4j",
+          "text": "Make a repair to a bicycle, such as adjusting or lubricating the chain, inflating the tires, fixing a flat, or adjusting the seat or handlebars."
+        },
+        {
+          "number": "4k",
+          "text": "Replace the wheels on a skateboard, a scooter, or a pair of inline skates."
+        },
+        {
+          "number": "4l",
+          "text": "Help an adult prepare and paint a room."
+        },
+        {
+          "number": "4m",
+          "text": "Help an adult replace or repair a wall or floor tile."
+        },
+        {
+          "number": "4n",
+          "text": "Help an adult install or repair a window or door lock."
+        },
+        {
+          "number": "4o",
+          "text": "Help an adult fix a slow or clogged sink drain."
+        },
+        {
+          "number": "4p",
+          "text": "Help an adult install or repair a mailbox."
+        },
+        {
+          "number": "4q",
+          "text": "Change the battery in a smoke detector or a carbon monoxide detector, and test its operation."
+        },
+        {
+          "number": "4r",
+          "text": "Help an adult fix a leaky faucet."
+        },
+        {
+          "number": "4s",
+          "text": "Find wall studs, and help an adult hang a curtain rod or a picture."
+        },
+        {
+          "number": "4t",
+          "text": "Take an old item, such as a small piece of furniture, a broken toy, or a picture frame, and rebuild and/or refinish it. Show your work to your Webelos leader or another adult."
+        },
+        {
+          "number": "4u",
+          "text": "Do a Fix It project agreed upon with your parent or guardian."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": "(To be retired on May 31, 2022.)"
+}

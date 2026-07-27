@@ -5,7 +5,7 @@
   "subject": "adventure:tigers-in-the-wild",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-tigers-in-the-wild-2018",
   "source_document": {
     "title": "Tigers in the Wild — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/tigers-in-the-wild/",

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-team-tiger-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:team-tiger",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Team Tiger — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete requirements 1 and 2 plus at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your parent, guardian, or other caring adult, or with your den, talk about what it means to be part of a team. List some of the teams you are on (den, pack, family, class, etc.), and explain how you can help each one."
+    },
+    {
+      "number": "2",
+      "text": "With your den, talk about your Tiger team. Then make a chart showing all the different ways team members can help the den. Volunteer to take your turn doing at least two different jobs, one of which is leading the Pledge of Allegiance."
+    },
+    {
+      "number": "3",
+      "text": "With your family, talk about how family members each have a role in the family team. Then pick a job that you will do to help the team. Follow through by doing that job at least three times during the next three weeks."
+    },
+    {
+      "number": "4",
+      "text": "With your den or family, participate as a team in a service project that helps our country or your community."
+    },
+    {
+      "number": "5",
+      "text": "With your den, make a chart or picture showing how you and your teammates make a better team because you are alike in some ways but different in others."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

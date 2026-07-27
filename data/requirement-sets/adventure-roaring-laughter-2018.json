@@ -1,0 +1,56 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-roaring-laughter-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:roaring-laughter",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Roaring Laughter — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete at least four of the following.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Think about what makes you laugh. Write down three things that make you laugh."
+    },
+    {
+      "number": "2",
+      "text": "Practice reading tongue twisters."
+    },
+    {
+      "number": "3",
+      "text": "Create your own short story. Remove some nouns, verbs, adjectives, and adverbs from the story, leaving blanks. Without telling the story, have a friend insert his or her own nouns, verbs, adjectives, and adverbs in the story you created."
+    },
+    {
+      "number": "4",
+      "text": "With a partner, play a game that makes you laugh."
+    },
+    {
+      "number": "5",
+      "text": "Share at least two jokes with members of your den to make them laugh."
+    },
+    {
+      "number": "6",
+      "text": "Practice at least two run-ons with your den, and perform them at a pack meeting or campfire program."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

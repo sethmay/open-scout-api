@@ -1,0 +1,80 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-air-of-the-wolf-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:air-of-the-wolf",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": "requirement-set:adventure-air-of-the-wolf-2018",
+  "source_document": {
+    "title": "Air of the Wolf — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/wolf-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Conduct two of the following investigations to see how air affects different objects:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Make a paper airplane and fly it five times. Try to make it fly farther by altering its shape. Fly it at least five more times to see if your changes were effective."
+        },
+        {
+          "number": "1b",
+          "text": "Make a balloon-powered sled or a balloon powered boat. Test your sled or boat with larger and smaller balloons."
+        },
+        {
+          "number": "1c",
+          "text": "Bounce a basketball that doesn’t have enough air in it. Then bounce it when it has the right amount of air in it. Do each one 10 times. Describe how the ball bounces differently when the amount of air changes."
+        },
+        {
+          "number": "1d",
+          "text": "Roll a tire or ball that doesn’t have enough air in it, and then roll it again with the right amount of air. Describe differences in how they move."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Complete two of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "With other members of your den, go outside and record the sounds you hear. Identify which of these sounds is the result of moving air."
+        },
+        {
+          "number": "2b",
+          "text": "Create a musical wind instrument, and play it as part of a den band."
+        },
+        {
+          "number": "2c",
+          "text": "With an adult, conduct an investigation on how speed can affect sound."
+        },
+        {
+          "number": "2d",
+          "text": "Make a kite using household materials. With your den or family, explain the rules for safely flying kites. Fly your kite."
+        },
+        {
+          "number": "2e",
+          "text": "With your family, den, or pack, participate in a kite derby, space derby, or rain gutter regatta. Explain how air helps the vehicle move."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/wolf-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

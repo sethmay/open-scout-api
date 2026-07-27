@@ -5,7 +5,7 @@
   "subject": "adventure:ill-do-it-myself",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-ill-do-it-myself-2018",
   "source_document": {
     "title": "I’ll Do It Myself — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/ill-do-it-myself/",

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-bear-picnic-basket-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:bear-picnic-basket",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Bear Picnic Basket — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete at least three of the following.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Create your own Bear cookbook using at least five recipes you might cook or prepare either on your own or with some adult help. Include at least one recipe each for breakfast, lunch, dinner, and a nutritious snack."
+    },
+    {
+      "number": "2",
+      "text": "With a family member or den leader, prepare for cooking by explaining the importance of planning, tool selection, sanitation, and cooking safety."
+    },
+    {
+      "number": "3",
+      "text": "Select and prepare two nutritious snacks for yourself, your family, or your den."
+    },
+    {
+      "number": "4",
+      "text": "With the help of an adult, select a recipe to prepare in a kitchen for your den or your family. Help to select the needed ingredients, perhaps from a garden, grocery store, or farmers’ market. Cook and serve your planned meal. Clean up after the preparation and cooking."
+    },
+    {
+      "number": "5",
+      "text": "With the help of an adult, select a recipe to prepare in the outdoors for your family or den. Help to select the needed ingredients, perhaps from a garden, grocery store, or farmers’ market. Cook and serve your planned meal. Clean up after the preparation and cooking."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

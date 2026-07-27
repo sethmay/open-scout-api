@@ -4,7 +4,7 @@
   "kind": "adventure",
   "versions": [
     {
-      "valid_from": "2024",
+      "valid_from": "2022-06-01",
       "valid_to": null,
       "name": "Sky is the Limit",
       "program": "cub_scouts",

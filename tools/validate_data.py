@@ -233,6 +233,22 @@ def main() -> int:
                             f"but text-present={has_text}")
             for r in obj.get("requirements", []):
                 _walk_choose(r, f"requirement-sets/{name}")
+            # `completion_rule` is prose that narrows the list ("Complete Requirements 1-4 plus at
+            # least one other"), so it is only trustworthy if the numbers it cites exist. A rule
+            # naming requirement 7 on a five-requirement document means the requirement list was
+            # mis-parsed, which is the failure mode this whole extraction risks.
+            rule = obj.get("completion_rule")
+            if rule is not None:
+                if not rule.strip():
+                    errs.append(f"requirement-sets/{name}: completion_rule is blank; use null when "
+                                f"every requirement is required")
+                tops = {r.get("number") for r in obj.get("requirements", [])}
+                nmax = max((int(n) for n in tops if str(n).isdigit()), default=0)
+                cited = [int(x) for x in re.findall(r"\b(\d+)\b", rule)]
+                over = sorted({c for c in cited if c > nmax})
+                if over:
+                    errs.append(f"requirement-sets/{name}: completion_rule cites requirement(s) "
+                                f"{over} but the document only has {nmax} ({rule!r})")
 
         # Revision-chain invariants. Editions of one subject form a single ordered history,
         # so: no edition supersedes itself, two editions never claim the same effective_from
@@ -257,6 +273,27 @@ def main() -> int:
                             f"({', '.join(o['id'] for o in opens)}); at most one may be current")
             elif not opens and subject_open:
                 errs.append(f"requirement-sets: subject {subj!r} is current but has no open edition")
+            # Editions must form ONE unbroken line: an effective-dated document history with a
+            # hole in it silently answers "which requirements applied in 2020?" with nothing.
+            # Two abutment styles are in use — merit-badge editions close on the last day they
+            # applied (2023-12-31 -> 2024-01-01) while adventure editions close on the day the
+            # successor took effect (2024 -> 2024) — so this forbids overlaps and multi-year gaps
+            # rather than demanding one style. (Unifying them is a TODO: the schema never said
+            # which, which is how they diverged.)
+            ordered = sorted(sets, key=lambda o: o["effective_from"])
+            for prev, nxt in zip(ordered, ordered[1:]):
+                pt = prev.get("effective_to")
+                if pt is None:
+                    errs.append(f"requirement-sets/{prev['id']}: open edition sits before "
+                                f"{nxt['id']} in the chain; only the newest may be open")
+                    continue
+                if pt > nxt["effective_from"]:
+                    errs.append(f"requirement-sets: subject {subj!r} editions overlap "
+                                f"({prev['id']} ends {pt}, {nxt['id']} starts {nxt['effective_from']})")
+                elif int(nxt["effective_from"][:4]) - int(pt[:4]) > 1:
+                    errs.append(f"requirement-sets: subject {subj!r} has a gap between "
+                                f"{prev['id']} (ends {pt}) and {nxt['id']} "
+                                f"(starts {nxt['effective_from']})")
         nrs = len(docs)
 
     # pass 5: controlled vocabularies + every code used in camp data must be defined
@@ -343,11 +380,13 @@ def main() -> int:
                 if area is not None and known_areas is not None and area not in known_areas:
                     errs.append(f"adventures/{p.name}: area {area!r} not in vocab "
                                 f"(add it to data/vocab/adventure-areas.json)")
-                # an area IS the required slot it fills, so the two facts are one fact: a required
-                # adventure that fills nothing, or an elective that claims a slot, is incoherent.
-                if (v.get("category") == "required") != (area is not None):
+                # An area IS the required slot it fills, so the two facts are one fact: a required
+                # adventure filling nothing, or an elective claiming a slot, is incoherent. Scoped
+                # to OPEN windows: the six areas are a 2024-program construct, and the pre-2024
+                # line-up had required adventures with no area to fill.
+                if v.get("valid_to") is None and (v.get("category") == "required") != (area is not None):
                     errs.append(f"adventures/{p.name}: category={v.get('category')!r} but "
-                                f"area={area!r}; area is set exactly for required adventures")
+                                f"area={area!r}; area is set exactly for current required adventures")
 
     # pass 5b: merit-badge `description` must be original evergreen prose, never pamphlet or
     # requirement text. The requirement text IS Scouting America's copyright and is published
@@ -433,7 +472,12 @@ def main() -> int:
         obj = json.loads(p.read_text("utf-8"))
         slug = obj.get("id")
         listed = from_ranks.get(slug, set())
-        if not listed:
+        # A rank's requirement-set is the CURRENT advancement structure, so only a currently
+        # offered adventure has to appear in one. A retired adventure is reachable through
+        # v1/adventures/index.json and carries its own rank association on its closed windows;
+        # requiring a ref would force inventing historical rank trees to hold them.
+        current_adv = any(v.get("valid_to") is None for v in obj.get("versions", []))
+        if current_adv and not listed:
             errs.append(f"adventures/{p.name}: no rank requirement-set refs {slug!r}; an adventure "
                         f"no rank offers is unreachable (retire it, or add the ref)")
         for v in obj.get("versions", []):

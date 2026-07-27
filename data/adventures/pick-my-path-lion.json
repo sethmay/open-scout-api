@@ -4,6 +4,30 @@
   "kind": "adventure",
   "versions": [
     {
+      "valid_from": "2018-09-01",
+      "valid_to": "2024",
+      "name": "Pick my Path",
+      "program": "cub_scouts",
+      "ranks": [
+        "rank:lion"
+      ],
+      "category": "elective",
+      "area": null,
+      "url": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/lion-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8,
+        "notes": "Pre-2024 Cub program, via the U.S. Scouting Service Project archive (usscouts.org), which is unaffiliated with Scouting America."
+      }
+    },
+    {
       "valid_from": "2024",
       "valid_to": null,
       "name": "Pick My Path",

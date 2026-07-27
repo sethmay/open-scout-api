@@ -1,0 +1,74 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-tigers-in-the-wild-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:tigers-in-the-wild",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Tigers in the Wild — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1-3 plus at least one other.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your parent, guardian, or other caring adult, name and collect the Cub Scout Six Essentials you need for a hike. Tell your den leader what you would need to add to your list to prepare for rain."
+    },
+    {
+      "number": "2",
+      "text": "Go for a short hike with your den or family, and carry your own gear. Show you know how to get ready for this hike."
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Listen while your leader reads the Outdoor Code. Talk about how you can be clean in your outdoor manners."
+        },
+        {
+          "number": "3b",
+          "text": "Listen while your leader reads the Leave No Trace Principles for Kids. Discuss why you should \"Trash Your Trash.\""
+        },
+        {
+          "number": "3c",
+          "text": "Apply the Outdoor Code and Leave No Trace Principles for Kids on your Tiger den and pack outings. After one outing, share what you did to demonstrate the principles you discussed."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "While on the hike, find three different kinds of plants, animals, or signs that animals have been on the trail. List what you saw in your Tiger handbook."
+    },
+    {
+      "number": "5",
+      "text": "Participate in an outdoor pack meeting or pack campout campfire. Sing a song and act out a skit with your Tiger den as part of the program."
+    },
+    {
+      "number": "6",
+      "text": "Find two different trees and two different types of plants that grow in your area. Write their names in your Tiger handbook."
+    },
+    {
+      "number": "7",
+      "text": "Visit a nature center, zoo, or another outside place with your family or den. Learn more about two animals, and write down two interesting things about them in your Tiger handbook."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

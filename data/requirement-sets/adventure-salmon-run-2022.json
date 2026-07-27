@@ -1,0 +1,68 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-salmon-run-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:salmon-run",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": "requirement-set:adventure-salmon-run-2018",
+  "source_document": {
+    "title": "Salmon Run — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/bear-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete requirements 1-4 plus two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain the importance of response personnel or lifeguards in a swimming area. Tell how the buddy system works and why it is important."
+    },
+    {
+      "number": "2",
+      "text": "Visit a local pool or swimming area with your den or family. Go swimming or take a swimming lesson."
+    },
+    {
+      "number": "3",
+      "text": "Explain the safety rules that you need to follow before participating in boating."
+    },
+    {
+      "number": "4",
+      "text": "Identify the safety equipment needed when going boating."
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate correct rowing or paddling form. Explain how rowing and canoeing are good exercise."
+    },
+    {
+      "number": "6",
+      "text": "Show how to do both a reach rescue and a throw rescue."
+    },
+    {
+      "number": "7",
+      "text": "Demonstrate the front crawl swim stroke to your den or family."
+    },
+    {
+      "number": "8",
+      "text": "Name the three swimming ability groups for the Boy Scouts of America."
+    },
+    {
+      "number": "9",
+      "text": "Earn the BSA beginner swim classification."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/bear-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

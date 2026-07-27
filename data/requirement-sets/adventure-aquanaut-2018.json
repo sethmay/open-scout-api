@@ -1,0 +1,68 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-aquanaut-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:aquanaut",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Aquanaut — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1-4 and at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "State the safety precautions you need to take before doing any water activity."
+    },
+    {
+      "number": "2",
+      "text": "Discuss the importance of learning the skills you need to know before going boating."
+    },
+    {
+      "number": "3",
+      "text": "Explain the meaning of “order of rescue” and demonstrate the reach and throw rescue techniques from land."
+    },
+    {
+      "number": "4",
+      "text": "Attempt the BSA swimmer test."
+    },
+    {
+      "number": "5",
+      "text": "Demonstrate the precautions you must take before attempting to dive headfirst into the water, and attempt a front surface dive."
+    },
+    {
+      "number": "6",
+      "text": "Learn and demonstrate two of the following strokes: crawl, sidestroke, breaststroke, or elementary backstroke."
+    },
+    {
+      "number": "7",
+      "text": "Invite a current or former lifeguard, or member of a rescue squad, the U.S. Coast Guard, U.S. Navy, or other armed forces branch who has had swimming and rescue training to your den meeting. Find out what training and other experiences this person has had."
+    },
+    {
+      "number": "8",
+      "text": "Demonstrate how to correctly fasten a life jacket that is the right size for you. Jump into water over your head. Swim 25 feet wearing the life jacket. Get out of the water, remove the life jacket, and hang it where it will dry."
+    },
+    {
+      "number": "9",
+      "text": "If you are a qualified swimmer, select a paddle of the proper size, and paddle a canoe with an adult’s supervision."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

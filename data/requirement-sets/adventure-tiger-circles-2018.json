@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-tiger-circles-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:tiger-circles",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Tiger Circles: Duty to God — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete requirement 1 plus at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your parent, guardian, den leader, or other caring adult what it means to do your duty to God. Tell how you do your duty to God in your daily life."
+    },
+    {
+      "number": "2",
+      "text": "With a family member, attend a religious service or other activity that shows how your family expresses reverence for God."
+    },
+    {
+      "number": "3",
+      "text": "Earn the religious emblem of your faith that is appropriate for your age or grade."
+    },
+    {
+      "number": "4",
+      "text": "Help with a local service project and talk with your den or family about how helping others is part of our duty to God."
+    },
+    {
+      "number": "5",
+      "text": "With the approval of your parent/guardian, den leader, or other caring adult, think of and then carry out an act of kindness or respect that you think shows duty to God."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

@@ -73,12 +73,17 @@ noted here because their status shapes what we may redistribute:
   Requirement **text is © Scouting America** (see above), reproduced verbatim with
   attribution for non-commercial Scouting use; only the structure/numbering/metadata are the
   project's contribution. The source PDF is not redistributed (kept in git-ignored `.workbench/`).
-- **U.S. Scouting Service Project (usscouts.org)** — community archive that mirrors the
-  official BSA/Scouts BSA rank requirements by effective year; source for the 26 historical
-  rank `requirement-set` documents (2016-2023 editions). The requirement **text is © Scouting
+- **U.S. Scouting Service Project (usscouts.org)** — community archive that mirrors official
+  Scouting America requirements by effective year; source for the 26 historical rank
+  `requirement-set` documents (2016-2023 editions), the discontinued merit-badge catalog, and the
+  **pre-2024 Cub Scout adventure line-up**: 38 retired `adventure` entities and 121 historical
+  adventure `requirement-set` editions, taken from `advance/cubscout/` including its `old/`
+  archive of the 2018 elective editions. Effective dates are read from each page's own
+  revision-date region rather than inferred. The requirement **text is © Scouting
   America** (see above), reproduced verbatim with attribution for non-commercial Scouting use;
   only the structure/numbering/metadata are the project's contribution. USSSP is unaffiliated
-  with BSA; its own page layout/code is separately licensed and is not redistributed here.
+  with Scouting America; its own page layout/code is separately licensed and is not
+  redistributed here (cached pages stay in git-ignored `.workbench/`).
 - **Scouting America official advancement pages & PDFs (scouting.org, seascout.org)** —
   source for the current Cub Scout (Lion–Arrow of Light), Venturing (Discovery/Pathfinder/
   Summit), and Sea Scout (Apprentice–Quartermaster) rank `requirement-set` documents, and for

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-scouting-adventure-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:scouting-adventure",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Scouting Adventure — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Prepare yourself to join a troop by completing at least a-c below:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Repeat from memory the Scout Oath, Scout Law, Scout motto, and Scout slogan. In your own words, explain their meanings to your den leader, parent, or guardian."
+        },
+        {
+          "number": "1b",
+          "text": "Explain what Scout spirit is. Describe for your den leader, parent, or guardian some ways you have shown Scout spirit by conducting yourself according to the Scout Oath, Scout Law, Scout motto, and Scout slogan."
+        },
+        {
+          "number": "1c",
+          "text": "Give the Scout sign, salute, and handshake. Explain when to use each."
+        },
+        {
+          "number": "1d",
+          "text": "Describe the First Class Scout badge, and tell what each part stands for. Explain the significance of the First Class Scout badge."
+        },
+        {
+          "number": "1e",
+          "text": "Repeat from memory the Pledge of Allegiance. In your own words, explain its meaning"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Visit a troop meeting with your parent or guardian and, if possible, with your den members and leaders. After the meeting, do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Describe how the Scouts in the troop provide its leadership."
+        },
+        {
+          "number": "2b",
+          "text": "Describe the four steps of Scout advancement."
+        },
+        {
+          "number": "2c",
+          "text": "Describe ranks in Scouting and how they are earned."
+        },
+        {
+          "number": "2d",
+          "text": "Describe what merit badges are and how they are earned."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Practice the patrol method in your den for one month by doing the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the patrol method. Describe the types of patrols that might be part of a troop."
+        },
+        {
+          "number": "3b",
+          "text": "Hold an election to choose the patrol leader."
+        },
+        {
+          "number": "3c",
+          "text": "Develop a patrol name and emblem (if your den does not already have one), as well as a patrol flag and yell. Explain how a patrol name, emblem, flag, and yell create patrol spirit."
+        },
+        {
+          "number": "3d",
+          "text": "As a patrol, make plans to participate in a troop’s campout or other outdoor activity."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "With your Webelos den leader, parent, or guardian, participate in a troop’s campout or other outdoor activity. Use the patrol method while on the outing."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Show how to tie a square knot, two half hitches, and a taut-line hitch. Explain how each knot is used."
+        },
+        {
+          "number": "5b",
+          "text": "Show the proper care of a rope by learning how to whip and fuse the ends of different kinds of rope."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Demonstrate your knowledge of the pocketknife safety rules and the pocketknife pledge. If you have not already done so, earn your Whittling Chip card."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

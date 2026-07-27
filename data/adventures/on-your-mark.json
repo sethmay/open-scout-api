@@ -4,7 +4,7 @@
   "kind": "adventure",
   "versions": [
     {
-      "valid_from": "2024",
+      "valid_from": "2018-09-01",
       "valid_to": null,
       "name": "On Your Mark",
       "program": "cub_scouts",

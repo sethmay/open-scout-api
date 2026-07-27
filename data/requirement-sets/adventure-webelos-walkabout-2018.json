@@ -1,0 +1,56 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-webelos-walkabout-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:webelos-walkabout",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Webelos Walkabout — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1-4 and at least one other.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Plan a hike or outdoor activity."
+    },
+    {
+      "number": "2",
+      "text": "Assemble a first aid kit suitable for your hike or activity."
+    },
+    {
+      "number": "3",
+      "text": "Recite the Outdoor Code and the Leave No Trace Principles for Kids from memory. Talk about how you can demonstrate them on your Webelos adventures."
+    },
+    {
+      "number": "4",
+      "text": "With your Webelos den or with a family member, hike 3 miles. Before your hike, plan and prepare a nutritious lunch or snack. Enjoy it on your hike, and clean up afterward."
+    },
+    {
+      "number": "5",
+      "text": "Describe and identify from photos any poisonous plants and dangerous animals and insects you might encounter on your hike or activity."
+    },
+    {
+      "number": "6",
+      "text": "Perform one of the following leadership roles during your hike: trail leader, first aid leader, or lunch or snack leader."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

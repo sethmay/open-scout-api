@@ -1,0 +1,72 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-castaway-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:castaway",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": "requirement-set:adventure-castaway-2018",
+  "source_document": {
+    "title": "Castaway — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Complete A. and your choice of B. or C.",
+      "children": [
+        {
+          "number": "1a",
+          "text": "On a campout or outdoor activity with your den or family, cook two different recipes that do not require pots and pans."
+        },
+        {
+          "number": "1b",
+          "text": "With the help of an adult, demonstrate one way to light a fire without using matches."
+        },
+        {
+          "number": "1c",
+          "text": "Using tree limbs or branches that have already fallen or been cut, build a shelter that will protect you overnight."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do all of the following.",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Learn what items should be in an outdoor survival kit that you can carry in a small bag or box in a day pack. Assemble your own small survival kit, and explain to your den leader why the items you chose are important for survival."
+        },
+        {
+          "number": "2b",
+          "text": "With your den, demonstrate two ways to treat drinking water to remove impurities."
+        },
+        {
+          "number": "2c",
+          "text": "Discuss what to do if you become lost in the woods. Tell what the letters “S-T- O-P” stand for. Tell what the universal emergency signal is. Describe three ways to signal for help. Demonstrate one of them. Describe what you can do to help rescuers find you."
+        },
+        {
+          "number": "2d",
+          "text": "Make a list of four qualities you think a leader should have in an emergency and why they are important to have. Pick two of them, and act them out for your den. Describe how each relates to a point of the Scout Law. Describe how working on this adventure gave you a better understanding of the Scout motto, \"Be Prepared.\""
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

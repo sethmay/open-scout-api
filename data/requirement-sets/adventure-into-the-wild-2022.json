@@ -1,0 +1,92 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-into-the-wild-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:into-the-wild",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": "requirement-set:adventure-into-the-wild-2018",
+  "source_document": {
+    "title": "Into the Wild — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete at least six of the following requirements.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Collect and care for an “insect, amphibian, or reptile zoo.” You might have crickets, ants, grasshoppers, a lizard, or a toad (but be careful not to collect or move endangered species protected by federal or state law). Study them for a while and then let them go. Share your experience with your Webelos den."
+    },
+    {
+      "number": "2",
+      "text": "Set up an aquarium or terrarium. Keep it for at least a month. Share your experience with your Webelos den by showing them photos or drawings of your project or by having them visit to see your project."
+    },
+    {
+      "number": "3",
+      "text": "Watch for birds in your yard, neighborhood, or area for one week. Identify the birds you see, and write down where and when you saw them."
+    },
+    {
+      "number": "4",
+      "text": "Learn about the bird flyways closest to your home. Find out which birds use these flyways."
+    },
+    {
+      "number": "5",
+      "text": "Watch at least four wild creatures (reptiles, amphibians, arachnids, fish, insects, or mammals) in the wild. Describe the kind of place (forest, field, marsh, yard, or park) where you saw them. Tell what they were doing."
+    },
+    {
+      "number": "6",
+      "text": "Identify an insect, reptile, bird, or other wild animal that is found only in your area of the country. Tell why it survives in your area."
+    },
+    {
+      "number": "7",
+      "text": "Give examples of at least two of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "A producer, a consumer, and a decomposer in the food chain of an ecosystem"
+        },
+        {
+          "number": "7b",
+          "text": "One way humans have changed the balance of nature"
+        },
+        {
+          "number": "7c",
+          "text": "How you can help protect the balance of nature"
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Learn about aquatic ecosystems and wetlands in your area. Talk with your Webelos den leader or family about the important role aquatic ecosystems and wetlands play in supporting life cycles of wildlife and humans, and list three ways you can help."
+    },
+    {
+      "number": "9",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Visit a museum of natural history, a nature center, or a zoo with your family, Webelos den, or pack. Tell what you saw."
+        },
+        {
+          "number": "9b",
+          "text": "Create a video of a wild creature doing something interesting, and share it with your family and den."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

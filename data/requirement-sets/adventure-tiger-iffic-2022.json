@@ -1,0 +1,70 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-tiger-iffic-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:tiger-iffic",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Tiger-iffic! — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete requirements 1-3 and plus at least one other.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Play at least two different games by yourself; one may be a video game."
+    },
+    {
+      "number": "2",
+      "text": "Play a board game or another inside game with one or more members of your den."
+    },
+    {
+      "number": "3",
+      "text": "Play a problem-solving game with your den."
+    },
+    {
+      "number": "4",
+      "text": "With your parent's or guardian's permission, do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Play a video game with family members or den members in a tournament."
+        },
+        {
+          "number": "4b",
+          "text": "List at least three tips that would help someone who was learning how to play your favorite video game."
+        },
+        {
+          "number": "4c",
+          "text": "Play an appropriate video game with a friend for 30 minutes."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "With other members of your den, invent a game, OR change the rules of a game you know, and play the game."
+    },
+    {
+      "number": "6",
+      "text": "Play a team game with your den"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}
