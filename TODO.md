@@ -73,19 +73,31 @@ a full round trip — re-stamped to a throwaway identity, `validate_data` + `bui
 + `validate_examples` all passed, every published surface moved (`meta.base_url`, every `$schema`,
 the SQLite `source` row), then re-stamped back **byte-identical** to HEAD.
 
-**What still needs deciding, and it is the durable-vs-convenient choice, not a naming one:**
+**DECIDED 2026-07-27 (owner): keep `https://sethmay.github.io/open-scout-api` for now. A permanent
+home is still being negotiated, so 1.0 stays UNCUT — deliberately, not for want of work.**
 
-1. **Custom domain (recommended).** Point a domain at Pages via CNAME and make `$id`
-   `https://<domain>`. The published identity then stops depending on GitHub at all: the repo can
-   move between accounts or orgs later and **no consumer notices**, because `$id` never changes.
-   One re-stamp now, none ever again. Cost is a registration plus auto-renew; the real risk is
-   letting the domain lapse, which would 404 every `$id` in the wild — so register long and lock it.
-2. **GitHub org, no custom domain.** e.g. `github.com/<org>/open-scout-api` serving
-   `<org>.github.io/open-scout-api`. Free, reads as a project rather than a personal side project,
-   but the identity stays coupled to GitHub — a later move is another (now cheap) re-stamp, and
-   consumers pinned to the old host still break.
-3. **Stay put.** Zero work. The identity says "personal side project", and any future move remains
-   the breaking event that has been deferred all along.
+⚠ **Do not cut 1.0 until the home lands.** 1.0 is the promise that `v1` is additive-only forever:
+no renames, no removals, safe to pin. Freezing that promise onto a URL we already intend to move
+would break it on purpose the first time the move happens — which is worse than having no promise
+yet. Everything else on this list is cleared, so the tag is waiting on one external decision and
+nothing more.
+
+What that means concretely, and what is already true:
+
+- **Consumers can use the API today**, and everything published is schema-pinned and build-gated
+  (0.41.0). What they cannot yet rely on is the *permanence of the host*, so the README should keep
+  saying so until 1.0.
+- **The move itself is cheap and rehearsed** — `tools/restamp_identity.py --api-base … --repo …`,
+  round-trip verified byte-identical (0.42.1). Whichever home is negotiated, it is one command plus
+  a rebuild, a CHANGELOG entry and a tag.
+- **Zenodo DOI stays deferred** for the same reason: the record binds to the final GitHub location.
+  `.zenodo.json` is already written and correct, so enabling it later is a toggle at zenodo.org.
+- **Strong preference when the choice reopens: a custom domain.** It is the only option that makes
+  the published identity independent of GitHub, so a later account-or-org move becomes invisible to
+  consumers rather than another breaking event. The trade is a registration plus auto-renew, and the
+  live risk is letting it lapse, which would 404 every `$id` in the wild — register long and lock it.
+  Second choice is a GitHub org; staying on a personal account is the option that keeps this exact
+  decision open indefinitely.
 
 **Every published endpoint is now pinned — CLEARED IN 0.41.0.** The last 10 unpinned surfaces were
 `v1/meta.json`, `v1/{dataset}/aliases.json`, and the 8 per-entity `v1/{dataset}/{id}.json` families,
