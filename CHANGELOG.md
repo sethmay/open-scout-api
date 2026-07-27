@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.51.0 (minor) — 2026-07-27
 
-- `PENDING` **Tenure and merit-badge counts are countable: 13 + 3 facts lifted out of prose.**
+- `151a4ea` **Tenure and merit-badge counts are countable: 13 + 3 facts lifted out of prose.**
   `tenure_months` on any requirement demanding months of activity or service, `badge_count` on the
   ones stating merit-badge totals. Both derived from each requirement's own verbatim text at apply
   time, so a reissued book moves the numbers with it. New `rank_advancement` SQLite table answers
