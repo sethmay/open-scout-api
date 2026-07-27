@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.41.0 (minor) — 2026-07-27
 
-- `PENDING` **Every published endpoint is now schema-pinned and build-gated — 1,774 files, nothing
+- `f49b219` **Every published endpoint is now schema-pinned and build-gated — 1,774 files, nothing
   left unpinned.** The last 10 surfaces had no contract at all: `v1/meta.json`,
   `v1/{dataset}/aliases.json`, and the 8 per-entity `v1/{dataset}/{id}.json` families (**1,756
   files**). Their shape existed only inside `build.py`, so renaming `events` was a one-line edit no
