@@ -420,11 +420,12 @@ source (see the Meriwether evidence in PLAN §5.1).
 Eagle requirement 3 is structured: 14 slots, three either/or, every badge `ref`-resolved, gate-tied
 to `eagle_required` (which marks the 18-badge list, not the slot count). Remaining:
 
-- **Positions of responsibility.** Eagle requirement 4 and Star/Life requirement 5 list ~40
-  positions across three unit types (Scout troop / Venturing crew + Sea Scout ship / Lone Scout) in
-  one prose blob each. Structuring them as `choose: 1` groups of text nodes is cheap; making
-  positions first-class entities is the larger question, and nothing else in the dataset references
-  a position yet.
+- **Positions of responsibility — DONE (0.49.0).** 29 `position` entities; Star/Life/Eagle
+  requirement trees carry 104 `position:` refs. Acceptance is a rank-side edge because it is not
+  symmetric (Bugler: Star and Life, not Eagle). Follow-ups: **adult leadership roles** (Scoutmaster,
+  committee chair — `audience` already allows them, and they pair naturally with the adult-training
+  dataset idea); position tenure is on the requirement, not the position, which is correct but means
+  "four months for Star, six for Life" is still only in prose.
 - **Star and Life badge counts.** "Six merit badges, including any four from the required list"
   (Star) and "five more ... including any three additional" (Life) are countable rules still living
   in prose. They reference Eagle's list rather than restating it, so structuring them means a

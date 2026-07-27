@@ -1,0 +1,21 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "position-unit-types",
+  "kind": "vocab",
+  "title": "Unit types offering a leadership position",
+  "description": "The unit groupings the Scouts BSA rank requirements use when listing positions of responsibility. `crew_or_ship` is deliberately one code, not two: the requirement prints a single 'Venturing crew/Sea Scout ship' heading over one list, and splitting it would assert a distinction the source does not make. Single-valued codes on position.unit_types, which is an array because six positions appear under more than one heading.",
+  "applies_to": ["position.unit_types"],
+  "open": true,
+  "terms": [
+    {
+      "code": "scout_troop",
+      "label": "Scout Troop",
+      "description": "Positions in a Scouts BSA troop, from Patrol Leader to Outdoor Ethics Guide."
+    },
+    {
+      "code": "crew_or_ship",
+      "label": "Venturing Crew / Sea Scout Ship",
+      "description": "Positions the requirements list under a single combined heading for Venturing crews and Sea Scout ships, including ship-specific roles such as Boatswain and Purser."
+    }
+  ]
+}

@@ -109,11 +109,186 @@ def apply_graph(quiet: bool = False) -> int:
     return changed
 
 
+def apply_positions(quiet: bool = False) -> int:
+    """Give each rank's positions-of-responsibility requirement a resolvable option tree.
+
+    The requirement offers a choice of unit type, then a position within it — plus, for Star and
+    Life only, a Scoutmaster-approved project instead. That is three levels of choice flattened
+    into one sentence; here it is `choose: 1` over the unit-type groups, each itself `choose: 1`
+    over `position:` refs.
+    """
+    facts = json.loads(FACTS.read_text("utf-8"))
+    names = {r["slug"]: r["name"] for r in facts["positions"]}
+    labels = dict(UNIT_GROUPS)
+    changed = 0
+    for rank, e in facts["rank_positions"].items():
+        p = RS / f"{rank}-2024.json"
+        doc = json.loads(p.read_text("utf-8"))
+        req = next(r for r in doc["requirements"] if r["number"] == e["requirement"])
+        kids, n = [], 0
+        for g in e["groups"]:
+            n += 1
+            code = g["unit_type"]
+            kids.append({
+                "number": f"{e['requirement']}{chr(96 + n)}",
+                "text": labels[code].rstrip("."),
+                "choose": 1,
+                "children": [{"number": f"{e['requirement']}{chr(96 + n)}({i})",
+                              "text": names[s], "ref": f"position:{s}"}
+                             for i, s in enumerate(g["slugs"], start=1)],
+            })
+        if e.get("lone_scout"):
+            n += 1
+            kids.append({"number": f"{e['requirement']}{chr(96 + n)}",
+                         "text": f"{labels['lone_scout'].rstrip('.')} {e['lone_scout']}"})
+        if e.get("leadership_project"):
+            n += 1
+            kids.append({"number": f"{e['requirement']}{chr(96 + n)}",
+                         "text": "Carry out a Scoutmaster-approved leadership project to help the troop."})
+        node = {"choose": 1, "children": kids}
+        if req.get("choose") == 1 and req.get("children") == kids:
+            continue
+        req["choose"], req["children"] = node["choose"], node["children"]
+        p.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
+                     encoding="utf-8", newline="\n")
+        changed += 1
+        if not quiet:
+            print(f"  {p.name}: requirement {e['requirement']} -> {len(kids)} alternatives "
+                  f"({sum(len(k.get('children') or []) for k in kids)} position refs)")
+    return changed
+
+
 def main() -> None:
-    n = apply_graph()
+    import sys
+    if "--extract" in sys.argv:
+        extract_positions()
+    n = generate_positions()
+    print(f"positions: {n} entities written")
+    n = apply_graph() + apply_positions()
     print(f"advancement graph: {n} requirement-set(s) rewritten"
           if n else "advancement graph: already applied (no changes)")
 
+
+
+# --------------------------------------------------------------------------- positions
+
+RANK_POR = {"star": "5", "life": "5", "eagle": "4"}
+UNIT_GROUPS = [("scout_troop", "Scout troop."),
+               ("crew_or_ship", "Venturing crew/Sea Scout ship."),
+               ("lone_scout", "Lone Scout.")]
+SMALL = {"of", "the", "in", "to", "and", "or", "a", "an", "for"}
+
+
+def title(name: str) -> str:
+    """Display name from a mid-sentence lowercase list item."""
+    words = name.split()
+    return " ".join(w.capitalize() if i == 0 or w not in SMALL else w for i, w in enumerate(words))
+
+
+def pos_slug(name: str) -> str:
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", name.replace("\u2019", ""))).strip("-")
+
+
+def _por_groups(text: str) -> dict[str, str]:
+    """The requirement's own unit-type groups, keyed by our vocab code."""
+    marks = [(text.find(lbl), code, lbl) for code, lbl in UNIT_GROUPS]
+    marks = sorted((i, c, l) for i, c, l in marks if i >= 0)
+    out = {}
+    for n, (i, code, lbl) in enumerate(marks):
+        end = marks[n + 1][0] if n + 1 < len(marks) else len(text)
+        out[code] = text[i + len(lbl):end].strip()
+    return out
+
+
+def _por_items(segment: str) -> list[str]:
+    seg = re.sub(r"\(See[^)]*\)", "", segment).strip().rstrip(".")
+    seg = re.sub(r",?\s+or\s+", ", ", seg)
+    return [re.sub(r"\s+", " ", x).strip().lower() for x in seg.split(",") if x.strip()]
+
+
+def extract_positions() -> None:
+    """Derive the position catalog and each rank's option groups from the requirement text itself.
+
+    Positions are listed only inside the rank requirements, so the requirement text IS the source;
+    deriving rather than hand-typing means a reissued requirements book changes the catalog by
+    re-running this, and a typo cannot creep in unnoticed.
+    """
+    facts = json.loads(FACTS.read_text("utf-8"))
+    catalog: dict[str, dict] = {}
+    rank_positions: dict[str, dict] = {}
+    for rank, num in RANK_POR.items():
+        p = RS / f"{rank}-2024.json"
+        doc = json.loads(p.read_text("utf-8"))
+        req = next(r for r in doc["requirements"] if r["number"] == num)
+        text = req["text"]
+        groups = _por_groups(text)
+        entry = {"requirement": num, "groups": [], "lone_scout": None,
+                 # Star and Life offer a Scoutmaster-approved project instead of a position; Eagle
+                 # does not, and that asymmetry is in the requirement's own parenthetical.
+                 "leadership_project": "leadership project" in text.lower()}
+        for code, _ in UNIT_GROUPS:
+            seg = groups.get(code)
+            if seg is None:
+                continue
+            if code == "lone_scout":
+                entry["lone_scout"] = re.sub(r"\s+", " ", seg).strip()
+                continue
+            slugs = []
+            for name in _por_items(seg):
+                slug = pos_slug(name)
+                rec = catalog.setdefault(slug, {"slug": slug, "name": title(name), "unit_types": []})
+                if code not in rec["unit_types"]:
+                    rec["unit_types"].append(code)
+                slugs.append(slug)
+            entry["groups"].append({"unit_type": code, "slugs": slugs})
+        rank_positions[rank] = entry
+    facts["positions"] = [catalog[k] for k in sorted(catalog)]
+    facts["rank_positions"] = rank_positions
+    FACTS.write_text(json.dumps(facts, indent=1, ensure_ascii=False) + "\n",
+                     encoding="utf-8", newline="\n")
+    only = {s: [r for r, e in rank_positions.items()
+                if any(s in g["slugs"] for g in e["groups"])] for s in catalog}
+    partial = {s: r for s, r in only.items() if len(r) < len(RANK_POR)}
+    print(f"positions: {len(catalog)} distinct across {len(RANK_POR)} ranks")
+    print(f"  accepted by only some ranks: {partial or 'none'}")
+
+
+def generate_positions() -> int:
+    facts = json.loads(FACTS.read_text("utf-8"))
+    out = ROOT / "data" / "positions"
+    out.mkdir(parents=True, exist_ok=True)
+    accepted: dict[str, list[str]] = {}
+    for rank, e in facts["rank_positions"].items():
+        for g in e["groups"]:
+            for s in g["slugs"]:
+                accepted.setdefault(s, []).append(rank)
+    for rec in facts["positions"]:
+        ranks = sorted(set(accepted.get(rec["slug"], [])))
+        note = None
+        if len(ranks) < len(RANK_POR):
+            missing = sorted(set(RANK_POR) - set(ranks))
+            note = ("Accepted for " + ", ".join(r.capitalize() for r in ranks)
+                    + " but not " + ", ".join(r.capitalize() for r in missing)
+                    + "; the requirement lists differ.")
+        doc = {
+            "id": rec["slug"], "kind": "position",
+            "versions": [{
+                "valid_from": None, "valid_to": None,
+                "name": rec["name"], "audience": "youth",
+                "unit_types": rec["unit_types"],
+                "provenance": {
+                    "sources": [{"citation": "2024 Scouts BSA Requirements (No. 33216), "
+                                             "Star/Life/Eagle positions of responsibility"}],
+                    "method": "curated", "verified_at": "2026-07-27", "confidence": 0.9,
+                    "notes": "Name and unit types derived from the rank requirements that list it; "
+                             "these positions appear in no other published catalog.",
+                },
+            }],
+            "notes": note,
+        }
+        (out / f"{rec['slug']}.json").write_text(
+            json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    return len(facts["positions"])
 
 if __name__ == "__main__":
     main()

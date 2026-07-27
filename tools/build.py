@@ -136,6 +136,7 @@ def main() -> None:
     awards, awardevents = load_dataset("awards")
     oa_lodges, oalodgeevents = load_dataset("oa-lodges")
     adventures, advevents = load_dataset("adventures")
+    positions, posevents = load_dataset("positions")
     rs_dir = DATA / "requirement-sets"
     requirement_sets = sorted((read_json(p) for p in rs_dir.glob("*.json")),
                               key=lambda d: d["id"]) if rs_dir.exists() else []
@@ -340,6 +341,20 @@ def main() -> None:
                                        "area": ov.get("area"),
                                        "url": ov.get("url"), **_prov(ov)})
 
+    # --- positions: per-entity + index + current ---------------------------
+    pos_index, current_positions = [], []
+    for e in positions:
+        ref = f"position:{e['id']}"
+        write_entity(DIST / "v1" / "positions" / f"{e['id']}.json",
+                   {**e, "events": events_for(ref, posevents)})
+        ov = open_version(e)
+        last = ov or e["versions"][-1]
+        pos_index.append({"id": e["id"], "name": last["name"], "audience": last["audience"],
+                          "current": ov is not None})
+        if ov is not None:
+            current_positions.append({"id": e["id"], "name": ov["name"], "audience": ov["audience"],
+                                      "unit_types": ov["unit_types"], **_prov(ov)})
+
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
     PUB_CURRENT = "https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json"
@@ -361,6 +376,7 @@ def main() -> None:
     current_lodge_coll = cur("oa-lodge", current_lodges)
     current_rs_coll = cur("requirement-set", current_rs)
     current_adv_coll = cur("adventure", current_adventures)
+    current_pos_coll = cur("position", current_positions)
     index_colls = [("councils", idx("council", council_index)),
                    ("territories", idx("territory", terr_index)),
                    ("merit-badges", idx("merit-badge", mb_index)),
@@ -370,6 +386,7 @@ def main() -> None:
                    ("oa-lodges", idx("oa-lodge", lodge_index)),
                    ("requirement-sets", idx("requirement-set", rs_index)),
                    ("adventures", idx("adventure", adv_index)),
+                   ("positions", idx("position", pos_index)),
                    ("merit-badge-rankings", idx("merit-badge-ranking",
                        [{"id": d["id"], "year": d["year"], "metric": d["metric"],
                          "complete": d["complete"], "count": len(d["rankings"])}
@@ -381,7 +398,7 @@ def main() -> None:
                      ("merit-badges", current_badge_coll), ("camps", current_camp_coll),
                      ("ranks", current_rank_coll), ("awards", current_award_coll),
                      ("oa-lodges", current_lodge_coll), ("requirement-sets", current_rs_coll),
-                     ("adventures", current_adv_coll)]:
+                     ("adventures", current_adv_coll), ("positions", current_pos_coll)]:
         errs += [f"current/{fname}.json: {er.json_path}: {er.message}"
                  for er in collection_validator.iter_errors(c)]
     for ds, c in index_colls:
@@ -399,6 +416,7 @@ def main() -> None:
     write_json(DIST / "v1" / "current" / "oa-lodges.json", current_lodge_coll)
     write_json(DIST / "v1" / "current" / "requirement-sets.json", current_rs_coll)
     write_json(DIST / "v1" / "current" / "adventures.json", current_adv_coll)
+    write_json(DIST / "v1" / "current" / "positions.json", current_pos_coll)
     for ds, c in index_colls:
         write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
@@ -426,6 +444,7 @@ def main() -> None:
             "awards": {"total": len(awards), "current": len(current_awards)},
             "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges)},
             "adventures": {"total": len(adventures), "current": len(current_adventures)},
+            "positions": {"total": len(positions), "current": len(current_positions)},
         },
         "vocab": [f"v1/vocab/{v}.json" for v in vocab_ids],
         "text_rights": ("Merit-badge, rank and Cub adventure requirement text is \u00a9 Scouting America, reproduced with "
@@ -445,6 +464,8 @@ def main() -> None:
                       "v1/current/oa-lodges.json",
                       "v1/adventures/index.json", "v1/adventures/{id}.json",
                       "v1/current/adventures.json",
+                      "v1/positions/index.json", "v1/positions/{id}.json",
+                      "v1/current/positions.json",
                       *[f"v1/vocab/{v}.json" for v in vocab_ids]],
     }
     errs.extend(f"meta.json: {er.json_path}: {er.message}"
@@ -461,7 +482,8 @@ def main() -> None:
     print(f"built dist/ v{version}: {len(councils)} councils, {len(territories)} territories, "
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
           f"{len(camps)} camps, {len(ranks)} ranks, {len(awards)} awards, {len(oa_lodges)} oa-lodges, "
-          f"{len(adventures)} adventures, {len(badge_rankings)} badge-ranking years")
+          f"{len(adventures)} adventures, {len(positions)} positions, "
+          f"{len(badge_rankings)} badge-ranking years")
 
 
 def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges, nadv) -> str:

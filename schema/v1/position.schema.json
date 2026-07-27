@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/position.schema.json",
+  "title": "Unit leadership position (canonical entity file)",
+  "description": "One file per position of responsibility: data/positions/<slug>.json. These are the youth leadership roles a Scout may hold to satisfy the Star, Life and Eagle tenure requirements, which are the only place Scouting America publishes them as a list. The ranks decide which positions they accept — they are not all interchangeable, and Bugler is the standing example: it counts for Star and Life but not Eagle. So the acceptance edge lives in each rank's requirement-set, which refs `position:<slug>`, and this entity carries only the position's own identity. `audience` exists to keep the door open for adult roles (Scoutmaster, committee chair), which are a separate unpublished catalog and are NOT here yet.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "id": { "$ref": "common.schema.json#/$defs/Slug" },
+    "kind": { "const": "position" },
+    "versions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/PositionVersion" },
+      "minItems": 1
+    },
+    "notes": { "type": ["string", "null"], "default": null }
+  },
+  "required": ["id", "kind", "versions"],
+  "additionalProperties": false,
+  "$defs": {
+    "PositionVersion": {
+      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official name as printed in the requirements, title-cased for display (the source lists them mid-sentence in lower case)."
+        },
+        "audience": {
+          "enum": ["youth", "adult", "both"],
+          "description": "Who holds it. Every position here is `youth`; adult leadership roles are a different, unpublished catalog."
+        },
+        "unit_types": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/VocabCode" },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Unit types offering this position: see data/vocab/position-unit-types.json. The source groups Venturing crews and Sea Scout ships under one heading and this follows it rather than splitting what the source joins — six positions (Den Chief, Quartermaster, Historian, Chaplain Aide, Outdoor Ethics Guide, Webmaster) appear under both headings."
+        },
+        "description": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "Short original-prose description. Never verbatim requirement text."
+        }
+      },
+      "required": ["name", "audience", "unit_types"],
+      "unevaluatedProperties": false
+    }
+  }
+}

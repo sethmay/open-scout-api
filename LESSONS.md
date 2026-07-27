@@ -6,6 +6,18 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **Put an edge on the edge, not on the node — especially when it is asymmetric.** It is tempting to
+  give a position an `accepted_for: [star, life, eagle]` field. Bugler counts for Star and Life and
+  not Eagle, so that field would be a per-rank fact living on the wrong entity, and the natural
+  "every rank lists every position" gate would forbid the real rule. The acceptance lives in each
+  rank's requirement tree; the position entity carries only its own identity. The corollary is that
+  the *gate* must be one-directional too — check that a listed position claims the unit type it is
+  listed under, not that every position appears everywhere.
+- **Derive a catalog from the prose that defines it, then diff.** The 29 positions exist in no
+  published list — only inside three rank requirements. Parsing all three and diffing them is what
+  surfaced the Bugler asymmetry and the fact that Star and Life offer a leadership project where
+  Eagle does not. Hand-typing the catalog would have produced a plausible list with both facts
+  silently missing.
 - **When two counts disagree, suspect that both are true of different things.** 18 badges carry
   `eagle_required`; Eagle names 14 slots. The tempting fix was "the flag is wrong" — but Star and
   Life requirement 3 both cite "the 18 merit badges on the required list", so the flag means list

@@ -34,7 +34,8 @@ _TRANSITORY = re.compile(
 DATASETS = {"councils": "council.schema.json", "territories": "territory.schema.json",
             "merit-badges": "merit-badge.schema.json", "camps": "camp.schema.json",
             "ranks": "rank.schema.json", "awards": "award.schema.json",
-            "oa-lodges": "oa-lodge.schema.json", "adventures": "adventure.schema.json"}
+            "oa-lodges": "oa-lodge.schema.json", "adventures": "adventure.schema.json",
+            "positions": "position.schema.json"}
 
 
 def load_schemas():
@@ -365,6 +366,18 @@ def main() -> int:
                             errs.append(f"merit-badges/{p.name}: tag {code!r} not in vocab "
                                         f"(add it to data/vocab/merit-badge-tags.json)")
 
+        # position unit types, same discipline
+        known_units = codes_for.get("position.unit_types")
+        for p in sorted((DATA / "positions").glob("*.json")):
+            if p.name == "_events.json":
+                continue
+            obj = json.loads(p.read_text("utf-8"))
+            for v in obj.get("versions", []):
+                for code in v.get("unit_types", []):
+                    if known_units is not None and code not in known_units:
+                        errs.append(f"positions/{p.name}: unit_type {code!r} not in vocab "
+                                    f"(add it to data/vocab/position-unit-types.json)")
+
         # adventure categories and areas, same discipline
         known_cats = codes_for.get("adventure.category")
         known_areas = codes_for.get("adventure.area")
@@ -624,6 +637,45 @@ def main() -> int:
             errs.append(f"requirement-sets/{p.name}: requirement 3 says 'these {stated.group(1)} "
                         f"merit badges' but the slot tree has {len(req3['children'])}")
 
+    # pass 8: positions of responsibility. The ranks decide which positions they accept, so unlike
+    # adventures there is NO symmetric agreement to enforce — Bugler is genuinely a troop position
+    # that Star and Life accept and Eagle does not, and a gate demanding every rank list every
+    # position would forbid the real rule. What must hold is weaker and still useful: a position
+    # offered under a unit-type heading really claims that unit type, and no position sits in the
+    # catalog that no rank will accept.
+    pos_dir = DATA / "positions"
+    if pos_dir.exists():
+        GROUP_UNIT = {"Scout troop": "scout_troop",
+                      "Venturing crew/Sea Scout ship": "crew_or_ship"}
+        unit_types: dict[str, set[str]] = {}
+        for p in sorted(pos_dir.glob("*.json")):
+            if p.name == "_events.json":
+                continue
+            obj = json.loads(p.read_text("utf-8"))
+            ov = next((v for v in obj["versions"] if v.get("valid_to") is None), obj["versions"][-1])
+            unit_types[obj["id"]] = set(ov.get("unit_types") or [])
+        offered: set[str] = set()
+        for p in sorted((DATA / "requirement-sets").glob("*.json")):
+            doc = json.loads(p.read_text("utf-8"))
+            if not (doc.get("subject") or "").startswith("rank:"):
+                continue
+            for req in doc.get("requirements", []):
+                for grp in (req.get("children") or []):
+                    want = GROUP_UNIT.get((grp.get("text") or "").strip())
+                    for child in (grp.get("children") or []):
+                        ref = child.get("ref") or ""
+                        if not ref.startswith("position:"):
+                            continue
+                        slug = ref.split(":", 1)[1]
+                        offered.add(slug)
+                        if want and slug in unit_types and want not in unit_types[slug]:
+                            errs.append(f"requirement-sets/{p.name}: {ref} is listed under "
+                                        f"{grp.get('text')!r} but its unit_types are "
+                                        f"{sorted(unit_types[slug])}")
+        for slug in sorted(set(unit_types) - offered):
+            errs.append(f"positions/{slug}.json: no rank requirement offers this position; a "
+                        f"position no rank accepts cannot be earned toward anything")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
@@ -632,6 +684,7 @@ def main() -> int:
                                                       _count("merit-badges"), _count("camps"),
                                                       _count("ranks"), _count("awards"), _count("oa-lodges"),
                                                       _count("adventures"))
+    npos = _count("positions")
     if errs:
         print(f"{len(errs)} error(s):")
         for e in errs[:100]:
@@ -639,7 +692,7 @@ def main() -> int:
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
           f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges + "
-          f"{nadv} adventures + {nrank_docs} badge-ranking years "
+          f"{nadv} adventures + {npos} positions + {nrank_docs} badge-ranking years "
           f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab "
           f"+ rank/adventure agreement + area coverage), {len(entities)} entities")
     return 0

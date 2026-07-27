@@ -6,11 +6,11 @@
   "type": "object",
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
-    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure", "merit-badge-ranking"] }
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure", "merit-badge-ranking", "position"] }
   },
   "required": ["$schema", "kind", "id"],
   "allOf": [
-    { "if": { "properties": { "kind": { "enum": ["council", "territory", "camp", "oa-lodge"] } }, "required": ["kind"] },
+    { "if": { "properties": { "kind": { "enum": ["council", "territory", "camp", "oa-lodge", "position"] } }, "required": ["kind"] },
       "then": { "$ref": "#/$defs/VersionedEntity" } },
     { "if": { "properties": { "kind": { "enum": ["merit-badge", "rank", "award", "adventure"] } }, "required": ["kind"] },
       "then": { "$ref": "#/$defs/VersionedEntityWithRequirementSets" } },
@@ -23,7 +23,7 @@
     "Slug": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
     "EntityRef": {
       "type": "string",
-      "pattern": "^(council|territory|merit-badge|camp|rank|award|oa-lodge|requirement-set|adventure):[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+      "pattern": "^(council|territory|merit-badge|camp|rank|award|oa-lodge|requirement-set|adventure|position):[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
     },
     "HistoricalDate": { "type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
     "Version": {
