@@ -40,6 +40,7 @@ PREFIX_TO_SCHEMA = {
     "award-": "award.schema.json",
     "oa-lodge-": "oa-lodge.schema.json",
     "adventure-": "adventure.schema.json",
+    "badge-ranking-": "merit-badge-ranking.schema.json",
 }
 
 

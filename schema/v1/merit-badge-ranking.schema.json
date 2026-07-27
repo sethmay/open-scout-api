@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge-ranking.schema.json",
+  "title": "Merit badge popularity ranking (one year)",
+  "description": "One immutable document per year: data/merit-badge-rankings/<year>.json, ranking every merit badge offered that year by how many were earned. NOT an entity — it has no versions and is never revised, like a requirement-set. ⚠ Scouting America publishes RANKS ONLY. Its annual recap gives each badge a position and no absolute earned-count anywhere, so `metric` is 'earned_rank' and consumers must not infer volume: the gap between rank 1 and rank 2 is unknown and unknowable from this source.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}$",
+      "description": "The data year, as a string, matching both `year` and the filename stem."
+    },
+    "kind": {
+      "const": "merit-badge-ranking"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1911,
+      "maximum": 2100,
+      "description": "The calendar year the ranking describes — not the year it was published."
+    },
+    "metric": {
+      "enum": [
+        "earned_rank"
+      ],
+      "description": "What the numbers mean. Only 'earned_rank' exists because it is the only thing published: position by number of badges earned, 1 = most earned. A future 'earned_count' metric would be additive if Scouting America ever releases volumes."
+    },
+    "complete": {
+      "type": "boolean",
+      "description": "True when the ranks form an unbroken 1..N covering every badge offered that year, which the pipeline verifies. False would mean a partially recovered year; consumers should not compute 'least earned' from an incomplete year."
+    },
+    "source_document": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Publication year of the source post, normally the data year + 1."
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "rankings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Ranking"
+      },
+      "minItems": 1
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/Provenance"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "year",
+    "metric",
+    "complete",
+    "source_document",
+    "rankings",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Ranking": {
+      "type": "object",
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1 = most earned. Ranks are unique within a year; the pipeline rejects duplicates and, for a complete year, gaps."
+        },
+        "subject": {
+          "$ref": "common.schema.json#/$defs/EntityRef",
+          "description": "The merit badge, e.g. 'merit-badge:first-aid'. Resolved against the badge's own lifecycle: a badge cannot be ranked in a year it did not exist, which is what catches a source printing a pre-rename name (the 2022 post still says 'Medicine' two years after it became Health Care Professions)."
+        }
+      },
+      "required": [
+        "rank",
+        "subject"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

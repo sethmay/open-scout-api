@@ -3,6 +3,50 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.47.0 (minor) — 2026-07-27
+
+- `PENDING` **Merit badge popularity by year: 5 years, 692 badge-year ranks, every year a complete
+  1..N.** New `merit-badge-ranking` dataset — one immutable document per year at
+  `v1/merit-badge-rankings/{year}.json` — covering **2021-2025**, plus a `merit_badge_rankings`
+  SQLite table shaped one row per badge per year so a trend query is a single join. The longitudinal
+  series existed nowhere machine-readable.
+- ⚠ **The backlog asked for earned-COUNTS. Scouting America does not publish them.** Its annual
+  recap (On Scouting, from the national Scouts BSA director) gives each badge a *position* and no
+  absolute number anywhere. So the dataset says what it is — `metric: "earned_rank"` — and the
+  schema pins that: a document claiming `earned_count` is rejected by contract, with a negative
+  fixture, because a consumer who mistook a rank for a volume would invent conclusions the source
+  never supports. The gap between rank 1 and rank 2 is unknowable from this source.
+  - (A false lead worth recording: the posts *do* contain strings like `124,186`. They are CSS
+    values — `--wp-admin-theme-color--rgb:0,124,186`. Grepping raw HTML for comma-numbers finds a
+    stylesheet, not data.)
+- Each post also publishes every badge's **previous-year** rank, which is what makes 2021
+  recoverable and gives 2022 and 2024 a second independent source. Those overlaps are compared at
+  extract time: **2024's 135 shared badges agree exactly**, and 2022 has four discrepancies where
+  the year's own post — its primary publication — wins and the disagreement is recorded on the
+  document itself.
+- **One source typo repaired on evidence, not preference.** The 2022 post prints rank 130 twice
+  (Composite Materials, Journalism) and omits 135; the 2023 post puts Journalism at exactly 135. A
+  duplicate plus a gap that a second source resolves precisely is a typo, so the correction is
+  applied and recorded in `provenance.notes`. Without it, 2022 would have shipped a knowingly broken
+  ranking.
+- Three traps in the source, all handled: **999 is a sentinel**, not a rank — the 2025 post gives
+  Artificial Intelligence, Cybersecurity and Multisport a "2024 rank" of 999 because they did not
+  exist, and importing it literally would rank them below every real badge; **footnote markers ride
+  in names** ("Hiking\*\*"); and **renames appear mid-transition**, so names map to slugs through an
+  explicit alias table.
+- **The temporal gate earned its place immediately.** Requiring that a ranked badge existed that
+  year caught three silent mis-mappings: normalising names collapses "Leather Work" (1911-1951) into
+  today's "Leatherwork", "Life Saving" (ended 1959) into "Lifesaving", and the 1911 "Aviation" into
+  the modern one, so a retired badge won on glob order. Current badges now win a normalised-name
+  collision. It also caught the 2022 post still printing "Medicine" two years after that badge
+  became Health Care Professions.
+- 8 gates proven by injection: duplicate rank, duplicate badge, a gap while claiming `complete`,
+  dangling ref, ranked-before-it-existed (needed a two-file injection — no badge in the data starts
+  after 2021), ranked-after-retirement, year/id mismatch, and `metric` claiming counts.
+- Sanity check against the source's own headlines: **golf +48 and sustainability +36 from 2021 to
+  2025** are exactly the climbs the 2024 post led with; public-health falls 63 places as the
+  2020-21 spike recedes.
+
 ## 0.46.1 (patch) — 2026-07-27
 
 - `bd07760` **Swept the rest of the population 0.46.0's spot-check pointed at.** Exactly **7 camps**

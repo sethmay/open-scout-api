@@ -6,6 +6,26 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **Check what the source actually publishes before naming the dataset.** The backlog said "merit badge
+  earned-counts by year" for months; the source publishes *ranks* and no absolute number anywhere. Had
+  the field been called `count`, every consumer would have read volume into a position. Name the field
+  after the evidence (`earned_rank`), pin it in the schema, and add a negative fixture so the wrong
+  reading is rejected rather than merely discouraged.
+- **Grep raw HTML and you are grepping the stylesheet.** Searching those posts for comma-formatted
+  numbers "found" 124,186 and 107,160 — CSS values from `--wp-admin-theme-color--rgb:0,124,186`.
+  Strip script and style before believing any pattern match, and read the surrounding context before
+  concluding a source contains data it does not.
+- **Normalising names for comparison silently merges distinct entities.** Case/punctuation-folding
+  collapses "Leather Work" (the 1911-1951 badge) into today's "Leatherwork", "Life Saving" into
+  "Lifesaving", and the 1911 "Aviation" into the modern one — so whichever file the glob reached first
+  won. A temporal gate ("could this entity exist in this year?") caught all three; without it the
+  ranking series would have silently pointed at badges retired seventy years ago. When a lookup key
+  is lossy, break ties on a real fact — here, being currently offered.
+- **A second source that contradicts the first is sometimes correcting it.** The 2022 post prints rank
+  130 twice and omits 135; the 2023 post puts the tied badge at exactly 135. "Primary source wins" is
+  the right default and would have shipped a broken ranking. Prefer the primary *unless* it is
+  internally inconsistent and the secondary resolves the inconsistency exactly — then it is a typo
+  repair, and record which it was.
 - **A pass that only ADDS cannot re-verify what it inherited.** Camp Baker's `mountain_biking` was
   an LLM guess whose upstream provenance literally said "features inferred". Importing it was fine;
   what broke the record was a later survey that added 23 sourced features and then stamped the whole

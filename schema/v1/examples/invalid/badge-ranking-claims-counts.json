@@ -1,0 +1,40 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge-ranking.schema.json",
+  "id": "2025",
+  "kind": "merit-badge-ranking",
+  "year": 2025,
+  "metric": "earned_count",
+  "complete": true,
+  "source_document": {
+    "title": "2025 merit badge rankings — On Scouting (Scouting America)",
+    "url": "https://onscouting.org/2026/03/18/first-aid-is-first-again-2025-merit-badge-rankings-are-here/",
+    "year": 2026
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "subject": "merit-badge:first-aid"
+    },
+    {
+      "rank": 2,
+      "subject": "merit-badge:citizenship-in-the-world"
+    },
+    {
+      "rank": 3,
+      "subject": "merit-badge:citizenship-in-the-nation"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://onscouting.org/2026/03/18/first-aid-is-first-again-2025-merit-badge-rankings-are-here/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Ranks by number earned; Scouting America publishes no absolute counts."
+  },
+  "notes": null
+}

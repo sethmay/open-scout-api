@@ -94,6 +94,7 @@ noted here because their status shapes what we may redistribute:
   attribution for non-commercial Scouting use — every requirement text was verified as a
   verbatim substring of the official source; only the tree structure/metadata are the
   project's contribution. Source pages/PDFs are not redistributed (kept in git-ignored `.workbench/`).
+- **On Scouting (onscouting.org, formerly blog.scoutingmagazine.org)** — Scouting America's own editorial blog; source for the `merit-badge-ranking` dataset, whose annual recap ranks every merit badge by how many were earned (data credited there to the national Scouts BSA director). Only the **ranking facts** are extracted — badge name and position, which are uncopyrightable facts — never the posts' prose or images. No absolute earned-counts are published by the source, and none are inferred here.
 - **Guide to Awards and Insignia (No. 33066)** — the official Scouting America publication;
   source for the `award` catalog. Only **facts** are extracted (award names, catalog item
   numbers, wear location) — uncopyrightable; the Guide's

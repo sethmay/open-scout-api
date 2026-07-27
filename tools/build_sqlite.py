@@ -113,6 +113,24 @@ def main() -> None:
     cur.execute("CREATE INDEX idx_rs_current ON requirement_sets(effective_to)")
     counts["requirement_sets"] = len(rs_rows)
 
+    # merit badge popularity: one row per badge per year, which is the shape a trend query wants
+    # ("which badges climbed since 2021"). These are RANKS, not counts — the column is named so a
+    # SUM() over it is obviously meaningless.
+    cur.execute("CREATE TABLE merit_badge_rankings (year INTEGER, earned_rank INTEGER, "
+                "merit_badge_id TEXT, complete INTEGER)")
+    mbr_rows = []
+    rank_dir = DATA / "merit-badge-rankings"
+    if rank_dir.exists():
+        for p in sorted(rank_dir.glob("*.json")):
+            d = read_json(p)
+            for r in d["rankings"]:
+                mbr_rows.append([d["year"], r["rank"], r["subject"].split(":", 1)[-1],
+                                 1 if d.get("complete") else 0])
+    cur.executemany("INSERT INTO merit_badge_rankings VALUES (?,?,?,?)", mbr_rows)
+    cur.execute("CREATE INDEX idx_mbr_year ON merit_badge_rankings(year)")
+    cur.execute("CREATE INDEX idx_mbr_badge ON merit_badge_rankings(merit_badge_id)")
+    counts["merit_badge_rankings"] = len(mbr_rows)
+
     # lifecycle events (one row per event, tagged with its dataset)
     cur.execute("CREATE TABLE events (dataset TEXT, id TEXT, type TEXT, date TEXT, data TEXT)")
     ev_rows = []

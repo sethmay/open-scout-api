@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
-    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure"] }
+    "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure", "merit-badge-ranking"] }
   },
   "required": ["$schema", "kind", "id"],
   "allOf": [
@@ -15,7 +15,9 @@
     { "if": { "properties": { "kind": { "enum": ["merit-badge", "rank", "award", "adventure"] } }, "required": ["kind"] },
       "then": { "$ref": "#/$defs/VersionedEntityWithRequirementSets" } },
     { "if": { "properties": { "kind": { "const": "requirement-set" } }, "required": ["kind"] },
-      "then": { "$ref": "#/$defs/RequirementSetDocument" } }
+      "then": { "$ref": "#/$defs/RequirementSetDocument" } },
+    { "if": { "properties": { "kind": { "const": "merit-badge-ranking" } }, "required": ["kind"] },
+      "then": { "$ref": "#/$defs/BadgeRankingDocument" } }
   ],
   "$defs": {
     "Slug": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
@@ -124,6 +126,30 @@
           }
         }
       ]
+    }
+    ,
+    "BadgeRankingDocument": {
+      "type": "object",
+      "description": "One year of merit badge popularity ranks. Like a requirement-set it is a dated document, not a versioned entity, so it carries neither `versions` nor `events`. `metric` is pinned because the numbers are RANKS, not counts, and a consumer that mistook one for the other would draw volume conclusions the source never supports.",
+      "properties": {
+        "year": { "type": "integer", "minimum": 1911, "maximum": 2100 },
+        "metric": { "enum": ["earned_rank"] },
+        "complete": { "type": "boolean" },
+        "rankings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "rank": { "type": "integer", "minimum": 1 },
+              "subject": { "type": "string", "pattern": "^merit-badge:[a-z0-9]([a-z0-9-]*[a-z0-9])?$" }
+            },
+            "required": ["rank", "subject"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["year", "metric", "complete", "rankings"]
     }
   }
 }

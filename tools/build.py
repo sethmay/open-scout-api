@@ -142,6 +142,9 @@ def main() -> None:
     rs_by_subject: dict[str, list[str]] = {}
     for d in requirement_sets:
         rs_by_subject.setdefault(d["subject"], []).append(d["id"])   # keyed by full ref (kind:slug)
+    rank_dir = DATA / "merit-badge-rankings"
+    badge_rankings = sorted((read_json(p) for p in rank_dir.glob("*.json")),
+                            key=lambda d: d["year"]) if rank_dir.exists() else []
 
     def _prov(ov):
         p = ov["provenance"]
@@ -366,7 +369,11 @@ def main() -> None:
                    ("awards", idx("award", award_index)),
                    ("oa-lodges", idx("oa-lodge", lodge_index)),
                    ("requirement-sets", idx("requirement-set", rs_index)),
-                   ("adventures", idx("adventure", adv_index))]
+                   ("adventures", idx("adventure", adv_index)),
+                   ("merit-badge-rankings", idx("merit-badge-ranking",
+                       [{"id": d["id"], "year": d["year"], "metric": d["metric"],
+                         "complete": d["complete"], "count": len(d["rankings"])}
+                        for d in badge_rankings]))]
     # Every published projection is validated against its consumer contract (fail-fast): the
     # current/* denormalized views against published-current, the */index.json listings against
     # published-index. A published surface without a schema is an unpinned promise.
@@ -396,6 +403,8 @@ def main() -> None:
         write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
         write_entity(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
+    for d in badge_rankings:
+        write_entity(DIST / "v1" / "merit-badge-rankings" / f"{d['id']}.json", d)
 
     for p in sorted((DATA / "vocab").glob("*.json")):
         write_json(DIST / "v1" / "vocab" / p.name, json.loads(p.read_text("utf-8")))
@@ -411,6 +420,7 @@ def main() -> None:
             "territories": {"total": len(territories), "current": len(current_territories)},
             "merit-badges": {"total": len(merit_badges), "current": len(current_badges)},
             "requirement-sets": {"total": len(requirement_sets), "current": len(current_rs)},
+            "merit-badge-rankings": {"total": len(badge_rankings)},
             "camps": {"total": len(camps), "current": len(current_camps), "merged": len(camp_aliases)},
             "ranks": {"total": len(ranks), "current": len(current_ranks)},
             "awards": {"total": len(awards), "current": len(current_awards)},
@@ -424,6 +434,7 @@ def main() -> None:
                       "v1/territories/index.json", "v1/territories/{id}.json",
                       "v1/merit-badges/index.json", "v1/merit-badges/{id}.json",
                       "v1/requirement-sets/index.json", "v1/requirement-sets/{id}.json",
+                      "v1/merit-badge-rankings/index.json", "v1/merit-badge-rankings/{year}.json",
                       "v1/camps/index.json", "v1/camps/{id}.json", "v1/camps/aliases.json",
                       "v1/ranks/index.json", "v1/ranks/{id}.json",
                       "v1/awards/index.json", "v1/awards/{id}.json",
@@ -450,7 +461,7 @@ def main() -> None:
     print(f"built dist/ v{version}: {len(councils)} councils, {len(territories)} territories, "
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
           f"{len(camps)} camps, {len(ranks)} ranks, {len(awards)} awards, {len(oa_lodges)} oa-lodges, "
-          f"{len(adventures)} adventures")
+          f"{len(adventures)} adventures, {len(badge_rankings)} badge-ranking years")
 
 
 def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges, nadv) -> str:
@@ -486,6 +497,7 @@ Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by
  <li><a href="v1/ranks/index.json"><code>v1/ranks/index.json</code></a> · <code>v1/ranks/&lt;id&gt;.json</code> — Scouts BSA ranks</li>
  <li><a href="v1/awards/index.json"><code>v1/awards/index.json</code></a> · <code>v1/awards/&lt;id&gt;.json</code> — awards &amp; recognitions (knots, honors, training)</li>
  <li><a href="v1/oa-lodges/index.json"><code>v1/oa-lodges/index.json</code></a> · <code>v1/oa-lodges/&lt;id&gt;.json</code> — Order of the Arrow lodges (by council)</li>
+ <li><a href="v1/merit-badge-rankings/index.json"><code>v1/merit-badge-rankings/index.json</code></a> · <code>v1/merit-badge-rankings/&lt;year&gt;.json</code> — merit badge popularity by year (ranks, not counts)</li>
  <li><a href="v1/adventures/index.json"><code>v1/adventures/index.json</code></a> · <code>v1/adventures/&lt;id&gt;.json</code> — Cub Scout adventures (the unit of Cub advancement)</li>
  <li><a href="schema/v1/council.schema.json"><code>schema/v1/</code></a> — JSON Schemas</li>
 </ul>
