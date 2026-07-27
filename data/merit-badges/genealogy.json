@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Genealogy",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "heritage"
+      ],
+      "description": "Chart three generations of your own family, fill out family group records, interview a relative, and hunt down birth, marriage, census, and burial documents in archives and online databases.",
       "url": "https://www.scouting.org/merit-badges/genealogy/",
       "provenance": {
         "sources": [

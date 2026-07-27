@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Disabilities Awareness",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship"
+      ],
+      "description": "Learn person-first language and disability etiquette, talk with people who live with visible and invisible disabilities, survey buildings for barriers, and take on advocacy by teaching others what you found.",
       "url": "https://www.scouting.org/merit-badges/disabilities-awareness/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Safety",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "safety"
+      ],
+      "description": "Spot hazards at home and in public, draw a fire-escape plan and drill it, assemble an emergency supply kit, and work out how to stay safe from crime, assault and online scams.",
       "url": "https://www.scouting.org/merit-badges/safety/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Archery",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "shooting_sports"
+      ],
+      "description": "Learn range safety and whistle commands, name the parts of arrow and bow, build or repair arrows, then shoot scored rounds with a recurve, longbow, or compound bow until you hit the qualifying total.",
       "url": "https://www.scouting.org/merit-badges/archery/",
       "provenance": {
         "sources": [

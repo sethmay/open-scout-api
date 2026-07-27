@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Mammal Study",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "stem"
+      ],
+      "description": "Learn what sets mammals apart and how they are classified, then spend hours in the field logging species and signs, trace a carnivore's food chain, and carry out a project that helps local populations.",
       "url": "https://www.scouting.org/merit-badges/mammal-study/",
       "provenance": {
         "sources": [

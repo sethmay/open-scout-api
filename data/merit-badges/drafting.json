@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Drafting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "trades"
+      ],
+      "description": "Format a drawing sheet with a title block, produce an architectural, mechanical, or electrical drawing by hand in pencil, redraw it in CAD, then mark up revisions and letter your own conclusions in Gothic script.",
       "url": "https://www.scouting.org/merit-badges/drafting/",
       "provenance": {
         "sources": [

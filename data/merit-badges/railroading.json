@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Railroading",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades",
+        "heritage"
+      ],
+      "description": "Sort out freight cars, locomotives, and how a diesel makes power, plan a long trip from a timetable, read crossing signs and horn signals, then either build a model layout or go out railfanning.",
       "url": "https://www.scouting.org/merit-badges/railroading/",
       "provenance": {
         "sources": [

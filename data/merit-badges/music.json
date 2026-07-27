@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Music",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Play or sing a piece with real attention to phrasing and dynamics, listen across blues, jazz, and classical, and either teach songs, compose a short score, or build a traditional instrument.",
       "url": "https://www.scouting.org/merit-badges/music/",
       "provenance": {
         "sources": [

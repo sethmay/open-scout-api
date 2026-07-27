@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Personal Fitness",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "health",
+        "sports"
+      ],
+      "description": "Measure your own aerobic capacity, strength, and flexibility, log what you eat, then follow a twelve-week program of warm-ups, cardio, strength work, and stretching and retest to see what actually improved.",
       "url": "https://www.scouting.org/merit-badges/personal-fitness/",
       "provenance": {
         "sources": [

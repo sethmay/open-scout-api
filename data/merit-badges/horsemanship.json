@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Horsemanship",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "animals",
+        "sports"
+      ],
+      "description": "Groom, saddle, bridle, and lead a horse safely, know its parts, breeds, feed, and hoof care, spot colic and lameness, then ride at walk and trot through turns, halts, and backing up.",
       "url": "https://www.scouting.org/merit-badges/horsemanship/",
       "provenance": {
         "sources": [

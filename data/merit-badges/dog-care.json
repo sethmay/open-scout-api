@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Dog Care",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "animals"
+      ],
+      "description": "Care for a dog over two months of feeding, grooming, exercise, and weight records, while training basic commands and learning vaccination schedules, parasite control, and first aid for an injured animal.",
       "url": "https://www.scouting.org/merit-badges/dog-care/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Environmental Science",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "stem"
+      ],
+      "description": "Observe an ecosystem closely over two days, then investigate air, water, and land pollution, endangered species recovery, pollinators, and invasive species, and weigh the environmental impact of a proposed construction project.",
       "url": "https://www.scouting.org/merit-badges/environmental-science/",
       "provenance": {
         "sources": [

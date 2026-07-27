@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Hiking",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor"
+      ],
+      "description": "Condition yourself for distance, plan routes and trail lunches, then walk four ten-mile hikes and one twenty-mile hike, writing up the weather, the route, and what you saw each time.",
       "url": "https://www.scouting.org/merit-badges/hiking/",
       "provenance": {
         "sources": [

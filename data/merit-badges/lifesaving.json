@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Lifesaving",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "safety"
+      ],
+      "description": "Reach, throw, row, and go: rescue a struggling swimmer with poles, ring buoys, and tows, break free of a panicked grasp, support a suspected spinal injury, and show CPR on a mannequin.",
       "url": "https://www.scouting.org/merit-badges/lifesaving/",
       "provenance": {
         "sources": [

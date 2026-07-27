@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Nuclear Science",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Build isotope models and a cloud chamber, watch a survey meter climb as a source nears, then work out how fission chains produce power and why keeping any dose as low as reasonable matters.",
       "url": "https://www.scouting.org/merit-badges/nuclear-science/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Orienteering",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "sports"
+      ],
+      "description": "Take a bearing, orient a topographic map, and count your pace over a measured hundred meters, then race real control courses, set one of your own, and teach the technique to your patrol.",
       "url": "https://www.scouting.org/merit-badges/orienteering/",
       "provenance": {
         "sources": [

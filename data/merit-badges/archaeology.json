@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Archaeology",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "heritage",
+        "stem"
+      ],
+      "description": "Follow a dig from survey through excavation to analysis, learn how absolute and relative dating pin down an age, study famous sites, and work a real or simulated excavation while learning the laws that protect the past.",
       "url": "https://www.scouting.org/merit-badges/archaeology/",
       "provenance": {
         "sources": [

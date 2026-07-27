@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Bugling",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Sound ten standard calls, from Reveille to Taps, know when each one is used, compose a call of your own for your troop, and serve as its bugler for three months.",
       "url": "https://www.scouting.org/merit-badges/bugling/",
       "provenance": {
         "sources": [

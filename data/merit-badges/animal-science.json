@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Animal Science",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "animals",
+        "stem"
+      ],
+      "description": "Compare livestock breeds and the diseases that threaten them, diagram how ruminant, equine, swine, and poultry digestion differs, then take on one species and work out how to feed, house, and breed it well.",
       "url": "https://www.scouting.org/merit-badges/animal-science/",
       "provenance": {
         "sources": [

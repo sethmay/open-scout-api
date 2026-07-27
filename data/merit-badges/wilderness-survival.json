@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Wilderness Survival",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "safety"
+      ],
+      "description": "Spend a night in a shelter improvised from what the woods provide, light fires without matches, treat water three ways, signal aircraft overhead, and keep panic from turning trouble into disaster.",
       "url": "https://www.scouting.org/merit-badges/wilderness-survival/",
       "provenance": {
         "sources": [

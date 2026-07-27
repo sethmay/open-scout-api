@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Scholarship",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "business"
+      ],
+      "description": "Keep your grades up or raise them, track assignments and deadlines in a planner, weigh libraries, books and the internet as places to research, and contribute to a school team or project.",
       "url": "https://www.scouting.org/merit-badges/scholarship/",
       "provenance": {
         "sources": [

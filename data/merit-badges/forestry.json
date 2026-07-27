@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Forestry",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "outdoor"
+      ],
+      "description": "Identify fifteen trees, shrubs, and vines growing in nearby woods, read growth rings and pest damage for the story they tell, and learn how foresters manage stands for timber, water, wildlife, and fire.",
       "url": "https://www.scouting.org/merit-badges/forestry/",
       "provenance": {
         "sources": [

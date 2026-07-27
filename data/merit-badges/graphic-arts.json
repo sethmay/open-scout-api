@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Graphic Arts",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts",
+        "trades"
+      ],
+      "description": "Compare offset, screen, digital, relief, and gravure printing, design a flyer or shirt with deliberate typography, then actually produce a run of copies and learn how finished pieces are bound.",
       "url": "https://www.scouting.org/merit-badges/graphic-arts/",
       "provenance": {
         "sources": [

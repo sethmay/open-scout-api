@@ -287,6 +287,65 @@ def main() -> int:
                             errs.append(f"camps/{p.name}: {field} value {code!r} not in vocab "
                                         f"(add it to data/vocab/)")
 
+        # merit-badge tags use the same discipline as camp vocab fields
+        known_tags = codes_for.get("merit-badge.tags")
+        for p in sorted((DATA / "merit-badges").glob("*.json")):
+            if p.name == "_events.json":
+                continue
+            obj = json.loads(p.read_text("utf-8"))
+            for v in obj.get("versions", []):
+                if known_tags is not None:
+                    for code in v.get("tags", []):
+                        if code not in known_tags:
+                            errs.append(f"merit-badges/{p.name}: tag {code!r} not in vocab "
+                                        f"(add it to data/vocab/merit-badge-tags.json)")
+
+    # pass 5b: merit-badge `description` must be original evergreen prose, never pamphlet or
+    # requirement text. The requirement text IS Scouting America's copyright and is published
+    # only under the `text_rights` carve-out; a description that quoted it would silently drag
+    # copyrighted wording into the CC-licensed part of the dataset. So this checks for lifted
+    # runs of words against the badge's own requirement sets rather than trusting the author.
+    def _words(s: str) -> list[str]:
+        return re.findall(r"[a-z0-9]+", (s or "").lower())
+
+    RUN = 8      # 8 consecutive words in common is plagiarism, not coincidence
+    rs_text: dict[str, set[tuple]] = {}
+    if (DATA / "requirement-sets").exists():
+        for p in sorted((DATA / "requirement-sets").glob("*.json")):
+            doc = json.loads(p.read_text("utf-8"))
+            subj = doc.get("subject")
+            if not (subj or "").startswith("merit-badge:"):
+                continue
+            buf: list[str] = []
+
+            def _walk(rqs):
+                for r in rqs:
+                    buf.extend(_words(r.get("text")))
+                    _walk(r.get("children") or [])
+            _walk(doc.get("requirements", []))
+            grams = rs_text.setdefault(subj.split(":", 1)[1], set())
+            grams.update(tuple(buf[i:i + RUN]) for i in range(max(0, len(buf) - RUN + 1)))
+
+    for p in sorted((DATA / "merit-badges").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        obj = json.loads(p.read_text("utf-8"))
+        for v in obj.get("versions", []):
+            d = v.get("description")
+            if not d:
+                continue
+            if _TRANSITORY.search(d):
+                errs.append(f"merit-badges/{p.name}: description has transitory text "
+                            f"({_TRANSITORY.search(d).group(0)!r}); must be evergreen")
+            w = _words(d)
+            grams = rs_text.get(obj["id"], set())
+            lifted = next((w[i:i + RUN] for i in range(max(0, len(w) - RUN + 1))
+                           if tuple(w[i:i + RUN]) in grams), None)
+            if lifted:
+                errs.append(f"merit-badges/{p.name}: description reuses {RUN}+ consecutive words "
+                            f"from its requirement text ({' '.join(lifted)!r}) — must be original "
+                            f"prose, not Scouting America's wording")
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):

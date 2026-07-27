@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Climbing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor",
+        "sports"
+      ],
+      "description": "Tie the knots a climber's life hangs on, inspect and retire rope, belay both climbers and rappellers, then climb three routes and rappel three more using the verbal signals that keep a team in sync.",
       "url": "https://www.scouting.org/merit-badges/climbing/",
       "provenance": {
         "sources": [

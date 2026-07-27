@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Home Repairs",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades"
+      ],
+      "description": "Weatherstrip a window, patch drywall, unclog a drain, fix a running toilet, replace a wall outlet, and refinish furniture: the ordinary maintenance that keeps a house working.",
       "url": "https://www.scouting.org/merit-badges/home-repairs/",
       "provenance": {
         "sources": [

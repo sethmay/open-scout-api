@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Salesmanship",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "business"
+      ],
+      "description": "Research a market, learn a product inside out, then write a sales plan and deliver a presentation before actually selling something, tracking your costs and following up to see whether the buyer was satisfied.",
       "url": "https://www.scouting.org/merit-badges/salesmanship/",
       "provenance": {
         "sources": [

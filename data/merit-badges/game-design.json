@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Game Design",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts",
+        "sports"
+      ],
+      "description": "Pull apart games you already play to see what makes them work, change the rules of a familiar one and watch what happens, then design, prototype, and blind-test a game of your own.",
       "url": "https://www.scouting.org/merit-badges/game-design/",
       "provenance": {
         "sources": [

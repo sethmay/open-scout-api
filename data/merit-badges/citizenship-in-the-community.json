@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Citizenship in the Community",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship"
+      ],
+      "description": "Map the services and landmarks where you live, sit in on a council or school board meeting, interview the official responsible for an issue you care about, and find how local charities put volunteers to work.",
       "url": "https://www.scouting.org/merit-badges/citizenship-in-the-community/",
       "provenance": {
         "sources": [

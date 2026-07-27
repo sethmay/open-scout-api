@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Engineering",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Take apart how a household object was designed and made, meet a working engineer, use a systems approach to design your own device, and test materials, motion, or energy conversion yourself.",
       "url": "https://www.scouting.org/merit-badges/engineering/",
       "provenance": {
         "sources": [

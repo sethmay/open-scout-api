@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Whitewater",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "outdoor"
+      ],
+      "description": "Read a river's eddies, ledges and downstream Vs, ferry and peel out in a canoe or kayak, throw and catch a rescue rope, and paddle a planned trip on Class I or Class II water.",
       "url": "https://www.scouting.org/merit-badges/whitewater/",
       "provenance": {
         "sources": [

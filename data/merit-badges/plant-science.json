@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Plant Science",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "stem"
+      ],
+      "description": "Grow a plant from seed, cutting, or graft, explain photosynthesis and what soil actually does, name natives, cultivars, and invasives near home, then go deep in agronomy, horticulture, or field botany.",
       "url": "https://www.scouting.org/merit-badges/plant-science/",
       "provenance": {
         "sources": [

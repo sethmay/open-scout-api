@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Soil and Water Conservation",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature"
+      ],
+      "description": "Learn how soil forms and how erosion strips it away, outline a watershed on a contour map, trace water through its cycle, and carry out a project such as planting trees or seeding bare ground.",
       "url": "https://www.scouting.org/merit-badges/soil-and-water-conservation/",
       "provenance": {
         "sources": [

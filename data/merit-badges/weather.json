@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Weather",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "safety"
+      ],
+      "description": "Read clouds, fronts and pressure systems well enough to tell what is coming, build a rain gauge or anemometer and keep a daily log, and teach others the rules for lightning, flash floods and tornadoes.",
       "url": "https://www.scouting.org/merit-badges/weather/",
       "provenance": {
         "sources": [

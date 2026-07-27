@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Bird Study",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature"
+      ],
+      "description": "Identify twenty wild birds by sight and five by song, keep a field notebook of habitat and feeding habits, learn how beak and foot shape follow habitat, and build a feeder, nest box, or backyard sanctuary.",
       "url": "https://www.scouting.org/merit-badges/bird-study/",
       "provenance": {
         "sources": [

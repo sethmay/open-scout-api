@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Golf",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports"
+      ],
+      "description": "Work on grip, stance, and a repeatable swing across drivers, irons, bunker recoveries, and putting, or the backhand, forehand, and putting motions of disc golf, then play a full round by the rules.",
       "url": "https://www.scouting.org/merit-badges/golf/",
       "provenance": {
         "sources": [

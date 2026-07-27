@@ -1,0 +1,95 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "merit-badge-tags",
+  "kind": "vocab",
+  "title": "Merit badge tags",
+  "description": "Subject facets for grouping and browsing the merit badge catalog (multi-valued on merit-badge.tags). Facets, not a taxonomy: a badge normally carries two or three, because most badges sit in more than one subject area (Oceanography is stem and nature; Lifesaving is aquatics and safety). Two pairs carry `broader` so a coarse filter still reaches them: shooting_sports rolls up to sports, handicraft to arts. These are OUR groupings for navigation - Scouting America publishes no official badge categories - so they are descriptive, not authoritative.",
+  "applies_to": [
+    "merit-badge.tags"
+  ],
+  "open": true,
+  "terms": [
+    {
+      "code": "animals",
+      "label": "Animals",
+      "description": "Caring for, training, or working with domestic animals and livestock."
+    },
+    {
+      "code": "aquatics",
+      "label": "Aquatics",
+      "description": "In, on, or under the water: swimming, small craft, and diving."
+    },
+    {
+      "code": "arts",
+      "label": "Arts and Media",
+      "description": "Visual, performing, and communication arts, including film, music, and the written word."
+    },
+    {
+      "code": "business",
+      "label": "Business and Career",
+      "description": "Enterprise, money management, selling, and the skills of working life."
+    },
+    {
+      "code": "citizenship",
+      "label": "Citizenship and Law",
+      "description": "How communities, nations, and legal systems work, and a Scout's part in them."
+    },
+    {
+      "code": "collecting",
+      "label": "Collecting",
+      "description": "Building, organizing, and studying a collection."
+    },
+    {
+      "code": "handicraft",
+      "label": "Handicraft",
+      "description": "Making objects by hand from raw material - carving, weaving, moulding, tooling.",
+      "broader": "arts"
+    },
+    {
+      "code": "health",
+      "label": "Health and Medicine",
+      "description": "Personal fitness, public health, and the medical and dental professions."
+    },
+    {
+      "code": "heritage",
+      "label": "Heritage and Culture",
+      "description": "History, cultures, ancestry, and the record of the past - including Scouting's own."
+    },
+    {
+      "code": "nature",
+      "label": "Nature and Conservation",
+      "description": "Living things and the systems that sustain them, and the work of conserving both."
+    },
+    {
+      "code": "outdoor",
+      "label": "Outdoor Skills",
+      "description": "Travelling, camping, and looking after yourself away from home."
+    },
+    {
+      "code": "safety",
+      "label": "Safety and Emergency Response",
+      "description": "Preventing harm and responding when it happens, from first aid to search and rescue."
+    },
+    {
+      "code": "shooting_sports",
+      "label": "Shooting Sports",
+      "description": "Marksmanship with bow, rifle, or shotgun.",
+      "broader": "sports"
+    },
+    {
+      "code": "sports",
+      "label": "Sports and Games",
+      "description": "Athletic pursuits and games of skill."
+    },
+    {
+      "code": "stem",
+      "label": "Science, Technology and Engineering",
+      "description": "Science, computing, engineering, and the built and designed world."
+    },
+    {
+      "code": "trades",
+      "label": "Trades and Mechanics",
+      "description": "Skilled trades, machinery, transport, and industrial processes."
+    }
+  ]
+}

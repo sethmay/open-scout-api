@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Search and Rescue",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "safety",
+        "outdoor"
+      ],
+      "description": "Run a hasty search from planning through debrief: read maps and coordinates, predict how lost people behave, fit into an incident command structure, and treat what searchers and subjects suffer in the field.",
       "url": "https://www.scouting.org/merit-badges/search-and-rescue/",
       "provenance": {
         "sources": [

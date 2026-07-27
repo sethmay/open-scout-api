@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Water Sports",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "sports"
+      ],
+      "description": "Get up behind a boat on a wakeboard or on skis, cross the wakes and return to center, fall clear of trouble, and signal the observer so the crew knows what you need.",
       "url": "https://www.scouting.org/merit-badges/water-sports/",
       "provenance": {
         "sources": [

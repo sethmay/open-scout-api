@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Gardening",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature"
+      ],
+      "description": "Raise six vegetables and six flowers from seed and seedling through harvest, test germination rates, identify garden pests and organic controls, and build a compost bin, worm bin, or hydroponic setup.",
       "url": "https://www.scouting.org/merit-badges/gardening/",
       "provenance": {
         "sources": [

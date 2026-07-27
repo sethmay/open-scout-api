@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Kayaking",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "outdoor"
+      ],
+      "description": "Fit a life jacket, capsize on purpose and wet-exit safely, then run a buoyed course using forward, sweep, and draw strokes, and bring a swamped boat back with a kayak-over-kayak rescue.",
       "url": "https://www.scouting.org/merit-badges/kayaking/",
       "provenance": {
         "sources": [

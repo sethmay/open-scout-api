@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Energy",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Trace energy through the systems you use every day, run a two-week audit of your household, chart where the country's power comes from, and compare how solar, nuclear, wind, and fossil plants are being improved.",
       "url": "https://www.scouting.org/merit-badges/energy/",
       "provenance": {
         "sources": [

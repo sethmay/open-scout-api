@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Geology",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "nature"
+      ],
+      "description": "Read a geologic map to tell sedimentary, igneous, and metamorphic rock apart, then follow one track deeply: stream and sediment processes, energy resources, minerals and mining, or fossils and deep time.",
       "url": "https://www.scouting.org/merit-badges/geology/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Pottery",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft"
+      ],
+      "description": "Pinch, coil, and slab clay into pots, center and throw a usable vessel on the wheel, sculpt a figurine, glaze your work, and help load and fire a kiln that turns greenware into finished ceramics.",
       "url": "https://www.scouting.org/merit-badges/pottery/",
       "provenance": {
         "sources": [

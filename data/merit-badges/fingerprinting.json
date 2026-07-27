@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Fingerprinting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship",
+        "stem"
+      ],
+      "description": "Roll a clean set of prints on a card or lift them with tape, sort the patterns into loops, whorls, and arches, and compare how police databases and biometric access systems use them.",
       "url": "https://www.scouting.org/merit-badges/fingerprinting/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Textile",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft",
+        "trades"
+      ],
+      "description": "Compare cotton, wool, nylon and rayon under a magnifier, follow raw fiber through spinning and weaving into cloth, then make felt, dye a garment with color you brewed, or weave on a loom you built.",
       "url": "https://www.scouting.org/merit-badges/textile/",
       "provenance": {
         "sources": [

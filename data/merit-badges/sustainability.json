@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Sustainability",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature",
+        "citizenship"
+      ],
+      "description": "Measure what your household actually consumes in water, food, energy and belongings, then design the fixes: less food waste, a community sketched for lower impact, and habits your family can keep.",
       "url": "https://www.scouting.org/merit-badges/sustainability/",
       "provenance": {
         "sources": [

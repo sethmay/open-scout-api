@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Art",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Work with line, color, texture, and the principles of design, render the same subject four different ways in media like charcoal, watercolor, and pastels, then design a logo or tell a story in pictures.",
       "url": "https://www.scouting.org/merit-badges/art/",
       "provenance": {
         "sources": [

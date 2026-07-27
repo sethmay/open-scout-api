@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Electricity",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "trades"
+      ],
+      "description": "Wire simple circuits, build an electromagnet and a rheostat, read a household meter, find an overloaded branch circuit, and rescue and treat someone who has taken a shock.",
       "url": "https://www.scouting.org/merit-badges/electricity/",
       "provenance": {
         "sources": [

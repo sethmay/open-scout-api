@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Woodwork",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft",
+        "trades"
+      ],
+      "description": "Square lumber and saw, plane and join it into something useful from working drawings you drew yourself, sharpen your own tools, and learn how timber is milled, cured and graded before it reaches the bench.",
       "url": "https://www.scouting.org/merit-badges/woodwork/",
       "provenance": {
         "sources": [

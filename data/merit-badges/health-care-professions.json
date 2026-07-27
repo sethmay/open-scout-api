@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Health Care Professions",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "health"
+      ],
+      "description": "Compare what physicians, nurses, therapists, technologists, and a dozen other clinicians actually do and what training each takes, shadow one at work, and volunteer at a health event in your community.",
       "url": "https://www.scouting.org/merit-badges/health-care-professions/",
       "provenance": {
         "sources": [

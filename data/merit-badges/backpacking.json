@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Backpacking",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor"
+      ],
+      "description": "Cut pack weight without cutting safety, treat your own water, navigate with map and compass, cook on a lightweight stove, and build up to a five-day trek covering thirty miles across three campsites.",
       "url": "https://www.scouting.org/merit-badges/backpacking/",
       "provenance": {
         "sources": [

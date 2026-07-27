@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Wood Carving",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft"
+      ],
+      "description": "Sharpen and control knives and gouges through paring, push, V and stop cuts, choose wood that suits the work, and finish both a carving in the round and a relief or chip-carved piece.",
       "url": "https://www.scouting.org/merit-badges/wood-carving/",
       "provenance": {
         "sources": [

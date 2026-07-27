@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Automotive Maintenance",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades"
+      ],
+      "description": "Check fluids, belts, tires, and brakes on a real vehicle, read what the dashboard warning lights are telling you, and learn how engine, cooling, fuel, electrical, and drive train systems fit together.",
       "url": "https://www.scouting.org/merit-badges/automotive-maintenance/",
       "provenance": {
         "sources": [

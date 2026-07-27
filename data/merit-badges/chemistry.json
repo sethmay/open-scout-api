@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Chemistry",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Run real experiments: a browning reaction in the kitchen, a red cabbage pH indicator, flame tests, and synthesized nylon. Read safety data sheets first, and learn which agencies regulate chemicals and why storage matters.",
       "url": "https://www.scouting.org/merit-badges/chemistry/",
       "provenance": {
         "sources": [

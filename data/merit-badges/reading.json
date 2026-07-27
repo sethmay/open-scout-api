@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Reading",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Find your way around a library catalog, read across poetry, fiction, nonfiction, and biography, follow a how-to book far enough to actually make something, and give four hours reading to someone else.",
       "url": "https://www.scouting.org/merit-badges/reading/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Oceanography",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "nature"
+      ],
+      "description": "Measure salinity, temperature, and density, map the shelf, trench, and abyssal plain, tell swell from surf and a rip current from a tidal bore, and tow a plankton net to see what lives in the water.",
       "url": "https://www.scouting.org/merit-badges/oceanography/",
       "provenance": {
         "sources": [

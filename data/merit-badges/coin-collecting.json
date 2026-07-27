@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Coin Collecting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "collecting"
+      ],
+      "description": "Learn how coins are struck and what obverse, reverse, reeding, and clad mean, assemble sets of cents, nickels, dimes, quarters, and dollars, and find out who appears on United States paper currency.",
       "url": "https://www.scouting.org/merit-badges/coin-collecting/",
       "provenance": {
         "sources": [

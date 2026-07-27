@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Rowing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "sports"
+      ],
+      "description": "Launch, row a straight course, back water and pivot in a fixed-seat or sliding-seat boat, tie mooring knots, right a swamped craft, and tow a swimmer to shore.",
       "url": "https://www.scouting.org/merit-badges/rowing/",
       "provenance": {
         "sources": [

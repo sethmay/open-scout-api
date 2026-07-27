@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Motorboating",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "aquatics",
+        "trades"
+      ],
+      "description": "Fuel and start a motorboat, run a course of passes, turns, and stops, anchor in open water, dock and moor it, and tie the cleat hitch, bowline, and clove hitch that hold everything fast.",
       "url": "https://www.scouting.org/merit-badges/motorboating/",
       "provenance": {
         "sources": [

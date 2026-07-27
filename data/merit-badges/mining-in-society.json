@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Mining in Society",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades",
+        "stem"
+      ],
+      "description": "Match ten minerals to the products they end up in, map working mines, examine the gear and monitoring that keeps miners safe underground, and weigh reclamation, recycling, and the case for mining asteroids.",
       "url": "https://www.scouting.org/merit-badges/mining-in-society/",
       "provenance": {
         "sources": [

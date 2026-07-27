@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Skating",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports"
+      ],
+      "description": "Stroke, glide, crossover and stop on ice skates, roller skates, in-line skates or a skateboard, learning how the equipment is built and cared for and how to share a rink or park safely.",
       "url": "https://www.scouting.org/merit-badges/skating/",
       "provenance": {
         "sources": [

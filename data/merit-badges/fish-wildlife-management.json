@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Fish and Wildlife Management",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "nature"
+      ],
+      "description": "Find out what threatens fish and wildlife where you live and what managers do about it, then put up nest boxes, build a blind, or improve habitat, and keep records of what shows up.",
       "url": "https://www.scouting.org/merit-badges/fish-wildlife-management/",
       "provenance": {
         "sources": [

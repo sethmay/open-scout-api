@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Fire Safety",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "safety",
+        "outdoor"
+      ],
+      "description": "Learn the fire tetrahedron and how heat moves, pick the right extinguisher for each class of fire, inspect a home for hazards, run a family fire drill, and build and safely put out a campfire.",
       "url": "https://www.scouting.org/merit-badges/fire-safety/",
       "provenance": {
         "sources": [

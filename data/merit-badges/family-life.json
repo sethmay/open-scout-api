@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Family Life",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "citizenship",
+        "health"
+      ],
+      "description": "Take on regular chores for three months, lead a project the whole family joins, and run family meetings about money, technology, manners, and the pressures facing young people.",
       "url": "https://www.scouting.org/merit-badges/family-life/",
       "provenance": {
         "sources": [

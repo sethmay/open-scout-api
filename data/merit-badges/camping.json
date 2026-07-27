@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Camping",
       "eagle_required": true,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "outdoor"
+      ],
+      "description": "Sleep out for twenty nights, pitch and care for tents, pack for warm and cold weather, cook for your patrol over a stove, and take on a mountain hike, snow camp, or rappel along the way.",
       "url": "https://www.scouting.org/merit-badges/camping/",
       "provenance": {
         "sources": [

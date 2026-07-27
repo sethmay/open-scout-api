@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Photography",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts"
+      ],
+      "description": "Control light, aperture, shutter speed, and depth of field, frame with the rule of thirds and leading lines, edit what you shoot, and assemble a dozen images into a photo story that holds together.",
       "url": "https://www.scouting.org/merit-badges/photography/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Stamp Collecting",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "collecting",
+        "heritage"
+      ],
+      "description": "Tell a perforated stamp from an imperforate one and a definitive from a commemorative, handle them with tongs, gauges and mounts, and build an album around a country, a region, or a topic you care about.",
       "url": "https://www.scouting.org/merit-badges/stamp-collecting/",
       "provenance": {
         "sources": [

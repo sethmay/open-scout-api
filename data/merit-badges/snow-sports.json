@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Snow Sports",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "sports",
+        "outdoor"
+      ],
+      "description": "Ski, snowboard or snowshoe under control on real terrain, wax and tune your own gear, read trail markings and avalanche warnings, and treat the frostbite, hypothermia and falls that come with cold-weather sport.",
       "url": "https://www.scouting.org/merit-badges/snow-sports/",
       "provenance": {
         "sources": [

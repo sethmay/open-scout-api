@@ -220,3 +220,22 @@ fold; read before similar work.
   operates often does not own it (trust, foundation, or alumni association), but only when the
   silence is *asymmetric* — a council promoting sibling camps while silent on this one. Uniform
   silence just means the council's website is broken.
+- **If a licensing boundary runs through your dataset, make a validator hold the line.** This repo
+  publishes verbatim requirement text as © Scouting America under a narrow `text_rights` carve-out,
+  while everything else is CC-licensed. Badge `description` sits on the CC side, so a description
+  that quoted the requirements would quietly move copyrighted wording across that boundary — and no
+  amount of instruction to "write original prose" is auditable later. A gate that rejects any
+  description sharing 8+ consecutive words with its own badge's requirement text turns a policy into
+  a build failure. Build the comparison corpus from the union of ALL documents for that entity, not
+  the one you happened to read.
+- **When a rule has a hard threshold, check the margin, not just the threshold.** The copyright gate
+  fires at 8 shared words. Agents probing at 7 and 6 found five descriptions that passed at 8 while
+  clearly tracking a requirement's clause with one word swapped — passing the letter, failing the
+  intent, and one requirement revision away from failing the build. Short runs of genuine domain
+  vocabulary ("plaited coiled ribbed and wicker") are fine; the margin probe is what distinguishes
+  them from borrowed sentence structure.
+- **Never let the exemplars in a brief become shipped content.** Four worked examples were included
+  to fix the voice, and one of those badges happened to sit in an agent's batch — so it shipped my
+  illustration instead of writing from the requirements. It flagged this honestly, which is the only
+  reason it was caught. Either pick exemplars from outside the work set, or rewrite them centrally
+  afterwards.

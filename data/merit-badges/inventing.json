@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Inventing",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "business"
+      ],
+      "description": "Spot a problem worth solving, sketch and model an original device, then build and test a working prototype - and learn how patents and intellectual property protect what inventors create.",
       "url": "https://www.scouting.org/merit-badges/inventing/",
       "provenance": {
         "sources": [

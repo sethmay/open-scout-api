@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Architecture",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "arts"
+      ],
+      "description": "Look at the buildings around you and name their styles, then measure a room and draw it accurately to scale while working through what makes a building sustainable and worth keeping rather than demolishing.",
       "url": "https://www.scouting.org/merit-badges/architecture/",
       "provenance": {
         "sources": [

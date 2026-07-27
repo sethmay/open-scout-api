@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "American Labor",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "business",
+        "citizenship"
+      ],
+      "description": "List the concerns that shape working life, visit a union or employee organization to hear them firsthand, and argue both sides of a live labor issue after learning how collective bargaining works.",
       "url": "https://www.scouting.org/merit-badges/american-labor/",
       "provenance": {
         "sources": [

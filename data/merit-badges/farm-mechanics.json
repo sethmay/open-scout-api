@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Farm Mechanics",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "trades"
+      ],
+      "description": "Set up a safe farm shop, read the warning symbols and safety data sheets on equipment, service an engine-powered machine, dress worn tool heads with a file, and learn what preventive maintenance saves.",
       "url": "https://www.scouting.org/merit-badges/farm-mechanics/",
       "provenance": {
         "sources": [

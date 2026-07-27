@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "American Business",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "business"
+      ],
+      "description": "Trace how free enterprise works, read an income statement and a balance sheet, learn how companies raise capital and insure themselves, and weigh the place of profit and ethics in real business decisions.",
       "url": "https://www.scouting.org/merit-badges/american-business/",
       "provenance": {
         "sources": [

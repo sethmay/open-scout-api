@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Dentistry",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "health"
+      ],
+      "description": "Read dental radiographs, draw a molar and label its parts, and trace how plaque, sugars, and acid lead to decay and gum disease. Sit in on a checkup and see the tools a dentist uses.",
       "url": "https://www.scouting.org/merit-badges/dentistry/",
       "provenance": {
         "sources": [

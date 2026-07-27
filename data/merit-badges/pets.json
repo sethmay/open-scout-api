@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Pets",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "animals"
+      ],
+      "description": "Take real responsibility for an animal over four months - feeding, housing, and daily care - then show it at a pet show or teach it several tricks, and write up what keeping it taught you.",
       "url": "https://www.scouting.org/merit-badges/pets/",
       "provenance": {
         "sources": [

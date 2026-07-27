@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Sculpture",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "handicraft"
+      ],
+      "description": "Model a life-size head in clay, then carve or cast a smaller figure and pull a copy of a fruit or vegetable from a plaster mold you make yourself, handling sculptor's tools safely throughout.",
       "url": "https://www.scouting.org/merit-badges/sculpture/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Robotics",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Design, build and program a robot that senses its surroundings and completes a task you set, keeping an engineering notebook of drawings, code, test results and the improvements you would make next.",
       "url": "https://www.scouting.org/merit-badges/robotics/",
       "provenance": {
         "sources": [

@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Journalism",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "arts",
+        "citizenship"
+      ],
+      "description": "Cover a real event twice - once as breaking news, once as a feature - using the inverted pyramid and the five W's, and weigh how a free press separates fact from opinion.",
       "url": "https://www.scouting.org/merit-badges/journalism/",
       "provenance": {
         "sources": [

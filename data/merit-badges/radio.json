@@ -8,8 +8,11 @@
       "valid_to": null,
       "name": "Radio",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem",
+        "safety"
+      ],
+      "description": "Chart the radio spectrum from kilohertz to microwaves, learn how signals bounce or stay local, then get on the air with an amateur contact, a broadcast log, a shortwave hunt, or a direction-finding fox hunt.",
       "url": "https://www.scouting.org/merit-badges/radio/",
       "provenance": {
         "sources": [

@@ -8,8 +8,10 @@
       "valid_to": null,
       "name": "Electronics",
       "eagle_required": false,
-      "tags": [],
-      "description": null,
+      "tags": [
+        "stem"
+      ],
+      "description": "Solder without cooking the components, read resistor color bands, apply Ohm's law, convert between binary and decimal, and build a working control, digital, or analog circuit from a schematic.",
       "url": "https://www.scouting.org/merit-badges/electronics/",
       "provenance": {
         "sources": [
