@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:archaeology",
   "effective_from": "2021-01-01",
-  "effective_to": "2025-12-31",
+  "effective_to": "2026-01-01",
   "supersedes": "requirement-set:archaeology-2018",
   "source_document": {
     "title": "Archaeology Merit Badge Requirements (2021, usscouts.org mirror)",

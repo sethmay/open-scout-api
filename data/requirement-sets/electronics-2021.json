@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:electronics",
   "effective_from": "2021-01-01",
-  "effective_to": "2024-12-31",
+  "effective_to": "2025-01-01",
   "supersedes": "requirement-set:electronics-2018",
   "source_document": {
     "title": "Electronics Merit Badge Requirements (2021, usscouts.org mirror)",

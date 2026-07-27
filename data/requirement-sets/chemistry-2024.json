@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:chemistry",
   "effective_from": "2024-01-01",
-  "effective_to": "2024-12-31",
+  "effective_to": "2025-01-01",
   "supersedes": "requirement-set:chemistry-2020",
   "source_document": {
     "title": "Chemistry Merit Badge Requirements (2024, usscouts.org mirror)",

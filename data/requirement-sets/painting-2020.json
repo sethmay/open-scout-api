@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:painting",
   "effective_from": "2020-01-01",
-  "effective_to": "2025-12-31",
+  "effective_to": "2026-01-01",
   "supersedes": "requirement-set:painting-2009",
   "source_document": {
     "title": "Painting Merit Badge Requirements (2020, usscouts.org mirror)",

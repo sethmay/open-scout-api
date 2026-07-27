@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:weather",
   "effective_from": "2018-01-01",
-  "effective_to": "2025-12-31",
+  "effective_to": "2026-01-01",
   "supersedes": "requirement-set:weather-2014",
   "source_document": {
     "title": "Weather Merit Badge Requirements (2018, usscouts.org mirror)",

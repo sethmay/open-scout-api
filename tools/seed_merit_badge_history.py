@@ -275,7 +275,9 @@ def main() -> None:
                 "$schema": SCHEMA, "id": sid, "kind": "requirement-set",
                 "subject": f"merit-badge:{bid}",
                 "effective_from": ed["from"],
-                "effective_to": day_before(newer_from) if newer_from > ed["from"] else None,
+                # half-open: a window closes on the date its successor took effect (see
+                # tools/requirement_windows.py)
+                "effective_to": newer_from if newer_from > ed["from"] else None,
                 "supersedes": None,
                 "source_document": {"title": ed["title"], "url": ed["url"], "year": int(ed["from"][:4])},
                 "includes_official_text": True,

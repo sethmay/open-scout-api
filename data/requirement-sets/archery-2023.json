@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:archery",
   "effective_from": "2023-01-01",
-  "effective_to": "2024-12-31",
+  "effective_to": "2025-01-01",
   "supersedes": "requirement-set:archery-2019",
   "source_document": {
     "title": "Archery Merit Badge Requirements (2023, usscouts.org mirror)",

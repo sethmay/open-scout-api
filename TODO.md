@@ -132,22 +132,6 @@ rejected.
 
 ## Queue
 
-### Requirement-set `effective_to`: two abutment styles in one dataset
-
-Found while adding the pre-2024 Cub editions (0.45.0). Merit-badge editions close on the **last
-day they applied** (`chemistry-2020` ends `2023-12-31`, `chemistry-2024` starts `2024-01-01`);
-adventure editions close on the **day the successor took effect** (`…-2018` ends `2024`, `…-2024`
-starts `2024`) — the half-open convention entity `versions` already use and `validate_data.py`
-already enforces there. The schema never stated which, which is exactly how they diverged, and a
-consumer asking "which edition applied on date D" cannot write one predicate.
-
-`validate_data.py` now forbids overlaps, multi-year gaps and mid-chain open editions under *either*
-style, so nothing is broken — but this should be unified and stated in
-`requirement-set.schema.json`. Half-open matches the schema's own wording ("when a later revision
-superseded this one") and the rest of the dataset; adopting it means re-dating ~400 published
-merit-badge/rank editions, which is a data migration deliberately not bundled into a Cub-adventure
-release. Decide, migrate, and document before 1.0 freezes the shape.
-
 ### Camp-finder cutover — API-side requests (reviewed 2026-07-21)
 
 camp-finder is migrating to consume this API as its core data — **durable reference data
