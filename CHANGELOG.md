@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.47.0 (minor) — 2026-07-27
 
-- `PENDING` **Merit badge popularity by year: 5 years, 692 badge-year ranks, every year a complete
+- `458f3c2` **Merit badge popularity by year: 5 years, 692 badge-year ranks, every year a complete
   1..N.** New `merit-badge-ranking` dataset — one immutable document per year at
   `v1/merit-badge-rankings/{year}.json` — covering **2021-2025**, plus a `merit_badge_rankings`
   SQLite table shaped one row per badge per year so a trend query is a single join. The longitudinal
