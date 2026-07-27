@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:chess",
   "effective_from": "2013-01-01",
-  "effective_to": "2025-12-31",
+  "effective_to": "2026-01-01",
   "supersedes": "requirement-set:chess-2011",
   "source_document": {
     "title": "Chess Merit Badge Requirements (2013, usscouts.org mirror)",

@@ -21,7 +21,7 @@
         { "$ref": "common.schema.json#/$defs/HistoricalDate" },
         { "type": "null" }
       ],
-      "description": "When a later revision superseded this one; null = current."
+      "description": "The date the next edition took effect; null = still in force. Windows are HALF-OPEN: an edition applied when effective_from <= D < effective_to, so this is the successor's effective_from and NOT the last day this edition applied. Consecutive editions of a subject abut exactly - no gap, no overlap."
     },
     "supersedes": {
       "anyOf": [

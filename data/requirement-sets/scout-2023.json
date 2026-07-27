@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "rank:scout",
   "effective_from": "2023-01-01",
-  "effective_to": "2023-12-31",
+  "effective_to": "2024-01-01",
   "supersedes": "requirement-set:scout-2019",
   "source_document": {
     "title": "Scout Rank Requirements (2023 Boy Scout/Scouts BSA Requirements)",

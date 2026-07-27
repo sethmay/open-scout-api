@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:architecture",
   "effective_from": "2023-01-01",
-  "effective_to": "2023-12-31",
+  "effective_to": "2024-01-01",
   "supersedes": "requirement-set:architecture-2015",
   "source_document": {
     "title": "Architecture Merit Badge Requirements (2023, usscouts.org mirror)",

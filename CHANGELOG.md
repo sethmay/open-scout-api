@@ -3,6 +3,26 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.50.0 (minor) — 2026-07-27
+
+- `PENDING` **`effective_to` is half-open everywhere: 253 published editions re-dated.** An edition
+  applied when `effective_from <= D < effective_to`, so the field holds the date its *successor*
+  took effect — not the last day it applied. Merit-badge and rank editions had been closing on the
+  last day (`2023-12-31` before a `2024-01-01`) while adventure editions closed on the successor's
+  start (`2024` before a `2024`): 253 abutments in the old style against 83 in the new. Owner
+  decision; consumers can now write one `which edition applied on date D` predicate against every
+  subject.
+- **The schema never said which, which is how two conventions grew in one dataset.** It says so now,
+  and `tools/requirement_windows.py` holds the rule as a single function both history generators
+  apply to the documents they own — so the fix survives regeneration rather than being a one-time
+  sweep over data.
+- **The loose gate is what let them coexist.** `validate_data.py` demanded only "no overlaps, no
+  multi-year gaps", which both styles satisfied. It now requires exact abutment; proven by
+  injection against the old style, a gap and an overlap.
+- Checked the 2025 printing of *Scouts BSA Requirements* (No. 33216) against our in-force 2024 rank
+  sets: Eagle requirement 3 is substantively identical (`must choose only one` → `may choose only
+  one`, one comma), so the 2024 editions stand and no 2025 edition is seeded.
+
 ## 0.49.0 (minor) — 2026-07-27
 
 - `665a843` **Positions of responsibility are entities: 29 of them, and the rank requirements now

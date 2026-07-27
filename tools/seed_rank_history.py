@@ -4039,10 +4039,24 @@ DOCS = json.loads(r"""
 def main() -> None:
     out_dir = Path(__file__).resolve().parents[1] / "data" / "requirement-sets"
     out_dir.mkdir(parents=True, exist_ok=True)
+    # The newest historical edition abuts the CURRENT 2024 set, which a different generator owns
+    # (seed_rank_requirements.py). Include those on-disk documents in the chain so this one closes
+    # against them, but write only our own.
+    from requirement_windows import close_half_open
+    ours = {d["id"] for d in DOCS}
+    siblings = []
+    for q in sorted(out_dir.glob("*.json")):
+        if q.stem in ours:
+            continue
+        doc = json.loads(q.read_text("utf-8"))
+        if (doc.get("subject") or "").startswith("rank:"):
+            siblings.append(doc)
+    fixed = close_half_open(DOCS + siblings)
     for doc in DOCS:
         (out_dir / f"{doc['id']}.json").write_text(
             json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
-    print(f"historical rank requirement-sets: {len(DOCS)} documents written")
+    print(f"historical rank requirement-sets: {len(DOCS)} documents written "
+          f"({fixed} window(s) closed half-open)")
 
 
 if __name__ == "__main__":

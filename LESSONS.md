@@ -6,6 +6,12 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **A gate loose enough to accept two conventions is how you get two conventions.** Half-open and
+  inclusive `effective_to` coexisted for months because the validator asked only "no overlaps, no
+  multi-year gaps" — a rule both styles satisfy. Nothing was ever *wrong*, so nothing ever failed,
+  and the divergence grew to 253 documents. When a field admits two defensible encodings, pick one,
+  say so in the schema description, and make the gate exact; a check that tolerates the ambiguity
+  it was written to police is worse than no check, because it certifies the drift.
 - **Put an edge on the edge, not on the node — especially when it is asymmetric.** It is tempting to
   give a position an `accepted_for: [star, life, eagle]` field. Bugler counts for Star and Life and
   not Eagle, so that field would be a per-rank fact living on the wrong entity, and the natural

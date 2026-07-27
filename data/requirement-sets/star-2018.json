@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "rank:star",
   "effective_from": "2018-01-01",
-  "effective_to": "2020-12-31",
+  "effective_to": "2021-01-01",
   "supersedes": "requirement-set:star-2016",
   "source_document": {
     "title": "Star Rank Requirements (2018 Boy Scout/Scouts BSA Requirements)",

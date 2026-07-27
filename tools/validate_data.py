@@ -274,27 +274,24 @@ def main() -> int:
                             f"({', '.join(o['id'] for o in opens)}); at most one may be current")
             elif not opens and subject_open:
                 errs.append(f"requirement-sets: subject {subj!r} is current but has no open edition")
-            # Editions must form ONE unbroken line: an effective-dated document history with a
-            # hole in it silently answers "which requirements applied in 2020?" with nothing.
-            # Two abutment styles are in use — merit-badge editions close on the last day they
-            # applied (2023-12-31 -> 2024-01-01) while adventure editions close on the day the
-            # successor took effect (2024 -> 2024) — so this forbids overlaps and multi-year gaps
-            # rather than demanding one style. (Unifying them is a TODO: the schema never said
-            # which, which is how they diverged.)
+            # Editions must form ONE unbroken half-open line: an effective-dated document history
+            # with a hole in it silently answers "which requirements applied in 2020?" with
+            # nothing, and one with an overlap answers it twice. Requiring exact abutment —
+            # rather than merely forbidding overlaps and multi-year gaps — is what lets a consumer
+            # write a single `effective_from <= D < effective_to` predicate across every subject.
+            # Two styles were in use until 2026-07-27 (see tools/requirement_windows.py); the
+            # looser gate is what allowed them to coexist, so it is now exact.
             ordered = sorted(sets, key=lambda o: o["effective_from"])
             for prev, nxt in zip(ordered, ordered[1:]):
                 pt = prev.get("effective_to")
                 if pt is None:
                     errs.append(f"requirement-sets/{prev['id']}: open edition sits before "
                                 f"{nxt['id']} in the chain; only the newest may be open")
-                    continue
-                if pt > nxt["effective_from"]:
-                    errs.append(f"requirement-sets: subject {subj!r} editions overlap "
-                                f"({prev['id']} ends {pt}, {nxt['id']} starts {nxt['effective_from']})")
-                elif int(nxt["effective_from"][:4]) - int(pt[:4]) > 1:
-                    errs.append(f"requirement-sets: subject {subj!r} has a gap between "
-                                f"{prev['id']} (ends {pt}) and {nxt['id']} "
-                                f"(starts {nxt['effective_from']})")
+                elif pt != nxt["effective_from"]:
+                    rel = "an overlap" if pt > nxt["effective_from"] else "a gap"
+                    errs.append(f"requirement-sets: subject {subj!r} has {rel} — {prev['id']} "
+                                f"ends {pt} but {nxt['id']} starts {nxt['effective_from']}; "
+                                f"windows are half-open, so they must be equal")
         nrs = len(docs)
 
     # pass 5: controlled vocabularies + every code used in camp data must be defined

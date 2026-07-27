@@ -4,7 +4,7 @@
   "kind": "requirement-set",
   "subject": "merit-badge:personal-fitness",
   "effective_from": "2023-01-01",
-  "effective_to": "2025-12-31",
+  "effective_to": "2026-01-01",
   "supersedes": "requirement-set:personal-fitness-2020",
   "source_document": {
     "title": "Personal Fitness Merit Badge Requirements (2023, usscouts.org mirror)",
