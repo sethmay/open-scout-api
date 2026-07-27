@@ -18,7 +18,8 @@ BASE = "https://sethmay.github.io/open-scout-api/schema/v1/"
 KIND_BY_DIR = {
     "councils": "council", "territories": "territory", "merit-badges": "merit-badge",
     "camps": "camp", "ranks": "rank", "awards": "award", "requirement-sets": "requirement-set",
-    "oa-lodges": "oa-lodge", "adventures": "adventure", "vocab": "vocab",
+    "oa-lodges": "oa-lodge", "adventures": "adventure",
+    "merit-badge-rankings": "merit-badge-ranking", "vocab": "vocab",
 }
 
 

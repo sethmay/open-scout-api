@@ -1,0 +1,592 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge-ranking.schema.json",
+  "id": "2025",
+  "kind": "merit-badge-ranking",
+  "year": 2025,
+  "metric": "earned_rank",
+  "complete": true,
+  "source_document": {
+    "title": "2025 merit badge rankings — On Scouting (Scouting America)",
+    "url": "https://onscouting.org/2026/03/18/first-aid-is-first-again-2025-merit-badge-rankings-are-here/",
+    "year": 2026
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "subject": "merit-badge:first-aid"
+    },
+    {
+      "rank": 2,
+      "subject": "merit-badge:citizenship-in-the-world"
+    },
+    {
+      "rank": 3,
+      "subject": "merit-badge:citizenship-in-the-nation"
+    },
+    {
+      "rank": 4,
+      "subject": "merit-badge:swimming"
+    },
+    {
+      "rank": 5,
+      "subject": "merit-badge:communication"
+    },
+    {
+      "rank": 6,
+      "subject": "merit-badge:citizenship-in-society"
+    },
+    {
+      "rank": 7,
+      "subject": "merit-badge:camping"
+    },
+    {
+      "rank": 8,
+      "subject": "merit-badge:personal-management"
+    },
+    {
+      "rank": 9,
+      "subject": "merit-badge:personal-fitness"
+    },
+    {
+      "rank": 10,
+      "subject": "merit-badge:cooking"
+    },
+    {
+      "rank": 11,
+      "subject": "merit-badge:environmental-science"
+    },
+    {
+      "rank": 12,
+      "subject": "merit-badge:citizenship-in-the-community"
+    },
+    {
+      "rank": 13,
+      "subject": "merit-badge:family-life"
+    },
+    {
+      "rank": 14,
+      "subject": "merit-badge:emergency-preparedness"
+    },
+    {
+      "rank": 15,
+      "subject": "merit-badge:fingerprinting"
+    },
+    {
+      "rank": 16,
+      "subject": "merit-badge:rifle-shooting"
+    },
+    {
+      "rank": 17,
+      "subject": "merit-badge:archery"
+    },
+    {
+      "rank": 18,
+      "subject": "merit-badge:leatherwork"
+    },
+    {
+      "rank": 19,
+      "subject": "merit-badge:chess"
+    },
+    {
+      "rank": 20,
+      "subject": "merit-badge:wood-carving"
+    },
+    {
+      "rank": 21,
+      "subject": "merit-badge:kayaking"
+    },
+    {
+      "rank": 22,
+      "subject": "merit-badge:fishing"
+    },
+    {
+      "rank": 23,
+      "subject": "merit-badge:art"
+    },
+    {
+      "rank": 24,
+      "subject": "merit-badge:wilderness-survival"
+    },
+    {
+      "rank": 25,
+      "subject": "merit-badge:sustainability"
+    },
+    {
+      "rank": 26,
+      "subject": "merit-badge:canoeing"
+    },
+    {
+      "rank": 27,
+      "subject": "merit-badge:photography"
+    },
+    {
+      "rank": 28,
+      "subject": "merit-badge:shotgun-shooting"
+    },
+    {
+      "rank": 29,
+      "subject": "merit-badge:space-exploration"
+    },
+    {
+      "rank": 30,
+      "subject": "merit-badge:lifesaving"
+    },
+    {
+      "rank": 31,
+      "subject": "merit-badge:geology"
+    },
+    {
+      "rank": 32,
+      "subject": "merit-badge:climbing"
+    },
+    {
+      "rank": 33,
+      "subject": "merit-badge:mammal-study"
+    },
+    {
+      "rank": 34,
+      "subject": "merit-badge:astronomy"
+    },
+    {
+      "rank": 35,
+      "subject": "merit-badge:aviation"
+    },
+    {
+      "rank": 36,
+      "subject": "merit-badge:metalwork"
+    },
+    {
+      "rank": 37,
+      "subject": "merit-badge:engineering"
+    },
+    {
+      "rank": 38,
+      "subject": "merit-badge:basketry"
+    },
+    {
+      "rank": 39,
+      "subject": "merit-badge:welding"
+    },
+    {
+      "rank": 40,
+      "subject": "merit-badge:small-boat-sailing"
+    },
+    {
+      "rank": 41,
+      "subject": "merit-badge:chemistry"
+    },
+    {
+      "rank": 42,
+      "subject": "merit-badge:nature"
+    },
+    {
+      "rank": 43,
+      "subject": "merit-badge:search-and-rescue"
+    },
+    {
+      "rank": 44,
+      "subject": "merit-badge:music"
+    },
+    {
+      "rank": 45,
+      "subject": "merit-badge:robotics"
+    },
+    {
+      "rank": 46,
+      "subject": "merit-badge:pottery"
+    },
+    {
+      "rank": 47,
+      "subject": "merit-badge:weather"
+    },
+    {
+      "rank": 48,
+      "subject": "merit-badge:moviemaking"
+    },
+    {
+      "rank": 49,
+      "subject": "merit-badge:automotive-maintenance"
+    },
+    {
+      "rank": 50,
+      "subject": "merit-badge:fire-safety"
+    },
+    {
+      "rank": 51,
+      "subject": "merit-badge:game-design"
+    },
+    {
+      "rank": 52,
+      "subject": "merit-badge:pioneering"
+    },
+    {
+      "rank": 53,
+      "subject": "merit-badge:geocaching"
+    },
+    {
+      "rank": 54,
+      "subject": "merit-badge:animation"
+    },
+    {
+      "rank": 55,
+      "subject": "merit-badge:pulp-and-paper"
+    },
+    {
+      "rank": 56,
+      "subject": "merit-badge:fish-wildlife-management"
+    },
+    {
+      "rank": 57,
+      "subject": "merit-badge:forestry"
+    },
+    {
+      "rank": 58,
+      "subject": "merit-badge:horsemanship"
+    },
+    {
+      "rank": 59,
+      "subject": "merit-badge:signs-signals-and-codes"
+    },
+    {
+      "rank": 60,
+      "subject": "merit-badge:sculpture"
+    },
+    {
+      "rank": 61,
+      "subject": "merit-badge:nuclear-science"
+    },
+    {
+      "rank": 62,
+      "subject": "merit-badge:orienteering"
+    },
+    {
+      "rank": 63,
+      "subject": "merit-badge:electricity"
+    },
+    {
+      "rank": 64,
+      "subject": "merit-badge:american-indian-culture"
+    },
+    {
+      "rank": 65,
+      "subject": "merit-badge:motorboating"
+    },
+    {
+      "rank": 66,
+      "subject": "merit-badge:oceanography"
+    },
+    {
+      "rank": 67,
+      "subject": "merit-badge:golf"
+    },
+    {
+      "rank": 68,
+      "subject": "merit-badge:public-speaking"
+    },
+    {
+      "rank": 69,
+      "subject": "merit-badge:crime-prevention"
+    },
+    {
+      "rank": 70,
+      "subject": "merit-badge:soil-and-water-conservation"
+    },
+    {
+      "rank": 71,
+      "subject": "merit-badge:snow-sports"
+    },
+    {
+      "rank": 72,
+      "subject": "merit-badge:digital-technology"
+    },
+    {
+      "rank": 73,
+      "subject": "merit-badge:railroading"
+    },
+    {
+      "rank": 74,
+      "subject": "merit-badge:salesmanship"
+    },
+    {
+      "rank": 75,
+      "subject": "merit-badge:electronics"
+    },
+    {
+      "rank": 76,
+      "subject": "merit-badge:traffic-safety"
+    },
+    {
+      "rank": 77,
+      "subject": "merit-badge:scouting-heritage"
+    },
+    {
+      "rank": 78,
+      "subject": "merit-badge:hiking"
+    },
+    {
+      "rank": 79,
+      "subject": "merit-badge:disabilities-awareness"
+    },
+    {
+      "rank": 80,
+      "subject": "merit-badge:entrepreneurship"
+    },
+    {
+      "rank": 81,
+      "subject": "merit-badge:collections"
+    },
+    {
+      "rank": 82,
+      "subject": "merit-badge:radio"
+    },
+    {
+      "rank": 83,
+      "subject": "merit-badge:archaeology"
+    },
+    {
+      "rank": 84,
+      "subject": "merit-badge:mining-in-society"
+    },
+    {
+      "rank": 85,
+      "subject": "merit-badge:rowing"
+    },
+    {
+      "rank": 86,
+      "subject": "merit-badge:bird-study"
+    },
+    {
+      "rank": 87,
+      "subject": "merit-badge:law"
+    },
+    {
+      "rank": 88,
+      "subject": "merit-badge:plumbing"
+    },
+    {
+      "rank": 89,
+      "subject": "merit-badge:coin-collecting"
+    },
+    {
+      "rank": 90,
+      "subject": "merit-badge:architecture"
+    },
+    {
+      "rank": 91,
+      "subject": "merit-badge:painting"
+    },
+    {
+      "rank": 92,
+      "subject": "merit-badge:american-heritage"
+    },
+    {
+      "rank": 93,
+      "subject": "merit-badge:reptile-and-amphibian-study"
+    },
+    {
+      "rank": 94,
+      "subject": "merit-badge:woodwork"
+    },
+    {
+      "rank": 95,
+      "subject": "merit-badge:fly-fishing"
+    },
+    {
+      "rank": 96,
+      "subject": "merit-badge:programming"
+    },
+    {
+      "rank": 97,
+      "subject": "merit-badge:exploration"
+    },
+    {
+      "rank": 98,
+      "subject": "merit-badge:pets"
+    },
+    {
+      "rank": 99,
+      "subject": "merit-badge:textile"
+    },
+    {
+      "rank": 100,
+      "subject": "merit-badge:animal-science"
+    },
+    {
+      "rank": 101,
+      "subject": "merit-badge:sports"
+    },
+    {
+      "rank": 102,
+      "subject": "merit-badge:cycling"
+    },
+    {
+      "rank": 103,
+      "subject": "merit-badge:graphic-arts"
+    },
+    {
+      "rank": 104,
+      "subject": "merit-badge:american-business"
+    },
+    {
+      "rank": 105,
+      "subject": "merit-badge:scholarship"
+    },
+    {
+      "rank": 106,
+      "subject": "merit-badge:model-design-and-building"
+    },
+    {
+      "rank": 107,
+      "subject": "merit-badge:reading"
+    },
+    {
+      "rank": 108,
+      "subject": "merit-badge:whitewater"
+    },
+    {
+      "rank": 109,
+      "subject": "merit-badge:backpacking"
+    },
+    {
+      "rank": 110,
+      "subject": "merit-badge:theater"
+    },
+    {
+      "rank": 111,
+      "subject": "merit-badge:home-repairs"
+    },
+    {
+      "rank": 112,
+      "subject": "merit-badge:plant-science"
+    },
+    {
+      "rank": 113,
+      "subject": "merit-badge:insect-study"
+    },
+    {
+      "rank": 114,
+      "subject": "merit-badge:safety"
+    },
+    {
+      "rank": 115,
+      "subject": "merit-badge:skating"
+    },
+    {
+      "rank": 116,
+      "subject": "merit-badge:genealogy"
+    },
+    {
+      "rank": 117,
+      "subject": "merit-badge:public-health"
+    },
+    {
+      "rank": 118,
+      "subject": "merit-badge:health-care-professions"
+    },
+    {
+      "rank": 119,
+      "subject": "merit-badge:inventing"
+    },
+    {
+      "rank": 120,
+      "subject": "merit-badge:dog-care"
+    },
+    {
+      "rank": 121,
+      "subject": "merit-badge:american-cultures"
+    },
+    {
+      "rank": 122,
+      "subject": "merit-badge:veterinary-medicine"
+    },
+    {
+      "rank": 123,
+      "subject": "merit-badge:farm-mechanics"
+    },
+    {
+      "rank": 124,
+      "subject": "merit-badge:composite-materials"
+    },
+    {
+      "rank": 125,
+      "subject": "merit-badge:energy"
+    },
+    {
+      "rank": 126,
+      "subject": "merit-badge:landscape-architecture"
+    },
+    {
+      "rank": 127,
+      "subject": "merit-badge:water-sports"
+    },
+    {
+      "rank": 128,
+      "subject": "merit-badge:gardening"
+    },
+    {
+      "rank": 129,
+      "subject": "merit-badge:journalism"
+    },
+    {
+      "rank": 130,
+      "subject": "merit-badge:truck-transportation"
+    },
+    {
+      "rank": 131,
+      "subject": "merit-badge:athletics"
+    },
+    {
+      "rank": 132,
+      "subject": "merit-badge:scuba-diving"
+    },
+    {
+      "rank": 133,
+      "subject": "merit-badge:dentistry"
+    },
+    {
+      "rank": 134,
+      "subject": "merit-badge:artificial-intelligence"
+    },
+    {
+      "rank": 135,
+      "subject": "merit-badge:cybersecurity"
+    },
+    {
+      "rank": 136,
+      "subject": "merit-badge:american-labor"
+    },
+    {
+      "rank": 137,
+      "subject": "merit-badge:surveying"
+    },
+    {
+      "rank": 138,
+      "subject": "merit-badge:multisport"
+    },
+    {
+      "rank": 139,
+      "subject": "merit-badge:stamp-collecting"
+    },
+    {
+      "rank": 140,
+      "subject": "merit-badge:drafting"
+    },
+    {
+      "rank": 141,
+      "subject": "merit-badge:bugling"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "https://onscouting.org/2026/03/18/first-aid-is-first-again-2025-merit-badge-rankings-are-here/",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.9,
+    "notes": "Ranks by number earned; Scouting America publishes no absolute counts."
+  },
+  "notes": null
+}

@@ -518,6 +518,59 @@ def main() -> int:
                 errs.append(f"rank {rank!r}: area {area!r} filled by {n} required adventures "
                             f"({', '.join(who) or 'none'}); each rank fills every area exactly once")
 
+    # pass 6: merit badge popularity rankings (immutable per-year documents, like requirement-sets).
+    # The gates that matter are arithmetic and temporal: a rank printed twice or a gap in a year
+    # claiming completeness means the source table was mis-transcribed, and a badge ranked in a year
+    # it did not exist means a pre-rename name slipped through the slug mapping (the 2022 source post
+    # still prints "Medicine" two years after it became Health Care Professions).
+    rank_dir = DATA / "merit-badge-rankings"
+    nrank_docs = 0
+    if rank_dir.exists():
+        rk_validator = Draft202012Validator(schemas["merit-badge-ranking.schema.json"], registry=reg,
+                                            format_checker=Draft202012Validator.FORMAT_CHECKER)
+        # a badge's life span, from its own version windows
+        span: dict[str, tuple[str | None, str | None]] = {}
+        for p in sorted((DATA / "merit-badges").glob("*.json")):
+            if p.name == "_events.json":
+                continue
+            obj = json.loads(p.read_text("utf-8"))
+            vs = obj.get("versions") or [{}]
+            span[obj["id"]] = (vs[0].get("valid_from"),
+                               None if any(v.get("valid_to") is None for v in vs) else vs[-1].get("valid_to"))
+        for p in sorted(rank_dir.glob("*.json")):
+            obj = json.loads(p.read_text("utf-8"))
+            for e in rk_validator.iter_errors(obj):
+                errs.append(f"merit-badge-rankings/{p.name}: schema: {e.json_path}: {e.message}")
+            if obj.get("id") != p.stem:
+                errs.append(f"merit-badge-rankings/{p.name}: id {obj.get('id')!r} != filename stem {p.stem!r}")
+            if str(obj.get("year")) != obj.get("id"):
+                errs.append(f"merit-badge-rankings/{p.name}: year {obj.get('year')} disagrees with id {obj.get('id')!r}")
+            year = obj.get("year")
+            ranks = [r.get("rank") for r in obj.get("rankings", [])]
+            subs = [r.get("subject") for r in obj.get("rankings", [])]
+            dupe_r = sorted({r for r in ranks if ranks.count(r) > 1})
+            if dupe_r:
+                errs.append(f"merit-badge-rankings/{p.name}: rank(s) {dupe_r} used more than once")
+            dupe_s = sorted({s for s in subs if subs.count(s) > 1})
+            if dupe_s:
+                errs.append(f"merit-badge-rankings/{p.name}: badge(s) {dupe_s} ranked more than once")
+            if obj.get("complete") and sorted(ranks) != list(range(1, len(ranks) + 1)):
+                gaps = [n for n in range(1, (max(ranks) if ranks else 0) + 1) if n not in ranks]
+                errs.append(f"merit-badge-rankings/{p.name}: complete=true but ranks are not 1..{len(ranks)} "
+                            f"(missing {gaps[:6]})")
+            for s in subs:
+                check_ref(s, f"merit-badge-rankings/{p.name}")
+                slug = (s or "").split(":", 1)[-1]
+                if slug in span and year is not None:
+                    lo, hi = span[slug]
+                    if lo and int(str(lo)[:4]) > year:
+                        errs.append(f"merit-badge-rankings/{p.name}: {s} is ranked but the badge only "
+                                    f"begins {lo}")
+                    if hi and int(str(hi)[:4]) < year:
+                        errs.append(f"merit-badge-rankings/{p.name}: {s} is ranked but the badge ended "
+                                    f"{hi} (a pre-rename name may have been mapped)")
+            nrank_docs += 1
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):
@@ -533,7 +586,7 @@ def main() -> int:
         return 1
     print(f"OK: {ncouncils} councils + {nterr} territories + {nmb} merit-badges + "
           f"{nrs} requirement-sets + {ncamps} camps + {nranks} ranks + {nawards} awards + {nlodges} oa-lodges + "
-          f"{nadv} adventures "
+          f"{nadv} adventures + {nrank_docs} badge-ranking years "
           f"valid (schema + referential + windows + text-rights + camp coupling + coord bounds + vocab "
           f"+ rank/adventure agreement + area coverage), {len(entities)} entities")
     return 0

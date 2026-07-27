@@ -26,7 +26,8 @@
         "award",
         "oa-lodge",
         "requirement-set",
-        "adventure"
+        "adventure",
+        "merit-badge-ranking"
       ]
     },
     "count": {
@@ -212,6 +213,27 @@
           "items": {
             "items": {
               "$ref": "#/$defs/RequirementSetIndexItem"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "merit-badge-ranking"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/$defs/BadgeRankingIndexItem"
             }
           }
         }
@@ -568,6 +590,19 @@
         "category",
         "current"
       ],
+      "additionalProperties": false
+    }    ,
+    "BadgeRankingIndexItem": {
+      "type": "object",
+      "description": "One year of merit badge popularity ranks. `metric` is carried here too so a listing cannot be mistaken for earned counts.",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[0-9]{4}$" },
+        "year": { "type": "integer", "minimum": 1911, "maximum": 2100 },
+        "metric": { "enum": ["earned_rank"] },
+        "complete": { "type": "boolean" },
+        "count": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["id", "year", "metric", "complete", "count"],
       "additionalProperties": false
     }
   }
