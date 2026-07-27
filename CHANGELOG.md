@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.46.1 (patch) — 2026-07-27
 
-- `PENDING` **Swept the rest of the population 0.46.0's spot-check pointed at.** Exactly **7 camps**
+- `bd07760` **Swept the rest of the population 0.46.0's spot-check pointed at.** Exactly **7 camps**
   carried the provenance marker *"Some codes are retained from the original camp-finder import and
   were not re-confirmed by this survey"* — Baker and Parsons (fixed last release) plus Baldwin,
   Melakwa, Sheppard, Fire Mountain and Camp Kenya. They are the Pacific-Northwest set camp-finder
