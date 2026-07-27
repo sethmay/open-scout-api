@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.43.0 (minor) — 2026-07-27
 
-- `PENDING` **Cub Scout adventures are a first-class dataset: 139 entities and 611 requirements,
+- `eb963cd` **Cub Scout adventures are a first-class dataset: 139 entities and 611 requirements,
   the unit of Cub advancement.** Adventures are to Cub Scouts what merit badges are to Scouts BSA —
   a rank is earned by completing six required adventures plus any two electives, and each adventure
   carries its own requirements — so they get identity (`data/adventures/<slug>.json`), their own
