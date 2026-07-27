@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.50.0 (minor) — 2026-07-27
 
-- `PENDING` **`effective_to` is half-open everywhere: 253 published editions re-dated.** An edition
+- `4b7185f` **`effective_to` is half-open everywhere: 253 published editions re-dated.** An edition
   applied when `effective_from <= D < effective_to`, so the field holds the date its *successor*
   took effect — not the last day it applied. Merit-badge and rank editions had been closing on the
   last day (`2023-12-31` before a `2024-01-01`) while adventure editions closed on the successor's
