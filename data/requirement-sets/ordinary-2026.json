@@ -42,7 +42,8 @@
       "children": [
         {
           "number": "a",
-          "text": "Meet your ship's bylaws requirement for active participation in your ship's meetings and activities for three months."
+          "text": "Meet your ship's bylaws requirement for active participation in your ship's meetings and activities for three months.",
+          "tenure_months": 3
         },
         {
           "number": "b",

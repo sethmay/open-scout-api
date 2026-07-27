@@ -399,25 +399,22 @@ source (see the Meriwether evidence in PLAN §5.1).
   - Still open: the 18 non-day camps that remain unsurveyed, the 43 thin surveys queued for review
     (below), and the 4 zero-use vocabulary terms (genuine rarities — watch, do not prune).
 
-### Advancement graph — Eagle slots DONE (0.48.0); positions of responsibility open
+### Advancement graph — Eagle slots, positions and counts DONE; one open source gap
 
 Eagle requirement 3 is structured: 14 slots, three either/or, every badge `ref`-resolved, gate-tied
-to `eagle_required` (which marks the 18-badge list, not the slot count). Remaining:
+to `eagle_required` (which marks the 18-badge list, not the slot count). Positions are 29 entities
+with 104 `position:` refs (0.49.0). Tenure and badge counts are countable (0.51.0). Remaining:
 
-- **Positions of responsibility — DONE (0.49.0).** 29 `position` entities; Star/Life/Eagle
-  requirement trees carry 104 `position:` refs. Acceptance is a rank-side edge because it is not
-  symmetric (Bugler: Star and Life, not Eagle). Follow-ups: **adult leadership roles** (Scoutmaster,
-  committee chair — `audience` already allows them, and they pair naturally with the adult-training
-  dataset idea); position tenure is on the requirement, not the position, which is correct but means
-  "four months for Star, six for Life" is still only in prose.
-- **Star and Life badge counts.** "Six merit badges, including any four from the required list"
-  (Star) and "five more ... including any three additional" (Life) are countable rules still living
-  in prose. They reference Eagle's list rather than restating it, so structuring them means a
-  cross-rank reference the schema has no shape for yet.
+- **Adult leadership roles.** Scoutmaster, committee chair — `position.audience` already allows
+  `adult`, and they pair naturally with the adult-training dataset idea. They are a separate
+  unpublished catalog, so this needs a source before it needs a schema.
 - ⚠ **The in-force Eagle requirements require a discontinued badge.** `eagle-2024` (effective
   2024-01-01, `effective_to: null`) lists Citizenship in Society at slot (d); Scouting America
-  discontinued that badge on 2026-02-27. A newer Eagle edition presumably exists and we do not have
-  it — until then the dataset faithfully reports a rule that reality has moved past.
+  discontinued that badge on 2026-02-27. Checked against the **2025** printing of No. 33216
+  (2026-07-27): requirement 3 is substantively unchanged there (`must` → `may choose only one`, one
+  comma), and scouting.org's live Eagle-required page now lists **17** badges with no reissued
+  requirement to match. So no newer edition exists to seed — until one does, the dataset faithfully
+  reports a rule that reality has moved past. Re-check when a 2026 book appears.
 
 ### Camp feature accuracy audit — `python tools/audit_camp_features.py --all`
 

@@ -16,7 +16,8 @@
   "requirements": [
     {
       "number": "1",
-      "text": "Be active in your troop for at least four months as a First Class Scout. (See page 24.)"
+      "text": "Be active in your troop for at least four months as a First Class Scout. (See page 24.)",
+      "tenure_months": 4
     },
     {
       "number": "2",
@@ -24,7 +25,12 @@
     },
     {
       "number": "3",
-      "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the 18 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. (See pages 28 and 416–420.)"
+      "text": "Earn six merit badges, including any four from the required list for Eagle. You may choose any of the 18 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list. (See pages 28 and 416–420.)",
+      "badge_count": {
+        "earn": 6,
+        "cumulative": 6,
+        "from_eagle_required": 4
+      }
     },
     {
       "number": "4",
@@ -232,7 +238,8 @@
           "number": "5d",
           "text": "Carry out a Scoutmaster-approved leadership project to help the troop."
         }
-      ]
+      ],
+      "tenure_months": 4
     },
     {
       "number": "6",

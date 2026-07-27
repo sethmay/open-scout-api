@@ -130,6 +130,22 @@
           "type": "array",
           "items": { "$ref": "#/$defs/Requirement" },
           "default": []
+        },
+        "tenure_months": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "How many months of activity or service this requirement demands, as a MINIMUM. The source phrases it three ways ('for six months', 'for at least six months', 'for a period of at least six months'); serving longer never fails a requirement, so all three are recorded as the same minimum. Derived from this node's own text."
+        },
+        "badge_count": {
+          "type": "object",
+          "description": "How many merit badges this rank requires. Present only on the requirement that states them.",
+          "properties": {
+            "earn": { "type": "integer", "minimum": 1, "description": "Badges earned at this rank." },
+            "cumulative": { "type": "integer", "minimum": 1, "description": "Running total across all ranks once this one is complete." },
+            "from_eagle_required": { "type": "integer", "minimum": 1, "description": "How many of 'earn' must appear on the Eagle-required list. This is LIST MEMBERSHIP, not slots: every badge on the list is interchangeable here, so Swimming and Hiking count as two. Absent on Eagle itself, whose rule is the stricter 14-slot tree in 'children' - never a bare count." }
+          },
+          "required": ["earn", "cumulative"],
+          "additionalProperties": false
         }
       },
       "required": ["number"],
