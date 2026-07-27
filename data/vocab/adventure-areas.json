@@ -1,0 +1,43 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json",
+  "id": "adventure-areas",
+  "kind": "vocab",
+  "title": "Cub Scout requirement areas",
+  "description": "The six areas a Cub Scout rank's required adventures cover, one adventure each. Every rank fills all six, so the set is the same at every rank while the adventure filling it differs — Citizenship is 'King of the Jungle' for a Lion and 'Council Fire' for a Wolf. Single-valued on adventure.area, and null for electives, which fill no area. Beware that two Arrow of Light adventures are *named* after areas ('Personal Fitness', 'Citizenship'): match on adventure ids, never on labels.",
+  "applies_to": [
+    "adventure.area"
+  ],
+  "open": true,
+  "terms": [
+    {
+      "code": "character_leadership",
+      "label": "Character & Leadership",
+      "description": "Filled by the rank's Bobcat adventure — the Scout Oath and Law, the den's code of conduct, and youth protection. Designed to be completed first."
+    },
+    {
+      "code": "personal_fitness",
+      "label": "Personal Fitness",
+      "description": "Physical activity, healthy habits, nutrition and sleep."
+    },
+    {
+      "code": "personal_safety",
+      "label": "Personal Safety",
+      "description": "Recognizing and responding to danger, first aid, and staying safe with others."
+    },
+    {
+      "code": "family_reverence",
+      "label": "Family & Reverence",
+      "description": "Duty to God and family, done with a parent or legal guardian rather than the den."
+    },
+    {
+      "code": "citizenship",
+      "label": "Citizenship",
+      "description": "Duty to country, community service, flag etiquette and local government."
+    },
+    {
+      "code": "outdoors",
+      "label": "Outdoors",
+      "description": "Hiking, camping, the Outdoor Code and Leave No Trace Principles for Kids."
+    }
+  ]
+}

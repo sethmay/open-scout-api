@@ -36,7 +36,8 @@ ENTITY_TABLES = {
     "oa-lodges": ("oa_lodges", [("council", "TEXT", "council"), ("section", "TEXT", "section"),
                                 ("region", "TEXT", "region"), ("hq_state", "TEXT", "hq_state"),
                                 ("lat", "REAL", "lat"), ("lon", "REAL", "lon")]),
-    "adventures": ("adventures", [("program", "TEXT", "program"), ("category", "TEXT", "category")]),
+    "adventures": ("adventures", [("program", "TEXT", "program"), ("category", "TEXT", "category"),
+                                  ("area", "TEXT", "area")]),
 }
 
 
@@ -146,8 +147,11 @@ def main() -> None:
 
     # adventure -> rank is many-to-many (Slingshot and BB Guns are offered by several ranks) and
     # lives in a JSON array, so it unrolls into a junction table too: this is what answers
-    # "which adventures does a Wolf need, and which are required".
-    cur.execute("CREATE TABLE adventure_ranks (adventure_id TEXT, rank_id TEXT, category TEXT)")
+    # "which adventures does a Wolf need, and which are required". `area` rides along so the
+    # advancement question — which of the six required slots are still open for this Scout — is one
+    # GROUP BY on this table rather than a join back through the entity JSON.
+    cur.execute("CREATE TABLE adventure_ranks (adventure_id TEXT, rank_id TEXT, category TEXT, "
+                "area TEXT)")
     ar_rows = []
     for p in sorted((DATA / "adventures").glob("*.json")):
         if p.name == "_events.json":
@@ -155,8 +159,8 @@ def main() -> None:
         e = read_json(p)
         v = open_version(e) or (e.get("versions") or [{}])[-1]
         for r in (v.get("ranks") or []):
-            ar_rows.append([e["id"], r.split(":", 1)[-1], v.get("category")])
-    cur.executemany("INSERT INTO adventure_ranks VALUES (?,?,?)", ar_rows)
+            ar_rows.append([e["id"], r.split(":", 1)[-1], v.get("category"), v.get("area")])
+    cur.executemany("INSERT INTO adventure_ranks VALUES (?,?,?,?)", ar_rows)
     cur.execute("CREATE INDEX idx_adventure_ranks_rank ON adventure_ranks(rank_id)")
     cur.execute("CREATE INDEX idx_adventure_ranks_adv ON adventure_ranks(adventure_id)")
     counts["adventure_ranks"] = len(ar_rows)

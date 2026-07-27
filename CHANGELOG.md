@@ -3,6 +3,38 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.44.0 (minor) — 2026-07-27
+
+- `PENDING` **The six Cub requirement areas are now data: every rank's six required adventures
+  carry the area they fill, and the pipeline proves each rank fills all six exactly once.** This is
+  what turns the adventure list into an advancement tracker — "which of your six required slots are
+  still open" becomes a group-by instead of a list diff. The same set of areas exists at every rank
+  while the adventure filling it changes: Citizenship is `King of the Jungle` for a Lion and
+  `Council Fire` for a Wolf.
+- New optional `adventure.area` (additive) + `data/vocab/adventure-areas.json` (6 terms):
+  `character_leadership`, `personal_fitness`, `personal_safety`, `family_reverence`, `citizenship`,
+  `outdoors`. `null` for electives — an elective fills no area — and published in
+  `v1/current/adventures.json`, the per-entity docs, and the SQLite `adventures` +
+  `adventure_ranks` tables, so the whole question is one `GROUP BY`.
+- **Areas come from the CMS, not from reading the page layout.** Each required adventure renders as
+  a loop-item whose class list carries `cs-adv-rank-<rank> cs-adv-type-required
+  cs-adv-topic-<area>`, so the pairing is read off the card the heading lives inside. Pairing by
+  print order would have been guesswork — Bear prints its areas in a different order than Wolf —
+  and 5 of the 6 areas come straight from those classes. The sixth is Bobcat's
+  (`character_leadership`), a hand-built callout on all six rank pages, read from its label.
+- **This closes the loop on the 0.43.0 Arrow of Light bug.** Two AOL adventures are *named* after
+  areas — "Personal Fitness" and "Citizenship" — which is exactly why an earlier seed captured
+  printed area labels as adventures and shipped seven required entries covering five areas. The
+  real mapping is now explicit: `personal_safety → First Aid`, `family_reverence → Duty to God`,
+  `outdoors → Outdoor Adventurer`.
+- 9 new gates, each proven by injecting the drift it catches: area code not in vocab; a required
+  adventure with no area; an elective claiming one; two required adventures claiming the same area;
+  an area moved onto a rank that already fills it; and four published-contract probes. The
+  published `category`/`area` fields are now **pattern-constrained to vocabulary codes**, which
+  closed a real hole — `current/adventures.json` would previously have published the label
+  `"Personal Fitness"` where a code belongs, re-creating the very confusion above. A negative
+  fixture pins that shape.
+
 ## 0.43.0 (minor) — 2026-07-27
 
 - `eb963cd` **Cub Scout adventures are a first-class dataset: 139 entities and 611 requirements,

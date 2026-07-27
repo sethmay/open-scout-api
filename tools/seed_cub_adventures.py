@@ -64,6 +64,10 @@ CATEGORY = {"Required Adventures": "required",
             "Special Elective Adventures": "special_elective"}
 # the rank rule text: "six required Adventures and any two elective Adventures"
 CHOOSE = {"required": None, "elective": 2, "special_elective": None}
+# The six requirement AREAS a rank's required adventures fill, one each. Five come straight from
+# the CMS taxonomy on each adventure card (`cs-adv-topic-<slug>`); the sixth, Bobcat's, is a
+# hand-built callout on every rank page and is read from its label. Electives carry no area.
+AREA_FROM_TOPIC = str.maketrans({"-": "_"})       # cs-adv-topic-personal-fitness -> personal_fitness
 
 
 def _text(frag: str) -> str:
@@ -117,13 +121,19 @@ def _parse_adventure_page(path: Path) -> dict:
     return {"name": _text(h1.group(1)), "url": can.group(1), "requirements": reqs}
 
 
-def _parse_rank_page(path: Path) -> tuple[list[dict], dict[str, str]]:
-    """(groups, url_by_name) for one rank page.
+def _parse_rank_page(path: Path) -> tuple[list[dict], dict[str, str], dict[str, str], str]:
+    """(groups, url_by_name, area_by_name, bobcat_area) for one rank page.
 
     Groups are the <h3> 'Required / Elective / Special Elective Adventures' headings; the
     adventures in each are the <h2>s that follow. Bobcat is not in any group — it is linked
     separately ('View Wolf Bobcat') — but the rank rule counts *six* required adventures
     against five listed, so Bobcat is the sixth and is prepended to the required group.
+
+    Areas come from the CMS, not from reading the layout: every required adventure is rendered as
+    a loop-item whose class list carries `cs-adv-rank-<rank> cs-adv-type-required
+    cs-adv-topic-<area>`. Pairing an adventure with the area label printed next to it would be
+    guesswork about card order (Bear prints its areas in a different order than Wolf); the class on
+    the card the heading lives inside is authoritative. Electives carry no topic class at all.
     """
     body = _strip_scripts(path.read_text("utf-8", errors="ignore"))
     url_by_name: dict[str, str] = {}
@@ -141,7 +151,33 @@ def _parse_rank_page(path: Path) -> tuple[list[dict], dict[str, str]]:
     bobcat = next((u for n, u in url_by_name.items() if "bobcat" in n), None)
     if not bobcat:
         raise SystemExit(f"{path.name}: no Bobcat link")
-    return groups, {**url_by_name, "__bobcat__": bobcat}
+
+    # walk cards and headings in document order; a heading belongs to the card it sits inside
+    marks: list[tuple[int, str, str]] = []
+    for m in re.finditer(r'<div[^>]*class="([^"]*e-loop-item[^"]*)"', body, re.I):
+        marks.append((m.start(), "card", m.group(1)))
+    for m in re.finditer(r'<h2[^>]*>\s*<a[^>]+href="[^"]*cub-scout-adventures[^"]*"[^>]*>(.*?)</a>\s*</h2>',
+                         body, re.S | re.I):
+        marks.append((m.start(), "name", _text(m.group(1))))
+    marks.sort()
+    area_by_name: dict[str, str] = {}
+    card = ""
+    for _, kind, val in marks:
+        if kind == "card":
+            card = val
+        else:
+            topic = re.search(r"cs-adv-topic-([a-z0-9-]+)", card)
+            if topic:
+                area_by_name[_norm(val)] = topic.group(1).translate(AREA_FROM_TOPIC)
+
+    # Bobcat's area is the one the CMS does not tag: a plain <p> label in its hand-built callout.
+    inner = body[body.lower().find("<body"):]
+    lab = next((_text(m.group(1)) for m in re.finditer(r"<p>([^<>]{3,40})</p>", inner)
+                if "leadership" in m.group(1).lower()), None)
+    if not lab:
+        raise SystemExit(f"{path.name}: no Bobcat area label (expected a <p> naming its area)")
+    bobcat_area = re.sub(r"_+", "_", re.sub(r"[^a-z0-9]+", "_", lab.lower())).strip("_")
+    return groups, {**url_by_name, "__bobcat__": bobcat}, area_by_name, bobcat_area
 
 
 def extract(src: Path) -> None:
@@ -154,7 +190,8 @@ def extract(src: Path) -> None:
     adv: dict[str, dict] = {}          # slug -> record
     rank_structure: dict[str, list] = {}
     for rank, disp in RANKS.items():
-        groups, urls = _parse_rank_page(src / "requirements" / f"{disp} Adventures _ Scouting America.htm")
+        groups, urls, area_by_name, bobcat_area = _parse_rank_page(
+            src / "requirements" / f"{disp} Adventures _ Scouting America.htm")
         # A rank page's hrefs can redirect (Arrow of Light links `bobcat-arrow-of-light`,
         # whose page is canonically `bobcat-aol`), so a saved page's own canonical URL always
         # wins; the href is only a fallback for adventures with no page.
@@ -170,26 +207,40 @@ def extract(src: Path) -> None:
             if cat == "required":                       # Bobcat is the sixth required adventure
                 slugs.append(bobcat_slug)
                 _record(adv, bobcat_slug, bobcat_page["name"], bobcat_url, rank, cat,
-                        bobcat_page["requirements"])
+                        bobcat_page["requirements"], bobcat_area)
             for name in g["names"]:
                 page = pages.get(_norm(name))
                 url = (page or {}).get("url") or urls.get(_norm(name))
                 slug = _slug_from_url(url) if url else _slug_from_name(name)
                 slugs.append(slug)
                 _record(adv, slug, (page or {}).get("name", name), url, rank, cat,
-                        (page or {}).get("requirements", []))
+                        (page or {}).get("requirements", []), area_by_name.get(_norm(name)))
             out_groups.append({"group": g["group"], "category": cat,
                                "choose": CHOOSE[cat], "slugs": slugs})
         rank_structure[rank] = out_groups
 
+    # Every rank must fill all six areas exactly once. This is the check that would have caught the
+    # original Arrow of Light error: its adventures are *named* "Personal Fitness" and "Citizenship",
+    # identical to two area labels, so a parser reading labels as adventures produced seven required
+    # entries and nobody noticed. Coverage is now arithmetic, not eyeballing.
+    areas = sorted({r["area"] for r in adv.values() if r["area"]})
+    for rank in RANKS:
+        got = sorted(r["area"] for r in adv.values() if r["area"] and rank in r["ranks"])
+        if got != areas:
+            raise SystemExit(f"{rank}: required adventures fill {got}, expected each of {areas} once")
+    if len(areas) != 6:
+        raise SystemExit(f"expected 6 requirement areas, found {len(areas)}: {areas}")
+
     unsourced = sorted(s for s, r in adv.items() if not r["requirements"])
     facts = {
-        "note": ("Cub Scout adventures for the 2024 program: identity, rank/category placement and "
-                 "requirement text, parsed from saved scouting.org pages (the site is behind bot "
-                 "protection). Slugs are the pages' own canonical slugs. Requirement text is "
+        "note": ("Cub Scout adventures for the 2024 program: identity, rank/category/area placement "
+                 "and requirement text, parsed from saved scouting.org pages (the site is behind bot "
+                 "protection). Slugs are the pages' own canonical slugs. Areas come from each card's "
+                 "CMS taxonomy class, not from the printed layout. Requirement text is "
                  "verbatim (c) Scouting America; see NOTICE.md."),
         "accessed": TODAY,
         "effective_from": YEAR,
+        "areas": areas,
         "unsourced": unsourced,
         "rank_structure": rank_structure,
         "adventures": [adv[s] for s in sorted(adv)],
@@ -203,14 +254,20 @@ def extract(src: Path) -> None:
 
 
 def _record(adv: dict, slug: str, name: str, url: str | None, rank: str, cat: str,
-            reqs: list[dict]) -> None:
+            reqs: list[dict], area: str | None) -> None:
     r = adv.setdefault(slug, {"slug": slug, "name": name, "url": url, "ranks": [],
-                              "category": cat, "requirements": reqs})
+                              "category": cat, "area": area, "requirements": reqs})
     if rank not in r["ranks"]:
         r["ranks"].append(rank)
     if r["category"] != cat:
         raise SystemExit(f"{slug}: category differs across ranks ({r['category']} vs {cat}); "
                          f"category would have to move onto the rank edge")
+    if r.get("area") != area:
+        raise SystemExit(f"{slug}: area differs across ranks ({r.get('area')} vs {area}); "
+                         f"area would have to move onto the rank edge")
+    if (cat == "required") != (area is not None):
+        raise SystemExit(f"{slug}: category={cat} but area={area!r}; every required adventure fills "
+                         f"exactly one area and no elective fills any")
     if reqs and not r["requirements"]:
         r["requirements"] = reqs
 
@@ -279,7 +336,7 @@ def generate() -> None:
                 "valid_from": year, "valid_to": None,
                 "name": a["name"], "program": PROGRAM,
                 "ranks": [f"rank:{r}" for r in a["ranks"]],
-                "category": a["category"], "url": a["url"],
+                "category": a["category"], "area": a.get("area"), "url": a["url"],
                 "provenance": prov,
             }],
             "notes": None,
