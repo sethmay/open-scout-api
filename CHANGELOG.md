@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.46.0 (minor) — 2026-07-27
 
-- `PENDING` **Two camp feature defects found by a user spot-check, traced to their origin, and
+- `687e7c4` **Two camp feature defects found by a user spot-check, traced to their origin, and
   fixed — plus `tools/audit_camp_features.py`, which would have caught both.** Camp Baker loses
   `mountain_biking` and `pool`; Camp Parsons gains its ATV program and 10 more features (11 -> 22).
   Feature entries 6,373 -> **6,385**.
