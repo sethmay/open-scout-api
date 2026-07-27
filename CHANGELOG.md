@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.44.0 (minor) — 2026-07-27
 
-- `PENDING` **The six Cub requirement areas are now data: every rank's six required adventures
+- `81b7181` **The six Cub requirement areas are now data: every rank's six required adventures
   carry the area they fill, and the pipeline proves each rank fills all six exactly once.** This is
   what turns the adventure list into an advancement tracker — "which of your six required slots are
   still open" becomes a group-by instead of a list diff. The same set of areas exists at every rank
