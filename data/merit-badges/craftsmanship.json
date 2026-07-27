@@ -1,0 +1,30 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge.schema.json",
+  "id": "craftsmanship",
+  "kind": "merit-badge",
+  "versions": [
+    {
+      "valid_from": "1911",
+      "valid_to": "1926",
+      "name": "Craftsmanship",
+      "bsa_number": null,
+      "eagle_required": null,
+      "tags": [],
+      "description": null,
+      "url": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8,
+        "notes": "Discontinued badge recovered from the USSSP merit badge history table, which marks retired badges in its own markup. eagle_required is null because it cannot be sourced for badges retired before the modern published Eagle list."
+      }
+    }
+  ],
+  "notes": "Became Basketry, Bookbinding, Cement Work, Leathercraft, Metalwork, Pottery, Wood Carving, and Woodwork,"
+}

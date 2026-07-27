@@ -2,6 +2,397 @@
   "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/event.schema.json",
   "events": [
     {
+      "id": "discontinue-aerodynamics",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:aerodynamics",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-aeronautics",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:aeronautics",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-agribusiness",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:agribusiness",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-agriculture",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:agriculture",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-airplane-design",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:airplane-design",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-airplane-structure",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:airplane-structure",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-automobiling",
+      "type": "discontinued",
+      "date": "1963",
+      "participants": [
+        {
+          "ref": "merit-badge:automobiling",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-aviation-1911",
+      "type": "discontinued",
+      "date": "1942",
+      "participants": [
+        {
+          "ref": "merit-badge:aviation-1911",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-bee-keeping",
+      "type": "discontinued",
+      "date": "1955",
+      "participants": [
+        {
+          "ref": "merit-badge:bee-keeping",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-beef-production",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:beef-production",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-beekeeping",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:beekeeping",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-blacksmithing",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:blacksmithing",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-bookbinding",
+      "type": "discontinued",
+      "date": "1987",
+      "participants": [
+        {
+          "ref": "merit-badge:bookbinding",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-botany",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:botany",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-carpentry",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:carpentry",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-cement-work",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:cement-work",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-citizenship-civics",
+      "type": "discontinued",
+      "date": "1951",
+      "participants": [
+        {
+          "ref": "merit-badge:citizenship-civics",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
       "id": "discontinue-citizenship-in-society-2026",
       "type": "discontinued",
       "date": "2026-02-27",
@@ -21,6 +412,1430 @@
         "method": "curated",
         "verified_at": "2026-07-21",
         "confidence": 0.95
+      }
+    },
+    {
+      "id": "discontinue-citizenship-in-the-home",
+      "type": "discontinued",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "merit-badge:citizenship-in-the-home",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-citrus-fruit-culture",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:citrus-fruit-culture",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-conservation",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:conservation",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-consumer-buying",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:consumer-buying",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-corn-farming",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:corn-farming",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-cotton-farming",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:cotton-farming",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-craftsmanship",
+      "type": "discontinued",
+      "date": "1926",
+      "participants": [
+        {
+          "ref": "merit-badge:craftsmanship",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-dairying",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:dairying",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-farm-arrangements",
+      "type": "discontinued",
+      "date": "1979",
+      "participants": [
+        {
+          "ref": "merit-badge:farm-arrangements",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-farm-home-and-its-planning",
+      "type": "discontinued",
+      "date": "1959",
+      "participants": [
+        {
+          "ref": "merit-badge:farm-home-and-its-planning",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-farm-layout-and-building-arrangements",
+      "type": "discontinued",
+      "date": "1959",
+      "participants": [
+        {
+          "ref": "merit-badge:farm-layout-and-building-arrangements",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-farm-records",
+      "type": "discontinued",
+      "date": "1980",
+      "participants": [
+        {
+          "ref": "merit-badge:farm-records",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-food-systems",
+      "type": "discontinued",
+      "date": "1987",
+      "participants": [
+        {
+          "ref": "merit-badge:food-systems",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-forage-crops",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:forage-crops",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-foundry-practice",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:foundry-practice",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-fruit-and-nut-growing",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:fruit-and-nut-growing",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-fruit-culture",
+      "type": "discontinued",
+      "date": "1954",
+      "participants": [
+        {
+          "ref": "merit-badge:fruit-culture",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-general-science",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:general-science",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-historic-carpentry",
+      "type": "discontinued",
+      "date": "2010",
+      "participants": [
+        {
+          "ref": "merit-badge:historic-carpentry",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-historic-pathfinding",
+      "type": "discontinued",
+      "date": "2010",
+      "participants": [
+        {
+          "ref": "merit-badge:historic-pathfinding",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-historic-signaling",
+      "type": "discontinued",
+      "date": "2010",
+      "participants": [
+        {
+          "ref": "merit-badge:historic-signaling",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-historic-tracking",
+      "type": "discontinued",
+      "date": "2010",
+      "participants": [
+        {
+          "ref": "merit-badge:historic-tracking",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-hog-production",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:hog-production",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-interpreting",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:interpreting",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-invention",
+      "type": "discontinued",
+      "date": "1917",
+      "participants": [
+        {
+          "ref": "merit-badge:invention",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-leather-work",
+      "type": "discontinued",
+      "date": "1951",
+      "participants": [
+        {
+          "ref": "merit-badge:leather-work",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-leathercraft",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:leathercraft",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-life-saving",
+      "type": "discontinued",
+      "date": "1959",
+      "participants": [
+        {
+          "ref": "merit-badge:life-saving",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-machinery",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:machinery",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-marksmanship",
+      "type": "discontinued",
+      "date": "1966",
+      "participants": [
+        {
+          "ref": "merit-badge:marksmanship",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-masonry",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:masonry",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-master-at-arms",
+      "type": "discontinued",
+      "date": "1911",
+      "participants": [
+        {
+          "ref": "merit-badge:master-at-arms",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-metals-engineering",
+      "type": "discontinued",
+      "date": "1995",
+      "participants": [
+        {
+          "ref": "merit-badge:metals-engineering",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-nut-culture",
+      "type": "discontinued",
+      "date": "1954",
+      "participants": [
+        {
+          "ref": "merit-badge:nut-culture",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-pathfinding",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:pathfinding",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-personal-health",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:personal-health",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-physical-development",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:physical-development",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-pigeon-raising",
+      "type": "discontinued",
+      "date": "1980",
+      "participants": [
+        {
+          "ref": "merit-badge:pigeon-raising",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-poultry-keeping",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:poultry-keeping",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-printing-communications",
+      "type": "discontinued",
+      "date": "1987",
+      "participants": [
+        {
+          "ref": "merit-badge:printing-communications",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-rabbit-raising",
+      "type": "discontinued",
+      "date": "1993",
+      "participants": [
+        {
+          "ref": "merit-badge:rabbit-raising",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-rifle-and-shotgun-shooting",
+      "type": "discontinued",
+      "date": "1987",
+      "participants": [
+        {
+          "ref": "merit-badge:rifle-and-shotgun-shooting",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-sheep-farming",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:sheep-farming",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-signaling",
+      "type": "discontinued",
+      "date": "1991",
+      "participants": [
+        {
+          "ref": "merit-badge:signaling",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-small-grains",
+      "type": "discontinued",
+      "date": "1975",
+      "participants": [
+        {
+          "ref": "merit-badge:small-grains",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-stalking",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:stalking",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-taxidermy",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:taxidermy",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-wood-turning",
+      "type": "discontinued",
+      "date": "1952",
+      "participants": [
+        {
+          "ref": "merit-badge:wood-turning",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-zoology",
+      "type": "discontinued",
+      "date": "1972",
+      "participants": [
+        {
+          "ref": "merit-badge:zoology",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-ambulance-by-first-aid",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:ambulance",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:first-aid",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Ambulance: Became First Aid",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-angling-by-fishing",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:angling",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:fishing",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Angling: Became Fishing",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-animal-industry-by-animal-science",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:animal-industry",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:animal-science",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Animal Industry: Became Animal Science",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-atomic-energy-by-nuclear-science",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:atomic-energy",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:nuclear-science",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Atomic Energy: Became Nuclear Science",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-auto-mechanics-by-automotive-maintenance",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:auto-mechanics",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:automotive-maintenance",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Auto Mechanics: Became Automotive Maintenance",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-automotive-safety-by-traffic-safety",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:automotive-safety",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:traffic-safety",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Automotive Safety: Became Traffic Safety",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-beefarming-by-bee-keeping",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:beefarming",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:bee-keeping",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Beefarming: Became Bee Keeping",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-business-by-american-business",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:business",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:american-business",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: American Business: Formerly Business",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-cinematography-by-moviemaking",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:cinematography",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:moviemaking",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Cinematography: Became Moviemaking",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-civics-by-citizenship-civics",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:civics",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:citizenship-civics",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Civics: Became Citizenship (Civics)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-clerk-by-business",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:clerk",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:business",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Clerk: Became Business",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
       }
     },
     {
@@ -47,6 +1862,1329 @@
         "method": "curated",
         "verified_at": "2026-07-21",
         "confidence": 0.7
+      }
+    },
+    {
+      "id": "supersede-conservation-of-natural-resources-by-environmental-science",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:conservation-of-natural-resources",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:environmental-science",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Conservation of Natural Resources: Became Environmental Science",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-cyclist-by-cycling",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:cyclist",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:cycling",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Cycling: Formerly Cyclist",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-dramatics-by-theater",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:dramatics",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:theater",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Dramatics: Became Theater",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-electrician-by-electricity",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:electrician",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:electricity",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Electrician: Became Electricity",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-farm-and-ranch-management-by-agribusiness",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:farm-and-ranch-management",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:agribusiness",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Agribusiness: Formerly Farm & Ranch Management",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-farm-arrangement-by-farm-arrangements",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:farm-arrangement",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:farm-arrangements",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Farm Arrangements: Formerly Farm Arrangement",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-farm-records-and-bookkeeping-by-farm-records",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:farm-records-and-bookkeeping",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:farm-records",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Farm Records & Bookkeeping: Became Farm Records",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-firemanship-by-fire-safety",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:firemanship",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:fire-safety",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Fire Safety: Formerly Firemanship",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-first-aid-to-animals-by-veterinary-science",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:first-aid-to-animals",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:veterinary-science",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: First Aid To Animals: Became Veterinary Science",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-gardener-by-gardening",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:gardener",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:gardening",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Gardener: Became Gardening",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-grasses-legumes-and-forage-crops-by-forage-crops",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:grasses-legumes-and-forage-crops",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:forage-crops",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Forage Crops: Formerly Grasses, Legumes, & Forage Crops",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-handicap-awareness-by-disabilities-awareness",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:handicap-awareness",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:disabilities-awareness",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Disabilities Awareness: Formerly Handicap Awareness",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-handicapped-awareness-by-handicap-awareness",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:handicapped-awareness",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:handicap-awareness",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Handicapped Awareness: Became Handicap Awareness",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-handicraft-by-home-repairs",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:handicraft",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:home-repairs",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Handicraft: Became Home Repairs",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-hog-and-pork-production-by-hog-production",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:hog-and-pork-production",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:hog-production",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Hog & Pork Production: Became Hog Production",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-horseman-by-horsemanship",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:horseman",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:horsemanship",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Horseman: Became Horsemanship",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-insect-life-by-insect-study",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:insect-life",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:insect-study",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Insect Life: Became Insect Study",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-landscape-gardening-by-landscaping",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:landscape-gardening",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:landscaping",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Landscape Gardening: Became Landscaping",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-landscaping-by-landscape-architecture",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:landscaping",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:landscape-architecture",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Landscape Architecture: Formerly Landscaping",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-leatherworking-by-leathercraft",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:leatherworking",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:leathercraft",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Leatherworking: Became Leathercraft",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-mammals-by-mammal-study",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:mammals",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:mammal-study",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Mammal Study: Formerly Mammals",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-marksman-by-marksmanship",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:marksman",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:marksmanship",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Marksman: Became Marksmanship",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-mechanical-drawing-by-drafting",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:mechanical-drawing",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:drafting",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Drafting: Formerly Mechanical Drawing",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-medicine-by-health-care-professions",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:medicine",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:health-care-professions",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Health Care Professions: Replaced Medicine",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-metallurgy-by-metals-engineering",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:metallurgy",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:metals-engineering",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Metallurgy: Became Metals Engineering",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-mining-by-rocks-and-minerals",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:mining",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:rocks-and-minerals",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Mining: Became Rocks & Minerals",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-musician-by-music",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:musician",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:music",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Music: Formerly Musician",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-ornithology-by-bird-study",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:ornithology",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:bird-study",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Bird Study: Formerly Ornithology",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-personal-finances-by-personal-management",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:personal-finances",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:personal-management",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Personal Finances: Became Personal Management",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-pioneer-by-pioneering",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:pioneer",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:pioneering",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Pioneer: Became Pioneering",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-poultry-farming-by-poultry-keeping",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:poultry-farming",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:poultry-keeping",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Poultry Farming: Became Poultry Keeping",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-printing-by-printing-communications",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:printing",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:printing-communications",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Printing: Became Printing/Communications",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-reptile-study-by-reptile-and-amphibian-study",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:reptile-study",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:reptile-and-amphibian-study",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Reptile & Amphibian Study: Formerly Reptile Study",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-reptiles-by-reptile-study",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:reptiles",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:reptile-study",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Reptiles: Became Reptile Study",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-rocks-and-minerals-by-geology",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:rocks-and-minerals",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:geology",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Geology: Formerly Rocks & Minerals",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-safety-first-by-safety",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:safety-first",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:safety",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Safety: Formerly Safety First",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-seaman-by-seamanship",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:seaman",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:seamanship",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Seaman: Became Seamanship",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-seamanship-by-small-boat-sailing",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:seamanship",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:small-boat-sailing",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Small Boat Sailing: Formerly Seamanship",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-signaller-by-signaling",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:signaller",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:signaling",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Signaling: Formerly Signaller",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-skiing-by-snow-sports",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:skiing",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:snow-sports",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Skiing: Became Snow Sports",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-small-grains-and-cereal-foods-by-small-grains",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:small-grains-and-cereal-foods",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:small-grains",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Small Grains: Formerly Small Grains & Cereal Foods",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-soil-management-by-soil-and-water-conservation",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:soil-management",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:soil-and-water-conservation",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Soil & Water Conservation: Formerly Soil Management",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-stalker-by-stalking",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:stalker",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:stalking",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Stalker: Became Stalking",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-textiles-by-textile",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:textiles",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:textile",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Textile: Formerly Textiles",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-veterinary-science-by-veterinary-medicine",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:veterinary-science",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:veterinary-medicine",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Veterinary Medicine: Formerly Veterinary Science",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-waterskiing-by-water-sports",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:waterskiing",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:water-sports",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Waterskiing: Became Water Sports",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-wildlife-management-by-fish-wildlife-management",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:wildlife-management",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:fish-wildlife-management",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Fish & Wildlife Management: Formerly Wildlife Management",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-wireless-by-radio",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:wireless",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:radio",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Radio: Formerly Wireless",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-world-brotherhood-by-citizenship-in-the-world",
+      "type": "superseded",
+      "date": null,
+      "participants": [
+        {
+          "ref": "merit-badge:world-brotherhood",
+          "role": "predecessor"
+        },
+        {
+          "ref": "merit-badge:citizenship-in-the-world",
+          "role": "successor"
+        }
+      ],
+      "notes": "USSSP badge history states: Citizenship in the World: Formerly World Brotherhood",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
       }
     }
   ]

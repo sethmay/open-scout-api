@@ -4,7 +4,7 @@
   "kind": "merit-badge",
   "versions": [
     {
-      "valid_from": null,
+      "valid_from": "1991",
       "valid_to": null,
       "name": "Family Life",
       "eagle_required": true,
@@ -24,12 +24,18 @@
           },
           {
             "url": "https://www.scouting.org/skills/merit-badges/eagle-required/"
+          },
+          {
+            "url": "http://usscouts.org/mb/history.asp",
+            "accessed": "2026-07-27"
           }
         ],
         "method": "curated",
         "verified_at": "2026-07-21",
-        "confidence": 0.9
-      }
+        "confidence": 0.9,
+        "notes": "Introduction year (and BSA number where absent) backfilled from the USSSP merit badge history table; for a renamed badge this is when THIS name took effect, not when the lineage began."
+      },
+      "bsa_number": 129
     }
   ],
   "notes": null

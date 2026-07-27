@@ -536,9 +536,37 @@ checkpoints so an interrupted run resumes. Re-run politely or you will libel a c
     prior edition needs Wayback (86 distinct-content snapshots exist for a single badge page, so the
     depth is there if anyone wants pre-2000 history).
   - (c) **plant-science deep-structure**: its 5-level "alternatives" nesting was flattened (conf 0.75, flagged in
-  notes) — parse properly if it recurs. (d) **Historical discontinued badges**: catalog
-  carries only CiS + Computers; add the 100+ discontinued set. (e) **Badge `description` + `tags`
-  — DONE (0.39.0).** All 140 current badges carry an original-prose description (24-38 words,
+  notes) — parse properly if it recurs. (d) **Historical discontinued badges — DONE (0.42.0).**
+  Badges **142 → 268**: 126 retired badges added from `usscouts.org/mb/history.asp`, back to the
+  1910 originals. Generator: `tools/seed_discontinued_badges.py`.
+    - **The parse validates itself before writing anything:** the page's non-red rows must equal the
+      140 current badges we already hold (after normalising `&`/`and` and hyphens), and a count
+      mismatch aborts, because it means the table shape moved. It matched exactly.
+    - **Lineage became an event graph:** 61 `superseded` events from the table's own notes
+      ("Became Fishing", "Formerly Business"), each emitted once though the table states it from both
+      sides, plus 67 plain `discontinued` events for badges that simply ended. Chains walk:
+      `clerk → business → american-business`, `first-aid-to-animals → veterinary-science →
+      veterinary-medicine`, `mining → rocks-and-minerals → geology`. Badge events 2 → 128.
+    - **`eagle_required` is now `boolean | null`** in `merit-badge.schema.json` and
+      `published-index.schema.json`, null meaning UNKNOWN. It cannot be sourced for badges retired
+      before the modern published Eagle list, and 126 fabricated booleans would be worse than an
+      honest gap. `published-current` is untouched: only entities with an open version reach it, and
+      all 140 of those carry a real boolean. This is a type widening, so consumers doing strict
+      boolean checks on the *index* must handle null; truthiness checks are unaffected.
+    - Bonus enrichments from the same table: new `bsa_number` on badge versions (BSA's internal
+      number, only assigned from ~1986), and **introduction years backfilled onto 136 current
+      badges** whose `valid_from` was null — and for a renamed badge that year is when THAT name took
+      effect (American Business: 1967, formerly Business), which is exactly the version-window
+      semantic.
+    - **Deliberately not modelled:** 17 rows saying "Formerly part of X" (Aerodynamics et al. carved
+      out of the 1911 Aviation badge) are kept as prose only — a `split` event needs the predecessor
+      closed, and X is usually still live. The 1911 Aviation badge itself IS captured, as
+      `aviation-1911`, since the name was reused by a new badge in 1952; its note records the
+      four-way split for whoever wants to model it.
+    - Source caveat: the page predates Artificial Intelligence, Cybersecurity and Multisport, and
+      still lists Citizenship in Society and Computers as current. Ours are right; do not "correct"
+      them from this table.
+  - (e) **Badge `description` + `tags` — DONE (0.39.0).** All 140 current badges carry an original-prose description (24-38 words,
   median 33) and 1-3 tags from the new 16-facet `merit-badge-tags` vocabulary (218 applications,
   every code in use). Written from the requirement trees, which are local, so no scraping was
   needed. **Two build gates now protect this**, both proven by injection: a description sharing 8+

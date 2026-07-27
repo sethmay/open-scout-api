@@ -3,6 +3,46 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.42.0 (minor) — 2026-07-27
+
+- `PENDING` **Discontinued merit badges: the catalog goes 142 → 268 entities**, adding 126 retired
+  badges back to the 1910 originals — Signaller, Ambulance, Angling — from the USSSP merit badge
+  history table. Until now the catalog held 140 current badges and exactly two historical ones, so
+  "what happened to the Signaling merit badge" was unanswerable. New
+  `tools/seed_discontinued_badges.py`.
+- **The parse validates itself before writing anything.** The source marks retired badges in its own
+  markup (`class="red"`), so status is read rather than inferred from dates; and the page's *non*-red
+  rows must equal the 140 current badges we already hold, after normalising `&`/`and` and hyphen
+  spelling. A count mismatch aborts the run, because it means the table shape moved. It matched
+  exactly, which is what made the other 126 rows trustworthy.
+- **Badge lineage is now an event graph — 61 `superseded` events, badge events 2 → 128.** Built from
+  the table's own notes ("Became Fishing", "Formerly Business"), each link emitted once though the
+  table states it from both sides, using the event vocabulary's documented mapping for this domain
+  ("badge replaced by a new badge → superseded"). Chains walk end to end:
+  `clerk → business → american-business`, `first-aid-to-animals → veterinary-science →
+  veterinary-medicine`, `mining → rocks-and-minerals → geology`, `seaman → seamanship →
+  small-boat-sailing`. Badges that simply ended get a plain `discontinued` event (67 of them).
+- ⚠ **`eagle_required` is now `boolean | null`** in `merit-badge.schema.json` and
+  `published-index.schema.json`, where **null means UNKNOWN, not false**. It cannot be sourced for
+  badges retired before the modern published Eagle list, and 126 fabricated booleans would have been
+  worse than an honest gap. `published-current.schema.json` is deliberately **untouched**: only
+  entities with an open version reach `current/merit-badges.json`, and all 140 of those carry a real
+  boolean. This is a type widening on the *index*, so a consumer doing a strict boolean check there
+  must handle null; truthiness checks are unaffected.
+- Two enrichments fell out of the same table: a new **`bsa_number`** on badge versions (BSA's
+  internal recordkeeping number, only assigned from around 1986, so early badges have none), and
+  **introduction years backfilled onto 136 current badges** whose `valid_from` was null. For a
+  renamed badge that year is when THAT name took effect — American Business 1967, formerly Business
+  — which is exactly the version-window semantic rather than the start of the lineage.
+- Deliberately not modelled: the 17 "Formerly part of X" rows (Aerodynamics and friends carved out of
+  the 1911 Aviation badge) stay as prose, because a `split` event requires the predecessor closed and
+  X is usually still a live badge. The 1911 Aviation badge itself IS captured, as `aviation-1911`,
+  since a *new* Aviation badge reused the name in 1952 — the generator disambiguates a reused name by
+  start year rather than dropping the row.
+- Source caveat recorded in `TODO.md`: the page predates Artificial Intelligence, Cybersecurity and
+  Multisport, and still lists Citizenship in Society and Computers as current. Our records are right
+  on all five; they must not be "corrected" from this table.
+
 ## 0.41.0 (minor) — 2026-07-27
 
 - `f49b219` **Every published endpoint is now schema-pinned and build-gated — 1,774 files, nothing
