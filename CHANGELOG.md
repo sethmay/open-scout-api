@@ -3,6 +3,51 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.46.0 (minor) — 2026-07-27
+
+- `PENDING` **Two camp feature defects found by a user spot-check, traced to their origin, and
+  fixed — plus `tools/audit_camp_features.py`, which would have caught both.** Camp Baker loses
+  `mountain_biking` and `pool`; Camp Parsons gains its ATV program and 10 more features (11 -> 22).
+  Feature entries 6,373 -> **6,385**.
+- **Camp Baker's `mountain_biking` was never sourced — it was an LLM guess that got laundered into
+  looking verified.** camp-finder's record for Baker was `method: llm_extraction`, confidence 0.82,
+  with a provenance note saying in as many words: *"features inferred"*. It is the **only camp in
+  camp-finder's entire 486-camp dataset with a speculative feature claim** — of its 391
+  `llm_extraction` camps, 390 carried no features at all. That single record was imported verbatim;
+  the 2026-07-25 camp-page survey then rewrote Baker's list, added 23 page-attested features, and
+  stamped the whole record `features_source_tier: camp_page` / `features_verified_at: 2026-07-25`
+  — so an admitted inference ended up indistinguishable from page-verified fact. **A survey that
+  only adds cannot re-verify what it inherited.**
+  - The same inferred record also gave Baker a `pool`. The spot-check caught the biking; checking
+    the rest of that record caught the pool. The camp is on a Siltcoos Lake peninsula and its page
+    never says "pool" — swimming, Mile Swim and lifesaving all happen at the waterfront.
+  - Also dropped the `otcbsa.org/camp-baker` source: it 301s to the `pccscouting.org` page already
+    cited, so two "independent" sources were one page. Added `pioneering`, `orienteering` and
+    `wilderness_survival`, which that page names and the record omitted.
+- **Camp Parsons' missing ATV program was a survey that stopped at the front door.** Every source
+  ever consulted for this camp was an index page — camp-finder used the council page
+  (`seattlebsa.org`, `method: manual`), and our survey added `scoutingseattle.org/camp-parsons/`
+  and `campparsons.org/` — none of which mention ATVs. The programme lives at
+  **`campparsons.org/program/`**, 10 KB with its own `<h3>` per activity, never fetched. Added from
+  it: `atv` (signature — a BSA ATV Safety Program with rider-course certification),
+  `snorkeling`, `kayaking`, `scuba`, `rappelling`, `bouldering`, `hiking`, `museum`,
+  `first_year_program`, `scoutcraft`, `nature_study`. `features_source_tier: camp_page` was true and
+  useless: it records that *a* camp page was read, not that the right one was.
+  - Not added: `golf`. The page's "Parsons Open Whiffle Ball Golf Tournament" is a whiffle-ball
+    game, and `trading_post`/`leadership_training` matched only the council-wide page, not this
+    camp's.
+- **New `tools/audit_camp_features.py`** — fetches each camp's cited sources plus program pages they
+  link to, and reports features with no lexical trace, vocabulary terms the pages name but the
+  record omits, and program pages provenance never cites. Uses the vocabulary's own `aliases` (it
+  already knew `muzzleloading` -> `black_powder`) and its `broader` hierarchy, so a page saying
+  "Climbing" over a tower already recorded as `climbing_tower` is not reported as an omission.
+- ⚠ **Report-only by design, and the tool proves why on its own test cases:** it flags `rappelling`
+  where the page says "the final rappel", cannot confirm or deny all-generic terms like
+  "Older Scout Program" (reported as *not lexically checkable*, never as a defect), and would
+  cheerfully "find" `golf` in a whiffle-ball tournament. It also concatenates a camp's sources, so a
+  council-wide page can appear to attest something true of a different camp — the same
+  source-to-subject slippage that produced both defects. Every line is a lead for a human.
+
 ## 0.45.0 (minor) — 2026-07-27
 
 - `49f70b0` **The pre-2024 Cub adventure line-up is recorded: 38 retired adventures added, 121
