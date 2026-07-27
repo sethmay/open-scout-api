@@ -5,7 +5,7 @@
   "subject": "adventure:engineer",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-engineer-2022",
   "source_document": {
     "title": "Engineer — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/engineer/",

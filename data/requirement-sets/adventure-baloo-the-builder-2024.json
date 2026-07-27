@@ -5,7 +5,7 @@
   "subject": "adventure:baloo-the-builder",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-baloo-the-builder-2018",
   "source_document": {
     "title": "Baloo the Builder — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/baloo-the-builder/",

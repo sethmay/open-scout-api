@@ -1,0 +1,56 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-tiger-bites-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:tiger-bites",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Tiger Bites — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete requirements 1 and 2 plus at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your parent, guardian, or other caring adult, or with your den, find out about good food choices and not-so-good choices. Identify three foods that you think would be good choices and three foods that would not be good choices."
+    },
+    {
+      "number": "2",
+      "text": "Explain the importance of hand washing before a meal and cleanup after a meal. Then show how you would do each."
+    },
+    {
+      "number": "3",
+      "text": "Show that you know the difference between a fruit and a vegetable. Eat one of each."
+    },
+    {
+      "number": "4",
+      "text": "With your parent, guardian, or other caring adult, pick a job to help your family at mealtime. Do it for at least four meals."
+    },
+    {
+      "number": "5",
+      "text": "Talk with your parent, guardian, or other caring adult about what foods you can eat with your fingers. Practice your manners when eating them."
+    },
+    {
+      "number": "6",
+      "text": "With your parent, guardian, or other caring adult, plan and make a good snack choice or other nutritious food to share with your den."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

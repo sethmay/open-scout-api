@@ -1,0 +1,82 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-paws-for-action-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:paws-for-action",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Paws for Action (Duty to Country) — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirement 1 plus two others from Requirements 2-4.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Learn about our nation's flag. Display it at home for one month. Say the Pledge of Allegiance and learn its meaning."
+    },
+    {
+      "number": "2",
+      "text": "Do at least one of the following.",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Find out about two famous Americans. Share what you learned."
+        },
+        {
+          "number": "2b",
+          "text": "Find out where places of historical interest are located in or near your community, town, or city. Go and visit one of them with your family or den."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do at least two of the following.",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With your school or den, visit a local sheriff's office, police station, or fire department OR talk with a fire safety officer or law enforcement officer visiting your school or den. Find out what skills the officers use to do their jobs. Ask questions that will help you learn how to stay safe."
+        },
+        {
+          "number": "3b",
+          "text": "Make a list of emergency numbers and discuss with your family where the list should be kept. Show your family that you know how to call for help in an emergency. Talk with your family about people who could help you if a parent is not available."
+        },
+        {
+          "number": "3c",
+          "text": "With your family, develop a plan to follow in case of an emergency, and practice the plan at least three times. Your family can determine the emergency, or you can develop several plans."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do at least one of the following.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Do a cleanup project that benefits your community."
+        },
+        {
+          "number": "4b",
+          "text": "Participate in a patriotic community parade or other civic event that honors our country."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

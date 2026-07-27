@@ -1,0 +1,74 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-critter-care-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:critter-care",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Critter Care — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do one of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "If you have a pet, make a list of tasks that you did to take care of the pet for two weeks."
+        },
+        {
+          "number": "1b",
+          "text": "If you do not have a pet, research one that you would like to have and prepare a report about the care it needs."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Complete one of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Make a poster or a PowerPoint presentation about your pet or a pet you would like to have. Share the poster or presentation with your den, pack, or family."
+        },
+        {
+          "number": "2b",
+          "text": "Make a poster or PowerPoint presentation explaining three ways that animals can help people. Share the poster or presentation with your den, pack, or family."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Complete at least one of the following and share with your den, pack, or family:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Visit with a local veterinarian or an animal shelter caretaker. Find out what types of animals he or she might see on a regular basis and the types of care he or she gives to them."
+        },
+        {
+          "number": "3b",
+          "text": "Learn about careers that involve the care of animals. What education, training, and experience are required?"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-fellowship-and-duty-to-god-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:fellowship-and-duty-to-god",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Fellowship and Duty to God — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your parent, guardian, den leader, or other caring adult what it means to do your duty to God. Tell how you do your duty to God in your daily life."
+    },
+    {
+      "number": "2",
+      "text": "Complete at least one of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Identify a person whose faith you admire, and discuss this person with your family."
+        },
+        {
+          "number": "2b",
+          "text": "With a family member, provide service to a place of worship or a spiritual community, school, or community organization that puts into practice your ideals of duty to God and strengthens your fellowship with others."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Complete at least one of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Earn the religious emblem of your faith that is appropriate for your age, if you have not already done so."
+        },
+        {
+          "number": "3b",
+          "text": "Make a list of things you can do to practice your duty to God as you are taught in your home or place of worship or spiritual community. Select two of the items and practice them for two weeks."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

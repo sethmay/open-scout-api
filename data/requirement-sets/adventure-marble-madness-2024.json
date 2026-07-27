@@ -5,7 +5,7 @@
   "subject": "adventure:marble-madness",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-marble-madness-2022",
   "source_document": {
     "title": "Marble Madness — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/marble-madness/",

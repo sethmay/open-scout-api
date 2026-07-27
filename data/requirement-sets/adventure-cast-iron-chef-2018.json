@@ -1,0 +1,44 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-cast-iron-chef-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:cast-iron-chef",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Cast Iron Chef — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1 and 2 below. Requirement 3 is optional.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Plan a menu for a balanced meal for your den or family. Determine the budget for the meal. If possible, shop for the items on your menu. Stay within your budget."
+    },
+    {
+      "number": "2",
+      "text": "Prepare a balanced meal for your den or family. If possible, use one of these methods for preparation of part of the meal: camp stove, Dutch oven, box oven, solar oven, open campfire, or charcoal grill. Demonstrate an understanding of food safety practices while preparing the meal."
+    },
+    {
+      "number": "3",
+      "text": "Use tinder, kindling, and fuel wood to demonstrate how to build a fire in an appropriate outdoor location. If circumstances permit and there is no local restriction on fires, show how to safely light the fire, under the supervision of an adult. After allowing the fire to burn safely, safely extinguish the flames with minimal impact to the fire site"
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-finding-your-way-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:finding-your-way",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": "requirement-set:adventure-finding-your-way-2018",
+  "source_document": {
+    "title": "Finding Your Way — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/wolf-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Using a map of your city or town, locate where you live."
+        },
+        {
+          "number": "1b",
+          "text": "Draw a map for a friend so he or she can locate your home, a park, a school, or other locations in your neighborhood. Use symbols to show parks, buildings, trees, and water. You can invent your own symbols. Be sure to include a key so your symbols can be identified."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Identify what a compass rose is and where it is on the map."
+        },
+        {
+          "number": "2b",
+          "text": "Use a compass to identify which direction is north. Show how to determine which way is south, east, and west."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Go on a scavenger hunt using a compass, and locate an object with a compass."
+    },
+    {
+      "number": "4",
+      "text": "Using a map and compass, go on a hike or walk with your den or family."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/wolf-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

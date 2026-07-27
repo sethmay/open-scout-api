@@ -6,6 +6,29 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **"Verbatim" is a claim a normaliser can quietly falsify.** The heading tidier — which strips a
+  trailing period, correctly, from a name — was also running over requirement text, so 93% of the
+  pre-2024 Cub requirements lost their final full stop while `text_rights` asserted the text was
+  reproduced verbatim © Scouting America. Nothing failed; the strings just weren't what the source
+  said. Keep one normaliser per *kind* of string, and measure fidelity against a known-good slice
+  (the 2024 sets, at 100%, are what exposed it).
+- **Verifying an invariant in a throwaway script is not enforcing it.** Edition chains were checked
+  for gaps and overlaps with an ad-hoc script, twice, and read "NONE" — while the pipeline had no
+  such gate at all, so the merit-badge history had been contiguous only by luck of its generator. A
+  check that lives in a scratch file protects the run you happened to do. Move it into
+  `validate_data.py` or accept that it isn't a rule.
+- **A gate that "misses" may be a bad fixture, not a missing gate.** Two injections looked like
+  holes: one set `effective_to: null` on a single-edition subject (one open edition is legal), the
+  other broke a date on a document with no successor (nothing to abut). Both gates were fine; the
+  probes were wrong. Choose fixtures that actually exercise the shape — a chain gate needs a
+  subject with two editions — and re-probe before believing a gap, but never dismiss one without
+  showing why.
+- **Prefer an explicit prose field over structure you'd have to invent.** The old Cub pages state
+  "how many of these do I need" 44 different ways ("Complete Requirement 1 or 2 plus at least two
+  others"). Machine-readable `choose` trees would have been nicer and would have fabricated
+  requirements; a flat list with the rule dropped would have implied obligations the source never
+  set. A verbatim `completion_rule` plus a gate that every number it cites exists keeps the data
+  true and still catches a truncated parse.
 - **Prefer the CMS's own taxonomy over anything the page prints.** The six Cub requirement areas
   looked like a layout-reading problem — labels interleaved with adventure names, in an order that
   differs by rank — until the markup turned out to tag every card

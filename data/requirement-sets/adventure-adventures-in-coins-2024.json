@@ -5,7 +5,7 @@
   "subject": "adventure:adventures-in-coins",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-adventures-in-coins-2022",
   "source_document": {
     "title": "Adventures in Coins — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/adventures-in-coins/",

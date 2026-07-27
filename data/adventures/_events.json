@@ -1,0 +1,891 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/event.schema.json",
+  "events": [
+    {
+      "id": "discontinue-a-world-of-sound",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:a-world-of-sound",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-adventures-in-science",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:adventures-in-science",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-animal-kingdom",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:animal-kingdom",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/lion-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-bear-claws",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:bear-claws",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-bear-necessities",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:bear-necessities",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-bear-picnic-basket",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:bear-picnic-basket",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/bear-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-beat-of-the-drum",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:beat-of-the-drum",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-build-my-own-hero",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:build-my-own-hero",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-building-a-better-world",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:building-a-better-world",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-call-of-the-wild",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:call-of-the-wild",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/wolf-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-cast-iron-chef",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:cast-iron-chef",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-castaway",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:castaway",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-collections-and-hobbies",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:collections-and-hobbies",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-duty-to-god-and-you",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:duty-to-god-and-you",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-first-responder",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:first-responder",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/webelos-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-fix-it",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:fix-it",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-fur-feathers-and-ferns",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:fur-feathers-and-ferns",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-game-design",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:game-design",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-games-tigers-play",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:games-tigers-play",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-grin-and-bear-it",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:grin-and-bear-it",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/bear-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-grow-something",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:grow-something",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-hometown-heroes",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:hometown-heroes",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-howling-at-the-moon",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:howling-at-the-moon",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/wolf-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-lion-s-honor",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:lion-s-honor",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/lion-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-looking-back-looking-forward",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:looking-back-looking-forward",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-maestro",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:maestro",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-make-it-move",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:make-it-move",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-motor-away",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:motor-away",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-moviemaking",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:moviemaking",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-my-tiger-jungle",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:my-tiger-jungle",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-project-family",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:project-family",
+          "role": "subject"
+        }
+      ],
+      "notes": "(To be retired on May 31, 2022.)",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-robotics",
+      "type": "discontinued",
+      "date": "2022-06-01",
+      "participants": [
+        {
+          "ref": "adventure:robotics",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/old/bear-elective-2018.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-rumble-in-the-jungle",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:rumble-in-the-jungle",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/lion-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-scouting-adventure",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:scouting-adventure",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "discontinue-sports",
+      "type": "discontinued",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:sports",
+          "role": "subject"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/webelos-aol-elective.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-duty-to-god-footsteps-by-footsteps",
+      "type": "superseded",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:duty-to-god-footsteps",
+          "role": "predecessor"
+        },
+        {
+          "ref": "adventure:footsteps",
+          "role": "successor"
+        }
+      ],
+      "notes": "The 2024 Cub program renamed this adventure to 'Footsteps'.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/wolf-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-duty-to-god-in-action-by-duty-to-god",
+      "type": "superseded",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:duty-to-god-in-action",
+          "role": "predecessor"
+        },
+        {
+          "ref": "adventure:duty-to-god",
+          "role": "successor"
+        }
+      ],
+      "notes": "The 2024 Cub program renamed this adventure to 'Duty to God'.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "supersede-fellowship-and-duty-to-god-by-fellowship",
+      "type": "superseded",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "adventure:fellowship-and-duty-to-god",
+          "role": "predecessor"
+        },
+        {
+          "ref": "adventure:fellowship",
+          "role": "successor"
+        }
+      ],
+      "notes": "The 2024 Cub program renamed this adventure to 'Fellowship'.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/bear-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8
+      }
+    }
+  ]
+}

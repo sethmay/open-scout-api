@@ -1,0 +1,66 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-outdoor-adventurer-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:outdoor-adventurer",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Outdoor Adventurer — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Option A or Option B.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With the help of your den leader or family, plan and participate in a campout."
+    },
+    {
+      "number": "2",
+      "text": "On arrival at the campout, with your den and den leader or family, determine where to set up your tent. Demonstrate knowledge of what makes a good tent site and what makes a bad one. Set up your tent without help from an adult."
+    },
+    {
+      "number": "3",
+      "text": "Once your tents are set up, discuss with your den and den leader or family what actions you should take in the case of the following extreme weather events:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Severe rainstorm causing flooding"
+        },
+        {
+          "number": "3b",
+          "text": "Severe thunderstorm with lightning or tornadoes"
+        },
+        {
+          "number": "3c",
+          "text": "Fire, earthquake, or other disaster that will require evacuation. Discuss what you have done to minimize as much danger as possible."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Show how to tie a bowline. Explain when this knot should be used and why. Teach it to another Scout who is not a Webelos Scout."
+    },
+    {
+      "number": "5",
+      "text": "Recite the Outdoor Code and the Leave No Trace Principles for Kids from memory. Talk about how you can demonstrate them while you are working on your Arrow of Light. After one outing, list the things you did to follow the Outdoor Code and Leave No Trace."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

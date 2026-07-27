@@ -1,0 +1,82 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-aware-and-care-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:aware-and-care",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Aware and Care — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Develop an awareness of the challenges of the blind or visually impaired through participation in an activity that simulates blindness or visual impairment. Alternatively, participate in an activity that simulates the challenges of being deaf or hard of hearing."
+    },
+    {
+      "number": "2",
+      "text": "Engage in an activity that simulates mobility impairment. Alternatively, take part in an activity that simulates dexterity impairment."
+    },
+    {
+      "number": "3",
+      "text": "With your den, participate in an activity that focuses on the acceptance of differences in general."
+    },
+    {
+      "number": "4",
+      "text": "Do two of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Do a Good Turn for residents at a skilled nursing facility or retirement community."
+        },
+        {
+          "number": "4b",
+          "text": "Invite an individual with a disability to visit your den, and discuss what activities he or she currently finds challenging or found challenging in the past."
+        },
+        {
+          "number": "4c",
+          "text": "Attend a disabilities event such as a Special Olympics competition, an adaptive sports event, a performance with sign language interpretation, or an activity with service dogs. Tell your den what you thought about the experience."
+        },
+        {
+          "number": "4d",
+          "text": "Talk to someone who works with people who have disabilities. Ask what that person does and how he or she helps people with disabilities."
+        },
+        {
+          "number": "4e",
+          "text": "Using American Sign Language, sign the Scout Oath."
+        },
+        {
+          "number": "4f",
+          "text": "With the help of an adult, contact a service dog organization, and learn the entire process from pup training to assignment to a client."
+        },
+        {
+          "number": "4g",
+          "text": "Participate in a service project that focuses on a specific disability."
+        },
+        {
+          "number": "4h",
+          "text": "Participate in an activity with an organization whose members are disabled"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

@@ -65,6 +65,11 @@
       "default": null,
       "description": "Rights statement for any verbatim requirement `text` in this set. REQUIRED when includes_official_text is true: requirement text is Scouting America's copyright, reproduced with attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."
     },
+    "completion_rule": {
+      "type": ["string", "null"],
+      "default": null,
+      "description": "The source's own statement of how many of `requirements` must be completed, verbatim, when it is not simply 'all of them' — e.g. 'Complete Requirements 1-4 plus at least one other'. null means every listed requirement is required. This is deliberately PROSE, not structure: the pre-2024 Cub adventures state the rule 44 different ways ('Complete Requirement 1 or 2 plus at least two others', 'Requirements 5-7 are optional'), and mechanically converting those into `choose` trees would risk publishing requirements the source never demanded. Publishing the list without the rule would be worse still — a consumer would read six requirements as six obligations. Any requirement number the rule mentions is pipeline-checked to exist."
+    },
     "requirements": {
       "type": "array",
       "items": { "$ref": "#/$defs/Requirement" },

@@ -5,7 +5,7 @@
   "subject": "adventure:mountain-lion",
   "effective_from": "2024",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:adventure-mountain-lion-2018",
   "source_document": {
     "title": "Mountain Lion — Scouting America (Cub Scout Adventures)",
     "url": "https://www.scouting.org/cub-scout-adventures/mountain-lion/",

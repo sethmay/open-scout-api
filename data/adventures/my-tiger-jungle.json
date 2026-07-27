@@ -1,0 +1,32 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/adventure.schema.json",
+  "id": "my-tiger-jungle",
+  "kind": "adventure",
+  "versions": [
+    {
+      "valid_from": "2018-09-01",
+      "valid_to": "2024",
+      "name": "My Tiger Jungle",
+      "program": "cub_scouts",
+      "ranks": [
+        "rank:tiger"
+      ],
+      "category": "required",
+      "area": null,
+      "url": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://usscouts.org/advance/cubscout/tiger-core.asp",
+            "accessed": "2026-07-27"
+          }
+        ],
+        "method": "scraped",
+        "verified_at": "2026-07-27",
+        "confidence": 0.8,
+        "notes": "Pre-2024 Cub program, via the U.S. Scouting Service Project archive (usscouts.org), which is unaffiliated with Scouting America."
+      }
+    }
+  ],
+  "notes": null
+}

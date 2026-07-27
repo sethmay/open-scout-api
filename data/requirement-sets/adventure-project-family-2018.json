@@ -1,0 +1,80 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-project-family-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:project-family",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Project Family — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Interview a grandparent, another family elder, or a family friend about what life was like when he or she was growing up."
+    },
+    {
+      "number": "2",
+      "text": "With members of your family or a family friend, discuss some of your family names, history, traditions, and culture. Do one of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Create a family tree of three generations."
+        },
+        {
+          "number": "2b",
+          "text": "Make a poster or webpage that shows the places that some of your family members came from."
+        },
+        {
+          "number": "2c",
+          "text": "Choose a special celebration or holiday that some of your family members participate in, and create either a poster, picture, or photo slideshow of it."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Show your understanding of your duty to family by creating a chart listing the jobs that you and other family members have at home. Choose three of the jobs you are responsible for, and chart them for two weeks."
+    },
+    {
+      "number": "4",
+      "text": "Select a job that belongs to another family member, and help that person complete it. Some examples would be to create a grocery shopping list for the week, to take out trash for a week, to do the laundry for your family one time, to prepare meals for your family for one day, or to complete some yard work."
+    },
+    {
+      "number": "5",
+      "text": "With the help of an adult, inspect your home and its surroundings. Make a list of hazards or security problems you find. Correct one problem you found, and tell what you did."
+    },
+    {
+      "number": "6",
+      "text": "Complete one of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Hold a family meeting to plan an exciting family activity. The activity could include: A family reunion A family night A family outing"
+        },
+        {
+          "number": "6b",
+          "text": "Create a list of community service or conservation projects that you and your family can do together, and present it to your family. Select one project, plan it, and complete it with members of your family."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/webelos-aol-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": "(To be retired on May 31, 2022.)"
+}

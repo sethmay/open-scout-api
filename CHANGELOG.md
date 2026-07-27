@@ -3,6 +3,57 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.45.0 (minor) — 2026-07-27
+
+- `PENDING` **The pre-2024 Cub adventure line-up is recorded: 38 retired adventures added, 121
+  historical requirement editions, 951 requirement nodes.** The 2024 program replaced the line-up
+  wholesale and until now none of that was in the dataset. Of the 92 adventures the 2015-2024
+  program ended with, **50 carried into 2024 unchanged, 4 under a tidied name, 3 were renamed
+  substantively, and 35 were dropped.** `v1/adventures/index.json` goes 139 -> **177** (139 current
+  + 38 historical) and requirement-sets 546 -> **667**.
+- **The dataset can now answer "what did a Wolf have to complete in 2019?"** — Call of the Wild,
+  Council Fire (Duty to Country), Duty to God Footsteps, Howling at the Moon, Paws on the Path,
+  Running With the Pack — versus 2025's Bobcat Wolf, Council Fire, Footsteps, Paws on the Path,
+  Running With the Pack, Safety in Numbers. Editions per adventure: 110 carry one, 35 two, 24 three,
+  every chain contiguous and `supersedes`-linked.
+- Source is the U.S. Scouting Service Project archive (usscouts.org), which still serves the old
+  program including two archived elective editions. Dates come from each page's own
+  `revision-date` region, never inferred: core adventures and all Lion revised **2018-09-01**,
+  Tiger/Wolf/Bear/Webelos-AOL electives **2022-06-01**. **15 adventures were retired in 2022 rather
+  than 2024** — present in the archived 2018 elective edition, absent from the 2022 one — and their
+  windows close accordingly; several pages say "To be retired on May 31, 2022" outright.
+- 38 lifecycle events: 35 `discontinued`, and 3 `superseded` for the substantive renames
+  (`duty-to-god-footsteps -> footsteps`, `duty-to-god-in-action -> duty-to-god`,
+  `fellowship-and-duty-to-god -> fellowship`). Modelled as separate entities plus an event rather
+  than one renamed entity, exactly as merit badges record `computers -> digital-technology`:
+  asserting a single identity would fabricate continuity the source never states. Only pure
+  annotation drops (`Council Fire (Duty to Country)` -> `Council Fire`) become a version window on
+  one entity.
+- New optional **`requirement-set.completion_rule`** (additive), on 66 of 252 adventure editions:
+  the source's own statement of how many requirements are needed, verbatim — "Complete Requirements
+  1-4 plus at least one other". ⚠ Deliberately prose, not structure: the old pages phrase this **44
+  different ways**, and converting them into `choose` trees would risk publishing requirements
+  Scouting America never demanded. Publishing the list *without* the rule would be worse — six
+  listed requirements would read as six obligations. A gate checks every number the rule cites
+  actually exists, which is what would catch a truncated requirement list.
+- Two gates were rescoped rather than weakened, because both describe the **current** program: the
+  area pairing rule (the six areas are a 2024 construct, so pre-2024 required adventures correctly
+  have none) and the rank-tree reachability rule (a rank's requirement-set is today's structure; a
+  retired adventure carries its own rank association). Version windows now record only *attribute*
+  changes — where an adventure's name, rank and category never moved, its single window simply
+  starts in 2018 and the requirement editions carry the revision history, instead of a second
+  window asserting a change that never happened.
+- ⚠ **Fixed a fidelity bug in the extraction before shipping it:** the heading normaliser was also
+  applied to requirement text, stripping sentence-final periods — only 7% of historical nodes ended
+  in punctuation against 100% of the 2024 ones. Text published as verbatim © Scouting America must
+  be exactly that; now 95%, with footnote asterisks and tag-removal gaps ("Whittling Chip ." )
+  repaired. Zero of 1,562 nodes carry markup residue and zero colon-terminated nodes are missing
+  their sub-list.
+- New gate: **requirement-set editions of one subject must form an unbroken line** — no overlaps,
+  no multi-year gaps, no open edition mid-chain. This was verified by hand for the merit-badge
+  history and never enforced; a hole would silently answer "which requirements applied in 2020?"
+  with nothing. 12 gates proven by injection this release.
+
 ## 0.44.0 (minor) — 2026-07-27
 
 - `81b7181` **The six Cub requirement areas are now data: every rank's six required adventures

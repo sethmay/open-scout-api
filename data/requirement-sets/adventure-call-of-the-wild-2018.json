@@ -1,0 +1,98 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-call-of-the-wild-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:call-of-the-wild",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Call of the Wild — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/wolf-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1-4 plus at least one other.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Attend one of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "A pack or family campout"
+        },
+        {
+          "number": "1b",
+          "text": "An outdoor activity with your den or pack"
+        },
+        {
+          "number": "1c",
+          "text": "Day camp"
+        },
+        {
+          "number": "1d",
+          "text": "Resident camp"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "With your family or den, make a list of possible weather changes that could happen during your outing according to the time of year you are outside. Tell how you will be prepared for each one."
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Recite the Outdoor Code with your leader."
+        },
+        {
+          "number": "3b",
+          "text": "Recite the Leave No Trace Principles for Kids with your leader. Talk about how these principles support the Outdoor Code."
+        },
+        {
+          "number": "3c",
+          "text": "After your outdoor activity or campout, list the ways you demonstrated being careful with fire or other dangers."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Show or demonstrate what to do:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "In case of a natural disaster such as an earthquake or flood."
+        },
+        {
+          "number": "4b",
+          "text": "To keep from spreading your germs."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Show how to tie an overhand knot and a square knot."
+    },
+    {
+      "number": "6",
+      "text": "While on a den or family outing, identify four different types of animals you see or explain evidence of their presence. Tell how you identified them."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/wolf-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

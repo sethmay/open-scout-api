@@ -1,0 +1,68 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-collections-and-hobbies-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:collections-and-hobbies",
+  "effective_from": "2018-09-01",
+  "effective_to": "2022-06-01",
+  "supersedes": null,
+  "source_document": {
+    "title": "Collections and Hobbies — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": null,
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Begin a collection of 10 items that all have something in common. Label the items and title your collection."
+    },
+    {
+      "number": "2",
+      "text": "Share your collection at a den meeting."
+    },
+    {
+      "number": "3",
+      "text": "Complete one of the following and tell your den what you learned:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Visit a show or museum that displays different collections or models."
+        },
+        {
+          "number": "3b",
+          "text": "Watch a webcast or other media presentation about collecting or model building."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Complete one of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Create an autograph book, and get 10 autographs. Start with members of your den."
+        },
+        {
+          "number": "4b",
+          "text": "With your parent’s or guardian’s permission, pick a famous living person, and write him or her a letter. In your letter, ask the person to send you an autographed photo."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/old/wolf-elective-2018.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": "(To be retired on May 31, 2022.)"
+}

@@ -16,7 +16,7 @@ PLAN.md §1).
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
 | 5 | **Camps (registry + history)** | ✅ `camp` | 🌱 **SEEDED (0.7.0); PARITY (0.17.0):** 487 camps imported from camp-finder (376 resident / 69 day / 42 high-adventure; 483 council + 4 national). 0.17.0 added the 4 Pacific-Northwest councils' camps (492/606/609/697) the initial import held back as demo data (now real, verified). Follow-ups: reclassify/dedupe ~6 session/event-shaped entries (camp-finder LLM artifact, e.g. `*-full-week`/`*-half-week`/`*-2026-new`); reservation `parent` nesting; `camp_type` refinement; historical "lost camps". | camp-finder dataset; scouting.org (national bases) |
-| 6 | **Rank requirement history** | ✅ `rank` + `requirement-set` (`subject: rank:*`) | 🌱 **SEEDED (0.8.0-0.10.0); ALL PROGRAMS (0.15.0); CUB ADVENTURES (0.43.0); AREAS (0.44.0):** 21 rank entities (7 Scouts BSA + 6 Cub + 4 Venturing + 4 Sea Scout) + 47 requirement-sets. Scouts BSA: 2024 (No. 33216) + 26 historical editions (2016-2023) via usscouts.org with `supersedes` chains. Cub/Venturing/Sea Scout: current requirements from official scouting.org pages + 2026 Sea Scout PDFs (verbatim-verified). **Cub adventure-level detail is DONE in 0.43.0** — 139 `adventure` entities + 131 requirement-sets (611 requirements), and the six Cub rank trees are now two groups of `ref`s into them. **The six requirement areas are DONE in 0.44.0** — `adventure.area` + `adventure-areas` vocab, gate-proven complete at every rank. Follow-ups: pre-2016 Scouts BSA editions; historical editions for the new programs; the pre-2024 Cub adventure line-up (usscouts.org still serves it, dated Sept 2018 / Dec 2016 — the 2024 overhaul replaced ~100 adventures and none of that is recorded yet). | 2024 Scouts BSA Requirements; usscouts.org; scouting.org; seascout.org PDFs |
+| 6 | **Rank requirement history** | ✅ `rank` + `requirement-set` (`subject: rank:*`) | 🌱 **SEEDED (0.8.0-0.10.0); ALL PROGRAMS (0.15.0); CUB ADVENTURES (0.43.0); AREAS (0.44.0); PRE-2024 LINE-UP (0.45.0):** 21 rank entities (7 Scouts BSA + 6 Cub + 4 Venturing + 4 Sea Scout) + 47 requirement-sets. Scouts BSA: 2024 (No. 33216) + 26 historical editions (2016-2023) via usscouts.org with `supersedes` chains. Cub/Venturing/Sea Scout: current requirements from official scouting.org pages + 2026 Sea Scout PDFs (verbatim-verified). **Cub adventure detail DONE in 0.43.0** — 139 entities + 131 requirement-sets; the six Cub rank trees are two groups of `ref`s into them. **The six requirement areas DONE in 0.44.0.** **The pre-2024 line-up DONE in 0.45.0** — 38 retired adventures, 121 historical editions, 38 lifecycle events, from the USSSP archive. Follow-ups: pre-2016 Scouts BSA editions; historical editions for Venturing/Sea Scout; the pre-2024 **rank** structure ("6 core + 1 elective", and Bobcat as a *rank* before 2024 — it is an adventure only since then, so it is deliberately absent from `data/adventures/`); the ~24 pre-2024 "preview" adventures (Protect Yourself Rules / Yo-Yo / Modular Design, on their own source pages); the 2018 Tiger elective edition, which usscouts does not archive. | 2024 Scouts BSA Requirements; usscouts.org; scouting.org; seascout.org PDFs |
 | 7 | **OA lodges** | ✅ `oa-lodge` | 🌱 **SEEDED (0.13.0):** 238 lodges from the official OA lodge locator feed (oa-bsa.org), all linked to their chartering `council` + OA section/region + HQ/coords + website; officer/contact PII excluded. Follow-ups: lodge numbers (not in feed), merger/rename history + events (track council mergers), totem. | oa-bsa.org lodge locator feed; ScoutWiki/Fandom (numbers/history) |
 | 8 | **Merit badge earned-counts by year** | ⬜ (simple fact table, not temporal-entity) | BSA publishes annually; longitudinal series exists nowhere machine-readable. Tiny. | Scouting magazine / Bryan on Scouting annual posts |
 | 9 | **High adventure bases + council HA programs** | ⬜ likely `camp` with program tags | camp-finder TODO already wants this vertical. | Council sites; scouting.org |
@@ -54,7 +54,7 @@ Cleared in 0.28.0:
   closed NSTs, and pre-2021 regions, and consumers had no way to tell them apart without parsing
   names or ids.
 
-**Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 2,152 entity
+**Remaining 1.0 blocker (owner decision): the permanent home / `$id` base URL.** All 2,311 entity
 files carry `$schema: https://sethmay.github.io/open-scout-api/schema/v1/…`, `build.py` hardcodes
 that base, and it is both the documented API root and the jsDelivr pin path. It also gates the
 Zenodo DOI, which binds to the final GitHub location.
@@ -131,6 +131,22 @@ non-slug alias value, and stripping `text_rights` from a document with official 
 rejected.
 
 ## Queue
+
+### Requirement-set `effective_to`: two abutment styles in one dataset
+
+Found while adding the pre-2024 Cub editions (0.45.0). Merit-badge editions close on the **last
+day they applied** (`chemistry-2020` ends `2023-12-31`, `chemistry-2024` starts `2024-01-01`);
+adventure editions close on the **day the successor took effect** (`…-2018` ends `2024`, `…-2024`
+starts `2024`) — the half-open convention entity `versions` already use and `validate_data.py`
+already enforces there. The schema never stated which, which is exactly how they diverged, and a
+consumer asking "which edition applied on date D" cannot write one predicate.
+
+`validate_data.py` now forbids overlaps, multi-year gaps and mid-chain open editions under *either*
+style, so nothing is broken — but this should be unified and stated in
+`requirement-set.schema.json`. Half-open matches the schema's own wording ("when a later revision
+superseded this one") and the rest of the dataset; adopting it means re-dating ~400 published
+merit-badge/rank editions, which is a data migration deliberately not bundled into a Cub-adventure
+release. Decide, migrate, and document before 1.0 freezes the shape.
 
 ### Camp-finder cutover — API-side requests (reviewed 2026-07-21)
 

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-duty-to-god-in-action-2018",
+  "kind": "requirement-set",
+  "subject": "adventure:duty-to-god-in-action",
+  "effective_from": "2018-09-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Duty to God in Action — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1 and 2 and at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your parent, guardian, den leader, or other caring adult what it means to do your duty to God. Tell how you do your duty to God in your daily life."
+    },
+    {
+      "number": "2",
+      "text": "Under the direction of your parent, guardian, or religious or spiritual leader, do an act of service for someone in your family, neighborhood, or community. Talk about your service with your family. Tell your family how it related to doing your duty to God."
+    },
+    {
+      "number": "3",
+      "text": "Earn the religious emblem of your faith that is appropriate for your age, if you have not done so already."
+    },
+    {
+      "number": "4",
+      "text": "With your parent, guardian, or religious or spiritual leader, discuss and make a plan to do two things you think will help you better do your duty to God. Do these things for a month."
+    },
+    {
+      "number": "5",
+      "text": "Discuss with your family how the Scout Oath and Scout Law relate to your beliefs about duty to God."
+    },
+    {
+      "number": "6",
+      "text": "For at least a month, pray or reverently meditate each day as taught by your family or faith community."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/aol-core.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}

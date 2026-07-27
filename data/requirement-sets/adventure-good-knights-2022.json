@@ -1,0 +1,56 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "adventure-good-knights-2022",
+  "kind": "requirement-set",
+  "subject": "adventure:good-knights",
+  "effective_from": "2022-06-01",
+  "effective_to": "2024",
+  "supersedes": null,
+  "source_document": {
+    "title": "Good Knights — Cub Scout Adventure requirements (pre-2024 program, USSSP archive)",
+    "url": "http://usscouts.org/advance/cubscout/tiger-elective.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "completion_rule": "Complete Requirements 1 and 2 plus at least two others.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "With your den or with your parent, guardian, or other caring adult, say the Scout Law. Explain to your den one of the 12 points of the Law and why you think a knight would have the same behavior."
+    },
+    {
+      "number": "2",
+      "text": "If you have not already done so, make a code of conduct with your den that will describe how each person should act when you are all together. If your den has a code of conduct, discuss with your den the updates it might need. Vote on which actions should go in your den code of conduct."
+    },
+    {
+      "number": "3",
+      "text": "Create a den shield and a personal shield."
+    },
+    {
+      "number": "4",
+      "text": "Using recycled materials, design and build a small castle to display at the pack meeting."
+    },
+    {
+      "number": "5",
+      "text": "Think of one physical challenge that could be part of an obstacle course. Then help your den design a Tiger knight obstacle course. Participate in the course."
+    },
+    {
+      "number": "6",
+      "text": "Show your understanding of knights’ service to others by participating in a service project in your community."
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/advance/cubscout/tiger-elective.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8,
+    "notes": "Requirement text verbatim from the USSSP archive of the pre-2024 program."
+  },
+  "notes": null
+}
