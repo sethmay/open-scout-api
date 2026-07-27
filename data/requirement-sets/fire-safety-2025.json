@@ -5,7 +5,7 @@
   "subject": "merit-badge:fire-safety",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:fire-safety-2024",
   "source_document": {
     "title": "Fire Safety Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/fire-safety/",

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "surveying-2005",
+  "kind": "requirement-set",
+  "subject": "merit-badge:surveying",
+  "effective_from": "2005-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Surveying Merit Badge Requirements (2005, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb109-05.asp",
+    "year": 2005
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Show that you know first aid for the types of injuries that could occur while surveying, including cuts, scratches, snakebite, insect stings, tick bites, heat and cold reactions, and dehydration. Explain to your counselor why a surveyor should be able to identify the poisonous plants and poisonous animals that are found in your area."
+    },
+    {
+      "number": "2",
+      "text": "Find and mark the corners of a five-sided lot that has been laid out by your counselor to fit the land available. Set an instrument over each of the corners and record the angle turned between each line and the distance measured between each corner, as directed by your counselor. With the assistance of the counselor, compute the error of closure from the recorded notes. The error of closure must not be more than 5 feet. From the corners, take compass readings or turn angles to trees, shrubs, and rocks and measure to them. All measurements should be made using instruments, methods, and accuracies consistent with current technology."
+    },
+    {
+      "number": "3",
+      "text": "From the field notes gathered for requirement 2, draw to scale a map of your survey. Submit a neatly drawn copy."
+    },
+    {
+      "number": "4",
+      "text": "Write a metes and bounds description for the five-sided lot in requirement 2."
+    },
+    {
+      "number": "5",
+      "text": "Use one of the corner markers from requirement 2 as a benchmark with an assumed elevation of 100 feet. Using a level and rod, determine the elevation of the other four corner markers."
+    },
+    {
+      "number": "6",
+      "text": "Get a copy of the deed to your property, or a piece of property assigned by your counselor, from the local courthouse or title agency."
+    },
+    {
+      "number": "7",
+      "text": "Tell what GPS is; discuss with your counselor the importance of GPS and how it is changing the field of surveying."
+    },
+    {
+      "number": "8",
+      "text": "Discuss the importance of surveying with a licensed surveyor. Also discuss the various types of surveying and mapping, and applications of surveying technology to other fields. Discuss career opportunities in surveying and related fields. Discuss qualifications and preparation for such a career."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb109-05.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

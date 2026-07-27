@@ -5,7 +5,7 @@
   "subject": "merit-badge:animal-science",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:animal-science-2023",
   "source_document": {
     "title": "Animal Science Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/animal-science/",

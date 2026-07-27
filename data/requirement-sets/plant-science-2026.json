@@ -5,7 +5,7 @@
   "subject": "merit-badge:plant-science",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:plant-science-2024",
   "source_document": {
     "title": "Plant Science Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/plant-science/",

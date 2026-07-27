@@ -1,0 +1,129 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "traffic-safety-2022",
+  "kind": "requirement-set",
+  "subject": "merit-badge:traffic-safety",
+  "effective_from": "2022-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:traffic-safety-2020",
+  "source_document": {
+    "title": "Traffic Safety Merit Badge Requirements (2022, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb112.asp",
+    "year": 2022
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Describe the top 10 mistakes new drivers frequently make. Name the two items you are required by law to carry with you whenever you operate a motor vehicle."
+        },
+        {
+          "number": "1b",
+          "text": "Describe how alcohol and other drugs affect the human body and why a person should never drink and drive, or drive while under the influence of any mind-altering substances, including prescription drugs, cold medications, and illicit drugs. For the state where you live, find out what is the legal blood alcohol concentration and the consequences for driving while intoxicated or driving under the influence. Find out what the open-container law is in your state."
+        },
+        {
+          "number": "1c",
+          "text": "Explain why new drivers are at a significantly higher risk of being involved in a collision than other drivers and name three (3) steps you can take that will reduce this risk."
+        },
+        {
+          "number": "1d",
+          "text": "Explain why a driver who is fatigued or distracted should not operate a motor vehicle. List five common distractions, explain how driver distractions contribute to traffic accidents, and tell how drivers can minimize distractions. Describe how volunteer drivers can plan to be alert when transporting Scouting participants."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Demonstrate how to wear a lap and shoulder belt properly. Explain why it is important for the driver and all passengers always to wear their seat belts."
+        },
+        {
+          "number": "2b",
+          "text": "List five safety features found in motor vehicles besides occupant restraint systems. Describe each safety feature, how each works, and how each contributes to safety."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following :",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Using a vehicle that you have access to, demonstrate that all marker lights. parking lights. brake lights, turn signals, and headlights are clear and operational. Explain when yon would use these lights, where tthe switches are to operate these lights and how these lights contribute to safe and courteous driving."
+        },
+        {
+          "number": "3b",
+          "text": "Using a vehicle that you have access to, demonstrate how to check the vehicle's tire pressure and where to locate the correct tire pressure rating. Explain why proper tire pressure is important to the safe operation and fuel economy of the vehicle."
+        },
+        {
+          "number": "3c",
+          "text": "Explain why proper tire tread depth is important to safe driving. On the same vehicle you checked the tire pressure on, demonstrate a method to check for adequate tire tread depth."
+        },
+        {
+          "number": "3d",
+          "text": "Explain issues that might affect the driver's ability to see through the front, rear, and side windows. Demonstrate with a smear-and-clear test if the windshield wiper blades will clear the windshield completely or need to be replaced. Describe instances in good and bad weather when windshield wipers are important to safe driving."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "In a location away from traffic hazards, measure with a tape measure - not in a car - and mark off with stakes the distance that a car will travel during the time needed for decision and reaction, and the braking distances necessary to stop a car traveling 30, 50, and 70 miles per hour on dry, level pavement. Discuss how environmental factors such as bad weather and road conditions will affect the distance."
+        },
+        {
+          "number": "4b",
+          "text": "As a driver, describe the difference in nighttime visibility between a properly lit bicycle and rider (or a pedestrian) wearing reflective material and a bicycle and rider with no lights (or a pedestrian) dressed in dark clothing, without reflective material."
+        },
+        {
+          "number": "4c",
+          "text": "Explain how color and shape are used to help road users recognize and understand the information presented on traffic and roadway signs. Explain the purpose of different types of signs, signals, and pavement markings."
+        },
+        {
+          "number": "4d",
+          "text": "Describe at least three examples of traffic laws that apply to drivers of motor vehicles and that bicyclists must also obey."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Interview a traffic law enforcement officer in your community to identify what three traffic safety problems the officer is most concerned about. Discuss with your merit badge counselor possible ways to solve one of those problems."
+        },
+        {
+          "number": "5b",
+          "text": "Write a personal traffic safety pledge, addressing three (3) of your most concerning issues relating to traffic safety. Show your pledge to your merit badge counselor and discuss your commitment to traffic safety."
+        },
+        {
+          "number": "5c",
+          "text": "Initiate and organize an activity or event to demonstrate the importance of traffic safety."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb112.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

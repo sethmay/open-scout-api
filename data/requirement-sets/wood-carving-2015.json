@@ -1,0 +1,106 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "wood-carving-2015",
+  "kind": "requirement-set",
+  "subject": "merit-badge:wood-carving",
+  "effective_from": "2015-01-01",
+  "effective_to": "2016-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Wood Carving Merit Badge Requirements (2015, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb118-15.asp",
+    "year": 2015
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the hazards you are most likely to encounter while wood carving, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while wood carving, including minor cuts and scratches and splinters."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Earn the Totin' Chip recognition."
+        },
+        {
+          "number": "2b",
+          "text": "Discuss with your merit badge counselor your understanding of the Safety Checklist for Carving."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain to your counselor, orally or in writing, the care and use of five types of tools that you may use in a carving project."
+        },
+        {
+          "number": "3b",
+          "text": "Tell your counselor how to care for and use several types of sharpening devices, then demonstrate that you know how to use these devices."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Using a piece of scrap wood or a project on which you are working, show your merit badge counselor that you know how to do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Paring cut"
+        },
+        {
+          "number": "4b",
+          "text": "Basic cut and push cut"
+        },
+        {
+          "number": "4c",
+          "text": "\"V\" cut"
+        },
+        {
+          "number": "4d",
+          "text": "Score line or stop cut"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Tell why different woods are used for different projects. Explain why you chose the type of wood you did for your projects in requirements 6 and 7."
+    },
+    {
+      "number": "6",
+      "text": "Plan your own or select a project from this (the Wood Carving) merit badge pamphlet and complete a simple carving in the round."
+    },
+    {
+      "number": "7",
+      "text": "Complete a simple low-relief OR a chip carving project."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb118-15.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "game-design-2013",
+  "kind": "requirement-set",
+  "subject": "merit-badge:game-design",
+  "effective_from": "2013-01-01",
+  "effective_to": "2022-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Game Design Merit Badge Requirements (2013, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb151-13.asp",
+    "year": 2013
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Analyze four games you have played, each from a different medium. Identify the medium, player format, objectives, rules, resources, and theme (if relevant). Discuss with your counselor the play experience, what you enjoy in each game, and what you dislike. Make a chart to compare and contrast the games."
+        },
+        {
+          "number": "1b",
+          "text": "Describe four types of play value and provide an example of a game built around each concept. Discuss other reasons people play games."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Discuss with your counselor five of the following 17 game design terms. For each term that you pick, describe how it relates to a specific game."
+    },
+    {
+      "number": "3",
+      "text": "Thematic game elements:"
+    },
+    {
+      "number": "4",
+      "text": "story,"
+    },
+    {
+      "number": "5",
+      "text": "setting,"
+    },
+    {
+      "number": "6",
+      "text": "characters"
+    },
+    {
+      "number": "7",
+      "text": "Gameplay elements:"
+    },
+    {
+      "number": "8",
+      "text": "play sequence,"
+    },
+    {
+      "number": "9",
+      "text": "level design,"
+    },
+    {
+      "number": "10",
+      "text": "interface design"
+    },
+    {
+      "number": "11",
+      "text": "Game analysis:"
+    },
+    {
+      "number": "12",
+      "text": "difficulty,"
+    },
+    {
+      "number": "13",
+      "text": "balance,"
+    },
+    {
+      "number": "14",
+      "text": "depth,"
+    },
+    {
+      "number": "15",
+      "text": "pace,"
+    },
+    {
+      "number": "16",
+      "text": "replay value,"
+    },
+    {
+      "number": "17",
+      "text": "age appropriateness"
+    },
+    {
+      "number": "18",
+      "text": "Related terms:"
+    },
+    {
+      "number": "19",
+      "text": "single-player vs. multiplayer,"
+    },
+    {
+      "number": "20",
+      "text": "cooperative vs. competitive,"
+    },
+    {
+      "number": "21",
+      "text": "turn-based vs. real-time,"
+    },
+    {
+      "number": "22",
+      "text": "strategy vs. reflex vs. chance,"
+    },
+    {
+      "number": "23",
+      "text": "abstract vs. thematic"
+    },
+    {
+      "number": "24",
+      "text": "Define the term intellectual property. Describe the types of intellectual property associated with the game design industry. Describe how intellectual property is protected and why protection is necessary. Define and give an example of a licensed property."
+    },
+    {
+      "number": "25",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "25a",
+          "text": "Pick a game where the players can change the rules or objectives (examples: basketball, hearts, chess, kickball). Briefly summarize the standard rules and objectives and play through the game normally."
+        },
+        {
+          "number": "25b",
+          "text": "Propose changes to several rules or objectives. Predict how each change will affect gameplay."
+        },
+        {
+          "number": "25c",
+          "text": "Play the game with one rule or objective change, observing how the players’ actions and emotional experiences are affected by the rule change. Repeat this process with two other changes."
+        },
+        {
+          "number": "25d",
+          "text": "Explain to your counselor how the changes affected the actions and experience of the players. Discuss the accuracy of your predictions."
+        }
+      ]
+    },
+    {
+      "number": "26",
+      "text": "Design a new game. Any game medium or combination of mediums is acceptable. Record your work in a game design notebook.",
+      "children": [
+        {
+          "number": "26a",
+          "text": "Write a vision statement for your game. Identify the medium, player format, objectives, and theme of the game. If suitable, describe the setting, story, and characters."
+        },
+        {
+          "number": "26b",
+          "text": "Describe the play value."
+        },
+        {
+          "number": "26c",
+          "text": "Make a preliminary list of the rules of the game. Define the resources."
+        },
+        {
+          "number": "26d",
+          "text": "Draw the game elements."
+        }
+      ]
+    },
+    {
+      "number": "27",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "27a",
+          "text": "Prototype your game from requirement 5. If applicable, demonstrate to your counselor that you have addressed player safety through the rules and equipment. You must have your merit badge counselor's approval of your concept before you begin creating the prototype."
+        },
+        {
+          "number": "27b",
+          "text": "Test your prototype with as many other people as you need to meet the player format. Compare the play experience to your descriptions from requirement 5b. Correct unclear rules, holes in the rules, dead ends, and obvious rule exploits. Change at least one rule, mechanic, or objective from your first version of the game, and describe why you are making the change. Play the game again. Record whether or not your change had the expected effect."
+        },
+        {
+          "number": "27c",
+          "text": "Repeat 6b at least two more times."
+        }
+      ]
+    },
+    {
+      "number": "28",
+      "text": "Blind test your game. Do the following:",
+      "children": [
+        {
+          "number": "28a",
+          "text": "Write an instruction sheet that includes all of the information needed to play the game. Clearly describe how to set up the game, play the game, and end the game. List the game objectives."
+        },
+        {
+          "number": "28b",
+          "text": "Share your prototype from requirement 6a with a group of players that has not played it or witnessed a previous playtest. Provide them with your instruction sheet(s) and any physical components. Watch them play the game, but do not provide them with instruction. Record their feedback in your game design notebook."
+        },
+        {
+          "number": "28c",
+          "text": "Share your game design notebook with your counselor. Discuss the player reactions to your project and what you learned about the game design process. Based on your testing, determine what you like most about your game and suggest one or more changes."
+        }
+      ]
+    },
+    {
+      "number": "29",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "29a",
+          "text": "With your parent’s permission and your counselor’s approval, visit with a professional in the game development industry and ask him or her about his or her job and how it fits into the overall development process. Alternately, meet with a professional in game development education and discuss the skills he or she emphasizes in the classroom."
+        },
+        {
+          "number": "29b",
+          "text": "List three career opportunities in game development. Pick one and find out about the education, training, and experience required for the profession. Discuss this with your counselor. Explain why this profession might interest you."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb151-13.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

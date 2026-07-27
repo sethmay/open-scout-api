@@ -1,0 +1,117 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "composite-materials-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:composite-materials",
+  "effective_from": "2023-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:composite-materials-2014",
+  "source_document": {
+    "title": "Composite Materials Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb137.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain the precautions that must be taken when handling, storing, and disposing of resins, reinforcements, and other materials used in composites. Include in your discussion the importance of health, safety, and environmental responsibility and awareness."
+        },
+        {
+          "number": "1b",
+          "text": "Explain the precautions that must be taken when handling, storing, and disposing of resins, reinforcements, and other materials used in composites. Include in your discussion the importance of health, safety, and environmental responsibility and awareness."
+        },
+        {
+          "number": "1c",
+          "text": "Describe what a material safety data sheet (MSDS) is and tell why it is used."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain what are composite materials. Include a brief history of composites and how they have developed."
+        },
+        {
+          "number": "2b",
+          "text": "Compare the similarities and differences between composites and wood, aluminum, copper, and steel. Explain the physical, electrical, mechanical, corrosive, flammability, cost, and other such properties. For each of these raw materials, give one example for how it can be shaped and used for a specific application."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Describe how composite materials are made. Then do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Discuss three different composite reinforcement materials, their positive and negative characteristics, and their uses. Obtain the MSDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials."
+        },
+        {
+          "number": "3b",
+          "text": "Discuss three different resins used in composites, their positive and negative characteristics, and their uses. Obtain the MSDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials. Include thermoset resins and thermoplastic resins in your discussion."
+        },
+        {
+          "number": "3c",
+          "text": "For each of the three resins you chose for requirement 3b, think of a new application that might be worth developing."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "With your parent's parent or guardian's permission and your counselor's approval do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Visit a company that manufactures or repairs products made with composites. Discuss what you learn with your counselor."
+        },
+        {
+          "number": "4b",
+          "text": "Find three composites-related websites. Share and discuss what you learn with your counselor."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Use composite materials to complete two projects, at least one of which must come from the Composite Materials merit badge pamphlet. The second project may come from the pamphlet OR may be one you select on your own that has been approved by your counselor in advance."
+        },
+        {
+          "number": "5b",
+          "text": "With your counselor's assistance, find an appropriate site where the projects can be safely completed under your counselor's supervision and/or the supervision of an adult approved by your counselor who is knowledgeable about composites."
+        },
+        {
+          "number": "5c",
+          "text": "With your counselor, determine how the finished projects will be evaluated. Using those guidelines, evaluate the completed projects with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Find out about three career opportunities in composite materials. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb137.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

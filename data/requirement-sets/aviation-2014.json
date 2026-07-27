@@ -1,0 +1,125 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "aviation-2014",
+  "kind": "requirement-set",
+  "subject": "merit-badge:aviation",
+  "effective_from": "2014-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:aviation-2007",
+  "source_document": {
+    "title": "Aviation Merit Badge Requirements (2014, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb025.asp",
+    "year": 2014
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Define \"aircraft.\" Describe some kinds and uses of aircraft today. Explain the operation of piston, turboprop, and jet engines."
+        },
+        {
+          "number": "1b",
+          "text": "Point out on a model airplane the forces that act on an airplane in flight."
+        },
+        {
+          "number": "1c",
+          "text": "Explain how an airfoil generates lift, how the primary control surfaces (ailerons, elevators, and rudder) affect the airplane's attitude, and how a propeller produces thrust."
+        },
+        {
+          "number": "1d",
+          "text": "Demonstrate how the control surfaces of an airplane are used for takeoff, straight climb, level turn, climbing turn, descending turn, straight descent, and landing."
+        },
+        {
+          "number": "1e",
+          "text": "Explain the following: the sport pilot, the recreational pilot and the private pilot certificates; the instrument rating."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do TWO of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Take a flight in an aircraft , with your parent's parent or guardian's permission. Record the date, place, type of aircraft, and duration of flight, and report on your impressions of the flight."
+        },
+        {
+          "number": "2b",
+          "text": "Under supervision, perform a preflight inspection of a light airplane."
+        },
+        {
+          "number": "2c",
+          "text": "Obtain and learn how to read an aeronautical chart. Measure a true course on the chart. Correct it for magnetic variation, compass deviation, and wind drift to determine a compass heading."
+        },
+        {
+          "number": "2d",
+          "text": "Using one of many flight simulator software packages available for computers. \"fly\" the course and heading you established in requirement 2c or another course you have plotted."
+        },
+        {
+          "number": "2e",
+          "text": "Explain the purposes and functions of the various instruments found in a typical single-engine aircraft: attitude indicator, heading indicator, altimeter, airspeed indicator, turn and bank indicator, vertical speed indicator, compass, navigation (GPS and VOR) and communication radios, tachometer, oil pressure gauge, and oil temperature gauge."
+        },
+        {
+          "number": "2f",
+          "text": "Create an original poster of an aircraft instrument panel. Include and identify the instruments and radios discussed in requirement 2e."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Build and fly a fuel-driven or battery powered electric model airplane. Describe safety rules for building and flying model airplanes Tell safety rules for use of glue, paint, dope, plastics, fuel, and battery pack."
+        },
+        {
+          "number": "3b",
+          "text": "Build a model FPG-9. Get others in your troop or patrol to make their own model, then organize a competition to test the precision of flight and landing of the models."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Visit an airport. After the visit, report on how the facilities are used, how runways are numbered, and how runways are determined to be \"active.\""
+        },
+        {
+          "number": "4b",
+          "text": "Visit a Federal Aviation Administration facility - a control tower, terminal radar control facility, air route traffic control center, or Flight Standards District Office. (Phone directory listings are under U.S. Government Offices, Transportation Department, Federal Aviation Administration. Call in advance.) Report on the operation and your impressions of the facility."
+        },
+        {
+          "number": "4c",
+          "text": "Visit an aviation museum or attend an air show. Report on your impressions of the museum or show."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "5",
+      "text": "Find out about three career opportunities in aviation. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb025.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

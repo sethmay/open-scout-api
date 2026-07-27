@@ -1,0 +1,224 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "personal-fitness-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:personal-fitness",
+  "effective_from": "2023-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:personal-fitness-2020",
+  "source_document": {
+    "title": "Personal Fitness Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb010.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Before completing requirements 2 through 9, have your health-care practitioner give you a physical examination, using the Scout medical examination form. Explain the following:",
+          "children": [
+            {
+              "number": "1a(1)",
+              "text": "Why physical exams are important"
+            },
+            {
+              "number": "1a(2)",
+              "text": "Why preventive habits (such as exercising regularly) are important in maintaining good health, and how the use of tobacco products, alcohol, and other harmful substances can negatively affect our personal fitness"
+            },
+            {
+              "number": "1a(3)",
+              "text": "Diseases that can be prevented and how"
+            },
+            {
+              "number": "1a(4)",
+              "text": "The seven warning signs of cancer"
+            },
+            {
+              "number": "1a(5)",
+              "text": "The youth risk factors that affect cardiovascular health in adulthood."
+            }
+          ]
+        },
+        {
+          "number": "1b",
+          "text": "Have a dental examination . Get a statement saying that your teeth have been checked and cared for. Tell how to care for your teeth."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Explain to your merit badge counselor verbally or in writing what personal fitness means to you, including:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Reasons for being mentally, physically, socially, and spiritually fit"
+        },
+        {
+          "number": "2b",
+          "text": "What it means to be mentally healthy"
+        },
+        {
+          "number": "2c",
+          "text": "What it means to be physically healthy"
+        },
+        {
+          "number": "2d",
+          "text": "What it means to be socially healthy"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "With your counselor, answer and discuss the following questions:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Are you living in such a way that your risk of preventable diseases is minimized?"
+        },
+        {
+          "number": "3b",
+          "text": "Are you immunized and vaccinated according to the advice of your healthcare provider and the direction of your parent(s)/guardian(s)?"
+        },
+        {
+          "number": "3c",
+          "text": "Are you free from habits relating to poor nutrition and the use of alcohol, tobacco, drugs, and other practices that could be harmful to your health?"
+        },
+        {
+          "number": "3d",
+          "text": "What are the advantages to getting a full night’s sleep?"
+        },
+        {
+          "number": "3e",
+          "text": "Define a nutritious, balanced diet and why it is important."
+        },
+        {
+          "number": "3f",
+          "text": "Do you participate in a regular exercise program or recreational activities?"
+        },
+        {
+          "number": "3g",
+          "text": "What are you doing to demonstrate your duty to God?"
+        },
+        {
+          "number": "3h",
+          "text": "Do you spend quality time with your family and friends in social and recreational activities?"
+        },
+        {
+          "number": "3i",
+          "text": "Do you support family activities and efforts to maintain a good home life?"
+        },
+        {
+          "number": "3j",
+          "text": "Do you carry out daily activities without noticeable effort? Do you have extra energy for other activities?"
+        },
+        {
+          "number": "3k",
+          "text": "Are you free from habits relating to poor nutrition and the use of alcohol, tobacco, drugs, and other practices that could be harmful to your health?"
+        },
+        {
+          "number": "3l",
+          "text": "Do you participate in a regular exercise program or recreational activities?"
+        },
+        {
+          "number": "3m",
+          "text": "Do you sleep well at night and wake up feeling ready to start the new day?"
+        },
+        {
+          "number": "3n",
+          "text": "Are you actively involved in the religious organization of your choice, and do you participate in its youth activities?"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Explain the following about physical fitness:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "The areas of physical fitness"
+        },
+        {
+          "number": "4b",
+          "text": "Your weakest and strongest area of physical fitness"
+        },
+        {
+          "number": "4c",
+          "text": "The need to have a balance in the four areas of physical fitness"
+        },
+        {
+          "number": "4d",
+          "text": "How a program like the President's Council on Sports, Fitness & Nutrition can lead to lifelong healthful habits"
+        },
+        {
+          "number": "4e",
+          "text": "How the areas of personal fitness relate to the Scout Law and Scout Oath"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Explain the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "The importance of good nutrition"
+        },
+        {
+          "number": "5b",
+          "text": "What good nutrition means to you"
+        },
+        {
+          "number": "5c",
+          "text": "How good nutrition is related to the other components of personal fitness"
+        },
+        {
+          "number": "5d",
+          "text": "How to maintain a healthy weight"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Before doing requirements 7 and 8, do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Complete the aerobic fitness, flexibility, and muscular strength tests, as described in the Personal Fitness merit badge pamphlet. Record your results and identify those areas where you feel you need to improve."
+        },
+        {
+          "number": "6b",
+          "text": "Keep track of what you eat and drink for three days. Identify three healthy eating goals you want to work on."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Outline a comprehensive 12-week physical fitness program using the results of your fitness tests. Be sure your program incorporates the endurance, intensity, and warm-up guidelines discussed in the Personal Fitness merit badge pamphlet. Before beginning your exercises, have the program approved by your counselor and parents."
+    },
+    {
+      "number": "8",
+      "text": "Complete the physical fitness program you outlined in requirement 7. Keep a log of your fitness program activity (how long you exercised; how far you ran, swam, or biked; how many exercise repetitions you completed; your exercise heart rate; etc.). Keep a log of your weekly healthy eating goals. Repeat the aerobic fitness, muscular strength, and flexibility tests every four weeks and record your results. After the 12th week, repeat all of the required activities in each of the three test categories, record your results, and show improvement in each one. Discuss how well you met your healthy eating goals over these 12 weeks. Discuss the meaning and benefit of your experience, and describe your long-term plans regarding your personal fitness."
+    },
+    {
+      "number": "9",
+      "text": "Find out about three career opportunities in personal fitness. Pick one and find out the education, training, and experience required for this profession. Discuss what you learned with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb010.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

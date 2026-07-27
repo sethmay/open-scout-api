@@ -1,0 +1,267 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "archery-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:archery",
+  "effective_from": "2023-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:archery-2019",
+  "source_document": {
+    "title": "Archery Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb019.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain the five range safety rules."
+        },
+        {
+          "number": "1b",
+          "text": "Explain the four whistle commands used on the range."
+        },
+        {
+          "number": "1c",
+          "text": "Explain how to safely remove arrows from the target and return them to your quiver."
+        },
+        {
+          "number": "1d",
+          "text": "Tell about your local and state laws for owning and using archery equipment."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Name and point out the parts of an arrow."
+        },
+        {
+          "number": "2b",
+          "text": "Describe three or more different types of arrows."
+        },
+        {
+          "number": "2c",
+          "text": "Name the four principle materials for making arrow shafts."
+        },
+        {
+          "number": "2d",
+          "text": "Do ONE of the following",
+          "children": [
+            {
+              "number": "2d(1)",
+              "text": "Make a complete arrow from a bare shaft using appropriate equipment available to you. OR"
+            },
+            {
+              "number": "2d(2)",
+              "text": "To demonstrate arrow repair, inspect the shafts and prepare and replace at least three vanes, one point, and one nock. You may use as many arrows as necessary to accomplish this. The repairs can be done on wood, fiberglass, or aluminum arrows."
+            }
+          ],
+          "choose": 1
+        },
+        {
+          "number": "2e",
+          "text": "Explain how to properly care for and store arrows."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Explain the proper use, care, and storage of, as well as the reasons for using tabs, arm guards, shooting gloves, and quivers."
+        },
+        {
+          "number": "3b",
+          "text": "Explain the following terms: draw length, draw weight, mechanical release, and barebow."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Explain the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "The difference between an end and a round."
+        },
+        {
+          "number": "4b",
+          "text": "The differences among field, target, and 3-D archery."
+        },
+        {
+          "number": "4c",
+          "text": "How the five-color World Archery Federation (FITA) target is scored."
+        },
+        {
+          "number": "4d",
+          "text": "How the National Field Archery Association (NFAA) black-and-white field targets and blue indoor targets are scored."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following options:"
+    },
+    {
+      "number": "6",
+      "text": "Option A - Using a Recurve Bow or Longbow",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Name and Point to the parts of the recurve bow or longbow you are shooting."
+        },
+        {
+          "number": "6b",
+          "text": "Explain how to properly care for and store recurve bows and longbows."
+        },
+        {
+          "number": "6c",
+          "text": "emonstrate and explain USA Archery's \"Steps of Shooting\" for the bow you are shooting."
+        },
+        {
+          "number": "6d",
+          "text": "Demonstrate the proper way to string a recurve bow or longbow."
+        },
+        {
+          "number": "6e",
+          "text": "Using a bow square, locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using."
+        },
+        {
+          "number": "6f",
+          "text": "Do ONE of the following:",
+          "children": [
+            {
+              "number": "6f(1)",
+              "text": "Using a recurve bow or longbow and arrows with a finger release, shoot a single round of ONE of the following BSA, USA Archery, or NFAA rounds:",
+              "children": [
+                {
+                  "number": "6f(1)(1)",
+                  "text": "An NFAA field round of 14 targets and make a score of 60 points."
+                },
+                {
+                  "number": "6f(1)(2)",
+                  "text": "A BSA Scout field round of 14 targets and make a score of 80 points."
+                },
+                {
+                  "number": "6f(1)(3)",
+                  "text": "A World Archery/ USA Archery indoor* round and make a score of 80 points."
+                },
+                {
+                  "number": "6f(1)(4)",
+                  "text": "An NFAA indoor* round and make a score of 50 points."
+                }
+              ]
+            },
+            {
+              "number": "6f(2)",
+              "text": "Shooting 30 arrows in five-arrow ends at an 80-centimeter (32-inch) five-color target at 10 yards and using the 10 scoring regions, make a score of 150."
+            },
+            {
+              "number": "6f(3)",
+              "text": "As a member of the USA Archery Junior Olympic Archery Development Program (JOAD), earn your indoor or outdoor green, purple, and gray achievement award pins using a compound bow."
+            },
+            {
+              "number": "6f(4)",
+              "text": "As a member of the NFAA's Junior Division, earn a Cub or Youth 100-score Progression patch."
+            }
+          ],
+          "choose": 1
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Option B - Using a Compound Bow",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Name and point to the parts of the compound bow you are shooting."
+        },
+        {
+          "number": "7b",
+          "text": "Explain how to properly care for and store compound bows."
+        },
+        {
+          "number": "7c",
+          "text": "Show the 10 steps of good shooting for the bow you are shooting."
+        },
+        {
+          "number": "7d",
+          "text": "Explain why it is necessary to have the string or cable on a compound bow replaced at an archery shop."
+        },
+        {
+          "number": "7e",
+          "text": "Locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using."
+        },
+        {
+          "number": "7f",
+          "text": "Do ONE of the following:",
+          "children": [
+            {
+              "number": "7f(1)",
+              "text": "Using a compound bow and arrows with a finger release, shoot a single round of ONE of the following BSA, USA Archery, or NFAA rounds:",
+              "children": [
+                {
+                  "number": "7f(1)(1)",
+                  "text": "An NFAA field round of 14 targets and make a score of 70 points."
+                },
+                {
+                  "number": "7f(1)(2)",
+                  "text": "A BSA Scout field round of 14 targets and make a score of 90 points."
+                },
+                {
+                  "number": "7f(1)(3)",
+                  "text": "A Junior 900 round and make a score of 200 points."
+                },
+                {
+                  "number": "7f(1)(4)",
+                  "text": "A World Archery/USA Archery indoor* round I and make a score of 90 points."
+                },
+                {
+                  "number": "7f(1)(5)",
+                  "text": "An NFAA indoor* round and make a score of 60 points."
+                }
+              ]
+            },
+            {
+              "number": "7f(2)",
+              "text": "Shooting at an 80-centimeter (32-inch) five-color target at 15 yards and using the 10 scoring regions, make a minimum score of 160 points. Accomplish this in the following manner: Shoot 15 arrows in five-arrow ends, at a distance of 10 yards AND Shoot 15 arrows in five-arrow ends, at a distance of 15 yards."
+            },
+            {
+              "number": "7f(3)",
+              "text": "As a member of the USA Arcchery Junior Olympic Archery Development Program (JOAD), earn your indoor or outdoor green, purple, and gray achievement award pins using a compound bow.."
+            },
+            {
+              "number": "7f(4)",
+              "text": "As a member of the NFAA's Junior Division, earn a Cub or Youth 100-score Progression patch."
+            }
+          ],
+          "choose": 1
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb019.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

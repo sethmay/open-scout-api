@@ -1,0 +1,141 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "archaeology-2021",
+  "kind": "requirement-set",
+  "subject": "merit-badge:archaeology",
+  "effective_from": "2021-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:archaeology-2018",
+  "source_document": {
+    "title": "Archaeology Merit Badge Requirements (2021, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb132.asp",
+    "year": 2021
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Tell what archaeology is and explain to your counselor how it differs or relates to other fields of study such as anthropology, geology, paleontology, and history. Explain how archaeology is different than artifact collecting or treasure hunting."
+    },
+    {
+      "number": "2",
+      "text": "Describe each of the following steps of the archaeological process: site location, development of background research and a research design, site survey and fieldwork, artifact identification and examination, interpretation, preservation, and information sharing."
+    },
+    {
+      "number": "3",
+      "text": "Describe at least two ways in which archaeologists determine the age of sites, structures, or artifacts. Explain what absolute dating and relative dating are."
+    },
+    {
+      "number": "4",
+      "text": "Learn about a combined total of five archaeological sites located both within and outside the United States.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "For EACH site you research, point it out on a map and explain how it was discovered became known to archaeologists. Describe some of the information about the past that has been found at each site. Explain how the information gained from the study of these sites answers questions that archaeologists are asking and how the information may be important to modern people. Compare the relative ages of the sites you research."
+        },
+        {
+          "number": "4b",
+          "text": "Choose ONE of the sites you picked and give a short presentation about your findings to a Cub Scout pack, your Scout troop, your school class, or another group."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Learn about the federal laws and international conventions that protect archaeological sites. Find out if your state, county, or local government has regulations that apply to archaeological or historic sites."
+        },
+        {
+          "number": "5b",
+          "text": "Identify a national, international, or local organization that helps to protect archaeological sites."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Explain why it is important to protect archaeological sites."
+        },
+        {
+          "number": "6b",
+          "text": "Explain what people should do if they think they have found an artifact."
+        },
+        {
+          "number": "6c",
+          "text": "Describe the ways in which you can be a protector of the past."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following and discuss your findings with your counselor:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Visit a museum to observe how artifacts aid in conveying history."
+        },
+        {
+          "number": "7b",
+          "text": "Present to your counselor a significant family artifact/heirloom and discuss its history."
+        },
+        {
+          "number": "7c",
+          "text": "Make a list of the trash your family throws out during one week. Discuss with your counselor what archaeologists might learn about you and your family if they found your trash a thousand years from now."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Research a group of people who lived in your area more than 100 years ago. Find out about their ways of life, including housing, clothing, arts and crafts, tools, trade and markets, rituals and religions, and diets, and their relationships with other groups of people in the area. Describe what you would expect to find at an archaeological site where these people lived. Explain how these people influenced your current community."
+    },
+    {
+      "number": "9",
+      "text": "Identify three career opportunities in archaeology. Pick one and explain how to prepare for such a career. Discuss with your counselor what education and training are required, and explain why this profession might interest you."
+    },
+    {
+      "number": "10",
+      "text": "Do either A or B of the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "With your parent's parent or guardian's and counselor's permission, assist a qualified archaeologist for at least eight hours with a project being worked on. Projects may include surveying, site monitoring, site stabilization, excavation, laboratory analysis, use of digital archaeological technology, or public outreach. Describe your involvement in the project, what you learned about archaeology, and the steps of archaeological inquiry. Note: Visiting an archaeological site will require advance planning. An archaeological site during study can be a dangerous place. While there, you will need to closely follow the archaeologist's directions and comply with all the safety procedures. Be aware of the changing conditions at the site."
+        },
+        {
+          "number": "10b",
+          "text": "With your counselor's approval, take part in a simulated archaeological project designed by a qualified archaeologist. The project must include the use of a simulated archaeological site including artifacts and features for the site. Using the steps of archaeological inquiry, analyze the \"artifacts and features\" and document the spatial relationships of the \"artifacts and features\" at the simulated site. Explain how the environment and time can affect the interpretation of an artifact and the overall archaeological site. Tell how you would share the results of your analysis with other researchers and the public NNote: To find out how to make a simulated archaeological site, talk with a professional archaeologist, trained avocational archaeologist, museum school instructor, junior high or high school science teacher, advisor from a local archaeology society, or other qualified instructor."
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "Under the supervision of a qualified archaeologist or instructor, do ONE of the following:ol type=\"a\">"
+    },
+    {
+      "number": "12",
+      "text": "Help prepare an archaeological exhibit for display in a museum, visitor center, school, or other public area."
+    },
+    {
+      "number": "13",
+      "text": "Use the methods of experimental archaeology to re-create an item or to practice a skill from the past. Write a brief report explaining the experiment and its results."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb132.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

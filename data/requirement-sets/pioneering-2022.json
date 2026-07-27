@@ -5,7 +5,7 @@
   "subject": "merit-badge:pioneering",
   "effective_from": "2022-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:pioneering-2017",
   "source_document": {
     "title": "Pioneering Merit Badge Requirements (2022)",
     "url": "https://www.scouting.org/merit-badges/pioneering/",

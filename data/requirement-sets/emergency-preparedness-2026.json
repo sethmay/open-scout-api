@@ -5,7 +5,7 @@
   "subject": "merit-badge:emergency-preparedness",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:emergency-preparedness-2023",
   "source_document": {
     "title": "Emergency Preparedness Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/emergency-preparedness/",

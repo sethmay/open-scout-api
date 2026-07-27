@@ -1,0 +1,128 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "citizenship-in-the-community-2016",
+  "kind": "requirement-set",
+  "subject": "merit-badge:citizenship-in-the-community",
+  "effective_from": "2016-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:citizenship-in-the-community-2013",
+  "source_document": {
+    "title": "Citizenship in the Community Merit Badge Requirements (2016, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb002.asp",
+    "year": 2016
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss with your counselor what citizenship in the community means and what it takes to be a good citizen in your community. Discuss the rights, duties, and obligations of citizenship, and explain how you can demonstrate good citizenship in your community, Scouting unit, place of worship, or school."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "On a map of your community or using an electronic device, locate and point out the following:",
+          "children": [
+            {
+              "number": "2a(1)",
+              "text": "Chief government buildings such as your city hall, county courthouse, and public works/services facility"
+            },
+            {
+              "number": "2a(2)",
+              "text": "Fire station, police station, and hospital nearest your home"
+            },
+            {
+              "number": "2a(3)",
+              "text": "Parks, playgrounds, recreation areas, and trails"
+            },
+            {
+              "number": "2a(4)",
+              "text": "Historical or other interesting points of interest"
+            }
+          ]
+        },
+        {
+          "number": "2b",
+          "text": "Chart the organization of your local or state government. Show the top offices and tell whether they are elected or appointed."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Attend a meeting of your city, town, or county council or school board; OR a municipal; county, or state court session."
+        },
+        {
+          "number": "3b",
+          "text": "Choose one of the issues discussed at the meeting where a difference of opinions was expressed, and explain to your counselor why you agree with one opinion more than you do another one."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Choose an issue that is important to the citizens of your community; then do the following:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Find out which branch of local government is responsible for this issue."
+        },
+        {
+          "number": "4b",
+          "text": "With your counselor's and a parent's approval, interview one person from the branch of government you identified in requirement 4a. Ask what is being done about this issue and how young people can help."
+        },
+        {
+          "number": "4c",
+          "text": "Share what you have learned with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "With the approval of your counselor and a parent, watch a movie that shows how the actions of one individual or group of individuals can have a positive effect on a community. Discuss with your counselor what you learned from the movie about what it means to be a valuable and concerned member of the community."
+    },
+    {
+      "number": "6",
+      "text": "List some of the services (such as the library, recreation center, public transportation, and public safety) your community provides that are funded by taxpayers. Tell your counselor why these services are important to your community."
+    },
+    {
+      "number": "7",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Identify three charitable organizations outside of Scouting that interest you and bring people in your community together to work for the good of your community."
+        },
+        {
+          "number": "7b",
+          "text": "Pick ONE of the organizations you chose for requirement 7a. Using a variety of resources (including newspapers, fliers and other literature, the Internet, volunteers, and employees of the organization), find out more about this organization."
+        },
+        {
+          "number": "7c",
+          "text": "With your counselor's and your parent's approval, contact the organization you chose for requirement 7b and find out what young people can do to help. While working on this merit badge, volunteer at least eight hours of your time for the organization. After your volunteer experience is over, discuss what you have learned with your counselor."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Develop a public presentation (such as a video, slide show, speech, digital presentation, or photo exhibit) about important and unique aspects of your community. Include information about the history, cultures, and ethnic groups of your community; its best features and popular places where people gather; and the challenges it faces. Stage your presentation in front of your merit badge counselor or a group, such as your patrol or a class at school."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb002.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

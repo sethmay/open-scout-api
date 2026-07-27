@@ -5,7 +5,7 @@
   "subject": "merit-badge:truck-transportation",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:truck-transportation-2006",
   "source_document": {
     "title": "Truck Transportation Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/truck-transportation/",

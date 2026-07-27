@@ -5,7 +5,7 @@
   "subject": "merit-badge:fingerprinting",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:fingerprinting-2004",
   "source_document": {
     "title": "Fingerprinting Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/fingerprinting/",

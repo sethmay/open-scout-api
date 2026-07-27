@@ -5,7 +5,7 @@
   "subject": "merit-badge:landscape-architecture",
   "effective_from": "2025-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:landscape-architecture-2017",
   "source_document": {
     "title": "Landscape Architecture Merit Badge Requirements (2025)",
     "url": "https://www.scouting.org/merit-badges/landscape-architecture/",

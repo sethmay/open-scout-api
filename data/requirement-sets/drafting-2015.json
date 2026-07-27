@@ -1,0 +1,135 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "drafting-2015",
+  "kind": "requirement-set",
+  "subject": "merit-badge:drafting",
+  "effective_from": "2015-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:drafting-2009",
+  "source_document": {
+    "title": "Drafting Merit Badge Requirements (2015, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb042.asp",
+    "year": 2015
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Format TWO sheets of drawing paper with proper borders and title blocks - one for your manual project (see requirement 2) and one for your lettering project (see requirement 5).",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Make a rough sketch of your project drawings to determine the correct size of paper to format."
+        },
+        {
+          "number": "1b",
+          "text": "Using either single-stroke vertical or slant Gothic lettering, fill in all important information in the title block sections of the formatted paper."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Using the formatted sheet of paper you prepared for your manual project, produce a pencil drawing as it would be used for manufacturing. Fill in all title block information. The manual drawing may be any one of the following drawing types:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Architectural: Make a scale drawing of an architectural project. The architectural drawing may be a floor plan, electrical, plumbing, or mechanical service plan; elevation plan; or landscaping plan. Use an architect's scale and show dimensions to communicate the actual size if features. Include any important sectional drawings, notes, and considerations necessary for construction."
+        },
+        {
+          "number": "2b",
+          "text": "Mechanical: Make a scale drawing of some mechanical device or interesting object. The mechanical drawing may be of the orthographic or isometric style. Use an engineer's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and manufacturing considerations."
+        },
+        {
+          "number": "2c",
+          "text": "Electrical: Draw a simple schematic of a radio or electronic circuit. Properly print a bill of materials including all of the major electrical components used in the circuit. Use standard drawing symbols for the electronic components."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Produce a computer-aided design (CAD) drawing as it would be used in manufacturing. Fill in all title block information. The CAD drawing may be any one of the following drawing types:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Architectural: Make a scale drawing of an architectural project. The architectural drawing may be a floor plan, electrical, plumbing, or mechanical service plan; elevation plan; or landscaping plan. Use an architect's scale and show dimensions to communicate the actual size if features. Include any important sectional drawings, notes, and considerations necessary for construction."
+        },
+        {
+          "number": "3b",
+          "text": "Mechanical: Make a scale drawing of some mechanical device or interesting object. The mechanical drawing may be of the orthographic or isometric style. Use an engineer's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and manufacturing considerations."
+        },
+        {
+          "number": "3c",
+          "text": "Electrical: Draw a simple schematic of a radio or electronic circuit. Properly print a bill of materials including all of the major electrical components used in the circuit. Use standard drawing symbols for the electronic components."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Discuss with your counselor how fulfilling requirements 2 and 3 differed from each other. Tell about the benefits derived from using CAD for requirement 3. Include in your discussion the software you used as well as other software options that are available."
+    },
+    {
+      "number": "5",
+      "text": "Using single-stroke slant or vertical Gothic lettering, (without the aid of a template or lettering guide) write a brief explanation of what you consider to be the most important benefit in using CAD in a particular industry (aerospace, electronics, manufacturing, architectural, or other). Use the experience gained in fulfilling requirements 2, 3, and 4 to support your opinion. Use the formatted sheet of paper you prepared in requirement 1 for your lettering project."
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following (a or b):",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Visit a facility or industry workplace where drafting is part of the business. Ask to see an example of the work that is done there, the different drafting facilities, and the tools used.",
+          "children": [
+            {
+              "number": "6a(1)",
+              "text": "Find out how much of the drafting done there is manual, and how much is done using CAD. If CAD is used, find out what software is used and how and why it was chosen."
+            },
+            {
+              "number": "6a(2)",
+              "text": "Ask about the drafting services provided. Ask who uses the designs produced and how those designs are used. Discuss how the professionals who perform drafting cooperate with other individuals in the drafting area and other areas of the business."
+            },
+            {
+              "number": "6a(3)",
+              "text": "Ask how important the role of drafting is to producing the end product or service that this business supplies. Find out how drafting contributes to the company's end product or service"
+            }
+          ]
+        },
+        {
+          "number": "6b",
+          "text": "Using resources you find on your own such as at the library and on the Internet (with your parent's parent or guardian's permission), learn more about the drafting trade and discuss the following with your counselor.",
+          "children": [
+            {
+              "number": "6b(1)",
+              "text": "The drafting tools used in the past - why and how they were used. Explain which tools are still used today and how their use has changed with the advent of new tools. Discuss which tools are being made obsolete by newer tools in the industry."
+            },
+            {
+              "number": "6b(2)",
+              "text": "Tell what media types were used in the past and how drawings were used, stored, and reproduced. Tell how the advent of CAD has changed the media used, and discuss how these changes affect the storage or reproduction of drawings."
+            },
+            {
+              "number": "6b(3)",
+              "text": "Discuss whether the types of media have changed such that there are new uses for the drawings, or other outputs, produced by designers. Briefly discuss how new media types are used in the industry today."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Find out about three career opportunities in drafting. Pick one and find out about the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb042.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

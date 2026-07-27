@@ -1,0 +1,193 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "nature-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:nature",
+  "effective_from": "2023-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:nature-2021",
+  "source_document": {
+    "title": "Nature Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb078.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Name three ways in which plants are important to animals. Name a plant that is important to animals that is protected in your state or region, and explain why it is at risk."
+    },
+    {
+      "number": "2",
+      "text": "Name three ways in which animals are important to plants. Name an animal that is protected in your state or region, and explain why it is at risk."
+    },
+    {
+      "number": "3",
+      "text": "Explain the term \"food chain.\" Give an example of a four-step land food chain and a four-step water food chain."
+    },
+    {
+      "number": "4",
+      "text": "Do all the requirements in FIVE of the following fields:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "BIRDS",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "In the field, identify eight species of birds."
+            },
+            {
+              "number": "4a(2)",
+              "text": "Make and set out a birdhouse OR a feeding station OR a birdbath. List what birds used it during a period of one month."
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "MAMMALS",
+          "children": [
+            {
+              "number": "4b(1)",
+              "text": "In the field, identify three species of wild mammals."
+            },
+            {
+              "number": "4b(2)",
+              "text": "Make plaster casts of the tracks of a wild mammal."
+            }
+          ]
+        },
+        {
+          "number": "4c",
+          "text": "REPTILES and AMPHIBIANS",
+          "children": [
+            {
+              "number": "4c(1)",
+              "text": "Show that you can recognize the venomous snakes in your area."
+            },
+            {
+              "number": "4c(2)",
+              "text": "In the field, identify three species of reptiles or amphibians."
+            },
+            {
+              "number": "4c(3)",
+              "text": "Recognize one species of toad or frog by voice; OR identify one reptile or amphibian by eggs, den, burrow or other signs."
+            }
+          ]
+        },
+        {
+          "number": "4d",
+          "text": "INSECTS and SPIDERS",
+          "children": [
+            {
+              "number": "4d(1)",
+              "text": "Collect and identify either in the field or through photographs 10 species of insects or spiders.*"
+            },
+            {
+              "number": "4d(2)",
+              "text": "Hatch an insect from the pupa or cocoon; OR hatch adults from nymphs; OR keep larvae until they form pupae or cocoons; OR keep a colony of ants or bees through one season."
+            }
+          ]
+        },
+        {
+          "number": "4e",
+          "text": "FISH",
+          "children": [
+            {
+              "number": "4e(1)",
+              "text": "Identify two species of fish native to your area."
+            },
+            {
+              "number": "4e(2)",
+              "text": "Collect four kinds of animal food eaten by fish in the wild."
+            }
+          ]
+        },
+        {
+          "number": "4f",
+          "text": "MOLLUSKS AND CRUSTACEANS",
+          "children": [
+            {
+              "number": "4f(1)",
+              "text": "Identify five species of mollusks and crustaceans."
+            },
+            {
+              "number": "4f(2)",
+              "text": "Collect, mount, and label six shells."
+            }
+          ]
+        },
+        {
+          "number": "4g",
+          "text": "PLANTS",
+          "children": [
+            {
+              "number": "4g(1)",
+              "text": "In the field, identify 15 species of wild plants."
+            },
+            {
+              "number": "4g(2)",
+              "text": "Do ONE of the following options:",
+              "children": [
+                {
+                  "number": "4g(2)(1)",
+                  "text": "Collect and label seeds of six plants; OR the leaves of 12 plants."
+                },
+                {
+                  "number": "4g(2)(2)",
+                  "text": "Photograph the seeds of six plants OR the leaves of 12 plants and create a catalog of your photos."
+                }
+              ],
+              "choose": 1
+            }
+          ]
+        },
+        {
+          "number": "4h",
+          "text": "SOILS AND ROCKS",
+          "children": [
+            {
+              "number": "4h(1)",
+              "text": "Collect and identify three different types of soil that represent soils high in sand, clay and humus."
+            },
+            {
+              "number": "4h(2)",
+              "text": "Collect and identify five different types of rocks from your area."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Discuss the principle of Leave No Trace and how it relates to nature."
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Explain what succession is to your counselor."
+        },
+        {
+          "number": "6b",
+          "text": "Visit a natural area (forest, grassland, meadow, water feature) and explain what stage of succession (both plant and animal) the area is in. Talk about what community/succession stages may have been there before and what community/succession stages may replace what you see now. Discuss what disturbances or changes have taken place in the past to create this landscape and what changes may occur in the future to change the landscape further."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb078.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

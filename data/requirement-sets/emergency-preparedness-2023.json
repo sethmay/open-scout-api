@@ -1,0 +1,271 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "emergency-preparedness-2023",
+  "kind": "requirement-set",
+  "subject": "merit-badge:emergency-preparedness",
+  "effective_from": "2023-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:emergency-preparedness-2018",
+  "source_document": {
+    "title": "Emergency Preparedness Merit Badge Requirements (2023, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb006.asp",
+    "year": 2023
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Earn the First Aid Merit Badge."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Discuss with your counselor the aspects of emergency preparedness: Include in your discussion the kinds of questions that are important to ask yourself as you consider each of these.",
+          "children": [
+            {
+              "number": "2a(1)",
+              "text": "Prevention"
+            },
+            {
+              "number": "2a(2)",
+              "text": "Protection"
+            },
+            {
+              "number": "2a(3)",
+              "text": "Mitigation"
+            },
+            {
+              "number": "2a(4)",
+              "text": "Response"
+            },
+            {
+              "number": "2a(5)",
+              "text": "Recovery"
+            }
+          ]
+        },
+        {
+          "number": "2b",
+          "text": "b. Using a chart, graph, spreadsheet, or another method approved by your counselor, demonstrate your understanding of each aspect of emergency preparedness listed in requirement 2a (prevention, protection, mitigation, response, and recovery) for 10 emergency situations from the list below. You must use the first five situations listed below in boldface, plus any other five of your choice. Discuss your findings with your counselor.",
+          "children": [
+            {
+              "number": "2b(1)",
+              "text": "Home kitchen fire"
+            },
+            {
+              "number": "2b(2)",
+              "text": "Home basement/storage room/garage fire"
+            },
+            {
+              "number": "2b(3)",
+              "text": "Explosion in the home"
+            },
+            {
+              "number": "2b(4)",
+              "text": "Automobile accident"
+            },
+            {
+              "number": "2b(5)",
+              "text": "Food-borne disease (food poisoning)"
+            },
+            {
+              "number": "2b(6)",
+              "text": "Fire or explosion in a public place"
+            },
+            {
+              "number": "2b(7)",
+              "text": "Vehicle stalled in the desert"
+            },
+            {
+              "number": "2b(8)",
+              "text": "Vehicle trapped in a blizzard"
+            },
+            {
+              "number": "2b(9)",
+              "text": "Earthquake or tsunami"
+            },
+            {
+              "number": "2b(10)",
+              "text": "Mountain/backcountry accident"
+            },
+            {
+              "number": "2b(11)",
+              "text": "Boating accident"
+            },
+            {
+              "number": "2b(12)",
+              "text": "Gas leak in a home or a building"
+            },
+            {
+              "number": "2b(13)",
+              "text": "Tornado or hurricane"
+            },
+            {
+              "number": "2b(14)",
+              "text": "Major flooding or a flash flood"
+            },
+            {
+              "number": "2b(15)",
+              "text": "Toxic chemical spills and releases"
+            },
+            {
+              "number": "2b(16)",
+              "text": "Nuclear power plant emergency"
+            },
+            {
+              "number": "2b(17)",
+              "text": "Avalanche (snowslide or rockslide)"
+            },
+            {
+              "number": "2b(18)",
+              "text": "Violence in a public place"
+            }
+          ]
+        },
+        {
+          "number": "2c",
+          "text": "Meet with and teach your family how to get or build a kit, make a plan, and be informed for the situations on the chart you created for requirement 2b. Complete a family plan. Then meet with your counselor and report on your family meeting, discuss their responses, and share your family plan."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Show how you could save a person from the following dangerous situations without putting yourself in danger:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Touching a live household electric wire."
+        },
+        {
+          "number": "3b",
+          "text": "A structure filled with carbon monoxide"
+        },
+        {
+          "number": "3c",
+          "text": "Clothes on fire."
+        },
+        {
+          "number": "3d",
+          "text": "Drowning using nonswimming rescues (including accidents on ice)."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Show three ways of attracting and communicating with rescue planes/aircraft."
+    },
+    {
+      "number": "5",
+      "text": "With another person, show a good way to transport an injured person out of a remote and/or rugged area, conserving the energy of rescuers while ensuring the well-being and protection of the injured person."
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Describe the National Incident Management System (NIMS) and the Incident Command System (ICS)"
+        },
+        {
+          "number": "6b",
+          "text": "Identify the local government or community agencies that normally handle and prepare for emergency services similar to those of the NIMS or ICS. Explain to your counselor",
+          "children": [
+            {
+              "number": "6b(1)",
+              "text": "How the NIMS/ICS can assist a Boy Scout troop when responding in a disaster"
+            },
+            {
+              "number": "6b(2)",
+              "text": "How a group of Scouts could volunteer to help in the event of these types of emergencies."
+            }
+          ]
+        },
+        {
+          "number": "6c",
+          "text": "c. Find out who is your community's emergency management director and learn what this person does to prevent, protect, mitigate, respond to, and recover from emergency situations in your community. Discuss this information with your counselor, utilizing the information you learned from requirement 2b"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Take part in an emergency service project, either a real one or a practice drill, with a Scouting unit or a community agency."
+        },
+        {
+          "number": "7b",
+          "text": "Prepare a written plan for mobilizing your troop when needed to do emergency service. If there is already a plan, explain it. Tell your part in making it work."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Tell the things a group of Scouts should be prepared to do, the training they need , and the safety precautions they should take for the following emergency services:",
+          "children": [
+            {
+              "number": "8a(1)",
+              "text": "Crowd and traffic control"
+            },
+            {
+              "number": "8a(2)",
+              "text": "Messenger service and communication."
+            },
+            {
+              "number": "8a(3)",
+              "text": "Collection and distribution services."
+            },
+            {
+              "number": "8a(4)",
+              "text": "Group feeding, shelter, and sanitation."
+            }
+          ]
+        },
+        {
+          "number": "8b",
+          "text": "Prepare a personal emergency service pack for a mobilization call. Prepare a family kit (suitcase or waterproof box) for use by your family in case an emergency evacuation is needed. Explain the needs and uses of the contents."
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Using a safety checklist approved by your counselor, inspect your home for potential hazards. Explain the hazards you find and how they can be corrected."
+        },
+        {
+          "number": "9b",
+          "text": "Review or develop a plan of escape for your family in case of fire in your home."
+        },
+        {
+          "number": "9c",
+          "text": "Develop an accident prevention program for five family activities outside the home (such as taking a picnic or seeing a movie) that includes an analysis of possible hazards, a proposed plan to correct those hazards, and the reasons for the corrections you propose."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb006.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

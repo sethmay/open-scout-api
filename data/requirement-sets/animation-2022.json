@@ -5,7 +5,7 @@
   "subject": "merit-badge:animation",
   "effective_from": "2022-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:animation-2015",
   "source_document": {
     "title": "Animation Merit Badge Requirements (2022)",
     "url": "https://www.scouting.org/merit-badges/animation/",

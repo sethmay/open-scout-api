@@ -1,0 +1,129 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "communication-2018",
+  "kind": "requirement-set",
+  "subject": "merit-badge:communication",
+  "effective_from": "2018-01-01",
+  "effective_to": "2018-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Communication Merit Badge Requirements (2018, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb005-18.asp",
+    "year": 2018
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "For one day, keep a log in which you describe your communication activities. Keep track of the time and different ways you spend communicating, such as talking person-to-person, listening to teachers, the radio, or podcasts, watching television, using social media, reading books and other print media, and using any electronic communication device. Discuss with your counselor what your log reveals about the importance of communication in your life. Think of ways to improve your communications skills."
+        },
+        {
+          "number": "1b",
+          "text": "For three days, keep a journal of your listening experiences. Identify one example of each of the following, and discuss with your counselor when you have listened to:",
+          "children": [
+            {
+              "number": "1b(1)",
+              "text": "Obtain information"
+            },
+            {
+              "number": "1b(2)",
+              "text": "Be persuaded"
+            },
+            {
+              "number": "1b(3)",
+              "text": "Appreciate or enjoy something"
+            },
+            {
+              "number": "1b(4)",
+              "text": "Understand someone's feelings"
+            }
+          ]
+        },
+        {
+          "number": "1c",
+          "text": "In a small-group setting, meet with other scouts or with friends. Have them share personal stories about significant events in their lives that affected them in some way. Take note of how each scout participates in the group discussion and how effectively he communicates his story. Report what you have learned to your counselor about the differences you observed in effective communication."
+        },
+        {
+          "number": "1d",
+          "text": "List as many ways as you can think of to communicate with others (face-to-face, by telephone, letter, e-mail, text messages, and so on). For each type of communication discuss with your counselor an instance when that method might not be appropriate or effective."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "2",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Think of a creative way to describe yourself, using, for example, a collage, short story or autobiography, drawing or series of photographs, or a song or skit. Using the aid you created, make a presentation to your counselor about yourself."
+        },
+        {
+          "number": "2b",
+          "text": "Choose a concept, product, or service in which you have great confidence. Build a sales plan based on its good points. Try to persuade the counselor to agree with, use, or buy your concept, product or service. After your sales talk, discuss with your counselor how persuasive you were."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "3",
+      "text": "Write a five-minute speech. Give it at a meeting of a group."
+    },
+    {
+      "number": "4",
+      "text": "Interview someone you know fairly well, like, or respect because of his or her position, talent, career or life experiences. Listen actively to learn as much as you can about the person. Then prepare and deliver to your counselor an introduction of the person as though this person were to be a guest speaker, and include reasons why the audience would want to hear this person speak. Show how you would call to invite this person to speak."
+    },
+    {
+      "number": "5",
+      "text": "Attend a public meeting (city council, school board, debate) approved by your counselor where several points of view are given on a single issue. Practice active listening skills and take careful notes of each point of view. Prepare an objective report that includes all points of view that were expressed, and share this with your counselor."
+    },
+    {
+      "number": "6",
+      "text": "With your counselor's approval, develop a plan to teach a skill or inform someone about something. Prepare teaching aids for your plan. Carry out your plan. With your counselor, determine whether the person has learned what you intended."
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Write to the editor of a magazine or your local newspaper to express your opinion or share information on any subject you choose. Send your message by fax, email or regular mail."
+        },
+        {
+          "number": "7b",
+          "text": "Create a web page or blog of special interest to you (for instance, your troop or crew, a hobby, or a sport).. Include at least three articles or entries and one photograph or illustration, and one link to some other Web page or blog that would be helpful to someone who visits the Web page or blog you have created. It is not necessary to post your Web page or blog to the Internet, but if you decide to do so, you must first share it with your parents and counselor and get their permission."
+        },
+        {
+          "number": "7c",
+          "text": "Use desktop publishing to produce a newsletter, brochure, flier or other printed material for your scout troop, class at school, or other group. Include at least one article and one photograph or illustration."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "8",
+      "text": "Plan a troop or crew court of honor, campfire program, or interfaith worship service. Have the patrol leaders' council approve it, then write the script and prepare the program. Serve as master of ceremonies."
+    },
+    {
+      "number": "9",
+      "text": "Find out about three career opportunities in the field of communication. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb005-18.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

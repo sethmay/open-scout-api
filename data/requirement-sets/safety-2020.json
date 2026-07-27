@@ -1,0 +1,108 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "safety-2020",
+  "kind": "requirement-set",
+  "subject": "merit-badge:safety",
+  "effective_from": "2020-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Safety Merit Badge Requirements (2020, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb012-20.asp",
+    "year": 2020
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain what safety is and what it means to be safe. Then prepare a notebook to include:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Newspaper, internet (with parent's or guardian's permission), or other articles, facts, and statistics showing common types and causes of injuries in the home and in the workplace, and how these injuries could be prevented."
+        },
+        {
+          "number": "1b",
+          "text": "Newspaper, internet (with parent's or guardian's permission), or other articles, facts, and statistics showing common types of crimes and ways to avoid being a crime victim."
+        },
+        {
+          "number": "1c",
+          "text": "A paragraph or more, written by you, explaining how a serious fire, accident, or crime could change your family life."
+        },
+        {
+          "number": "1d",
+          "text": "A list of safe practices and safety devices currently used by your family, such as safety practices used while at home, while working, and while driving"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Using a safety checklist approved by your counselor, make an inspection of your home. Identify any hazards found and how these can be corrected."
+        },
+        {
+          "number": "2b",
+          "text": "Review and develop your family's fire prevention plan. Review your family's emergency action plan for fire in your home. As you develop these plans with family members, share with them facts about the common causes of fire in the home, such as smoking, cooking, electrical appliances, and candles."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Discuss with your counselor how you contribute to the safety of yourself, your family, and your community."
+        },
+        {
+          "number": "3b",
+          "text": "Show your family members how to protect themselves and your home from accidents, fire, burglary, robbery, and assault."
+        },
+        {
+          "number": "3c",
+          "text": "Discuss with your counselor the tips for online safety. Explain the steps individuals can take to help prevent identity theft."
+        },
+        {
+          "number": "3d",
+          "text": "Discuss with your counselor the three R's of Youth Protection and how to recognize child abuse."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Show your family the exits you would use from different public buildings (such as a theater, municipal building, library, supermarket, shopping center , or your place of worship) in the event of an emergency. Teach your family what to do in the event that they need to take shelter in or evacuate a public place."
+    },
+    {
+      "number": "5",
+      "text": "Make an emergency action plan for five family activities outside the home (at your place of worship, at a theater, on a picnic, at the beach, and while traveling , for example). Each plan should include an analysis of possible hazards, proposed action to correct hazards, and reasons for the correction you propose in each plan."
+    },
+    {
+      "number": "6",
+      "text": "Plan and complete a safety project approved by your counselor for your home, school, place of worship , place of employment, or community."
+    },
+    {
+      "number": "7",
+      "text": "Explain what the National Terrorism Advisory System is and how you would respond to each type of alert."
+    },
+    {
+      "number": "8",
+      "text": "Learn about three career opportunities in the field of safety. Pick one career and find out the education, training, and experience required for this profession. Discuss this choice with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb012-20.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "reading-2020",
+  "kind": "requirement-set",
+  "subject": "merit-badge:reading",
+  "effective_from": "2020-01-01",
+  "effective_to": "2021-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Reading Merit Badge Requirements (2020, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb095-20.asp",
+    "year": 2020
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do EACH of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Take a tour of a library. Discuss with your counselor how the library is organized and what resources and/or services are offered in the library."
+        },
+        {
+          "number": "1b",
+          "text": "Learn how to search a library's card catalog or computerized catalog by author, title, and subject."
+        },
+        {
+          "number": "1c",
+          "text": "In a library, search the card catalog or computerized catalog for six books of four different types, such as poetry, fiction, nonfiction, and biographies."
+        },
+        {
+          "number": "1d",
+          "text": "With the assistance of your merit badge counselor or the librarian, see if you can locate on the shelves the six books you selected."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do EACH of the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Identify a book you have enjoyed. Find out what other books the author has written."
+        },
+        {
+          "number": "2b",
+          "text": "Look at one or more \"best books\" lists. These can be based on year, subject, or even all time. Identify at least one book you would like to read."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Read four different types of books, such as poetry, fiction, nonfiction, or biographies. Do any ONE of the following for each book you have read:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Write a review of the book. Include what you liked/didn't like about the book. Include if you would recommend this book, and if so, who might enjoy reading it."
+        },
+        {
+          "number": "3b",
+          "text": "Watch a movie based on the book. What was the same between the book and movie? What was different? Which did you enjoy more? Discuss this with your merit badge counselor."
+        },
+        {
+          "number": "3c",
+          "text": "Give a \"book talk\" to your class, troop, or patrol."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Read a nonfiction book or magazine that teaches you how to do something like cooking, wood-building projects, video game design, science experiments, knot-tying, etc. With your counselor's and parent's or guardian's permission, complete a project from the book. Share your experience with your merit badge counselor. Reading a merit badge pamphlet will not count toward completing this requirement."
+    },
+    {
+      "number": "5",
+      "text": "Read about the world around you from any two sources: books, magazines, newspapers, the internet (with your parent's or guardian's permission), field manuals, etc. Topics may include Scouting, sports, environmental problems, politics, social issues, current events, nature, religion, etc. Discuss what you have learned with your counselor."
+    },
+    {
+      "number": "6",
+      "text": "With your counselor's and parent's or guardian's permission, choose ONE of the following activities and devote at least four hours of service to that activity. Discuss your participation with your counselor.",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Read to a sick, blind, or homebound person in a hospital or in an extended-care facility."
+        },
+        {
+          "number": "6b",
+          "text": "Perform volunteer work at your school library or a public library."
+        },
+        {
+          "number": "6c",
+          "text": "Read stories to younger children, in a group or individually."
+        },
+        {
+          "number": "6d",
+          "text": "Organize a book swap in your troop, school, or place of worship."
+        },
+        {
+          "number": "6e",
+          "text": "Organize a book drive to collect books. Donate them to an organization in need."
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb095-20.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "coin-collecting-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:coin-collecting",
+  "effective_from": "2024-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:coin-collecting-2022",
+  "source_document": {
+    "title": "Coin Collecting Merit Badge Requirements (2024, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb035.asp",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Understand how coins are made, and where the active U.S. Mint facilities are located."
+    },
+    {
+      "number": "2",
+      "text": "Explain these collecting terms:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Obverse"
+        },
+        {
+          "number": "2b",
+          "text": "Reverse"
+        },
+        {
+          "number": "2c",
+          "text": "Reeding"
+        },
+        {
+          "number": "2d",
+          "text": "Clad"
+        },
+        {
+          "number": "2e",
+          "text": "Type set"
+        },
+        {
+          "number": "2f",
+          "text": "Date set"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Describe three different ways to store a collection, and the benefits, drawbacks, and cost of each method."
+    },
+    {
+      "number": "4",
+      "text": "Do each of the following and explain to your counselor the design features, designer name, designer initials, and where to find them for each item:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Collect a one-cent coin from the year group: 1959-2008 (that is, dated between 1959 and 2008) and a one-cent coin from the year group 2010-present. Explain how and why the one-cent coins issued in 2009 were different from either of the other two year groups."
+        },
+        {
+          "number": "4b",
+          "text": "Collect two five-cent coins, one from each of these year groups: 1959- 2003 and 2006-present. Explain how and why the five-cent coins issued in 2004-2005 were different from either of the other two year groups."
+        },
+        {
+          "number": "4c",
+          "text": "Collect a ten-cent coin from 1965-present."
+        },
+        {
+          "number": "4d",
+          "text": "Collect a twenty-five-cent coin from 1965-1998, two examples from the 50-State Quarter®/territories Program 1999-2009, two designs from the America the Beautiful® program 2012-2021 and two designs from the American Woman Quarter® program (2022-2024). Explain the purpose of each of those programs."
+        },
+        {
+          "number": "4e",
+          "text": "Collect a half dollar coin from 1965-present."
+        },
+        {
+          "number": "4f",
+          "text": "Collect a dollar coin from each of these design groups: Susan B. Anthony 1979-81, Sacagawea 1990-2005, U.S. Presidents 2000-2014."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Describe and discuss with your counselor the special reverse designs of the quarters, half dollar and dollar coin struck in 1975-1976 to honor the U.S. Bicentennial."
+    },
+    {
+      "number": "6",
+      "text": "Identify for your counselor the people depicted on current currency: $1, $2, $5, $10, $20, $50, and $100 notes. Explain where United States currency is printed."
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Collect and identify for your counselor 20 different world coins from at least 7 different countries. Identify the country, major design elements, and denomination of each."
+        },
+        {
+          "number": "7b",
+          "text": "Collect and identify for your counselor 20 different world paper money from at least 7 different countries. Identify the country, major design elements, and denomination of each."
+        },
+        {
+          "number": "7c",
+          "text": "Collect and identify for your counselor 20 different tokens and/or medals. Identify the issuer and use of each."
+        },
+        {
+          "number": "7d",
+          "text": "Complete one of the following and report to your counselor what you experienced:",
+          "children": [
+            {
+              "number": "7d(1)",
+              "text": "Attend a coin show"
+            },
+            {
+              "number": "7d(2)",
+              "text": "Attend a coin club meeting"
+            },
+            {
+              "number": "7d(3)",
+              "text": "Tour a U.S. Mint facility or museum"
+            },
+            {
+              "number": "7d(4)",
+              "text": "Tour a virtual exhibit (with your parent or guardian's permission) approved by your counselor."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb035.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

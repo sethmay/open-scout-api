@@ -3,6 +3,38 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.40.0 (minor) — 2026-07-26
+
+- `PENDING` **Merit badge requirement history: requirement-sets go 188 -> 415, and 131 of 141 badges
+  now have more than one edition** (96 have three). Before this, `supersedes` chains existed for
+  ranks but not badges, so "which requirements applied when my Scout started" was unanswerable for
+  the entire badge catalog. Editions now span **1995 to 2026**, with full verbatim requirement trees,
+  effective windows, and `supersedes` chains. New `tools/seed_merit_badge_history.py`.
+- **The source is better than scraping archives.** usscouts.org mirrors official requirements per
+  badge at `/mb/mbNNN.asp` *and* keeps the preceding edition at `/mb/Old/mbNNN-YY.asp`, each page
+  declaring its own revision type and effective date in a Dreamweaver editable region — so editions
+  are dated from the source, not inferred. Two recoverable historical editions per badge, because
+  usscouts' "current" page usually trails the newest booklet that OpenScouting/workbooks tracks
+  (Chemistry: our 2025 edition, usscouts' 2024, and its archived 2020).
+- **Editions are identified by TEXT, never by claimed date.** 30 scraped editions were dropped as
+  duplicates of something already held, and the label a page gives itself is not trusted: where a
+  scraped edition claimed a year another edition already occupied, the older claimant was dropped
+  rather than given an invented date, since same-year-different-text means one of the two labels is
+  wrong and the source cannot say which.
+- Three revision-chain invariants are now build-gated, all proven by injection: **no edition
+  supersedes itself**, **two editions of one subject cannot share an `effective_from`** (ids are
+  `<subject>-<year>`, so a collision would silently overwrite one), and **a subject has at most one
+  open edition** — and must have one unless the subject itself is retired. All three caught real
+  bugs in the first generation pass: Cycling emitted a set that superseded itself and left two open
+  editions, because both of its scraped editions claimed 2023.
+- Requirement text remains © Scouting America under the existing `text_rights` carve-out
+  (`includes_official_text: true`), exactly as for ranks and the current sets. `method: scraped`,
+  confidence 0.8; the generator caches fetches so re-runs are deterministic and polite to a
+  volunteer-run site.
+- Known gaps: Geology's archived page 404s, 10 badges still have a single edition (mostly badges
+  created recently enough to have no prior edition), and the 30 same-year drops are worth a manual
+  look — recorded in `TODO.md`.
+
 ## 0.39.0 (minor) — 2026-07-26
 
 - `d0cf809` **Every merit badge now has a description and subject tags** — they were `null` and `[]`

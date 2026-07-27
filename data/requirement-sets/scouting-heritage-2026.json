@@ -5,7 +5,7 @@
   "subject": "merit-badge:scouting-heritage",
   "effective_from": "2026-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:scouting-heritage-2024",
   "source_document": {
     "title": "Scouting Heritage Merit Badge Requirements (2026)",
     "url": "https://www.scouting.org/merit-badges/scouting-heritage/",

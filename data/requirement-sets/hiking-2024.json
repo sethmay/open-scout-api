@@ -5,7 +5,7 @@
   "subject": "merit-badge:hiking",
   "effective_from": "2024-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:hiking-2023",
   "source_document": {
     "title": "Hiking Merit Badge Requirements (2024)",
     "url": "https://www.scouting.org/merit-badges/hiking/",

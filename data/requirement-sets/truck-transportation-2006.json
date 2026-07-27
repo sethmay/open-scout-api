@@ -1,0 +1,134 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "truck-transportation-2006",
+  "kind": "requirement-set",
+  "subject": "merit-badge:truck-transportation",
+  "effective_from": "2006-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Truck Transportation Merit Badge Requirements (2006, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb113.asp",
+    "year": 2006
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "List the major truck lines serving your town."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Describe the role of truck transportation within commerce (the movement of goods, funds, and information)."
+        },
+        {
+          "number": "2b",
+          "text": "Describe how trucks fit into a company's supply chain. This could be a manufacturer, importer, wholesaler, or retailer."
+        },
+        {
+          "number": "2c",
+          "text": "On paper, map out how goods that are manufactured overseas are transported to a retailer in this country."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Describe the difference between the gasoline engine and the diesel engine that power trucks. List the advantages of each."
+    },
+    {
+      "number": "4",
+      "text": "Visit a truck terminal and complete items 4a through 4e. After your visit, share what you have learned with your counselor.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Find out what kind of maintenance program the company follows to help keep its fleet, drivers, and the roadway safe."
+        },
+        {
+          "number": "4b",
+          "text": "Find out how dispatchers maintain communication with drivers on the road."
+        },
+        {
+          "number": "4c",
+          "text": "Talk with a professional truck driver about safety. Learn about the truck driver's rules of the road for safe driving. List five safe-driving rules every professional truck driver must follow."
+        },
+        {
+          "number": "4d",
+          "text": "Review the driver's log and find out what kind of information the log contains."
+        },
+        {
+          "number": "4e",
+          "text": "Learn about important federal regulations that help ensure public safety."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Outline the general organization of a trucking company. Describe what each department does."
+        },
+        {
+          "number": "5b",
+          "text": "List five positions with trucking companies and describe each one."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Name five government agencies that work closely with the trucking industry. Describe their role."
+    },
+    {
+      "number": "7",
+      "text": "List five different kinds of trucks. Tell the service each provides."
+    },
+    {
+      "number": "8",
+      "text": "Assume that you are going to ship by truck 500 pounds of goods (freight class 65) from your town to another town 500 miles away. Your shipment must arrive within three days. Explain in writing:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "How to prepare the shipment"
+        },
+        {
+          "number": "8b",
+          "text": "How to compare at least three carriers for time in transit and rates"
+        },
+        {
+          "number": "8c",
+          "text": "How to choose which carrier to use"
+        },
+        {
+          "number": "8d",
+          "text": "How to insure the shipment for damages"
+        }
+      ]
+    },
+    {
+      "number": "9",
+      "text": "Define the following terms: bill of lading, ETA, logbook, intermodal, containers, tariff, shippers, carrier, consignee, drayage, cartage."
+    },
+    {
+      "number": "10",
+      "text": "Learn about opportunities in the field of truck transportation. Choose one career in which you are interested and discuss with your counselor the major responsibilities of that position and the qualifications, education, and training such a position requires."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb113.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

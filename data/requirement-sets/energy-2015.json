@@ -1,0 +1,178 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "energy-2015",
+  "kind": "requirement-set",
+  "subject": "merit-badge:energy",
+  "effective_from": "2015-01-01",
+  "effective_to": "2017-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Energy Merit Badge Requirements (2015, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb045-15.asp",
+    "year": 2015
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Find an article on the use or conservation of energy. Discuss with your counselor what in the article was interesting to you, the questions it raises, and what ideas it addresses that you do not understand."
+        },
+        {
+          "number": "1b",
+          "text": "After you have completed requirements 2 through 8, revisit the article you found for requirement la. Explain to your counselor what you have learned in completing the requirements that helps you better understand the article."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Show you understand energy forms and conversions by doing the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain how THREE of the following devices use energy, and explain their energy conversions: toaster, greenhouse, lightbulb, bow drill, cell phone, nuclear reactor, sweat lodge."
+        },
+        {
+          "number": "2b",
+          "text": "Construct a system that makes at least two energy conversions and explain this to your counselor."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Show you understand energy efficiency by explaining to your counselor a common example of a situation where energy moves through a system to produce a useful result. Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Identify the parts of the system that are affected by the energy movement."
+        },
+        {
+          "number": "3b",
+          "text": "Name the system's primary source of energy."
+        },
+        {
+          "number": "3c",
+          "text": "Identify the useful outcomes of the system."
+        },
+        {
+          "number": "3d",
+          "text": "Identify the energy losses of the system."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Conduct an energy audit of your home. Keep a 14 day log that records what you and your family did to reduce energy use. Include the following in your report and, after the 14 day period, discuss what you have learned with your counselor.",
+      "children": [
+        {
+          "number": "4a",
+          "text": "List the types of energy used in your home such as electricity, wood, oil, liquid petroleum, and natural gas, and tell how each is delivered and measured, and the current cost; OR record the transportation fuel used, miles driven, miles per gallon, and trips using your family car or another vehicle."
+        },
+        {
+          "number": "4b",
+          "text": "Describe ways you and your family can use energy resources more wisely. In preparing your discussion, consider the energy required for the things you do and use on a daily basis (cooking, showering, using lights, driving, watching TV, using the computer). Explain what is meant by sustainable energy sources. Explain how you can change your energy use through reuse and recycling."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "In a notebook, identify and describe five examples of energy waste in your school or community. Suggest in each case possible ways to reduce this waste. Describe the idea of trade offs in energy use. In your response, do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain how the changes you suggest would lower costs, reduce pollution, or otherwise improve your community."
+        },
+        {
+          "number": "5b",
+          "text": "Explain what changes to routines, habits, or convenience are necessary to reduce energy waste. Tell why people might resist the changes you suggest."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Prepare pie charts showing the following information, and explain to your counselor the important ideas each chart reveals. Tell where you got your information. Explain how cost affects the use of a nonrenewable energy resource and makes alternatives practical.",
+      "children": [
+        {
+          "number": "6a",
+          "text": "The energy resources that supply the United States with most of its energy"
+        },
+        {
+          "number": "6b",
+          "text": "The share of energy resources used by the United States that comes from other countries"
+        },
+        {
+          "number": "6c",
+          "text": "The proportion of energy resources used by homes, businesses, industry, and transportation"
+        },
+        {
+          "number": "6d",
+          "text": "The fuels used to generate America's electricity"
+        },
+        {
+          "number": "6e",
+          "text": "The world's known and estimated primary energy resource reserves"
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Tell what is being done to make FIVE of the following energy systems produce more usable energy. In your explanation, describe the technology, cost, environmental impacts, and safety concerns."
+    },
+    {
+      "number": "8",
+      "text": "Biomass digesters or waste to energy plants"
+    },
+    {
+      "number": "9",
+      "text": "Cogeneration plants"
+    },
+    {
+      "number": "10",
+      "text": "Fossil fuel power plants"
+    },
+    {
+      "number": "11",
+      "text": "Fuel cells"
+    },
+    {
+      "number": "12",
+      "text": "Geothermal power plants"
+    },
+    {
+      "number": "13",
+      "text": "Nuclear power plants"
+    },
+    {
+      "number": "14",
+      "text": "Solar power systems"
+    },
+    {
+      "number": "15",
+      "text": "Tidal energy, wave energy, or ocean thermal energy conversion devices"
+    },
+    {
+      "number": "16",
+      "text": "Wind turbines"
+    },
+    {
+      "number": "17",
+      "text": "Find out what opportunities are available for a career in energy. Choose one position that interests you and describe the education and training required."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb045-15.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

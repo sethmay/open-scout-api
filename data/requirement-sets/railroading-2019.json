@@ -1,0 +1,223 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "railroading-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:railroading",
+  "effective_from": "2019-01-01",
+  "effective_to": "2021-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Railroading Merit Badge Requirements (2019, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb094-19.asp",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do THREE of the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Name three types of modern freight trains. Explain why unit trains are more efficient than mixed freight trains."
+        },
+        {
+          "number": "1b",
+          "text": "Name one Class I or regional railroad. Explain what major cities it serves, the locations of major terminals, service facilities, and crew change points, and the major commodities it carries."
+        },
+        {
+          "number": "1c",
+          "text": "Using models or pictures, identify 10 types of railroad freight or passenger cars. Explain the purpose of each type of car."
+        },
+        {
+          "number": "1d",
+          "text": "Explain how a modern diesel or electric locomotive develops power. Explain the terms dynamic braking and radial steering trucks."
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Explain the purpose and formation of Amtrak. Explain, by the use of a timetable, a plan for making a trip by rail between two cities at least 500 miles apart. List the times of departure and arrival at your destination, the train number, and the type of service you want."
+        },
+        {
+          "number": "2b",
+          "text": "List and explain the various forms of public/mass transit using rail."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Name four departments of a railroad company. Describe what each department does."
+        },
+        {
+          "number": "3b",
+          "text": "Tell about the opportunities in railroading that interest you most and why."
+        },
+        {
+          "number": "3c",
+          "text": "Name four rail support industries, Describe the function of each one."
+        },
+        {
+          "number": "3d",
+          "text": "With your parent's and counselor's approval, interview someone employed in the rail industry. Learn what that person does and how this person became interested in railroading. Find out what type of schooling and training are required for this position."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Explain the purpose of Operation Lifesaver and its mission."
+    },
+    {
+      "number": "5",
+      "text": "Do THREE of the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "List five safety precautions that help make trains safer for workers and passengers."
+        },
+        {
+          "number": "5b",
+          "text": "Explain to your merit badge counselor why safety around rights-of-way is important."
+        },
+        {
+          "number": "5c",
+          "text": "List 10 safety tips to remember when you are near a railroad track (either on the ground or on a station platform) or aboard a train."
+        },
+        {
+          "number": "5d",
+          "text": "Tell your counselor about the guidelines for conduct that should be followed when you are near or on railroad property. Explain the dangers of trespassing on railroad property."
+        },
+        {
+          "number": "5e",
+          "text": "Tell what an automobile driver can do to safely operate a car at grade crossings, and list three things an automobile driver should never do at a grade crossing."
+        },
+        {
+          "number": "5f",
+          "text": "Tell how to report a malfunction of grade crossing warning devices."
+        },
+        {
+          "number": "5g",
+          "text": "List safety precautions a pedestrian should follow at a public crossing."
+        }
+      ],
+      "choose": 3
+    },
+    {
+      "number": "6",
+      "text": "Explain the appearance and meaning of the following warning signs and devices: advance warning sign, pavement markings, crossbucks, flashing red lights, crossing gates."
+    },
+    {
+      "number": "7",
+      "text": "Do EACH of the following:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Explain how railroad signals operate and show two basic signal types using color and configuration."
+        },
+        {
+          "number": "7b",
+          "text": "Explain the meaning of three horn signals."
+        },
+        {
+          "number": "7c",
+          "text": "Describe a way to signal a train for an emergency stop."
+        },
+        {
+          "number": "7d",
+          "text": "Explain the use and function of the EOTD (end-of-train device) or FRED (Flashing rear end device) used on the last car of most freight trains."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "text": "Select ONE of the following special-interest areas and complete the requirements:",
+      "children": [
+        {
+          "number": "8a",
+          "text": "Model Railroading With your parent's and counselor's approval, do TWO of the following:",
+          "children": [
+            {
+              "number": "8a(1)",
+              "text": "Draw a layout of your own model railroad; or one that could be built in your home. Design a point-to-point track or loop with different routings. Include one of the following: turnaround or terminal or yard or siding."
+            },
+            {
+              "number": "8a(2)",
+              "text": "Build one model railroad car kit or one locomotive kit."
+            },
+            {
+              "number": "8a(3)",
+              "text": "Name the scale of four popular model railroad gauges. Identify the scale of four model cars or locomotives."
+            },
+            {
+              "number": "8a(4)",
+              "text": "Locate the website of four model railroad - related manufacturers or magazine publishers. Print information on their products and services and discuss the information with your counselor."
+            },
+            {
+              "number": "8a(5)",
+              "text": "Build one railroad structure (from scratch or using a kit), paint and weather the structure, mount it on your layout or diorama, and make the surrounding area on a diorama scenic."
+            },
+            {
+              "number": "8a(6)",
+              "text": "Alone or with others, build a model railroad or modular layout, including ballast and scenery. Make electrical connections and operate a train. Describe what you enjoyed most."
+            },
+            {
+              "number": "8a(7)",
+              "text": "Participate in a switching contest on a timesaver layout and record your time."
+            },
+            {
+              "number": "8a(8)",
+              "text": "Explain the difference between powering and controlling a model railroad by using direct current, and powering and controlling a model railroad using digital command control."
+            }
+          ],
+          "choose": 2
+        },
+        {
+          "number": "8b",
+          "text": "Railfanning With your parent's and counselor's approval, do TWO of the following:",
+          "children": [
+            {
+              "number": "8b(1)",
+              "text": "Visit a railroad museum, historical display, or a prototype railroad-sponsored public event. With permission, photograph, videotape, or sketch items of interest. Explain what you saw and describe your photos, sketches, or videotape."
+            },
+            {
+              "number": "8b(2)",
+              "text": "Purchase tickets and ride a scenic or historic railroad. Under supervision, photograph the equipment and discuss with your counselor the historic significance of the operation."
+            },
+            {
+              "number": "8b(3)",
+              "text": "Locate the website of four rail historical groups, then find information on the history of the rail preservation operations and purpose of each group. Talk with a member of one of the groups and find out how you might help."
+            },
+            {
+              "number": "8b(4)",
+              "text": "Plan a trip by rail between two points. Obtain a schedule and explain when the train should arrive at two intermediate points. Purchase the tickets and make the trip. Explain to your counselor what you saw."
+            }
+          ],
+          "choose": 2
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb094-19.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

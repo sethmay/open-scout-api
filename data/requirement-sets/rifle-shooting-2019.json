@@ -1,0 +1,294 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "rifle-shooting-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:rifle-shooting",
+  "effective_from": "2019-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:rifle-shooting-2017",
+  "source_document": {
+    "title": "Rifle Shooting Merit Badge Requirements (2019, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb123.asp",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain why BB and pellet air guns must always be treated with the same respect as firearms."
+        },
+        {
+          "number": "1b",
+          "text": "Describe how you would react if a friend visiting your home asked to see your or your family's firearm(s)."
+        },
+        {
+          "number": "1c",
+          "text": "Explain the need for, and use and types of, eye and hearing protection. Demonstrate their proper use."
+        },
+        {
+          "number": "1d",
+          "text": "Give the main points of the laws for owning and using guns in your community and state."
+        },
+        {
+          "number": "1e",
+          "text": "Explain how hunting is related to the wise use of renewable wildlife resources."
+        },
+        {
+          "number": "1f",
+          "text": "Successfully complete a state hunter education course or obtain a copy of the hunting laws for your state, then do the following:",
+          "children": [
+            {
+              "number": "1f(1)",
+              "text": "Explain the main points of hunting laws in your state and give any special laws on the use of guns or ammunition."
+            },
+            {
+              "number": "1f(2)",
+              "text": "List the kinds of wildlife that can be legally hunted in your state."
+            }
+          ]
+        },
+        {
+          "number": "1g",
+          "text": "Identify and explain how you can join or be a part of shooting sports activities."
+        },
+        {
+          "number": "1h",
+          "text": "Explain to your counselor the proper hygienic guidelines used in shooting."
+        },
+        {
+          "number": "1i",
+          "text": "Give to your counselor a list of sources that you could contact for information on firearms and their use."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do ONE of the following options:"
+    },
+    {
+      "number": "3",
+      "text": "OPTION A --- RIFLE SHOOTING (Modern Cartridge Type)",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Identify the three main parts of a rifle, and tell how they function."
+        },
+        {
+          "number": "3b",
+          "text": "Identify and demonstrate the three fundamental rules for safe gun handling."
+        },
+        {
+          "number": "3c",
+          "text": "Identify the two types of cartridges, their parts, and how they function."
+        },
+        {
+          "number": "3d",
+          "text": "Explain to your counselor what a misfire, hangfire, and squib fire are, and explain the procedures to follow in response to each."
+        },
+        {
+          "number": "3e",
+          "text": "Identify and demonstrate the five fundamentals of shooting a rifle safely."
+        },
+        {
+          "number": "3f",
+          "text": "Explain to your counselor the fundamental rules for safe gun handling. Explain each rule for using and storing a gun. Identify and explain each rule for safe shooting."
+        },
+        {
+          "number": "3g",
+          "text": "Explain the range commands and range procedures."
+        },
+        {
+          "number": "3h",
+          "text": "Demonstrate the knowledge, skills, and attitude necessary to safely shoot a rifle from the bench rest position or supported prone position while using the five fundamentals of rifle shooting."
+        },
+        {
+          "number": "3i",
+          "text": "Identify the basic safety rules for cleaning a rifle, and identify the materials needed"
+        },
+        {
+          "number": "3j",
+          "text": "Demonstrate how to clean a rifle properly and safely."
+        },
+        {
+          "number": "3k",
+          "text": "Discuss what points you would consider in selecting a rifle"
+        },
+        {
+          "number": "3l",
+          "text": "Using a .22 caliber rimfire rifle and shooting from a bench rest or supported prone position at 50 feet, fire five groups (three shots per group) that can be covered by a quarter. Using these targets, explain how to adjust sights to zero a rifle."
+        },
+        {
+          "number": "3m",
+          "text": "Adjust sights to center the group on the target* and fire five groups (five shots per group). According to the target used, each shot in the group must meet the following minimum score: *Note: It is not always practical to adjust the sights (i.e. when using a borrowed fixed-sight rifle). For requirement 2l {2m}, you may demonstrate your ability to use the shooting fundamentals by shooting five shot groups (five shots per group) in which all shots can be covered by or touch a quarter and then explain how to adjust the sights to zero the rifle used.",
+          "children": [
+            {
+              "number": "3m(1)",
+              "text": "A-32 targets - 9"
+            },
+            {
+              "number": "3m(2)",
+              "text": "A-17 or TQ-1 targets - 7,"
+            },
+            {
+              "number": "3m(3)",
+              "text": "A-36 targets - 5."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "OPTION B --- AIR RIFLE SHOOTING (BB or Pellet)",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Identify the three main parts of an air rifle, and tell how they function."
+        },
+        {
+          "number": "4b",
+          "text": "Identify and demonstrate the three fundamental rules for safe gun handling."
+        },
+        {
+          "number": "4c",
+          "text": "Explain the range commands and range procedures."
+        },
+        {
+          "number": "4d",
+          "text": "Identify the two most common types of air rifle ammunition."
+        },
+        {
+          "number": "4e",
+          "text": "Identify and demonstrate the five fundamentals of shooting a rifle safely."
+        },
+        {
+          "number": "4f",
+          "text": "Identify and explain each rule for shooting an air rifle safely."
+        },
+        {
+          "number": "4g",
+          "text": "Demonstrate the knowledge, skills and attitude necessary to safely shoot a target from the bench rest position or supported prone position while using the five fundamentals of rifle shooting."
+        },
+        {
+          "number": "4h",
+          "text": "Identify the basic safety rules for cleaning an air rifle, and identify the materials needed."
+        },
+        {
+          "number": "4i",
+          "text": "Demonstrate how to clean an air rifle safely."
+        },
+        {
+          "number": "4j",
+          "text": "Discuss what points you would consider in selecting an air rifle."
+        },
+        {
+          "number": "4k",
+          "text": "Using a BB gun or pellet air rifle and shooting from a bench rest or supported prone position at 15 feet for BB guns or 33 feet for air rifles, fire five groups (three shots per group) that can be covered by a quarter."
+        },
+        {
+          "number": "4l",
+          "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). According to the target used, each shot in the group must meet the following minimum score:",
+          "children": [
+            {
+              "number": "4l(1)",
+              "text": "BB rifle at 15 feet or 5 meters using TQ - 5 targets - 8."
+            },
+            {
+              "number": "4l(2)",
+              "text": "Pellet air rifle at 25 feet using TQ - 5 target - 8, at 33 feet or 10 meters using AR-1 targets - 6."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "OPTION C --- MUZZLE - LOADING RIFLE SHOOTING",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Discuss a brief history of the development of muzzle-loading rifles."
+        },
+        {
+          "number": "5b",
+          "text": "Identify principal parts of percussion rifles and discuss how they function."
+        },
+        {
+          "number": "5c",
+          "text": "Demonstrate and discuss the safe handling rules of muzzle-loading rifles."
+        },
+        {
+          "number": "5d",
+          "text": "Identify the various grades of black powder and black powder substitutes and explain their proper use."
+        },
+        {
+          "number": "5e",
+          "text": "Discuss proper safety procedures pertaining to black powder use and storage."
+        },
+        {
+          "number": "5f",
+          "text": "Discuss proper components of a load."
+        },
+        {
+          "number": "5g",
+          "text": "Identify proper procedures and accessories used for loading a muzzle-loading rifle."
+        },
+        {
+          "number": "5h",
+          "text": "Demonstrate the knowledge, skills, and attitude necessary to safely shoot a muzzle-loading rifle on a range, including range procedures. Explain what a misfire, hangfire, and squib fire are, and explain the procedures to follow in response to each."
+        },
+        {
+          "number": "5i",
+          "text": "Shoot a target with a muzzle-loading rifle using the five fundamentals of firing the shot."
+        },
+        {
+          "number": "5j",
+          "text": "Identify the materials needed to clean a muzzle- loading rifle safely. Using these materials, demonstrate how to clean a muzzle-loading rifle safely."
+        },
+        {
+          "number": "5k",
+          "text": "Identify the causes of a muzzle-loading rifle's failing to fire and explain or demonstrate proper correction procedures."
+        },
+        {
+          "number": "5l",
+          "text": "Discuss what points you would consider in selecting a muzzle-loading rifle."
+        },
+        {
+          "number": "5m",
+          "text": "Using a muzzle-loading rifle of .45 or .50 caliber and shooting from a bench rest or supported prone position, fire three groups (three shots per group) that can be covered by the base of a standard-size soft soft drink can."
+        },
+        {
+          "number": "5n",
+          "text": "Center the group on the target and fire three groups (five shots per group). According to the target used, each shot in the group must meet the following minimum score:",
+          "children": [
+            {
+              "number": "5n(1)",
+              "text": "at 25 yards using NRA A-23 or NMLRA 50-yard targets - 7;"
+            },
+            {
+              "number": "5n(2)",
+              "text": "at 50 yards using NRA A-25 or NMLRA 100 yard targets - 7."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb123.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

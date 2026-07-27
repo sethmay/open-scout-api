@@ -1,0 +1,264 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "health-care-professions-2021",
+  "kind": "requirement-set",
+  "subject": "merit-badge:health-care-professions",
+  "effective_from": "2021-11-15",
+  "effective_to": "2023-12-31",
+  "supersedes": "requirement-set:health-care-professions-2018",
+  "source_document": {
+    "title": "Health Care Professions Merit Badge Requirements (2021, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb161.asp",
+    "year": 2021
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Select three of the professions from Group 1 listed below which interest you, then complete the following: Group 1:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "1b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        },
+        {
+          "number": "1a",
+          "text": "Allopathic physician (MD) — all specialties"
+        },
+        {
+          "number": "1b",
+          "text": "Osteopathic physician (DO) — all specialties"
+        },
+        {
+          "number": "1c",
+          "text": "Podiatrist (DPM)"
+        },
+        {
+          "number": "1d",
+          "text": "Chiropractor (DC)"
+        },
+        {
+          "number": "1e",
+          "text": "Nurse Practitioner (NP)"
+        },
+        {
+          "number": "1f",
+          "text": "Psychologist (PhD or PsyD)"
+        },
+        {
+          "number": "1g",
+          "text": "Optometrist (OD)"
+        },
+        {
+          "number": "1h",
+          "text": "Audiologist (AudD)"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Select three of the professions from Group 2 listed below which interest you, then complete the following: Group 2:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "2b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        },
+        {
+          "number": "2a",
+          "text": "Physician Assistant (PA)"
+        },
+        {
+          "number": "2b",
+          "text": "Registered Nurse (RN)"
+        },
+        {
+          "number": "2c",
+          "text": "Nurse Midwife (CNM)"
+        },
+        {
+          "number": "2d",
+          "text": "Certified Nurse Assistant (CNA)"
+        },
+        {
+          "number": "2e",
+          "text": "Licensed Practical Nurse (LPN/LVN)"
+        },
+        {
+          "number": "2f",
+          "text": "Nurse Anesthetist (CRNA)"
+        },
+        {
+          "number": "2g",
+          "text": "Pharmacist (PharmD)"
+        },
+        {
+          "number": "2h",
+          "text": "Pharmacy Technician"
+        },
+        {
+          "number": "2i",
+          "text": "Emergency Medical Technician (EMT)/Paramedic"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Select three of the professions from Group 3 listed below which interest you, then complete the following: Group 3:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "3b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        },
+        {
+          "number": "3a",
+          "text": "Physical Therapist (DPT)"
+        },
+        {
+          "number": "3b",
+          "text": "Occupational Therapist (OT)"
+        },
+        {
+          "number": "3c",
+          "text": "Orthotist/Prosthetist"
+        },
+        {
+          "number": "3d",
+          "text": "Medical Appliance Technician"
+        },
+        {
+          "number": "3e",
+          "text": "Respiratory Therapist (RT)"
+        },
+        {
+          "number": "3f",
+          "text": "Medical Assistant"
+        },
+        {
+          "number": "3g",
+          "text": "Dietitian (RD)"
+        },
+        {
+          "number": "3h",
+          "text": "Speech-Language Pathologist (Speech Therapist) (SLP)"
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Select three of the professions from Group 4 listed below which interest you, then complete the following: Group 4:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+        },
+        {
+          "number": "4b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
+        },
+        {
+          "number": "4a",
+          "text": "Biomedical Engineer (BME)"
+        },
+        {
+          "number": "4b",
+          "text": "Medical Technologist"
+        },
+        {
+          "number": "4c",
+          "text": "Phlebotomist"
+        },
+        {
+          "number": "4d",
+          "text": "Radiology Technologist"
+        },
+        {
+          "number": "4e",
+          "text": "Sonographer"
+        },
+        {
+          "number": "4f",
+          "text": "Medical Records Specialist"
+        },
+        {
+          "number": "4g",
+          "text": "Cytopathologist"
+        },
+        {
+          "number": "4h",
+          "text": "Histotechnologist"
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at their workplace. Discuss with your counselor the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Why did they choose their particular career?"
+        },
+        {
+          "number": "5b",
+          "text": "What do they most like about their job?"
+        },
+        {
+          "number": "5c",
+          "text": "What are their biggest challenges in doing their job?"
+        },
+        {
+          "number": "5d",
+          "text": "Identify the tools/instruments that may be used in their jobs."
+        },
+        {
+          "number": "5e",
+          "text": "What has been the most surprising aspect of their career?"
+        },
+        {
+          "number": "5f",
+          "text": "What continuing education requirements are required to maintain certification?"
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Discuss with your counselor your understanding of the meaning of the Physician’s Oath."
+    },
+    {
+      "number": "7",
+      "text": "Describe the role of confidentiality between a patient and the health care provider. What is HIPAA?"
+    },
+    {
+      "number": "8",
+      "text": "Identify a medical advancement or discovery that has been in the news recently. Discuss with your counselor how this can affect patient care."
+    },
+    {
+      "number": "9",
+      "text": "With approval of your counselor and parents /guardian, serve as a volunteer at a health-related event or facility in your community (e.g. blood drive, health fair, blood pressure screening event). Report to your counselor you did and learned from the experience."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb161.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

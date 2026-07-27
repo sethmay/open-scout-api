@@ -1,0 +1,150 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "nuclear-science-2017",
+  "kind": "requirement-set",
+  "subject": "merit-badge:nuclear-science",
+  "effective_from": "2017-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Nuclear Science Merit Badge Requirements (2017, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb024-17.asp",
+    "year": 2017
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Tell what radiation is."
+        },
+        {
+          "number": "1b",
+          "text": "Describe the hazards of radiation to humans, the environment, and wildlife. Explain the difference between radiation exposure and contamination. In your explanation, discuss the nature and magnitude of radiation risks to humans from nuclear power, medical radiation (e.g., chest or dental X-ray), and background radiation including radon. Explain the ALARA principle and measures required by law to minimize these risks."
+        },
+        {
+          "number": "1c",
+          "text": "Describe the radiation hazard symbol and explain where it should be used. Tell why and how people must use radiation or radioactive materials carefully."
+        },
+        {
+          "number": "1d",
+          "text": "Compare the amount of radiation exposure of a nuclear power plant worker to that of someone receiving a chest and dental X-ray."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Tell the meaning of the following: atom, nucleus, proton, neutron, electron, quark, isotope; alpha particle, beta particle, gamma ray, X-ray; ionization, radioactivity, radioisotope, and stability"
+        },
+        {
+          "number": "2b",
+          "text": "Choose an element from the periodic table. Construct 3-D models for the atoms of three isotopes of this element, showing neutrons, protons, and electrons. Use the three models to explain the difference between atomic number and mass number and the difference between the atom and nuclear and quark structures of isotopes."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following; then discuss modern particle physics with your counselor:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Visit an accelerator (research lab) or university where people study the properties of the nucleus or nucleons."
+        },
+        {
+          "number": "3b",
+          "text": "Name three particle accelerators and describe several experiments that each accelerator performs."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Do TWO of the following; then discuss with your counselor the different kinds of radiation and how they can be used:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Build an electroscope. Show how it works. Place a radiation source inside and explain the effect it causes."
+        },
+        {
+          "number": "4b",
+          "text": "Make a cloud chamber. Show how it can be used to see the tracks caused by radiation. Explain what is happening."
+        },
+        {
+          "number": "4c",
+          "text": "Obtain a sample of irradiated and non-irradiated foods. Prepare the two foods and compare their taste and texture. Store the leftovers in separate containers and under the same conditions. For a period of 14 days, observe their rate of decomposition or spoilage, and describe the differences you see on days 5, 10, and 14."
+        },
+        {
+          "number": "4d",
+          "text": "Visit a place where radioisotopes are being used. Using a drawing, explain how and why they are used."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "5",
+      "text": "Do ONE of the following; then discuss with your counselor the principles of radiation safety:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Using a radiation survey meter and a radioactive source, show how the counts per minute change as the source gets closer to or farther from the radiation detector. Place three different materials between the source and the detector, then explain any differences in the measurements per minute. Explain how time, distance, and shielding can reduce an individual’s radiation dose."
+        },
+        {
+          "number": "5b",
+          "text": "Describe how radon is detected in homes. Discuss the steps taken for the long-term and short-term test methods, tell how to interpret the results, and explain when each type of test should be used. Explain the health concern related to radon gas and tell what steps can be taken to reduce radon in buildings."
+        },
+        {
+          "number": "5c",
+          "text": "Visit a place where X-rays are used. Draw a floor plan of this room. Show where the unit, the unit operator, and the patient would be when the X-ray unit is operated. Explain the precautions taken and the importance of those precautions."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following; then discuss with your counselor how nuclear energy is used to produce electricity:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Make a drawing showing how nuclear fission happens, labeling all details. Draw another picture showing how a chain reaction could be started and how it could be stopped. Explain what is meant by a “critical mass.”"
+        },
+        {
+          "number": "6b",
+          "text": "Build a model of a nuclear reactor. Show the fuel, control rods, shielding, moderator, and cooling material. Explain how a reactor could be used to change nuclear energy into electrical energy or make things radioactive."
+        },
+        {
+          "number": "6c",
+          "text": "Find out how many nuclear power plants exist in the United States. Locate the one nearest your home. Find out what percentage of electricity in the United States is generated by nuclear power plants, by coal, and by gas."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Give an example of each of the following in relation to how energy from an atom can be used: nuclear medicine, environmental applications, industrial applications, space exploration, and radiation therapy. For each example, explain the application and its significance to nuclear science."
+    },
+    {
+      "number": "8",
+      "text": "Find out about three career opportunities in nuclear science that interest you. Pick one and find out the education, training, and experience required for this profession and discuss this with your counselor. Tell why this profession interests you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb024-17.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

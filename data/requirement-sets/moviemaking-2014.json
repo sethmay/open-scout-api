@@ -1,0 +1,115 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "moviemaking-2014",
+  "kind": "requirement-set",
+  "subject": "merit-badge:moviemaking",
+  "effective_from": "2014-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:moviemaking-2009",
+  "source_document": {
+    "title": "Moviemaking Merit Badge Requirements (2014, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb156.asp",
+    "year": 2014
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Discuss and demonstrate the proper elements of a good motion picture. In your discussion, include visual storytelling, rhythm, the 180-degree axis rule, camera movement, framing and composition of camera shots, and lens selection."
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "In a three- or four-paragraph treatment, tell the story you plan to produce, making sure that the treatment conveys a visual picture."
+        },
+        {
+          "number": "2b",
+          "text": "Prepare a storyboard for your motion picture (This can be done with rough sketches and stick figures.)"
+        },
+        {
+          "number": "2c",
+          "text": "Demonstrate the following motion picture shooting techniques.",
+          "children": [
+            {
+              "number": "2c(1)",
+              "text": "Using a tripod"
+            },
+            {
+              "number": "2c(2)",
+              "text": "Panning a camera"
+            },
+            {
+              "number": "2c(3)",
+              "text": "Framing a shot"
+            },
+            {
+              "number": "2c(4)",
+              "text": "Selecting an angle"
+            },
+            {
+              "number": "2c(5)",
+              "text": "Selecting proper lighting"
+            },
+            {
+              "number": "2c(6)",
+              "text": "Handheld shooting"
+            }
+          ]
+        },
+        {
+          "number": "2d",
+          "text": "Using motion picture techniques,, plan ONE of the following programs. Start with a treatment, and complete the requirement by presenting this program to a pack or your troop, patrol, or class.",
+          "children": [
+            {
+              "number": "2d(1)",
+              "text": "Film or videotape a court of honor and show it to an audience."
+            },
+            {
+              "number": "2d(2)",
+              "text": "Create a short feature of your own design using the techniques you learned."
+            },
+            {
+              "number": "2d(3)",
+              "text": "Shoot a vignette that could be used to train a new Scout in a Scouting skill."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "With your parent's parent or guardian's permission and your counselor's approval, visit a film set or a television production studio and watch how production work is done."
+        },
+        {
+          "number": "3b",
+          "text": "Explain to your counselor the elements of the zoom lens and three important parts."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "4",
+      "text": "Find out about three career opportunities in moviemaking. Pick one and find out about the education, training, and experience required for this profession. Discuss this career with your counselor. Explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb156.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

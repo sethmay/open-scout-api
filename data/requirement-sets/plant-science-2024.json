@@ -1,0 +1,501 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "plant-science-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:plant-science",
+  "effective_from": "2024-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:plant-science-2023",
+  "source_document": {
+    "title": "Plant Science Merit Badge Requirements (2024, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb085.asp",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Make a drawing and identify five or more parts of a flowering plant. Tell what each part does."
+    },
+    {
+      "number": "2",
+      "text": "Explain photosynthesis and tell why this process is important. Tell at least five ways that humans depend on plants."
+    },
+    {
+      "number": "3",
+      "text": "Explain how honeybees and other pollinating insects are important to plant life."
+    },
+    {
+      "number": "4",
+      "text": "Explain how water, light, air, temperature, and pests affect plants. Describe the nature and function of soil and explain its importance. Tell about the texture, structure, and composition of fertile soil. Tell how soil may be improved."
+    },
+    {
+      "number": "5",
+      "text": "Tell how to propagate plants by seeds, roots, cuttings, tubers, and grafting. Grow a plant by ONE of these methods."
+    },
+    {
+      "number": "6",
+      "text": "List by common name at least 10 native plants and 10 cultivated plants that grow near your home. List five invasive nonnative plants in your area and tell how they may be harmful. Tell how the spread of invasive plants may be avoided or controlled in ways that are not damaging to humans, wildlife, and the environment."
+    },
+    {
+      "number": "7",
+      "text": "Name and tell about careers in agronomy, horticulture, and botany. Write a paragraph about a career in one of these fields that interests you."
+    },
+    {
+      "number": "8",
+      "text": "Choose ONE of the following options and complete each requirement:"
+    },
+    {
+      "number": "9",
+      "text": "OPTION 1: AGRONOMY",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Describe how to prepare a seedbed."
+        },
+        {
+          "number": "9b",
+          "text": "Make and use a seed germination tester to test 50 seeds of four of the following plants: corn, cotton, alfalfa, soybeans, clover, wheat, rice, rye, barley. Determine the percentage of live seeds."
+        },
+        {
+          "number": "9c",
+          "text": "Tell about one important insect pest and one important disease that damage each of the following: corn, small grains, cotton. Collect and name five weeds that compete with crops in your locality. Tell how to control these weeds without harming people, wildlife, or useful insects."
+        },
+        {
+          "number": "9d",
+          "text": "On a map of the United States, identify the chief regions where corn, cotton, forage crops, small grain crops, and oil crops grow. Tell how climate and location of these regions make them leaders in the production of these crops."
+        },
+        {
+          "number": "9e",
+          "text": "Complete ONE of the following alternatives:",
+          "children": [
+            {
+              "number": "9e(1)",
+              "text": "Corn",
+              "children": [
+                {
+                  "number": "9e(1)(1)",
+                  "text": "Grow a plot of corn and have your plot inspected by your counselor. Record seed variety or experimental code number."
+                },
+                {
+                  "number": "9e(1)(2)",
+                  "text": "Tell about modern methods of commercial corn farming and the contributions that corn makes to today's food and fuel supply."
+                },
+                {
+                  "number": "9e(1)(3)",
+                  "text": "Tell about an insect that can damage corn, and explain how it affects corn production and how it is controlled."
+                }
+              ]
+            },
+            {
+              "number": "9e(2)",
+              "text": "Cotton",
+              "children": [
+                {
+                  "number": "9e(2)(1)",
+                  "text": "Grow a plot of cotton and have your plot inspected by your counselor."
+                },
+                {
+                  "number": "9e(2)(2)",
+                  "text": "Tell about modern methods of commercial cotton farming, and about the uses of cotton fiber and seed and the economic value of this crop."
+                },
+                {
+                  "number": "9e(2)(3)",
+                  "text": "Tell about an insect that can damage cotton, and explain how it affects cotton production and how it is controlled."
+                }
+              ]
+            },
+            {
+              "number": "9e(3)",
+              "text": "Forage Crops",
+              "children": [
+                {
+                  "number": "9e(3)(1)",
+                  "text": "Collect, count, and label samples of each for display: perennial grasses, annual grasses, legumes, and broadleaf weeds. Indicate how each grass and legume is used. Keep a log of the site where you found each sample and share it with your counselor."
+                },
+                {
+                  "number": "9e(3)(2)",
+                  "text": "Explain how legumes can be used to enrich the soil and how they may deplete it under certain conditions. Explain how livestock may enrich or deplete the soil."
+                },
+                {
+                  "number": "9e(3)(3)",
+                  "text": "Name five poisonous plants that are dangerous to livestock, and tell the different ways of using forage crops as feed for livestock."
+                }
+              ]
+            },
+            {
+              "number": "9e(4)",
+              "text": "Small Grains",
+              "children": [
+                {
+                  "number": "9e(4)(1)",
+                  "text": "Give production figures for small grain crops listed in the U.S. Statistical Report or Agricultural Statistics Handbook for the latest year available."
+                },
+                {
+                  "number": "9e(4)(2)",
+                  "text": "Help in harvesting a crop of grain. Tell how to reduce harvesting losses and about modern methods of growing one small grain crop."
+                },
+                {
+                  "number": "9e(4)(3)",
+                  "text": "Visit a grain elevator, flour mill, cereal plant, feed or seed company. Talk with the operator. Take notes, and describe the processes used and tell your patrol, troop, or class about your visit."
+                }
+              ]
+            },
+            {
+              "number": "9e(5)",
+              "text": "Oil Crops",
+              "children": [
+                {
+                  "number": "9e(5)(1)",
+                  "text": "Grow a plot of soybeans and have your plot inspected by your counselor."
+                },
+                {
+                  "number": "9e(5)(2)",
+                  "text": "Tell about modern methods of growing soybeans on a commercial scale, and discuss the contributions soybeans make to our food supply."
+                },
+                {
+                  "number": "9e(5)(3)",
+                  "text": "Explain why a hard frost can be dangerous to soybeans just after emergence."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "text": "OPTION 2: HORTICULTURE",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Visit one of the following places and tell what you learned about horticulture there: public garden, arboretum, retail nursery, wholesale nursery, production greenhouse, or conservatory greenhouse."
+        },
+        {
+          "number": "10b",
+          "text": "Explain the following terms: hardiness zone, shade tolerance, pH, moisture requirement, native habitat, texture, cultivar, ultimate size, disease resistance, habit, evergreen, deciduous, annual, perennial. Find out what hardiness zone you live in and list 10 landscape plants you like that are suitable for your climate, giving the common name and scientific name for each."
+        },
+        {
+          "number": "10c",
+          "text": "Do ONE of the following:",
+          "children": [
+            {
+              "number": "10c(1)",
+              "text": "Explain the difference between vegetative and sexual propagation methods, and tell some horticultural advantages of each. Grow a plant from a stem or root cutting or graft."
+            },
+            {
+              "number": "10c(2)",
+              "text": "Transplant 12 seedlings or rooted cuttings to larger containers and grow them for at least one month."
+            },
+            {
+              "number": "10c(3)",
+              "text": "Demonstrate good pruning techniques and tell why pruning is important."
+            },
+            {
+              "number": "10c(4)",
+              "text": "After obtaining permission, plant a tree or shrub properly in an appropriate site."
+            }
+          ],
+          "choose": 1
+        },
+        {
+          "number": "10d",
+          "text": "Do EACH of the following:",
+          "children": [
+            {
+              "number": "10d(1)",
+              "text": "Explain the importance of good landscape design and selection of plants that are suitable for particular sites and conditions."
+            },
+            {
+              "number": "10d(2)",
+              "text": "Tell why it is important to know how big a plant will grow."
+            },
+            {
+              "number": "10d(3)",
+              "text": "Tell why slower-growing landscape plants are sometimes a better choice than faster-growing varieties."
+            }
+          ]
+        },
+        {
+          "number": "10e",
+          "text": "Choose ONE of the following alternatives and complete EACH of the requirements:",
+          "children": [
+            {
+              "number": "10e(1)",
+              "text": "Bedding Plants",
+              "children": [
+                {
+                  "number": "10e(1)(1)",
+                  "text": "Grow bedding plants appropriate for your area in pots or flats from seed or cuttings in a manufactured soil mix. Explain why you chose the mix and tell what is in it."
+                },
+                {
+                  "number": "10e(1)(2)",
+                  "text": "Transplant plants to a bed in the landscape and maintain the bed until the end of the growing season. Record your activities, observations, materials used, and costs."
+                },
+                {
+                  "number": "10e(1)(3)",
+                  "text": "Demonstrate mulching, fertilizing, watering, weeding, and deadheading, and tell how each practice helps your plants."
+                },
+                {
+                  "number": "10e(1)(4)",
+                  "text": "Tell some differences between gardening with annuals and perennials."
+                }
+              ]
+            },
+            {
+              "number": "10e(2)",
+              "text": "Fruit, Berry, and Nut Crops",
+              "children": [
+                {
+                  "number": "10e(2)(1)",
+                  "text": "Plant five fruit or nut trees, grapevines, or berry plants that are suited to your area. Take full care of fruit or nut trees, grapevines, or berry plants through one season."
+                },
+                {
+                  "number": "10e(2)(2)",
+                  "text": "Prune a tree, vine, or shrub properly. Explain why pruning is necessary."
+                },
+                {
+                  "number": "10e(2)(3)",
+                  "text": "Demonstrate one type of graft and tell why this method is useful."
+                },
+                {
+                  "number": "10e(2)(4)",
+                  "text": "Describe how one fruit, nut, or berry crop is processed for use."
+                }
+              ]
+            },
+            {
+              "number": "10e(3)",
+              "text": "Woody Ornamentals",
+              "children": [
+                {
+                  "number": "10e(3)(1)",
+                  "text": "Plant five or more trees or shrubs in a landscape setting. Take full care of the trees or shrubs you have planted for one growing season."
+                },
+                {
+                  "number": "10e(3)(2)",
+                  "text": "Prune a tree or shrub properly. Explain why pruning is necessary."
+                },
+                {
+                  "number": "10e(3)(3)",
+                  "text": "List 10 trees (in addition to those listed in general requirement 5 above) and tell your counselor how each is used in the landscape. Give the common and scientific names."
+                },
+                {
+                  "number": "10e(3)(4)",
+                  "text": "Describe the size, texture, color, flowers, leaves, fruit, hardiness, cultural requirements, and any special characteristics that make each type of tree or shrub attractive or interesting."
+                },
+                {
+                  "number": "10e(3)(5)",
+                  "text": "Tell five ways trees help improve the quality of our environment."
+                }
+              ]
+            },
+            {
+              "number": "10e(4)",
+              "text": "Home Gardening",
+              "children": [
+                {
+                  "number": "10e(4)(1)",
+                  "text": "Design and plant a garden or landscape that is at least 10 by 10 feet."
+                },
+                {
+                  "number": "10e(4)(2)",
+                  "text": "Plant 10 or more different types of plants in your garden. Tell why you selected particular varieties of vegetables and flowers. Take care of the plants in your garden for one season."
+                },
+                {
+                  "number": "10e(4)(3)",
+                  "text": "Demonstrate soil preparation, staking, watering, weeding, mulching, composting, fertilizing, pest management, and pruning. Tell why each technique is used."
+                },
+                {
+                  "number": "10e(4)(4)",
+                  "text": "Tell four types of things you could provide to make your home landscape or park a better place for birds and wildlife. List the common and scientific names of 10 kinds of native plants that are beneficial to birds and wildlife in your area."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "text": "OPTION 3: FIELD BOTANY",
+      "children": [
+        {
+          "number": "11a",
+          "text": "Visit a park, forest, Scout camp, or other natural area near your home. While you are there:",
+          "children": [
+            {
+              "number": "11a(1)",
+              "text": "Determine which species of plants are the largest and which are the most abundant. Note whether they cast shade on other plants."
+            },
+            {
+              "number": "11a(2)",
+              "text": "Using information from maps, textbooks, or the internet, describe the environmental factors that may influence the presence of plants on your site, including latitude, climate, air and soil temperature, soil type and pH, geology, hydrology, and topography."
+            },
+            {
+              "number": "11a(3)",
+              "text": "Record any differences in the types of plaWrite ahead and arrange to visit an herbarium at a university, park or botanical garden; OR, visit an herbarium website (with your <span class=\"old\">parent&#39;s</span> <span class=\"new\">parent or guardian&#39;s</span> permission). nts you see at the edge of a forest, near water, in burned areas, or near a road or railroad."
+            }
+          ]
+        },
+        {
+          "number": "11b",
+          "text": "Select a study site that is at least 100 by 100 feet. Make a list of 10 woody plants (trees and shrubs) and 10 non-woody plants in the study site. Find out which of these are native plants and which are exotic (or nonnative)."
+        },
+        {
+          "number": "11c",
+          "text": "Tell how an identification key works and use a simple key to identify 10 kinds of plants (in addition to those in general requirement 5 above). Tell the difference between common and scientific names and tell why scientific names are important."
+        },
+        {
+          "number": "11d",
+          "text": "After gaining permission, collect, identify, press, mount, and label 10 different plants that are common in your area. Tell why voucher specimens are important for documentation of a field botanist's discoveries."
+        },
+        {
+          "number": "11e",
+          "text": "Obtain a list of rare plants of your state. Tell what is being done to protect rare plants and natural areas in your state. Write a paragraph about one of the rare plants in your state."
+        },
+        {
+          "number": "11f",
+          "text": "Choose ONE of the following alternatives and complete EACH of its requirements:",
+          "children": [
+            {
+              "number": "11f(1)",
+              "text": "Tree Inventory",
+              "children": [
+                {
+                  "number": "11f(1)(1)",
+                  "text": "Identify the trees of your neighborhood or a park or section of your town, or a Scout camp."
+                },
+                {
+                  "number": "11f(1)(2)",
+                  "text": "Collect, press, and label leaves, flowers, or fruits to document your inventory."
+                },
+                {
+                  "number": "11f(1)(3)",
+                  "text": "List the types of trees by scientific name and give common names. Note the number and size (diameter at 4 feet above ground) of trees observed and determine the largest of each species in your study area."
+                },
+                {
+                  "number": "11f(1)(4)",
+                  "text": "Lead Show two or more people how to use a leaf or twig key to identify at least five species of trees or shrubs."
+                }
+              ]
+            },
+            {
+              "number": "11f(2)",
+              "text": "Transect Study",
+              "children": [
+                {
+                  "number": "11f(2)(1)",
+                  "text": "Visit two sites, at least one of which is different from the one you visited for Field Botany requirement 1."
+                },
+                {
+                  "number": "11f(2)(2)",
+                  "text": "Use the transect method to study the two different kinds of plant communities. The transects should be at least 500 feet long."
+                },
+                {
+                  "number": "11f(2)(3)",
+                  "text": "At each site, record observations about the soil and other influencing factors AND do the following. Then make a graph or chart to show the results of your studies.",
+                  "children": [
+                    {
+                      "number": "11f(2)(3)(1)",
+                      "text": "Identify each tree within 10 feet of the transect line."
+                    },
+                    {
+                      "number": "11f(2)(3)(2)",
+                      "text": "Measure the diameter of each tree at 4 feet above the ground, and map and list each tree."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "11f(3)",
+              "text": "Nested Plot",
+              "children": [
+                {
+                  "number": "11f(3)(1)",
+                  "text": "Visit two sites, at least one of which is different from the one you visited for Field Botany requirement 1."
+                },
+                {
+                  "number": "11f(3)(2)",
+                  "text": "Mark off nested plots and inventory two different kinds of plant communities."
+                },
+                {
+                  "number": "11f(3)(3)",
+                  "text": "At each site, record observations about the soil and other influencing factors AND do the following. Then make a graph or chart to show the results of your studies.",
+                  "children": [
+                    {
+                      "number": "11f(3)(3)(1)",
+                      "text": "Identify, measure, and map each tree in a 100 by 100 foot plot. (Measure the diameter of each tree larger than 3 inches in diameter at 4 feet above the ground.)"
+                    },
+                    {
+                      "number": "11f(3)(3)(2)",
+                      "text": "Identify and count all trees and shrubs in a 10 by 10 foot plot within each of the larger areas."
+                    },
+                    {
+                      "number": "11f(3)(3)(3)",
+                      "text": "Identify and count all broad-leaved plants (trees, shrubs, vines, and herbaceous plants) all plants (wildflowers, ferns, grasses, mosses, etc.) of a 4 by 4 foot plot within the 10 by 10 foot plot."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "number": "11f(4)",
+              "text": "Herbarium Visit",
+              "children": [
+                {
+                  "number": "11f(4)(1)",
+                  "text": "Write ahead and arrange to visit an herbarium at a university, park, or botanical garden; OR, visit an herbarium website (with your parent or guardian's permission)."
+                },
+                {
+                  "number": "11f(4)(2)",
+                  "text": "Tell how the specimens are arranged and how they are used by researchers. If possible, observe voucher specimens of a plant that is rare in your state."
+                },
+                {
+                  "number": "11f(4)(3)",
+                  "text": "Tell how a voucher specimen is mounted and prepared for permanent storage. Tell how specimens should be handled so that they will not be damaged."
+                },
+                {
+                  "number": "11f(4)(4)",
+                  "text": "Tell about the tools and references used by botanists in an herbarium."
+                }
+              ]
+            },
+            {
+              "number": "11f(5)",
+              "text": "Plant Conservation Organization Visit",
+              "children": [
+                {
+                  "number": "11f(5)(1)",
+                  "text": "Write ahead and arrange to visit a private conservation organization or government agency that is concerned with protecting rare plants and natural areas."
+                },
+                {
+                  "number": "11f(5)(2)",
+                  "text": "Tell about the activities of the organization in studying and protecting rare plants and natural areas."
+                },
+                {
+                  "number": "11f(5)(3)",
+                  "text": "If possible, visit a nature preserve managed by the organization. Tell about land management activities such as controlled burning, or measures to eradicate invasive (nonnative) plants or other threats to the plants that are native to the area."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb085.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

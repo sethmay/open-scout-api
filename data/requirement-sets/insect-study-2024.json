@@ -1,0 +1,123 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "insect-study-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:insect-study",
+  "effective_from": "2024-01-01",
+  "effective_to": "2024-12-31",
+  "supersedes": "requirement-set:insect-study-2018",
+  "source_document": {
+    "title": "Insect Study Merit Badge Requirements (2024, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb065.asp",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards associated with exposure to ants and bees and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "number": "1b",
+          "text": "Discuss the prevention of and treatment for health concerns that could occur while working with ants and bees, including insect bites and anaphylactic shock."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Tell how insects are different from other animals. Show how insects are different from millipedes and spiders."
+    },
+    {
+      "number": "3",
+      "text": "Point out and name the main parts of an insect."
+    },
+    {
+      "number": "4",
+      "text": "Describe the characteristics that distinguish the major orders of insects."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Observe 20 different live species of insects in their habitat. In your observations, include at least four orders of insects."
+        },
+        {
+          "number": "5b",
+          "text": "Make a scrapbook of the 20 insects you observe in 5a. Include photographs, sketches, illustrations, and articles. Label each insect with its common and scientific names, where possible. Share your scrapbook with your merit badge counselor."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "From your scrapbook collection, select eight species of insects and identify what role they play in the ecosystem."
+        },
+        {
+          "number": "6b",
+          "text": "Describe three alternatives to insecticides as a way of preventing crop injury and subsequent yield loss. Explain the advantages and disadvantages of these alternatives."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Explain the symbiotic relationship between bees and humankind. Explain what colony collapse disorder (CCD) is and some of the possible causes. Discuss how CCD affects our food supply."
+    },
+    {
+      "number": "8",
+      "text": "Compare the life histories of a butterfly and a grasshopper. Tell how they are different."
+    },
+    {
+      "number": "9",
+      "text": "Raise an insect through the complete metamorphosis from its larval stage to its adult stage (e.g. raise a butterfly or moth from a caterpillar.*"
+    },
+    {
+      "number": "10",
+      "text": "Do ONE of the following:",
+      "children": [
+        {
+          "number": "10a",
+          "text": "Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony."
+        },
+        {
+          "number": "10b",
+          "text": "Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "11",
+      "text": "Tell the things that make social insects different from solitary insects."
+    },
+    {
+      "number": "12",
+      "text": "Tell how insects fit in the food web of other insects, fish, birds, and mammals."
+    },
+    {
+      "number": "13",
+      "text": "Find out about three career opportunities in insect study. Pick one and find out about the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb065.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

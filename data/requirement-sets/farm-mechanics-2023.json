@@ -5,7 +5,7 @@
   "subject": "merit-badge:farm-mechanics",
   "effective_from": "2023-01-01",
   "effective_to": null,
-  "supersedes": null,
+  "supersedes": "requirement-set:farm-mechanics-2009",
   "source_document": {
     "title": "Farm Mechanics Merit Badge Requirements (2023)",
     "url": "https://www.scouting.org/merit-badges/farm-mechanics/",

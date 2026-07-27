@@ -1,0 +1,177 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "entrepreneurship-2007",
+  "kind": "requirement-set",
+  "subject": "merit-badge:entrepreneurship",
+  "effective_from": "2007-01-01",
+  "effective_to": "2013-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Entrepreneurship Merit Badge Requirements (2007, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb134-07.asp",
+    "year": 2007
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "In your own words, define entrepreneurship. Explain to your merit badge counselor the role of the entrepreneur in the economy of the United States."
+    },
+    {
+      "number": "2",
+      "text": "Identify and interview an individual who has started his or her own business. Find out how the entrepreneur got the idea for the business and how the entrepreneur recognized it as a market opportunity. Find out how the entrepreneur raised the capital (money) to start the business. How well is the business doing? Report what you learn."
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Write down as many ideas as you can think of for a business. Get ideas from your family and friends. From your list, select three ideas that you believe are the best opportunities for you."
+        },
+        {
+          "number": "3b",
+          "text": "Explain to your counselor why you chose these three ideas rather than the others on your list."
+        },
+        {
+          "number": "3c",
+          "text": "For each of the three ideas that you chose, prepare a list of questions that you would ask potential customers."
+        },
+        {
+          "number": "3d",
+          "text": "For each of your three ideas, informally interview potential customers, using the lists of questions from requirement 3c. Report what you learn."
+        },
+        {
+          "number": "3e",
+          "text": "Using the information you have gathered, choose the one idea that you feel is your best business opportunity."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Conduct a feasibility study of your business idea by doing all of the following (briefly writing or explaining each item to your counselor):",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Product or Service",
+          "children": [
+            {
+              "number": "4a(1)",
+              "text": "Identify your business goals."
+            },
+            {
+              "number": "4a(2)",
+              "text": "Tell how you will make the product or perform the service. Determine whether it is technically feasible (practical or doable)."
+            },
+            {
+              "number": "4a(3)",
+              "text": "Determine how you can make enough of the product or provide enough of the service to meet your business goals. Explain how you will accomplish this."
+            },
+            {
+              "number": "4a(4)",
+              "text": "Identify and describe the potential liability risks of your product or service."
+            },
+            {
+              "number": "4a(5)",
+              "text": "Determine what type of license you might need in order to sell or to make your product or service."
+            }
+          ]
+        },
+        {
+          "number": "4b",
+          "text": "Market",
+          "children": [
+            {
+              "number": "4b(1)",
+              "text": "Determine who your customers are. Identify the type of person who would buy your product or service."
+            },
+            {
+              "number": "4b(2)",
+              "text": "Describe the unique benefits of your product or service."
+            },
+            {
+              "number": "4b(3)",
+              "text": "Tell how you will promote and sell your product or service to potential customers."
+            }
+          ]
+        },
+        {
+          "number": "4c",
+          "text": "Finances",
+          "children": [
+            {
+              "number": "4c(1)",
+              "text": "If you are selling a product, determine how much it will cost to make one prototype."
+            },
+            {
+              "number": "4c(2)",
+              "text": "Calculate the selling price of your product or service. Explain how you determined the price."
+            },
+            {
+              "number": "4c(3)",
+              "text": "Tell how you will sell your product or service and make a profit."
+            },
+            {
+              "number": "4c(4)",
+              "text": "Determine how much money you will need to start your business. Explain how you will get the money."
+            }
+          ]
+        },
+        {
+          "number": "4d",
+          "text": "Personnel",
+          "children": [
+            {
+              "number": "4d(1)",
+              "text": "Determine what parts of the business you will handle yourself. Describe your qualifications for the work. Determine how your business responsibilities will fit into your schedule."
+            },
+            {
+              "number": "4d(2)",
+              "text": "Determine whether you will need additional help to operate your business. If you will need help, describe the qualifications your helpers should have and what duties they will perform."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Do TWO of the following.",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Sketch a prototype of your product or write a description of your service."
+        },
+        {
+          "number": "5b",
+          "text": "Create the prototype. List all of the materials you used to make your prototype. Calculate the cost of all the materials and labor to compute the total cost of making your prototype."
+        },
+        {
+          "number": "5c",
+          "text": "Design a promotional poster or flier for your product or service."
+        },
+        {
+          "number": "5d",
+          "text": "Project (estimate) your sales through the first three months of operation. Calculate the profit you expect to make."
+        }
+      ],
+      "choose": 2
+    },
+    {
+      "number": "6",
+      "text": "When you believe that your business idea is feasible, start your business. Show evidence that you started your business (sales receipts, for example, or photos of the product). Discuss with your counselor any ethical questions you have faced or think you may face in your business venture."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb134-07.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

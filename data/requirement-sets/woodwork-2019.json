@@ -1,0 +1,114 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "woodwork-2019",
+  "kind": "requirement-set",
+  "subject": "merit-badge:woodwork",
+  "effective_from": "2019-01-01",
+  "effective_to": "2020-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Woodwork Merit Badge Requirements (2019, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb119-19.asp",
+    "year": 2019
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in woodwork activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Explain what precautions you should take to safely use your tools."
+        },
+        {
+          "number": "1b",
+          "text": "Show that you know first aid for injuries that could occur while woodworking, including splinters, scratches, cuts, severe bleeding, and shock. Tell what precautions must be taken to help prevent loss of eyesight or hearing, and explain why and when it is necessary to use a dust mask."
+        },
+        {
+          "number": "1c",
+          "text": "Earn the Totin’ Chip recognition."
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Describe how timber is grown, harvested, and milled. Tell how lumber is cured, seasoned, graded, and sized."
+        },
+        {
+          "number": "2b",
+          "text": "Collect and label blocks of six kinds of wood useful in woodworking. Describe the chief qualities of each. Give the best uses of each."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Show the proper care, use, and storage of all working tools and equipment that you own or use at home or school."
+        },
+        {
+          "number": "3b",
+          "text": "Sharpen correctly the cutting edges of two different tools."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Using a saw, plane, hammer, brace, and bit, make something useful of wood. Cut parts from lumber that you have squared and measured from working drawings."
+    },
+    {
+      "number": "5",
+      "text": "Create your own woodworking project. Begin by making working drawings, list the materials you will need to complete your project, and then build your project. Keep track of the time you spend and the cost of the materials."
+    },
+    {
+      "number": "6",
+      "text": "Do any TWO of the following:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Make working drawings of a project needing beveled or rounded edges and build it"
+        },
+        {
+          "number": "6b",
+          "text": "Make working drawings of a project needing curved or incised cuttings and build it"
+        },
+        {
+          "number": "6c",
+          "text": "Make working drawings of a project needing miter, dowel, or mortise and tenon joints and build it."
+        },
+        {
+          "number": "6d",
+          "text": "Make a cabinet, box, or something else with a door or lid fastened with inset hinges."
+        },
+        {
+          "number": "6e",
+          "text": "Help make and repair wooden toys for underprivileged children OR help carry out a woodworking service project approved by your counselor for a charitable organization."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Talk with a cabinetmaker or carpenter. Find out about the training, apprenticeship, career opportunities, work conditions, work hours, pay rates, and union organization that woodworking experts have in your area."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb119-19.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

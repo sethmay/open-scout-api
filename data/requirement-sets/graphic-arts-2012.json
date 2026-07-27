@@ -1,0 +1,105 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "graphic-arts-2012",
+  "kind": "requirement-set",
+  "subject": "merit-badge:graphic-arts",
+  "effective_from": "2012-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:graphic-arts-2010",
+  "source_document": {
+    "title": "Graphic Arts Merit Badge Requirements (2012, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb122.asp",
+    "year": 2012
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Review with your counselor the processes for producing printed communications: offset lithography, screen printing, electronic/digital, relief, and gravure. Collect samples of three products, each one produced using a different printing process, or draw diagrams to help you with your description."
+    },
+    {
+      "number": "2",
+      "text": "Explain the differences between continuous tone, line, and halftone artwork. Describe how digital images can be created and/or stored in a computer."
+    },
+    {
+      "number": "3",
+      "text": "Design a printed piece (flier, T-shirt, program, form, etc.) and produce it. Explain your decisions for the typeface or typefaces you use and the way you arrange the elements in your design. Explain which printing process is best suited for printing your design. If desktop publishing is available, identify what hardware and software would be appropriate for outputting your design."
+    },
+    {
+      "number": "4",
+      "text": "Produce the design you created for requirement 3 using one of the following printing processes:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Offset lithography Make a layout and produce a plate using a process approved by your counselor. Run the plate and print at least 50 copies."
+        },
+        {
+          "number": "4b",
+          "text": "Screen printing Make a hand-cut or photographic stencil and attach it to a screen that you have prepared. Mask the screen and print at least 20 copies."
+        },
+        {
+          "number": "4c",
+          "text": "Electronic/digital printing Create a layout in electronic form, download it to the press or printer, and run 50 copies. If no electronic interface to the press or printer is available, you may print and scan a paper copy of the layout."
+        },
+        {
+          "number": "4d",
+          "text": "Relief printing Prepare a layout or set the necessary type. Make a plate or lock up the form. Use this to print 50 copies."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "Review the following postpress operations with your counselor:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Discuss the finishing operations of padding, drilling, cutting, and trimming."
+        },
+        {
+          "number": "5b",
+          "text": "Collect, describe, or identify examples of the following types of binding: perfect, spiral, plastic comb, saddle stitched, and case."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Do ONE of the following, and then describe the highlights of your visit:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Visit a newspaper printing plant: Follow a story from the editor to the press."
+        },
+        {
+          "number": "6b",
+          "text": "Visit a retail, commercial, or in-plant printing facility: Follow a project from beginning to end."
+        },
+        {
+          "number": "6c",
+          "text": "Visit a school's graphic arts program: Find out what courses are available and what the prerequisites are."
+        },
+        {
+          "number": "6d",
+          "text": "Visit three websites (with your parent's parent or guardian's permission) that belong to graphic arts professional organizations and/or printing-related companies (suppliers, manufacturers, printers): With permission from your parent or counselor, print out or download product or service information from two of the sites."
+        }
+      ],
+      "choose": 1
+    },
+    {
+      "number": "7",
+      "text": "Find out about three career opportunities in graphic arts. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb122.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

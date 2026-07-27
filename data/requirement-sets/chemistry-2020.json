@@ -1,0 +1,155 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "chemistry-2020",
+  "kind": "requirement-set",
+  "subject": "merit-badge:chemistry",
+  "effective_from": "2020-01-01",
+  "effective_to": "2023-12-31",
+  "supersedes": null,
+  "source_document": {
+    "title": "Chemistry Merit Badge Requirements (2020, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/Old/mb034-20.asp",
+    "year": 2020
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Do EACH of the following activities:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "Describe three examples of safety equipment used in a chemistry laboratory and the reason each one is used."
+        },
+        {
+          "number": "1b",
+          "text": "Describe what a safety data sheet (SDS) is and tell why it is used."
+        },
+        {
+          "number": "1c",
+          "text": "Obtain an SDS for both a paint and an insecticide. Compare and discuss the toxicity, disposal, and safe-handling sections for these two common household products."
+        },
+        {
+          "number": "1d",
+          "text": "Discuss the safe storage of chemicals. How does the safe storage of chemicals apply to your home, your school, your community, and the environment?"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do EACH of the following activities:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Predict what would happen if you placed an iron nail in a copper sulfate solution. Then, put an iron nail in a copper sulfate solution. Describe your. observations and make a conclusion based on your observations. Compare your prediction and original conclusion with what actually happened. Write the formula for the reaction that you described."
+        },
+        {
+          "number": "2b",
+          "text": "Demonstrate how you would separate sand (or gravel) from water. Describe how you would separate table salt from water, oil from water, and gasoline from motor oil. Name the practical processes that require these kinds of separations and how the processes may differ."
+        },
+        {
+          "number": "2c",
+          "text": "Describe the difference between a chemical reaction and a physical change. http://usscouts.org/usscouts/mb/mb033.aspz"
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Construct a Cartesian diver. Describe its function in terms of how gases in general behave under different pressures and different temperatures. Describe how the behavior of gases affects a backpacker at high altitudes and a scuba diver underwater."
+    },
+    {
+      "number": "4",
+      "text": "Do EACH of the following activities:",
+      "children": [
+        {
+          "number": "4a",
+          "text": "Cut a round onion into small chunks. Separate the onion chunks into three equal portions. Leave the first portion raw. Cook the second portion of onion chunks until the pieces are translucent. Cook the third portion until the onions are caramelized, or brown in color. Taste each type of onion. Describe the taste of raw onion versus partially cooked onion versus caramelized onion. Explain what happens to molecules in the onion during the cooking process."
+        },
+        {
+          "number": "4b",
+          "text": "Describe the chemical similarities and differences between toothpaste and an abrasive household cleanser. Explain how the end use or purpose of a product affects its chemical formulation."
+        },
+        {
+          "number": "4c",
+          "text": "In a clear container, mix a half-cup of water with a tablespoon of oil. Explain why the oil and water do not mix. Find a substance that will help the two combine, and add it to the mixture. Describe what happened, and explain how that substance worked to combine the oil and water."
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "text": "List the five classical divisions of chemistry. Briefly describe each one, and tell how it applies to your everyday life."
+    },
+    {
+      "number": "6",
+      "text": "Do EACH of the following activities:",
+      "children": [
+        {
+          "number": "6a",
+          "text": "Name two government agencies that are responsible for tracking the use of chemicals for commercial or industrial use. Pick one agency and briefly describe its responsibilities."
+        },
+        {
+          "number": "6b",
+          "text": "Define pollution. Explain the chemical impacts on the ozone layer and global climate change"
+        },
+        {
+          "number": "6c",
+          "text": "Using reasons from chemistry, describe the effect on the environment of ONE of the following:",
+          "children": [
+            {
+              "number": "6c(1)",
+              "text": "The production of aluminum cans"
+            },
+            {
+              "number": "6c(2)",
+              "text": "Burning fossil fuels"
+            },
+            {
+              "number": "6c(3)",
+              "text": "Single-use items, such as water bottles, bags, straws, or paper"
+            }
+          ]
+        },
+        {
+          "number": "6d",
+          "text": "Briefly describe the purpose of phosphates in fertilizer and in laundry detergent. Explain how the use of phosphates in fertilizers affects the environment. Explain why phosphates have been removed from laundry detergents."
+        }
+      ]
+    },
+    {
+      "number": "7",
+      "text": "Do ONE of the following activities:",
+      "children": [
+        {
+          "number": "7a",
+          "text": "Visit a laboratory and talk to a chemist. Ask what that chemist does, and what training and education are needed to work as a chemist."
+        },
+        {
+          "number": "7b",
+          "text": "Using resources found at the library and in periodicals, books, and the Internet (with your parent's permission), learn about two different kinds of work done by chemists, chemical engineers, chemical technicians, or industrial chemists. For each of the four positions, find out the education and training requirements."
+        },
+        {
+          "number": "7c",
+          "text": "Visit an industrial plant that makes chemical products or uses chemical processes and describe the processes used. What, if any, by-products are produced and how they are handled."
+        },
+        {
+          "number": "7d",
+          "text": "Visit a county farm agency or similar governmental agency and learn how chemistry is used to meet the needs of agriculture ,in your county."
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/Old/mb034-20.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}

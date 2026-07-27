@@ -1,0 +1,249 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/requirement-set.schema.json",
+  "id": "radio-2024",
+  "kind": "requirement-set",
+  "subject": "merit-badge:radio",
+  "effective_from": "2024-01-01",
+  "effective_to": "2025-12-31",
+  "supersedes": "requirement-set:radio-2017",
+  "source_document": {
+    "title": "Radio Merit Badge Requirements (2024, usscouts.org mirror)",
+    "url": "http://usscouts.org/mb/mb093.asp",
+    "year": 2024
+  },
+  "includes_official_text": true,
+  "text_rights": "Requirement text © Scouting America, reproduced with attribution for non-commercial Scouting use; NOT licensed under this dataset's CC BY-NC-SA. See NOTICE.md.",
+  "requirements": [
+    {
+      "number": "1",
+      "text": "Explain what radio is. Then discuss the following:",
+      "children": [
+        {
+          "number": "1a",
+          "text": "The differences between broadcast radio and hobby radio"
+        },
+        {
+          "number": "1b",
+          "text": "The differences between broadcasting and two-way communications"
+        },
+        {
+          "number": "1c",
+          "text": "Radio station call signs and how they are used in broadcast radio and amateur radio"
+        },
+        {
+          "number": "1d",
+          "text": "The phonetic alphabet and how it is used to communicate clearly"
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "2a",
+          "text": "Sketch a diagram showing how radio waves travel locally and around the world."
+        },
+        {
+          "number": "2b",
+          "text": "Explain how the radio stations WWV and WWVH can be used to help determine what you can expect to hear when you listen to a shortwave radio."
+        },
+        {
+          "number": "2c",
+          "text": "Explain the difference between a distant (DX) and a local station."
+        },
+        {
+          "number": "2d",
+          "text": "Discuss what the Federal Communications Commission (FCC) does and how it is different from the International Telecommunication Union."
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "3a",
+          "text": "Draw a chart of the electromagnetic spectrum covering 300 kilohertz (kHz) to 3000 megahertz (MHz)."
+        },
+        {
+          "number": "3b",
+          "text": "Label the MF, HF, VHF, UHF, and microwave portions of the spectrum on your diagram."
+        },
+        {
+          "number": "3c",
+          "text": "Locate on your chart at least eight radio services, such as AM and FM commercial broadcast, citizens band (CB), television, amateur radio (at least four amateur radio bands), and public service (police and fire)."
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "text": "Explain how radio waves carry information. Include in your explanation: transceiver, transmitter, receiver, amplifier, and antenna."
+    },
+    {
+      "number": "5",
+      "text": "Do the following:",
+      "children": [
+        {
+          "number": "5a",
+          "text": "Explain the differences between a block diagram and a schematic diagram."
+        },
+        {
+          "number": "5b",
+          "text": "Draw a block diagram for a radio station that includes a transceiver, amplifier, microphone, antenna, and feed line."
+        },
+        {
+          "number": "5c",
+          "text": "Discuss how information is sent when using amplitude modulation (AM), frequency modulation (FM), continuous wave (CW) Morse Code transmission, single sideband (SSB) transmission, and digital transmission."
+        },
+        {
+          "number": "5d",
+          "text": "Explain how NOAA Weather Radio (NWR) can alert you to danger."
+        },
+        {
+          "number": "5e",
+          "text": "Explain how cellular telephones work. Identify their benefits and limitations in an emergency."
+        }
+      ]
+    },
+    {
+      "number": "6",
+      "text": "Explain the safety precautions for working with radio gear, including the concept of grounding for direct current circuits, power outlets, and antenna systems."
+    },
+    {
+      "number": "7",
+      "text": "Visit a radio installation (an amateur radio station, broadcast station, or public service communications center, for example) approved in advance by your counselor. Discuss what types of equipment you saw in use, how it was used, what types of licenses are required to operate and maintain the equipment, and the purpose of the station."
+    },
+    {
+      "number": "8",
+      "text": "Find out about three career opportunities in radio. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+    },
+    {
+      "number": "9",
+      "text": "Do ONE of the following (a OR b OR c OR d):",
+      "children": [
+        {
+          "number": "9a",
+          "text": "Amateur Radio",
+          "children": [
+            {
+              "number": "9a(1)",
+              "text": "Tell why the FCC has an amateur radio service. Describe activities that amateur radio operators can do on the air, once they have earned an amateur radio license."
+            },
+            {
+              "number": "9a(2)",
+              "text": "Explain differences between the Technician, General, and Extra Class license requirements and privileges. Explain who administers amateur radio exams."
+            },
+            {
+              "number": "9a(3)",
+              "text": "Explain at least five Q signals or amateur radio terms."
+            },
+            {
+              "number": "9a(4)",
+              "text": "Explain how you would make an emergency call on voice or Morse code."
+            },
+            {
+              "number": "9a(5)",
+              "text": "Explain the differences between handheld, mobile, and base station transceivers and their uses. Explain the use of amateur radio repeaters."
+            },
+            {
+              "number": "9a(6)",
+              "text": "Using proper call signs, Q signals, and abbreviations, carry on a 10-minute real or simulated amateur radio contact using voice, Morse code, or digital mode. (Licensed amateur radio operators may substitute five QSL cards as evidence of contacts with five amateur radio operators. Properly log the real or simulated ham radio contact, and record the signal report.)"
+            }
+          ]
+        },
+        {
+          "number": "9b",
+          "text": "Radio Broadcasting",
+          "children": [
+            {
+              "number": "9b(1)",
+              "text": "Discuss with your counselor FCC broadcast regulations. Include power levels, frequencies, and the regulations for low-power stations."
+            },
+            {
+              "number": "9b(2)",
+              "text": "Prepare a program schedule for radio station \"KBSA\" of exactly onehalf hour, including music, news, commercials, and proper station identification. Record your program on audiotape or in a digital audio format, using proper techniques."
+            },
+            {
+              "number": "9b(3)",
+              "text": "Listen to and properly log 15 broadcast stations. Determine the program format and target audience for five of these stations."
+            },
+            {
+              "number": "9b(4)",
+              "text": "Explain to your counselor at least eight terms used in commercial broadcasting, such as segue, cut, fade, continuity, remote, Emergency Alert System, network, cue, dead air, PSA, and playlist."
+            },
+            {
+              "number": "9b(5)",
+              "text": "Discuss with your counselor alternative radio platforms such as internet streaming, satellite radio, and podcasts."
+            }
+          ]
+        },
+        {
+          "number": "9c",
+          "text": "Shortwave and Medium-Wave Listening",
+          "children": [
+            {
+              "number": "9c(1)",
+              "text": "Listen across several shortwave bands for four one-hour periods - at least one period during daylight hours and at least one period at night. Log the stations properly and locate them geographically on a map, globe, or web-based mapping service."
+            },
+            {
+              "number": "9c(2)",
+              "text": "Listen to several medium-wave stations for two one-hour periods, one period during daylight hours and one period at night. Log the stations properly and locate them on a map, globe, or web-based mapping service."
+            },
+            {
+              "number": "9c(3)",
+              "text": "Compare your daytime and nighttime shortwave logs; note the frequencies on which your selected stations were loudest during each session. Explain differences in the signal strength from one period to the next."
+            },
+            {
+              "number": "9c(4)",
+              "text": "Compare your medium-wave broadcast station logs and explain why some distant stations are heard at your location only during the night."
+            },
+            {
+              "number": "9c(5)",
+              "text": "Demonstrate listening to a radio broadcast using a smartphone/cell phone. Include international broadcasts in your demonstration."
+            }
+          ]
+        },
+        {
+          "number": "9d",
+          "text": "Amateur Radio Direction Finding",
+          "children": [
+            {
+              "number": "9d(1)",
+              "text": "Describe amateur radio direction finding and explain why direction finding is important as both an activity and in competition."
+            },
+            {
+              "number": "9d(2)",
+              "text": "Describe what frequencies and equipment are used for ARDF or fox hunting."
+            },
+            {
+              "number": "9d(3)",
+              "text": "Build a simple directional antenna for either of the two frequencies used in ARDF."
+            },
+            {
+              "number": "9d(4)",
+              "text": "Participate in a simple fox hunt using your antenna along with a provided receiver."
+            },
+            {
+              "number": "9d(5)",
+              "text": "Show on a map how you located the \"fox\" using your receiver."
+            }
+          ]
+        }
+      ],
+      "choose": 1
+    }
+  ],
+  "notes": "Historical edition recovered from the usscouts.org mirror, which keeps the preceding edition of each badge alongside the current one. Effective date is the date the source page states; the end date is the day before the next edition we hold began.",
+  "provenance": {
+    "sources": [
+      {
+        "url": "http://usscouts.org/mb/mb093.asp",
+        "accessed": "2026-07-27"
+      }
+    ],
+    "method": "scraped",
+    "verified_at": "2026-07-27",
+    "confidence": 0.8
+  }
+}
