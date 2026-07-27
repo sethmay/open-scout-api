@@ -230,6 +230,11 @@ def main() -> None:
         (out_dir / f"{slug}-2024.json").write_text(
             json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print(f"rank requirement-sets: {len(RANKS)} documents written")
+    # Re-apply the Eagle merit-badge slot tree. Regenerating from the PDF rewrites requirement 3 as
+    # the flat prose the PDF contains, so without this a rebuild would silently undo the structure
+    # and validate_data.py would (correctly) fail on the missing slot tree.
+    from seed_advancement_graph import apply_graph
+    apply_graph()
 
 
 if __name__ == "__main__":

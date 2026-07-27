@@ -24,7 +24,120 @@
     },
     {
       "number": "3",
-      "text": "Earn a total of 21 merit badges (10 more than required for the Life rank), including these 14 merit badges: (a) First Aid, (b) Citizenship in the Community, (c) Citizenship in the Nation, (d) Citizenship in Society, (e) Citizenship in the World, (f) Communication, (g) Cooking, (h) Personal Fitness, (i) Emergency Preparedness OR Lifesaving, (j) Environmental Science OR Sustainability, (k) Personal Management, (l) Swimming OR Hiking OR Cycling, (m) Camping, and (n) Family Life. You must choose only one of the merit badges listed in categories i, j, and l. Any additional merit badge(s) earned in those categories may be counted as one of your seven optional merit badges used to make your total of 21. (See pages 28 and 416–419.)"
+      "text": "Earn a total of 21 merit badges (10 more than required for the Life rank), including these 14 merit badges: (a) First Aid, (b) Citizenship in the Community, (c) Citizenship in the Nation, (d) Citizenship in Society, (e) Citizenship in the World, (f) Communication, (g) Cooking, (h) Personal Fitness, (i) Emergency Preparedness OR Lifesaving, (j) Environmental Science OR Sustainability, (k) Personal Management, (l) Swimming OR Hiking OR Cycling, (m) Camping, and (n) Family Life. You must choose only one of the merit badges listed in categories i, j, and l. Any additional merit badge(s) earned in those categories may be counted as one of your seven optional merit badges used to make your total of 21. (See pages 28 and 416–419.)",
+      "children": [
+        {
+          "number": "3a",
+          "text": "First Aid",
+          "ref": "merit-badge:first-aid"
+        },
+        {
+          "number": "3b",
+          "text": "Citizenship in the Community",
+          "ref": "merit-badge:citizenship-in-the-community"
+        },
+        {
+          "number": "3c",
+          "text": "Citizenship in the Nation",
+          "ref": "merit-badge:citizenship-in-the-nation"
+        },
+        {
+          "number": "3d",
+          "text": "Citizenship in Society",
+          "ref": "merit-badge:citizenship-in-society"
+        },
+        {
+          "number": "3e",
+          "text": "Citizenship in the World",
+          "ref": "merit-badge:citizenship-in-the-world"
+        },
+        {
+          "number": "3f",
+          "text": "Communication",
+          "ref": "merit-badge:communication"
+        },
+        {
+          "number": "3g",
+          "text": "Cooking",
+          "ref": "merit-badge:cooking"
+        },
+        {
+          "number": "3h",
+          "text": "Personal Fitness",
+          "ref": "merit-badge:personal-fitness"
+        },
+        {
+          "number": "3i",
+          "text": "Emergency Preparedness OR Lifesaving",
+          "choose": 1,
+          "children": [
+            {
+              "number": "3i(1)",
+              "text": "Emergency Preparedness",
+              "ref": "merit-badge:emergency-preparedness"
+            },
+            {
+              "number": "3i(2)",
+              "text": "Lifesaving",
+              "ref": "merit-badge:lifesaving"
+            }
+          ]
+        },
+        {
+          "number": "3j",
+          "text": "Environmental Science OR Sustainability",
+          "choose": 1,
+          "children": [
+            {
+              "number": "3j(1)",
+              "text": "Environmental Science",
+              "ref": "merit-badge:environmental-science"
+            },
+            {
+              "number": "3j(2)",
+              "text": "Sustainability",
+              "ref": "merit-badge:sustainability"
+            }
+          ]
+        },
+        {
+          "number": "3k",
+          "text": "Personal Management",
+          "ref": "merit-badge:personal-management"
+        },
+        {
+          "number": "3l",
+          "text": "Swimming OR Hiking OR Cycling",
+          "choose": 1,
+          "children": [
+            {
+              "number": "3l(1)",
+              "text": "Swimming",
+              "ref": "merit-badge:swimming"
+            },
+            {
+              "number": "3l(2)",
+              "text": "Hiking",
+              "ref": "merit-badge:hiking"
+            },
+            {
+              "number": "3l(3)",
+              "text": "Cycling",
+              "ref": "merit-badge:cycling"
+            }
+          ]
+        },
+        {
+          "number": "3m",
+          "text": "Camping",
+          "ref": "merit-badge:camping"
+        },
+        {
+          "number": "3n",
+          "text": "Family Life",
+          "ref": "merit-badge:family-life"
+        }
+      ]
     },
     {
       "number": "4",

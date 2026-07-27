@@ -3,6 +3,38 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.48.0 (minor) — 2026-07-27
+
+- `PENDING` **The Eagle merit-badge requirement is a graph now, not a paragraph.** Requirement 3
+  named its 14 lettered slots — three of them either/or — inside one 600-character string, so the
+  only countable thing in the dataset was the 18 badges flagged `eagle_required`. A tracker
+  therefore reported **"6 of 18"** where a Scout owes **6 of 14 slots**. Requirement 3 now carries
+  14 children: eleven leaves with a `ref` to a merit badge, and three `choose: 1` option groups
+  (Emergency Preparedness/Lifesaving, Environmental Science/Sustainability,
+  Swimming/Hiking/Cycling), using the same `ref` mechanism the Cub rank trees use for adventures.
+- ⚠ **`eagle_required` was not wrong, it was underspecified — so it is untouched.** The flag marks
+  membership of the required *list*, and 18 is the number Scouting America itself uses: Star and
+  Life requirement 3 both say "any of the **18** merit badges on the required list for Eagle." The
+  slot count is 14. Both facts are real and a tracker needs both, so this adds structure rather than
+  redefining a published field.
+- New `tools/seed_advancement_graph.py` + `tools/advancement_graph.json`. Idempotent, and hooked
+  into `seed_rank_requirements.py` so regenerating from the source PDF — which contains only the
+  flat prose — cannot silently drop the structure. Every badge name placed in the tree is verified
+  to appear in the verbatim requirement text it claims to structure, so a drifting slot table
+  refuses to apply.
+- New gates, all proven by injection: the slot tree must exist at all; its slot count must equal the
+  number requirement 3's own text states ("these **14** merit badges"); every badge it refs must be
+  flagged; and every flagged badge must occupy a slot.
+- **The flag check had to be made temporal, and that is not a technicality.** Comparing against
+  today's flags failed immediately on Citizenship in Society: it is slot (d) of the in-force 2024
+  requirements and was Eagle-required from 2022 until Scouting America discontinued it on
+  2026-02-27, so it carries no open version to flag. The comparison now runs **as of the
+  requirement-set's own effective date**, which is the only reading under which the two records
+  agree.
+- ⚠ Which surfaces a real gap, recorded in `TODO.md`: **our in-force Eagle requirements still
+  require a badge that no longer exists.** Scouting America has presumably reissued them; we do not
+  have that edition.
+
 ## 0.47.1 (patch) — 2026-07-27
 
 - `4730af3` **The three 2025 merit badges now carry their introduction year.** Artificial
