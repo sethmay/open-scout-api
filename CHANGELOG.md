@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.42.0 (minor) — 2026-07-27
 
-- `PENDING` **Discontinued merit badges: the catalog goes 142 → 268 entities**, adding 126 retired
+- `10ae3ff` **Discontinued merit badges: the catalog goes 142 → 268 entities**, adding 126 retired
   badges back to the 1910 originals — Signaller, Ambulance, Angling — from the USSSP merit badge
   history table. Until now the catalog held 140 current badges and exactly two historical ones, so
   "what happened to the Signaling merit badge" was unanswerable. New
