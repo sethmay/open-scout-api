@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.42.2 (patch) — 2026-07-27
 
-- `PENDING` **Identity decision recorded: the base URL stays `sethmay.github.io/open-scout-api` for
+- `9057232` **Identity decision recorded: the base URL stays `sethmay.github.io/open-scout-api` for
   now, and 1.0 stays deliberately UNCUT while a permanent home is negotiated.** Docs only.
 - ⚠ **Why 1.0 is not being tagged even though everything else is cleared.** 1.0 is the promise that
   `v1` is additive-only forever — no renames, no removals, safe to pin. That promise attaches to the
