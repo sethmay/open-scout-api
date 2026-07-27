@@ -673,6 +673,70 @@ def main() -> int:
             errs.append(f"positions/{slug}.json: no rank requirement offers this position; a "
                         f"position no rank accepts cannot be earned toward anything")
 
+    # pass 9: the countable facts derived from requirement prose (tenure_months, badge_count).
+    # Both are transcriptions of a number the requirement itself prints, so both are checked back
+    # against that verbatim text: a figure that no longer appears in the sentence it claims to
+    # summarise is drift, whichever side moved. The badge chain is also checked arithmetically —
+    # Star's 6 plus Life's 5 must be Life's stated "11 in all" — because the source states the
+    # running total independently at each rank, which makes the chain self-checking.
+    WORDS = {i: w for i, w in enumerate(
+        "zero one two three four five six seven eight nine ten eleven twelve".split())}
+
+    def _says(text: str, n: int) -> bool:
+        return bool(re.search(rf"\b({n}|{WORDS.get(n, chr(0))})\b", text or "", re.I))
+
+    def _nodes(reqs):
+        for r in reqs:
+            yield r
+            yield from _nodes(r.get("children") or [])
+
+    rank_order, badge_chain = {}, {}
+    for p in sorted((DATA / "ranks").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        rd = json.loads(p.read_text("utf-8"))
+        cur = next((v for v in rd["versions"] if v.get("valid_to") is None), None)
+        if cur:
+            rank_order[rd["id"]] = (cur.get("program"), cur.get("order"))
+    for p in sorted((DATA / "requirement-sets").glob("*.json")):
+        doc = json.loads(p.read_text("utf-8"))
+        if not doc.get("subject", "").startswith("rank:") or doc.get("effective_to") is not None:
+            continue
+        slug = doc["subject"].split(":", 1)[1]
+        for req in _nodes(doc.get("requirements", [])):
+            text = req.get("text") or ""
+            if (mo := req.get("tenure_months")) is not None and not _says(text, mo):
+                errs.append(f"requirement-sets/{p.name}: requirement {req['number']} claims "
+                            f"tenure_months={mo} but its own text never says {mo}")
+            bc = req.get("badge_count")
+            if not bc:
+                continue
+            for key in ("earn", "cumulative", "from_eagle_required"):
+                if (v := bc.get(key)) is not None and not _says(text, v):
+                    errs.append(f"requirement-sets/{p.name}: requirement {req['number']} claims "
+                                f"badge_count.{key}={v} but its own text never says {v}")
+            if (fer := bc.get("from_eagle_required")) is not None:
+                if fer > bc["earn"]:
+                    errs.append(f"requirement-sets/{p.name}: badge_count requires {fer} from the "
+                                f"Eagle-required list but only {bc['earn']} badges are earned")
+                # The list is the eagle_required flag read as of this edition's own effective date,
+                # the same temporal rule pass 7 uses.
+                listed = len(flagged_at(doc["effective_from"]))
+                if fer > listed:
+                    errs.append(f"requirement-sets/{p.name}: badge_count requires {fer} from the "
+                                f"Eagle-required list, which held only {listed} badges on "
+                                f"{doc['effective_from']}")
+            if slug in rank_order:
+                badge_chain[slug] = (rank_order[slug], bc)
+    prev_cum = {}
+    for slug, ((program, order), bc) in sorted(badge_chain.items(), key=lambda kv: kv[1][0]):
+        base = prev_cum.get(program, 0)
+        if bc["cumulative"] != base + bc["earn"]:
+            errs.append(f"requirement-sets: rank {slug!r} says {bc['earn']} badges earned and "
+                        f"{bc['cumulative']} in all, but the rank before it left {base}; "
+                        f"{base} + {bc['earn']} != {bc['cumulative']}")
+        prev_cum[program] = bc["cumulative"]
+
     errs += check_tree()   # every data file must carry the correct $schema ref
 
     def _count(ds):

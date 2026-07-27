@@ -157,6 +157,44 @@ def main() -> None:
     cur.execute("CREATE INDEX idx_rank_positions_pos ON rank_positions(position_id)")
     counts["rank_positions"] = len(rp_rows)
 
+    # What each rank demands in countable terms: months of tenure and merit-badge totals. One row
+    # per requirement that states either, because a rank states them in more than one place —
+    # Star has four months of *being active* (req 1) and four months of *serving in a position*
+    # (req 5), which are two different obligations that happen to share a number.
+    cur.execute("CREATE TABLE rank_advancement (rank_id TEXT, requirement TEXT, program TEXT, "
+                "tenure_months INTEGER, badges_earn INTEGER, badges_cumulative INTEGER, "
+                "badges_from_eagle_required INTEGER)")
+    programs = {}
+    for p2 in sorted((DATA / "ranks").glob("*.json")):
+        if p2.name == "_events.json":
+            continue
+        rd = read_json(p2)
+        cur_v = next((v for v in rd["versions"] if v.get("valid_to") is None), None)
+        if cur_v:
+            programs[rd["id"]] = cur_v.get("program")
+    ra_rows = []
+    if rs_all.exists():
+        def nodes(reqs):
+            for r in reqs:
+                yield r
+                yield from nodes(r.get("children") or [])
+        for p2 in sorted(rs_all.glob("*.json")):
+            doc = read_json(p2)
+            subj = doc.get("subject") or ""
+            if not subj.startswith("rank:") or doc.get("effective_to") is not None:
+                continue
+            rank_id = subj.split(":", 1)[1]
+            for req in nodes(doc.get("requirements", [])):
+                bc = req.get("badge_count") or {}
+                if req.get("tenure_months") is None and not bc:
+                    continue
+                ra_rows.append([rank_id, req.get("number"), programs.get(rank_id),
+                                req.get("tenure_months"), bc.get("earn"), bc.get("cumulative"),
+                                bc.get("from_eagle_required")])
+    cur.executemany("INSERT INTO rank_advancement VALUES (?,?,?,?,?,?,?)", ra_rows)
+    cur.execute("CREATE INDEX idx_rank_advancement_rank ON rank_advancement(rank_id)")
+    counts["rank_advancement"] = len(ra_rows)
+
     # lifecycle events (one row per event, tagged with its dataset)
     cur.execute("CREATE TABLE events (dataset TEXT, id TEXT, type TEXT, date TEXT, data TEXT)")
     ev_rows = []

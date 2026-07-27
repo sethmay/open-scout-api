@@ -34,7 +34,8 @@
       "children": [
         {
           "number": "a",
-          "text": "Meet your ship’s bylaws requirement for active participation in your ship’s meetings and activities for six months."
+          "text": "Meet your ship’s bylaws requirement for active participation in your ship’s meetings and activities for six months.",
+          "tenure_months": 6
         },
         {
           "number": "b",
@@ -52,7 +53,8 @@
         },
         {
           "number": "b",
-          "text": "Officer: Serve as a ship officer for at least six months."
+          "text": "Officer: Serve as a ship officer for at least six months.",
+          "tenure_months": 6
         },
         {
           "number": "c",

@@ -16,7 +16,8 @@
   "requirements": [
     {
       "number": "1",
-      "text": "Be active in your troop for at least six months as a Life Scout.(See page 24.)"
+      "text": "Be active in your troop for at least six months as a Life Scout.(See page 24.)",
+      "tenure_months": 6
     },
     {
       "number": "2",
@@ -137,7 +138,11 @@
           "text": "Family Life",
           "ref": "merit-badge:family-life"
         }
-      ]
+      ],
+      "badge_count": {
+        "earn": 10,
+        "cumulative": 21
+      }
     },
     {
       "number": "4",
@@ -332,7 +337,8 @@
           "number": "4c",
           "text": "Lone Scout Leadership responsibility in your school, religious organization, club, or elsewhere in your community."
         }
-      ]
+      ],
+      "tenure_months": 6
     },
     {
       "number": "5",

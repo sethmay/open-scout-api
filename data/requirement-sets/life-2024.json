@@ -16,7 +16,8 @@
   "requirements": [
     {
       "number": "1",
-      "text": "Be active in your troop for at least six months as a Star Scout.(See page 24.)"
+      "text": "Be active in your troop for at least six months as a Star Scout.(See page 24.)",
+      "tenure_months": 6
     },
     {
       "number": "2",
@@ -24,7 +25,12 @@
     },
     {
       "number": "3",
-      "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle. You may choose any of the 18 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list.(See pages 28 and 422–425.)"
+      "text": "Earn five more merit badges (so that you have 11 in all), including any three additional badges from the required list for Eagle. You may choose any of the 18 merit badges on the required list for Eagle to fulfill this requirement. See Eagle rank requirement 3 for this list.(See pages 28 and 422–425.)",
+      "badge_count": {
+        "earn": 5,
+        "cumulative": 11,
+        "from_eagle_required": 3
+      }
     },
     {
       "number": "4",
@@ -232,7 +238,8 @@
           "number": "5d",
           "text": "Carry out a Scoutmaster-approved leadership project to help the troop."
         }
-      ]
+      ],
+      "tenure_months": 6
     },
     {
       "number": "6",

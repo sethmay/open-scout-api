@@ -43,7 +43,8 @@
           "children": [
             {
               "number": "1",
-              "text": "Since earning the Discovery Rank, serve actively as your crew president, vice president, secretary, treasurer, guide, historian, den chief, or quartermaster for a period of at least six months.** At the beginning of your term, work with your crew president (or Advisor, if you are the president) to set performance goals for the position. Any number of different positions may be held as long as the total length of service equals at least six months. Holding simultaneous positions does not shorten the required number of months. Positions need not flow from one to the other; there may be gaps in time. Once during your term of office, discuss your successes and challenges with your crew president (or Advisor, if you are the president)."
+              "text": "Since earning the Discovery Rank, serve actively as your crew president, vice president, secretary, treasurer, guide, historian, den chief, or quartermaster for a period of at least six months.** At the beginning of your term, work with your crew president (or Advisor, if you are the president) to set performance goals for the position. Any number of different positions may be held as long as the total length of service equals at least six months. Holding simultaneous positions does not shorten the required number of months. Positions need not flow from one to the other; there may be gaps in time. Once during your term of office, discuss your successes and challenges with your crew president (or Advisor, if you are the president).",
+              "tenure_months": 6
             },
             {
               "number": "2",

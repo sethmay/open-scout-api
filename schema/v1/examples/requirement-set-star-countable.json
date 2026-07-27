@@ -1,0 +1,47 @@
+{
+  "id": "star-countable",
+  "kind": "requirement-set",
+  "subject": "rank:star-example",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": {
+    "title": "Scouts BSA Requirements 2024 (33216)",
+    "year": 2024
+  },
+  "includes_official_text": false,
+  "requirements": [
+    {
+      "number": "1",
+      "summary": "Be active in your troop for at least four months as a First Class Scout.",
+      "tenure_months": 4
+    },
+    {
+      "number": "3",
+      "summary": "Earn six merit badges, including any four from the required list for Eagle.",
+      "badge_count": {
+        "earn": 6,
+        "cumulative": 6,
+        "from_eagle_required": 4
+      }
+    },
+    {
+      "number": "5",
+      "summary": "While a First Class Scout, serve actively in your troop for four months in a position of responsibility.",
+      "tenure_months": 4
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Scouts BSA Requirements 2024, Scouting America publication 33216",
+        "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.7,
+    "notes": "ILLUSTRATIVE EXAMPLE - requirements paraphrased and subset; do not import as data."
+  },
+  "notes": "Demonstrates the countable facts. `tenure_months` appears TWICE with the same number and they are different obligations: requirement 1 is four months of being active, requirement 5 is four months of serving in a position - a Scout does not satisfy one by doing the other. `badge_count.from_eagle_required` is LIST MEMBERSHIP, so a Scout holding both Swimming and Hiking has two of the four; Eagle's own requirement omits this field because its rule is a 14-slot tree, where Swimming and Hiking share one slot and would count once."
+}

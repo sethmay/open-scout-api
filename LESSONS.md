@@ -6,6 +6,7 @@ fold; read before similar work.
 
 ## Schemas / validation
 
+- **Let the source's own wording pick the rule; do not normalise it away.** Star says "any four *from the required list*" and Eagle says "including *these 14*" — two sentences that look like the same fact and are not: one is list membership (Swimming and Hiking count as two), the other is a slot tree (they share a slot and count once). The extractor keys on that exact phrasing difference, so the distinction is derived rather than remembered. When two rules would collapse under a tidier shared model, the collapse is the bug.
 - **A gate loose enough to accept two conventions is how you get two conventions.** Half-open and
   inclusive `effective_to` coexisted for months because the validator asked only "no overlaps, no
   multi-year gaps" — a rule both styles satisfy. Nothing was ever *wrong*, so nothing ever failed,

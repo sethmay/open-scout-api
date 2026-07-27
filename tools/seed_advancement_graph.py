@@ -164,7 +164,7 @@ def main() -> None:
         extract_positions()
     n = generate_positions()
     print(f"positions: {n} entities written")
-    n = apply_graph() + apply_positions()
+    n = apply_graph() + apply_positions() + apply_counts()
     print(f"advancement graph: {n} requirement-set(s) rewritten"
           if n else "advancement graph: already applied (no changes)")
 
@@ -290,5 +290,100 @@ def generate_positions() -> int:
             json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     return len(facts["positions"])
 
+
+# ------------------------------------------------------- countable facts (tenure, badge counts)
+
+WORDNUM = {w: i for i, w in enumerate(
+    "zero one two three four five six seven eight nine ten eleven twelve".split())}
+
+# "for six months", "for at least six months", "for a period of at least six months"
+TENURE_RE = re.compile(r"\bfor (?:a period of )?(?:at least )?([\w-]+) months?\b", re.I)
+# Star/Life: "Earn six merit badges" / "Earn five more merit badges"
+EARN_RE = re.compile(r"\bEarn ([\w-]+) (?:more )?merit badges\b", re.I)
+# Eagle: "Earn a total of 21 merit badges (10 more than required for the Life rank)"
+TOTAL_RE = re.compile(r"\bEarn a total of ([\w-]+) merit badges\b", re.I)
+DELTA_RE = re.compile(r"\(([\w-]+) more than required for the \w+ rank\)", re.I)
+# "(so that you have 11 in all)"
+CUMUL_RE = re.compile(r"\(so that you have ([\w-]+) in all\)", re.I)
+# Star/Life only: "including any four from the required list for Eagle". Eagle's own wording is
+# "including these 14 merit badges" — a slot tree, not list membership — and deliberately misses.
+FROM_LIST_RE = re.compile(
+    r"\bincluding any ([\w-]+) (?:additional )?(?:merit )?(?:badges )?from the required list", re.I)
+
+
+def _num(tok: str) -> int | None:
+    tok = tok.strip().lower().replace(",", "")
+    return int(tok) if tok.isdigit() else WORDNUM.get(tok)
+
+
+def _walk(reqs: list[dict]):
+    for r in reqs:
+        yield r
+        yield from _walk(r.get("children") or [])
+
+
+def _inforce_rank_sets() -> list[Path]:
+    out = []
+    for p in sorted(RS.glob("*.json")):
+        d = json.loads(p.read_text("utf-8"))
+        if d.get("subject", "").startswith("rank:") and d.get("effective_to") is None:
+            out.append(p)
+    return out
+
+
+def apply_counts(quiet: bool = False) -> int:
+    """Make the numbers a rank prints in prose countable, derived from that prose.
+
+    Two facts hide in requirement text and nowhere else:
+
+    `tenure_months` — how long you must be active or serve in a position. Thirteen of them across
+    Scouts BSA, Sea Scout and Venturing ranks, phrased three different ways ("for six months", "for
+    at least six months", "for a period of at least six months"). All are minimums: serving longer
+    never fails the requirement, so one integer is the honest reading of all three.
+
+    `badge_count` — how many merit badges a rank needs. Star and Life say "any four/three from the
+    required list for Eagle", which is *list membership*: all 18 badges are interchangeable, so
+    earning both Swimming and Hiking counts twice (confirmed by the project owner, 2026-07-27).
+    Eagle's own requirement is the different rule — 14 specific slots with either/or groups — and
+    its "including these 14 merit badges" wording deliberately fails `FROM_LIST_RE`, because the
+    slot tree built by `apply_graph()` is the authoritative constraint there, not a bare count.
+
+    Derived from each requirement's own verbatim text at apply time, so a reissued requirement
+    changes the numbers with it and nothing needs re-typing.
+    """
+    changed = 0
+    for p in _inforce_rank_sets():
+        doc = json.loads(p.read_text("utf-8"))
+        before = json.dumps(doc, sort_keys=True)
+        for req in _walk(doc["requirements"]):
+            text = req.get("text") or ""
+            m = TENURE_RE.search(text)
+            months = _num(m.group(1)) if m else None
+            if months:
+                req["tenure_months"] = months
+            counts: dict[str, int] = {}
+            if (m := TOTAL_RE.search(text)):          # Eagle: total stated, delta parenthesised
+                counts["cumulative"] = _num(m.group(1))
+                if (d := DELTA_RE.search(text)):
+                    counts["earn"] = _num(d.group(1))
+            elif (m := EARN_RE.search(text)):         # Star/Life: earned-at-this-rank stated
+                counts["earn"] = _num(m.group(1))
+                c = CUMUL_RE.search(text)
+                counts["cumulative"] = _num(c.group(1)) if c else counts["earn"]
+            if counts and (m := FROM_LIST_RE.search(text)):
+                counts["from_eagle_required"] = _num(m.group(1))
+            if counts:
+                req["badge_count"] = {k: counts[k] for k in
+                                      ("earn", "cumulative", "from_eagle_required") if k in counts}
+        after = json.dumps(doc, sort_keys=True)
+        if before != after:
+            p.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
+                         encoding="utf-8", newline="\n")
+            changed += 1
+            if not quiet:
+                t = sum(1 for r in _walk(doc["requirements"]) if "tenure_months" in r)
+                b = sum(1 for r in _walk(doc["requirements"]) if "badge_count" in r)
+                print(f"  {p.name}: {t} tenure, {b} badge-count fact(s)")
+    return changed
 if __name__ == "__main__":
     main()

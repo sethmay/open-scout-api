@@ -3,6 +3,31 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.51.0 (minor) — 2026-07-27
+
+- `PENDING` **Tenure and merit-badge counts are countable: 13 + 3 facts lifted out of prose.**
+  `tenure_months` on any requirement demanding months of activity or service, `badge_count` on the
+  ones stating merit-badge totals. Both derived from each requirement's own verbatim text at apply
+  time, so a reissued book moves the numbers with it. New `rank_advancement` SQLite table answers
+  "what does each rank demand" in one query.
+- **Star and Life are a different rule from Eagle, and the source says so in its own wording.**
+  Star's "any four **from the required list** for Eagle" is *list membership* — all 18 badges
+  interchangeable, so Swimming and Hiking count as two (confirmed by the project owner). Eagle's
+  "including **these 14** merit badges" is a slot tree, where Swimming and Hiking share slot (l) and
+  count once. The extractor keys on exactly that difference, so Eagle gets no
+  `badge_count.from_eagle_required`: publishing a bare count beside a stricter tree would invite
+  consumers to check the weaker rule.
+- **The chain is self-checking, because the source states the running total twice.** Star says six,
+  Life says "five more (so that you have 11 in all)", Eagle says "a total of 21 (10 more than
+  required for the Life rank)" — so `6 + 5 == 11` and `11 + 10 == 21` are gates, not assumptions.
+- **Tenure turned out to be cross-program.** Not a Scouts BSA field: 13 facts across Scouts BSA,
+  Sea Scout (Apprentice/Ordinary/Able/Quartermaster) and Venturing (Pathfinder/Summit) ranks,
+  phrased three ways. Star carries it *twice* — four months being active, four months serving in a
+  position — which are two obligations sharing a number, so they are two records.
+- **5 gates proven by injection**: a tenure figure absent from its own sentence, a badge count
+  absent from its own sentence, more required from the list than are earned, more required than the
+  list held on that date, and a cumulative chain that does not add up.
+
 ## 0.50.0 (minor) — 2026-07-27
 
 - `4b7185f` **`effective_to` is half-open everywhere: 253 published editions re-dated.** An edition

@@ -1,0 +1,24 @@
+{
+  "id": "badge-count-partial",
+  "kind": "requirement-set",
+  "subject": "rank:example",
+  "effective_from": "2024-01-01",
+  "effective_to": null,
+  "supersedes": null,
+  "source_document": { "title": "Example", "year": 2024 },
+  "includes_official_text": false,
+  "requirements": [
+    {
+      "number": "3",
+      "summary": "Earn six merit badges.",
+      "badge_count": { "earn": 6 }
+    }
+  ],
+  "provenance": {
+    "sources": [{ "citation": "Example", "url": "https://example.org/" }],
+    "method": "curated",
+    "verified_at": "2026-07-27",
+    "confidence": 0.7
+  },
+  "notes": "INVALID: badge_count states what this rank earns but not the running total. A consumer asking 'how many badges by Life?' cannot chain partial counts, so cumulative is required alongside earn."
+}
