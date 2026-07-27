@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.48.0 (minor) — 2026-07-27
 
-- `PENDING` **The Eagle merit-badge requirement is a graph now, not a paragraph.** Requirement 3
+- `5f1caf4` **The Eagle merit-badge requirement is a graph now, not a paragraph.** Requirement 3
   named its 14 lettered slots — three of them either/or — inside one 600-character string, so the
   only countable thing in the dataset was the 18 badges flagged `eagle_required`. A tracker
   therefore reported **"6 of 18"** where a Scout owes **6 of 14 slots**. Requirement 3 now carries
