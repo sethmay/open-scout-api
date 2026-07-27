@@ -3,6 +3,21 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.47.1 (patch) — 2026-07-27
+
+- `PENDING` **The three 2025 merit badges now carry their introduction year.** Artificial
+  Intelligence, Cybersecurity and Multisport had `valid_from: null` — unknown — and are now dated
+  **2025**, confirmed by the project owner and corroborated by the ranking series shipped hours
+  earlier: each appears in 2025 and in no earlier year, and Scouting America's 2025 recap gives all
+  three the 999 "no prior rank" sentinel for 2024.
+- **This closes a gate that could not previously bite.** 0.47.0 noted that "a badge ranked before it
+  existed" needed a synthetic two-file injection to prove, because no badge in the dataset started
+  after 2021. With real start years present, ranking Cybersecurity in 2024 is now caught by a
+  single-file injection against unmodified data — the check went from provable to load-bearing.
+- Recorded as `curated` with the basis stated on the record rather than left as a bare date, since
+  the source that suggested the year (a sentinel meaning "no rank") implies a first-offered year
+  without stating one.
+
 ## 0.47.0 (minor) — 2026-07-27
 
 - `458f3c2` **Merit badge popularity by year: 5 years, 692 badge-year ranks, every year a complete
