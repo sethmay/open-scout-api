@@ -118,6 +118,14 @@ attached to some features is deliberately **not** in this projection — it live
 `v1/camps/{id}.json` document, keeping the flat list filterable rather than 40% larger. Each survey also carries **`features_source_tier`** (`guide` / `camp_page` / `portal`), a completeness qualifier in the same spirit as `geo_precision`: `guide` means a camp-specific document was read and averages 21 features per camp, `camp_page` a descriptive page (13), and `portal` that only a registration blurb existed. Rank and trust completeness by it — a `portal` list is a floor, not a description.
 
 
+> **Pre-1.0: the host is not final.** Field shapes are already stable and build-gated — every
+> published file names its contract in `$schema` and the build fails on drift — but the **base URL
+> itself** (`sethmay.github.io/open-scout-api`, which is also the schema `$id` prefix) is still
+> provisional while a permanent home is settled. Cutting `1.0` is what freezes it. Until then,
+> prefer resolving endpoints from [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json)
+> (`base_url`, `schemas`, `endpoints`) over hardcoding the host, and pin data files by git tag via
+> jsDelivr — tags are immutable regardless of where the repo ends up.
+
 **Pinning & releases.** Every version is a git tag (`vMAJOR.MINOR.PATCH`) at that release's
 CHANGELOG sha. Pin canonical files immutably via jsDelivr —
 `https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@v0.11.0/data/councils/cascade-pacific.json`

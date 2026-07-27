@@ -3,6 +3,27 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.42.2 (patch) — 2026-07-27
+
+- `PENDING` **Identity decision recorded: the base URL stays `sethmay.github.io/open-scout-api` for
+  now, and 1.0 stays deliberately UNCUT while a permanent home is negotiated.** Docs only.
+- ⚠ **Why 1.0 is not being tagged even though everything else is cleared.** 1.0 is the promise that
+  `v1` is additive-only forever — no renames, no removals, safe to pin. That promise attaches to the
+  base URL, which is also the schema `$id` prefix. Freezing it onto a host we already intend to move
+  would break the promise on purpose the first time the move happens, which is strictly worse than
+  not having made it yet. The tag is now waiting on one external decision and nothing else.
+- README gains an explicit pre-1.0 caveat, because consumers read it before deciding how to pin:
+  field shapes are stable and build-gated, but the **host is provisional**; resolve endpoints from
+  `v1/meta.json` (`base_url`, `schemas`, `endpoints`) rather than hardcoding the host, and pin data
+  files by git tag via jsDelivr, since tags stay immutable wherever the repo ends up.
+- The move remains cheap and rehearsed whenever the home lands: one
+  `tools/restamp_identity.py --api-base … --repo …`, a rebuild, a CHANGELOG entry and a tag. Zenodo
+  stays deferred for the same reason — the DOI record binds to the final GitHub location, and
+  `.zenodo.json` is already written and correct.
+- Recorded preference for when the choice reopens: a **custom domain**, the only option that makes
+  the published identity independent of GitHub so a later account-or-org move is invisible to
+  consumers rather than another breaking change.
+
 ## 0.42.1 (patch) — 2026-07-27
 
 - `87c7a51` **New `tools/restamp_identity.py`: the last 1.0 blocker is no longer a one-way door.**
