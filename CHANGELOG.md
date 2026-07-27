@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.39.0 (minor) — 2026-07-26
 
-- `PENDING` **Every merit badge now has a description and subject tags** — they were `null` and `[]`
+- `d0cf809` **Every merit badge now has a description and subject tags** — they were `null` and `[]`
   on all 140, which was the most visible hole in the dataset: any app listing badges had nothing to
   show and no way to filter. Descriptions are original prose, 24-38 words (median 33), written from
   each badge's own requirement tree; `tags` carry 1-3 facets from a new **16-term
