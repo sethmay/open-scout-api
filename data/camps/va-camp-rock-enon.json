@@ -25,8 +25,111 @@
       "program_types": [
         "cub_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "three-sided shelters sleeping up to four at some campsites"
+        },
+        {
+          "code": "aquatics",
+          "note": "boating alongside open swim"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "backpacking",
+          "note": "introductory backpacking trek program"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower house with hot water"
+        },
+        {
+          "code": "bb_guns",
+          "note": "bb and pellet rifle range"
+        },
+        {
+          "code": "cabins",
+          "note": "campsite cabins sleeping up to twenty"
+        },
+        {
+          "code": "climbing",
+          "note": "rock wall in the camp's climbing program area"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "note": "day-camp track taking newer Scouts from Tenderfoot to Second Class"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "flush_toilets",
+          "note": "flush toilets in main camp, with latrines at campsites"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "nature_study",
+          "note": "nature conservation area"
+        },
+        {
+          "code": "older_scout_program",
+          "signature": true,
+          "note": "full-week adventure and specialty weeks for Scouts in their teens"
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "mid-week outpost camp for Webelos and Arrow of Light Scouts"
+        },
+        {
+          "code": "platform_tents",
+          "note": "two-person tents on raised platforms"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts can register for the adventure programs as individuals"
+        },
+        {
+          "code": "rappelling",
+          "note": "climbing specialty week covering rappelling and cascading"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "sports_field",
+          "note": "field sports area"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront"
+        },
+        {
+          "code": "wilderness_survival",
+          "note": "full-week backwoods survival and bushcraft specialty"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": "Shenandoah Area Council Cub Scout and Webelos resident summer camp offering rank Adventures, aquatics, climbing, and range and target sports.",
       "provenance": {
         "sources": [
@@ -34,7 +137,12 @@
             "citation": "camp-finder council-598/va-camp-rock-enon (unofficial community dataset)"
           },
           {
-            "url": "https://www.camprockenon.org/cubsummercamp"
+            "url": "https://www.camprockenon.org/cubsummercamp",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.camprockenon.org/SummerCamp",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

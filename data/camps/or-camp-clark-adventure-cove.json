@@ -25,8 +25,61 @@
       "program_types": [
         "high_adventure"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "adirondack_shelters",
+          "note": "group campsites built around three-sided shelters"
+        },
+        {
+          "code": "amphitheater"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower house with hot water"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "cabins",
+          "note": "two family cabins"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "pavilion",
+          "note": "each campsite has its own dining shelter"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "sports_field"
+        },
+        {
+          "code": "trading_post"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": "Coastal high-adventure program on the 780-acre Meriwether/Clark Scout Reservation at Cape Lookout, south of Tillamook, offering sea kayaking, rock climbing, sandboarding, shooting sports, and clamming and crabbing.",
       "provenance": {
         "sources": [
@@ -34,7 +87,12 @@
             "citation": "camp-finder council-492/or-camp-clark-adventure-cove (unofficial community dataset)"
           },
           {
-            "url": "https://cpcscouting.org/project/camp-clark/"
+            "url": "https://cpcscouting.org/project/camp-clark/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://cpcscouting.org/download/486/camp-maps/9155/camp-clark-trail-map-2",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

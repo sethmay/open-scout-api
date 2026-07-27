@@ -126,6 +126,24 @@ def main() -> None:
         if age_p is not None and age_p >= PROVENANCE_MONTHS:
             due_prov.append((cid, age_p))
 
+    # --- camps hanging off a council that no longer exists ---------------------
+    # validate_data.py hard-fails these when our own event graph names a successor, because
+    # then the repair is unambiguous. What lands here is the other kind: a council recorded
+    # as `discontinued` with no continuing party, so nobody knows where the camp went.
+    current_councils, council_names = set(), {}
+    for p in entity_files("councils"):
+        e = read_json(p)
+        ov = open_version(e)
+        council_names[f"council:{e['id']}"] = ((ov or e["versions"][-1]).get("name"), ov is not None)
+        if ov:
+            current_councils.add(f"council:{e['id']}")
+    orphaned = []
+    for _, e in camps:
+        v = open_version(e)
+        ref = v.get("council") if v else None
+        if ref and ref not in current_councils:
+            orphaned.append((e["id"], ref, council_names.get(ref, ("?", False))[0]))
+
     # --- vocabulary health: a term nothing uses cannot be filtered on ----------
     vocab = read_json(DATA / "vocab" / "camp-features.json")["terms"]
     used = Counter(f["code"] for _, e in camps for v in [open_version(e)] if v
@@ -159,7 +177,7 @@ def main() -> None:
         "due_signature": due_sig, "due_features": due_feat,
         "due_website": due_site, "due_provenance": due_prov,
         "never_surveyed": never, "imported_unverified": imported_unverified,
-        "no_website": no_site, "zero_use_vocab": zero,
+        "no_website": no_site, "zero_use_vocab": zero, "orphaned_council": orphaned,
         "duplicate_sources": dupes,
     }
 
@@ -174,6 +192,9 @@ def main() -> None:
     print(f"    never surveyed         {len(never):>4}  (no features, no survey date)")
     print(f"    imported, unverified   {len(imported_unverified):>4}  (features present, never confirmed)")
     print(f"    no website             {len(no_site):>4}  (link cleared or never had one)")
+    print(f"    council no longer exists {len(orphaned):>2}  (dissolved with no recorded successor)")
+    for cid, ref, nm in orphaned:
+        print(f"        {cid[:38]:40} {str(nm)[:28]}")
     print("\n  STRUCTURAL HEALTH")
     print(f"    zero-use vocab terms   {len(zero):>4}  {', '.join(zero[:6])}{' …' if len(zero) > 6 else ''}")
     print(f"    duplicated sources     {len(dupes):>4} entities, "

@@ -159,6 +159,34 @@ def main() -> int:
                     errs.append(f"{ds}/_events.json event {eid}: {ref} ended by '{etype}' "
                                 f"but still has a valid_to:null (current) version")
 
+    # pass 3b: a CURRENT camp must not hang off a council that no longer exists. `check_ref`
+    # only proves the ref resolves, and a merged-away council still resolves, so six active
+    # camps were sitting on dissolved councils undetected. Hard-fail only where the successor
+    # is knowable from our own event graph (the fix is unambiguous); councils that were
+    # `discontinued` with no continuing party need research and are reported by
+    # tools/maintenance.py instead of blocking the build.
+    successor: dict[str, str] = {}
+    cev = DATA / "councils" / "_events.json"
+    if cev.exists():
+        for ev in json.loads(cev.read_text("utf-8")).get("events", []):
+            parts = ev.get("participants", [])
+            gone = [p["ref"] for p in parts if p.get("role") in ("predecessor", "subject")]
+            cont = [p["ref"] for p in parts if p.get("role") in ("continuing", "successor")]
+            for g in gone:
+                if cont:
+                    successor[g] = cont[0]
+    for p in sorted((DATA / "camps").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        obj = json.loads(p.read_text("utf-8"))
+        for v in obj.get("versions", []):
+            if v.get("valid_to") is not None:
+                continue                      # historical camp version: a dead council is correct
+            ref = v.get("council")
+            if ref and ref not in open_ended and ref in successor:
+                errs.append(f"{p.name}: current camp references non-current council {ref!r}; "
+                            f"it was succeeded by {successor[ref]!r} — repoint it")
+
     # pass 4: requirement-sets (immutable documents, not versioned entities)
     rs_dir = DATA / "requirement-sets"
     nrs = 0

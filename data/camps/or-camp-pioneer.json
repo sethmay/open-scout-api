@@ -26,8 +26,77 @@
         "high_adventure",
         "scouts_bsa_resident"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "amphitheater"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "backpacking",
+          "signature": true,
+          "note": "high-altitude treks into the Oregon Cascades backcountry"
+        },
+        {
+          "code": "bathhouse",
+          "note": "separate youth and adult shower houses"
+        },
+        {
+          "code": "caving",
+          "note": "ice caves visited from camp"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "first_year_program",
+          "signature": true,
+          "note": "short intensive track covering Tenderfoot through First Class"
+        },
+        {
+          "code": "fishing",
+          "note": "fishing dock and cleaning station on the lake"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "high_adventure_option"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "two alpine lakes on the property"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": "Cascade Pacific Council mountain resident camp at 4,500 feet near Mount Jefferson, offering non-traditional Scouts BSA programs including TTFC+ (Tenderfoot–First Class), Eagle Camp, and Throne Quest.",
       "provenance": {
         "sources": [
@@ -35,7 +104,12 @@
             "citation": "camp-finder council-492/or-camp-pioneer (unofficial community dataset)"
           },
           {
-            "url": "https://cpcscouting.org/project/camp-pioneer/"
+            "url": "https://cpcscouting.org/project/camp-pioneer/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/492169059/SM/Camp_Pioneer_Maps.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",

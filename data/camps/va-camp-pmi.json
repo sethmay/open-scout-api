@@ -25,8 +25,70 @@
       "program_types": [
         "webelos"
       ],
-      "features": [],
-      "features_verified_at": null,
+      "features": [
+        {
+          "code": "aquatics",
+          "note": "boating sessions run alongside open swim"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bathhouse",
+          "note": "shower house shared by the whole camp"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "conservation_project",
+          "note": "service project toward the camp award"
+        },
+        {
+          "code": "cope",
+          "note": "team challenge course elements in the outdoor-skills area"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "hiking",
+          "signature": true,
+          "note": "trailhead for the Viewing Rock ridge overlook"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "pioneering",
+          "note": "monkey-bridge building in the outdoor-skills area"
+        },
+        {
+          "code": "scoutcraft"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "stem"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "water_trampoline"
+        },
+        {
+          "code": "waterfront"
+        }
+      ],
+      "features_verified_at": "2026-07-26",
       "summary": "Webelos resident camp located at Goshen Scout Reservation in Goshen, Virginia.",
       "provenance": {
         "sources": [
@@ -34,7 +96,12 @@
             "citation": "camp-finder council-082/va-camp-pmi (unofficial community dataset)"
           },
           {
-            "url": "https://www.gotogoshen.org/camps-programs/camp-pmi/"
+            "url": "https://www.gotogoshen.org/camps-programs/camp-pmi/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.gotogoshen.org/wp-content/uploads/2021/04/2021-PMI-Leaders-Guide.pdf",
+            "accessed": "2026-07-26"
           }
         ],
         "method": "imported",
