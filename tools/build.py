@@ -102,10 +102,31 @@ def main() -> None:
     for p in SCHEMA_DIR.glob("*.schema.json"):
         shutil.copyfile(p, schema_out / p.name)
 
+    PUB_ENTITY = "https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json"
+    PUB_META = "https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json"
     pub = read_json(SCHEMA_DIR / "published-current.schema.json")
     collection_validator = Draft202012Validator(pub, format_checker=Draft202012Validator.FORMAT_CHECKER)
     pubidx = read_json(SCHEMA_DIR / "published-index.schema.json")
     index_validator = Draft202012Validator(pubidx, format_checker=Draft202012Validator.FORMAT_CHECKER)
+    entity_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-entity.schema.json"),
+                                            format_checker=Draft202012Validator.FORMAT_CHECKER)
+    meta_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-meta.schema.json"),
+                                          format_checker=Draft202012Validator.FORMAT_CHECKER)
+    alias_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-aliases.schema.json"),
+                                           format_checker=Draft202012Validator.FORMAT_CHECKER)
+    errs: list[str] = []
+
+    def write_entity(path: Path, obj: dict) -> None:
+        """Stamp the published contract onto a per-entity document, validate, then write.
+
+        The per-entity endpoints are the deep surface (canonical entity + projected events +
+        requirement-set ids) and were the last unpinned published promise: renaming `events`
+        or emitting an entity with no versions used to be a one-line edit no gate would catch.
+        """
+        obj = {"$schema": PUB_ENTITY, **obj}
+        errs.extend(f"{path.relative_to(DIST).as_posix()}: {er.json_path}: {er.message}"
+                    for er in entity_validator.iter_errors(obj))
+        write_json(path, obj)
 
     councils, cevents = load_dataset("councils")
     territories, tevents = load_dataset("territories")
@@ -143,7 +164,7 @@ def main() -> None:
     current_territories = []
     for e in territories:
         ref = f"territory:{e['id']}"
-        write_json(DIST / "v1" / "territories" / f"{e['id']}.json", {**e, "events": events_for(ref, tevents)})
+        write_entity(DIST / "v1" / "territories" / f"{e['id']}.json", {**e, "events": events_for(ref, tevents)})
         ov = open_version(e)
         _tv = ov or e["versions"][-1]
         terr_index.append({"id": e["id"], "name": _tv["name"], "number": _tv.get("number"),
@@ -158,10 +179,9 @@ def main() -> None:
     # --- councils: per-entity + index + current ----------------------------
     council_index = []
     current_councils = []
-    errs: list[str] = []
     for e in councils:
         ref = f"council:{e['id']}"
-        write_json(DIST / "v1" / "councils" / f"{e['id']}.json", {**e, "events": events_for(ref, cevents)})
+        write_entity(DIST / "v1" / "councils" / f"{e['id']}.json", {**e, "events": events_for(ref, cevents)})
         ov = open_version(e)
         council_index.append({"id": e["id"], "name": (ov or e["versions"][-1])["name"],
                               "bsa_number": (ov or e["versions"][-1]).get("bsa_number"),
@@ -187,7 +207,7 @@ def main() -> None:
     current_badges = []
     for e in merit_badges:
         ref = f"merit-badge:{e['id']}"
-        write_json(DIST / "v1" / "merit-badges" / f"{e['id']}.json",
+        write_entity(DIST / "v1" / "merit-badges" / f"{e['id']}.json",
                    {**e, "events": events_for(ref, mbevents),
                     "requirement_sets": rs_by_subject.get(f"merit-badge:{e['id']}", [])})
         ov = open_version(e)
@@ -211,7 +231,7 @@ def main() -> None:
     camp_aliases: dict[str, str] = {}
     for e in camps:
         ref = f"camp:{e['id']}"
-        write_json(DIST / "v1" / "camps" / f"{e['id']}.json", {**e, "events": events_for(ref, campevents)})
+        write_entity(DIST / "v1" / "camps" / f"{e['id']}.json", {**e, "events": events_for(ref, campevents)})
         ov = open_version(e)
         last = ov or e["versions"][-1]
         for _mid in sorted({m for _v in e["versions"] for m in _v.get("merged_from", [])}):
@@ -242,6 +262,8 @@ def main() -> None:
                                   "url": _durable_url(ov.get("website"), _cm["website"] if _cm else None),
                                   "imported_at": ov["provenance"].get("imported_at"),
                                   **_prov(ov)})
+    errs.extend(f"camps/aliases.json: {er.json_path}: {er.message}"
+                for er in alias_validator.iter_errors(camp_aliases))
     write_json(DIST / "v1" / "camps" / "aliases.json", camp_aliases)
 
     # --- ranks: per-entity + index + current -------------------------------
@@ -249,7 +271,7 @@ def main() -> None:
     current_ranks = []
     for e in ranks:
         ref = f"rank:{e['id']}"
-        write_json(DIST / "v1" / "ranks" / f"{e['id']}.json",
+        write_entity(DIST / "v1" / "ranks" / f"{e['id']}.json",
                    {**e, "events": events_for(ref, rankevents),
                     "requirement_sets": rs_by_subject.get(ref, [])})
         ov = open_version(e)
@@ -266,7 +288,7 @@ def main() -> None:
     current_awards = []
     for e in awards:
         ref = f"award:{e['id']}"
-        write_json(DIST / "v1" / "awards" / f"{e['id']}.json",
+        write_entity(DIST / "v1" / "awards" / f"{e['id']}.json",
                    {**e, "events": events_for(ref, awardevents),
                     "requirement_sets": rs_by_subject.get(ref, [])})
         ov = open_version(e)
@@ -284,7 +306,7 @@ def main() -> None:
     current_lodges = []
     for e in oa_lodges:
         ref = f"oa-lodge:{e['id']}"
-        write_json(DIST / "v1" / "oa-lodges" / f"{e['id']}.json",
+        write_entity(DIST / "v1" / "oa-lodges" / f"{e['id']}.json",
                    {**e, "events": events_for(ref, oalodgeevents)})
         ov = open_version(e)
         last = ov or e["versions"][-1]
@@ -350,13 +372,14 @@ def main() -> None:
     for ds, c in index_colls:
         write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
-        write_json(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
+        write_entity(DIST / "v1" / "requirement-sets" / f"{d['id']}.json", d)
 
     for p in sorted((DATA / "vocab").glob("*.json")):
         write_json(DIST / "v1" / "vocab" / p.name, json.loads(p.read_text("utf-8")))
     vocab_ids = sorted(p.stem for p in (DATA / "vocab").glob("*.json"))
 
-    write_json(DIST / "v1" / "meta.json", {
+    meta_doc = {
+        "$schema": PUB_META,
         "name": "Open Scout API", "version": version, "generated_at": now,
         "base_url": BASE_URL, "license": LICENSE, "unofficial": True, "disclaimer": DISCLAIMER,
         "schemas": f"{BASE_URL}/schema/v1/",
@@ -386,7 +409,12 @@ def main() -> None:
                       "v1/current/camps.json", "v1/current/ranks.json", "v1/current/awards.json",
                       "v1/current/oa-lodges.json",
                       *[f"v1/vocab/{v}.json" for v in vocab_ids]],
-    })
+    }
+    errs.extend(f"meta.json: {er.json_path}: {er.message}"
+                for er in meta_validator.iter_errors(meta_doc))
+    if errs:
+        raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
+    write_json(DIST / "v1" / "meta.json", meta_doc)
 
     (DIST / "index.html").write_text(
         _landing(version, now, len(current_councils), len(current_territories), len(current_badges),

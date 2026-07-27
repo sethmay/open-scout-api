@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-aliases.schema.json",
+  "title": "Published alias map",
+  "description": "Contract for v1/{dataset}/aliases.json: retired entity id -> the surviving entity id it resolves to. Emitted where entities have been merged (today only camps, from duplicate and program-variant listings folded into their base camp). Deliberately a bare map rather than a collection envelope, because the only sane consumer use is a direct lookup: resolve an id you were given, or 404. Both sides are bare slugs, never '{kind}:{slug}' refs, since the file is dataset-scoped. Ids are never reused, so an entry is permanent once published; a key must not also be a live entity id, which tools/validate_data.py enforces on the canonical side.",
+  "type": "object",
+  "propertyNames": { "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+  "additionalProperties": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" }
+}

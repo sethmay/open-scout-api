@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json",
+  "title": "Published discovery document",
+  "description": "Contract for v1/meta.json, the entry point a consumer reads first: what this dataset is, which release it is, where the schemas live, what every endpoint is called, and the licensing split. Pinning it matters more than its size suggests - `endpoints` and `vocab` are the machine-readable index of the whole API, and `text_rights` is the licence carve-out that keeps © Scouting America requirement text distinct from the CC-licensed remainder. Fields are ADDITIVE-ONLY under v1.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(\\+unreleased)?$",
+                 "description": "The release this tree was built from; '+unreleased' marks a build ahead of the newest CHANGELOG entry." },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "base_url": { "type": "string", "format": "uri" },
+    "license": { "type": "string", "minLength": 1,
+                 "description": "Covers the dataset EXCEPT the official requirement text described by `text_rights`." },
+    "unofficial": { "const": true,
+                    "description": "Always true, and deliberately not optional: this is a community project with no Scouting America affiliation, and a consumer must not be able to lose that by reading a subset of the document." },
+    "disclaimer": { "type": "string", "minLength": 1 },
+    "schemas": { "type": "string", "format": "uri" },
+    "text_rights": { "type": "string", "minLength": 1 },
+    "datasets": {
+      "type": "object",
+      "description": "Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "total": { "type": "integer", "minimum": 0 },
+          "current": { "type": "integer", "minimum": 0 }
+        },
+        "required": ["total"]
+      }
+    },
+    "vocab": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "endpoints": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "minItems": 1 }
+  },
+  "required": ["$schema", "name", "version", "generated_at", "base_url", "license", "unofficial",
+               "disclaimer", "schemas", "text_rights", "datasets", "vocab", "endpoints"]
+}
