@@ -630,7 +630,11 @@
       "code": "pavilion",
       "label": "Pavilion",
       "description": "A covered open-air gathering shelter.",
-      "category": "facility"
+      "category": "facility",
+      "aliases": [
+        "picnic_shelter",
+        "shade_shelter"
+      ]
     },
     {
       "code": "performing_arts",
@@ -826,7 +830,9 @@
       "description": "Ball fields or sports courts.",
       "category": "facility",
       "aliases": [
-        "athletic_field"
+        "athletic_field",
+        "ball_field",
+        "playing_field"
       ]
     },
     {

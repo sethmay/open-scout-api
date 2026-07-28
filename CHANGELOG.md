@@ -3,6 +3,35 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.53.0 (minor) — 2026-07-27
+
+- `PENDING` **First corpus-wide camp feature audit: 366 camps swept — and the headline finding was
+  the auditor.** The first run reported **1,377** features with "no lexical trace". **949 of those
+  were the tool's own bugs**; the honest number is **428**. Nine fixes to
+  `tools/audit_camp_features.py`, each traced to a specific camp.
+- **A 4 MB read cap silently emptied 45 leaders' guides.** A truncated PDF has no EOF marker, pypdf
+  rejects the whole file, and the empty result was cached as a page that simply says nothing — so
+  every feature the guide attests looked unsupported. `ga-camp-sidney-dew` went 24 flags → 0.
+- **A `.docx` guide was scored as 594 KB of XML noise.** `.docx` is a ZIP; decoding it as UTF-8
+  yields something shaped like text, containing the camp's name 72 times and no prose.
+  `oh-muskingum-valley-scout-reservation` went 24 flags → 1.
+- **Council navigation attests features on every page of a site.** Chief Seattle's chrome names its
+  "Trading Post" and "National Youth Leadership Training", which made both appear attested for every
+  camp that council owns — a page-level bleed that URL scoping cannot see, because the page really
+  is the camp's. The council homepage is now a per-host chrome control, fetched once and reused.
+- **Evidence is per source and cited.** Findings carry the URL that produced them, and the crawl no
+  longer wanders from a camp page onto the council's `/donate/` and `/advancement/` pages.
+- **An audit may never report a defect on evidence it failed to fetch** — flags on camps with an
+  unreadable cited source are now a separate `unverified` bucket, not a finding.
+- **Three vocabulary alias gaps, each confirmed against the surveyors' own notes:** `sports_field`
+  gains `ball_field`/`playing_field`, `pavilion` gains `picnic_shelter`/`shade_shelter` (our own
+  feature notes say "shade shelters at every program area"), and `atv` — whose 3-letter code was
+  being dropped by a `len > 3` token filter — can now match a page that says "ATV". 41 false flags
+  removed. Bare `shelter` was deliberately NOT aliased: `adirondack_shelters` is a different code.
+- **No features were removed.** Every remaining flag is a lead needing a human, and the largest
+  cluster (`stem`, 45 camps) turns on a vocabulary question — those guides name Robotics and Space
+  Exploration but never "STEM" — that must be decided before any sweep. Recorded in `TODO.md`.
+
 ## 0.52.0 (minor) — 2026-07-27
 
 - `483e3ea` **Adult training: 28 courses and 67 position-trained requirements.** Parsed from

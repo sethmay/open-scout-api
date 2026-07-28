@@ -471,25 +471,45 @@ with 104 `position:` refs (0.49.0). Tenure and badge counts are countable (0.51.
   requirement to match. So no newer edition exists to seed — until one does, the dataset faithfully
   reports a rule that reality has moved past. Re-check when a 2026 book appears.
 
-### Camp feature accuracy audit — `python tools/audit_camp_features.py --all`
+### Camp feature accuracy audit — SWEPT 0.53.0; the queue is now the findings
 
-Added 0.46.0 after a user spot-check found two defects `validate_data.py` structurally cannot see:
-a feature no source attests (Camp Baker's `mountain_biking`, an inherited LLM guess) and a survey
-that stopped at an index page (Camp Parsons' unread `/program/`, holding its ATV program). The tool
-re-fetches each camp's cited sources plus the program pages they link to and reports three lead
-types: no lexical trace, page-names-record-omits, and uncited program pages.
+`python tools/audit_camp_features.py --all --out .workbench/audit-all.json` (~6 min warm, ~30 min
+cold; caches under `.workbench/campaudit/`). First corpus-wide run happened in 0.53.0 and its main
+result was about the **tool**, not the data: the first sweep reported 1,377 features with "no
+lexical trace", and **949 of those were the auditor's own bugs**. Final: 428.
 
-**Not yet run across the corpus** — only the two camps in this release. Running `--all` over the 366
-surveyed camps is the obvious next sweep, and the two leads it already surfaces are worth designing
-for first:
+What the sweep costs to believe, and why the count fell:
 
-- **Match per source, not against the concatenation.** A camp's council-wide page can attest a
-  feature belonging to a *different* camp of that council (it suggested `trading_post` and
-  `leadership_training` for Parsons on that basis). Keeping the hit's source URL would both cut the
-  noise and let a real finding cite its evidence.
-- **Uncited PDFs.** Baker's remaining lead is a merit-badge schedule PDF the survey never read;
-  guidebook PDFs were the richest source in the 0.38.0 wave (`guide` camps average 21 features
-  against 13), so PDF-aware fetching is likely where the next real coverage lives.
+- **45 leaders' guides were silently empty.** A 4 MB read cap truncated large PDFs, pypdf rejects a
+  stream with no EOF marker, and the failure was cached as a readable page saying nothing. One
+  camp (`ga-camp-sidney-dew`) went 24 flags → 0 once its guide downloaded.
+- **A `.docx` guide was scored as 594 KB of XML noise** (`oh-muskingum-valley-scout-reservation`,
+  24 flags → 1). `.docx` is a ZIP; decoding it as UTF-8 produces something that looks like text.
+- **Council navigation attests features on every page of a site.** Chief Seattle's chrome names its
+  "Trading Post" and "National Youth Leadership Training", so both appeared attested for every camp
+  that council owns. The council homepage is now fetched once per host as a chrome control.
+- **Three vocabulary alias gaps, all confirmed against surveyor notes**: `sports_field` (pages say
+  "ball field"), `pavilion` (pages and our own notes say "shade shelters"), and `atv`, whose 3-letter
+  code was dropped by a `len > 3` token filter and so could not match a page saying "ATV".
+
+Standing rule the sweep earned: **an audit may never report a defect on evidence it failed to
+fetch.** Flags on camps with an unreadable cited source are now a separate `unverified` bucket.
+
+Open queue, in value order:
+
+- **`stem` on 45 camps (largest single cluster) needs a human ruling.** Their guides name Robotics,
+  Space Exploration and Chemistry merit badges but never say "STEM", and `nova` appears on exactly
+  1 of the 45 — so it is not an alias gap. The question is whether offering STEM-ish merit badges
+  *is* the `stem` feature or whether that code should mean a dedicated STEM area/programme. Decide
+  the vocabulary meaning first, then sweep; do not bulk-edit before that.
+- **827 candidate omissions** (`PAGE NAMES, RECORD OMITS`), now mostly from guides that were
+  unreadable before. This is where real coverage lives — and also where the 0.46.x laundering trap
+  lives, so each needs its source read, not a bulk apply.
+- **134 uncheckable** across camps whose cited source will not load — overlaps the link-health
+  queue below; fixing the link fixes the audit.
+- **21 features attested only by a page the record does not cite** — cheapest real work on the list:
+  the fix is adding the source, not changing the claim.
+- **4 camps with no readable source at all**, and 219 in-scope links left unread at `MAX_EXTRA=5`.
 - Terms whose every word is generic (`older_scout_program`, `high_adventure_option`) are reported as
   *not lexically checkable* and will need a human or a different signal entirely.
 
