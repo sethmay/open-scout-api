@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
 
 ## 0.53.0 (minor) — 2026-07-27
 
-- `PENDING` **First corpus-wide camp feature audit: 366 camps swept — and the headline finding was
+- `dfd5b73` **First corpus-wide camp feature audit: 366 camps swept — and the headline finding was
   the auditor.** The first run reported **1,377** features with "no lexical trace". **949 of those
   were the tool's own bugs**; the honest number is **428**. Nine fixes to
   `tools/audit_camp_features.py`, each traced to a specific camp.
