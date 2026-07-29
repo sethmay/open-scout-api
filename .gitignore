@@ -23,6 +23,12 @@ __pycache__/
 .venv/
 *.egg-info/
 
-# Node (future site) + build output (tools/build.py -> dist/, deployed to Pages via CI)
+# Node (cookbook/ts workspace) + build output (tools/build.py -> dist/, deployed to Pages via CI)
+# cookbook/ts/package-lock.json IS committed, so the cookbook gate installs deterministically.
 node_modules/
 dist/
+
+# .NET build output. Scoped to the project directory on purpose: a bare `bin/`/`obj/` has no
+# slash, so git would match it at EVERY depth and permanently hide any such directory in the repo.
+cookbook/csharp/bin/
+cookbook/csharp/obj/

@@ -3,6 +3,45 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.54.0 (minor) — 2026-07-29
+
+- `PENDING` **Add `cookbook/` — CI-gated example code in five languages, plus three starter apps.**
+  36 gated recipes: 16 Python, 10 SQL (55 SQL invariants), 6 shell, 6 TypeScript, 4 C#. A recipe is
+  not "how to call fetch": each one kills a specific way this data misleads a consumer who assumes
+  it is a flat snapshot, and the gate rejects any file lacking a `TRAP:` line naming that wrong
+  answer. `tools/validate_cookbook.py` serves `dist/` over loopback HTTP, exports `OSA_BASE`, and
+  requires every recipe to exit 0 AND print output; `--strict` (used by CI) makes a skipped suite a
+  failure, so a vanished toolchain cannot mean green with zero coverage.
+- `PENDING` **Generated consumer types are now shipped and drift-gated.** `tools/gen_types.py` emits
+  `cookbook/ts/src/generated/v1.ts` and `cookbook/csharp/Generated/V1.cs` from the five
+  `published-*.schema.json` contracts, and `--check` fails the build on drift — so the README's
+  standing advice to generate types rather than hand-mirror them is enforced rather than offered.
+  The `kind` discrimination is emitted as a type, including the entity contract's `enum`-grouped
+  kinds that a `const`-only reader would have dropped.
+- `PENDING` **Fix `chippewa-valley`: a version window ran backwards (`1927..1925`).** The record's
+  own provenance note dates the rename to 1925 and its successor version starts 1925, so `1927` was
+  an `llm_extraction` error; `valid_from` is now `null` (the founding year is not recoverable from
+  that source). Under half-open `[from, to)` an inverted window is empty, so nothing was ever in
+  force in it — "what was this council called in 1926?" silently answered nothing.
+- `PENDING` **Fix `merit-badges/reptiles`: a zero-width window (`1926..1926`) meant the badge never
+  existed at any instant.** Now `1926..1927`. Its `superseded` event names `reptile-study`, which
+  starts 1927, and its thirteen pre-1911 siblings all encode a one-year existence as `1910..1911`,
+  so the half-open end date was simply wrong. Found by the cookbook review after the new rule below
+  was deliberately scoped to exclude it.
+- `PENDING` **`validate_data.py` now rejects a backwards version window.** The existing rule only
+  related *adjacent* versions, so an inverted window inside a single version passed whenever its
+  `valid_to` still abutted the successor's `valid_from` — which is exactly how the above shipped.
+  Scoped to strictly backwards (`>`), not zero-width (`>=`): **seven** records remain legitimately
+  zero-width at year granularity, in two classes — the four 2010 `historic-*` badges (a centennial
+  revival offered during 2010 only, which a year-granularity half-open window cannot express) and
+  three unverified council founding years (`baltimore-area` 1911, `green-mountain` 1972, `quivira`
+  1928). Tightening to `>=` needs those three re-sourced; tracked in `TODO.md`.
+- `PENDING` **Deploy the browser starter with the API.** `build.py` copies
+  `cookbook/ts/starters/camp-map/` to `dist/starters/camp-map/` and the landing page links it as a
+  live demo: `exact` coordinates render as pins, `approximate` as dashed areas with a legend saying
+  why, co-located camps collapse to one reservation marker, the feature filter expands a coarse code
+  over its hierarchy, and the single camp with no coordinate is named rather than dropped.
+
 ## 0.53.0 (minor) — 2026-07-27
 
 - `dfd5b73` **First corpus-wide camp feature audit: 366 camps swept — and the headline finding was

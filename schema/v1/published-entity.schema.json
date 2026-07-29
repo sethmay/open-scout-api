@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
+    "id": { "$ref": "#/$defs/Slug" },
     "kind": { "enum": ["council", "territory", "merit-badge", "camp", "rank", "award", "oa-lodge", "requirement-set", "adventure", "merit-badge-ranking", "position", "training", "training-requirement"] }
   },
   "required": ["$schema", "kind", "id"],
@@ -137,7 +138,8 @@
         "position_name": { "type": "string", "minLength": 1 },
         "registration_codes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
         "unit_type": { "enum": ["pack", "troop", "team", "crew", "ship", "other"] },
-        "requires": { "type": "array", "minItems": 1 }
+        "requires": { "type": "array", "minItems": 1 },
+        "provenance": { "type": "object" }
       },
       "required": ["position_name", "registration_codes", "unit_type", "requires", "provenance"]
     },

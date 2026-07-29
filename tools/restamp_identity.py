@@ -32,7 +32,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKIP_DIRS = {".git", "dist", ".workbench", "node_modules", "__pycache__", ".claude"}
-TEXT_SUFFIXES = {".json", ".py", ".md", ".yml", ".yaml", ".html", ".txt", ".sql"}
+# Every extension that can contain the published host as a literal. `cookbook/` introduced the
+# repo's first .ts/.cs/.sh/.js files, and each language's helper names the default base once --
+# so omitting them made this tool (and its own post-apply verification pass, which reuses the
+# same walk) silently blind to nine occurrences: a move would report success while nine files
+# still pointed at the dead host, and nothing downstream would catch it because CI exports
+# OSA_BASE. Add the suffix here whenever a new language lands under cookbook/.
+TEXT_SUFFIXES = {".json", ".py", ".ts", ".cs", ".sh", ".js", ".md", ".yml", ".yaml", ".html",
+                 ".txt", ".sql"}
 
 
 def current_identity() -> tuple[str, str]:

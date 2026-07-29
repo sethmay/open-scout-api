@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Deliberately zero PackageReference. System.Text.Json ships in the shared framework, so this
+       directory can be copied out of the repo and run with `dotnet run` on an offline machine with
+       no NuGet feed configured. Adding a package here would be a claim the dataset does not make. -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>OpenScoutApi.Cookbook</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- The published data models absence as null (geo_precision, eagle_required, valid_to). A
+         nullable warning here is almost always a real trap, so it must not be ignorable. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+</Project>

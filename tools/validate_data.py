@@ -78,6 +78,29 @@ def main() -> int:
                 at, bf = a.get("valid_to"), b.get("valid_from")
                 if at is None or bf is None or bf < at:
                     errs.append(f"{p.name}: version windows not ordered/half-open at {a.get('valid_from')}..{at} -> {bf}..")
+            # a window must not run BACKWARDS. The pairwise rule above only relates ADJACENT
+            # versions, so an inverted window inside one version slips through whenever its
+            # valid_to still abuts the successor's valid_from -- which is exactly how
+            # chippewa-valley shipped a 1927..1925 window. Under half-open [from, to) an
+            # inverted window is empty, so no date is ever in force there: a consumer asking
+            # "what was this council called in 1926?" silently gets nothing.
+            #
+            # Deliberately `>` and not `>=`. SEVEN records are zero-width, in two classes:
+            #   real, a granularity limit -- historic-{carpentry,pathfinding,signaling,tracking}
+            #     are all 2010..2010, a centennial revival offered during 2010 only, which a
+            #     year-granularity half-open window cannot express;
+            #   unverified -- councils/{baltimore-area 1911, green-mountain 1972, quivira 1928},
+            #     each a single scraped founding year nobody has re-sourced.
+            # An eighth, merit-badges/reptiles, WAS 1926..1926 and was a genuine error of exactly
+            # the class this rule catches: its `superseded` event names reptile-study, which
+            # starts 1927, and its thirteen pre-1911 siblings all encode a one-year existence as
+            # 1910..1911. It is now 1926..1927. Tightening to `>=` would need the three council
+            # years re-sourced and a decision on the 2010 four; see TODO.md.
+            for v in vs:
+                vf, vt = v.get("valid_from"), v.get("valid_to")
+                if vf is not None and vt is not None and vf > vt:
+                    errs.append(f"{p.name}: version window runs backwards ({vf}..{vt}); under "
+                                f"half-open [from, to) nothing is ever in force in it")
             # only the LAST version may be open-ended
             for v in vs[:-1]:
                 if v.get("valid_to") is None:

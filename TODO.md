@@ -132,6 +132,55 @@ rejected.
 
 ## Queue
 
+### Cookbook — SHIPPED; four follow-ups
+
+`cookbook/` is 36 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
+gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and the recipe→trap
+map are in [`cookbook/README.md`](./cookbook/README.md). Adding a recipe: it must carry a `TRAP:`
+header line, assert invariants rather than record counts, and exit nonzero when they break.
+
+- **`tools/gen_types.py`'s `$defs` classifier is still not total.** `build()` records a `$def` as a
+  scalar only when it is not an object-with-properties, carries no `enum`/`const`, and its `type` is
+  a plain `str`. Shapes outside that produce either a bare undeclared type name (does not compile)
+  or `unknown`/`JsonElement` (silently wrong). Property-level `anyOf`/`oneOf` IS handled now and
+  raises `SystemExit` on a form it cannot model — do the same for the `$defs` pass: an `enum` `$def`,
+  a `["string","null"]` union `$def`, an `allOf`, an `array` and a bare `object` are the five known
+  gaps. None occurs in `schema/v1/` today, so this is a latent trap for the next schema edit rather
+  than a live bug. Also unguarded, all clean today: a property whose PascalCase equals its enclosing
+  record name (CS0542), two properties differing only in punctuation (collide after `pascal()`), and
+  a schema `description` containing `*/` (breaks the TS `/** … */` block).
+- **Zero-width version windows: 7 records, in two classes, semantics undecided.**
+  `valid_from == valid_to` is an empty window under half-open `[from, to)`, so *nothing is ever in
+  force in it* — the entity effectively never existed. `validate_data.py` therefore rejects only
+  *strictly* backwards windows (`>`, not `>=`). The seven:
+  - **Real, a granularity limit (4):** `merit-badges/historic-{carpentry,pathfinding,signaling,
+    tracking}`, all `2010..2010`. Scouting America revived these for the 2010 centennial year
+    only, so the data is not wrong — a year-granularity half-open window simply cannot express
+    "existed during 2010". Fixing means day granularity (`2010-01-01..2011-01-01`), or stating in
+    `PLAN.md` §3 that a zero-width window means "in force for that whole calendar unit" and making
+    `as-of` resolution honour it.
+  - **Unverified (3):** `councils/{baltimore-area 1911, green-mountain 1972, quivira 1928}` — each
+    a single scraped founding year nobody has re-sourced. These may well be errors; nobody has
+    looked. Re-source before tightening the rule to `>=`.
+
+  An eighth, `merit-badges/reptiles`, **was** `1926..1926` and **was** a genuine error of exactly
+  the class the new rule catches — found by the cookbook review, fixed to `1926..1927`: its
+  `superseded` event names `reptile-study`, which starts 1927, and its thirteen pre-1911 siblings
+  all encode a one-year existence as `1910..1911`. Lesson: do not assume a zero-width window is
+  intentional just because a neighbour's is.
+- **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
+  tier-vocabulary closure and the tier↔date coupling instead of a mean ordering or a `portal` row.
+  Two of the four `features` states are likewise empty (`date + []` and `null + entries`), so
+  `python/06` asserts the four buckets **partition** the corpus and prints the zeros. ⚠ Nothing
+  upstream enforces that `null` survey date implies empty `features` —
+  `validate_data.py` couples `features_verified_at` to `features_source_tier` only — so a recipe
+  must not assert the `null + entries` state is impossible (`python/07` originally did).
+- **An in-force requirement set may name a discontinued entity, correctly.** `eagle-2024`
+  requirement `3d` refs `merit-badge:citizenship-in-society`, whose last version closed
+  2026-02-27. Resolve requirement `ref`s against `v1/{dataset}/index.json`, never
+  `v1/current/*.json`, or a live ref reads as dangling. The cookbook does this and asserts
+  `current ⊆ index`; worth a line in `PLAN.md` §3 if another consumer trips on it.
+
 ### Adult training — SHIPPED 0.52.0; two follow-ups
 
 28 courses + 67 position-trained requirements from `TRAINED LEADER REQUIREMENTS`

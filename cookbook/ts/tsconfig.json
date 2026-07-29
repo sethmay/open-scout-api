@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    // DOM rather than @types/node: `fetch`, `Response` and `console` are the only ambient
+    // APIs osa.ts uses, they are WHATWG in both runtimes, and keeping node types out is what
+    // lets the dev dependency list stay at typescript + vitest.
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": [],
+
+    "strict": true,
+    // The published data is full of nullable and sparse fields; index access must admit that.
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  // starters/ is deliberately outside the program: it is a no-build page served as-is.
+  "include": ["src", "vitest.config.ts"]
+}

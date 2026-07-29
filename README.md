@@ -155,6 +155,44 @@ SELECT COUNT(DISTINCT camp_id) FROM camp_features WHERE code IN (SELECT code FRO
 Tagged releases can be archived to Zenodo for a citable
 DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.json`).
 
+## Cookbook — start here
+
+[`cookbook/`](./cookbook) is runnable example code in **Python, TypeScript, C#, SQL and shell**,
+plus three starter applications. Every recipe is executed by CI against a freshly built `dist/`
+and asserts its own invariants, so an example that has quietly stopped being true fails the
+build instead of teaching the wrong thing.
+
+```bash
+python tools/validate_cookbook.py            # run every recipe, gate on the result
+OSA_BASE=http://127.0.0.1:8000 python cookbook/python/05-feature-hierarchy.py
+```
+
+The recipes exist because the modelling that makes this dataset worth having — permanent
+identity separate from effective-dated state, change as explicit events, provenance and
+confidence on every fact — is also what makes a consumer who assumes a flat snapshot get a
+**plausible wrong answer instead of an error**:
+
+```js
+camps.filter(c => c.features.includes("aquatics"))  // 0 hits — codes are hierarchical
+if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
+average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
+map.pin(camp.lat, camp.lon)                         // plots state centroids as real camps
+events.filter(e => e.type === "renamed")            // finds 1 council; 57 were renamed
+```
+
+Each recipe names the trap it prevents in a `TRAP:` line, and the gate rejects a recipe that
+lacks one. The three starters are small but real: `advancement-check` reports which of Eagle
+requirement 3's **14 slots** a Scout has filled (14 slots, 18 badges and 21 cumulative are three
+different numbers), `council-lineage` answers "my council merged, what is it now?" while showing
+`method` and `confidence` rather than presenting an unverified merger as settled, and
+[`camp-map`](https://sethmay.github.io/open-scout-api/starters/camp-map/) is a no-build browser
+map deployed with the API that plots `exact` coordinates as pins and `approximate` ones as areas.
+
+**Consumer types are generated and CI-gated.** `python tools/gen_types.py` emits
+`cookbook/ts/src/generated/v1.ts` and `cookbook/csharp/Generated/V1.cs` from the published
+schemas, and `--check` fails the build on drift — so the advice to generate types rather than
+hand-mirror them is enforced rather than merely offered.
+
 ## Datasets & status
 
 | Dataset | Status |
@@ -184,6 +222,8 @@ tools/                live pipeline: stamp_schema.py, validate_data.py, validate
                       enrichment (run manually): geocode_addresses.py (coords from street addresses), elevation.py (elevation_ft), july_temp.py (July normals; needs rasterio)
                       maintenance: check_urls.py (audit camp website health), restamp_identity.py (move the API base URL / repo slug), find_camp_pages.py (find a camp page on the council site), maintenance.py (re-verification queue + standing health check)
                       historical seed (one-time camp-finder import; see file headers): import_camps.py, geocode_camps.py
+                      cookbook gate: validate_cookbook.py (runs every recipe), gen_types.py (schemas -> TS/C# types, --check in CI)
+cookbook/             consumer examples, CI-gated: python/ sql/ shell/ ts/ csharp/ starters/
 dist/                 generated static API (git-ignored; built + deployed by CI)
 PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
 ```
@@ -236,7 +276,8 @@ pipeline (kept for provenance).
   (marked `includes_official_text: true` + `text_rights`), reproduced with attribution for
   non-commercial use and **not** under this dataset's license — don't relicense it. Only the
   requirement structure/numbering/metadata is the project's CC BY-NC-SA contribution.
-- **Code** (`tools/`): MIT.
+- **Code** (`tools/` and `cookbook/`): MIT — so a consumer can lift a recipe into their own app
+  regardless of how that app is licensed. The *data* it fetches stays CC BY-NC-SA.
 
 Seed sources and how to attribute are in [`NOTICE.md`](./NOTICE.md). In brief: territory
 assignments come from official Scouting America Council Service Territory maps (facts extracted;

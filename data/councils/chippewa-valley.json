@@ -4,7 +4,7 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": "1927",
+      "valid_from": null,
       "valid_to": "1925",
       "name": "Chippewa and Eau Claire Counties Council",
       "bsa_number": 637,
