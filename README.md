@@ -4,8 +4,8 @@
 [![Build](https://github.com/sethmay/open-scout-api/actions/workflows/pages.yml/badge.svg)](https://github.com/sethmay/open-scout-api/actions/workflows/pages.yml)
 [![Councils](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsethmay.github.io%2Fopen-scout-api%2Fv1%2Fmeta.json&query=%24.datasets.councils.total&label=councils&color=555)](https://sethmay.github.io/open-scout-api/v1/councils/index.json)
 [![Camps](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsethmay.github.io%2Fopen-scout-api%2Fv1%2Fmeta.json&query=%24.datasets.camps.total&label=camps&color=555)](https://sethmay.github.io/open-scout-api/v1/camps/index.json)
-[![Data licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/data-CC%20BY--NC--SA%204.0-555)](./LICENSE)
-[![Code licence: MIT](https://img.shields.io/badge/code-MIT-555)](./NOTICE.md)
+[![Data license: CC BY-NC-SA 4.0](https://img.shields.io/badge/data-CC%20BY--NC--SA%204.0-555)](./LICENSE)
+[![Code license: MIT](https://img.shields.io/badge/code-MIT-555)](./NOTICE.md)
 
 **Open, versioned, machine-readable reference data for Scouting America (BSA):** councils, Council
 Service Territories, camps, merit badges, ranks, requirements, awards, OA lodges, and more. Published
@@ -38,11 +38,11 @@ That means it can answer questions a snapshot cannot:
 ## See it working
 
 The [**live camp map**](https://sethmay.github.io/open-scout-api/starters/camp-map/) plots all 448
-camps straight from the API, and plots them *honestly*. The 336 surveyed coordinates are pins; the
-111 city- or state-centroid backfills are dashed areas, because rendering those as pins would put
-camps miles from the gate. Camps sharing a reservation collapse into one marker, so the 447
-placeable camps render as 336 pins and 88 areas. The one camp with no coordinate at all is named
-rather than silently dropped.
+camps straight from the API, and it distinguishes what it knows from what it guessed. The 336
+surveyed coordinates are pins; the 111 city- or state-centroid backfills are dashed areas, because
+rendering those as pins would put camps miles from the gate. Camps sharing a reservation collapse
+into one marker, so the 447 placeable camps render as 336 pins and 88 areas. The one camp with no
+coordinate at all is named rather than silently dropped.
 
 [![The live camp map: 336 surveyed coordinates as pins, 111 approximate coordinates collapsed into 88 dashed areas, and a legend explaining the difference](./docs/img/camp-map.png)](https://sethmay.github.io/open-scout-api/starters/camp-map/)
 
@@ -91,7 +91,7 @@ Full detail, sourcing, and caveats per dataset: [**`docs/datasets.md`**](./docs/
 
 ## Five ways this data will fool you
 
-Modelling change honestly has a cost: the naive query often returns a *plausible wrong answer*
+Modeling change this way has a cost: the naive query often returns a *plausible wrong answer*
 rather than an error. Each of these has a runnable fix in the cookbook.
 
 ```js
@@ -102,8 +102,8 @@ map.pin(camp.lat, camp.lon)                         // plots state centroids as 
 events.filter(e => e.type === "renamed")            // finds 1 council; 57 were renamed
 ```
 
-That last one shows the design in miniature. Renames live in the **version** sequence, while
-mergers live in **events**. See [`docs/model.md`](./docs/model.md).
+Renames live in the version sequence and mergers live in events, which is why the last one finds
+only a single council. See [`docs/model.md`](./docs/model.md).
 
 ## Cookbook
 
@@ -201,17 +201,17 @@ Every fact needs a checkable source in its `provenance` block; no bare high conf
 citation. New entities follow the id, versioning, and event conventions in
 [`docs/model.md`](./docs/model.md) and [`PLAN.md`](./PLAN.md) §3.
 
-## Licence & attribution
+## License & attribution
 
 - **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)**: reuse with
   attribution, non-commercial, share-alike.
 - **Code** (`tools/` and `cookbook/`): **MIT**, so you can lift a recipe into your own app whatever its
-  licence.
+  license.
 
 > [!WARNING]
 > **Merit badge, rank, and Cub adventure requirement text is © Scouting America.** It is reproduced
 > with attribution for non-commercial use, is marked `includes_official_text` + `text_rights` on the
-> documents that carry it, and is **not** covered by this dataset's licence, so don't relicense it.
+> documents that carry it, and is **not** covered by this dataset's license, so don't relicense it.
 > Only the requirement structure, numbering, and metadata are this project's contribution.
 
 Seed sources and how to attribute: [`NOTICE.md`](./NOTICE.md).

@@ -165,7 +165,7 @@ with closed final windows. A stored id that has vanished from a `current/` proje
 defunct. Walk `predecessor → successor|continuing` forward and point the user's bookmark at the
 council that survived. Recipe: [`03-lineage.py`](../cookbook/python/03-lineage.py).
 
-Merit-badge supersession is the contrast: that lineage genuinely *is* an event, and its `date` is
+Merit-badge supersession is the contrast: that lineage *is* an event, and its `date` is
 usually null, so order such a walk by graph edges, never by date.
 
 ## 4. Every fact carries provenance
@@ -208,7 +208,7 @@ The lone `renamed` council event is itself the worked example:
 ```
 
 We know the rename happened; we do not know when. `date: null` + `0.6` + a note that says so is
-the honest encoding. Contrast `absorb-beaufort-into-coastal-carolina`: `date: "1940"`, a source
+the correct encoding. Contrast `absorb-beaufort-into-coastal-carolina`: `date: "1940"`, a source
 URL, `confidence: 0.8`. And `discontinued-rip-van-winkle` sits at the bottom of the band:
 `date: null`, `confidence: 0.4`, note "Absent from 2026 official CST maps; presumed
 merged/discontinued. Successor and date unverified." Nothing was invented to fill the gap.
@@ -273,7 +273,7 @@ Recipe: [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py).
 
 > [!IMPORTANT]
 > Requirement **text** is © Scouting America, reproduced with attribution for non-commercial use
-> and **not** covered by this dataset's CC BY-NC-SA licence. Structure, numbering, `ref`s, and
+> and **not** covered by this dataset's CC BY-NC-SA license. Structure, numbering, `ref`s, and
 > effective dates are the dataset's own; verbatim text is not. Every requirement set carries
 > `includes_official_text` and `text_rights` so a consumer can strip or withhold it. See
 > [`NOTICE.md`](../NOTICE.md).
