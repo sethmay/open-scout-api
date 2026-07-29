@@ -1,234 +1,170 @@
 # Open Scout API
 
-Open, versioned, machine-readable reference data for **Scouting America (BSA)** — councils,
-Council Service Territories, and (planned) camps, merit badges, and requirements — published
-as static JSON with JSON Schemas, so anyone can build on it without scraping or running a
+[![API](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsethmay.github.io%2Fopen-scout-api%2Fv1%2Fmeta.json&query=%24.version&label=api&color=2f6b2f)](https://sethmay.github.io/open-scout-api/v1/meta.json)
+[![Build](https://github.com/sethmay/open-scout-api/actions/workflows/pages.yml/badge.svg)](https://github.com/sethmay/open-scout-api/actions/workflows/pages.yml)
+[![Councils](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsethmay.github.io%2Fopen-scout-api%2Fv1%2Fmeta.json&query=%24.datasets.councils.total&label=councils&color=555)](https://sethmay.github.io/open-scout-api/v1/councils/index.json)
+[![Camps](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsethmay.github.io%2Fopen-scout-api%2Fv1%2Fmeta.json&query=%24.datasets.camps.total&label=camps&color=555)](https://sethmay.github.io/open-scout-api/v1/camps/index.json)
+[![Data licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/data-CC%20BY--NC--SA%204.0-555)](./LICENSE)
+[![Code licence: MIT](https://img.shields.io/badge/code-MIT-555)](./NOTICE.md)
+
+**Open, versioned, machine-readable reference data for Scouting America (BSA)** — councils, Council
+Service Territories, camps, merit badges, ranks, requirements, awards, OA lodges and more. Published
+as static JSON with JSON Schemas, so you can build on it without scraping and without running a
 server.
 
 > [!IMPORTANT]
-> **Unofficial community project.** Not affiliated with, endorsed by, or sponsored by
-> Scouting America / Boy Scouts of America. Data is aggregated from public sources with
-> per-fact provenance; always confirm against each council's own site. No trademark claim
-> or endorsement is implied.
+> **Unofficial community project.** Not affiliated with, endorsed by, or sponsored by Scouting
+> America / Boy Scouts of America. No trademark claim or endorsement is implied. Facts are
+> aggregated from public sources with per-fact provenance — always confirm against each council's
+> own site.
 
-## What makes this different
+## Why this exists
 
-No official machine-readable BSA structural data exists. The hard part is **history** —
-councils merge and rename, regions became territories (2021→2024), badges get retired,
-requirements are revised. This dataset models change as first-class data:
+No official machine-readable BSA structural data exists. Scraping gets you today's snapshot; the
+hard part is **history**. Councils merge and rename, regions became territories, badges get retired
+and revised. So this models change and uncertainty as first-class data — every fact carries its
+source, method, verification date and a confidence score, and nothing unverified is presented as
+settled.
 
-- **Identity is permanent and separate from state.** Each entity has a stable slug id that is
-  never reused; names, numbers, ownership, and status live in effective-dated **versions**.
-- **Change is an explicit event.** Mergers, splits, renames, and reorganizations are records
-  linking predecessor/successor entities — not silent overwrites.
-- **Every fact carries provenance** — source, method, verification date, and a confidence
-  score (unverified inferences are flagged, never fabricated).
+That means it can answer questions a snapshot cannot:
 
-See [`PLAN.md`](./PLAN.md) §3 for the full model.
+- *Which council serves this camp — and what was it called in 1998?*
+- *How many of Eagle's 14 merit-badge slots has this Scout filled?* (14 slots, 18 flagged badges and
+  21 cumulative are three different numbers.)
+- *Which camps offer aquatics?* (Filtering on `aquatics` finds 61 camps. The right answer is 321.)
+- *This badge was renamed twice — what's the lineage?* (`clerk → business → american-business`)
+- *Is this fact still trustworthy, and who says so?*
 
-## Live API
+## See it working
 
-Base URL: **`https://sethmay.github.io/open-scout-api/`** (path-versioned under `/v1/`).
+The [**live camp map**](https://sethmay.github.io/open-scout-api/starters/camp-map/) plots all 448
+camps straight from the API — and plots them *honestly*. The 336 surveyed coordinates are pins; the
+111 city- or state-centroid backfills are dashed areas, because rendering those as pins would put
+camps miles from the gate. Camps sharing a reservation collapse into one marker, so the 447
+placeable camps render as 336 pins and 88 areas. The one camp with no coordinate at all is named
+rather than silently dropped.
 
-| Endpoint | What |
-|---|---|
-| [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json) | version, counts, license, endpoint list |
-| [`v1/current/councils.json`](https://sethmay.github.io/open-scout-api/v1/current/councils.json) | flat list of **current** councils (denormalized) |
-| [`v1/current/territories.json`](https://sethmay.github.io/open-scout-api/v1/current/territories.json) | flat list of current Council Service Territories |
-| [`v1/councils/index.json`](https://sethmay.github.io/open-scout-api/v1/councils/index.json) | every council, incl. historical (with a `current` flag) |
-| `v1/councils/{id}.json` | one council: full version history + its lifecycle events |
-| [`v1/territories/index.json`](https://sethmay.github.io/open-scout-api/v1/territories/index.json) | every territory (CSTs, legacy regions, merged NSTs) |
-| `v1/territories/{id}.json` | one territory: version history + events |
-| [`v1/current/merit-badges.json`](https://sethmay.github.io/open-scout-api/v1/current/merit-badges.json) | flat list of current merit badges (with `eagle_required`) |
-| [`v1/merit-badges/index.json`](https://sethmay.github.io/open-scout-api/v1/merit-badges/index.json) | every merit badge, incl. retired/historical |
-| `v1/merit-badges/{id}.json` | one merit badge: version history + events |
-| [`v1/requirement-sets/index.json`](https://sethmay.github.io/open-scout-api/v1/requirement-sets/index.json) | every requirement set (one per badge revision) |
-| `v1/requirement-sets/{id}.json` | one requirement set: the full requirement tree (`<slug>-<year>`) |
-| [`v1/camps/index.json`](https://sethmay.github.io/open-scout-api/v1/camps/index.json) | every camp (resident / high-adventure / day / short-term / reservation) |
-| `v1/camps/{id}.json` | one camp: version history + events |
-| [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json) | retired camp id → surviving id (merged duplicate listings) |
-| [`v1/current/ranks.json`](https://sethmay.github.io/open-scout-api/v1/current/ranks.json) | flat list of all 21 ranks across the 4 programs (Cub, Scouts BSA, Venturing, Sea Scout) |
-| [`v1/ranks/index.json`](https://sethmay.github.io/open-scout-api/v1/ranks/index.json) | every rank |
-| `v1/ranks/{id}.json` | one rank: version history + events + its `requirement_sets` ids |
-| [`v1/current/awards.json`](https://sethmay.github.io/open-scout-api/v1/current/awards.json) | flat list of current awards & recognitions |
-| [`v1/awards/index.json`](https://sethmay.github.io/open-scout-api/v1/awards/index.json) · `v1/awards/{id}.json` | one award: category, audience, square-knot + insignia numbers |
-| [`v1/current/oa-lodges.json`](https://sethmay.github.io/open-scout-api/v1/current/oa-lodges.json) | flat list of current OA lodges (by council) |
-| [`v1/oa-lodges/index.json`](https://sethmay.github.io/open-scout-api/v1/oa-lodges/index.json) · `v1/oa-lodges/{id}.json` | one OA lodge: chartering council, section, HQ |
-| [`v1/merit-badge-rankings/index.json`](https://sethmay.github.io/open-scout-api/v1/merit-badge-rankings/index.json) · `v1/merit-badge-rankings/{year}.json` | merit badge popularity per year — **ranks, not counts** |
-| [`v1/current/adventures.json`](https://sethmay.github.io/open-scout-api/v1/current/adventures.json) | flat list of Cub Scout adventures, with the rank(s) offering each, its `category`, and the required `area` it fills |
-| [`v1/adventures/index.json`](https://sethmay.github.io/open-scout-api/v1/adventures/index.json) · `v1/adventures/{id}.json` | one adventure: version history + events + its `requirement_sets` ids |
-| [`v1/current/positions.json`](https://sethmay.github.io/open-scout-api/v1/current/positions.json) · [`v1/positions/index.json`](https://sethmay.github.io/open-scout-api/v1/positions/index.json) · `v1/positions/{id}.json` | youth leadership positions of responsibility |
-| [`v1/current/training.json`](https://sethmay.github.io/open-scout-api/v1/current/training.json) · [`v1/training/index.json`](https://sethmay.github.io/open-scout-api/v1/training/index.json) · `v1/training/{id}.json` | adult training courses by code (Y01, S11, WS10): delivery and renewal interval |
-| [`v1/training-requirements/index.json`](https://sethmay.github.io/open-scout-api/v1/training-requirements/index.json) · `v1/training-requirements/{id}.json` | what an adult position must complete to be Position Trained — keyed by **(position, unit type)**, because code `CC` needs a different course in a pack, troop, team, crew and ship |
-| [`v1/vocab/camp-program-types.json`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-program-types.json) · `camp-types` · `camp-features` · `merit-badge-tags` · `adventure-categories` · `adventure-areas` · `position-unit-types` | controlled vocabularies: every code with a human `label` + `description` |
-| [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | JSON Schemas (canonical + the published `current` and `index` contracts) |
+[![The live camp map: 336 surveyed coordinates as pins, 111 approximate coordinates collapsed into 88 dashed areas, and a legend explaining the difference](./docs/img/camp-map.png)](https://sethmay.github.io/open-scout-api/starters/camp-map/)
+
+It is a single HTML file with no build step — [`cookbook/ts/starters/camp-map/`](./cookbook/ts/starters/camp-map/).
+
+## Try it in 30 seconds
 
 ```bash
-# the current council list
-curl -s https://sethmay.github.io/open-scout-api/v1/current/councils.json | jq '.count, .items[0]'
+# every current council, denormalized and ready to use
+curl -s https://sethmay.github.io/open-scout-api/v1/current/councils.json | jq '.count'
+# 229
 
-# one council's history + events (e.g. a merged/renamed council)
-curl -s https://sethmay.github.io/open-scout-api/v1/councils/mississippi-riverlands.json
+# a council that was renamed and absorbed another — history included
+curl -s https://sethmay.github.io/open-scout-api/v1/councils/mississippi-riverlands.json \
+  | jq '{id, versions: (.versions|length), events: [.events[].type]}'
+# { "id": "mississippi-riverlands", "versions": 1, "events": ["absorbed", "renamed"] }
 ```
 
 ```js
 const { items } = await (await fetch(
-  "https://sethmay.github.io/open-scout-api/v1/current/councils.json")).json();
-```
-**Projection contract.** The `v1/current/*.json` files are the stable, denormalized consumer
-surface: every item carries its own `verified_at` / `method` / `confidence`, and
-`current/camps.json` inlines its council (`council_name`, `council_website`, `council_number`)
-plus a resolved, durable `url` (the camp's own page when stable, else the council site;
-per-season registration deep-links are dropped) so consumers need no cross-file joins. For
-imported camps `verified_at` is camp-finder's own source-confirmation date (so a "stale after
-12 months" check actually fires) and `imported_at` is our ingest date; `confidence` runs 0.9
-(curated / national bases) / 0.8 (higher-confidence import) / 0.6 (default import), and below 1.0 for
-LLM-extracted facts in other datasets.
-Each camp's `geo_precision` marks its coordinate `exact` (camp-specific point), `approximate`
-(city or state-centroid backfill — soft-plot or bucket these), or `null` (could not be placed).
-Fields are **additive-only under `v1`** — new optional fields may appear, but existing ones are
-never renamed or removed — so pinning to a field set is safe. **Every published surface is now
-schema-pinned and build-gated — all 2,331 files, with nothing left unpinned:** the denormalized
-`v1/current/*.json` views against
-[`published-current.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json),
-the lighter `v1/{dataset}/index.json` listings (every entity incl. historical, with a `current`
-flag — except requirement-sets, which are effective-dated documents and use `effective_to: null`
-for "in force") against
-[`published-index.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json),
-the **2,311 per-entity `v1/{dataset}/{id}.json` documents** against
-[`published-entity.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json),
-the discovery document against
-[`published-meta.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json),
-and `v1/{dataset}/aliases.json` against
-[`published-aliases.schema.json`](https://sethmay.github.io/open-scout-api/schema/v1/published-aliases.schema.json).
-Every file names its own contract in `$schema` — except the alias map, which is deliberately a bare
-`{retired-id: surviving-id}` lookup with no room for one — the item shape is selected by the
-envelope `kind`, and `build.py` fails the build if any projection drifts. Generate consumer types
-from those schemas rather than hand-mirroring. The per-entity contract pins the envelope and the
-projection (`versions` non-empty, lifecycle `events` folded in under that key, `requirement_sets`
-listing every edition of a subject); the interior of each `version` is validated against its
-canonical schema by `validate_data.py` before the build runs.
-A camp's `reservation.id` is a stable opaque grouping key (a bare slug, deliberately not a
-`kind:slug` entity ref): group by it, don't parse it.
-Each camp also carries **`features`** — what it actually offers, as sorted codes from the open
-[`camp-features`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-features.json) vocabulary
-(128 terms) — plus `features_signature` (the subset the camp presents as a headline draw, for
-ranking and badges, never for filtering) and `features_verified_at`. **Read the date with the
-array, always:** `null` + empty means *never surveyed, nothing known*, which is a different fact
-from a date + empty (*surveyed, its page described no offerings*); a date + non-empty is a real
-survey, and `null` + non-empty means the codes came from a bulk import nobody verified. A date
-means a survey happened, **not** that the list is exhaustive — camp pages rarely are. Codes form a
-shallow hierarchy through each term's `broader`, so a filter on a coarse code must expand it to its
-descendants: a camp offering only `kayaking` should match a search for `aquatics`. The prose `note`
-attached to some features is deliberately **not** in this projection — it lives in the per-camp
-`v1/camps/{id}.json` document, keeping the flat list filterable rather than 40% larger. Each survey also carries **`features_source_tier`** (`guide` / `camp_page` / `portal`), a completeness qualifier in the same spirit as `geo_precision`: `guide` means a camp-specific document was read and averages 21 features per camp, `camp_page` a descriptive page (13), and `portal` that only a registration blurb existed. Rank and trust completeness by it — a `portal` list is a floor, not a description.
-
-
-> **Pre-1.0: the host is not final.** Field shapes are already stable and build-gated — every
-> published file names its contract in `$schema` and the build fails on drift — but the **base URL
-> itself** (`sethmay.github.io/open-scout-api`, which is also the schema `$id` prefix) is still
-> provisional while a permanent home is settled. Cutting `1.0` is what freezes it. Until then,
-> prefer resolving endpoints from [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json)
-> (`base_url`, `schemas`, `endpoints`) over hardcoding the host, and pin data files by git tag via
-> jsDelivr — tags are immutable regardless of where the repo ends up.
-
-**Pinning & releases.** Every version is a git tag (`vMAJOR.MINOR.PATCH`) at that release's
-CHANGELOG sha. Pin canonical files immutably via jsDelivr —
-`https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@v0.11.0/data/councils/cascade-pacific.json`
-(`@main` tracks latest; the denormalized `v1/` projections are served from GitHub Pages). Pushing
-a `v*` tag runs [`release.yml`](./.github/workflows/release.yml), which publishes a GitHub Release
-with the built JSON tree (`open-scout-api-<tag>-json.tar.gz`) and a queryable **SQLite** artifact
-(`open-scout-api-<tag>.sqlite` — typed tables mirroring the `current` projections, plus the full
-canonical JSON per row for `json_extract`). Camp program features are unrolled into a
-`camp_features` junction table (`camp_id`, `code`, `signature`, `note`, `verified_at` — the prose
-`note` *is* included here, unlike the flat JSON projection) alongside `feature_vocab`
-(`code`, `label`, `category`, `broader`), so a coarse query resolves the hierarchy in one recursive
-CTE:
-
-```sql
-WITH RECURSIVE sub(code) AS (
-  SELECT 'aquatics'
-  UNION SELECT v.code FROM feature_vocab v JOIN sub ON v.broader = sub.code)
-SELECT COUNT(DISTINCT camp_id) FROM camp_features WHERE code IN (SELECT code FROM sub);  -- 254
+  "https://sethmay.github.io/open-scout-api/v1/current/camps.json")).json();
 ```
 
-Tagged releases can be archived to Zenodo for a citable
-DOI (enable the GitHub↔Zenodo integration once; metadata lives in `.zenodo.json`).
+Base URL: `https://sethmay.github.io/open-scout-api/`, path-versioned under `/v1/`. Resolve
+endpoints from [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json) rather than
+hardcoding them — see the caveat in [`docs/endpoints.md`](./docs/endpoints.md).
 
-## Cookbook — start here
+## What's in it
 
-[`cookbook/`](./cookbook) is runnable example code in **Python, TypeScript, C#, SQL and shell**,
-plus three starter applications. Every recipe is executed by CI against a freshly built `dist/`
-and asserts its own invariants, so an example that has quietly stopped being true fails the
-build instead of teaching the wrong thing.
+| Dataset | Total | Current | What it is |
+|---|---:|---:|---|
+| [Councils](./docs/datasets.md#councils) | 420 | 229 | Councils incl. merged/renamed/defunct, with lineage |
+| [Territories](./docs/datasets.md#territories) | 20 | 14 | Council Service Territories + legacy regions |
+| [Camps](./docs/datasets.md#camps) | 448 | 448 | Resident, day, high-adventure + the 4 national bases |
+| [Merit badges](./docs/datasets.md#merit-badges) | 268 | 140 | Back to the 1910 originals, with rename chains |
+| [Requirement sets](./docs/datasets.md#requirement-sets) | 667 | 292 | Full requirement trees, effective-dated |
+| [Cub adventures](./docs/datasets.md#cub-adventures) | 177 | 139 | The unit of Cub advancement |
+| [Ranks](./docs/datasets.md#ranks) | 21 | 21 | All four programs, Lion through Quartermaster |
+| [OA lodges](./docs/datasets.md#oa-lodges) | 238 | 238 | Order of the Arrow, linked to chartering council |
+| [Awards](./docs/datasets.md#awards) | 52 | 52 | Knots, honors and training awards |
+| [Positions](./docs/datasets.md#positions-of-responsibility) | 29 | 29 | Youth leadership positions of responsibility |
+| [Adult training](./docs/datasets.md#adult-training) | 28 | 28 | Courses by code, plus 67 position-trained rules |
+| [Badge popularity](./docs/datasets.md#merit-badge-popularity) | 5 yrs | — | 2021-2025 rankings — **ranks, not counts** |
 
-```bash
-python tools/validate_cookbook.py            # run every recipe, gate on the result
-OSA_BASE=http://127.0.0.1:8000 python cookbook/python/05-feature-hierarchy.py
-```
+Full detail, sourcing and caveats per dataset: [**`docs/datasets.md`**](./docs/datasets.md).
 
-The recipes exist because the modelling that makes this dataset worth having — permanent
-identity separate from effective-dated state, change as explicit events, provenance and
-confidence on every fact — is also what makes a consumer who assumes a flat snapshot get a
-**plausible wrong answer instead of an error**:
+## Five ways this data will fool you
+
+Modelling change honestly has a cost: the naive query often returns a *plausible wrong answer*
+rather than an error. Each of these has a runnable fix in the cookbook.
 
 ```js
-camps.filter(c => c.features.includes("aquatics"))  // 0 hits — codes are hierarchical
+camps.filter(c => c.features.includes("aquatics"))  // 61 of 321 — codes are hierarchical
 if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
 average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
 map.pin(camp.lat, camp.lon)                         // plots state centroids as real camps
 events.filter(e => e.type === "renamed")            // finds 1 council; 57 were renamed
 ```
 
-Each recipe names the trap it prevents in a `TRAP:` line, and the gate rejects a recipe that
-lacks one. The three starters are small but real: `advancement-check` reports which of Eagle
-requirement 3's **14 slots** a Scout has filled (14 slots, 18 badges and 21 cumulative are three
-different numbers), `council-lineage` answers "my council merged, what is it now?" while showing
-`method` and `confidence` rather than presenting an unverified merger as settled, and
-[`camp-map`](https://sethmay.github.io/open-scout-api/starters/camp-map/) is a no-build browser
-map deployed with the API that plots `exact` coordinates as pins and `approximate` ones as areas.
+That last one is the good example of the whole design: renames live in the **version** sequence,
+while mergers live in **events**. See [`docs/model.md`](./docs/model.md).
 
-**Consumer types are generated and CI-gated.** `python tools/gen_types.py` emits
-`cookbook/ts/src/generated/v1.ts` and `cookbook/csharp/Generated/V1.cs` from the published
-schemas, and `--check` fails the build on drift — so the advice to generate types rather than
-hand-mirror them is enforced rather than merely offered.
+## Cookbook
 
-## Datasets & status
+[**`cookbook/`**](./cookbook) is runnable example code in **Python, TypeScript, C#, SQL and shell** —
+42 recipes plus three starter apps. Every recipe is executed by CI against a freshly built dataset
+and asserts its own invariants, so an example that has quietly stopped being true fails the build
+instead of teaching you the wrong thing.
 
-| Dataset | Status |
+```bash
+python tools/validate_cookbook.py     # 36 checks over all 42 recipes, against a local build
+```
+
+Each recipe kills one specific trap and names it in a `TRAP:` line. Real output:
+
+```
+$ python cookbook/python/05-feature-hierarchy.py
+vocabulary      camp-features: 128 terms, 8 with children
+aquatics        expands to 22 codes (20 direct)
+deepest chain   ice_fishing -> fishing -> aquatics
+bare code       61 camps carry "aquatics" itself
+closure match   321 camps carry something in the closure
+top codes       swimming=218, fishing=189, canoeing=183, kayaking=143, sailing=102
+missed by trap  260 camps a bare `in features` check drops
+```
+
+Consumer types for TypeScript and C# are generated from the published schemas and CI-gated against
+drift — `python tools/gen_types.py --check`.
+
+## Documentation
+
+| Document | Covers |
 |---|---|
-| **Councils** | ✅ 419 entities — **229 current** (assigned to the 14 Council Service Territories) + **190 historical** (merged/renamed/defunct) with lifecycle events. Current councils carry founding dates, prior-name (rename) history, and merger/absorption events extracted as facts from each council's Wikipedia article (`llm_extraction`, conf 0.7–0.8) — 141 founding years, 57 rename chains, 112 merger/absorption events. |
-| **Territories** | ✅ 20 entities — 14 current CSTs (each carrying 2021 National Service Territory → 2024 Council Service Territory history), 4 legacy regions, 2 merged NSTs |
-| **Merit badges** | ✅ **268 entities — 140 current (17 Eagle-required incl. alternatives) plus 128 historical**, going back to the 1910 originals (Signaller, Ambulance, Angling). Every badge carries its introduction year, its BSA recordkeeping number where one was ever assigned, and its retirement year, and **61 `superseded` events chain the renames**, so lineages are walkable: `clerk → business → american-business`, `mining → rocks-and-minerals → geology`, `seaman → seamanship → small-boat-sailing`, `ambulance → first-aid`. ⚠ `eagle_required` is **`null` for historical badges — unknown, not false**: it cannot be sourced for badges retired before the modern published Eagle list. Every badge in `current/merit-badges.json` still carries a real boolean. Every current badge carries an **original-prose `description`** (24-38 words, written from its own requirements) and 1-3 **`tags`** from the 16-facet [`merit-badge-tags`](https://sethmay.github.io/open-scout-api/v1/vocab/merit-badge-tags.json) vocabulary, so a catalog can be browsed and filtered by subject. A build gate rejects any description that shares 8+ consecutive words with its badge's requirement text — that text is © Scouting America, and descriptions are deliberately ours. |
-| **Requirement sets** | ✅ 667 documents (368 merit-badge + 252 Cub adventure + 47 rank across programs/editions) — full requirement tree (numbering, nesting, choose-N/option groups, and `ref`s to the entity a node stands for — **Eagle requirement 3 is a resolvable 14-slot graph**, three slots either/or, so "how many Eagle slots are filled" is computable rather than a paragraph to parse; note the flag `eagle_required` marks the 18-badge *list*, which is the number Star and Life cite, while the slot count is 14) + effective date/`supersedes` chains + source links per revision. ⚠ Requirement **text is © Scouting America** (see below), not under this dataset's license. **Historical editions ship too:** 131 of 141 badges carry more than one edition (96 carry three), spanning 1995-2026, and Cub adventures carry 121 pre-2024 editions — all with effective windows and `supersedes` chains, gate-checked for gaps and overlaps, so you can answer which requirements applied when a Scout started. Where a source states how many requirements are needed rather than "all of them", that sentence is published verbatim in **`completion_rule`** (66 adventure editions) instead of being guessed into structure. `v1/current/requirement-sets.json` lists only the in-force edition per subject; `v1/requirement-sets/index.json` lists every edition. |
-| **Camps** | ✅ 448 entities — seeded from [camp-finder](https://github.com/sethmay/camp-finder), classified by `camp_type` (349 resident, 64 day, 35 high-adventure) and `operator` (444 council + 4 national bases: Philmont, Florida Sea Base, Northern Tier, Summit/James C. Justice). Duplicate and program/session-variant listings are merged into their base camp and scraped-artifact names corrected to the real property name; retired ids (50) resolve to the surviving camp via [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json). 41 co-located distinct camps carry a `reservation` grouping (18 reservations, 17 named — e.g. Goshen Scout Reservation) so consumers render one pin per property. Every camp with coordinates also carries `elevation_ft` (ground elevation from a 90 m DEM) and July climate normals `july_high_f` / `july_low_f` (WorldClim 1 km, 1970-2000), all inheriting `geo_precision`. Most carry an evergreen `summary` (371 of 448; durable prose, no dates/fees/sessions). Coordinates carry `geo_precision` (336 `exact`, 111 `approximate`, 1 unplaceable) — a point shared by several camps is a reservation centroid, so it is `approximate`, not `exact` — and a build gate rejects any point outside its state box. Covers every camp the camp-finder site lists; sessions/fees stay at the council site. **Program `features`** — what each camp offers, as codes from the open 128-term [`camp-features`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-features.json) vocabulary — are surveyed from each camp's own page: **366 camps carry 6,373 feature entries (95% of the 384 non-day-camps)**, each with a `features_verified_at` date, and 147 marked `signature` where the camp presents them as a headline draw. Day camps are out of scope (they often run at rented sites). An empty array never means "offers nothing" — read it with the date. |
-| **Ranks** | ✅ 21 across 4 programs — 7 Scouts BSA (Scout→Eagle) + 6 Cub Scout (Lion→Arrow of Light), 4 Venturing (Venturing→Summit), 4 Sea Scout (Apprentice→Quartermaster). Requirement content in 47 rank `requirement-set` docs: Scouts BSA current (2024, No. 33216) + 26 historical editions (2016-2023) via usscouts.org; Cub/Venturing/Sea Scout current from official scouting.org pages + 2026 Sea Scout PDFs. Full verbatim tree © Scouting America. The six **Cub** rank trees are pure structure — the rule they state is "six required Adventures and any two elective" — so each is two groups of `ref`s into the adventures dataset rather than inlined text. |
-| **Awards** | ✅ 52 earned awards & recognitions (knots, scouting honors, training awards, religious-emblem knot) from the Guide to Awards and Insignia (No. 33066) — facts only (category, audience, square-knot/insignia numbers, wear); catalog numbers source-verified (`llm_extraction`, conf 0.85). Excludes uniform insignia and per-faith emblems. |
-| **OA lodges** | ✅ 238 entities — Order of the Arrow lodges from the official OA lodge locator feed (oa-bsa.org), each linked to its chartering council, with OA section/region, HQ + coordinates, and website. Officer/contact PII excluded. |
-| **Positions of responsibility** | ✅ **29 youth leadership positions**, 16 in a Scout troop and 19 under the requirements' combined "Venturing crew / Sea Scout ship" heading (6 appear in both). Star, Life and Eagle requirement trees resolve to them — **104 `position:` refs** — so "which positions count for this rank" is a lookup. ⚠ **Acceptance is not symmetric and lives on the rank, not the position:** Bugler counts for Star and Life but not Eagle. Star and Life also accept a Scoutmaster-approved leadership project instead; Eagle does not. `audience` is `youth` throughout — adult leadership roles are a separate catalog and are not here. |
-| **Merit badge popularity** | ✅ **5 years (2021-2025), 692 badge-year ranks**, every year a complete 1..N over every badge offered — the longitudinal series exists nowhere else machine-readable. ⚠ **Ranks, not counts:** Scouting America's annual recap publishes each badge's *position* and no absolute number anywhere, so `metric` is `earned_rank` and the schema rejects a document claiming counts. Each post also gives the prior year's rank, which recovers 2021 and independently corroborates 2022 and 2024 (2024's 135 shared badges agree exactly; 2022's four discrepancies are recorded on the document, with the year's own post winning). One source typo — the 2022 post prints rank 130 twice and omits 135 — is corrected from the 2023 post, which resolves it precisely. A build gate rejects a badge ranked in a year it did not exist, which is what caught "Leather Work" (1911-1951) being mapped where today's "Leatherwork" belonged. |
-| **Cub adventures** | ✅ **177 entities — 139 current (36 required, 95 elective, 8 special elective) plus 38 retired by the 2024 program** — the unit of Cub advancement, and the Cub-side analogue of merit badges: a rank is earned by completing six required adventures plus any two electives. Ids are Scouting America's own canonical slugs (`pick-my-path-lion`, `bobcat-aol`), and each adventure carries the rank(s) offering it — only `slingshot` and `bb-guns` span more than one. Requirement-set ids are prefixed `adventure-` because five adventures share a name with a merit badge. **Every current required adventure carries the `area` it fills** — one of the six in [`adventure-areas`](https://sethmay.github.io/open-scout-api/v1/vocab/adventure-areas.json) (Character & Leadership, Personal Fitness, Personal Safety, Family & Reverence, Citizenship, Outdoors) — and a build gate proves each rank fills all six exactly once, so "which of my six required slots are still open" is a group-by, not a list diff. Electives carry `area: null`. **The pre-2024 line-up is recorded too**, from the USSSP archive: 121 historical editions (2018-09-01 core, 2022-06-01 electives), 38 `discontinued`/`superseded` events, and 15 adventures that were retired in 2022 rather than 2024 — so a Wolf's 2019 requirements and a Wolf's 2025 requirements are both answerable. Areas are a 2024 construct and are `null` on pre-2024 windows. ⚠ The 8 shooting-sports adventures (Archery ×6, BB Guns, Slingshot) have **no published requirements** — completed "only at approved events with qualified instructors", with no page of their own — so they exist as entities with a null `url` and no requirement-set. |
+| [**`docs/endpoints.md`**](./docs/endpoints.md) | Every endpoint, the projection contract, pinning, the SQLite artifact |
+| [**`docs/datasets.md`**](./docs/datasets.md) | What is in each dataset, how it was sourced, and its caveats |
+| [**`docs/model.md`**](./docs/model.md) | Identity, effective-dated versions, events, provenance, refs |
+| [**`cookbook/README.md`**](./cookbook/README.md) | Every recipe mapped to the trap it prevents |
+| [`PLAN.md`](./PLAN.md) · [`TODO.md`](./TODO.md) | Design rationale · roadmap and open questions |
 
-Roadmap and the full dataset catalog: [`TODO.md`](./TODO.md).
+## Status
+
+**Pre-1.0.** Field shapes are stable and build-gated — every published file names its contract in
+`$schema` and the build fails on drift — and `v1` fields are **additive-only**, so pinning to a
+field set is safe. What is *not* yet frozen is the **host**: the base URL is provisional while a
+permanent home is settled, which is exactly what cutting `1.0` will freeze. Until then, resolve
+endpoints from `v1/meta.json` and pin data files by git tag via jsDelivr — tags are immutable
+wherever the repo ends up.
+
+[camp-finder](https://github.com/sethmay/camp-finder) consumes this API as its core data.
 
 ## Repository layout
 
 ```
-data/                 authoritative source: canonical JSON, one file per entity + _events.json per dataset
-  councils/ territories/ merit-badges/ requirement-sets/ camps/ ranks/ awards/ oa-lodges/ vocab/
-schema/v1/            JSON Schemas (draft 2020-12); *.schema.json canonical + published-current/-index
-tools/                live pipeline: stamp_schema.py, validate_data.py, validate_examples.py,
-                      build.py (data/ -> dist/), build_sqlite.py, us_geo.py
-                      enrichment (run manually): geocode_addresses.py (coords from street addresses), elevation.py (elevation_ft), july_temp.py (July normals; needs rasterio)
-                      maintenance: check_urls.py (audit camp website health), restamp_identity.py (move the API base URL / repo slug), find_camp_pages.py (find a camp page on the council site), maintenance.py (re-verification queue + standing health check)
-                      historical seed (one-time camp-finder import; see file headers): import_camps.py, geocode_camps.py
-                      cookbook gate: validate_cookbook.py (runs every recipe), gen_types.py (schemas -> TS/C# types, --check in CI)
-cookbook/             consumer examples, CI-gated: python/ sql/ shell/ ts/ csharp/ starters/
-dist/                 generated static API (git-ignored; built + deployed by CI)
-PLAN.md TODO.md CHANGELOG.md LESSONS.md NOTICE.md
+data/       authoritative source: canonical JSON, one file per entity
+schema/v1/  JSON Schemas (draft 2020-12), canonical + published contracts
+tools/      validate, build, and the cookbook/codegen gates
+cookbook/   consumer examples in five languages + starter apps
+docs/       endpoint, dataset and data-model reference
+dist/       the generated static API (git-ignored; built and deployed by CI)
 ```
 
-The repo **is** the database: writes happen via pull requests, a CI validation gate blocks bad
+The repo **is** the database: writes happen via pull request, a CI validation gate blocks bad
 merges, and GitHub Pages serves the built API. There is no runtime backend.
 
 ## Local development
@@ -237,49 +173,45 @@ Requires Python 3.11+.
 
 ```bash
 pip install "jsonschema[format]"
-python tools/validate_examples.py   # schemas + example fixtures (positive & negative)
-python tools/validate_data.py       # data/: schema + referential + version-window invariants
-python tools/build.py               # compile data/ -> dist/  (open dist/index.html)
-python tools/build_sqlite.py         # compile data/ -> dist/v1/open-scout-api.sqlite (run after build.py)
-python tools/stamp_schema.py         # (re)stamp data/ $schema refs after regenerating; validate_data enforces them
+python tools/validate_data.py        # schema + referential + version-window invariants
+python tools/build.py                # compile data/ -> dist/  (open dist/index.html)
+python tools/build_sqlite.py         # + a queryable SQLite artifact
+python tools/validate_cookbook.py    # run every cookbook recipe against it
 ```
 
-The **enrichment** and maintenance tools (`geocode_addresses.py`, `elevation.py`, `july_temp.py`, `check_urls.py`, `find_camp_pages.py`, `maintenance.py`) are run manually,
-never by CI, and carry the only extra requirements: `july_temp.py` needs `rasterio`
-(`pip install rasterio`) plus the WorldClim rasters (~8 GB, git-ignored `tools/worldclim/`; fetch
-URLs are in the tool's docstring). Their derived caches are committed, so validating or building the
-API needs neither the dependency nor the rasters.
-
-CI ([`.github/workflows/pages.yml`](./.github/workflows/pages.yml)) runs the validators as a
-required gate on every push/PR and deploys `dist/` to GitHub Pages on `main`; pushing a `v*` tag
-runs [`release.yml`](./.github/workflows/release.yml) to publish a GitHub Release with assets.
+The enrichment and maintenance tools are run manually, never by CI: geocoding, elevation, July
+temperature normals, camp link health, base-URL restamping (`restamp_identity.py`) and the
+re-verification queue (`maintenance.py`). They carry the only extra dependencies — `july_temp.py`
+needs `rasterio` plus the WorldClim rasters (~8 GB, git-ignored). **Their derived caches are
+committed, so a normal validate or build needs neither the dependency nor the rasters.**
 
 ## Contributing
 
-`data/` is the authoritative source — edit the canonical JSON directly (there is no upstream to
-re-import; the camp-finder seed pipeline is historical, see below). To add or fix an entity: edit
-`data/<dataset>/<id>.json`, then run `stamp_schema.py` → `validate_data.py` → `validate_examples.py`
-→ `build.py`, and open a PR (the same validators gate CI). A camp rename, or a duplicate/variant
-folded into another camp, uses `merged_from` — the retired id then resolves via `v1/camps/aliases.json`.
-Every fact needs a checkable source in its `provenance` block (no bare high confidence without a
-citation). New entities follow the id/versioning/event conventions in [`PLAN.md`](./PLAN.md) §3.
+`data/` is the authoritative source — edit the canonical JSON directly. There is no upstream to
+re-import: `tools/import_camps.py` and `tools/geocode_camps.py` were one-time camp-finder seed
+tools, kept for provenance, and `data/` has been hand-corrected since — do not re-run them. To add
+or fix an entity: edit `data/<dataset>/<id>.json`, then run `stamp_schema.py` →
+`validate_data.py` → `validate_examples.py` → `build.py`, and open a PR. The same validators gate CI.
 
-`tools/import_camps.py` and `tools/geocode_camps.py` are the one-time camp-finder **seed** tools;
-camp-finder now consumes this API and its source data is retired, so they are not part of the live
-pipeline (kept for provenance).
+A camp rename, or a duplicate/variant folded into another camp, uses **`merged_from`** — the retired
+id then resolves via [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json),
+and `validate_data.py` fails the build if a `merged_from` id is claimed twice or is still a live camp.
 
-## License & attribution
+Every fact needs a checkable source in its `provenance` block; no bare high confidence without a
+citation. New entities follow the id, versioning and event conventions in
+[`docs/model.md`](./docs/model.md) and [`PLAN.md`](./PLAN.md) §3.
 
-- **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)** — reuse
-  with attribution, non-commercial, share-alike.
-- **Merit badge requirement text** in `requirement-set` documents is **© Scouting America**
-  (marked `includes_official_text: true` + `text_rights`), reproduced with attribution for
-  non-commercial use and **not** under this dataset's license — don't relicense it. Only the
-  requirement structure/numbering/metadata is the project's CC BY-NC-SA contribution.
-- **Code** (`tools/` and `cookbook/`): MIT — so a consumer can lift a recipe into their own app
-  regardless of how that app is licensed. The *data* it fetches stays CC BY-NC-SA.
+## Licence & attribution
 
-Seed sources and how to attribute are in [`NOTICE.md`](./NOTICE.md). In brief: territory
-assignments come from official Scouting America Council Service Territory maps (facts extracted;
-the proprietary map images are **not** redistributed); council websites/names are cross-checked
-against the unofficial [camp-finder](https://github.com/sethmay/camp-finder) dataset.
+- **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)** — reuse with
+  attribution, non-commercial, share-alike.
+- **Code** (`tools/` and `cookbook/`): **MIT** — lift a recipe into your own app whatever its
+  licence.
+
+> [!WARNING]
+> **Merit badge, rank and Cub adventure requirement text is © Scouting America.** It is reproduced
+> with attribution for non-commercial use, is marked `includes_official_text` + `text_rights` on the
+> documents that carry it, and is **not** covered by this dataset's licence — don't relicense it.
+> Only the requirement structure, numbering and metadata are this project's contribution.
+
+Seed sources and how to attribute: [`NOTICE.md`](./NOTICE.md).

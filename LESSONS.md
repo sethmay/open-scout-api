@@ -188,6 +188,44 @@ fold; read before similar work.
   confidence 0.4–0.6 + an explicit "unverified/presumed" note; sourced facts get real
   dates + citations at 0.8+. Never fabricate a date or a merge target to look complete.
 
+## Documentation (`README.md`, `docs/`)
+
+- **Grep the whole repo for a term before deleting the only prose that names it.** A doc split moves
+  facts, and the ones that vanish are the ones no gate protects. `merged_from` disappeared from every
+  document while still failing the build in `validate_data.py`; the `rasterio`/WorldClim
+  *"the derived caches are committed, so a normal build needs neither"* reassurance disappeared too,
+  which is worse than losing a fact — it turns an 8 GB optional download into an apparent prerequisite.
+  A cross-reference is only as good as the target's content: pointing at a file that does not
+  actually document the thing is a semantic dangler no link checker can catch.
+- **A screenshot's on-screen numbers are not the dataset's numbers.** The camp map reports 336
+  markers and 88 areas after collapsing co-located camps into one marker per reservation; the dataset
+  has 336 `exact` and **111** `approximate` coordinates. Transcribing the UI and relabelling it as
+  data produced a count that could not sum to its own stated total. **Sanity-check every published
+  triple against the total in the same sentence** — 336 + 88 + 1 = 425, not 448.
+- **Prefer a derivable count over an asserted one, and say what you verified against.** Numbers in
+  prose rot silently: this repo's README had drifted on councils (419→420), founding years (141→157),
+  merger events (112→116), feature entries (6,373→6,379), signature features (147→205), the aquatics
+  CTE result (254→321), pinned files (2,331→2,473) and a jsDelivr example pinned 40 versions back.
+  `meta.json` carries only per-dataset totals — anything finer must be recomputed from `data/`.
+- **Two true numbers with different scopes are a trap.** `states_served` is 209 councils overall and
+  208 current; every neighbouring figure in the same list was all-council. State the scope inline.
+- **A Markdown regex that does not skip fenced code blocks is wrong.** A `# comment` inside a shell
+  snippet registers as a heading and manufactures a phantom anchor, so a link to a nonexistent
+  heading validates. The hazard is symmetric — an illustrative `[x](./nope)` inside a fence fails the
+  gate spuriously. Blank fence bodies (preserving line count) before matching anything.
+- **`[![img](inner)](outer)` hides `outer` from a naive link regex.** The badge idiom is exactly what
+  a README is full of; match the nested construct first and consume it whole, checking both targets.
+- **GitHub's anchor slug rules, precisely:** lowercase; strip `*` and `~` but **keep `_`** (it is a
+  word character); drop other punctuation including `.`; replace each space individually so a run of
+  whitespace yields consecutive hyphens (an em dash between spaces gives `--`); duplicate headings
+  get `-1`, `-2`. Getting `_` wrong makes a checker reject correct links *and* accept broken ones.
+- **A table cell is not a paragraph.** GitHub renders the README in a ~750px column, so the 1,891-,
+  1,684- and 1,340-character cells in the old status table were an unreadable smear. Keep cells under
+  ~200 characters; long-form content becomes prose under a heading. An empty header row `| | |` is
+  valid Markdown but confuses tooling that sniffs for the `|---|` separator — give tables real headers.
+- **A "documentation-only" changeset is not low-risk here.** These docs are the entire consumer
+  contract for a dataset whose whole value proposition is that its facts are checkable.
+
 ## Consumer examples / assertions (`cookbook/`)
 
 - **An assertion that restates the loop above it is not an assertion.** The single most common

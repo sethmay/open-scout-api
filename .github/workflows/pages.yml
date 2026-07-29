@@ -32,8 +32,14 @@ jobs:
         run: |
           python tools/validate_examples.py
           python tools/validate_data.py
+          python tools/check_links.py
       - name: Build static API
-        run: python tools/build.py
+        # build_sqlite.py runs here too, not just in the cookbook job, so the queryable artifact
+        # is actually served at v1/open-scout-api.sqlite. docs/endpoints.md documents that URL, and
+        # without this step it 404s -- a documented endpoint that only ever existed in a Release.
+        run: |
+          python tools/build.py
+          python tools/build_sqlite.py
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3

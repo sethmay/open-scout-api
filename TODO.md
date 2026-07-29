@@ -11,7 +11,7 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 419 councils — 229 current (assigned to CSTs) + 190 historical. Founding dates (141), rename chains (57), merger/absorption events (112) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 208. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 420 councils — 229 current (assigned to CSTs) + 191 historical. Founding years (157), rename chains (57), merger/absorption events (116; the 112 figure was the Wikipedia-extracted subset) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
@@ -134,7 +134,7 @@ rejected.
 
 ### Cookbook — SHIPPED; four follow-ups
 
-`cookbook/` is 36 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
+`cookbook/` is 42 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
 gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and the recipe→trap
 map are in [`cookbook/README.md`](./cookbook/README.md). Adding a recipe: it must carry a `TRAP:`
 header line, assert invariants rather than record counts, and exit nonzero when they break.
@@ -168,6 +168,14 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   `superseded` event names `reptile-study`, which starts 1927, and its thirteen pre-1911 siblings
   all encode a one-year existence as `1910..1911`. Lesson: do not assume a zero-width window is
   intentional just because a neighbour's is.
+- **`conquistador` version 2 is probably a transcription error: "Bemalillo County Council".** The
+  New Mexico county is **Bernalillo**, so the `m` is almost certainly an `rn`→`m` OCR/LLM slip. But
+  `data/councils/conquistador.json` is what the source said (`llm_extraction`, confidence 0.8) and
+  the README, `docs/model.md` and the data all agree on the current spelling, so correcting it is a
+  **data change needing its own source**, not a typo fix — do not silently "correct" it. Re-source
+  the 1926-1927 name against a council history or newspaper archive, then fix the value and raise
+  confidence. Flagged while writing `docs/model.md`, which uses this council as its worked rename
+  example precisely because it has seven names and zero `renamed` events.
 - **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
   tier-vocabulary closure and the tier↔date coupling instead of a mean ordering or a `portal` row.
   Two of the four `features` states are likewise empty (`date + []` and `null + entries`), so
