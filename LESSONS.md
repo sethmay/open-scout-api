@@ -188,6 +188,66 @@ fold; read before similar work.
   confidence 0.4–0.6 + an explicit "unverified/presumed" note; sourced facts get real
   dates + citations at 0.8+. Never fabricate a date or a merge target to look complete.
 
+## Consumer examples / assertions (`cookbook/`)
+
+- **An assertion that restates the loop above it is not an assertion.** The single most common
+  defect in this repo's example code: `check(sum(len(b) for b in buckets) == len(items))` written
+  directly under a loop that puts every item in exactly one bucket. It cannot fail for any dataset.
+  It recurred 10+ times across Python, C#, TypeScript and a starter in one changeset. **Before
+  writing a check, name the wrong dataset it would catch.** If you cannot name one, delete it.
+- **A negative assertion gets MORE true as the data degenerates, so pair it with an existence
+  floor.** `NOT EXISTS(... WHERE bad)`, `all(...)`, `HAVING COUNT(DISTINCT x) = 1` and jq's `all/2`
+  all pass vacuously on an empty or collapsed population. Deleting the 57 `crew_or_ship` rows left
+  all six asserts in `sql/06` green while the file's headline claim became undemonstrated. The
+  pattern that works is *integrity check + existence floor over the same population*.
+- **"Assert invariants, not counts" is not only about literal counts.** The violations that got
+  through were a strict ordering of **means**, an `effective_to === null` **currency pin**, and a
+  forward-resolution target pinned by id. Test: *would correct data next quarter break this?*
+  Equality against a pinned, effective-dated, **immutable** document (14 Eagle slots in
+  `eagle-2024`) is legitimate and is a different thing — say which at the site.
+- **An empty bucket is a pending failure, not proof.** Where a documented state has zero rows today
+  (`features_source_tier: portal`, `features` `null`+non-empty), assert the partition and the
+  relations; never a count identity that silently encodes the emptiness. Such assertions do NOT
+  "get stronger for free" when the row finally appears — they break.
+- **When two examples model the same field they must agree, and no gate will notice if they do
+  not.** One recipe documented a four-state `features` fact while another asserted the fourth state
+  was impossible. A gate that runs each artifact alone cannot see the contradiction.
+- **An assertion that forbids the evolution its own docstring teaches is a time bomb.** The alias
+  recipe promised transitive resolution while asserting every alias target is live — which makes a
+  chain impossible and would fail the day `build.py` emits one (it does not collapse chains).
+- **Verify an output claim by running the thing and diffing stdout against the data, not by reading
+  the code.** Two clipped © requirement excerpts were invisible in review and obvious in output.
+  Harvest every `text` field from `dist/v1/requirement-sets/*.json`, run the recipe with `OSA_BASE`
+  pointed at `dist/`, and substring-match both verbatim and a 40-char prefix to catch truncation.
+  Exclude published entity names first: a slot leaf's `text` is often exactly a badge's `name`, and
+  printing a name is fine (CC BY-NC-SA fact) while printing prose is not.
+- **The structural fix beats the disciplined one.** The durable way to stop a recipe printing
+  copyrighted text is to strip `text` at the fetch edge so the in-memory shape has no such field —
+  "a shape you cannot print by mistake is better than a rule you must remember".
+- **A gate that checks only "exit 0 + non-empty stdout" is defeated by a command substitution in
+  argument position.** `printf '%s' "$(fetch ...)" | jq` does not propagate curl's failure under
+  `set -euo pipefail`: printf succeeds and jq on empty stdin exits 0. Always assign first —
+  `VAR="$(fetch ...)"` — because there the substitution's status IS the assignment's status.
+- **Environment variables do not cross the Windows→WSL boundary unless named in `WSLENV`.** The
+  gate's `bash` is WSL, so `OSA_BASE` arrived empty and every shell recipe silently fell through to
+  its published default — validating the LIVE SITE while appearing to gate the local build. Set
+  `WSLENV=OSA_BASE/u` (`/u`, no path translation, or a URL is corrupted). Same class of bug:
+  `shutil.which()` answers about the Windows PATH, not the shell's, and a bare `"npm"` in
+  `subprocess` fails on Windows because CreateProcess ignores PATHEXT for `.CMD` shims.
+- **Three helpers that "mirror each other" drift exactly where nobody wrote a test.** `osa.py` /
+  `osa.ts` / `Osa.cs` agreed on the interesting things and diverged on request timeout, filesystem
+  base support, `--base` argv, and the exception type raised for a withdrawn endpoint — and that
+  last one bypasses the `except CheckError` handler the starters rely on to print `FAIL:`.
+- **A schema-walking codegen needs a TOTAL classifier and must refuse a shape it does not model.**
+  An unhandled `$def` shape emits either a bare undeclared type name (does not compile) or
+  `unknown`/`JsonElement` (silently wrong). A drift gate also only covers the schemas it reads: one
+  hand-written type "because it is simple" is a hole in the gate. Derive it or say so at the site.
+- **The package manifest is the machine-readable licence.** Relicensing in `NOTICE.md` and
+  `README.md` is not done until `package.json`'s `"license"` field agrees; scanners read the
+  manifest, not the prose.
+- **`.gitignore` patterns without a slash match at every depth.** A bare `bin/`/`obj/` hides any
+  such directory anywhere in the repo. Scope build-output ignores: `cookbook/csharp/bin/`.
+
 ## Data safety / licensing
 
 - **`includes_official_text` ⇔ any `Requirement.text` present is a cross-node invariant

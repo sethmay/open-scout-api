@@ -28,6 +28,7 @@ __pycache__/
 node_modules/
 dist/
 
-# .NET build output (cookbook/csharp)
-bin/
-obj/
+# .NET build output. Scoped to the project directory on purpose: a bare `bin/`/`obj/` has no
+# slash, so git would match it at EVERY depth and permanently hide any such directory in the repo.
+cookbook/csharp/bin/
+cookbook/csharp/obj/

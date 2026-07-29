@@ -203,32 +203,52 @@ def suite_sql(res: Result, env: dict[str, str]) -> None:
                 if bad:
                     res.fail(name, "invariant failed: " + "; ".join(bad))
                     continue
-            except sqlite3.Error as exc:
-                res.fail(name, f"sqlite error: {exc}")
+            # sqlite3.Warning is NOT a subclass of sqlite3.Error, and it is what con.execute
+            # raises when handed more than one statement. Catching only Error would let that
+            # escape and crash the whole gate with a traceback instead of failing one recipe.
+            except (sqlite3.Error, sqlite3.Warning, MalformedAssert) as exc:
+                res.fail(name, f"{type(exc).__name__}: {exc}")
                 continue
             res.ok(f"{name} ({len(rows)} rows, {len(asserts)} invariants)")
     finally:
         con.close()
 
 
+class MalformedAssert(Exception):
+    """An ``@assert`` header with no query under it."""
+
+
 def parse_asserts(path: Path) -> list[tuple[str, str]]:
-    """Read ``-- @assert <description>`` blocks, each continued by ``-- | <sql>`` lines."""
+    """Read ``-- @assert <description>`` blocks, each continued by ``-- | <sql>`` lines.
+
+    A header with no ``-- | `` continuation RAISES rather than being skipped. Dropping it
+    silently was the dangerous behaviour: a file with three asserts and one typo would run two,
+    report "2 invariants", and pass -- the missing invariant invisible, because suite_sql only
+    fails a file with ZERO asserts.
+    """
     out: list[tuple[str, str]] = []
     desc: str | None = None
     query: list[str] = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+
+    def close(where: str) -> None:
+        nonlocal desc, query
+        if desc is None:
+            return
+        if not query:
+            raise MalformedAssert(f"`@assert {desc}` has no `-- | <sql>` continuation ({where})")
+        out.append((desc, "\n".join(query)))
+        desc, query = None, []
+
+    for i, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         s = line.strip()
         if m := re.match(r"^--\s*@assert\s+(.+)$", s):
-            if desc is not None and query:
-                out.append((desc, "\n".join(query)))
+            close(f"before line {i}")
             desc, query = m.group(1).strip(), []
         elif desc is not None and (m := re.match(r"^--\s*\|\s?(.*)$", s)):
             query.append(m.group(1))
         elif desc is not None and query and s and not s.startswith("--"):
-            out.append((desc, "\n".join(query)))
-            desc, query = None, []
-    if desc is not None and query:
-        out.append((desc, "\n".join(query)))
+            close(f"line {i}")
+    close("end of file")
     return out
 
 

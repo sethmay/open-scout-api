@@ -3,7 +3,7 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
-## Unreleased
+## 0.54.0 (minor) — 2026-07-29
 
 - `PENDING` **Add `cookbook/` — CI-gated example code in five languages, plus three starter apps.**
   36 gated recipes: 16 Python, 10 SQL (55 SQL invariants), 6 shell, 6 TypeScript, 4 C#. A recipe is
