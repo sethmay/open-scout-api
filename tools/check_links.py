@@ -43,12 +43,11 @@ FENCE = re.compile(r"^(\s*)(```|~~~)")
 
 
 def strip_fences(text: str) -> str:
-    """Blank the body of every fenced code block, preserving line count.
+    """Blank fenced code blocks, preserving line count.
 
-    Without this, a `# comment` inside a shell snippet registers as a HEADING and manufactures a
-    phantom anchor -- so a link to `#endpoints` would validate against a file that has no such
-    heading. A gate that can pass a broken anchor is worse than no gate. The hazard is symmetric:
-    an illustrative `[x](./nope)` inside a snippet would otherwise fail the gate spuriously.
+    A `# comment` inside a shell snippet otherwise registers as a HEADING and manufactures a
+    phantom anchor, so a link to a nonexistent heading validates -- a gate that can pass a broken
+    anchor is worse than no gate.
     """
     out, fence = [], None
     for line in text.splitlines():
@@ -63,6 +62,19 @@ def strip_fences(text: str) -> str:
         else:
             out.append(line)
     return "\n".join(out)
+
+
+def strip_code(text: str) -> str:
+    """Fence-stripped AND inline-code-stripped: what the LINK/IMAGE scan should see.
+
+    Prose that *discusses* link syntax must not be checked as a link -- LESSONS.md's own entry
+    about an illustrative `[x](./nope)` failed the gate it was describing.
+
+    Deliberately NOT used for headings: GitHub keeps the TEXT of a code span in the anchor, so
+    `### Additive-only under \\`v1\\`` really does anchor at `#additive-only-under-v1`. Blanking
+    inline code before slugging silently shortened such anchors and broke correct links.
+    """
+    return re.sub(r"`+[^`]*`+", lambda m: " " * len(m.group(0)), strip_fences(text))
 
 
 def slug(heading: str) -> str:
@@ -124,7 +136,7 @@ def main() -> int:
 
     for md in markdown_files():
         rel = md.relative_to(ROOT).as_posix()
-        text = strip_fences(md.read_text(encoding="utf-8", errors="replace"))
+        text = strip_code(md.read_text(encoding="utf-8", errors="replace"))
         own = anchors(md)
 
         # Nested badge constructs first, taking BOTH targets, then blanked so the flat patterns
