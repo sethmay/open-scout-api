@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.0 (minor) — 2026-07-29
 
-- `PENDING` **Add browser-runnable SQL via Datasette Lite.** The released SQLite artifact now opens
+- `d93dbfa` **Add browser-runnable SQL via Datasette Lite.** The released SQLite artifact now opens
   in [Datasette Lite](https://lite.datasette.io/) from a single link, which runs Datasette under
   Pyodide, so all 22 tables are queryable with nothing installed and no account. A
   `#/open-scout-api?sql=` fragment turns any query into a link, and `docs/endpoints.md` carries
