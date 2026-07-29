@@ -78,6 +78,23 @@ def main() -> int:
                 at, bf = a.get("valid_to"), b.get("valid_from")
                 if at is None or bf is None or bf < at:
                     errs.append(f"{p.name}: version windows not ordered/half-open at {a.get('valid_from')}..{at} -> {bf}..")
+            # a window must not run BACKWARDS. The pairwise rule above only relates ADJACENT
+            # versions, so an inverted window inside one version slips through whenever its
+            # valid_to still abuts the successor's valid_from -- which is exactly how
+            # chippewa-valley shipped a 1927..1925 window. Under half-open [from, to) an
+            # inverted window is empty, so no date is ever in force there: a consumer asking
+            # "what was this council called in 1926?" silently gets nothing.
+            #
+            # Deliberately `>` and not `>=`: eight records are legitimately zero-width at year
+            # granularity (the four 2010 `historic-*` merit badges were a centennial revival
+            # offered during 2010 only, plus quivira/baltimore-area/green-mountain). Those are a
+            # real limitation of year-granularity half-open windows, not data-entry errors, and
+            # are tracked in TODO.md rather than reclassified as failures here.
+            for v in vs:
+                vf, vt = v.get("valid_from"), v.get("valid_to")
+                if vf is not None and vt is not None and vf > vt:
+                    errs.append(f"{p.name}: version window runs backwards ({vf}..{vt}); under "
+                                f"half-open [from, to) nothing is ever in force in it")
             # only the LAST version may be open-ended
             for v in vs[:-1]:
                 if v.get("valid_to") is None:

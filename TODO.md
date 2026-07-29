@@ -132,6 +132,35 @@ rejected.
 
 ## Queue
 
+### Cookbook — SHIPPED; three follow-ups
+
+`cookbook/` is 36 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
+gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and the recipe→trap
+map are in [`cookbook/README.md`](./cookbook/README.md). Adding a recipe: it must carry a `TRAP:`
+header line, assert invariants rather than record counts, and exit nonzero when they break.
+
+- **Zero-width version windows: 8 records, semantics undecided.** `valid_from == valid_to` is an
+  empty window under half-open `[from, to)`, so *nothing is ever in force in it* — the entity
+  effectively never existed. Affected: `merit-badges/historic-{carpentry,pathfinding,signaling,
+  tracking}` (all `2010..2010`) and `councils/{baltimore-area,green-mountain,quivira}`. The four
+  badges are a **real** phenomenon — Scouting America revived them for the 2010 centennial year
+  only — so the data is not wrong; year-granularity half-open windows simply cannot express
+  "existed during 2010". `validate_data.py` therefore rejects only *strictly* backwards windows
+  (`>`, not `>=`). Options if it ever matters: move these to day granularity
+  (`2010-01-01..2011-01-01`), or state in `PLAN.md` §3 that a zero-width window means
+  "in force for that whole calendar unit" and make `as-of` resolution honour it. Deliberately not
+  decided here — it is a modelling question, and no consumer has hit it.
+- **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
+  tier-vocabulary closure and stratification across the *populated* tiers instead of asserting a
+  `portal` row exists. Two of the four `features` tri-state buckets are likewise empty
+  (`date + []` and `null + entries`), so `python/06` asserts the buckets **partition** the corpus
+  and prints the zeros. Both become stronger assertions for free once such a camp exists.
+- **An in-force requirement set may name a discontinued entity, correctly.** `eagle-2024`
+  requirement `3d` refs `merit-badge:citizenship-in-society`, whose last version closed
+  2026-02-27. Resolve requirement `ref`s against `v1/{dataset}/index.json`, never
+  `v1/current/*.json`, or a live ref reads as dangling. The cookbook does this and asserts
+  `current ⊆ index`; worth a line in `PLAN.md` §3 if another consumer trips on it.
+
 ### Adult training — SHIPPED 0.52.0; two follow-ups
 
 28 courses + 67 position-trained requirements from `TRAINED LEADER REQUIREMENTS`

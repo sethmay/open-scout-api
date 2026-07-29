@@ -8,8 +8,12 @@ projections published from it) is licensed under
 (CC BY-NC-SA 4.0)** — see [`LICENSE`](./LICENSE) or
 <https://creativecommons.org/licenses/by-nc-sa/4.0/>.
 
-The **pipeline/tooling source code** (`tools/`, any future `pipeline/`) is licensed
-under the **MIT License**.
+The **pipeline/tooling source code** (`tools/`, any future `pipeline/`) and the **consumer
+example code** (`cookbook/`, including the generated TypeScript and C# types) are licensed
+under the **MIT License** — a recipe is meant to be lifted into your own application whatever
+its license. Note that the *data* those examples fetch remains CC BY-NC-SA 4.0, and that
+requirement text carries the separate Scouting America carve-out described below (which is why
+no cookbook recipe prints verbatim requirement text).
 
 ### Merit badge, rank & Cub adventure requirement text (third-party, excluded from the data license)
 

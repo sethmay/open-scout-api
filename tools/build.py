@@ -35,6 +35,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 SCHEMA_DIR = ROOT / "schema" / "v1"
 DIST = ROOT / "dist"
+# The browser starter is deployed alongside the API so the landing page can link a live demo
+# that exercises the real published surface (geo_precision, reservation grouping, the feature
+# hierarchy) from a browser. It has no build step, so publishing is a directory copy.
+CAMP_MAP = ROOT / "cookbook" / "ts" / "starters" / "camp-map"
 BASE_URL = "https://sethmay.github.io/open-scout-api"
 LICENSE = "CC-BY-NC-SA-4.0"
 DISCLAIMER = ("Unofficial community project. Not affiliated with, endorsed by, or "
@@ -512,10 +516,13 @@ def main() -> None:
         raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
     write_json(DIST / "v1" / "meta.json", meta_doc)
 
+    if CAMP_MAP.is_dir():
+        shutil.copytree(CAMP_MAP, DIST / "starters" / "camp-map")
+
     (DIST / "index.html").write_text(
         _landing(version, now, len(current_councils), len(current_territories), len(current_badges),
                  len(current_rs), len(current_camps), len(current_ranks), len(current_awards),
-                 len(current_lodges), len(current_adventures)),
+                 len(current_lodges), len(current_adventures), CAMP_MAP.is_dir()),
         encoding="utf-8", newline="\n")
     print(f"built dist/ v{version}: {len(councils)} councils, {len(territories)} territories, "
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
@@ -525,7 +532,13 @@ def main() -> None:
           f"{len(badge_rankings)} badge-ranking years")
 
 
-def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges, nadv) -> str:
+def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges, nadv,
+             has_demo=False) -> str:
+    repo = "https://github.com/sethmay/open-scout-api"
+    demo = (f'<li><a href="starters/camp-map/">Live camp map</a> \u2014 every camp, plotted honestly:'
+            f' <code>approximate</code> coordinates are drawn as areas rather than pins, co-located'
+            f' camps collapse to one reservation marker, and the feature filter expands a coarse'
+            f' code over its hierarchy.</li>\n ' if has_demo else "")
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -540,6 +553,22 @@ def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawar
 <p class="muted">Open, versioned, machine-readable Scouting America reference data. v{version} &middot; built {now}</p>
 <p><strong>Unofficial community project.</strong> Not affiliated with, endorsed by, or sponsored by
 Scouting America. Data licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+<h2>Start here</h2>
+<p>The <a href="{repo}/tree/main/cookbook">cookbook</a> is runnable, CI-gated example code in
+Python, TypeScript, C#, SQL and shell. Each recipe kills one specific way this data misleads a
+consumer who assumes it is a flat snapshot &mdash; because the interesting part is that it is not.</p>
+<ul>
+ {demo}<li>Feature codes are <strong>hierarchical</strong>: a camp offering kayaking is never tagged
+ <code>aquatics</code>, so a filter must expand the coarse code over its children.</li>
+ <li><code>eagle_required</code> is <strong>null for historical badges</strong> &mdash; unknown, not
+ false. A falsy test quietly reclassifies them.</li>
+ <li>Merit badge popularity is <strong>ordinal</strong>: no absolute count is published anywhere, so
+ averaging or summing a rank is meaningless.</li>
+ <li>An empty <code>features</code> array means nothing without <code>features_verified_at</code>
+ beside it &mdash; never surveyed and surveyed-found-nothing are different facts.</li>
+ <li>Names, numbers and ownership live in <strong>effective-dated versions</strong>, and mergers and
+ renames are <strong>events</strong>; <code>versions[0]</code> is not &ldquo;current&rdquo;.</li>
+</ul>
 <h2>Datasets</h2>
 <p>{ncouncils} current councils across {nterr} Council Service Territories; {ncamps} current camps; {nbadges} current merit badges; {nadv} Cub Scout adventures; {nrs} current requirement sets; {nranks} ranks; {nawards} awards; {nlodges} OA lodges.</p>
 <h2>Endpoints</h2>

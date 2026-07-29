@@ -1,0 +1,16 @@
+{
+  "name": "@open-scout-api/cookbook",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Typed TypeScript recipes for the Open Scout API. Each test is also example code.",
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsc --noEmit && vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
