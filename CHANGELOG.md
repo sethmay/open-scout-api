@@ -35,6 +35,11 @@ Version anchors: this file only (no package manifests yet — add here when one 
   "20 tables" while the artifact holds 22 — it was counting only the tables it tracks rows for.
 - `ab9c500` **Fix a broken link in `PLAN.md`** — it pointed at `../camp-finder`, a local filesystem
   path that resolves nowhere on GitHub, and printed a `D:\repos\...` path in a public document.
+- `7478904` **Force LF for shell scripts via `.gitattributes`.** `core.autocrlf` rewrote
+  `cookbook/shell/*.sh` to CRLF on checkout, so bash read `set -euo pipefail\r` as an option named
+  `pipefail`-CR and every recipe died at line 1. Invisible in CI, because `ubuntu-latest` checks out
+  LF regardless — only a Windows contributor hit it. Landed after the 0.54.0 bump commit, so it is
+  recorded here rather than there.
 
 ## 0.54.0 (minor) — 2026-07-29
 

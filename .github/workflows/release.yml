@@ -1,8 +1,10 @@
 name: Release
 
 # Push a semver tag (e.g. v0.12.0) to build the API + SQLite, package them, and publish a
-# GitHub Release with those assets. Tags are created by the semver bump flow (see skill://semver);
-# each vX.Y.Z points at that version's CHANGELOG sha (the merge commit).
+# GitHub Release with those assets. Tags are created by the semver bump flow (see skill://semver):
+# each vX.Y.Z is a lightweight tag on that version's BUMP commit ("CHANGELOG: backfill sha … +
+# bump to X.Y.Z"), which is the commit where the version and its CHANGELOG section agree. The sha
+# recorded inside the CHANGELOG entry is a different commit — the work being described.
 
 on:
   push:
