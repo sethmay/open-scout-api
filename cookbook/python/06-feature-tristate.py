@@ -64,22 +64,21 @@ check(
 check(groups["never_surveyed"], "an empty features array is not the same fact as `offers none`")
 
 # What the trap costs, in one concrete query. The naive "no aquatics" answer is the honest
-# answer plus every camp nobody has looked at -- the arithmetic is the proof.
+# answer plus every camp nobody has looked at -- the containment is the proof.
 aquatics = closure("aquatics")
 surveyed = [c for c in camps if c["features_verified_at"] is not None]
-naive_without = [c for c in camps if not aquatics & set(c["features"])]
-honest_without = [c for c in surveyed if not aquatics & set(c["features"])]
-unknown = groups["never_surveyed"]
+naive_without = {c["id"] for c in camps if not aquatics & set(c["features"])}
+honest_without = {c["id"] for c in surveyed if not aquatics & set(c["features"])}
+unknown = {c["id"] for c in groups["never_surveyed"]}
 
-check(len(naive_without) == len(honest_without) + len(unknown),
-      "the naive answer absorbs the unknowns")
+# Relations, not counts: the count identity this replaces held only while the bulk-import bucket
+# stayed empty, and that bucket is a documented state -- a camp with codes but no survey date
+# splits the naive answer a third way. The three containments hold in all four states; the count
+# below is the headline they imply, kept because it is the number the printout shows.
+check(honest_without <= naive_without, "the honest answer can only be a subset of the naive one")
+check(unknown <= naive_without, "the naive answer absorbs every never-surveyed camp")
+check(not (unknown & honest_without), "no never-surveyed camp may sit in the honest answer")
 check(len(naive_without) > len(honest_without), "the naive answer over-reports `without aquatics`")
-# The other direction of the same mistake: a "has X" filter can only under-report, never over.
-check(
-    len([c for c in surveyed if aquatics & set(c["features"])])
-    == len([c for c in camps if aquatics & set(c["features"])]),
-    "no unsurveyed camp can match a has-X filter, which is exactly why they under-report",
-)
 
 print(f"corpus          {len(camps)} camps, {len(surveyed)} with a features survey date")
 for name in BUCKETS:

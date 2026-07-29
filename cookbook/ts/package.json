@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Typed TypeScript recipes for the Open Scout API. Each test is also example code.",
-  "license": "CC-BY-NC-SA-4.0",
+  "license": "MIT",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "tsc --noEmit && vitest run"

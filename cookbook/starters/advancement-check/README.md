@@ -50,6 +50,7 @@ Star and Life but `4` under Eagle, so both requirements are located by shape (th
 ## Licensing
 
 Requirement text is (c) Scouting America and is *not* under this dataset's CC BY-NC-SA license, so
-this tool prints structure, refs, slots and counts. The single unavoidable exception is the label
-for the non-position alternatives, which is clipped; the document's own `text_rights` string is
-printed as a footer.
+this tool prints structure, refs, slots and counts. It does not merely decline to print the text --
+it never reads it: the requirement tree is rebuilt without a `text` field as it is fetched, so a
+non-position alternative is reported by its requirement number alone. The document's own
+`text_rights` string is printed as a footer.

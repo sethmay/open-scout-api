@@ -178,9 +178,10 @@ static class Recipes
             bucket.Add(badge);
         }
 
-        Osa.Check(
-            required.Count + notRequired.Count + unknown.Count == badges.Count,
-            "the three states must partition the index");
+        // A switch over bool? is exhaustive, so "the three buckets partition the index" is a fact
+        // about the switch, not about the data -- there is no dataset that fails it. What the data
+        // can fail is that all three states are actually populated, which is the claim that makes
+        // the tri-state worth writing at all.
         Osa.Check(unknown.Count > 0, "a plain bool cannot model this field: some badges are UNKNOWN");
         Osa.Check(required.Count > 0 && notRequired.Count > 0, "both known states must be represented");
 
@@ -193,11 +194,11 @@ static class Recipes
         // deliberately not asserted twice.)
 
         // The damage, measured rather than asserted in prose: the naive predicate silently absorbs
-        // every unknown badge into its "not required" answer.
+        // every unknown badge into its "not required" answer. `naive == notRequired + unknown` is
+        // the definition of GetValueOrDefault() and no dataset can fail it, so the falsifiable form
+        // is asserted instead -- the fold moves badges, and (per the checks above) they are real
+        // non-current badges rather than an artefact of the count.
         var naive = badges.Count(b => !b.EagleRequired.GetValueOrDefault());
-        Osa.Check(
-            naive == notRequired.Count + unknown.Count,
-            "GetValueOrDefault() must be shown folding UNKNOWN into false");
         Osa.Check(naive > notRequired.Count, "that fold is not harmless -- it moves badges");
 
         Console.WriteLine("\nrecipe 3  eagle_required tri-state");

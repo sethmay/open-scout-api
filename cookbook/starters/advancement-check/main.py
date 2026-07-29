@@ -13,8 +13,8 @@ FIX:  resolve the requirement set whose `effective_to` is null for each rank, th
       requirement, which is numbered 5 for Star and Life but 4 for Eagle.
 
 Requirement text is (c) Scouting America and is NOT under this dataset's license, so this tool
-reports structure, refs, slots and counts. The one place a label is unavoidable is clipped, and
-the document's own text_rights string is printed as a footer.
+never reads it: `narrow()` rebuilds every requirement node without a `text` field at the fetch
+edge, and the document's own text_rights string is printed as a footer.
 
   python main.py --rank first-class --badges camping,cooking --positions patrol-leader:6
   python main.py --selftest
@@ -28,7 +28,11 @@ import sys
 from osa import CheckError, check, endpoint, get, items
 
 PROGRAM = "scouts_bsa"  # this CLI reports on the Scouts BSA ladder
-CLIP = 46  # (c) Scouting America: a non-position alternative gets a clipped label, never a dump
+
+# The internal requirement-node shape: every field this tool reads, and deliberately NOT `text`.
+# A shape that cannot carry (c) Scouting America prose beats a rule about not printing it; see
+# cookbook/ts/src/recipes/eagle-slots.test.ts, which narrows the same tree the same way.
+NODE_FIELDS = ("number", "ref", "choose", "tenure_months", "badge_count")
 
 # The canned --selftest scenario: a First Class Scout part-way through, holding only Bugler.
 SELFTEST_RANK = "first-class"
@@ -77,6 +81,15 @@ def in_force_id(rank_id: str, index: list[dict]) -> str:
     ]
     check(len(live) == 1, f"rank:{rank_id} must have exactly one in-force requirement set")
     return live[0]
+
+
+def narrow(node: dict) -> dict:
+    """A requirement node reduced to NODE_FIELDS, recursively. Applied once where the document
+    is fetched, so nothing downstream has a `text` field to reach for by accident."""
+    out = {k: node[k] for k in NODE_FIELDS if k in node}
+    if node.get("children"):
+        out["children"] = [narrow(c) for c in node["children"]]
+    return out
 
 
 def walk(node: dict):
@@ -138,19 +151,18 @@ def leadership(doc: dict) -> dict:
     return found[0]
 
 
-def alternatives(req: dict) -> list[tuple[str, str]]:
-    """Leaves of the leadership requirement that are not a position: the per-rank escape
+def alternatives(req: dict) -> list[str]:
+    """The NUMBERS of the leadership requirement's non-position leaves: the per-rank escape
     hatches. Star and Life publish two, Eagle one -- that difference IS the asymmetry.
 
-    Labels are clipped because the text is (c) Scouting America; see the text_rights footer.
+    The number is the whole load-bearing datum: met() never scores an alternative, because
+    every one of them needs a human to judge it. The wording stays unread (see narrow()).
     """
-    out = []
-    for node in walk(req):
-        if node is req or node.get("children") or node.get("ref"):
-            continue
-        text = " ".join((node.get("text") or "").split())
-        out.append((node["number"], text[:CLIP] + ("..." if len(text) > CLIP else "")))
-    return out
+    return [
+        node["number"]
+        for node in walk(req)
+        if node is not req and not node.get("children") and not node.get("ref")
+    ]
 
 
 def leadership_status(req: dict, held: dict[str, int]) -> dict:
@@ -198,9 +210,11 @@ class Reference:
         self._docs: dict[str, dict] = {}
 
     def doc(self, rank_id: str) -> dict:
+        """The in-force document, narrowed: the requirement tree arrives without `text`."""
         if rank_id not in self._docs:
             template = endpoint("v1/requirement-sets/{id}.json")
-            self._docs[rank_id] = get(template.format(id=in_force_id(rank_id, self.sets)))
+            raw = get(template.format(id=in_force_id(rank_id, self.sets)))
+            self._docs[rank_id] = raw | {"requirements": [narrow(r) for r in raw["requirements"]]}
         return self._docs[rank_id]
 
     def remaining(self, current_rank: str) -> list[dict]:
@@ -268,8 +282,8 @@ def render(ref: Reference, rank: dict, badges: set[str], held: dict[str, int], l
             f"{'':<18} {ref.positions[pid]['name']} ({held[pid]} mo) NOT in {rank['name']}'s "
             f"tree -- this rank does not accept it"
         )
-    for number, text in status["alternatives"]:
-        print(f"{'':<18} {number:<6} alternative to a position: {text}")
+    for number in status["alternatives"]:
+        print(f"{'':<18} {number:<6} non-position alternative (text omitted: (c) Scouting America)")
     print(f"{'':<16} leadership requirement met by a position: {'yes' if met(status) else 'no'}")
     print()
     return {"doc": doc, "slots": slots, "filled": filled, "open": still_open, "status": status}
@@ -339,9 +353,13 @@ def selftest(ref: Reference) -> int:
         "bugler" in star_status["accepted"] and "bugler" not in eagle_status["accepted"],
         "the Bugler asymmetry must come from the rank trees themselves",
     )
+    check("bugler" in ref.positions, "the position entity is published")
+    # The TRAP's other half: if the position entity ever started publishing its own acceptance,
+    # a consumer could read it and be wrong for Eagle. This fails the day such a field appears.
+    acceptance = {"ranks", "accepted_for_ranks", "eligible_ranks", "tenure_months"}
     check(
-        ref.positions["bugler"]["id"] == "bugler",
-        "the position entity is published, and carries no rank acceptance to read",
+        not (set(ref.positions["bugler"]) & acceptance),
+        "acceptance must live on the rank tree, not on the position entity",
     )
 
     # tenure_months is honoured: the same position, served too briefly, does not qualify.

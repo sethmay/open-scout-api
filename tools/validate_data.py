@@ -85,11 +85,17 @@ def main() -> int:
             # inverted window is empty, so no date is ever in force there: a consumer asking
             # "what was this council called in 1926?" silently gets nothing.
             #
-            # Deliberately `>` and not `>=`: eight records are legitimately zero-width at year
-            # granularity (the four 2010 `historic-*` merit badges were a centennial revival
-            # offered during 2010 only, plus quivira/baltimore-area/green-mountain). Those are a
-            # real limitation of year-granularity half-open windows, not data-entry errors, and
-            # are tracked in TODO.md rather than reclassified as failures here.
+            # Deliberately `>` and not `>=`. SEVEN records are zero-width, in two classes:
+            #   real, a granularity limit -- historic-{carpentry,pathfinding,signaling,tracking}
+            #     are all 2010..2010, a centennial revival offered during 2010 only, which a
+            #     year-granularity half-open window cannot express;
+            #   unverified -- councils/{baltimore-area 1911, green-mountain 1972, quivira 1928},
+            #     each a single scraped founding year nobody has re-sourced.
+            # An eighth, merit-badges/reptiles, WAS 1926..1926 and was a genuine error of exactly
+            # the class this rule catches: its `superseded` event names reptile-study, which
+            # starts 1927, and its thirteen pre-1911 siblings all encode a one-year existence as
+            # 1910..1911. It is now 1926..1927. Tightening to `>=` would need the three council
+            # years re-sourced and a decision on the 2010 four; see TODO.md.
             for v in vs:
                 vf, vt = v.get("valid_from"), v.get("valid_to")
                 if vf is not None and vt is not None and vf > vt:

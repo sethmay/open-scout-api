@@ -51,8 +51,11 @@ if ! printf '%s\n' "$ALIASES" | jq -e '
   exit 1
 fi
 
-# Having resolved it, fetch the document the retired id could never have reached.
-printf '%s\n' "$(fetch "v1/camps/$CURRENT.json")" | jq -r '
+# Having resolved it, fetch the document the retired id could never have reached. The fetch is
+# its own assignment, not an argument: a command substitution inside `printf ...` would leave
+# printf's exit status to mask curl's, so a 404 here would print nothing and still exit 0.
+DOC="$(fetch "v1/camps/$CURRENT.json")"
+printf '%s\n' "$DOC" | jq -r '
   "  kind            \(.kind)",
   "  versions        \(.versions | length)",
   "  current name    \([.versions[] | select(.valid_to == null) | .name] | .[0])"

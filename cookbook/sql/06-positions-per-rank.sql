@@ -53,10 +53,26 @@ ORDER BY (star_troop <> eagle_troop) DESC, (star_troop <> star_crew) DESC, p.nam
 -- |   SELECT position_id FROM rank_positions
 -- |    WHERE rank_id = 'star' AND unit_type = 'scout_troop');
 
--- @assert unit_type genuinely partitions acceptance -- some position counts in one only
--- | SELECT EXISTS(
--- |   SELECT position_id FROM rank_positions GROUP BY position_id
--- |    HAVING COUNT(DISTINCT unit_type) = 1);
+-- @assert both unit types are present AND acceptance is not uniform across them
+-- | SELECT (SELECT COUNT(DISTINCT unit_type) FROM rank_positions) = 2
+-- |    AND EXISTS(SELECT position_id FROM rank_positions GROUP BY position_id
+-- |                HAVING COUNT(DISTINCT unit_type) = 1);
+
+-- Both directions, and per rank: neither side may be dropped, emptied, or shrunk to a subset
+-- of the other without this failing. This is the only assert that covers the TRAP at :5.
+-- @assert for every rank, each unit type accepts a position the other rejects
+-- | WITH pairs(rank_id, mine, theirs) AS (
+-- |   SELECT DISTINCT rank_id, 'scout_troop', 'crew_or_ship' FROM rank_positions
+-- |   UNION ALL
+-- |   SELECT DISTINCT rank_id, 'crew_or_ship', 'scout_troop' FROM rank_positions)
+-- | SELECT NOT EXISTS(
+-- |   SELECT 1 FROM pairs p
+-- |    WHERE NOT EXISTS(
+-- |      SELECT position_id FROM rank_positions
+-- |       WHERE rank_id = p.rank_id AND unit_type = p.mine
+-- |      EXCEPT
+-- |      SELECT position_id FROM rank_positions
+-- |       WHERE rank_id = p.rank_id AND unit_type = p.theirs));
 
 -- @assert the unit_type vocabulary is closed, so a pivot cannot miss a column
 -- | SELECT NOT EXISTS(

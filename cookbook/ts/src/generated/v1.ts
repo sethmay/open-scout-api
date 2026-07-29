@@ -447,7 +447,9 @@ export interface EntityDocumentByKind {
   readonly "training-requirement": TrainingRequirementDocument;
 }
 
-/** The bare `{retired-id: surviving-id}` map published at v1/{dataset}/aliases.json.
+/**
+ * The bare `{retired-id: surviving-id}` map published at v1/{dataset}/aliases.json.
  * Deliberately unenveloped and carrying no `$schema`: its only sane use is a direct
- * lookup, and a `$schema` key in a bare map would read as an alias. */
+ * lookup, and a `$schema` key in a bare map would read as an alias.
+ */
 export type AliasMap = Readonly<Record<string, string>>;

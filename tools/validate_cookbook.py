@@ -287,6 +287,13 @@ def suite_ts(res: Result, env: dict[str, str]) -> None:
     if npm is None:
         res.skip("ts", "npm not on PATH")
         return
+    # The TRAP rule is what keeps this collection from drifting back into "how to call fetch", so
+    # it must apply to every suite -- npm/dotnet run opaque test binaries, so check the headers
+    # here rather than leaving these two languages on author discipline alone.
+    for path in sorted((directory / "src" / "recipes").glob("*.test.ts")):
+        if err := header_trap(path):
+            res.fail(f"ts/{path.name}", err)
+            return
     if not (directory / "node_modules").exists():
         install = "ci" if (directory / "package-lock.json").exists() else "install"
         ok, out = run(
@@ -308,6 +315,12 @@ def suite_csharp(res: Result, env: dict[str, str]) -> None:
     if dotnet is None:
         res.skip("csharp", "dotnet not on PATH")
         return
+    # Same reasoning as suite_ts: `dotnet run` inspects no headers, so enforce the TRAP rule on
+    # the hand-written sources. Generated/ is excluded -- it is codegen output, not a recipe.
+    for path in sorted((COOKBOOK / "csharp").glob("*.cs")):
+        if err := header_trap(path):
+            res.fail(f"csharp/{path.name}", err)
+            return
     env = {**env, "DOTNET_NOLOGO": "1", "DOTNET_CLI_TELEMETRY_OPTOUT": "1"}
     for proj in projects:
         ok, out = run(
@@ -358,9 +371,18 @@ def main() -> int:
         base, httpd = serve_dist()
 
     # PYTHONPATH so recipes and starters share cookbook/python/osa.py without a package install.
+    #
+    # WSLENV is load-bearing on Windows, not decoration: the gate's `bash` is WSL, and a Windows
+    # environment variable does NOT reach a WSL process unless it is named in WSLENV. Without it
+    # every shell recipe silently fell through to its own default and validated the LIVE PUBLISHED
+    # SITE instead of the dist/ this gate just built and served -- so the suite passed while
+    # saying nothing about the tree under test, and an unreachable local dist read as a pass.
+    # `/u` passes the value through unchanged (no Win->Unix path translation, which would corrupt
+    # a URL). Harmless on Linux CI, where the variable propagates normally.
     env = {
         **os.environ,
         "OSA_BASE": base,
+        "WSLENV": "OSA_BASE/u",
         "PYTHONPATH": os.pathsep.join(
             [str(COOKBOOK / "python"), os.environ.get("PYTHONPATH", "")]
         ).rstrip(os.pathsep),

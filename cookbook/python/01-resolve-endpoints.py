@@ -47,5 +47,8 @@ print(f"version         {m['version']} (generated {m['generated_at']})")
 print(f"license         {m['license']}  (requirement text: see meta.text_rights)")
 print(f"endpoints       {len(collections)} collections + {len(templated)} templated")
 print(f"vocabularies    {len(m['vocab'])}")
-print(f"datasets        {', '.join(f'{k}={v['total']}' for k, v in m['datasets'].items())}")
+# Built before the f-string, not nested inside one: reusing the outer quote inside a nested
+# f-string is only legal from 3.12 (PEP 701), and this repo supports 3.11+.
+counts = ", ".join(f"{name}={ds['total']}" for name, ds in m["datasets"].items())
+print(f"datasets        {counts}")
 print(f"resolved        {council_doc} -> {one['versions'][0]['name']}")

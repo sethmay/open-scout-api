@@ -11,7 +11,9 @@ Sources are the five *published* contracts only -- the shapes a consumer actuall
   published-index.schema.json     the v1/{dataset}/index.json listings
   published-entity.schema.json    the per-entity v1/{dataset}/{id}.json documents
   published-meta.schema.json      v1/meta.json
-  published-aliases.schema.json   v1/{dataset}/aliases.json (a bare map, special-cased)
+  published-aliases.schema.json   v1/{dataset}/aliases.json -- no envelope, so no $defs for the
+                                  generic walk to pick up; `alias_type()` derives it separately
+                                  from `additionalProperties`. It IS covered by --check.
 
 The canonical ``*.schema.json`` files are deliberately NOT emitted: they describe what lives
 in ``data/``, which is not a consumer surface.
@@ -319,6 +321,36 @@ def build(emitter_cls: type[Emitter]) -> tuple[Emitter, dict[str, dict[str, str]
     return em, maps
 
 
+def alias_type(em: Emitter) -> str:
+    """The alias map, DERIVED from published-aliases.schema.json rather than hand-written.
+
+    This file is the one published surface with no envelope, so it has no ``$defs`` for the
+    generic walk to pick up -- which is why it was previously a hardcoded string literal that
+    ``--check`` could not see. Widening ``additionalProperties`` in the schema would then have
+    left both languages silently wrong while the drift gate stayed green.
+    """
+    schema = load("published-aliases")
+    value = em.type_of(schema.get("additionalProperties") or {}, "AliasValue")
+    # A JSON object key is always a string; `propertyNames` constrains its FORMAT (slug pattern),
+    # not its type, so deriving the key type from it would yield `unknown`/`JsonElement`.
+    key = em.scalar(["string"], {})
+    doc = (
+        "The bare `{retired-id: surviving-id}` map published at v1/{dataset}/aliases.json.\n"
+        "Deliberately unenveloped and carrying no `$schema`: its only sane use is a direct\n"
+        "lookup, and a `$schema` key in a bare map would read as an alias."
+    )
+    if isinstance(em, TsEmitter):
+        body = "\n".join(f" * {ln}" for ln in doc.splitlines())
+        return f"/**\n{body}\n */\nexport type AliasMap = Readonly<Record<{key}, {value}>>;"
+    # C# has no structural type alias, so the honest equivalent is a `global using` alias rather
+    # than a wrapper class with nothing in it. Fully qualified so it resolves wherever it lands.
+    return (
+        f"// {' '.join(doc.split())}\n"
+        f"global using AliasMap = "
+        f"System.Collections.Generic.IReadOnlyDictionary<{key}, {value}>;"
+    )
+
+
 def ts_source() -> str:
     em, maps = build(TsEmitter)
     parts = ["/**\n * " + BANNER.strip().replace("\n", "\n * ") + "\n */\n"]
@@ -332,12 +364,7 @@ def ts_source() -> str:
             f"/** Item shape selected by the envelope `kind` of a {envelope}. */\n"
             f"export interface {name} {{\n{rows}\n}}"
         )
-    parts.append(
-        "/** The bare `{retired-id: surviving-id}` map published at v1/{dataset}/aliases.json.\n"
-        " * Deliberately unenveloped and carrying no `$schema`: its only sane use is a direct\n"
-        " * lookup, and a `$schema` key in a bare map would read as an alias. */\n"
-        "export type AliasMap = Readonly<Record<string, string>>;"
-    )
+    parts.append(alias_type(TsEmitter()))
     return "\n\n".join(parts) + "\n"
 
 
@@ -346,6 +373,9 @@ def cs_source() -> str:
     body = "\n\n".join(em.blocks)
     lines = [
         "// " + BANNER.strip().replace("\n", "\n// "),
+        "",
+        # A `global using` alias is a using directive, so it MUST precede the namespace.
+        alias_type(CsEmitter()),
         "",
         "using System.Text.Json;",
         "using System.Text.Json.Serialization;",

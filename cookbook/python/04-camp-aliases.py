@@ -36,12 +36,14 @@ def resolve(camp_id: str) -> str | None:
     return camp_id
 
 
-# Referential integrity of the table itself.
-check(all(v in live for v in aliases.values()), "every alias must point at a live camp")
 # A key that is also a live id would make the redirect shadow a real record, so the two
-# namespaces must stay disjoint.
+# namespaces must stay disjoint. Values are deliberately NOT constrained to live ids: build.py
+# does not collapse chains, so a merge target that is itself merged away leaves a value that is
+# another key. That is what keeps the loop in `resolve` iterating and the `seen` guard reachable.
 check(not (set(aliases) & set(live)), "no retired id may also be a live camp id")
-# Cycle-freedom, proved rather than assumed: every key must terminate on a live id.
+# Cycle-freedom AND referential integrity in one pass: `resolve` returns None both for a value
+# that names nothing published and for a key that loops, so the guard turns a cycle in the data
+# into this failed assertion rather than a hung request.
 unresolved = [k for k in aliases if resolve(k) is None]
 check(unresolved == [], f"these aliases do not terminate on a live camp: {unresolved[:3]}")
 

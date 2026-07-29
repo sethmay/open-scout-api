@@ -2,6 +2,9 @@
 // Regenerate with `python tools/gen_types.py`; CI fails on drift (`--check`).
 // Source of truth: schema/v1/published-*.schema.json
 
+// The bare `{retired-id: surviving-id}` map published at v1/{dataset}/aliases.json. Deliberately unenveloped and carrying no `$schema`: its only sane use is a direct lookup, and a `$schema` key in a bare map would read as an alias.
+global using AliasMap = System.Collections.Generic.IReadOnlyDictionary<string, string>;
+
 using System.Text.Json;
 using System.Text.Json.Serialization;
 

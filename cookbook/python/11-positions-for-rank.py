@@ -11,6 +11,8 @@ FIX:  acceptance lives on the RANK's requirement tree, as `position:` refs benea
       allow a Scoutmaster-approved leadership project, Eagle does not.
 """
 
+import hashlib
+
 from osa import check, endpoint, get, items
 
 RANK_SETS = {"star": "star-2024", "life": "life-2024", "eagle": "eagle-2024"}
@@ -45,6 +47,16 @@ def leadership(doc: dict) -> dict:
     return hits[0]
 
 
+def fingerprint(node: dict) -> str:
+    """A requirement node's text as a digest -- never as prose.
+
+    Routes have to be compared by the identity of their text rather than by `number` (see
+    below), and a digest compares identically while being impossible to print as a requirement.
+    The text is (c) Scouting America, so it is reduced here and never formatted into output.
+    """
+    return hashlib.sha256((node["text"] or "").encode("utf-8")).hexdigest()
+
+
 accepted, routes = {}, {}
 for rank, doc in docs.items():
     top = leadership(doc)
@@ -72,17 +84,15 @@ check(accepted["eagle"] < accepted["star"], "Eagle's set must be a strict subset
 # Star and Life offer one non-position route Eagle does not. Diff by text, not by `number`:
 # the shared Lone Scout route is numbered 5c under Star and 4c under Eagle, so matching on
 # numbering would pair up the wrong nodes and name the wrong route as the extra one.
-eagle_routes = {(c["text"] or "") for c in routes["eagle"]}
-extra = [c for c in routes["star"] if (c["text"] or "") not in eagle_routes]
+eagle_routes = {fingerprint(c) for c in routes["eagle"]}
+extra = [c for c in routes["star"] if fingerprint(c) not in eagle_routes]
 check(len(extra) == 1, f"Star must offer exactly one route Eagle lacks, found {len(extra)}")
 check(
-    eagle_routes < {(c["text"] or "") for c in routes["star"]},
+    eagle_routes < {fingerprint(c) for c in routes["star"]},
     "Eagle's non-position routes must be a strict subset of Star's",
 )
 
 star_only = sorted(accepted["star"] - accepted["eagle"])
-# A short snippet is the only way to name the extra route; truncated, with the rights notice.
-snippet = (extra[0]["text"] or "")[:52].rstrip() + "..."
 
 print(f"positions       {len(positions)} published; rank acceptance fields: 0")
 for rank in RANK_SETS:
@@ -93,5 +103,7 @@ print(f"star == life    {accepted['star'] == accepted['life']}")
 print(f"eagle subset    {accepted['eagle'] < accepted['star']} "
       f"({len(star_only)} accepted for Star/Life only)")
 print(f"star-only       {', '.join(star_only)}")
-print(f"extra route     {extra[0]['number']}: {snippet}  <- Star/Life only")
+# The number names the route; naming it by a clipped quotation would reproduce the requirement.
+print(f"extra route     {extra[0]['number']} <- Star/Life only "
+      f"(non-position alternative; text omitted: (c) Scouting America)")
 print(f"text_rights     {docs['star']['text_rights']}")

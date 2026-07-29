@@ -59,22 +59,30 @@ def fill(earned: set[str]) -> tuple[set[str], set[str]]:
     return filled, set(slots) - filled
 
 
+# A badge may satisfy at most one slot, or "slots filled" stops being a count of work done: one
+# badge would close two slots at once and the trap's arithmetic would not hold. This is the check
+# a scrambled or duplicated slot map fails -- no result of `fill()` can, because every slot is
+# fed its own options and so always fills itself.
+shared = sorted((a, b) for a in slots for b in slots if a < b and set(slots[a]) & set(slots[b]))
+check(not shared, f"a badge may satisfy only one slot; these slots share one: {shared[:3]}")
+
 # One badge per slot, taking the first alternative where there is a choice: the minimum set.
 minimum = {options[0] for options in slots.values()}
-filled, outstanding = fill(minimum)
-check(outstanding == set(), "one badge per slot must fill every slot")
+filled = fill(minimum)[0]
 check(len(minimum) == len(slots), "the minimum set is one badge per slot, not one per flag")
 
 # A Scout who earned the other side of every either/or slot is equally done -- the point of the
-# `choose` node. If this failed, the alternatives would not really be alternatives.
+# `choose` node. The load-bearing half is WHICH slots the two sets differ on: an either/or slot
+# that listed one ref twice would pass `slot_options` and quietly stop being a choice.
 swapped = {options[-1] for options in slots.values()}
-check(fill(swapped)[1] == set(), "the other side of each either/or slot must fill it too")
+check({n for n in slots if slots[n][0] != slots[n][-1]} == set(either_or),
+      "the minimum and alternate sets must differ on exactly the either/or slots")
 check(swapped != minimum, "the two satisfying sets must actually differ")
 
 # A partial sample: everything except the badges behind one either/or slot.
 gap = sorted(either_or)[0]
 partial = {ref for n, options in slots.items() if n != gap for ref in options[:1]}
-part_filled, part_outstanding = fill(partial)
+part_outstanding = fill(partial)[1]
 check(part_outstanding == {gap}, f"dropping slot {gap}'s options must leave exactly it outstanding")
 
 print(f"document        {doc['id']} (effective {doc['effective_from']}, in force: "

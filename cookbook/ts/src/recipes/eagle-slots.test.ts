@@ -36,7 +36,9 @@ test("eagle requirement 3 is a 14-slot graph, not an 18-badge list", async () =>
   const doc = await get<RequirementSetDocument>(template.replace("{id}", "eagle-2024"));
 
   check(doc.subject === "rank:eagle", "eagle-2024 must be a rank:eagle edition");
-  check(doc.effective_to === null, "eagle-2024 must still be the edition in force");
+  // `effective_from` is fixed for the life of the edition; `effective_to` is not -- eagle-2024
+  // closes the day its successor lands, exactly as eagle-2023 already has.
+  check(doc.effective_from === "2024-01-01", "eagle-2024 must be the edition dated 2024-01-01");
   // The licensing carve-out travels with the document that carries the text.
   check(doc.includes_official_text, "this edition transcribes official requirement text");
   check(
@@ -98,7 +100,8 @@ test("eagle requirement 3 is a 14-slot graph, not an 18-badge list", async () =>
   check(total.cumulative > slots.length, "the total badge requirement exceeds the named slots");
   check(total.cumulative > total.earn, "the cumulative total includes badges already earned");
 
-  console.log(`edition         ${doc.id} (effective ${doc.effective_from}, still in force)`);
+  const window = typeof doc.effective_to === "string" ? `to ${doc.effective_to}` : "still in force";
+  console.log(`edition         ${doc.id} (effective ${doc.effective_from}, ${window})`);
   console.log(`slots           ${slots.length} lettered children of requirement 3`);
   for (const slot of slots) {
     const how = (slot.choose > 0 ? `choose ${slot.choose} of` : "required").padEnd(12);
