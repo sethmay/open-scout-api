@@ -324,6 +324,32 @@ included, with a `current` flag. The same query answers "today" or "ever" by add
 `WHERE current = 1`. Each entity row also carries the full canonical JSON in a `data` column for
 `json_extract`, so anything the typed columns omit is still reachable without a second fetch.
 
+### Query it in your browser
+
+[Datasette Lite](https://lite.datasette.io/) runs Datasette under Pyodide, so it opens the
+published artifact with nothing installed and no account:
+
+**[Open the dataset in Datasette Lite](https://lite.datasette.io/?url=https://sethmay.github.io/open-scout-api/v1/open-scout-api.sqlite)**
+
+All 22 tables are browsable, and the SQL box takes arbitrary queries including recursive CTEs. The
+first load fetches Pyodide plus the 7.8 MB database, so give it a few seconds. After that, queries
+run locally and come back in single-digit milliseconds.
+
+A `#/open-scout-api?sql=` fragment turns any query into a link, which makes the SQL cookbook
+something a reader can run instead of read. Three worked examples:
+
+| Query | What it shows |
+|---|---|
+| [Feature closure vs literal match](https://lite.datasette.io/?url=https://sethmay.github.io/open-scout-api/v1/open-scout-api.sqlite#/open-scout-api?sql=WITH%20RECURSIVE%20d%28root%2C%20code%29%20AS%20%28%0A%20%20SELECT%20code%2C%20code%20FROM%20feature_vocab%0A%20%20UNION%20SELECT%20d.root%2C%20v.code%20FROM%20feature_vocab%20v%20JOIN%20d%20ON%20v.broader%20%3D%20d.code%29%0ASELECT%20v.code%20AS%20coarse_code%2C%0A%20%20%20%20%20%20%20%28SELECT%20COUNT%28DISTINCT%20camp_id%29%20FROM%20camp_features%20WHERE%20code%20%3D%20v.code%29%20AS%20naive_camps%2C%0A%20%20%20%20%20%20%20COUNT%28DISTINCT%20f.camp_id%29%20AS%20closure_camps%0AFROM%20feature_vocab%20v%20JOIN%20d%20ON%20d.root%20%3D%20v.code%0ALEFT%20JOIN%20camp_features%20f%20ON%20f.code%20%3D%20d.code%0AWHERE%20v.broader%20IS%20NULL%20GROUP%20BY%20v.code%0AHAVING%20closure_camps%20%3E%20naive_camps%20ORDER%20BY%20closure_camps%20-%20naive_camps%20DESC) | Every coarse code a literal filter under-counts. `aquatics` gets 61 camps literally and 321 through its closure |
+| [The Bugler asymmetry](https://lite.datasette.io/?url=https://sethmay.github.io/open-scout-api/v1/open-scout-api.sqlite#/open-scout-api?sql=SELECT%20p.name%20AS%20position%2C%0A%20%20MAX%28CASE%20WHEN%20r.rank_id%3D%27star%27%20%20AND%20r.unit_type%3D%27scout_troop%27%20THEN%20%27x%27%20ELSE%20%27.%27%20END%29%20AS%20star%2C%0A%20%20MAX%28CASE%20WHEN%20r.rank_id%3D%27life%27%20%20AND%20r.unit_type%3D%27scout_troop%27%20THEN%20%27x%27%20ELSE%20%27.%27%20END%29%20AS%20life%2C%0A%20%20MAX%28CASE%20WHEN%20r.rank_id%3D%27eagle%27%20AND%20r.unit_type%3D%27scout_troop%27%20THEN%20%27x%27%20ELSE%20%27.%27%20END%29%20AS%20eagle%0AFROM%20rank_positions%20r%20JOIN%20positions%20p%20ON%20p.id%20%3D%20r.position_id%0AWHERE%20r.unit_type%3D%27scout_troop%27%20GROUP%20BY%20r.position_id%0AHAVING%20star%20%3C%3E%20eagle%20ORDER%20BY%20p.name) | One row, `x x .`: the only troop position Star and Life accept that Eagle does not |
+| [The `eagle_required` tri-state](https://lite.datasette.io/?url=https://sethmay.github.io/open-scout-api/v1/open-scout-api.sqlite#/open-scout-api?sql=SELECT%20CASE%20eagle_required%20WHEN%201%20THEN%20%27required%27%20WHEN%200%20THEN%20%27not%20required%27%0A%20%20%20%20%20%20%20%20%20%20%20%20ELSE%20%27unknown%20%28NULL%29%27%20END%20AS%20eagle_required%2C%0A%20%20%20%20%20%20%20CASE%20current%20WHEN%201%20THEN%20%27current%27%20ELSE%20%27historical%27%20END%20AS%20lifecycle%2C%0A%20%20%20%20%20%20%20COUNT%28%2A%29%20AS%20badges%0AFROM%20merit_badges%20GROUP%20BY%20eagle_required%2C%20current%0AORDER%20BY%20current%20DESC%2C%20eagle_required%20DESC) | 17 current and 1 historical badge carry the flag, and all 126 unknowns are historical |
+
+> [!NOTE]
+> Datasette Lite fetches the database straight from GitHub Pages, which works because the API sends
+> `Access-Control-Allow-Origin: *`. It always loads the latest `main` build, so these links are not
+> version-pinned. For a fixed version, download the release asset and run
+> [Datasette](https://datasette.io/) locally.
+
 ### Tables
 
 22 tables, 25 indexes, no views. Row counts are v0.54.0.

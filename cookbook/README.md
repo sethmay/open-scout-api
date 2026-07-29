@@ -54,7 +54,7 @@ line in its header, and the gate rejects any file that lacks one.
 | `python/14-badge-trends.py` | Averaging or summing an ordinal rank |
 | `python/15-staleness.py` | Trusting `verified_at` forever, or confusing it with `imported_at` |
 | `python/16-trained-for.py` | Keying adult training by position alone, ignoring unit type |
-| `sql/*.sql` | The same traps in SQL, against the release SQLite artifact |
+| `sql/*.sql` | The same traps in SQL, against the release SQLite artifact ([run them in your browser](../docs/endpoints.md#query-it-in-your-browser)) |
 | `shell/*.sh` | `curl` + `jq` first contact, with the same footguns |
 | `ts/src/recipes/*.test.ts` | The web consumer's path, typed from the published schemas |
 | `csharp/Program.cs` | `bool?` makes the `eagle_required` tri-state trap especially easy to hit |

@@ -48,6 +48,13 @@ coordinate at all is named rather than silently dropped.
 
 It's a single HTML file with no build step: [`cookbook/ts/starters/camp-map/`](./cookbook/ts/starters/camp-map/).
 
+You can also **[query the whole dataset in your browser](https://lite.datasette.io/?url=https://sethmay.github.io/open-scout-api/v1/open-scout-api.sqlite)**. That link opens the released
+SQLite artifact in [Datasette Lite](https://lite.datasette.io/), which runs Datasette under
+Pyodide, so all 22 tables are queryable with nothing installed. The
+[SQL cookbook](./docs/endpoints.md#query-it-in-your-browser) has one-click versions of three
+queries, including the one that shows why filtering on `aquatics` finds 61 camps when the right
+answer is 321.
+
 ## Try it in 30 seconds
 
 ```bash

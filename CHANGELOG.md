@@ -3,6 +3,29 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.0 (minor) — 2026-07-29
+
+- `PENDING` **Add browser-runnable SQL via Datasette Lite.** The released SQLite artifact now opens
+  in [Datasette Lite](https://lite.datasette.io/) from a single link, which runs Datasette under
+  Pyodide, so all 22 tables are queryable with nothing installed and no account. A
+  `#/open-scout-api?sql=` fragment turns any query into a link, and `docs/endpoints.md` carries
+  three: the feature closure (61 camps literally, 321 through the hierarchy), the Bugler asymmetry
+  (one row, `x x .`), and the `eagle_required` tri-state (17 current flagged, and 126 unknowns that
+  are all historical). Each was verified twice, once in a real browser and once by decoding the
+  committed URL and running its SQL against the artifact. This works only because the API sends
+  `Access-Control-Allow-Origin: *` and 0.55.0 started serving the artifact from Pages.
+- `811c28d` **Copy-edit every published document to remove generated-text tells.** 174 em dashes in
+  running prose across `README.md`, the three `docs/` files, and the cookbook README go to zero,
+  recast with varied punctuation rather than one substitute. Also removes negate-then-reframe
+  constructions, over-signposting, and scattered bold, and adds missing Oxford commas. `NOTICE.md`
+  and the two then-unreleased CHANGELOG sections were cleaned as well, since those become GitHub
+  Release bodies. En dashes in numeric ranges are kept, and the `## X.Y.Z (bump) — date` heading
+  format is kept because it is the documented semver convention across every prior section.
+- `8f5e49c` **Second pass with the `avoid-ai-writing` skill.** Removes four moral-adjective category
+  errors (a map cannot plot "honestly", an encoding is not "honest"), one hollow intensifier, and a
+  self-labeling line that told the reader which example mattered instead of letting it. Normalizes
+  seven en-GB spellings to match the repo's dominant en-US usage and the `LICENSE` file.
+
 ## 0.55.0 (minor) — 2026-07-29
 
 - `ab9c500` **Overhaul `README.md` and split the reference material into `docs/`.** The README was
