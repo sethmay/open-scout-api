@@ -1,0 +1,14 @@
+# Shell scripts MUST keep LF in the working tree, on every platform.
+#
+# With core.autocrlf=true (the Windows default) git rewrites them to CRLF on checkout, and bash
+# then reads `set -euo pipefail\r` as an option literally named "pipefail\r":
+#
+#   01-discover.sh: line 10: set: pipefail
+#   : invalid option name
+#
+# Every cookbook/shell recipe dies at line 1 that way. It is invisible in CI, because
+# ubuntu-latest checks out LF regardless, so only a Windows contributor sees it.
+*.sh text eol=lf
+
+# Same hazard, same reason: these are executed or parsed by tools that reject a stray CR.
+*.bash text eol=lf
