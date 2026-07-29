@@ -7,14 +7,14 @@ SQLite artifact. [← README](../README.md) · siblings: [datasets](./datasets.m
 Base URL: **`https://sethmay.github.io/open-scout-api/`**, path-versioned under `/v1/`.
 
 > [!IMPORTANT]
-> **Pre-1.0: the host is not final.** Field shapes are already stable and build-gated — every
-> published file names its contract in `$schema` and the build fails on drift — but the **base URL
+> **Pre-1.0: the host is not final.** Field shapes are already stable and build-gated: every
+> published file names its contract in `$schema` and the build fails on drift. But the **base URL
 > itself** (`sethmay.github.io/open-scout-api`, which is also the schema `$id` prefix) is still
 > provisional while a permanent home is settled. Cutting `1.0` is what freezes it.
 >
 > So: resolve endpoints from
 > [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json) (`base_url`, `schemas`,
-> `endpoints`) instead of hardcoding the host, and pin data files by git tag via jsDelivr — tags are
+> `endpoints`) instead of hardcoding the host, and pin data files by git tag via jsDelivr. Tags are
 > immutable regardless of where the repo ends up.
 
 ```bash
@@ -41,11 +41,11 @@ const { items } = await (await fetch(
 | [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json) | version, per-dataset counts, license, endpoint list |
 
 `meta.json` is the only URL worth hardcoding. It carries `base_url`, `schemas` (the schema
-directory prefix), `endpoints` (every path below), `vocab` (the vocabulary paths), `license` and
-`text_rights`, plus `datasets` — a `{total, current}` pair per dataset, so a consumer can sanity-check
+directory prefix), `endpoints` (every path below), `vocab` (the vocabulary paths), `license`, and
+`text_rights`, plus `datasets` (a `{total, current}` pair per dataset), so a consumer can sanity-check
 a fetch against the count the build published rather than trusting its own pagination.
 
-### `current/` — denormalized projections
+### `current/`: denormalized projections
 
 The flat, joined, filterable surface. One file per dataset, current entities only.
 
@@ -55,7 +55,7 @@ The flat, joined, filterable surface. One file per dataset, current entities onl
 | [`v1/current/territories.json`](https://sethmay.github.io/open-scout-api/v1/current/territories.json) | current Council Service Territories |
 | [`v1/current/merit-badges.json`](https://sethmay.github.io/open-scout-api/v1/current/merit-badges.json) | current merit badges, with `eagle_required` |
 | [`v1/current/requirement-sets.json`](https://sethmay.github.io/open-scout-api/v1/current/requirement-sets.json) | requirement sets in force (`effective_to: null`) |
-| [`v1/current/camps.json`](https://sethmay.github.io/open-scout-api/v1/current/camps.json) | camps with council, coordinates and features inlined |
+| [`v1/current/camps.json`](https://sethmay.github.io/open-scout-api/v1/current/camps.json) | camps with council, coordinates, and features inlined |
 | [`v1/current/ranks.json`](https://sethmay.github.io/open-scout-api/v1/current/ranks.json) | all ranks across the four programs |
 | [`v1/current/awards.json`](https://sethmay.github.io/open-scout-api/v1/current/awards.json) | current awards & recognitions |
 | [`v1/current/oa-lodges.json`](https://sethmay.github.io/open-scout-api/v1/current/oa-lodges.json) | current OA lodges, by chartering council |
@@ -65,7 +65,7 @@ The flat, joined, filterable surface. One file per dataset, current entities onl
 
 Each `current/adventures.json` item names the rank(s) offering it, its `category`, and the required
 `area` it fills. Each `current/training.json` item carries the course code (`Y01`, `S11`, `WS10`),
-its delivery mode and its renewal interval. See [datasets](./datasets.md) for what each dataset
+its delivery mode, and its renewal interval. See [datasets](./datasets.md) for what each dataset
 actually contains.
 
 Two datasets have no `current/` projection, because "current" is not a meaningful filter on them:
@@ -75,7 +75,7 @@ a `(position, unit type)` pair, not an entity with a lifecycle).
 ### Per-dataset `index.json` + `{id}.json`
 
 `index.json` lists every entity including historical ones, each with a `current` flag; `{id}.json`
-is the full entity document — version history plus its lifecycle events. See
+is the full entity document: version history plus its lifecycle events. See
 [data model](./model.md) for what a version and an event are.
 
 | Endpoint | Returns |
@@ -98,10 +98,10 @@ Three of these break the pattern:
 
 - **`requirement-sets/index.json`** has no `current` flag. Requirement sets are effective-dated
   documents, so "in force" is `effective_to: null`.
-- **`merit-badge-rankings`** is keyed by `{year}`, not `{id}`, and reports **ranks, not counts** —
+- **`merit-badge-rankings`** is keyed by `{year}`, not `{id}`, and reports **ranks, not counts**.
   Scouting America publishes each badge's position and no absolute number anywhere.
 - **`training-requirements`** is keyed by **(position, unit type)**, because code `CC` needs a
-  different course in a pack, a troop, a team, a crew and a ship.
+  different course in a pack, a troop, a team, a crew, and a ship.
 
 ### Alias maps
 
@@ -112,7 +112,7 @@ Three of these break the pattern:
 Camps is the only dataset with an alias map today, because it is the only one seeded from a source
 that contained duplicate and program-variant listings for one property. A retired id resolves to the
 camp it was folded into. The file is deliberately a bare `{retired-id: surviving-id}` object with no
-envelope — see [schema pinning](#schema-pinning-and-the-build-gate) for what that costs it.
+envelope. See [schema pinning](#schema-pinning-and-the-build-gate) for what that costs it.
 
 ### Vocabularies
 
@@ -135,7 +135,7 @@ carrying `applies_to` and an `open` flag.
 |---|---|
 | [`schema/v1/`](https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json) | 21 JSON Schemas (draft 2020-12) |
 
-Sixteen canonical schemas (one per entity kind, plus `common`, `event` and `vocab`) and five
+Sixteen canonical schemas (one per entity kind, plus `common`, `event`, and `vocab`) and five
 `published-*` contracts that pin the published surface. Resolve the directory from `meta.json`'s
 `schemas` key rather than assembling the URL yourself.
 
@@ -144,22 +144,22 @@ Sixteen canonical schemas (one per entity kind, plus `common`, `event` and `voca
 ### `current/*.json` is the consumer surface
 
 The `v1/current/*.json` files are the stable, denormalized consumer surface. They exist so that the
-common questions — *which councils exist*, *which camps have a lake*, *which badges are
-Eagle-required* — are one fetch and a `filter`, with no cross-file joins.
+common questions (*which councils exist*, *which camps have a lake*, *which badges are
+Eagle-required*) are one fetch and a `filter`, with no cross-file joins.
 
 Envelope on every collection: `$schema`, `version`, `generated_at`, `kind`, `count`, `items`. The
 item shape is selected by `kind`, not by the URL.
 
 ### Provenance travels with every item
 
-Every item in every `current/*.json` carries its own `verified_at`, `method` and `confidence` —
-verified across all 11 files, with no item missing any of the three. Provenance is per-fact, not
+Every item in every `current/*.json` carries its own `verified_at`, `method`, and `confidence`,
+verified across all 11 files with no item missing any of the three. Provenance is per-fact, not
 per-file: two camps in the same response can disagree about how much they should be trusted.
 
 For camps specifically:
 
-- `verified_at` is the **source's** own confirmation date — for imported camps, camp-finder's
-  confirmation date, not our ingest date — so a "stale after 12 months" check actually fires.
+- `verified_at` is the **source's** own confirmation date. For imported camps that is camp-finder's
+  confirmation date, not our ingest date, so a "stale after 12 months" check actually fires.
   `imported_at` is our ingest date, kept separate for exactly that reason.
 - `method` is `curated` or `imported`; `confidence` runs `0.9` (a handful of curated entries and the
   national bases) / `0.8` (higher-confidence import) / `0.6` (default import). Other datasets sit
@@ -172,17 +172,17 @@ For camps specifically:
 
 ### `current/camps.json` inlines its council
 
-Each camp inlines `council_name`, `council_website` and `council_number` alongside the `council`
+Each camp inlines `council_name`, `council_website`, and `council_number` alongside the `council`
 ref, plus a resolved, durable `url`: the camp's own page where that is stable, otherwise the council
-site. Per-season registration deep-links are deliberately dropped — they 404 by August.
+site. Per-season registration deep-links are deliberately dropped because they 404 by August.
 
 ### Coordinates: `geo_precision`
 
 `geo_precision` qualifies the `lat`/`lon` pair:
 
-- `exact` — a camp-specific point.
-- `approximate` — a city or state-centroid backfill. Soft-plot or bucket these.
-- `null` — could not be placed.
+- `exact`: a camp-specific point.
+- `approximate`: a city or state-centroid backfill. Soft-plot or bucket these.
+- `null`: could not be placed.
 
 > [!WARNING]
 > `map.pin(camp.lat, camp.lon)` without checking `geo_precision` plots state centroids as if they
@@ -190,9 +190,9 @@ site. Per-season registration deep-links are deliberately dropped — they 404 b
 
 ### Camp features: read the date with the array
 
-Each camp carries **`features`** — what it actually offers, as sorted codes from the open
+Each camp carries **`features`**: what it actually offers, as sorted codes from the open
 [`camp-features`](https://sethmay.github.io/open-scout-api/v1/vocab/camp-features.json) vocabulary
-(128 terms) — plus `features_signature` and `features_verified_at`.
+(128 terms). It also carries `features_signature` and `features_verified_at`.
 
 > [!WARNING]
 > **Read the date with the array, always.** The pair is a tri-state, and three of the four
@@ -200,12 +200,12 @@ Each camp carries **`features`** — what it actually offers, as sorted codes fr
 >
 > | `features` | `features_verified_at` | Means |
 > |---|---|---|
-> | empty | `null` | never surveyed — nothing is known |
+> | empty | `null` | never surveyed, so nothing is known |
 > | empty | a date | surveyed; its page described no offerings |
 > | non-empty | a date | a real survey |
 > | non-empty | `null` | codes came from a bulk import nobody verified |
 >
-> Collapsing the first two — treating "we never looked" as "it has none" — is the failure this field
+> Collapsing the first two (treating "we never looked" as "it has none") is the failure this field
 > exists to prevent.
 
 A date means a survey happened; it does **not** mean the list is exhaustive. Camp pages rarely are.
@@ -217,23 +217,23 @@ number and not the first.
 
 > [!NOTE]
 > `features_signature` is the subset the camp presents as a headline draw. Use it for ranking and
-> badges, **never for filtering** — a camp that has a lake but does not lead with it is still a camp
+> badges, **never for filtering**: a camp that has a lake but does not lead with it is still a camp
 > with a lake.
 
 The prose `note` attached to some features is deliberately **not** in this projection: it lives in
 the per-camp `v1/camps/{id}.json` document, keeping the flat list filterable rather than 40% larger.
 It is also in the SQLite artifact's [`camp_features`](#tables) table.
 
-### `features_source_tier` — how complete the survey was
+### `features_source_tier`: how complete the survey was
 
 Each survey also carries `features_source_tier`, a completeness qualifier in the same spirit as
 `geo_precision`:
 
 | Tier | Source read | Camps (v0.54.0) | Mean features |
 |---|---|---|---|
-| `guide` | a camp-specific document — leader's or program guide, schedule, labelled map | 129 | 25.1 |
+| `guide` | a camp-specific document: leader's or program guide, schedule, labelled map | 129 | 25.1 |
 | `camp_page` | a descriptive page | 237 | 13.2 |
-| `portal` | only a registration blurb existed | 0 | — |
+| `portal` | only a registration blurb existed | 0 | n/a |
 | `null` | never surveyed | 82 | 0 |
 
 Rank and trust completeness by it: a `portal` list is a floor, not a description. `portal` is defined
@@ -242,7 +242,7 @@ by the schema and reserved; no camp carries it as of v0.54.0.
 ### `reservation.id` is an opaque grouping key
 
 41 co-located distinct camps carry a `reservation` object so consumers can render one pin per
-property. Its `id` is a stable opaque grouping key — a bare slug, deliberately *not* a `kind:slug`
+property. Its `id` is a stable opaque grouping key: a bare slug, deliberately *not* a `kind:slug`
 entity ref, because a reservation is not an entity in this dataset. Group by it; do not parse it.
 
 ### Additive-only under `v1`
@@ -252,8 +252,8 @@ renamed or removed. Pinning your code to a field set is safe; a removal would re
 
 ### Schema pinning and the build gate
 
-Every published surface is schema-pinned and build-gated — **2,473 JSON files under `v1/`, nothing left
-unpinned**:
+Every published surface is schema-pinned and build-gated, covering **2,473 JSON files under `v1/`,
+nothing left unpinned**:
 
 | Surface | Files | Contract |
 |---|---|---|
@@ -264,21 +264,21 @@ unpinned**:
 | `v1/meta.json` | 1 | [`published-meta`](https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json) |
 | `v1/camps/aliases.json` | 1 | [`published-aliases`](https://sethmay.github.io/open-scout-api/schema/v1/published-aliases.schema.json) |
 
-Every file names its own contract in `$schema` — except the alias map, which is a bare
+Every file names its own contract in `$schema`, except the alias map, which is a bare
 `{retired-id: surviving-id}` lookup with no room for one, and so is the single published file whose
 contract you have to know rather than read. `build.py` fails the build if any projection drifts.
 
 The per-entity contract pins both the envelope and the projection: `versions` non-empty, lifecycle
 `events` folded in under that key, `requirement_sets` listing every edition of a subject. The
 *interior* of each `version` is validated against its canonical schema by `validate_data.py` before
-the build runs — two gates, on two different things.
+the build runs. Two gates, on two different things.
 
 ### Generate your types
 
 Generate consumer types from the published schemas rather than hand-mirroring them.
 `python tools/gen_types.py` emits `cookbook/ts/src/generated/v1.ts` and
 `cookbook/csharp/Generated/V1.cs` from the five `published-*` contracts, and `--check` fails CI on
-drift — so this advice is enforced, not merely offered.
+drift, so the checked-in output cannot fall behind the contracts.
 
 ## Pinning & releases
 
@@ -291,8 +291,8 @@ Pin **canonical** files immutably via jsDelivr:
 https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@v0.53.0/data/councils/cascade-pacific.json
 ```
 
-`@main` tracks latest. The denormalized `v1/` projections are not in the repo — they are built by
-CI and served from GitHub Pages, so a pin gets you `data/`, not `dist/`. For a pinned copy of the
+`@main` tracks latest. The denormalized `v1/` projections are not in the repo. They are built by CI
+and served from GitHub Pages, so a pin gets you `data/`, not `dist/`. For a pinned copy of the
 built tree, use a release asset.
 
 Pushing a `v*` tag runs [`release.yml`](../.github/workflows/release.yml), which validates, builds,
@@ -304,13 +304,13 @@ and publishes a GitHub Release with two assets:
 | `open-scout-api-<tag>.sqlite` | the queryable SQLite artifact |
 
 Release notes are extracted from that version's `CHANGELOG.md` section, so the release text and the
-changelog cannot drift apart. Tagged releases can be archived to Zenodo for a citable DOI — enable
+changelog cannot drift apart. Tagged releases can be archived to Zenodo for a citable DOI: enable
 the GitHub↔Zenodo integration once; metadata lives in `.zenodo.json`.
 
 ## The SQLite artifact
 
 `open-scout-api-<tag>.sqlite` (~7.8 MB), built by `tools/build_sqlite.py` from `data/`, ships as an
-asset on every [tagged release](https://github.com/sethmay/open-scout-api/releases) — that is the
+asset on every [tagged release](https://github.com/sethmay/open-scout-api/releases). That is the
 immutable copy, and the one to pin.
 
 > [!NOTE]
@@ -319,11 +319,10 @@ immutable copy, and the one to pin.
 > document claimed otherwise. If you need a copy that is guaranteed present for a specific version,
 > take the release asset rather than the Pages path.
 
-It is not just a dump of the `current/` projections: the entity tables hold **every** entity,
-historical included, with a `current` flag — so the same query answers "today" or "ever" by adding
-or dropping `WHERE current = 1`. Each entity row also carries the full canonical JSON in a `data`
-column for `json_extract`, so anything the typed columns omit is still reachable without a second
-fetch.
+The entity tables go beyond the `current/` projections: they hold **every** entity, historical
+included, with a `current` flag. The same query answers "today" or "ever" by adding or dropping
+`WHERE current = 1`. Each entity row also carries the full canonical JSON in a `data` column for
+`json_extract`, so anything the typed columns omit is still reachable without a second fetch.
 
 ### Tables
 
@@ -370,7 +369,7 @@ WITH RECURSIVE sub(code) AS (
 SELECT COUNT(DISTINCT camp_id) FROM camp_features WHERE code IN (SELECT code FROM sub);  -- 321
 ```
 
-The same query without the CTE — `WHERE code = 'aquatics'` — returns **61**. The 260-camp gap
+The same query without the CTE (`WHERE code = 'aquatics'`) returns **61**. The 260-camp gap
 between those two numbers is the trap: a camp tagged `kayaking` and nothing coarser is a camp with
 aquatics, and a literal match silently drops it.
 

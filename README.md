@@ -7,38 +7,38 @@
 [![Data licence: CC BY-NC-SA 4.0](https://img.shields.io/badge/data-CC%20BY--NC--SA%204.0-555)](./LICENSE)
 [![Code licence: MIT](https://img.shields.io/badge/code-MIT-555)](./NOTICE.md)
 
-**Open, versioned, machine-readable reference data for Scouting America (BSA)** — councils, Council
-Service Territories, camps, merit badges, ranks, requirements, awards, OA lodges and more. Published
+**Open, versioned, machine-readable reference data for Scouting America (BSA):** councils, Council
+Service Territories, camps, merit badges, ranks, requirements, awards, OA lodges, and more. Published
 as static JSON with JSON Schemas, so you can build on it without scraping and without running a
 server.
 
 > [!IMPORTANT]
 > **Unofficial community project.** Not affiliated with, endorsed by, or sponsored by Scouting
 > America / Boy Scouts of America. No trademark claim or endorsement is implied. Facts are
-> aggregated from public sources with per-fact provenance — always confirm against each council's
+> aggregated from public sources with per-fact provenance. Always confirm against each council's
 > own site.
 
 ## Why this exists
 
 No official machine-readable BSA structural data exists. Scraping gets you today's snapshot; the
 hard part is **history**. Councils merge and rename, regions became territories, badges get retired
-and revised. So this models change and uncertainty as first-class data — every fact carries its
-source, method, verification date and a confidence score, and nothing unverified is presented as
+and revised. So this dataset models change and uncertainty as first-class data. Every fact carries its
+source, method, verification date, and a confidence score, and nothing unverified is presented as
 settled.
 
 That means it can answer questions a snapshot cannot:
 
-- *Which council serves this camp — and what was it called in 1998?*
-- *How many of Eagle's 14 merit-badge slots has this Scout filled?* (14 slots, 18 flagged badges and
+- *Which council serves this camp, and what was it called in 1998?*
+- *How many of Eagle's 14 merit-badge slots has this Scout filled?* (14 slots, 18 flagged badges, and
   21 cumulative are three different numbers.)
 - *Which camps offer aquatics?* (Filtering on `aquatics` finds 61 camps. The right answer is 321.)
-- *This badge was renamed twice — what's the lineage?* (`clerk → business → american-business`)
+- *This badge was renamed twice. What's the lineage?* (`clerk → business → american-business`)
 - *Is this fact still trustworthy, and who says so?*
 
 ## See it working
 
 The [**live camp map**](https://sethmay.github.io/open-scout-api/starters/camp-map/) plots all 448
-camps straight from the API — and plots them *honestly*. The 336 surveyed coordinates are pins; the
+camps straight from the API, and plots them *honestly*. The 336 surveyed coordinates are pins; the
 111 city- or state-centroid backfills are dashed areas, because rendering those as pins would put
 camps miles from the gate. Camps sharing a reservation collapse into one marker, so the 447
 placeable camps render as 336 pins and 88 areas. The one camp with no coordinate at all is named
@@ -46,7 +46,7 @@ rather than silently dropped.
 
 [![The live camp map: 336 surveyed coordinates as pins, 111 approximate coordinates collapsed into 88 dashed areas, and a legend explaining the difference](./docs/img/camp-map.png)](https://sethmay.github.io/open-scout-api/starters/camp-map/)
 
-It is a single HTML file with no build step — [`cookbook/ts/starters/camp-map/`](./cookbook/ts/starters/camp-map/).
+It's a single HTML file with no build step: [`cookbook/ts/starters/camp-map/`](./cookbook/ts/starters/camp-map/).
 
 ## Try it in 30 seconds
 
@@ -55,7 +55,7 @@ It is a single HTML file with no build step — [`cookbook/ts/starters/camp-map/
 curl -s https://sethmay.github.io/open-scout-api/v1/current/councils.json | jq '.count'
 # 229
 
-# a council that was renamed and absorbed another — history included
+# a council that was renamed and absorbed another, with history included
 curl -s https://sethmay.github.io/open-scout-api/v1/councils/mississippi-riverlands.json \
   | jq '{id, versions: (.versions|length), events: [.events[].type]}'
 # { "id": "mississippi-riverlands", "versions": 1, "events": ["absorbed", "renamed"] }
@@ -68,7 +68,7 @@ const { items } = await (await fetch(
 
 Base URL: `https://sethmay.github.io/open-scout-api/`, path-versioned under `/v1/`. Resolve
 endpoints from [`v1/meta.json`](https://sethmay.github.io/open-scout-api/v1/meta.json) rather than
-hardcoding them — see the caveat in [`docs/endpoints.md`](./docs/endpoints.md).
+hardcoding them. See the caveat in [`docs/endpoints.md`](./docs/endpoints.md).
 
 ## What's in it
 
@@ -82,12 +82,12 @@ hardcoding them — see the caveat in [`docs/endpoints.md`](./docs/endpoints.md)
 | [Cub adventures](./docs/datasets.md#cub-adventures) | 177 | 139 | The unit of Cub advancement |
 | [Ranks](./docs/datasets.md#ranks) | 21 | 21 | All four programs, Lion through Quartermaster |
 | [OA lodges](./docs/datasets.md#oa-lodges) | 238 | 238 | Order of the Arrow, linked to chartering council |
-| [Awards](./docs/datasets.md#awards) | 52 | 52 | Knots, honors and training awards |
+| [Awards](./docs/datasets.md#awards) | 52 | 52 | Knots, honors, and training awards |
 | [Positions](./docs/datasets.md#positions-of-responsibility) | 29 | 29 | Youth leadership positions of responsibility |
 | [Adult training](./docs/datasets.md#adult-training) | 28 | 28 | Courses by code, plus 67 position-trained rules |
-| [Badge popularity](./docs/datasets.md#merit-badge-popularity) | 5 yrs | — | 2021-2025 rankings — **ranks, not counts** |
+| [Badge popularity](./docs/datasets.md#merit-badge-popularity) | 5 yrs | n/a | 2021-2025 rankings; **ranks, not counts** |
 
-Full detail, sourcing and caveats per dataset: [**`docs/datasets.md`**](./docs/datasets.md).
+Full detail, sourcing, and caveats per dataset: [**`docs/datasets.md`**](./docs/datasets.md).
 
 ## Five ways this data will fool you
 
@@ -95,19 +95,19 @@ Modelling change honestly has a cost: the naive query often returns a *plausible
 rather than an error. Each of these has a runnable fix in the cookbook.
 
 ```js
-camps.filter(c => c.features.includes("aquatics"))  // 61 of 321 — codes are hierarchical
+camps.filter(c => c.features.includes("aquatics"))  // 61 of 321; codes are hierarchical
 if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
 average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
 map.pin(camp.lat, camp.lon)                         // plots state centroids as real camps
 events.filter(e => e.type === "renamed")            // finds 1 council; 57 were renamed
 ```
 
-That last one is the good example of the whole design: renames live in the **version** sequence,
-while mergers live in **events**. See [`docs/model.md`](./docs/model.md).
+That last one shows the design in miniature. Renames live in the **version** sequence, while
+mergers live in **events**. See [`docs/model.md`](./docs/model.md).
 
 ## Cookbook
 
-[**`cookbook/`**](./cookbook) is runnable example code in **Python, TypeScript, C#, SQL and shell** —
+[**`cookbook/`**](./cookbook) is runnable example code in **Python, TypeScript, C#, SQL, and shell**:
 42 recipes plus three starter apps. Every recipe is executed by CI against a freshly built dataset
 and asserts its own invariants, so an example that has quietly stopped being true fails the build
 instead of teaching you the wrong thing.
@@ -130,7 +130,7 @@ missed by trap  260 camps a bare `in features` check drops
 ```
 
 Consumer types for TypeScript and C# are generated from the published schemas and CI-gated against
-drift — `python tools/gen_types.py --check`.
+drift, via `python tools/gen_types.py --check`.
 
 ## Documentation
 
@@ -144,11 +144,11 @@ drift — `python tools/gen_types.py --check`.
 
 ## Status
 
-**Pre-1.0.** Field shapes are stable and build-gated — every published file names its contract in
-`$schema` and the build fails on drift — and `v1` fields are **additive-only**, so pinning to a
+**Pre-1.0.** Field shapes are stable and build-gated: every published file names its contract in
+`$schema`, and the build fails on drift. `v1` fields are **additive-only**, so pinning to a
 field set is safe. What is *not* yet frozen is the **host**: the base URL is provisional while a
 permanent home is settled, which is exactly what cutting `1.0` will freeze. Until then, resolve
-endpoints from `v1/meta.json` and pin data files by git tag via jsDelivr — tags are immutable
+endpoints from `v1/meta.json` and pin data files by git tag via jsDelivr, because tags are immutable
 wherever the repo ends up.
 
 [camp-finder](https://github.com/sethmay/camp-finder) consumes this API as its core data.
@@ -181,37 +181,37 @@ python tools/validate_cookbook.py    # run every cookbook recipe against it
 
 The enrichment and maintenance tools are run manually, never by CI: geocoding, elevation, July
 temperature normals, camp link health, base-URL restamping (`restamp_identity.py`) and the
-re-verification queue (`maintenance.py`). They carry the only extra dependencies — `july_temp.py`
+re-verification queue (`maintenance.py`). They carry the only extra dependencies: `july_temp.py`
 needs `rasterio` plus the WorldClim rasters (~8 GB, git-ignored). **Their derived caches are
 committed, so a normal validate or build needs neither the dependency nor the rasters.**
 
 ## Contributing
 
-`data/` is the authoritative source — edit the canonical JSON directly. There is no upstream to
+`data/` is the authoritative source, so edit the canonical JSON directly. There is no upstream to
 re-import: `tools/import_camps.py` and `tools/geocode_camps.py` were one-time camp-finder seed
-tools, kept for provenance, and `data/` has been hand-corrected since — do not re-run them. To add
+tools, kept for provenance, and `data/` has been hand-corrected since, so don't re-run them. To add
 or fix an entity: edit `data/<dataset>/<id>.json`, then run `stamp_schema.py` →
 `validate_data.py` → `validate_examples.py` → `build.py`, and open a PR. The same validators gate CI.
 
-A camp rename, or a duplicate/variant folded into another camp, uses **`merged_from`** — the retired
+A camp rename, or a duplicate/variant folded into another camp, uses **`merged_from`**. The retired
 id then resolves via [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json),
 and `validate_data.py` fails the build if a `merged_from` id is claimed twice or is still a live camp.
 
 Every fact needs a checkable source in its `provenance` block; no bare high confidence without a
-citation. New entities follow the id, versioning and event conventions in
+citation. New entities follow the id, versioning, and event conventions in
 [`docs/model.md`](./docs/model.md) and [`PLAN.md`](./PLAN.md) §3.
 
 ## Licence & attribution
 
-- **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)** — reuse with
+- **Data** (`data/` and the published projections): **[CC BY-NC-SA 4.0](./LICENSE)**: reuse with
   attribution, non-commercial, share-alike.
-- **Code** (`tools/` and `cookbook/`): **MIT** — lift a recipe into your own app whatever its
+- **Code** (`tools/` and `cookbook/`): **MIT**, so you can lift a recipe into your own app whatever its
   licence.
 
 > [!WARNING]
-> **Merit badge, rank and Cub adventure requirement text is © Scouting America.** It is reproduced
+> **Merit badge, rank, and Cub adventure requirement text is © Scouting America.** It is reproduced
 > with attribution for non-commercial use, is marked `includes_official_text` + `text_rights` on the
-> documents that carry it, and is **not** covered by this dataset's licence — don't relicense it.
-> Only the requirement structure, numbering and metadata are this project's contribution.
+> documents that carry it, and is **not** covered by this dataset's licence, so don't relicense it.
+> Only the requirement structure, numbering, and metadata are this project's contribution.
 
 Seed sources and how to attribute: [`NOTICE.md`](./NOTICE.md).

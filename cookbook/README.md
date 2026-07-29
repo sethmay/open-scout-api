@@ -1,7 +1,7 @@
 # Open Scout API cookbook
 
 Runnable example code for consuming the [Open Scout API](../README.md). Every file here is
-executed by CI against a freshly built `dist/`, and asserts its own invariants — so a recipe
+executed by CI against a freshly built `dist/`, and asserts its own invariants, so a recipe
 that has quietly stopped being true fails the build instead of teaching you the wrong thing.
 
 ```bash
@@ -24,7 +24,7 @@ confidence score. That design is the reason the data is worth having, and it is 
 consumer who assumes a flat snapshot gets a **plausible wrong answer** rather than an error:
 
 ```js
-camps.filter(c => c.features.includes("aquatics"))  // 61 of 321 — codes are hierarchical
+camps.filter(c => c.features.includes("aquatics"))  // 61 of 321; codes are hierarchical
 if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
 average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
 council.versions[0].name                            // not necessarily the current name
@@ -40,7 +40,7 @@ line in its header, and the gate rejects any file that lacks one.
 |---|---|
 | `python/01-resolve-endpoints.py` | Hardcoding the provisional host, and discovering endpoints by 404 |
 | `python/02-as-of.py` | Reading `versions[0]` as the current state |
-| `python/03-lineage.py` | Looking for renames in `events` — only 1 council has one, yet 57 were renamed. Mergers *are* events |
+| `python/03-lineage.py` | Looking for renames in `events`; only 1 council has one, yet 57 were renamed. Mergers *are* events |
 | `python/04-camp-aliases.py` | A stored camp id silently 404s after duplicate listings merged |
 | `python/05-feature-hierarchy.py` | Filtering on `aquatics` misses every kayaking-only camp |
 | `python/06-feature-tristate.py` | Empty `features` read as "has none" instead of "never surveyed" |
@@ -63,11 +63,11 @@ line in its header, and the gate rejects any file that lacks one.
 
 Small but real programs, not snippets. Each supports `--selftest`, which is what CI runs.
 
-- **`starters/advancement-check/`** — given earned badges, positions and tenure, reports progress
+- **`starters/advancement-check/`**: given earned badges, positions, and tenure, reports progress
   toward the next rank, including which of Eagle requirement 3's 14 slots are filled.
-- **`starters/council-lineage/`** — walks versions and events to answer "my council merged, what is
+- **`starters/council-lineage/`**: walks versions and events to answer "my council merged, what is
   it now?", showing `method` and `confidence` rather than presenting an unverified merger as settled.
-- **`ts/starters/camp-map/`** — a no-build browser map. Plots `exact` coordinates as pins and
+- **`ts/starters/camp-map/`**: a no-build browser map. Plots `exact` coordinates as pins and
   `approximate` ones as areas, collapses co-located camps to one reservation marker, and expands
   feature filters over the vocabulary hierarchy. Deployed with the API, so it is also live at
   [`starters/camp-map/`](https://sethmay.github.io/open-scout-api/starters/camp-map/) on the site.
@@ -84,7 +84,7 @@ cookbook/
   starters/   Python CLIs that support --selftest
 ```
 
-Generated consumer types are committed and CI-gated — `python tools/gen_types.py --check` fails
+Generated consumer types are committed and CI-gated. `python tools/gen_types.py --check` fails
 the build if `cookbook/ts/src/generated/v1.ts` or `cookbook/csharp/Generated/V1.cs` has drifted
 from `schema/v1/published-*.schema.json`. Regenerate with `python tools/gen_types.py`; never
 hand-edit them.
@@ -109,5 +109,5 @@ Cookbook code is **MIT**, like `tools/`. The data it fetches is **CC BY-NC-SA 4.
 
 Merit-badge, rank and Cub adventure **requirement text is © Scouting America** and is *not*
 under this dataset's license. Recipes that walk requirement trees therefore print structure,
-numbering, refs and counts — never verbatim requirement text — and surface the document's own
+numbering, refs, and counts (never verbatim requirement text), and surface the document's own
 `text_rights` string. Keep it that way in anything you add. See [`NOTICE.md`](../NOTICE.md).
