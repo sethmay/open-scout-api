@@ -3,10 +3,43 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet — add here when one appears).
 
+## 0.55.0 (minor) — 2026-07-29
+
+- `PENDING` **Overhaul `README.md` and split the reference material into `docs/`.** The README was
+  3,857 words (~17 min) and **71% reference** — "Datasets & status" and "Live API" alone were 2,740
+  words, with single table cells up to **1,891 characters** that render as an unreadable smear in
+  GitHub's ~750px column. It is now **1,409 words** (827 of prose), the largest cell anywhere is 156
+  characters, and it leads with what the data can answer rather than what it contains. New:
+  [`docs/endpoints.md`](./docs/endpoints.md) (endpoints, the projection contract, pinning, the
+  SQLite artifact), [`docs/datasets.md`](./docs/datasets.md) (one section per dataset, 17 callouts
+  for the caveats), [`docs/model.md`](./docs/model.md) (identity, effective-dated versions, events,
+  provenance, refs — with a rendered lineage diagram). Nothing was deleted; it was relocated.
+- `PENDING` **The first sentence was wrong.** It described camps, merit badges and requirements as
+  "(planned)" — 448 camps, 268 badges and 667 requirement sets have shipped for many releases. The
+  line every visitor reads undersold the project by three of its largest datasets.
+- `PENDING` **Corrected a dozen stale counts across `README.md` and `TODO.md`**, each re-verified
+  against `dist/v1/meta.json` or the data rather than carried forward: councils 419→**420** and 190→
+  **191** historical, founding years 141→**157**, merger/absorption events 112→**116** (112 was the
+  Wikipedia-extracted subset), camp feature entries 6,373→**6,379**, signature features 147→**205**,
+  the aquatics recursive-CTE result 254→**321**, schema-pinned files 2,331→**2,473**, SQLite tables
+  →**22**, the `guide` tier mean 21→**25.1**, merit-badge tags "1-3"→**1-2**, the 2022 ranking
+  discrepancies four→**three**, Leather Work 1911→**1928**, and the jsDelivr pin example from a tag
+  40 versions old. Angling is a 1911 badge, not one of the 1910 originals.
+- `PENDING` **Add `tools/check_links.py` and gate it in CI.** Validates every relative Markdown link
+  and `#anchor` across all 16 Markdown files (91 links) using GitHub's own slug rules, and fails on
+  an image that is gitignored — this repo ignores `*.jpg`, so a JPEG screenshot would have silently
+  never committed. Nothing else in the repo reads Markdown, so a broken README link had no gate.
+- `PENDING` **The SQLite artifact is now actually served at `v1/open-scout-api.sqlite`.** The Pages
+  job only ran `build.py`, so the documented URL 404'd and the artifact existed solely as a release
+  asset; the deploy job now builds it too. Also corrects `build_sqlite.py`'s summary, which reported
+  "20 tables" while the artifact holds 22 — it was counting only the tables it tracks rows for.
+- `PENDING` **Fix a broken link in `PLAN.md`** — it pointed at `../camp-finder`, a local filesystem
+  path that resolves nowhere on GitHub, and printed a `D:\repos\...` path in a public document.
+
 ## 0.54.0 (minor) — 2026-07-29
 
 - `07cd555` **Add `cookbook/` — CI-gated example code in five languages, plus three starter apps.**
-  36 gated recipes: 16 Python, 10 SQL (55 SQL invariants), 6 shell, 6 TypeScript, 4 C#. A recipe is
+  42 gated recipes: 16 Python, 10 SQL (55 SQL invariants), 6 shell, 6 TypeScript, 4 C#. A recipe is
   not "how to call fetch": each one kills a specific way this data misleads a consumer who assumes
   it is a flat snapshot, and the gate rejects any file lacking a `TRAP:` line naming that wrong
   answer. `tools/validate_cookbook.py` serves `dist/` over loopback HTTP, exports `OSA_BASE`, and

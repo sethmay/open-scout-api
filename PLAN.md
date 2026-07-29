@@ -5,7 +5,7 @@ councils, territories, camps, merit badges, requirements, and related entities �
 as static JSON with published JSON Schemas, so anyone can build tools on top without
 scraping or a server.
 
-**Spin-off of [`camp-finder`](../camp-finder)** (`D:\repos\claude\personal\camp-finder`).
+**Spin-off of [`camp-finder`](https://github.com/sethmay/camp-finder).**
 Camp-finder proved the model (data-as-code, provenance-first, validation gate, static
 distribution) for one vertical (summer camp sessions). This project generalizes the
 *reference* layer — the slowly-changing structural data — and adds the temporal dimension

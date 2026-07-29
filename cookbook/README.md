@@ -40,7 +40,7 @@ line in its header, and the gate rejects any file that lacks one.
 |---|---|
 | `python/01-resolve-endpoints.py` | Hardcoding the provisional host, and discovering endpoints by 404 |
 | `python/02-as-of.py` | Reading `versions[0]` as the current state |
-| `python/03-lineage.py` | Looking for renames in `events` — they live in the `versions` sequence, so only 1 council has a `renamed` event while 57 were renamed. Mergers *are* events |
+| `python/03-lineage.py` | Looking for renames in `events` — only 1 council has one, yet 57 were renamed. Mergers *are* events |
 | `python/04-camp-aliases.py` | A stored camp id silently 404s after duplicate listings merged |
 | `python/05-feature-hierarchy.py` | Filtering on `aquatics` misses every kayaking-only camp |
 | `python/06-feature-tristate.py` | Empty `features` read as "has none" instead of "never surveyed" |
@@ -63,11 +63,14 @@ line in its header, and the gate rejects any file that lacks one.
 
 Small but real programs, not snippets. Each supports `--selftest`, which is what CI runs.
 
-| Starter | What it does |
-|---|---|
-| `starters/advancement-check/` | Given earned badges, positions and tenure, reports progress to the next rank — including which of Eagle requirement 3's 14 slots are filled |
-| `starters/council-lineage/` | Walks versions and events to answer "my council merged, what is it now?", showing `method` and `confidence` rather than presenting unverified mergers as settled |
-| `ts/starters/camp-map/` | A no-build browser map. Plots `exact` coordinates as pins and `approximate` ones as areas, collapses co-located camps to one reservation marker, and expands feature filters over the vocabulary hierarchy. Deployed with the API — see `starters/camp-map/` on the site |
+- **`starters/advancement-check/`** — given earned badges, positions and tenure, reports progress
+  toward the next rank, including which of Eagle requirement 3's 14 slots are filled.
+- **`starters/council-lineage/`** — walks versions and events to answer "my council merged, what is
+  it now?", showing `method` and `confidence` rather than presenting an unverified merger as settled.
+- **`ts/starters/camp-map/`** — a no-build browser map. Plots `exact` coordinates as pins and
+  `approximate` ones as areas, collapses co-located camps to one reservation marker, and expands
+  feature filters over the vocabulary hierarchy. Deployed with the API, so it is also live at
+  [`starters/camp-map/`](https://sethmay.github.io/open-scout-api/starters/camp-map/) on the site.
 
 ## Layout
 

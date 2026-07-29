@@ -68,6 +68,16 @@ def _as_int(v):
     return int(v) if isinstance(v, bool) else v
 
 
+def tables_in(path: Path) -> list[str]:
+    """Every table actually present in the built artifact, read back from sqlite_master."""
+    con = sqlite3.connect(f"file:{path.as_posix()}?mode=ro", uri=True)
+    try:
+        return [r[0] for r in con.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")]
+    finally:
+        con.close()
+
+
 def main() -> None:
     if not OUT.parent.exists():
         raise SystemExit(f"{OUT.parent} missing — run tools/build.py first")
@@ -298,8 +308,13 @@ def main() -> None:
     con.commit()
     con.close()
     total = sum(counts.values())
+    # `counts` tracks the tables whose rows are worth reporting; the artifact also holds `meta`
+    # and `training_requirement_codes`, so report both numbers rather than implying `counts` is
+    # the whole schema (docs/endpoints.md documents the full inventory).
+    n_tables = len(tables_in(OUT))
     print(f"built {OUT.relative_to(ROOT)} v{version}: {total} rows across "
-          f"{len(counts)} tables ({', '.join(f'{k}={v}' for k, v in counts.items())})")
+          f"{len(counts)} counted tables of {n_tables} total "
+          f"({', '.join(f'{k}={v}' for k, v in counts.items())})")
 
 
 if __name__ == "__main__":
