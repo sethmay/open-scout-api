@@ -132,13 +132,23 @@ rejected.
 
 ## Queue
 
-### Cookbook — SHIPPED; three follow-ups
+### Cookbook — SHIPPED; four follow-ups
 
 `cookbook/` is 36 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
 gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and the recipe→trap
 map are in [`cookbook/README.md`](./cookbook/README.md). Adding a recipe: it must carry a `TRAP:`
 header line, assert invariants rather than record counts, and exit nonzero when they break.
 
+- **`tools/gen_types.py`'s `$defs` classifier is still not total.** `build()` records a `$def` as a
+  scalar only when it is not an object-with-properties, carries no `enum`/`const`, and its `type` is
+  a plain `str`. Shapes outside that produce either a bare undeclared type name (does not compile)
+  or `unknown`/`JsonElement` (silently wrong). Property-level `anyOf`/`oneOf` IS handled now and
+  raises `SystemExit` on a form it cannot model — do the same for the `$defs` pass: an `enum` `$def`,
+  a `["string","null"]` union `$def`, an `allOf`, an `array` and a bare `object` are the five known
+  gaps. None occurs in `schema/v1/` today, so this is a latent trap for the next schema edit rather
+  than a live bug. Also unguarded, all clean today: a property whose PascalCase equals its enclosing
+  record name (CS0542), two properties differing only in punctuation (collide after `pascal()`), and
+  a schema `description` containing `*/` (breaks the TS `/** … */` block).
 - **Zero-width version windows: 7 records, in two classes, semantics undecided.**
   `valid_from == valid_to` is an empty window under half-open `[from, to)`, so *nothing is ever in
   force in it* — the entity effectively never existed. `validate_data.py` therefore rejects only

@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import functools
 import http.server
+import itertools
 import os
 import re
 import shutil
@@ -86,14 +87,28 @@ def indent(text: str, prefix: str = "        ") -> str:
 # --- the local API -----------------------------------------------------------------------
 
 
-def serve_dist() -> tuple[str, http.server.ThreadingHTTPServer]:
-    """Serve dist/ on a free loopback port. Returns (base_url, server)."""
+REQUESTS = itertools.count()
 
-    class Quiet(http.server.SimpleHTTPRequestHandler):
-        def log_message(self, *args: object) -> None:  # noqa: D102 - silence per-request logs
+
+def serve_dist() -> tuple[str, http.server.ThreadingHTTPServer]:
+    """Serve dist/ on a free loopback port, counting hits. Returns (base_url, server).
+
+    The counter is not diagnostics -- it is the gate on the gate. A recipe that ignores
+    ``OSA_BASE`` still passes every assertion, because it silently talks to the LIVE published
+    site instead of the tree under test; that is exactly how the WSLENV bug survived to review.
+    Counting requests is the only way this process can tell "validated dist/" from "validated
+    production", so each suite asserts it actually generated traffic.
+    """
+
+    class Counting(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *args: object) -> None:  # silence per-request logs
             pass
 
-    handler = functools.partial(Quiet, directory=str(DIST))
+        def do_GET(self) -> None:
+            next(REQUESTS)
+            super().do_GET()
+
+    handler = functools.partial(Counting, directory=str(DIST))
     with socket.socket() as probe:
         probe.bind(("127.0.0.1", 0))
         port = probe.getsockname()[1]
@@ -203,9 +218,10 @@ def suite_sql(res: Result, env: dict[str, str]) -> None:
                 if bad:
                     res.fail(name, "invariant failed: " + "; ".join(bad))
                     continue
-            # sqlite3.Warning is NOT a subclass of sqlite3.Error, and it is what con.execute
-            # raises when handed more than one statement. Catching only Error would let that
-            # escape and crash the whole gate with a traceback instead of failing one recipe.
+            # `MalformedAssert` is ours. `sqlite3.Warning` is belt-and-braces: it is NOT a
+            # subclass of `sqlite3.Error`, and although 3.11+ raises `ProgrammingError` (which IS
+            # an Error) for a multi-statement `execute`, the DB-API permits Warning and it would
+            # otherwise escape and crash the whole gate rather than failing one recipe.
             except (sqlite3.Error, sqlite3.Warning, MalformedAssert) as exc:
                 res.fail(name, f"{type(exc).__name__}: {exc}")
                 continue
@@ -295,6 +311,16 @@ def truthy(con: sqlite3.Connection, query: str) -> bool:
     return len(rows) == 1 and len(rows[0]) == 1 and bool(rows[0][0])
 
 
+def trap_failures(res: Result, label: str, paths: list[Path]) -> bool:
+    """Report a missing ``TRAP:`` header for every path. True if any failed."""
+    bad = False
+    for path in paths:
+        if err := header_trap(path):
+            res.fail(f"{label}/{path.name}", err)
+            bad = True
+    return bad
+
+
 def suite_ts(res: Result, env: dict[str, str]) -> None:
     directory = COOKBOOK / "ts"
     if not (directory / "package.json").exists():
@@ -309,11 +335,11 @@ def suite_ts(res: Result, env: dict[str, str]) -> None:
         return
     # The TRAP rule is what keeps this collection from drifting back into "how to call fetch", so
     # it must apply to every suite -- npm/dotnet run opaque test binaries, so check the headers
-    # here rather than leaving these two languages on author discipline alone.
-    for path in sorted((directory / "src" / "recipes").glob("*.test.ts")):
-        if err := header_trap(path):
-            res.fail(f"ts/{path.name}", err)
-            return
+    # here rather than leaving these two languages on author discipline alone. Every offender is
+    # reported, not just the first: this runs before the expensive install, so stopping early
+    # saves nothing and hides work.
+    if trap_failures(res, "ts", sorted((directory / "src" / "recipes").glob("*.test.ts"))):
+        return
     if not (directory / "node_modules").exists():
         install = "ci" if (directory / "package-lock.json").exists() else "install"
         ok, out = run(
@@ -335,13 +361,15 @@ def suite_csharp(res: Result, env: dict[str, str]) -> None:
     if dotnet is None:
         res.skip("csharp", "dotnet not on PATH")
         return
-    # Same reasoning as suite_ts: `dotnet run` inspects no headers, so enforce the TRAP rule on
-    # the hand-written sources. Generated/ is excluded -- it is codegen output, not a recipe.
-    for path in sorted((COOKBOOK / "csharp").glob("*.cs")):
-        if err := header_trap(path):
-            res.fail(f"csharp/{path.name}", err)
-            return
-    env = {**env, "DOTNET_NOLOGO": "1", "DOTNET_CLI_TELEMETRY_OPTOUT": "1"}
+    # Same reasoning as suite_ts. Restricted to hand-written sources: `Generated/` is codegen
+    # output and `obj/`/`bin/` are build artifacts (the SDK emits its own .cs files there), none of
+    # which is a recipe or will ever carry a TRAP line. Excluded by name rather than by relying on
+    # glob being non-recursive, so the intent survives someone reaching for rglob.
+    skip = {"Generated", "obj", "bin"}
+    sources = [p for p in sorted((COOKBOOK / "csharp").rglob("*.cs"))
+               if not skip & set(p.parts)]
+    if trap_failures(res, "csharp", sources):
+        return
     for proj in projects:
         ok, out = run(
             [dotnet, "run", "--project", proj.name, "-v", "quiet"],
@@ -399,10 +427,16 @@ def main() -> int:
     # saying nothing about the tree under test, and an unreachable local dist read as a pass.
     # `/u` passes the value through unchanged (no Win->Unix path translation, which would corrupt
     # a URL). Harmless on Linux CI, where the variable propagates normally.
+    # Extended, never clobbered: a developer may already export WSLENV for their own tooling, and
+    # replacing it would silently break whatever depended on it.
+    wslenv = "OSA_BASE/u"
+    if existing := os.environ.get("WSLENV"):
+        names = [e for e in existing.split(":") if e and e.split("/")[0] != "OSA_BASE"]
+        wslenv = ":".join([*names, wslenv])
     env = {
         **os.environ,
         "OSA_BASE": base,
-        "WSLENV": "OSA_BASE/u",
+        "WSLENV": wslenv,
         "PYTHONPATH": os.pathsep.join(
             [str(COOKBOOK / "python"), os.environ.get("PYTHONPATH", "")]
         ).rstrip(os.pathsep),
@@ -410,13 +444,33 @@ def main() -> int:
     print(f"cookbook gate: OSA_BASE={base}")
 
     res = Result(strict="--strict" in argv)
+
+    def ran(label: str, before: int) -> None:
+        """Assert the suite actually talked to OUR server, not the published site.
+
+        Only meaningful when we are serving; with an explicit --base the traffic is elsewhere
+        by design. `sql` is exempt: it opens the SQLite artifact directly and makes no requests.
+        """
+        if httpd is None or label == "sql":
+            return
+        if next(REQUESTS) - before <= 1:
+            res.fail(
+                f"{label} (base honoured?)",
+                f"the suite passed without fetching from {base}. It ignored OSA_BASE and "
+                f"validated something else -- most likely the live published site.",
+            )
+
     try:
         if "python" in only:
             print("python recipes")
+            n = next(REQUESTS)
             suite_scripts(res, "python", COOKBOOK / "python", [sys.executable], env, "*.py")
+            ran("python", n)
         if "starters" in only:
             print("starter apps")
+            n = next(REQUESTS)
             suite_starters(res, env)
+            ran("starters", n)
         if "sql" in only:
             print("sql recipes")
             suite_sql(res, env)
@@ -429,13 +483,19 @@ def main() -> int:
                 # `-l` so a recipe sees exactly the PATH that bash_tools_missing() probed; a
                 # plain `bash script.sh` sources no profile, so a user-local jq would be
                 # detected and then not found.
+                n = next(REQUESTS)
                 suite_scripts(res, "shell", COOKBOOK / "shell", ["bash", "-l"], env, "*.sh")
+                ran("shell", n)
         if "ts" in only:
             print("typescript")
+            n = next(REQUESTS)
             suite_ts(res, env)
+            ran("ts", n)
         if "csharp" in only:
             print("c#")
+            n = next(REQUESTS)
             suite_csharp(res, env)
+            ran("csharp", n)
     finally:
         if httpd is not None:
             httpd.shutdown()

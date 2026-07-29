@@ -40,22 +40,22 @@ public sealed record CurrentCouncil
     public required string Name { get; init; }
 
     [JsonPropertyName("bsa_number")]
-    public int? BsaNumber { get; init; }
+    public required int? BsaNumber { get; init; }
 
     [JsonPropertyName("hq_city")]
-    public string? HqCity { get; init; }
+    public required string? HqCity { get; init; }
 
     [JsonPropertyName("hq_state")]
-    public string? HqState { get; init; }
+    public required string? HqState { get; init; }
 
     [JsonPropertyName("website")]
-    public string? Website { get; init; }
+    public required string? Website { get; init; }
 
     [JsonPropertyName("territory")]
-    public string? Territory { get; init; }
+    public required string? Territory { get; init; }
 
     [JsonPropertyName("territory_number")]
-    public int? TerritoryNumber { get; init; }
+    public required int? TerritoryNumber { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -73,7 +73,7 @@ public sealed record CurrentTerritory
     public required string Id { get; init; }
 
     [JsonPropertyName("number")]
-    public int? Number { get; init; }
+    public required int? Number { get; init; }
 
     [JsonPropertyName("name")]
     public required string Name { get; init; }
@@ -101,7 +101,7 @@ public sealed record CurrentMeritBadge
 
     /// <summary>Short original-prose summary of what a Scout does to earn the badge, written for browsing. Deliberately NOT the pamphlet or requirement wording: requirement text is © Scouting America and is published only under the `text_rights` carve-out on requirement-sets, so this field is original and CC-licen…</summary>
     [JsonPropertyName("description")]
-    public string? Description { get; init; }
+    public required string? Description { get; init; }
 
     [JsonPropertyName("tags")]
     public required IReadOnlyList<string> Tags { get; init; }
@@ -110,7 +110,7 @@ public sealed record CurrentMeritBadge
     public required bool EagleRequired { get; init; }
 
     [JsonPropertyName("url")]
-    public string? Url { get; init; }
+    public required string? Url { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -147,25 +147,25 @@ public sealed record CurrentCamp
     public required string Operator { get; init; }
 
     [JsonPropertyName("council")]
-    public string? Council { get; init; }
+    public required string? Council { get; init; }
 
     [JsonPropertyName("parent")]
-    public string? Parent { get; init; }
+    public required string? Parent { get; init; }
 
     [JsonPropertyName("state")]
-    public string? State { get; init; }
+    public required string? State { get; init; }
 
     [JsonPropertyName("city")]
-    public string? City { get; init; }
+    public required string? City { get; init; }
 
     [JsonPropertyName("lat")]
-    public double? Lat { get; init; }
+    public required double? Lat { get; init; }
 
     [JsonPropertyName("lon")]
-    public double? Lon { get; init; }
+    public required double? Lon { get; init; }
 
     [JsonPropertyName("geo_precision")]
-    public string? GeoPrecision { get; init; }
+    public required string? GeoPrecision { get; init; }
 
     [JsonPropertyName("elevation_ft")]
     public int? ElevationFt { get; init; }
@@ -178,16 +178,16 @@ public sealed record CurrentCamp
 
     /// <summary>Set when this camp shares a location with other distinct camps: a grouping so consumers render one reservation pin per property. `id` is a STABLE OPAQUE GROUPING KEY — deliberately a bare slug, NOT a '{kind}:{slug}' entity reference, because no reservation entity exists. If a reservation dataset is…</summary>
     [JsonPropertyName("reservation")]
-    public CurrentCampReservation? Reservation { get; init; }
+    public required CurrentCampReservation? Reservation { get; init; }
 
     [JsonPropertyName("website")]
-    public string? Website { get; init; }
+    public required string? Website { get; init; }
 
     [JsonPropertyName("program_types")]
     public required IReadOnlyList<string> ProgramTypes { get; init; }
 
     [JsonPropertyName("summary")]
-    public string? Summary { get; init; }
+    public required string? Summary { get; init; }
 
     /// <summary>What this camp offers, as codes from the open `camp-features` vocabulary published at v1/vocab/camp-features.json. Sorted, unique, and flattened for filtering: the canonical per-camp document (v1/camps/{id}.json) carries the same features as objects with an optional prose `note`, which is deliberat…</summary>
     [JsonPropertyName("features")]
@@ -199,23 +199,23 @@ public sealed record CurrentCamp
 
     /// <summary>How complete the source behind `features` was, in the same spirit as `geo_precision` for coordinates. `guide`: a camp-specific document was read (leader's/program guide, schedule, or labelled map) — averages 21 features per camp. `camp_page`: a descriptive page owned by the camp or council — averag…</summary>
     [JsonPropertyName("features_source_tier")]
-    public string? FeaturesSourceTier { get; init; }
+    public required string? FeaturesSourceTier { get; init; }
 
     /// <summary>Date of the last deliberate features survey of this camp against its own sources. Four states, and the distinction matters: `null` + empty `features` = never surveyed, nothing is known; `null` + non-empty = features arrived from a bulk import and were never deliberately verified; a date + non-empty…</summary>
     [JsonPropertyName("features_verified_at")]
-    public string? FeaturesVerifiedAt { get; init; }
+    public required string? FeaturesVerifiedAt { get; init; }
 
     [JsonPropertyName("council_name")]
-    public string? CouncilName { get; init; }
+    public required string? CouncilName { get; init; }
 
     [JsonPropertyName("council_website")]
-    public string? CouncilWebsite { get; init; }
+    public required string? CouncilWebsite { get; init; }
 
     [JsonPropertyName("council_number")]
-    public int? CouncilNumber { get; init; }
+    public required int? CouncilNumber { get; init; }
 
     [JsonPropertyName("url")]
-    public string? Url { get; init; }
+    public required string? Url { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -245,7 +245,7 @@ public sealed record CurrentRank
     public required int Order { get; init; }
 
     [JsonPropertyName("url")]
-    public string? Url { get; init; }
+    public required string? Url { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -275,7 +275,7 @@ public sealed record CurrentAward
     public IReadOnlyList<string>? Programs { get; init; }
 
     [JsonPropertyName("square_knot_no")]
-    public string? SquareKnotNo { get; init; }
+    public required string? SquareKnotNo { get; init; }
 
     [JsonPropertyName("url")]
     public string? Url { get; init; }
@@ -299,10 +299,10 @@ public sealed record CurrentOALodge
     public required string Name { get; init; }
 
     [JsonPropertyName("council")]
-    public string? Council { get; init; }
+    public required string? Council { get; init; }
 
     [JsonPropertyName("section")]
-    public string? Section { get; init; }
+    public required string? Section { get; init; }
 
     [JsonPropertyName("hq_state")]
     public string? HqState { get; init; }
@@ -369,10 +369,10 @@ public sealed record CurrentAdventure
 
     /// <summary>The requirement area this adventure fills for its rank, or null for electives. Every rank's six required adventures cover the six areas of v1/vocab/adventure-areas.json exactly once each. A vocabulary CODE, never a display label — two Arrow of Light adventures are *named* after areas, so publishing…</summary>
     [JsonPropertyName("area")]
-    public required JsonElement Area { get; init; }
+    public required string? Area { get; init; }
 
     [JsonPropertyName("url")]
-    public string? Url { get; init; }
+    public required string? Url { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -440,13 +440,13 @@ public sealed record CouncilIndexItem
     public required string Name { get; init; }
 
     [JsonPropertyName("bsa_number")]
-    public int? BsaNumber { get; init; }
+    public required int? BsaNumber { get; init; }
 
     [JsonPropertyName("hq_state")]
-    public string? HqState { get; init; }
+    public required string? HqState { get; init; }
 
     [JsonPropertyName("territory")]
-    public string? Territory { get; init; }
+    public required string? Territory { get; init; }
 
     [JsonPropertyName("current")]
     public required bool Current { get; init; }
@@ -462,7 +462,7 @@ public sealed record TerritoryIndexItem
     public required string Name { get; init; }
 
     [JsonPropertyName("number")]
-    public int? Number { get; init; }
+    public required int? Number { get; init; }
 
     [JsonPropertyName("division_type")]
     public required string DivisionType { get; init; }
@@ -481,7 +481,7 @@ public sealed record MeritBadgeIndexItem
 
     /// <summary>null means UNKNOWN, not false — historical badges retired before the modern published Eagle list cannot be sourced either way. Entities with `current: true` always carry a real boolean.</summary>
     [JsonPropertyName("eagle_required")]
-    public bool? EagleRequired { get; init; }
+    public required bool? EagleRequired { get; init; }
 
     [JsonPropertyName("current")]
     public required bool Current { get; init; }
@@ -502,10 +502,10 @@ public sealed record CampIndexItem
     public required string Operator { get; init; }
 
     [JsonPropertyName("council")]
-    public string? Council { get; init; }
+    public required string? Council { get; init; }
 
     [JsonPropertyName("state")]
-    public string? State { get; init; }
+    public required string? State { get; init; }
 
     [JsonPropertyName("current")]
     public required bool Current { get; init; }
@@ -556,10 +556,10 @@ public sealed record OALodgeIndexItem
     public required string Name { get; init; }
 
     [JsonPropertyName("council")]
-    public string? Council { get; init; }
+    public required string? Council { get; init; }
 
     [JsonPropertyName("section")]
-    public string? Section { get; init; }
+    public required string? Section { get; init; }
 
     [JsonPropertyName("current")]
     public required bool Current { get; init; }
@@ -578,7 +578,7 @@ public sealed record RequirementSetIndexItem
     public required string EffectiveFrom { get; init; }
 
     [JsonPropertyName("effective_to")]
-    public required JsonElement EffectiveTo { get; init; }
+    public required string? EffectiveTo { get; init; }
 
     [JsonPropertyName("includes_official_text")]
     public required bool IncludesOfficialText { get; init; }
@@ -663,10 +663,10 @@ public sealed record IndexCollection
 public sealed record Version
 {
     [JsonPropertyName("valid_from")]
-    public required JsonElement ValidFrom { get; init; }
+    public required string? ValidFrom { get; init; }
 
     [JsonPropertyName("valid_to")]
-    public required JsonElement ValidTo { get; init; }
+    public required string? ValidTo { get; init; }
 
     [JsonPropertyName("provenance")]
     public required IReadOnlyDictionary<string, JsonElement> Provenance { get; init; }
@@ -691,7 +691,7 @@ public sealed record Event
     public required string Type { get; init; }
 
     [JsonPropertyName("date")]
-    public required JsonElement Date { get; init; }
+    public required string? Date { get; init; }
 
     [JsonPropertyName("participants")]
     public required IReadOnlyList<EventParticipantsItem> Participants { get; init; }
@@ -715,7 +715,7 @@ public sealed record VersionedEntity
     public required string Kind { get; init; }
 
     [JsonPropertyName("notes")]
-    public string? Notes { get; init; }
+    public required string? Notes { get; init; }
 
     [JsonPropertyName("versions")]
     public required IReadOnlyList<Version> Versions { get; init; }
@@ -736,7 +736,7 @@ public sealed record VersionedEntityWithRequirementSets
     public required string Kind { get; init; }
 
     [JsonPropertyName("notes")]
-    public string? Notes { get; init; }
+    public required string? Notes { get; init; }
 
     [JsonPropertyName("versions")]
     public required IReadOnlyList<Version> Versions { get; init; }
@@ -774,10 +774,10 @@ public sealed record RequirementSetDocument
     public required string EffectiveFrom { get; init; }
 
     [JsonPropertyName("effective_to")]
-    public required JsonElement EffectiveTo { get; init; }
+    public required string? EffectiveTo { get; init; }
 
     [JsonPropertyName("supersedes")]
-    public required JsonElement Supersedes { get; init; }
+    public required string? Supersedes { get; init; }
 
     [JsonPropertyName("source_document")]
     public required RequirementSetDocumentSourceDocument SourceDocument { get; init; }
@@ -812,6 +812,9 @@ public sealed record TrainingRequirementDocument
 
     [JsonPropertyName("requires")]
     public required IReadOnlyList<JsonElement> Requires { get; init; }
+
+    [JsonPropertyName("provenance")]
+    public required IReadOnlyDictionary<string, JsonElement> Provenance { get; init; }
 }
 
 public sealed record BadgeRankingDocumentRankingsItem
@@ -844,6 +847,9 @@ public sealed record EntityDocument
 {
     [JsonPropertyName("$schema")]
     public required string Schema { get; init; }
+
+    [JsonPropertyName("id")]
+    public required string Id { get; init; }
 
     [JsonPropertyName("kind")]
     public required string Kind { get; init; }

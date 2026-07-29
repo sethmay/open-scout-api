@@ -26,21 +26,16 @@ const SCAN = 80;
 
 const TODAY = new Date().toISOString().slice(0, 10);
 
-/** Version bounds are typed `unknown`: HistoricalDate is a constrained string, not a Date. */
-function bound(value: unknown): string | null {
-  return typeof value === "string" ? value : null;
-}
-
 function label(v: Version): string {
   const name = typeof v["name"] === "string" ? v["name"] : "(unnamed)";
-  return `${name} [${bound(v.valid_from) ?? "-inf"} .. ${bound(v.valid_to) ?? "open"})`;
+  return `${name} [${v.valid_from ?? "-inf"} .. ${v.valid_to ?? "open"})`;
 }
 
 /** The version in force on `date`, or undefined when the entity did not exist yet. */
 function asOf(doc: VersionedEntity, date: string): Version | undefined {
   return doc.versions.find((v) => {
-    const from = bound(v.valid_from);
-    const to = bound(v.valid_to);
+    const from = v.valid_from;
+    const to = v.valid_to;
     // Half-open: valid_from is inclusive, valid_to is exclusive, null is open-ended.
     return (from === null || date >= from) && (to === null || date < to);
   });
@@ -59,18 +54,18 @@ test("as-of resolution beats versions[0]", async () => {
 
     // Dataset invariant, enforced by tools/validate_data.py: an entity has at most one open
     // version. Two would make "current" ambiguous and every as-of query non-deterministic.
-    const open = doc.versions.filter((v) => bound(v.valid_to) === null);
+    const open = doc.versions.filter((v) => v.valid_to === null);
     check(open.length <= 1, `${entry.id}: more than one version has valid_to null`);
 
     // The demonstration needs a history whose windows are dated and ordered, and whose first
     // listed version is not the open one -- that is exactly the shape where versions[0] lies.
     const first = doc.versions[0];
     const dated = doc.versions.every((v) => {
-      const from = bound(v.valid_from);
-      const to = bound(v.valid_to);
+      const from = v.valid_from;
+      const to = v.valid_to;
       return from !== null && (to === null || from < to);
     });
-    if (doc.versions.length > 1 && dated && first !== undefined && bound(first.valid_to) !== null) {
+    if (doc.versions.length > 1 && dated && first !== undefined && first.valid_to !== null) {
       subject = doc;
       break;
     }
@@ -84,12 +79,12 @@ test("as-of resolution beats versions[0]", async () => {
 
   // The trap, stated as an invariant: the first element is NOT the current record.
   check(first !== current, "versions[0] must not be the version in force today");
-  check(bound(current.valid_to) === null, "the version in force today is the open one");
+  check(current.valid_to === null, "the version in force today is the open one");
 
   // The windows partition the timeline: every version is the answer on its own start date,
   // which only holds if the windows neither overlap nor leave the wrong one reachable.
   for (const v of subject.versions) {
-    const from = bound(v.valid_from);
+    const from = v.valid_from;
     check(from !== null, "scan selected an entity whose versions are all dated");
     check(asOf(subject, from) === v, `${subject.id}: ${from} must resolve to its own version`);
   }
@@ -99,7 +94,7 @@ test("as-of resolution beats versions[0]", async () => {
   check(asOf(subject, "0001-01-01") === undefined, "a date before the first window has no answer");
 
   // The window the naive read would have shown, resolved honestly rather than assumed.
-  const firstFrom = bound(first.valid_from);
+  const firstFrom = first.valid_from;
   check(firstFrom !== null, "the first version is dated");
 
   console.log(`subject         ${subject.id} (${subject.versions.length} versions)`);

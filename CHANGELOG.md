@@ -23,12 +23,19 @@ Version anchors: this file only (no package manifests yet — add here when one 
   an `llm_extraction` error; `valid_from` is now `null` (the founding year is not recoverable from
   that source). Under half-open `[from, to)` an inverted window is empty, so nothing was ever in
   force in it — "what was this council called in 1926?" silently answered nothing.
+- `PENDING` **Fix `merit-badges/reptiles`: a zero-width window (`1926..1926`) meant the badge never
+  existed at any instant.** Now `1926..1927`. Its `superseded` event names `reptile-study`, which
+  starts 1927, and its thirteen pre-1911 siblings all encode a one-year existence as `1910..1911`,
+  so the half-open end date was simply wrong. Found by the cookbook review after the new rule below
+  was deliberately scoped to exclude it.
 - `PENDING` **`validate_data.py` now rejects a backwards version window.** The existing rule only
   related *adjacent* versions, so an inverted window inside a single version passed whenever its
   `valid_to` still abutted the successor's `valid_from` — which is exactly how the above shipped.
-  Scoped to strictly backwards, not zero-width: eight records are legitimately zero-width at year
-  granularity (the four 2010 `historic-*` badges were a centennial revival offered during 2010
-  only), which is a limitation of year-granularity windows rather than a data error.
+  Scoped to strictly backwards (`>`), not zero-width (`>=`): **seven** records remain legitimately
+  zero-width at year granularity, in two classes — the four 2010 `historic-*` badges (a centennial
+  revival offered during 2010 only, which a year-granularity half-open window cannot express) and
+  three unverified council founding years (`baltimore-area` 1911, `green-mountain` 1972, `quivira`
+  1928). Tightening to `>=` needs those three re-sourced; tracked in `TODO.md`.
 - `PENDING` **Deploy the browser starter with the API.** `build.py` copies
   `cookbook/ts/starters/camp-map/` to `dist/starters/camp-map/` and the landing page links it as a
   live demo: `exact` coordinates render as pins, `approximate` as dashed areas with a legend saying

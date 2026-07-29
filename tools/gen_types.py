@@ -119,6 +119,20 @@ class Emitter:
             rendered = self.literal_union([v for v in vals if v is not None])
             return self.nullable(rendered) if nullable else rendered
 
+        # `anyOf`/`oneOf` is how the published schemas spell a nullable $ref:
+        # {"anyOf": [{"$ref": "#/$defs/HistoricalDate"}, {"type": "null"}]}. Falling through to
+        # the `type` lookup left `kinds` empty and emitted `unknown`/`JsonElement` for SEVEN
+        # shipped fields -- including Version.valid_from and valid_to, the two the entire
+        # half-open-window story rests on. SystemExit rather than a silent degrade on a shape
+        # this cannot model: a codegen that refuses beats one that ships a wrong type.
+        if branches := (schema.get("anyOf") or schema.get("oneOf")):
+            real = [b for b in branches if b != {"type": "null"}]
+            if len(real) != 1:
+                kind = "anyOf" if "anyOf" in schema else "oneOf"
+                raise SystemExit(f"gen_types: unmodelled {kind} at {hint} ({len(real)} branches)")
+            out = self.type_of(real[0], hint)
+            return self.nullable(out) if len(real) != len(branches) else out
+
         t = schema.get("type")
         kinds = [t] if isinstance(t, str) else list(t or [])
         nullable = "null" in kinds
@@ -141,9 +155,19 @@ class Emitter:
     def declare(self, name: str, schema: dict[str, Any]) -> str:
         """Emit a named object type, deduping by name and rejecting inconsistent reuse."""
         required = set(schema.get("required") or [])
+        props = schema.get("properties") or {}
+        # A name in `required` with no `properties` entry is unrepresentable, and silently
+        # dropping it shipped an `EntityDocument` with no `Id` member at all -- the schema says the
+        # field is mandatory and the generated type does not mention it. That is a schema bug worth
+        # surfacing here, because this is the only pass that reads both halves together.
+        if orphans := sorted(required - set(props)):
+            raise SystemExit(
+                f"gen_types: {name} marks {', '.join(orphans)} required with no `properties` "
+                f"entry; fix the schema (a required field that cannot be typed is unusable)"
+            )
         fields = [
             (prop, self.type_of(sub, name + pascal(prop)), prop in required, doc_of(sub))
-            for prop, sub in (schema.get("properties") or {}).items()
+            for prop, sub in props.items()
         ]
         block = self.render_object(name, schema, fields)
         prior = self.seen.get(name)
@@ -267,9 +291,14 @@ class CsEmitter(Emitter):
             # A non-nullable reference-typed auto-property with no initializer is CS8618 under
             # `<Nullable>enable</Nullable>`, and these are records a consumer only ever gets from
             # the deserializer. `required` both silences that correctly and makes System.Text.Json
-            # throw when the schema says a field is mandatory and the payload omits it -- which is
-            # the behaviour a pinned consumer wants from a build-gated contract.
-            modifier = "required " if required and not cs.endswith("?") else ""
+            # throw when the schema says a field is mandatory and the payload omits it.
+            #
+            # Keyed on `required` ALONE, never on nullability: `required T?` is legal C# and means
+            # exactly the contract -- presence enforced, value may be null. Excluding nullable
+            # members dropped the modifier from all 41 required-and-nullable properties, so a
+            # payload omitting `bsa_number` deserialised silently to null, indistinguishable from
+            # an explicit null, and the C# and TypeScript files described different wire formats.
+            modifier = "required " if required else ""
             lines.append(f"    public {modifier}{cs} {pascal(prop)} {{ get; init; }}")
         lines.append("}")
         return "\n".join(lines)
@@ -321,6 +350,15 @@ def build(emitter_cls: type[Emitter]) -> tuple[Emitter, dict[str, dict[str, str]
     return em, maps
 
 
+# Unqualified C# type names that a `using` alias cannot see, because a using alias is resolved
+# before the file's own using directives. Value types and `string` need no entry.
+QUALIFY = {
+    "JsonElement": "System.Text.Json.JsonElement",
+    "IReadOnlyDictionary<string, JsonElement>":
+        "System.Collections.Generic.IReadOnlyDictionary<string, System.Text.Json.JsonElement>",
+}
+
+
 def alias_type(em: Emitter) -> str:
     """The alias map, DERIVED from published-aliases.schema.json rather than hand-written.
 
@@ -343,7 +381,10 @@ def alias_type(em: Emitter) -> str:
         body = "\n".join(f" * {ln}" for ln in doc.splitlines())
         return f"/**\n{body}\n */\nexport type AliasMap = Readonly<Record<{key}, {value}>>;"
     # C# has no structural type alias, so the honest equivalent is a `global using` alias rather
-    # than a wrapper class with nothing in it. Fully qualified so it resolves wherever it lands.
+    # than a wrapper class with nothing in it. A `using` alias resolves BEFORE the file's own
+    # `using` directives, so every name in it must be fully qualified -- an unqualified
+    # `JsonElement` (what a widened `additionalProperties` yields) would be CS0246.
+    key, value = (QUALIFY.get(t, t) for t in (key, value))
     return (
         f"// {' '.join(doc.split())}\n"
         f"global using AliasMap = "

@@ -84,14 +84,14 @@ test("feature closure finds camps that exact matching misses", async () => {
   const exact = camps.filter((c) => c.features.includes("aquatics"));
   const expanded = camps.filter((c) => c.features.some((f) => aquatics.has(f)));
 
-  // Supersetness is a claim about `exact`, so it has to iterate `exact`: every literally tagged
-  // camp must survive the widened filter. A closure that lost codes fails here.
   const exactIds = new Set(exact.map((c) => c.id));
-  const expandedIds = new Set(expanded.map((c) => c.id));
-  check(
-    exact.every((c) => expandedIds.has(c.id)),
-    "closure matching must be a superset of exact matching",
-  );
+
+  // Strictness is the claim with content: a closure that came back as just {"aquatics"} -- a lost
+  // `narrower` index, a root whose children were re-parented -- makes `expanded` identical to
+  // `exact` and fails here. Supersetness is NOT asserted, because `closure()` seeds its own
+  // argument and the `has("aquatics")` check above pins that, so every literally tagged camp is in
+  // `expanded` by construction. A closure that drops individual codes is caught by the named
+  // children above, not here: `expanded` shrinks but usually stays strictly larger than `exact`.
   check(expanded.length > exact.length, "closure matching must find camps exact matching misses");
 
   // Name one of the misses, because "you lost some rows" lands differently with a camp on it.

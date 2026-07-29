@@ -143,7 +143,7 @@ export interface CurrentAdventure {
   /** Vocabulary CODE from v1/vocab/adventure-categories.json, never a display label. */
   readonly category: string;
   /** The requirement area this adventure fills for its rank, or null for electives. Every rank's six required adventures cover the six areas of v1/vocab/adventure-areas.json exactly once each. A vocabulary CODE, never a display label — two Arrow of Light adventures are *named* after areas, so publishing… */
-  readonly area: unknown;
+  readonly area: string | null;
   readonly url: string | null;
   readonly verified_at: string;
   readonly method: string;
@@ -240,7 +240,7 @@ export interface RequirementSetIndexItem {
   readonly id: Slug;
   readonly subject: string;
   readonly effective_from: HistoricalDate;
-  readonly effective_to: unknown;
+  readonly effective_to: HistoricalDate | null;
   readonly includes_official_text: boolean;
 }
 
@@ -281,8 +281,8 @@ export interface IndexCollection {
 
 /** One attribute snapshot. Half-open window: `valid_from` null means 'from the beginning of what we know', `valid_to` null means current. Exactly one version per entity may have valid_to null (enforced by tools/validate_data.py). Attribute fields beyond these are dataset-specific and validated against… */
 export interface Version {
-  readonly valid_from: unknown;
-  readonly valid_to: unknown;
+  readonly valid_from: HistoricalDate | null;
+  readonly valid_to: HistoricalDate | null;
   readonly provenance: Readonly<Record<string, unknown>>;
   readonly [extra: string]: unknown;
 }
@@ -298,7 +298,7 @@ export interface EventParticipantsItem {
 export interface Event {
   readonly id: Slug;
   readonly type: "established" | "renamed" | "merged" | "split" | "absorbed" | "transferred" | "reorganized" | "discontinued" | "reinstated" | "superseded";
-  readonly date: unknown;
+  readonly date: HistoricalDate | null;
   readonly participants: readonly EventParticipantsItem[];
   readonly notes?: string | null;
   readonly provenance: Readonly<Record<string, unknown>>;
@@ -338,8 +338,8 @@ export interface RequirementSetDocument {
   readonly kind: string;
   readonly subject: EntityRef;
   readonly effective_from: HistoricalDate;
-  readonly effective_to: unknown;
-  readonly supersedes: unknown;
+  readonly effective_to: HistoricalDate | null;
+  readonly supersedes: string | null;
   readonly source_document: RequirementSetDocumentSourceDocument;
   readonly includes_official_text: boolean;
   readonly text_rights?: string | null;
@@ -355,6 +355,7 @@ export interface TrainingRequirementDocument {
   readonly registration_codes: readonly string[];
   readonly unit_type: "pack" | "troop" | "team" | "crew" | "ship" | "other";
   readonly requires: readonly unknown[];
+  readonly provenance: Readonly<Record<string, unknown>>;
   readonly [extra: string]: unknown;
 }
 
@@ -375,6 +376,7 @@ export interface BadgeRankingDocument {
 /** Contract for the per-entity endpoints emitted by tools/build.py to v1/{dataset}/{id}.json. These are the DEEP surface: the canonical entity plus everything the build projects onto it, and for camps they are the only place the prose `note` on a program feature appears. Scope is deliberate: this sche… */
 export interface EntityDocument {
   readonly $schema: string;
+  readonly id: Slug;
   readonly kind: "council" | "territory" | "merit-badge" | "camp" | "rank" | "award" | "oa-lodge" | "requirement-set" | "adventure" | "merit-badge-ranking" | "position" | "training" | "training-requirement";
   readonly [extra: string]: unknown;
 }

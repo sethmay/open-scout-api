@@ -60,9 +60,11 @@ static class Recipes
         Osa.Check(council.Kind == "council", "a council document must declare kind=council");
 
         // Exactly one version may be open (valid_to null) -- that is what "current" means here, and
-        // it is why a consumer must never assume versions[0] is the live one.
+        // it is why a consumer must never assume versions[0] is the live one. `ValidTo` is a plain
+        // `string?` now that the generator resolves the schema's `anyOf` nullable-$ref form; it
+        // used to surface as JsonElement, which forced a ValueKind comparison here.
         Osa.Check(
-            council.Versions.Count(v => v.ValidTo.ValueKind == JsonValueKind.Null) <= 1,
+            council.Versions.Count(v => v.ValidTo is null) <= 1,
             "an entity may have at most one open version");
 
         // The licensing carve-out travels with the discovery document, not just the README:
