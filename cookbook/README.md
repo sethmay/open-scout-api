@@ -24,7 +24,7 @@ confidence score. That design is the reason the data is worth having, and it is 
 consumer who assumes a flat snapshot gets a **plausible wrong answer** rather than an error:
 
 ```js
-camps.filter(c => c.features.includes("aquatics"))  // 0 hits — codes are hierarchical
+camps.filter(c => c.features.includes("aquatics"))  // 61 of 321 — codes are hierarchical
 if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
 average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
 council.versions[0].name                            // not necessarily the current name

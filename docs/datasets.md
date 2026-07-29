@@ -239,8 +239,8 @@ completing six required adventures plus any two electives.
 > **The 8 shooting-sports adventures have no published requirements** — Archery at all six ranks,
 > plus BB Guns and Slingshot. They are completed "only at approved events with qualified
 > instructors" and have no page of their own, so they ship as entities with no requirement-set
-> document at all. Code that assumes every adventure resolves to a requirement set will fault on
-> exactly these eight.
+> document at all, and a null `url`. Code that assumes every adventure resolves to a requirement set
+> — or that dereferences `url` — will fault on exactly these eight.
 
 > [!NOTE]
 > **Areas are a 2024 construct and are `null` on pre-2024 windows.** Reading `area` off a
@@ -396,8 +396,12 @@ recorded in that document's `provenance.notes`.
 > `provenance.notes` and the year's own post wins — the 2022 document records three such badges
 > (mining-in-society, programming, skating). One outright source typo is corrected there too: the
 > 2022 post printed rank 130 twice and omitted 135, which the 2023 restatement resolves exactly
-> (journalism 130 → 135). A build gate rejects a badge ranked in a year it did not exist, which is
-> what caught "Leather Work" (1928–1951) being mapped where today's "Leatherwork" belonged.
+> (journalism 130 → 135). 2024 is the clean case: its document records no discrepancies at all, and
+> is `complete` over 138 badges. Note that corroboration leaves no positive trace — only
+> *disagreements* land in `provenance.notes` — so "no discrepancies recorded" is the strongest claim
+> the data supports, not a count of agreeing badges. A build gate rejects a badge ranked in a year
+> it did not exist, which is what caught "Leather Work" (1928–1951) being mapped where today's
+> "Leatherwork" belonged.
 
 Endpoints: `v1/merit-badge-rankings/index.json`, `v1/merit-badge-rankings/{year}.json`. There is no
 `current/` projection — a rankings year does not expire.

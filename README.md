@@ -38,11 +38,13 @@ That means it can answer questions a snapshot cannot:
 ## See it working
 
 The [**live camp map**](https://sethmay.github.io/open-scout-api/starters/camp-map/) plots all 448
-camps straight from the API — and plots them *honestly*. Surveyed coordinates are pins; city- or
-state-centroid backfills are dashed areas, because rendering those as pins would put camps miles
-from the gate. The one camp with no coordinate is named rather than silently dropped.
+camps straight from the API — and plots them *honestly*. The 336 surveyed coordinates are pins; the
+111 city- or state-centroid backfills are dashed areas, because rendering those as pins would put
+camps miles from the gate. Camps sharing a reservation collapse into one marker, so the 447
+placeable camps render as 336 pins and 88 areas. The one camp with no coordinate at all is named
+rather than silently dropped.
 
-[![The live camp map: 336 surveyed coordinates as pins, 88 approximate coordinates as dashed areas, and a legend explaining the difference](./docs/img/camp-map.png)](https://sethmay.github.io/open-scout-api/starters/camp-map/)
+[![The live camp map: 336 surveyed coordinates as pins, 111 approximate coordinates collapsed into 88 dashed areas, and a legend explaining the difference](./docs/img/camp-map.png)](https://sethmay.github.io/open-scout-api/starters/camp-map/)
 
 It is a single HTML file with no build step — [`cookbook/ts/starters/camp-map/`](./cookbook/ts/starters/camp-map/).
 
@@ -93,7 +95,7 @@ Modelling change honestly has a cost: the naive query often returns a *plausible
 rather than an error. Each of these has a runnable fix in the cookbook.
 
 ```js
-camps.filter(c => c.features.includes("aquatics"))  // 0 hits — codes are hierarchical
+camps.filter(c => c.features.includes("aquatics"))  // 61 of 321 — codes are hierarchical
 if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
 average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
 map.pin(camp.lat, camp.lon)                         // plots state centroids as real camps
@@ -118,10 +120,12 @@ Each recipe kills one specific trap and names it in a `TRAP:` line. Real output:
 
 ```
 $ python cookbook/python/05-feature-hierarchy.py
+vocabulary      camp-features: 128 terms, 8 with children
 aquatics        expands to 22 codes (20 direct)
 deepest chain   ice_fishing -> fishing -> aquatics
 bare code       61 camps carry "aquatics" itself
 closure match   321 camps carry something in the closure
+top codes       swimming=218, fishing=189, canoeing=183, kayaking=143, sailing=102
 missed by trap  260 camps a bare `in features` check drops
 ```
 
@@ -175,15 +179,23 @@ python tools/build_sqlite.py         # + a queryable SQLite artifact
 python tools/validate_cookbook.py    # run every cookbook recipe against it
 ```
 
-The enrichment and maintenance tools (geocoding, elevation, July temperature normals, camp link
-health) are run manually, never by CI, and carry the only extra dependencies — see their file
-headers and [`docs/datasets.md`](./docs/datasets.md).
+The enrichment and maintenance tools are run manually, never by CI: geocoding, elevation, July
+temperature normals, camp link health, base-URL restamping (`restamp_identity.py`) and the
+re-verification queue (`maintenance.py`). They carry the only extra dependencies — `july_temp.py`
+needs `rasterio` plus the WorldClim rasters (~8 GB, git-ignored). **Their derived caches are
+committed, so a normal validate or build needs neither the dependency nor the rasters.**
 
 ## Contributing
 
-`data/` is the authoritative source — edit the canonical JSON directly. To add or fix an entity:
-edit `data/<dataset>/<id>.json`, then run `stamp_schema.py` → `validate_data.py` →
-`validate_examples.py` → `build.py`, and open a PR. The same validators gate CI.
+`data/` is the authoritative source — edit the canonical JSON directly. There is no upstream to
+re-import: `tools/import_camps.py` and `tools/geocode_camps.py` were one-time camp-finder seed
+tools, kept for provenance, and `data/` has been hand-corrected since — do not re-run them. To add
+or fix an entity: edit `data/<dataset>/<id>.json`, then run `stamp_schema.py` →
+`validate_data.py` → `validate_examples.py` → `build.py`, and open a PR. The same validators gate CI.
+
+A camp rename, or a duplicate/variant folded into another camp, uses **`merged_from`** — the retired
+id then resolves via [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json),
+and `validate_data.py` fails the build if a `merged_from` id is claimed twice or is still a live camp.
 
 Every fact needs a checkable source in its `provenance` block; no bare high confidence without a
 citation. New entities follow the id, versioning and event conventions in

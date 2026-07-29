@@ -26,7 +26,7 @@ Version anchors: this file only (no package manifests yet — add here when one 
   discrepancies four→**three**, Leather Work 1911→**1928**, and the jsDelivr pin example from a tag
   40 versions old. Angling is a 1911 badge, not one of the 1910 originals.
 - `PENDING` **Add `tools/check_links.py` and gate it in CI.** Validates every relative Markdown link
-  and `#anchor` across all 16 Markdown files (91 links) using GitHub's own slug rules, and fails on
+  and `#anchor` across every tracked Markdown file using GitHub's own slug rules, and fails on
   an image that is gitignored — this repo ignores `*.jpg`, so a JPEG screenshot would have silently
   never committed. Nothing else in the repo reads Markdown, so a broken README link had no gate.
 - `PENDING` **The SQLite artifact is now actually served at `v1/open-scout-api.sqlite`.** The Pages

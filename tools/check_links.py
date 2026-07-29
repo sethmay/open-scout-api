@@ -29,10 +29,40 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {".git", "node_modules", "dist", ".workbench", "__pycache__", ".claude", "obj", "bin"}
 
+# The badge idiom `[![alt](inner)](outer)` must be matched FIRST and consumed whole: LINK's text
+# group would otherwise swallow the inner image and capture `inner`, leaving `outer` unchecked --
+# which is precisely the construct the README's badge block is made of.
+NESTED = re.compile(
+    r"\[\s*\!\[(?:[^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)\s*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)"
+)
 # [text](target) but not ![img](target); captures the target only.
 LINK = re.compile(r"(?<!\!)\[(?:[^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 IMAGE = re.compile(r"\!\[(?:[^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 HEADING = re.compile(r"^(#{1,6})\s+(.*?)\s*$", re.M)
+FENCE = re.compile(r"^(\s*)(```|~~~)")
+
+
+def strip_fences(text: str) -> str:
+    """Blank the body of every fenced code block, preserving line count.
+
+    Without this, a `# comment` inside a shell snippet registers as a HEADING and manufactures a
+    phantom anchor -- so a link to `#endpoints` would validate against a file that has no such
+    heading. A gate that can pass a broken anchor is worse than no gate. The hazard is symmetric:
+    an illustrative `[x](./nope)` inside a snippet would otherwise fail the gate spuriously.
+    """
+    out, fence = [], None
+    for line in text.splitlines():
+        m = FENCE.match(line)
+        if fence is None and m:
+            fence = m.group(2)
+            out.append("")
+        elif fence is not None:
+            out.append("")
+            if m and m.group(2)[0] == fence[0]:
+                fence = None
+        else:
+            out.append(line)
+    return "\n".join(out)
 
 
 def slug(heading: str) -> str:
@@ -54,10 +84,22 @@ def slug(heading: str) -> str:
 
 
 def anchors(path: Path) -> set[str]:
+    """Every anchor GitHub would serve for this file.
+
+    GitHub disambiguates repeated headings by appending `-1`, `-2`, ... so mirror that rather
+    than silently collapsing them into one anchor.
+    """
     if not path.exists() or path.suffix != ".md":
         return set()
-    text = path.read_text(encoding="utf-8", errors="replace")
-    return {slug(m.group(2)) for m in HEADING.finditer(text)}
+    text = strip_fences(path.read_text(encoding="utf-8", errors="replace"))
+    out: set[str] = set()
+    seen: dict[str, int] = {}
+    for m in HEADING.finditer(text):
+        base = slug(m.group(2))
+        n = seen.get(base, 0)
+        out.add(base if n == 0 else f"{base}-{n}")
+        seen[base] = n + 1
+    return out
 
 
 def markdown_files() -> list[Path]:
@@ -82,12 +124,21 @@ def main() -> int:
 
     for md in markdown_files():
         rel = md.relative_to(ROOT).as_posix()
-        text = md.read_text(encoding="utf-8", errors="replace")
+        text = strip_fences(md.read_text(encoding="utf-8", errors="replace"))
         own = anchors(md)
 
-        for pattern, is_image in ((LINK, False), (IMAGE, True)):
-            for m in pattern.finditer(text):
-                target = m.group(1).strip()
+        # Nested badge constructs first, taking BOTH targets, then blanked so the flat patterns
+        # cannot re-match their halves and mis-attribute the inner URL as the link target.
+        targets: list[tuple[str, bool]] = []
+        for m in NESTED.finditer(text):
+            targets.append((m.group(1), True))    # the image
+            targets.append((m.group(2), False))   # the wrapping link
+        flat = NESTED.sub(lambda m: " " * len(m.group(0)), text)
+        targets += [(m.group(1), False) for m in LINK.finditer(flat)]
+        targets += [(m.group(1), True) for m in IMAGE.finditer(flat)]
+
+        for raw, is_image in targets:
+                target = raw.strip()
                 if target.startswith(("http://", "https://")):
                     n_ext += 1
                     if check_external:

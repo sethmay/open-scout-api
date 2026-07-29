@@ -252,7 +252,7 @@ renamed or removed. Pinning your code to a field set is safe; a removal would re
 
 ### Schema pinning and the build gate
 
-Every published surface is schema-pinned and build-gated — **2,473 files under `v1/`, nothing left
+Every published surface is schema-pinned and build-gated — **2,473 JSON files under `v1/`, nothing left
 unpinned**:
 
 | Surface | Files | Contract |
