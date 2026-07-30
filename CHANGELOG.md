@@ -3,6 +3,17 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.5 (patch) — 2026-07-29
+
+- `PENDING` Hardened the TypeScript and C# type generator so it refuses a schema shape it cannot
+  represent instead of emitting code that will not compile.
+  - The generator turns the published schemas into typed definitions. A few shapes it did not
+    handle would have produced a broken or missing type without any warning. It now stops with a
+    clear message naming the shape, so the problem surfaces at build time rather than in a
+    consumer's editor.
+  - No published schema uses any of those shapes today, so the generated types are unchanged. This
+    only guards the next schema edit.
+
 ## 0.56.4 (patch) — 2026-07-29
 
 - `d522d63` Added a build check that catches one council's history being attached to another, the

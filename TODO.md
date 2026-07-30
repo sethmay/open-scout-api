@@ -139,16 +139,19 @@ gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and
 map are in [`cookbook/README.md`](./cookbook/README.md). Adding a recipe: it must carry a `TRAP:`
 header line, assert invariants rather than record counts, and exit nonzero when they break.
 
-- **`tools/gen_types.py`'s `$defs` classifier is still not total.** `build()` records a `$def` as a
-  scalar only when it is not an object-with-properties, carries no `enum`/`const`, and its `type` is
-  a plain `str`. Shapes outside that produce either a bare undeclared type name (does not compile)
-  or `unknown`/`JsonElement` (silently wrong). Property-level `anyOf`/`oneOf` IS handled now and
-  raises `SystemExit` on a form it cannot model — do the same for the `$defs` pass: an `enum` `$def`,
-  a `["string","null"]` union `$def`, an `allOf`, an `array` and a bare `object` are the five known
-  gaps. None occurs in `schema/v1/` today, so this is a latent trap for the next schema edit rather
-  than a live bug. Also unguarded, all clean today: a property whose PascalCase equals its enclosing
-  record name (CS0542), two properties differing only in punctuation (collide after `pascal()`), and
-  a schema `description` containing `*/` (breaks the TS `/** … */` block).
+- **`tools/gen_types.py`'s `$defs` classifier is now total — FIXED 0.56.5; three property-level
+  gaps remain.** `build()` classified a `$def` as a scalar whenever its `type` was a plain `str`,
+  which mis-filed `array` and bare `object` defs (both plain-string types) and never handled an
+  `enum`, a `["string","null"]` union, or an `allOf`. Any of the five produced a bare undeclared
+  type name (does not compile) or a silently dropped def. The classifier now refuses every shape it
+  cannot render, restricting scalars to the four primitive types and raising `SystemExit` on
+  anything else, the same stance `type_of` takes on an unmodelled `anyOf`. Verified non-vacuous
+  against all five shapes; a legitimate new primitive scalar still generates. None of the five
+  occurs in `schema/v1/` today, so this guards the next schema edit.
+  - **Still unguarded, all clean today:** a property whose PascalCase equals its enclosing record
+    name (CS0542), two properties differing only in punctuation (collide after `pascal()`), and a
+    schema `description` containing `*/` (breaks the TS `/** … */` block). Same fix pattern: refuse
+    loudly in `declare()`/`doc_of()` rather than emit code that will not compile.
 - **Zero-width version windows: 7 records, in two classes, semantics undecided.**
   `valid_from == valid_to` is an empty window under half-open `[from, to)`, so *nothing is ever in
   force in it* — the entity effectively never existed. `validate_data.py` therefore rejects only

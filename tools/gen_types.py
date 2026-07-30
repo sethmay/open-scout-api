@@ -337,9 +337,26 @@ def build(emitter_cls: type[Emitter]) -> tuple[Emitter, dict[str, dict[str, str]
     loaded = [(stem, envelope, load(stem)) for stem, envelope in SCHEMAS]
     for _, _, schema in loaded:
         for def_name, sub in (schema.get("$defs") or {}).items():
-            is_object = sub.get("type") == "object" and sub.get("properties")
-            if not is_object and enum_values(sub) is None and isinstance(sub.get("type"), str):
+            if sub.get("type") == "object" and sub.get("properties"):
+                continue  # an object record -- declared in the second pass below
+            # A constrained scalar is a PRIMITIVE type only. `array` and `object` are also plain
+            # `type` strings, so testing `isinstance(type, str)` alone would mis-file a bare
+            # `{"type": "array"}` or `{"type": "object"}` $def as a scalar and drop it silently.
+            t = sub.get("type")
+            if enum_values(sub) is None and t in ("string", "number", "integer", "boolean"):
                 em.note_scalar(def_name, sub)
+                continue
+            # Neither an object record nor a constrained scalar, so no bucket renders it: a $ref
+            # would emit a bare, undeclared type name (does not compile) and an unref'd def would
+            # vanish silently. Refuse -- the same stance type_of takes on an unmodellable anyOf.
+            # The shapes that land here are an `enum` $def, a `["string","null"]` union, an
+            # `allOf`, an `array`, and a bare `object` with no properties. None exists in
+            # schema/v1/ today; model it in note_scalar/type_of before adding one to a schema.
+            raise SystemExit(
+                f"gen_types: $def {def_name!r} has an unmodelled shape (type={sub.get('type')!r}, "
+                f"keys={sorted(k for k in sub if k not in ('title', 'description'))}); a $ref to it "
+                f"would emit an undeclared type name -- model it in build()/type_of first"
+            )
     for _, envelope, schema in loaded:
         for def_name, sub in (schema.get("$defs") or {}).items():
             if sub.get("type") == "object" and sub.get("properties"):
