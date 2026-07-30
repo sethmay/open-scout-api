@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.3 (patch) — 2026-07-29
 
-- `PENDING` Fixed sixteen more councils that had the wrong history attached, the same problem found
+- `51c0d4d` Fixed sixteen more councils that had the wrong history attached, the same problem found
   in Conquistador Council last release.
   - Five North Carolina councils all listed the same three early names (Wilmington Council, New
     Hanover County Council, Cape Fear Area Council). That history belongs only to Cape Fear Council.
