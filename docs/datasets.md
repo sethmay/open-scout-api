@@ -37,7 +37,7 @@ consumers actually need.
 
 - **428 total: 229 current, 199 historical** (merged, renamed, or defunct).
 - All 229 current councils carry a `territory` ref, and those refs cover all 14 live territories.
-- 209 carry `states_served`; 158 carry a founding year, which is the `valid_from` of the council's
+- 210 carry `states_served` (209 of them current); 158 carry a founding year, which is the `valid_from` of the council's
   earliest version rather than a field of its own.
 - **56 councils carry more than one version.** That is the rename history: a council that changed
   name has one version per name, with half-open validity windows.

@@ -11,7 +11,7 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 428 councils — 229 current (assigned to CSTs) + 199 historical. Founding years (158), rename chains (56), merger/absorption events (124; 112 Wikipedia-extracted, 8 curated in 0.57.0) + 192 predecessor councils (184 `llm_extraction` from Wikipedia, 8 curated in 0.57.0); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 428 councils — 229 current (assigned to CSTs) + 199 historical. Founding years (158), rename chains (56), merger/absorption events (124; 112 Wikipedia-extracted, 10 curated including 8 in 0.57.0, 2 imported) + 192 predecessor councils (184 `llm_extraction` from Wikipedia, 8 curated in 0.57.0); `states_served` for 210 (209 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
@@ -171,7 +171,7 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   `superseded` event names `reptile-study`, which starts 1927, and its thirteen pre-1911 siblings
   all encode a one-year existence as `1910..1911`. Lesson: do not assume a zero-width window is
   intentional just because a neighbour's is.
-- **`conquistador` carried another council's whole history — FIXED 0.56.2; two gaps remain.** The
+- **`conquistador` carried another council's whole history — FIXED 0.56.2; predecessor gaps closed 0.57.0.** The
   investigation started as the "Bemalillo" spelling question below and found a much larger error:
   `data/councils/conquistador.json` (#413, Roswell) held the seven-name chain that belongs to #412
   in Albuquerque, today's `high-desert`. Both the prose of `Scouting in New Mexico` and every row
@@ -179,15 +179,9 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   (1920, as Roswell Council, not 1918), its rename date (1953, not 1982 — 1982 is when #412 became
   Great Southwest Council), and its `states_served`, which held Great Southwest's four-state
   footprint `[NM, AZ, UT, CO]` instead of `[NM]`. Camps were never affected: Gorham Scout Ranch was
-  already on `high-desert` and Conquistador's two camps are both southeast New Mexico. Still open:
-  - **Yucca Council has no entity and the 2024 merger has no event.** High Desert Council was formed
-    when Great Southwest (#412, continuing) merged with Yucca. Recorded here only as a version
-    boundary on #412, so the lineage edge is missing. `high-desert`'s `states_served` is left empty
-    for the same reason: Great Southwest served NM/AZ/UT/CO and Yucca served TX and NM, and nothing
-    sources the combined footprint.
-  - **Carlsbad Council (1920-1923, Carlsbad NM) has no entity.** It merged with Roswell Council in
-    1924 to form Pecos Valley Council (#413), so Conquistador's line has an unrecorded predecessor
-    exactly like the mergers already modelled elsewhere.
+  already on `high-desert` and Conquistador's two camps are both southeast New Mexico. The Yucca and
+  Carlsbad predecessor gaps noted here are closed in 0.57.0 below; `high-desert`'s `states_served`
+  stays empty pending a source for the combined Great Southwest and Yucca footprint.
 - **The "Bemalillo" spelling is an upstream contradiction, not our slip — recorded as Bernalillo at
   0.75.** The defunct-councils table titles that row "Bemalillo County Council" while the preceding
   Albuquerque Council row's successor column reads "Bernalillo County 412" for the same council and
@@ -213,7 +207,7 @@ header line, assert invariants rather than record counts, and exit nonzero when 
     Valley and Sausalito (1918) into `marin`; Yucca (2024) into `high-desert`; and Carlsbad (1924)
     into `conquistador`. Each predecessor is a retired single-version entity (`curated` from the
     state Scouting article and the defunct-councils list); the surviving councils were already
-    correct. `bsa_number` recorded where the source gave it (four of eight); founding years and
+    correct. `bsa_number` recorded where the source gave it (five of eight); founding years and
     prior names kept in provenance notes, matching the existing predecessor convention.
   - **One number change is recorded:** `daniel-boone` began as Asheville Council #418 (1919) and
     became #414 as Buncombe County Council in 1922. The other ten hold one number throughout.
@@ -222,6 +216,13 @@ header line, assert invariants rather than record counts, and exit nonzero when 
     was the `conquistador` shape (0.56.2), not the sixteen-council shape. Closing it needs a
     different check, such as cross-referencing each council's first recorded name or number against
     the defunct-councils owner for that number rather than against sibling councils.
+  - **Open: `mecklenburg-county` starts in 1915 but its number implies 1940.** It records Charlotte
+    Council #415 from 1915, yet `Scouting in North Carolina` dates the #415 Charlotte Council to 1940
+    (renamed Mecklenburg County in 1942); the 1915 Charlotte Council was #416, now
+    `central-north-carolina`. Surfaced by the Neuse #415 addition (0.57.0), which makes two live #415
+    councils visible across 1928-1930. Pre-existing (0.14.0 seeding), not from that work.
+    `validate_data.py` has no concurrent-`bsa_number` check. Verify against the article and correct
+    the start year; a concurrent-number gate is a candidate alongside pass 1b.
 - **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
   tier-vocabulary closure and the tier↔date coupling instead of a mean ordering or a `portal` row.
   Two of the four `features` states are likewise empty (`date + []` and `null + entries`), so

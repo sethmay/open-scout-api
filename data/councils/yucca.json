@@ -7,7 +7,7 @@
       "valid_from": null,
       "valid_to": "2024",
       "name": "Yucca Council",
-      "bsa_number": null,
+      "bsa_number": 573,
       "hq_city": null,
       "hq_state": null,
       "website": null,
@@ -27,7 +27,7 @@
         "method": "curated",
         "verified_at": "2026-07-29",
         "confidence": 0.8,
-        "notes": "Served Texas and New Mexico. Merged with Great Southwest Council (#412) in 2024 to form High Desert Council, which continues the #412 identity."
+        "notes": "Yucca Council (#573) served Texas and New Mexico. Merged with Great Southwest Council (#412) in 2024 to form High Desert Council, which continues the #412 identity. Number 573 comes from the defunct-councils list, whose El Paso Area Council row (1928-1937) names Yucca 573 as its successor."
       }
     }
   ],

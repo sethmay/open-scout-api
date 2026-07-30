@@ -26,8 +26,8 @@
         ],
         "method": "curated",
         "verified_at": "2026-07-29",
-        "confidence": 0.8,
-        "notes": "Founded 1920 in Carlsbad, New Mexico. Merged with Roswell Council in 1924 to form Pecos Valley Council (#413), which continues as Conquistador Council."
+        "confidence": 0.75,
+        "notes": "Founded 1920 in Carlsbad, New Mexico. Merged with Roswell Council to form Pecos Valley Council (#413), which continues as Conquistador Council. Sources disagree on the end year: the defunct-councils list ends Carlsbad in 1923, the Scouting in New Mexico article dates the merger to 1924. 1924 is recorded (the Pecos Valley version and the absorption event both start there); confidence lowered for the disagreement."
       }
     }
   ],

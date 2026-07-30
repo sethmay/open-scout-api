@@ -3,6 +3,16 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.57.1 (patch) — 2026-07-29
+
+- `PENDING` Follow-up corrections from a review of 0.57.0.
+  - Four surviving councils still carried notes saying the predecessors added in 0.57.0 were not
+    yet recorded. Updated each to point at the new record.
+  - Added council number 573 to Yucca Council, taken from the same defunct-councils list already
+    cited on the record.
+  - The sources disagree on Carlsbad Council's end year, 1923 in one and 1924 in the other. Kept
+    1924, noted the disagreement on the record, and lowered its confidence.
+
 ## 0.57.0 (minor) — 2026-07-29
 
 - `2f658d9` Recorded eight councils that had merged into ones already in the data, so the
@@ -14,7 +24,6 @@ Version anchors: this file only (no package manifests yet; add here when one app
     Desert Council links to Yucca, East Carolina Council to the three councils that merged into
     it, and Greater Yosemite Council to Forty Niner.
   - The absorbing councils were already correct; this fills in the other side of the relationship.
-    Council numbers are recorded for four of the eight, where the source gave them.
 
 ## 0.56.6 (patch) — 2026-07-29
 

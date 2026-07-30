@@ -225,7 +225,7 @@
         "method": "curated",
         "verified_at": "2026-07-29",
         "confidence": 0.85,
-        "notes": "High Desert Council was formed in 2024 when Great Southwest Council (#412, continuing) merged with Yucca Council. Modelled here as a version boundary on the #412 identity, which kept the number. The Yucca absorption event and the Yucca entity are not yet recorded. states_served left empty pending a source for the combined footprint: Great Southwest served NM/AZ/UT/CO and Yucca served TX and NM."
+        "notes": "High Desert Council was formed in 2024 when Great Southwest Council (#412, continuing) merged with Yucca Council. Modelled here as a version boundary on the #412 identity, which kept the number. Yucca is now recorded as council:yucca (#573), absorbed via absorb-yucca-into-high-desert. states_served left empty pending a source for the combined footprint: Great Southwest served NM/AZ/UT/CO and Yucca served TX and NM."
       }
     }
   ],
