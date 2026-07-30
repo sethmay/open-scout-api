@@ -11,7 +11,7 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 420 councils — 229 current (assigned to CSTs) + 191 historical. Founding years (158), rename chains (56), merger/absorption events (116; the 112 figure was the Wikipedia-extracted subset) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 428 councils — 229 current (assigned to CSTs) + 199 historical. Founding years (158), rename chains (56), merger/absorption events (124; 112 Wikipedia-extracted, 8 curated in 0.57.0) + 192 predecessor councils (184 `llm_extraction` from Wikipedia, 8 curated in 0.57.0); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
@@ -207,11 +207,14 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   rename history at all and are now single-version. A detection gate now guards against recurrence
   (`validate_data.py` pass 1b): it flags any two councils that share their first two version names.
   Verified non-vacuous. It would have failed the build the day these five clusters were introduced.
-  - **Deferred absorptions surfaced while rebuilding, none yet recorded as events:** Tar Heel Area
-    (#422, 1934), Pamlico (#686, 1930) and Neuse (#415, 1930) merged into `east-carolina`; Forty
-    Niner (#052, 1997) into `greater-yosemite`; Mill Valley and Sausalito (1918) into `marin`. Same
-    class as the Yucca and Carlsbad gaps from the `conquistador` fix: the surviving council is
-    correct, but the predecessor entity and the `merged`/`absorbed` event are missing.
+  - **Deferred absorptions now recorded — DONE 0.57.0.** Eight predecessor councils and their
+    `absorbed` events were added: Tar Heel Area (#422, 1934), Pamlico (#686, 1930) and Neuse
+    (#415, 1930) into `east-carolina`; Forty Niner (#052, 1997) into `greater-yosemite`; Mill
+    Valley and Sausalito (1918) into `marin`; Yucca (2024) into `high-desert`; and Carlsbad (1924)
+    into `conquistador`. Each predecessor is a retired single-version entity (`curated` from the
+    state Scouting article and the defunct-councils list); the surviving councils were already
+    correct. `bsa_number` recorded where the source gave it (four of eight); founding years and
+    prior names kept in provenance notes, matching the existing predecessor convention.
   - **One number change is recorded:** `daniel-boone` began as Asheville Council #418 (1919) and
     became #414 as Buncombe County Council in 1922. The other ten hold one number throughout.
   - **Open: the gate does not catch a single-holder copy.** A chain copied onto ONE council with

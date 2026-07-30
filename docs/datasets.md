@@ -35,13 +35,13 @@ things that expire, so there is nothing to filter. Do not expect a `current` cou
 The chartered local organizations that own the camps, charter the units, and are the join key most
 consumers actually need.
 
-- **420 total: 229 current, 191 historical** (merged, renamed, or defunct).
+- **428 total: 229 current, 199 historical** (merged, renamed, or defunct).
 - All 229 current councils carry a `territory` ref, and those refs cover all 14 live territories.
 - 209 carry `states_served`; 158 carry a founding year, which is the `valid_from` of the council's
   earliest version rather than a field of its own.
 - **56 councils carry more than one version.** That is the rename history: a council that changed
   name has one version per name, with half-open validity windows.
-- **119 events:** 64 `absorbed`, 52 `merged`, 2 `discontinued`, 1 `renamed`. The 116
+- **127 events:** 72 `absorbed`, 52 `merged`, 2 `discontinued`, 1 `renamed`. The 124
   merger/absorption events are the lineage graph; 112 of them were extracted from Wikipedia.
 
 **Sourcing.** Version facts are `imported` (camp-finder, plus the official Council Service

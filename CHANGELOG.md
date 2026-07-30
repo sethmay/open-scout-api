@@ -3,6 +3,19 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.57.0 (minor) — 2026-07-29
+
+- `PENDING` Recorded eight councils that had merged into ones already in the data, so the
+  histories now connect on both sides.
+  - Each is a historical council that no longer operates: Yucca, Carlsbad, Forty Niner, Tar Heel
+    Area, Pamlico, Neuse, Mill Valley, and Sausalito. They join as retired records, and a new
+    event ties each to the council that took it in.
+  - A lineage lookup can now walk backward from a current council to the ones it absorbed. High
+    Desert Council links to Yucca, East Carolina Council to the three councils that merged into
+    it, and Greater Yosemite Council to Forty Niner.
+  - The absorbing councils were already correct; this fills in the other side of the relationship.
+    Council numbers are recorded for four of the eight, where the source gave them.
+
 ## 0.56.6 (patch) — 2026-07-29
 
 - `4d52f7c` Corrected the previous release note for the new build check, which overstated what it

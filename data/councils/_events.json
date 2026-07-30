@@ -3370,6 +3370,254 @@
         "verified_at": "2026-07-21",
         "confidence": 0.6
       }
+    },
+    {
+      "id": "absorb-yucca-into-high-desert",
+      "type": "absorbed",
+      "date": "2024",
+      "participants": [
+        {
+          "ref": "council:yucca",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:high-desert",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-carlsbad-into-conquistador",
+      "type": "absorbed",
+      "date": "1924",
+      "participants": [
+        {
+          "ref": "council:carlsbad",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:conquistador",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-forty-niner-into-greater-yosemite",
+      "type": "absorbed",
+      "date": "1997",
+      "participants": [
+        {
+          "ref": "council:forty-niner",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:greater-yosemite",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-tar-heel-area-into-east-carolina",
+      "type": "absorbed",
+      "date": "1934",
+      "participants": [
+        {
+          "ref": "council:tar-heel-area",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:east-carolina",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-pamlico-into-east-carolina",
+      "type": "absorbed",
+      "date": "1930",
+      "participants": [
+        {
+          "ref": "council:pamlico",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:east-carolina",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-neuse-into-east-carolina",
+      "type": "absorbed",
+      "date": "1930",
+      "participants": [
+        {
+          "ref": "council:neuse",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:east-carolina",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-mill-valley-into-marin",
+      "type": "absorbed",
+      "date": "1918",
+      "participants": [
+        {
+          "ref": "council:mill-valley",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:marin",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "absorb-sausalito-into-marin",
+      "type": "absorbed",
+      "date": "1918",
+      "participants": [
+        {
+          "ref": "council:sausalito",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:marin",
+          "role": "continuing"
+        }
+      ],
+      "notes": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8
+      }
     }
   ]
 }

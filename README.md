@@ -81,7 +81,7 @@ hardcoding them. See the caveat in [`docs/endpoints.md`](./docs/endpoints.md).
 
 | Dataset | Total | Current | What it is |
 |---|---:|---:|---|
-| [Councils](./docs/datasets.md#councils) | 420 | 229 | Councils incl. merged/renamed/defunct, with lineage |
+| [Councils](./docs/datasets.md#councils) | 428 | 229 | Councils incl. merged/renamed/defunct, with lineage |
 | [Territories](./docs/datasets.md#territories) | 20 | 14 | Council Service Territories + legacy regions |
 | [Camps](./docs/datasets.md#camps) | 448 | 448 | Resident, day, high-adventure + the 4 national bases |
 | [Merit badges](./docs/datasets.md#merit-badges) | 268 | 140 | Back to the 1910 originals, with rename chains |

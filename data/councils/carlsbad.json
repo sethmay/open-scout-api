@@ -1,0 +1,35 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/council.schema.json",
+  "id": "carlsbad",
+  "kind": "council",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": "1924",
+      "name": "Carlsbad Council",
+      "bsa_number": null,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.8,
+        "notes": "Founded 1920 in Carlsbad, New Mexico. Merged with Roswell Council in 1924 to form Pecos Valley Council (#413), which continues as Conquistador Council."
+      }
+    }
+  ],
+  "notes": null
+}

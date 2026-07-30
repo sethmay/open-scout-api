@@ -62,7 +62,7 @@ current. Consumers who stored `territory:cst-1` in 2022 still resolve it today.
   `chippewa-valley` once shipped a `1927..1925` window that the pairwise adjacency rule could not
   see).
 - A retired entity has **no** open-ended version. Its fate is in the events file, not in a status
-  flag. Of 420 council entities, 229 are current and 191 are retired.
+  flag. Of 428 council entities, 229 are current and 199 are retired.
 
 **Worked example: a versioned *flag*, not a name.** `merit-badge:citizenship-in-society` never
 changed its name; what changed is a boolean:
@@ -105,7 +105,7 @@ Renames are the exception:
 > [!WARNING]
 > **Renames live in the `versions` sequence. Mergers and absorptions live in `events`.**
 > Grepping `_events.json` for `type == "renamed"` finds almost nothing, so the dataset looks like
-> it has no rename history. Verified against `data/councils/`: **56 of 420 councils were renamed**
+> it has no rename history. Verified against `data/councils/`: **56 of 428 councils were renamed**
 > (more than one distinct `name` across their versions), while **exactly 1 council carries a
 > `renamed` event**, and it is a different council from those 56, so **57 councils have changed
 > name in all**. A council rename *is* the `name` field changing between consecutive versions.
