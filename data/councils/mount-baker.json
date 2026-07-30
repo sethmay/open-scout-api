@@ -4,9 +4,9 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": "1915",
-      "valid_to": "1925",
-      "name": "Spokane Council",
+      "valid_from": "1918",
+      "valid_to": "1941",
+      "name": "Everett Council",
       "bsa_number": 606,
       "hq_city": null,
       "hq_state": null,
@@ -16,19 +16,20 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Mount Baker Council; changed 1925. Source: Scouting in Washington (state) (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Founded 1918 as Everett Council."
       }
     },
     {
-      "valid_from": "1925",
-      "valid_to": "1931",
-      "name": "Spokane Area",
+      "valid_from": "1941",
+      "valid_to": "1994",
+      "name": "Evergreen Area Council",
       "bsa_number": 606,
       "hq_city": null,
       "hq_state": null,
@@ -38,39 +39,17 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Mount Baker Council; changed 1931. Source: Scouting in Washington (state) (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85
       }
     },
     {
-      "valid_from": "1931",
-      "valid_to": "1987",
-      "name": "Inland Empire Council",
-      "bsa_number": 606,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Washington_%28state%29"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Mount Baker Council; changed 1987. Source: Scouting in Washington (state) (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1987",
+      "valid_from": "1994",
       "valid_to": null,
       "name": "Mount Baker Council",
       "bsa_number": 606,
@@ -96,9 +75,10 @@
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "notes": "valid_from corrected to 1994 (the true last-rename date); see entity notes."
       }
     }
   ],
-  "notes": null
+  "notes": "Historical name chain corrected. This record previously carried the Spokane / Spokane Area / Inland Empire chain, which belongs to council #611 (inland-northwest). Its real lineage is restored below from the state Scouting article and the defunct-councils list."
 }

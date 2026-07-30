@@ -4,9 +4,9 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": "1915",
-      "valid_to": "1926",
-      "name": "Denver Council",
+      "valid_from": "1916",
+      "valid_to": "1922",
+      "name": "Colorado Springs Council",
       "bsa_number": 60,
       "hq_city": null,
       "hq_state": null,
@@ -16,19 +16,20 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Colorado"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Pathway to the Rockies Council; changed 1926. Source: Scouting in Colorado (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Founded 1916 as Colorado Springs Council."
       }
     },
     {
-      "valid_from": "1926",
-      "valid_to": "2022",
-      "name": "Denver Area Council",
+      "valid_from": "1922",
+      "valid_to": "1925",
+      "name": "El Paso and Teller Counties Council",
       "bsa_number": 60,
       "hq_city": null,
       "hq_state": null,
@@ -38,17 +39,39 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Colorado"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Pathway to the Rockies Council; changed 2022. Source: Scouting in Colorado (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85
       }
     },
     {
-      "valid_from": "2022",
+      "valid_from": "1925",
+      "valid_to": "2021",
+      "name": "Pikes Peak Council",
+      "bsa_number": 60,
+      "hq_city": null,
+      "hq_state": null,
+      "website": null,
+      "states_served": [],
+      "territory": null,
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85
+      }
+    },
+    {
+      "valid_from": "2021",
       "valid_to": null,
       "name": "Pathway to the Rockies Council",
       "bsa_number": 60,
@@ -73,9 +96,10 @@
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "notes": "valid_from corrected to 2021 (the true last-rename date); see entity notes."
       }
     }
   ],
-  "notes": null
+  "notes": "Historical name chain corrected. This record previously carried the Denver / Denver Area chain, which belongs to council #61 (greater-colorado). Its real lineage is restored below from the state Scouting article and the defunct-councils list."
 }

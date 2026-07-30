@@ -4,9 +4,9 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": "1916",
-      "valid_to": "1926",
-      "name": "Wilmington Council",
+      "valid_from": "1924",
+      "valid_to": "1932",
+      "name": "Wilson County Council",
       "bsa_number": 426,
       "hq_city": null,
       "hq_state": null,
@@ -16,61 +16,22 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of East Carolina Council; changed 1926. Source: Scouting in North Carolina (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1926",
-      "valid_to": "1930",
-      "name": "New Hanover County Council",
-      "bsa_number": 426,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina",
+            "accessed": "2026-07-29"
+          },
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of East Carolina Council; changed 1930. Source: Scouting in North Carolina (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Founded 1924; renamed East Carolina Council in 1932. The Tar Heel Area (#422, 1934), Pamlico (#686, 1930) and Neuse (#415, 1930) councils merged in and are not yet recorded as events."
       }
     },
     {
-      "valid_from": "1930",
-      "valid_to": "1989",
-      "name": "Cape Fear Area Council",
-      "bsa_number": 426,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_North_Carolina"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of East Carolina Council; changed 1989. Source: Scouting in North Carolina (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1989",
+      "valid_from": "1932",
       "valid_to": null,
       "name": "East Carolina Council",
       "bsa_number": 426,
@@ -95,9 +56,10 @@
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "notes": "valid_from corrected to 1932 (the true last-rename date); see entity notes."
       }
     }
   ],
-  "notes": null
+  "notes": "Historical name chain corrected. This record previously carried the Wilmington / New Hanover County / Cape Fear Area chain, which belongs to council #425 (cape-fear). Its real lineage is restored below from the state Scouting article and the defunct-councils list."
 }

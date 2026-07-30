@@ -129,7 +129,7 @@ which can sit many miles from the property. Read `geo_precision` first, `exact` 
 [`08-geo-precision.py`](./cookbook/python/08-geo-precision.py),
 [`10-geo-precision-audit.sql`](./cookbook/sql/10-geo-precision-audit.sql).
 
-**Scanning `events` for renames finds 1 of the 59 councils that changed name.**
+**Scanning `events` for renames finds 1 of the 57 councils that changed name.**
 `events.filter(e => e.type === "renamed")` matches a single council because a rename is a new
 entry in `versions[]`, with the old name still readable in the entry before it. The `events` array
 carries lifecycle changes between entities instead (175 mergers, 128 absorptions). No council

@@ -11,7 +11,7 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 420 councils — 229 current (assigned to CSTs) + 191 historical. Founding years (158), rename chains (58), merger/absorption events (116; the 112 figure was the Wikipedia-extracted subset) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 420 councils — 229 current (assigned to CSTs) + 191 historical. Founding years (158), rename chains (56), merger/absorption events (116; the 112 figure was the Wikipedia-extracted subset) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
@@ -193,22 +193,23 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   row titles. Bernalillo is the New Mexico county whose seat is Albuquerque, which is why it is now
   the recorded value. To close this properly, re-source the 1926-1927 name against a council history
   or newspaper archive and raise confidence.
-- **Sixteen councils in five clusters share a leading name chain, and only one per cluster can own
-  it.** Found by the same query that caught `conquistador`, so this is the identical failure mode:
-  the Wikipedia extraction attached a predecessor chain to every council an article mentioned rather
-  than to the one identity that continues it. Each cluster needs the defunct-councils table read row
-  by row, as `conquistador` was.
-  - `Wilmington Council → New Hanover County Council`: `cape-fear`, `daniel-boone`, `east-carolina`,
-    `old-hickory`, `tuscarora` (5)
-  - `Santa Barbara Council → Mission Council`: `greater-yosemite`, `los-padres`, `marin`,
-    `verdugo-hills` (4) — `marin` and `verdugo-hills` are nowhere near Santa Barbara
-  - `Spokane Council → Spokane Area`: `inland-northwest`, `mount-baker`, `pacific-harbors` (3) —
-    `pacific-harbors` is Tacoma
-  - `Denver Council → Denver Area Council`: `greater-colorado`, `pathway-to-the-rockies` (2)
-  - `Bangor Council → Penobscot Council`: `katahdin-area`, `pine-tree` (2)
-
-  The detection query is worth keeping as a gate candidate: group councils by their first two
-  version names and flag any group with more than one member.
+- **Sixteen councils in five clusters shared a leading name chain — FIXED 0.56.3; deferred
+  absorptions below.** Same failure mode as `conquistador`: the Wikipedia extraction attached one
+  council's predecessor chain to every council an article mentioned. In each cluster exactly one
+  council legitimately owns the chain (matched by HQ city and by the number that threads the whole
+  defunct-councils table run); the other members were rebuilt from their own number's rows plus the
+  state Scouting article. Owners kept unchanged: `cape-fear` (#425), `los-padres` (#53),
+  `inland-northwest` (#611), `greater-colorado` (#61), `katahdin-area` (#216). Rebuilt: the other
+  eleven. `tuscarora` (#424, founded 1923) and `marin` (#35, formed 1910) turned out to have no
+  rename history at all and are now single-version. A detection gate is still worth adding: group
+  councils by their first two version names and flag any group with more than one member.
+  - **Deferred absorptions surfaced while rebuilding, none yet recorded as events:** Tar Heel Area
+    (#422, 1934), Pamlico (#686, 1930) and Neuse (#415, 1930) merged into `east-carolina`; Forty
+    Niner (#052, 1997) into `greater-yosemite`; Mill Valley and Sausalito (1918) into `marin`. Same
+    class as the Yucca and Carlsbad gaps from the `conquistador` fix: the surviving council is
+    correct, but the predecessor entity and the `merged`/`absorbed` event are missing.
+  - **One number change is recorded:** `daniel-boone` began as Asheville Council #418 (1919) and
+    became #414 as Buncombe County Council in 1922. The other ten hold one number throughout.
 - **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
   tier-vocabulary closure and the tier↔date coupling instead of a mean ordering or a `portal` row.
   Two of the four `features` states are likewise empty (`date + []` and `null + entries`), so

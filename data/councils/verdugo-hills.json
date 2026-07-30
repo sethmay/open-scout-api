@@ -4,9 +4,9 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": "1917",
-      "valid_to": "1929",
-      "name": "Santa Barbara Council",
+      "valid_from": "1920",
+      "valid_to": "1922",
+      "name": "Glendale Council",
       "bsa_number": 58,
       "hq_city": null,
       "hq_state": null,
@@ -16,39 +16,22 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Verdugo Hills Council; changed 1929. Source: Scouting in California (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1929",
-      "valid_to": "1994",
-      "name": "Mission Council",
-      "bsa_number": 58,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_California",
+            "accessed": "2026-07-29"
+          },
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_California"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Verdugo Hills Council; changed 1994. Source: Scouting in California (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Founded 1920 as Glendale Council."
       }
     },
     {
-      "valid_from": "1994",
+      "valid_from": "1922",
       "valid_to": null,
       "name": "Verdugo Hills Council",
       "bsa_number": 58,
@@ -73,9 +56,10 @@
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "notes": "valid_from corrected to 1922 (the true last-rename date); see entity notes."
       }
     }
   ],
-  "notes": null
+  "notes": "Historical name chain corrected. This record previously carried the Santa Barbara / Mission chain, which belongs to council #53 (los-padres). Its real lineage is restored below from the state Scouting article and the defunct-councils list."
 }

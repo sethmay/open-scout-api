@@ -105,9 +105,9 @@ Renames are the exception:
 > [!WARNING]
 > **Renames live in the `versions` sequence. Mergers and absorptions live in `events`.**
 > Grepping `_events.json` for `type == "renamed"` finds almost nothing, so the dataset looks like
-> it has no rename history. Verified against `data/councils/`: **58 of 420 councils were renamed**
+> it has no rename history. Verified against `data/councils/`: **56 of 420 councils were renamed**
 > (more than one distinct `name` across their versions), while **exactly 1 council carries a
-> `renamed` event**, and it is a different council from those 58, so **59 councils have changed
+> `renamed` event**, and it is a different council from those 56, so **57 councils have changed
 > name in all**. A council rename *is* the `name` field changing between consecutive versions.
 > Diff `name` across versions ordered by `valid_from`; never rely on an event to tell you.
 
@@ -303,8 +303,8 @@ Recipe: [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py).
 
 1. **Never read `versions[0]` as the current record.** Select by window, or by
    `valid_to is None`. → [`02-as-of.py`](../cookbook/python/02-as-of.py)
-2. **Diff `name` across consecutive versions to find renames.** 58 councils show a rename there
-   and exactly 1 carries a `renamed` event, so `events` alone finds 1 of 59. →
+2. **Diff `name` across consecutive versions to find renames.** 56 councils show a rename there
+   and exactly 1 carries a `renamed` event, so `events` alone finds 1 of 57. →
    [`03-lineage.py`](../cookbook/python/03-lineage.py)
 3. **A missing id is not a dead id.** An id absent from `current/` may have merged. Walk
    `predecessor → successor|continuing` and forward the reference instead of dropping it. →

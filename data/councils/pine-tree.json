@@ -5,8 +5,8 @@
   "versions": [
     {
       "valid_from": "1919",
-      "valid_to": "1924",
-      "name": "Bangor Council",
+      "valid_to": "1922",
+      "name": "Portland Council",
       "bsa_number": 218,
       "hq_city": null,
       "hq_state": null,
@@ -16,19 +16,20 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Maine"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Pine Tree Council; changed 1924. Source: Scouting in Maine (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Founded 1919 as Portland Council."
       }
     },
     {
-      "valid_from": "1924",
-      "valid_to": "1929",
-      "name": "Penobscot Council",
+      "valid_from": "1922",
+      "valid_to": "1933",
+      "name": "Cumberland County Council",
       "bsa_number": 218,
       "hq_city": null,
       "hq_state": null,
@@ -38,17 +39,17 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_Maine"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Pine Tree Council; changed 1929. Source: Scouting in Maine (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85
       }
     },
     {
-      "valid_from": "1929",
+      "valid_from": "1933",
       "valid_to": null,
       "name": "Pine Tree Council",
       "bsa_number": 218,
@@ -73,9 +74,10 @@
         ],
         "method": "imported",
         "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "notes": "valid_from corrected to 1933 (the true last-rename date); see entity notes."
       }
     }
   ],
-  "notes": null
+  "notes": "Historical name chain corrected. This record previously carried the Bangor / Penobscot chain, which belongs to council #216 (katahdin-area). Its real lineage is restored below from the state Scouting article and the defunct-councils list."
 }

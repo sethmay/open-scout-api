@@ -3,6 +3,25 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.3 (patch) — 2026-07-29
+
+- `PENDING` Fixed sixteen more councils that had the wrong history attached, the same problem found
+  in Conquistador Council last release.
+  - Five North Carolina councils all listed the same three early names (Wilmington Council, New
+    Hanover County Council, Cape Fear Area Council). That history belongs only to Cape Fear Council.
+    The other four now carry their own: Daniel Boone traces to the 1919 Asheville Council, East
+    Carolina to the 1924 Wilson County Council, Old Hickory to the 1917 Winston-Salem Area Council,
+    and Tuscarora was founded in 1923 with no earlier name.
+  - Four California councils shared a Santa Barbara start that belongs only to Los Padres Council.
+    Greater Yosemite now traces to the 1920 Modesto Council, Verdugo Hills to the 1920 Glendale
+    Council, and Marin, formed in 1910, has no earlier name.
+  - The same fix was applied to three Washington councils (only Inland Northwest kept the Spokane
+    start), two Colorado councils (only Greater Colorado kept the Denver start), and two Maine
+    councils (only Katahdin Area kept the Bangor start).
+  - Every council still resolves to the same present-day council, number, and website as before.
+    Only the historical names changed. Each new name history is drawn from the state Scouting
+    article and the list of defunct councils, both already cited on these records.
+
 ## 0.56.2 (patch) — 2026-07-29
 
 - `727b5a9` Corrected Conquistador Council's history, which had another council's past attached to
