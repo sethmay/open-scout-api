@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.4 (patch) — 2026-07-29
 
-- `PENDING` Added a build check that catches one council's history being attached to another, the
+- `d522d63` Added a build check that catches one council's history being attached to another, the
   error corrected in the last two releases.
   - A council's rename history is unique to it, so no two councils can share the same first two
     names. The build now fails if any two do, which is exactly the shape both recent errors took.
