@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.6 (patch) — 2026-07-29
 
-- `PENDING` Corrected the previous release note for the new build check, which overstated what it
+- `4d52f7c` Corrected the previous release note for the new build check, which overstated what it
   catches.
   - The check catches the 0.56.3 error, where several councils were given the same copied history.
     It does not catch a history copied onto a single council, which was the separate error fixed in
