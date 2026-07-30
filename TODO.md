@@ -11,7 +11,7 @@ PLAN.md §1).
 
 | # | Dataset | Schema | Why / notes | Primary sources |
 |---|---|---|---|---|
-| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 420 councils — 229 current (assigned to CSTs) + 191 historical. Founding years (157), rename chains (57), merger/absorption events (116; the 112 figure was the Wikipedia-extracted subset) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
+| 1 | **Councils + historical lineage** | ✅ `council` | 🌱 **SEEDED (0.2.0); LINEAGE (0.14.0):** 420 councils — 229 current (assigned to CSTs) + 191 historical. Founding years (158), rename chains (58), merger/absorption events (116; the 112 figure was the Wikipedia-extracted subset) + 184 predecessor councils extracted from Wikipedia (`llm_extraction`); `states_served` for 209 (208 of them current). Counts re-verified against `dist/v1/meta.json` and `data/` in 0.55.0 — the previous 419/190/141/112 had drifted. Follow-ups (8 live-council merger claims to review; predecessor numbers/HQ; 7 article-less recent mergers; deeper lineage) in Queue. | camp-finder; official CST maps (territory); English Wikipedia (lineage) |
 | 2 | **Territories / regions / areas** | ✅ `territory` | 🌱 **SEEDED (0.2.0):** 14 CSTs (2021 NST→2024 CST history), 4 regions, 2 merged NSTs, reorg events. Follow-up: 2/11 merge targets. | Wikipedia CST; official CST maps |
 | 3 | **Merit badge catalog** | ✅ `merit-badge` | 🌱 **SEEDED (0.4.0):** 142 badges (140 current, 17 Eagle-required incl. alternatives), CiS lifecycle (2021→2022 Eagle→2026 discontinued), Computers→Digital-Technology supersession. Follow-ups (requirement content, historical discontinued badges, descriptions/tags) in Queue. | OpenScouting/workbooks MANIFEST; scouting.org eagle-required; Wikipedia discontinued-badges |
 | 4 | **Requirement sets (badges)** | ✅ `requirement-set` | 🌱 **SEEDED (0.5.0):** 141 docs, full requirement tree (numbering/nesting/choose-N/options) + effective date + source links + verbatim text marked © Scouting America (`text_rights`). Follow-ups: historical revisions, plant-science deep-structure, per-badge summaries. | OpenScouting/workbooks `badges/<slug>/<year>.md`; scouting.org |
@@ -132,7 +132,7 @@ rejected.
 
 ## Queue
 
-### Cookbook — SHIPPED; five follow-ups
+### Cookbook — SHIPPED; seven follow-ups
 
 `cookbook/` is 42 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
 gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and the recipe→trap
@@ -168,14 +168,47 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   `superseded` event names `reptile-study`, which starts 1927, and its thirteen pre-1911 siblings
   all encode a one-year existence as `1910..1911`. Lesson: do not assume a zero-width window is
   intentional just because a neighbour's is.
-- **`conquistador` version 2 is probably a transcription error: "Bemalillo County Council".** The
-  New Mexico county is **Bernalillo**, so the `m` is almost certainly an `rn`→`m` OCR/LLM slip. But
-  `data/councils/conquistador.json` is what the source said (`llm_extraction`, confidence 0.8) and
-  the README, `docs/model.md` and the data all agree on the current spelling, so correcting it is a
-  **data change needing its own source**, not a typo fix — do not silently "correct" it. Re-source
-  the 1926-1927 name against a council history or newspaper archive, then fix the value and raise
-  confidence. Flagged while writing `docs/model.md`, which uses this council as its worked rename
-  example precisely because it has seven names and zero `renamed` events.
+- **`conquistador` carried another council's whole history — FIXED 0.56.2; two gaps remain.** The
+  investigation started as the "Bemalillo" spelling question below and found a much larger error:
+  `data/councils/conquistador.json` (#413, Roswell) held the seven-name chain that belongs to #412
+  in Albuquerque, today's `high-desert`. Both the prose of `Scouting in New Mexico` and every row
+  of the defunct-councils table put that chain on #412. Also corrected: Conquistador's founding
+  (1920, as Roswell Council, not 1918), its rename date (1953, not 1982 — 1982 is when #412 became
+  Great Southwest Council), and its `states_served`, which held Great Southwest's four-state
+  footprint `[NM, AZ, UT, CO]` instead of `[NM]`. Camps were never affected: Gorham Scout Ranch was
+  already on `high-desert` and Conquistador's two camps are both southeast New Mexico. Still open:
+  - **Yucca Council has no entity and the 2024 merger has no event.** High Desert Council was formed
+    when Great Southwest (#412, continuing) merged with Yucca. Recorded here only as a version
+    boundary on #412, so the lineage edge is missing. `high-desert`'s `states_served` is left empty
+    for the same reason: Great Southwest served NM/AZ/UT/CO and Yucca served TX and NM, and nothing
+    sources the combined footprint.
+  - **Carlsbad Council (1920-1923, Carlsbad NM) has no entity.** It merged with Roswell Council in
+    1924 to form Pecos Valley Council (#413), so Conquistador's line has an unrecorded predecessor
+    exactly like the mergers already modelled elsewhere.
+- **The "Bemalillo" spelling is an upstream contradiction, not our slip — recorded as Bernalillo at
+  0.75.** The defunct-councils table titles that row "Bemalillo County Council" while the preceding
+  Albuquerque Council row's successor column reads "Bernalillo County 412" for the same council and
+  number. The same table writes "Rio Grande Area Council" as a row title and "Rio Grand Area 412" as
+  a pointer, so neither field is reliable on its own and our extraction was consistent in preferring
+  row titles. Bernalillo is the New Mexico county whose seat is Albuquerque, which is why it is now
+  the recorded value. To close this properly, re-source the 1926-1927 name against a council history
+  or newspaper archive and raise confidence.
+- **Sixteen councils in five clusters share a leading name chain, and only one per cluster can own
+  it.** Found by the same query that caught `conquistador`, so this is the identical failure mode:
+  the Wikipedia extraction attached a predecessor chain to every council an article mentioned rather
+  than to the one identity that continues it. Each cluster needs the defunct-councils table read row
+  by row, as `conquistador` was.
+  - `Wilmington Council → New Hanover County Council`: `cape-fear`, `daniel-boone`, `east-carolina`,
+    `old-hickory`, `tuscarora` (5)
+  - `Santa Barbara Council → Mission Council`: `greater-yosemite`, `los-padres`, `marin`,
+    `verdugo-hills` (4) — `marin` and `verdugo-hills` are nowhere near Santa Barbara
+  - `Spokane Council → Spokane Area`: `inland-northwest`, `mount-baker`, `pacific-harbors` (3) —
+    `pacific-harbors` is Tacoma
+  - `Denver Council → Denver Area Council`: `greater-colorado`, `pathway-to-the-rockies` (2)
+  - `Bangor Council → Penobscot Council`: `katahdin-area`, `pine-tree` (2)
+
+  The detection query is worth keeping as a gate candidate: group councils by their first two
+  version names and flag any group with more than one member.
 - **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
   tier-vocabulary closure and the tier↔date coupling instead of a mean ordering or a `portal` row.
   Two of the four `features` states are likewise empty (`date + []` and `null + entries`), so

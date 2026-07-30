@@ -37,9 +37,9 @@ consumers actually need.
 
 - **420 total: 229 current, 191 historical** (merged, renamed, or defunct).
 - All 229 current councils carry a `territory` ref, and those refs cover all 14 live territories.
-- 209 carry `states_served`; 157 carry a founding year, which is the `valid_from` of the council's
+- 209 carry `states_served`; 158 carry a founding year, which is the `valid_from` of the council's
   earliest version rather than a field of its own.
-- **57 councils carry more than one version.** That is the rename history: a council that changed
+- **58 councils carry more than one version.** That is the rename history: a council that changed
   name has one version per name, with half-open validity windows.
 - **119 events:** 64 `absorbed`, 52 `merged`, 2 `discontinued`, 1 `renamed`. The 116
   merger/absorption events are the lineage graph; 112 of them were extracted from Wikipedia.
@@ -52,7 +52,7 @@ Wikipedia article, confidence 0.5–0.8 with most at 0.7–0.8. The merger and a
 > [!NOTE]
 > A council rename is a new version. Events are reserved for changes that involve a second party:
 > mergers, absorptions, and dissolutions. Exactly one council breaks the pattern and carries its
-> rename as an event, which is why scanning events finds 1 of the 58 councils that changed name.
+> rename as an event, which is why scanning events finds 1 of the 59 councils that changed name.
 > See [mergers are events, renames are version boundaries](./model.md#3-mergers-are-events-renames-are-version-boundaries).
 
 Endpoints: `v1/current/councils.json`, `v1/councils/index.json`, `v1/councils/{id}.json`. See the

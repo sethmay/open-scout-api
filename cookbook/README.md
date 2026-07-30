@@ -36,7 +36,7 @@ line in its header, and the gate rejects any file that lacks one.
 |---|---|
 | `python/01-resolve-endpoints.py` | Hardcoding the provisional host, and discovering endpoints by 404 |
 | `python/02-as-of.py` | Reading `versions[0]` as the current state |
-| `python/03-lineage.py` | Looking for renames in `events`, which finds 1 of the 58 councils that changed name. Mergers *are* events |
+| `python/03-lineage.py` | Looking for renames in `events`, which finds 1 of the 59 councils that changed name. Mergers *are* events |
 | `python/04-camp-aliases.py` | A stored camp id silently 404s after duplicate listings merged |
 | `python/05-feature-hierarchy.py` | Filtering on `aquatics` misses every kayaking-only camp |
 | `python/06-feature-tristate.py` | Empty `features` read as "has none" instead of "never surveyed" |

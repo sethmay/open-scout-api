@@ -3,6 +3,28 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.2 (patch) — 2026-07-29
+
+- `PENDING` Corrected Conquistador Council's history, which had another council's past attached to
+  it.
+  - Conquistador Council in Roswell was recorded as having been named Albuquerque Council, Bemalillo
+    County Council, Rio Grande Area Council, Northern New Mexico Council, Kit Carson Council, and
+    Great Southwest Area Council. None of those are its names. They belong to the Albuquerque
+    council that is now High Desert Council, and both sources agree on that.
+  - Conquistador's real history is now recorded: it began as Roswell Council in 1920, merged with
+    Carlsbad Council to become Pecos Valley Council in 1924, became Eastern New Mexico Council in
+    1925, and took its present name in 1953. The old record dated that last change to 1982.
+  - The council was also listed as serving New Mexico, Arizona, Utah, and Colorado. That is the
+    other council's territory. Conquistador serves southeast New Mexico.
+  - High Desert Council now carries all eight of its own names, from Albuquerque Council in 1918
+    through the 2024 merger that created it.
+  - The 1926 name is now spelled Bernalillo, after the New Mexico county whose seat is Albuquerque.
+    The source spells it both ways in the same table, so the value is recorded at lower confidence
+    with the disagreement noted.
+  - Camps were never affected. Every camp was already attached to the right council.
+  - Sixteen councils in five groups still share the start of a name history the same way, which is
+    now written down for a later pass.
+
 ## 0.56.1 (patch) — 2026-07-29
 
 - `ed702f4` Rewrote the README section that warns you about the five easiest ways to misread this

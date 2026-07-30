@@ -105,9 +105,9 @@ Renames are the exception:
 > [!WARNING]
 > **Renames live in the `versions` sequence. Mergers and absorptions live in `events`.**
 > Grepping `_events.json` for `type == "renamed"` finds almost nothing, so the dataset looks like
-> it has no rename history. Verified against `data/councils/`: **57 of 420 councils were renamed**
+> it has no rename history. Verified against `data/councils/`: **58 of 420 councils were renamed**
 > (more than one distinct `name` across their versions), while **exactly 1 council carries a
-> `renamed` event**, and it is a different council from those 57, so **58 councils have changed
+> `renamed` event**, and it is a different council from those 58, so **59 councils have changed
 > name in all**. A council rename *is* the `name` field changing between consecutive versions.
 > Diff `name` across versions ordered by `valid_from`; never rely on an event to tell you.
 
@@ -117,24 +117,42 @@ cannot express, so it must be an event. Where an event does duplicate a rename i
 emphasis, not the source of truth: the 2024 NST→CST pass carries one `renamed` event with 14
 subjects *and* the rename sits in all 14 version sequences.
 
-**Worked example A: `council:conquistador` has 7 versions, 7 different names, and 0 events.**
+**Worked example A: `council:high-desert` has 8 versions, 8 different names, and no `renamed`
+event.**
 
 | window | `name` |
 |---|---|
 | `1918` → `1926` | Albuquerque Council |
-| `1926` → `1927` | Bemalillo County Council |
+| `1926` → `1927` | Bernalillo County Council |
 | `1927` → `1934` | Rio Grande Area Council |
 | `1934` → `1955` | Northern New Mexico Council |
 | `1955` → `1976` | Kit Carson Council |
 | `1976` → `1982` | Great Southwest Area Council |
-| `1982` → `null` | Conquistador Council *(current)* |
+| `1982` → `2024` | Great Southwest Council |
+| `2024` → `null` | High Desert Council *(current)* |
 
-`bsa_number` is 413 throughout. The slug never changed. No event mentions this council at all.
+`bsa_number` is 412 throughout and the slug never changed, so all eight names are one identity.
 
 > [!NOTE]
-> "Bemalillo" is the source's spelling, preserved verbatim rather than silently corrected. The
-> New Mexico county is *Bernalillo*. Correcting it is a data change with its own provenance, not a
-> transcription liberty.
+> The 2024 rename accompanied a real absorption: Great Southwest Council merged with Yucca Council,
+> keeping number 412. That event is **not yet recorded** (Yucca has no entity), which is a data gap
+> rather than a modelling claim. It illustrates the split, though: even when a rename and an
+> absorption land together, the *name* is a version boundary and the *lineage* needs an event.
+
+> [!NOTE]
+> The 1926 name is recorded as *Bernalillo*, the New Mexico county whose seat is Albuquerque, at
+> confidence 0.75. The source contradicts itself: the defunct-councils table titles that row
+> "Bemalillo County Council" while the preceding row's successor column reads "Bernalillo County
+> 412" for the same council and number. The same table writes "Rio Grande Area Council" as a row
+> title and "Rio Grand Area 412" as a pointer, so neither field is reliable alone. An independent
+> source would settle both.
+
+> [!WARNING]
+> **These eight names sat on `council:conquistador` (#413) until 0.56.2.** Both the article prose
+> and the defunct-councils table put the whole chain on #412 in Albuquerque, while Conquistador is
+> #413 in Roswell with its own line: Roswell Council (1920) → Pecos Valley (1924) → Eastern New
+> Mexico (1925) → Conquistador (1953). Sixteen councils in five clusters still carry a shared
+> leading chain of this kind; see `TODO.md`.
 
 **Worked example B, the Golden Spread / Prairie Sky chain: identity changes hands, via events.**
 
@@ -285,8 +303,8 @@ Recipe: [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py).
 
 1. **Never read `versions[0]` as the current record.** Select by window, or by
    `valid_to is None`. → [`02-as-of.py`](../cookbook/python/02-as-of.py)
-2. **Diff `name` across consecutive versions to find renames.** 57 councils show a rename there
-   and exactly 1 carries a `renamed` event, so `events` alone finds 1 of 58. →
+2. **Diff `name` across consecutive versions to find renames.** 58 councils show a rename there
+   and exactly 1 carries a `renamed` event, so `events` alone finds 1 of 59. →
    [`03-lineage.py`](../cookbook/python/03-lineage.py)
 3. **A missing id is not a dead id.** An id absent from `current/` may have merged. Walk
    `predecessor → successor|continuing` and forward the reference instead of dropping it. →

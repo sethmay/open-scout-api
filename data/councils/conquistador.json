@@ -4,10 +4,10 @@
   "kind": "council",
   "versions": [
     {
-      "valid_from": "1918",
-      "valid_to": "1926",
-      "name": "Albuquerque Council",
-      "bsa_number": 413,
+      "valid_from": "1920",
+      "valid_to": "1924",
+      "name": "Roswell Council",
+      "bsa_number": null,
       "hq_city": null,
       "hq_state": null,
       "website": null,
@@ -16,20 +16,25 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Conquistador Council; changed 1926. Source: Scouting in New Mexico (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Council number 413 throughout. Chain per the defunct-councils table rows numbered 413, all located Roswell, New Mexico, corroborated by the Scouting in New Mexico article. Carlsbad Council (1920-1923, Carlsbad NM) merged in as the other half of Pecos Valley and is not yet a separate entity."
       }
     },
     {
-      "valid_from": "1926",
-      "valid_to": "1927",
-      "name": "Bemalillo County Council",
-      "bsa_number": 413,
+      "valid_from": "1924",
+      "valid_to": "1925",
+      "name": "Pecos Valley Council",
+      "bsa_number": null,
       "hq_city": null,
       "hq_state": null,
       "website": null,
@@ -38,20 +43,25 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Conquistador Council; changed 1927. Source: Scouting in New Mexico (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "Formed 1924 by the merger of Roswell Council and Carlsbad Council, both #413-lineage."
       }
     },
     {
-      "valid_from": "1927",
-      "valid_to": "1934",
-      "name": "Rio Grande Area Council",
-      "bsa_number": 413,
+      "valid_from": "1925",
+      "valid_to": "1953",
+      "name": "Eastern New Mexico Council",
+      "bsa_number": null,
       "hq_city": null,
       "hq_state": null,
       "website": null,
@@ -60,83 +70,21 @@
       "provenance": {
         "sources": [
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Conquistador Council; changed 1934. Source: Scouting in New Mexico (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1934",
-      "valid_to": "1955",
-      "name": "Northern New Mexico Council",
-      "bsa_number": 413,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          },
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Conquistador Council; changed 1955. Source: Scouting in New Mexico (Wikipedia)."
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85
       }
     },
     {
-      "valid_from": "1955",
-      "valid_to": "1976",
-      "name": "Kit Carson Council",
-      "bsa_number": 413,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Conquistador Council; changed 1976. Source: Scouting in New Mexico (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1976",
-      "valid_to": "1982",
-      "name": "Great Southwest Area Council",
-      "bsa_number": 413,
-      "hq_city": null,
-      "hq_state": null,
-      "website": null,
-      "states_served": [],
-      "territory": null,
-      "provenance": {
-        "sources": [
-          {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
-          }
-        ],
-        "method": "llm_extraction",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8,
-        "notes": "Prior name of Conquistador Council; changed 1982. Source: Scouting in New Mexico (Wikipedia)."
-      }
-    },
-    {
-      "valid_from": "1982",
+      "valid_from": "1953",
       "valid_to": null,
       "name": "Conquistador Council",
       "bsa_number": 413,
@@ -144,10 +92,7 @@
       "hq_state": "NM",
       "website": "https://www.nmscouts.org/",
       "states_served": [
-        "NM",
-        "AZ",
-        "UT",
-        "CO"
+        "NM"
       ],
       "territory": "territory:cst-8",
       "provenance": {
@@ -159,14 +104,24 @@
             "citation": "Scouting America Council Service Territory 8 map (production 2026-06)"
           },
           {
-            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico"
+            "url": "https://www.nmscouts.org/",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_defunct_councils_(Boy_Scouts_of_America)",
+            "accessed": "2026-07-29"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Scouting_in_New_Mexico",
+            "accessed": "2026-07-29"
           }
         ],
-        "method": "imported",
-        "verified_at": "2026-07-21",
-        "confidence": 0.8
+        "method": "curated",
+        "verified_at": "2026-07-29",
+        "confidence": 0.85,
+        "notes": "states_served corrected from [NM, AZ, UT, CO] to [NM]: that four-state footprint is Great Southwest Council's (#412, now High Desert) and was attached here by the same mis-assignment that gave this council #412's rename chain. Scouting in New Mexico places Conquistador in southeast New Mexico with its office in Roswell, which nmscouts.org confirms ('Scouting in Southeast New Mexico'). Rename to Conquistador dated 1953 per the defunct-councils table, not 1982."
       }
     }
   ],
-  "notes": null
+  "notes": "Six historical names (Albuquerque, Bemalillo/Bernalillo County, Rio Grande Area, Northern New Mexico, Kit Carson, Great Southwest Area) were previously recorded here in error. They belong to council #412, now High Desert Council."
 }
