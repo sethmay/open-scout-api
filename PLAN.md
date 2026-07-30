@@ -141,9 +141,8 @@ in the ID scheme precludes adding record-time later.
 ```
 open-scout-api/
   PLAN.md                     # this file
-  TODO.md                     # dataset catalog + active queue (WORKFLOW.md conventions)
+  TODO.md                     # dataset catalog + active queue
   CHANGELOG.md                # per-merge, semver skill conventions
-  WORKFLOW.md                 # agent workflow (worktrees, review gate)
   schema/v1/
     common.schema.json        # shared $defs: Slug, EntityRef, HistoricalDate, StateCode,
                               #   Source, Provenance, VersionBase, Event
@@ -333,7 +332,7 @@ that is 98% empty.
 
 ## 8. Session-restart pickup notes
 
-- **Workflow:** WORKFLOW.md is binding — feature worktrees under `.claude/worktrees/`,
+- **Workflow:** `WORKFLOW.md` is binding (kept locally, not published): feature worktrees under `.claude/worktrees/`,
   commit before review, `reviewer` agent gate writes to `.workbench/reviews/`, merge
   `--no-ff`, then semver bump + CHANGELOG sha backfill (see `skill://semver`).
 - **Where things stand:** see CHANGELOG.md (shipped) and TODO.md (queue + full dataset

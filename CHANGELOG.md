@@ -5,103 +5,34 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.0 (minor) — 2026-07-29
 
-- `d93dbfa` **Add browser-runnable SQL via Datasette Lite.** The released SQLite artifact now opens
-  in [Datasette Lite](https://lite.datasette.io/) from a single link, which runs Datasette under
-  Pyodide, so all 22 tables are queryable with nothing installed and no account. A
-  `#/open-scout-api?sql=` fragment turns any query into a link, and `docs/endpoints.md` carries
-  three: the feature closure (61 camps literally, 321 through the hierarchy), the Bugler asymmetry
-  (one row, `x x .`), and the `eagle_required` tri-state (17 current flagged, and 126 unknowns that
-  are all historical). Each was verified twice, once in a real browser and once by decoding the
-  committed URL and running its SQL against the artifact. This works only because the API sends
-  `Access-Control-Allow-Origin: *` and 0.55.0 started serving the artifact from Pages.
-- `811c28d` **Copy-edit every published document to remove generated-text tells.** 174 em dashes in
-  running prose across `README.md`, the three `docs/` files, and the cookbook README go to zero,
-  recast with varied punctuation rather than one substitute. Also removes negate-then-reframe
-  constructions, over-signposting, and scattered bold, and adds missing Oxford commas. `NOTICE.md`
-  and the two then-unreleased CHANGELOG sections were cleaned as well, since those become GitHub
-  Release bodies. En dashes in numeric ranges are kept, and the `## X.Y.Z (bump) — date` heading
-  format is kept because it is the documented semver convention across every prior section.
-- `8f5e49c` **Second pass with the `avoid-ai-writing` skill.** Removes four moral-adjective category
-  errors (a map cannot plot "honestly", an encoding is not "honest"), one hollow intensifier, and a
-  self-labeling line that told the reader which example mattered instead of letting it. Normalizes
-  seven en-GB spellings to match the repo's dominant en-US usage and the `LICENSE` file.
+- `d93dbfa` You can now query the whole dataset in your browser, with nothing to install.
+  - One link opens the published SQLite copy in Datasette Lite, which runs a full SQL environment in the browser. All 22 tables are browsable and the query box accepts anything SQLite understands.
+  - The endpoint docs include three ready-made queries, including the one that shows why a plain search for "aquatics" finds 61 camps when the real answer is 321.
+  - The first load pulls in the browser runtime and a 7.8 MB database, so give it a few seconds. Queries after that come back in a few milliseconds.
+- `811c28d` Edited every published page to read less like it was written by a machine.
+  - Removed 174 em dashes from running prose and rewrote each sentence around them, rather than swapping in a different dash.
+  - Also cut the negate-then-reframe habit ("this is not X, it is Y"), the phrases that announce their own importance, and stray bold.
+- `8f5e49c` Settled on American spellings throughout, and fixed a few phrases that described things as honest or genuine when a plain word was clearer.
 
 ## 0.55.0 (minor) — 2026-07-29
 
-- `ab9c500` **Overhaul `README.md` and split the reference material into `docs/`.** The README was
-  3,857 words (~17 min) and **71% reference**: "Datasets & status" and "Live API" alone were 2,740
-  words, with single table cells up to **1,891 characters** that render as an unreadable smear in
-  GitHub's ~750px column. It is now **1,409 words** (827 of prose), the largest cell anywhere is 156
-  characters, and it leads with what the data can answer rather than what it contains. New:
-  [`docs/endpoints.md`](./docs/endpoints.md) (endpoints, the projection contract, pinning, the
-  SQLite artifact), [`docs/datasets.md`](./docs/datasets.md) (one section per dataset, 17 callouts
-  for the caveats), [`docs/model.md`](./docs/model.md) (identity, effective-dated versions, events,
-  provenance, refs, plus a rendered lineage diagram). Nothing was deleted; it was relocated.
-- `ab9c500` **The first sentence was wrong.** It described camps, merit badges and requirements as
-  "(planned)". 448 camps, 268 badges, and 667 requirement sets have shipped for many releases. The
-  line every visitor reads undersold the project by three of its largest datasets.
-- `ab9c500` **Corrected a dozen stale counts across `README.md` and `TODO.md`**, each re-verified
-  against `dist/v1/meta.json` or the data rather than carried forward: councils 419→**420** and 190→
-  **191** historical, founding years 141→**157**, merger/absorption events 112→**116** (112 was the
-  Wikipedia-extracted subset), camp feature entries 6,373→**6,379**, signature features 147→**205**,
-  the aquatics recursive-CTE result 254→**321**, schema-pinned files 2,331→**2,473**, SQLite tables
-  →**22**, the `guide` tier mean 21→**25.1**, merit-badge tags "1-3"→**1-2**, the 2022 ranking
-  discrepancies four→**three**, Leather Work 1911→**1928**, and the jsDelivr pin example from a tag
-  40 versions old. Angling is a 1911 badge, not one of the 1910 originals.
-- `ab9c500` **Add `tools/check_links.py` and gate it in CI.** Validates every relative Markdown link
-  and `#anchor` across every tracked Markdown file using GitHub's own slug rules, and fails on
-  an image that is gitignored. This repo ignores `*.jpg`, so a JPEG screenshot would have silently
-  never committed. Nothing else in the repo reads Markdown, so a broken README link had no gate.
-- `ab9c500` **The SQLite artifact is now actually served at `v1/open-scout-api.sqlite`.** The Pages
-  job only ran `build.py`, so the documented URL 404'd and the artifact existed solely as a release
-  asset; the deploy job now builds it too. Also corrects `build_sqlite.py`'s summary, which reported
-  "20 tables" while the artifact holds 22, because it was counting only the tables it tracks rows for.
-- `ab9c500` **Fix a broken link in `PLAN.md`.** It pointed at `../camp-finder`, a local filesystem
-  path that resolves nowhere on GitHub, and printed a `D:\repos\...` path in a public document.
-- `7478904` **Force LF for shell scripts via `.gitattributes`.** `core.autocrlf` rewrote
-  `cookbook/shell/*.sh` to CRLF on checkout, so bash read `set -euo pipefail\r` as an option named
-  `pipefail`-CR and every recipe died at line 1. Invisible in CI, because `ubuntu-latest` checks out
-  LF regardless, so only a Windows contributor hit it. Landed after the 0.54.0 bump commit, so it is
-  recorded here rather than there.
+- `ab9c500` Rewrote the front page and moved the reference material onto its own pages, so the project now explains itself in a couple of minutes instead of seventeen.
+  - The README opens with the questions this data can answer, a picture of the live camp map, and an example you can paste into a terminal.
+  - Endpoint details, per-dataset notes, and an explanation of how the data records change over time each moved to their own page under `docs/`.
+  - Corrected about a dozen counts that had quietly drifted as the data grew, including the number of councils and the number of camp features.
+  - The opening sentence had described camps, merit badges, and requirements as planned. All three have been published for months.
+  - Added a link checker to the build, so a broken link or a wrong heading reference fails the build instead of shipping.
+  - The queryable SQLite copy is now served alongside the API. The docs had promised that for a while, but the publish step was only building the JSON.
+- `7478904` Fixed the shell examples for anyone working on Windows, where they failed on the first line.
 
 ## 0.54.0 (minor) — 2026-07-29
 
-- `07cd555` **Add `cookbook/`: CI-gated example code in five languages, plus three starter apps.**
-  42 gated recipes: 16 Python, 10 SQL (55 SQL invariants), 6 shell, 6 TypeScript, 4 C#. A recipe is
-  not "how to call fetch": each one kills a specific way this data misleads a consumer who assumes
-  it is a flat snapshot, and the gate rejects any file lacking a `TRAP:` line naming that wrong
-  answer. `tools/validate_cookbook.py` serves `dist/` over loopback HTTP, exports `OSA_BASE`, and
-  requires every recipe to exit 0 AND print output; `--strict` (used by CI) makes a skipped suite a
-  failure, so a vanished toolchain cannot mean green with zero coverage.
-- `07cd555` **Generated consumer types are now shipped and drift-gated.** `tools/gen_types.py` emits
-  `cookbook/ts/src/generated/v1.ts` and `cookbook/csharp/Generated/V1.cs` from the five
-  `published-*.schema.json` contracts, and `--check` fails the build on drift, so the README's
-  standing advice to generate types rather than hand-mirror them is enforced rather than offered.
-  The `kind` discrimination is emitted as a type, including the entity contract's `enum`-grouped
-  kinds that a `const`-only reader would have dropped.
-- `07cd555` **Fix `chippewa-valley`: a version window ran backwards (`1927..1925`).** The record's
-  own provenance note dates the rename to 1925 and its successor version starts 1925, so `1927` was
-  an `llm_extraction` error; `valid_from` is now `null` (the founding year is not recoverable from
-  that source). Under half-open `[from, to)` an inverted window is empty, so nothing was ever in
-  force in it, so "what was this council called in 1926?" silently answered nothing.
-- `07cd555` **Fix `merit-badges/reptiles`: a zero-width window (`1926..1926`) meant the badge never
-  existed at any instant.** Now `1926..1927`. Its `superseded` event names `reptile-study`, which
-  starts 1927, and its thirteen pre-1911 siblings all encode a one-year existence as `1910..1911`,
-  so the half-open end date was simply wrong. Found by the cookbook review after the new rule below
-  was deliberately scoped to exclude it.
-- `07cd555` **`validate_data.py` now rejects a backwards version window.** The existing rule only
-  related *adjacent* versions, so an inverted window inside a single version passed whenever its
-  `valid_to` still abutted the successor's `valid_from`, which is exactly how the above shipped.
-  Scoped to strictly backwards (`>`), not zero-width (`>=`): **seven** records remain legitimately
-  zero-width at year granularity, in two classes: the four 2010 `historic-*` badges (a centennial
-  revival offered during 2010 only, which a year-granularity half-open window cannot express) and
-  three unverified council founding years (`baltimore-area` 1911, `green-mountain` 1972, `quivira`
-  1928). Tightening to `>=` needs those three re-sourced; tracked in `TODO.md`.
-- `07cd555` **Deploy the browser starter with the API.** `build.py` copies
-  `cookbook/ts/starters/camp-map/` to `dist/starters/camp-map/` and the landing page links it as a
-  live demo: `exact` coordinates render as pins, `approximate` as dashed areas with a legend saying
-  why, co-located camps collapse to one reservation marker, the feature filter expands a coarse code
-  over its hierarchy, and the single camp with no coordinate is named rather than dropped.
+- `07cd555` Added a cookbook of runnable examples, so you can copy working code instead of working it out from the reference docs.
+  - 42 recipes across Python, TypeScript, C#, SQL, and shell, plus three small starter programs: a camp map, an advancement checker, and a council history walker.
+  - Each recipe fixes one specific way this data can mislead you. Searching camps for "aquatics" finds 61 of the 321 that offer it, because the feature codes are arranged in a hierarchy. Retired merit badges have no answer recorded for "is this Eagle-required", which reads as "no" unless you check. Badge popularity is published as rankings, so averaging it means nothing.
+  - Every recipe runs during our build checks against a fresh copy of the data, so an example that has quietly stopped being true fails the build rather than teaching you the wrong thing.
+  - TypeScript and C# type definitions are generated from the published schemas, so they cannot drift from what the API actually sends.
+  - Two dates in the data turned out to be wrong and are now fixed: one council's name history ran backwards, and one merit badge was recorded as existing for no time at all.
 
 ## 0.53.0 (minor) — 2026-07-27
 

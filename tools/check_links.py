@@ -67,7 +67,7 @@ def strip_fences(text: str) -> str:
 def strip_code(text: str) -> str:
     """Fence-stripped AND inline-code-stripped: what the LINK/IMAGE scan should see.
 
-    Prose that *discusses* link syntax must not be checked as a link -- LESSONS.md's own entry
+    Prose that *discusses* link syntax must not be checked as a link -- the local lessons file's own entry
     about an illustrative `[x](./nope)` failed the gate it was describing.
 
     Deliberately NOT used for headings: GitHub keeps the TEXT of a code span in the anchor, so

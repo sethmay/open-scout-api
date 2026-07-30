@@ -452,7 +452,7 @@ source (see the Meriwether evidence in PLAN §5.1).
   fetching; this only ages it), **provenance 24** (identity and coordinates are close to inert).
   - **Every clock reads zero today**, because the whole corpus was verified in the 0.33–0.35 waves.
     That is exactly why the tool also reports what a clock cannot see: 154 never surveyed, 2 with no
-    website, and the zero-use vocabulary count promised in `LESSONS.md`. A report that only aged
+    website, and the zero-use vocabulary count promised in the local lessons file. A report that only aged
     dates would have looked healthy and said nothing.
   - **First real find: 445 entities carried duplicated provenance sources** (535 redundant entries,
     16% of all 3,425), left by successive passes appending the same url — sometimes bare, sometimes

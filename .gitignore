@@ -8,8 +8,11 @@
 Thumbs.db
 .DS_Store
 
-# Proprietary source maps (Scouting America) — facts extracted, images NOT redistributed
+# Proprietary source maps (Scouting America). Facts extracted, images NOT redistributed.
+# The crops directory is listed separately and explicitly: `.workbench/` does not match
+# `.workbench_crops/`, and the crops are PNG, so they slipped past every rule here until 0.57.0.
 maps/
+.workbench_crops/
 *.jpg
 *.jpeg
 
@@ -32,3 +35,10 @@ dist/
 # slash, so git would match it at EVERY depth and permanently hide any such directory in the repo.
 cookbook/csharp/bin/
 cookbook/csharp/obj/
+
+# Kept locally, not published. Branding drafts (33 rejected logo/badge candidates plus one
+# in use nowhere) and the agent-facing process docs, which are written for whoever builds this
+# rather than for anyone reading it.
+.claude/icons/
+WORKFLOW.md
+LESSONS.md
