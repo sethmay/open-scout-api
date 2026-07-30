@@ -98,19 +98,45 @@ Full detail, sourcing, and caveats per dataset: [**`docs/datasets.md`**](./docs/
 
 ## Five ways this data will fool you
 
-Modeling change this way has a cost: the naive query often returns a *plausible wrong answer*
-rather than an error. Each of these has a runnable fix in the cookbook.
+Each of these returns a confident wrong answer instead of an error. Every one links to a recipe
+that fixes it.
 
-```js
-camps.filter(c => c.features.includes("aquatics"))  // 61 of 321; codes are hierarchical
-if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
-average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
-map.pin(camp.lat, camp.lon)                         // plots state centroids as real camps
-events.filter(e => e.type === "renamed")            // finds 1 council; 57 were renamed
-```
+**An exact match on a feature code finds 61 camps with water activities, out of 321 that have them.**
+`c.features.includes("aquatics")` under-counts because feature codes form a tree, and each camp
+carries the most specific codes that apply (`kayaking`, `fishing`, `canoeing`) without also
+carrying the parent. Expand a code to its descendants before you match:
+[`05-feature-hierarchy.py`](./cookbook/python/05-feature-hierarchy.py),
+[`01-feature-hierarchy.sql`](./cookbook/sql/01-feature-hierarchy.sql).
 
-Renames live in the version sequence and mergers live in events, which is why the last one finds
-only a single council. See [`docs/model.md`](./docs/model.md).
+**`eagle_required` has three states, and a falsy test collapses two of them.**
+`if (!badge.eagle_required)` reads 126 of the 268 badges as "not Eagle-required" when the value is
+`null`, which means nobody has researched that era. Only 18 badges are `true`, 124 are `false`,
+and all 126 nulls are retired badges. Compare against `false` when you mean confirmed:
+[`04-eagle-required.sql`](./cookbook/sql/04-eagle-required.sql),
+[`02-eagle-required.sh`](./cookbook/shell/02-eagle-required.sh).
+
+**`earned_rank` is a finishing position, so averaging it returns a number that means nothing.**
+Scouting America publishes the order badges were earned in and never the counts, so rank 5 is not
+twice as popular as rank 10, and the distance from 1 to 2 is not the distance from 40 to 41.
+Compare positions inside one year, or track how a badge moved between years:
+[`14-badge-trends.py`](./cookbook/python/14-badge-trends.py),
+[`05-badge-trend-deltas.sql`](./cookbook/sql/05-badge-trend-deltas.sql).
+
+**A quarter of camp coordinates are placeholders that plot exactly like surveyed ones.**
+`map.pin(camp.lat, camp.lon)` across all 448 camps drops 111 pins on a city or state centroid,
+which can sit many miles from the property. Read `geo_precision` first, `exact` on 336 camps and
+`approximate` on 111, then style or drop the approximate ones:
+[`08-geo-precision.py`](./cookbook/python/08-geo-precision.py),
+[`10-geo-precision-audit.sql`](./cookbook/sql/10-geo-precision-audit.sql).
+
+**Scanning `events` for renames finds 1 of the 58 councils that changed name.**
+`events.filter(e => e.type === "renamed")` matches a single council because a rename is a new
+entry in `versions[]`, with the old name still readable in the entry before it. The `events` array
+carries lifecycle changes between entities instead (175 mergers, 128 absorptions). No council
+records a rename both ways. Walk versions for names and events for lineage:
+[`03-lineage.py`](./cookbook/python/03-lineage.py),
+[`09-lineage-events.sql`](./cookbook/sql/09-lineage-events.sql). The model is described in
+[`docs/model.md`](./docs/model.md).
 
 ## Cookbook
 

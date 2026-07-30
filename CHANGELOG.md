@@ -3,6 +3,19 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.1 (patch) — 2026-07-29
+
+- `PENDING` Rewrote the README section that warns you about the five easiest ways to misread this
+  data, because a reader who knows databases well could not tell what it was warning about.
+  - Each warning now gives the wrong answer you get, the reason the data produces it, and what to
+    write instead. The old version was five code comments that only made sense if you already knew
+    the answer, and only one of the five had any explanation at all.
+  - Every warning links to the recipes that fix it, so you can go straight to working code instead
+    of searching the cookbook for the right one.
+  - Corrected a count while checking the text: 58 councils have changed name, not 57. The old
+    figure counted only the councils whose old name is visible in their version history and missed
+    the one whose rename is recorded as an event.
+
 ## 0.56.0 (minor) — 2026-07-29
 
 - `d93dbfa` You can now query the whole dataset in your browser, with nothing to install.
