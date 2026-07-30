@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.57.1 (patch) — 2026-07-29
 
-- `PENDING` Follow-up corrections from a review of 0.57.0.
+- `f232321` Follow-up corrections from a review of 0.57.0.
   - Four surviving councils still carried notes saying the predecessors added in 0.57.0 were not
     yet recorded. Updated each to point at the new record.
   - Added council number 573 to Yucca Council, taken from the same defunct-councils list already
