@@ -15,6 +15,14 @@ Version anchors: this file only (no package manifests yet; add here when one app
   - Corrected a count while checking the text: 58 councils have changed name, not 57. The old
     figure counted only the councils whose old name is visible in their version history and missed
     the one whose rename is recorded as an event.
+- `45c02b4` Made the same warnings agree across the three reference documents that repeat them.
+  - The cookbook guide said that mergers and renames are both recorded as events. Renames are
+    recorded as a new version instead, which is what the model reference and every recipe in the
+    cookbook already said.
+  - The rename figure now reads the same everywhere: 57 councils show the change in their version
+    history, one more records it as an event, and 58 have changed name in all.
+  - A heading in the model reference now states both rules directly, that mergers are events and
+    renames are version boundaries, and the link pointing at it was updated to match.
 
 ## 0.56.0 (minor) — 2026-07-29
 
