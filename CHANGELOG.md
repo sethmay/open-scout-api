@@ -3,6 +3,15 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.4 (patch) — 2026-07-29
+
+- `PENDING` Added a build check that catches one council's history being attached to another, the
+  error corrected in the last two releases.
+  - A council's rename history is unique to it, so no two councils can share the same first two
+    names. The build now fails if any two do, which is exactly the shape both recent errors took.
+  - The check runs against a real duplicate during testing to confirm it works, and would have
+    caught both earlier errors the day they were introduced.
+
 ## 0.56.3 (patch) — 2026-07-29
 
 - `51c0d4d` Fixed sixteen more councils that had the wrong history attached, the same problem found

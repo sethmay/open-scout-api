@@ -147,6 +147,27 @@ def main() -> int:
         if f"camp:{_mid}" in entities:
             errs.append(f"{_src}: merged_from id {_mid!r} is still a live camp (must be retired)")
 
+    # pass 1b: no two councils may share a leading name pair. A rename chain's first two names
+    # identify one lineage's origin, so two councils carrying the same opening pair is the
+    # signature of copied history -- the bug that put council #412's seven names on `conquistador`
+    # (0.56.2) and one shared chain on sixteen councils in five clusters (0.56.3), both from LLM
+    # lineage extraction attaching a predecessor chain to every council an article mentioned.
+    # Keyed on the FIRST TWO names, not one: single names legitimately recur across distinct
+    # councils (three separate "Kit Carson Council"s, for one), but no two real councils share
+    # their opening pair. If a genuine collision ever surfaces, allowlist it here by id.
+    leading: dict[tuple[str, str], list[str]] = {}
+    for p in sorted((DATA / "councils").glob("*.json")):
+        if p.name == "_events.json":
+            continue
+        names = [v.get("name") for v in json.loads(p.read_text("utf-8")).get("versions", []) if v.get("name")]
+        if len(names) >= 2:
+            leading.setdefault((names[0], names[1]), []).append(p.stem)
+    for (a, b), ids in sorted(leading.items()):
+        if len(ids) > 1:
+            errs.append(f"councils: {len(ids)} councils share the leading name chain {a!r} -> {b!r} "
+                        f"({', '.join(sorted(ids))}); a rename chain belongs to one lineage, so this "
+                        f"is copied history -- give each council its own past")
+
     # pass 2: referential integrity
     def check_ref(ref, src):
         if ref is not None and ref not in entities:

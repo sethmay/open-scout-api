@@ -200,9 +200,10 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   defunct-councils table run); the other members were rebuilt from their own number's rows plus the
   state Scouting article. Owners kept unchanged: `cape-fear` (#425), `los-padres` (#53),
   `inland-northwest` (#611), `greater-colorado` (#61), `katahdin-area` (#216). Rebuilt: the other
-  eleven. `tuscarora` (#424, founded 1923) and `marin` (#35, formed 1910) turned out to have no
-  rename history at all and are now single-version. A detection gate is still worth adding: group
-  councils by their first two version names and flag any group with more than one member.
+  rename history at all and are now single-version. A detection gate now guards against recurrence
+  (`validate_data.py` pass 1b): it flags any two councils that share their first two version names,
+  which is the signature of copied history. Verified non-vacuous. Had it existed, both this and the
+  `conquistador` bug would have failed the build the day they were introduced.
   - **Deferred absorptions surfaced while rebuilding, none yet recorded as events:** Tar Heel Area
     (#422, 1934), Pamlico (#686, 1930) and Neuse (#415, 1930) merged into `east-carolina`; Forty
     Niner (#052, 1997) into `greater-yosemite`; Mill Valley and Sausalito (1918) into `marin`. Same
