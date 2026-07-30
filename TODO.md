@@ -203,10 +203,10 @@ header line, assert invariants rather than record counts, and exit nonzero when 
   defunct-councils table run); the other members were rebuilt from their own number's rows plus the
   state Scouting article. Owners kept unchanged: `cape-fear` (#425), `los-padres` (#53),
   `inland-northwest` (#611), `greater-colorado` (#61), `katahdin-area` (#216). Rebuilt: the other
+  eleven. `tuscarora` (#424, founded 1923) and `marin` (#35, formed 1910) turned out to have no
   rename history at all and are now single-version. A detection gate now guards against recurrence
-  (`validate_data.py` pass 1b): it flags any two councils that share their first two version names,
-  which is the signature of copied history. Verified non-vacuous. Had it existed, both this and the
-  `conquistador` bug would have failed the build the day they were introduced.
+  (`validate_data.py` pass 1b): it flags any two councils that share their first two version names.
+  Verified non-vacuous. It would have failed the build the day these five clusters were introduced.
   - **Deferred absorptions surfaced while rebuilding, none yet recorded as events:** Tar Heel Area
     (#422, 1934), Pamlico (#686, 1930) and Neuse (#415, 1930) merged into `east-carolina`; Forty
     Niner (#052, 1997) into `greater-yosemite`; Mill Valley and Sausalito (1918) into `marin`. Same
@@ -214,6 +214,11 @@ header line, assert invariants rather than record counts, and exit nonzero when 
     correct, but the predecessor entity and the `merged`/`absorbed` event are missing.
   - **One number change is recorded:** `daniel-boone` began as Asheville Council #418 (1919) and
     became #414 as Buncombe County Council in 1922. The other ten hold one number throughout.
+  - **Open: the gate does not catch a single-holder copy.** A chain copied onto ONE council with
+    the rightful owner left single-version collides with nothing, so pass 1b is blind to it. That
+    was the `conquistador` shape (0.56.2), not the sixteen-council shape. Closing it needs a
+    different check, such as cross-referencing each council's first recorded name or number against
+    the defunct-councils owner for that number rather than against sibling councils.
 - **`features_source_tier: portal` has zero rows**, so `cookbook/sql/02` and `python/07` assert
   tier-vocabulary closure and the tier↔date coupling instead of a mean ordering or a `portal` row.
   Two of the four `features` states are likewise empty (`date + []` and `null + entries`), so

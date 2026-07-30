@@ -353,7 +353,7 @@ def build(emitter_cls: type[Emitter]) -> tuple[Emitter, dict[str, dict[str, str]
             # `allOf`, an `array`, and a bare `object` with no properties. None exists in
             # schema/v1/ today; model it in note_scalar/type_of before adding one to a schema.
             raise SystemExit(
-                f"gen_types: $def {def_name!r} has an unmodelled shape (type={sub.get('type')!r}, "
+                f"gen_types: $def {def_name!r} has an unmodelled shape (type={t!r}, "
                 f"keys={sorted(k for k in sub if k not in ('title', 'description'))}); a $ref to it "
                 f"would emit an undeclared type name -- model it in build()/type_of first"
             )

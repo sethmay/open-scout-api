@@ -3,6 +3,14 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.56.6 (patch) — 2026-07-29
+
+- `PENDING` Corrected the previous release note for the new build check, which overstated what it
+  catches.
+  - The check catches the 0.56.3 error, where several councils were given the same copied history.
+    It does not catch a history copied onto a single council, which was the separate error fixed in
+    0.56.2. The 0.56.4 note now describes only what the check actually does.
+
 ## 0.56.5 (patch) — 2026-07-29
 
 - `a46bf02` Hardened the TypeScript and C# type generator so it refuses a schema shape it cannot
@@ -16,12 +24,10 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.4 (patch) — 2026-07-29
 
-- `d522d63` Added a build check that catches one council's history being attached to another, the
-  error corrected in the last two releases.
-  - A council's rename history is unique to it, so no two councils can share the same first two
-    names. The build now fails if any two do, which is exactly the shape both recent errors took.
-  - The check runs against a real duplicate during testing to confirm it works, and would have
-    caught both earlier errors the day they were introduced.
+- `d522d63` Added a build check for the error corrected in 0.56.3, where several councils were
+  given the same early names because one council's history had been copied onto them.
+  - A rename history is unique to a council, so no two councils can share the same first two
+    names. The build now fails if any do, and would have failed the day that error was introduced.
 
 ## 0.56.3 (patch) — 2026-07-29
 
