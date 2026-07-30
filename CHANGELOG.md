@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.57.0 (minor) — 2026-07-29
 
-- `PENDING` Recorded eight councils that had merged into ones already in the data, so the
+- `2f658d9` Recorded eight councils that had merged into ones already in the data, so the
   histories now connect on both sides.
   - Each is a historical council that no longer operates: Yucca, Carlsbad, Forty Niner, Tar Heel
     Area, Pamlico, Neuse, Mill Valley, and Sausalito. They join as retired records, and a new
