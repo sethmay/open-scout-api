@@ -89,7 +89,7 @@ about a date, and any code that answers it without one is guessing.
 > instant, treating null bounds as open-ended. Recipe:
 > [`02-as-of.py`](../cookbook/python/02-as-of.py).
 
-## 3. Change is an explicit event, but renames are not
+## 3. Mergers are events, renames are version boundaries
 
 Mergers, splits, absorptions, reorganizations, introductions, and retirements are first-class
 records in the dataset's `_events.json`, linking predecessor and successor entities rather than
@@ -107,7 +107,8 @@ Renames are the exception:
 > Grepping `_events.json` for `type == "renamed"` finds almost nothing, so the dataset looks like
 > it has no rename history. Verified against `data/councils/`: **57 of 420 councils were renamed**
 > (more than one distinct `name` across their versions), while **exactly 1 council carries a
-> `renamed` event**. A council rename *is* the `name` field changing between consecutive versions.
+> `renamed` event**, and it is a different council from those 57, so **58 councils have changed
+> name in all**. A council rename *is* the `name` field changing between consecutive versions.
 > Diff `name` across versions ordered by `valid_from`; never rely on an event to tell you.
 
 The split is deliberate. A rename keeps the identity, so it is expressible as a version boundary
@@ -284,8 +285,9 @@ Recipe: [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py).
 
 1. **Never read `versions[0]` as the current record.** Select by window, or by
    `valid_to is None`. → [`02-as-of.py`](../cookbook/python/02-as-of.py)
-2. **Never look for renames in `events`.** 57 councils renamed; 1 `renamed` event. Diff `name`
-   across consecutive versions. → [`03-lineage.py`](../cookbook/python/03-lineage.py)
+2. **Diff `name` across consecutive versions to find renames.** 57 councils show a rename there
+   and exactly 1 carries a `renamed` event, so `events` alone finds 1 of 58. →
+   [`03-lineage.py`](../cookbook/python/03-lineage.py)
 3. **A missing id is not a dead id.** An id absent from `current/` may have merged. Walk
    `predecessor → successor|continuing` and forward the reference instead of dropping it. →
    [`03-lineage.py`](../cookbook/python/03-lineage.py)

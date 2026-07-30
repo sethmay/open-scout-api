@@ -19,19 +19,15 @@ OSA_BASE=http://127.0.0.1:8000 python cookbook/python/05-feature-hierarchy.py
 ## These recipes are not "how to call fetch"
 
 This dataset models **change and uncertainty** as first-class data: identity is permanent and
-separate from state, mergers and renames are events, and every fact carries provenance and a
-confidence score. That design is the reason the data is worth having, and it is also why a
-consumer who assumes a flat snapshot gets a **plausible wrong answer** rather than an error:
+separate from state, mergers are events while renames are version boundaries, and every fact
+carries provenance and a confidence score. That design is the reason the data is worth having, and
+it is also why a consumer who assumes a flat snapshot gets a **plausible wrong answer** rather than
+an error. An exact match on `aquatics` finds 61 of the 321 camps that offer water activities. A
+falsy test on `eagle_required` reads 126 unresearched badges as "not Eagle-required". Averaging
+`earned_rank` produces a number with no meaning. The five costliest of these are worked through in
+[the project README](../README.md#five-ways-this-data-will-fool-you).
 
-```js
-camps.filter(c => c.features.includes("aquatics"))  // 61 of 321; codes are hierarchical
-if (!badge.eagle_required) { /* not required */ }   // historical badges are null = UNKNOWN
-average(ranks)                                      // earned_rank is ORDINAL. Meaningless.
-council.versions[0].name                            // not necessarily the current name
-events.filter(e => e.type === "renamed")            // finds 1 council; 57 renamed
-```
-
-Each recipe kills exactly one of those. Every file states the trap it prevents in a `TRAP:`
+Each recipe kills exactly one trap. Every file states the one it prevents in a `TRAP:`
 line in its header, and the gate rejects any file that lacks one.
 
 ## Recipes by trap
@@ -40,7 +36,7 @@ line in its header, and the gate rejects any file that lacks one.
 |---|---|
 | `python/01-resolve-endpoints.py` | Hardcoding the provisional host, and discovering endpoints by 404 |
 | `python/02-as-of.py` | Reading `versions[0]` as the current state |
-| `python/03-lineage.py` | Looking for renames in `events`; only 1 council has one, yet 57 were renamed. Mergers *are* events |
+| `python/03-lineage.py` | Looking for renames in `events`, which finds 1 of the 58 councils that changed name. Mergers *are* events |
 | `python/04-camp-aliases.py` | A stored camp id silently 404s after duplicate listings merged |
 | `python/05-feature-hierarchy.py` | Filtering on `aquatics` misses every kayaking-only camp |
 | `python/06-feature-tristate.py` | Empty `features` read as "has none" instead of "never surveyed" |

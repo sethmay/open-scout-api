@@ -50,9 +50,10 @@ Wikipedia article, confidence 0.5–0.8 with most at 0.7–0.8. The merger and a
 `llm_extraction` at 0.75–0.8.
 
 > [!NOTE]
-> A rename is **not** an event here. It is a new version. Only mergers, absorptions, and
-> dissolutions are events, because those involve a second party. See
-> [change is an explicit event, but renames are not](./model.md#3-change-is-an-explicit-event-but-renames-are-not).
+> A council rename is a new version. Events are reserved for changes that involve a second party:
+> mergers, absorptions, and dissolutions. Exactly one council breaks the pattern and carries its
+> rename as an event, which is why scanning events finds 1 of the 58 councils that changed name.
+> See [mergers are events, renames are version boundaries](./model.md#3-mergers-are-events-renames-are-version-boundaries).
 
 Endpoints: `v1/current/councils.json`, `v1/councils/index.json`, `v1/councils/{id}.json`. See the
 [endpoint reference](./endpoints.md#endpoint-reference).
