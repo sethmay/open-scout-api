@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.2 (patch) — 2026-07-29
 
-- `PENDING` Corrected Conquistador Council's history, which had another council's past attached to
+- `727b5a9` Corrected Conquistador Council's history, which had another council's past attached to
   it.
   - Conquistador Council in Roswell was recorded as having been named Albuquerque Council, Bemalillo
     County Council, Rio Grande Area Council, Northern New Mexico Council, Kit Carson Council, and
