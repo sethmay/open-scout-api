@@ -132,7 +132,7 @@ rejected.
 
 ## Queue
 
-### Cookbook — SHIPPED; four follow-ups
+### Cookbook — SHIPPED; five follow-ups
 
 `cookbook/` is 42 CI-gated recipes across Python/SQL/shell/TypeScript/C# plus three starter apps,
 gated by `python tools/validate_cookbook.py` (`--strict` in CI). Conventions and the recipe→trap
@@ -325,9 +325,14 @@ by the pipeline (as the Pipsico fix was).
 
 ### Camp program features — implementation + population plan
 
-Design: [`PLAN.md`](./PLAN.md) §5.1. Status: **design only, nothing implemented.** `features[]` is
-populated on 8 of 448 camps and published in no projection. The schema reshape is free until `v1`
-freezes at 1.0; population is the long pole.
+Design: [`PLAN.md`](./PLAN.md) §5.1. Status: **Phases 0 through 4 are DONE (0.29.0 through 0.35.0),
+Phase 5's machinery shipped in 0.36.0 with its queue ongoing, and 0.53.0 swept the corpus for
+accuracy.** 366 of 448 camps are surveyed, which is 95% of the 384 non-day-camps, carrying 6,379
+feature entries that use 124 of the 128 vocabulary terms. `features`, `features_signature`, and
+`features_verified_at` publish in `current/camps.json` and the SQLite artifact exposes them as the
+`camp_features` and `feature_vocab` tables. What remains is the ongoing Phase 5 maintenance queue
+and the accuracy findings, both tracked in their own sections below. The schema reshape was free
+before `v1` froze; that window closes at 1.0.
 
 **Source reality (measured 2026-07-25).** Of 448 camps: 292 have a durable camp/council page, 146
 point at a scoutingevent/247 registration portal, 10 are year-stamped — and **159 publish
