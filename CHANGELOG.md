@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.56.5 (patch) — 2026-07-29
 
-- `PENDING` Hardened the TypeScript and C# type generator so it refuses a schema shape it cannot
+- `a46bf02` Hardened the TypeScript and C# type generator so it refuses a schema shape it cannot
   represent instead of emitting code that will not compile.
   - The generator turns the published schemas into typed definitions. A few shapes it did not
     handle would have produced a broken or missing type without any warning. It now stops with a
