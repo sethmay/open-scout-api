@@ -239,6 +239,20 @@ Each survey also carries `features_source_tier`, a completeness qualifier in the
 Rank and trust completeness by it: a `portal` list is a floor, not a description. `portal` is defined
 by the schema and reserved; no camp carries it as of v0.54.0.
 
+### `operating_status`: current is not the same as operating
+
+`current/camps.json` lists every camp with an open version, which is a different question from
+whether it runs a program today. `operating_status` answers the second:
+
+| Value | Meaning | Camps (v0.58.0) |
+|---|---|---|
+| `active` | property exists and runs a program | 445 |
+| `not_operating` | property exists, no program | 2 |
+| `closed` | property gone or sold | 1 |
+
+Reading `current/camps.json` wholesale as "active camps" lists all 448, including the 3 a Scout
+cannot attend this year. Filter on `operating_status == "active"` when you mean operating.
+
 ### `reservation.id` is an opaque grouping key
 
 41 co-located distinct camps carry a `reservation` object so consumers can render one pin per

@@ -50,6 +50,6 @@
       }
     }
   },
-  "required": ["id", "kind", "title", "applies_to", "terms"],
+  "required": ["$schema", "id", "kind", "title", "applies_to", "terms"],
   "additionalProperties": false
 }

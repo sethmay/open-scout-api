@@ -677,10 +677,7 @@
           "format": "date"
         },
         "imported_at": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "format": "date"
         },
         "method": {

@@ -82,7 +82,7 @@ export interface CurrentCamp {
   readonly url: string | null;
   readonly operating_status: "active" | "not_operating" | "closed";
   readonly verified_at: string;
-  readonly imported_at: string | null;
+  readonly imported_at: string;
   readonly method: string;
   readonly confidence: number;
 }

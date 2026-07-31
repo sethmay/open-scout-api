@@ -109,7 +109,7 @@
             }
           ],
           "default": null,
-          "description": "The requirement area this adventure fills for its rank: see data/vocab/adventure-areas.json. Every rank's six required adventures fill the six areas exactly once each, which is what makes 'what does this Scout still need' a group-by rather than a list diff. **null for electives** — an elective fills no area. Pipeline-enforced: non-null exactly when category is 'required', and complete per rank."
+          "description": "The requirement area this adventure fills for its rank: see data/vocab/adventure-areas.json. Every rank's six required adventures fill the six areas exactly once each, which is what makes 'what does this Scout still need' a group-by rather than a list diff. **null for electives** — an elective fills no area. Schema-enforced for OPEN windows (valid_to: null): non-null exactly when category is 'required'. Closed windows are exempt, since the six areas are a 2024-program construct and the pre-2024 line-up had required adventures filling no area. Per-rank completeness stays a pipeline rule."
         },
         "url": {
           "type": [

@@ -860,13 +860,16 @@ checkpoints so an interrupted run resumes. Re-run politely or you will libel a c
 - **Pipeline validator (remaining rules).** `tools/validate_data.py` covers schema + refs +
   half-open windows + retired-entity + unique event ids + `includes_official_text` ⇔ text +
   choose-needs-children + camp `operator`↔`council` coupling + coordinate bounds + vocab codes.
-  Still TODO when relevant data lands: event-date ↔ version-boundary consistency;
-  `HistoricalDate` month/day range; `StateCode` closed USPS set.
-- **Published-projection schemas — DONE (0.28.0).** `build.py` now fail-fast-validates *every*
-  published projection: all 8 `current/*.json` against `published-current.schema.json` (adding
-  `CurrentRequirementSet`, previously the one unpinned surface) and all 8 `{dataset}/index.json`
-  against the new `published-index.schema.json`. Each emitted file advertises its contract in
-  `$schema`. See the v1.0 readiness section above.
+  Still TODO when relevant data lands: event-date ↔ version-boundary consistency; `StateCode`
+  closed USPS set (declined 2026-07-31; the pattern was kept over an enum). `HistoricalDate`
+  month/day range shipped in 0.58.0.
+- **Published-projection schemas — DONE (0.28.0); training surfaces pinned + gated (0.58.0).**
+  `build.py` fail-fast-validates every published projection: 11 `current/*.json` against
+  `published-current.schema.json` and 13 `{dataset}/index.json` against
+  `published-index.schema.json`. `training` and `training-requirement` were enum-listed but
+  unbranched, validated in name only, until 0.58.0, which added their item defs and `allOf`
+  branches plus a build gate that fails if any published-enum kind lacks a branch pinning its
+  item shape to a closed `$def`. Each emitted file advertises its contract in `$schema`.
 - **Requirement-text licensing — DECIDED (0.5.0).** Verbatim requirement text IS published,
   marked © Scouting America (`includes_official_text: true` + `text_rights`), excluded from
   CC BY-NC-SA, reproduced non-commercially with attribution + takedown. Revisit if SA

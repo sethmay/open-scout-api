@@ -3,7 +3,21 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
-## 0.58.0 (minor) — 2026-07-29
+## 0.58.1 (patch) — 2026-07-31
+
+- `PENDING` Follow-up corrections from a review of 0.58.0, before it shipped.
+  - Kept imported_at present on every current camp rather than allowing null. A camp has always
+    been imported, and the staleness examples read the field directly, so the build now fails
+    with a clear message if a camp ever lacks it instead of publishing a null that breaks them.
+  - The new build check now also confirms each listing kind actually pins its item shape, not
+    just that a branch for it exists, so it cannot be hollowed out later.
+  - Documented operating_status in the endpoint and dataset references, next to the other camp
+    completeness qualifiers.
+  - Smaller consistency fixes: the vocabulary file now also declares its schema, a rejection test
+    was restored to its single intended defect, and two field descriptions and two roadmap notes
+    were corrected.
+
+## 0.58.0 (minor) — 2026-07-31
 
 - `23e82e5` Added a camp field and closed several gaps a schema review found.
   - current/camps.json now includes operating_status (active, not_operating, or closed). A camp
@@ -16,6 +30,9 @@ Version anchors: this file only (no package manifests yet; add here when one app
     just enforced by our build: a camp survey date requires its source tier, a required Cub
     adventure fills exactly one area, a "choose N" requirement must list its options, dates must
     be real calendar dates, and every record declares which schema it follows.
+  - Dropped training-requirement from the current-projection kind list, since no current file is
+    published for it (its index listing is unaffected). A consumer regenerating types sees that
+    kind leave the current union.
 
 ## 0.57.1 (patch) — 2026-07-29
 

@@ -121,7 +121,7 @@
           "type": ["integer", "null"],
           "minimum": 1,
           "default": null,
-          "description": "Complete this many of 'children'; null = all. Meaningful only with children (pipeline rule)."
+          "description": "Complete this many of 'children'; null = all. Schema-enforced: a non-null choose requires a non-empty children."
         },
         "ref": {
           "$ref": "common.schema.json#/$defs/EntityRef",

@@ -224,7 +224,7 @@ public sealed record CurrentCamp
     public required string VerifiedAt { get; init; }
 
     [JsonPropertyName("imported_at")]
-    public required string? ImportedAt { get; init; }
+    public required string ImportedAt { get; init; }
 
     [JsonPropertyName("method")]
     public required string Method { get; init; }

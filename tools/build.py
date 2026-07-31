@@ -118,20 +118,31 @@ def main() -> None:
     # 0.58.0. A missing branch is caught here at build time, not by a consumer hitting a bad item.
     for _label, _sch in (("published-current", pub), ("published-index", pubidx)):
         _enum = set(_sch["properties"]["kind"]["enum"])
+        _defs = _sch.get("$defs", {})
         _branched: dict[str, int] = {}
+        _hollow: list[str] = []
         for _b in _sch.get("allOf", []):
             _k = (((_b.get("if") or {}).get("properties") or {}).get("kind") or {}).get("const")
-            if _k is not None:
-                _branched[_k] = _branched.get(_k, 0) + 1
+            if _k is None:
+                continue
+            _branched[_k] = _branched.get(_k, 0) + 1
+            # existence is not enough: the branch's `then` must actually pin the item shape
+            # (then -> items -> items -> $ref) to a closed $def, or a hollowed-out branch would
+            # pass this gate while the surface still validated any object.
+            _ref = ((((_b.get("then") or {}).get("properties") or {}).get("items") or {})
+                    .get("items") or {}).get("$ref")
+            _dn = _ref.rsplit("/", 1)[-1] if _ref else None
+            if not _dn or _dn not in _defs or _defs[_dn].get("additionalProperties") is not False:
+                _hollow.append(_k)
         _missing = sorted(_enum - _branched.keys())
         _dupes = sorted(k for k, n in _branched.items() if n > 1)
         _orphan = sorted(_branched.keys() - _enum)
-        if _missing or _dupes or _orphan:
+        if _missing or _dupes or _orphan or _hollow:
             raise SystemExit(
-                f"{_label}.schema.json: every kind needs exactly one allOf item branch. "
-                f"enum kinds with no branch: {_missing or 'none'}; "
-                f"kinds with more than one branch: {_dupes or 'none'}; "
-                f"branch for a non-enum kind: {_orphan or 'none'}")
+                f"{_label}.schema.json: every kind needs exactly one allOf branch that pins "
+                f"items.items.$ref to a closed (additionalProperties:false) $def. "
+                f"no branch: {_missing or 'none'}; more than one: {_dupes or 'none'}; "
+                f"non-enum kind: {_orphan or 'none'}; branch does not constrain items: {_hollow or 'none'}")
     entity_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-entity.schema.json"),
                                             format_checker=Draft202012Validator.FORMAT_CHECKER)
     meta_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-meta.schema.json"),
@@ -274,6 +285,10 @@ def main() -> None:
         if ov is not None:
             _cslug = ov["council"].split(":", 1)[1] if ov.get("council") else None
             _cm = council_meta.get(_cslug) if _cslug else None
+            if ov["provenance"].get("imported_at") is None:
+                errs.append(f"camps/{e['id']}.json: current version has no provenance.imported_at; "
+                            f"the current projection requires it and the cookbook staleness recipes "
+                            f"read it unguarded")
             current_camps.append({"id": e["id"], "name": ov["name"], "camp_type": ov["camp_type"],
                                   "operator": ov["operator"], "operating_status": ov["operating_status"],
                                   "council": ov.get("council"),

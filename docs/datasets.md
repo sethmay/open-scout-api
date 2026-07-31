@@ -92,6 +92,9 @@ evergreen prose. This is the dataset most people arrive for.
 - `camp_type`: **349 resident, 64 day, 35 high-adventure.**
 - `operator`: **444 council, 4 national** (Philmont Scout Ranch, Florida Sea Base, Northern Tier,
   and James C. Justice National Scout Camp at the Summit).
+- `operating_status`: **445 active, 2 not_operating, 1 closed.** Current (has an open version) is
+  not the same as operating, so filter on `active` for camps that actually run a program. See
+  [the projection contract](./endpoints.md#operating_status-current-is-not-the-same-as-operating).
 - **50 retired ids** resolve to the surviving camp through
   [`v1/camps/aliases.json`](https://sethmay.github.io/open-scout-api/v1/camps/aliases.json).
   Duplicate and session-variant listings were merged into their base camp, and scraped-artifact
