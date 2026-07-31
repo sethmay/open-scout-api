@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.58.0 (minor) — 2026-07-29
 
-- `PENDING` Added a camp field and closed several gaps a schema review found.
+- `23e82e5` Added a camp field and closed several gaps a schema review found.
   - current/camps.json now includes operating_status (active, not_operating, or closed). A camp
     can be current but run no program, so this tells an operating camp from a dormant one, which
     the current flag alone cannot.
