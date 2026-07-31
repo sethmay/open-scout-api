@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.58.1 (patch) — 2026-07-31
 
-- `PENDING` Follow-up corrections from a review of 0.58.0, before it shipped.
+- `3e44e4d` Follow-up corrections from a review of 0.58.0, before it shipped.
   - Kept imported_at present on every current camp rather than allowing null. A camp has always
     been imported, and the staleness examples read the field directly, so the build now fails
     with a clear message if a camp ever lacks it instead of publishing a null that breaks them.
