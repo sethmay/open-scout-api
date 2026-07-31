@@ -281,6 +281,48 @@
           }
         }
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "training"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/$defs/TrainingIndexItem"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "training-requirement"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/$defs/TrainingRequirementIndexItem"
+            }
+          }
+        }
+      }
     }
   ],
   "$defs": {
@@ -674,6 +716,73 @@
         "name",
         "audience",
         "current"
+      ],
+      "additionalProperties": false
+    },
+    "TrainingIndexItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Slug"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "code",
+        "current"
+      ],
+      "additionalProperties": false
+    },
+    "TrainingRequirementIndexItem": {
+      "type": "object",
+      "description": "One row of the TRAINED LEADER REQUIREMENTS chart, keyed by (position, unit_type). `registration_codes` is the join key a consumer holds from my.scouting; the position name is not stable enough to match on.",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/Slug"
+        },
+        "position_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "registration_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9A-Z]{2,4}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "unit_type": {
+          "enum": [
+            "pack",
+            "troop",
+            "team",
+            "crew",
+            "ship",
+            "other"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "position_name",
+        "registration_codes",
+        "unit_type"
       ],
       "additionalProperties": false
     }

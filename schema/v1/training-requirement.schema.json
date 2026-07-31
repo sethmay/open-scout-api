@@ -42,7 +42,7 @@
     "provenance": { "$ref": "common.schema.json#/$defs/Provenance" },
     "notes": { "type": ["string", "null"], "default": null }
   },
-  "required": ["id", "kind", "position_name", "registration_codes", "unit_type", "requires", "provenance"],
+  "required": ["$schema", "id", "kind", "position_name", "registration_codes", "unit_type", "requires", "provenance"],
   "additionalProperties": false,
   "$defs": {
     "RequiredCourse": {

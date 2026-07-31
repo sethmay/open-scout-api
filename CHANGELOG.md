@@ -3,6 +3,20 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.58.0 (minor) — 2026-07-29
+
+- `PENDING` Added a camp field and closed several gaps a schema review found.
+  - current/camps.json now includes operating_status (active, not_operating, or closed). A camp
+    can be current but run no program, so this tells an operating camp from a dormant one, which
+    the current flag alone cannot.
+  - The three adult-training listings were being published without their item shape actually
+    being checked. Their schemas now describe them fully, and a build check refuses any published
+    listing whose kind has no matching shape, so the gap cannot reopen.
+  - More of the rules the data already follows are now written into the schemas themselves, not
+    just enforced by our build: a camp survey date requires its source tier, a required Cub
+    adventure fills exactly one area, a "choose N" requirement must list its options, dates must
+    be real calendar dates, and every record declares which schema it follows.
+
 ## 0.57.1 (patch) — 2026-07-29
 
 - `f232321` Follow-up corrections from a review of 0.57.0.

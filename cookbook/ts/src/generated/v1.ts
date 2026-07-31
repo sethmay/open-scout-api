@@ -80,8 +80,9 @@ export interface CurrentCamp {
   readonly council_website: string | null;
   readonly council_number: number | null;
   readonly url: string | null;
+  readonly operating_status: "active" | "not_operating" | "closed";
   readonly verified_at: string;
-  readonly imported_at: string;
+  readonly imported_at: string | null;
   readonly method: string;
   readonly confidence: number;
 }
@@ -161,12 +162,24 @@ export interface CurrentPosition {
   readonly confidence: number;
 }
 
+/** An adult training course currently offered. `code` is Scouting America's printed course code (Y01, S11, WS10), the stable key; the course name is not. `delivery` and `renew_months` come from the TRAINED LEADER REQUIREMENTS chart. */
+export interface CurrentTraining {
+  readonly id: string;
+  readonly name: string;
+  readonly code: string | null;
+  readonly delivery: "classroom" | "online" | "both" | "unknown";
+  readonly renew_months: number | null;
+  readonly verified_at: string;
+  readonly method: string;
+  readonly confidence: number;
+}
+
 /** Root schema for the denormalized, current-only consumer projections emitted by tools/build.py to v1/current/*.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges, requirement-sets). NOT the canonical layer — flattened, current-only (entities with an open valid_to:null version… */
 export interface CurrentCollection {
   readonly $schema?: string;
   readonly version: string;
   readonly generated_at: string;
-  readonly kind: "council" | "territory" | "merit-badge" | "camp" | "rank" | "award" | "oa-lodge" | "requirement-set" | "adventure" | "position" | "training" | "training-requirement";
+  readonly kind: "council" | "territory" | "merit-badge" | "camp" | "rank" | "award" | "oa-lodge" | "requirement-set" | "adventure" | "position" | "training";
   readonly count: number;
   readonly items: readonly (Readonly<Record<string, unknown>>)[];
 }
@@ -267,6 +280,21 @@ export interface PositionIndexItem {
   readonly name: string;
   readonly audience: "youth" | "adult" | "both";
   readonly current: boolean;
+}
+
+export interface TrainingIndexItem {
+  readonly id: Slug;
+  readonly name: string;
+  readonly code: string | null;
+  readonly current: boolean;
+}
+
+/** One row of the TRAINED LEADER REQUIREMENTS chart, keyed by (position, unit_type). `registration_codes` is the join key a consumer holds from my.scouting; the position name is not stable enough to match on. */
+export interface TrainingRequirementIndexItem {
+  readonly id: Slug;
+  readonly position_name: string;
+  readonly registration_codes: readonly string[];
+  readonly unit_type: "pack" | "troop" | "team" | "crew" | "ship" | "other";
 }
 
 /** Root schema for the lightweight listing projections emitted by tools/build.py to v1/{dataset}/index.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges, requirement-sets). One entry per entity INCLUDING retired/defunct ones — a `current` boolean says whether the entity has an… */
@@ -415,6 +443,7 @@ export interface CurrentByKind {
   readonly "rank": CurrentRank;
   readonly "requirement-set": CurrentRequirementSet;
   readonly "territory": CurrentTerritory;
+  readonly "training": CurrentTraining;
 }
 
 /** Item shape selected by the envelope `kind` of a IndexCollection. */
@@ -430,6 +459,8 @@ export interface IndexByKind {
   readonly "rank": RankIndexItem;
   readonly "requirement-set": RequirementSetIndexItem;
   readonly "territory": TerritoryIndexItem;
+  readonly "training": TrainingIndexItem;
+  readonly "training-requirement": TrainingRequirementIndexItem;
 }
 
 /** Item shape selected by the envelope `kind` of a EntityDocument. */

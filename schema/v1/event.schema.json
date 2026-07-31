@@ -11,6 +11,6 @@
       "items": { "$ref": "common.schema.json#/$defs/Event" }
     }
   },
-  "required": ["events"],
+  "required": ["$schema", "events"],
   "additionalProperties": false
 }

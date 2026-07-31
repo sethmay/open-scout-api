@@ -19,11 +19,33 @@
       "default": null
     }
   },
-  "required": ["id", "kind", "versions"],
+  "required": ["$schema", "id", "kind", "versions"],
   "additionalProperties": false,
   "$defs": {
     "CampVersion": {
-      "allOf": [{ "$ref": "common.schema.json#/$defs/VersionBase" }],
+      "allOf": [
+        { "$ref": "common.schema.json#/$defs/VersionBase" },
+        {
+          "if": {
+            "properties": { "features_verified_at": { "type": "string" } },
+            "required": ["features_verified_at"]
+          },
+          "then": {
+            "properties": { "features_source_tier": { "type": "string" } },
+            "required": ["features_source_tier"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "features_source_tier": { "type": "string" } },
+            "required": ["features_source_tier"]
+          },
+          "then": {
+            "properties": { "features_verified_at": { "type": "string" } },
+            "required": ["features_verified_at"]
+          }
+        }
+      ],
       "type": "object",
       "properties": {
         "name": {
@@ -164,6 +186,7 @@
           "type": "array",
           "items": { "$ref": "common.schema.json#/$defs/Slug" },
           "uniqueItems": true,
+          "default": [],
           "description": "Retired camp ids that resolve to this camp: program/session variants of the same physical property collapsed in, or a prior id this camp was renamed from. Any unioned programs/features live here; consumers resolve old ids via v1/camps/aliases.json."
         },
         "reservation": {

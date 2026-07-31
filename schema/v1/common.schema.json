@@ -14,7 +14,7 @@
     },
     "EntityRef": {
       "title": "EntityRef",
-      "description": "Cross-dataset reference: '{kind}:{slug}'. Known kinds: council, territory, camp, merit-badge, requirement-set; future kinds (rank, award, oa-lodge) use the same shape. Referential integrity is a pipeline rule, not a schema rule.",
+      "description": "Cross-dataset reference: '{kind}:{slug}'. Kinds: council, territory, camp, merit-badge, requirement-set, rank, award, oa-lodge, adventure, position, training, training-requirement. Referential integrity is a pipeline rule, not a schema rule.",
       "type": "string",
       "pattern": "^[a-z]([a-z-]*[a-z])?:[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
     },
@@ -22,7 +22,7 @@
       "title": "HistoricalDate",
       "description": "ISO 8601 date at reduced precision: 'YYYY', 'YYYY-MM', or 'YYYY-MM-DD'. Real history is often only known to the year.",
       "type": "string",
-      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+      "pattern": "^[0-9]{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12][0-9]|3[01]))?)?$"
     },
     "StateCode": {
       "title": "StateCode",
@@ -154,7 +154,7 @@
     },
     "ParticipantRole": {
       "title": "ParticipantRole",
-      "description": "'subject' for single-entity events (renamed, established, discontinued, reinstated); 'predecessor'/'successor' for identity-changing events (merged, split, superseded, reorganized); 'continuing' for the surviving side of 'absorbed' and the receiving side of 'transferred'.",
+      "description": "'subject' for single-entity events (renamed, established, discontinued, reinstated); 'predecessor'/'successor' for identity-changing events (merged, split, superseded, reorganized); for 'absorbed', the absorbed entity is 'predecessor' and the surviving absorber is 'continuing'; 'continuing' is also the receiving side of 'transferred'.",
       "enum": ["subject", "predecessor", "successor", "continuing"]
     },
     "Participant": {

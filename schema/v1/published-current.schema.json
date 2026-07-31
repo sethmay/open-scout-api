@@ -27,7 +27,7 @@
         "oa-lodge",
         "requirement-set",
         "adventure",
-        "position", "training", "training-requirement"
+        "position", "training"
       ]
     },
     "count": {
@@ -255,6 +255,27 @@
           "items": {
             "items": {
               "$ref": "#/$defs/CurrentPosition"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "training"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/$defs/CurrentTraining"
             }
           }
         }
@@ -644,12 +665,22 @@
           ],
           "format": "uri"
         },
+        "operating_status": {
+          "enum": [
+            "active",
+            "not_operating",
+            "closed"
+          ]
+        },
         "verified_at": {
           "type": "string",
           "format": "date"
         },
         "imported_at": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date"
         },
         "method": {
@@ -685,6 +716,7 @@
         "features_signature",
         "features_verified_at",
         "features_source_tier",
+        "operating_status",
         "verified_at",
         "imported_at",
         "method",
@@ -1035,6 +1067,64 @@
         "name",
         "audience",
         "unit_types",
+        "verified_at",
+        "method",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "CurrentTraining": {
+      "type": "object",
+      "description": "An adult training course currently offered. `code` is Scouting America's printed course code (Y01, S11, WS10), the stable key; the course name is not. `delivery` and `renew_months` come from the TRAINED LEADER REQUIREMENTS chart.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "delivery": {
+          "enum": [
+            "classroom",
+            "online",
+            "both",
+            "unknown"
+          ]
+        },
+        "renew_months": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "method": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "code",
+        "delivery",
+        "renew_months",
         "verified_at",
         "method",
         "confidence"

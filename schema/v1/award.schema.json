@@ -19,7 +19,7 @@
       "default": null
     }
   },
-  "required": ["id", "kind", "versions"],
+  "required": ["$schema", "id", "kind", "versions"],
   "additionalProperties": false,
   "$defs": {
     "AwardVersion": {

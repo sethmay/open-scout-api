@@ -42,6 +42,7 @@ const REQUIRED_CAMP_FIELDS = [
   "name",
   "camp_type",
   "operator",
+  "operating_status",
   "council",
   "parent",
   "state",

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
   "id": "or-camp-meriwether",
   "kind": "camp",
   "versions": [
@@ -24,6 +25,7 @@
         { "code": "scuba", "signature": true, "note": "Ocean scuba instruction off two miles of private beach." }
       ],
       "features_verified_at": "2026-07-21",
+      "features_source_tier": "camp_page",
       "provenance": {
         "sources": [
           {

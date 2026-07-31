@@ -14,14 +14,14 @@ namespace OpenScoutApi.Generated;
 public static class CurrentByKind
 {
     public static readonly IReadOnlyDictionary<string, string> Map =
-        new Dictionary<string, string> { ["adventure"] = "CurrentAdventure", ["award"] = "CurrentAward", ["camp"] = "CurrentCamp", ["council"] = "CurrentCouncil", ["merit-badge"] = "CurrentMeritBadge", ["oa-lodge"] = "CurrentOALodge", ["position"] = "CurrentPosition", ["rank"] = "CurrentRank", ["requirement-set"] = "CurrentRequirementSet", ["territory"] = "CurrentTerritory" };
+        new Dictionary<string, string> { ["adventure"] = "CurrentAdventure", ["award"] = "CurrentAward", ["camp"] = "CurrentCamp", ["council"] = "CurrentCouncil", ["merit-badge"] = "CurrentMeritBadge", ["oa-lodge"] = "CurrentOALodge", ["position"] = "CurrentPosition", ["rank"] = "CurrentRank", ["requirement-set"] = "CurrentRequirementSet", ["territory"] = "CurrentTerritory", ["training"] = "CurrentTraining" };
 }
 
 /// <summary>Item record name selected by the envelope kind of a IndexCollection.</summary>
 public static class IndexByKind
 {
     public static readonly IReadOnlyDictionary<string, string> Map =
-        new Dictionary<string, string> { ["adventure"] = "AdventureIndexItem", ["award"] = "AwardIndexItem", ["camp"] = "CampIndexItem", ["council"] = "CouncilIndexItem", ["merit-badge"] = "MeritBadgeIndexItem", ["merit-badge-ranking"] = "BadgeRankingIndexItem", ["oa-lodge"] = "OALodgeIndexItem", ["position"] = "PositionIndexItem", ["rank"] = "RankIndexItem", ["requirement-set"] = "RequirementSetIndexItem", ["territory"] = "TerritoryIndexItem" };
+        new Dictionary<string, string> { ["adventure"] = "AdventureIndexItem", ["award"] = "AwardIndexItem", ["camp"] = "CampIndexItem", ["council"] = "CouncilIndexItem", ["merit-badge"] = "MeritBadgeIndexItem", ["merit-badge-ranking"] = "BadgeRankingIndexItem", ["oa-lodge"] = "OALodgeIndexItem", ["position"] = "PositionIndexItem", ["rank"] = "RankIndexItem", ["requirement-set"] = "RequirementSetIndexItem", ["territory"] = "TerritoryIndexItem", ["training"] = "TrainingIndexItem", ["training-requirement"] = "TrainingRequirementIndexItem" };
 }
 
 /// <summary>Item record name selected by the envelope kind of a EntityDocument.</summary>
@@ -217,11 +217,14 @@ public sealed record CurrentCamp
     [JsonPropertyName("url")]
     public required string? Url { get; init; }
 
+    [JsonPropertyName("operating_status")]
+    public required string OperatingStatus { get; init; }
+
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
 
     [JsonPropertyName("imported_at")]
-    public required string ImportedAt { get; init; }
+    public required string? ImportedAt { get; init; }
 
     [JsonPropertyName("method")]
     public required string Method { get; init; }
@@ -398,6 +401,34 @@ public sealed record CurrentPosition
 
     [JsonPropertyName("unit_types")]
     public required IReadOnlyList<string> UnitTypes { get; init; }
+
+    [JsonPropertyName("verified_at")]
+    public required string VerifiedAt { get; init; }
+
+    [JsonPropertyName("method")]
+    public required string Method { get; init; }
+
+    [JsonPropertyName("confidence")]
+    public required double Confidence { get; init; }
+}
+
+/// <summary>An adult training course currently offered. `code` is Scouting America's printed course code (Y01, S11, WS10), the stable key; the course name is not. `delivery` and `renew_months` come from the TRAINED LEADER REQUIREMENTS chart.</summary>
+public sealed record CurrentTraining
+{
+    [JsonPropertyName("id")]
+    public required string Id { get; init; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; init; }
+
+    [JsonPropertyName("code")]
+    public required string? Code { get; init; }
+
+    [JsonPropertyName("delivery")]
+    public required string Delivery { get; init; }
+
+    [JsonPropertyName("renew_months")]
+    public required int? RenewMonths { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -635,6 +666,37 @@ public sealed record PositionIndexItem
 
     [JsonPropertyName("current")]
     public required bool Current { get; init; }
+}
+
+public sealed record TrainingIndexItem
+{
+    [JsonPropertyName("id")]
+    public required string Id { get; init; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; init; }
+
+    [JsonPropertyName("code")]
+    public required string? Code { get; init; }
+
+    [JsonPropertyName("current")]
+    public required bool Current { get; init; }
+}
+
+/// <summary>One row of the TRAINED LEADER REQUIREMENTS chart, keyed by (position, unit_type). `registration_codes` is the join key a consumer holds from my.scouting; the position name is not stable enough to match on.</summary>
+public sealed record TrainingRequirementIndexItem
+{
+    [JsonPropertyName("id")]
+    public required string Id { get; init; }
+
+    [JsonPropertyName("position_name")]
+    public required string PositionName { get; init; }
+
+    [JsonPropertyName("registration_codes")]
+    public required IReadOnlyList<string> RegistrationCodes { get; init; }
+
+    [JsonPropertyName("unit_type")]
+    public required string UnitType { get; init; }
 }
 
 /// <summary>Root schema for the lightweight listing projections emitted by tools/build.py to v1/{dataset}/index.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges, requirement-sets). One entry per entity INCLUDING retired/defunct ones — a `current` boolean says whether the entity has an…</summary>

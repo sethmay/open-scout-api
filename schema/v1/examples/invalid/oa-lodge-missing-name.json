@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/oa-lodge.schema.json",
   "id": "negative-lodge-no-name",
   "kind": "oa-lodge",
   "versions": [

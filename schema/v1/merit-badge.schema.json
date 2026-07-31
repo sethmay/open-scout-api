@@ -32,6 +32,7 @@
     }
   },
   "required": [
+    "$schema",
     "id",
     "kind",
     "versions"

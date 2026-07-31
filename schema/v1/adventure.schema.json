@@ -33,6 +33,7 @@
     }
   },
   "required": [
+    "$schema",
     "id",
     "kind",
     "versions"
@@ -43,6 +44,35 @@
       "allOf": [
         {
           "$ref": "common.schema.json#/$defs/VersionBase"
+        },
+        {
+          "if": {
+            "properties": {
+              "valid_to": { "type": "null" },
+              "category": { "const": "required" }
+            },
+            "required": ["valid_to", "category"]
+          },
+          "then": {
+            "properties": {
+              "area": { "$ref": "common.schema.json#/$defs/VocabCode" }
+            },
+            "required": ["area"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "valid_to": { "type": "null" },
+              "category": { "not": { "const": "required" } }
+            },
+            "required": ["valid_to", "category"]
+          },
+          "then": {
+            "properties": {
+              "area": { "type": "null" }
+            }
+          }
         }
       ],
       "type": "object",

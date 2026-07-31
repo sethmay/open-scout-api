@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
   "id": "x00-example-course",
   "kind": "training",
   "versions": [

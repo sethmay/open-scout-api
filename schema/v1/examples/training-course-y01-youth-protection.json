@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
   "id": "y01-youth-protection-training",
   "kind": "training",
   "versions": [

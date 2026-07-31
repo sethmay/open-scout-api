@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/merit-badge.schema.json",
   "id": "citizenship-in-society",
   "kind": "merit-badge",
   "versions": [

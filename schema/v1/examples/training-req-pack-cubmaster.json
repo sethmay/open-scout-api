@@ -1,4 +1,5 @@
 {
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training-requirement.schema.json",
   "id": "pack-cubmaster",
   "kind": "training-requirement",
   "position_name": "Cubmaster",
