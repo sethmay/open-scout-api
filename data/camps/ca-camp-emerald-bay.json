@@ -50,9 +50,70 @@
         {
           "code": "marine_science",
           "note": "An on-site marine science centre and aquarium."
+        },
+        {
+          "code": "scuba",
+          "signature": true,
+          "note": "PADI open-water SCUBA certifications and the SCUBA merit badge in the kelp forests and reefs off Catalina."
+        },
+        {
+          "code": "sailing",
+          "note": "American Sailing Association affiliate school offering small-boat sailing certification."
+        },
+        {
+          "code": "canoeing",
+          "note": "War-canoe program, including an overnight paddle to Parson's Beach."
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "snorkeling",
+          "note": "Guided snorkelling at Doctor's Cove."
+        },
+        {
+          "code": "handicraft",
+          "note": "Leatherwork and neckerchief-slide carving."
+        },
+        {
+          "code": "nature_study",
+          "note": "Nature and ecology program, including stargazing."
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Optional Rugged treks for older Scouts: bike-and-hike, Trans-Catalina backpacking, and a war-canoe circumnavigation of the island."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Scouts can register individually, not only as part of a unit."
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "mountain_biking",
+          "note": "Mountain biking on the island's West End."
+        },
+        {
+          "code": "astronomy",
+          "note": "Stargazing under dark Catalina skies."
+        },
+        {
+          "code": "backpacking",
+          "note": "Trans-Catalina Trail backpacking trek in the Rugged Trekkers program."
+        },
+        {
+          "code": "older_scout_program",
+          "note": "Dedicated Rugged programming for older Scouts."
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-08-13",
       "features_source_tier": "camp_page",
       "summary": "Western LA County Council's Scouts BSA resident summer camp on Catalina Island.",
       "provenance": {
@@ -66,12 +127,27 @@
           {
             "url": "https://www.campemeraldbay.org/scout-programs/summer-adventure/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://www.campemeraldbay.org/scout-programs/traditional-summer-camp/traditional-merit-badge-program/",
+            "accessed": "2026-08-13"
+          },
+          {
+            "url": "https://www.campemeraldbay.org/scout-programs/scuba-opportunities/",
+            "accessed": "2026-08-13"
+          },
+          {
+            "url": "https://www.campemeraldbay.org/scout-programs/high-adventures/",
+            "accessed": "2026-08-13"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by camp staff 2026-08-12 (submission KpW95L8), kept anonymous at submitter request. Feature additions verified against the camp's own program pages."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+          "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }

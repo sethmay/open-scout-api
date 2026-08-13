@@ -370,6 +370,23 @@ by the pipeline (as the Pipsico fix was).
   (`elevation_ft` shipped in 0.26.0.) Open, if ever wanted: other months / a seasonal curve, and a
   present-day baseline — WorldClim's window is 1970-2000, ~1°F cooler than a current normal.
 
+### Camp correction intake (Suggest-a-Correction) — pipeline live, triage skill deferred
+
+Camp Finder's Suggest-a-Correction form (Tally → Google Sheet inbox) feeds user-submitted data
+corrections into a reviewed, agent-drafted / human-merged triage flow. Process spec + label→code
+map: `.workbench/camp-finder-corrections-handoff.md`. No backend; latency days-to-weeks by design.
+Flow: submission → agent normalize/vet/map/draft edit to `data/camps/<id>.json` → validate/build →
+human merge → release → Camp Finder bumps `EXPECTED_VERSION`. NEVER auto-merge user-originated data.
+
+- **Triage skill — DEFERRED until ~10-20 submissions calibrate the judgment.** Promote the handoff's
+  normalize → vet → map → draft + validate loop into a `.claude/skills/` triage skill in this repo
+  (keep the truth-call + the merge human, always). Unblock signal: enough real submissions to know
+  good-vs-bad patterns. Submissions triaged so far: 1 (Emerald Bay, `KpW95L8` — shipped, see CHANGELOG).
+- **Emerald Bay `first_year_program` — HELD, needs submitter clarification.** Submission `KpW95L8`
+  (camp staff) checked "First-year program", but no first-year-camper track appears on
+  campemeraldbay.org (Summer Adventure is a Cub/Webelos crossover, not a Scouts BSA first-year track).
+  Ask the submitter for the program name via the form contact before adding; never add without a source.
+
 ### Camp program features — implementation + population plan
 
 Design: [`PLAN.md`](./PLAN.md) §5.1. Status: **Phases 0 through 4 are DONE (0.29.0 through 0.35.0),
