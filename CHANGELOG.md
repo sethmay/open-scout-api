@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Enrich Camp Emerald Bay features from a community correction (submission KpW95L8).
+
 ## 0.58.1 (patch) — 2026-07-31
 
 - `3e44e4d` Follow-up corrections from a review of 0.58.0, before it shipped.
