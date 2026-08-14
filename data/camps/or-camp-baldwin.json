@@ -74,10 +74,100 @@
         },
         {
           "code": "whitewater_rafting"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "snorkeling"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "cit_program"
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "nature_study"
+        },
+        {
+          "code": "winter_camping"
+        },
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "amphitheater"
+        },
+        {
+          "code": "bathhouse"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "nature_center"
+        },
+        {
+          "code": "platform_tents"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "wifi"
         }
       ],
-      "features_verified_at": "2026-07-27",
-      "features_source_tier": "camp_page",
+      "features_verified_at": "2026-08-14",
+      "features_source_tier": "guide",
       "summary": "Wooded resident camp in the Cascade foothills featuring a lake waterfront, dining hall, shooting sports, climbing, and COPE, with STEM offerings, a first-year Scout program, and an older Scout program.",
       "provenance": {
         "sources": [
@@ -96,6 +186,13 @@
           },
           {
             "citation": "Coordinate set 2026-08-14 from the council's Camp Baldwin page (76201 Dufur Valley Rd, Dufur OR, on the east side of Mount Hood; the council's own stated coordinates); elevation from the open-meteo DEM. July normals still pending a WorldClim resample."
+          },
+          {
+            "url": "https://cpcbsa.notion.site/Camp-Baldwin-Summer-Program-Guide-9e3c51367b8a489d80aa80442bc6f9f4",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-14 (submission 9No9Q5E), kept anonymous at submitter request. Feature list transcribed by the submitter from the camp's summer program guide; the guide's overview corroborates the camp's horse / high-adventure / waterfront / climbing breadth, but its detailed program grid did not render headless, so a reviewer should spot-check these additions against the guide."
           }
         ],
         "method": "imported",
