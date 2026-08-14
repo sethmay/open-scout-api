@@ -19,8 +19,8 @@
       "lon": -82.443507,
       "geo_precision": "approximate",
       "elevation_ft": 90,
-      "july_high_f": null,
-      "july_low_f": null,
+      "july_high_f": 91,
+      "july_low_f": 71,
       "website": "https://tampabayscouting.org/camps/sand-hill-scout-reservation",
       "program_types": [
         "scouts_bsa_resident"

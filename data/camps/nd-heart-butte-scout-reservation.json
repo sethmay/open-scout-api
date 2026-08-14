@@ -19,8 +19,8 @@
       "lon": -101.809851,
       "geo_precision": "exact",
       "elevation_ft": 2140,
-      "july_high_f": null,
-      "july_low_f": null,
+      "july_high_f": 84,
+      "july_low_f": 57,
       "website": "https://scoutingnlc.org/campingprograms/adventurecamp/",
       "program_types": [
         "cub_resident"
