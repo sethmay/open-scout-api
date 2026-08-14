@@ -370,32 +370,39 @@ by the pipeline (as the Pipsico fix was).
   (`elevation_ft` shipped in 0.26.0.) Open, if ever wanted: other months / a seasonal curve, and a
   present-day baseline — WorldClim's window is 1970-2000, ~1°F cooler than a current normal.
 
-### Camp correction intake (Suggest-a-Correction) — pipeline live, triage skill deferred
+### Camp correction intake (Suggest-a-Correction) — pipeline live, triage skill v1 shipped
 
 Camp Finder's Suggest-a-Correction form (Tally → Google Sheet inbox) feeds user-submitted data
-corrections into a reviewed, agent-drafted / human-merged triage flow. Process spec + label→code
-map: `.workbench/camp-finder-corrections-handoff.md`. No backend; latency days-to-weeks by design.
+corrections into a reviewed, agent-drafted / human-merged triage flow. Process spec + per-category
+playbooks: `.claude/skills/camp-correction-triage/SKILL.md` (origin:
+`.workbench/camp-finder-corrections-handoff.md`). No backend; latency days-to-weeks by design.
 Flow: submission → agent normalize/vet/map/draft edit to `data/camps/<id>.json` → validate/build →
 human merge → release → Camp Finder bumps `EXPECTED_VERSION`. NEVER auto-merge user-originated data.
 
-- **Triage skill — DEFERRED until ~10-20 submissions calibrate the judgment.** Promote the handoff's
-  normalize → vet → map → draft + validate loop into a `.claude/skills/` triage skill in this repo
-  (keep the truth-call + the merge human, always). Unblock signal: enough real submissions to know
-  good-vs-bad patterns. Submissions triaged so far: 19 (Emerald Bay `KpW95L8` shipped in 0.58.2; a
-  second batch of 18 drafted 2026-08-14, awaiting review — see the correction CSV in `.workbench/`).
+- **Triage skill — SHIPPED v1 (2026-08-14).** `.claude/skills/camp-correction-triage/SKILL.md` codifies
+  the pipeline, vet discipline, trust tiers, provenance/anonymity/evergreen conventions, and per-category
+  playbooks for feature add/remove, taxonomy holds, closures (closed/not_operating/reject), website, and
+  program-type fixes — proven across the first 19 submissions. Deferred, with reasons in the skill:
+  location/coordinate fixes (semi-manual pending the two tooling tasks below) and name/council/operator
+  changes (no real examples yet). Extend after 1-2 more distinct rounds fill the thin/unseen categories.
 - **Emerald Bay `first_year_program` — HELD, needs submitter clarification.** Submission `KpW95L8`
   (camp staff) checked "First-year program", but no first-year-camper track appears on
   campemeraldbay.org (Summer Adventure is a Cub/Webelos crossover, not a Scouts BSA first-year track).
   Ask the submitter for the program name via the form contact before adding; never add without a source.
-- **July normals for the 6 relocated camps (2026-08-14 batch) — FOLLOW-UP.** All six were re-placed
-  2026-08-14 with `elevation_ft` from open-meteo: exact via US Census — `wi-akelas-world-cub-scout-camp`,
-  `sd-missouri-river-high-adventure-base`, `nd-heart-butte-scout-reservation`, `or-camp-baldwin` (from the
-  council's stated coords); approximate — `fl-sand-hill-scout-reservation` (OSM road point) and
-  `wi-hanna-venture-base` (CLSR reservation address; the exact Hanna base point at the far end of Hanna
-  Lane is still TBD). But `july_high_f`/`july_low_f` are null on all six: run `tools/july_temp.py` with
-  `WORLDCLIM_DIR` set (rasters absent from a normal checkout) to fill them, then re-release.
-  The Hanna "conflict" resolved: CLSR contains Tesomas, Akela's World, and Hanna, so the Spider Lake Rd
-  placement was correct all along.
+- **July normals for the 6 relocated camps — DONE (0.58.5).** Filled via `tools/july_temp.py` (WorldClim
+  v2.1 30s) after the 2026-08-14 relocation batch. (The Hanna "conflict" resolved: CLSR contains Tesomas,
+  Akela's World, and Hanna, so the Spider Lake Rd placement was right; Hanna sits at the reservation
+  address, `approximate` — the exact base point at the far end of Hanna Lane is a nicety, still TBD.)
+- **TOOLING: geocode corrected / null-coord camps (unblocks triage category G).** `tools/geocode_addresses.py`
+  only refines camps that still have an approximate point (skips null `lat`, guards within 60 km of the prior
+  point), so a camp whose pin is being *corrected* can't be re-placed by it — location fixes are currently
+  hand-geocoded (US Census / OSM). Add a "geocode from `address` where `lat is null`" path (Census then
+  Nominatim, validate `us_geo.in_state`, set `geo_precision`) so the pipeline places corrected camps without
+  hand work.
+- **TOOLING: provision WorldClim rasters for `july_temp.py` in the pipeline/CI.** Relocated camps get null
+  `july_high_f`/`july_low_f` until `july_temp.py` runs with `WORLDCLIM_DIR` set, because `wc2.1_30s_tmax.zip`
+  / `wc2.1_30s_tmin.zip` aren't in a normal checkout. Cache or fetch them in the correction workflow so a
+  relocation auto-fills its July normals.
 - **`ca-camp-robert-l-cole` — closure claim REJECTED at triage (submission peJjM5E).** A parent reported it
   "closed, property sold"; evidence contradicts (leased from PG&E/Forest Service, still council-scheduled,
   OA ordeals 2023-24). Left `active`. Reopen only if a real source shows a sale/closure.

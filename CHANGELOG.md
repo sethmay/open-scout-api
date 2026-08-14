@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Add the camp-correction-triage skill (v1) and file the two location-fix tooling tasks.
+
 ## 0.58.5 (patch) — 2026-08-14
 
 - `a474cfc` Fill July normals for the 6 relocated camps from WorldClim.
