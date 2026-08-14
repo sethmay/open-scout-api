@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ma-new-england-base-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "New England Base Camp",
+      "camp_type": "program_center",
+      "operator": "council",
+      "council": "council:spirit-of-adventure",
+      "parent": null,
+      "operating_status": "active",
+      "address": "445 Canton Avenue, Milton, MA 02186",
+      "city": "Milton",
+      "state": "MA",
+      "lat": 42.255029,
+      "lon": -71.077442,
+      "geo_precision": "exact",
+      "elevation_ft": 100,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.newenglandbasecamp.org/",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The Spirit of Adventure Council's base camp and training center at Camp Sayre in the Blue Hills of Milton, Massachusetts, near Boston, running year-round weekend and public programs including a ropes course, climbing, and an indoor pool.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.newenglandbasecamp.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the community scout-camp-map project. Camp Sayre / New England Base Camp, a Spirit of Adventure Council base camp opened to the public ~2015. Coordinates geocoded from the address (US Census); elevation from the open-meteo DEM. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add. NOTE: sources describe the council as now renamed 'Greater Boston Council' (formerly Spirit of Adventure) — our councils dataset still uses spirit-of-adventure; flag a council-lineage update. Features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}
