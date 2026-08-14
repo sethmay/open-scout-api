@@ -365,6 +365,18 @@ by the pipeline (as the Pipsico fix was).
   Camp Kenya (Transatlantic #802) was absent entirely — camp-finder's scrape favored US councils. Sweep
   Transatlantic, Far East / Direct Service, and other overseas councils against their own camp pages for
   camps the import missed, and add them by hand (`method: curated`) like Camp Kenya.
+- **Coverage: cross-reference the community scout-camp-map project (seeded 2026-08-14).**
+  [github.com/jasondaihl/scout-camp-map](https://github.com/jasondaihl/scout-camp-map) ships a flat
+  `data/camps.geojson` of ~527 council camps (name/type/council/city/state/address/website/description +
+  coords). It is coarser than ours (coords ~4 dp vs our 6, with some errors; no features/history/status)
+  — treat it as a COVERAGE POINTER list, not a coord/richness source, and do NOT bulk-import (quality +
+  attribution). A state-scoped name diff shows ~243 of theirs unmatched, but that's inflated by naming
+  variants, reservation-vs-camp modeling, and post-2024 merged-council renames; the real gap is a subset.
+  Sweep state-by-state and add genuine gaps by hand (`method: curated`) from council pages, like Camp
+  Warren Levis (added 0.58.8). Confirmed GSLAC gaps still open: **Beaumont Scout Reservation (MO)** —
+  but we already model Beaumont as a `reservation` grouping via child camps (Camp May), so settle
+  camp-vs-reservation first — and **Pine Ridge Scout Camp (IL)**. Their council names use the merged
+  post-2024 names, a useful cross-check for our council-lineage data.
 - **Average summer temperatures — DONE (0.27.0).** `july_high_f` / `july_low_f` ship on every camp
   with a coordinate (447 of 448), sampled from WorldClim v2.1 1 km normals by `tools/july_temp.py`.
   (`elevation_ft` shipped in 0.26.0.) Open, if ever wanted: other months / a seasonal curve, and a

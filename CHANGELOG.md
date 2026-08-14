@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Add Camp Warren Levis (Greater St. Louis Area Council); file a scout-camp-map coverage cross-reference in TODO.
+
 ## 0.58.7 (patch) — 2026-08-14
 
 - `dc2f64f` Triage 2 more camp corrections: Camp Baldwin program-guide features; Camp Clark → not_operating (family camping), relocated, features pruned.
