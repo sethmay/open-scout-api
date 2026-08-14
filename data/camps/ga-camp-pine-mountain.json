@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ga-camp-pine-mountain",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Pine Mountain",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:chattahoochee",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "West Point",
+      "state": "GA",
+      "lat": 32.889,
+      "lon": -85.125,
+      "geo_precision": "approximate",
+      "elevation_ft": 680,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://chattahoocheecouncilsa.org/about-us/camp-reservations-online/",
+      "program_types": [
+        "short_term_camping",
+        "cub_day"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Chattahoochee Council camp near West Point on the Georgia\u2013Alabama line, serving as a day camp and weekend camping property with a swimming pool, cabins, and small lakes for packs, troops, and camporees.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://chattahoocheecouncilsa.org/about-us/camp-reservations-online/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Chattahoochee Council camp-properties page, which lists Camp Pine Mountain as one of three current council camps and describes it as a day camp and Cub Scout overnight/weekend property near West Point. The scout-camp-map street address (Camp Pine Mountain Road) could not be verified and was not recorded. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's camp-properties page; camp_type/program_types classified conservatively as a day/weekend camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

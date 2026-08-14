@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "mn-stearns-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Stearns Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3303 County Road 44, South Haven, MN 55382",
+      "city": "South Haven",
+      "state": "MN",
+      "lat": 45.326063,
+      "lon": -94.181365,
+      "geo_precision": "exact",
+      "elevation_ft": 1070,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://camp.northernstar.org/stearns-scout-camp",
+      "program_types": [
+        "cub_resident",
+        "cub_day",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A 1,200-acre Northern Star Scouting camp of open fields, rolling hills, and forest near South Haven, Minnesota, bordering several lakes and bisected by the Clearwater River, hosting Cub Scout summer and winter camps, overnight campouts, and large council events.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://camp.northernstar.org/stearns-scout-camp",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Northern Star camp page. Confirmed as a current Northern Star Scouting camp near South Haven, Minnesota. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; classified as a resident camp running Cub Scout summer and winter camps alongside weekend and large-event use; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

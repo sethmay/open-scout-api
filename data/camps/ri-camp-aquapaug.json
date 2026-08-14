@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ri-camp-aquapaug",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Aquapaug",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:narragansett",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1620 Ministerial Rd, South Kingstown, RI 02892",
+      "city": "West Kingston",
+      "state": "RI",
+      "lat": 41.439919,
+      "lon": -71.555846,
+      "geo_precision": "exact",
+      "elevation_ft": 160,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.narragansettbsa.org/camps-activities/weekend-camping/camps/camp-aquapaug/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Narragansett Council short-term camping property near West Kingston in South Kingstown, Rhode Island, with rental shelters and tent sites, many along the Worden Pond waterfront, plus canoe rentals.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.narragansettbsa.org/camps-activities/weekend-camping/camps/camp-aquapaug/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Narragansett Council camps listing (narragansettbsa.org), which lists Camp Aquapaug as one of its six current weekend-camping properties. Source labeled it Aquapaug Scout Reservation; the council names it Camp Aquapaug. The source's rarrtl-aquapaug property URL is dead; the current camp page is used instead. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camps page; camp_type/program_types classified conservatively as a weekend/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

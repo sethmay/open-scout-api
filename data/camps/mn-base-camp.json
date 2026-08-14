@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "mn-base-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Base Camp",
+      "camp_type": "program_center",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "6202 Bloomington Rd, Fort Snelling, MN 55111",
+      "city": "Fort Snelling",
+      "state": "MN",
+      "lat": 44.890752,
+      "lon": -93.193309,
+      "geo_precision": "exact",
+      "elevation_ft": 810,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.explorebasecamp.org/",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "Northern Star Scouting's indoor activity and program center at historic Fort Snelling near the Twin Cities, housing a team-building center with climbing walls, ropes courses, and archery alongside the council's leadership offices.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.explorebasecamp.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the camp's own site and Northern Star Scouting listings. Confirmed as Northern Star Scouting's Base Camp activity and program center at Fort Snelling. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified; classified as a program center offering team-building, climbing, and public programming rather than resident camping; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}
