@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-firestone-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Firestone Scout Reservation",
+      "camp_type": "reservation",
+      "operator": "council",
+      "council": "council:greater-los-angeles-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "19001 Tonner Canyon Road, Brea, CA 92821",
+      "city": "Brea",
+      "state": "CA",
+      "lat": 33.93867,
+      "lon": -117.851789,
+      "geo_precision": "exact",
+      "elevation_ft": 620,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.firestonescoutreservation.com/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A semi-primitive Greater Los Angeles Area Council scout reservation in Tonner Canyon between Diamond Bar and Brea, California, used for weekend and day camping by units and youth groups year-round.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.firestonescoutreservation.com/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council re-verified and corrected from the source's 'Orange County Council' to the Greater Los Angeles Area Council, which owns and operates the reservation, and the address corrected to 19001 Tonner Canyon Road. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; council corrected to Greater Los Angeles Area Council and address corrected; camp_type as a reservation with conservative short-term-camping program; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

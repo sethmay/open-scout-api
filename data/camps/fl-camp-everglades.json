@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "fl-camp-everglades",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Everglades",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:south-florida",
+      "parent": null,
+      "operating_status": "active",
+      "address": "28400 Research Road, Homestead, FL 33034",
+      "city": "Homestead",
+      "state": "FL",
+      "lat": 25.387,
+      "lon": -80.453,
+      "geo_precision": "approximate",
+      "elevation_ft": 0,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://sfcscouting.org/camps/camp-everglades/",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A rustic South Florida Council camp set within Everglades National Park near Homestead, offering primitive campsites in pine rockland forest for troop camping and leader training.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://sfcscouting.org/camps/camp-everglades/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the South Florida Council's own Camp Everglades page and council-at-a-glance sheet, which describe it as a currently reservable, seasonal 217-acre primitive camp within Everglades National Park. The source's council website (sfcbsa.org) resolves to the current sfcscouting.org domain and the street address was corrected to the council-listed 28400 Research Road. Coordinates from scout-camp-map (approximate; the in-park address did not geocode); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own camp page; camp_type/program_types classified conservatively as a primitive camping and training property; features unsurveyed. Coordinates approximate."
+      }
+    }
+  ],
+  "notes": null
+}

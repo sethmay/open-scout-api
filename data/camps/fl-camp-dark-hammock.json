@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "fl-camp-dark-hammock",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Dark Hammock",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:gulf-stream",
+      "parent": null,
+      "operating_status": "active",
+      "address": "9000 NE 120th Street, Okeechobee, FL 34972",
+      "city": "Okeechobee",
+      "state": "FL",
+      "lat": 27.3533,
+      "lon": -80.7296,
+      "geo_precision": "exact",
+      "elevation_ft": 60,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.gulfstreamcouncil.org/darkhammock",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Gulf Stream Council wilderness camp northeast of Okeechobee, leased for troop, crew, and post camping amid natural Florida hammock and pine flatwoods.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.gulfstreamcouncil.org/darkhammock",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Gulf Stream Council's own Dark Hammock camp page, which lists it as a currently leased, reservable primitive camp for troops, crews, and posts. The source's street address (18001 NW 38th Avenue) was corrected to the council-listed 9000 NE 120th Street. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own camp page; camp_type/program_types classified conservatively as a primitive weekend/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

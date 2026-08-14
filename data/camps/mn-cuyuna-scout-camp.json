@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "mn-cuyuna-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cuyuna Scout Camp",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:twin-valley",
+      "parent": null,
+      "operating_status": "active",
+      "address": "38594 County Road 3, Crosslake, MN 56442",
+      "city": "Crosslake",
+      "state": "MN",
+      "lat": 46.710607,
+      "lon": -94.05134,
+      "geo_precision": "exact",
+      "elevation_ft": 1270,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.scoutingtwinvalley.org/camps/cuyuna-scout-camp/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "family_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A heavily wooded Twin Valley Council camp bordered by lakes north of Crosslake in the Cuyuna Iron Range region of central Minnesota, offering a Scouts BSA summer resident camp and family camping across individual campsites and remote outpost areas.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scoutingtwinvalley.org/camps/cuyuna-scout-camp/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Twin Valley Council camp page and council news. The scout-camp-map source labeled it a Central Minnesota Council camp, but it is owned and operated by the Twin Valley Council of Mankato, which runs its Scouts BSA summer resident camp and family camp (Twin Valley has announced a pending merger into Northern Star). Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, current council, and operating status verified against the council's own camp page; camp_type/program_types classified conservatively from the council-run resident and family camp programs; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

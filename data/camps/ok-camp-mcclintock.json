@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ok-camp-mcclintock",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp McClintock",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:cherokee-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "216 County Rd 2427, Bartlesville, OK 74003",
+      "city": "Bartlesville",
+      "state": "OK",
+      "lat": 36.724621,
+      "lon": -96.165412,
+      "geo_precision": "exact",
+      "elevation_ft": 860,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://cherokeebsa.org/camp-mcclintock/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Cherokee Area Council camp of roughly 240 acres in the Osage Hills west of Bartlesville, Oklahoma, with woods, cliffs, creeks, and ponds supporting year-round weekend and troop camping, plus a dining hall, pavilion, and cabin.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://cherokeebsa.org/camp-mcclintock/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Cherokee Area Council (#469) camp page at cherokeebsa.org. The source labeled this an Indian Nations Council camp; it is a Cherokee Area Council property. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.72,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own camp page; camp_type/program_types classified conservatively as a weekend/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

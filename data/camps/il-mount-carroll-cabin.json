@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "il-mount-carroll-cabin",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Mount Carroll Cabin",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:blackhawk-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "18682 Indian Trail Rd, Mt. Carroll, IL 61053",
+      "city": "Mt. Carroll",
+      "state": "IL",
+      "lat": 42.169749,
+      "lon": -89.970261,
+      "geo_precision": "exact",
+      "elevation_ft": 660,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://blackhawkscouting.org/about/council-camps-facilities/mount-carroll-cabin/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A rustic Blackhawk Area Council cabin on wooded acreage north of Mount Carroll, Illinois, with wooden bunks, a wood-burning stove, and a fireplace, available to units for weekend camping without electricity or indoor plumbing.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://blackhawkscouting.org/about/council-camps-facilities/mount-carroll-cabin/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council and operating status re-verified from the Blackhawk Area Council property page, which also supplied the precise street address (the source hint gave only a town). Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council property page; classified conservatively as a short-term (weekend cabin) camp; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

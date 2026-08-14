@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-norcal-adventure-area",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "NorCal Adventure Area",
+      "camp_type": "program_center",
+      "operator": "council",
+      "council": "council:golden-empire",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Dobbins, CA 95935",
+      "city": "Dobbins",
+      "state": "CA",
+      "lat": 39.3675,
+      "lon": -121.21299,
+      "geo_precision": "approximate",
+      "elevation_ft": 1810,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.gec-bsa.org/camping-2",
+      "program_types": [
+        "training",
+        "family_camping",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A low-elevation Golden Empire Council program and training center on a wooded property near Dobbins in Yuba County, California, serving as the council's hub for leadership training, Cub Scout family camp, and district camporees, with an activity lake for canoeing and kayaking.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.gec-bsa.org/camping-2",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/location/status re-verified and corrected. The source placed this in Georgetown, El Dorado County; the Golden Empire Council's own materials locate the NorCal Adventure Area near Dobbins in Yuba County, so city/coordinates were relocated accordingly. Confirmed as an active council training and program hub. Coordinates approximate (Dobbins locality via OpenStreetMap; the source's Georgetown coordinates were discarded); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add with corrections: source location was wrong (Georgetown vs Dobbins/Yuba County); verified against Golden Empire Council materials. Classified as a program_center hosting training, family camp, and camporees; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

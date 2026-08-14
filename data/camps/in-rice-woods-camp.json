@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "in-rice-woods-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Rice Woods Camp",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:la-salle",
+      "parent": null,
+      "operating_status": "active",
+      "address": "E 600 N and N 1100 E, Walkerton, IN 46574",
+      "city": "Walkerton",
+      "state": "IN",
+      "lat": 41.468,
+      "lon": -86.469,
+      "geo_precision": "approximate",
+      "elevation_ft": 760,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.lasallecouncilbsa.org/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A La Salle Council camp property near Koontz Lake in northern Indiana, with Rice Lodge and wooded campsites used for weekend and troop camping and council service days.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.lasallecouncilbsa.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified against La Salle Council (#165) sources, which list Rice Woods among the council's current properties (the source's lasallecouncilbsa.org/ricewoodsfaq link is a dead 404); the council's Scouts BSA resident summer camp runs at Camp Tamarack in Michigan while Rice Woods serves as a local short-term camping property. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence and council (La Salle) verified; classified conservatively as a short-term camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

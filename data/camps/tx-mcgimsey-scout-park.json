@@ -1,0 +1,53 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-mcgimsey-scout-park",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "McGimsey Scout Park",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:alamo-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "10810 Wedgewood Dr, San Antonio, TX 78230",
+      "city": "San Antonio",
+      "state": "TX",
+      "lat": 29.53678,
+      "lon": -98.53293,
+      "geo_precision": "exact",
+      "elevation_ft": 890,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.alamoareascouting.org/about-us/our-camps/mcgimsey-scout-park/",
+      "program_types": [
+        "cub_day",
+        "family_camping",
+        "training",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An Alamo Area Council park in North Central San Antonio, Texas, one of the council's premier camps, hosting Cub Scout day camps, family camps, leader training, and unit camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.alamoareascouting.org/about-us/our-camps/mcgimsey-scout-park/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Alamo Area Council camp page (alamoareascouting.org), one of the council's three premier camps. The source's alamoareabsa.org website hint was corrected to the council's current alamoareascouting.org domain. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camp page; camp_type/program_types classified conservatively from the stated Cub day camp, family camp, training, and unit-camping uses; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

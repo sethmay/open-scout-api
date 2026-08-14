@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "co-camp-patiya",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Patiya",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:adventure-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Boulder",
+      "state": "CO",
+      "lat": 39.965,
+      "lon": -105.3387,
+      "geo_precision": "approximate",
+      "elevation_ft": 7460,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://campreservation.com/062/Camps/719",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A forested mountain camping and day-use property of the Adventure West Council in the hills west of Boulder, Colorado, with campsites, two sleeping cabins, sheltered cooking sites, and indoor and outdoor training and meeting areas for unit use.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://campreservation.com/062/Camps/719",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council and operating status re-verified from the Adventure West Council (Scouting America org BSA062, formerly the Longs Peak Council) reservation listing. The source hint's town 'Rollinsville' is incorrect and the address it gave is the Flagstaff Road parking/access point, not the camp, so no street address is recorded. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified via the council reservation listing; classified as a short-term camping/day-use property; no true street address (mountain access only); features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "pa-camp-lavigne",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Lavigne",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:columbia-montour",
+      "parent": null,
+      "operating_status": "active",
+      "address": "35 Camp Lavigne Rd, Benton, PA 17814",
+      "city": "Benton",
+      "state": "PA",
+      "lat": 41.2439,
+      "lon": -76.36841,
+      "geo_precision": "exact",
+      "elevation_ft": 920,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://columbiamontourbsa.org/camping/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "cub_resident",
+        "cub_day"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Columbia-Montour Council resident camp in the hills north of Benton in central Pennsylvania, offering a unit-centered Scouts BSA summer camp alongside Cub Scout resident and day programs and a COPE and climbing course.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://columbiamontourbsa.org/camping/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Columbia-Montour Council camping page. The source's French Creek Council attribution is wrong: Camp Lavigne is a Columbia-Montour Council camp. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified from the council page as a Scouts BSA resident camp with Cub resident and day programs; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

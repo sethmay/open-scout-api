@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "nc-occoneechee-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Occoneechee Scout Reservation",
+      "camp_type": "reservation",
+      "operator": "council",
+      "council": "council:occoneechee",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4637 Old Carthage Rd, Carthage, NC 28327",
+      "city": "Carthage",
+      "state": "NC",
+      "lat": 35.351404,
+      "lon": -79.570196,
+      "geo_precision": "exact",
+      "elevation_ft": 590,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.ocscouts.org/camping-outdoor-programs/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The Occoneechee Council's scout reservation in Moore County near Carthage, North Carolina, a wooded property that encompasses the developed Camp Durant and the more primitive Camp Reeves for year-round Scouts BSA and Cub Scout camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.ocscouts.org/camping-outdoor-programs/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Occoneechee Council camping page at ocscouts.org, which lists Camp Durant and Camp Reeves within the reservation. The source placed the pin near Rougemont; the reservation is in Moore County near Carthage. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: reservation (umbrella of Camp Durant and Camp Reeves) verified against the council's own camping page; camp_type reservation; program_types classified conservatively; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

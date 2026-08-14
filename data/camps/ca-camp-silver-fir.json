@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-camp-silver-fir",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Silver Fir",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:verdugo-hills",
+      "parent": null,
+      "operating_status": "not_operating",
+      "address": "Lakeshore, CA 93634",
+      "city": "Lakeshore",
+      "state": "CA",
+      "lat": 37.25216,
+      "lon": -119.17374,
+      "geo_precision": "approximate",
+      "elevation_ft": 7000,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.vhscouting.org/campsilverfir",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Verdugo Hills Council high-adventure outpost camp on the north shore of Huntington Lake in the Sierra National Forest of California, a high-elevation backcountry base for older-Scout treks and mountain-lake aquatics.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.vhscouting.org/campsilverfir",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council, location, and status all re-verified and corrected. The source mislabeled this as a Greater Los Angeles Area Council camp near Castaic; it is a Verdugo Hills Council high-adventure outpost on the north shore of Huntington Lake near Lakeshore, and city/coordinates were relocated accordingly. Per the council's own page the camp is temporarily closed and rebuilding after wildfire damage, so operating status is recorded as not_operating. Coordinates approximate (Lakeshore locality via OpenStreetMap; the source's Castaic coordinates were discarded); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add with corrections: source council/location were wrong; verified against Verdugo Hills Council's own camp page. Recorded not_operating (temporarily closed, rebuilding after the Creek Fire); camp_type/program_types classified as a high-adventure outpost; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

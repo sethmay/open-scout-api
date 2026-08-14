@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "oh-camp-mckinley",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp McKinley",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:buckeye",
+      "parent": null,
+      "operating_status": "active",
+      "address": "37748 Furnace Rd, Lisbon, OH 44432",
+      "city": "Lisbon",
+      "state": "OH",
+      "lat": 40.7802,
+      "lon": -80.7901,
+      "geo_precision": "exact",
+      "elevation_ft": 960,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.buckeyecouncil.org/camping-old/weekend-camping/",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A rustic Buckeye Council camp outside Lisbon in Columbiana County, Ohio, set on wooded grounds along the headwaters of Little Beaver Creek that include the historic McKinley family homestead, used for off-season unit camping and leader training.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.buckeyecouncil.org/camping-old/weekend-camping/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Buckeye Council camping pages, ScoutWiki, and Western Reserve Land Conservancy reporting. Confirmed as one of Buckeye Council's three current camps and still council-operated as an off-season camp; 195 acres were placed in a conservation easement in 2021 but the property was not sold. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, current Buckeye Council operation, and active off-season status verified; camp_type/program_types classified conservatively; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

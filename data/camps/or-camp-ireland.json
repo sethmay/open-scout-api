@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-ireland",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Ireland",
+      "camp_type": "day_camp",
+      "operator": "council",
+      "council": "council:cascade-pacific",
+      "parent": null,
+      "operating_status": "active",
+      "address": "31557 NW Camp Ireland Road, Hillsboro, OR 97124",
+      "city": "Hillsboro",
+      "state": "OR",
+      "lat": 45.5468,
+      "lon": -123.0014,
+      "geo_precision": "exact",
+      "elevation_ft": 170,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://cpcscouting.org/project/camp-ireland/",
+      "program_types": [
+        "cub_day",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Cascade Pacific Council day-camp property just north of Hillsboro, Oregon, nearly encircled by McKay Creek within a wetland nature preserve, with den shelters, BB and archery ranges, an obstacle course, and tent sites for a first outdoor experience close to town.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://cpcscouting.org/project/camp-ireland/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Cascade Pacific Council camp page. The scout-camp-map 'Crater Lake Council' label is wrong: Camp Ireland is a Cascade Pacific Council day-camp property. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's camp page; classified as a day-camp property that also offers tent camping; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

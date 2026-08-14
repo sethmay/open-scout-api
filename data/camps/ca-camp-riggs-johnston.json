@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-camp-riggs-johnston",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Riggs Johnston",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:golden-gate-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4200 Wrigley Road, Eureka, CA 95503",
+      "city": "Eureka",
+      "state": "CA",
+      "lat": 40.70115,
+      "lon": -124.11209,
+      "geo_precision": "exact",
+      "elevation_ft": 220,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://goldengatescouting.org/district/redwood-empire-service-area/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A rustic Golden Gate Area Council camp, formerly the Elk River Scout Camp, on the North Fork of the Elk River in the redwoods south of Eureka, California, with a former logging camp's dining hall and kitchen serving unit camping in Humboldt County.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://redwoodscouting.org/oa/lodgehistory/basic/long-termcamps/campriggs/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified. The source labeled this Redwood Empire Council, which was absorbed into Golden Gate Area Council and now operates the area as the Redwood Empire Service Area, so the current operating council is Golden Gate Area Council. Street address corrected from the source's 5200 Fay Slough Road to the camp's own 4200 Wrigley Road, Eureka. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence and current council verified; operating status recorded as active from the council OA camp page and recent activity; camp_type/program_types classified conservatively as rustic unit camping; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ms-camp-toby-tubby",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Toby Tubby",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:natchez-trace",
+      "parent": null,
+      "operating_status": "active",
+      "address": "589 Co Rd 100, Oxford, MS 38655",
+      "city": "Oxford",
+      "state": "MS",
+      "lat": 34.3664,
+      "lon": -89.5188,
+      "geo_precision": "approximate",
+      "elevation_ft": 520,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.natcheztracecouncil.org/TobyTubby",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Natchez Trace Council tent-camping property on Sardis Lake northwest of Oxford in north Mississippi, surrounded by forest and mountain-bike trails with developed campsites and a powered pavilion.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.natcheztracecouncil.org/properties",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Natchez Trace Council facilities page, which lists Camp Toby Tubby as a current council property (the source's 'Yocona Area Council' label is superseded \u2014 that council merged into Natchez Trace Council). Coordinates from scout-camp-map, approximate (the county-road address did not street-geocode); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own facilities page; classified as a short-term tent-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

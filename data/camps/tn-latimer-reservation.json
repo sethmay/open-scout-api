@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tn-latimer-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Latimer Reservation",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:middle-tennessee",
+      "parent": null,
+      "operating_status": "active",
+      "address": "334 Plantation Rd, Spencer, TN 38585",
+      "city": "Spencer",
+      "state": "TN",
+      "lat": 35.79651,
+      "lon": -85.28355,
+      "geo_precision": "exact",
+      "elevation_ft": 1770,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.latimerbsa.org/",
+      "program_types": [
+        "high_adventure",
+        "family_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A large Middle Tennessee Council wilderness reservation on the Cumberland Plateau near Spencer, Tennessee, offering high-adventure treks, climbing and rappelling, paddling, whitewater rafting, and mountain biking for older Scouts and adults, alongside family camping weekends and leader training.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.latimerbsa.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Latimer Reservation site and the Middle Tennessee Council camp facilities page, which lists it as one of the council's four owned-and-operated camps. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; classified as a high-adventure base with family camping and training use; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

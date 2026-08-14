@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "sc-camp-conley-clarke",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Conley Clarke",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:palmetto-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1192 Hickory Grove Rd, Gaffney, SC 29340",
+      "city": "Gaffney",
+      "state": "SC",
+      "lat": 34.91428,
+      "lon": -81.49658,
+      "geo_precision": "exact",
+      "elevation_ft": 450,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.palmettocouncil.org/camp-conley-clarke",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An expansive Palmetto Area Council property near Gaffney, South Carolina, with a pond, open fields, and wooded natural areas, used for troop weekend camping, council camporees, Order of the Arrow events, and outdoor leadership training.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.palmettocouncil.org/camp-conley-clarke",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Palmetto Area Council camp page, which lists Camp Conley Clarke as one of the council's two owned properties. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; classified conservatively as a weekend camping and training property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ar-camp-spencer",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Spencer",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:natural-state",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Lake Norfork Peninsula, Mountain Home, AR 72653",
+      "city": "Mountain Home",
+      "state": "AR",
+      "lat": 36.345,
+      "lon": -92.24,
+      "geo_precision": "approximate",
+      "elevation_ft": 550,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.naturalstatecouncil.org/campspencer",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Natural State Council camp on a wooded peninsula of Lake Norfork east of Mountain Home, Arkansas, with nearly a mile and a half of shoreline for fishing, exploring, and waterfront camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.naturalstatecouncil.org/campspencer",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified against the Natural State Council's own Camp Spencer page. Council confirmed as Natural State (formed December 2023 from the Quapaw Area and Westark Area councils), which matches the source hint. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.75,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own camp page; camp_type/program_types classified conservatively as a primitive/short-term camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

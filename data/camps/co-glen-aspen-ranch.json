@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "co-glen-aspen-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Glen Aspen Ranch",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:pathway-to-the-rockies",
+      "parent": null,
+      "operating_status": "active",
+      "address": "11050 Loy Creek Road, Woodland Park, CO 80863",
+      "city": "Woodland Park",
+      "state": "CO",
+      "lat": 39.0102,
+      "lon": -105.0252,
+      "geo_precision": "approximate",
+      "elevation_ft": 9010,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://pathwaytotherockies.org/glen-aspen-ranch/",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A mountain ranch property of the Pathway to the Rockies Council on the outskirts of Woodland Park, Colorado, with rustic and drive-up campsites, a training building, and a large pavilion used for unit weekend camping and outdoor leader training courses.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://pathwaytotherockies.org/glen-aspen-ranch/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council and operating status re-verified from the Pathway to the Rockies Council camp page, which lists both weekend unit camping and leader training courses. US Census did not match the rural road address, so coordinates are from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camp page; classified as a short-term camping and training property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

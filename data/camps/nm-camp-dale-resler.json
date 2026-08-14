@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "nm-camp-dale-resler",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Dale Resler",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:high-desert",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1850 Highway 82, Cloudcroft, NM 88317",
+      "city": "Cloudcroft",
+      "state": "NM",
+      "lat": 32.9585,
+      "lon": -105.7181,
+      "geo_precision": "exact",
+      "elevation_ft": 8560,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://campreservation.com/573/Camps/466",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A High Desert Council Scout camp set high in the Lincoln National Forest of the Sacramento Mountains above Cloudcroft, New Mexico, used for short-term camping, training, and older-Scout programs.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://campreservation.com/573/Camps/466",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the High Desert Council reservation system and council event listings. The source labeled it Yucca Council, but Yucca merged with Great Southwest to form the High Desert Council (finalized January 2025), which currently operates the camp; status re-verified as active. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.72,
+        "notes": "Coverage add: existence, current council (High Desert, post-2025 Yucca merger), and active status verified; camp_type/program_types classified conservatively as a short-term/training property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

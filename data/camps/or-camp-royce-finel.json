@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-royce-finel",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Royce-Finel",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:cascade-pacific",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Cullaby Lake Ln, Warrenton, OR 97146",
+      "city": "Warrenton",
+      "state": "OR",
+      "lat": 46.0967,
+      "lon": -123.9019,
+      "geo_precision": "approximate",
+      "elevation_ft": 10,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://cpcscouting.org/project/camp-royce-finel/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Cascade Pacific Council camp, formerly Camp Cullaby, at the northeast end of Cullaby Lake near Warrenton on the northern Oregon coast, with tarp-shelter campsites, canoeing, and a hiking trail to the beach.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://cpcscouting.org/project/camp-royce-finel/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Cascade Pacific Council camp page. The scout-camp-map 'Oregon Trail Council' label is wrong: Camp Royce-Finel (formerly Camp Cullaby) is a Cascade Pacific Council property. Coordinates from the council's published GPS (approximate); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.68,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's camp page; classified as a primitive weekend camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

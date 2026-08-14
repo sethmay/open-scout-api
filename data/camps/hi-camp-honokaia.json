@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "hi-camp-honokaia",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Honokaia",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:aloha",
+      "parent": null,
+      "operating_status": "active",
+      "address": "46-0306 Mamalahoa Hwy, Honokaa, HI 96727",
+      "city": "Honokaa",
+      "state": "HI",
+      "lat": 20.0709,
+      "lon": -155.5226,
+      "geo_precision": "approximate",
+      "elevation_ft": 2100,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.scoutinghawaii.org/camps/hawaii-island/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The Aloha Council's Big Island Scout camp, a forested upland property between Honokaa and Waimea above Waipio Valley on the island of Hawaii, long serving as the home of Big Island Scouting for short-term camping and outdoor programs.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scoutinghawaii.org/camps/hawaii-island/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Aloha Council site and Big Island short-term camp event listings, which confirm the camp is currently open and hosting programs. The council board has authorized exploring a possible sale, lease, or partnership, but no decision has been made, so status is recorded as active. Coordinates from scout-camp-map (approximate); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.66,
+        "notes": "Coverage add: existence, Aloha Council operation, and active status verified; future uncertain (board exploring disposition). camp_type/program_types classified conservatively from current short-term camp programming; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

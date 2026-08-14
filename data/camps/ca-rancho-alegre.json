@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-rancho-alegre",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Rancho Alegre",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:los-padres",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2718 Happy Canyon Road, Santa Barbara, CA 93105",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "lat": 34.57,
+      "lon": -119.799,
+      "geo_precision": "approximate",
+      "elevation_ft": 1480,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "http://lospadresscouting.org/camping/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The primary camping property of the Los Padres Council, set in the oak foothills of the Santa Ynez Valley near Santa Barbara, California, offering resident summer camp and an outdoor school in the Los Padres National Forest.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "http://lospadresscouting.org/camping/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Los Padres Council camping page, which lists Rancho Alegre as its primary camp, rebuilt and reopened after the 2017 Whittier Fire (the source's lpcbsa.org link is not the council's current camping page). Coordinates from scout-camp-map, approximate (no US Census address match); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified conservatively as a Scouts BSA resident camp with an outdoor school; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

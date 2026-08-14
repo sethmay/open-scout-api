@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-camp-sol-mayer",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sol Mayer",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:texas-southwest",
+      "parent": null,
+      "operating_status": "active",
+      "address": "299 Camp Sol Mayer Rd, Menard, TX 76859",
+      "city": "Menard",
+      "state": "TX",
+      "lat": 30.8426,
+      "lon": -100.0613,
+      "geo_precision": "approximate",
+      "elevation_ft": 2080,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.scoutingtsc.org/camp-sol-mayer/",
+      "program_types": [
+        "cub_resident",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The Texas Southwest Council's long-term camp along the San Saba River near Menard in west Texas, with cabins, a dining hall, and a fishing pier, hosting camporees, Cub camps, and winter camp for units through the year.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scoutingtsc.org/camp-sol-mayer/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Texas Southwest Council camp page (scoutingtsc.org), which lists current camporees, Cub camp, and winter camp at the property. Coordinates from scout-camp-map (approximate; the rural address did not resolve in the US Census geocoder); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camp page and current event listings; camp_type/program_types classified conservatively from the stated Cub camp and multi-unit camping uses; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

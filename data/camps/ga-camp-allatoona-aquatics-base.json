@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ga-camp-allatoona-aquatics-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Allatoona Aquatics Base",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:atlanta-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "200 Lovingood Dr, Woodstock, GA 30189",
+      "city": "Woodstock",
+      "state": "GA",
+      "lat": 34.167,
+      "lon": -84.605,
+      "geo_precision": "exact",
+      "elevation_ft": 990,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.scoutingatl.org/caab",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An Atlanta Area Council aquatics base on Lake Allatoona at Woodstock, Georgia, northwest of Atlanta, where Scouts pursue canoeing, sailing, rowing, and swimming programs alongside year-round weekend primitive camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scoutingatl.org/caab",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Atlanta Area Council (Scouting America) camp page. Confirmed as a current Atlanta Area Council aquatics/weekend-camping property; the source's street address (6600 Bells Ferry Road) and atlantabsa.org link were corrected to the council's own page and the camp's listed address (200 Lovingood Dr). Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified conservatively as a weekend-camping aquatics property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

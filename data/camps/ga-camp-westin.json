@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ga-camp-westin",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Westin",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:northwest-georgia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3900 Bartow Carver Rd SE, Acworth, GA 30102",
+      "city": "Acworth",
+      "state": "GA",
+      "lat": 34.1413,
+      "lon": -84.6656,
+      "geo_precision": "exact",
+      "elevation_ft": 960,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.nwgascouting.org/Westin",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The Northwest Georgia Council's short-term primitive camping facility, roughly fifty-five acres on Lake Allatoona in Bartow County near Acworth, Georgia, with patrol-sized campsites, a pavilion, and lake access for weekend unit camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.nwgascouting.org/Westin",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Northwest Georgia Council camp page. Confirmed as the council's current short-term camping facility; the source's city/address (Calhoun; 1300 Camp Westin Road) and nwgacouncil.org link were wrong and were corrected to the camp's real location on Lake Allatoona in Bartow County (3900 Bartow Carver Rd SE, Acworth) and the council's own page. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; slice location was wrong and re-placed from the council page; camp_type/program_types classified conservatively as a weekend/short-term camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

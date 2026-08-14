@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-pendola-sierra-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Pendola Sierra Adventure Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:greater-yosemite",
+      "parent": null,
+      "operating_status": "active",
+      "address": "19601 Ferretti Road, Sonora, CA 95370",
+      "city": "Sonora",
+      "state": "CA",
+      "lat": 37.913,
+      "lon": -120.343,
+      "geo_precision": "approximate",
+      "elevation_ft": 1680,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.yosemitescouting.org/camping/pendola-sierra-adventure-base/51881",
+      "program_types": [
+        "high_adventure"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Greater Yosemite Council backcountry adventure base in the Sierra Nevada near Sonora, California, serving as the trailhead for backpacking treks and high-adventure programs for older Scouts within the Pendola Scout Reservation.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.yosemitescouting.org/camping/pendola-sierra-adventure-base/51881",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Greater Yosemite Council camping pages, which describe Pendola Sierra Adventure Base as the backpacking base of the Pendola Scout Reservation (Camp John Mensinger). Coordinates from scout-camp-map, approximate (no US Census address match); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified conservatively as a backcountry high-adventure base; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

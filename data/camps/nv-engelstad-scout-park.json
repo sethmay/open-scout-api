@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "nv-engelstad-scout-park",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Engelstad Scout Park",
+      "camp_type": "program_center",
+      "operator": "council",
+      "council": "council:las-vegas-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "7220 S Paradise Rd, Las Vegas, NV 89119",
+      "city": "Las Vegas",
+      "state": "NV",
+      "lat": 36.058945,
+      "lon": -115.140973,
+      "geo_precision": "exact",
+      "elevation_ft": 2120,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.scoutinglvac.org/engelstad-scout-park/",
+      "program_types": [
+        "cub_day",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An urban Las Vegas Area Council activity park adjoining the council's Scouting Resource Center, hosting Cub Scout day camps, target and field sports, a climbing wall, and council-wide Scouting events and camporees.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.scoutinglvac.org/engelstad-scout-park/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from Las Vegas Area Council pages, which present Engelstad Scout Park at the council's Scouting Resource Center as an active site for Cub Scout day camps, a spring-break day camp, and conservation camporees. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.72,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own site; classified conservatively as a program center hosting day-camp and short-term programming; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-laguna-station-sea-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Laguna Station Sea Base",
+      "camp_type": "high_adventure_base",
+      "operator": "council",
+      "council": "council:rio-grande",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Isla Blanca Park, South Padre Island, TX 78597",
+      "city": "South Padre Island",
+      "state": "TX",
+      "lat": 26.0688,
+      "lon": -97.1622,
+      "geo_precision": "approximate",
+      "elevation_ft": 0,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.riograndecouncil.org/camping/lagunastation/",
+      "program_types": [
+        "high_adventure",
+        "sea_scout"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Rio Grande Council sea base on the southern tip of South Padre Island, Texas, offering surfing, sailing, fishing, and saltwater adventure programs for Scouts and Venturers along the Gulf and the Laguna Madre.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.riograndecouncil.org/camping/lagunastation/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Rio Grande Council Laguna Station Sea Base page, which confirms it as an active council sea base on South Padre Island. Coordinates from the council page's map pin (26 deg 04'07.7\"N, 97 deg 09'43.8\"W), approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and active status verified against the council page; classified as a council-operated sea base (high-adventure base) with high-adventure and Sea Scout aquatics programming; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}
