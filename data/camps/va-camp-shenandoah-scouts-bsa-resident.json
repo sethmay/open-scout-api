@@ -21,7 +21,7 @@
       "elevation_ft": 1700,
       "july_high_f": 84,
       "july_low_f": 60,
-      "website": "https://www.virginiaheadwaters.org/events-camping/camp-shenandoah-mb-weekends/",
+      "website": "https://www.campshenandoah.org/",
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -85,6 +85,9 @@
           {
             "url": "https://www.campshenandoah.org/summer-camp/scouts-bsa-resident-camp/",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-13 (submission KpW7BQX), kept anonymous at submitter request. Updated the website to the camp's own domain (campshenandoah.org)."
           }
         ],
         "method": "imported",

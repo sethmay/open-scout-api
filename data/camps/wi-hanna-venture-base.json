@@ -12,15 +12,15 @@
       "council": "council:samoset",
       "parent": null,
       "operating_status": "active",
-      "address": "5403 Spider Lake Rd",
+      "address": null,
       "city": "Rhinelander",
       "state": "WI",
-      "lat": 45.7293892,
-      "lon": -89.42282,
-      "geo_precision": "exact",
-      "elevation_ft": 1620,
-      "july_high_f": 78,
-      "july_low_f": 55,
+      "lat": null,
+      "lon": null,
+      "geo_precision": null,
+      "elevation_ft": null,
+      "july_high_f": null,
+      "july_low_f": null,
       "website": "http://clsr.samoset.org/hanna/",
       "program_types": [
         "high_adventure"
@@ -52,6 +52,9 @@
           {
             "url": "https://samoset.org/wp-content/uploads/2024/11/Property_Details_CLSR.pdf",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by the camp director 2026-08-13 (submission M16k0Nl), kept anonymous at submitter request. Director reports the mapped location is wrong: the base is part of Tesomas Scout Camp, at the far end of Hanna Lane, Rhinelander WI. Coordinates cleared pending re-geocoding; this conflicts with the record's Crystal Lake Scout Reservation / Spider Lake Rd placement, so resolve the reservation and street before re-placing."
           }
         ],
         "method": "imported",

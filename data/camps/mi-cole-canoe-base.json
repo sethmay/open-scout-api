@@ -75,9 +75,13 @@
         {
           "code": "waterfront",
           "note": "The camp fronts the Rifle River."
-        }
+          },
+          {
+            "code": "patrol_cooking",
+            "note": "Units cook their own meals in their campsites, drawing ingredients from the camp commissary."
+          }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-08-14",
       "features_source_tier": "camp_page",
       "summary": "Scouts BSA resident camp operated by the Michigan Crossroads Council, situated on the Rifle River near Alger, Michigan.",
       "provenance": {
@@ -88,12 +92,19 @@
           {
             "url": "https://michiganscouting.org/camping/properties/cole-canoe-base/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://scoutingevent.com/Download/272183059/OR/2026_CCB_Food_Service_Manual.pdf",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-13 (submissions X58Vyod, vXJ71OX), kept anonymous at submitter request. Patrol/campsite cooking confirmed from the camp's food-service manual; the submitter's separate 'Beast Feast' suggestion is an event, not a camp feature, and was not added."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.7,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }

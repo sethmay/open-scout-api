@@ -15,12 +15,12 @@
       "address": "5680 ND49",
       "city": "Elgin",
       "state": "ND",
-      "lat": 46.223587,
-      "lon": -97.1341834,
+      "lat": 46.590509,
+      "lon": -101.809851,
       "geo_precision": "exact",
-      "elevation_ft": 1060,
-      "july_high_f": 83,
-      "july_low_f": 59,
+      "elevation_ft": 2140,
+      "july_high_f": null,
+      "july_low_f": null,
       "website": "https://scoutingnlc.org/campingprograms/adventurecamp/",
       "program_types": [
         "cub_resident"
@@ -60,6 +60,12 @@
           {
             "url": "https://scoutingnlc.org/campingprograms/adventurecamp/",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a visitor 2026-08-14 (submission jekZz9Y), kept anonymous at submitter request. Mapped location was placed in eastern North Dakota near Fargo; the reservation is near Elgin in southwest North Dakota (near Bismarck, Mountain time zone). Coordinates cleared pending re-geocoding from the recorded Elgin address."
+          },
+          {
+            "citation": "Coordinate geocoded 2026-08-14 from the corrected street address via the US Census geocoder; elevation from the open-meteo DEM. July normals still pending a WorldClim resample."
           }
         ],
         "method": "imported",

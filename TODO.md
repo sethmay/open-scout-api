@@ -381,11 +381,26 @@ human merge → release → Camp Finder bumps `EXPECTED_VERSION`. NEVER auto-mer
 - **Triage skill — DEFERRED until ~10-20 submissions calibrate the judgment.** Promote the handoff's
   normalize → vet → map → draft + validate loop into a `.claude/skills/` triage skill in this repo
   (keep the truth-call + the merge human, always). Unblock signal: enough real submissions to know
-  good-vs-bad patterns. Submissions triaged so far: 1 (Emerald Bay, `KpW95L8` — shipped, see CHANGELOG).
+  good-vs-bad patterns. Submissions triaged so far: 19 (Emerald Bay `KpW95L8` shipped in 0.58.2; a
+  second batch of 18 drafted 2026-08-14, awaiting review — see the correction CSV in `.workbench/`).
 - **Emerald Bay `first_year_program` — HELD, needs submitter clarification.** Submission `KpW95L8`
   (camp staff) checked "First-year program", but no first-year-camper track appears on
   campemeraldbay.org (Summer Adventure is a Cub/Webelos crossover, not a Scouts BSA first-year track).
   Ask the submitter for the program name via the form contact before adding; never add without a source.
+- **July normals + 2 unplaced camps from the 2026-08-14 location batch — FOLLOW-UP.** Four of the six were
+  re-geocoded 2026-08-14 (`wi-akelas-world-cub-scout-camp`, `sd-missouri-river-high-adventure-base`,
+  `nd-heart-butte-scout-reservation` exact via US Census; `fl-sand-hill-scout-reservation` approximate via
+  OpenStreetMap), with `elevation_ft` from open-meteo, but `july_high_f`/`july_low_f` are still null: run
+  `tools/july_temp.py` with `WORLDCLIM_DIR` set (rasters absent from a normal checkout) to fill them.
+  Two remain unplaced (`lat`/`lon` null): `or-camp-baldwin` (needs the real address — pull from
+  cpcscouting.org, it is on the Dufur/east side of Mt Hood, not Sandy) and `wi-hanna-venture-base` (see
+  conflict below); geocode + elevation + July-normals both once addressed.
+- **`wi-hanna-venture-base` — location conflict to RESOLVE.** The camp director says the base is part of
+  Tesomas Scout Camp at the far end of Hanna Lane, but the record/website place it at Crystal Lake Scout
+  Reservation / Spider Lake Rd. Coordinates cleared; resolve which reservation and street before re-placing.
+- **`ca-camp-robert-l-cole` — closure claim REJECTED at triage (submission peJjM5E).** A parent reported it
+  "closed, property sold"; evidence contradicts (leased from PG&E/Forest Service, still council-scheduled,
+  OA ordeals 2023-24). Left `active`. Reopen only if a real source shows a sale/closure.
 
 ### Camp program features — implementation + population plan
 
