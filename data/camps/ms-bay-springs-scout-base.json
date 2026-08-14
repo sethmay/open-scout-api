@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ms-bay-springs-scout-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Bay Springs Scout Base",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:natchez-trace",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Bay Springs Lake, Dennis, MS 38838",
+      "city": "Dennis",
+      "state": "MS",
+      "lat": 34.6555,
+      "lon": -88.5634,
+      "geo_precision": "approximate",
+      "elevation_ft": 540,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.natcheztracecouncil.org/baysprings",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Natchez Trace Council tent-camping base on a peninsula surrounded by Bay Springs Lake east of Booneville in northeast Mississippi, with no permanent facilities.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.natcheztracecouncil.org/properties",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Natchez Trace Council facilities page, which lists Bay Springs Scout Base as a current council property (the source's 'Andrew Jackson Council' label is wrong \u2014 the Pushmataha and Yocona councils that formerly served these counties merged into Natchez Trace Council). Coordinates from scout-camp-map, approximate (the lake address does not street-geocode); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own facilities page; classified as a primitive short-term tent-camping base; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

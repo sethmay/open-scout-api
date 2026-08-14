@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-camp-brosig",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Brosig",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:sam-houston-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1893 Trenckmann Rd, Sealy, TX 77474",
+      "city": "Sealy",
+      "state": "TX",
+      "lat": 29.858059,
+      "lon": -96.204905,
+      "geo_precision": "exact",
+      "elevation_ft": 190,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://shacbsa.org/camp-brosig",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Sam Houston Area Council weekend camping property in Austin County north of Sealy, Texas, offering campsites, program fields, and a covered pavilion for troop, crew, and ship camping and district events.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://shacbsa.org/camp-brosig",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Sam Houston Area Council camp page (shacbsa.org/camp-brosig), which confirms it as an active 92-acre weekend camping property. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.75,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camp page; camp_type/program_types classified conservatively as a weekend/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

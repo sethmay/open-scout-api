@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-oso-lake-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Oso Lake Scout Camp",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:orange-county",
+      "parent": null,
+      "operating_status": "active",
+      "address": "21131 Los Alisos Boulevard, Rancho Santa Margarita, CA 92688",
+      "city": "Rancho Santa Margarita",
+      "state": "CA",
+      "lat": 33.65686,
+      "lon": -117.62381,
+      "geo_precision": "exact",
+      "elevation_ft": 1030,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.osolake.org/",
+      "program_types": [
+        "short_term_camping",
+        "cub_day"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An Orange County Council short-term camp beside a lake within O'Neill Regional Park near Rancho Santa Margarita, California, offering day-camp and weekend unit camping with archery, fishing, and kayaking on its campsites.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.osolake.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the camp's own site and the Orange County Council camp listing, which confirm Oso Lake Scout Camp as an active OCC day- and weekend-camping property. Street address corrected from the source's 28092 Oso Parkway to the camp's own 21131 Los Alisos Boulevard, Rancho Santa Margarita. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.72,
+        "notes": "Coverage add: existence, council, and active operating status verified against the camp site and council listing; camp_type/program_types classified as a short-term camp with a Cub day-camp program; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

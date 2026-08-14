@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "mo-cow-creek-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Cow Creek Scout Reservation",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:ozark-trails",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2658 Cow Creek Rd, Blue Eye, MO 65611",
+      "city": "Blue Eye",
+      "state": "MO",
+      "lat": 36.5007,
+      "lon": -93.3969,
+      "geo_precision": "approximate",
+      "elevation_ft": 1300,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://otcscouting.org/cow-creek-scout-reservation/",
+      "program_types": [
+        "short_term_camping",
+        "family_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An Ozark Trails Council campground on Table Rock Lake near Blue Eye in the Missouri Ozarks, used for troop and family campouts with waterfront activities including swimming, kayaking, canoeing, and small-boat sailing.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://otcscouting.org/cow-creek-scout-reservation/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Ozark Trails Council's Cow Creek page. The source's Pony Express Council attribution is wrong: Cow Creek is an Ozark Trails Council property. Coordinates from scout-camp-map (approximate; US Census returned no match for the rural address); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified from the council page as a short-term and family camping campground; coordinates approximate; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

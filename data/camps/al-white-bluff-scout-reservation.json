@@ -1,0 +1,49 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "al-white-bluff-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "White Bluff Scout Reservation",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:black-warrior",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Highway 43 North, Demopolis, AL 36732",
+      "city": "Demopolis",
+      "state": "AL",
+      "lat": 32.5486,
+      "lon": -87.8363,
+      "geo_precision": "approximate",
+      "elevation_ft": 140,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.bwc-bsa.org/facilities",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Black Warrior Council camp off Highway 43 north of Demopolis, Alabama, the council's second primitive property, available to Scout units most of the year and featuring a large pavilion and a boat landing.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.bwc-bsa.org/facilities",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Black Warrior Council's own Facilities page, which lists White Bluff Scout Reservation as its second primitive camp. Coordinates from scout-camp-map, approximate (the council gives only a highway, which does not geocode to a point); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.68
+      }
+    }
+  ],
+  "notes": null
+}

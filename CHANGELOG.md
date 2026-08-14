@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Add 78 coverage-gap camps across 40 states (scout-camp-map sweep, batch 3; 21 parallel workers, councils re-verified); 29 held (sold/dupe/non-BSA/OCONUS). Camps 472 → 550. Completes the state-by-state sweep.
+
 ## 0.58.10 (patch) — 2026-08-14
 
 - `c61692c` Add 18 coverage-gap camps across 8 councils (parallel-curated from scout-camp-map, councils re-verified); 6 held (sold/dupe/divesting).

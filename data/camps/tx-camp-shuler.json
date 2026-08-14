@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-camp-shuler",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Shuler",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:longhorn",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "Clifton",
+      "state": "TX",
+      "lat": 31.85,
+      "lon": -97.42,
+      "geo_precision": "approximate",
+      "elevation_ft": 660,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.longhorncouncil.org/camp-properties",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Longhorn Council camping facility on Lake Whitney near Clifton, Texas, used for weekend unit campouts and outdoor programs.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://wacotrib.com/news/government/long-running-boy-scout-camp-moving-out-after-sale-of-tradinghouse-land/article_bb078936-6317-517b-9994-a4c49ebe7055.html",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified as a Longhorn Council property. The current Longhorn Council camp-properties and maps pages do not feature Camp Shuler, but the Waco Tribune-Herald (2025 update) names Camp Shuler at Lake Whitney as one of the closest current Boy Scout camps to Waco, so it is recorded as active. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.6,
+        "notes": "Coverage add: council confirmed; active status corroborated by a 2025 news source rather than the council site (which does not list it). camp_type/program_types classified conservatively as a primitive weekend-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

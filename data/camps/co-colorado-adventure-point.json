@@ -1,0 +1,48 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "co-colorado-adventure-point",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Colorado Adventure Point",
+      "camp_type": "program_center",
+      "operator": "council",
+      "council": "council:greater-colorado",
+      "parent": null,
+      "operating_status": "active",
+      "address": "10455 W 6th Avenue, Lakewood, CO 80215",
+      "city": "Lakewood",
+      "state": "CO",
+      "lat": 39.72581,
+      "lon": -105.115486,
+      "geo_precision": "exact",
+      "elevation_ft": 5580,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://coloradoadventurepoint.org/",
+      "program_types": [],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "An indoor adventure education center operated by the Greater Colorado Council in Lakewood, Colorado, with a climbing wall, shooting-sports ranges, and a technology lab used for merit badge classes, day camps, overnights, field trips, and group activities.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://coloradoadventurepoint.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; operating status verified from the facility's own site. The source hint's council label 'Scouting Colorado' resolves to the Greater Colorado Council (Scouting America org BSA061, formerly the Denver Area Council), which operates the facility. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; classified as a program center (indoor adventure education facility rather than resident camp); program_types left empty as the facility's youth offerings do not map cleanly to the vocab; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

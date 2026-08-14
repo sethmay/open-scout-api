@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "me-camp-bomazeen",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Bomazeen",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:pine-tree",
+      "parent": null,
+      "operating_status": "active",
+      "address": "656 Horse Point Rd, Belgrade, ME 04917",
+      "city": "Belgrade",
+      "state": "ME",
+      "lat": 44.55992,
+      "lon": -69.8219,
+      "geo_precision": "exact",
+      "elevation_ft": 300,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.pinetreescouting.org/camping/our-camps/",
+      "program_types": [
+        "short_term_camping",
+        "cub_day"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Pine Tree Council camp on a beachfront on Great Pond in Maine's Belgrade Lakes region, offering day camp and weekend camping opportunities for units on the eastern shoreline.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.pinetreescouting.org/camping/our-camps/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Pine Tree Council 'Our Camps' page, which lists Camp Bomazeen as a current council property offering day camp and weekend camping. The property was listed for sale during the council's financial troubles but is no longer actively for sale and has resumed some scouting use; a land-trust preservation effort is ongoing, so the resident summer-camp program is not classified here. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence and council verified; still council-owned and used for day/weekend camping after a stalled sale; classified conservatively as a short-term camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

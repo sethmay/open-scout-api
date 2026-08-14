@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "la-camp-carruth",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Carruth",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:istrouma-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Rosedale Road, Port Allen, LA 70767",
+      "city": "Port Allen",
+      "state": "LA",
+      "lat": 30.4642,
+      "lon": -91.2647,
+      "geo_precision": "approximate",
+      "elevation_ft": 70,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.istroumascouting.org/campcarruth",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A wooded Istrouma Area Council camp near Port Allen in West Baton Rouge Parish, Louisiana, with clean campsites, hiking trails, and a covered pavilion for Cub Scout pack and Scouts BSA troop outings.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.istroumascouting.org/campcarruth",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Istrouma Area Council camp page, which presents the property as both 'Camp Carruth' and 'Carruth Scout Preserve' (one property, added once). Confirmed as a current Istrouma Area Council short-term camp near Port Allen, Louisiana. Coordinates from scout-camp-map (approximate; the address lacks a house number to geocode exactly); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camp page; camp_type/program_types classified conservatively as a weekend pack/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

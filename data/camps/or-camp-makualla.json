@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-camp-makualla",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Makualla",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:pacific-crest",
+      "parent": null,
+      "operating_status": "active",
+      "address": "60 Forest Road, Crescent Lake, OR 97733",
+      "city": "Crescent Lake",
+      "state": "OR",
+      "lat": 43.4808,
+      "lon": -121.9839,
+      "geo_precision": "approximate",
+      "elevation_ft": 4840,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://pccscouting.org/camping/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Pacific Crest Council camp on the shore of Crescent Lake high in the Cascades of central Oregon, with campsites, A-frame shelters, and a dining hall, set near extensive backcountry and high-adventure country.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://pccscouting.org/camping/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Pacific Crest Council camping page. The scout-camp-map 'Blue Mountain Council' label is wrong: Camp Makualla is a Pacific Crest Council property. Coordinates from scout-camp-map (approximate); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.68,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's camping page; classified conservatively as a weekend/unit camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

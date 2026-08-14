@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "or-aubrey-watzek-lodge",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Aubrey Watzek Lodge",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:cascade-pacific",
+      "parent": null,
+      "operating_status": "active",
+      "address": "14000 OR-35, Parkdale, OR 97041",
+      "city": "Parkdale",
+      "state": "OR",
+      "lat": 45.3137,
+      "lon": -121.6597,
+      "geo_precision": "exact",
+      "elevation_ft": 4500,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://cpcscouting.org/wintercamp/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Cascade Pacific Council winter recreation lodge on the flank of Mount Hood, leased from the national forest, with large dormitory sleeping, industrial kitchens, and a central fireplace, supporting snowshoe and cold-weather unit camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://cpcscouting.org/wintercamp/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Cascade Pacific Council winter camp page (confirmed a distinct CPC winter lodge on Mount Hood). The scout-camp-map coordinates fell in downtown Portland; re-placed by geocoding the Mount Hood address. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's winter camp page; classified as a weekend/winter camping lodge; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

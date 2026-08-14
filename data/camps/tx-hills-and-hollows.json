@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-hills-and-hollows",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Hills and Hollows",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:longhorn",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3945 Roselawn Dr, Denton, TX 76207",
+      "city": "Denton",
+      "state": "TX",
+      "lat": 33.183756,
+      "lon": -97.16099,
+      "geo_precision": "exact",
+      "elevation_ft": 640,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.longhorncouncil.org/hills-and-hollows",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A small Longhorn Council weekend campground on wooded acreage in Denton, Texas, north of the Dallas-Fort Worth area, with hillside campsites, a fire pit, and a large pavilion for unit camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.longhorncouncil.org/hills-and-hollows",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Longhorn Council Hills and Hollows page, which confirms it as an active, council-accessible (privately owned) 25-acre weekend campground in Denton. The source's 'Decatur' city label is wrong; the camp is in Denton. Coordinates geocoded via US Census from the scout-camp-map street address; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and active status verified against the council page; city corrected from Decatur to Denton. Privately owned property reserved through the council; camp_type/program_types classified conservatively as a weekend-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

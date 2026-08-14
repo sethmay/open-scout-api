@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-rancho-los-mochos",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Rancho Los Mochos",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:golden-gate-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "8500 Mines Road, Livermore, CA 94550",
+      "city": "Livermore",
+      "state": "CA",
+      "lat": 37.618234,
+      "lon": -121.697818,
+      "geo_precision": "exact",
+      "elevation_ft": 830,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://losmochos.ggacbsa.org/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A nationally accredited Golden Gate Area Council scout camp in the hills along Mines Road south of Livermore, California, offering resident summer camp, hiking, and outdoor programs on a large wilderness property in Alameda County.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://losmochos.ggacbsa.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council re-verified and corrected from the source's 'Mount Diablo Silverado Council' (retired in the 2020 merger) to the current Golden Gate Area Council, which owns and operates the camp. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; council corrected to the current Golden Gate Area Council; camp_type/program_types classified conservatively as a Scouts BSA resident camp; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

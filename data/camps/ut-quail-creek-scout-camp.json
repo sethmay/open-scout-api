@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ut-quail-creek-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Quail Creek Scout Camp",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:crossroads-of-the-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4680 W 150 N, Hurricane, UT 84737",
+      "city": "Hurricane",
+      "state": "UT",
+      "lat": 37.1847,
+      "lon": -113.3967,
+      "geo_precision": "approximate",
+      "elevation_ft": 3040,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.utahscouts.org/quailcreekdaycamp",
+      "program_types": [
+        "cub_day",
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Crossroads of the West Council Scout camp near the Virgin River outside Hurricane in southern Utah, serving as a basecamp for Cub Scout day camp, unit camporees, and outdoor leader training within reach of Zion country.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.utahscouts.org/quailcreekdaycamp",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from Crossroads of the West Council pages, which list Quail Creek Scout Camp at this address as an active property hosting the Quail Creek Day Camp, unit camporees, and Introduction to Outdoor Leader Skills training. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own camp and day-camp pages; camp_type/program_types classified conservatively as a day-camp, weekend-camping, and training property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ga-camp-osborn",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Osborn",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:south-georgia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "480 Camp Osborn Rd, Sylvester, GA 31791",
+      "city": "Sylvester",
+      "state": "GA",
+      "lat": 31.648,
+      "lon": -83.945,
+      "geo_precision": "exact",
+      "elevation_ft": 290,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.sgcbsa.org/camposborn",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The South Georgia Council's Scout reservation in Worth County near Sylvester, Georgia, also known as the Chase S. Osborn Scout Reservation, an expansive property offering resident summer camp with shooting sports, aquatics, climbing, and conservation programs.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.sgcbsa.org/camposborn",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the South Georgia Council camp page. Confirmed as a current South Georgia Council reservation (the Chase S. Osborn Scout Reservation); the source's street number (1475) and southgeorgiacouncil.org link were corrected to the council's own page and the camp's listed address (480 Camp Osborn Rd). Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified conservatively as a Scouts BSA resident-camp reservation; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

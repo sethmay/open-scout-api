@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "sc-glendale-outdoor-leadership-school",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Glendale Outdoor Leadership School",
+      "camp_type": "program_center",
+      "operator": "council",
+      "council": "council:palmetto-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "270 Wheeling Cir, Glendale, SC 29346",
+      "city": "Glendale",
+      "state": "SC",
+      "lat": 34.94538,
+      "lon": -81.83405,
+      "geo_precision": "exact",
+      "elevation_ft": 720,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.palmettocouncil.org/gols",
+      "program_types": [
+        "training",
+        "cub_day"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Palmetto Area Council outdoor leadership campus near the Pacolet River in Glendale, outside Spartanburg, South Carolina, offering climbing, bouldering, STEM, and team-building experiences alongside leadership courses and Cub Scout day camp.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.palmettocouncil.org/gols",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Palmetto Area Council GOLS page, which lists it as one of the council's two owned properties operated as a camping and training facility. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; classified as a program/training center with Cub day-camp use; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

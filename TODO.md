@@ -365,18 +365,33 @@ by the pipeline (as the Pipsico fix was).
   Camp Kenya (Transatlantic #802) was absent entirely — camp-finder's scrape favored US councils. Sweep
   Transatlantic, Far East / Direct Service, and other overseas councils against their own camp pages for
   camps the import missed, and add them by hand (`method: curated`) like Camp Kenya.
-- **Coverage: cross-reference the community scout-camp-map project (seeded 2026-08-14).**
+- **Coverage: cross-reference the community scout-camp-map project — SWEEP DONE (0.58.8–0.58.10).**
   [github.com/jasondaihl/scout-camp-map](https://github.com/jasondaihl/scout-camp-map) ships a flat
-  `data/camps.geojson` of ~527 council camps (name/type/council/city/state/address/website/description +
-  coords). It is coarser than ours (coords ~4 dp vs our 6, with some errors; no features/history/status)
-  — treat it as a COVERAGE POINTER list, not a coord/richness source, and do NOT bulk-import (quality +
-  attribution). A state-scoped name diff shows ~243 of theirs unmatched, but that's inflated by naming
-  variants, reservation-vs-camp modeling, and post-2024 merged-council renames; the real gap is a subset.
-  Sweep state-by-state and add genuine gaps by hand (`method: curated`) from council pages, like Camp
-  Warren Levis (added 0.58.8). Confirmed GSLAC gaps still open: **Beaumont Scout Reservation (MO)** —
-  but we already model Beaumont as a `reservation` grouping via child camps (Camp May), so settle
-  camp-vs-reservation first — and **Pine Ridge Scout Camp (IL)**. Their council names use the merged
-  post-2024 names, a useful cross-check for our council-lineage data.
+  `data/camps.geojson` of ~527 council camps (coarser than ours; coords ~4 dp with errors; no
+  features/history/status) — used as a COVERAGE POINTER only, never bulk-imported. Full state-by-state
+  sweep triaged ~135 candidate gaps in three rounds (5 calibration, 18 batch-2, 78 batch-3 across 40
+  states): **~101 genuine gaps added by hand (`method: curated`, councils re-verified)**, the rest held
+  (sold/duplicate/non-BSA/un-representable). The source's council/website/status was wrong on ~1/3 of
+  entries, so every add was re-verified against the operating council's own page. Camps 448 → 550.
+  Pine Ridge Scout Camp (IL) added (`il-camp-pine-ridge`); Beaumont (MO) still modeled as a reservation
+  grouping via child camps. Open follow-ups this sweep surfaced:
+  - **Coordinate fixes on EXISTING records** (flagged, not applied): `al-camp-westmoreland-cub-scout-twilight-camp`
+    pin is in Auburn/Opelika, belongs in Florence (~34.88, -87.57); `al-camp-tukabatchee` and
+    `al-camp-dexter-c-hobbs-cub-scout-adventure-camp` pins are in Auburn, belong near Prattville (~32.58, -86.50).
+  - **Missing council record:** Cimarron Council (#474, Enid OK) has no `data/councils` file, so Will Rogers
+    Scout Reservation is held; add the council (+ its great-salt-plains/will-rogers lineage) to place it.
+  - **Foreign-located US-council camp:** Cache Lake Camp (W.D. Boyce Council canoe base) sits in Ontario,
+    CANADA; schema `state` requires a US 2-letter code and the geocode/coord-bounds pipeline is US-only.
+    Needs a decision on whether/how to represent OCONUS council-owned camps.
+  - **Council-lineage cross-checks:** Spirit of Adventure→"Greater Boston" and Twin Valley→Northern Star are
+    announced/pending merges (current `valid_to:null` ids used for now); update councils when they land.
+  - **`closed` defunct-camp coverage (if ever wanted):** ~15 sold/transferred properties were identified and
+    held with sources (Woodland Trails→ODNR, Sabattis ×2, Gustin, Kootaga, Krietenstein, Three Falls, Sunrise,
+    Sam Hatcher, Wa-Kon-Da, Louis Ernst, Paxson, Shetek, Newton Hills, Pico Blanco) — ready if a `closed` tier lands.
+  - **July normals + feature survey on the ~101 curated adds:** all shipped with `july_high_f`/`july_low_f`
+    `null` and `features: []`. Run `tools/july_temp.py` (WorldClim rasters) to fill normals for the
+    coord-bearing ones, then a feature-survey pass (prioritise resident + high-adventure, the biggest
+    out-of-council draw).
 - **Average summer temperatures — DONE (0.27.0).** `july_high_f` / `july_low_f` ship on every camp
   with a coordinate (447 of 448), sampled from WorldClim v2.1 1 km normals by `tools/july_temp.py`.
   (`elevation_ft` shipped in 0.26.0.) Open, if ever wanted: other months / a seasonal curve, and a

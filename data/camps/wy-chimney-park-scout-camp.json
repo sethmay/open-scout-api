@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wy-chimney-park-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Chimney Park Scout Camp",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:adventure-west",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1 Scout Rd, Woods Landing-Jelm, WY 82063",
+      "city": "Woods Landing-Jelm",
+      "state": "WY",
+      "lat": 41.0722,
+      "lon": -106.1092,
+      "geo_precision": "approximate",
+      "elevation_ft": 8970,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://campreservation.com/062/Camps/909",
+      "program_types": [
+        "short_term_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A historic Adventure West Council camp in the Snowy Range Mountains west of Laramie, Wyoming, set on leased Forest Service land around a small lake and used for weekend unit camping, day events, and outdoor leader training.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://campreservation.com/062/Camps/909",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Adventure West Council camp-reservation listing and awbsa.org/about, both of which list Chimney Park Scout Camp as a current council property available for weekend camping, day events, and week-long adventures (summer camp operation ceased in the mid-1970s; the property is now managed by a volunteer committee for year-round unit use). Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own reservation and about pages; camp_type/program_types classified conservatively as a weekend-camping and training property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "tx-mays-family-scout-ranch",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Mays Family Scout Ranch",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:alamo-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3445 Fest Rd, San Antonio, TX 78264",
+      "city": "San Antonio",
+      "state": "TX",
+      "lat": 29.24745,
+      "lon": -98.5713,
+      "geo_precision": "exact",
+      "elevation_ft": 540,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.alamoareascouting.org/camping/mays-family-scout-ranch/",
+      "program_types": [
+        "short_term_camping",
+        "family_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "One of the Alamo Area Council's premier camps, a ranch along the Medina River on the south side of San Antonio, Texas, shaded by cypress, oak, and pecan and used for youth and family weekend camping, fishing, and conservation.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.alamoareascouting.org/camping/mays-family-scout-ranch/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Alamo Area Council camp page (alamoareascouting.org), one of the council's three premier camps. The source's alamoareabsa.org website hint was corrected to the council's current alamoareascouting.org domain. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camp page; camp_type/program_types classified conservatively as a weekend youth/family camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

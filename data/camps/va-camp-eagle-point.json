@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "va-camp-eagle-point",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Eagle Point",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:heart-of-virginia",
+      "parent": null,
+      "operating_status": "active",
+      "address": "3500 Taylor Ferry Rd, Boydton, VA 23917",
+      "city": "Boydton",
+      "state": "VA",
+      "lat": 36.616,
+      "lon": -78.404,
+      "geo_precision": "exact",
+      "elevation_ft": 380,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://hovc.org/eagle-point/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive, Scouting-only short-term camping property spread across three peninsulas on Kerr Reservoir (Buggs Island Lake) in Mecklenburg County, Virginia, leased from the Army Corps of Engineers and used by units and districts for wilderness weekend camping and camporees.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://hovc.org/eagle-point/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Heart of Virginia Council's Eagle Point camp page, which describes it as a current short-term camping facility leased from the Army Corps of Engineers. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.72,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own camp page; camp_type/program_types classified conservatively as a primitive weekend/camporee property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

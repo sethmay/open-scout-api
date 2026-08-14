@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ms-camp-seminole",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Seminole",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:natchez-trace",
+      "parent": null,
+      "operating_status": "active",
+      "address": "2244 Sun Creek Rd, Starkville, MS 39759",
+      "city": "Starkville",
+      "state": "MS",
+      "lat": 33.546,
+      "lon": -88.8629,
+      "geo_precision": "exact",
+      "elevation_ft": 260,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.natcheztracecouncil.org/CampSeminole",
+      "program_types": [
+        "scouts_bsa_resident",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A year-round Natchez Trace Council resident camp north of Starkville in eastern Mississippi, offering tent and limited cabin camping, a dining hall, a fishing and boating lake, and shooting ranges.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.natcheztracecouncil.org/properties",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Natchez Trace Council facilities page, which describes Camp Seminole as a current year-round resident camping facility (the source's 'Pushmataha Area Council' label is superseded \u2014 that council merged into Natchez Trace Council). Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's own facilities page; classified as a year-round Scouts BSA resident camp; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

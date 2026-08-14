@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ms-camp-binachi",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Binachi",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:mississippi-riverlands",
+      "parent": null,
+      "operating_status": "active",
+      "address": "4434 Camp Binachi Rd, Meridian, MS 39301",
+      "city": "Meridian",
+      "state": "MS",
+      "lat": 32.3149,
+      "lon": -88.5253,
+      "geo_precision": "exact",
+      "elevation_ft": 520,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://scoutingriverlands.org/camp-binachi/",
+      "program_types": [
+        "scouts_bsa_resident",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A long-established Scouts BSA resident camp in east-central Mississippi near Meridian, set on wooded acreage around Lake Frank Williams with a shooting sports center and summer camp program.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://scoutingriverlands.org/camp-binachi/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified via web search. The source labels this a Choctaw Area Council / 'Andrew Jackson Council' camp, but Choctaw Area Council and Andrew Jackson Council merged into the Mississippi Riverlands Council effective March 2026, which now operates Camp Binachi; the source's choctawareacouncil.org link is superseded. Ran a Scouts BSA summer camp in 2025. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, current council (post-merger Mississippi Riverlands), and operating status verified; classified as a Scouts BSA resident camp; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

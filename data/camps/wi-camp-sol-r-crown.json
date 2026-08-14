@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wi-camp-sol-r-crown",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sol R. Crown",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:northeast-illinois",
+      "parent": null,
+      "operating_status": "active",
+      "address": "11651 304th Ave, Trevor, WI 53179",
+      "city": "Trevor",
+      "state": "WI",
+      "lat": 42.5094,
+      "lon": -88.1758,
+      "geo_precision": "exact",
+      "elevation_ft": 760,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.campcrown.org/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A year-round Northeast Illinois Council camp in Trevor, southeastern Wisconsin, with cabins and open camping areas that host unit campouts and Cub Scout camporees.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.campcrown.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Camp Sol R. Crown site. Confirmed as a current Northeast Illinois Council camp in Trevor, Wisconsin. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.72,
+        "notes": "Coverage add: existence, council, and operating status verified against the camp site; camp_type/program_types classified conservatively as a year-round unit-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

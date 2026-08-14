@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "oh-camp-otter-run",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Otter Run",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:simon-kenton",
+      "parent": null,
+      "operating_status": "active",
+      "address": "7647 County Road 144, East Liberty, OH 43319",
+      "city": "East Liberty",
+      "state": "OH",
+      "lat": 40.3105,
+      "lon": -83.6169,
+      "geo_precision": "exact",
+      "elevation_ft": 1400,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://skcscouts.org/camps/camp-locations-and-rentals/camp-otter-run/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Simon Kenton Council camp north of Marysville near East Liberty, Ohio, on wooded grounds designed for patrol-method overnight and day outings.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://skcscouts.org/camps/camp-locations-and-rentals/camp-otter-run/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Simon Kenton Council camp page. The source labeled this a Muskingum Valley Council camp, which is incorrect: it is a current Simon Kenton Council primitive-camping property. Coordinates geocoded via US Census (the source's coordinates were mislocated); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, correct Simon Kenton Council operation, and active status verified; source council corrected from Muskingum Valley; camp_type/program_types classified conservatively; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

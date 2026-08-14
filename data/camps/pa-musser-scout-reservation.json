@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "pa-musser-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Musser Scout Reservation",
+      "camp_type": "reservation",
+      "operator": "council",
+      "council": "council:cradle-of-liberty",
+      "parent": null,
+      "operating_status": "active",
+      "address": "5505 Upper Ridge Rd, Pennsburg, PA 18073",
+      "city": "Pennsburg",
+      "state": "PA",
+      "lat": 40.35069,
+      "lon": -75.44771,
+      "geo_precision": "exact",
+      "elevation_ft": 530,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://mussersr.org/",
+      "program_types": [
+        "cub_resident",
+        "cub_day",
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "The 1,400-acre Cradle of Liberty Council reservation along Unami Creek in southeastern Pennsylvania, part of the largest contiguous forest in the region and home to Camp Hart, Camp Delmont, and Camp Garrison.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://mussersr.org/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the reservation's own site, which lists Camp Hart, Camp Delmont, and Camp Garrison and reserves through the Cradle of Liberty (colbsa) portal. The source's Pennsylvania Dutch Council attribution is wrong: Musser is a Cradle of Liberty Council reservation. This record supplies the parent property already referenced by pa-camp-hart and pa-camp-garrison. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; classified as the umbrella reservation containing Camp Hart, Camp Delmont, and Camp Garrison; program_types reflect its Cub resident/day and short-term camping use; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

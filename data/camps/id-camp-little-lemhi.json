@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "id-camp-little-lemhi",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Little Lemhi",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:grand-teton",
+      "parent": null,
+      "operating_status": "active",
+      "address": "1158 Snake River Road, Palisades, ID 83428",
+      "city": "Palisades",
+      "state": "ID",
+      "lat": 43.3633,
+      "lon": -111.2413,
+      "geo_precision": "approximate",
+      "elevation_ft": 5460,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://tetonscouts.org/properties/rentals/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Grand Teton Council camp property in Yeaman Creek Canyon below Palisades Dam, on the South Fork of the Snake River in eastern Idaho, offering a lodge, a private lake, and forested surroundings for troop camping and outdoor recreation.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://tetonscouts.org/properties/rentals/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Grand Teton Council's own properties/rentals page, which currently lists Little Lemhi as a council camp available for use. Council confirmed as Grand Teton (matches the source hint). The council suspended full resident-camp operations in 2020; the property remains a council-offered camp for troop use and rentals, so classified active as a short-term camp. Coordinates from scout-camp-map, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and current availability verified against the council's own rentals page; camp_type/program_types classified conservatively as a short-term/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}
