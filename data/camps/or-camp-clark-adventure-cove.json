@@ -11,16 +11,16 @@
       "operator": "council",
       "council": "council:cascade-pacific",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "not_operating",
       "address": "17500 Cape Lookout Road",
       "city": "Cloverdale",
       "state": "OR",
-      "lat": 45.201599,
-      "lon": -123.885091,
+      "lat": 45.330505,
+      "lon": -123.968238,
       "geo_precision": "approximate",
-      "elevation_ft": 260,
-      "july_high_f": 69,
-      "july_low_f": 50,
+      "elevation_ft": 160,
+      "july_high_f": null,
+      "july_low_f": null,
       "website": "https://cpcscouting.org/project/camp-clark/",
       "program_types": [
         "high_adventure"
@@ -34,14 +34,8 @@
           "code": "amphitheater"
         },
         {
-          "code": "archery"
-        },
-        {
           "code": "bathhouse",
           "note": "shower house with hot water"
-        },
-        {
-          "code": "bb_guns"
         },
         {
           "code": "cabins",
@@ -55,9 +49,6 @@
         },
         {
           "code": "flush_toilets"
-        },
-        {
-          "code": "handicraft"
         },
         {
           "code": "hiking"
@@ -79,9 +70,9 @@
           "code": "trading_post"
         }
       ],
-      "features_verified_at": "2026-07-26",
+      "features_verified_at": "2026-08-14",
       "features_source_tier": "guide",
-      "summary": "Coastal high-adventure program on the 780-acre Meriwether/Clark Scout Reservation at Cape Lookout, south of Tillamook, offering sea kayaking, rock climbing, sandboarding, shooting sports, and clamming and crabbing.",
+      "summary": "Family camping site on the 780-acre Meriwether/Clark Scout Reservation at Cape Lookout, south of Tillamook: forest campsites and family cabins with beachfront, tidepools, trails, and hot-shower bathhouses. It no longer runs a formal camp program.",
       "provenance": {
         "sources": [
           {
@@ -94,12 +85,18 @@
           {
             "url": "https://cpcscouting.org/download/486/camp-maps/9155/camp-clark-trail-map-2",
             "accessed": "2026-07-26"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-14 (submission xVlMjDd), kept anonymous at submitter request. The council's Camp Clark page confirms no formal summer-camp program runs and the site is open to Scouting families for coastal family camping only, so operating_status is not_operating and the shooting-sports (archery, bb_guns) and handicraft program features were removed."
+          },
+          {
+            "citation": "Coordinate set 2026-08-14 to the submitter's attended-location pin at Cape Lookout (approximate); elevation from the open-meteo DEM. July normals cleared pending a WorldClim resample."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }
