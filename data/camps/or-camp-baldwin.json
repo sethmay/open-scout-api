@@ -12,13 +12,13 @@
       "council": "council:cascade-pacific",
       "parent": null,
       "operating_status": "active",
-      "address": null,
-      "city": null,
+      "address": "76201 Dufur Valley Rd, Dufur, OR 97021",
+      "city": "Dufur",
       "state": "OR",
-      "lat": null,
-      "lon": null,
-      "geo_precision": null,
-      "elevation_ft": null,
+      "lat": 45.404283,
+      "lon": -121.424733,
+      "geo_precision": "exact",
+      "elevation_ft": 3610,
       "july_high_f": null,
       "july_low_f": null,
       "website": "https://cpcscouting.org/project/camp-baldwin/",
@@ -93,6 +93,9 @@
           },
           {
             "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-14 (submission Kpap8X7), kept anonymous at submitter request. Camp is on Mount Hood (the Dufur / east side), not in Sandy; the prior address and coordinates placed it on the west side near Sandy. Address and coordinates cleared pending re-geocoding, to be sourced from the council's Camp Baldwin page."
+          },
+          {
+            "citation": "Coordinate set 2026-08-14 from the council's Camp Baldwin page (76201 Dufur Valley Rd, Dufur OR, on the east side of Mount Hood; the council's own stated coordinates); elevation from the open-meteo DEM. July normals still pending a WorldClim resample."
           }
         ],
         "method": "imported",

@@ -387,17 +387,15 @@ human merge → release → Camp Finder bumps `EXPECTED_VERSION`. NEVER auto-mer
   (camp staff) checked "First-year program", but no first-year-camper track appears on
   campemeraldbay.org (Summer Adventure is a Cub/Webelos crossover, not a Scouts BSA first-year track).
   Ask the submitter for the program name via the form contact before adding; never add without a source.
-- **July normals + 2 unplaced camps from the 2026-08-14 location batch — FOLLOW-UP.** Four of the six were
-  re-geocoded 2026-08-14 (`wi-akelas-world-cub-scout-camp`, `sd-missouri-river-high-adventure-base`,
-  `nd-heart-butte-scout-reservation` exact via US Census; `fl-sand-hill-scout-reservation` approximate via
-  OpenStreetMap), with `elevation_ft` from open-meteo, but `july_high_f`/`july_low_f` are still null: run
-  `tools/july_temp.py` with `WORLDCLIM_DIR` set (rasters absent from a normal checkout) to fill them.
-  Two remain unplaced (`lat`/`lon` null): `or-camp-baldwin` (needs the real address — pull from
-  cpcscouting.org, it is on the Dufur/east side of Mt Hood, not Sandy) and `wi-hanna-venture-base` (see
-  conflict below); geocode + elevation + July-normals both once addressed.
-- **`wi-hanna-venture-base` — location conflict to RESOLVE.** The camp director says the base is part of
-  Tesomas Scout Camp at the far end of Hanna Lane, but the record/website place it at Crystal Lake Scout
-  Reservation / Spider Lake Rd. Coordinates cleared; resolve which reservation and street before re-placing.
+- **July normals for the 6 relocated camps (2026-08-14 batch) — FOLLOW-UP.** All six were re-placed
+  2026-08-14 with `elevation_ft` from open-meteo: exact via US Census — `wi-akelas-world-cub-scout-camp`,
+  `sd-missouri-river-high-adventure-base`, `nd-heart-butte-scout-reservation`, `or-camp-baldwin` (from the
+  council's stated coords); approximate — `fl-sand-hill-scout-reservation` (OSM road point) and
+  `wi-hanna-venture-base` (CLSR reservation address; the exact Hanna base point at the far end of Hanna
+  Lane is still TBD). But `july_high_f`/`july_low_f` are null on all six: run `tools/july_temp.py` with
+  `WORLDCLIM_DIR` set (rasters absent from a normal checkout) to fill them, then re-release.
+  The Hanna "conflict" resolved: CLSR contains Tesomas, Akela's World, and Hanna, so the Spider Lake Rd
+  placement was correct all along.
 - **`ca-camp-robert-l-cole` — closure claim REJECTED at triage (submission peJjM5E).** A parent reported it
   "closed, property sold"; evidence contradicts (leased from PG&E/Forest Service, still council-scheduled,
   OA ordeals 2023-24). Left `active`. Reopen only if a real source shows a sale/closure.

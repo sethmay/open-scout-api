@@ -12,13 +12,13 @@
       "council": "council:samoset",
       "parent": null,
       "operating_status": "active",
-      "address": null,
+      "address": "5403 Spider Lake Rd",
       "city": "Rhinelander",
       "state": "WI",
-      "lat": null,
-      "lon": null,
-      "geo_precision": null,
-      "elevation_ft": null,
+      "lat": 45.728720,
+      "lon": -89.420014,
+      "geo_precision": "approximate",
+      "elevation_ft": 1650,
       "july_high_f": null,
       "july_low_f": null,
       "website": "http://clsr.samoset.org/hanna/",
@@ -55,6 +55,9 @@
           },
           {
             "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by the camp director 2026-08-13 (submission M16k0Nl), kept anonymous at submitter request. Director reports the mapped location is wrong: the base is part of Tesomas Scout Camp, at the far end of Hanna Lane, Rhinelander WI. Coordinates cleared pending re-geocoding; this conflicts with the record's Crystal Lake Scout Reservation / Spider Lake Rd placement, so resolve the reservation and street before re-placing."
+          },
+          {
+            "citation": "Resolved 2026-08-14: Crystal Lake Scout Reservation contains Tesomas, Akela's World, and Hanna Venture Base, so the CLSR / Spider Lake Rd placement was correct. Coordinate set to the reservation address (approximate) via the US Census geocoder; elevation from the open-meteo DEM. The exact Hanna base point (far end of Hanna Lane) and July normals are still pending."
           }
         ],
         "method": "imported",

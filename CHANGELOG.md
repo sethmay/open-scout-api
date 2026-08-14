@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Re-geocode Camp Baldwin (Dufur, OR) and Hanna Venture Base (CLSR) from the location batch.
+
 ## 0.58.3 (patch) — 2026-08-14
 
 - `447e834` Triage 18 community camp corrections: 5 closures, 4 feature/program fixes, 6 relocation fixes.
