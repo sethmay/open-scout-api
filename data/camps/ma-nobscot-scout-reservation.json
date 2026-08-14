@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ma-nobscot-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Nobscot Scout Reservation",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:mayflower",
+      "parent": null,
+      "operating_status": "active",
+      "address": "550 Edgell Road, Framingham, MA 01701",
+      "city": "Framingham",
+      "state": "MA",
+      "lat": 42.317259,
+      "lon": -71.437473,
+      "geo_precision": "approximate",
+      "elevation_ft": 210,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.mayflowerbsa.org/camping/nobscot-reservation/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A 452-acre Mayflower Council reservation on Nobscot Hill in Framingham and Sudbury, Massachusetts, west of Boston, offering year-round weekend camping and an outdoor-education program. It no longer runs a summer camp.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.mayflowerbsa.org/camping/nobscot-reservation/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the community scout-camp-map project. The source mis-attributed it to Spirit of Adventure Council; it is a Mayflower Council reservation, verified against the council's camp page. Its summer camp no longer runs (weekend camping + outdoor education only). Coordinates geocoded from the address (approximate — a 452-acre property); elevation from the open-meteo DEM. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.75,
+        "notes": "Coverage add with corrected council (Mayflower, not Spirit of Adventure). Existence, council, and no-summer-camp status verified against the council page; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

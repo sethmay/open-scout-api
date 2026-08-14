@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "fl-camp-alafia",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Alafia",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:greater-tampa-bay-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "14302 Boy Scout Road, Lithia, FL 33547",
+      "city": "Lithia",
+      "state": "FL",
+      "lat": 27.866,
+      "lon": -82.193,
+      "geo_precision": "approximate",
+      "elevation_ft": 70,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://tampabayscouting.org/camps/council-camps",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Greater Tampa Bay Area Council camp on the Alafia River east of Tampa near Lithia, Florida, with campsites under an oak canopy for weekend and troop camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://tampabayscouting.org/camps/council-camps",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the community scout-camp-map project. Confirmed as a current Greater Tampa Bay Area Council camp against the council's camp listing (the source's gulfridgecouncil.org link is a dead domain). Coordinates from scout-camp-map (approximate); elevation from the open-meteo DEM. Features not yet surveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; camp_type/program_types classified conservatively as a weekend/troop-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

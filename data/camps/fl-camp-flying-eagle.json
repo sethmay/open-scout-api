@@ -1,0 +1,46 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "fl-camp-flying-eagle",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Flying Eagle",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:southwest-florida",
+      "parent": null,
+      "operating_status": "active",
+      "address": "17399 Leonard Lee Road, Bradenton, FL 34211",
+      "city": "Bradenton",
+      "state": "FL",
+      "lat": 27.494,
+      "lon": -82.288,
+      "geo_precision": "approximate",
+      "elevation_ft": 80,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": null,
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Southwest Florida Council Scout camp east of Bradenton in Manatee County, Florida, offering summer camp and year-round outdoor programs.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the community scout-camp-map project. The source mis-attributed it to Gulf Ridge Council; it is a Southwest Florida Council camp (Manatee County). Coordinates from scout-camp-map (approximate); elevation from the open-meteo DEM. Website, current program mix, and features NOT yet independently verified against the council site — flagged for a follow-up survey. July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.6,
+        "notes": "Coverage add with corrected council (Southwest Florida, not Gulf Ridge). Existence confirmed; current operating status, website, and programs need verification against the Southwest Florida Council site; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

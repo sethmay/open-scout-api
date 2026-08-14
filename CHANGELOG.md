@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Fill 5 coverage gaps from the scout-camp-map cross-reference (Alafia, Brorein, Flying Eagle, Nobscot, New England Base Camp), with councils re-verified.
+
 ## 0.58.8 (patch) — 2026-08-14
 
 - `f72dade` Add Camp Warren Levis (Greater St. Louis Area Council); file a scout-camp-map coverage cross-reference in TODO.
