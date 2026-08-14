@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ri-camp-sandsland",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Sandsland",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:narragansett",
+      "parent": null,
+      "operating_status": "active",
+      "address": "Connecticut Ave, New Shoreham, RI 02807",
+      "city": "New Shoreham",
+      "state": "RI",
+      "lat": 41.1664,
+      "lon": -71.5714,
+      "geo_precision": "approximate",
+      "elevation_ft": 70,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.narragansettbsa.org/camps-activities/weekend-camping/camps/camp-sandsland-block-island/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive Narragansett Council camping area on Block Island in New Shoreham, Rhode Island, with a handful of tent sites on wooded acreage reached by ferry and often used as a base camp for island activities.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.narragansettbsa.org/camps-activities/weekend-camping/camps/camp-sandsland-block-island/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Narragansett Council camps listing (narragansettbsa.org), which lists Camp Sandsland - Block Island as one of its six current weekend-camping properties. The source's rarrtl-sandsland property URL is dead; the current camp page is used instead. Coordinates from scout-camp-map (approximate; the street address has no house number to geocode exactly); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council camps page; camp_type/program_types classified conservatively as a primitive weekend-camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

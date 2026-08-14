@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ca-chesebrough-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Chesebrough Scout Reservation",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:silicon-valley-monterey-bay",
+      "parent": null,
+      "operating_status": "active",
+      "address": "26005 Big Basin Way, Los Gatos, CA 95033",
+      "city": "Los Gatos",
+      "state": "CA",
+      "lat": 37.2526,
+      "lon": -122.1481,
+      "geo_precision": "approximate",
+      "elevation_ft": 1770,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://svmbc.org/chesebrough-scout-reservation/",
+      "program_types": [
+        "short_term_camping",
+        "family_camping",
+        "training"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Silicon Valley Monterey Bay Council scout reservation among the redwoods of the Santa Cruz Mountains near Castle Rock State Park, with a training center, campsites, and archery and BB ranges used for council adventures and weekend family and unit camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://svmbc.org/chesebrough-scout-reservation/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Silicon Valley Monterey Bay Council camp-properties and Chesebrough camp pages (svmbc.org). The source's Watsonville address (2351 E Lake Ave) was wrong; corrected to the council's listed 26005 Big Basin Way, Los Gatos in the Santa Cruz Mountains. Coordinates geocoded via an OpenStreetMap name match, approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and active operating status verified against the council's own camp pages; camp_type/program_types classified conservatively as a weekend/family/training reservation (the council's resident summer camp is Hi-Sierra); features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Add 18 coverage-gap camps across 8 councils (parallel-curated from scout-camp-map, councils re-verified); 6 held (sold/dupe/divesting).
+
 ## 0.58.9 (patch) — 2026-08-14
 
 - `e41fe0f` Fill 5 coverage gaps from the scout-camp-map cross-reference (Alafia, Brorein, Flying Eagle, Nobscot, New England Base Camp), with councils re-verified.

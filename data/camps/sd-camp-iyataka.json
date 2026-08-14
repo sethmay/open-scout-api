@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "sd-camp-iyataka",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Iyataka",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:sioux",
+      "parent": null,
+      "operating_status": "active",
+      "address": "47232 131st St, Wilmot, SD 57279",
+      "city": "Wilmot",
+      "state": "SD",
+      "lat": 45.487,
+      "lon": -96.753,
+      "geo_precision": "approximate",
+      "elevation_ft": 1050,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.adventurebeginshere.org/iyataka",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A wooded, primitive Sioux Council camp near Wilmot in northeastern South Dakota, with developed and primitive campsites, a lodge, a lake beach, and trails for year-round unit and weekend camping.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.adventurebeginshere.org/iyataka",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Sioux Council Properties camp page (adventurebeginshere.org), which lists Camp Iyataka as a currently reservable council property offering year-round outdoor camping. Coordinates from scout-camp-map (approximate; US Census returned no match for the rural address); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council properties site; classified conservatively as a short-term/weekend camping property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

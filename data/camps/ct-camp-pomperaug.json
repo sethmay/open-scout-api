@@ -1,0 +1,48 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ct-camp-pomperaug",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Pomperaug",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:connecticut-yankee",
+      "parent": null,
+      "operating_status": "not_operating",
+      "address": "1174 Buckley Highway, Union, CT 06076",
+      "city": "Union",
+      "state": "CT",
+      "lat": 42.015848,
+      "lon": -72.145601,
+      "geo_precision": "exact",
+      "elevation_ft": 810,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.ctyankee.org/venue/camp-pomperaug/",
+      "program_types": [],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Connecticut Yankee Council forest property in Union, Connecticut, near the Massachusetts border, encompassing Wells Pond and access to Lake Mashapaug. The council owns the land but has leased it to a burn-care foundation, so Scout units cannot currently camp on the site.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.ctyankee.org/venue/camp-pomperaug/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from Connecticut Yankee Council sources. The slice mislabeled the city as Woodbury; the property is in Union, CT and is owned by the council but leased to a burn-care foundation with no Scout program on site, so it is recorded as not_operating. Coordinates geocoded via US Census; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.68,
+        "notes": "Coverage add: council ownership verified; property is leased out and runs no Scout program, hence not_operating; camp_type classified conservatively; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

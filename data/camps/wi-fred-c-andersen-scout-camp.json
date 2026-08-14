@@ -1,0 +1,52 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "wi-fred-c-andersen-scout-camp",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Fred C. Andersen Scout Camp",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "186 Andersen Scout Camp Trail, Houlton, WI 54082",
+      "city": "Houlton",
+      "state": "WI",
+      "lat": 45.091121,
+      "lon": -92.762127,
+      "geo_precision": "exact",
+      "elevation_ft": 950,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://camp.northernstar.org/Andersen-Scout-Camp",
+      "program_types": [
+        "short_term_camping",
+        "training",
+        "cub_day"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A wooded Northern Star Scouting camp on the St. Croix River near Houlton, Wisconsin, northeast of Stillwater, hosting weekend camping, leadership training, day camps, and camporees, with cabins and campsites also available to non-Scouting groups.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://camp.northernstar.org/Andersen-Scout-Camp",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Northern Star camp page. Corrected the scout-camp-map hint, which placed the camp near Camp Ripley, Minnesota and misspelled the name 'Anderson'; the property is Fred C. Andersen Scout Camp on the St. Croix River at Houlton, Wisconsin, northeast of Stillwater. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified; corrected state to Wisconsin and name spelling from the source hint; classified as a weekend/training/day-camp property; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

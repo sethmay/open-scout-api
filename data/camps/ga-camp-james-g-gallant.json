@@ -1,0 +1,50 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "ga-camp-james-g-gallant",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp James G. Gallant",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:chattahoochee",
+      "parent": null,
+      "operating_status": "active",
+      "address": null,
+      "city": "LaGrange",
+      "state": "GA",
+      "lat": 33.0718,
+      "lon": -85.1299,
+      "geo_precision": "approximate",
+      "elevation_ft": 740,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://chattahoocheecouncilsa.org/about-us/camp-reservations-online/",
+      "program_types": [
+        "short_term_camping"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A primitive, self-led Chattahoochee Council camp within the Camp Frank G. Lumpkin property near West Point Lake outside LaGrange, Georgia, offering wooded campsites and lake access for units sharpening outdoor and survival skills.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://chattahoocheecouncilsa.org/about-us/camp-reservations-online/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Chattahoochee Council camp-properties page, which lists Camp Gallant as one of three current council camps, a primitive self-led camp located inside the Camp Frank G. Lumpkin property. Coordinates placed at the Camp Frank G. Lumpkin property where Gallant sits (the scout-camp-map point was a stray location), approximate; elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.7,
+        "notes": "Coverage add: existence, council, and operating status verified against the council's camp-properties page; camp_type/program_types classified conservatively as primitive weekend/troop camping; features unsurveyed. Distinct from but co-located within ga-camp-frank-g-lumpkin-chattahoochee-scout-reservation."
+      }
+    }
+  ],
+  "notes": null
+}

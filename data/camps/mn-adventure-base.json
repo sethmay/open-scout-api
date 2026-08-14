@@ -1,0 +1,51 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "mn-adventure-base",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Adventure Base",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:northern-star",
+      "parent": null,
+      "operating_status": "active",
+      "address": "7254 Boulder Lake Rd, Duluth, MN 55803",
+      "city": "Duluth",
+      "state": "MN",
+      "lat": 47.037348,
+      "lon": -92.145795,
+      "geo_precision": "exact",
+      "elevation_ft": 1400,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://campreservation.com/250/Camps/1028",
+      "program_types": [
+        "short_term_camping",
+        "webelos"
+      ],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A rustic Northern Star Scouting outdoor camp on Boulder Lake Road north of Duluth, Minnesota, with five campsites, indoor facilities, and a climbing tower, used for weekend outings, Webelos programming, and high-adventure preparation.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://campreservation.com/250/Camps/1028",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council/status re-verified from the Northern Star camp-reservation listing. Confirmed as a distinct Northern Star Scouting rustic camp on Boulder Lake Road near Duluth, separate from the nearby Camp Horace Johnson property. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, council, and operating status verified; distinct from nearby Camp Horace Johnson; classified as a weekend/primitive camping property with Webelos programming; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "nh-wah-tut-ca-scout-reservation",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Wah-Tut-Ca Scout Reservation",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:spirit-of-adventure",
+      "parent": null,
+      "operating_status": "not_operating",
+      "address": "292 Blakes Hill Road, Northwood, NH 03261",
+      "city": "Northwood",
+      "state": "NH",
+      "lat": 43.2086,
+      "lon": -71.2303,
+      "geo_precision": "exact",
+      "elevation_ft": 730,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": null,
+      "program_types": [],
+      "features": [],
+      "features_verified_at": null,
+      "summary": "A Spirit of Adventure Council scout reservation on a large lake in Northwood, southeastern New Hampshire, historically run as a summer resident camp, with an extensive waterfront of nearly a mile of shoreline set among mature forest.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Wah-Tut-Ca_Scout_Reservation",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) from a coverage gap surfaced by the scout-camp-map project; council corrected from the hint's Daniel Webster to Spirit of Adventure Council (the reservation's owner, formed from the Yankee Clipper and Boston Minuteman councils). Status set not_operating: the property exists and is council-owned but is no longer run as a council BSA summer camp following its transition and is under a multi-year lease to Lantern Light Camps Inc. Address corrected from the hint's 72 Jenness Pond Road to the verified 292 Blakes Hill Road. Coordinates geocoded via US Census (exact); elevation from open-meteo. Features unsurveyed; July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.65,
+        "notes": "Coverage add: existence, corrected owning council, and dormant (leased-out, no council program) status verified; camp_type classified as its historical resident-camp nature; program_types left empty as it runs no current council program; features unsurveyed."
+      }
+    }
+  ],
+  "notes": null
+}
