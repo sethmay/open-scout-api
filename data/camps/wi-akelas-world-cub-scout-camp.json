@@ -19,8 +19,8 @@
       "lon": -89.415324,
       "geo_precision": "exact",
       "elevation_ft": 1650,
-      "july_high_f": null,
-      "july_low_f": null,
+      "july_high_f": 78,
+      "july_low_f": 55,
       "website": "https://samoset.org/camping/akelas-world/",
       "program_types": [
         "cub_resident"

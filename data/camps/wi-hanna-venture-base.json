@@ -15,12 +15,12 @@
       "address": "5403 Spider Lake Rd",
       "city": "Rhinelander",
       "state": "WI",
-      "lat": 45.728720,
+      "lat": 45.72872,
       "lon": -89.420014,
       "geo_precision": "approximate",
       "elevation_ft": 1650,
-      "july_high_f": null,
-      "july_low_f": null,
+      "july_high_f": 78,
+      "july_low_f": 55,
       "website": "http://clsr.samoset.org/hanna/",
       "program_types": [
         "high_adventure"

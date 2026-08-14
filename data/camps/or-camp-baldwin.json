@@ -19,8 +19,8 @@
       "lon": -121.424733,
       "geo_precision": "exact",
       "elevation_ft": 3610,
-      "july_high_f": null,
-      "july_low_f": null,
+      "july_high_f": 72,
+      "july_low_f": 46,
       "website": "https://cpcscouting.org/project/camp-baldwin/",
       "program_types": [
         "scouts_bsa_resident"

@@ -19,8 +19,8 @@
       "lon": -97.594846,
       "geo_precision": "exact",
       "elevation_ft": 1590,
-      "july_high_f": null,
-      "july_low_f": null,
+      "july_high_f": 86,
+      "july_low_f": 62,
       "website": "https://www.siouxcouncil.org/mrhabinfo",
       "program_types": [
         "high_adventure"
