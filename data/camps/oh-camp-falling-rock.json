@@ -24,7 +24,7 @@
       "website": "https://skcscouts.org/bsaresidentcamp/",
       "program_types": [
         "scouts_bsa_resident",
-        "cub_resident"
+        "cub_day"
       ],
       "features": [
         {
@@ -95,12 +95,19 @@
           {
             "url": "https://skcscouts.org/bsaresidentcamp/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://skcscouts.org/camps/summercamps/cub-scout-day-camp/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-13 (submission bZYBBPo), kept anonymous at submitter request. Camp Falling Rock is primarily a Scouts BSA resident camp; the Cub program there is the Daybreak District Cub Scout day camp, so cub_resident was corrected to cub_day."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }

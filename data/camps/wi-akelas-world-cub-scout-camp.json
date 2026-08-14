@@ -12,15 +12,15 @@
       "council": "council:samoset",
       "parent": null,
       "operating_status": "active",
-      "address": "Crystal Lake Scout Reservation",
+      "address": "5231 Crystal Lake Rd, Rhinelander, WI 54501",
       "city": "Rhinelander",
       "state": "WI",
-      "lat": 45.636623,
-      "lon": -89.412075,
-      "geo_precision": "approximate",
-      "elevation_ft": 1550,
-      "july_high_f": 79,
-      "july_low_f": 56,
+      "lat": 45.716959,
+      "lon": -89.415324,
+      "geo_precision": "exact",
+      "elevation_ft": 1650,
+      "july_high_f": null,
+      "july_low_f": null,
       "website": "https://samoset.org/camping/akelas-world/",
       "program_types": [
         "cub_resident"
@@ -121,12 +121,18 @@
           {
             "url": "https://samoset.org/wp-content/uploads/2026/02/Guidebook-AW-2026.pdf",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by the camp director 2026-08-13 (submission yXoKORd), kept anonymous at submitter request. Director gives the exact address as 5231 Crystal Lake Rd, Rhinelander WI 54501 (across the lake from Tesomas); the prior point was an approximate placement. Coordinates cleared pending re-geocoding from the corrected address."
+          },
+          {
+            "citation": "Coordinate geocoded 2026-08-14 from the corrected street address via the US Census geocoder; elevation from the open-meteo DEM. July normals still pending a WorldClim resample."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }

@@ -15,12 +15,12 @@
       "address": "11210 Cortez Blvd",
       "city": "Brooksville",
       "state": "FL",
-      "lat": 29.8072851,
-      "lon": -81.294934,
-      "geo_precision": "exact",
-      "elevation_ft": 40,
-      "july_high_f": 90,
-      "july_low_f": 72,
+      "lat": 28.541317,
+      "lon": -82.443507,
+      "geo_precision": "approximate",
+      "elevation_ft": 90,
+      "july_high_f": null,
+      "july_low_f": null,
       "website": "https://tampabayscouting.org/camps/sand-hill-scout-reservation",
       "program_types": [
         "scouts_bsa_resident"
@@ -87,6 +87,12 @@
           {
             "url": "https://tampabayscouting.org/camps/sand-hill-scout-reservation",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a visitor 2026-08-13 (submission OQbpv2a); submitter requested credit but provided only an email, which is withheld. Prior coordinates placed the camp on Florida's east coast; it is on the west coast near Brooksville (11210 Cortez Blvd). Coordinates cleared pending re-geocoding from the recorded address."
+          },
+          {
+            "citation": "Coordinate placed 2026-08-14 from the corrected address via OpenStreetMap (road-level, approximate); elevation from the open-meteo DEM. July normals still pending a WorldClim resample."
           }
         ],
         "method": "imported",

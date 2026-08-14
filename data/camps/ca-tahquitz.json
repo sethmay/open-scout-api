@@ -21,7 +21,7 @@
       "elevation_ft": 6420,
       "july_high_f": 80,
       "july_low_f": 50,
-      "website": "https://www.longbeachbsa.org/aboutus/tahquitz/",
+      "website": "https://camptahquitz.com/",
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -80,14 +80,60 @@
           "code": "swimming"
         },
         {
-          "code": "welding",
-          "note": "Metalwork instruction in the camp's trades area."
+          "code": "blacksmithing",
+          "note": "A working forge in the camp's trades area."
+        },
+        {
+          "code": "pistol"
+        },
+        {
+          "code": "cowboy_action_shooting"
+        },
+        {
+          "code": "black_powder"
+        },
+        {
+          "code": "knife_throwing"
+        },
+        {
+          "code": "slingshot"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "amphitheater"
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "Older-scout provisional program at the Thunderbird Outpost."
+        },
+        {
+          "code": "older_scout_program"
         },
         {
           "code": "zip_line"
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-08-14",
       "features_source_tier": "camp_page",
       "summary": null,
       "provenance": {
@@ -105,12 +151,19 @@
           {
             "url": "https://www.longbeachbsa.org/merit-badges/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://camptahquitz.com/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-14 (submissions PRGdaLe, zE1EXqZ), kept anonymous at submitter request. Removed welding; added blacksmithing, pistol, cowboy action, black powder, knife throwing, slingshot, BB guns, climbing tower, orienteering, pioneering, wilderness survival, COPE, hiking, amphitheater, and the Thunderbird Outpost older-scout provisional program. Not added (no vocabulary term): tomahawks, adult-camper programming, volunteer staff."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-19",
         "imported_at": "2026-07-21",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/032-Tahquitz2026); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }

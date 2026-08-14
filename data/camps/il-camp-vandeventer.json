@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:greater-saint-louis-area",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "closed",
       "address": "3463 Trout Camp Road",
       "city": "Waterloo",
       "state": "IL",
@@ -35,12 +35,19 @@
           },
           {
             "url": "https://stlbsa.org/find-your-district/cahokia-mounds-district/"
+          },
+          {
+            "url": "https://www.republictimes.net/end-of-the-trail-for-camp-vandeventer/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a visitor 2026-08-14 (submission bZ6Z9y2), kept anonymous at submitter request. Greater St. Louis Area Council voted in 2020 to end operations and sell the property; submitter reports the sale completed (submitter's archive source was not re-fetchable at triage time)."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+          "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
       }
     }

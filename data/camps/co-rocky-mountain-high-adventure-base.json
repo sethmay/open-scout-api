@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:pathway-to-the-rockies",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "not_operating",
       "address": null,
       "city": "Rye",
       "state": "CO",
@@ -21,7 +21,7 @@
       "elevation_ft": 6800,
       "july_high_f": 82,
       "july_low_f": 52,
-      "website": "https://pathwaytotherockies.org/facilities/",
+      "website": "https://pathwaytotherockies.org/sanisabel/",
       "program_types": [
         "high_adventure"
       ],
@@ -62,12 +62,19 @@
           {
             "url": "https://pathwaytotherockies.org/facilities/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://pathwaytotherockies.org/sanisabel/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a visitor 2026-08-13 (submission q5kZjr2), kept anonymous at submitter request. Per the council's San Isabel Scout Ranch page, the base runs no summer or high-adventure program and is open only for short-term unit camping."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+          "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). The stored page describes shared San Isabel Scout Ranch facilities, four of whose campsites are designated for this base."
       }
     }

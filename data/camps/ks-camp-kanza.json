@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:quivira",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "closed",
       "address": "10510 S Sterling Rd",
       "city": "Abbyville",
       "state": "KS",
@@ -39,12 +39,23 @@
           {
             "url": "https://quivira.org/about-quivira-council/districts-pages/kanza-district/",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://catholicdioceseofwichita.org/diocese-acquires-camp-facility/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "url": "https://frkapaun.org/introducing-the-father-emil-j-kapaun-family-and-youth-camp/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a parent 2026-08-13 (submission peJjNV1), credited to u/evdepov. Confirmed sold to the Diocese of Wichita, now the Father Emil J. Kapaun Family and Youth Camp."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+          "confidence": 0.9,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Website repaired 2026-07-25: the stored link was a registration portal (https://scoutingevent.com/198-32972); replaced with the council's own camp page, found by tools/find_camp_pages.py and confirmed to name the camp."
       }
     }
