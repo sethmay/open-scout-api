@@ -1,0 +1,111 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "il-camp-warren-levis",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Warren Levis",
+      "camp_type": "short_term_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "5500 Boy Scout Lane, Godfrey, IL 62035",
+      "city": "Godfrey",
+      "state": "IL",
+      "lat": 38.943553,
+      "lon": -90.22604,
+      "geo_precision": "exact",
+      "elevation_ft": 580,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://stlbsa.org/properties/camp-warren-levis/",
+      "program_types": [
+        "short_term_camping",
+        "family_camping"
+      ],
+      "features": [
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope",
+          "note": "A COPE field."
+        },
+        {
+          "code": "waterfront",
+          "note": "A private, well-stocked lake used for boating and fishing."
+        },
+        {
+          "code": "canoeing",
+          "note": "Canoes on the lake."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "dining_hall",
+          "note": "Swaim Lodge has a full dining hall and kitchen."
+        },
+        {
+          "code": "cabins",
+          "note": "Two lodges: Swaim Lodge (heated, larger) and the more primitive Winter Lodge."
+        },
+        {
+          "code": "amphitheater",
+          "note": "The Council Ring, an outdoor theater."
+        },
+        {
+          "code": "pavilion",
+          "note": "Pioneer Pavilion."
+        },
+        {
+          "code": "chapel"
+        }
+      ],
+      "features_verified_at": "2026-08-14",
+      "features_source_tier": "camp_page",
+      "summary": "A 285-acre Greater St. Louis Area Council camp on a private lake north of Alton, Illinois, used for weekend and family camping, with a swimming pool, target-sports ranges, a climbing tower, boating, and hiking trails.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://stlbsa.org/properties/camp-warren-levis/",
+            "accessed": "2026-08-14"
+          },
+          {
+            "citation": "Added 2026-08-14 (method: curated) after a Reddit comment flagged it missing from the map; verified against the council's own property page. Coordinates from the page's Google Maps marker; elevation from the open-meteo DEM. Cross-referenced with the community scout-camp-map project (github.com/jasondaihl/scout-camp-map). July normals pending a WorldClim resample."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-14",
+        "imported_at": "2026-08-14",
+        "confidence": 0.8,
+        "notes": "Added by hand from the Greater St. Louis Area Council property page; camp-finder never captured it (a weekend/family-camping property rather than a resident summer camp). Operational dates and fees are deliberately excluded (they stay on the council site). Features surveyed 2026-08-14 against the council's own property page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence). July normals are null pending a WorldClim resample of the new coordinate."
+      }
+    }
+  ],
+  "notes": null
+}
