@@ -27,6 +27,29 @@ visitor on a Camp Finder page
 
 Origin: `.workbench/camp-finder-corrections-handoff.md` (the first-submission worked example).
 
+## Pulling the inbox (live — no manual download)
+
+The inbox is a Google Sheet (Tally form responses). Pull it **live** rather than waiting for a CSV
+to be handed over: the read-only share link exposes a CSV export at `<sheet-url>/export?format=csv`
+(append `&gid=<n>` for a non-default tab). Fetch that, then parse with a real CSV reader — cells
+contain embedded newlines (multi-line submissions), so a naïve line split is wrong.
+
+> [!IMPORTANT]
+> The export includes submitter **contact info (email) — PII**. Do **not** put the sheet URL or id
+> in this repo (it is tracked and published to Pages). The current sheet URL lives in the agent's
+> long-term memory (ask the maintainer if missing). Only the *method* is documented here.
+
+### Tracking what's new (old vs. new submissions)
+
+The sheet is **cumulative** — every export holds all submissions ever — so diff against what you've
+already handled. Two signals:
+1. **Accepted** edits are self-recording: the citation you append carries `(submission <ID>)`, so
+   `grep -r "submission <ID>" data/camps` finds any accepted change.
+2. **All dispositions** live in [`processed.json`](./processed.json) beside this skill:
+   `{ "<id>": { "camp", "submitted", "disposition": accepted|held|rejected, "release", "note" } }`.
+   A submission is **new** iff its `Submission ID` is absent from that ledger. **Append every
+   submission you triage — including held/rejected ones**, which otherwise leave no trace in the data.
+
 ## Invariants — never break these
 
 - **Never auto-merge user-originated data.** A rival can lie, a parent can misremember. The

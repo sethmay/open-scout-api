@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Triage 2 council-staff corrections → not_operating: Montana Outdoor High Adventure Base (MOHAB) (council-announced pause after the 2026 season) and Arcola Scout Camp. Triage skill: document pulling the inbox live via the sheet's CSV export and add a `processed.json` ledger so held/rejected submissions are tracked too.
+
 ## 0.58.12 (patch) — 2026-08-15
 
 - `18f989e` Triage 4 Camp Finder corrections: Resica Falls (+first-year/high-adventure/webelos), Baiting Hollow (website + cub programs + provisional), Forestburg (+hiking), Hinckley → not_operating (post-merger delisting; sale unverified). Plus council lineage: Theodore Roosevelt + Suffolk County merged 2026 into Scouting America Long Island (BSA 386).
