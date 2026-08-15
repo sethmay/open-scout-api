@@ -1,0 +1,173 @@
+{
+  "_comment": "Triage ledger for Camp Finder Suggest-a-Correction submissions. A submission is NEW iff its ID is absent here. Append EVERY triaged submission (accepted/held/rejected) so held/rejected ones (which leave no trace in data/camps) are still tracked. Entries dated before 2026-08-15 were backfilled from session history + CHANGELOG; their 'release' is coarse.",
+  "submissions": {
+    "KpW95L8": {
+      "camp": "ca-camp-emerald-bay",
+      "submitted": "2026-08-12",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7",
+      "note": "features accepted; first_year_program held pending clarification"
+    },
+    "KpW7BQX": {
+      "camp": "va-camp-shenandoah-scouts-bsa-resident",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "peJjM5E": {
+      "camp": "ca-camp-robert-l-cole",
+      "submitted": "2026-08-13",
+      "disposition": "rejected",
+      "release": "0.58.2-0.58.7",
+      "note": "closure claim contradicted (leased from PG&E/USFS, still council-scheduled)"
+    },
+    "X58Vyod": {
+      "camp": "mi-cole-canoe-base",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "vXJ71OX": {
+      "camp": "mi-cole-canoe-base",
+      "submitted": "2026-08-13",
+      "disposition": "held",
+      "release": "0.58.2-0.58.7",
+      "note": "Beast Feast is an event, not a vocab feature"
+    },
+    "peJjNV1": {
+      "camp": "ks-camp-kanza",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "RWbXyYd": {
+      "camp": "ca-schoepe-scout-reservation-at-lost-valley",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "M16k0Nl": {
+      "camp": "wi-hanna-venture-base",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "yXoKORd": {
+      "camp": "wi-akelas-world-cub-scout-camp",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "OQbpv2a": {
+      "camp": null,
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "bZYBBPo": {
+      "camp": "oh-camp-falling-rock",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "dbkq9Xd": {
+      "camp": "va-camp-pmi",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "bZ6VdDE": {
+      "camp": "sd-missouri-river-high-adventure-base",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "q5kZjr2": {
+      "camp": "co-rocky-mountain-high-adventure-base",
+      "submitted": "2026-08-13",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "jekZz9Y": {
+      "camp": null,
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "xVlMjDd": {
+      "camp": "or-camp-clark-adventure-cove",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "9No9Q5E": {
+      "camp": "or-camp-baldwin",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "yXd4qyp": {
+      "camp": "pa-resica-falls",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.12"
+    },
+    "aOa2BXB": {
+      "camp": "ny-baiting-hollow-scout-camp",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.12"
+    },
+    "PRGdaLe": {
+      "camp": "ca-tahquitz",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "zE1EXqZ": {
+      "camp": null,
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "bZ6Z9y2": {
+      "camp": "il-camp-vandeventer",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "Kpap8X7": {
+      "camp": "or-camp-baldwin",
+      "submitted": "2026-08-14",
+      "disposition": "accepted",
+      "release": "0.58.2-0.58.7"
+    },
+    "4apK1jd": {
+      "camp": "ny-forestburg-scout-reservation",
+      "submitted": "2026-08-15",
+      "disposition": "accepted",
+      "release": "0.58.12"
+    },
+    "2jD4pkg": {
+      "camp": "mt-montana-outdoor-high-adventure-base-mohab",
+      "submitted": "2026-08-15",
+      "disposition": "accepted",
+      "release": "0.58.13",
+      "note": "not_operating (council-announced pause after 2026 season)"
+    },
+    "jekBjgx": {
+      "camp": "mt-arcola-scout-camp",
+      "submitted": "2026-08-15",
+      "disposition": "accepted",
+      "release": "0.58.13",
+      "note": "not_operating (council staff: not currently permitting usage)"
+    },
+    "ArjB9dD": {
+      "camp": "ut-hinckley-scout-ranch",
+      "submitted": "2026-08-15",
+      "disposition": "accepted",
+      "release": "0.58.12",
+      "note": "not_operating (post-merger delisting; reported sale unverified)"
+    }
+  }
+}

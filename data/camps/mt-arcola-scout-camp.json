@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:montana",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "not_operating",
       "address": null,
       "city": "Anaconda",
       "state": "MT",
@@ -53,15 +53,18 @@
           },
           {
             "url": "https://scoutingmontana.org/camps/arcola/"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-15 (submission jekBjgx), kept anonymous at submitter request. Set operating_status to not_operating on the council staff's report that the camp is not currently permitting any usage. The council's own Arcola page still lists it as reservable but shows no current schedule; camp pages lag operational changes, and staff are authoritative on their own camp's status. No sale indicated, so not_operating rather than closed."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.7,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],
-  "notes": null
+  "notes": "Council staff reported via the correction form (2026-08-15) that Arcola is not currently permitting any usage, so operating_status is not_operating. The council's camp page still presents it as reservable but shows no current schedule; treat the staff report as the current signal. Not closed or sold - the property remains, usage is suspended."
 }

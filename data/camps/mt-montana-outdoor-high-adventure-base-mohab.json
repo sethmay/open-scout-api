@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:montana",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "not_operating",
       "address": null,
       "city": "Dupuyer",
       "state": "MT",
@@ -52,15 +52,18 @@
           {
             "url": "https://scoutingmontana.org/camps/high-adventure/",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-15 (submission 2jD4pkg), kept anonymous at submitter request. Set operating_status to not_operating: the council's own MOHAB page announced a program pause after the 2026 season (no operation in 2027 or 2028; a 2029 decision by the end of 2027), and council staff confirmed the camp is now temporarily closed. The property (the Boone and Crockett Club's Theodore Roosevelt Memorial Ranch) remains, so not_operating rather than closed."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.9,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features survey attempted 2026-07-25: the page is rich, but the vocabulary then had no codes for wilderness trekking, so nothing could be recorded. Backpacking/mountaineering/caving/packrafting codes were added afterwards — re-queued for survey. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],
-  "notes": "Council announced on the camp's own page that MOHAB will PAUSE after the 2026 season: no operation in 2027 or 2028, with a decision on 2029 to be made by the end of 2027. operating_status remains `active` because the pause has not taken effect - the 2026 season is in progress. Re-check after the 2026 season and set `not_operating` (the property exists; only the program stops), not `closed`. Note the same page still advertises 2027 dates and fees alongside the pause announcement; the dated announcement is authoritative and the schedule block is stale."
+  "notes": "Council announced on the camp's own page that MOHAB would pause after the 2026 season (no operation 2027-2028; a 2029 decision by the end of 2027). Council staff confirmed via the correction form on 2026-08-15 that the camp is now temporarily closed, so operating_status is not_operating (the Boone and Crockett ranch property remains; only the program is paused - not closed or sold). The camp page still shows a stale 2027 dates and fees block; the pause announcement is authoritative."
 }
