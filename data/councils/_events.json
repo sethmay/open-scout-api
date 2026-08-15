@@ -2,6 +2,64 @@
   "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/event.schema.json",
   "events": [
     {
+      "id": "absorb-suffolk-county-into-theodore-roosevelt-2026",
+      "type": "absorbed",
+      "date": "2026",
+      "participants": [
+        {
+          "ref": "council:suffolk-county",
+          "role": "predecessor"
+        },
+        {
+          "ref": "council:theodore-roosevelt",
+          "role": "continuing"
+        }
+      ],
+      "notes": "Suffolk County Council merged into the Theodore Roosevelt Council in 2026; the combined council operates as Scouting America Long Island. Theodore Roosevelt Council (BSA 386) is the surviving legal entity.",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://www.longislandpress.com/2026/06/25/scouting-long-island-merge/",
+            "accessed": "2026-08-15"
+          },
+          {
+            "url": "https://www.sccbsa.org/councilmergerupdates",
+            "accessed": "2026-08-15"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-15",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "rename-theodore-roosevelt-to-scouting-america-long-island",
+      "type": "renamed",
+      "date": "2026",
+      "participants": [
+        {
+          "ref": "council:theodore-roosevelt",
+          "role": "subject"
+        }
+      ],
+      "notes": "On merging with Suffolk County Council in 2026, the Theodore Roosevelt Council adopted the operating name Scouting America Long Island (a DBA; the legal entity remains Theodore Roosevelt Council, BSA 386).",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://scoutingli.org/about/",
+            "accessed": "2026-08-15"
+          },
+          {
+            "url": "https://www.sccbsa.org/councilmergerupdates",
+            "accessed": "2026-08-15"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-15",
+        "confidence": 0.9
+      }
+    },
+    {
       "id": "absorb-annawon-into-narragansett",
       "type": "absorbed",
       "date": "2015",

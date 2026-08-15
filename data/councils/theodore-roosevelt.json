@@ -27,7 +27,7 @@
     },
     {
       "valid_from": "1997",
-      "valid_to": null,
+      "valid_to": "2026",
       "name": "Theodore Roosevelt Council",
       "bsa_number": 386,
       "hq_city": "Massapequa",
@@ -53,7 +53,40 @@
         "verified_at": "2026-07-21",
         "confidence": 0.8
       }
+    },
+    {
+      "valid_from": "2026",
+      "valid_to": null,
+      "name": "Scouting America Long Island",
+      "bsa_number": 386,
+      "hq_city": "Massapequa",
+      "hq_state": "NY",
+      "website": "https://scoutingli.org/",
+      "states_served": [
+        "NY"
+      ],
+      "territory": "territory:cst-10",
+      "provenance": {
+        "sources": [
+          {
+            "url": "https://scoutingli.org/about/",
+            "accessed": "2026-08-15"
+          },
+          {
+            "url": "https://www.longislandpress.com/2026/06/25/scouting-long-island-merge/",
+            "accessed": "2026-08-15"
+          },
+          {
+            "url": "https://www.sccbsa.org/councilmergerupdates",
+            "accessed": "2026-08-15"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-15",
+        "confidence": 0.9,
+        "notes": "In 2026 the Theodore Roosevelt Council (Nassau County) and Suffolk County Council merged and now operate as Scouting America Long Island, serving Nassau and Suffolk counties from the Doucette Scout Leadership Center in Massapequa. The legal entity remains Theodore Roosevelt Council, BSA 386, using Scouting America Long Island as a DBA."
+      }
     }
   ],
-  "notes": null
+  "notes": "The 2026 version reflects the merger of the Theodore Roosevelt Council and Suffolk County Council into Scouting America Long Island; the surviving legal entity remains Theodore Roosevelt Council (BSA 386) operating under that DBA. See data/councils/_events.json."
 }
