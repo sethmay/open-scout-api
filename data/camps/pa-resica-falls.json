@@ -23,7 +23,8 @@
       "july_low_f": 58,
       "website": "https://resicafalls.org/",
       "program_types": [
-        "scouts_bsa_resident"
+        "scouts_bsa_resident",
+        "webelos"
       ],
       "features": [
         {
@@ -97,9 +98,17 @@
         {
           "code": "provisional_attendance",
           "note": "Resica Troop One, a staff-led troop for Scouts attending without their unit."
+        },
+        {
+          "code": "first_year_program",
+          "note": "The Resica Rangers first-year camper program."
+        },
+        {
+          "code": "high_adventure_option",
+          "note": "Paddlerama, a high-adventure paddling program."
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-08-15",
       "features_source_tier": "camp_page",
       "summary": null,
       "provenance": {
@@ -121,6 +130,13 @@
           {
             "url": "https://resicafalls.org/summer/provo",
             "accessed": "2026-07-25"
+          },
+          {
+            "url": "https://resicafalls.org/summer/webelos",
+            "accessed": "2026-08-15"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-14 (submission yXd4qyp), kept anonymous at submitter request. Added first_year_program (Resica Rangers) and high_adventure_option (Paddlerama), plus the webelos program type (Webelos Week for Webelos and Arrow of Light Scouts), all confirmed on the camp's own summer-program pages. The submitter also reported mountain biking and a zip line; neither appears on the camp's full program listing, so both were held pending confirmation."
           }
         ],
         "method": "imported",

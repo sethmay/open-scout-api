@@ -81,9 +81,13 @@
         },
         {
           "code": "provisional_attendance"
+        },
+        {
+          "code": "hiking",
+          "note": "A history hike with a hiking medal, on trails across the reservation."
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-08-15",
       "features_source_tier": "camp_page",
       "summary": "Scouts BSA resident summer camp spanning more than 1,200 acres in the Catskills.",
       "provenance": {
@@ -94,6 +98,9 @@
           {
             "url": "https://www.monmouthcouncilscouting.org/forestburg",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-15 (submission 4apK1jd); submitter requested credit but provided only an email, which is withheld. Added hiking (a history-hike program on the reservation's trails), confirmed on the camp's own page. Distinctive items the submitter noted (a lake-crossing monkey bridge, separate patrol-cooking and dining-hall areas, and kosher food weeks with a synagogue tent) are not features in the controlled vocabulary and were held. The camp's own page also describes horseback riding and rock climbing in a new High Adventure program, candidates for a future survey pass."
           }
         ],
         "method": "imported",

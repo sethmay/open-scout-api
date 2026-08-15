@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:crossroads-of-the-west",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "not_operating",
       "address": null,
       "city": null,
       "state": "UT",
@@ -35,6 +35,9 @@
           },
           {
             "url": "https://www.saltlakescouts.org/hinckley/"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-15 (submission ArjB9dD), kept anonymous at submitter request. The submitter reports the ranch closed in 2020 and was sold in 2026. The operating council's own site (utahscouts.org) does not list Hinckley among its current camps and 404s on its camp page, consistent with no current BSA program, so operating_status set to not_operating. The reported 2026 sale is not yet independently documented; a 'Pine Cliff Resort' web listing that surfaces in search is an SEO aggregator that itself directs reservations to the Great Salt Lake Council, so it is not evidence of a sale or of new ownership. Promote to closed once the sale is documented (council announcement or county deed)."
           }
         ],
         "method": "imported",
@@ -45,5 +48,5 @@
       }
     }
   ],
-  "notes": "Stored website used saltlakescouts.org, a pre-merger council domain that no longer resolves (DNS failure, not an HTTP error). The successor council (Crossroads of the West, utahscouts.org) 404s on /hinckley and its camps listing never mentions Hinckley. Council mergers routinely retire camp pages along with the old domain, so this may be a property that left the program - but absence of a page is not proof of closure, so operating_status is left as `active`. Needs a human or a council contact to resolve."
+  "notes": "Council-staff correction (submission ArjB9dD, 2026-08-15) reports the ranch closed in 2020 and sold in 2026; the successor council (Crossroads of the West, utahscouts.org) no longer lists Hinckley and 404s on its camp page, so operating_status was set to not_operating. The reported sale is not yet independently documented (the 'Pine Cliff Resort' listing in search is an SEO aggregator that defers reservations to the council, not an owner), so status is not_operating rather than closed; promote to closed when the sale is confirmed. Coordinates remain an unresolved approximate centroid the submitter also flagged as wrong: the ranch is on the north slope of the Uintas near the Utah-Wyoming line, not central Utah."
 }

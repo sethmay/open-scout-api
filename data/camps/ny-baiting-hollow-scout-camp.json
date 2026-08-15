@@ -21,9 +21,11 @@
       "elevation_ft": 160,
       "july_high_f": 82,
       "july_low_f": 64,
-      "website": "https://scoutingevent.com/386-risingsun",
+      "website": "https://scoutingli.org/camping/baiting-hollow/",
       "program_types": [
-        "scouts_bsa_resident"
+        "scouts_bsa_resident",
+        "cub_resident",
+        "cub_day"
       ],
       "features": [
         {
@@ -63,9 +65,13 @@
         {
           "code": "winter_camping",
           "note": "The camp runs winter and spring programs alongside summer camp."
+        },
+        {
+          "code": "provisional_attendance",
+          "note": "The Rising Sun provisional troop runs each week of summer camp."
         }
       ],
-      "features_verified_at": "2026-07-26",
+      "features_verified_at": "2026-08-15",
       "features_source_tier": "camp_page",
       "summary": null,
       "provenance": {
@@ -79,6 +85,17 @@
           {
             "url": "https://www.trcscouts.org/camping-2/baiting-hollow/",
             "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://scoutingli.org/camping/baiting-hollow/",
+            "accessed": "2026-08-15"
+          },
+          {
+            "url": "https://www.sccbsa.org/summer-camp",
+            "accessed": "2026-08-15"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by a unit that attended 2026-08-14 (submission aOa2BXB); submitter requested credit but provided only an email, which is withheld. Website updated from a Rising Sun registration portal to the camp's current page. The operating council remains Theodore Roosevelt Council (BSA 386): the Theodore Roosevelt and Suffolk County councils merged in 2026 into Scouting America Long Island, whose legal entity is Theodore Roosevelt Council using that DBA, and which now owns Baiting Hollow (the camp's legacy Suffolk County Council page predates the merger). Added the cub_day and cub_resident program types (Cub Day Camp at Baiting Hollow and the council's Cub Resident Camp) and the provisional_attendance feature (Rising Sun Provisional Camp), confirmed on the council's own pages."
           }
         ],
         "method": "imported",

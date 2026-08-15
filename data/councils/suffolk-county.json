@@ -5,12 +5,12 @@
   "versions": [
     {
       "valid_from": "1974",
-      "valid_to": null,
+      "valid_to": "2026",
       "name": "Suffolk County Council",
       "bsa_number": 404,
       "hq_city": "Medford",
       "hq_state": "NY",
-      "website": "https://www.suffolk.gov.uk/",
+      "website": null,
       "states_served": [],
       "territory": "territory:cst-10",
       "provenance": {
@@ -31,5 +31,5 @@
       }
     }
   ],
-  "notes": null
+  "notes": "Merged with the Theodore Roosevelt Council (BSA 386) in 2026 to form Scouting America Long Island; Theodore Roosevelt Council is the surviving legal entity, so this council has no current version. See data/councils/_events.json. (The previously stored website, suffolk.gov.uk, was an erroneous scrape of the English county government and has been cleared.)"
 }
