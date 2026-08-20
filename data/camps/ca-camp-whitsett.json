@@ -27,15 +27,6 @@
       ],
       "features": [
         {
-          "code": "high_adventure_option",
-          "signature": true,
-          "note": "Whitewater rafting on the Kern River and an overnight outpost hike are headlined as the camp's high-adventure draws."
-        },
-        {
-          "code": "outpost_overnight",
-          "note": "An overnight outpost hike sleeping under the stars."
-        },
-        {
           "code": "swimming",
           "note": "Lifesaving instruction in the camp's private lake."
         },
@@ -139,13 +130,13 @@
             "accessed": "2026-07-25"
           },
           {
-            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-19 (submission Vp42YBg); submitter requested credit but provided only an email, which is withheld. Added whitewater_rafting (featured) plus specific shooting, aquatics, scoutcraft, and facility activities on the council staff's report, verified against the camp's own traditional-summer-camp page (program areas: High Adventure, Ecology and Conservation, Scoutcraft, Shooting Sports, Aquatics, Handicraft). The staff also asked to remove high_adventure_option and outpost_overnight; both were retained because the camp's own page still features the overnight outpost hike and a High Adventure program area - flagged for confirmation."
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-19 (submission Vp42YBg); submitter requested credit but provided only an email, which is withheld. Added whitewater_rafting (featured) plus specific shooting, aquatics, scoutcraft, and facility activities, verified against the camp's own traditional-summer-camp page. Removed high_adventure_option and outpost_overnight: the council's Camping Registrar confirmed by email 2026-08-20 that the High Adventure and outpost-night programs have not been offered since before the pandemic (the camp's own website still listed them but is stale)."
           }
         ],
         "method": "imported",
         "verified_at": "2026-07-17",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
