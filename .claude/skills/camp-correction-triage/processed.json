@@ -180,8 +180,8 @@
       "camp": "ca-camp-whitsett",
       "submitted": "2026-08-19",
       "disposition": "accepted",
-      "release": "0.58.14",
-      "note": "21 features added incl. whitewater_rafting (featured); staff's high_adventure_option/outpost_overnight removals held (page still features them)"
+      "release": "0.58.14-0.58.15",
+      "note": "21 features added incl. whitewater_rafting (featured); high_adventure_option + outpost_overnight removed after the Camping Registrar confirmed by email they haven't run since pre-Covid (website stale)"
     }
   }
 }
