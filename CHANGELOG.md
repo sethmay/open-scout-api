@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Camp Emerald Bay: record that the WLACC Camping Registrar confirmed by email the Trans-Catalina backpacking program still runs, so `backpacking` is retained (closes the held removal from 0.58.14). Provenance/ledger only; no projected-field change.
+
 ## 0.58.15 (patch) — 2026-08-20
 
 - `94d4a65` Camp Whitsett: remove `high_adventure_option` and `outpost_overnight` — the WLACC Camping Registrar confirmed by email they haven't run since pre-Covid (the camp's own website still lists them but is stale). Resolves the held removal from 0.58.14.
