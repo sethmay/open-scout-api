@@ -56,9 +56,74 @@
         {
           "code": "provisional_attendance",
           "note": "Scouts can attend individually through the provisional programme."
+        },
+        {
+          "code": "whitewater_rafting",
+          "signature": true,
+          "note": "Whitewater rafting on the world-class Kern River, the camp's featured high-adventure activity."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "kayaking"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "shotgun"
+        },
+        {
+          "code": "climbing_tower"
+        },
+        {
+          "code": "cope"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "wilderness_survival"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "mountain_biking"
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "leadership_training"
+        },
+        {
+          "code": "dining_hall"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "wifi"
         }
       ],
-      "features_verified_at": "2026-07-25",
+      "features_verified_at": "2026-08-20",
       "features_source_tier": "camp_page",
       "summary": "Scouts BSA resident summer camp operated by the Western Los Angeles County Council, set in the Sequoia National Forest near Kernville, California.",
       "provenance": {
@@ -72,6 +137,9 @@
           {
             "url": "https://www.campwhitsett.org/scout-programs/traditional-summer-camp/",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-19 (submission Vp42YBg); submitter requested credit but provided only an email, which is withheld. Added whitewater_rafting (featured) plus specific shooting, aquatics, scoutcraft, and facility activities on the council staff's report, verified against the camp's own traditional-summer-camp page (program areas: High Adventure, Ecology and Conservation, Scoutcraft, Shooting Sports, Aquatics, Handicraft). The staff also asked to remove high_adventure_option and outpost_overnight; both were retained because the camp's own page still features the overnight outpost hike and a High Adventure program area - flagged for confirmation."
           }
         ],
         "method": "imported",

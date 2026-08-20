@@ -168,6 +168,20 @@
       "disposition": "accepted",
       "release": "0.58.12",
       "note": "not_operating (post-merger delisting; reported sale unverified)"
+    },
+    "OQoO0Pa": {
+      "camp": "ca-camp-emerald-bay",
+      "submitted": "2026-08-19",
+      "disposition": "accepted",
+      "release": "0.58.14",
+      "note": "retargeted from mis-prefilled HESR Big Horn id; pin moved to West End OSM node + 16 features added; staff's backpacking-removal held (page documents it)"
+    },
+    "Vp42YBg": {
+      "camp": "ca-camp-whitsett",
+      "submitted": "2026-08-19",
+      "disposition": "accepted",
+      "release": "0.58.14",
+      "note": "21 features added incl. whitewater_rafting (featured); staff's high_adventure_option/outpost_overnight removals held (page still features them)"
     }
   }
 }
