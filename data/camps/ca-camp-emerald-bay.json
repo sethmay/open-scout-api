@@ -15,13 +15,13 @@
       "address": "1 Cove Road",
       "city": "Avalon",
       "state": "CA",
-      "lat": 33.4487,
-      "lon": -118.4855,
-      "geo_precision": "exact",
-      "elevation_ft": 0,
-      "july_high_f": 73,
-      "july_low_f": 61,
-      "website": "https://www.campemeraldbay.org/scout-programs/summer-camp-prices/",
+      "lat": 33.4692207,
+      "lon": -118.5317914,
+      "geo_precision": "approximate",
+      "elevation_ft": 80,
+      "july_high_f": null,
+      "july_low_f": null,
+      "website": "https://www.campemeraldbay.org/",
       "program_types": [
         "scouts_bsa_resident"
       ],
@@ -111,9 +111,61 @@
         {
           "code": "older_scout_program",
           "note": "Dedicated Rugged programming for older Scouts."
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "rowing"
+        },
+        {
+          "code": "orienteering"
+        },
+        {
+          "code": "pioneering"
+        },
+        {
+          "code": "gaga_ball"
+        },
+        {
+          "code": "hiking"
+        },
+        {
+          "code": "conservation_project",
+          "note": "Ecology and conservation program area."
+        },
+        {
+          "code": "cit_program",
+          "note": "Counselor-in-Training program."
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "leadership_training",
+          "note": "Senior Patrol Leader training program."
+        },
+        {
+          "code": "outpost_overnight",
+          "note": "Overnight War Canoe paddle program."
+        },
+        {
+          "code": "wifi"
+        },
+        {
+          "code": "chapel"
+        },
+        {
+          "code": "flush_toilets"
+        },
+        {
+          "code": "health_lodge"
+        },
+        {
+          "code": "trading_post"
         }
       ],
-      "features_verified_at": "2026-08-13",
+      "features_verified_at": "2026-08-20",
       "features_source_tier": "camp_page",
       "summary": "Western LA County Council's Scouts BSA resident summer camp on Catalina Island.",
       "provenance": {
@@ -142,6 +194,13 @@
           },
           {
             "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by camp staff 2026-08-12 (submission KpW95L8), kept anonymous at submitter request. Feature additions verified against the camp's own program pages."
+          },
+          {
+            "url": "https://www.campemeraldbay.org/scout-programs/traditional-summer-camp/",
+            "accessed": "2026-08-20"
+          },
+          {
+            "citation": "Community correction via Camp Finder Suggest-a-Correction form; submitted by council staff 2026-08-19 (submission OQoO0Pa); submitter requested credit but provided only an email, which is withheld. The form's prefilled camp_id pointed to HESR Camp Big Horn, but the submission text, camp name, and source all identify Camp Emerald Bay, so it was applied here. Relocated the map pin to the camp's OSM node on the island's West End (the prior coordinates were a mis-geocode of the Avalon mailing address); elevation from open-meteo, July normals pending a WorldClim resample. Website set to the camp's home page. Added program and facility features on the council staff's report, consistent with the camp's own program pages. The staff also asked to remove backpacking; it was retained because the camp's high-adventures page documents a Trans-Catalina Rugged Trekkers backpacking trek - flagged for confirmation."
           }
         ],
         "method": "imported",
