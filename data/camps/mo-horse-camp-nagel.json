@@ -88,6 +88,9 @@
           {
             "url": "https://scoutingevent.com/Download/312171616/OR/2026_Horse_Camp_Flyer.pdf",
             "accessed": "2026-07-26"
+          },
+          {
+            "citation": "Community correction via a Reddit comment (u/BTKSTLPKR), relayed 2026-08-22. Grouped under Beaumont Scout Reservation, corroborated by this camp's own Beaumont Scout Reservation address, sibling camps Camp May and Grizzly Day Camp already grouped under mo-beaumont-scout-reservation, and the Greater St. Louis Area Council property structure (stlbsa.org, en.scoutwiki.org)."
           }
         ],
         "method": "imported",
@@ -95,6 +98,10 @@
         "imported_at": "2026-07-21",
         "confidence": 0.8,
         "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types."
+      },
+      "reservation": {
+        "id": "mo-beaumont-scout-reservation",
+        "name": "Beaumont Scout Reservation"
       }
     }
   ],
