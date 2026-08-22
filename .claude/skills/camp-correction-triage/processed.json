@@ -182,6 +182,20 @@
       "disposition": "accepted",
       "release": "0.58.14-0.58.15",
       "note": "21 features added incl. whitewater_rafting (featured); high_adventure_option + outpost_overnight removed after the Camping Registrar confirmed by email they haven't run since pre-Covid (website stale)"
+    },
+    "reddit-BTKSTLPKR-2026-08-22": {
+      "camp": "mo-horse-camp-nagel",
+      "submitted": "2026-08-22",
+      "disposition": "accepted",
+      "release": null,
+      "note": "Reddit correction (u/BTKSTLPKR), relayed by maintainer - not via the form. ACCEPTED: added Beaumont Scout Reservation grouping to Horse Camp-Nagel (drafted, pending human merge/release). NO-OP (already correct): Camp May grouped under Beaumont; Swift High Adventure Base + S-F Ranger Program under S-F Scout Ranch; Camp Lewallen, Camp Warren Levis, Camp Pine Ridge all present. ESCALATED: 'Cub World' at Beaumont looks like a missing sub-camp record; Camps Famous Eagle/Gamble/Sakima are areas within the single mo-s-f-scout-ranch record while Beaumont's sub-camps are separate records - a granularity decision for a human."
+    },
+    "vXK4vA0": {
+      "camp": "oh-firelands-scout-reservation",
+      "submitted": "2026-08-22",
+      "disposition": "rejected",
+      "release": null,
+      "note": "Parent claimed Firelands has 'no resident camp program' (only Beaumont runs summer camp). Contradicted by Lake Erie Council's own materials: Firelands runs 'S'Mores Cub Adventures', an overnight Fri-Sun (check-in Friday, lights-out both nights, campsites/latrines) Cub Scout RESIDENT summer camp - 2026 leaders guide + registration live. Our record already classifies Firelands as cub_resident (active) and Beaumont as scouts_bsa_resident; submitter equated 'resident/summer camp' with the Scouts BSA program. No change."
     }
   }
 }
