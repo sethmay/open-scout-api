@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
-- `PENDING` Docs: codify the camps-vs-properties data standard — one record per camp a unit registers for, a property/reservation is a grouping label (not automatically a record), split-vs-fold by the registration test. Added as a `model.md` §5 subsection and cross-referenced from the correction-triage skill (new category I). No data change.
+## 0.58.18 (patch) — 2026-08-22
+
+- `48c5f85` Docs: codify the camps-vs-properties data standard — one record per camp a unit registers for, a property/reservation is a grouping label (not automatically a record), split-vs-fold by the registration test. Added as a `model.md` §5 subsection and cross-referenced from the correction-triage skill (new category I). No data change.
 
 ## 0.58.17 (patch) — 2026-08-22
 
