@@ -273,6 +273,39 @@ does not.
 > **new additive field**; this `id` will not change format or meaning.
 > Recipe: [`09-reservation-grouping.py`](../cookbook/python/09-reservation-grouping.py).
 
+### Camps vs. properties: one record per camp
+
+What earns a record, and what is only a grouping label, is a recurring judgment. The rule:
+
+- A **camp** is a distinct program a unit registers for — its own audience, season, and
+  registration (a leaders guide or a sign-up link). One camp is one record.
+- A **property / reservation** is land that hosts one or more camps. It is **not automatically a
+  record**; by default it is only the `reservation: { id, name }` grouping label carried by its
+  members.
+- **Single-camp property** → one record, and `reservation` may be omitted.
+- **Multi-camp property** → one record per camp, each carrying the same `reservation.id`. The
+  property earns its *own* record only when it is a bookable unit in its own right; that record
+  uses `camp_type: "reservation"` (e.g. `pa-musser-scout-reservation`) and may reuse the shared
+  `reservation.id`.
+
+**Split vs. fold — the registration test.** Create separate records when sub-units have a
+**distinct audience, program, or registration** (separate leaders guides or sign-up links). Keep a
+single record with named areas in `features`/`summary` when they are campsites, dining styles, or
+program areas under **one registration**.
+
+> [!NOTE]
+> Worked example — Beaumont Scout Reservation (Greater St. Louis Area Council). No `Beaumont`
+> record exists. `mo-camp-may` (cub advancement), `mo-horse-camp-nagel` (horse), and Grizzly Day
+> Camp are *separate* records sharing `reservation.id: "mo-beaumont-scout-reservation"`, because
+> each sells its own registration.
+
+Some property-level records legitimately reuse their own id as the `reservation.id` key:
+`pa-musser-scout-reservation` (a `reservation`-type property record grouping Camp Hart, Delmont,
+and Garrison) and single-camp reservations such as `nh-griswold-scout-reservation`. Because
+`reservation.id` is **opaque and permanent** (see the WARNING above), it is *never renamed to tidy
+appearance*. Fix a genuine granularity error by **adding the missing sibling records**, never by
+rewriting keys.
+
 ### Refs resolve against `index.json`, never `current/`
 
 An in-force document may legitimately reference a **discontinued** entity. That is what the

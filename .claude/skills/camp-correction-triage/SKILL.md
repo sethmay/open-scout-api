@@ -163,6 +163,24 @@ address recorded) is a valid interim state; the geocode pipeline re-places it.
 ### H. Name / council / operator change  — ESCALATE
 No codified pattern yet (zero real submissions). Present to a human with the evidence; do not guess.
 
+### I. Sub-camp / property granularity  — apply the camps-vs-properties standard
+A claim that a property "is really several camps", or that a named sub-camp is missing, is a
+**granularity** decision, not a field edit. Apply the standard in `docs/model.md`
+("Camps vs. properties: one record per camp"): one record per camp a unit registers for; a property
+is a `reservation` grouping label, not automatically a record.
+- **Registration test.** Separate records when sub-units have a distinct audience/program/registration
+  (separate leaders guides or sign-up links); one record with named areas otherwise. Verify against
+  the council's own registration pages, not a submitter's colloquial "camps".
+- **Fix by adding, never renaming.** Add the missing sibling record(s) sharing the existing
+  `reservation.id`. **Never rename `reservation.id`** to normalize appearance — it is opaque and
+  permanent (model.md §5).
+- **Authoring, so escalate the go-ahead.** Creating or splitting records is data-authoring beyond a
+  form fix: draft it, but get a human's OK before merging.
+- *Worked example (GSLAC S-F Scout Ranch):* Camp Gamble and Camp Famous Eagle publish separate
+  leaders guides, so they are distinct records under `reservation.id: "mo-s-f-scout-ranch"`, not one
+  folded record. Counter: a submitter's "Cub World" at Beaumont appeared nowhere on the council site
+  → HELD, not authored.
+
 ## Provenance & attribution convention
 
 On acceptance, append to `versions[0].provenance.sources[]`:

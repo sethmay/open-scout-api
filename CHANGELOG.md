@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Docs: codify the camps-vs-properties data standard — one record per camp a unit registers for, a property/reservation is a grouping label (not automatically a record), split-vs-fold by the registration test. Added as a `model.md` §5 subsection and cross-referenced from the correction-triage skill (new category I). No data change.
+
 ## 0.58.17 (patch) — 2026-08-22
 
 - `2b8c421` Horse Camp-Nagel (`mo-horse-camp-nagel`): group under Beaumont Scout Reservation — Reddit correction (u/BTKSTLPKR), corroborated by the camp's own address, sibling records (Camp May, Grizzly Day Camp), and the Greater St. Louis Area Council structure. Also triaged inbox submission `vXK4vA0` (Firelands) → rejected: the council's own S'Mores overnight Cub resident camp contradicts the "no resident program" claim.
