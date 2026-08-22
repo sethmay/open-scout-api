@@ -7,7 +7,7 @@
       "valid_from": null,
       "valid_to": null,
       "name": "S-F Scout Ranch",
-      "camp_type": "resident_camp",
+      "camp_type": "reservation",
       "operator": "council",
       "council": "council:greater-saint-louis-area",
       "parent": null,
@@ -25,116 +25,10 @@
       "program_types": [
         "scouts_bsa_resident"
       ],
-      "features": [
-        {
-          "code": "adirondack_shelters"
-        },
-        {
-          "code": "air_conditioning"
-        },
-        {
-          "code": "archery"
-        },
-        {
-          "code": "backpacking",
-          "note": "The 21-mile Three Notch Trail lies entirely within the property."
-        },
-        {
-          "code": "cabins"
-        },
-        {
-          "code": "canoeing",
-          "note": "Thirty canoes available for unit use."
-        },
-        {
-          "code": "climbing",
-          "note": "A climbing wall at Camp Gamble."
-        },
-        {
-          "code": "cope",
-          "note": "High and low challenge course, available year-round."
-        },
-        {
-          "code": "dining_hall",
-          "note": "Leadership Hall seats 450 and has a commercial kitchen."
-        },
-        {
-          "code": "first_year_program"
-        },
-        {
-          "code": "fishing"
-        },
-        {
-          "code": "hammock_camping"
-        },
-        {
-          "code": "motorboating"
-        },
-        {
-          "code": "older_scout_program"
-        },
-        {
-          "code": "outpost_overnight"
-        },
-        {
-          "code": "paddleboarding"
-        },
-        {
-          "code": "patrol_cooking",
-          "note": "Camp Gamble runs as a patrol-method cooking camp."
-        },
-        {
-          "code": "pavilion"
-        },
-        {
-          "code": "rappelling"
-        },
-        {
-          "code": "rifle"
-        },
-        {
-          "code": "rock_climbing",
-          "note": "Climbing and rappelling on natural cliffs, with cliff-top campsites."
-        },
-        {
-          "code": "sailing"
-        },
-        {
-          "code": "shotgun",
-          "note": "The Eagle Range combines trap and skeet fields."
-        },
-        {
-          "code": "stem",
-          "note": "A stocked STEM pavilion with robotics, drones, and electronics kits."
-        },
-        {
-          "code": "storm_shelter"
-        },
-        {
-          "code": "swimming"
-        },
-        {
-          "code": "water_skiing"
-        },
-        {
-          "code": "water_slide"
-        },
-        {
-          "code": "waterfront",
-          "signature": true,
-          "note": "The 270-acre Nims Lake."
-        },
-        {
-          "code": "welding"
-        },
-        {
-          "code": "zip_line",
-          "note": "Zip line at the Huck's Cove water park."
-        }
-      ],
-      "features_verified_at": "2026-07-25",
-      "features_source_tier": "camp_page",
-      "summary": "Sprawling 5,200-acre Greater St. Louis Area Council ranch on 270-acre Nims Lake near Farmington, Missouri, offering Scouts BSA resident camp in two styles—air-conditioned dining or patrol-method campsite cooking. Features aquatics, Huck's Cove water park, Eagle Range shooting sports, STEM, rock climbing/challenge course, and the APEX older-Scout track.",
+      "features": [],
+      "features_verified_at": null,
+      "features_source_tier": null,
+      "summary": "Sprawling 5,200-acre Greater St. Louis Area Council reservation on 270-acre Nims Lake near Farmington, Missouri. The ranch hosts the council's Scouts BSA resident camps—Camp Gamble (patrol-method campsite cooking) and Camp Famous Eagle (air-conditioned dining)—the Swift High Adventure Base, and the S-F Ranger program, plus Huck's Cove water park, the Eagle Range shooting complex, rock-climbing cliffs, and STEM programming.",
       "provenance": {
         "sources": [
           {
@@ -146,13 +40,16 @@
           {
             "url": "https://stlbsa.org/properties/s-bar-f-scout-ranch/",
             "accessed": "2026-07-25"
+          },
+          {
+            "citation": "Re-scoped 2026-08-22 from a resident_camp to a reservation (property) record per the camps-vs-properties data standard; its Scouts BSA resident program is now carried by the distinct sub-camp records mo-camp-gamble and mo-camp-famous-eagle. Prompted by a community correction (Reddit, u/BTKSTLPKR)."
           }
         ],
         "method": "imported",
-        "verified_at": "2026-07-19",
+        "verified_at": "2026-08-22",
         "imported_at": "2026-07-21",
         "confidence": 0.8,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
+        "notes": "Re-scoped 2026-08-22 from resident_camp to reservation: the property is a grouping anchor for its sub-camps (Camp Gamble, Camp Famous Eagle, Swift High Adventure Base, S-F Ranger Program), which carry the per-camp features. Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
       }
     }
   ],

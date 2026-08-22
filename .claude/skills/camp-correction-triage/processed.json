@@ -187,8 +187,8 @@
       "camp": "mo-horse-camp-nagel",
       "submitted": "2026-08-22",
       "disposition": "accepted",
-      "release": null,
-      "note": "Reddit correction (u/BTKSTLPKR), relayed by maintainer - not via the form. ACCEPTED: added Beaumont Scout Reservation grouping to Horse Camp-Nagel (drafted, pending human merge/release). NO-OP (already correct): Camp May grouped under Beaumont; Swift High Adventure Base + S-F Ranger Program under S-F Scout Ranch; Camp Lewallen, Camp Warren Levis, Camp Pine Ridge all present. ESCALATED: 'Cub World' at Beaumont looks like a missing sub-camp record; Camps Famous Eagle/Gamble/Sakima are areas within the single mo-s-f-scout-ranch record while Beaumont's sub-camps are separate records - a granularity decision for a human."
+      "release": "0.58.17, 0.58.19",
+      "note": "Reddit correction (u/BTKSTLPKR), relayed by maintainer - not via the form. ACCEPTED (0.58.17): added Beaumont Scout Reservation grouping to Horse Camp-Nagel. NO-OP (already correct): Camp May under Beaumont; Swift High Adventure Base + S-F Ranger Program under S-F Scout Ranch; Camps Lewallen, Warren Levis, Pine Ridge all present. RESOLVED (0.58.19) - the Famous Eagle/Gamble granularity escalation: verified against the council's summer-camp and cub-advancement pages that Camp Gamble (patrol cooking) and Camp Famous Eagle (air-conditioned dining) are distinct registered Scouts BSA resident camps with separate 2026 Leaders Guides. Authored mo-camp-gamble + mo-camp-famous-eagle and re-scoped mo-s-f-scout-ranch to a reservation (property) record, per the new camps-vs-properties standard (docs/model.md). HELD/no-op: 'Cub World' appears nowhere on the council site (its cub overnight program is branded 'Advancement Camps', run at Camp May, Camp Famous Eagle, and RFSR) - likely an informal/old name, and Camp May already covers Beaumont's cub program; not authored. 'Sakima' is not a current Scouts BSA resident camp on the council site; not added."
     },
     "vXK4vA0": {
       "camp": "oh-firelands-scout-reservation",
