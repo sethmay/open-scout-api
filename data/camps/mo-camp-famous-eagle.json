@@ -1,0 +1,161 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "mo-camp-famous-eagle",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Famous Eagle",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:greater-saint-louis-area",
+      "parent": null,
+      "operating_status": "active",
+      "address": "120 US-67, Farmington, MO 63640",
+      "city": "Farmington",
+      "state": "MO",
+      "lat": 37.652685946526,
+      "lon": -90.365478883376,
+      "geo_precision": "approximate",
+      "elevation_ft": 930,
+      "july_high_f": 88,
+      "july_low_f": 65,
+      "website": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/",
+      "program_types": [
+        "scouts_bsa_resident"
+      ],
+      "reservation": {
+        "id": "mo-s-f-scout-ranch",
+        "name": "S-F Scout Ranch"
+      },
+      "features": [
+        {
+          "code": "adirondack_shelters"
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "backpacking",
+          "note": "The 21-mile Three Notch Trail lies entirely within the property."
+        },
+        {
+          "code": "cabins"
+        },
+        {
+          "code": "canoeing",
+          "note": "Thirty canoes available for unit use."
+        },
+        {
+          "code": "cope",
+          "note": "High and low challenge course, available year-round."
+        },
+        {
+          "code": "first_year_program"
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "hammock_camping"
+        },
+        {
+          "code": "motorboating"
+        },
+        {
+          "code": "older_scout_program"
+        },
+        {
+          "code": "outpost_overnight"
+        },
+        {
+          "code": "paddleboarding"
+        },
+        {
+          "code": "pavilion"
+        },
+        {
+          "code": "rappelling"
+        },
+        {
+          "code": "rifle"
+        },
+        {
+          "code": "rock_climbing",
+          "note": "Climbing and rappelling on natural cliffs, with cliff-top campsites."
+        },
+        {
+          "code": "sailing"
+        },
+        {
+          "code": "shotgun",
+          "note": "The Eagle Range combines trap and skeet fields."
+        },
+        {
+          "code": "stem",
+          "note": "A stocked STEM pavilion with robotics, drones, and electronics kits."
+        },
+        {
+          "code": "storm_shelter"
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "water_skiing"
+        },
+        {
+          "code": "water_slide"
+        },
+        {
+          "code": "waterfront",
+          "signature": true,
+          "note": "The 270-acre Nims Lake."
+        },
+        {
+          "code": "welding"
+        },
+        {
+          "code": "zip_line",
+          "note": "Zip line at the Huck's Cove water park."
+        },
+        {
+          "code": "air_conditioning",
+          "note": "Air-conditioned dining."
+        },
+        {
+          "code": "dining_hall",
+          "note": "Leadership Hall seats 450 and has a commercial kitchen."
+        }
+      ],
+      "features_verified_at": "2026-08-22",
+      "features_source_tier": "camp_page",
+      "summary": "Camp Famous Eagle is the Greater St. Louis Area Council's air-conditioned-dining Scouts BSA resident camp at S-F Scout Ranch, serving meals in the 450-seat Leadership Hall. Set on 270-acre Nims Lake near Farmington, Missouri, it shares the ranch's aquatics, Eagle Range shooting sports, Huck's Cove water park, rock-climbing cliffs, and STEM programming.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-312/mo-s-f-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://stlbsa.org/camps/scouts-bsa-venturing-summer-camp/",
+            "accessed": "2026-08-22"
+          },
+          {
+            "url": "https://stlbsa.org/camps/cub-scout-overnight-camps/",
+            "accessed": "2026-08-22"
+          },
+          {
+            "citation": "Split from mo-s-f-scout-ranch per the camps-vs-properties data standard: Camp Gamble and Camp Famous Eagle are registered as distinct Scouts BSA resident camps (separate 2026 Leaders Guides) at S-F Scout Ranch. Prompted by a community correction (Reddit, u/BTKSTLPKR, 2026-08-22); camp identities and cooking/dining styles confirmed against the council's own camp pages. Ranch-wide activity features inherited from the 2026-07-25 S-F survey; distinguishing features assigned per camp."
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-08-22",
+        "imported_at": "2026-08-22",
+        "confidence": 0.8,
+        "notes": "New record authored 2026-08-22 by splitting the conflated mo-s-f-scout-ranch resident-camp record. Not a real-world split (both camps long predate this dataset) but a data-modeling correction, so no _events entry. Coordinates are the S-F Scout Ranch property point (geo_precision approximate for a sub-camp within the 5,200-acre ranch). Evergreen summary excludes dates, fees, and sessions."
+      }
+    }
+  ],
+  "notes": null
+}

@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` S-F Scout Ranch: split the conflated `mo-s-f-scout-ranch` record into distinct camps per the camps-vs-properties standard. Added `mo-camp-gamble` (patrol-method cooking) and `mo-camp-famous-eagle` (air-conditioned dining) as Scouts BSA resident camps grouped under `reservation.id: "mo-s-f-scout-ranch"`; re-scoped the original record to `camp_type: "reservation"` (property anchor, like Musser). Verified against the council's summer-camp and cub-advancement pages (separate 2026 Leaders Guides). Resolves the Famous Eagle/Gamble escalation from the u/BTKSTLPKR correction; "Cub World"/"Sakima" held (absent from the council site). 552 camps.
+
 ## 0.58.18 (patch) — 2026-08-22
 
 - `48c5f85` Docs: codify the camps-vs-properties data standard — one record per camp a unit registers for, a property/reservation is a grouping label (not automatically a record), split-vs-fold by the registration test. Added as a `model.md` §5 subsection and cross-referenced from the correction-triage skill (new category I). No data change.
