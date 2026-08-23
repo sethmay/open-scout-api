@@ -11,7 +11,7 @@
       "operator": "council",
       "council": "council:great-alaska",
       "parent": null,
-      "operating_status": "active",
+      "operating_status": "not_operating",
       "address": "Mile 133 N Parks Highway",
       "city": "Trapper Creek",
       "state": "AK",
@@ -43,14 +43,22 @@
             "citation": "camp-finder council-610/ak-denali-high-adventure-scout-base (unofficial community dataset)"
           },
           {
-            "url": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/"
+            "url": "https://scoutingalaska.org/camping/denali-high-adventure-scout-base/",
+            "accessed": "2026-08-22"
+          },
+          {
+            "url": "https://scoutingalaska.org/camping/",
+            "accessed": "2026-08-22"
+          },
+          {
+            "citation": "Community correction (relayed by maintainer): reported no longer operating since 2021. Verified 2026-08-22 — the camp's own page (last modified 2021-08-10) carries a COVID-19 notice that DHASB would not operate for Summer 2021 and was never updated to announce a reopening; the council's current camping index (modified 2026-03) lists only Camp Gorsuch and Eagle River Scout Camp, omitting Denali (the DHASB page itself called it 'one of three resident camps'). No evidence of sale or property disposal, so classified not_operating (dormant), not closed."
           }
         ],
         "method": "imported",
-        "verified_at": "2026-07-17",
+        "verified_at": "2026-08-22",
         "imported_at": "2026-07-21",
-        "confidence": 0.6,
-        "notes": "Imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at is camp-finder's own source-confirmation date; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from that description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (that page is explicitly not an exhaustive activity list, so absence of a code is not evidence of absence)."
+        "confidence": 0.8,
+        "notes": "Status corrected 2026-08-22 to not_operating: DHASB has been dormant since the 2021 COVID-19 pause (its own page, last modified 2021-08-10, never announced a reopening) and no longer appears on the council's camping index. Originally imported from camp-finder; raw description and sessions dropped (operational data stays at the council site). verified_at reflects the 2026-08-22 re-confirmation against the council's own pages; imported_at is when open-scout-api ingested it. The evergreen summary is original prose regenerated from the source description, excluding dates/fees/schedules. camp_type classified from program_types. Features surveyed 2026-07-25 against the council's own camp page (not an exhaustive activity list, so absence of a code is not evidence of absence)."
       },
       "reservation": null
     }

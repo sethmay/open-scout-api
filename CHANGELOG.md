@@ -3,6 +3,8 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+- `PENDING` Denali High Adventure Scout Base (`ak-denali-high-adventure-scout-base`): set `operating_status` to `not_operating`. Dormant since the 2021 COVID-19 pause — the camp's own page (last modified 2021-08-10) never announced a reopening and it is absent from the council's current camping index (only Camp Gorsuch and Eagle River Scout Camp remain). No sale evidence, so `not_operating`, not `closed`. Maintainer-relayed correction; confidence 0.6 → 0.8.
+
 ## 0.58.19 (patch) — 2026-08-22
 
 - `dc3eee9` S-F Scout Ranch: split the conflated `mo-s-f-scout-ranch` record into distinct camps per the camps-vs-properties standard. Added `mo-camp-gamble` (patrol-method cooking) and `mo-camp-famous-eagle` (air-conditioned dining) as Scouts BSA resident camps grouped under `reservation.id: "mo-s-f-scout-ranch"`; re-scoped the original record to `camp_type: "reservation"` (property anchor, like Musser). Verified against the council's summer-camp and cub-advancement pages (separate 2026 Leaders Guides). Resolves the Famous Eagle/Gamble escalation from the u/BTKSTLPKR correction; "Cub World"/"Sakima" held (absent from the council site). 552 camps.

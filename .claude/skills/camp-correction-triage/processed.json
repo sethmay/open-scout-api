@@ -196,6 +196,13 @@
       "disposition": "rejected",
       "release": null,
       "note": "Parent claimed Firelands has 'no resident camp program' (only Beaumont runs summer camp). Contradicted by Lake Erie Council's own materials: Firelands runs 'S'Mores Cub Adventures', an overnight Fri-Sun (check-in Friday, lights-out both nights, campsites/latrines) Cub Scout RESIDENT summer camp - 2026 leaders guide + registration live. Our record already classifies Firelands as cub_resident (active) and Beaumont as scouts_bsa_resident; submitter equated 'resident/summer camp' with the Scouts BSA program. No change."
+    },
+    "maintainer-denali-2026-08-22": {
+      "camp": "ak-denali-high-adventure-scout-base",
+      "submitted": "2026-08-22",
+      "disposition": "accepted",
+      "release": "0.58.20",
+      "note": "Maintainer-relayed correction: Denali High Adventure Scout Base no longer operating since 2021. ACCEPTED -> operating_status set to not_operating (dormant). Verified against the council's own pages: the DHASB page (last modified 2021-08-10) carries a COVID-19 'will not operate Summer 2021' notice with no reopening announced, and the current camping index (modified 2026-03) lists only Camp Gorsuch and Eagle River Scout Camp, omitting Denali (that page called it 'one of three resident camps'). No sale/disposal evidence -> not_operating, not closed. confidence 0.6 -> 0.8; verified_at -> 2026-08-22."
     }
   }
 }
