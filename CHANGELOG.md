@@ -3,7 +3,9 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
-- `PENDING` Denali High Adventure Scout Base (`ak-denali-high-adventure-scout-base`): set `operating_status` to `not_operating`. Dormant since the 2021 COVID-19 pause — the camp's own page (last modified 2021-08-10) never announced a reopening and it is absent from the council's current camping index (only Camp Gorsuch and Eagle River Scout Camp remain). No sale evidence, so `not_operating`, not `closed`. Maintainer-relayed correction; confidence 0.6 → 0.8.
+## 0.58.20 (patch) — 2026-08-22
+
+- `d30048d` Denali High Adventure Scout Base (`ak-denali-high-adventure-scout-base`): set `operating_status` to `not_operating`. Dormant since the 2021 COVID-19 pause — the camp's own page (last modified 2021-08-10) never announced a reopening and it is absent from the council's current camping index (only Camp Gorsuch and Eagle River Scout Camp remain). No sale evidence, so `not_operating`, not `closed`. Maintainer-relayed correction; confidence 0.6 → 0.8.
 
 ## 0.58.19 (patch) — 2026-08-22
 
