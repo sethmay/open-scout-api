@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.61.0 (minor) — 2026-09-10
 
-- `PENDING` Narrow camp cuts for agents and "near me" apps: pull just the camps in one state or council instead of the whole list. Additive; nothing existing changed.
+- `2115294` Narrow camp cuts for agents and "near me" apps: pull just the camps in one state or council instead of the whole list. Additive; nothing existing changed.
   - New `v1/camps/by-state/<USPS>.json` and `v1/camps/by-council/<slug>.json`, each the same shape as `current/camps.json` but filtered to that state or council. Oregon is about 22 KB against the roughly 850 KB full file.
   - `meta.json` gains `camp_slices`, an index of every slice and its camp count, so a consumer can choose a cut without fetching the whole corpus first.
 
