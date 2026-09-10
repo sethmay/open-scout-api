@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.63.0 (minor) — 2026-09-10
 
-- `PENDING` Every current Cub Scout adventure now has a plain description of what a Cub does. This closes the biggest Cub-side content gap: browsing electives used to be a bare list of names, while merit badges have carried prose for a while. Additive; nothing existing changed.
+- `50bb132` Every current Cub Scout adventure now has a plain description of what a Cub does. This closes the biggest Cub-side content gap: browsing electives used to be a bare list of names, while merit badges have carried prose for a while. Additive; nothing existing changed.
   - All 139 current adventures gain a `description` (in `current/adventures.json` and each adventure document), one or two original sentences drawn from the adventure's own page. Evergreen and non-verbatim, checked in the build the same way the merit-badge descriptions are.
 
 ## 0.62.0 (minor) — 2026-09-10
