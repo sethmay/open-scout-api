@@ -40,10 +40,37 @@
       "additionalProperties": false
     },
     "provenance": { "$ref": "common.schema.json#/$defs/Provenance" },
-    "notes": { "type": ["string", "null"], "default": null }
+    "notes": { "type": ["string", "null"], "default": null },
+    "status": {
+      "enum": ["active", "discontinued"],
+      "default": "active",
+      "description": "Whether this is a current registered position. `discontinued` rows are kept - the id is permanent, so a consumer holding the registration code still resolves it - and carry a `discontinued` block saying when and why."
+    },
+    "discontinued": {
+      "type": "object",
+      "description": "Present only when `status` is `discontinued`. Adult positions have no entity identity, so a supersessor is named, not referenced.",
+      "properties": {
+        "date": {
+          "anyOf": [ { "$ref": "common.schema.json#/$defs/HistoricalDate" }, { "type": "null" } ],
+          "description": "When the position was retired, or null when only approximately known."
+        },
+        "reason": { "type": "string", "minLength": 1 },
+        "superseded_by": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Position(s) that replaced this one, by name or by this dataset's training-requirement id. Free-form, because adult positions are not entities."
+        }
+      },
+      "required": ["reason"],
+      "additionalProperties": false
+    }
   },
   "required": ["$schema", "id", "kind", "position_name", "registration_codes", "unit_type", "requires", "provenance"],
   "additionalProperties": false,
+  "allOf": [
+    { "if": { "properties": { "status": { "const": "discontinued" } }, "required": ["status"] },
+      "then": { "required": ["discontinued"] } }
+  ],
   "$defs": {
     "RequiredCourse": {
       "type": "object",

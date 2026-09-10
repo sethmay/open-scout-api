@@ -464,7 +464,8 @@ def main() -> None:
         write_entity(DIST / "v1" / "training-requirements" / f"{d['id']}.json", d)
         treq_index.append({"id": d["id"], "position_name": d["position_name"],
                            "registration_codes": d["registration_codes"],
-                           "unit_type": d["unit_type"]})
+                           "unit_type": d["unit_type"],
+                           "status": d.get("status", "active")})
 
     coll = lambda kind, items: {"version": version, "generated_at": now, "kind": kind,
                                 "count": len(items), "items": items}
@@ -623,6 +624,7 @@ def main() -> None:
             "training": {"total": len(training), "current": len(current_training),
                          "digest": _digest(training, trainevents)},
             "training-requirements": {"total": len(training_reqs),
+                                      "current": sum(1 for d in training_reqs if d.get("status", "active") == "active"),
                                       "digest": _digest(training_reqs)},
         },
         "camp_slices": camp_slices,

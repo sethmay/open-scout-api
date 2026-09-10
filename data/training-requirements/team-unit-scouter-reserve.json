@@ -21,12 +21,22 @@
       {
         "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
         "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      },
+      {
+        "citation": "Scouting America, Position Trained Requirements, June 2025 (no Varsity/team section; present in the earlier edition)",
+        "url": "https://www.scouting.org/wp-content/uploads/2025/05/Position-Trained-Requirements-Jun2025.pdf",
+        "accessed": "2026-09-10"
       }
     ],
     "method": "curated",
-    "verified_at": "2026-07-27",
-    "confidence": 0.9,
-    "notes": null
+    "verified_at": "2026-09-10",
+    "confidence": 0.8,
+    "notes": "Retired: Varsity Scouting was discontinued. The 'team' program section is absent from the June 2025 Position Trained Requirements while it appears in the earlier edition."
   },
-  "notes": null
+  "notes": null,
+  "status": "discontinued",
+  "discontinued": {
+    "date": null,
+    "reason": "Varsity Scouting was discontinued (circa 2017-2020) and its team program and positions no longer exist."
+  }
 }

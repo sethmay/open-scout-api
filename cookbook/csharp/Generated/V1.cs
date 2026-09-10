@@ -709,6 +709,10 @@ public sealed record TrainingRequirementIndexItem
 
     [JsonPropertyName("unit_type")]
     public required string UnitType { get; init; }
+
+    /// <summary>Whether this is a current registered position. Discontinued rows are kept so a held registration code still resolves; the per-entity document carries when and why.</summary>
+    [JsonPropertyName("status")]
+    public required string Status { get; init; }
 }
 
 /// <summary>Root schema for the lightweight listing projections emitted by tools/build.py to v1/{dataset}/index.json (councils, territories, merit-badges, camps, ranks, awards, oa-lodges, requirement-sets). One entry per entity INCLUDING retired/defunct ones — a `current` boolean says whether the entity has an…</summary>
@@ -884,6 +888,18 @@ public sealed record RequirementSetDocument
     public required IReadOnlyDictionary<string, JsonElement> Provenance { get; init; }
 }
 
+public sealed record TrainingRequirementDocumentDiscontinued
+{
+    [JsonPropertyName("date")]
+    public string? Date { get; init; }
+
+    [JsonPropertyName("reason")]
+    public required string Reason { get; init; }
+
+    [JsonPropertyName("superseded_by")]
+    public IReadOnlyList<string>? SupersededBy { get; init; }
+}
+
 /// <summary>One row of the TRAINED LEADER REQUIREMENTS chart: what an adult in this position, in this unit type, must complete to be Position Trained. Not a versioned entity - the chart is a single edition and the row has no identity apart from it. `registration_codes` is the join key a consumer already holds…</summary>
 public sealed record TrainingRequirementDocument
 {
@@ -901,6 +917,12 @@ public sealed record TrainingRequirementDocument
 
     [JsonPropertyName("provenance")]
     public required IReadOnlyDictionary<string, JsonElement> Provenance { get; init; }
+
+    [JsonPropertyName("status")]
+    public string? Status { get; init; }
+
+    [JsonPropertyName("discontinued")]
+    public TrainingRequirementDocumentDiscontinued? Discontinued { get; init; }
 }
 
 public sealed record BadgeRankingDocumentRankingsItem

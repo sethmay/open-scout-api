@@ -33,12 +33,31 @@
       {
         "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
         "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      },
+      {
+        "citation": "Scouting America, Cub Scout Leader Book (33221), 2024",
+        "url": "https://filestore.scouting.org/filestore/cubscouts/pdf/33221%2824%29%20Cub%20Scout%20Leader%20Book.pdf",
+        "accessed": "2026-09-10"
+      },
+      {
+        "citation": "Scouting America, Cub Scout Position Trained Requirements (CS19), June 2025",
+        "url": "https://www.scouting.org/wp-content/uploads/2025/05/Position-Trained-Requirements-Jun2025.pdf",
+        "accessed": "2026-09-10"
       }
     ],
     "method": "curated",
-    "verified_at": "2026-07-27",
-    "confidence": 0.9,
-    "notes": null
+    "verified_at": "2026-09-10",
+    "confidence": 0.85,
+    "notes": "Retired: the 2024 Cub Scout Leader Book describes a single den leader / assistant den leader role, and the June 2025 CS19 Position Trained Requirements lists only Den Leader & Assistant Den Leader - the Tiger/Webelos-specific den-leader positions are gone."
   },
-  "notes": null
+  "notes": null,
+  "status": "discontinued",
+  "discontinued": {
+    "date": "2024",
+    "reason": "The 2024 Cub Scout program consolidated the rank-specific den-leader positions into a single Cub Scout Den Leader and Assistant Den Leader; this position is retired.",
+    "superseded_by": [
+      "Cub Scout Den Leader (pack-cub-scout-den-leader)",
+      "Cub Scout Assistant Den Leader (pack-cub-scout-assistant-den-leader)"
+    ]
+  }
 }

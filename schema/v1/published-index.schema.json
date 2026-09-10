@@ -776,13 +776,21 @@
             "ship",
             "other"
           ]
+        },
+        "status": {
+          "enum": [
+            "active",
+            "discontinued"
+          ],
+          "description": "Whether this is a current registered position. Discontinued rows are kept so a held registration code still resolves; the per-entity document carries when and why."
         }
       },
       "required": [
         "id",
         "position_name",
         "registration_codes",
-        "unit_type"
+        "unit_type",
+        "status"
       ],
       "additionalProperties": false
     }
