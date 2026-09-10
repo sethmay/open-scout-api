@@ -137,8 +137,14 @@ The additive ergonomics release shipped in 0.59.0. Remaining, ranked by value/ef
   Add a build step that rewrites marked count spans (or a `check_docs.py` gate), and fix the current stale numbers
   in `README.md` + `docs/endpoints.md` now.
 - **`llms.txt` + `robots.txt`** at the site root pointing at `meta.json`. Trivial. (finding 8)
-- **Training lifecycle:** mark `training-requirements` rows current vs legacy — the 5 pack den-leader rows don't
-  say which survived the 2024 Cub change. Needs a source decision. (finding 6)
+- **Training lifecycle — DONE 0.62.0 (finding 6).** `training-requirement` gained an additive `status`
+  (`active`/`discontinued`) + `discontinued` block; 16 rows marked retired against the June 2025 Position
+  Trained Requirements + the 2024 Cub Scout Leader Book (Tiger/Webelos den leaders → unified Den Leader 2024;
+  all 8 Varsity `team-*`; `troop-leader-of-11-year-old-scouts`; the 4 `parent-coordinator` at confidence 0.6).
+  Remaining gaps: (a) **New Member Coordinator is absent from the dataset** — a current position in both docs
+  (`SCO_535`/`SCO_536`); author `*-new-member-coordinator` (needs those course entities in `data/training/`),
+  which also confirms the parent-coordinator supersession. (b) The parent-coordinator retirement is unverified
+  (0.6) — confirm the rename and bump confidence, or reinstate if distinct.
 - **Cub adventure descriptions (LARGE):** all 140 merit badges carry 24-38 words of prose; adventures carry none.
   Background enrichment (crawl scouting.org adventure pages + tokens), same class as the camp feature-survey
   queue; NOT a contract change. (finding 2)

@@ -154,7 +154,17 @@
         "registration_codes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
         "unit_type": { "enum": ["pack", "troop", "team", "crew", "ship", "other"] },
         "requires": { "type": "array", "minItems": 1 },
-        "provenance": { "type": "object" }
+        "provenance": { "type": "object" },
+        "status": { "enum": ["active", "discontinued"] },
+        "discontinued": {
+          "type": "object",
+          "properties": {
+            "date": { "anyOf": [ { "$ref": "#/$defs/HistoricalDate" }, { "type": "null" } ] },
+            "reason": { "type": "string", "minLength": 1 },
+            "superseded_by": { "type": "array", "items": { "type": "string" } }
+          },
+          "required": ["reason"]
+        }
       },
       "required": ["position_name", "registration_codes", "unit_type", "requires", "provenance"]
     },

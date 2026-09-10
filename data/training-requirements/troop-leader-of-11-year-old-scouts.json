@@ -27,12 +27,22 @@
       {
         "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
         "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      },
+      {
+        "citation": "Scouting America, Scouts BSA Position Trained Requirements, June 2025 (position absent)",
+        "url": "https://www.scouting.org/wp-content/uploads/2025/05/Position-Trained-Requirements-Jun2025.pdf",
+        "accessed": "2026-09-10"
       }
     ],
     "method": "curated",
-    "verified_at": "2026-07-27",
-    "confidence": 0.9,
-    "notes": null
+    "verified_at": "2026-09-10",
+    "confidence": 0.7,
+    "notes": "Retired: absent from the June 2025 Scouts BSA Position Trained Requirements."
   },
-  "notes": null
+  "notes": null,
+  "status": "discontinued",
+  "discontinued": {
+    "date": null,
+    "reason": "Legacy Scouts BSA position; no longer a current registered position."
+  }
 }

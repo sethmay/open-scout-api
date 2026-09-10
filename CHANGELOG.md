@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.62.0 (minor) — 2026-09-10
+
+- `PENDING` Adult training positions now say whether they are current. Positions Scouting America has retired stay in the data, so a saved registration code still resolves, but are marked, so "what training do I need today" no longer offers roles that no longer exist. Additive; nothing existing changed.
+  - `training-requirement` records gain a `status` (active or discontinued) and, for retired ones, a `discontinued` block with the date, reason, and any replacement. 16 of 67 positions are marked retired: the Tiger and Webelos den leaders that folded into one Cub Scout Den Leader in the 2024 program, the eight Varsity team positions, Leader of 11-Year-Old Scouts, and the four Parent Coordinator rows (superseded by New Member Coordinator).
+  - `meta.datasets.training-requirements` gains a `current` count (51 of 67), and the index carries `status`.
+  - Sourced from the June 2025 Position Trained Requirements and the 2024 Cub Scout Leader Book.
+
 ## 0.61.0 (minor) — 2026-09-10
 
 - `2115294` Narrow camp cuts for agents and "near me" apps: pull just the camps in one state or council instead of the whole list. Additive; nothing existing changed.
