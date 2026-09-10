@@ -669,6 +669,12 @@ All paths are relative to {BASE_URL}/. Read the discovery document first: it ind
 endpoint, the build version, per-dataset counts and content digests, the schemas, and the \
 license split.
 
+Reading it correctly: `versions[]` and `requirement_sets[]` are ordered OLDEST-first, so use \
+`current_version_index` and `current_requirement_set`, never index `[0]`. An empty `features` \
+array with `features_verified_at: null` means "never surveyed", not "offers nothing". A \
+`geo_precision: "approximate"` coordinate is a city or state centroid: soft-plot it, do not \
+navigate to it.
+
 ## Start here
 
 - [Discovery document](v1/meta.json): version, endpoints, per-dataset counts + digests, license.
@@ -676,17 +682,14 @@ license split.
 
 ## Current data (flat, denormalized, current-only)
 
-- [Camps](v1/current/camps.json) - location, features, program types; also [GeoJSON](v1/current/camps.geojson).
+- [Camps](v1/current/camps.json): location, features, program types; also [GeoJSON](v1/current/camps.geojson).
 - [Councils](v1/current/councils.json), [Territories](v1/current/territories.json)
 - [Merit badges](v1/current/merit-badges.json), [Cub adventures](v1/current/adventures.json)
 - [Requirement sets](v1/current/requirement-sets.json), [Ranks](v1/current/ranks.json), [Awards](v1/current/awards.json), [OA lodges](v1/current/oa-lodges.json)
 
-## Reading it correctly
+## More
 
-- `versions[]` and `requirement_sets[]` are ordered OLDEST-first. Use `current_version_index` and `current_requirement_set`, never index `[0]`.
-- An empty `features` array with `features_verified_at: null` means "never surveyed", not "offers nothing".
-- `geo_precision: "approximate"` coordinates are city/state centroids: soft-plot, do not navigate.
-- Full guidance and a runnable, CI-gated cookbook: {REPO_URL}.
+- [Repository, model docs, and a runnable, CI-gated cookbook]({REPO_URL})
 
 Version {version}. License CC BY-NC-SA 4.0; requirement text is (c) Scouting America (see meta.text_rights).
 """
