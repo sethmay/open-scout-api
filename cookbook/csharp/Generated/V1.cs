@@ -987,7 +987,7 @@ public sealed record Meta
     public required string Changelog { get; init; }
 
     [JsonPropertyName("text_rights")]
-    public string? TextRights { get; init; }
+    public required string TextRights { get; init; }
 
     /// <summary>Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear.</summary>
     [JsonPropertyName("datasets")]

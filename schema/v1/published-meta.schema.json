@@ -34,12 +34,13 @@
           "digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$",
                       "description": "Content hash of this dataset (entities + lifecycle events), NOT the deploy. Moves only when the data moves — unlike the mtime-based ETag Pages serves — so a consumer can re-fetch only the datasets whose digest changed." }
         },
-        "required": ["total"]
+        "required": ["total", "digest"]
       }
     },
     "vocab": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
     "endpoints": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "minItems": 1 }
   },
   "required": ["$schema", "name", "version", "api_version", "generated_at", "base_url", "license",
-               "unofficial", "disclaimer", "schemas", "releases", "changelog", "datasets", "vocab", "endpoints"]
+               "unofficial", "disclaimer", "schemas", "releases", "changelog", "text_rights",
+               "datasets", "vocab", "endpoints"]
 }

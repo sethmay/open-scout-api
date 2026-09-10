@@ -441,7 +441,7 @@ export interface Meta {
   readonly releases: string;
   /** Human-readable releases page. */
   readonly changelog: string;
-  readonly text_rights?: string;
+  readonly text_rights: string;
   /** Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear. */
   readonly datasets: Readonly<Record<string, unknown>>;
   readonly vocab: readonly string[];
