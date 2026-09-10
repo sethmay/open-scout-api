@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.59.0 (minor) — 2026-09-10
 
-- `PENDING` Consumer ergonomics: additive fields and a map export that make the obvious read the correct read, prompted by an independent den-leader field audit. Nothing existing changed, so anything pinned to v1 keeps working.
+- `5cac170` Consumer ergonomics: additive fields and a map export that make the obvious read the correct read, prompted by an independent den-leader field audit. Nothing existing changed, so anything pinned to v1 keeps working.
   - Every per-entity document now names its in-force version with `current_version_index`, and merit badges, ranks, awards and adventures also carry `current_requirement_set`, the edition actually in force. Reading `requirement_sets[0]` used to return the oldest edition, for example Swimming's retired 2015 text instead of the 2026 one a Scout is signed off against.
   - `current/camps.json` gains `address`, the field that goes on a permission slip, and `current/adventures.json` gains `requirement_sets` and `current_requirement_set`, which trims a full Cub rank-year walk from 51 requests toward 26.
   - New `v1/current/camps.geojson`: the placeable camps as a FeatureCollection that Google My Maps, CalTopo and Gaia read directly.
