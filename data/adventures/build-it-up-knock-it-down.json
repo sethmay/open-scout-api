@@ -42,14 +42,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/build-it-up-knock-it-down/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "Lions build structures on their own and with their den, then create something meant to topple, discovering how things stand up and come crashing down."
     }
   ],
   "notes": null

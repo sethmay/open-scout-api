@@ -1028,6 +1028,10 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1
+        },
+        "description": {
+          "type": ["string", "null"],
+          "description": "Short original-prose summary of what a Cub does in this adventure, regenerated from the adventure's own page. Never verbatim requirement text; null where none is on record."
         }
       },
       "required": [
@@ -1040,6 +1044,7 @@
         "url",
         "requirement_sets",
         "current_requirement_set",
+        "description",
         "verified_at",
         "method",
         "confidence"

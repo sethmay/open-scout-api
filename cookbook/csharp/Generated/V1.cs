@@ -397,6 +397,10 @@ public sealed record CurrentAdventure
 
     [JsonPropertyName("confidence")]
     public required double Confidence { get; init; }
+
+    /// <summary>Short original-prose summary of what a Cub does in this adventure, regenerated from the adventure's own page. Never verbatim requirement text; null where none is on record.</summary>
+    [JsonPropertyName("description")]
+    public required string? Description { get; init; }
 }
 
 /// <summary>A youth leadership position. `unit_types` are vocabulary CODES from v1/vocab/position-unit-types.json, never display labels. Which RANKS accept a position is not here: it is an edge, and it differs — Bugler counts for Star and Life but not Eagle. Read the rank's requirement-set for that.</summary>

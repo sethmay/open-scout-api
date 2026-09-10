@@ -43,14 +43,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/build-it/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "A Webelos learns to use basic woodworking tools safely, checks work for plumb, level, and square, and builds a small carpentry project from wood."
     }
   ],
   "notes": null
