@@ -186,7 +186,7 @@ site. Per-season registration deep-links are deliberately dropped because they 4
 
 > [!WARNING]
 > `map.pin(camp.lat, camp.lon)` without checking `geo_precision` plots state centroids as if they
-> were real camps. As of v0.54.0 that is 111 of 448 camps rendered as confident lies.
+> were real camps. That is <!--n:camps.approximate-->156<!--/n--> of <!--n:camps.current-->553<!--/n--> camps rendered as confident lies.
 
 ### Camp features: read the date with the array
 
@@ -244,13 +244,13 @@ by the schema and reserved; no camp carries it as of v0.54.0.
 `current/camps.json` lists every camp with an open version, which is a different question from
 whether it runs a program today. `operating_status` answers the second:
 
-| Value | Meaning | Camps (v0.58.0) |
+| Value | Meaning | Camps |
 |---|---|---|
-| `active` | property exists and runs a program | 445 |
-| `not_operating` | property exists, no program | 2 |
-| `closed` | property gone or sold | 1 |
+| `active` | property exists and runs a program | <!--n:camps.active-->535<!--/n--> |
+| `not_operating` | property exists, no program | <!--n:camps.not_operating-->14<!--/n--> |
+| `closed` | property gone or sold | <!--n:camps.closed-->4<!--/n--> |
 
-Reading `current/camps.json` wholesale as "active camps" lists all 448, including the 3 a Scout
+Reading `current/camps.json` wholesale as "active camps" lists all <!--n:camps.current-->553<!--/n-->, including the <!--n:camps.nonactive-->18<!--/n--> a Scout
 cannot attend this year. Filter on `operating_status == "active"` when you mean operating.
 
 ### `reservation.id` is an opaque grouping key
@@ -376,7 +376,7 @@ something a reader can run instead of read. Three worked examples:
 | `merit_badges` | 268 | id, name, `current`, `eagle_required`, `data` |
 | `requirement_sets` | 667 | subject, `effective_from`/`effective_to`, `supersedes`, `includes_official_text` |
 | `merit_badge_rankings` | 692 | year, `earned_rank`, badge id, whether the year is complete |
-| `camps` | 448 | id, name, `camp_type`, `operator`, council, state, `data` |
+| `camps` | <!--n:camps.total-->553<!--/n--> | id, name, `camp_type`, `operator`, council, state, `data` |
 | `camp_features` | 6,379 | camp × feature: `code`, `signature`, `note`, `verified_at` |
 | `feature_vocab` | 128 | `code`, `label`, `category`, `broader`, `description` |
 | `ranks` | 21 | id, name, program, `rank_order`, `data` |
