@@ -552,6 +552,32 @@ def main() -> None:
     if errs:
         raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
     write_json(DIST / "v1" / "current" / "camps.geojson", camps_geojson)
+    # Narrow cuts: one file per state and per council, so an agent (or a "near me" UI) can pull
+    # "camps in Oregon" -- a few KB -- instead of the whole current/camps.json corpus. Same item
+    # shape and envelope as current/camps.json, so published-current validates each slice unchanged.
+    by_state: dict[str, list[dict]] = {}
+    by_council: dict[str, list[dict]] = {}
+    for c in current_camps:
+        if c.get("state"):
+            by_state.setdefault(c["state"], []).append(c)
+        if c.get("council"):
+            by_council.setdefault(c["council"].split(":", 1)[1], []).append(c)
+    for st, group in sorted(by_state.items()):
+        slice_coll = cur("camp", group)
+        errs += [f"camps/by-state/{st}.json: {er.json_path}: {er.message}"
+                 for er in collection_validator.iter_errors(slice_coll)]
+        write_json(DIST / "v1" / "camps" / "by-state" / f"{st}.json", slice_coll)
+    for slug, group in sorted(by_council.items()):
+        slice_coll = cur("camp", group)
+        errs += [f"camps/by-council/{slug}.json: {er.json_path}: {er.message}"
+                 for er in collection_validator.iter_errors(slice_coll)]
+        write_json(DIST / "v1" / "camps" / "by-council" / f"{slug}.json", slice_coll)
+    if errs:
+        raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
+    camp_slices = {
+        "by_state": {st: len(g) for st, g in sorted(by_state.items())},
+        "by_council": {slug: len(g) for slug, g in sorted(by_council.items())},
+    }
     for ds, c in index_colls:
         write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
@@ -599,6 +625,7 @@ def main() -> None:
             "training-requirements": {"total": len(training_reqs),
                                       "digest": _digest(training_reqs)},
         },
+        "camp_slices": camp_slices,
         "vocab": [f"v1/vocab/{v}.json" for v in vocab_ids],
         "text_rights": ("Merit-badge, rank and Cub adventure requirement text is \u00a9 Scouting America, reproduced with "
                         "attribution for non-commercial use and NOT covered by this dataset's CC BY-NC-SA license. See NOTICE.md."),
@@ -608,6 +635,7 @@ def main() -> None:
                       "v1/requirement-sets/index.json", "v1/requirement-sets/{id}.json",
                       "v1/merit-badge-rankings/index.json", "v1/merit-badge-rankings/{year}.json",
                       "v1/camps/index.json", "v1/camps/{id}.json", "v1/camps/aliases.json",
+                      "v1/camps/by-state/{state}.json", "v1/camps/by-council/{id}.json",
                       "v1/ranks/index.json", "v1/ranks/{id}.json",
                       "v1/awards/index.json", "v1/awards/{id}.json",
                       "v1/oa-lodges/index.json", "v1/oa-lodges/{id}.json",
@@ -682,7 +710,7 @@ navigate to it.
 
 ## Current data (flat, denormalized, current-only)
 
-- [Camps](v1/current/camps.json): location, features, program types; also [GeoJSON](v1/current/camps.geojson).
+- [Camps](v1/current/camps.json): location, features, program types; also [GeoJSON](v1/current/camps.geojson). For a narrow cut, `meta.camp_slices` indexes per-state (`v1/camps/by-state/<USPS>.json`) and per-council (`v1/camps/by-council/<slug>.json`) files with the same shape.
 - [Councils](v1/current/councils.json), [Territories](v1/current/territories.json)
 - [Merit badges](v1/current/merit-badges.json), [Cub adventures](v1/current/adventures.json)
 - [Requirement sets](v1/current/requirement-sets.json), [Ranks](v1/current/ranks.json), [Awards](v1/current/awards.json), [OA lodges](v1/current/oa-lodges.json)
