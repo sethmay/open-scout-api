@@ -29,7 +29,7 @@
         "method": "scraped",
         "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+        "notes": "Name, rank placement and category from the official rank adventure pages. This is a shooting-sports adventure with no adventure page of its own (url is null); the evergreen description was written from the activity and rank, not scraped."
       },
       "description": "Practice with a slingshot: learn safe handling and technique, then shoot at targets on a supervised range."
     }
