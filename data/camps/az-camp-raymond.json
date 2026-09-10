@@ -1,0 +1,133 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/camp.schema.json",
+  "id": "az-camp-raymond",
+  "kind": "camp",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "name": "Camp Raymond",
+      "camp_type": "resident_camp",
+      "operator": "council",
+      "council": "council:grand-canyon",
+      "parent": null,
+      "operating_status": "active",
+      "address": "7709 S Boy Scout Camp Road",
+      "city": "Parks",
+      "state": "AZ",
+      "lat": 35.1430036,
+      "lon": -111.9686245,
+      "geo_precision": "exact",
+      "elevation_ft": 6730,
+      "july_high_f": 84,
+      "july_low_f": 51,
+      "website": "https://scoutingevent.com/010-CubRaymond2026",
+      "program_types": [
+        "cub_resident"
+      ],
+      "features": [
+        {
+          "code": "accessible_facilities",
+          "note": "One campsite is marked accessible."
+        },
+        {
+          "code": "archery"
+        },
+        {
+          "code": "astronomy"
+        },
+        {
+          "code": "bb_guns"
+        },
+        {
+          "code": "canoeing"
+        },
+        {
+          "code": "climbing"
+        },
+        {
+          "code": "dining_hall",
+          "note": "All meals are served in the Camp Raymond dining hall, called the Bistro."
+        },
+        {
+          "code": "fishing"
+        },
+        {
+          "code": "handicraft"
+        },
+        {
+          "code": "health_lodge",
+          "note": "Staffed around the clock."
+        },
+        {
+          "code": "hiking",
+          "note": "Trail hikes ranging from two to twelve miles."
+        },
+        {
+          "code": "pavilion",
+          "note": "Campsite shelters."
+        },
+        {
+          "code": "pool"
+        },
+        {
+          "code": "rv_sites",
+          "note": "Campsite hook-ups for recreational vehicles."
+        },
+        {
+          "code": "swimming"
+        },
+        {
+          "code": "trading_post"
+        },
+        {
+          "code": "waterfront",
+          "note": "A lake used for canoeing and fishing."
+        }
+      ],
+      "features_verified_at": "2026-07-26",
+      "features_source_tier": "guide",
+      "summary": "Grand Canyon Council's Camp Raymond, a Cub Scout resident camp near Parks and Flagstaff, Arizona.",
+      "provenance": {
+        "sources": [
+          {
+            "citation": "camp-finder council-010/az-r-c-scout-ranch (unofficial community dataset)"
+          },
+          {
+            "url": "https://scoutingevent.com/010-CubRaymond2026",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingaz.org/wp-content/uploads/adventure_camp_guide_2026_2.html",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingaz.org/scout-camping/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://www.scoutingaz.org/public-facility-rentals/",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://campreservation.com/010/Camps/659",
+            "accessed": "2026-07-26"
+          },
+          {
+            "url": "https://area4history.com/camps/r-c-scout-ranch/",
+            "accessed": "2026-09-10"
+          },
+          {
+            "citation": "Identity correction via Camp Finder Suggest-a-Correction form; submitted by camp staff 2026-08-31 (submission DqaG0Nl), kept anonymous at submitter request. Grand Canyon Council runs two distinct Arizona properties: Camp Raymond (this record; 7709 S Boy Scout Camp Road, Parks, near Flagstaff) and R-C Scout Ranch (19887 E AZ Hwy 260, Payson). The camp-finder import mislabeled this Parks property as 'R-C Scout Ranch'; corroborated by area4history (separate R-C and Raymond entries) and this property's own Cub Raymond registration and Bistro dining hall. The address, coordinates, elevation, website, and features already described Camp Raymond and are unchanged; only id, name, and summary were corrected."
+          }
+        ],
+        "method": "imported",
+        "verified_at": "2026-09-10",
+        "imported_at": "2026-07-21",
+        "confidence": 0.8,
+        "notes": "Imported from camp-finder (as the mislabeled 'az-r-c-scout-ranch'), then split out to this correct id on 2026-09-10 after a camp-staff correction resolved the long-standing identity defect. The Parks/Flagstaff property the import located, priced, and surveyed is Camp Raymond, not R-C Scout Ranch (a separate Payson property, now its own az-r-c-scout-ranch record). verified_at is the correction date; imported_at is the original ingest. The evergreen summary excludes dates/fees/schedules. Features surveyed 2026-07-26 against the council's adventure camp guide (guide tier) describe this property and are carried over unchanged."
+      }
+    }
+  ],
+  "notes": null
+}
