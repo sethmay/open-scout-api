@@ -941,6 +941,16 @@ public sealed record EntityDocument
     public required string Kind { get; init; }
 }
 
+/// <summary>Index of the narrow camp cuts. `by_state[&lt;USPS>]` and `by_council[&lt;slug>]` give the number of current camps in each slice, served at v1/camps/by-state/&lt;USPS>.json and v1/camps/by-council/&lt;slug>.json — same envelope and item shape as current/camps.json. Lets a consumer (or an LLM) pull one small cut…</summary>
+public sealed record MetaCampSlices
+{
+    [JsonPropertyName("by_state")]
+    public required IReadOnlyDictionary<string, JsonElement> ByState { get; init; }
+
+    [JsonPropertyName("by_council")]
+    public required IReadOnlyDictionary<string, JsonElement> ByCouncil { get; init; }
+}
+
 /// <summary>Contract for v1/meta.json, the entry point a consumer reads first: what this dataset is, which release it is, where the schemas live, what every endpoint is called, and the licensing split. Pinning it matters more than its size suggests - `endpoints` and `vocab` are the machine-readable index of th…</summary>
 public sealed record Meta
 {
@@ -992,6 +1002,10 @@ public sealed record Meta
     /// <summary>Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear.</summary>
     [JsonPropertyName("datasets")]
     public required IReadOnlyDictionary<string, JsonElement> Datasets { get; init; }
+
+    /// <summary>Index of the narrow camp cuts. `by_state[&lt;USPS>]` and `by_council[&lt;slug>]` give the number of current camps in each slice, served at v1/camps/by-state/&lt;USPS>.json and v1/camps/by-council/&lt;slug>.json — same envelope and item shape as current/camps.json. Lets a consumer (or an LLM) pull one small cut…</summary>
+    [JsonPropertyName("camp_slices")]
+    public required MetaCampSlices CampSlices { get; init; }
 
     [JsonPropertyName("vocab")]
     public required IReadOnlyList<string> Vocab { get; init; }

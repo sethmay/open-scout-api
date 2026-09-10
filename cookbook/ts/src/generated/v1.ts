@@ -421,6 +421,12 @@ export interface EntityDocument {
   readonly [extra: string]: unknown;
 }
 
+/** Index of the narrow camp cuts. `by_state[<USPS>]` and `by_council[<slug>]` give the number of current camps in each slice, served at v1/camps/by-state/<USPS>.json and v1/camps/by-council/<slug>.json — same envelope and item shape as current/camps.json. Lets a consumer (or an LLM) pull one small cut… */
+export interface MetaCampSlices {
+  readonly by_state: Readonly<Record<string, unknown>>;
+  readonly by_council: Readonly<Record<string, unknown>>;
+}
+
 /** Contract for v1/meta.json, the entry point a consumer reads first: what this dataset is, which release it is, where the schemas live, what every endpoint is called, and the licensing split. Pinning it matters more than its size suggests - `endpoints` and `vocab` are the machine-readable index of th… */
 export interface Meta {
   readonly $schema: string;
@@ -444,6 +450,8 @@ export interface Meta {
   readonly text_rights: string;
   /** Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear. */
   readonly datasets: Readonly<Record<string, unknown>>;
+  /** Index of the narrow camp cuts. `by_state[<USPS>]` and `by_council[<slug>]` give the number of current camps in each slice, served at v1/camps/by-state/<USPS>.json and v1/camps/by-council/<slug>.json — same envelope and item shape as current/camps.json. Lets a consumer (or an LLM) pull one small cut… */
+  readonly camp_slices: MetaCampSlices;
   readonly vocab: readonly string[];
   readonly endpoints: readonly string[];
   readonly [extra: string]: unknown;

@@ -37,10 +37,20 @@
         "required": ["total", "digest"]
       }
     },
+    "camp_slices": {
+      "type": "object",
+      "description": "Index of the narrow camp cuts. `by_state[<USPS>]` and `by_council[<slug>]` give the number of current camps in each slice, served at v1/camps/by-state/<USPS>.json and v1/camps/by-council/<slug>.json — same envelope and item shape as current/camps.json. Lets a consumer (or an LLM) pull one small cut instead of the whole current/camps.json corpus.",
+      "properties": {
+        "by_state": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } },
+        "by_council": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } }
+      },
+      "required": ["by_state", "by_council"],
+      "additionalProperties": false
+    },
     "vocab": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
     "endpoints": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "minItems": 1 }
   },
   "required": ["$schema", "name", "version", "api_version", "generated_at", "base_url", "license",
                "unofficial", "disclaimer", "schemas", "releases", "changelog", "text_rights",
-               "datasets", "vocab", "endpoints"]
+               "datasets", "camp_slices", "vocab", "endpoints"]
 }
