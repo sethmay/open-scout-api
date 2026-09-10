@@ -52,6 +52,8 @@ check(sum(slices["by_council"].values()) == sum(1 for c in corpus if c["council"
       "the by_council index must cover every camp with a council, once")
 check(slices["by_state"] == {s: len(v) for s, v in by_state_ids.items()},
       "every by_state count must match the corpus")
+check(slices["by_council"] == {s: len(v) for s, v in by_council_ids.items()},
+      "every by_council count must match the corpus")
 
 print(f"corpus          {len(corpus)} camps in current/camps.json")
 print(f"slices indexed  {len(slices['by_state'])} states, {len(slices['by_council'])} councils (meta.camp_slices)")
