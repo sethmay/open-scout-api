@@ -99,6 +99,53 @@ What that means concretely, and what is already true:
   Second choice is a GitHub org; staying on a personal account is the option that keeps this exact
   decision open indefinitely.
 
+**1.0 contract scope — widen beyond field shapes (Den Leader audit, `.workbench/denleaderaudit.md`).**
+Today the `v1` promise freezes FIELD SHAPES only (build-gated, additive-only) — but every audit finding that
+actually breaks a consumer sits OUTSIDE that: array ordering, identifier lifetime, which surface is pinnable,
+what the version number covers. Decide these before cutting 1.0, or 1.0 freezes them unfrozen:
+- **Pin story for `v1/current/*.json`.** The consumer-facing projections have no versioned permalink (only
+  `data/` via jsDelivr and the release tarball). Decide: versioned projection paths, or accept "the citable
+  artifact is the tarball" as the permanent answer. (finding 10)
+- **Tombstones at retired camp ids.** 50 camp ids 404 (recoverable only via `aliases.json`), while `model.md`
+  promises ids are "never deleted" — true for councils (closed-window doc kept), false for camps. Serve
+  `{ gone:true, moved_to, retired_in }` stubs at `v1/camps/<retired-id>.json` (new `published-tombstone.schema.json`)
+  so a dead bookmark forwards. (finding 10)
+- **State MINOR/PATCH semantics + signal id retirement.** `v1` forbids interface breaks, so semver describes
+  content churn — and a PATCH can 404/repoint a stored id (0.58.19 S-F split; 0.58.21 R-C re-point). Write the
+  policy in `docs/endpoints.md`; either bump MINOR on any id-retiring release, or add `retired_in`/`added_in` to
+  `aliases.json` entries (the map already holds the data, just no dates). (finding 10)
+- **Declare whether the static tree is the NORMATIVE contract** or one rendering of something else — that answer
+  is what makes a later query layer (GraphQL / edge fn / build-time slices) purely additive vs a replacement.
+- **`CITATION.cff` + `schema.org/Dataset` JSON-LD** on the landing page — cheap now, and 1.0 is when people cite
+  it. `.zenodo.json` is already written, gated on the host decision. (finding 10)
+
+SHIPPED in 0.59.0 (cross these off the audit's ranked list): `current_version_index` + `current_requirement_set`
+pointers on entity docs, `address` on `current/camps.json`, `requirement_sets` + `current_requirement_set` on
+`current/adventures.json`, `api_version`/`releases`/`changelog`/per-dataset `digest` in `meta.json`,
+`v1/current/camps.geojson`, and the `requirement_sets[0]` trap in `model.md` + `cookbook/python/17-*.py`.
+
+### Consumer ergonomics — remaining (Den Leader audit, `.workbench/denleaderaudit.md`)
+
+The additive ergonomics release shipped in 0.59.0. Remaining, ranked by value/effort:
+- **Build-time slices** `v1/camps/by-state/<XX>.json` + `by-council/<id>.json`. Closes the "nothing between a
+  4 KB entity and the 826 KB corpus" gap with NO backend — the cheap 80% of the GraphQL question. Emit in
+  `build.py`, schema-pin, add to `meta.endpoints`. (finding 8)
+- **Camp-map demo:** add a `program_types`/`camp_type` filter and a visible "hidden, never-surveyed" count
+  (`cookbook/ts/starters/camp-map/app.js`). The feature filter silently drops 184/553 empty-`features` camps,
+  contradicting the app's own honesty ethic. (findings 2, 3)
+- **Doc-count drift (finding 7):** README's flagship paragraph (448 camps, 336 pins) is stale vs 553/`meta.datasets`.
+  Add a build step that rewrites marked count spans (or a `check_docs.py` gate), and fix the current stale numbers
+  in `README.md` + `docs/endpoints.md` now.
+- **`llms.txt` + `robots.txt`** at the site root pointing at `meta.json`. Trivial. (finding 8)
+- **Training lifecycle:** mark `training-requirements` rows current vs legacy — the 5 pack den-leader rows don't
+  say which survived the 2024 Cub change. Needs a source decision. (finding 6)
+- **Cub adventure descriptions (LARGE):** all 140 merit badges carry 24-38 words of prose; adventures carry none.
+  Background enrichment (crawl scouting.org adventure pages + tokens), same class as the camp feature-survey
+  queue; NOT a contract change. (finding 2)
+- **Upstream ask (not an eng task):** most confidence/coverage gaps are sourcing problems. Worth raising with the
+  TAC — periodic machine-readable exports from Scouting America (ZIP→council, position→training, camp registry,
+  council roster, badge/adventure catalog). See the audit's "should come from Scouting America" table.
+
 **Every published endpoint is now pinned — CLEARED IN 0.41.0.** The last 10 unpinned surfaces were
 `v1/meta.json`, `v1/{dataset}/aliases.json`, and the 8 per-entity `v1/{dataset}/{id}.json` families,
 whose shape existed only inside `build.py` — so renaming `events` was a one-line edit no gate would

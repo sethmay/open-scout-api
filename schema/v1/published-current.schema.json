@@ -522,6 +522,13 @@
             "null"
           ]
         },
+        "address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Street address of the camp, the field that goes on a permission slip. Already present on most canonical records; null where unknown."
+        },
         "lat": {
           "type": [
             "number",
@@ -702,6 +709,7 @@
         "council_number",
         "state",
         "city",
+        "address",
         "lat",
         "lon",
         "geo_precision",
@@ -992,6 +1000,23 @@
           ],
           "format": "uri"
         },
+        "requirement_sets": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+          },
+          "description": "Ids of every requirement-set edition for this adventure, oldest to newest. Carried in the projection so a rank-year walk needs no per-adventure fetch just to discover them. The shooting-sports adventures have none (empty array)."
+        },
+        "current_requirement_set": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
+          "description": "Id of the in-force requirement-set edition, or null if none is published. Use this rather than requirement_sets[0], which is the OLDEST edition."
+        },
         "verified_at": {
           "type": "string",
           "format": "date"
@@ -1013,6 +1038,8 @@
         "category",
         "area",
         "url",
+        "requirement_sets",
+        "current_requirement_set",
         "verified_at",
         "method",
         "confidence"

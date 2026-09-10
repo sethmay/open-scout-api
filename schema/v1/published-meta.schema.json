@@ -17,6 +17,11 @@
                     "description": "Always true, and deliberately not optional: this is a community project with no Scouting America affiliation, and a consumer must not be able to lose that by reading a subset of the document." },
     "disclaimer": { "type": "string", "minLength": 1 },
     "schemas": { "type": "string", "format": "uri" },
+    "api_version": { "type": "string", "pattern": "^v[0-9]+$",
+                     "description": "The frozen contract version, the `v1` in every URL path and schema $id — additive-only forever after 1.0. Distinct from `version` (the data build): at 1.0 both read as a `1`, but this one never changes while `version` keeps moving." },
+    "releases": { "type": "string", "format": "uri",
+                  "description": "Atom feed of releases; each entry is the matching CHANGELOG section verbatim, with the JSON and SQLite assets attached. Poll this for 'what changed and when'." },
+    "changelog": { "type": "string", "format": "uri", "description": "Human-readable releases page." },
     "text_rights": { "type": "string", "minLength": 1 },
     "datasets": {
       "type": "object",
@@ -25,14 +30,17 @@
         "type": "object",
         "properties": {
           "total": { "type": "integer", "minimum": 0 },
-          "current": { "type": "integer", "minimum": 0 }
+          "current": { "type": "integer", "minimum": 0 },
+          "digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$",
+                      "description": "Content hash of this dataset (entities + lifecycle events), NOT the deploy. Moves only when the data moves — unlike the mtime-based ETag Pages serves — so a consumer can re-fetch only the datasets whose digest changed." }
         },
-        "required": ["total"]
+        "required": ["total", "digest"]
       }
     },
     "vocab": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
     "endpoints": { "type": "array", "items": { "type": "string" }, "uniqueItems": true, "minItems": 1 }
   },
-  "required": ["$schema", "name", "version", "generated_at", "base_url", "license", "unofficial",
-               "disclaimer", "schemas", "text_rights", "datasets", "vocab", "endpoints"]
+  "required": ["$schema", "name", "version", "api_version", "generated_at", "base_url", "license",
+               "unofficial", "disclaimer", "schemas", "releases", "changelog", "text_rights",
+               "datasets", "vocab", "endpoints"]
 }

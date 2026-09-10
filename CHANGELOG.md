@@ -3,6 +3,15 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.59.0 (minor) — 2026-09-10
+
+- `PENDING` Consumer ergonomics: additive fields and a map export that make the obvious read the correct read, prompted by an independent den-leader field audit. Nothing existing changed, so anything pinned to v1 keeps working.
+  - Every per-entity document now names its in-force version with `current_version_index`, and merit badges, ranks, awards and adventures also carry `current_requirement_set`, the edition actually in force. Reading `requirement_sets[0]` used to return the oldest edition, for example Swimming's retired 2015 text instead of the 2026 one a Scout is signed off against.
+  - `current/camps.json` gains `address`, the field that goes on a permission slip, and `current/adventures.json` gains `requirement_sets` and `current_requirement_set`, which trims a full Cub rank-year walk from 51 requests toward 26.
+  - New `v1/current/camps.geojson`: the placeable camps as a FeatureCollection that Google My Maps, CalTopo and Gaia read directly.
+  - `meta.json` gains `api_version`, links to the release feed and changelog, and a per-dataset content `digest` so a consumer can tell which dataset changed without re-downloading the tree. The digest tracks the data, not the deploy, unlike the mtime-based ETag GitHub Pages serves.
+  - Documented the `requirement_sets[0]` trap in the data model with a runnable, CI-gated recipe.
+
 ## 0.58.21 (patch) — 2026-09-10
 
 - `0cf7871` R-C Scout Ranch and Camp Raymond are now two separate Arizona camps, fixing a record that had merged the two. A camp staff correction from the Camp Finder form (submission `DqaG0Nl`) confirmed they are distinct properties about 75 miles apart, corroborated by area4history and each camp's own site.

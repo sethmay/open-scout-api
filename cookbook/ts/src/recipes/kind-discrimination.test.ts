@@ -47,6 +47,7 @@ const REQUIRED_CAMP_FIELDS = [
   "parent",
   "state",
   "city",
+  "address",
   "lat",
   "lon",
   "geo_precision",

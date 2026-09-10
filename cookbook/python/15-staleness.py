@@ -37,8 +37,10 @@ def bucket(iso: str) -> str:
 BUCKETS = ("fresh", "aging", "stale")
 
 # Every current projection carries the provenance triple, so a consumer never has to fetch an
-# entity document just to find out how much to trust a row.
-projections = [e for e in meta()["endpoints"] if e.startswith("v1/current/")]
+# entity document just to find out how much to trust a row. (The `.json` collections only —
+# `current/camps.geojson` is a map rendering, not an `items` collection.)
+projections = [e for e in meta()["endpoints"]
+               if e.startswith("v1/current/") and e.endswith(".json")]
 check(projections, "meta must publish the current projections")
 
 rows = 0
