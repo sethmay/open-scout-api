@@ -26,6 +26,7 @@ jobs:
         run: |
           python tools/validate_examples.py
           python tools/validate_data.py
+          python tools/doc_counts.py
       - name: Build static API + SQLite artifact
         run: |
           python tools/build.py

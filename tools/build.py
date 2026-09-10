@@ -640,12 +640,59 @@ def main() -> None:
                  len(current_rs), len(current_camps), len(current_ranks), len(current_awards),
                  len(current_lodges), len(current_adventures), CAMP_MAP.is_dir()),
         encoding="utf-8", newline="\n")
+    (DIST / "robots.txt").write_text(
+        "# Open Scout API - an open, static JSON dataset. Crawl freely.\n"
+        "# Machine-readable index: /v1/meta.json  -  LLM guide: /llms.txt\n"
+        "User-agent: *\n"
+        "Allow: /\n",
+        encoding="utf-8", newline="\n")
+    (DIST / "llms.txt").write_text(_llms(version), encoding="utf-8", newline="\n")
     print(f"built dist/ v{version}: {len(councils)} councils, {len(territories)} territories, "
           f"{len(merit_badges)} merit badges, {len(requirement_sets)} requirement sets, "
           f"{len(camps)} camps, {len(ranks)} ranks, {len(awards)} awards, {len(oa_lodges)} oa-lodges, "
           f"{len(adventures)} adventures, {len(positions)} positions, "
           f"{len(training)} training courses, {len(training_reqs)} training requirements, "
           f"{len(badge_rankings)} badge-ranking years")
+
+
+def _llms(version: str) -> str:
+    """llms.txt (llmstxt.org): a compact, link-first entry point for LLM agents. Points at the
+    discovery document rather than restating the whole API, and names the ordering/tri-state
+    traps so a model does not read `requirement_sets[0]` or an empty `features` array wrong."""
+    return f"""# Open Scout API
+
+> Open, versioned, machine-readable reference data for Scouting America (BSA): councils, Council \
+Service Territories, camps, merit badges, ranks, requirements, awards, and OA lodges. Static JSON \
+with JSON Schemas, no server. Unofficial community project, not affiliated with Scouting America.
+
+All paths are relative to {BASE_URL}/. Read the discovery document first: it indexes every \
+endpoint, the build version, per-dataset counts and content digests, the schemas, and the \
+license split.
+
+Reading it correctly: `versions[]` and `requirement_sets[]` are ordered OLDEST-first, so use \
+`current_version_index` and `current_requirement_set`, never index `[0]`. An empty `features` \
+array with `features_verified_at: null` means "never surveyed", not "offers nothing". A \
+`geo_precision: "approximate"` coordinate is a city or state centroid: soft-plot it, do not \
+navigate to it.
+
+## Start here
+
+- [Discovery document](v1/meta.json): version, endpoints, per-dataset counts + digests, license.
+- [JSON Schemas](schema/v1/): the contract for every published shape.
+
+## Current data (flat, denormalized, current-only)
+
+- [Camps](v1/current/camps.json): location, features, program types; also [GeoJSON](v1/current/camps.geojson).
+- [Councils](v1/current/councils.json), [Territories](v1/current/territories.json)
+- [Merit badges](v1/current/merit-badges.json), [Cub adventures](v1/current/adventures.json)
+- [Requirement sets](v1/current/requirement-sets.json), [Ranks](v1/current/ranks.json), [Awards](v1/current/awards.json), [OA lodges](v1/current/oa-lodges.json)
+
+## More
+
+- [Repository, model docs, and a runnable, CI-gated cookbook]({REPO_URL})
+
+Version {version}. License CC BY-NC-SA 4.0; requirement text is (c) Scouting America (see meta.text_rights).
+"""
 
 
 def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges, nadv,

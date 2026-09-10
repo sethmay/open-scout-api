@@ -33,6 +33,7 @@ jobs:
           python tools/validate_examples.py
           python tools/validate_data.py
           python tools/check_links.py
+          python tools/doc_counts.py
       - name: Build static API
         # build_sqlite.py runs here too, not just in the cookbook job, so the queryable artifact
         # is actually served at v1/open-scout-api.sqlite. docs/endpoints.md documents that URL, and

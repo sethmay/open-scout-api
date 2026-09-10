@@ -35,7 +35,9 @@ const TIER_LABEL = {
 const els = {
   map: document.getElementById("map"),
   feature: document.getElementById("feature"),
+  program: document.getElementById("program"),
   status: document.getElementById("status"),
+  hidden: document.getElementById("hidden"),
   unplaceable: document.getElementById("unplaceable"),
   attribution: document.getElementById("attribution"),
   error: document.getElementById("error"),
@@ -61,11 +63,13 @@ async function get(path) {
 let meta;
 let camps;
 let vocab;
+let programVocab;
 try {
-  [meta, { items: camps }, vocab] = await Promise.all([
+  [meta, { items: camps }, vocab, programVocab] = await Promise.all([
     get("v1/meta.json"),
     get("v1/current/camps.json"),
     get("v1/vocab/camp-features.json"),
+    get("v1/vocab/camp-program-types.json"),
   ]);
 } catch (err) {
   els.error.classList.add("shown");
@@ -120,6 +124,19 @@ for (const code of parents) {
   const option = el("option", null, `${labels.get(code) ?? code} (${kinds} kinds)`);
   option.value = code;
   els.feature.append(option);
+}
+
+// Program filter: offer the program types actually present on the current camps, labelled from
+// the program-types vocabulary. It composes with the feature filter (both active = AND), so a
+// leader can ask the question the demo could not before: which of these can my Wolf den attend?
+const programLabels = new Map(programVocab.terms.map((t) => [t.code, t.label]));
+const presentPrograms = [...new Set(camps.flatMap((c) => c.program_types ?? []))].sort((a, b) =>
+  (programLabels.get(a) ?? a).localeCompare(programLabels.get(b) ?? b),
+);
+for (const code of presentPrograms) {
+  const option = el("option", null, programLabels.get(code) ?? code);
+  option.value = code;
+  els.program.append(option);
 }
 
 // --- one marker per property --------------------------------------------------------------
@@ -217,10 +234,14 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 const markers = L.layerGroup().addTo(map);
 
-function render(code) {
+function render(code, program) {
   const wanted = code === "" ? null : closure(code);
-  const selection =
-    wanted === null ? camps : camps.filter((c) => c.features.some((f) => wanted.has(f)));
+  const selection = camps.filter(
+    (c) =>
+      (wanted === null || c.features.some((f) => wanted.has(f))) &&
+      (program === "" || (c.program_types ?? []).includes(program)),
+  );
+  const shown = new Set(selection);
 
   markers.clearLayers();
   els.unplaceable.replaceChildren();
@@ -265,18 +286,40 @@ function render(code) {
     markers.addLayer(layer);
   }
 
-  const scope =
-    wanted === null ? "All camps" : `${labels.get(code) ?? code} (${wanted.size} feature codes)`;
+  const bits = [];
+  if (wanted !== null) bits.push(`${labels.get(code) ?? code} (${wanted.size} feature codes)`);
+  if (program !== "") bits.push(programLabels.get(program) ?? program);
+  const scope = bits.length ? bits.join(" + ") : "All camps";
   els.status.textContent =
-    `${scope}: ${selection.length} camps -- ${pinned} exact markers, ` +
+    `${scope}: ${selection.length} of ${camps.length} camps -- ${pinned} exact markers, ` +
     `${plotted} approximate areas, ${missing} with no coordinate.`;
+
+  // Be explicit about what the filters remove. A feature filter necessarily excludes camps whose
+  // features were never surveyed, so say how many -- "no match" must not read as "does not offer it".
+  const hiddenCount = camps.length - selection.length;
+  const neverSurveyedHidden =
+    wanted === null
+      ? 0
+      : camps.filter(
+          (c) => c.features_verified_at === null && c.features.length === 0 && !shown.has(c),
+        ).length;
+  els.hidden.textContent =
+    hiddenCount === 0
+      ? "Every camp matches the current filters."
+      : `${hiddenCount} camps hidden by the current filters` +
+        (neverSurveyedHidden > 0
+          ? `, including ${neverSurveyedHidden} never surveyed -- their offerings are unknown, not absent.`
+          : ".");
+
   if (missing === 0) {
     els.unplaceable.append(el("li", "muted", "None in this selection."));
   }
 }
 
-els.feature.addEventListener("change", () => render(els.feature.value));
-render("");
+const rerender = () => render(els.feature.value, els.program.value);
+els.feature.addEventListener("change", rerender);
+els.program.addEventListener("change", rerender);
+render("", "");
 
 // --- attribution -----------------------------------------------------------------------------
 
