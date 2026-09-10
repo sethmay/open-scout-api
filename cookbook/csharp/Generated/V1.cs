@@ -158,6 +158,10 @@ public sealed record CurrentCamp
     [JsonPropertyName("city")]
     public required string? City { get; init; }
 
+    /// <summary>Street address of the camp, the field that goes on a permission slip. Already present on most canonical records; null where unknown.</summary>
+    [JsonPropertyName("address")]
+    public required string? Address { get; init; }
+
     [JsonPropertyName("lat")]
     public required double? Lat { get; init; }
 
@@ -376,6 +380,14 @@ public sealed record CurrentAdventure
 
     [JsonPropertyName("url")]
     public required string? Url { get; init; }
+
+    /// <summary>Ids of every requirement-set edition for this adventure, oldest to newest. Carried in the projection so a rank-year walk needs no per-adventure fetch just to discover them. The shooting-sports adventures have none (empty array).</summary>
+    [JsonPropertyName("requirement_sets")]
+    public required IReadOnlyList<string> RequirementSets { get; init; }
+
+    /// <summary>Id of the in-force requirement-set edition, or null if none is published. Use this rather than requirement_sets[0], which is the OLDEST edition.</summary>
+    [JsonPropertyName("current_requirement_set")]
+    public required string? CurrentRequirementSet { get; init; }
 
     [JsonPropertyName("verified_at")]
     public required string VerifiedAt { get; init; }
@@ -784,6 +796,10 @@ public sealed record VersionedEntity
 
     [JsonPropertyName("events")]
     public required IReadOnlyList<Event> Events { get; init; }
+
+    /// <summary>Index into `versions[]` of the open-ended (valid_to:null) version in force now, or null if the entity is retired. Additive current-first pointer: `versions[0]` is the OLDEST snapshot, so a naive read of a renamed entity returns a dead name. The array itself stays ascending by valid_from.</summary>
+    [JsonPropertyName("current_version_index")]
+    public required int? CurrentVersionIndex { get; init; }
 }
 
 public sealed record VersionedEntityWithRequirementSets
@@ -809,6 +825,14 @@ public sealed record VersionedEntityWithRequirementSets
     /// <summary>Ids of every requirement-set edition whose `subject` is this entity, oldest and newest alike - not just the one in force. Fetch v1/requirement-sets/{id}.json for the tree, or read the effective windows and `supersedes` chain to pick the edition that applied on a given date.</summary>
     [JsonPropertyName("requirement_sets")]
     public required IReadOnlyList<string> RequirementSets { get; init; }
+
+    /// <summary>Index into `versions[]` of the version in force now, or null if retired (see VersionedEntity).</summary>
+    [JsonPropertyName("current_version_index")]
+    public required int? CurrentVersionIndex { get; init; }
+
+    /// <summary>Id of the in-force (effective_to:null) requirement-set edition for this subject, or null if none is published. This is the edition to sign a Scout off against: `requirement_sets[0]` is the OLDEST edition (e.g. superseded 2015 Swimming) and handing out its text is the sharpest failure mode in the da…</summary>
+    [JsonPropertyName("current_requirement_set")]
+    public required string? CurrentRequirementSet { get; init; }
 }
 
 public sealed record RequirementSetDocumentSourceDocument
@@ -950,8 +974,20 @@ public sealed record Meta
     [JsonPropertyName("schemas")]
     public required string Schemas { get; init; }
 
+    /// <summary>The frozen contract version, the `v1` in every URL path and schema $id — additive-only forever after 1.0. Distinct from `version` (the data build): at 1.0 both read as a `1`, but this one never changes while `version` keeps moving.</summary>
+    [JsonPropertyName("api_version")]
+    public required string ApiVersion { get; init; }
+
+    /// <summary>Atom feed of releases; each entry is the matching CHANGELOG section verbatim, with the JSON and SQLite assets attached. Poll this for 'what changed and when'.</summary>
+    [JsonPropertyName("releases")]
+    public required string Releases { get; init; }
+
+    /// <summary>Human-readable releases page.</summary>
+    [JsonPropertyName("changelog")]
+    public required string Changelog { get; init; }
+
     [JsonPropertyName("text_rights")]
-    public required string TextRights { get; init; }
+    public string? TextRights { get; init; }
 
     /// <summary>Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear.</summary>
     [JsonPropertyName("datasets")]

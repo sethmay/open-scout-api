@@ -23,6 +23,7 @@ Usage: python tools/build.py   ->   writes dist/
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import shutil
@@ -40,6 +41,7 @@ DIST = ROOT / "dist"
 # hierarchy) from a browser. It has no build step, so publishing is a directory copy.
 CAMP_MAP = ROOT / "cookbook" / "ts" / "starters" / "camp-map"
 BASE_URL = "https://sethmay.github.io/open-scout-api"
+REPO_URL = "https://github.com/sethmay/open-scout-api"
 LICENSE = "CC-BY-NC-SA-4.0"
 DISCLAIMER = ("Unofficial community project. Not affiliated with, endorsed by, or "
               "sponsored by Scouting America. Confirm facts against each council's own site.")
@@ -55,6 +57,32 @@ def read_json(p: Path):
 def write_json(p: Path, obj) -> None:
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+
+
+def _cur_idx(versions: list[dict]) -> int | None:
+    """Index into `versions[]` of the open-ended (valid_to:null) version, or None if retired.
+
+    Published as `current_version_index` on every per-entity document so the obvious read is the
+    correct read: `doc["versions"][doc["current_version_index"]]` is the state in force now, where
+    a naive `versions[0]` is the OLDEST snapshot (a renamed council's dead 1918 name). Additive; the
+    array itself is untouched and stays ascending by `valid_from`.
+    """
+    for i, v in enumerate(versions):
+        if v.get("valid_to") is None:
+            return i
+    return None
+
+
+def _digest(entities: list[dict], events: list[dict] | None = None) -> str:
+    """Content hash of a dataset, for `meta.datasets[<name>].digest`.
+
+    Derived from the canonical content (entities + lifecycle events), NOT the deploy: unlike the
+    mtime-based ETag GitHub Pages serves, this moves only when the data moves, so a consumer can
+    poll `meta.json` and re-fetch only the datasets whose digest changed.
+    """
+    payload = json.dumps({"entities": entities, "events": events or []},
+                         sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    return "sha256:" + hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def current_version() -> str:
@@ -108,6 +136,7 @@ def main() -> None:
 
     PUB_ENTITY = "https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json"
     PUB_META = "https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json"
+    PUB_GEOJSON = "https://sethmay.github.io/open-scout-api/schema/v1/published-geojson.schema.json"
     pub = read_json(SCHEMA_DIR / "published-current.schema.json")
     collection_validator = Draft202012Validator(pub, format_checker=Draft202012Validator.FORMAT_CHECKER)
     pubidx = read_json(SCHEMA_DIR / "published-index.schema.json")
@@ -149,6 +178,8 @@ def main() -> None:
                                           format_checker=Draft202012Validator.FORMAT_CHECKER)
     alias_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-aliases.schema.json"),
                                            format_checker=Draft202012Validator.FORMAT_CHECKER)
+    geojson_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-geojson.schema.json"),
+                                             format_checker=Draft202012Validator.FORMAT_CHECKER)
     errs: list[str] = []
 
     def write_entity(path: Path, obj: dict) -> None:
@@ -158,10 +189,17 @@ def main() -> None:
         requirement-set ids) and were the last unpinned published promise: renaming `events`
         or emitting an entity with no versions used to be a one-line edit no gate would catch.
         """
-        obj = {"$schema": PUB_ENTITY, **obj}
+        doc = {"$schema": PUB_ENTITY, **obj}
+        # Current-first pointers: make the obvious read the correct read. `versions[0]` is the
+        # OLDEST snapshot and `requirement_sets[0]` the OLDEST edition (2015 Swimming, superseded);
+        # naming the in-force one here removes both traps without re-sorting either array.
+        if "versions" in doc:
+            doc["current_version_index"] = _cur_idx(doc["versions"])
+        if "requirement_sets" in doc:
+            doc["current_requirement_set"] = current_rs_by_subject.get(f"{doc['kind']}:{doc['id']}")
         errs.extend(f"{path.relative_to(DIST).as_posix()}: {er.json_path}: {er.message}"
-                    for er in entity_validator.iter_errors(obj))
-        write_json(path, obj)
+                    for er in entity_validator.iter_errors(doc))
+        write_json(path, doc)
 
     councils, cevents = load_dataset("councils")
     territories, tevents = load_dataset("territories")
@@ -181,6 +219,10 @@ def main() -> None:
     rs_by_subject: dict[str, list[str]] = {}
     for d in requirement_sets:
         rs_by_subject.setdefault(d["subject"], []).append(d["id"])   # keyed by full ref (kind:slug)
+    current_rs_by_subject: dict[str, str] = {}
+    for d in requirement_sets:
+        if d.get("effective_to") is None:
+            current_rs_by_subject[d["subject"]] = d["id"]   # the in-force edition per subject
     rank_dir = DATA / "merit-badge-rankings"
     badge_rankings = sorted((read_json(p) for p in rank_dir.glob("*.json")),
                             key=lambda d: d["year"]) if rank_dir.exists() else []
@@ -291,7 +333,7 @@ def main() -> None:
                             f"read it unguarded")
             current_camps.append({"id": e["id"], "name": ov["name"], "camp_type": ov["camp_type"],
                                   "operator": ov["operator"], "operating_status": ov["operating_status"],
-                                  "council": ov.get("council"),
+                                  "council": ov.get("council"), "address": ov.get("address"),
                                   "state": ov.get("state"), "city": ov.get("city"),
                                   "lat": ov.get("lat"), "lon": ov.get("lon"),
                                   "geo_precision": ov.get("geo_precision"), "website": ov.get("website"),
@@ -382,6 +424,8 @@ def main() -> None:
             current_adventures.append({"id": e["id"], "name": ov["name"], "program": ov["program"],
                                        "ranks": ov["ranks"], "category": ov["category"],
                                        "area": ov.get("area"),
+                                       "requirement_sets": rs_by_subject.get(ref, []),
+                                       "current_requirement_set": current_rs_by_subject.get(ref),
                                        "url": ov.get("url"), **_prov(ov)})
 
     # --- positions: per-entity + index + current ---------------------------
@@ -489,6 +533,25 @@ def main() -> None:
     write_json(DIST / "v1" / "current" / "adventures.json", current_adv_coll)
     write_json(DIST / "v1" / "current" / "positions.json", current_pos_coll)
     write_json(DIST / "v1" / "current" / "training.json", current_train_coll)
+    # GeoJSON rendering of the placeable current camps — the format My Maps, CalTopo and Gaia
+    # ingest directly. A 1:1 view of current/camps.json (already schema-validated), minus camps
+    # with no coordinate; `geo_precision` rides along so a consumer can soft-plot 'approximate'.
+    _geo_props = ("id", "name", "camp_type", "program_types", "operating_status", "address",
+                  "city", "state", "council", "council_name", "geo_precision", "elevation_ft",
+                  "july_high_f", "july_low_f", "website", "url", "features")
+    _camp_features = [
+        {"type": "Feature",
+         "geometry": {"type": "Point", "coordinates": [c["lon"], c["lat"]]},
+         "properties": {k: c[k] for k in _geo_props}}
+        for c in current_camps if c["lat"] is not None and c["lon"] is not None]
+    camps_geojson = {"$schema": PUB_GEOJSON, "type": "FeatureCollection",
+                     "version": version, "generated_at": now, "count": len(_camp_features),
+                     "features": _camp_features}
+    errs += [f"current/camps.geojson: {er.json_path}: {er.message}"
+             for er in geojson_validator.iter_errors(camps_geojson)]
+    if errs:
+        raise SystemExit("build failed:\n  " + "\n  ".join(errs[:50]))
+    write_json(DIST / "v1" / "current" / "camps.geojson", camps_geojson)
     for ds, c in index_colls:
         write_json(DIST / "v1" / ds / "index.json", c)
     for d in requirement_sets:
@@ -505,20 +568,36 @@ def main() -> None:
         "name": "Open Scout API", "version": version, "generated_at": now,
         "base_url": BASE_URL, "license": LICENSE, "unofficial": True, "disclaimer": DISCLAIMER,
         "schemas": f"{BASE_URL}/schema/v1/",
+        "api_version": "v1",
+        "releases": f"{REPO_URL}/releases.atom",
+        "changelog": f"{REPO_URL}/releases",
         "datasets": {
-            "councils": {"total": len(councils), "current": len(current_councils)},
-            "territories": {"total": len(territories), "current": len(current_territories)},
-            "merit-badges": {"total": len(merit_badges), "current": len(current_badges)},
-            "requirement-sets": {"total": len(requirement_sets), "current": len(current_rs)},
-            "merit-badge-rankings": {"total": len(badge_rankings)},
-            "camps": {"total": len(camps), "current": len(current_camps), "merged": len(camp_aliases)},
-            "ranks": {"total": len(ranks), "current": len(current_ranks)},
-            "awards": {"total": len(awards), "current": len(current_awards)},
-            "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges)},
-            "adventures": {"total": len(adventures), "current": len(current_adventures)},
-            "positions": {"total": len(positions), "current": len(current_positions)},
-            "training": {"total": len(training), "current": len(current_training)},
-            "training-requirements": {"total": len(training_reqs)},
+            "councils": {"total": len(councils), "current": len(current_councils),
+                         "digest": _digest(councils, cevents)},
+            "territories": {"total": len(territories), "current": len(current_territories),
+                            "digest": _digest(territories, tevents)},
+            "merit-badges": {"total": len(merit_badges), "current": len(current_badges),
+                             "digest": _digest(merit_badges, mbevents)},
+            "requirement-sets": {"total": len(requirement_sets), "current": len(current_rs),
+                                 "digest": _digest(requirement_sets)},
+            "merit-badge-rankings": {"total": len(badge_rankings),
+                                     "digest": _digest(badge_rankings)},
+            "camps": {"total": len(camps), "current": len(current_camps), "merged": len(camp_aliases),
+                      "digest": _digest(camps, campevents)},
+            "ranks": {"total": len(ranks), "current": len(current_ranks),
+                      "digest": _digest(ranks, rankevents)},
+            "awards": {"total": len(awards), "current": len(current_awards),
+                       "digest": _digest(awards, awardevents)},
+            "oa-lodges": {"total": len(oa_lodges), "current": len(current_lodges),
+                          "digest": _digest(oa_lodges, oalodgeevents)},
+            "adventures": {"total": len(adventures), "current": len(current_adventures),
+                           "digest": _digest(adventures, advevents)},
+            "positions": {"total": len(positions), "current": len(current_positions),
+                          "digest": _digest(positions, posevents)},
+            "training": {"total": len(training), "current": len(current_training),
+                         "digest": _digest(training, trainevents)},
+            "training-requirements": {"total": len(training_reqs),
+                                      "digest": _digest(training_reqs)},
         },
         "vocab": [f"v1/vocab/{v}.json" for v in vocab_ids],
         "text_rights": ("Merit-badge, rank and Cub adventure requirement text is \u00a9 Scouting America, reproduced with "
@@ -534,7 +613,8 @@ def main() -> None:
                       "v1/oa-lodges/index.json", "v1/oa-lodges/{id}.json",
                       "v1/current/councils.json", "v1/current/territories.json",
                       "v1/current/merit-badges.json", "v1/current/requirement-sets.json",
-                      "v1/current/camps.json", "v1/current/ranks.json", "v1/current/awards.json",
+                      "v1/current/camps.json", "v1/current/camps.geojson",
+                      "v1/current/ranks.json", "v1/current/awards.json",
                       "v1/current/oa-lodges.json",
                       "v1/adventures/index.json", "v1/adventures/{id}.json",
                       "v1/current/adventures.json",

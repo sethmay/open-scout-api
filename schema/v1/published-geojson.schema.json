@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-geojson.schema.json",
+  "title": "Published camps GeoJSON",
+  "description": "Contract for v1/current/camps.geojson: an RFC 7946 FeatureCollection of the placeable current camps (those with a coordinate), emitted by tools/build.py. A 1:1 rendering of current/camps.json into the format My Maps, CalTopo and Gaia ingest directly, so a leader mapping a campout gets a download instead of a scripting session. `version`, `generated_at`, `count` and `$schema` are foreign members (RFC 7946 permits them; conforming parsers ignore them). Each feature's geometry is a Point [lon, lat]; `properties.geo_precision` labels city/state-centroid points so a consumer can soft-plot them. Fields are ADDITIVE-ONLY under v1.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "type": { "const": "FeatureCollection" },
+    "version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "count": { "type": "integer", "minimum": 0 },
+    "features": { "type": "array", "items": { "$ref": "#/$defs/Feature" } }
+  },
+  "required": ["type", "features"],
+  "additionalProperties": false,
+  "$defs": {
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "type": { "const": "Feature" },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "type": { "const": "Point" },
+            "coordinates": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": { "type": "number" },
+              "description": "[longitude, latitude], per RFC 7946 (x, y order)."
+            }
+          },
+          "required": ["type", "coordinates"],
+          "additionalProperties": false
+        },
+        "properties": { "$ref": "#/$defs/Props" }
+      },
+      "required": ["type", "geometry", "properties"],
+      "additionalProperties": false
+    },
+    "Props": {
+      "type": "object",
+      "description": "A subset of the current/camps.json item, chosen for map popups. Read `features` alongside a survey date only via the JSON projection; here an empty array is not a claim of absence.",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "camp_type": { "type": "string" },
+        "program_types": { "type": "array", "items": { "type": "string" } },
+        "operating_status": { "type": "string" },
+        "address": { "type": ["string", "null"] },
+        "city": { "type": ["string", "null"] },
+        "state": { "type": ["string", "null"] },
+        "council": { "type": ["string", "null"] },
+        "council_name": { "type": ["string", "null"] },
+        "geo_precision": { "enum": ["exact", "approximate", null] },
+        "elevation_ft": { "type": ["integer", "null"] },
+        "july_high_f": { "type": ["integer", "null"] },
+        "july_low_f": { "type": ["integer", "null"] },
+        "website": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "features": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["id", "name", "camp_type", "program_types", "operating_status", "address",
+                   "city", "state", "council", "council_name", "geo_precision", "elevation_ft",
+                   "july_high_f", "july_low_f", "website", "url", "features"],
+      "additionalProperties": false
+    }
+  }
+}

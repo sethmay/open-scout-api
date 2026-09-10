@@ -57,6 +57,8 @@ export interface CurrentCamp {
   readonly parent: string | null;
   readonly state: string | null;
   readonly city: string | null;
+  /** Street address of the camp, the field that goes on a permission slip. Already present on most canonical records; null where unknown. */
+  readonly address: string | null;
   readonly lat: number | null;
   readonly lon: number | null;
   readonly geo_precision: "exact" | "approximate" | null;
@@ -146,6 +148,10 @@ export interface CurrentAdventure {
   /** The requirement area this adventure fills for its rank, or null for electives. Every rank's six required adventures cover the six areas of v1/vocab/adventure-areas.json exactly once each. A vocabulary CODE, never a display label — two Arrow of Light adventures are *named* after areas, so publishing… */
   readonly area: string | null;
   readonly url: string | null;
+  /** Ids of every requirement-set edition for this adventure, oldest to newest. Carried in the projection so a rank-year walk needs no per-adventure fetch just to discover them. The shooting-sports adventures have none (empty array). */
+  readonly requirement_sets: readonly string[];
+  /** Id of the in-force requirement-set edition, or null if none is published. Use this rather than requirement_sets[0], which is the OLDEST edition. */
+  readonly current_requirement_set: string | null;
   readonly verified_at: string;
   readonly method: string;
   readonly confidence: number;
@@ -339,6 +345,8 @@ export interface VersionedEntity {
   readonly notes: string | null;
   readonly versions: readonly Version[];
   readonly events: readonly Event[];
+  /** Index into `versions[]` of the open-ended (valid_to:null) version in force now, or null if the entity is retired. Additive current-first pointer: `versions[0]` is the OLDEST snapshot, so a naive read of a renamed entity returns a dead name. The array itself stays ascending by valid_from. */
+  readonly current_version_index: number | null;
   readonly [extra: string]: unknown;
 }
 
@@ -351,6 +359,10 @@ export interface VersionedEntityWithRequirementSets {
   readonly events: readonly Event[];
   /** Ids of every requirement-set edition whose `subject` is this entity, oldest and newest alike - not just the one in force. Fetch v1/requirement-sets/{id}.json for the tree, or read the effective windows and `supersedes` chain to pick the edition that applied on a given date. */
   readonly requirement_sets: readonly Slug[];
+  /** Index into `versions[]` of the version in force now, or null if retired (see VersionedEntity). */
+  readonly current_version_index: number | null;
+  /** Id of the in-force (effective_to:null) requirement-set edition for this subject, or null if none is published. This is the edition to sign a Scout off against: `requirement_sets[0]` is the OLDEST edition (e.g. superseded 2015 Swimming) and handing out its text is the sharpest failure mode in the da… */
+  readonly current_requirement_set: string | null;
   readonly [extra: string]: unknown;
 }
 
@@ -423,7 +435,13 @@ export interface Meta {
   readonly unofficial: true;
   readonly disclaimer: string;
   readonly schemas: string;
-  readonly text_rights: string;
+  /** The frozen contract version, the `v1` in every URL path and schema $id — additive-only forever after 1.0. Distinct from `version` (the data build): at 1.0 both read as a `1`, but this one never changes while `version` keeps moving. */
+  readonly api_version: string;
+  /** Atom feed of releases; each entry is the matching CHANGELOG section verbatim, with the JSON and SQLite assets attached. Poll this for 'what changed and when'. */
+  readonly releases: string;
+  /** Human-readable releases page. */
+  readonly changelog: string;
+  readonly text_rights?: string;
   /** Per-dataset counts. `total` spans every entity including historical ones; `current` counts those with an open version. Extra per-dataset keys (e.g. camps' `merged`) may appear. */
   readonly datasets: Readonly<Record<string, unknown>>;
   readonly vocab: readonly string[];

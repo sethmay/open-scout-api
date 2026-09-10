@@ -73,9 +73,14 @@
         "kind": { "type": "string" },
         "notes": { "type": ["string", "null"] },
         "versions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Version" } },
-        "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } }
+        "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } },
+        "current_version_index": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Index into `versions[]` of the open-ended (valid_to:null) version in force now, or null if the entity is retired. Additive current-first pointer: `versions[0]` is the OLDEST snapshot, so a naive read of a renamed entity returns a dead name. The array itself stays ascending by valid_from."
+        }
       },
-      "required": ["$schema", "id", "kind", "notes", "versions", "events"]
+      "required": ["$schema", "id", "kind", "notes", "versions", "events", "current_version_index"]
     },
     "VersionedEntityWithRequirementSets": {
       "type": "object",
@@ -91,9 +96,19 @@
           "uniqueItems": true,
           "items": { "$ref": "#/$defs/Slug" },
           "description": "Ids of every requirement-set edition whose `subject` is this entity, oldest and newest alike - not just the one in force. Fetch v1/requirement-sets/{id}.json for the tree, or read the effective windows and `supersedes` chain to pick the edition that applied on a given date."
+        },
+        "current_version_index": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Index into `versions[]` of the version in force now, or null if retired (see VersionedEntity)."
+        },
+        "current_requirement_set": {
+          "type": ["string", "null"],
+          "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
+          "description": "Id of the in-force (effective_to:null) requirement-set edition for this subject, or null if none is published. This is the edition to sign a Scout off against: `requirement_sets[0]` is the OLDEST edition (e.g. superseded 2015 Swimming) and handing out its text is the sharpest failure mode in the dataset."
         }
       },
-      "required": ["$schema", "id", "kind", "notes", "versions", "events", "requirement_sets"]
+      "required": ["$schema", "id", "kind", "notes", "versions", "events", "requirement_sets", "current_version_index", "current_requirement_set"]
     },
     "RequirementSetDocument": {
       "type": "object",

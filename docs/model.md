@@ -88,6 +88,10 @@ about a date, and any code that answers it without one is guessing.
 > To resolve state on an arbitrary date, select the version whose half-open window contains the
 > instant, treating null bounds as open-ended. Recipe:
 > [`02-as-of.py`](../cookbook/python/02-as-of.py).
+>
+> Every per-entity document (`v1/{dataset}/{id}.json`) also carries **`current_version_index`**: the
+> index of the open-ended version, or `null` if the entity is retired. `versions[current_version_index]`
+> is the current state without a date walk. The array itself is untouched and stays ascending.
 
 ## 3. Mergers are events, renames are version boundaries
 
@@ -348,3 +352,9 @@ Recipe: [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py).
 5. **Resolve `{kind}:{slug}` refs against `{dataset}/index.json`.** In-force documents reference
    discontinued entities. Group by `reservation.id`; never parse it. →
    [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py)
+6. **Never read `requirement_sets[0]` as the requirements in force.** The same oldest-first
+   ordering applies: `merit-badges/swimming` lists `swimming-2015` (retired 2024) at `[0]` while
+   the in-force edition is `swimming-2026`. Read **`current_requirement_set`** (the `effective_to:null`
+   edition, `null` if none is published) on every requirement-bearing entity document and on
+   `current/adventures.json`. This is the sharpest trap in the dataset: it hands a Scout the wrong
+   text on the one thing they get signed off on. → [`17-current-requirement-set.py`](../cookbook/python/17-current-requirement-set.py)
