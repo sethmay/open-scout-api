@@ -203,6 +203,20 @@
       "disposition": "accepted",
       "release": "0.58.20",
       "note": "Maintainer-relayed correction: Denali High Adventure Scout Base no longer operating since 2021. ACCEPTED -> operating_status set to not_operating (dormant). Verified against the council's own pages: the DHASB page (last modified 2021-08-10) carries a COVID-19 'will not operate Summer 2021' notice with no reopening announced, and the current camping index (modified 2026-03) lists only Camp Gorsuch and Eagle River Scout Camp, omitting Denali (that page called it 'one of three resident camps'). No sale/disposal evidence -> not_operating, not closed. confidence 0.6 -> 0.8; verified_at -> 2026-08-22."
+    },
+    "DqaG0Nl": {
+      "camp": "az-r-c-scout-ranch",
+      "submitted": "2026-08-31",
+      "disposition": "accepted",
+      "release": null,
+      "note": "Camp-staff (high trust) identity correction; maintainer approved the authoring. Claim: 'R-C' and 'Raymond' are two separate AZ camps - Raymond near Flagstaff, R-C near Payson; R-C = Roosevelt Council, Raymond donated by Raymond R.C.; R-C 'just got sold this year' (submitter said don't add it, just rename). Source: area4history.com/camps/r-c-scout-ranch/. VERIFIED: area4history lists R-C Scout Ranch (Payson, off Rte 260, r-cscoutranch.org) and Camp Raymond as SEPARATE camps; r-cscoutranch.org + campreservation.com/010/Camps/658 confirm R-C = 19887 E AZ Hwy 260, Payson (78-ac former cattle ranch at Christopher Mtn, Cub family resident camp + year-round unit camping, still running 2026 - the sale is NOT corroborated, so left active). The old az-r-c-scout-ranch record carried the Parks/Flagstaff address + Cub Raymond website + Parks features - it described Camp Raymond, mislabeled. RESOLVED the record's own manual-review notes (reading #3: two properties, one missing). IMPLEMENTED (gates green): authored data/camps/az-camp-raymond.json holding the corrected Parks content (Camp Raymond), and re-authored az-r-c-scout-ranch.json as the real R-C Scout Ranch (Payson) - honest id->camp mapping, id az-r-c-scout-ranch kept for R-C per the permanent-id rule. R-C july normals sampled from WorldClim (86/54); thin camp_page feature survey (6 codes) queued. camp_summaries.json seeds + TODO.md updated. Release pending human merge."
+    },
+    "1WOR414": {
+      "camp": "ga-camp-daniel-marshall",
+      "submitted": "2026-09-10",
+      "disposition": "rejected",
+      "release": null,
+      "note": "Parent (lower trust) closure claim: Camp Daniel Marshall 'doesn't belong to the council anymore (or is being sold)' and 'doesn't host summer camps; Camp Knox is Georgia-Carolina Council's only summer camp'. Source: gacacouncil.org/home?postTypeId=whatsNew. CONTRADICTED: council's own recent materials list Daniel Marshall as a current council camp (Google-cached /packcamp: 'our council camps: Knox Scout Reservation, Camp Daniel Marshall, or several other suitable sites'; a Camp Daniel Marshall Workday event page + active FB page). No sale/disposal evidence -> operating_status stays active (same pattern as Robert L. Cole / Firelands). SECONDARY (flagged, NOT changed): Knox is unambiguously the council's Scouts BSA resident summer camp (Summer Camp Weeks 1-2, staff dates); Daniel Marshall appears only for pack/Webelos/weekend camping and this record's /summer-camps website now redirects to home. Record's program_types [scouts_bsa_resident] + 'resident summer camp' summary may be a mislabel (category F) - HELD for human, no positive on-domain program source (council deep-links now 302 to home after a site migration)."
     }
   }
 }

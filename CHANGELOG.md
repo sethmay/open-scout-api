@@ -3,6 +3,13 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.58.21 (patch) — 2026-09-10
+
+- `PENDING` R-C Scout Ranch and Camp Raymond are now two separate Arizona camps, fixing a record that had merged the two. A camp staff correction from the Camp Finder form (submission `DqaG0Nl`) confirmed they are distinct properties about 75 miles apart, corroborated by area4history and each camp's own site.
+  - Added `az-camp-raymond` (Parks, near Flagstaff), holding the correct location, elevation, July normals, and 17 surveyed features that had been filed under the wrong name.
+  - Re-pointed `az-r-c-scout-ranch` at the real R-C Scout Ranch near Payson, a former cattle ranch at the base of Christopher Mountain; its id is kept per the permanent-id rule, with coordinates from the camp's own reservation pin and elevation and July normals sampled at the point.
+  - The report that R-C was sold this year is unconfirmed (it still shows active 2026 registrations), so its status stays active. 553 camps.
+
 ## 0.58.20 (patch) — 2026-08-22
 
 - `d30048d` Denali High Adventure Scout Base (`ak-denali-high-adventure-scout-base`): set `operating_status` to `not_operating`. Dormant since the 2021 COVID-19 pause — the camp's own page (last modified 2021-08-10) never announced a reopening and it is absent from the council's current camping index (only Camp Gorsuch and Eagle River Scout Camp remain). No sale evidence, so `not_operating`, not `closed`. Maintainer-relayed correction; confidence 0.6 → 0.8.

@@ -699,14 +699,18 @@ agents flagged and refused to guess at:
   `mi-great-lakes-sailing-adventure-the-retriever` is a boat), but most are under-served.
 - **18 non-day camps still unsurveyed** — mostly whole-council outages (`nhscouting.org` 500s
   site-wide) and the two `website: null` identity cases.
-- **`az-r-c-scout-ranch` — record identity defect, do not fix by guessing.** The record's address,
-  coordinates, elevation and stored website all point at **Camp Raymond** (7709 S Boy Scout Camp
-  Road, Parks AZ) while only `name` says R-C Scout Ranch, and its own `summary` calls R-C the
-  "Raymond-Cragin Scout Reservation". Grand Canyon Council's Black Pug appears to list R-C Scout
-  Ranch (Payson) and Camp Raymond (Parks) as separate properties ~150 miles apart, but GCC's camp
-  nav shows Camp Raymond and no R-C. Three live readings: mislabelled Camp Raymond / R-C is the
-  reservation and Raymond a camp in it / two properties and we are missing one. The features are
-  correct for the property the record locates; `name`, `website` and `summary` were left untouched.
+- **`az-r-c-scout-ranch` — identity defect RESOLVED (community correction, submission `DqaG0Nl`).**
+  Camp staff confirmed R-C Scout Ranch (Payson) and Camp Raymond (Parks) are two separate
+  properties, corroborated by area4history + the camps' own sites. Split into two records: the
+  mislabelled Parks content moved to the new `az-camp-raymond`; `az-r-c-scout-ranch` re-authored as
+  the real R-C (Payson), keeping its id per the permanent-id rule. July normals were sampled from
+  WorldClim (`tools/worldclim/` is present untracked, so `tools/july_temp.py` runs with no env
+  set). Remaining follow-up: R-C's features are a thin `camp_page` survey (6 codes) — in the
+  standing survey queue.
+- **`tools/july_temp.py` cache drift.** Running it fresh rewrites ~105 existing camp versions whose
+  coords are absent from `tools/july_temp.json` (values differ from the current WorldClim sampling),
+  so it can't be used for a single-camp fill without reverting the collateral. Either rebuild/commit
+  a complete cache, or add a `--only <id>`/null-only fill mode before the next location fix.
 - **`ok-camp-george-thomas`** — its 19-page Leaders Guide is an image-only scan the reader cannot
   currently mine (its own image selectors fail), so the camp sits at 14 codes from a facility
   inventory. Unmined, not empty.
