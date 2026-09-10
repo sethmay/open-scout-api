@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.60.0 (minor) — 2026-09-10
 
-- `PENDING` Discoverability and honest docs, from the same den-leader field audit: an agent entry point, a map filter, and a gate that keeps the documented counts from drifting.
+- `c5d7a0a` Discoverability and honest docs, from the same den-leader field audit: an agent entry point, a map filter, and a gate that keeps the documented counts from drifting.
   - New `llms.txt` and `robots.txt` at the site root. `llms.txt` points an AI agent at the discovery document and names the ordering and never-surveyed traps up front; `robots.txt` says crawl freely and links the index.
   - The live camp map gains a program filter, so a leader can ask which camps a Cub den can actually attend, and a running count of what the filters hide, including how many camps were never surveyed, so an empty result reads as "unknown" rather than "offers nothing".
   - The counts quoted in the README and docs (camp totals, coordinate precision, operating status) are now generated from the data and checked in the build, so they can no longer fall out of step with the dataset. Fixes the figures that had gone stale.
