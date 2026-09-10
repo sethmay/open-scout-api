@@ -18,14 +18,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/adventures-in-coins/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "Wolves become coin collectors, studying the parts, pictures, and mint marks on U.S. coins while discovering the stories money tells about the country's history and culture."
     }
   ],
   "notes": null

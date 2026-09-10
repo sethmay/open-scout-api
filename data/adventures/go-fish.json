@@ -18,14 +18,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/go-fish/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "Lions and their adult partners learn fishing safety, imagine the fish living beneath the water, and head out to cast a line together."
     }
   ],
   "notes": null

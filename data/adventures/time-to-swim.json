@@ -18,14 +18,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/time-to-swim/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "Lions build confidence in the water under careful supervision, learning swimming safety, entering and exiting the swim area properly, and blowing bubbles with a buddy."
     }
   ],
   "notes": null

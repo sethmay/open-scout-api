@@ -441,6 +441,10 @@ def main() -> int:
                 if v.get("valid_to") is None and (v.get("category") == "required") != (area is not None):
                     errs.append(f"adventures/{p.name}: category={v.get('category')!r} but "
                                 f"area={area!r}; area is set exactly for current required adventures")
+                desc = v.get("description")
+                if desc and _TRANSITORY.search(desc):
+                    errs.append(f"adventures/{p.name}: description has transitory text "
+                                f"({_TRANSITORY.search(desc).group(0)!r}); must be evergreen")
 
     # pass 5b: merit-badge `description` must be original evergreen prose, never pamphlet or
     # requirement text. The requirement text IS Scouting America's copyright and is published

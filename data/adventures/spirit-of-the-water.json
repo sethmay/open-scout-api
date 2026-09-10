@@ -18,14 +18,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/spirit-of-the-water/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "Wolves trace where their household water comes from, learn how it can become polluted and how it gets cleaned, and find simple ways to conserve it at home."
     }
   ],
   "notes": null

@@ -18,14 +18,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/bears-afloat/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "A Bear explores paddle craft like canoes, kayaks, and stand-up paddleboards, learning the parts of a paddle, how to fit and wear a life jacket, and how to paddle safely on calm water."
     }
   ],
   "notes": null

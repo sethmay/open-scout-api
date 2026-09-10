@@ -43,14 +43,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/engineer/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "Arrow of Light Scouts discover how engineers turn ideas into reality using science, math, and creative thinking, then design and build engineering projects of their own."
     }
   ],
   "notes": null

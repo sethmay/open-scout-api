@@ -145,9 +145,11 @@ The additive ergonomics release shipped in 0.59.0. Remaining, ranked by value/ef
   (`SCO_535`/`SCO_536`); author `*-new-member-coordinator` (needs those course entities in `data/training/`),
   which also confirms the parent-coordinator supersession. (b) The parent-coordinator retirement is unverified
   (0.6) — confirm the rename and bump confidence, or reinstate if distinct.
-- **Cub adventure descriptions (LARGE):** all 140 merit badges carry 24-38 words of prose; adventures carry none.
-  Background enrichment (crawl scouting.org adventure pages + tokens), same class as the camp feature-survey
-  queue; NOT a contract change. (finding 2)
+- **Cub adventure descriptions — DONE 0.63.0 (finding 2).** All 139 current adventures gained an evergreen
+  `description` (projected into `current/adventures.json` + each entity doc; schema `description` field existed
+  already), drafted from each adventure's own scouting.org "Snapshot" section via parallel subagents and
+  build-gated for transitory text like the merit-badge descriptions. The 8 shooting-sports adventures (null `url`)
+  were written by hand.
 - **Upstream ask (not an eng task):** most confidence/coverage gaps are sourcing problems. Worth raising with the
   TAC — periodic machine-readable exports from Scouting America (ZIP→council, position→training, camp registry,
   council roster, badge/adventure catalog). See the audit's "should come from Scouting America" table.

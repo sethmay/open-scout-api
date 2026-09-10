@@ -42,14 +42,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/running-with-the-pack/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "A Wolf builds healthy habits by tasting colorful foods, brushing teeth properly, staying active with stretching and exercise, doing a relaxing activity to unwind, and reviewing personal health with a parent."
     }
   ],
   "notes": null

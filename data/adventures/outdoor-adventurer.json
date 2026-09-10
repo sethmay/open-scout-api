@@ -42,14 +42,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/outdoor-adventurer/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "An Arrow of Light Scout plans and joins an overnight campout, learning the Scout Basic Essentials, packing gear, setting up a campsite, keeping food safe, and reflecting afterward on Leave No Trace."
     }
   ],
   "notes": null

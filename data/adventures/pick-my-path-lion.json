@@ -42,14 +42,15 @@
         "sources": [
           {
             "url": "https://www.scouting.org/cub-scout-adventures/pick-my-path-lion/",
-            "accessed": "2026-07-27"
+            "accessed": "2026-09-10"
           }
         ],
         "method": "scraped",
-        "verified_at": "2026-07-27",
+        "verified_at": "2026-09-10",
         "confidence": 0.9,
-        "notes": "Name, rank placement and category from the official rank adventure pages."
-      }
+        "notes": "Name, rank placement and category from the official rank adventure pages. The evergreen description is original prose regenerated from the adventure's own 'Snapshot' section, excluding requirement text."
+      },
+      "description": "A Lion learns through game play that choices carry consequences, performs a Good Turn for another person, and learns the basic rules of a new game and plays it."
     }
   ],
   "notes": null

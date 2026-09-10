@@ -426,7 +426,8 @@ def main() -> None:
                                        "area": ov.get("area"),
                                        "requirement_sets": rs_by_subject.get(ref, []),
                                        "current_requirement_set": current_rs_by_subject.get(ref),
-                                       "url": ov.get("url"), **_prov(ov)})
+                                       "url": ov.get("url"), "description": ov.get("description"),
+                                       **_prov(ov)})
 
     # --- positions: per-entity + index + current ---------------------------
     pos_index, current_positions = [], []
