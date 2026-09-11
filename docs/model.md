@@ -23,6 +23,12 @@ within its dataset, **permanent, never reused, never deleted**. Nothing mutable 
 notably not a council's BSA number, which is an attribute that can change. Historical collisions
 are disambiguated with an era suffix (`-1935`) rather than by recycling a slug.
 
+**"Never deleted" is literal, and it takes two shapes.** When an entity stops being current it keeps
+a resolvable document. A council that merged keeps a closed-window version (its last `valid_to` is
+set). A camp that was folded into another keeps a **tombstone** at its id —
+`{ "gone": true, "moved_to": "<surviving-id>" }` — rather than 404ing. Either way a stored id still
+resolves. See [retired ids](./endpoints.md#retired-ids-tombstones).
+
 Everything that can change (name, number, headquarters, website, states served, territory
 membership, status) lives in `versions[]`. Each version is a **full snapshot** of the attributes
 during its window (record-level SCD-2, not attribute-level). Changes are rare: a council renames a
@@ -343,9 +349,11 @@ Recipe: [`12-requirement-tree.py`](../cookbook/python/12-requirement-tree.py).
 2. **Diff `name` across consecutive versions to find renames.** 56 councils show a rename there
    and exactly 1 carries a `renamed` event, so `events` alone finds 1 of 57. →
    [`03-lineage.py`](../cookbook/python/03-lineage.py)
-3. **A missing id is not a dead id.** An id absent from `current/` may have merged. Walk
-   `predecessor → successor|continuing` and forward the reference instead of dropping it. →
-   [`03-lineage.py`](../cookbook/python/03-lineage.py)
+3. **A missing id is not a dead id.** For councils, an id absent from `current/` may have merged;
+   walk `predecessor → successor|continuing` and forward the reference. For camps, the retired id
+   itself serves a **tombstone** (`gone: true`, `moved_to`) — fetch it and follow the hop. Either
+   way forward the reference instead of dropping it. →
+   [`03-lineage.py`](../cookbook/python/03-lineage.py), [`20-tombstones.py`](../cookbook/python/20-tombstones.py)
 4. **Key staleness on `verified_at`, never `imported_at`.** And read `confidence` alongside it: a
    0.4 fact and a 0.9 fact are not interchangeable. →
    [`15-staleness.py`](../cookbook/python/15-staleness.py)

@@ -50,6 +50,10 @@ line in its header, and the gate rejects any file that lacks one.
 | `python/14-badge-trends.py` | Averaging or summing an ordinal rank |
 | `python/15-staleness.py` | Trusting `verified_at` forever, or confusing it with `imported_at` |
 | `python/16-trained-for.py` | Keying adult training by position alone, ignoring unit type |
+| `python/17-current-requirement-set.py` | Reading `requirement_sets[0]`, the oldest edition, as the requirements in force |
+| `python/18-camp-slices.py` | Fetching the 850 KB corpus to answer "camps in one state or council" |
+| `python/19-position-currency.py` | Treating a retired adult-training position as still current |
+| `python/20-tombstones.py` | A retired camp id read as a 404 instead of a forward to the surviving camp |
 | `sql/*.sql` | The same traps in SQL, against the release SQLite artifact ([run them in your browser](../docs/endpoints.md#query-it-in-your-browser)) |
 | `shell/*.sh` | `curl` + `jq` first contact, with the same footguns |
 | `ts/src/recipes/*.test.ts` | The web consumer's path, typed from the published schemas |
