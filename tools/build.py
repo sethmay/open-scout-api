@@ -728,15 +728,50 @@ Version {version}. License CC BY-NC-SA 4.0; requirement text is (c) Scouting Ame
 
 def _landing(version, now, ncouncils, nterr, nbadges, nrs, ncamps, nranks, nawards, nlodges, nadv,
              has_demo=False) -> str:
-    repo = "https://github.com/sethmay/open-scout-api"
+    repo = REPO_URL
     demo = (f'<li><a href="starters/camp-map/">Live camp map</a> \u2014 every camp, plotted honestly:'
             f' <code>approximate</code> coordinates are drawn as areas rather than pins, co-located'
             f' camps collapse to one reservation marker, and the feature filter expands a coarse'
             f' code over its hierarchy.</li>\n ' if has_demo else "")
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Open Scout API",
+        "description": (
+            "Open, versioned, machine-readable Scouting America (BSA) reference data: councils and "
+            "their historical lineage, Council Service Territories, camps, merit badges and "
+            "requirement sets, ranks, Cub Scout adventures, awards, OA lodges, adult training "
+            "positions, and merit badge popularity by year. Unofficial community project; not "
+            "affiliated with, endorsed by, or sponsored by Scouting America."
+        ),
+        "url": BASE_URL,
+        "sameAs": REPO_URL,
+        "version": version,
+        "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "isAccessibleForFree": True,
+        "creator": {"@type": "Organization", "name": "Open Scout API", "url": REPO_URL},
+        "dateModified": now,
+        "keywords": [
+            "Scouting", "Scouting America", "Boy Scouts of America", "BSA", "merit badges",
+            "councils", "summer camps", "Cub Scouts", "Order of the Arrow",
+        ],
+        "distribution": [
+            {"@type": "DataDownload", "encodingFormat": "application/gzip",
+             "contentUrl": f"{REPO_URL}/releases/download/v{version}/open-scout-api-v{version}-json.tar.gz"},
+            {"@type": "DataDownload", "encodingFormat": "application/vnd.sqlite3",
+             "contentUrl": f"{REPO_URL}/releases/download/v{version}/open-scout-api-v{version}.sqlite"},
+            {"@type": "DataDownload", "encodingFormat": "application/json",
+             "contentUrl": f"{BASE_URL}/v1/meta.json"},
+        ],
+    }
+    ld_json = json.dumps(ld, ensure_ascii=False, indent=2).replace("<", "\\u003c")
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Open Scout API</title>
+<script type="application/ld+json">
+{ld_json}
+</script>
 <style>
  body{{font:16px/1.6 system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;color:#1b2a1b}}
  code{{background:#eef2ee;padding:.1em .35em;border-radius:.25em}}
