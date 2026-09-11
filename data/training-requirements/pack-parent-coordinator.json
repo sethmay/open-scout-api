@@ -30,18 +30,23 @@
         "citation": "Scouting America, Position Trained Requirements, June 2025 (lists New Member Coordinator, not Parent Coordinator)",
         "url": "https://www.scouting.org/wp-content/uploads/2025/05/Position-Trained-Requirements-Jun2025.pdf",
         "accessed": "2026-09-10"
+      },
+      {
+        "citation": "Scouting Wire, New Member Coordinator (states it replaces Unit Membership Chair and Parent Coordinator, which are no longer available)",
+        "url": "https://scoutingwire.org/marketing-and-membership-hub/councils/new-member-coordinator/",
+        "accessed": "2026-09-11"
       }
     ],
     "method": "curated",
-    "verified_at": "2026-09-10",
-    "confidence": 0.6,
-    "notes": "Retired (unverified): 'Parent Coordinator' appears in neither the June 2025 nor the earlier Position Trained Requirements, both of which instead list New Member Coordinator (SCO_535/SCO_536). Treated as superseded by New Member Coordinator at lower confidence pending confirmation."
+    "verified_at": "2026-09-11",
+    "confidence": 0.85,
+    "notes": "Retired: superseded by New Member Coordinator (registration code NM), the unit committee position that Scouting America introduced to replace both Parent Coordinator and Unit Membership Chair. 'Parent Coordinator' appears in neither the June 2025 nor the earlier Position Trained Requirements; both instead carry New Member Coordinator (authored as *-new-member-coordinator)."
   },
   "notes": null,
   "status": "discontinued",
   "discontinued": {
     "date": null,
-    "reason": "Not listed in the current or the earlier Position Trained Requirements; both instead carry a unit New Member Coordinator. Most likely superseded by New Member Coordinator, but the rename is unverified.",
+    "reason": "Superseded by New Member Coordinator, the unit committee position Scouting America introduced to replace Parent Coordinator and Unit Membership Chair. Confirmed against the New Member Coordinator materials; the exact retirement date is not published.",
     "superseded_by": [
       "New Member Coordinator"
     ]

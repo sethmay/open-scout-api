@@ -1,0 +1,40 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training-requirement.schema.json",
+  "id": "pack-new-member-coordinator",
+  "kind": "training-requirement",
+  "position_name": "New Member Coordinator",
+  "registration_codes": [
+    "NM"
+  ],
+  "unit_type": "pack",
+  "requires": [
+    {
+      "ref": "training:y01-youth-protection-training"
+    },
+    {
+      "ref": "training:new-member-coordinator-training"
+    }
+  ],
+  "source_document": {
+    "title": "Trained Leader Requirements - Unit and Other Positions",
+    "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+        "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+      },
+      {
+        "citation": "Scouting America, Position Trained Requirements, June 2025",
+        "url": "https://www.scouting.org/wp-content/uploads/2025/05/Position-Trained-Requirements-Jun2025.pdf",
+        "accessed": "2026-09-11"
+      }
+    ],
+    "method": "curated",
+    "verified_at": "2026-09-11",
+    "confidence": 0.9,
+    "notes": "New Member Coordinator (registration code NM) is a unit committee position that replaced Parent Coordinator and Unit Membership Chair. Position trained = Youth Protection Training plus New Member Coordinator training (SCO_535 Welcome Class + SCO_536 Elements of the Job); the requirement is the same across unit types."
+  },
+  "notes": null
+}
