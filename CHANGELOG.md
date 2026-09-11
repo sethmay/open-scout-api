@@ -3,6 +3,12 @@
 One section per merge into `main`; newest first. Conventions: `skill://semver`.
 Version anchors: this file only (no package manifests yet; add here when one appears).
 
+## 0.64.0 (minor) — 2026-09-11
+
+- `PENDING` New Member Coordinator, the unit position that replaced Parent Coordinator, is now in the training data along with what it takes to be trained for it. Additive; nothing existing changed.
+  - New Member Coordinator (registration code NM) is added for packs, troops, crews, and ships. Being trained for it means Youth Protection plus the two New Member Coordinator online modules, the Welcome Class and Elements of the Job.
+  - The four Parent Coordinator entries are now confirmed as retired and replaced by New Member Coordinator (Scouting America introduced it to replace both Parent Coordinator and Unit Membership Chair), so a saved lookup still resolves and points to the current position. Their confidence rises from 0.6 to 0.85.
+
 ## 0.63.0 (minor) — 2026-09-10
 
 - `50bb132` Every current Cub Scout adventure now has a plain description of what a Cub does. This closes the biggest Cub-side content gap: browsing electives used to be a bare list of names, while merit badges have carried prose for a while. Additive; nothing existing changed.

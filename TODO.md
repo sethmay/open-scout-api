@@ -127,24 +127,22 @@ pointers on entity docs, `address` on `current/camps.json`, `requirement_sets` +
 ### Consumer ergonomics — remaining (Den Leader audit, `.workbench/denleaderaudit.md`)
 
 The additive ergonomics release shipped in 0.59.0. Remaining, ranked by value/effort:
-- **Build-time slices** `v1/camps/by-state/<XX>.json` + `by-council/<id>.json`. Closes the "nothing between a
-  4 KB entity and the 826 KB corpus" gap with NO backend — the cheap 80% of the GraphQL question. Emit in
-  `build.py`, schema-pin, add to `meta.endpoints`. (finding 8)
-- **Camp-map demo:** add a `program_types`/`camp_type` filter and a visible "hidden, never-surveyed" count
-  (`cookbook/ts/starters/camp-map/app.js`). The feature filter silently drops 184/553 empty-`features` camps,
-  contradicting the app's own honesty ethic. (findings 2, 3)
-- **Doc-count drift (finding 7):** README's flagship paragraph (448 camps, 336 pins) is stale vs 553/`meta.datasets`.
-  Add a build step that rewrites marked count spans (or a `check_docs.py` gate), and fix the current stale numbers
-  in `README.md` + `docs/endpoints.md` now.
-- **`llms.txt` + `robots.txt`** at the site root pointing at `meta.json`. Trivial. (finding 8)
+- **Build-time slices — DONE 0.61.0 (finding 8).** `v1/camps/by-state/<XX>.json` + `by-council/<id>.json`,
+  each the same shape as `current/camps.json`, schema-pinned and listed in `meta.camp_slices` + `meta.endpoints`.
+- **Camp-map demo filter + hidden count — DONE 0.60.0 (findings 2, 3).** Added a `program_types` filter and a
+  visible "hidden, never-surveyed" count to `cookbook/ts/starters/camp-map/app.js`.
+- **Doc-count drift — DONE 0.60.0 (finding 7).** `tools/doc_counts.py` computes the canonical figures and gates
+  HTML-comment sentinels in `README.md` + `docs/endpoints.md` (`--check` in CI); stale numbers corrected.
+- **`llms.txt` + `robots.txt` — DONE 0.60.0 (finding 8).** At the site root, pointing at `meta.json`.
 - **Training lifecycle — DONE 0.62.0 (finding 6).** `training-requirement` gained an additive `status`
   (`active`/`discontinued`) + `discontinued` block; 16 rows marked retired against the June 2025 Position
   Trained Requirements + the 2024 Cub Scout Leader Book (Tiger/Webelos den leaders → unified Den Leader 2024;
   all 8 Varsity `team-*`; `troop-leader-of-11-year-old-scouts`; the 4 `parent-coordinator` at confidence 0.6).
-  Remaining gaps: (a) **New Member Coordinator is absent from the dataset** — a current position in both docs
-  (`SCO_535`/`SCO_536`); author `*-new-member-coordinator` (needs those course entities in `data/training/`),
-  which also confirms the parent-coordinator supersession. (b) The parent-coordinator retirement is unverified
-  (0.6) — confirm the rename and bump confidence, or reinstate if distinct.
+  Remaining gaps — DONE 0.64.0: (a) **New Member Coordinator authored** — one `training` entity
+  (`new-member-coordinator-training`: SCO_535 Welcome Class + SCO_536 Elements of the Job) and 4
+  `*-new-member-coordinator` rows (pack/troop/crew/ship, code `NM`, requires YPT + that training). (b) The 4
+  `parent-coordinator` rows are now **confirmed** superseded by NMC (Scouting Wire states NMC replaced Parent
+  Coordinator and Unit Membership Chair) and bumped 0.6 → 0.85. `team-parent-coordinator` stays Varsity-retired.
 - **Cub adventure descriptions — DONE 0.63.0 (finding 2).** All 139 current adventures gained an evergreen
   `description` (projected into `current/adventures.json` + each entity doc; schema `description` field existed
   already), drafted from each adventure's own scouting.org "Snapshot" section via parallel subagents and

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://sethmay.github.io/open-scout-api/schema/v1/training.schema.json",
+  "id": "new-member-coordinator-training",
+  "kind": "training",
+  "versions": [
+    {
+      "valid_from": null,
+      "valid_to": null,
+      "code": null,
+      "name": "New Member Coordinator Training",
+      "delivery": "online",
+      "renew_months": null,
+      "modules": [
+        "New Member Coordinator Welcome Class",
+        "Elements of the Job"
+      ],
+      "provenance": {
+        "sources": [
+          {
+            "citation": "Scouting America, Trained Leader Requirements - Unit and Other Positions",
+            "url": "https://filestore.scouting.org/filestore/training/pdf/trained_leader_positions.pdf"
+          },
+          {
+            "citation": "Scouting America, Position Trained Requirements, June 2025",
+            "url": "https://www.scouting.org/wp-content/uploads/2025/05/Position-Trained-Requirements-Jun2025.pdf",
+            "accessed": "2026-09-11"
+          }
+        ],
+        "method": "curated",
+        "verified_at": "2026-09-11",
+        "confidence": 0.9,
+        "notes": "The New Member Coordinator position-trained plan is two online modules, SCO_535 (New Member Coordinator Welcome Class) and SCO_536 (Elements of the Job). No classroom course code is published for it."
+      }
+    }
+  ],
+  "notes": null
+}
