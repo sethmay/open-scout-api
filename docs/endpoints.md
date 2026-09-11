@@ -114,6 +114,17 @@ that contained duplicate and program-variant listings for one property. A retire
 camp it was folded into. The file is deliberately a bare `{retired-id: surviving-id}` object with no
 envelope. See [schema pinning](#schema-pinning-and-the-build-gate) for what that costs it.
 
+### Retired ids: tombstones
+
+A retired camp id does **not** 404. It serves a **tombstone** at its own `v1/camps/{id}.json` URL —
+`{ "gone": true, "moved_to": "<surviving-id>" }`
+([`published-tombstone`](https://sethmay.github.io/open-scout-api/schema/v1/published-tombstone.schema.json)) —
+so a stored bookmark forwards instead of dead-ending. `gone` is what tells a tombstone from a live
+document; `moved_to` is **one hop** (it mirrors the alias map), so follow it transitively: a merge
+target can itself be merged away. This is how camp ids stay *never deleted*, the way a closed-window
+version does it for councils. GitHub Pages cannot issue a 301, so the machine-readable stub is the
+forward. Recipe: [`20-tombstones.py`](../cookbook/python/20-tombstones.py).
+
 ### Vocabularies
 
 Controlled vocabularies: every code with a human `label` and `description`, under an envelope
@@ -264,23 +275,50 @@ entity ref, because a reservation is not an entity in this dataset. Group by it;
 Fields are **additive-only under `v1`**: new optional fields may appear, but existing ones are never
 renamed or removed. Pinning your code to a field set is safe; a removal would require `v2`.
 
+### The static file tree is the contract
+
+The published static file tree **is** the normative `v1` contract — the thing you pin, cite, and
+read. It is not one rendering of some other source that could drift from it. If a query layer is ever
+added (GraphQL, an edge function, or more build-time slices like `by-state/`), it is a purely
+**additive view** that must agree with these files and never replaces them; every static path keeps
+working. So a future query layer cannot become a breaking change, and the files never go away.
+
+### Versioning: what MINOR and PATCH mean
+
+`v1` forbids interface breaks, so the version number describes **content churn**, not interface
+compatibility — there will never be a `2.x` under `v1`:
+
+- **MINOR** — a new dataset, a new optional field, or new entities.
+- **PATCH** — a data correction.
+
+Neither may break the published contract, because `v1` is additive-only. One case gets its own
+signal: **retiring or repointing an id** (a merge or split). Content churn *can* strand a stored id,
+so **any release that retires or repoints an id is at least a MINOR bump** — a `~MINOR` pin is then a
+real "no id changes" promise. The retirements are machine-readable without dates: diff the set of
+[tombstones](#retired-ids-tombstones) (equivalently the [alias map](#alias-maps)) between two builds.
+And a retired id never 404s, so nothing pinned to `v1` silently breaks in the first place.
+
 ### Schema pinning and the build gate
 
-Every published surface is schema-pinned and build-gated, covering **2,473 JSON files under `v1/`,
-nothing left unpinned**:
+Every published surface is schema-pinned and build-gated — **nothing left unpinned**. `build.py`
+fails the build if any surface drifts from its contract. File counts are as of this build:
 
 | Surface | Files | Contract |
 |---|---|---|
 | `v1/current/*.json` | 11 | [`published-current`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json) |
+| `v1/camps/by-state/{st}.json`, `v1/camps/by-council/{id}.json` | 273 | [`published-current`](https://sethmay.github.io/open-scout-api/schema/v1/published-current.schema.json) |
+| `v1/current/camps.geojson` | 1 | [`published-geojson`](https://sethmay.github.io/open-scout-api/schema/v1/published-geojson.schema.json) |
 | `v1/{dataset}/index.json` | 13 | [`published-index`](https://sethmay.github.io/open-scout-api/schema/v1/published-index.schema.json) |
-| `v1/{dataset}/{id}.json` | 2,440 | [`published-entity`](https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json) |
+| `v1/{dataset}/{id}.json` (entities) | 2,558 | [`published-entity`](https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json) |
+| `v1/camps/{retired-id}.json` (tombstones) | 50 | [`published-tombstone`](https://sethmay.github.io/open-scout-api/schema/v1/published-tombstone.schema.json) |
 | `v1/vocab/*.json` | 7 | [`vocab`](https://sethmay.github.io/open-scout-api/schema/v1/vocab.schema.json) |
 | `v1/meta.json` | 1 | [`published-meta`](https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json) |
 | `v1/camps/aliases.json` | 1 | [`published-aliases`](https://sethmay.github.io/open-scout-api/schema/v1/published-aliases.schema.json) |
 
 Every file names its own contract in `$schema`, except the alias map, which is a bare
 `{retired-id: surviving-id}` lookup with no room for one, and so is the single published file whose
-contract you have to know rather than read. `build.py` fails the build if any projection drifts.
+contract you have to know rather than read. A tombstone reuses the `v1/camps/{id}.json` path but is
+told apart from a live camp by its `gone` flag.
 
 The per-entity contract pins both the envelope and the projection: `versions` non-empty, lifecycle
 `events` folded in under that key, `requirement_sets` listing every edition of a subject. The
@@ -305,9 +343,13 @@ Pin **canonical** files immutably via jsDelivr:
 https://cdn.jsdelivr.net/gh/sethmay/open-scout-api@v0.53.0/data/councils/cascade-pacific.json
 ```
 
-`@main` tracks latest. The denormalized `v1/` projections are not in the repo. They are built by CI
-and served from GitHub Pages, so a pin gets you `data/`, not `dist/`. For a pinned copy of the
-built tree, use a release asset.
+`@main` tracks latest. The denormalized `v1/` projections are **not** in the repo; they are built by
+CI and served from GitHub Pages, so a jsDelivr pin gets you `data/`, not `dist/`. **There is no
+per-file versioned URL for a projection** — `current/camps.json` is always latest `main`, by design.
+The citable, pinnable artifact for the built tree is the per-tag **release asset** (the JSON tarball
+or the SQLite file): a projection as it stood at version X is that release's tarball, unpacked. If you
+need one projection file pinned, take it from the tarball, or reconstruct it deterministically by
+running `build.py` against the `data/` tree at that git tag.
 
 Pushing a `v*` tag runs [`release.yml`](../.github/workflows/release.yml), which validates, builds,
 and publishes a GitHub Release with two assets:

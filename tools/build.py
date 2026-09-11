@@ -137,6 +137,7 @@ def main() -> None:
     PUB_ENTITY = "https://sethmay.github.io/open-scout-api/schema/v1/published-entity.schema.json"
     PUB_META = "https://sethmay.github.io/open-scout-api/schema/v1/published-meta.schema.json"
     PUB_GEOJSON = "https://sethmay.github.io/open-scout-api/schema/v1/published-geojson.schema.json"
+    PUB_TOMBSTONE = "https://sethmay.github.io/open-scout-api/schema/v1/published-tombstone.schema.json"
     pub = read_json(SCHEMA_DIR / "published-current.schema.json")
     collection_validator = Draft202012Validator(pub, format_checker=Draft202012Validator.FORMAT_CHECKER)
     pubidx = read_json(SCHEMA_DIR / "published-index.schema.json")
@@ -180,6 +181,8 @@ def main() -> None:
                                            format_checker=Draft202012Validator.FORMAT_CHECKER)
     geojson_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-geojson.schema.json"),
                                              format_checker=Draft202012Validator.FORMAT_CHECKER)
+    tombstone_validator = Draft202012Validator(read_json(SCHEMA_DIR / "published-tombstone.schema.json"),
+                                               format_checker=Draft202012Validator.FORMAT_CHECKER)
     errs: list[str] = []
 
     def write_entity(path: Path, obj: dict) -> None:
@@ -355,6 +358,17 @@ def main() -> None:
     errs.extend(f"camps/aliases.json: {er.json_path}: {er.message}"
                 for er in alias_validator.iter_errors(camp_aliases))
     write_json(DIST / "v1" / "camps" / "aliases.json", camp_aliases)
+
+    # Tombstones: a retired camp id keeps a machine-readable forward instead of 404ing, so a
+    # stored bookmark resolves. Each mirrors the aliases map one hop (a chain terminates at a
+    # live camp); `gone` marks it as not a live document. This is what makes model.md's
+    # "ids are never deleted" promise true for camps, the way a closed-window version does for
+    # councils. GitHub Pages cannot 301, so the stub is the forward.
+    for _rid, _surv in sorted(camp_aliases.items()):
+        _tomb = {"$schema": PUB_TOMBSTONE, "id": _rid, "gone": True, "moved_to": _surv}
+        errs.extend(f"camps/{_rid}.json (tombstone): {er.json_path}: {er.message}"
+                    for er in tombstone_validator.iter_errors(_tomb))
+        write_json(DIST / "v1" / "camps" / f"{_rid}.json", _tomb)
 
     # --- ranks: per-entity + index + current -------------------------------
     rank_index = []

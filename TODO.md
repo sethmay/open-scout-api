@@ -99,25 +99,25 @@ What that means concretely, and what is already true:
   Second choice is a GitHub org; staying on a personal account is the option that keeps this exact
   decision open indefinitely.
 
-**1.0 contract scope — widen beyond field shapes (Den Leader audit, `.workbench/denleaderaudit.md`).**
-Today the `v1` promise freezes FIELD SHAPES only (build-gated, additive-only) — but every audit finding that
-actually breaks a consumer sits OUTSIDE that: array ordering, identifier lifetime, which surface is pinnable,
-what the version number covers. Decide these before cutting 1.0, or 1.0 freezes them unfrozen:
-- **Pin story for `v1/current/*.json`.** The consumer-facing projections have no versioned permalink (only
-  `data/` via jsDelivr and the release tarball). Decide: versioned projection paths, or accept "the citable
-  artifact is the tarball" as the permanent answer. (finding 10)
-- **Tombstones at retired camp ids.** 50 camp ids 404 (recoverable only via `aliases.json`), while `model.md`
-  promises ids are "never deleted" — true for councils (closed-window doc kept), false for camps. Serve
-  `{ gone:true, moved_to, retired_in }` stubs at `v1/camps/<retired-id>.json` (new `published-tombstone.schema.json`)
-  so a dead bookmark forwards. (finding 10)
-- **State MINOR/PATCH semantics + signal id retirement.** `v1` forbids interface breaks, so semver describes
-  content churn — and a PATCH can 404/repoint a stored id (0.58.19 S-F split; 0.58.21 R-C re-point). Write the
-  policy in `docs/endpoints.md`; either bump MINOR on any id-retiring release, or add `retired_in`/`added_in` to
-  `aliases.json` entries (the map already holds the data, just no dates). (finding 10)
-- **Declare whether the static tree is the NORMATIVE contract** or one rendering of something else — that answer
-  is what makes a later query layer (GraphQL / edge fn / build-time slices) purely additive vs a replacement.
-- **`CITATION.cff` + `schema.org/Dataset` JSON-LD** on the landing page — cheap now, and 1.0 is when people cite
-  it. `.zenodo.json` is already written, gated on the host decision. (finding 10)
+**1.0 contract scope — DECIDED 0.66.0 (Den Leader audit, `.workbench/denleaderaudit.md`).** The `v1` promise
+now covers more than field shapes: identifier lifetime and version semantics are stated in `docs/endpoints.md`,
+and the pinnable surface + normative status are declared. Resolved:
+- **Pin story — DECIDED: the release tarball is the pin.** `current/*.json` projections have no per-file
+  versioned URL by design; the citable artifact for the built tree is the per-tag release asset (JSON tarball /
+  SQLite), or reconstruct a projection deterministically from `data/` at a git tag. Stated in `docs/endpoints.md`.
+- **Tombstones — DONE 0.66.0.** All 50 retired camp ids serve `{ $schema, id, gone:true, moved_to }` at
+  `v1/camps/<id>.json` (new `published-tombstone.schema.json`), so a dead bookmark forwards. `moved_to` is one
+  hop (mirrors the alias map); a chain terminates at a live camp. Recipe `20-tombstones.py`; `model.md`'s
+  "never deleted" promise now holds for camps. NOTE: `retired_in` was dropped — merges carry no date in the
+  source data, so the diffable retirement signal is the tombstone/alias set between two builds.
+- **MINOR/PATCH semantics — DONE 0.66.0.** Stated in `docs/endpoints.md`: MINOR = new dataset/field/entities,
+  PATCH = data correction, neither breaks `v1`; and **any id-retiring/repointing release is ≥ MINOR**. `aliases.json`
+  was deliberately NOT reshaped (adding dates would break its bare-string-map contract, the one 0.41.0 preserved).
+- **Static tree normative — DECIDED: yes.** `docs/endpoints.md` declares the static file tree THE normative `v1`
+  contract; any future query layer (GraphQL / edge fn / build-time slices) is an additive view that must agree
+  with it and never replaces it.
+- **`schema.org/Dataset` JSON-LD — DONE 0.65.0** on the landing page (build-generated, restamp-safe). `CITATION.cff`
+  remains deferred with the Zenodo DOI (both gated on the permanent-home decision).
 
 SHIPPED in 0.59.0 (cross these off the audit's ranked list): `current_version_index` + `current_requirement_set`
 pointers on entity docs, `address` on `current/camps.json`, `requirement_sets` + `current_requirement_set` on

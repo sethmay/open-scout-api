@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sethmay.github.io/open-scout-api/schema/v1/published-tombstone.schema.json",
+  "title": "Published tombstone",
+  "description": "Contract for a retired entity id that was merged into a surviving id. Served at v1/{dataset}/{retired-id}.json so a stored bookmark forwards instead of 404ing, which makes docs/model.md's 'ids are never deleted' promise true for merged datasets (today only camps: duplicate and program-variant listings folded into their base camp). `gone` is always true and is what distinguishes a tombstone from a live entity document; `moved_to` is the surviving id, a bare dataset-scoped slug identical to the aliases-map value it mirrors. GitHub Pages cannot issue a 301, so this machine-readable stub is the forward. The retirement version is not recorded here because merges carry no date in the source data; the diffable retirement signal is the set of tombstones (equivalently the aliases map) between two builds.",
+  "type": "object",
+  "properties": {
+    "$schema": { "type": "string", "format": "uri" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" },
+    "gone": { "const": true },
+    "moved_to": { "type": "string", "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$" }
+  },
+  "required": ["$schema", "id", "gone", "moved_to"],
+  "additionalProperties": false
+}
