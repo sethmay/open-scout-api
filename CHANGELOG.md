@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.64.0 (minor) — 2026-09-11
 
-- `PENDING` New Member Coordinator, the unit position that replaced Parent Coordinator, is now in the training data along with what it takes to be trained for it. Additive; nothing existing changed.
+- `d670b34` New Member Coordinator, the unit position that replaced Parent Coordinator, is now in the training data along with what it takes to be trained for it. Additive; nothing existing changed.
   - New Member Coordinator (registration code NM) is added for packs, troops, crews, and ships. Being trained for it means Youth Protection plus the two New Member Coordinator online modules, the Welcome Class and Elements of the Job.
   - The four Parent Coordinator entries are now confirmed as retired and replaced by New Member Coordinator (Scouting America introduced it to replace both Parent Coordinator and Unit Membership Chair), so a saved lookup still resolves and points to the current position. Their confidence rises from 0.6 to 0.85.
 
