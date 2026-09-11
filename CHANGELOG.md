@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.65.0 (minor) — 2026-09-11
 
-- `PENDING` The front page now carries a machine-readable description of the dataset, so search engines and data catalogs can find and index it. Additive; nothing existing changed.
+- `c90bdf8` The front page now carries a machine-readable description of the dataset, so search engines and data catalogs can find and index it. Additive; nothing existing changed.
   - Added schema.org Dataset structured data (JSON-LD) to the landing page, naming the dataset, its license, current version, keywords, and download links (the JSON tarball and SQLite release assets, plus the meta endpoint). This is the format Google Dataset Search and similar tools read.
 
 ## 0.64.0 (minor) — 2026-09-11
