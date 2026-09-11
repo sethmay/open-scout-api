@@ -5,7 +5,7 @@ Version anchors: this file only (no package manifests yet; add here when one app
 
 ## 0.66.0 (minor) — 2026-09-11
 
-- `PENDING` A retired camp id now forwards to the camp it became instead of returning "not found," and the rules that keep a saved link working are written down. This settles the contract questions that were holding up a 1.0. Additive; nothing existing changed.
+- `262b203` A retired camp id now forwards to the camp it became instead of returning "not found," and the rules that keep a saved link working are written down. This settles the contract questions that were holding up a 1.0. Additive; nothing existing changed.
   - The 50 camp ids that were retired when duplicate listings merged now each serve a small tombstone record at their own address, pointing to the surviving camp, so an old bookmark or citation resolves instead of hitting a dead end. Follow the pointer, since a camp can itself be merged again later.
   - The docs now state what a version bump means: a new dataset, field, or set of entities is a minor release; a data correction is a patch; neither breaks the v1 contract. Any release that retires or repoints an id is at least a minor bump, so pinning to a minor version is a real promise.
   - The static file tree is declared the contract you pin and cite. Any future way to query the data only adds to it and never replaces it.
